@@ -1,0 +1,13 @@
+contract_version: 1
+governance:
+  governed_by: "stegverse.stegcore"
+
+policies:
+  append_only_records: true
+  require_reputable_source: true
+  prohibit_unredaction_attempts: true
+  prohibit_private_person_doxxing: true
+
+comparative_integrity:
+  fraud_claims_allowed_only_with_controls: true
+  disconfirming_evidence_required: true
