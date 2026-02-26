@@ -1,0 +1,31 @@
+subject: "US Executive Rhetoric Ledger — Comparative"
+
+modes:
+  biography: false
+  rhetoric_action_ledger: true
+  comparative_analysis: true
+
+policies:
+  require_reputable_source: true
+  allow_secondary_if_cites_primary: true
+  ban_memes: true
+  append_only_records: true
+
+free_dom:
+  enabled: true
+  mode: involvement
+  relation_fields: [entity, event, date, filing, source_url]
+
+ledger:
+  enabled: true
+  record_types: [statement, action, link]
+  required_fields:
+    statement: [id, speaker, date_time_utc, verbatim_quote, primary_source_url]
+    action: [id, date, actor, policy_instrument, primary_source_url]
+    link: [id, statement_id, action_id, relationship_type]
+
+comparative:
+  enabled: true
+  require_controls_for_fraud_claims: true
+  datasets_path: "datasets"
+  scoring_path: "models"
