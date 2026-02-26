@@ -1,0 +1,16 @@
+contract_version: 1
+join_policy:
+  primary_keys:
+    - source_repo_id
+    - source_record_id
+  fallback_keys:
+    - primary_source_url
+    - date_time_utc
+    - actor
+exports:
+  - file: "datasets/exports/normalized_statements.csv"
+    source: normalized_statement
+  - file: "datasets/exports/normalized_actions.csv"
+    source: normalized_action
+  - file: "datasets/exports/normalized_links.csv"
+    source: normalized_link
