@@ -1,0 +1,14 @@
+contract_version: 1
+ingest:
+  mode: "import_exports"
+  inputs:
+    - repo_id: stegverse.trumpality
+      path: "datasets/exports"
+    - repo_id: stegverse.administrations
+      path: "datasets/exports"
+
+comparative_rules:
+  require_controls_for_fraud_claims: true
+  require_blue_and_red_examples: true
+  require_same_program_type: true
+  require_same_order_of_magnitude: true
