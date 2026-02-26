@@ -1,0 +1,13 @@
+contract_version: 1
+append_only: true
+
+derived_record_types:
+  normalized_statement:
+    path: "records/normalized/statements/"
+    required_fields: [source_repo_id, source_statement_id, date_time_utc, speaker, verbatim_quote, tags, primary_source_url]
+  normalized_action:
+    path: "records/normalized/actions/"
+    required_fields: [source_repo_id, source_action_id, date, actor, policy_instrument, tags, primary_source_url]
+  normalized_link:
+    path: "records/normalized/links/"
+    required_fields: [source_repo_id, source_link_id, statement_id, action_id, relationship_type, lag_days, court_status]
