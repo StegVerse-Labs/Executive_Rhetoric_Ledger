@@ -1,0 +1,25 @@
+contract_version: 1
+repo_id: stegverse.executive_rhetoric_ledger
+repo_type: comparative_analysis
+scope:
+  cross_administration: true
+  comparisons:
+    - conditional_funding
+    - retaliation_language
+    - enforcement_surge
+    - judicial_intervention
+    - fraud_enforcement_fairness
+
+authority:
+  governed_by: stegverse.stegcore
+
+inputs:
+  sources:
+    - repo_id: stegverse.trumpality
+      expected_exports_path: "datasets/exports"
+    - repo_id: stegverse.administrations
+      expected_exports_path: "datasets/exports"
+
+outputs:
+  datasets_path: "datasets/exports"
+  reports_path: "comparisons"
