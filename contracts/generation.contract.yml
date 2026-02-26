@@ -1,0 +1,15 @@
+contract_version: 1
+auto_generate:
+  - kind: "normalized_datasets"
+    paths:
+      - "datasets/exports/normalized_statements.csv"
+      - "datasets/exports/normalized_actions.csv"
+      - "datasets/exports/normalized_links.csv"
+    when: "imports_updated"
+
+  - kind: "comparative_reports"
+    paths:
+      - "comparisons/blue_vs_red/"
+      - "comparisons/fraud_enforcement/"
+      - "comparisons/conditional_funding/"
+    when: "weekly_run"
