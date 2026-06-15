@@ -63,6 +63,12 @@ Use this template to create structured topic entries with separate sections for 
 
 The examples show how the ledger separates public claim existence from admissible factual basis, action conversion, institutional review, and measurable outcomes.
 
+## Political influence trees
+
+- [The Powell Memorandum Influence Tree](trees/fundamental-documents/1971-powell-memo-influence-tree.md)
+
+The first populated tree is a structural example. It treats the Powell Memorandum as a primary historical artifact and does not assert downstream causation without separate evidence.
+
 ## Fundamental document annotations
 
 - [The Powell Memorandum (1971)](annotations/fundamental-documents/1971-powell-memo.md)
@@ -87,6 +93,10 @@ examples/
   control-comparison-example.md
   rhetoric-to-action-scoring-example.md
 
+trees/
+  fundamental-documents/
+    1971-powell-memo-influence-tree.md
+
 annotations/
   fundamental-documents/
     1971-powell-memo.md
@@ -94,7 +104,7 @@ annotations/
 
 Next expected additions:
 
-- first fully populated political influence tree
 - machine-readable schema variants
 - scoring calibration notes
 - source receipt examples
+- first modern-topic political influence tree
