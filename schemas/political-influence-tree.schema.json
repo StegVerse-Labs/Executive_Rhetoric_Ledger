@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/political-influence-tree.schema.json",
+  "title": "Political Influence Tree Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "topic_id",
+    "topic_name",
+    "entry_status",
+    "jurisdiction",
+    "time_window",
+    "surface_claim",
+    "claimed_justification",
+    "factual_basis",
+    "influence_lineage",
+    "action_conversion",
+    "control_comparison",
+    "institutional_response",
+    "outcome_evidence",
+    "ledger_classification",
+    "receipts"
+  ],
+  "properties": {
+    "topic_id": { "type": "string", "minLength": 1 },
+    "topic_name": { "type": "string", "minLength": 1 },
+    "entry_status": {
+      "type": "string",
+      "enum": ["draft", "review", "structural-example", "published", "deprecated"]
+    },
+    "jurisdiction": { "type": "string" },
+    "time_window": { "type": "string" },
+    "created_date": { "type": "string" },
+    "last_reviewed": { "type": "string" },
+    "related_standard": { "type": "string" },
+    "related_annotation": { "type": "string" },
+    "surface_claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_text", "speaker_or_institution", "date", "source_url", "source_type"],
+      "properties": {
+        "claim_text": { "type": "string", "minLength": 1 },
+        "exact_quote_available": { "type": "boolean" },
+        "speaker_or_institution": { "type": "string" },
+        "office_or_role": { "type": "string" },
+        "date": { "type": "string" },
+        "venue": { "type": "string" },
+        "jurisdiction": { "type": "string" },
+        "source_url": { "type": "string" },
+        "source_type": { "type": "string" },
+        "transcript_available": { "type": "boolean" },
+        "archive_url": { "type": "string" }
+      }
+    },
+    "claimed_justification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "category": { "type": "string" },
+        "stated_basis": { "type": "string" },
+        "quoted_basis": { "type": "string" },
+        "implied_basis": { "type": "string" }
+      }
+    },
+    "factual_basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_posture": { "type": "string" },
+        "primary_records": { "type": "array", "items": { "type": "string" } },
+        "administrative_data": { "type": "array", "items": { "type": "string" } },
+        "court_records": { "type": "array", "items": { "type": "string" } },
+        "budget_records": { "type": "array", "items": { "type": "string" } },
+        "enforcement_records": { "type": "array", "items": { "type": "string" } },
+        "independent_analysis": { "type": "array", "items": { "type": "string" } },
+        "expert_testimony": { "type": "array", "items": { "type": "string" } },
+        "official_investigations": { "type": "array", "items": { "type": "string" } },
+        "unsupported_assertions": { "type": "array", "items": { "type": "string" } },
+        "contradictions": { "type": "array", "items": { "type": "string" } },
+        "missing_records": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "influence_lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "influence_posture": { "type": "string" },
+        "known_origin_points": { "type": "array", "items": { "type": "string" } },
+        "institutional_amplifiers": { "type": "array", "items": { "type": "string" } },
+        "media_amplifiers": { "type": "array", "items": { "type": "string" } },
+        "legal_networks": { "type": "array", "items": { "type": "string" } },
+        "funding_or_donor_links": { "type": "array", "items": { "type": "string" } },
+        "policy_documents": { "type": "array", "items": { "type": "string" } },
+        "academic_or_expert_sources": { "type": "array", "items": { "type": "string" } },
+        "lobbying_channels": { "type": "array", "items": { "type": "string" } },
+        "party_or_campaign_documents": { "type": "array", "items": { "type": "string" } },
+        "religious_or_cultural_institutions": { "type": "array", "items": { "type": "string" } },
+        "activist_organizations": { "type": "array", "items": { "type": "string" } },
+        "foreign_influence_indicators": { "type": "array", "items": { "type": "string" } },
+        "unknown_nodes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "action_conversion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "authority_posture": { "type": "string" },
+        "action_type": { "type": "string" },
+        "instrument": { "type": "string" },
+        "instrument_url": { "type": "string" },
+        "date": { "type": "string" },
+        "actor": { "type": "string" },
+        "enforcing_entity": { "type": "string" },
+        "implementation_status": { "type": "string" },
+        "affected_population_or_program": { "type": "string" }
+      }
+    },
+    "control_comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "required": { "type": "boolean" },
+        "status": { "type": "string" },
+        "comparable_red_jurisdictions": { "type": "array", "items": { "type": "string" } },
+        "comparable_blue_jurisdictions": { "type": "array", "items": { "type": "string" } },
+        "comparable_prior_administrations": { "type": "array", "items": { "type": "string" } },
+        "comparable_policy_instruments": { "type": "array", "items": { "type": "string" } },
+        "comparable_fraud_or_harm_magnitude": { "type": "array", "items": { "type": "string" } },
+        "comparable_enforcement_tools": { "type": "array", "items": { "type": "string" } },
+        "comparable_judicial_posture": { "type": "array", "items": { "type": "string" } },
+        "missing_controls": { "type": "array", "items": { "type": "string" } },
+        "comparison_notes": { "type": "string" }
+      }
+    },
+    "institutional_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "judicial_status": { "type": "string" },
+        "administrative_status": { "type": "string" },
+        "legislative_status": { "type": "string" },
+        "oversight_status": { "type": "string" },
+        "injunctions": { "type": "array", "items": { "type": "string" } },
+        "stays": { "type": "array", "items": { "type": "string" } },
+        "dismissals": { "type": "array", "items": { "type": "string" } },
+        "remands": { "type": "array", "items": { "type": "string" } },
+        "settlements": { "type": "array", "items": { "type": "string" } },
+        "reversals": { "type": "array", "items": { "type": "string" } },
+        "pending_reviews": { "type": "array", "items": { "type": "string" } },
+        "no_challenge_found": { "type": "boolean" }
+      }
+    },
+    "outcome_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "measured_outcomes": { "type": "array", "items": { "type": "string" } },
+        "claimed_outcomes": { "type": "array", "items": { "type": "string" } },
+        "projected_outcomes": { "type": "array", "items": { "type": "string" } },
+        "contradicted_outcomes": { "type": "array", "items": { "type": "string" } },
+        "no_measurable_effect_yet": { "type": "boolean" },
+        "harm_documented": { "type": "array", "items": { "type": "string" } },
+        "benefit_documented": { "type": "array", "items": { "type": "string" } },
+        "insufficient_evidence": { "type": "boolean" }
+      }
+    },
+    "ledger_classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_posture", "influence_posture", "authority_posture", "admissibility_status", "confidence"],
+      "properties": {
+        "evidence_posture": { "type": "string" },
+        "influence_posture": { "type": "string" },
+        "authority_posture": { "type": "string" },
+        "admissibility_status": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+        "classification_notes": { "type": "string" }
+      }
+    },
+    "receipts": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sources": { "type": "array" },
+        "archive_sources": { "type": "array" },
+        "review_notes": { "type": "array", "items": { "type": "string" } },
+        "unresolved_questions": { "type": "array", "items": { "type": "string" } },
+        "last_reviewed": { "type": "string" }
+      }
+    }
+  }
+}
