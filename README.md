@@ -100,8 +100,9 @@ Calibration notes define how to score claim specificity, factual basis, action c
 ## Political influence trees
 
 - [The Powell Memorandum Influence Tree](trees/fundamental-documents/1971-powell-memo-influence-tree.md)
+- [Executive Order 14179 and Federal AI Leadership Framing](trees/modern-topics/2025-ai-leadership-executive-order-14179.md)
 
-The first populated tree is a structural example. It treats the Powell Memorandum as a primary historical artifact and does not assert downstream causation without separate evidence.
+The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims.
 
 ## Fundamental document annotations
 
@@ -150,6 +151,8 @@ calibration/
 trees/
   fundamental-documents/
     1971-powell-memo-influence-tree.md
+  modern-topics/
+    2025-ai-leadership-executive-order-14179.md
 
 annotations/
   fundamental-documents/
@@ -158,7 +161,7 @@ annotations/
 
 Next expected additions:
 
-- first modern-topic political influence tree
 - validation result badges or status notes
 - additional machine-readable sample entries
 - producer export examples
+- modern-topic control comparison expansion
