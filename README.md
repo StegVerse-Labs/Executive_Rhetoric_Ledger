@@ -75,8 +75,11 @@ The validation workflow checks the sample Political Influence Tree against the P
 ## Cross-repo ingestion
 
 - [Cross-Repo Ingestion Notes](ingestion/cross-repo-ingestion-notes.md)
+- [Producer Export Workflow Integration Notes](ingestion/producer-export-workflow-integration-notes.md)
 
 Cross-repo ingestion notes define how producer repositories should send claim text, source receipts, action records, court posture, control candidates, outcome records, and influence nodes into this ledger without converting claim existence into claim truth.
+
+Producer workflow notes define how upstream repositories should generate, validate, and hand off export objects while leaving final admissibility posture to this repository.
 
 ## Producer export examples
 
@@ -144,6 +147,7 @@ Note: the actual workflow directory starts with a leading dot in the repository 
 
 ingestion/
   cross-repo-ingestion-notes.md
+  producer-export-workflow-integration-notes.md
 
 producer_exports/
   example/
@@ -176,4 +180,4 @@ Next expected additions:
 - validation result badges or status notes
 - additional machine-readable sample entries
 - modern-topic control comparison expansion
-- producer export workflow integration notes
+- release readiness checklist
