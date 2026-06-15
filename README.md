@@ -21,9 +21,9 @@ Ledger outputs are normalized datasets and comparisons.
 ## Status
 
 ```yaml
-repo_status: "beta-candidate"
+repo_status: "beta-ready-internal"
 readiness_confidence: "medium"
-release_boundary: "usable for structured ledger entries, schema validation, producer export tests, and governed review flows; still needs at least one upstream producer export test and expanded modern-topic control comparison before beta-ready"
+release_boundary: "usable for structured ledger entries, schema validation, producer export tests, governed review flows, and modern-topic control-comparison scaffolding; still needs at least one upstream producer export test before org-level beta adoption"
 ```
 
 ## Key Rule
@@ -119,8 +119,9 @@ Calibration notes define how to score claim specificity, factual basis, action c
 
 - [The Powell Memorandum Influence Tree](trees/fundamental-documents/1971-powell-memo-influence-tree.md)
 - [Executive Order 14179 and Federal AI Leadership Framing](trees/modern-topics/2025-ai-leadership-executive-order-14179.md)
+- [EO 14179 Control Comparison Expansion](trees/modern-topics/2025-ai-leadership-executive-order-14179-control-comparison.md)
 
-The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims.
+The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims. The EO 14179 control expansion defines what evidence is required before those factual justifications can be treated as admissible comparative support.
 
 ## Governance policy
 
@@ -142,7 +143,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now beta-candidate for governed ledger development. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, and review/dispute/deprecation policy. It still needs at least one upstream producer export test and a completed modern-topic control comparison before beta-ready status.
+This repository is now beta-ready internally for governed ledger development. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, review/dispute/deprecation policy, and modern-topic control-comparison scaffolding. Org-level beta adoption still requires at least one upstream producer export test.
 
 Current implemented structure:
 
@@ -189,6 +190,7 @@ trees/
     1971-powell-memo-influence-tree.md
   modern-topics/
     2025-ai-leadership-executive-order-14179.md
+    2025-ai-leadership-executive-order-14179-control-comparison.md
 
 governance/
   reviewer-dispute-deprecation-policy.md
@@ -203,7 +205,7 @@ annotations/
 
 Next expected additions:
 
+- upstream producer export test
 - validation result badges or status notes
 - additional machine-readable sample entries
-- modern-topic control comparison expansion
-- upstream producer export test
+- real control evidence receipts for EO 14179
