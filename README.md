@@ -50,6 +50,13 @@ Every political topic is evaluated by lineage, evidence, authority, control comp
 
 The Source Posture Schema prevents the ledger from treating all sources as equal evidence. A source may prove that a claim was made without proving that the claim is factually true.
 
+## Machine-readable schemas
+
+- [Political Influence Tree JSON Schema](schemas/political-influence-tree.schema.json)
+- [Source Posture JSON Schema](schemas/source-posture.schema.json)
+
+These schemas provide validation targets for converting Markdown ledger entries into machine-checkable data objects.
+
 ## Templates
 
 - [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
@@ -86,6 +93,10 @@ standards/
   political-influence-tree-standard.md
   source-posture-schema.md
 
+schemas/
+  political-influence-tree.schema.json
+  source-posture.schema.json
+
 templates/
   political-influence-tree-entry-template.md
 
@@ -104,7 +115,7 @@ annotations/
 
 Next expected additions:
 
-- machine-readable schema variants
 - scoring calibration notes
 - source receipt examples
 - first modern-topic political influence tree
+- validation workflow
