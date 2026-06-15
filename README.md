@@ -21,9 +21,9 @@ Ledger outputs are normalized datasets and comparisons.
 ## Status
 
 ```yaml
-repo_status: "alpha-operational"
+repo_status: "beta-candidate"
 readiness_confidence: "medium"
-release_boundary: "usable for structured ledger entries, schema validation, and producer export tests; not yet beta-ready until review ownership, dispute handling, deprecation policy, and upstream producer testing are complete"
+release_boundary: "usable for structured ledger entries, schema validation, producer export tests, and governed review flows; still needs at least one upstream producer export test and expanded modern-topic control comparison before beta-ready"
 ```
 
 ## Key Rule
@@ -122,6 +122,12 @@ Calibration notes define how to score claim specificity, factual basis, action c
 
 The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims.
 
+## Governance policy
+
+- [Reviewer, Dispute, and Deprecation Policy](governance/reviewer-dispute-deprecation-policy.md)
+
+The governance policy defines reviewer roles, review states, dispute triggers, deprecation criteria, supersession criteria, and rejection criteria for ledger entries.
+
 ## Release readiness
 
 - [Release Readiness Checklist](release/release-readiness-checklist.md)
@@ -136,7 +142,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is in early standardization but is now alpha-operational for structured ledger entry development and producer export testing.
+This repository is now beta-candidate for governed ledger development. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, and review/dispute/deprecation policy. It still needs at least one upstream producer export test and a completed modern-topic control comparison before beta-ready status.
 
 Current implemented structure:
 
@@ -184,6 +190,9 @@ trees/
   modern-topics/
     2025-ai-leadership-executive-order-14179.md
 
+governance/
+  reviewer-dispute-deprecation-policy.md
+
 release/
   release-readiness-checklist.md
 
@@ -197,4 +206,4 @@ Next expected additions:
 - validation result badges or status notes
 - additional machine-readable sample entries
 - modern-topic control comparison expansion
-- reviewer/dispute/deprecation policy
+- upstream producer export test
