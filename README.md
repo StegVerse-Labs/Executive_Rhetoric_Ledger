@@ -21,9 +21,11 @@ Ledger outputs are normalized datasets and comparisons.
 ## Status
 
 ```yaml
-repo_status: "beta-ready-internal"
+repo_status: "beta-activation-started"
 readiness_confidence: "medium"
-release_boundary: "usable for structured ledger entries, schema validation, producer export tests, governed review flows, and modern-topic control-comparison scaffolding; still needs at least one upstream producer export test before org-level beta adoption"
+release_boundary: "internally beta-ready and first upstream producer export test started; org-level beta adoption still requires validation of the producer export and at least one additional producer path or confirmed green workflow status"
+first_upstream_producer_test: "StegVerse-Labs/Trumpality"
+first_upstream_producer_commit: "fc032e774ec05b611c114a0549895ac225e6764b"
 ```
 
 ## Key Rule
@@ -95,6 +97,12 @@ Producer workflow notes define how upstream repositories should generate, valida
 
 Producer export examples show how an upstream repo can package a claim, action record, or source receipt for ledger ingestion while leaving final admissibility classification to this repository.
 
+## Producer export test status
+
+- [Producer Export Test Status](release/producer-export-test-status.md)
+
+The first upstream producer export test has started from `StegVerse-Labs/Trumpality` and is pending ingestion review and validation status confirmation.
+
 ## Templates
 
 - [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
@@ -143,7 +151,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now beta-ready internally for governed ledger development. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, review/dispute/deprecation policy, and modern-topic control-comparison scaffolding. Org-level beta adoption still requires at least one upstream producer export test.
+This repository is now beta-activation-started. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, and a first upstream producer export test from `StegVerse-Labs/Trumpality`. Org-level beta adoption still requires validation of the producer export and at least one additional producer path or confirmed green workflow status.
 
 Current implemented structure:
 
@@ -197,6 +205,7 @@ governance/
 
 release/
   release-readiness-checklist.md
+  producer-export-test-status.md
 
 annotations/
   fundamental-documents/
@@ -205,7 +214,7 @@ annotations/
 
 Next expected additions:
 
-- upstream producer export test
+- validate producer export through workflow or local schema check
+- add a second producer export path
 - validation result badges or status notes
-- additional machine-readable sample entries
 - real control evidence receipts for EO 14179
