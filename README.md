@@ -57,6 +57,20 @@ The Source Posture Schema prevents the ledger from treating all sources as equal
 
 These schemas provide validation targets for converting Markdown ledger entries into machine-checkable data objects.
 
+## Machine-readable samples
+
+- [Political Influence Tree Sample](samples/political-influence-tree.sample.json)
+
+The sample mirrors the Powell Memorandum structural tree and provides a test object for schema validation.
+
+## Validation
+
+- [Validate Ledger Schemas workflow](github/workflows/validate-ledger-schemas.yml)
+
+Note: the actual repository path starts with a leading dot. It is shown here without the leading dot as requested: `github/workflows/validate-ledger-schemas.yml`.
+
+The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema and validates embedded source receipts against the Source Posture JSON Schema.
+
 ## Templates
 
 - [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
@@ -104,6 +118,15 @@ schemas/
   political-influence-tree.schema.json
   source-posture.schema.json
 
+samples/
+  political-influence-tree.sample.json
+
+github/
+  workflows/
+    validate-ledger-schemas.yml
+
+Note: the actual workflow directory starts with a leading dot in the repository path.
+
 templates/
   political-influence-tree-entry-template.md
 
@@ -127,6 +150,6 @@ annotations/
 Next expected additions:
 
 - first modern-topic political influence tree
-- validation workflow
-- machine-readable sample entries
 - cross-repo ingestion notes
+- validation result badges or status notes
+- additional machine-readable sample entries
