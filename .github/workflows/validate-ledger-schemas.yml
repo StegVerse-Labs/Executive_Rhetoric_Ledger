@@ -1,0 +1,83 @@
+name: Validate Ledger Schemas
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate-json-schemas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema
+
+      - name: Validate sample political influence tree
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+
+          checks = [
+              (
+                  Path("schemas/political-influence-tree.schema.json"),
+                  Path("samples/political-influence-tree.sample.json"),
+              )
+          ]
+
+          for schema_path, sample_path in checks:
+              schema = json.loads(schema_path.read_text(encoding="utf-8"))
+              sample = json.loads(sample_path.read_text(encoding="utf-8"))
+              validator = Draft202012Validator(schema)
+              errors = sorted(validator.iter_errors(sample), key=lambda error: list(error.path))
+              if errors:
+                  print(f"Validation failed for {sample_path} against {schema_path}")
+                  for error in errors:
+                      path = ".".join(str(part) for part in error.path) or "<root>"
+                      print(f"- {path}: {error.message}")
+                  raise SystemExit(1)
+              print(f"Validated {sample_path} against {schema_path}")
+          PY
+
+      - name: Validate embedded source receipts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+
+          source_schema = json.loads(Path("schemas/source-posture.schema.json").read_text(encoding="utf-8"))
+          sample = json.loads(Path("samples/political-influence-tree.sample.json").read_text(encoding="utf-8"))
+          validator = Draft202012Validator(source_schema)
+
+          sources = sample.get("receipts", {}).get("sources", [])
+          if not sources:
+              print("No sources found in sample receipts")
+              raise SystemExit(1)
+
+          failed = False
+          for index, source in enumerate(sources):
+              errors = sorted(validator.iter_errors(source), key=lambda error: list(error.path))
+              if errors:
+                  failed = True
+                  print(f"Source receipt {index} failed validation")
+                  for error in errors:
+                      path = ".".join(str(part) for part in error.path) or "<root>"
+                      print(f"- {path}: {error.message}")
+              else:
+                  print(f"Validated source receipt {index}")
+
+          if failed:
+              raise SystemExit(1)
+          PY
