@@ -26,6 +26,7 @@ readiness_confidence: "medium"
 release_boundary: "internally beta-ready and first upstream producer export test started; org-level beta adoption still requires validation of the producer export and at least one additional producer path or confirmed green workflow status"
 first_upstream_producer_test: "StegVerse-Labs/Trumpality"
 first_upstream_producer_commit: "fc032e774ec05b611c114a0549895ac225e6764b"
+validation_status: "pending"
 ```
 
 ## Key Rule
@@ -77,10 +78,13 @@ The sample mirrors the Powell Memorandum structural tree and provides a test obj
 ## Validation
 
 - [Validate Ledger Schemas workflow](github/workflows/validate-ledger-schemas.yml)
+- [Validation Status Note](release/validation-status-note.md)
 
 Note: the actual repository path starts with a leading dot. It is shown here without the leading dot as requested: `github/workflows/validate-ledger-schemas.yml`.
 
 The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema, validates embedded source receipts against the Source Posture JSON Schema, and validates producer export examples against the Producer Export JSON Schema.
+
+The validation status note records that the first upstream producer export exists while green workflow confirmation remains pending.
 
 ## Cross-repo ingestion
 
@@ -206,6 +210,7 @@ governance/
 release/
   release-readiness-checklist.md
   producer-export-test-status.md
+  validation-status-note.md
 
 annotations/
   fundamental-documents/
@@ -216,5 +221,5 @@ Next expected additions:
 
 - validate producer export through workflow or local schema check
 - add a second producer export path
-- validation result badges or status notes
+- green workflow/status badge when available
 - real control evidence receipts for EO 14179
