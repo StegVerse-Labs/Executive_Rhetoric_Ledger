@@ -71,6 +71,12 @@ Note: the actual repository path starts with a leading dot. It is shown here wit
 
 The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema and validates embedded source receipts against the Source Posture JSON Schema.
 
+## Cross-repo ingestion
+
+- [Cross-Repo Ingestion Notes](ingestion/cross-repo-ingestion-notes.md)
+
+Cross-repo ingestion notes define how producer repositories should send claim text, source receipts, action records, court posture, control candidates, outcome records, and influence nodes into this ledger without converting claim existence into claim truth.
+
 ## Templates
 
 - [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
@@ -127,6 +133,9 @@ github/
 
 Note: the actual workflow directory starts with a leading dot in the repository path.
 
+ingestion/
+  cross-repo-ingestion-notes.md
+
 templates/
   political-influence-tree-entry-template.md
 
@@ -150,6 +159,6 @@ annotations/
 Next expected additions:
 
 - first modern-topic political influence tree
-- cross-repo ingestion notes
 - validation result badges or status notes
 - additional machine-readable sample entries
+- producer export examples
