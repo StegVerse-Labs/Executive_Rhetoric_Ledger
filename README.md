@@ -77,6 +77,12 @@ The validation workflow checks the sample Political Influence Tree against the P
 
 Cross-repo ingestion notes define how producer repositories should send claim text, source receipts, action records, court posture, control candidates, outcome records, and influence nodes into this ledger without converting claim existence into claim truth.
 
+## Producer export examples
+
+- [EO 14179 Action Record Export](producer_exports/example/PIT-MODERN-2025-AI-EO-14179__action_record__2025-01-23__SRC-2025-EO14179-FR-001.json)
+
+Producer export examples show how an upstream repo can package a claim, action record, or source receipt for ledger ingestion while leaving final admissibility classification to this repository.
+
 ## Templates
 
 - [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
@@ -137,6 +143,10 @@ Note: the actual workflow directory starts with a leading dot in the repository 
 ingestion/
   cross-repo-ingestion-notes.md
 
+producer_exports/
+  example/
+    PIT-MODERN-2025-AI-EO-14179__action_record__2025-01-23__SRC-2025-EO14179-FR-001.json
+
 templates/
   political-influence-tree-entry-template.md
 
@@ -163,5 +173,5 @@ Next expected additions:
 
 - validation result badges or status notes
 - additional machine-readable sample entries
-- producer export examples
 - modern-topic control comparison expansion
+- producer export schema
