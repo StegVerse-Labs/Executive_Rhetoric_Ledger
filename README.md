@@ -18,6 +18,14 @@ Primary records originate in:
 
 Ledger outputs are normalized datasets and comparisons.
 
+## Status
+
+```yaml
+repo_status: "alpha-operational"
+readiness_confidence: "medium"
+release_boundary: "usable for structured ledger entries, schema validation, and producer export tests; not yet beta-ready until review ownership, dispute handling, deprecation policy, and upstream producer testing are complete"
+```
+
 ## Key Rule
 
 Fraud-based justifications are included **only** when a control comparison exists:
@@ -114,6 +122,12 @@ Calibration notes define how to score claim specificity, factual basis, action c
 
 The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims.
 
+## Release readiness
+
+- [Release Readiness Checklist](release/release-readiness-checklist.md)
+
+The release checklist marks the repository as alpha-operational and identifies the remaining items required before beta readiness.
+
 ## Fundamental document annotations
 
 - [The Powell Memorandum (1971)](annotations/fundamental-documents/1971-powell-memo.md)
@@ -122,7 +136,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is in early standardization.
+This repository is in early standardization but is now alpha-operational for structured ledger entry development and producer export testing.
 
 Current implemented structure:
 
@@ -170,6 +184,9 @@ trees/
   modern-topics/
     2025-ai-leadership-executive-order-14179.md
 
+release/
+  release-readiness-checklist.md
+
 annotations/
   fundamental-documents/
     1971-powell-memo.md
@@ -180,4 +197,4 @@ Next expected additions:
 - validation result badges or status notes
 - additional machine-readable sample entries
 - modern-topic control comparison expansion
-- release readiness checklist
+- reviewer/dispute/deprecation policy
