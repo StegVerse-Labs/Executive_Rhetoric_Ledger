@@ -67,8 +67,15 @@ Use this template to create structured topic entries with separate sections for 
 
 - [Control Comparison Example](examples/control-comparison-example.md)
 - [Rhetoric-to-Action Scoring Example](examples/rhetoric-to-action-scoring-example.md)
+- [Source Receipt Examples](examples/source-receipt-examples.md)
 
-The examples show how the ledger separates public claim existence from admissible factual basis, action conversion, institutional review, and measurable outcomes.
+The examples show how the ledger separates public claim existence from admissible factual basis, action conversion, institutional review, source posture, and measurable outcomes.
+
+## Calibration
+
+- [Rhetoric-to-Action Scoring Calibration](calibration/rhetoric-to-action-scoring-calibration.md)
+
+Calibration notes define how to score claim specificity, factual basis, action conversion, control comparison, institutional response, and outcome evidence without treating the score as an ideological endorsement.
 
 ## Political influence trees
 
@@ -103,6 +110,10 @@ templates/
 examples/
   control-comparison-example.md
   rhetoric-to-action-scoring-example.md
+  source-receipt-examples.md
+
+calibration/
+  rhetoric-to-action-scoring-calibration.md
 
 trees/
   fundamental-documents/
@@ -115,7 +126,7 @@ annotations/
 
 Next expected additions:
 
-- scoring calibration notes
-- source receipt examples
 - first modern-topic political influence tree
 - validation workflow
+- machine-readable sample entries
+- cross-repo ingestion notes
