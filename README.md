@@ -56,6 +56,13 @@ The Source Posture Schema prevents the ledger from treating all sources as equal
 
 Use this template to create structured topic entries with separate sections for surface claim, factual basis, influence lineage, action conversion, control comparison, institutional response, outcome evidence, ledger classification, and receipts.
 
+## Examples
+
+- [Control Comparison Example](examples/control-comparison-example.md)
+- [Rhetoric-to-Action Scoring Example](examples/rhetoric-to-action-scoring-example.md)
+
+The examples show how the ledger separates public claim existence from admissible factual basis, action conversion, institutional review, and measurable outcomes.
+
 ## Fundamental document annotations
 
 - [The Powell Memorandum (1971)](annotations/fundamental-documents/1971-powell-memo.md)
@@ -76,6 +83,10 @@ standards/
 templates/
   political-influence-tree-entry-template.md
 
+examples/
+  control-comparison-example.md
+  rhetoric-to-action-scoring-example.md
+
 annotations/
   fundamental-documents/
     1971-powell-memo.md
@@ -83,7 +94,7 @@ annotations/
 
 Next expected additions:
 
-- control-comparison examples
-- rhetoric-to-action scoring examples
 - first fully populated political influence tree
 - machine-readable schema variants
+- scoring calibration notes
+- source receipt examples
