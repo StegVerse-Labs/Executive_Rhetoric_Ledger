@@ -37,6 +37,7 @@ across both blue and red jurisdictions.
 ## Standards
 
 - [Political Influence Tree Standard](standards/political-influence-tree-standard.md)
+- [Source Posture Schema](standards/source-posture-schema.md)
 
 The Political Influence Tree Standard requires politically active topics to be represented as traceable influence trees with evidence posture at each branch.
 
@@ -46,6 +47,14 @@ Core rule:
 No political topic is evaluated by alignment.
 Every political topic is evaluated by lineage, evidence, authority, control comparison, and outcome.
 ```
+
+The Source Posture Schema prevents the ledger from treating all sources as equal evidence. A source may prove that a claim was made without proving that the claim is factually true.
+
+## Templates
+
+- [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
+
+Use this template to create structured topic entries with separate sections for surface claim, factual basis, influence lineage, action conversion, control comparison, institutional response, outcome evidence, ledger classification, and receipts.
 
 ## Fundamental document annotations
 
@@ -62,6 +71,10 @@ Current implemented structure:
 ```text
 standards/
   political-influence-tree-standard.md
+  source-posture-schema.md
+
+templates/
+  political-influence-tree-entry-template.md
 
 annotations/
   fundamental-documents/
@@ -70,8 +83,7 @@ annotations/
 
 Next expected additions:
 
-- topic-entry templates
-- source posture schema
 - control-comparison examples
 - rhetoric-to-action scoring examples
 - first fully populated political influence tree
+- machine-readable schema variants
