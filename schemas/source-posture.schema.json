@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/source-posture.schema.json",
+  "title": "Source Posture",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "title",
+    "url",
+    "source_type",
+    "institutional_proximity",
+    "evidence_role",
+    "verification_status",
+    "admissibility_use",
+    "confidence"
+  ],
+  "properties": {
+    "source_id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string" },
+    "url": { "type": "string" },
+    "archive_url": { "type": "string" },
+    "access_date": { "type": "string" },
+    "publication_date": { "type": "string" },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "primary-record",
+        "statute-or-regulation",
+        "executive-order",
+        "agency-rule",
+        "agency-guidance",
+        "court-opinion",
+        "court-filing",
+        "budget-record",
+        "enforcement-record",
+        "official-data",
+        "transcript",
+        "video-or-audio-record",
+        "press-release",
+        "campaign-document",
+        "party-platform",
+        "think-tank-report",
+        "academic-paper",
+        "expert-testimony",
+        "news-report",
+        "opinion-or-editorial",
+        "social-media-post",
+        "secondary-analysis",
+        "advocacy-material",
+        "unknown-source-type"
+      ]
+    },
+    "institutional_proximity": {
+      "type": "string",
+      "enum": [
+        "direct-origin",
+        "official-implementer",
+        "judicial-reviewer",
+        "oversight-reviewer",
+        "contemporaneous-observer",
+        "independent-reviewer",
+        "interested-party",
+        "advocacy-party",
+        "media-intermediary",
+        "commentary-layer",
+        "unknown-proximity"
+      ]
+    },
+    "evidence_role": {
+      "type": "string",
+      "enum": [
+        "surface-claim-source",
+        "claimed-justification-source",
+        "factual-basis-source",
+        "contradiction-source",
+        "influence-lineage-source",
+        "action-conversion-source",
+        "control-comparison-source",
+        "institutional-response-source",
+        "outcome-evidence-source",
+        "context-only-source"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "verified-primary",
+        "verified-secondary",
+        "partially-verified",
+        "unverified",
+        "conflicting-records",
+        "not-independently-verifiable",
+        "archival-copy-needed",
+        "source-unavailable"
+      ]
+    },
+    "admissibility_use": {
+      "type": "string",
+      "enum": [
+        "admissible-for-claim-text",
+        "admissible-for-action-record",
+        "admissible-for-court-posture",
+        "admissible-for-administrative-record",
+        "admissible-for-outcome-measurement",
+        "admissible-for-influence-lineage",
+        "admissible-for-context-only",
+        "inadmissible-for-factual-basis",
+        "inadmissible-without-control-comparison",
+        "inadmissible-unsupported"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "red_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "no-primary-source-linked",
+          "claim-without-data",
+          "quote-without-transcript",
+          "screenshot-only-source",
+          "broken-link",
+          "archive-needed",
+          "advocacy-source-used-as-factual-basis",
+          "opinion-used-as-factual-basis",
+          "selective-quotation-risk",
+          "missing-date",
+          "missing-author-or-institution",
+          "conflicting-records-present"
+        ]
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}
