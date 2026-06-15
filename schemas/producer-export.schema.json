@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-export.schema.json",
+  "title": "Executive Rhetoric Ledger Producer Export",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ingestion_id",
+    "producer_repo",
+    "producer_path",
+    "producer_commit",
+    "ingestion_date",
+    "object_class",
+    "related_topic_id",
+    "related_topic_name",
+    "source_receipts",
+    "content_summary",
+    "ledger_relevance",
+    "claimed_use",
+    "admissibility_request",
+    "review_status"
+  ],
+  "properties": {
+    "ingestion_id": { "type": "string", "minLength": 1 },
+    "producer_repo": { "type": "string", "minLength": 1 },
+    "producer_path": { "type": "string", "minLength": 1 },
+    "producer_commit": { "type": "string", "minLength": 1 },
+    "ingestion_date": { "type": "string", "minLength": 1 },
+    "object_class": {
+      "type": "string",
+      "enum": [
+        "surface_claim",
+        "source_receipt",
+        "action_record",
+        "court_posture",
+        "control_candidate",
+        "outcome_record",
+        "influence_node"
+      ]
+    },
+    "related_topic_id": { "type": "string" },
+    "related_topic_name": { "type": "string" },
+    "source_receipts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "source-posture.schema.json" }
+    },
+    "content_summary": { "type": "string" },
+    "ledger_relevance": { "type": "string" },
+    "claimed_use": {
+      "type": "string",
+      "enum": [
+        "context-only",
+        "claim-text",
+        "factual-basis",
+        "action-record",
+        "court-posture",
+        "influence-lineage",
+        "control-comparison",
+        "outcome-measurement"
+      ]
+    },
+    "admissibility_request": {
+      "type": "string",
+      "enum": [
+        "context-only",
+        "claim-text",
+        "factual-basis",
+        "action-record",
+        "court-posture",
+        "influence-lineage",
+        "control-comparison",
+        "outcome-measurement"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted-for-context",
+        "accepted-for-claim-text",
+        "accepted-for-action-record",
+        "accepted-for-court-posture",
+        "accepted-for-influence-lineage",
+        "accepted-for-control-comparison",
+        "accepted-for-outcome-measurement",
+        "rejected-unsupported",
+        "rejected-duplicate",
+        "rejected-out-of-scope",
+        "needs-primary-source",
+        "needs-control-comparison",
+        "needs-archive"
+      ]
+    },
+    "notes": { "type": "string" }
+  }
+}
