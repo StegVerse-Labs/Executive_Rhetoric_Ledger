@@ -23,9 +23,11 @@ Ledger outputs are normalized datasets and comparisons.
 ```yaml
 repo_status: "beta-activation-started"
 readiness_confidence: "medium"
-release_boundary: "internally beta-ready and first upstream producer export test started; org-level beta adoption still requires validation of the producer export and at least one additional producer path or confirmed green workflow status"
+release_boundary: "internally beta-ready with two upstream producer export paths started; org-level beta adoption still requires validation of producer exports or confirmed green workflow status"
 first_upstream_producer_test: "StegVerse-Labs/Trumpality"
 first_upstream_producer_commit: "fc032e774ec05b611c114a0549895ac225e6764b"
+second_upstream_producer_test: "StegVerse-Labs/Administrations"
+second_upstream_producer_commit: "840fa595cc921d223be0a30132c27855b28aba2f"
 validation_status: "pending"
 ```
 
@@ -84,7 +86,7 @@ Note: the actual repository path starts with a leading dot. It is shown here wit
 
 The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema, validates embedded source receipts against the Source Posture JSON Schema, and validates producer export examples against the Producer Export JSON Schema.
 
-The validation status note records that the first upstream producer export exists while green workflow confirmation remains pending.
+The validation status note records that upstream producer exports exist while green workflow confirmation remains pending.
 
 ## Cross-repo ingestion
 
@@ -105,7 +107,7 @@ Producer export examples show how an upstream repo can package a claim, action r
 
 - [Producer Export Test Status](release/producer-export-test-status.md)
 
-The first upstream producer export test has started from `StegVerse-Labs/Trumpality` and is pending ingestion review and validation status confirmation.
+The first two upstream producer export tests have started from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations` and are pending ingestion review and validation status confirmation.
 
 ## Templates
 
@@ -155,7 +157,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now beta-activation-started. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, and a first upstream producer export test from `StegVerse-Labs/Trumpality`. Org-level beta adoption still requires validation of the producer export and at least one additional producer path or confirmed green workflow status.
+This repository is now beta-activation-started. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, and upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`. Org-level beta adoption still requires validation of producer exports or confirmed green workflow status.
 
 Current implemented structure:
 
@@ -219,7 +221,6 @@ annotations/
 
 Next expected additions:
 
-- validate producer export through workflow or local schema check
-- add a second producer export path
+- validate producer exports through workflow or local schema check
 - green workflow/status badge when available
 - real control evidence receipts for EO 14179
