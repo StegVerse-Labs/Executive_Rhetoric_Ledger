@@ -7,9 +7,10 @@ repo_status: "activation-ready-pending-validation"
 activation_issue: 1
 final_blocker: "green-validation-or-equivalent-reviewed-validation-result"
 current_validation_target: "2c21eb3e79c417a1d0da4f664c8bad3e7a3f5de8"
-current_pending_receipt: "validation_results/workflow-run-check-2c21eb3e.pending.json"
+current_pending_receipt: "validation_results/workflow-run-check-e8df043a.pending.json"
 latest_visibility_check_commit: "47d66c58e375903d3127111a7127f376ae359db1"
 latest_visible_workflow_runs: 0
+activation_runbook: "release/activation-runbook.md"
 ```
 
 ## Completed
@@ -21,6 +22,7 @@ latest_visible_workflow_runs: 0
 - Two producer export paths exist.
 - EO 14179 intake review exists.
 - Final activation gate is tracked in Issue #1.
+- Activation completion runbook exists.
 
 ## Remaining Before Activated
 
@@ -42,3 +44,7 @@ A workflow-run visibility check for commit `47d66c58e375903d3127111a7127f376ae35
 This does not prove validation failure.
 
 It keeps activation pending until a green workflow run or equivalent reviewed validation result is available.
+
+## Activation Runbook
+
+The final activation steps are defined in `release/activation-runbook.md`.
