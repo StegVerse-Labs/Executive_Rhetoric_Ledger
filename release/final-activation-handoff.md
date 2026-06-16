@@ -8,6 +8,8 @@ activation_issue: 1
 final_blocker: "green-validation-or-equivalent-reviewed-validation-result"
 current_validation_target: "2c21eb3e79c417a1d0da4f664c8bad3e7a3f5de8"
 current_pending_receipt: "validation_results/workflow-run-check-2c21eb3e.pending.json"
+latest_visibility_check_commit: "47d66c58e375903d3127111a7127f376ae359db1"
+latest_visible_workflow_runs: 0
 ```
 
 ## Completed
@@ -32,3 +34,11 @@ current_pending_receipt: "validation_results/workflow-run-check-2c21eb3e.pending
 Do not mark activated from structure alone.
 
 Activation requires a concrete validation result and reviewed receipt promotion.
+
+## Latest Visibility Check
+
+A workflow-run visibility check for commit `47d66c58e375903d3127111a7127f376ae359db1` returned no visible workflow runs.
+
+This does not prove validation failure.
+
+It keeps activation pending until a green workflow run or equivalent reviewed validation result is available.
