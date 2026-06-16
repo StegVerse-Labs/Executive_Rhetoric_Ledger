@@ -21,14 +21,16 @@ Ledger outputs are normalized datasets and comparisons.
 ## Status
 
 ```yaml
-repo_status: "beta-activation-started"
-readiness_confidence: "medium"
-release_boundary: "internally beta-ready with two upstream producer export paths started; org-level beta adoption still requires validation of producer exports or confirmed green workflow status"
+repo_status: "activation-ready-pending-validation"
+readiness_confidence: "high-structural-readiness"
+release_boundary: "structurally complete; activation still requires green workflow or equivalent reviewed validation result plus reviewed receipt promotion"
+activation_issue: 1
 first_upstream_producer_test: "StegVerse-Labs/Trumpality"
 first_upstream_producer_commit: "fc032e774ec05b611c114a0549895ac225e6764b"
 second_upstream_producer_test: "StegVerse-Labs/Administrations"
 second_upstream_producer_commit: "840fa595cc921d223be0a30132c27855b28aba2f"
 validation_status: "pending"
+current_pending_receipt: "validation_results/workflow-run-check-e8df043a.pending.json"
 ```
 
 ## Key Rule
@@ -68,8 +70,9 @@ The Source Posture Schema prevents the ledger from treating all sources as equal
 - [Political Influence Tree JSON Schema](schemas/political-influence-tree.schema.json)
 - [Source Posture JSON Schema](schemas/source-posture.schema.json)
 - [Producer Export JSON Schema](schemas/producer-export.schema.json)
+- [Validation Result JSON Schema](schemas/validation-result.schema.json)
 
-These schemas provide validation targets for converting Markdown ledger entries and upstream producer exports into machine-checkable data objects.
+These schemas provide validation targets for converting Markdown ledger entries, upstream producer exports, and validation-result receipts into machine-checkable data objects.
 
 ## Machine-readable samples
 
@@ -81,12 +84,13 @@ The sample mirrors the Powell Memorandum structural tree and provides a test obj
 
 - [Validate Ledger Schemas workflow](github/workflows/validate-ledger-schemas.yml)
 - [Validation Status Note](release/validation-status-note.md)
+- [Final Activation Handoff](release/final-activation-handoff.md)
 
 Note: the actual repository path starts with a leading dot. It is shown here without the leading dot as requested: `github/workflows/validate-ledger-schemas.yml`.
 
-The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema, validates embedded source receipts against the Source Posture JSON Schema, and validates producer export examples against the Producer Export JSON Schema.
+The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema, validates embedded source receipts against the Source Posture JSON Schema, validates producer export examples against the Producer Export JSON Schema, validates validation-result receipts against the Validation Result JSON Schema, and runs the combined activation validation runner.
 
-The validation status note records that upstream producer exports exist while green workflow confirmation remains pending.
+The validation status note and final activation handoff record that upstream producer exports and activation receipts exist while green workflow or equivalent reviewed validation confirmation remains pending.
 
 ## Cross-repo ingestion
 
@@ -112,8 +116,11 @@ The first two upstream producer export tests have started from `StegVerse-Labs/T
 ## Templates
 
 - [Political Influence Tree Entry Template](templates/political-influence-tree-entry-template.md)
+- [Validation Result Receipt Template](templates/validation-result-receipt-template.json)
 
-Use this template to create structured topic entries with separate sections for surface claim, factual basis, influence lineage, action conversion, control comparison, institutional response, outcome evidence, ledger classification, and receipts.
+Use the Political Influence Tree template to create structured topic entries with separate sections for surface claim, factual basis, influence lineage, action conversion, control comparison, institutional response, outcome evidence, ledger classification, and receipts.
+
+Use the validation-result receipt template to replace pending validation receipts only after a concrete green, failed, blocked, or superseded validation result exists.
 
 ## Examples
 
@@ -146,8 +153,9 @@ The governance policy defines reviewer roles, review states, dispute triggers, d
 ## Release readiness
 
 - [Release Readiness Checklist](release/release-readiness-checklist.md)
+- [Final Activation Handoff](release/final-activation-handoff.md)
 
-The release checklist marks the repository as alpha-operational and identifies the remaining items required before beta readiness.
+The release checklist and final activation handoff mark the repository as activation-ready-pending-validation and identify the remaining items required before activated status.
 
 ## Fundamental document annotations
 
@@ -157,7 +165,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now beta-activation-started. It has standards, schemas, examples, validation, ingestion notes, producer export path, release checklist, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, and upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`. Org-level beta adoption still requires validation of producer exports or confirmed green workflow status.
+This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
 
 Current implemented structure:
 
@@ -170,6 +178,7 @@ schemas/
   political-influence-tree.schema.json
   source-posture.schema.json
   producer-export.schema.json
+  validation-result.schema.json
 
 samples/
   political-influence-tree.sample.json
@@ -180,16 +189,28 @@ github/
 
 Note: the actual workflow directory starts with a leading dot in the repository path.
 
+scripts/
+  validate_producer_exports.py
+  validate_validation_results.py
+  run_activation_validation.py
+
 ingestion/
   cross-repo-ingestion-notes.md
   producer-export-workflow-integration-notes.md
+  reviewed-producer-export-intake-eo14179.md
 
 producer_exports/
   example/
     PIT-MODERN-2025-AI-EO-14179__action_record__2025-01-23__SRC-2025-EO14179-FR-001.json
 
+validation_results/
+  workflow-run-check-a99f8ece.pending.json
+  workflow-run-check-2c21eb3e.pending.json
+  workflow-run-check-e8df043a.pending.json
+
 templates/
   political-influence-tree-entry-template.md
+  validation-result-receipt-template.json
 
 examples/
   control-comparison-example.md
@@ -213,6 +234,7 @@ release/
   release-readiness-checklist.md
   producer-export-test-status.md
   validation-status-note.md
+  final-activation-handoff.md
 
 annotations/
   fundamental-documents/
@@ -221,6 +243,7 @@ annotations/
 
 Next expected additions:
 
-- validate producer exports through workflow or local schema check
-- green workflow/status badge when available
-- real control evidence receipts for EO 14179
+- confirm green workflow or equivalent reviewed validation result
+- supersede the latest pending validation-result receipt
+- promote at least one validated producer export into a reviewed ledger receipt
+- add real control evidence receipts for EO 14179
