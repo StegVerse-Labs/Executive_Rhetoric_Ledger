@@ -10,12 +10,13 @@ This runbook defines the final steps required to move `Executive_Rhetoric_Ledger
 repo_status: "activation-ready-pending-validation"
 activation_issue: 1
 current_pending_receipt: "validation_results/workflow-run-check-e8df043a.pending.json"
+activation_state_manifest: "release/activation-state.json"
 activation_state: "blocked-until-validation"
 ```
 
 ## Step 1: Run Validation
 
-Preferred validation path:
+Preferred local validation path:
 
 ```bash
 python scripts/run_activation_validation.py
@@ -26,6 +27,13 @@ This runner calls:
 ```text
 scripts/validate_producer_exports.py
 scripts/validate_validation_results.py
+scripts/validate_activation_state.py
+```
+
+The GitHub workflow also runs these checks, including an explicit activation-state manifest validation step:
+
+```text
+.github/workflows/validate-ledger-schemas.yml
 ```
 
 ## Step 2: Record Concrete Result
@@ -58,6 +66,7 @@ action-record evidence != factual policy justification
 After the validation result and reviewed receipt promotion exist:
 
 - update the final activation handoff;
+- update `release/activation-state.json`;
 - update README status from `activation-ready-pending-validation` to `activated`;
 - close Issue #1 as completed.
 
