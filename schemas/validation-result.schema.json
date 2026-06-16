@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "validation-result.schema.json",
+  "title": "Executive Rhetoric Ledger Validation Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "validation_id",
+    "validation_status",
+    "checked_commit",
+    "checked_paths",
+    "validator",
+    "result_summary",
+    "activation_effect"
+  ],
+  "properties": {
+    "validation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "passed",
+        "failed",
+        "blocked",
+        "superseded"
+      ]
+    },
+    "checked_commit": {
+      "type": "string",
+      "minLength": 7
+    },
+    "checked_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "validator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "path_or_name"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "github-actions",
+            "local-script",
+            "manual-review",
+            "external-ci"
+          ]
+        },
+        "path_or_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "run_url": {
+          "type": "string"
+        }
+      }
+    },
+    "result_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activation_effect": {
+      "type": "string",
+      "enum": [
+        "no-activation-change",
+        "activation-blocked",
+        "activation-ready",
+        "activation-complete"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
