@@ -87,3 +87,6 @@ jobs:
 
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
+
+      - name: Run combined activation validation
+        run: python scripts/run_activation_validation.py
