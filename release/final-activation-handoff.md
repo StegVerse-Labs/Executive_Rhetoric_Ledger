@@ -11,6 +11,7 @@ current_pending_receipt: "validation_results/workflow-run-check-e8df043a.pending
 latest_visibility_check_commit: "47d66c58e375903d3127111a7127f376ae359db1"
 latest_visible_workflow_runs: 0
 activation_runbook: "release/activation-runbook.md"
+activation_state_manifest: "release/activation-state.json"
 ```
 
 ## Completed
@@ -23,6 +24,7 @@ activation_runbook: "release/activation-runbook.md"
 - EO 14179 intake review exists.
 - Final activation gate is tracked in Issue #1.
 - Activation completion runbook exists.
+- Machine-readable activation state manifest exists.
 
 ## Remaining Before Activated
 
@@ -48,3 +50,7 @@ It keeps activation pending until a green workflow run or equivalent reviewed va
 ## Activation Runbook
 
 The final activation steps are defined in `release/activation-runbook.md`.
+
+## Activation State Manifest
+
+The machine-readable activation state is defined in `release/activation-state.json`.
