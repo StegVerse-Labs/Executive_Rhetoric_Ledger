@@ -1,0 +1,19 @@
+{
+  "validation_id": "VAL-ERL-YYYY-MM-DD-SHORT-COMMIT-STATUS",
+  "validation_status": "pending",
+  "checked_commit": "SHORT-OR-FULL-COMMIT-SHA",
+  "checked_paths": [
+    ".github/workflows/validate-ledger-schemas.yml",
+    "scripts/validate_producer_exports.py",
+    "producer_exports/example/EXAMPLE.json"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "OPTIONAL-RUN-ID",
+    "run_url": "OPTIONAL-RUN-URL"
+  },
+  "result_summary": "Describe the validation result without expanding it beyond the evidence available.",
+  "activation_effect": "activation-blocked",
+  "notes": "Set validation_status to passed, failed, blocked, or superseded after a concrete validation result exists."
+}
