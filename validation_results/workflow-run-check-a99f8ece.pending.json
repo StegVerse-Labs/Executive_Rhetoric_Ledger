@@ -1,0 +1,17 @@
+{
+  "validation_id": "VAL-ERL-2026-06-15-A99F8ECE-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "a99f8eceaa109099a88026b879a14fb54c932cfe",
+  "checked_paths": [
+    ".github/workflows/validate-ledger-schemas.yml",
+    "scripts/validate_producer_exports.py",
+    "producer_exports/example/PIT-MODERN-2025-AI-EO-14179__action_record__2025-01-23__SRC-2025-EO14179-FR-001.json"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas"
+  },
+  "result_summary": "No workflow run was visible for the validation-script wiring commit at the time of the check. This pending receipt preserves the activation gate without marking validation passed or failed.",
+  "activation_effect": "activation-blocked",
+  "notes": "Replace or supersede this receipt after a green workflow run, failed workflow run, or equivalent schema-validation result is recorded."
+}
