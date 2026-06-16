@@ -1,0 +1,19 @@
+{
+  "validation_id": "VAL-ERL-2026-06-15-2C21EB3E-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "2c21eb3e79c417a1d0da4f664c8bad3e7a3f5de8",
+  "checked_paths": [
+    ".github/workflows/validate-ledger-schemas.yml",
+    "scripts/validate_producer_exports.py",
+    "scripts/validate_validation_results.py",
+    "scripts/run_activation_validation.py",
+    "validation_results/workflow-run-check-a99f8ece.pending.json"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas"
+  },
+  "result_summary": "No combined CI status was attached to the commit that added the combined activation validation workflow step at the time of this check. This receipt keeps activation pending without marking validation passed or failed.",
+  "activation_effect": "activation-blocked",
+  "notes": "Supersedes the earlier pending target as the current validation target for the combined activation runner. Replace with a passed, failed, blocked, or superseded receipt after a concrete workflow or equivalent validation result exists."
+}
