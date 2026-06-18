@@ -141,8 +141,9 @@ Calibration notes define how to score claim specificity, factual basis, action c
 - [The Powell Memorandum Influence Tree](trees/fundamental-documents/1971-powell-memo-influence-tree.md)
 - [Executive Order 14179 and Federal AI Leadership Framing](trees/modern-topics/2025-ai-leadership-executive-order-14179.md)
 - [EO 14179 Control Comparison Expansion](trees/modern-topics/2025-ai-leadership-executive-order-14179-control-comparison.md)
+- [AI Human Dignity Warning Language and Consequence Governance](trees/modern-topics/2026-ai-human-dignity-warning-language.md)
 
-The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims. The EO 14179 control expansion defines what evidence is required before those factual justifications can be treated as admissible comparative support.
+The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims. The EO 14179 control expansion defines what evidence is required before those factual justifications can be treated as admissible comparative support. The AI human dignity warning language entry records a May 25, 2026 public-warning convergence as a draft rhetorical marker only; it does not claim endorsement, affiliation, causation, or authority inheritance.
 
 ## Governance policy
 
@@ -165,7 +166,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
+This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
 
 Current implemented structure:
 
@@ -226,6 +227,7 @@ trees/
   modern-topics/
     2025-ai-leadership-executive-order-14179.md
     2025-ai-leadership-executive-order-14179-control-comparison.md
+    2026-ai-human-dignity-warning-language.md
 
 governance/
   reviewer-dispute-deprecation-policy.md
@@ -246,4 +248,5 @@ Next expected additions:
 - confirm green workflow or equivalent reviewed validation result
 - supersede the latest pending validation-result receipt
 - promote at least one validated producer export into a reviewed ledger receipt
+- add official primary-source receipt review for the AI human dignity warning-language entry
 - add real control evidence receipts for EO 14179
