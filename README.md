@@ -145,6 +145,12 @@ Calibration notes define how to score claim specificity, factual basis, action c
 
 The Powell tree is a structural example. The EO 14179 tree is the first modern-topic example and separates official action record from still-untested factual justification and outcome claims. The EO 14179 control expansion defines what evidence is required before those factual justifications can be treated as admissible comparative support. The AI human dignity warning language entry records a May 25, 2026 public-warning convergence as a draft rhetorical marker only; it does not claim endorsement, affiliation, causation, or authority inheritance.
 
+## Research candidates
+
+- [AI Integration Reservation Split](research-candidates/2026-ai-integration-reservation-split.md)
+
+The AI integration reservation split candidate converts the AI human dignity warning-language entry into a measurable research question. It separates factual belief, religion, moral conviction, institutional trust, risk tolerance, consequence sensitivity, authority delegation tolerance, reversibility requirements, receipt requirements, identity or dignity threat, and direct AI exposure.
+
 ## Governance policy
 
 - [Reviewer, Dispute, and Deprecation Policy](governance/reviewer-dispute-deprecation-policy.md)
@@ -166,7 +172,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
+This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, AI integration reservation-split research-candidate scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
 
 Current implemented structure:
 
@@ -221,6 +227,9 @@ examples/
 calibration/
   rhetoric-to-action-scoring-calibration.md
 
+research-candidates/
+  2026-ai-integration-reservation-split.md
+
 trees/
   fundamental-documents/
     1971-powell-memo-influence-tree.md
@@ -249,4 +258,7 @@ Next expected additions:
 - supersede the latest pending validation-result receipt
 - promote at least one validated producer export into a reviewed ledger receipt
 - add official primary-source receipt review for the AI human dignity warning-language entry
+- add survey instrument draft for the AI integration reservation-split research candidate
+- add structured interview guide for the AI integration reservation-split research candidate
+- add machine-readable candidate manifest for the AI integration reservation-split research candidate
 - add real control evidence receipts for EO 14179
