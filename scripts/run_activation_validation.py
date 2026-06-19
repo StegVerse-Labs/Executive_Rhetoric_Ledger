@@ -7,6 +7,7 @@ Checks:
 1. producer export examples
 2. validation-result receipts
 3. activation-state manifest
+4. governance-pattern entries
 """
 
 from __future__ import annotations
@@ -20,6 +21,7 @@ CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_producer_exports.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_validation_results.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_activation_state.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_governance_patterns.py")],
 ]
 
 
