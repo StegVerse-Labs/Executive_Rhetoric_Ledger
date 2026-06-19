@@ -91,5 +91,8 @@ jobs:
       - name: Validate activation state manifest
         run: python scripts/validate_activation_state.py
 
+      - name: Validate governance patterns
+        run: python scripts/validate_governance_patterns.py
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
