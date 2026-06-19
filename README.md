@@ -88,7 +88,7 @@ The sample mirrors the Powell Memorandum structural tree and provides a test obj
 
 Note: the actual repository path starts with a leading dot. It is shown here without the leading dot as requested: `github/workflows/validate-ledger-schemas.yml`.
 
-The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema, validates embedded source receipts against the Source Posture JSON Schema, validates producer export examples against the Producer Export JSON Schema, validates validation-result receipts against the Validation Result JSON Schema, and runs the combined activation validation runner.
+The validation workflow checks the sample Political Influence Tree against the Political Influence Tree JSON Schema, validates embedded source receipts against the Source Posture JSON Schema, validates producer export examples against the Producer Export JSON Schema, validates validation-result receipts against the Validation Result JSON Schema, validates governance-pattern entries, validates the activation state manifest, and runs the combined activation validation runner.
 
 The validation status note and final activation handoff record that upstream producer exports and activation receipts exist while green workflow or equivalent reviewed validation confirmation remains pending.
 
@@ -157,6 +157,14 @@ The AI integration reservation split candidate converts the AI human dignity war
 
 The continuity capability pattern records the distinction that a system may become self-continuing before it becomes self-activating. It is a governance-pattern entry, not a political influence tree and not activation evidence.
 
+Governance-pattern entries are validated by:
+
+```text
+python scripts/validate_governance_patterns.py
+```
+
+The checker verifies that governance-pattern records are README-visible, preserve non-activation boundaries, include receipts, and avoid activation-overclaim terms.
+
 ## Governance policy
 
 - [Reviewer, Dispute, and Deprecation Policy](governance/reviewer-dispute-deprecation-policy.md)
@@ -178,7 +186,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, AI integration reservation-split research-candidate scaffolding, continuity capability governance-pattern scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
+This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, AI integration reservation-split research-candidate scaffolding, continuity capability governance-pattern scaffolding and validation, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
 
 Current implemented structure:
 
@@ -205,6 +213,7 @@ Note: the actual workflow directory starts with a leading dot in the repository 
 scripts/
   validate_producer_exports.py
   validate_validation_results.py
+  validate_governance_patterns.py
   run_activation_validation.py
 
 ingestion/
