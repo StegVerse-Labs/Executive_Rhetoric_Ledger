@@ -151,6 +151,12 @@ The Powell tree is a structural example. The EO 14179 tree is the first modern-t
 
 The AI integration reservation split candidate converts the AI human dignity warning-language entry into a measurable research question. It separates factual belief, religion, moral conviction, institutional trust, risk tolerance, consequence sensitivity, authority delegation tolerance, reversibility requirements, receipt requirements, identity or dignity threat, and direct AI exposure.
 
+## Governance patterns
+
+- [Continuity Capability vs Activation Authority](governance-patterns/2026-continuity-capability-vs-activation-authority.md)
+
+The continuity capability pattern records the distinction that a system may become self-continuing before it becomes self-activating. It is a governance-pattern entry, not a political influence tree and not activation evidence.
+
 ## Governance policy
 
 - [Reviewer, Dispute, and Deprecation Policy](governance/reviewer-dispute-deprecation-policy.md)
@@ -172,7 +178,7 @@ The Powell Memorandum is included as a historical anchor for upstream institutio
 
 ## Current repo posture
 
-This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, AI integration reservation-split research-candidate scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
+This repository is now activation-ready-pending-validation. It has standards, schemas, examples, validation scripts, validation-result receipts, ingestion notes, producer export paths, release checklists, review/dispute/deprecation policy, modern-topic control-comparison scaffolding, draft AI human dignity warning-language rhetorical-marker scaffolding, AI integration reservation-split research-candidate scaffolding, continuity capability governance-pattern scaffolding, upstream producer export tests from `StegVerse-Labs/Trumpality` and `StegVerse-Labs/Administrations`, and Issue #1 tracking the final activation gate. Activated status still requires a green workflow or equivalent reviewed validation result, supersession of the current pending validation receipt, and promotion of at least one validated producer export into a reviewed ledger receipt.
 
 Current implemented structure:
 
@@ -219,46 +225,6 @@ templates/
   political-influence-tree-entry-template.md
   validation-result-receipt-template.json
 
-examples/
-  control-comparison-example.md
-  rhetoric-to-action-scoring-example.md
-  source-receipt-examples.md
-
-calibration/
-  rhetoric-to-action-scoring-calibration.md
-
-research-candidates/
-  2026-ai-integration-reservation-split.md
-
-trees/
-  fundamental-documents/
-    1971-powell-memo-influence-tree.md
-  modern-topics/
-    2025-ai-leadership-executive-order-14179.md
-    2025-ai-leadership-executive-order-14179-control-comparison.md
-    2026-ai-human-dignity-warning-language.md
-
-governance/
-  reviewer-dispute-deprecation-policy.md
-
-release/
-  release-readiness-checklist.md
-  producer-export-test-status.md
-  validation-status-note.md
-  final-activation-handoff.md
-
-annotations/
-  fundamental-documents/
-    1971-powell-memo.md
+governance-patterns/
+  2026-continuity-capability-vs-activation-authority.md
 ```
-
-Next expected additions:
-
-- confirm green workflow or equivalent reviewed validation result
-- supersede the latest pending validation-result receipt
-- promote at least one validated producer export into a reviewed ledger receipt
-- add official primary-source receipt review for the AI human dignity warning-language entry
-- add survey instrument draft for the AI integration reservation-split research candidate
-- add structured interview guide for the AI integration reservation-split research candidate
-- add machine-readable candidate manifest for the AI integration reservation-split research candidate
-- add real control evidence receipts for EO 14179
