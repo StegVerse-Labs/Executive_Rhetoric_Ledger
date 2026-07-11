@@ -1,0 +1,86 @@
+{
+  "event_id": "DH-FORCE-006",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "crowd-movement",
+  "approximate_time": "approximately 00:12-00:24 in the supplied screen recording",
+  "subject_posture": {
+    "identity_status": "unknown",
+    "role_status": "protester",
+    "visible_conduct": [
+      "Several people stand in close proximity to federal personnel near a fenced roadway or facility access route.",
+      "Some protesters appear to link arms or remain closely grouped.",
+      "The supplied recording shows compressed contact and limited separation between personnel and protesters."
+    ]
+  },
+  "government_action": {
+    "actor_identity_status": "unknown",
+    "agency_status": "visible-marking-only",
+    "action_description": "Federal personnel form or move within a close-contact line near protesters and the access route while crowd-control tools are visible in adjacent footage.",
+    "force_tools": [
+      "physical presence and line movement",
+      "baton visible in adjacent event packet",
+      "apparent chemical-agent canister visible in adjacent event packet"
+    ]
+  },
+  "claimed_justification": [
+    "Maintaining facility or vehicle access.",
+    "Responding to obstruction or crowd movement.",
+    "Protecting officers, vehicles, or facility operations."
+  ],
+  "direct_observations": [
+    "A vehicle moves through or away from the fenced roadway area during the sequence.",
+    "Federal personnel and protesters occupy a compressed space with limited visible separation.",
+    "A raised hand partially obstructs the camera during part of the sequence.",
+    "Some protesters appear linked or closely grouped.",
+    "The social-media edit does not provide a continuous, unbroken chronology of the entire crowd interaction."
+  ],
+  "prohibited_inferences": [
+    "That every person in the visible crowd was obstructing a lawful order.",
+    "That linking arms alone established an immediate physical threat.",
+    "That a dispersal order was issued, audible, lawful, specific, and feasible to obey.",
+    "That officers were advancing, retreating, or holding position throughout the complete event.",
+    "That misconduct attributed to any participant applied to all visible protesters.",
+    "That vehicle movement independently established the lawfulness of any detention, transfer, removal, arrest, or use of force."
+  ],
+  "missing_evidence": [
+    "Full unedited video and audio before, during, and after the crowd movement.",
+    "Exact location geometry, protest-zone boundaries, vehicle path, and available exit routes.",
+    "Any warning, dispersal order, command authority, audibility evidence, and compliance interval.",
+    "Individualized conduct attributed to each person moved, arrested, restrained, or exposed to force.",
+    "Operational plan and command records identifying the objective and authorized crowd-control posture.",
+    "Body-camera, perimeter-camera, dispatch, incident, arrest, force, injury, and medical records.",
+    "Exact DHS, ICE, or ERO crowd-control and use-of-force policy in effect."
+  ],
+  "source_receipt_ids": [
+    "SRC-2026-DH-VIDEO-001",
+    "SRC-2026-DH-AP-001",
+    "SRC-2026-DH-REUTERS-001"
+  ],
+  "intake_ids": [
+    "DH-INTAKE-001",
+    "DH-INTAKE-002",
+    "DH-INTAKE-003",
+    "DH-INTAKE-005",
+    "DH-INTAKE-006",
+    "DH-INTAKE-007",
+    "DH-INTAKE-014",
+    "DH-INTAKE-015",
+    "DH-INTAKE-017"
+  ],
+  "authority_transition_ids": [
+    "T7",
+    "T8",
+    "T9",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "classification": {
+    "necessity": "not-established",
+    "proportionality": "not-established",
+    "lawfulness": "not-established",
+    "confidence": "medium",
+    "notes": "The recording supports that close-contact crowd movement and access-route management occurred. It does not establish individualized obstruction, an audible and feasible dispersal process, an immediate threat, or the necessity and proportionality of any force used against a particular person."
+  }
+}
