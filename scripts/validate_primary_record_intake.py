@@ -12,6 +12,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = ROOT / "schemas" / "primary-record-intake.schema.json"
 INTAKE_DIR = ROOT / "assessments" / "intake"
+ASSESSMENT_DIR = ROOT / "assessments" / "machine"
 
 
 def load_json(path: Path) -> object:
@@ -19,6 +20,38 @@ def load_json(path: Path) -> object:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError(f"Unable to load {path.relative_to(ROOT)}: {exc}") from exc
+
+
+def assessment_index() -> tuple[set[str], dict[str, set[str]], list[str]]:
+    topic_ids: set[str] = set()
+    receipt_ids_by_topic: dict[str, set[str]] = {}
+    failures: list[str] = []
+
+    for path in sorted(ASSESSMENT_DIR.glob("*.json")):
+        try:
+            document = load_json(path)
+        except ValueError as exc:
+            failures.append(str(exc))
+            continue
+        if not isinstance(document, dict):
+            continue
+
+        topic_id = str(document.get("topic_id", "")).strip()
+        if not topic_id:
+            failures.append(f"{path.relative_to(ROOT)}: missing topic_id")
+            continue
+
+        topic_ids.add(topic_id)
+        receipts = document.get("receipts", {})
+        sources = receipts.get("sources", []) if isinstance(receipts, dict) else []
+        source_ids = {
+            str(source.get("source_id", "")).strip()
+            for source in sources
+            if isinstance(source, dict) and str(source.get("source_id", "")).strip()
+        }
+        receipt_ids_by_topic[topic_id] = source_ids
+
+    return topic_ids, receipt_ids_by_topic, failures
 
 
 def main() -> int:
@@ -29,7 +62,8 @@ def main() -> int:
         print("FAIL: no machine-readable intake queues found", file=sys.stderr)
         return 1
 
-    failures: list[str] = []
+    topic_ids, receipt_ids_by_topic, failures = assessment_index()
+
     for path in files:
         try:
             document = load_json(path)
@@ -44,6 +78,13 @@ def main() -> int:
 
         if not isinstance(document, dict):
             continue
+
+        topic_id = str(document.get("topic_id", "")).strip()
+        if topic_id not in topic_ids:
+            failures.append(
+                f"{path.relative_to(ROOT)}:topic_id: no machine-readable assessment exists for {topic_id}"
+            )
+        known_receipts = receipt_ids_by_topic.get(topic_id, set())
 
         items = document.get("items", [])
         ids = [item.get("intake_id") for item in items if isinstance(item, dict)]
@@ -72,12 +113,18 @@ def main() -> int:
         for item in items:
             if not isinstance(item, dict):
                 continue
+            intake_id = item.get("intake_id")
             state = item.get("state")
             receipts = item.get("source_receipt_ids", [])
             if state in {"verified-primary", "verified-secondary"} and not receipts:
                 failures.append(
-                    f"{path.relative_to(ROOT)}:{item.get('intake_id')}: verified state requires at least one source_receipt_id"
+                    f"{path.relative_to(ROOT)}:{intake_id}: verified state requires at least one source_receipt_id"
                 )
+            for receipt_id in receipts:
+                if receipt_id not in known_receipts:
+                    failures.append(
+                        f"{path.relative_to(ROOT)}:{intake_id}: source_receipt_id {receipt_id} is not present in assessment {topic_id}"
+                    )
 
         print(f"CHECKED {path.relative_to(ROOT)}")
 
@@ -87,7 +134,7 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print(f"Validated {len(files)} primary-record intake queue(s).")
+    print(f"Validated {len(files)} primary-record intake queue(s) and assessment receipt links.")
     return 0
 
 
