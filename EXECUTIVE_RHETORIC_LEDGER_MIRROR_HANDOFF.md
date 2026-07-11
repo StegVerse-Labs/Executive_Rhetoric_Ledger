@@ -4,7 +4,7 @@
 
 The validated repository foundation is green. The active goal is building an automated, evidence-backed historical compendium of politically significant rhetoric, action, institutional response, and measurable consequence.
 
-Fourteen related repositories are declared. Adapter construction remains blocked until each repository's native mechanisms and external platform interactions are audited.
+All fourteen declared related repositories now have at least a partial native-mechanism and external-platform audit. Generic adapter construction remains prohibited. The next phase is contract discovery, capability verification, and selection of the smallest compatible boundaries for mature producers and consumers.
 
 ## Governing integration rule
 
@@ -21,101 +21,102 @@ Do not install duplicate scanners, competing categorizers, parallel archives, or
 - Relationship map: `integration/related-repositories.md`
 - Native-mechanism audit: `integration/native-mechanism-audit.md`
 - Per-repository audit index: `integration/audits/README.md`
-- StegSocials audit: `integration/audits/StegSocials.md`
-- VAwatchdog audit: `integration/audits/VAwatchdog.md`
-- StegScholar audit: `integration/audits/StegScholar.md`
-- Patents audit: `integration/audits/Patents.md`
+- Repository-specific audits under `integration/audits/`
 - Network schema: `schemas/related-repository-network.schema.json`
 - Network validator: `scripts/validate_related_repository_network.py`
-
-## Expanded audit dimensions
-
-Each related repository must be reviewed for:
-
-- current README and purpose;
-- `*_MIRROR_HANDOFF.md` or equivalent task source of truth;
-- workflows and schedules;
-- external platforms and institutional systems that act as data sources or publication surfaces;
-- source lists, queries, APIs, feeds, browser capture, email, webhooks, and manual intake paths;
-- ingest contracts and entrypoints;
-- categorization, clustering, and relationship mapping;
-- archive, fingerprint, deduplication, and receipt mechanisms;
-- handling of edits, deletions, moderation, corrections, changed account state, amended publications, and amended records;
-- privacy, review, and admissibility boundaries;
-- exports and existing cross-repository relationships;
-- current failures and workflow limits.
 
 ## Audit progress
 
 ```yaml
 related_repositories_declared: 14
-full_audits_complete: 0
-partial_mechanism_and_platform_audits: 9
-pending_full_audits: 5
+partial_mechanism_and_platform_audits: 14
+pending_initial_audits: 0
+full_contract_audits_complete: 0
 active_repository_adapters: 0
-adapter_construction: "blocked-pending-native-and-platform-capability-review"
+adapter_construction: "blocked-pending-contract-and-output-verification"
 replacement_of_existing_automation: "prohibited-without-governed-deprecation"
 ```
 
-## Newly confirmed StegScholar posture
+## Capability map
 
-StegScholar is a scholarly-context and control producer with a daily StegDB canonical-overlay sync.
+### Scheduled or shared-engine producer candidates
+
+- `Trumpality` — weekly ingest, co-occurrence scan, append-only evidence, FREE-DOM graph, native ingest contract.
+- `Administrations` — institutional term records using shared Trumpality-style ingest and archival structures; exact workflow still unresolved.
+- `Giuffre-ality`, `Maxwellality`, `Epsteinality`, `StegBiography` — biography and relationship contexts dependent on shared StegVerse-Core workflows or contracts.
+- `StegScholar` — daily StegDB scholarly canonical-overlay synchronization.
+- `Patents` — daily StegDB patent canonical-overlay synchronization plus declared Patent Watcher and portfolio manifest.
+
+### Platform-interacting evidence and publication systems
+
+- `StegSocials` — governed social intake, response, publication queue, credential boundary, and receipts; broad scanning remains unconfirmed.
+- `VAwatchdog` — privacy-restricted accountability intake interacting with VA, VBA, DOJ, OIG, FOIA, courts, benefits, identity, payment, call-center, and IT systems.
+- `FREE-DOM_OverSight` — private protected-testimony and oversight clearinghouse with anonymized promotion boundary.
+
+### Historical, educational, and public-figure contexts
+
+- `Randolph_Geneaology_Hub` — canonical identity, source registry, lineage evidence grading, cemetery and migration context; living-person and DNA privacy review required.
+- `StegLearn` — educational publication consumer and parent-reviewed private learning-receipt system.
+- `Talarico` — public-figure research intent only; currently blocked-incomplete with no confirmed scanner, source contract, or output structure.
+
+## Newly completed initial audits
+
+### Talarico
 
 ```yaml
-workflow: ".github/workflows/sync-overlay-from-stegdb.yml"
-schedule: "17 3 * * *"
-source: "stegverse-labs/stegdb/canonical/overlays/StegScholarOverlay/canon"
-destination: "canon/"
-classification: "scheduled-canonical-sync-scholarly-context-producer-partial"
+classification: "public-figure-manual-source-only-blocked-incomplete"
+current_native_state: "minimal README only"
+scanner_confirmed: false
+adapter_ready: false
 ```
 
-Its external source environments include scholarly submission systems, preprint servers, DOI and citation registries, journal and conference platforms, institutional repositories, publisher correction and retraction systems, and academic search engines.
-
-Peer review, citation counts, venue prestige, and search rank are source-posture signals, not proof. Preprint, accepted manuscript, version of record, correction, and retraction states must remain distinct.
-
-No duplicate StegDB sync or parallel `canon/` writer may be added.
-
-## Newly confirmed Patents posture
-
-Patents is a patent-monitoring and portfolio producer with a daily StegDB canonical-overlay sync, a native patent manifest, declared repository watcher, templates, allowlists, exclusions, and deadline policy.
+### FREE-DOM_OverSight
 
 ```yaml
-workflow: ".github/workflows/sync-overlay-from-stegdb.yml"
-schedule: "23 3 * * *"
-source: "stegverse-labs/stegdb/canonical/overlays/PatentsOverlay/canon"
-destination: "canon/"
-manifest: "patent_manifest.json"
-patent_watcher: "declared; current workflow implementation unaudited"
-classification: "scheduled-canonical-sync-patent-monitoring-and-portfolio-producer-partial"
+classification: "privacy-restricted-oversight-clearinghouse-partial"
+public_promotion_boundary: "anonymized-reviewed-source-postured-artifact-or-pointer"
+direct_publication: prohibited
+adapter_ready: false
 ```
 
-Its external source environments include GitHub history, USPTO, WIPO, patent search systems, assignment records, prosecution histories, prior-art sources, standards repositories, papers, products, and legal filing systems.
+### Randolph_Geneaology_Hub
 
-A repository change does not establish inventorship, novelty, ownership, reduction to practice, deployment, effectiveness, patentability, or political influence. Automated filing and public export of confidential invention material remain prohibited.
+```yaml
+classification: "historical-identity-and-genealogy-context-producer-partial"
+canonical_identity_and_source_grading: confirmed
+living_person_and_DNA_privacy_review: required
+adapter_ready: false
+```
 
-No duplicate repository watcher, deadline engine, portfolio manifest, or StegDB sync may be added.
+### StegLearn
 
-## Previously corrected platform postures
+```yaml
+classification: "educational-publication-consumer-and-private-learning-receipt-system-partial"
+ledger_to_steglearn: "reviewed-age-appropriate-source-linked-content"
+steglearn_to_ledger: "correction-and-educational-usage-feedback-only"
+child_and_portfolio_data_export: prohibited
+adapter_ready: false
+```
 
-- StegSocials is both a governed publication system and a platform-source intake environment. Broad autonomous scanning remains unconfirmed.
-- VAwatchdog is a platform-interacting, privacy-restricted accountability intake. Automated institutional-record retrieval remains unconfirmed.
-- At least four biography or political-record repositories depend on shared reusable workflows in `StegVerse/StegVerse-Core`; that shared implementation or durable output contract remains unaudited.
+### StegBiography
 
-## Pending audits
-
-- `StegVerse-Labs/Talarico`
-- `StegVerse-Labs/FREE-DOM_OverSight`
-- `StegVerse-Labs/Randolph_Geneaology_Hub`
-- `StegVerse-Labs/StegLearn`
-- `StegVerse-Labs/StegBiography`
+```yaml
+classification: "shared-engine-dependent-biographical-context-producer-partial"
+identity_and_privacy_review: required
+shared_engine_contract: unresolved
+adapter_ready: false
+```
 
 ## Current next integration goal
 
 ```text
-complete native-mechanism and platform-source audits
-  -> identify shared engines and output contracts
-  -> classify each repository capability
-  -> design minimal compatible adapters
+verify native contracts and output paths
+  -> audit shared StegVerse-Core biography workflows
+  -> resolve Trumpality and Administrations producer outputs
+  -> resolve StegSocials platform capture and callback contracts
+  -> resolve privacy-preserving oversight exports
+  -> define machine-readable capability registry
+  -> select first low-risk producer and publication-consumer integration
   -> discovery-cycle manifest
   -> recurring source-search federation
   -> archive and receipt exchange
@@ -128,20 +129,21 @@ complete native-mechanism and platform-source audits
 
 Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
-- Complete the five remaining repository and platform audits.
-- Audit the shared StegVerse-Core biography ingest and co-occurrence workflows or obtain their output contracts.
-- Complete Trumpality archive, update-ingest, monitor, platform-source, and export-path review.
-- Locate and review the Administrations workflow, platform sources, and producer-export paths.
-- Determine StegSocials platform capture, archive, deduplication, account-authenticity, and scheduled discovery mechanisms.
-- Determine VAwatchdog institutional-platform query, retrieval, FOIA, archive, redaction, and update mechanisms.
-- Determine StegScholar DOI, submission, correction, retraction, bibliography, and downstream `canon/` contracts.
-- Locate and audit the Patents Patent Watcher implementation, dry-run boundary, deadline outputs, filing-platform integrations, confidentiality controls, and downstream contracts.
-- Build adapters only after native and external-platform boundaries are documented.
+- Build a machine-readable capability and contract-audit registry for all fourteen repositories.
+- Audit the shared `StegVerse/StegVerse-Core` biography ingest and co-occurrence workflows or obtain their durable output contracts.
+- Complete Trumpality archive, monitor, update-ingest, platform-source, and producer-export review.
+- Locate Administrations workflows and producer outputs.
+- Determine StegSocials platform capture, archive, deduplication, account-authenticity, scheduled discovery, and callback contracts.
+- Determine VAwatchdog and FREE-DOM_OverSight institutional-platform retrieval, redaction, promotion, archive, and update contracts.
+- Determine StegScholar and Patents downstream canonical-output consumers and correction propagation.
+- Define privacy-safe identity boundaries for genealogy and biography records.
+- Define correction propagation into StegLearn without exporting learner data.
+- Do not build repository adapters until required contracts and consumers are verified.
 
 ## Release posture
 
-The ledger foundation and relationship network are validated. The automated compendium goal remains incomplete. Existing repository automation and external-platform relationships must be federated, not duplicated.
+The ledger foundation and relationship network are validated. Initial audits are complete for all fourteen repositories, but the automated compendium remains incomplete. Existing automation and external-platform relationships must be federated, not duplicated.
 
 ## Archive readiness
 
-This handoff contains the current validated foundation, relationship network, nine partial audits, platform-source classifications, scheduled canonical syncs, shared-engine dependencies, integration restrictions, and remaining audit work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the validated foundation, fourteen initial repository/platform audits, capability map, scheduled and shared-engine dependencies, privacy boundaries, integration restrictions, and next contract-verification work. Earlier conversation context is not required; the complete thread is ready for archiving.
