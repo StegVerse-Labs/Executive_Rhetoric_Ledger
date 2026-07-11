@@ -1,0 +1,53 @@
+{
+  "event_id": "DH-FORCE-001",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "physical-restraint",
+  "approximate_time": "00:00-00:08 in supplied screen recording; social-media edit may loop",
+  "subject_posture": {
+    "identity_status": "unknown",
+    "role_status": "unknown",
+    "visible_conduct": [
+      "Person is on pavement beside a dark vehicle.",
+      "Arms and body appear controlled by multiple tactical personnel.",
+      "No preceding conduct is visible in the sampled segment."
+    ]
+  },
+  "government_action": {
+    "actor_identity_status": "unknown",
+    "agency_status": "visible-marking-only",
+    "action_description": "Multiple tactical personnel marked ERO physically restrain and then move the person.",
+    "force_tools": ["hands-on restraint", "multiple-officer control"]
+  },
+  "claimed_justification": [
+    "General public reporting includes official claims concerning obstruction, resistance, thrown objects, and officer safety; no individualized justification for this subject has been produced."
+  ],
+  "direct_observations": [
+    "At least three tactical personnel are positioned over or around the person.",
+    "The person is later held and moved by two or more personnel.",
+    "A bystander appears to record nearby."
+  ],
+  "prohibited_inferences": [
+    "Do not infer why the person was placed on the ground.",
+    "Do not infer active resistance before the visible segment.",
+    "Do not infer lawful arrest authority from ERO markings or officer status."
+  ],
+  "missing_evidence": [
+    "Full footage before and after restraint",
+    "Audio and commands",
+    "Subject identity and arrest record",
+    "Officer identities and force report",
+    "Medical assessment",
+    "Exact component force policy"
+  ],
+  "source_receipt_ids": ["SRC-2026-DH-VIDEO-001", "SRC-2026-DH-AP-001"],
+  "intake_ids": ["DH-INTAKE-002", "DH-INTAKE-003", "DH-INTAKE-004", "DH-INTAKE-005", "DH-INTAKE-006", "DH-INTAKE-007", "DH-INTAKE-012"],
+  "authority_transition_ids": ["T8", "T9", "T10", "T12"],
+  "classification": {
+    "necessity": "not-established",
+    "proportionality": "not-established",
+    "lawfulness": "not-established",
+    "confidence": "medium",
+    "notes": "Force is visible, but individualized authority, resistance, necessity, duration, stop point, and medical outcome are not established."
+  }
+}
