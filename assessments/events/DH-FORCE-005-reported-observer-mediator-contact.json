@@ -1,0 +1,56 @@
+{
+  "event_id": "DH-FORCE-005",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "observer-contact",
+  "approximate_time": "reported during the May 26, 2026 Delaney Hall confrontation; exact timestamp not established",
+  "subject_posture": {
+    "identity_status": "identified",
+    "role_status": "elected-official",
+    "visible_conduct": [
+      "Senator Andy Kim reportedly stated that he was attempting to mediate or de-escalate when exposed to pepper spray.",
+      "The supplied screen recording does not independently identify Senator Kim or show the complete reported exposure event."
+    ]
+  },
+  "government_action": {
+    "actor_identity_status": "unknown",
+    "agency_status": "unknown",
+    "action_description": "A federal-agent chemical-agent deployment reportedly exposed an elected official who described himself as attempting mediation or de-escalation.",
+    "force_tools": ["reported pepper spray or chemical agent"]
+  },
+  "claimed_justification": [
+    "Federal officials broadly asserted public-safety, obstruction, resistance, assault, or crowd-control rationales for force during the confrontation.",
+    "No individualized official justification for chemical exposure affecting Senator Kim has been collected."
+  ],
+  "direct_observations": [
+    "A contemporaneous secondary report records Senator Kim's statement that he was pepper-sprayed while attempting to mediate.",
+    "The current repository evidence does not contain original footage, body-camera records, dispatch records, or an official event-specific force report for this contact."
+  ],
+  "prohibited_inferences": [
+    "Do not infer that Senator Kim posed an immediate threat.",
+    "Do not infer that the chemical exposure was intentional or accidental.",
+    "Do not infer that the agent knew the subject's identity or role.",
+    "Do not infer constitutional justification from crowd-level misconduct attributed to other people.",
+    "Do not treat a secondary report as a complete reconstruction of the event."
+  ],
+  "missing_evidence": [
+    "Primary statement, recording, or declaration from Senator Kim.",
+    "Original video and audio of the reported exposure.",
+    "Identity and agency of the deploying officer or officers.",
+    "Warning, command, target, distance, duration, and environmental conditions.",
+    "Official incident and force reports.",
+    "Medical consequences and treatment records where lawfully available.",
+    "Exact component chemical-agent and crowd-control policy.",
+    "Evidence distinguishing intentional targeting, incidental exposure, and area-effect exposure."
+  ],
+  "source_receipt_ids": ["SRC-2026-DH-GUARDIAN-001"],
+  "intake_ids": ["DH-INTAKE-002", "DH-INTAKE-003", "DH-INTAKE-005", "DH-INTAKE-006", "DH-INTAKE-007", "DH-INTAKE-012", "DH-INTAKE-017", "DH-INTAKE-018"],
+  "authority_transition_ids": ["T7", "T8", "T10", "T11", "T12"],
+  "classification": {
+    "necessity": "not-established",
+    "proportionality": "not-established",
+    "lawfulness": "not-established",
+    "confidence": "low",
+    "notes": "The reported exposure is material and individually catalogued, but primary media, official records, intent, target, warning, threat, and medical evidence remain missing."
+  }
+}
