@@ -103,5 +103,8 @@ jobs:
       - name: Validate individualized force-event packets
         run: python scripts/validate_force_event_packets.py
 
+      - name: Validate related repository network
+        run: python scripts/validate_related_repository_network.py
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
