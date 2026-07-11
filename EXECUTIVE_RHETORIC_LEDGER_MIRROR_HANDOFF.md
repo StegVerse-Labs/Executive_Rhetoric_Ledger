@@ -19,6 +19,9 @@ Do not install duplicate scanners, competing categorizers, parallel archives, or
 - Relationship manifest: `integration/related-repositories.json`
 - Relationship map: `integration/related-repositories.md`
 - Native-mechanism audit: `integration/native-mechanism-audit.md`
+- Per-repository audit index: `integration/audits/README.md`
+- StegSocials audit: `integration/audits/StegSocials.md`
+- VAwatchdog audit: `integration/audits/VAwatchdog.md`
 - Network schema: `schemas/related-repository-network.schema.json`
 - Network validator: `scripts/validate_related_repository_network.py`
 
@@ -42,16 +45,16 @@ Each related repository must be reviewed for:
 ```yaml
 related_repositories_declared: 14
 full_audits_complete: 0
-partial_mechanism_audits: 5
-pending_full_audits: 9
+partial_mechanism_audits: 7
+pending_full_audits: 7
 active_repository_adapters: 0
 adapter_construction: "blocked-pending-native-capability-review"
 replacement_of_existing_automation: "prohibited-without-governed-deprecation"
 ```
 
-### Partially audited repositories
+## Partially audited repositories
 
-#### `StegVerse-Labs/Trumpality`
+### `StegVerse-Labs/Trumpality`
 
 Confirmed:
 
@@ -66,7 +69,7 @@ Confirmed:
 
 Integration implication: reuse the ingest contract, generated records, archive outputs, or co-occurrence graph. Do not install a second scheduled scanner.
 
-#### `StegVerse-Labs/Administrations`
+### `StegVerse-Labs/Administrations`
 
 Confirmed:
 
@@ -77,7 +80,7 @@ Confirmed:
 
 Open gap: README references weekly ingest, but the exact workflow path was not located in the first pass. Do not infer or add one.
 
-#### `StegVerse-Labs/Giuffre-ality`
+### `StegVerse-Labs/Giuffre-ality`
 
 Confirmed:
 
@@ -86,7 +89,7 @@ Confirmed:
 
 Open gaps: source posture, output paths, archive behavior, privacy controls, and review boundaries.
 
-#### `StegVerse-Labs/Maxwellality`
+### `StegVerse-Labs/Maxwellality`
 
 Confirmed:
 
@@ -96,7 +99,7 @@ Confirmed:
 
 Open gaps: generated outputs, source seeds, archive behavior, co-occurrence support, and privacy controls. The unusual `.ym` path is preserved as current state and must not be silently renamed during audit.
 
-#### `StegVerse-Labs/Epsteinality`
+### `StegVerse-Labs/Epsteinality`
 
 Confirmed:
 
@@ -104,6 +107,37 @@ Confirmed:
 - Monday weekly ingest through the shared `bio-weekly-ingest.yml` reusable workflow.
 
 Open gaps: generated outputs, source seeds, co-occurrence support, archive behavior, and privacy controls.
+
+### `StegVerse-Labs/StegSocials`
+
+Confirmed:
+
+- governed public claim and response flow;
+- native `intake/`, `queue/`, `release_queue/`, `responses/`, `receipts/`, `schemas/`, and validation structures;
+- secure separation of content governance from credential custody;
+- opaque credential references only;
+- publication state machine from draft through receipted, with failure, correction, and retirement states;
+- separate release objects and admission records;
+- release queue safety validator blocking secret-like material;
+- release admission validator requiring bounded position, no overclaim, declared account/platform/window, opaque credential reference, correction path, and no blind retry.
+
+Integration implication: StegSocials is a publication consumer candidate, not automatically a broad social-source scanner. Executive Rhetoric Ledger should hand off reviewed publication candidates into StegSocials native intake and queue structures. Publication receipts may return as circulation or outcome evidence. No duplicate release queue or credential path may be added.
+
+Open gaps: exact workflows and trigger schedules, any automated source-discovery mechanism, deduplication, source fingerprinting, publisher implementations, current queue state, callback contracts, and mirror handoff.
+
+### `StegVerse-Labs/VAwatchdog`
+
+Confirmed:
+
+- sensitive accountability and evidence-intake purpose;
+- explicit separation of first-person observation, verified fact, unverified claim, technical hypothesis, financial estimate, and oversight question;
+- native five-tier source posture from first-person observation through adjudicated record;
+- protection against doxxing, unsupported allegations, sealed information, and protected victim data;
+- current README status is scaffolded and not evidentiary complete.
+
+Integration implication: treat VAwatchdog as privacy-restricted, manual-source-only until native workflows, schemas, archive paths, validators, and export contracts are confirmed. The likely boundary is reviewed, minimally necessary, source-postured candidate records or durable pointers—not transfer of sensitive underlying material.
+
+Open gaps: mirror handoff, source-separation policy files, verification matrix, model schemas, templates, workflows, scheduled monitoring, archive and receipt paths, FOIA tracking, redaction implementation, and downstream consumers.
 
 ## Shared-engine dependency
 
@@ -115,9 +149,7 @@ Adapter design must therefore remain blocked until the shared workflow implement
 
 ## Pending full audits
 
-- `StegVerse-Labs/VAwatchdog`
 - `StegVerse-Labs/StegScholar`
-- `StegVerse-Labs/StegSocials`
 - `StegVerse-Labs/Patents`
 - `StegVerse-Labs/Talarico`
 - `StegVerse-Labs/FREE-DOM_OverSight`
@@ -148,7 +180,8 @@ Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Audit the shared StegVerse-Core biography ingest and co-occurrence workflows or obtain their output contracts.
 - Complete Trumpality archive, update-ingest, monitor, and export-path review.
 - Locate and review the Administrations workflow and producer-export paths.
-- Prioritize StegSocials because it may already perform scheduled social-source scanning and categorization.
+- Determine whether StegSocials has an existing recurring source-discovery mechanism before assigning it a scanner role.
+- Continue with StegScholar, Patents, Talarico, FREE-DOM_OverSight, Randolph_Geneaology_Hub, StegLearn, and StegBiography.
 - Classify each repo as one of:
   - `native-producer-ready`;
   - `publication-consumer-ready`;
@@ -164,4 +197,4 @@ The ledger foundation and relationship network are validated. The automated comp
 
 ## Archive readiness
 
-This handoff contains the current validated foundation, relationship network, partial native-mechanism audit, confirmed scheduled scans, shared-engine dependency, integration restrictions, and remaining audit work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the current validated foundation, relationship network, seven partial native-mechanism audits, confirmed scheduled scans, shared-engine dependency, integration restrictions, and remaining audit work. Earlier conversation context is not required; the complete thread is ready for archiving.
