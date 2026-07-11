@@ -23,13 +23,14 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Intake schema and validator with receipt-lineage enforcement.
 - Governed assessment index and release-readiness correction.
 - Individualized force-event packet schema and validator.
-- Six catalogued event packets:
+- Seven catalogued event packets:
   - ground restraint;
   - apparent chemical-agent posture;
   - baton display;
   - carry or guided removal;
   - reported observer or mediator chemical exposure;
-  - crowd movement.
+  - crowd movement;
+  - reported arrests.
 - Producer-export relative-schema resolver repair.
 - Explicit `referencing` dependency and isolated force-event workflow step.
 - Activation-runner integration.
@@ -38,21 +39,23 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 ## Event-level integrity rule
 
 ```text
-Crowd-level allegations cannot establish the necessity, proportionality, or lawfulness of force against a particular person.
+Crowd-level allegations cannot establish the necessity, proportionality, probable cause, or lawfulness of action against a particular person.
 Directly observed, secondarily reported, and inferred events must remain distinguishable.
 Crowd presence, obstruction, dispersal, arrest, and force remain separate questions unless evidence links them for a particular person and time.
+Reported arrest totals do not establish probable cause, resistance, warning compliance, or force justification for any specific person.
 ```
 
 ## Current event posture
 
 ```yaml
-catalogued_event_packets: 6
+catalogued_event_packets: 7
 direct_visual_packets: 5
-secondary_report_packets: 1
+secondary_report_packets: 2
 individualized_review_complete: false
 necessity_established_events: 0
 proportionality_established_events: 0
 lawfulness_established_events: 0
+probable_cause_established_arrests: 0
 ```
 
 ## CI repair posture
@@ -74,11 +77,11 @@ Workflow observability update installed in `.github/workflows/validate-ledger-sc
 - existing single-workflow architecture preserved;
 - final combined activation runner retained.
 
-No workflow run is attached to the repair or latest six-event commits yet.
+No complete workflow run is attached to the repaired seven-event scope yet.
 
 ## Current validation receipt
 
-`validation_results/delaney-hall-assessment-406f0f8c.pending.json`
+`validation_results/delaney-hall-assessment-b95a6926.pending.json`
 
 ```yaml
 validation_status: "pending"
@@ -87,7 +90,7 @@ complete_workflow_result: "not attached"
 release_advanced: false
 ```
 
-The prior five-event workflow-observability receipt is preserved as superseded.
+The prior six-event repair-inclusive receipt is preserved as superseded.
 
 ## Required follow-on work
 
@@ -95,8 +98,9 @@ The prior five-event workflow-observability receipt is preserved as superseded.
 - If another step fails, preserve the exact run, job, step, JSON path, and error before applying a bounded repair.
 - Process the active intake queue and attach real Source Posture receipt IDs to verified records.
 - Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
-- Add remaining event packets only where distinct event evidence exists, including individualized arrests and any verified baton strike or chemical-agent discharge.
-- Populate existing packets with subject, actor, warning, threat, injury, medical, and policy evidence.
+- Add further event packets only where distinct event evidence exists, including any verified baton strike or chemical-agent discharge.
+- Split the reported-arrests packet into person-specific packets only after individualized arrest records become available.
+- Populate existing packets with subject, actor, warning, threat, injury, medical, disposition, and policy evidence.
 - Populate same-event and prior-administration controls with comparable measures.
 - Obtain independent evidence-review and control-review sign-off.
 
@@ -115,10 +119,10 @@ governance_review_record: true
 assessment_index_visibility: true
 same_event_control: "partial"
 primary_record_intake_queue: "active-machine-readable"
-individualized_force_event_packets: "6-catalogued"
+individualized_force_event_packets: "7-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "six-event repair-inclusive receipt pending; no complete workflow result attached"
+validation_status: "seven-event repair-inclusive receipt pending; no complete workflow result attached"
 ```
 
 ## Remaining files/modules and destination
@@ -127,8 +131,8 @@ validation_status: "six-event repair-inclusive receipt pending; no complete work
 StegVerse-Labs/Executive_Rhetoric_Ledger:
   - concrete complete schema-validation result
   - any next bounded CI repair identified by a complete failing-step log
-  - additional individualized event packets only as distinct evidence permits
-  - populated subject, actor, warning, threat, injury, medical, and policy fields
+  - person-specific arrest packets when individualized records arrive
+  - populated subject, actor, warning, threat, injury, medical, disposition, and policy fields
   - independent evidence-review and control-review sign-off
 ```
 
@@ -138,4 +142,4 @@ This assessment is a catalogued working record, not a final legal conclusion, ad
 
 ## Archive readiness
 
-This handoff contains the current assessment posture, six event packets, CI root cause, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the current assessment posture, seven event packets, CI root cause, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
