@@ -14,6 +14,7 @@ affected_branches:
   - "outcome_evidence"
   - "ledger_classification"
 required_next_actions:
+  - "Process the governed intake queue at assessments/intake/2026-07-delaney-hall-primary-record-intake.md."
   - "Obtain the original TRT World post, caption, durable URL, and underlying camera footage."
   - "Collect DHS, ICE, ERO, GEO, Newark, and New Jersey incident, warning, arrest, transfer, inspection, medical, and accountability records."
   - "Identify the exact component use-of-force and crowd-control policies applicable to the visible personnel."
@@ -21,6 +22,7 @@ required_next_actions:
   - "Complete the same-event federal-to-state operational control comparison."
   - "Add comparable prior-administration and jurisdictional controls before making selective-enforcement or administration-wide conclusions."
   - "Assign independent evidence and control reviewers."
+  - "Supersede validation_results/delaney-hall-assessment-a7674916.pending.json only after a concrete validation result exists."
 ```
 
 ## Review determination
@@ -60,6 +62,27 @@ Missing footage and records do not reduce constitutional scrutiny. They block pr
 
 The earlier analysis improperly began with potential tactical justification before gathering broadly available constitutional and humanitarian context. This is preserved as a reviewable methodological error rather than erased from the assessment history.
 
+## Intake enforcement
+
+The primary-record intake queue contains eighteen record classes. Each class identifies its likely custodian, affected assessment branches, current intake state, and activation effect.
+
+No reviewer may mark a branch complete merely because a request was made. Promotion requires the relevant record to be received, authenticated, assigned a Source Posture receipt, and evaluated together with contradictory material.
+
+Restricted or sealed detainee and medical records must be represented through lawful, privacy-preserving receipts or de-identified findings. Lack of public access does not authorize speculation about their contents.
+
+## Validation boundary
+
+The pending receipt at `validation_results/delaney-hall-assessment-a7674916.pending.json` records that structural validation has not yet been confirmed.
+
+A future passing validation may establish only that:
+
+- the JSON structure conforms to repository schemas;
+- embedded source receipts use allowed source-posture values;
+- linked annotation, review, and control records exist;
+- required control and review states are represented.
+
+It may not establish that disputed factual claims are true, that detention or transfer authority was lawful, or that any use of force was constitutionally justified.
+
 ## Promotion threshold
 
 The entry may move to `accepted-with-limitations` only after:
@@ -69,6 +92,7 @@ The entry may move to `accepted-with-limitations` only after:
 3. the assessment validates against `schemas/political-influence-tree.schema.json`;
 4. an evidence reviewer confirms source roles and limitations;
 5. a control reviewer confirms that missing controls remain visible and are not treated as completed;
-6. the classification remains no broader than the evidence supports.
+6. the classification remains no broader than the evidence supports;
+7. the pending validation receipt is superseded by a concrete passed or reviewed equivalent result.
 
-It may not move to `accepted` while the authority chain, original media provenance, and required controls remain incomplete.
+It may not move to `accepted` while the authority chain, original media provenance, required controls, and event-specific primary records remain incomplete.
