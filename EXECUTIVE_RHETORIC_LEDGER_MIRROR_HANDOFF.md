@@ -80,14 +80,13 @@ release_advanced: false
 
 ## Current validation receipt
 
-`validation_results/delaney-hall-assessment-f7d1cc2e.pending.json`
+`validation_results/delaney-hall-assessment-0ae8fab3.pending.json`
 
-This receipt covers five event packets but predates the producer-export resolver repair. It must be superseded by a new current-scope receipt before any validation promotion.
+The pre-repair five-event receipt is preserved as superseded. The current receipt includes the five event packets and producer-export resolver repair. No complete workflow result is attached yet.
 
 ## Required follow-on work
 
 - Confirm the producer-export resolver repair through a concrete complete workflow run.
-- Supersede the current five-event receipt with a repair-inclusive validation receipt.
 - Process the active intake queue and attach real Source Posture receipt IDs to verified records.
 - Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
 - Add remaining event packets for individualized arrests, crowd movement, and any verified baton strike or chemical-agent discharge.
@@ -113,14 +112,13 @@ primary_record_intake_queue: "active-machine-readable"
 individualized_force_event_packets: "5-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "producer-export resolver repair installed; complete workflow confirmation pending"
+validation_status: "repair-inclusive pending receipt installed; complete workflow confirmation pending"
 ```
 
 ## Remaining files/modules and destination
 
 ```text
 StegVerse-Labs/Executive_Rhetoric_Ledger:
-  - repair-inclusive pending validation receipt
   - concrete complete schema-validation result
   - additional individualized force-event packets as evidence permits
   - populated subject, actor, warning, threat, injury, medical, and policy fields
