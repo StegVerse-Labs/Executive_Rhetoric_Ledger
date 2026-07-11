@@ -1,0 +1,55 @@
+{
+  "event_id": "DH-FORCE-004",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "physical-restraint",
+  "approximate_time": "approximately 00:08 in the supplied screen recording",
+  "subject_posture": {
+    "identity_status": "unknown",
+    "role_status": "unknown",
+    "visible_conduct": [
+      "The subject is held and moved by two tactical personnel.",
+      "The subject's arms appear controlled during movement.",
+      "The sampled frame does not establish active resistance, compliance, injury, or verbal exchange."
+    ]
+  },
+  "government_action": {
+    "actor_identity_status": "unknown",
+    "agency_status": "visible-marking-only",
+    "action_description": "Two personnel wearing tactical equipment move an individual while maintaining physical control of the person's arms or upper body.",
+    "force_tools": ["hands-on control", "physical carrying or guided removal"]
+  },
+  "claimed_justification": [
+    "Possible arrest, removal from an access route, transport, or control of resistance has been asserted or inferred in public accounts, but no event-specific official justification has been produced."
+  ],
+  "direct_observations": [
+    "Two tactical personnel are visibly moving one person.",
+    "The subject is not independently walking in a clearly observable manner in the sampled frame.",
+    "The social-media clip does not provide a continuous chronology linking the prior ground restraint to this movement with certainty."
+  ],
+  "prohibited_inferences": [
+    "Do not infer that the subject was lawfully arrested.",
+    "Do not infer that the subject was resisting before or during movement.",
+    "Do not infer that carrying or guided removal was medically necessary or operationally necessary.",
+    "Do not infer that the event followed the ground-restraint event in continuous real time merely because of edit order."
+  ],
+  "missing_evidence": [
+    "Original unedited footage before and after the movement.",
+    "Identity of the subject and personnel.",
+    "Arrest basis, command history, warning, and compliance opportunity.",
+    "Official incident and force reports.",
+    "Body-worn camera or facility surveillance.",
+    "Medical condition and injury assessment.",
+    "Exact component policy governing carrying or physical removal."
+  ],
+  "source_receipt_ids": ["SRC-2026-DH-VIDEO-001"],
+  "intake_ids": ["DH-INTAKE-001", "DH-INTAKE-002", "DH-INTAKE-003", "DH-INTAKE-004", "DH-INTAKE-005", "DH-INTAKE-006", "DH-INTAKE-007", "DH-INTAKE-012"],
+  "authority_transition_ids": ["T7", "T8", "T9", "T10", "T12"],
+  "classification": {
+    "necessity": "not-established",
+    "proportionality": "not-established",
+    "lawfulness": "not-established",
+    "confidence": "medium",
+    "notes": "The physical movement is visible, but its purpose, sequence, legal basis, subject conduct, and medical implications are not established."
+  }
+}
