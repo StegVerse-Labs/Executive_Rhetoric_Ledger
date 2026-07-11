@@ -22,7 +22,7 @@ required_next_actions:
   - "Complete the same-event federal-to-state operational control comparison."
   - "Add comparable prior-administration and jurisdictional controls before making selective-enforcement or administration-wide conclusions."
   - "Assign independent evidence and control reviewers."
-  - "Supersede validation_results/delaney-hall-assessment-f26c060a.pending.json only after a concrete validation result exists."
+  - "Supersede validation_results/delaney-hall-assessment-470a4c1e.pending.json only after a concrete validation result exists."
 ```
 
 ## Review determination
@@ -68,23 +68,30 @@ The primary-record intake queue contains eighteen record classes. Each class ide
 
 No reviewer may mark a branch complete merely because a request was made. Promotion requires the relevant record to be received, authenticated, assigned a Source Posture receipt, and evaluated together with contradictory material.
 
-The machine validator now requires any intake item marked `verified-primary` or `verified-secondary` to cite at least one Source Posture receipt ID that actually exists in the matching Political Influence Tree. A non-existent or cross-topic receipt ID blocks validation.
+The machine validator requires any intake item marked `verified-primary` or `verified-secondary` to cite at least one Source Posture receipt ID that actually exists in the matching Political Influence Tree. A non-existent or cross-topic receipt ID blocks validation.
 
 Restricted or sealed detainee and medical records must be represented through lawful, privacy-preserving receipts or de-identified findings. Lack of public access does not authorize speculation about their contents.
 
+## Index visibility boundary
+
+The active assessment must remain visible in `assessments/README.md`. The assessment validator blocks review-stage or published machine entries when the topic ID, machine assessment, or linked narrative annotation is absent from the assessment index.
+
+Index visibility improves discoverability. It does not promote evidentiary or legal status.
+
 ## Validation boundary
 
-The current pending receipt at `validation_results/delaney-hall-assessment-f26c060a.pending.json` records that structural validation has not yet been confirmed for the expanded assessment scope.
+The current pending receipt at `validation_results/delaney-hall-assessment-470a4c1e.pending.json` records that structural validation has not yet been confirmed for the indexed assessment and release-readiness scope.
 
-The earlier receipt at `validation_results/delaney-hall-assessment-a7674916.pending.json` is preserved as `superseded` because it covered a narrower pre-intake-validation scope. It never received a concrete pass or failure result.
+Earlier receipts at `validation_results/delaney-hall-assessment-a7674916.pending.json` and `validation_results/delaney-hall-assessment-f26c060a.pending.json` are preserved as `superseded`. Neither received a concrete pass or failure result.
 
 A future passing validation may establish only that:
 
 - the JSON structure conforms to repository schemas;
 - embedded source receipts use allowed source-posture values;
-- linked annotation, review, and control records exist;
+- linked annotation, review, control, and index records exist;
 - required control and review states are represented;
-- verified intake records cite real Source Posture receipts in the matching assessment.
+- verified intake records cite real Source Posture receipts in the matching assessment;
+- the release checklist and recorded repository mechanisms are structurally consistent.
 
 It may not establish that disputed factual claims are true, that detention or transfer authority was lawful, or that any use of force was constitutionally justified.
 
