@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-B95A6926-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-B95A6926-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "a543c412a2579ba6793ea3616a7f2c5effc220d8",
   "checked_paths": [
     "assessments/README.md",
@@ -19,13 +19,7 @@
     "assessments/events/DH-FORCE-005-reported-observer-mediator-contact.json",
     "assessments/events/DH-FORCE-006-crowd-movement.json",
     "assessments/events/DH-FORCE-007-reported-arrests.json",
-    "schemas/producer-export.schema.json",
-    "schemas/source-posture.schema.json",
-    "schemas/force-event-packet.schema.json",
-    "scripts/validate_producer_exports.py",
-    "scripts/validate_force_event_packets.py",
-    "scripts/run_activation_validation.py",
-    ".github/workflows/validate-ledger-schemas.yml"
+    "scripts/validate_force_event_packets.py"
   ],
   "validator": {
     "type": "github-actions",
@@ -33,7 +27,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current Delaney Hall scope includes seven individualized event packets. The reported-arrests packet preserves the reported total while preventing that aggregate from establishing probable cause, resistance, warning compliance, force justification, or disposition for any specific person. The scope also includes the producer-export resolver repair, explicit referencing dependency, isolated force-event validation, and combined activation runner. No concrete complete workflow result is attached.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm structural validation, relative-schema resolution, event-packet linkage, and cross-record consistency only. It would not establish disputed facts, individualized probable cause, detention or transfer authority, necessity, proportionality, constitutional justification, or liability."
+  "result_summary": "This seven-event pending scope was superseded after force-event validation was strengthened to require filename identity and assessment-index visibility for every packet. No concrete pass or failure was attached.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical scope preserved. Supersession does not validate facts, probable cause, necessity, proportionality, lawfulness, or constitutional standing."
 }
