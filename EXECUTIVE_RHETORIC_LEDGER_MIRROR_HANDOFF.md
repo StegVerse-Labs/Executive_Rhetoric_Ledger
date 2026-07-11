@@ -13,6 +13,7 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 
 ## Current files
 
+- `assessments/README.md`
 - `assessments/2026-07-federal-detention-protest-use-of-force.md`
 - `assessments/evidence/2026-07-federal-detention-protest-frame-index.md`
 - `assessments/evidence/2026-07-delaney-hall-source-receipts.md`
@@ -24,9 +25,11 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - `assessments/intake/2026-07-delaney-hall-primary-record-intake.json`
 - `schemas/primary-record-intake.schema.json`
 - `validation_results/delaney-hall-assessment-a7674916.pending.json` — superseded historical scope
-- `validation_results/delaney-hall-assessment-f26c060a.pending.json` — current pending scope
+- `validation_results/delaney-hall-assessment-f26c060a.pending.json` — superseded historical scope
+- `validation_results/delaney-hall-assessment-470a4c1e.pending.json` — current pending scope
 - `scripts/validate_assessment_trees.py`
 - `scripts/validate_primary_record_intake.py`
+- `release/release-readiness-checklist.md`
 
 ## Completed mechanisms
 
@@ -38,10 +41,20 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Same-event federal-to-state operational control.
 - Eighteen-item narrative and machine-readable primary-record intake queue.
 - Intake schema and validator.
-- Assessment validator requiring linked annotation, review, control, and valid receipts.
+- Assessment validator requiring linked annotation, review, control, valid receipts, and assessment-index visibility.
 - Intake validator rejecting duplicate IDs, unresolved completed queues, verified items without receipts, unknown assessment topics, and receipt IDs that do not exist in the matching assessment.
+- Governed assessment index with explicit non-claim and promotion boundaries.
+- Release-readiness checklist corrected to reflect completed reviewer, dispute, deprecation, supersession, intake, and validation mechanisms.
 - Activation runner and existing single workflow integration.
-- Validation receipt succession: narrower pending scope preserved as superseded; current expanded scope recorded as pending.
+- Validation receipt succession preserving historical scopes as superseded and the indexed-release scope as pending.
+
+## Discoverability integrity rule
+
+```text
+A review-stage or published assessment must remain visible in assessments/README.md.
+The topic ID, machine entry, and linked narrative annotation must be indexed.
+Index visibility does not promote evidentiary or legal status.
+```
 
 ## Intake integrity rule
 
@@ -81,7 +94,7 @@ activation_blocking_items: 18
 - Build event-specific warning, arrest, force, injury, medical, and accountability packets.
 - Populate same-event and prior-administration controls with comparable measures.
 - Obtain independent evidence-review and control-review sign-off.
-- Supersede `validation_results/delaney-hall-assessment-f26c060a.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
+- Supersede `validation_results/delaney-hall-assessment-470a4c1e.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
 
 ## Current evidence posture
 
@@ -95,12 +108,13 @@ conflicting_claims_preserved: true
 constitutional_authority_map: true
 machine_readable_tree: true
 governance_review_record: true
+assessment_index_visibility: true
 same_event_control: "partial"
 primary_record_intake_queue: "active-machine-readable"
 receipt_cross_link_validation: true
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "current pending receipt installed; no concrete workflow result attached"
+validation_status: "current indexed-scope pending receipt installed; no concrete workflow result attached"
 ```
 
 ## Release posture
