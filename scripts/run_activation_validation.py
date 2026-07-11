@@ -8,6 +8,7 @@ Checks:
 2. validation-result receipts
 3. activation-state manifest
 4. governance-pattern entries
+5. machine-readable assessment Political Influence Trees and source receipts
 """
 
 from __future__ import annotations
@@ -22,6 +23,7 @@ CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_validation_results.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_activation_state.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_governance_patterns.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_assessment_trees.py")],
 ]
 
 
