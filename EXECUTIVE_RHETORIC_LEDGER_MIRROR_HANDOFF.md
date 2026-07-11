@@ -28,6 +28,10 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - `assessments/evidence/2026-07-federal-detention-protest-frame-index.md`
 - `assessments/evidence/2026-07-delaney-hall-source-receipts.md`
 - `assessments/constitutional-authority/2026-07-delaney-hall-authority-map.md`
+- `assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json`
+- `assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md`
+- `assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md`
+- `scripts/validate_assessment_trees.py`
 
 ## Completed in current continuation
 
@@ -38,6 +42,24 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Added source receipts from Associated Press, Reuters, The Guardian, DOJ, and Constitution Annotated.
 - Added a conflicting-claim matrix covering the hunger strike, conditions, protest conduct, force, and oversight.
 - Added a twelve-transition constitutional authority map from initial immigration arrest through post-event accountability.
+- Converted the assessment into the repository's native Political Influence Tree and Source Posture structures.
+- Added governance review status under the existing reviewer, dispute, and deprecation policy.
+- Added a same-event federal-to-state operational control comparing federal exterior confrontation with the later New Jersey State Police protest-zone and checkpoint model.
+- Integrated assessment validation into the existing activation runner and existing single schema workflow.
+- Strengthened the assessment validator to require linked annotations, review files, control files, and valid embedded source receipts.
+
+## Same-event control posture
+
+```yaml
+control_id: "CTRL-2026-DELANEY-FEDERAL-TO-NJSP"
+alternative_posture_identified: true
+alternative_feasibility_supported: "medium"
+lower_force_outcome_established: false
+constitutional_superiority_established: false
+control_completion: "partial"
+```
+
+The transition to state-police exterior management is evidence that a role-separated and spatially organized alternative was considered feasible. It does not yet prove that the later response used less force or fully respected constitutional protections. Comparable measures remain required.
 
 ## Required follow-on work
 
@@ -45,10 +67,12 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Add the original video artifact or an externally durable evidence pointer when repository binary-ingestion support is available.
 - Add still-image receipts for each material visual claim when an approved binary or image path is available.
 - Collect DHS, ICE, ERO, GEO Group, New Jersey, Newark, arrest, court, inspection, medical, and transfer records.
-- Identify the exact DHS/ICE/ERO use-of-force policy applicable to the visible personnel.
+- Identify the exact DHS/ICE/ERO use-of-force policy applicable to the visible personnel. Current public-search attempts did not locate a sufficiently authoritative component policy, so DOJ policy remains only a general federal benchmark.
 - Build an audio/command transcript and dispersal-order timeline.
-- Add control comparisons across administrations and comparable protest/enforcement settings before broader rhetoric or selective-enforcement findings are promoted.
-- Add machine-readable assessment, frame, source-receipt, and authority-map schemas plus validation.
+- Populate the same-event control with comparable arrest, force, injury, warning, crowd, access, damage, complaint, and observer-contact measures.
+- Add prior-administration and cross-jurisdiction controls before broader rhetoric or selective-enforcement findings are promoted.
+- Obtain independent evidence-review and control-review sign-off.
+- Confirm a green validation result and promote a reviewed validation receipt through the repository's existing release mechanism.
 
 ## Current evidence posture
 
@@ -60,8 +84,12 @@ force_visible: true
 hunger_strike_context_material: true
 conflicting_claims_preserved: true
 constitutional_authority_map: true
+machine_readable_tree: true
+governance_review_record: true
+same_event_control: "partial"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
+validation_status: "pending; no GitHub status attached at last check"
 ```
 
 ## Release posture
