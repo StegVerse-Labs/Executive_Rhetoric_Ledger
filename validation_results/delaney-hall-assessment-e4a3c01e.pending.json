@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-E4A3C01E-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-E4A3C01E-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "ad399ac9e756e9dfc92be7ac8130f5f1c4deb859",
   "checked_paths": [
     "assessments/README.md",
@@ -25,7 +25,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current Delaney Hall scope includes three individualized event packets for ground restraint, apparent chemical-agent deployment posture, and baton display. Each packet links direct observations, prohibited inferences, missing evidence, authority transitions, intake tasks, and Source Posture receipts. Structural validation is pending.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm packet structure and cross-record references only. It would not establish necessity, proportionality, lawfulness, constitutional justification, or liability."
+  "result_summary": "This pending receipt was superseded after the assessment expanded from three to five individualized event packets, adding carry or guided removal and a reported observer or mediator chemical-exposure event. It did not receive a concrete pass or failure result.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical event-packet scope preserved. Supersession does not validate the events, force legitimacy, constitutional standing, or liability."
 }
