@@ -14,7 +14,7 @@
   },
   "government_action": {
     "actor_identity_status": "unknown",
-    "agency_status": "partially-identified",
+    "agency_status": "unknown",
     "action_description": "Federal, state, or local authorities reportedly arrested six protesters during or following the Delaney Hall confrontation; the responsible arresting actor and legal basis must be reconstructed person by person.",
     "force_tools": [
       "physical custody",
@@ -78,6 +78,6 @@
     "proportionality": "not-established",
     "lawfulness": "not-established",
     "confidence": "medium",
-    "notes": "The reported fact of six arrests is sufficiently supported for catalogue. Probable cause, warning, force, protected-activity, and disposition questions remain individualized and unresolved."
+    "notes": "The reported fact of six arrests is sufficiently supported for catalogue. Probable cause, warning, force, protected-activity, arresting-agency identity, and disposition questions remain individualized and unresolved."
   }
 }
