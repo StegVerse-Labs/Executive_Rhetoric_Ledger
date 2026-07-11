@@ -1,0 +1,301 @@
+{
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "topic_name": "Delaney Hall detention protest, hunger strike, and federal use of force",
+  "entry_status": "review",
+  "jurisdiction": "United States; Newark, New Jersey",
+  "time_window": "2026-05-26 onward",
+  "created_date": "2026-07-10",
+  "last_reviewed": "2026-07-10",
+  "related_standard": "standards/political-influence-tree-standard.md",
+  "related_annotation": "assessments/2026-07-federal-detention-protest-use-of-force.md",
+  "surface_claim": {
+    "claim_text": "Federal force used outside Delaney Hall was justified as a response to obstruction, thrown objects, threats, resistance, or public-safety needs during protests associated with a detainee hunger strike.",
+    "exact_quote_available": false,
+    "speaker_or_institution": "United States Department of Homeland Security and federal enforcement representatives, as reported by contemporaneous sources",
+    "office_or_role": "Federal immigration enforcement and public-affairs authorities",
+    "date": "2026-05-26",
+    "venue": "Public statements and reporting concerning Delaney Hall, Newark, New Jersey",
+    "jurisdiction": "United States",
+    "source_url": "https://apnews.com/article/b90cca73c96008de934234255e268af4",
+    "source_type": "press-release and news-report",
+    "transcript_available": false,
+    "archive_url": ""
+  },
+  "claimed_justification": {
+    "category": "public-safety-and-law-enforcement",
+    "stated_basis": "Officials asserted that force responded to obstruction, attacks, thrown objects, resistance, or threats to officers and facility operations.",
+    "quoted_basis": "Exact agency statements require collection from primary DHS, ICE, or ERO records.",
+    "implied_basis": "Operational control and facility access were treated as sufficient grounds for crowd-control, arrest, and force."
+  },
+  "factual_basis": {
+    "evidence_posture": "partially-verified-conflicting-records-primary-material-missing",
+    "primary_records": [
+      "User-supplied screen recording SHA-256 703c3990c34907725e1130ee3ec98e4a3e4fba7bc5a0f648bbc3aae3036641ec",
+      "DOJ published use-of-force policy as a general federal benchmark; exact component applicability remains unverified",
+      "Constitution Annotated First and Fourth Amendment references"
+    ],
+    "administrative_data": [],
+    "court_records": [],
+    "budget_records": [],
+    "enforcement_records": [],
+    "independent_analysis": [
+      "Associated Press reporting on arrests, force, alleged protest conduct, hunger-strike claims, and conflicting facility accounts",
+      "Reuters reporting on the hunger and labor strike, later protest management, and competing official accounts",
+      "The Guardian reporting concerning Senator Andy Kim's claimed pepper-spray exposure and the alleged organizer transfer"
+    ],
+    "expert_testimony": [],
+    "official_investigations": [],
+    "unsupported_assertions": [
+      "Any blanket characterization that all protesters were rioters",
+      "Any blanket characterization that every act of federal force was justified",
+      "Any conclusion that every detention, transfer, or proposed removal implicated by the protest had completed meaningful constitutional review"
+    ],
+    "contradictions": [
+      "Government and GEO accounts dispute detainee and advocate allegations concerning conditions and strike activity",
+      "Reports of peaceful protest and mediation coexist with reports of obstruction and thrown objects by some participants",
+      "The force rationale is generalized while the constitutional assessment requires individualized evidence"
+    ],
+    "missing_records": [
+      "Original TRT World post and underlying camera footage",
+      "DHS, ICE, ERO, and GEO incident reports",
+      "Body-worn camera, dispatch, arrest, warning, dispersal, medical, transfer, and removal records",
+      "Exact component use-of-force policy",
+      "Detainee case records sufficient to assess detention, transfer, and removal authority",
+      "Independent inspection and hunger-strike medical records where lawfully available"
+    ]
+  },
+  "influence_lineage": {
+    "influence_posture": "current-operation-and-rhetoric-lineage-incomplete",
+    "known_origin_points": [
+      "Federal immigration detention and removal operations at Delaney Hall",
+      "Detainee hunger and labor strike allegations",
+      "Public protest and attempted oversight outside the facility"
+    ],
+    "institutional_amplifiers": ["DHS", "ICE", "ERO", "GEO Group", "New Jersey state and Newark officials"],
+    "media_amplifiers": ["TRT World", "Associated Press", "Reuters", "The Guardian"],
+    "legal_networks": [],
+    "funding_or_donor_links": [],
+    "policy_documents": ["Applicable immigration detention, transfer, removal, protest-policing, and force policies remain to be fully collected"],
+    "academic_or_expert_sources": [],
+    "lobbying_channels": [],
+    "party_or_campaign_documents": [],
+    "religious_or_cultural_institutions": [],
+    "activist_organizations": [],
+    "foreign_influence_indicators": [],
+    "unknown_nodes": [
+      "Upstream executive directives or operational instructions governing this event",
+      "Decision chain for the reported detainee transfer",
+      "Decision chain for crowd-control escalation and de-escalation"
+    ]
+  },
+  "action_conversion": {
+    "authority_posture": "coercive-action-visible-authority-chain-incomplete",
+    "action_type": "civil detention enforcement, transfer protection, protest restriction, arrest, and physical or chemical force",
+    "instrument": "Operational orders, component policy, immigration custody authority, and crowd-control authority not yet fully produced",
+    "instrument_url": "",
+    "date": "2026-05-26",
+    "actor": "Federal immigration enforcement personnel, including personnel visibly marked ERO",
+    "enforcing_entity": "DHS or ICE component identification requires primary confirmation",
+    "implementation_status": "Force, restraint, and crowd-control actions are visibly implemented; legal and policy standing remains under review",
+    "affected_population_or_program": "Detainees, hunger-strike participants, protesters, families, journalists, observers, elected officials, and facility operations"
+  },
+  "control_comparison": {
+    "required": true,
+    "status": "missing-required-controls",
+    "comparable_red_jurisdictions": [],
+    "comparable_blue_jurisdictions": [],
+    "comparable_prior_administrations": [],
+    "comparable_policy_instruments": [],
+    "comparable_fraud_or_harm_magnitude": [],
+    "comparable_enforcement_tools": [
+      "State-police exterior management after federal withdrawal is a same-event operational control candidate"
+    ],
+    "comparable_judicial_posture": [],
+    "missing_controls": [
+      "Comparable immigration-detention protests under prior administrations",
+      "Comparable federal crowd-control responses involving hunger strikes or disputed transfers",
+      "Comparison of warning, arrest, chemical-force, and baton standards across federal and state responders",
+      "Outcome comparison before and after New Jersey State Police assumed exterior management"
+    ],
+    "comparison_notes": "The later transition from federal exterior enforcement to state-police protest management is a high-value same-event control, but records and measurable outcomes are still required."
+  },
+  "institutional_response": {
+    "judicial_status": "incident-specific litigation and court records not yet collected",
+    "administrative_status": "federal force and facility accounts disputed; component review status unknown",
+    "legislative_status": "elected-official involvement and oversight concerns reported; complete record missing",
+    "oversight_status": "state inspection access was reportedly restricted; independent review remains incomplete",
+    "injunctions": [],
+    "stays": [],
+    "dismissals": [],
+    "remands": [],
+    "settlements": [],
+    "reversals": [],
+    "pending_reviews": [
+      "Primary-record collection",
+      "Individualized force-event reconstruction",
+      "Detention, transfer, and removal authority review",
+      "Reviewer assignment under governance/reviewer-dispute-deprecation-policy.md"
+    ],
+    "no_challenge_found": false
+  },
+  "outcome_evidence": {
+    "measured_outcomes": [
+      "Six protesters were reported arrested during the confrontation",
+      "Federal exterior security was later replaced by New Jersey State Police in an announced de-escalation step"
+    ],
+    "claimed_outcomes": [
+      "Federal officials claimed force protected safety and operations",
+      "Protesters, detainees, and public officials claimed the response suppressed humanitarian protest and protected disputed detention or transfer activity"
+    ],
+    "projected_outcomes": [],
+    "contradicted_outcomes": [
+      "A generalized claim that force was minimal or narrowly targeted is in tension with reports of pepper-spray exposure affecting a senator attempting mediation and concerns involving observers or press"
+    ],
+    "no_measurable_effect_yet": false,
+    "harm_documented": [
+      "Physical restraint and chemical or baton force are visibly or contemporaneously reported",
+      "Arrests and disruption of protest activity are reported"
+    ],
+    "benefit_documented": [
+      "Facility access and vehicle movement were maintained or restored at points during the event"
+    ],
+    "insufficient_evidence": true
+  },
+  "ledger_classification": {
+    "evidence_posture": "partially-verified-conflicting-records-primary-material-missing",
+    "influence_posture": "current-operation-and-rhetoric-lineage-incomplete",
+    "authority_posture": "coercive-action-visible-authority-chain-incomplete",
+    "admissibility_status": "accepted-for-catalogue-and-context-not-accepted-as-justification",
+    "confidence": "medium",
+    "classification_notes": "The incident, force, protest, hunger-strike context, and conflicting accounts are sufficiently supported for catalogue and continued review. The available record does not establish blanket constitutional or operational legitimacy for the force shown. Missing evidence expands the collection duty and does not supply provisional deference."
+  },
+  "receipts": {
+    "sources": [
+      {
+        "source_id": "SRC-2026-DH-VIDEO-001",
+        "title": "Screen recording of TRT World social-media video concerning New Jersey protest",
+        "url": "",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "2026-05-26",
+        "source_type": "video-or-audio-record",
+        "institutional_proximity": "media-intermediary",
+        "evidence_role": "factual-basis-source",
+        "verification_status": "partially-verified",
+        "admissibility_use": "admissible-for-context-only",
+        "confidence": "medium",
+        "red_flags": ["screenshot-only-source", "no-primary-source-linked", "archive-needed"],
+        "notes": "The screen recording establishes visible restraint and crowd-control imagery, source branding, location/date labels, and looping. It does not establish a continuous chronology or lawful authority. SHA-256: 703c3990c34907725e1130ee3ec98e4a3e4fba7bc5a0f648bbc3aae3036641ec."
+      },
+      {
+        "source_id": "SRC-2026-DH-AP-001",
+        "title": "6 protesters arrested after clash with ICE officers outside a New Jersey detention center",
+        "url": "https://apnews.com/article/b90cca73c96008de934234255e268af4",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "2026-05-28",
+        "source_type": "news-report",
+        "institutional_proximity": "media-intermediary",
+        "evidence_role": "factual-basis-source",
+        "verification_status": "verified-secondary",
+        "admissibility_use": "admissible-for-context-only",
+        "confidence": "high",
+        "red_flags": ["no-primary-source-linked", "archive-needed", "conflicting-records-present"],
+        "notes": "Supports incident identification, arrests, reports of force and protest conduct, hunger-strike allegations, and conflicting official accounts."
+      },
+      {
+        "source_id": "SRC-2026-DH-REUTERS-001",
+        "title": "New Jersey governor blames out-of-state agitators for inflaming Newark ICE detention protests",
+        "url": "https://www.reuters.com/world/us/new-jersey-governor-links-rising-tension-around-immigrant-detention-center-out-2026-05-31/",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "2026-05-31",
+        "source_type": "news-report",
+        "institutional_proximity": "media-intermediary",
+        "evidence_role": "institutional-response-source",
+        "verification_status": "verified-secondary",
+        "admissibility_use": "admissible-for-context-only",
+        "confidence": "high",
+        "red_flags": ["archive-needed", "conflicting-records-present"],
+        "notes": "Supports hunger and labor strike reporting, distinctions between peaceful and allegedly escalating conduct, and later public-order responses."
+      },
+      {
+        "source_id": "SRC-2026-DH-GUARDIAN-001",
+        "title": "US senator says he was pepper-sprayed by federal agents during protest at ICE facility",
+        "url": "https://www.theguardian.com/us-news/2026/may/26/senator-pepper-sprayed-ice-facility-protest-new-jersey",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "2026-05-26",
+        "source_type": "news-report",
+        "institutional_proximity": "media-intermediary",
+        "evidence_role": "contradiction-source",
+        "verification_status": "partially-verified",
+        "admissibility_use": "admissible-for-context-only",
+        "confidence": "medium",
+        "red_flags": ["no-primary-source-linked", "archive-needed", "conflicting-records-present"],
+        "notes": "Supports the existence of a materially conflicting account involving a senator attempting mediation and the reported transfer of a hunger-strike organizer."
+      },
+      {
+        "source_id": "SRC-DOJ-FORCE-POLICY-001",
+        "title": "Department of Justice Policy on Use of Force",
+        "url": "https://www.justice.gov/jm/1-16000-department-justice-policy-use-force",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "",
+        "source_type": "agency-guidance",
+        "institutional_proximity": "official-implementer",
+        "evidence_role": "context-only-source",
+        "verification_status": "verified-primary",
+        "admissibility_use": "admissible-for-administrative-record",
+        "confidence": "high",
+        "red_flags": ["missing-date"],
+        "notes": "Used as an official federal force-policy benchmark. Exact applicability to DHS, ICE, or ERO personnel in the video remains to be established."
+      },
+      {
+        "source_id": "SRC-CONSTITUTION-FIRST-001",
+        "title": "First Amendment — Fundamental Freedoms",
+        "url": "https://constitution.congress.gov/browse/amendment-1/",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "",
+        "source_type": "primary-record",
+        "institutional_proximity": "oversight-reviewer",
+        "evidence_role": "context-only-source",
+        "verification_status": "verified-primary",
+        "admissibility_use": "admissible-for-administrative-record",
+        "confidence": "high",
+        "red_flags": ["missing-date"],
+        "notes": "Provides the constitutional reference layer for speech, press, assembly, and petition."
+      },
+      {
+        "source_id": "SRC-CONSTITUTION-FOURTH-001",
+        "title": "Fourth Amendment",
+        "url": "https://constitution.congress.gov/browse/amendment-4/",
+        "archive_url": "",
+        "access_date": "2026-07-10",
+        "publication_date": "",
+        "source_type": "primary-record",
+        "institutional_proximity": "oversight-reviewer",
+        "evidence_role": "context-only-source",
+        "verification_status": "verified-primary",
+        "admissibility_use": "admissible-for-administrative-record",
+        "confidence": "high",
+        "red_flags": ["missing-date"],
+        "notes": "Provides the constitutional reference layer for seizure and reasonableness analysis."
+      }
+    ],
+    "archive_sources": [],
+    "review_notes": [
+      "Review state should remain under-review or accepted-with-limitations until primary enforcement, detention, transfer, warning, and medical records are collected.",
+      "The initial assistant analysis is preserved as a methodological correction: missing context triggered provisional justification rather than expanded material collection."
+    ],
+    "unresolved_questions": [
+      "What exact order or transfer was being executed?",
+      "What individualized conduct preceded each visible act of force?",
+      "What warnings and feasible exit paths were provided?",
+      "What records establish detention, transfer, or removal authority for the detainees whose circumstances motivated the protest?",
+      "What changed after New Jersey State Police replaced federal exterior management?"
+    ],
+    "last_reviewed": "2026-07-10"
+  }
+}
