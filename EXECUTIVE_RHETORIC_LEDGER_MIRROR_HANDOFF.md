@@ -4,17 +4,6 @@
 
 This repository is the destination for a source-postured assessment concerning a recorded federal-use-of-force incident connected to protests outside Delaney Hall in Newark, New Jersey and allegations arising from detention, deportation, due process, and a detainee hunger strike.
 
-## Immediate objective
-
-Create and maintain an assessment that:
-
-1. catalogs the supplied video artifact without overstating what the clip alone proves;
-2. preserves the surrounding constitutional and humanitarian context as part of the primary assessment frame rather than as a secondary caveat;
-3. records the assistant's initial analytical error: beginning with possible tactical justification before collecting broadly available contextual evidence and before testing the government's asserted authority and burden;
-4. distinguishes incomplete evidence from reduced constitutional scrutiny;
-5. identifies missing source receipts and public records required before any final incident classification;
-6. avoids treating an asserted public-order rationale as evidence that constitutional standing has been established.
-
 ## Governing assessment rule
 
 ```text
@@ -34,24 +23,35 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - `assessments/intake/2026-07-delaney-hall-primary-record-intake.md`
 - `assessments/intake/2026-07-delaney-hall-primary-record-intake.json`
 - `schemas/primary-record-intake.schema.json`
-- `validation_results/delaney-hall-assessment-a7674916.pending.json`
+- `validation_results/delaney-hall-assessment-a7674916.pending.json` — superseded historical scope
+- `validation_results/delaney-hall-assessment-f26c060a.pending.json` — current pending scope
 - `scripts/validate_assessment_trees.py`
 - `scripts/validate_primary_record_intake.py`
 
-## Completed in current continuation
+## Completed mechanisms
 
-- Verified media metadata and added frame-indexed observations with prohibited-inference boundaries.
-- Preserved conflicting source accounts, constitutional authority mapping, governance review, and same-event operational control.
-- Converted the assessment into the repository's native Political Influence Tree and Source Posture structures.
-- Added an eighteen-item governed primary-record intake queue.
-- Added a machine-readable intake queue using the same eighteen record classes.
-- Added `schemas/primary-record-intake.schema.json` with controlled queue states, privacy postures, priorities, custodians, affected branches, and activation effects.
-- Added `scripts/validate_primary_record_intake.py`.
-- The intake validator rejects duplicate IDs, verified records without source-receipt IDs, and a completed queue containing unresolved items.
-- Integrated intake validation into the combined activation runner and the existing single validation workflow.
-- Added a schema-valid pending validation receipt rather than overclaiming a green workflow result.
+- Narrative and machine-readable Political Influence Tree assessment.
+- Embedded Source Posture receipts.
+- Frame-indexed media observations with prohibited-inference boundaries.
+- Twelve-transition constitutional authority map.
+- Governance review state.
+- Same-event federal-to-state operational control.
+- Eighteen-item narrative and machine-readable primary-record intake queue.
+- Intake schema and validator.
+- Assessment validator requiring linked annotation, review, control, and valid receipts.
+- Intake validator rejecting duplicate IDs, unresolved completed queues, verified items without receipts, unknown assessment topics, and receipt IDs that do not exist in the matching assessment.
+- Activation runner and existing single workflow integration.
+- Validation receipt succession: narrower pending scope preserved as superseded; current expanded scope recorded as pending.
 
-## Same-event control posture
+## Intake integrity rule
+
+```text
+An intake item cannot become verified merely by naming a receipt.
+The referenced Source Posture receipt must exist in the matching Political Influence Tree.
+A missing, cross-topic, or invented receipt ID blocks validation.
+```
+
+## Current control posture
 
 ```yaml
 control_id: "CTRL-2026-DELANEY-FEDERAL-TO-NJSP"
@@ -62,35 +62,26 @@ constitutional_superiority_established: false
 control_completion: "partial"
 ```
 
-## Intake posture
+## Current intake posture
 
 ```yaml
 queue_status: "active"
 total_items: 18
 machine_readable: true
-schema_validated_by_design: true
 verified_primary_items: 0
 verified_secondary_items: 0
 restricted_or_sealed_items: 2
 activation_blocking_items: 18
-next_priority:
-  - "DH-INTAKE-001 original media"
-  - "DH-INTAKE-002 full unedited footage"
-  - "DH-INTAKE-006 exact component force policy"
-  - "DH-INTAKE-007 official incident and force reports"
-  - "DH-INTAKE-010 reported organizer transfer records"
-  - "DH-INTAKE-015 New Jersey State Police control records"
 ```
 
 ## Required follow-on work
 
-- Process the active intake queue and assign a Source Posture receipt to every received record before use.
-- Obtain the original TRT World post, underlying footage, exact component policy, official force reports, organizer-transfer records, and state-control records.
-- Add still-image and durable media receipts when an approved binary or evidence-pointer path is available.
-- Build audio, warning, dispersal, arrest, force, injury, and medical timelines.
+- Process the active intake queue and attach real Source Posture receipt IDs to verified records.
+- Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
+- Build event-specific warning, arrest, force, injury, medical, and accountability packets.
 - Populate same-event and prior-administration controls with comparable measures.
 - Obtain independent evidence-review and control-review sign-off.
-- Supersede the pending validation receipt only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
+- Supersede `validation_results/delaney-hall-assessment-f26c060a.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
 
 ## Current evidence posture
 
@@ -106,9 +97,10 @@ machine_readable_tree: true
 governance_review_record: true
 same_event_control: "partial"
 primary_record_intake_queue: "active-machine-readable"
+receipt_cross_link_validation: true
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "pending receipt installed; no concrete workflow result attached"
+validation_status: "current pending receipt installed; no concrete workflow result attached"
 ```
 
 ## Release posture
