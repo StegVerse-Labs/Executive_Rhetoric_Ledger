@@ -33,10 +33,29 @@ See [Automated Political Reality Compendium Standard](standards/automated-politi
 
 Inputs may originate from upstream repositories, public primary records, court and legislative records, media, archives, affected-person accounts, original visual evidence, academic research, advocacy records, and other discoverable sources.
 
-Existing upstream producers include:
+The governed related-repository network is explicit rather than informal:
 
-- Trumpality
-- Administrations
+- [Related Repository Network](integration/related-repositories.md)
+- [Machine-Readable Related Repository Manifest](integration/related-repositories.json)
+
+It currently relates this ledger to:
+
+- `StegVerse-Labs/VAwatchdog`
+- `StegVerse-Labs/StegScholar`
+- `StegVerse-Labs/StegSocials`
+- `StegVerse-Labs/Patents`
+- `StegVerse-Labs/Administrations`
+- `StegVerse-Labs/Trumpality`
+- `StegVerse-Labs/Giuffre-ality`
+- `StegVerse-Labs/Maxwellality`
+- `StegVerse-Labs/Epsteinality`
+- `StegVerse-Labs/Talarico`
+- `StegVerse-Labs/FREE-DOM_OverSight`
+- `StegVerse-Labs/Randolph_Geneaology_Hub`
+- `StegVerse-Labs/StegLearn`
+- `StegVerse-Labs/StegBiography`
+
+These repositories may contribute candidates, evidence pointers, context, controls, contradictions, outcomes, adjacency links, or reviewed publication surfaces according to their declared role. None may self-authorize final ledger acceptance.
 
 Ledger outputs are normalized datasets, comparisons, evidence receipts, historical timelines, and governed assessments.
 
@@ -49,6 +68,7 @@ validation_reported: "all green"
 release_boundary: "core validation is green; automated discovery, historical backfill, source-diversity orchestration, and reviewed evidence population remain the next integration goal"
 first_upstream_producer_test: "StegVerse-Labs/Trumpality"
 second_upstream_producer_test: "StegVerse-Labs/Administrations"
+related_repository_network: "14-declared-governed-relationships"
 next_goal: "automated recurring political-reality discovery and compendium maintenance"
 ```
 
@@ -100,8 +120,10 @@ The Automated Political Reality Compendium Standard defines recurring search, ad
 - [Validation Result JSON Schema](schemas/validation-result.schema.json)
 - [Primary Record Intake JSON Schema](schemas/primary-record-intake.schema.json)
 - [Force Event Packet JSON Schema](schemas/force-event-packet.schema.json)
+- [Discovery Cycle JSON Schema](schemas/discovery-cycle.schema.json)
+- [Related Repository Network JSON Schema](schemas/related-repository-network.schema.json)
 
-These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation receipts, evidence-intake queues, and individualized events.
+These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation receipts, evidence-intake queues, individualized events, recurring discovery cycles, and governed repository relationships.
 
 ## Validation
 
@@ -109,14 +131,15 @@ These schemas provide validation targets for ledger entries, source receipts, up
 - [Validation Status Note](release/validation-status-note.md)
 - [Final Activation Handoff](release/final-activation-handoff.md)
 
-The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, cross-record links, filenames, and repository index visibility.
+The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, the related-repository network, cross-record links, filenames, and repository index visibility.
 
 ## Cross-repo ingestion
 
 - [Cross-Repo Ingestion Notes](ingestion/cross-repo-ingestion-notes.md)
 - [Producer Export Workflow Integration Notes](ingestion/producer-export-workflow-integration-notes.md)
+- [Related Repository Network](integration/related-repositories.md)
 
-Upstream repositories may submit claims, source receipts, actions, court posture, control candidates, outcomes, and influence nodes without deciding final ledger admissibility.
+Upstream repositories may submit claims, source receipts, actions, court posture, control candidates, outcomes, influence nodes, adjacent incidents, historical context, and contradiction candidates without deciding final ledger admissibility.
 
 ## Assessment and historical records
 
@@ -136,6 +159,8 @@ The Powell Memorandum remains a historical structural anchor and is not used as 
 
 Automation may discover, retrieve, fingerprint, deduplicate, classify, cluster, compare, and propose updates. It may not independently convert claim existence into claim truth, erase contradictions, assign final legal liability, or silently rewrite historical versions.
 
+A related repository may nominate or publish only within its declared relationship. Repository origin remains provenance rather than proof, and publication surfaces must preserve reviewed evidence posture, uncertainty, disputes, and supersession.
+
 ## Release and next integration goal
 
 The validated repository foundation is complete enough to begin the next integration goal:
@@ -153,9 +178,10 @@ automated recurring discovery
 
 Remaining implementation areas:
 
-- discovery-cycle schema and manifests;
+- discovery-cycle manifests and validator integration;
 - configurable recurring searches;
 - source adapters and archive capture;
+- cross-repository producer adapters for the declared network;
 - deduplication and incident clustering;
 - adjacency graph generation;
 - historical backfill queues;
