@@ -14,6 +14,7 @@ SCHEMA = ROOT / "schemas" / "force-event-packet.schema.json"
 EVENT_DIR = ROOT / "assessments" / "events"
 ASSESSMENT_DIR = ROOT / "assessments" / "machine"
 INTAKE_DIR = ROOT / "assessments" / "intake"
+ASSESSMENT_INDEX = ROOT / "assessments" / "README.md"
 
 
 def load(path: Path) -> object:
@@ -43,6 +44,12 @@ def main() -> int:
                 if isinstance(item, dict):
                     intake_ids.add(str(item.get("intake_id", "")))
 
+    try:
+        index_text = ASSESSMENT_INDEX.read_text(encoding="utf-8")
+    except OSError as exc:
+        print(f"FAIL: unable to read {ASSESSMENT_INDEX.relative_to(ROOT)}: {exc}", file=sys.stderr)
+        return 1
+
     files = sorted(EVENT_DIR.glob("*.json"))
     if not files:
         print("FAIL: no force-event packets found", file=sys.stderr)
@@ -63,6 +70,21 @@ def main() -> int:
         if event_id in seen_ids:
             failures.append(f"{path.relative_to(ROOT)}: duplicate event_id {event_id}")
         seen_ids.add(event_id)
+
+        if not path.name.startswith(f"{event_id}-"):
+            failures.append(
+                f"{path.relative_to(ROOT)}: filename must begin with event_id {event_id}-"
+            )
+
+        relative_link = f"events/{path.name}"
+        if event_id not in index_text:
+            failures.append(
+                f"{path.relative_to(ROOT)}: event_id {event_id} is missing from assessments/README.md"
+            )
+        if relative_link not in index_text:
+            failures.append(
+                f"{path.relative_to(ROOT)}: link {relative_link} is missing from assessments/README.md"
+            )
 
         topic_id = str(doc.get("topic_id", ""))
         if topic_id not in assessments:
@@ -99,7 +121,9 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print(f"Validated {len(files)} individualized force-event packet(s).")
+    print(
+        f"Validated {len(files)} individualized force-event packet(s), filenames, and assessment-index links."
+    )
     return 0
 
 
