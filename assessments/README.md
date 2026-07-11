@@ -15,6 +15,7 @@ topic_id: "PIT-MODERN-2026-DELANEY-HALL-FORCE"
 review_status: "needs-source-posture"
 control_status: "partial"
 intake_status: "active"
+event_packet_status: "catalogued-partial"
 validation_status: "pending"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
@@ -32,10 +33,17 @@ Core records:
 - [Narrative primary-record intake queue](intake/2026-07-delaney-hall-primary-record-intake.md)
 - [Machine-readable primary-record intake queue](intake/2026-07-delaney-hall-primary-record-intake.json)
 
+Individualized force-event packets:
+
+- [DH-FORCE-001 ground restraint](events/DH-FORCE-001-ground-restraint.json)
+- [DH-FORCE-002 apparent chemical-agent posture](events/DH-FORCE-002-apparent-chemical-agent.json)
+- [DH-FORCE-003 baton display](events/DH-FORCE-003-baton-display.json)
+
 Validation records:
 
-- Current scope: `validation_results/delaney-hall-assessment-f26c060a.pending.json`
-- Superseded historical scope: `validation_results/delaney-hall-assessment-a7674916.pending.json`
+- Current scope: `validation_results/delaney-hall-assessment-e4a3c01e.pending.json`
+- Superseded indexed scope: `validation_results/delaney-hall-assessment-470a4c1e.pending.json`
+- Earlier superseded scopes remain preserved in `validation_results/`.
 
 ## Assessment rules
 
@@ -47,9 +55,10 @@ Validation records:
 6. Misconduct by one participant does not transfer to the entire crowd.
 7. Force must be reconstructed and assessed individually.
 8. Verified intake states require real Source Posture receipts in the matching Political Influence Tree.
-9. Structural validation cannot establish factual truth, lawful authority, or constitutional justification.
-10. Accepted, deprecated, superseded, disputed, and rejected states must follow the repository governance policy.
+9. Every force-event packet must link to real source receipts, real intake items, and applicable authority transitions.
+10. Structural validation cannot establish factual truth, lawful authority, or constitutional justification.
+11. Accepted, deprecated, superseded, disputed, and rejected states must follow the repository governance policy.
 
 ## Promotion boundary
 
-An assessment may not advance because its narrative is persuasive or politically useful. Promotion requires source posture, required controls, review status, validation status, and classification scope to remain mutually consistent.
+An assessment may not advance because its narrative is persuasive or politically useful. Promotion requires source posture, required controls, review status, event-specific evidence, validation status, and classification scope to remain mutually consistent.
