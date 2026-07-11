@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/repository-contract-audit.schema.json",
+  "title": "Repository Contract Audit Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["registry_id", "ledger_repository", "status", "last_reviewed", "audits", "governance_rules"],
+  "properties": {
+    "registry_id": {"type": "string", "minLength": 1},
+    "ledger_repository": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+    "status": {"enum": ["draft", "active", "paused", "superseded"]},
+    "last_reviewed": {"type": "string", "minLength": 1},
+    "audits": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "repository",
+          "audit_state",
+          "contract_state",
+          "adapter_state",
+          "verified_inputs",
+          "verified_outputs",
+          "verified_receipts",
+          "verified_consumers",
+          "verified_failure_handling",
+          "repairs",
+          "blockers",
+          "evidence_boundaries",
+          "audit_ref"
+        ],
+        "properties": {
+          "repository": {"type": "string", "pattern": "^StegVerse-Labs/[A-Za-z0-9_.-]+$"},
+          "audit_state": {"enum": ["partial", "repaired-partial", "verified", "blocked", "superseded"]},
+          "contract_state": {"enum": ["unresolved", "declared", "partially-verified", "verified", "failed"]},
+          "adapter_state": {"enum": ["blocked", "candidate-blocked", "ready", "active", "paused", "deprecated"]},
+          "verified_inputs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "verified_outputs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "verified_receipts": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "verified_consumers": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "verified_failure_handling": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "repairs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["description", "repository", "commit"],
+              "properties": {
+                "description": {"type": "string", "minLength": 1},
+                "repository": {"type": "string", "minLength": 1},
+                "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+              }
+            }
+          },
+          "blockers": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "evidence_boundaries": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "audit_ref": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "governance_rules": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  }
+}
