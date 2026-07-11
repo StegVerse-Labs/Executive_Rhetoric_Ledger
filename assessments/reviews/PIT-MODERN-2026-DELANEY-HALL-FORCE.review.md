@@ -22,7 +22,7 @@ required_next_actions:
   - "Complete the same-event federal-to-state operational control comparison."
   - "Add comparable prior-administration and jurisdictional controls before making selective-enforcement or administration-wide conclusions."
   - "Assign independent evidence and control reviewers."
-  - "Supersede validation_results/delaney-hall-assessment-a7674916.pending.json only after a concrete validation result exists."
+  - "Supersede validation_results/delaney-hall-assessment-f26c060a.pending.json only after a concrete validation result exists."
 ```
 
 ## Review determination
@@ -68,18 +68,23 @@ The primary-record intake queue contains eighteen record classes. Each class ide
 
 No reviewer may mark a branch complete merely because a request was made. Promotion requires the relevant record to be received, authenticated, assigned a Source Posture receipt, and evaluated together with contradictory material.
 
+The machine validator now requires any intake item marked `verified-primary` or `verified-secondary` to cite at least one Source Posture receipt ID that actually exists in the matching Political Influence Tree. A non-existent or cross-topic receipt ID blocks validation.
+
 Restricted or sealed detainee and medical records must be represented through lawful, privacy-preserving receipts or de-identified findings. Lack of public access does not authorize speculation about their contents.
 
 ## Validation boundary
 
-The pending receipt at `validation_results/delaney-hall-assessment-a7674916.pending.json` records that structural validation has not yet been confirmed.
+The current pending receipt at `validation_results/delaney-hall-assessment-f26c060a.pending.json` records that structural validation has not yet been confirmed for the expanded assessment scope.
+
+The earlier receipt at `validation_results/delaney-hall-assessment-a7674916.pending.json` is preserved as `superseded` because it covered a narrower pre-intake-validation scope. It never received a concrete pass or failure result.
 
 A future passing validation may establish only that:
 
 - the JSON structure conforms to repository schemas;
 - embedded source receipts use allowed source-posture values;
 - linked annotation, review, and control records exist;
-- required control and review states are represented.
+- required control and review states are represented;
+- verified intake records cite real Source Posture receipts in the matching assessment.
 
 It may not establish that disputed factual claims are true, that detention or transfer authority was lawful, or that any use of force was constitutionally justified.
 
@@ -93,6 +98,6 @@ The entry may move to `accepted-with-limitations` only after:
 4. an evidence reviewer confirms source roles and limitations;
 5. a control reviewer confirms that missing controls remain visible and are not treated as completed;
 6. the classification remains no broader than the evidence supports;
-7. the pending validation receipt is superseded by a concrete passed or reviewed equivalent result.
+7. the current pending validation receipt is superseded by a concrete passed or reviewed equivalent result.
 
 It may not move to `accepted` while the authority chain, original media provenance, required controls, and event-specific primary records remain incomplete.
