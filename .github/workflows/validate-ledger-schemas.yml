@@ -97,5 +97,8 @@ jobs:
       - name: Validate assessment Political Influence Trees
         run: python scripts/validate_assessment_trees.py
 
+      - name: Validate primary-record intake queues
+        run: python scripts/validate_primary_record_intake.py
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
