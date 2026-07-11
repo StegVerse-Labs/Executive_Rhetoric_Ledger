@@ -12,6 +12,7 @@ Checks:
 6. machine-readable primary-record intake queues
 7. individualized force-event packets
 8. related-repository network manifest and documentation
+9. related-repository capability and contract-audit registry
 """
 
 from __future__ import annotations
@@ -30,6 +31,7 @@ CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_primary_record_intake.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_force_event_packets.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_related_repository_network.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_repository_capabilities.py")],
 ]
 
 
