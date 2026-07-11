@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-406F0F8C-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-406F0F8C-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "133d68deb7553c745d6949726570aebb2d9f1bff",
   "checked_paths": [
     "assessments/README.md",
@@ -32,7 +32,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current Delaney Hall scope includes six individualized event packets, including a separate crowd-movement packet that prevents crowd presence, obstruction, dispersal, arrest, and force from being merged without person-specific evidence. The scope also includes the producer-export resolver repair, explicit referencing dependency, isolated event validation, and combined activation runner. No concrete complete workflow result is attached.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm structural validation, relative-schema resolution, event-packet linkage, and cross-record consistency only. It would not establish disputed facts, detention or transfer authority, individualized obstruction, necessity, proportionality, constitutional justification, or liability."
+  "result_summary": "This six-event pending receipt was superseded when the reported-arrests packet was added. It never received a concrete complete workflow result and must not be interpreted as passed or failed.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical scope preserved. The current seven-event receipt is validation_results/delaney-hall-assessment-b95a6926.pending.json. Supersession records scope evolution only and does not validate facts, probable cause, necessity, proportionality, constitutional justification, or liability."
 }
