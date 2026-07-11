@@ -9,6 +9,7 @@ Checks:
 3. activation-state manifest
 4. governance-pattern entries
 5. machine-readable assessment Political Influence Trees and source receipts
+6. machine-readable primary-record intake queues
 """
 
 from __future__ import annotations
@@ -24,6 +25,7 @@ CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_activation_state.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_governance_patterns.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_assessment_trees.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_primary_record_intake.py")],
 ]
 
 
