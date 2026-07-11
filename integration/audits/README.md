@@ -4,7 +4,7 @@ These audits must precede adapter construction.
 
 ```text
 Discover native mechanism
--> identify schedules, contracts, outputs, receipts, privacy, and consumers
+-> identify schedules, contracts, outputs, receipts, privacy, platforms, and consumers
 -> classify capability
 -> choose smallest compatible boundary
 -> build only the missing connector
@@ -19,8 +19,8 @@ Discover native mechanism
 | `StegVerse-Labs/Giuffre-ality` | partial | shared-engine-dependent / privacy-restricted | `integration/native-mechanism-audit.md` |
 | `StegVerse-Labs/Maxwellality` | partial | shared-engine-dependent / privacy-restricted | `integration/native-mechanism-audit.md` |
 | `StegVerse-Labs/Epsteinality` | partial | shared-engine-dependent / privacy-restricted | `integration/native-mechanism-audit.md` |
-| `StegVerse-Labs/StegSocials` | partial | publication-consumer-ready-partial | [StegSocials audit](StegSocials.md) |
-| `StegVerse-Labs/VAwatchdog` | partial | privacy-restricted-manual-source-only | [VAwatchdog audit](VAwatchdog.md) |
+| `StegVerse-Labs/StegSocials` | partial | platform-interacting publication and source-intake system | [StegSocials audit](StegSocials.md) |
+| `StegVerse-Labs/VAwatchdog` | partial | platform-interacting privacy-restricted evidence intake | [VAwatchdog audit](VAwatchdog.md) |
 | `StegVerse-Labs/StegScholar` | pending | unclassified | — |
 | `StegVerse-Labs/Patents` | pending | unclassified | — |
 | `StegVerse-Labs/Talarico` | pending | unclassified | — |
@@ -33,9 +33,10 @@ Discover native mechanism
 
 - Existing recurring scans are already present in several repositories.
 - Multiple biography repositories delegate to shared `StegVerse/StegVerse-Core` workflows.
-- StegSocials currently has a mature governed publication queue, admission checks, credential boundary, and receipts; broad recurring source discovery is not yet confirmed.
-- VAwatchdog currently presents as a sensitive, source-tiered manual intake scaffold; recurring automated discovery is not yet confirmed.
+- StegSocials is both a governed publication system and a platform-source intake environment. LinkedIn, X, Facebook, and long-form surfaces may contribute claims, reactions, corrections, moderation events, deletions, and circulation evidence. Broad autonomous scanning remains unconfirmed.
+- VAwatchdog interacts with VA, VBA, DOJ, OIG, FOIA, court, oversight, benefits, payment, identity, call-center, and IT environments that may supply or alter evidentiary state. Automated retrieval remains unconfirmed.
+- Platform interaction must be audited separately from repository workflows because platform state, visibility, edits, deletions, authentication, and access limitations can materially affect evidence posture.
 
 ## Enforcement boundary
 
-No repository is adapter-ready until its audit covers current workflows, schedules, source lists, categorization, outputs, archives, receipts, privacy, handoff, and downstream consumers.
+No repository is adapter-ready until its audit covers current workflows, schedules, source lists, platform interactions, categorization, outputs, archives, receipts, privacy, handoff, and downstream consumers.
