@@ -1,0 +1,83 @@
+{
+  "event_id": "DH-FORCE-007",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "arrest",
+  "approximate_time": "May 26, 2026; exact individualized arrest times unavailable",
+  "subject_posture": {
+    "identity_status": "unknown",
+    "role_status": "protester",
+    "visible_conduct": [
+      "Six protester arrests were reported in contemporaneous coverage.",
+      "The supplied recording does not identify each arrested person or show a complete probable-cause sequence for each arrest."
+    ]
+  },
+  "government_action": {
+    "actor_identity_status": "unknown",
+    "agency_status": "partially-identified",
+    "action_description": "Federal, state, or local authorities reportedly arrested six protesters during or following the Delaney Hall confrontation; the responsible arresting actor and legal basis must be reconstructed person by person.",
+    "force_tools": [
+      "physical custody",
+      "restraint or handcuffing not individually reconstructed"
+    ]
+  },
+  "claimed_justification": [
+    "obstruction",
+    "failure to comply with lawful orders",
+    "throwing objects",
+    "resistance",
+    "other reported offenses not yet tied to specific individuals"
+  ],
+  "direct_observations": [
+    "Contemporaneous reporting states that six protesters were arrested.",
+    "The available screen recording shows physical restraint and removal activity but does not establish which visible person, if any, corresponds to a reported arrest record.",
+    "No individualized affidavit, charging document, warning record, or disposition is currently linked to this packet."
+  ],
+  "prohibited_inferences": [
+    "That every arrested person committed the same conduct.",
+    "That crowd membership or proximity supplied probable cause.",
+    "That a later charge proves the arrest was lawful at the moment it occurred.",
+    "That dismissal or non-prosecution would by itself prove the arresting officer acted unlawfully.",
+    "That conduct by one person transferred probable cause or resistance to another person.",
+    "That the arrest resolved the constitutional standing of the underlying detention, transfer, protest restriction, or force operation."
+  ],
+  "missing_evidence": [
+    "Name or stable pseudonymous identifier for each arrested person.",
+    "Arresting officer identity and agency for each arrest.",
+    "Exact arrest time and location.",
+    "Probable-cause affidavit, citation, complaint, or charging instrument.",
+    "The individualized act alleged before arrest.",
+    "Warning and dispersal-order records, including audibility and feasible exit route.",
+    "Body-worn camera, witness video, dispatch, and radio records.",
+    "Force used during arrest and whether resistance continued after control.",
+    "Medical consequences and treatment.",
+    "Charging, dismissal, plea, trial, or other disposition records.",
+    "Any evidence of retaliatory, viewpoint-based, or selective arrest."
+  ],
+  "source_receipt_ids": [
+    "SRC-2026-DH-AP-001"
+  ],
+  "intake_ids": [
+    "DH-INTAKE-002",
+    "DH-INTAKE-003",
+    "DH-INTAKE-004",
+    "DH-INTAKE-005",
+    "DH-INTAKE-007",
+    "DH-INTAKE-012",
+    "DH-INTAKE-013"
+  ],
+  "authority_transition_ids": [
+    "T7",
+    "T8",
+    "T9",
+    "T10",
+    "T12"
+  ],
+  "classification": {
+    "necessity": "not-established",
+    "proportionality": "not-established",
+    "lawfulness": "not-established",
+    "confidence": "medium",
+    "notes": "The reported fact of six arrests is sufficiently supported for catalogue. Probable cause, warning, force, protected-activity, and disposition questions remain individualized and unresolved."
+  }
+}
