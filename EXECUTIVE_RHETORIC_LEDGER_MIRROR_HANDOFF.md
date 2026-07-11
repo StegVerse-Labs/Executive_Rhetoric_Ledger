@@ -31,6 +31,8 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - `assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json`
 - `assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md`
 - `assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md`
+- `assessments/intake/2026-07-delaney-hall-primary-record-intake.md`
+- `validation_results/delaney-hall-assessment-a7674916.pending.json`
 - `scripts/validate_assessment_trees.py`
 
 ## Completed in current continuation
@@ -47,6 +49,9 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Added a same-event federal-to-state operational control comparing federal exterior confrontation with the later New Jersey State Police protest-zone and checkpoint model.
 - Integrated assessment validation into the existing activation runner and existing single schema workflow.
 - Strengthened the assessment validator to require linked annotations, review files, control files, and valid embedded source receipts.
+- Added an eighteen-item governed primary-record intake queue, mapping each missing record to its custodian, affected branches, privacy posture, and activation effect.
+- Added a schema-valid pending validation receipt rather than overclaiming a green workflow result.
+- Bound the governance review record to the intake queue and pending validation receipt.
 
 ## Same-event control posture
 
@@ -61,8 +66,27 @@ control_completion: "partial"
 
 The transition to state-police exterior management is evidence that a role-separated and spatially organized alternative was considered feasible. It does not yet prove that the later response used less force or fully respected constitutional protections. Comparable measures remain required.
 
+## Intake posture
+
+```yaml
+queue_status: "active"
+total_items: 18
+verified_primary_items: 0
+verified_secondary_items: 0
+restricted_or_sealed_items: 2
+activation_blocking_items: 18
+next_priority:
+  - "DH-INTAKE-001 original media"
+  - "DH-INTAKE-002 full unedited footage"
+  - "DH-INTAKE-006 exact component force policy"
+  - "DH-INTAKE-007 official incident and force reports"
+  - "DH-INTAKE-010 reported organizer transfer records"
+  - "DH-INTAKE-015 New Jersey State Police control records"
+```
+
 ## Required follow-on work
 
+- Process the active intake queue and assign a Source Posture receipt to every received record before use.
 - Obtain the original TRT World post, caption, durable URL, and underlying camera footage.
 - Add the original video artifact or an externally durable evidence pointer when repository binary-ingestion support is available.
 - Add still-image receipts for each material visual claim when an approved binary or image path is available.
@@ -72,7 +96,7 @@ The transition to state-police exterior management is evidence that a role-separ
 - Populate the same-event control with comparable arrest, force, injury, warning, crowd, access, damage, complaint, and observer-contact measures.
 - Add prior-administration and cross-jurisdiction controls before broader rhetoric or selective-enforcement findings are promoted.
 - Obtain independent evidence-review and control-review sign-off.
-- Confirm a green validation result and promote a reviewed validation receipt through the repository's existing release mechanism.
+- Supersede `validation_results/delaney-hall-assessment-a7674916.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
 
 ## Current evidence posture
 
@@ -87,9 +111,10 @@ constitutional_authority_map: true
 machine_readable_tree: true
 governance_review_record: true
 same_event_control: "partial"
+primary_record_intake_queue: "active"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "pending; no GitHub status attached at last check"
+validation_status: "pending receipt installed; no concrete workflow result attached"
 ```
 
 ## Release posture
