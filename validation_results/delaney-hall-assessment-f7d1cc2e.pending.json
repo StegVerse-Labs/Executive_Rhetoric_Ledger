@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-F7D1CC2E-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-F7D1CC2E-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "aa7fa121e673b2356595c9df0fba304fa0b13865",
   "checked_paths": [
     "assessments/README.md",
@@ -27,7 +27,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current Delaney Hall scope includes five individualized event packets: ground restraint, apparent chemical-agent posture, baton display, carry or guided removal, and a reported observer or mediator contact involving Senator Andy Kim. Directly observed and secondarily reported events remain explicitly distinguished. Structural validation is pending.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm packet structure and cross-record references only. It would not establish necessity, proportionality, lawfulness, intent, constitutional justification, or liability."
+  "result_summary": "This five-event pending receipt was superseded after the repository installed a bounded repair for producer-export JSON Schema reference resolution. It did not receive a concrete pass or failure result.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical five-event scope preserved. Supersession does not validate the event packets, producer exports, constitutional standing, force legitimacy, or liability."
 }
