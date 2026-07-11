@@ -1,0 +1,39 @@
+{
+  "validation_id": "VAL-ERL-2026-07-11-B95A6926-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "a543c412a2579ba6793ea3616a7f2c5effc220d8",
+  "checked_paths": [
+    "assessments/README.md",
+    "assessments/2026-07-federal-detention-protest-use-of-force.md",
+    "assessments/evidence/2026-07-federal-detention-protest-frame-index.md",
+    "assessments/evidence/2026-07-delaney-hall-source-receipts.md",
+    "assessments/constitutional-authority/2026-07-delaney-hall-authority-map.md",
+    "assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json",
+    "assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md",
+    "assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md",
+    "assessments/intake/2026-07-delaney-hall-primary-record-intake.json",
+    "assessments/events/DH-FORCE-001-ground-restraint.json",
+    "assessments/events/DH-FORCE-002-apparent-chemical-agent.json",
+    "assessments/events/DH-FORCE-003-baton-display.json",
+    "assessments/events/DH-FORCE-004-carry-removal.json",
+    "assessments/events/DH-FORCE-005-reported-observer-mediator-contact.json",
+    "assessments/events/DH-FORCE-006-crowd-movement.json",
+    "assessments/events/DH-FORCE-007-reported-arrests.json",
+    "schemas/producer-export.schema.json",
+    "schemas/source-posture.schema.json",
+    "schemas/force-event-packet.schema.json",
+    "scripts/validate_producer_exports.py",
+    "scripts/validate_force_event_packets.py",
+    "scripts/run_activation_validation.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The current Delaney Hall scope includes seven individualized event packets. The reported-arrests packet preserves the reported total while preventing that aggregate from establishing probable cause, resistance, warning compliance, force justification, or disposition for any specific person. The scope also includes the producer-export resolver repair, explicit referencing dependency, isolated force-event validation, and combined activation runner. No concrete complete workflow result is attached.",
+  "activation_effect": "activation-blocked",
+  "notes": "A passing result would confirm structural validation, relative-schema resolution, event-packet linkage, and cross-record consistency only. It would not establish disputed facts, individualized probable cause, detention or transfer authority, necessity, proportionality, constitutional justification, or liability."
+}
