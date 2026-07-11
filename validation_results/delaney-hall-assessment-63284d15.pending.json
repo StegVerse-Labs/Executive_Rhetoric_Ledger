@@ -1,0 +1,27 @@
+{
+  "validation_id": "VAL-ERL-2026-07-11-63284D15-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "63284d1575a0116bddb00205c3a3cb6f545632f6",
+  "checked_paths": [
+    "assessments/README.md",
+    "assessments/events/DH-FORCE-001-ground-restraint.json",
+    "assessments/events/DH-FORCE-002-apparent-chemical-agent.json",
+    "assessments/events/DH-FORCE-003-baton-display.json",
+    "assessments/events/DH-FORCE-004-carry-removal.json",
+    "assessments/events/DH-FORCE-005-reported-observer-mediator-contact.json",
+    "assessments/events/DH-FORCE-006-crowd-movement.json",
+    "assessments/events/DH-FORCE-007-reported-arrests.json",
+    "scripts/validate_force_event_packets.py",
+    "scripts/validate_producer_exports.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The workflow-reported force-event schema failure was repaired by changing DH-FORCE-007 government_action.agency_status from unsupported 'partially-identified' to schema-supported 'unknown'. This matches the record because the arresting agency is not yet individualized or confirmed.",
+  "activation_effect": "activation-blocked",
+  "notes": "A subsequent complete workflow run is required. Passing validation would confirm schema conformance and cross-record integrity only; it would not establish probable cause, necessity, proportionality, lawfulness, constitutional justification, or liability."
+}
