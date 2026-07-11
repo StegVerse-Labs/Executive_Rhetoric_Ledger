@@ -109,5 +109,8 @@ jobs:
       - name: Validate repository capability registry
         run: python scripts/validate_repository_capabilities.py
 
+      - name: Validate repository contract audit registry
+        run: python scripts/validate_repository_contract_audits.py
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
