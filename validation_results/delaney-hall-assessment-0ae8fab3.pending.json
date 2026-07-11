@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-0AE8FAB3-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-0AE8FAB3-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "c0455a7e6b4fe4743c2d24928def81baf9efa7a0",
   "checked_paths": [
     "assessments/README.md",
@@ -31,7 +31,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current scope includes five individualized Delaney Hall event packets and the bounded producer-export validator repair that registers the relative Source Posture schema reference without weakening either schema. A complete workflow result has not yet been attached.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm structural validation and reference resolution only. It would not establish disputed facts, detention or transfer authority, necessity, proportionality, constitutional justification, or liability."
+  "result_summary": "This pending scope was superseded after the workflow was updated to install the schema-registry dependency explicitly and expose individualized force-event validation as its own named step. No concrete complete run was attached to this receipt.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical scope preserved. It never established a pass or failure for the repaired complete workflow and does not alter factual, constitutional, or legal posture."
 }
