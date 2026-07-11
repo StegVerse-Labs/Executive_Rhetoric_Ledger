@@ -32,26 +32,24 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - `assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md`
 - `assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md`
 - `assessments/intake/2026-07-delaney-hall-primary-record-intake.md`
+- `assessments/intake/2026-07-delaney-hall-primary-record-intake.json`
+- `schemas/primary-record-intake.schema.json`
 - `validation_results/delaney-hall-assessment-a7674916.pending.json`
 - `scripts/validate_assessment_trees.py`
+- `scripts/validate_primary_record_intake.py`
 
 ## Completed in current continuation
 
-- Verified media metadata: 32.3 seconds, H.264 video, AAC audio, 512x1112, 30 fps.
-- Added four-second sampled-frame observations with explicit prohibited-inference boundaries.
-- Identified the visible social-media source as TRT World and the displayed labels as `New Jersey, US` and `May 26`.
-- Recorded that the social-media edit loops and therefore is not a continuous incident timeline.
-- Added source receipts from Associated Press, Reuters, The Guardian, DOJ, and Constitution Annotated.
-- Added a conflicting-claim matrix covering the hunger strike, conditions, protest conduct, force, and oversight.
-- Added a twelve-transition constitutional authority map from initial immigration arrest through post-event accountability.
+- Verified media metadata and added frame-indexed observations with prohibited-inference boundaries.
+- Preserved conflicting source accounts, constitutional authority mapping, governance review, and same-event operational control.
 - Converted the assessment into the repository's native Political Influence Tree and Source Posture structures.
-- Added governance review status under the existing reviewer, dispute, and deprecation policy.
-- Added a same-event federal-to-state operational control comparing federal exterior confrontation with the later New Jersey State Police protest-zone and checkpoint model.
-- Integrated assessment validation into the existing activation runner and existing single schema workflow.
-- Strengthened the assessment validator to require linked annotations, review files, control files, and valid embedded source receipts.
-- Added an eighteen-item governed primary-record intake queue, mapping each missing record to its custodian, affected branches, privacy posture, and activation effect.
+- Added an eighteen-item governed primary-record intake queue.
+- Added a machine-readable intake queue using the same eighteen record classes.
+- Added `schemas/primary-record-intake.schema.json` with controlled queue states, privacy postures, priorities, custodians, affected branches, and activation effects.
+- Added `scripts/validate_primary_record_intake.py`.
+- The intake validator rejects duplicate IDs, verified records without source-receipt IDs, and a completed queue containing unresolved items.
+- Integrated intake validation into the combined activation runner and the existing single validation workflow.
 - Added a schema-valid pending validation receipt rather than overclaiming a green workflow result.
-- Bound the governance review record to the intake queue and pending validation receipt.
 
 ## Same-event control posture
 
@@ -64,13 +62,13 @@ constitutional_superiority_established: false
 control_completion: "partial"
 ```
 
-The transition to state-police exterior management is evidence that a role-separated and spatially organized alternative was considered feasible. It does not yet prove that the later response used less force or fully respected constitutional protections. Comparable measures remain required.
-
 ## Intake posture
 
 ```yaml
 queue_status: "active"
 total_items: 18
+machine_readable: true
+schema_validated_by_design: true
 verified_primary_items: 0
 verified_secondary_items: 0
 restricted_or_sealed_items: 2
@@ -87,16 +85,12 @@ next_priority:
 ## Required follow-on work
 
 - Process the active intake queue and assign a Source Posture receipt to every received record before use.
-- Obtain the original TRT World post, caption, durable URL, and underlying camera footage.
-- Add the original video artifact or an externally durable evidence pointer when repository binary-ingestion support is available.
-- Add still-image receipts for each material visual claim when an approved binary or image path is available.
-- Collect DHS, ICE, ERO, GEO Group, New Jersey, Newark, arrest, court, inspection, medical, and transfer records.
-- Identify the exact DHS/ICE/ERO use-of-force policy applicable to the visible personnel. Current public-search attempts did not locate a sufficiently authoritative component policy, so DOJ policy remains only a general federal benchmark.
-- Build an audio/command transcript and dispersal-order timeline.
-- Populate the same-event control with comparable arrest, force, injury, warning, crowd, access, damage, complaint, and observer-contact measures.
-- Add prior-administration and cross-jurisdiction controls before broader rhetoric or selective-enforcement findings are promoted.
+- Obtain the original TRT World post, underlying footage, exact component policy, official force reports, organizer-transfer records, and state-control records.
+- Add still-image and durable media receipts when an approved binary or evidence-pointer path is available.
+- Build audio, warning, dispersal, arrest, force, injury, and medical timelines.
+- Populate same-event and prior-administration controls with comparable measures.
 - Obtain independent evidence-review and control-review sign-off.
-- Supersede `validation_results/delaney-hall-assessment-a7674916.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
+- Supersede the pending validation receipt only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
 
 ## Current evidence posture
 
@@ -111,7 +105,7 @@ constitutional_authority_map: true
 machine_readable_tree: true
 governance_review_record: true
 same_event_control: "partial"
-primary_record_intake_queue: "active"
+primary_record_intake_queue: "active-machine-readable"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
 validation_status: "pending receipt installed; no concrete workflow result attached"
