@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-10-470A4C1E-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-10-470A4C1E-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "a23c7cec44c3b537ab2e6c778c64c4818a92193b",
   "checked_paths": [
     "assessments/README.md",
@@ -26,7 +26,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current Delaney Hall scope now includes enforced assessment-index visibility and an updated release-readiness boundary in addition to the narrative and machine assessment, Source Posture receipts, governance review, operational control, machine intake, cross-record integrity validation, activation runner, and existing validation workflow. No concrete workflow result has been attached.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm structural and cross-record consistency only. It would not establish disputed facts, lawful detention or transfer authority, constitutional justification, or liability."
+  "result_summary": "This pending receipt was superseded after individualized force-event packet schemas, event records, and validation were added. It never received a concrete pass or failure result.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical scope preserved. Current pending validation is recorded in validation_results/delaney-hall-assessment-e4a3c01e.pending.json."
 }
