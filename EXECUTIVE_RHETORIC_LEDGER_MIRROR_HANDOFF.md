@@ -23,7 +23,15 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Intake schema and validator with receipt-lineage enforcement.
 - Governed assessment index and release-readiness correction.
 - Individualized force-event packet schema and validator.
-- Five catalogued event packets: ground restraint, apparent chemical-agent posture, baton display, carry or guided removal, and reported observer or mediator chemical exposure.
+- Six catalogued event packets:
+  - ground restraint;
+  - apparent chemical-agent posture;
+  - baton display;
+  - carry or guided removal;
+  - reported observer or mediator chemical exposure;
+  - crowd movement.
+- Producer-export relative-schema resolver repair.
+- Explicit `referencing` dependency and isolated force-event workflow step.
 - Activation-runner integration.
 - Validation-receipt succession preserving prior scopes as superseded.
 
@@ -32,14 +40,14 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 ```text
 Crowd-level allegations cannot establish the necessity, proportionality, or lawfulness of force against a particular person.
 Directly observed, secondarily reported, and inferred events must remain distinguishable.
-Each event must link direct observations, prohibited inferences, missing evidence, authority transitions, intake tasks, and source receipts.
+Crowd presence, obstruction, dispersal, arrest, and force remain separate questions unless evidence links them for a particular person and time.
 ```
 
 ## Current event posture
 
 ```yaml
-catalogued_event_packets: 5
-direct_visual_packets: 4
+catalogued_event_packets: 6
+direct_visual_packets: 5
 secondary_report_packets: 1
 individualized_review_complete: false
 necessity_established_events: 0
@@ -47,43 +55,30 @@ proportionality_established_events: 0
 lawfulness_established_events: 0
 ```
 
-## CI blocker and bounded repair
+## CI repair posture
 
-Workflow run `29161213934` failed at `Validate producer export examples` before the assessment, intake, event, and combined validators ran.
-
-Root cause:
-
-```yaml
-failure: "producer-export schema relative reference unresolved"
-relative_reference: "source-posture.schema.json"
-example_data_defect_found: false
-schema_weakened: false
-```
+Workflow run `29161213934` failed at `Validate producer export examples` because the producer-export schema referenced `source-posture.schema.json` without the validator registering that relative schema.
 
 Repair installed in `scripts/validate_producer_exports.py`:
 
-- uses the Draft 2020-12 validator explicitly;
-- registers `source-posture.schema.json` through a `referencing.Registry`;
-- preserves separate embedded-receipt validation;
-- reports the precise failing JSON path;
-- does not alter the producer export example or weaken either schema.
-
-Repair commit: `0ae8fab3778216d754192a324a362ff5040f9937`.
+- Draft 2020-12 validation;
+- registered Source Posture schema through `referencing.Registry`;
+- separate embedded-receipt validation preserved;
+- precise JSON-path errors;
+- no schema weakening and no example-data alteration.
 
 Workflow observability update installed in `.github/workflows/validate-ledger-schemas.yml`:
 
-- explicitly installs both `jsonschema` and `referencing`;
-- adds a named `Validate individualized force-event packets` step;
-- preserves the existing single-workflow architecture;
-- retains the final combined activation runner.
+- explicit installation of `jsonschema` and `referencing`;
+- named `Validate individualized force-event packets` step;
+- existing single-workflow architecture preserved;
+- final combined activation runner retained.
 
-Workflow update commit: `4f7f6304937b63319a1e7ac0b48f8fd8f64dda7c`.
+No workflow run is attached to the repair or latest six-event commits yet.
 
 ## Current validation receipt
 
-`validation_results/delaney-hall-assessment-4f7f6304.pending.json`
-
-Earlier repair-only and pre-repair receipts are preserved as superseded. The current receipt includes the five event packets, producer-export resolver repair, explicit registry dependency, isolated force-event validation step, and combined activation runner.
+`validation_results/delaney-hall-assessment-406f0f8c.pending.json`
 
 ```yaml
 validation_status: "pending"
@@ -92,14 +87,16 @@ complete_workflow_result: "not attached"
 release_advanced: false
 ```
 
+The prior five-event workflow-observability receipt is preserved as superseded.
+
 ## Required follow-on work
 
 - Confirm the resolver and workflow-observability repair through a concrete complete workflow run.
 - If another step fails, preserve the exact run, job, step, JSON path, and error before applying a bounded repair.
 - Process the active intake queue and attach real Source Posture receipt IDs to verified records.
 - Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
-- Add remaining event packets for individualized arrests, crowd movement, and any verified baton strike or chemical-agent discharge.
-- Populate existing event packets with subject, actor, warning, threat, injury, medical, and policy evidence.
+- Add remaining event packets only where distinct event evidence exists, including individualized arrests and any verified baton strike or chemical-agent discharge.
+- Populate existing packets with subject, actor, warning, threat, injury, medical, and policy evidence.
 - Populate same-event and prior-administration controls with comparable measures.
 - Obtain independent evidence-review and control-review sign-off.
 
@@ -118,10 +115,10 @@ governance_review_record: true
 assessment_index_visibility: true
 same_event_control: "partial"
 primary_record_intake_queue: "active-machine-readable"
-individualized_force_event_packets: "5-catalogued"
+individualized_force_event_packets: "6-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "current isolated-event workflow receipt pending; complete run confirmation unavailable"
+validation_status: "six-event repair-inclusive receipt pending; no complete workflow result attached"
 ```
 
 ## Remaining files/modules and destination
@@ -130,7 +127,7 @@ validation_status: "current isolated-event workflow receipt pending; complete ru
 StegVerse-Labs/Executive_Rhetoric_Ledger:
   - concrete complete schema-validation result
   - any next bounded CI repair identified by a complete failing-step log
-  - additional individualized force-event packets as evidence permits
+  - additional individualized event packets only as distinct evidence permits
   - populated subject, actor, warning, threat, injury, medical, and policy fields
   - independent evidence-review and control-review sign-off
 ```
@@ -141,4 +138,4 @@ This assessment is a catalogued working record, not a final legal conclusion, ad
 
 ## Archive readiness
 
-This handoff contains the current assessment posture, five event packets, CI root cause, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the current assessment posture, six event packets, CI root cause, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
