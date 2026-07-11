@@ -1,0 +1,37 @@
+{
+  "validation_id": "VAL-ERL-2026-07-11-4F7F6304-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "495c798badd83307ed261816a87f4beb8132ff61",
+  "checked_paths": [
+    "assessments/README.md",
+    "assessments/2026-07-federal-detention-protest-use-of-force.md",
+    "assessments/evidence/2026-07-federal-detention-protest-frame-index.md",
+    "assessments/evidence/2026-07-delaney-hall-source-receipts.md",
+    "assessments/constitutional-authority/2026-07-delaney-hall-authority-map.md",
+    "assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json",
+    "assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md",
+    "assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md",
+    "assessments/intake/2026-07-delaney-hall-primary-record-intake.json",
+    "assessments/events/DH-FORCE-001-ground-restraint.json",
+    "assessments/events/DH-FORCE-002-apparent-chemical-agent.json",
+    "assessments/events/DH-FORCE-003-baton-display.json",
+    "assessments/events/DH-FORCE-004-carry-removal.json",
+    "assessments/events/DH-FORCE-005-reported-observer-mediator-contact.json",
+    "schemas/producer-export.schema.json",
+    "schemas/source-posture.schema.json",
+    "schemas/force-event-packet.schema.json",
+    "scripts/validate_producer_exports.py",
+    "scripts/validate_force_event_packets.py",
+    "scripts/run_activation_validation.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The current scope includes the registered relative-schema resolver repair, explicit installation of jsonschema and referencing, a dedicated individualized force-event validation step, five event packets, and the existing combined activation runner. A concrete complete workflow result has not yet been attached.",
+  "activation_effect": "activation-blocked",
+  "notes": "A passing result would confirm structural validation, schema reference resolution, and cross-record integrity only. It would not establish disputed facts, detention or transfer authority, necessity, proportionality, constitutional justification, or liability."
+}
