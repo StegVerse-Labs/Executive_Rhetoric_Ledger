@@ -23,13 +23,15 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - `assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md`
 - `assessments/intake/2026-07-delaney-hall-primary-record-intake.md`
 - `assessments/intake/2026-07-delaney-hall-primary-record-intake.json`
+- `assessments/events/DH-FORCE-001-ground-restraint.json`
+- `assessments/events/DH-FORCE-002-apparent-chemical-agent.json`
+- `assessments/events/DH-FORCE-003-baton-display.json`
 - `schemas/primary-record-intake.schema.json`
-- `validation_results/delaney-hall-assessment-a7674916.pending.json` — superseded historical scope
-- `validation_results/delaney-hall-assessment-f26c060a.pending.json` — superseded historical scope
-- `validation_results/delaney-hall-assessment-470a4c1e.pending.json` — current pending scope
+- `schemas/force-event-packet.schema.json`
 - `scripts/validate_assessment_trees.py`
 - `scripts/validate_primary_record_intake.py`
-- `release/release-readiness-checklist.md`
+- `scripts/validate_force_event_packets.py`
+- `validation_results/delaney-hall-assessment-e4a3c01e.pending.json` — current pending scope
 
 ## Completed mechanisms
 
@@ -40,61 +42,40 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Governance review state.
 - Same-event federal-to-state operational control.
 - Eighteen-item narrative and machine-readable primary-record intake queue.
-- Intake schema and validator.
-- Assessment validator requiring linked annotation, review, control, valid receipts, and assessment-index visibility.
-- Intake validator rejecting duplicate IDs, unresolved completed queues, verified items without receipts, unknown assessment topics, and receipt IDs that do not exist in the matching assessment.
-- Governed assessment index with explicit non-claim and promotion boundaries.
-- Release-readiness checklist corrected to reflect completed reviewer, dispute, deprecation, supersession, intake, and validation mechanisms.
-- Activation runner and existing single workflow integration.
-- Validation receipt succession preserving historical scopes as superseded and the indexed-release scope as pending.
+- Intake schema and validator with receipt-lineage enforcement.
+- Governed assessment index and release-readiness correction.
+- Individualized force-event packet schema.
+- Three catalogued event packets: ground restraint, apparent chemical-agent posture, and baton display.
+- Force-event validator requiring real assessment topics, real Source Posture receipts, real intake IDs, unique event IDs, and classification consistency.
+- Activation runner integration for event-packet validation.
+- Validation receipt succession preserving historical scopes as superseded.
 
-## Discoverability integrity rule
-
-```text
-A review-stage or published assessment must remain visible in assessments/README.md.
-The topic ID, machine entry, and linked narrative annotation must be indexed.
-Index visibility does not promote evidentiary or legal status.
-```
-
-## Intake integrity rule
+## Event-level integrity rule
 
 ```text
-An intake item cannot become verified merely by naming a receipt.
-The referenced Source Posture receipt must exist in the matching Political Influence Tree.
-A missing, cross-topic, or invented receipt ID blocks validation.
+Crowd-level allegations cannot establish the necessity, proportionality, or lawfulness of force against a particular person.
+Each force event must link direct observations, prohibited inferences, missing evidence, authority transitions, intake tasks, and source receipts.
 ```
 
-## Current control posture
+## Current event posture
 
 ```yaml
-control_id: "CTRL-2026-DELANEY-FEDERAL-TO-NJSP"
-alternative_posture_identified: true
-alternative_feasibility_supported: "medium"
-lower_force_outcome_established: false
-constitutional_superiority_established: false
-control_completion: "partial"
-```
-
-## Current intake posture
-
-```yaml
-queue_status: "active"
-total_items: 18
-machine_readable: true
-verified_primary_items: 0
-verified_secondary_items: 0
-restricted_or_sealed_items: 2
-activation_blocking_items: 18
+catalogued_event_packets: 3
+ground_restraint: "necessity, proportionality, and lawfulness not established"
+apparent_chemical_agent: "deployment, target, necessity, proportionality, and lawfulness not established"
+baton_display: "display visible; strike, necessity, proportionality, and lawfulness not established"
+individualized_review_complete: false
 ```
 
 ## Required follow-on work
 
 - Process the active intake queue and attach real Source Posture receipt IDs to verified records.
 - Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
-- Build event-specific warning, arrest, force, injury, medical, and accountability packets.
+- Add further event packets for arrests, observer or press contact, crowd movement, and any verified baton strike or chemical-agent discharge.
+- Populate existing event packets with subject, actor, warning, threat, injury, medical, and policy evidence.
 - Populate same-event and prior-administration controls with comparable measures.
 - Obtain independent evidence-review and control-review sign-off.
-- Supersede `validation_results/delaney-hall-assessment-470a4c1e.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
+- Supersede `validation_results/delaney-hall-assessment-e4a3c01e.pending.json` only after a concrete green, failed, blocked, or reviewed-equivalent validation result exists.
 
 ## Current evidence posture
 
@@ -111,10 +92,10 @@ governance_review_record: true
 assessment_index_visibility: true
 same_event_control: "partial"
 primary_record_intake_queue: "active-machine-readable"
-receipt_cross_link_validation: true
+individualized_force_event_packets: "3-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "current indexed-scope pending receipt installed; no concrete workflow result attached"
+validation_status: "current event-packet scope pending receipt installed; no concrete workflow result attached"
 ```
 
 ## Release posture
