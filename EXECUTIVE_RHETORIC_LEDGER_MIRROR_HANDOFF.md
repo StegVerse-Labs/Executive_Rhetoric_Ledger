@@ -23,18 +23,12 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Intake schema and validator with receipt-lineage enforcement.
 - Governed assessment index and release-readiness correction.
 - Individualized force-event packet schema and validator.
-- Seven catalogued event packets:
-  - ground restraint;
-  - apparent chemical-agent posture;
-  - baton display;
-  - carry or guided removal;
-  - reported observer or mediator chemical exposure;
-  - crowd movement;
-  - reported arrests.
+- Seven catalogued event packets: ground restraint, apparent chemical-agent posture, baton display, carry or guided removal, reported observer or mediator chemical exposure, crowd movement, and reported arrests.
 - Producer-export relative-schema resolver repair.
 - Explicit `referencing` dependency and isolated force-event workflow step.
 - Activation-runner integration.
 - Validation-receipt succession preserving prior scopes as superseded.
+- Event filename and assessment-index integrity validation.
 
 ## Event-level integrity rule
 
@@ -43,6 +37,7 @@ Crowd-level allegations cannot establish the necessity, proportionality, probabl
 Directly observed, secondarily reported, and inferred events must remain distinguishable.
 Crowd presence, obstruction, dispersal, arrest, and force remain separate questions unless evidence links them for a particular person and time.
 Reported arrest totals do not establish probable cause, resistance, warning compliance, or force justification for any specific person.
+An event packet must be stored under a filename beginning with its event ID and must remain linked from assessments/README.md.
 ```
 
 ## Current event posture
@@ -56,6 +51,8 @@ necessity_established_events: 0
 proportionality_established_events: 0
 lawfulness_established_events: 0
 probable_cause_established_arrests: 0
+filename_identity_validation: true
+assessment_index_visibility_validation: true
 ```
 
 ## CI repair posture
@@ -81,7 +78,7 @@ No complete workflow run is attached to the repaired seven-event scope yet.
 
 ## Current validation receipt
 
-`validation_results/delaney-hall-assessment-b95a6926.pending.json`
+`validation_results/delaney-hall-assessment-4a70839a.pending.json`
 
 ```yaml
 validation_status: "pending"
@@ -90,7 +87,7 @@ complete_workflow_result: "not attached"
 release_advanced: false
 ```
 
-The prior six-event repair-inclusive receipt is preserved as superseded.
+The prior seven-event scope without filename and index-integrity enforcement is preserved as superseded.
 
 ## Required follow-on work
 
@@ -122,7 +119,7 @@ primary_record_intake_queue: "active-machine-readable"
 individualized_force_event_packets: "7-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "seven-event repair-inclusive receipt pending; no complete workflow result attached"
+validation_status: "event identity and visibility scope pending; no complete workflow result attached"
 ```
 
 ## Remaining files/modules and destination
