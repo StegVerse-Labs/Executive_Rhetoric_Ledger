@@ -1,0 +1,27 @@
+{
+  "validation_id": "VAL-ERL-2026-07-11-4A70839A-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "bcbdfe1055766696f2123d7d8f1c22a302e24c17",
+  "checked_paths": [
+    "assessments/README.md",
+    "assessments/events/DH-FORCE-001-ground-restraint.json",
+    "assessments/events/DH-FORCE-002-apparent-chemical-agent.json",
+    "assessments/events/DH-FORCE-003-baton-display.json",
+    "assessments/events/DH-FORCE-004-carry-removal.json",
+    "assessments/events/DH-FORCE-005-reported-observer-mediator-contact.json",
+    "assessments/events/DH-FORCE-006-crowd-movement.json",
+    "assessments/events/DH-FORCE-007-reported-arrests.json",
+    "scripts/validate_force_event_packets.py",
+    "scripts/validate_producer_exports.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The current seven-event scope now enforces event-ID-to-filename consistency and requires every force-event packet and link to remain visible in assessments/README.md. Producer-export reference resolution and isolated event validation remain included. No concrete complete workflow result is attached.",
+  "activation_effect": "activation-blocked",
+  "notes": "A passing result would confirm structure, naming, discoverability, schema resolution, and cross-record linkage only. It would not establish disputed facts, probable cause, necessity, proportionality, lawfulness, constitutional justification, or liability."
+}
