@@ -16,6 +16,7 @@ from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSESSMENT_DIR = ROOT / "assessments" / "machine"
+ASSESSMENT_INDEX_PATH = ROOT / "assessments" / "README.md"
 REVIEW_DIR = ROOT / "assessments" / "reviews"
 CONTROL_DIR = ROOT / "assessments" / "controls"
 TREE_SCHEMA_PATH = ROOT / "schemas" / "political-influence-tree.schema.json"
@@ -27,6 +28,13 @@ def load_json(path: Path) -> object:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError(f"Unable to load {path.relative_to(ROOT)}: {exc}") from exc
+
+
+def read_text(path: Path) -> str:
+    try:
+        return path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise ValueError(f"Unable to read {path.relative_to(ROOT)}: {exc}") from exc
 
 
 def format_errors(path: Path, errors: list) -> list[str]:
@@ -55,6 +63,12 @@ def main() -> int:
     tree_validator = Draft202012Validator(tree_schema)
     source_validator = Draft202012Validator(source_schema)
 
+    try:
+        assessment_index = read_text(ASSESSMENT_INDEX_PATH)
+    except ValueError as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        return 1
+
     files = sorted(ASSESSMENT_DIR.glob("*.json"))
     if not files:
         print(f"FAIL: no assessment trees found in {ASSESSMENT_DIR.relative_to(ROOT)}", file=sys.stderr)
@@ -79,11 +93,26 @@ def main() -> int:
 
         topic_id = str(document.get("topic_id", "")).strip()
         related_annotation = str(document.get("related_annotation", "")).strip()
+
+        if topic_id and topic_id not in assessment_index:
+            failures.append(
+                f"{path.relative_to(ROOT)}:topic_id: {topic_id} is not visible in assessments/README.md"
+            )
+
+        if path.name not in assessment_index:
+            failures.append(
+                f"{path.relative_to(ROOT)}: machine assessment file is not linked from assessments/README.md"
+            )
+
         if related_annotation:
             annotation_path = ROOT / related_annotation
             if not annotation_path.is_file():
                 failures.append(
                     f"{path.relative_to(ROOT)}:related_annotation: linked file does not exist: {related_annotation}"
+                )
+            elif annotation_path.name not in assessment_index:
+                failures.append(
+                    f"{path.relative_to(ROOT)}:related_annotation: {annotation_path.name} is not linked from assessments/README.md"
                 )
 
         receipts = document.get("receipts", {})
@@ -135,7 +164,9 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print(f"Validated {len(files)} assessment tree(s), linked annotations, reviews, controls, and embedded source receipts.")
+    print(
+        f"Validated {len(files)} assessment tree(s), index visibility, linked annotations, reviews, controls, and embedded source receipts."
+    )
     return 0
 
 
