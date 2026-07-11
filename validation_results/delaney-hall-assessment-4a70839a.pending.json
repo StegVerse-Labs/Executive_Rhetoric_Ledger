@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-4A70839A-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-4A70839A-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "bcbdfe1055766696f2123d7d8f1c22a302e24c17",
   "checked_paths": [
     "assessments/README.md",
@@ -21,7 +21,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current seven-event scope now enforces event-ID-to-filename consistency and requires every force-event packet and link to remain visible in assessments/README.md. Producer-export reference resolution and isolated event validation remain included. No concrete complete workflow result is attached.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm structure, naming, discoverability, schema resolution, and cross-record linkage only. It would not establish disputed facts, probable cause, necessity, proportionality, lawfulness, constitutional justification, or liability."
+  "result_summary": "This scope was superseded after workflow validation identified an unsupported agency-status value in DH-FORCE-007. The failure was specific to government_action.agency_status and did not establish any factual or legal defect in the underlying assessment.",
+  "activation_effect": "no-activation-change",
+  "notes": "The bounded correction replaced 'partially-identified' with schema-supported 'unknown', consistent with the packet's unresolved arresting-agency posture."
 }
