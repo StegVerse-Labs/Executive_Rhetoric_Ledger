@@ -23,12 +23,7 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Intake schema and validator with receipt-lineage enforcement.
 - Governed assessment index and release-readiness correction.
 - Individualized force-event packet schema and validator.
-- Five catalogued event packets:
-  - ground restraint;
-  - apparent chemical-agent posture;
-  - baton display;
-  - carry or guided removal;
-  - reported observer or mediator chemical exposure.
+- Five catalogued event packets: ground restraint, apparent chemical-agent posture, baton display, carry or guided removal, and reported observer or mediator chemical exposure.
 - Activation-runner integration.
 - Validation-receipt succession preserving prior scopes as superseded.
 
@@ -46,47 +41,61 @@ Each event must link direct observations, prohibited inferences, missing evidenc
 catalogued_event_packets: 5
 direct_visual_packets: 4
 secondary_report_packets: 1
-ground_restraint: "necessity, proportionality, and lawfulness not established"
-apparent_chemical_agent: "deployment, target, necessity, proportionality, and lawfulness not established"
-baton_display: "display visible; strike, necessity, proportionality, and lawfulness not established"
-carry_or_guided_removal: "purpose, sequence, necessity, proportionality, and lawfulness not established"
-reported_observer_contact: "reported exposure material; primary evidence, intent, target, necessity, proportionality, and lawfulness not established"
 individualized_review_complete: false
+necessity_established_events: 0
+proportionality_established_events: 0
+lawfulness_established_events: 0
 ```
 
 ## CI blocker and bounded repair
 
-The `Validate Ledger Schemas` workflow run `29161213934` failed at `Validate producer export examples` before the assessment, intake, event, and combined validators ran.
+Workflow run `29161213934` failed at `Validate producer export examples` before the assessment, intake, event, and combined validators ran.
 
-The producer export example itself appears conformant. The validator loaded `producer-export.schema.json`, whose embedded receipt items use the relative reference `source-posture.schema.json`, but invoked validation without registering that referenced schema.
+Root cause:
 
-Bounded repair installed in `scripts/validate_producer_exports.py`:
+```yaml
+failure: "producer-export schema relative reference unresolved"
+relative_reference: "source-posture.schema.json"
+example_data_defect_found: false
+schema_weakened: false
+```
+
+Repair installed in `scripts/validate_producer_exports.py`:
 
 - uses the Draft 2020-12 validator explicitly;
 - registers `source-posture.schema.json` through a `referencing.Registry`;
 - preserves separate embedded-receipt validation;
 - reports the precise failing JSON path;
-- does not weaken either schema or alter the producer export example.
+- does not alter the producer export example or weaken either schema.
 
 Repair commit: `0ae8fab3778216d754192a324a362ff5040f9937`.
 
-```yaml
-root_cause: "relative JSON Schema reference was not registered by validator"
-repair_installed: true
-repair_scope: "producer export validator only"
-new_workflow_result: "pending"
-release_advanced: false
-```
+Workflow observability update installed in `.github/workflows/validate-ledger-schemas.yml`:
+
+- explicitly installs both `jsonschema` and `referencing`;
+- adds a named `Validate individualized force-event packets` step;
+- preserves the existing single-workflow architecture;
+- retains the final combined activation runner.
+
+Workflow update commit: `4f7f6304937b63319a1e7ac0b48f8fd8f64dda7c`.
 
 ## Current validation receipt
 
-`validation_results/delaney-hall-assessment-0ae8fab3.pending.json`
+`validation_results/delaney-hall-assessment-4f7f6304.pending.json`
 
-The pre-repair five-event receipt is preserved as superseded. The current receipt includes the five event packets and producer-export resolver repair. No complete workflow result is attached yet.
+Earlier repair-only and pre-repair receipts are preserved as superseded. The current receipt includes the five event packets, producer-export resolver repair, explicit registry dependency, isolated force-event validation step, and combined activation runner.
+
+```yaml
+validation_status: "pending"
+activation_effect: "activation-blocked"
+complete_workflow_result: "not attached"
+release_advanced: false
+```
 
 ## Required follow-on work
 
-- Confirm the producer-export resolver repair through a concrete complete workflow run.
+- Confirm the resolver and workflow-observability repair through a concrete complete workflow run.
+- If another step fails, preserve the exact run, job, step, JSON path, and error before applying a bounded repair.
 - Process the active intake queue and attach real Source Posture receipt IDs to verified records.
 - Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
 - Add remaining event packets for individualized arrests, crowd movement, and any verified baton strike or chemical-agent discharge.
@@ -112,7 +121,7 @@ primary_record_intake_queue: "active-machine-readable"
 individualized_force_event_packets: "5-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "repair-inclusive pending receipt installed; complete workflow confirmation pending"
+validation_status: "current isolated-event workflow receipt pending; complete run confirmation unavailable"
 ```
 
 ## Remaining files/modules and destination
@@ -120,6 +129,7 @@ validation_status: "repair-inclusive pending receipt installed; complete workflo
 ```text
 StegVerse-Labs/Executive_Rhetoric_Ledger:
   - concrete complete schema-validation result
+  - any next bounded CI repair identified by a complete failing-step log
   - additional individualized force-event packets as evidence permits
   - populated subject, actor, warning, threat, injury, medical, and policy fields
   - independent evidence-review and control-review sign-off
@@ -127,8 +137,8 @@ StegVerse-Labs/Executive_Rhetoric_Ledger:
 
 ## Release posture
 
-This assessment is a catalogued working record, not a final legal conclusion, adjudication, or verified incident reconstruction. The producer-export repair must be confirmed before validation or release-readiness status advances.
+This assessment is a catalogued working record, not a final legal conclusion, adjudication, or verified incident reconstruction. Validation and release-readiness status cannot advance until a complete workflow result confirms the repaired chain.
 
 ## Archive readiness
 
-This handoff contains the current assessment posture, five event packets, CI root cause, bounded repair, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the current assessment posture, five event packets, CI root cause, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
