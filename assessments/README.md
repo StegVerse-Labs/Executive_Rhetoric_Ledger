@@ -1,0 +1,55 @@
+# Assessments Index
+
+## Purpose
+
+This directory contains source-postured assessments that apply the repository's Political Influence Tree, Source Posture, control-comparison, reviewer, dispute, deprecation, validation-result, and activation-boundary mechanisms to specific incidents or claims.
+
+An assessment is not a legal judgment merely because it is indexed here.
+
+## Active assessments
+
+### Delaney Hall detention protest, hunger strike, and federal use of force
+
+```yaml
+topic_id: "PIT-MODERN-2026-DELANEY-HALL-FORCE"
+review_status: "needs-source-posture"
+control_status: "partial"
+intake_status: "active"
+validation_status: "pending"
+use_of_force_legitimacy: "not established"
+final_legal_conclusion: false
+```
+
+Core records:
+
+- [Narrative assessment](2026-07-federal-detention-protest-use-of-force.md)
+- [Machine-readable Political Influence Tree](machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json)
+- [Governance review](reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md)
+- [Constitutional authority map](constitutional-authority/2026-07-delaney-hall-authority-map.md)
+- [Frame index](evidence/2026-07-federal-detention-protest-frame-index.md)
+- [Source receipts](evidence/2026-07-delaney-hall-source-receipts.md)
+- [Federal-to-state same-event control](controls/2026-07-delaney-hall-federal-to-state-operational-control.md)
+- [Narrative primary-record intake queue](intake/2026-07-delaney-hall-primary-record-intake.md)
+- [Machine-readable primary-record intake queue](intake/2026-07-delaney-hall-primary-record-intake.json)
+
+Validation records:
+
+- Current scope: `validation_results/delaney-hall-assessment-f26c060a.pending.json`
+- Superseded historical scope: `validation_results/delaney-hall-assessment-a7674916.pending.json`
+
+## Assessment rules
+
+1. Claim existence and claim truth remain separate.
+2. Government status does not independently establish constitutional standing.
+3. Missing evidence expands collection duties; it does not supply provisional legitimacy.
+4. Official justification claims must be preserved without being treated as self-validating.
+5. Protest purpose does not automatically legalize every protest action.
+6. Misconduct by one participant does not transfer to the entire crowd.
+7. Force must be reconstructed and assessed individually.
+8. Verified intake states require real Source Posture receipts in the matching Political Influence Tree.
+9. Structural validation cannot establish factual truth, lawful authority, or constitutional justification.
+10. Accepted, deprecated, superseded, disputed, and rejected states must follow the repository governance policy.
+
+## Promotion boundary
+
+An assessment may not advance because its narrative is persuasive or politically useful. Promotion requires source posture, required controls, review status, validation status, and classification scope to remain mutually consistent.
