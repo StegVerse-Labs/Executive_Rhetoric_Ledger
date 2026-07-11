@@ -10,6 +10,7 @@ Checks:
 4. governance-pattern entries
 5. machine-readable assessment Political Influence Trees and source receipts
 6. machine-readable primary-record intake queues
+7. individualized force-event packets
 """
 
 from __future__ import annotations
@@ -26,6 +27,7 @@ CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_governance_patterns.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_assessment_trees.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_primary_record_intake.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_force_event_packets.py")],
 ]
 
 
