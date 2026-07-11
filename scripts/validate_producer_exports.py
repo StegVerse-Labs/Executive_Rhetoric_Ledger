@@ -21,6 +21,7 @@ from typing import Iterable
 
 try:
     import jsonschema
+    from referencing import Registry, Resource
 except ImportError as exc:  # pragma: no cover
     raise SystemExit(
         "Missing dependency: jsonschema. Install with `python -m pip install jsonschema`."
@@ -52,27 +53,58 @@ def export_files_from_args(args: Iterable[str]) -> list[Path]:
     return default_export_files()
 
 
-def validate_export(path: Path, producer_schema: dict, source_schema: dict) -> None:
+def build_registry(source_schema: dict) -> Registry:
+    """Register the relative source schema reference used by producer exports."""
+    resource = Resource.from_contents(source_schema)
+    return Registry().with_resources(
+        [
+            ("source-posture.schema.json", resource),
+            (SOURCE_SCHEMA_PATH.as_uri(), resource),
+        ]
+    )
+
+
+def validate_export(
+    path: Path,
+    producer_validator: jsonschema.Draft202012Validator,
+    source_validator: jsonschema.Draft202012Validator,
+) -> None:
     data = load_json(path)
 
-    jsonschema.validate(instance=data, schema=producer_schema)
+    producer_errors = sorted(
+        producer_validator.iter_errors(data), key=lambda error: list(error.path)
+    )
+    if producer_errors:
+        error = producer_errors[0]
+        location = ".".join(str(part) for part in error.path) or "<root>"
+        raise jsonschema.ValidationError(
+            f"{path}: producer-export validation failed at {location}: {error.message}"
+        )
 
     receipts = data.get("source_receipts", [])
     if not receipts:
         raise jsonschema.ValidationError(f"{path}: source_receipts must not be empty")
 
     for index, receipt in enumerate(receipts):
-        try:
-            jsonschema.validate(instance=receipt, schema=source_schema)
-        except jsonschema.ValidationError as exc:
+        receipt_errors = sorted(
+            source_validator.iter_errors(receipt), key=lambda error: list(error.path)
+        )
+        if receipt_errors:
+            error = receipt_errors[0]
+            location = ".".join(str(part) for part in error.path) or "<root>"
             raise jsonschema.ValidationError(
-                f"{path}: source_receipts[{index}] failed source-posture validation: {exc.message}"
-            ) from exc
+                f"{path}: source_receipts[{index}] failed source-posture validation at {location}: {error.message}"
+            )
 
 
 def main(argv: list[str]) -> int:
     producer_schema = load_json(PRODUCER_SCHEMA_PATH)
     source_schema = load_json(SOURCE_SCHEMA_PATH)
+    registry = build_registry(source_schema)
+    producer_validator = jsonschema.Draft202012Validator(
+        producer_schema, registry=registry
+    )
+    source_validator = jsonschema.Draft202012Validator(source_schema)
     export_files = export_files_from_args(argv)
 
     if not export_files:
@@ -83,7 +115,7 @@ def main(argv: list[str]) -> int:
 
     for path in export_files:
         try:
-            validate_export(path, producer_schema, source_schema)
+            validate_export(path, producer_validator, source_validator)
             print(f"PASS {path}")
         except Exception as exc:  # noqa: BLE001 - CLI should report all validation failures
             failures.append(f"FAIL {path}: {exc}")
