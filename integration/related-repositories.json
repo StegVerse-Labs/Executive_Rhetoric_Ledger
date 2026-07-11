@@ -1,0 +1,144 @@
+{
+  "network_id": "ERL-RELATED-REPOSITORIES-2026-01",
+  "ledger_repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "status": "active",
+  "last_reviewed": "2026-07-11",
+  "repositories": [
+    {
+      "repository": "StegVerse-Labs/VAwatchdog",
+      "relationship_status": "declared",
+      "roles": ["oversight-source", "historical-backfill", "outcome-refresh"],
+      "allowed_contributions": ["candidate-incidents", "source-receipts", "primary-record-pointers", "institutional-response-records", "outcome-records", "contradiction-candidates"],
+      "evidence_boundary": "Oversight findings, allegations, and veteran-affairs records enter as source-postured candidates; repository origin does not establish factual truth or institutional fault.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports veteran-affairs oversight, institutional response, historical pattern, and outcome reconstruction."
+    },
+    {
+      "repository": "StegVerse-Labs/StegScholar",
+      "relationship_status": "declared",
+      "roles": ["scholarly-research", "historical-backfill", "control-comparison"],
+      "allowed_contributions": ["source-receipts", "historical-context", "control-candidates", "contradiction-candidates", "adjacency-links"],
+      "evidence_boundary": "Academic and scholarly material supports interpretation, context, and control design but does not replace primary records for event-specific claims.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Provides research literature, methodology, historiography, and expert-context candidates."
+    },
+    {
+      "repository": "StegVerse-Labs/StegSocials",
+      "relationship_status": "declared",
+      "roles": ["social-signal-discovery", "adjacency-discovery", "outcome-refresh"],
+      "allowed_contributions": ["candidate-incidents", "source-receipts", "contradiction-candidates", "adjacency-links", "outcome-records"],
+      "evidence_boundary": "Social content may prove that a claim, reaction, or media artifact circulated; it does not independently prove the underlying event or allegation.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports recurring discovery, public-reaction tracking, correction detection, and media provenance leads."
+    },
+    {
+      "repository": "StegVerse-Labs/Patents",
+      "relationship_status": "declared",
+      "roles": ["patent-and-innovation-history", "historical-backfill", "adjacency-discovery"],
+      "allowed_contributions": ["primary-record-pointers", "historical-context", "relationship-claims", "action-records", "adjacency-links"],
+      "evidence_boundary": "Patent records establish filings, claims, inventorship, assignment, and prosecution history only to the extent shown by authoritative records; they do not independently prove deployment, effectiveness, ownership beyond the record, or political influence.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Connects innovation, ownership, institutional adoption, and technology-policy rhetoric."
+    },
+    {
+      "repository": "StegVerse-Labs/Administrations",
+      "relationship_status": "declared",
+      "roles": ["administration-record", "control-comparison", "historical-backfill", "outcome-refresh"],
+      "allowed_contributions": ["rhetoric-records", "action-records", "institutional-response-records", "outcome-records", "control-candidates", "source-receipts"],
+      "evidence_boundary": "Administration records remain separated by officeholder, authority, date, instrument, and outcome; party or administration identity cannot substitute for evidence or control comparison.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Primary cross-administration producer and control-comparison source."
+    },
+    {
+      "repository": "StegVerse-Labs/Trumpality",
+      "relationship_status": "declared",
+      "roles": ["person-or-network-specific-record", "public-figure-record", "historical-backfill", "outcome-refresh"],
+      "allowed_contributions": ["rhetoric-records", "action-records", "candidate-incidents", "source-receipts", "contradiction-candidates", "outcome-records", "adjacency-links"],
+      "evidence_boundary": "Person-specific collection must distinguish verbatim statement, reported statement, interpretation, action, legal finding, allegation, and measurable outcome.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Upstream producer for person-specific rhetoric-to-action and historical comparison records."
+    },
+    {
+      "repository": "StegVerse-Labs/Giuffre-ality",
+      "relationship_status": "declared",
+      "roles": ["person-or-network-specific-record", "historical-backfill", "adjacency-discovery"],
+      "allowed_contributions": ["candidate-incidents", "source-receipts", "primary-record-pointers", "historical-context", "relationship-claims", "contradiction-candidates", "adjacency-links"],
+      "evidence_boundary": "Victim, witness, legal, media, and network records must preserve attribution, legal posture, privacy, uncertainty, and the distinction between allegation and adjudicated fact.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports person-specific chronology, network adjacency, legal-record linkage, and correction history."
+    },
+    {
+      "repository": "StegVerse-Labs/Maxwellality",
+      "relationship_status": "declared",
+      "roles": ["person-or-network-specific-record", "historical-backfill", "adjacency-discovery", "outcome-refresh"],
+      "allowed_contributions": ["candidate-incidents", "source-receipts", "primary-record-pointers", "historical-context", "relationship-claims", "institutional-response-records", "outcome-records", "adjacency-links"],
+      "evidence_boundary": "Criminal findings, allegations, testimony, associations, and media claims remain separately classified and linked to their exact record posture.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports legal chronology, network relationships, institutional response, and historical outcomes."
+    },
+    {
+      "repository": "StegVerse-Labs/Epsteinality",
+      "relationship_status": "declared",
+      "roles": ["person-or-network-specific-record", "historical-backfill", "adjacency-discovery", "outcome-refresh"],
+      "allowed_contributions": ["candidate-incidents", "source-receipts", "primary-record-pointers", "historical-context", "relationship-claims", "institutional-response-records", "outcome-records", "adjacency-links", "contradiction-candidates"],
+      "evidence_boundary": "Association, allegation, charge, conviction, civil finding, institutional response, and unresolved claim must remain distinct; adjacency alone does not establish participation or culpability.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports long-range chronology, network mapping, institutional accountability, and contradiction resolution."
+    },
+    {
+      "repository": "StegVerse-Labs/Talarico",
+      "relationship_status": "declared",
+      "roles": ["public-figure-record", "adjacency-discovery", "outcome-refresh"],
+      "allowed_contributions": ["rhetoric-records", "action-records", "candidate-incidents", "source-receipts", "contradiction-candidates", "outcome-records"],
+      "evidence_boundary": "Public-figure rhetoric, legislative action, reported characterization, and audience interpretation must remain separately sourced and classified.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports public-figure rhetoric, action, response, and later-outcome tracking."
+    },
+    {
+      "repository": "StegVerse-Labs/FREE-DOM_OverSight",
+      "relationship_status": "declared",
+      "roles": ["oversight-source", "control-comparison", "historical-backfill", "outcome-refresh"],
+      "allowed_contributions": ["candidate-incidents", "source-receipts", "primary-record-pointers", "institutional-response-records", "outcome-records", "control-candidates", "contradiction-candidates"],
+      "evidence_boundary": "Oversight hypotheses and findings require exact authority, source, jurisdiction, review status, and remedy posture before ledger promotion.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Provides cross-domain oversight candidates, control cases, and accountability outcomes."
+    },
+    {
+      "repository": "StegVerse-Labs/Randolph_Geneaology_Hub",
+      "relationship_status": "declared",
+      "roles": ["genealogical-and-family-history", "biographical-surface", "historical-backfill"],
+      "allowed_contributions": ["primary-record-pointers", "historical-context", "biographical-context", "relationship-claims", "adjacency-links"],
+      "evidence_boundary": "Genealogical and family relationships require record-backed lineage and privacy review; familial connection does not establish political alignment, responsibility, or influence.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports historical identity continuity, family chronology, and biographical context where politically material."
+    },
+    {
+      "repository": "StegVerse-Labs/StegLearn",
+      "relationship_status": "declared",
+      "roles": ["educational-surface"],
+      "allowed_contributions": ["educational-summaries"],
+      "evidence_boundary": "Educational outputs must link back to reviewed ledger records and preserve uncertainty, disputes, source posture, and supersession history.",
+      "ingestion_direction": "ledger-to-publication-surface",
+      "notes": "Translates reviewed compendium records into educational materials without becoming an independent evidence authority."
+    },
+    {
+      "repository": "StegVerse-Labs/StegBiography",
+      "relationship_status": "declared",
+      "roles": ["biographical-surface", "historical-backfill", "adjacency-discovery"],
+      "allowed_contributions": ["biographical-context", "historical-context", "primary-record-pointers", "relationship-claims", "adjacency-links", "educational-summaries"],
+      "evidence_boundary": "Biography must distinguish documented life events, self-report, third-party report, disputed characterization, inference, and unknown periods.",
+      "ingestion_direction": "bidirectional-reviewed",
+      "notes": "Supports evidence-backed biography and person-to-event historical context."
+    }
+  ],
+  "governance_rules": [
+    "A related repository may nominate evidence or candidates but cannot self-authorize ledger acceptance.",
+    "Repository origin never replaces Source Posture classification.",
+    "Cross-repository imports must preserve source URL or durable pointer, access date, claim role, and verification state.",
+    "Allegation, association, adjudicated fact, rhetoric, action, institutional response, and outcome remain separate record classes.",
+    "Sensitive personal, victim, medical, genealogical, and sealed records require privacy-preserving handling.",
+    "Adjacency links are research leads and do not establish causation, coordination, influence, or culpability.",
+    "Conflicting records must remain visible until governed resolution or explicit unresolved classification.",
+    "StegLearn and other publication surfaces may publish only reviewed ledger outputs with uncertainty and supersession preserved."
+  ]
+}
