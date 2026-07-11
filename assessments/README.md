@@ -16,7 +16,7 @@ review_status: "needs-source-posture"
 control_status: "partial"
 intake_status: "active"
 event_packet_status: "5-catalogued-partial"
-validation_status: "pending"
+validation_status: "pending-repair-confirmation"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
 ```
@@ -45,8 +45,8 @@ The first four packets derive from direct visual observations in the supplied re
 
 Validation records:
 
-- Current scope: `validation_results/delaney-hall-assessment-f7d1cc2e.pending.json`
-- Superseded event-packet scope: `validation_results/delaney-hall-assessment-e4a3c01e.pending.json`
+- Current repair-inclusive scope: `validation_results/delaney-hall-assessment-0ae8fab3.pending.json`
+- Superseded five-event pre-repair scope: `validation_results/delaney-hall-assessment-f7d1cc2e.pending.json`
 - Earlier superseded scopes remain preserved in `validation_results/`.
 
 ## Assessment rules
