@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-11-4F7F6304-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-11-4F7F6304-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "495c798badd83307ed261816a87f4beb8132ff61",
   "checked_paths": [
     "assessments/README.md",
@@ -31,7 +31,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The current scope includes the registered relative-schema resolver repair, explicit installation of jsonschema and referencing, a dedicated individualized force-event validation step, five event packets, and the existing combined activation runner. A concrete complete workflow result has not yet been attached.",
-  "activation_effect": "activation-blocked",
-  "notes": "A passing result would confirm structural validation, schema reference resolution, and cross-record integrity only. It would not establish disputed facts, detention or transfer authority, necessity, proportionality, constitutional justification, or liability."
+  "result_summary": "This pending receipt was superseded when the Delaney Hall assessment added a sixth individualized crowd-movement packet and updated the governed assessment index. It never received a concrete complete workflow result.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical five-event workflow-observability scope preserved. The current pending receipt is validation_results/delaney-hall-assessment-406f0f8c.pending.json. Supersession does not establish factual truth, authority, necessity, proportionality, lawfulness, or liability."
 }
