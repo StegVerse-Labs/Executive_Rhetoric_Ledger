@@ -1,0 +1,26 @@
+{
+  "validation_id": "VAL-ERL-2026-07-10-A7674916-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "a7674916e6316fb60e82007a73fabcffe035d5db",
+  "checked_paths": [
+    "assessments/2026-07-federal-detention-protest-use-of-force.md",
+    "assessments/evidence/2026-07-federal-detention-protest-frame-index.md",
+    "assessments/evidence/2026-07-delaney-hall-source-receipts.md",
+    "assessments/constitutional-authority/2026-07-delaney-hall-authority-map.md",
+    "assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json",
+    "assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md",
+    "assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md",
+    "scripts/validate_assessment_trees.py",
+    "scripts/run_activation_validation.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The Delaney Hall assessment has been integrated into the repository's existing Political Influence Tree, Source Posture, governance review, control comparison, activation runner, and validation workflow mechanisms. No concrete GitHub Actions result was attached when checked, so validation remains pending and no activation claim is permitted.",
+  "activation_effect": "activation-blocked",
+  "notes": "Replace or supersede this receipt only after a concrete workflow or equivalent reviewed validation result exists. A passing schema result would validate structure, links, and receipts; it would not establish the truth of disputed incident claims or the constitutional legitimacy of force."
+}
