@@ -1,6 +1,6 @@
 {
-  "validation_id": "VAL-ERL-2026-07-10-A7674916-PENDING",
-  "validation_status": "pending",
+  "validation_id": "VAL-ERL-2026-07-10-A7674916-SUPERSEDED",
+  "validation_status": "superseded",
   "checked_commit": "a7674916e6316fb60e82007a73fabcffe035d5db",
   "checked_paths": [
     "assessments/2026-07-federal-detention-protest-use-of-force.md",
@@ -20,7 +20,7 @@
     "run_id": "",
     "run_url": ""
   },
-  "result_summary": "The Delaney Hall assessment has been integrated into the repository's existing Political Influence Tree, Source Posture, governance review, control comparison, activation runner, and validation workflow mechanisms. No concrete GitHub Actions result was attached when checked, so validation remains pending and no activation claim is permitted.",
-  "activation_effect": "activation-blocked",
-  "notes": "Replace or supersede this receipt only after a concrete workflow or equivalent reviewed validation result exists. A passing schema result would validate structure, links, and receipts; it would not establish the truth of disputed incident claims or the constitutional legitimacy of force."
+  "result_summary": "This pending receipt was superseded because the Delaney Hall assessment scope expanded after commit a7674916 to include a governed machine-readable intake schema, queue, validator, and cross-record integrity checks. It did not receive a concrete workflow result and must not be interpreted as passed or failed.",
+  "activation_effect": "no-activation-change",
+  "notes": "Historical receipt preserved. The current pending receipt is validation_results/delaney-hall-assessment-f26c060a.pending.json. Supersession records scope evolution only; it does not validate facts, authority, or force legitimacy."
 }
