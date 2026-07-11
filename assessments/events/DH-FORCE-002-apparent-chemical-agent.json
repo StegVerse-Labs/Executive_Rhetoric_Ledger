@@ -1,0 +1,17 @@
+{
+  "event_id": "DH-FORCE-002",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "chemical-agent",
+  "approximate_time": "about 00:16 in supplied screen recording",
+  "subject_posture": {"identity_status":"unknown","role_status":"unknown","visible_conduct":["Several people are in close proximity to officers.","No individualized threatening act is established by the sampled frame."]},
+  "government_action": {"actor_identity_status":"unknown","agency_status":"visible-marking-only","action_description":"An officer appears to hold a chemical-agent canister or similar device directed toward people at close range.","force_tools":["apparent chemical-agent canister"]},
+  "claimed_justification":["General official accounts cited disorder, obstruction, attacks, or officer safety; no event-specific deployment report is available."],
+  "direct_observations":["Close crowd contact is visible.","A canister-like device is visible in an officer's hand.","Discharge cannot be conclusively established from the sampled still alone."],
+  "prohibited_inferences":["Do not infer that the device was discharged at this exact frame.","Do not infer the target or dose.","Do not transfer misconduct attributed to others to every nearby person."],
+  "missing_evidence":["Continuous video","Audio and warnings","Chemical-agent deployment report","Target identification","Medical records","Component policy"],
+  "source_receipt_ids":["SRC-2026-DH-VIDEO-001","SRC-2026-DH-AP-001","SRC-2026-DH-GUARDIAN-001"],
+  "intake_ids":["DH-INTAKE-002","DH-INTAKE-003","DH-INTAKE-005","DH-INTAKE-006","DH-INTAKE-007","DH-INTAKE-012","DH-INTAKE-017","DH-INTAKE-018"],
+  "authority_transition_ids":["T7","T8","T10","T11","T12"],
+  "classification":{"necessity":"not-established","proportionality":"not-established","lawfulness":"not-established","confidence":"medium","notes":"The tool and close-contact posture are visible, but deployment, target, threat, warning, alternatives, and medical consequences remain unresolved."}
+}
