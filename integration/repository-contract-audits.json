@@ -1,0 +1,90 @@
+{
+  "registry_id": "ERL-REPOSITORY-CONTRACT-AUDITS-2026-01",
+  "ledger_repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "status": "active",
+  "last_reviewed": "2026-07-11",
+  "audits": [
+    {
+      "repository": "StegVerse-Labs/Trumpality",
+      "audit_state": "repaired-partial",
+      "contract_state": "partially-verified",
+      "adapter_state": "candidate-blocked",
+      "verified_inputs": [
+        "seeds/sources.urls.txt",
+        "subject parameter Donald J. Trump",
+        "topic_cluster parameter general",
+        "data/processed/records.sqlite for co-occurrence input",
+        "optional quarantine table for co-occurrence input"
+      ],
+      "verified_outputs": [
+        "data/processed/records.sqlite records table",
+        "data/processed/records.sqlite cooccurrence table",
+        "data/processed/cooccurrence_report.csv",
+        "declared records/ primary records path",
+        "declared freedom graph path",
+        "declared datasets/exports path"
+      ],
+      "verified_receipts": [],
+      "verified_consumers": [],
+      "verified_failure_handling": [
+        "individual URL fetch failures print skip and continue",
+        "workflow commit steps tolerate no-change commits"
+      ],
+      "repairs": [
+        {
+          "description": "Aligned weekly ingest workflow paths with lowercase core tree",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "13585e234d124a08a6b355b220bc97d0566143f8"
+        },
+        {
+          "description": "Aligned co-occurrence workflow with lowercase core and existing coocur directory",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "7648cb9c1524309ea8688aa3b3cac47d270be2dc"
+        },
+        {
+          "description": "Aligned ingest shell helper with lowercase core path",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "0fe22d056084f0f6ab3e43ca24934f478e234d50"
+        },
+        {
+          "description": "Aligned ingest pipeline imports with lowercase core package",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "bde903fd1498026516e01e606e30bdc59f6036cd"
+        },
+        {
+          "description": "Aligned database schema path with lowercase core tree",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "db8b6f9759661ba39cd80919008cdc85f949a1ae"
+        },
+        {
+          "description": "Aligned co-occurrence schema path with lowercase core tree",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "b8689c5b9aa5c5b8e1a9c85fd2113239bb016c95"
+        }
+      ],
+      "blockers": [
+        "No complete successful native workflow run is attached after the path repairs",
+        "Archive and monitor implementation files were not located",
+        "No structured archive receipt was verified",
+        "No producer-export object or callback contract was verified",
+        "No downstream consumer acknowledgment path was verified",
+        "No URL-level content-hash or claim-level deduplication behavior was verified",
+        "Fetch failures do not produce structured unresolved-source receipts",
+        "Seed records are assigned the fixed investigative_report category before governed source-role review"
+      ],
+      "evidence_boundaries": [
+        "A retrieved page proves availability and captured content only to the extent preserved; it does not prove every claim on the page",
+        "The co-occurrence strength score is a research-priority signal and does not establish causation coordination participation or truth",
+        "Repository origin verification labels and scheduled execution do not authorize ledger acceptance",
+        "The SQLite database must not be treated as an accepted-fact store"
+      ],
+      "audit_ref": "integration/contracts/Trumpality.contract-audit.md"
+    }
+  ],
+  "governance_rules": [
+    "A repaired execution path does not make a contract verified.",
+    "An adapter may not become ready or active until inputs outputs receipts consumers failure handling privacy and correction behavior are verified.",
+    "Declared output paths are not verified outputs unless their production and consumption are observed.",
+    "Heuristic clustering and co-occurrence scores are research signals rather than proof of relationship or causation."
+  ]
+}
