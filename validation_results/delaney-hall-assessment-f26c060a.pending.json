@@ -1,0 +1,30 @@
+{
+  "validation_id": "VAL-ERL-2026-07-10-F26C060A-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "ca01c5f44dc47d13d3841b371906dd8271041c98",
+  "checked_paths": [
+    "assessments/2026-07-federal-detention-protest-use-of-force.md",
+    "assessments/evidence/2026-07-federal-detention-protest-frame-index.md",
+    "assessments/evidence/2026-07-delaney-hall-source-receipts.md",
+    "assessments/constitutional-authority/2026-07-delaney-hall-authority-map.md",
+    "assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json",
+    "assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md",
+    "assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md",
+    "assessments/intake/2026-07-delaney-hall-primary-record-intake.md",
+    "assessments/intake/2026-07-delaney-hall-primary-record-intake.json",
+    "schemas/primary-record-intake.schema.json",
+    "scripts/validate_assessment_trees.py",
+    "scripts/validate_primary_record_intake.py",
+    "scripts/run_activation_validation.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The current Delaney Hall assessment scope includes the narrative and machine Political Influence Tree, embedded Source Posture receipts, governance review, same-event control, narrative and machine-readable primary-record intake queues, intake schema, assessment and intake validators, cross-link integrity checks, activation runner integration, and the existing validation workflow. No concrete workflow result has yet been attached.",
+  "activation_effect": "activation-blocked",
+  "notes": "A passing result would validate repository structure and cross-record integrity only. It would not establish disputed facts, lawful detention or transfer authority, or constitutional justification for force."
+}
