@@ -29,6 +29,7 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 - Activation-runner integration.
 - Validation-receipt succession preserving prior scopes as superseded.
 - Event filename and assessment-index integrity validation.
+- Schema-bounded repair for the reported-arrests agency posture.
 
 ## Event-level integrity rule
 
@@ -36,7 +37,7 @@ When evidence surrounding state coercion is incomplete, the correct response is 
 Crowd-level allegations cannot establish the necessity, proportionality, probable cause, or lawfulness of action against a particular person.
 Directly observed, secondarily reported, and inferred events must remain distinguishable.
 Crowd presence, obstruction, dispersal, arrest, and force remain separate questions unless evidence links them for a particular person and time.
-Reported arrest totals do not establish probable cause, resistance, warning compliance, or force justification for any specific person.
+Reported arrest totals do not establish probable cause, resistance, warning compliance, force justification, or arresting-agency identity for any specific person.
 An event packet must be stored under a filename beginning with its event ID and must remain linked from assessments/README.md.
 ```
 
@@ -57,41 +58,44 @@ assessment_index_visibility_validation: true
 
 ## CI repair posture
 
-Workflow run `29161213934` failed at `Validate producer export examples` because the producer-export schema referenced `source-posture.schema.json` without the validator registering that relative schema.
+The producer-export relative-schema reference failure was repaired without weakening either schema.
 
-Repair installed in `scripts/validate_producer_exports.py`:
+A later workflow reached `Validate individualized force-event packets` and identified this exact schema failure:
 
-- Draft 2020-12 validation;
-- registered Source Posture schema through `referencing.Registry`;
-- separate embedded-receipt validation preserved;
-- precise JSON-path errors;
-- no schema weakening and no example-data alteration.
+```text
+assessments/events/DH-FORCE-007-reported-arrests.json:
+government_action.agency_status:
+'partially-identified' is not one of ['unknown', 'visible-marking-only', 'confirmed']
+```
 
-Workflow observability update installed in `.github/workflows/validate-ledger-schemas.yml`:
+Bounded correction installed:
 
-- explicit installation of `jsonschema` and `referencing`;
-- named `Validate individualized force-event packets` step;
-- existing single-workflow architecture preserved;
-- final combined activation runner retained.
+- changed `government_action.agency_status` from unsupported `partially-identified` to schema-supported `unknown`;
+- preserved `actor_identity_status: unknown`;
+- preserved the packet's statement that the arresting actor and agency must be reconstructed person by person;
+- did not change the reported arrest count, legal posture, probable-cause posture, or force classification;
+- did not broaden the schema enum.
 
-No complete workflow run is attached to the repaired seven-event scope yet.
+Correction commit: `63284d1575a0116bddb00205c3a3cb6f545632f6`.
 
 ## Current validation receipt
 
-`validation_results/delaney-hall-assessment-4a70839a.pending.json`
+`validation_results/delaney-hall-assessment-63284d15.pending.json`
 
 ```yaml
 validation_status: "pending"
 activation_effect: "activation-blocked"
-complete_workflow_result: "not attached"
+previous_exact_failure: "unsupported agency_status in DH-FORCE-007"
+previous_failure_repaired: true
+complete_workflow_result: "not attached after repair"
 release_advanced: false
 ```
 
-The prior seven-event scope without filename and index-integrity enforcement is preserved as superseded.
+The prior filename-and-index-integrity receipt is preserved as superseded with the exact failure and correction documented.
 
 ## Required follow-on work
 
-- Confirm the resolver and workflow-observability repair through a concrete complete workflow run.
+- Confirm the agency-status correction through a concrete complete workflow run.
 - If another step fails, preserve the exact run, job, step, JSON path, and error before applying a bounded repair.
 - Process the active intake queue and attach real Source Posture receipt IDs to verified records.
 - Obtain original media, full footage, exact component force policy, incident reports, transfer records, state-control records, and comparable prior-administration records.
@@ -119,14 +123,14 @@ primary_record_intake_queue: "active-machine-readable"
 individualized_force_event_packets: "7-catalogued"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
-validation_status: "event identity and visibility scope pending; no complete workflow result attached"
+validation_status: "agency-status schema correction installed; complete rerun pending"
 ```
 
 ## Remaining files/modules and destination
 
 ```text
 StegVerse-Labs/Executive_Rhetoric_Ledger:
-  - concrete complete schema-validation result
+  - concrete complete schema-validation result after commit 63284d15
   - any next bounded CI repair identified by a complete failing-step log
   - person-specific arrest packets when individualized records arrive
   - populated subject, actor, warning, threat, injury, medical, disposition, and policy fields
@@ -139,4 +143,4 @@ This assessment is a catalogued working record, not a final legal conclusion, ad
 
 ## Archive readiness
 
-This handoff contains the current assessment posture, seven event packets, CI root cause, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the current assessment posture, seven event packets, exact CI failures, bounded repairs, validation succession, evidence limitations, and remaining work. Earlier conversation context is not required; the complete thread is ready for archiving.
