@@ -1,0 +1,31 @@
+{
+  "validation_id": "VAL-ERL-2026-07-11-E4A3C01E-PENDING",
+  "validation_status": "pending",
+  "checked_commit": "ad399ac9e756e9dfc92be7ac8130f5f1c4deb859",
+  "checked_paths": [
+    "assessments/README.md",
+    "assessments/2026-07-federal-detention-protest-use-of-force.md",
+    "assessments/evidence/2026-07-federal-detention-protest-frame-index.md",
+    "assessments/evidence/2026-07-delaney-hall-source-receipts.md",
+    "assessments/constitutional-authority/2026-07-delaney-hall-authority-map.md",
+    "assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json",
+    "assessments/reviews/PIT-MODERN-2026-DELANEY-HALL-FORCE.review.md",
+    "assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md",
+    "assessments/intake/2026-07-delaney-hall-primary-record-intake.json",
+    "assessments/events/DH-FORCE-001-ground-restraint.json",
+    "assessments/events/DH-FORCE-002-apparent-chemical-agent.json",
+    "assessments/events/DH-FORCE-003-baton-display.json",
+    "schemas/force-event-packet.schema.json",
+    "scripts/validate_force_event_packets.py",
+    "scripts/run_activation_validation.py"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "The current Delaney Hall scope includes three individualized event packets for ground restraint, apparent chemical-agent deployment posture, and baton display. Each packet links direct observations, prohibited inferences, missing evidence, authority transitions, intake tasks, and Source Posture receipts. Structural validation is pending.",
+  "activation_effect": "activation-blocked",
+  "notes": "A passing result would confirm packet structure and cross-record references only. It would not establish necessity, proportionality, lawfulness, constitutional justification, or liability."
+}
