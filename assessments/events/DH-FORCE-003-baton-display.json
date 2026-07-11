@@ -1,0 +1,17 @@
+{
+  "event_id": "DH-FORCE-003",
+  "topic_id": "PIT-MODERN-2026-DELANEY-HALL-FORCE",
+  "event_status": "catalogued",
+  "event_type": "baton-display",
+  "approximate_time": "about 00:20 in supplied screen recording",
+  "subject_posture": {"identity_status":"unknown","role_status":"unknown","visible_conduct":["People stand near officers in a compressed crowd.","No baton strike or individualized assaultive act is established by the sampled frame."]},
+  "government_action": {"actor_identity_status":"unknown","agency_status":"visible-marking-only","action_description":"An officer holds a baton horizontally near protesters while other officers stand nearby.","force_tools":["baton"]},
+  "claimed_justification":["General official accounts cited public safety, obstruction, resistance, and attacks; no individualized baton-use report is available."],
+  "direct_observations":["A baton is visibly held horizontally.","The crowd and officers are at close range.","The sampled frame does not establish a strike."],
+  "prohibited_inferences":["Do not classify a baton display as a baton strike.","Do not infer an immediate threat from crowd proximity alone.","Do not infer that every nearby participant received a warning."],
+  "missing_evidence":["Continuous footage","Audio and warnings","Officer and subject identities","Baton-use report","Injury and medical evidence","Component policy"],
+  "source_receipt_ids":["SRC-2026-DH-VIDEO-001","SRC-2026-DH-AP-001"],
+  "intake_ids":["DH-INTAKE-002","DH-INTAKE-003","DH-INTAKE-005","DH-INTAKE-006","DH-INTAKE-007","DH-INTAKE-012","DH-INTAKE-017"],
+  "authority_transition_ids":["T7","T8","T10","T11","T12"],
+  "classification":{"necessity":"not-established","proportionality":"not-established","lawfulness":"not-established","confidence":"medium","notes":"Baton presence and crowd compression are visible. Actual use, threat, warning, alternatives, and outcome remain unestablished."}
+}
