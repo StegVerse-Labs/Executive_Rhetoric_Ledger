@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/repository-capability-registry.schema.json",
+  "title": "Related Repository Capability and Contract Audit Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["registry_id", "ledger_repository", "status", "last_reviewed", "repositories", "governance_rules"],
+  "properties": {
+    "registry_id": {"type": "string", "minLength": 1},
+    "ledger_repository": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+    "status": {"enum": ["draft", "active", "paused", "superseded"]},
+    "last_reviewed": {"type": "string", "format": "date"},
+    "repositories": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repository", "audit_state", "capability_classes", "native_mechanisms", "platform_classes", "contract_state", "verified_inputs", "verified_outputs", "privacy_posture", "adapter_state", "prohibited_changes", "audit_refs"],
+        "properties": {
+          "repository": {"type": "string", "pattern": "^StegVerse-Labs/[A-Za-z0-9_.-]+$"},
+          "audit_state": {"enum": ["initial-complete", "contract-partial", "contract-complete", "blocked"]},
+          "capability_classes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["scheduled-producer", "shared-engine-dependent", "manual-intake", "platform-source-intake", "publication-consumer", "oversight-clearinghouse", "scholarly-context", "patent-monitoring", "historical-identity", "biographical-context", "educational-surface", "public-figure-research"]}},
+          "native_mechanisms": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "platform_classes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "contract_state": {"enum": ["unresolved", "declared", "partially-verified", "verified"]},
+          "verified_inputs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "verified_outputs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "privacy_posture": {"enum": ["public", "public-with-review", "privacy-restricted", "child-data-restricted", "confidential-invention-material"]},
+          "adapter_state": {"enum": ["blocked", "candidate", "ready", "active", "paused"]},
+          "prohibited_changes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "audit_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "governance_rules": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  }
+}
