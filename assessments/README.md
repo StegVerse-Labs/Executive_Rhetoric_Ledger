@@ -15,7 +15,7 @@ topic_id: "PIT-MODERN-2026-DELANEY-HALL-FORCE"
 review_status: "needs-source-posture"
 control_status: "partial"
 intake_status: "active"
-event_packet_status: "6-catalogued-partial"
+event_packet_status: "7-catalogued-partial"
 validation_status: "pending-repair-confirmation"
 use_of_force_legitimacy: "not established"
 final_legal_conclusion: false
@@ -41,13 +41,14 @@ Individualized force-event packets:
 - [DH-FORCE-004 carry or guided removal](events/DH-FORCE-004-carry-removal.json)
 - [DH-FORCE-005 reported observer or mediator contact](events/DH-FORCE-005-reported-observer-mediator-contact.json)
 - [DH-FORCE-006 crowd movement](events/DH-FORCE-006-crowd-movement.json)
+- [DH-FORCE-007 reported arrests](events/DH-FORCE-007-reported-arrests.json)
 
-Five packets derive from direct visual observations in the supplied recording. The observer or mediator packet preserves a materially relevant secondary report while explicitly retaining its lower-confidence and missing-primary-evidence posture.
+Five packets derive from direct visual observations in the supplied recording. Two packets preserve materially relevant secondary reports—observer or mediator contact and six reported arrests—while explicitly retaining their lower-confidence and missing-primary-evidence posture.
 
 Validation records:
 
-- Current six-event repair-inclusive scope: `validation_results/delaney-hall-assessment-406f0f8c.pending.json`
-- Superseded five-event workflow-observability scope: `validation_results/delaney-hall-assessment-4f7f6304.pending.json`
+- Current seven-event repair-inclusive scope: `validation_results/delaney-hall-assessment-b95a6926.pending.json`
+- Superseded six-event repair-inclusive scope: `validation_results/delaney-hall-assessment-406f0f8c.pending.json`
 - Earlier superseded scopes remain preserved in `validation_results/`.
 
 ## Assessment rules
@@ -63,8 +64,9 @@ Validation records:
 9. Every force-event packet must link to real source receipts, real intake items, and applicable authority transitions.
 10. Directly observed, reported, and inferred events must remain distinguishable.
 11. Crowd movement, obstruction, warning, arrest, and force must remain separate questions unless evidence links them for a particular person and time.
-12. Structural validation cannot establish factual truth, lawful authority, or constitutional justification.
-13. Accepted, deprecated, superseded, disputed, and rejected states must follow the repository governance policy.
+12. Reported arrest totals do not establish probable cause, resistance, or force justification for any specific person.
+13. Structural validation cannot establish factual truth, lawful authority, or constitutional justification.
+14. Accepted, deprecated, superseded, disputed, and rejected states must follow the repository governance policy.
 
 ## Promotion boundary
 
