@@ -94,5 +94,8 @@ jobs:
       - name: Validate governance patterns
         run: python scripts/validate_governance_patterns.py
 
+      - name: Validate assessment Political Influence Trees
+        run: python scripts/validate_assessment_trees.py
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
