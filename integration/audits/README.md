@@ -14,6 +14,7 @@ Discover native mechanism
 
 | Repository | Audit state | Preliminary classification | Audit file |
 |---|---|---|---|
+| `StegVerse-Labs/FREE-DOM` | partial | daily public OSINT discovery / surface-mapping producer | [FREE-DOM audit](FREE-DOM.md) |
 | `StegVerse-Labs/Trumpality` | partial | shared-engine-dependent / native producer candidate | `integration/native-mechanism-audit.md` |
 | `StegVerse-Labs/Administrations` | partial | shared-engine-dependent / institutional producer candidate | `integration/native-mechanism-audit.md` |
 | `StegVerse-Labs/Giuffre-ality` | partial | shared-engine-dependent / privacy-restricted | `integration/native-mechanism-audit.md` |
@@ -31,7 +32,9 @@ Discover native mechanism
 
 ## Current findings
 
-- All fourteen declared repositories now have at least a partial native-mechanism and platform audit.
+- All fifteen declared repositories now have at least a partial native-mechanism and platform audit.
+- FREE-DOM is the shared daily public OSINT discovery and surface-mapping producer; broad discovery should not be duplicated in subject repositories.
+- FREE-DOM now emits ST-007 discovery artifacts, manifests, transition receipts, source-failure logs, and deterministic run Merkle batches, but live run outputs remain to be observed.
 - Existing recurring scans are already present in several repositories.
 - Multiple biography repositories delegate to shared `StegVerse/StegVerse-Core` workflows.
 - StegSocials is both a governed publication system and a platform-source intake environment.
