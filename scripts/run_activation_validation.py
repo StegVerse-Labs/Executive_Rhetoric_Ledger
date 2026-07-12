@@ -15,6 +15,7 @@ Checks:
 9. related-repository network manifest and documentation
 10. related-repository capability registry
 11. repository contract-audit registry
+12. portable FREE-DOM evidence intake packets
 """
 
 from __future__ import annotations
@@ -36,6 +37,7 @@ CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_related_repository_network.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_repository_capabilities.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_repository_contract_audits.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_portable_evidence_intake.py")],
 ]
 
 
