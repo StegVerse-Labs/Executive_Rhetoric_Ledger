@@ -37,19 +37,41 @@ The governance contract requires reputable sourcing, permits secondary sources o
 
 ```yaml
 schedule: "0 7 * * 1"
+workflow: ".github/workflows/weekly-ingest.yml"
+authority: "shared StegVerse-Core reusable workflow"
 subject: "Donald J. Trump"
 topic_cluster: "general"
 seed_file: "seeds/sources.urls.txt"
 database: "data/processed/records.sqlite"
 ```
 
-The ingest pipeline:
+The separate native ingest workflow is now manual-only to avoid duplicate Monday scans. It remains available for governed recovery and testing.
+
+The native ingest pipeline:
 
 1. reads non-comment URLs from the seed file;
 2. retrieves HTML with a declared user agent and timeout;
 3. extracts page title and description;
 4. records source domain, source confidence, verification label, and seed tag;
-5. writes records into the SQLite records table.
+5. uses URL-level identity reuse to refresh an existing record rather than create a new UUID for the same URL;
+6. emits append-only JSONL success or failure receipts;
+7. marks source role and category as pending governed review rather than presuming `investigative_report`.
+
+## Verified archive and link-health mechanism
+
+```yaml
+schedule: "0 8 * * 2,5"
+workflow: ".github/workflows/archive-and-monitor.yml"
+archiver: "core/archival/archiver.py"
+link_monitor: "core/archival/monitor_links.py"
+local_snapshot_path: "data/archive/html"
+archive_receipts: "data/receipts/archive_receipts.jsonl"
+link_health_receipts: "data/receipts/link_health_receipts.jsonl"
+```
+
+The archiver retrieves source content, writes a local HTML snapshot, computes SHA-256, updates archive metadata, optionally submits a save request to the Internet Archive, and emits a durable receipt. Internet Archive submission is recorded as a request posture rather than proof of completed archival custody.
+
+The link monitor records URL availability, status code, check time, and error state. Link health changes availability posture only; it does not change whether the underlying claim is true.
 
 ## Verified co-occurrence mechanism
 
@@ -64,20 +86,32 @@ window_hours: 6
 
 The mechanism groups recent records and optional quarantine items into overlapping time/place windows. It calculates a bounded heuristic from unique source domains and verification labels. This score is a research-priority signal only; it does not establish causation, coordination, participation, or truth.
 
-## Exact executable-path repairs
+## Verified producer-export boundary
 
-The repository stores its implementation under lowercase `core/`, but multiple workflows and scripts referenced uppercase `CORE/`. The co-occurrence implementation directory is currently `core/coocur/`, while the workflow referenced `CORE/cooccur/`.
+```yaml
+contract: "contracts/executive-rhetoric-ledger-export.contract.yml"
+exporter: "core/exports/export_ledger_candidates.py"
+output_path: "datasets/exports/executive-rhetoric-ledger"
+export_receipts: "data/receipts/export_receipts.jsonl"
+consumer: "StegVerse-Labs/Executive_Rhetoric_Ledger"
+consumer_acknowledgment_path: "producer_exports/acknowledgments/Trumpality"
+```
 
-The following references were repaired without changing cadence, evidence policy, schema meaning, or outputs:
+Every emitted object is deliberately bounded as:
 
-- `.github/workflows/update-ingests.yml`
-- `.github/workflows/cooccurrence.yml`
-- `scripts/run_ingest.sh`
-- `core/ingest_pipeline/url_list_ingest.py`
-- `core/ingest_pipeline/base_ingest.py`
-- `core/coocur/scan.py`
+```yaml
+object_class: "source_receipt"
+claimed_use: "context-only"
+admissibility_request: "context-only"
+review_status: "pending"
+evidence_effect: "none-until-ledger-review"
+```
 
-Repair commits in Trumpality:
+The export preserves native record identity, source URL, title, attribution, timestamps, archive reference when available, verification label, confidence, producer path, and producer commit. Unknown source type and institutional proximity remain unknown until ledger review.
+
+## Exact repairs and additions
+
+Executable-path repairs:
 
 - `13585e234d124a08a6b355b220bc97d0566143f8`
 - `7648cb9c1524309ea8688aa3b3cac47d270be2dc`
@@ -86,58 +120,52 @@ Repair commits in Trumpality:
 - `db8b6f9759661ba39cd80919008cdc85f949a1ae`
 - `b8689c5b9aa5c5b8e1a9c85fd2113239bb016c95`
 
+Archive, receipt, deduplication, export, and duplicate-schedule repairs:
+
+- `e4616b0ac5f67c439ba5c8b4123c9816c2a5e5ce` — archive implementation and receipts
+- `825268edf6ed866cf2554cfe7b6e1da0112141f3` — link-health monitoring and receipts
+- `c7421cd18a510a44b92a8c7562d14459196365f5` — URL-level identity reuse
+- `24e2574483a5f7a988eb5d087c2cc50220974d05` — durable ingest receipts and deferred classification
+- `e4e5862b656ab5a223b8b8575c78468dff14582a` — archive workflow activation
+- `2bdd14154d05ad011be321cab48a7b791bae1d0c` — ledger export contract
+- `8840c02effec9af49420741c821e009c0df29244` — conservative producer exporter
+- `fc39c22984c752c6bcc2186c6d4c80f0eba82ff9` — duplicate schedule removed; manual fallback retained
+- `49e4609fb6f1b250a29a4550ae806cc61bee1944` — archive-stage export integration
+
 ## Remaining contract blockers
 
-### Archive and monitor implementation unresolved
+Trumpality remains `candidate-blocked` because:
 
-The scheduled workflow declares:
-
-```yaml
-schedule: "0 8 * * 2,5"
-archiver: "CORE/archival/archiver.py"
-link_monitor: "CORE/archival/monitor_links.py"
-schema_patch: "CORE/schema_patch.sql"
-```
-
-The corresponding implementation files were not located during this audit. The workflow must not be treated as operational until the files, outputs, failure behavior, and archive receipts are verified.
-
-### Export contract unresolved
-
-The repository contract declares `datasets/exports`, but no producer-export object, receipt format, callback, or downstream consumer was verified during this pass.
-
-### Record identity and deduplication limitation
-
-The ingest pipeline generates a new UUID by default and uses `INSERT OR REPLACE` by record ID. The audit did not verify URL-level, content-hash, or claim-level deduplication. Repeated ingestion may therefore create semantically duplicate records unless another unobserved layer prevents it.
-
-### Retrieval failure visibility
-
-Individual fetch failures are printed as `skip:` and ingestion continues. No structured failure receipt, retry posture, or unresolved-source queue was verified.
-
-### Source categorization limitation
-
-Seed URL inputs are currently assigned the fixed category `investigative_report`. This is an ingestion label, not a verified source-type or claim-role determination.
+- no complete successful native workflow run has been attached after the repairs;
+- no real producer export has yet been validated against the ledger schema from an observed run;
+- no downstream ledger acknowledgment object has yet been produced and returned;
+- correction and supersession behavior across producer exports and acknowledgments remains untested;
+- URL-level deduplication is verified, but content-hash and claim-level deduplication remain unresolved;
+- privacy and sensitive-record filtering is declared but not yet tested against representative records;
+- shared StegVerse-Core weekly ingest behavior and output compatibility remain only partially visible.
 
 ## Smallest compatible ledger boundary
 
 ```text
-Trumpality native record or graph candidate
--> producer export preserving source URL, record ID, verification label, timestamps, and native path
--> Executive Rhetoric Ledger candidate intake
--> Source Posture translation and deduplication
--> governed review
+Trumpality native record
+-> local archive and health receipts
+-> pending context-only producer export
+-> Executive Rhetoric Ledger schema validation
+-> Source Posture and duplicate review
+-> governed acceptance, correction request, or rejection
+-> acknowledgment returned to Trumpality
 ```
 
-The ledger must not read the SQLite database as an accepted-fact store or treat the co-occurrence strength score as evidence of causation.
+The ledger must not read the SQLite database as an accepted-fact store or treat archive success, confidence score, repository origin, or co-occurrence strength as proof.
 
 ## Adapter activation requirements
 
-The adapter may not advance from `candidate-blocked` until all of the following are verified:
+The adapter may not advance from `candidate-blocked` until all of the following are observed and verified:
 
-- a durable producer-export format;
-- stable record identity and deduplication behavior;
-- archive and link-monitor outputs;
-- structured failure and unresolved-source receipts;
-- correction and supersession behavior;
-- downstream consumer and acknowledgment path;
-- privacy and sensitive-record filtering;
-- a complete successful native workflow run after the path repairs.
+- a complete successful shared weekly ingest and archive/monitor run;
+- at least one real producer export passing ledger validation;
+- a durable ledger acknowledgment returned to the producer;
+- correction and supersession round-trip behavior;
+- content-hash or claim-level duplicate handling at the ledger boundary;
+- privacy filtering tests;
+- no unresolved workflow path or shared-engine compatibility failure.
