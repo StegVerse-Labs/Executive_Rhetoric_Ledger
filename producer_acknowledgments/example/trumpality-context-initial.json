@@ -1,0 +1,20 @@
+{
+  "acknowledgment_id": "ERL-ACK-TRUMPALITY-EXAMPLE-001",
+  "acknowledgment_kind": "initial-review",
+  "ingestion_id": "TRUMPALITY-EXPORT-EXAMPLE-001",
+  "producer_repo": "StegVerse-Labs/Trumpality",
+  "producer_path": "datasets/exports/erl/TRUMPALITY-EXPORT-EXAMPLE-001.json",
+  "producer_commit": "example-producer-commit",
+  "ledger_repo": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "decision_at": "2026-07-11T00:00:00Z",
+  "review_status": "needs-primary-source",
+  "evidence_effect": "no-ledger-use",
+  "receipt_status": "issued",
+  "producer_return_path": "data/receipts/ledger_acknowledgments/ERL-ACK-TRUMPALITY-EXAMPLE-001.json",
+  "required_actions": [
+    "Attach the primary source or an official record that supports the candidate claim.",
+    "Preserve the current export as a superseded candidate if a corrected export is emitted."
+  ],
+  "ledger_record_refs": [],
+  "notes": "Example only. The acknowledgment records review posture; it does not establish the source claim."
+}
