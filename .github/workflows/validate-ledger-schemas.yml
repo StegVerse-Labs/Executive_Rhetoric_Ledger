@@ -85,6 +85,9 @@ jobs:
       - name: Validate producer export examples
         run: python scripts/validate_producer_exports.py
 
+      - name: Validate producer acknowledgments
+        run: python scripts/validate_producer_acknowledgments.py
+
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
 
