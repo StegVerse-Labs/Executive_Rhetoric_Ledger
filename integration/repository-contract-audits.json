@@ -20,14 +20,22 @@
         "data/processed/records.sqlite records table",
         "data/processed/records.sqlite cooccurrence table",
         "data/processed/cooccurrence_report.csv",
-        "declared records/ primary records path",
-        "declared freedom graph path",
-        "declared datasets/exports path"
+        "data/archive/html local snapshots",
+        "datasets/exports/executive-rhetoric-ledger pending producer candidates"
       ],
-      "verified_receipts": [],
-      "verified_consumers": [],
+      "verified_receipts": [
+        "data/receipts/ingest_receipts.jsonl",
+        "data/receipts/archive_receipts.jsonl",
+        "data/receipts/link_health_receipts.jsonl",
+        "data/receipts/export_receipts.jsonl"
+      ],
+      "verified_consumers": [
+        "declared consumer StegVerse-Labs/Executive_Rhetoric_Ledger; acknowledgment not yet observed"
+      ],
       "verified_failure_handling": [
-        "individual URL fetch failures print skip and continue",
+        "URL retrieval failures emit append-only ingest receipts and remain eligible for a later scheduled cycle",
+        "archive failures emit durable receipts and preserve local or prior custody state",
+        "link-health failures emit status and error receipts without changing factual posture",
         "workflow commit steps tolerate no-change commits"
       ],
       "repairs": [
@@ -60,23 +68,67 @@
           "description": "Aligned co-occurrence schema path with lowercase core tree",
           "repository": "StegVerse-Labs/Trumpality",
           "commit": "b8689c5b9aa5c5b8e1a9c85fd2113239bb016c95"
+        },
+        {
+          "description": "Implemented local source archival SHA-256 and append-only archive receipts",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "e4616b0ac5f67c439ba5c8b4123c9816c2a5e5ce"
+        },
+        {
+          "description": "Implemented durable link-health monitoring receipts",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "825268edf6ed866cf2554cfe7b6e1da0112141f3"
+        },
+        {
+          "description": "Added URL-level record identity reuse",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "c7421cd18a510a44b92a8c7562d14459196365f5"
+        },
+        {
+          "description": "Added durable ingest success and failure receipts and deferred source-role classification",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "24e2574483a5f7a988eb5d087c2cc50220974d05"
+        },
+        {
+          "description": "Activated lowercase archive and monitoring workflow paths",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "e4e5862b656ab5a223b8b8575c78468dff14582a"
+        },
+        {
+          "description": "Declared conservative Executive Rhetoric Ledger export and acknowledgment boundary",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "2bdd14154d05ad011be321cab48a7b791bae1d0c"
+        },
+        {
+          "description": "Implemented pending context-only ledger producer exports and export receipts",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "8840c02effec9af49420741c821e009c0df29244"
+        },
+        {
+          "description": "Removed duplicate Monday schedule while preserving manual native recovery workflow",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "fc39c22984c752c6bcc2186c6d4c80f0eba82ff9"
+        },
+        {
+          "description": "Integrated candidate export after archive and health processing",
+          "repository": "StegVerse-Labs/Trumpality",
+          "commit": "49e4609fb6f1b250a29a4550ae806cc61bee1944"
         }
       ],
       "blockers": [
-        "No complete successful native workflow run is attached after the path repairs",
-        "Archive and monitor implementation files were not located",
-        "No structured archive receipt was verified",
-        "No producer-export object or callback contract was verified",
-        "No downstream consumer acknowledgment path was verified",
-        "No URL-level content-hash or claim-level deduplication behavior was verified",
-        "Fetch failures do not produce structured unresolved-source receipts",
-        "Seed records are assigned the fixed investigative_report category before governed source-role review"
+        "No complete successful native workflow run is attached after the repairs",
+        "No real producer export has yet been validated against the ledger schema from an observed run",
+        "No downstream ledger acknowledgment has yet been produced and returned",
+        "Correction and supersession round-trip behavior remains untested",
+        "Content-hash and claim-level duplicate handling remain unresolved beyond URL-level identity reuse",
+        "Privacy and sensitive-record filtering has not been tested against representative records",
+        "Shared StegVerse-Core weekly ingest behavior and output compatibility remain partially unaudited"
       ],
       "evidence_boundaries": [
         "A retrieved page proves availability and captured content only to the extent preserved; it does not prove every claim on the page",
         "The co-occurrence strength score is a research-priority signal and does not establish causation coordination participation or truth",
-        "Repository origin verification labels and scheduled execution do not authorize ledger acceptance",
-        "The SQLite database must not be treated as an accepted-fact store"
+        "Repository origin verification labels scheduled execution archive success and confidence scores do not authorize ledger acceptance",
+        "The SQLite database and producer exports must not be treated as accepted-fact stores"
       ],
       "audit_ref": "integration/contracts/Trumpality.contract-audit.md"
     }
@@ -85,6 +137,7 @@
     "A repaired execution path does not make a contract verified.",
     "An adapter may not become ready or active until inputs outputs receipts consumers failure handling privacy and correction behavior are verified.",
     "Declared output paths are not verified outputs unless their production and consumption are observed.",
-    "Heuristic clustering and co-occurrence scores are research signals rather than proof of relationship or causation."
+    "Heuristic clustering and co-occurrence scores are research signals rather than proof of relationship or causation.",
+    "A producer export remains a pending candidate until the ledger validates reviews and acknowledges it."
   ]
 }
