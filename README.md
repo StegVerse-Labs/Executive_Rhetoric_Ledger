@@ -153,6 +153,12 @@ The Delaney Hall assessment is the first deeply structured incident record combi
 
 The Powell Memorandum remains a historical structural anchor and is not used as proof of later causation without a separate evidence chain.
 
+## Governance patterns
+
+- [Continuity Capability vs Activation Authority](governance-patterns/2026-continuity-capability-vs-activation-authority.md)
+
+Governance-pattern entries record reusable authority, continuity, admissibility, and evidence distinctions without treating repository structure or workflow visibility as activation evidence.
+
 ## Governance policy
 
 - [Reviewer, Dispute, and Deprecation Policy](governance/reviewer-dispute-deprecation-policy.md)
