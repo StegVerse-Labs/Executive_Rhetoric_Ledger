@@ -177,7 +177,7 @@ ledger_classification:
   evidence_posture: "repository-artifact-supported"
   influence_posture: "internal-governance-pattern"
   authority_posture: "continuation-authority-only"
-  admissibility_status: "admissible-as-governance-pattern; not evidence-of-activation"
+  admissibility_status: "admissible-as-governance-pattern; not activation evidence"
   confidence: "medium-high"
   classification_notes: "This entry records a reusable governance distinction, not a political claim, executive action, or activation receipt."
 ```
