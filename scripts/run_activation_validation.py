@@ -5,15 +5,16 @@ This runner executes the reusable validators that back the repo activation gate.
 
 Checks:
 1. producer export examples
-2. validation-result receipts
-3. activation-state manifest
-4. governance-pattern entries
-5. machine-readable assessment Political Influence Trees and source receipts
-6. machine-readable primary-record intake queues
-7. individualized force-event packets
-8. related-repository network manifest and documentation
-9. related-repository capability registry
-10. repository contract-audit registry
+2. producer acknowledgment examples and succession
+3. validation-result receipts
+4. activation-state manifest
+5. governance-pattern entries
+6. machine-readable assessment Political Influence Trees and source receipts
+7. machine-readable primary-record intake queues
+8. individualized force-event packets
+9. related-repository network manifest and documentation
+10. related-repository capability registry
+11. repository contract-audit registry
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHECKS = [
     [sys.executable, str(ROOT / "scripts" / "validate_producer_exports.py")],
+    [sys.executable, str(ROOT / "scripts" / "validate_producer_acknowledgments.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_validation_results.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_activation_state.py")],
     [sys.executable, str(ROOT / "scripts" / "validate_governance_patterns.py")],
