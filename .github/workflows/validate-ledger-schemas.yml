@@ -115,5 +115,8 @@ jobs:
       - name: Validate repository contract audit registry
         run: python scripts/validate_repository_contract_audits.py
 
+      - name: Validate portable evidence intake
+        run: python scripts/validate_portable_evidence_intake.py
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
