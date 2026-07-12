@@ -14,112 +14,63 @@
         "subject parameter Donald J. Trump",
         "topic_cluster parameter general",
         "data/processed/records.sqlite for co-occurrence input",
-        "optional quarantine table for co-occurrence input"
+        "optional quarantine table for co-occurrence input",
+        "ledger producer acknowledgment objects for producer return"
       ],
       "verified_outputs": [
         "data/processed/records.sqlite records table",
         "data/processed/records.sqlite cooccurrence table",
         "data/processed/cooccurrence_report.csv",
         "data/archive/html local snapshots",
-        "datasets/exports/executive-rhetoric-ledger pending producer candidates"
+        "datasets/exports/executive-rhetoric-ledger pending producer candidates",
+        "data/receipts/ledger_acknowledgments stored acknowledgment objects",
+        "data/receipts/ledger_acknowledgment_current.json current acknowledgment index"
       ],
       "verified_receipts": [
         "data/receipts/ingest_receipts.jsonl",
         "data/receipts/archive_receipts.jsonl",
         "data/receipts/link_health_receipts.jsonl",
-        "data/receipts/export_receipts.jsonl"
+        "data/receipts/export_receipts.jsonl",
+        "data/receipts/ledger_acknowledgments.jsonl"
       ],
       "verified_consumers": [
-        "declared consumer StegVerse-Labs/Executive_Rhetoric_Ledger; acknowledgment not yet observed"
+        "declared producer-export consumer StegVerse-Labs/Executive_Rhetoric_Ledger",
+        "declared acknowledgment consumer StegVerse-Labs/Trumpality via append-only importer",
+        "example acknowledgment succession validates initial review and correction mechanics only"
       ],
       "verified_failure_handling": [
         "URL retrieval failures emit append-only ingest receipts and remain eligible for a later scheduled cycle",
         "archive failures emit durable receipts and preserve local or prior custody state",
         "link-health failures emit status and error receipts without changing factual posture",
+        "acknowledgment importer rejects wrong producer or ledger identity",
+        "acknowledgment importer rejects unknown or non-current supersession targets",
+        "acknowledgment importer rejects conflicting reuse of an acknowledgment ID",
         "workflow commit steps tolerate no-change commits"
       ],
       "repairs": [
-        {
-          "description": "Aligned weekly ingest workflow paths with lowercase core tree",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "13585e234d124a08a6b355b220bc97d0566143f8"
-        },
-        {
-          "description": "Aligned co-occurrence workflow with lowercase core and existing coocur directory",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "7648cb9c1524309ea8688aa3b3cac47d270be2dc"
-        },
-        {
-          "description": "Aligned ingest shell helper with lowercase core path",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "0fe22d056084f0f6ab3e43ca24934f478e234d50"
-        },
-        {
-          "description": "Aligned ingest pipeline imports with lowercase core package",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "bde903fd1498026516e01e606e30bdc59f6036cd"
-        },
-        {
-          "description": "Aligned database schema path with lowercase core tree",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "db8b6f9759661ba39cd80919008cdc85f949a1ae"
-        },
-        {
-          "description": "Aligned co-occurrence schema path with lowercase core tree",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "b8689c5b9aa5c5b8e1a9c85fd2113239bb016c95"
-        },
-        {
-          "description": "Implemented local source archival SHA-256 and append-only archive receipts",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "e4616b0ac5f67c439ba5c8b4123c9816c2a5e5ce"
-        },
-        {
-          "description": "Implemented durable link-health monitoring receipts",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "825268edf6ed866cf2554cfe7b6e1da0112141f3"
-        },
-        {
-          "description": "Added URL-level record identity reuse",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "c7421cd18a510a44b92a8c7562d14459196365f5"
-        },
-        {
-          "description": "Added durable ingest success and failure receipts and deferred source-role classification",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "24e2574483a5f7a988eb5d087c2cc50220974d05"
-        },
-        {
-          "description": "Activated lowercase archive and monitoring workflow paths",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "e4e5862b656ab5a223b8b8575c78468dff14582a"
-        },
-        {
-          "description": "Declared conservative Executive Rhetoric Ledger export and acknowledgment boundary",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "2bdd14154d05ad011be321cab48a7b791bae1d0c"
-        },
-        {
-          "description": "Implemented pending context-only ledger producer exports and export receipts",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "8840c02effec9af49420741c821e009c0df29244"
-        },
-        {
-          "description": "Removed duplicate Monday schedule while preserving manual native recovery workflow",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "fc39c22984c752c6bcc2186c6d4c80f0eba82ff9"
-        },
-        {
-          "description": "Integrated candidate export after archive and health processing",
-          "repository": "StegVerse-Labs/Trumpality",
-          "commit": "49e4609fb6f1b250a29a4550ae806cc61bee1944"
-        }
+        {"description": "Aligned weekly ingest workflow paths with lowercase core tree", "repository": "StegVerse-Labs/Trumpality", "commit": "13585e234d124a08a6b355b220bc97d0566143f8"},
+        {"description": "Aligned co-occurrence workflow with lowercase core and existing coocur directory", "repository": "StegVerse-Labs/Trumpality", "commit": "7648cb9c1524309ea8688aa3b3cac47d270be2dc"},
+        {"description": "Aligned ingest shell helper with lowercase core path", "repository": "StegVerse-Labs/Trumpality", "commit": "0fe22d056084f0f6ab3e43ca24934f478e234d50"},
+        {"description": "Aligned ingest pipeline imports with lowercase core package", "repository": "StegVerse-Labs/Trumpality", "commit": "bde903fd1498026516e01e606e30bdc59f6036cd"},
+        {"description": "Aligned database schema path with lowercase core tree", "repository": "StegVerse-Labs/Trumpality", "commit": "db8b6f9759661ba39cd80919008cdc85f949a1ae"},
+        {"description": "Aligned co-occurrence schema path with lowercase core tree", "repository": "StegVerse-Labs/Trumpality", "commit": "b8689c5b9aa5c5b8e1a9c85fd2113239bb016c95"},
+        {"description": "Implemented local source archival SHA-256 and append-only archive receipts", "repository": "StegVerse-Labs/Trumpality", "commit": "e4616b0ac5f67c439ba5c8b4123c9816c2a5e5ce"},
+        {"description": "Implemented durable link-health monitoring receipts", "repository": "StegVerse-Labs/Trumpality", "commit": "825268edf6ed866cf2554cfe7b6e1da0112141f3"},
+        {"description": "Added URL-level record identity reuse", "repository": "StegVerse-Labs/Trumpality", "commit": "c7421cd18a510a44b92a8c7562d14459196365f5"},
+        {"description": "Added durable ingest success and failure receipts and deferred source-role classification", "repository": "StegVerse-Labs/Trumpality", "commit": "24e2574483a5f7a988eb5d087c2cc50220974d05"},
+        {"description": "Activated lowercase archive and monitoring workflow paths", "repository": "StegVerse-Labs/Trumpality", "commit": "e4e5862b656ab5a223b8b8575c78468dff14582a"},
+        {"description": "Declared conservative Executive Rhetoric Ledger export boundary", "repository": "StegVerse-Labs/Trumpality", "commit": "2bdd14154d05ad011be321cab48a7b791bae1d0c"},
+        {"description": "Implemented pending context-only ledger producer exports and export receipts", "repository": "StegVerse-Labs/Trumpality", "commit": "8840c02effec9af49420741c821e009c0df29244"},
+        {"description": "Removed duplicate Monday schedule while preserving manual native recovery workflow", "repository": "StegVerse-Labs/Trumpality", "commit": "fc39c22984c752c6bcc2186c6d4c80f0eba82ff9"},
+        {"description": "Integrated candidate export after archive and health processing", "repository": "StegVerse-Labs/Trumpality", "commit": "49e4609fb6f1b250a29a4550ae806cc61bee1944"},
+        {"description": "Declared append-only Executive Rhetoric Ledger acknowledgment return contract", "repository": "StegVerse-Labs/Trumpality", "commit": "10a84c5552d7b4e1487ecd99ff3a3171f26698e1"},
+        {"description": "Implemented acknowledgment importer with current-receipt succession checks", "repository": "StegVerse-Labs/Trumpality", "commit": "068e5de80b2c53b98d1383f74374d77f4093a6ad"}
       ],
       "blockers": [
         "No complete successful native workflow run is attached after the repairs",
         "No real producer export has yet been validated against the ledger schema from an observed run",
-        "No downstream ledger acknowledgment has yet been produced and returned",
-        "Correction and supersession round-trip behavior remains untested",
+        "No live acknowledgment has crossed repositories and been recorded by the producer importer",
+        "Example correction succession is validated but a live correction or supersession round trip remains unobserved",
         "Content-hash and claim-level duplicate handling remain unresolved beyond URL-level identity reuse",
         "Privacy and sensitive-record filtering has not been tested against representative records",
         "Shared StegVerse-Core weekly ingest behavior and output compatibility remain partially unaudited"
@@ -127,8 +78,8 @@
       "evidence_boundaries": [
         "A retrieved page proves availability and captured content only to the extent preserved; it does not prove every claim on the page",
         "The co-occurrence strength score is a research-priority signal and does not establish causation coordination participation or truth",
-        "Repository origin verification labels scheduled execution archive success and confidence scores do not authorize ledger acceptance",
-        "The SQLite database and producer exports must not be treated as accepted-fact stores"
+        "Repository origin verification labels scheduled execution archive success confidence scores and acknowledgment issuance do not authorize ledger acceptance beyond the exact review status",
+        "The SQLite database producer exports and acknowledgment logs must not be treated as accepted-fact stores"
       ],
       "audit_ref": "integration/contracts/Trumpality.contract-audit.md"
     }
@@ -138,6 +89,7 @@
     "An adapter may not become ready or active until inputs outputs receipts consumers failure handling privacy and correction behavior are verified.",
     "Declared output paths are not verified outputs unless their production and consumption are observed.",
     "Heuristic clustering and co-occurrence scores are research signals rather than proof of relationship or causation.",
-    "A producer export remains a pending candidate until the ledger validates reviews and acknowledges it."
+    "A producer export remains a pending candidate until the ledger validates reviews and acknowledges it.",
+    "An acknowledgment records bounded review posture and never rewrites native source truth automatically."
   ]
 }
