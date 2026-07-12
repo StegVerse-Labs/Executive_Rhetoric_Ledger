@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-acknowledgment.schema.json",
+  "title": "Executive Rhetoric Ledger Producer Acknowledgment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "acknowledgment_id",
+    "acknowledgment_kind",
+    "ingestion_id",
+    "producer_repo",
+    "producer_path",
+    "producer_commit",
+    "ledger_repo",
+    "decision_at",
+    "review_status",
+    "evidence_effect",
+    "receipt_status",
+    "producer_return_path",
+    "required_actions"
+  ],
+  "properties": {
+    "acknowledgment_id": {"type": "string", "minLength": 1},
+    "acknowledgment_kind": {
+      "type": "string",
+      "enum": ["initial-review", "correction", "supersession", "duplicate-resolution"]
+    },
+    "ingestion_id": {"type": "string", "minLength": 1},
+    "producer_repo": {"type": "string", "minLength": 1},
+    "producer_path": {"type": "string", "minLength": 1},
+    "producer_commit": {"type": "string", "minLength": 1},
+    "ledger_repo": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+    "decision_at": {"type": "string", "minLength": 1},
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted-for-context",
+        "accepted-for-claim-text",
+        "accepted-for-action-record",
+        "accepted-for-court-posture",
+        "accepted-for-influence-lineage",
+        "accepted-for-control-comparison",
+        "accepted-for-outcome-measurement",
+        "rejected-unsupported",
+        "rejected-duplicate",
+        "rejected-out-of-scope",
+        "needs-primary-source",
+        "needs-control-comparison",
+        "needs-archive",
+        "superseded"
+      ]
+    },
+    "evidence_effect": {
+      "type": "string",
+      "enum": [
+        "none-pending-review",
+        "context-only",
+        "bounded-ledger-use",
+        "no-ledger-use",
+        "superseded-no-current-effect"
+      ]
+    },
+    "receipt_status": {
+      "type": "string",
+      "enum": ["issued", "returned", "producer-recorded", "superseded"]
+    },
+    "producer_return_path": {"type": "string", "minLength": 1},
+    "required_actions": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "ledger_record_refs": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "supersedes_acknowledgment_id": {"type": "string", "minLength": 1},
+    "correction_reason": {"type": "string"},
+    "notes": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"acknowledgment_kind": {"const": "correction"}}},
+      "then": {"required": ["supersedes_acknowledgment_id", "correction_reason"]}
+    },
+    {
+      "if": {"properties": {"acknowledgment_kind": {"const": "supersession"}}},
+      "then": {"required": ["supersedes_acknowledgment_id"]}
+    }
+  ]
+}
