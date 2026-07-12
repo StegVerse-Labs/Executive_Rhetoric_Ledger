@@ -2,45 +2,43 @@
 
 ## Current task source of truth
 
-The validated repository foundation is green. The active goal is building an automated, evidence-backed historical compendium of politically significant rhetoric, action, institutional response, and measurable consequence.
+The validated repository foundation is green. The active goal is an automated, evidence-backed historical compendium of politically significant rhetoric, action, institutional response, and measurable consequence.
 
-All fourteen declared related repositories have initial native-mechanism and external-platform audits. The repository now separates:
+All fourteen related repositories have initial native-mechanism and platform audits. Generic adapter construction remains prohibited. Integration advances through:
 
 ```text
 observed capability
 -> machine capability record
 -> native contract audit
 -> verified producer or consumer boundary
+-> observed round trip
 -> adapter readiness
 -> governed evidence intake
 ```
 
-Generic adapter construction remains prohibited.
-
 ## Governing integration rule
 
 ```text
-Discover and preserve the native mechanism first.
-Audit external platforms that supply, alter, remove, rank, correct, or publish data.
-Record observed capability separately from verified contracts.
-Repair exact native defects without weakening evidence or governance boundaries.
-Integrate through the smallest compatible boundary.
-Do not duplicate scanners, categorizers, archives, canonical writers, or publication state machines without governed deprecation.
+Preserve native mechanisms.
+Audit external platforms and shared engines.
+Separate capability from verified contract.
+Repair exact defects without weakening evidence boundaries.
+Use append-only receipts for transfer, review, correction, and supersession.
+Do not activate an adapter before live execution and acknowledgment are observed.
 ```
 
 ## Current integration records
 
-- Relationship manifest: `integration/related-repositories.json`
-- Relationship map: `integration/related-repositories.md`
-- Native-mechanism audit: `integration/native-mechanism-audit.md`
-- Per-repository audit index: `integration/audits/README.md`
-- Capability registry: `integration/repository-capabilities.json`
-- Capability schema: `schemas/repository-capability-registry.schema.json`
-- Capability validator: `scripts/validate_repository_capabilities.py`
-- Contract-audit registry: `integration/repository-contract-audits.json`
-- Contract-audit schema: `schemas/repository-contract-audit.schema.json`
-- Contract-audit validator: `scripts/validate_repository_contract_audits.py`
-- Trumpality contract audit: `integration/contracts/Trumpality.contract-audit.md`
+- `integration/related-repositories.json`
+- `integration/repository-capabilities.json`
+- `integration/repository-contract-audits.json`
+- `integration/contracts/Trumpality.contract-audit.md`
+- `schemas/producer-export.schema.json`
+- `schemas/producer-acknowledgment.schema.json`
+- `scripts/validate_producer_exports.py`
+- `scripts/validate_producer_acknowledgments.py`
+- `scripts/validate_repository_capabilities.py`
+- `scripts/validate_repository_contract_audits.py`
 
 ## Progress
 
@@ -54,83 +52,73 @@ adapter_candidates:
   - "StegVerse-Labs/Trumpality"
 adapter_ready: 0
 active_repository_adapters: 0
-adapter_construction: "blocked-pending-observed-run-validation-acknowledgment-correction-and-privacy-verification"
+adapter_construction: "blocked-pending-live-export-acknowledgment-privacy-and-shared-engine-verification"
 ```
 
-## Trumpality contract verification
+## Trumpality producer boundary
 
-The first detailed native contract audit is installed and has advanced beyond path repair.
+Verified or implemented mechanisms now include:
 
-Verified native mechanisms now include:
-
-- shared Monday weekly ingest from `seeds/sources.urls.txt`;
-- manual native ingest retained for recovery and testing only;
-- SQLite record storage at `data/processed/records.sqlite`;
-- URL-level record identity reuse;
-- append-only ingest success and failure receipts;
+- shared Monday seed ingest;
+- manual native recovery ingest without a duplicate schedule;
+- URL-level identity reuse;
+- durable ingest success and failure receipts;
 - Tuesday/Friday co-occurrence processing;
-- Tuesday/Friday archive and link-health processing;
-- local HTML snapshots and SHA-256 content hashes;
-- optional Internet Archive save requests recorded as request posture;
-- append-only archive and link-health receipts;
-- conservative pending producer exports for Executive Rhetoric Ledger review;
-- append-only export receipts.
+- local snapshots, SHA-256, archive receipts, and link-health receipts;
+- pending context-only producer exports;
+- a ledger acknowledgment schema and succession validator;
+- an append-only Trumpality acknowledgment importer;
+- one-current-acknowledgment enforcement per `ingestion_id`;
+- correction and supersession mechanics that preserve prior receipts;
+- no automatic mutation of source records or verification labels.
 
-### Duplicate schedule removed
-
-Trumpality contained two Monday 07:00 ingest schedules:
-
-1. `.github/workflows/weekly-ingest.yml`, delegating to the shared StegVerse-Core workflow;
-2. `.github/workflows/update-ingests.yml`, running the native ingest directly.
-
-The native workflow schedule was removed while preserving it as `workflow_dispatch` recovery and testing infrastructure. The shared weekly mechanism remains authoritative.
-
-### Current producer boundary
+### Governed round trip
 
 ```text
 Trumpality native record
--> local archive and health receipts
+-> archive and health receipts
 -> pending context-only producer export
 -> Executive Rhetoric Ledger schema validation
--> Source Posture and duplicate review
--> governed acceptance correction request or rejection
--> acknowledgment returned to Trumpality
+-> governed review decision
+-> acknowledgment issued
+-> append-only producer import
+-> correction or supersession preserves prior acknowledgment
 ```
 
-Every producer export is bounded as:
+Example initial and correction acknowledgments validate schema and succession behavior. They do not prove a live cross-repository transfer.
 
-```yaml
-object_class: "source_receipt"
-claimed_use: "context-only"
-admissibility_request: "context-only"
-review_status: "pending"
-evidence_effect: "none-until-ledger-review"
+## New acknowledgment mechanisms
+
+Ledger:
+
+- `schemas/producer-acknowledgment.schema.json`
+- `producer_acknowledgments/example/trumpality-context-initial.json`
+- `producer_acknowledgments/example/trumpality-context-correction.json`
+- `scripts/validate_producer_acknowledgments.py`
+- acknowledgment validation added to `scripts/run_activation_validation.py`
+- acknowledgment validation added to `.github/workflows/validate-ledger-schemas.yml`
+
+Trumpality:
+
+- `contracts/executive-rhetoric-ledger-acknowledgment.contract.yml`
+- `core/exports/import_ledger_acknowledgment.py`
+- `data/receipts/ledger_acknowledgments/`
+- `data/receipts/ledger_acknowledgments.jsonl`
+- `data/receipts/ledger_acknowledgment_current.json`
+
+The importer rejects wrong repository identity, conflicting acknowledgment reuse, unknown supersession targets, and attempts to create a second current acknowledgment without a correction or supersession.
+
+## Evidence boundaries
+
+```text
+Export != acceptance.
+Acknowledgment != proof.
+Context-only acceptance != factual-basis standing.
+Correction != deletion of prior history.
+Archive success != truth.
+Co-occurrence != causation.
+Repository origin != authority.
 ```
-
-Unknown source type, institutional proximity, claim role, and factual use remain unknown until ledger review.
-
-## Trumpality repairs and additions
-
-### Earlier path repairs
-
-- `13585e234d124a08a6b355b220bc97d0566143f8`
-- `7648cb9c1524309ea8688aa3b3cac47d270be2dc`
-- `0fe22d056084f0f6ab3e43ca24934f478e234d50`
-- `bde903fd1498026516e01e606e30bdc59f6036cd`
-- `db8b6f9759661ba39cd80919008cdc85f949a1ae`
-- `b8689c5b9aa5c5b8e1a9c85fd2113239bb016c95`
-
-### Archive, receipt, deduplication, export, and schedule work
-
-- `e4616b0ac5f67c439ba5c8b4123c9816c2a5e5ce` — local archival, SHA-256, and archive receipts
-- `825268edf6ed866cf2554cfe7b6e1da0112141f3` — link-health monitoring receipts
-- `c7421cd18a510a44b92a8c7562d14459196365f5` — URL-level identity reuse
-- `24e2574483a5f7a988eb5d087c2cc50220974d05` — durable ingest receipts and deferred source-role classification
-- `e4e5862b656ab5a223b8b8575c78468dff14582a` — native archive workflow paths activated
-- `2bdd14154d05ad011be321cab48a7b791bae1d0c` — Executive Rhetoric Ledger export contract
-- `8840c02effec9af49420741c821e009c0df29244` — conservative pending producer exporter
-- `fc39c22984c752c6bcc2186c6d4c80f0eba82ff9` — duplicate ingest schedule removed; manual fallback retained
-- `49e4609fb6f1b250a29a4550ae806cc61bee1944` — archive-stage producer export integration
 
 ## Remaining Trumpality blockers
 
@@ -144,86 +132,32 @@ adapter_state: "candidate-blocked"
 Remaining blockers:
 
 - no complete successful shared weekly ingest and archive/monitor run is attached after the repairs;
-- no real producer export has yet been validated against the ledger schema from an observed run;
-- no downstream ledger acknowledgment object has yet been generated and returned;
-- correction and supersession round-trip behavior remains untested;
-- URL-level identity reuse is verified, but content-hash and claim-level duplicate handling remain unresolved;
-- privacy and sensitive-record filtering has not been tested with representative records;
-- shared StegVerse-Core weekly ingest behavior and output compatibility remain partially unaudited.
-
-Archive success, repository origin, source confidence, verification labels, and co-occurrence strength do not confer evidentiary standing.
-
-## Contract-audit governance
-
-```text
-A repaired path does not make a contract verified.
-A declared output path is not a verified output until production and consumption are observed.
-A producer export remains a pending candidate until the ledger validates reviews and acknowledges it.
-A heuristic score is not proof.
-A verified contract does not authorize ledger acceptance.
-```
-
-The contract-audit validator enforces:
-
-- repository membership in the capability registry;
-- unique contract-audit records;
-- existing human-readable audit references;
-- verified contracts must have non-empty inputs, outputs, receipts, consumers, and failure handling;
-- verified contracts cannot retain blockers;
-- ready or active adapters require verified contracts;
-- repaired-partial audits require concrete repair records.
-
-## Validation integration
-
-The existing activation chain includes:
-
-```text
-validate_repository_capabilities.py
--> validate_repository_contract_audits.py
--> run_activation_validation.py
--> validate-ledger-schemas.yml
-```
-
-No new workflow was created.
-
-The latest commit-status query for Trumpality returned no attached status checks. Do not claim the repaired archive/export chain green until complete runs are available.
+- no producer export from an observed native run has passed ledger validation;
+- no live acknowledgment has crossed repositories and been recorded by Trumpality;
+- correction and supersession mechanics are fixture-validated but not live-observed;
+- content-hash and claim-level duplicate handling remain unresolved beyond URL identity reuse;
+- privacy and sensitive-record filtering lacks representative tests;
+- shared StegVerse-Core workflow behavior remains partially unaudited.
 
 ## Current next integration goal
 
 ```text
-observe Trumpality shared weekly ingest and archive/monitor execution
--> validate a real producer export in Executive Rhetoric Ledger
--> generate and return a ledger acknowledgment
--> test correction and supersession round trip
+observe native Trumpality runs
+-> validate one real producer export
+-> issue and return one live acknowledgment
+-> test live correction and supersession
 -> test privacy filtering and duplicate handling
 -> complete Trumpality contract verification
--> complete Administrations contract audit
+-> audit Administrations producer contract
 -> audit shared StegVerse-Core biography workflows
 -> resolve StegSocials callback contract
 -> select first low-risk active federation
 ```
 
-## Required follow-on work
-
-Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
-
-- Confirm the expanded validation chain is green.
-- Confirm Trumpality shared weekly ingest, co-occurrence, archive, link-monitor, and export workflows complete.
-- Validate one real Trumpality producer export with `scripts/validate_producer_exports.py`.
-- Define and generate the ledger acknowledgment object returned to Trumpality.
-- Test duplicate, correction, supersession, archive-needed, and needs-primary-source outcomes.
-- Test privacy and sensitive-record filtering.
-- Locate Administrations workflows and producer outputs.
-- Audit the shared `StegVerse/StegVerse-Core` biography ingest and co-occurrence workflows or obtain durable output contracts.
-- Determine StegSocials platform capture, archive, deduplication, account-authenticity, scheduled discovery, and callback contracts.
-- Determine VAwatchdog and FREE-DOM_OverSight retrieval, redaction, promotion, archive, failure, and update contracts.
-- Determine StegScholar and Patents downstream canonical-output consumers and correction propagation.
-- Do not activate adapters until native contracts, failures, receipts, privacy boundaries, consumers, and observed round trips are verified.
-
 ## Release posture
 
-The ledger foundation, relationship network, fourteen initial audits, capability registry, first detailed contract audit, contract schema, validator, and activation-chain integration are installed. Trumpality now has native archival, health, failure-receipt, URL-deduplication, and conservative producer-export mechanisms, but its contract remains partial and no adapter is active.
+The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, and producer-side acknowledgment importer are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
 
 ## Archive readiness
 
-This handoff contains the validated foundation, repository audits, capability registry, first contract audit, Trumpality repairs and native additions, remaining blockers, validation integration, and next contract-verification work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
