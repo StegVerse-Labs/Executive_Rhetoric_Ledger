@@ -1,0 +1,43 @@
+{
+  "request_id": "ERL-ACTIVATION-VALIDATION-2026-07-14-ISSUE-2",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "activation_issue": 2,
+  "requested_state": "activation-ready-pending-validation",
+  "minimum_commit": "609545eae82f30b8c604a7fb3d088dfe9351ce6f",
+  "validation_scope": "default branch at or after minimum_commit",
+  "required_command": "python scripts/run_activation_validation.py",
+  "required_checks": [
+    "scripts/validate_producer_exports.py",
+    "scripts/validate_validation_results.py",
+    "scripts/validate_activation_state.py"
+  ],
+  "acceptable_evidence": [
+    "green GitHub Actions workflow URL bound to a validated commit SHA",
+    "equivalent reviewed local validation transcript bound to a validated commit SHA"
+  ],
+  "required_result_fields": [
+    "validated_commit_sha",
+    "validation_method",
+    "validation_timestamp",
+    "check_results",
+    "reviewer_or_workflow_identity",
+    "evidence_url_or_repository_path"
+  ],
+  "observed_connector_state": {
+    "commits_checked": [
+      "ac22a0c163363a114b321925999e262f5d4c01eb",
+      "f51297d61b4d7e7a65d767e28a75b2c71adc8693",
+      "1176a4bf24db803f5e454f5bc9e9025b5b84e6c1",
+      "609545eae82f30b8c604a7fb3d088dfe9351ce6f"
+    ],
+    "visible_pull_request_workflow_runs": 0,
+    "interpretation": "No connector-visible pull-request workflow runs were returned. This is not evidence of validation failure and does not satisfy activation."
+  },
+  "activation_effect": "none; activation remains blocked",
+  "next_authorized_action_after_pass": "create a superseding validation-result receipt, then promote one validated producer export into a reviewed ledger receipt",
+  "non_claims": [
+    "This request is not a validation result.",
+    "Absence of a connector-visible run is not proof of workflow failure.",
+    "This request does not activate the repository."
+  ]
+}
