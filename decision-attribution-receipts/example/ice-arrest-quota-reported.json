@@ -1,0 +1,93 @@
+{
+  "receipt_id": "dar-ice-arrest-quota-2025-example",
+  "receipt_version": "1.0.0",
+  "subject_context_id": "nfd-2025-005",
+  "linked_rhetoric_record_ids": ["rpa-2025-003", "rpa-2025-005"],
+  "decision_time": null,
+  "decision_time_status": "period-only",
+  "decision_requested": {
+    "action": "Increase daily immigration arrests toward reported numerical targets",
+    "target": "Persons subject to immigration enforcement",
+    "scope": "ICE field operations",
+    "requested_by": "Senior executive and department leadership, exact issuing chain not yet established",
+    "request_source_record": null
+  },
+  "decision_actor": {
+    "actor_id": "ice-field-enforcement",
+    "actor_type": "mixed",
+    "office_or_component": "ICE Enforcement and Removal Operations",
+    "individual_identity_status": "role-only"
+  },
+  "authority_chain": [
+    {
+      "sequence": 1,
+      "authority_source": "Administration mass-removal objective",
+      "authority_type": "presidential-directive",
+      "authority_status": "verified",
+      "record_reference": "rpa-2025-004"
+    },
+    {
+      "sequence": 2,
+      "authority_source": "Reported daily arrest target",
+      "authority_type": "quota",
+      "authority_status": "reported",
+      "record_reference": "nfd-2025-005"
+    }
+  ],
+  "evidence_available": [
+    {
+      "evidence_id": "evidence-public-rhetoric",
+      "evidence_type": "presidential-public-statements",
+      "evidence_status": "verified",
+      "relevance": "Shows public emphasis on dangerous criminals and mass removal",
+      "source_reference": "rpa-2025-003"
+    },
+    {
+      "evidence_id": "evidence-quota-reporting",
+      "evidence_type": "external-reporting-and-official-sources",
+      "evidence_status": "reported",
+      "relevance": "Supports existence of numerical arrest pressure and broadened activity",
+      "source_reference": "nfd-2025-005"
+    }
+  ],
+  "conflicts_or_objections": [
+    {
+      "raised_by": "Publicly represented mission boundary",
+      "conflict": "Dangerous-criminal emphasis did not fully describe quota-driven enforcement breadth",
+      "disposition": "unresolved",
+      "record_reference": "rpa-2025-003"
+    }
+  ],
+  "decision_result": "execute",
+  "decision_reason": "Reported operational pressure required increased arrest production in service of the administration's removal objective.",
+  "override": null,
+  "resulting_action": "Broadened arrest activity, including arrests of people without criminal convictions.",
+  "known_consequence": "Public mission framing and operational scope materially diverged.",
+  "responsibility_chain": [
+    {
+      "sequence": 1,
+      "responsible_actor_or_office": "Office of the President",
+      "responsibility_type": "originated",
+      "basis": "Publicly established the mass-removal objective and performance expectation.",
+      "status": "verified"
+    },
+    {
+      "sequence": 2,
+      "responsible_actor_or_office": "DHS and ICE senior leadership",
+      "responsibility_type": "directed",
+      "basis": "Reportedly translated the objective into numerical arrest pressure.",
+      "status": "reported"
+    },
+    {
+      "sequence": 3,
+      "responsible_actor_or_office": "ICE field components",
+      "responsibility_type": "implemented",
+      "basis": "Performed the resulting arrests.",
+      "status": "reported"
+    }
+  ],
+  "disclosure_posture": "discovered-after-action",
+  "verification_status": "fixture",
+  "promotion_state": "fixture-only",
+  "final_legal_finding": null
+}
