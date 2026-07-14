@@ -2,198 +2,123 @@
 
 ## Current task source of truth
 
-The validated repository foundation is green. The active goal is an automated, evidence-backed historical compendium of politically significant rhetoric, action, institutional response, measurable consequence, disclosure gaps, reconstructable decision attribution, and complete incident evidence streams.
-
-Integration advances through:
-
-```text
-observed capability
--> machine capability record
--> native contract audit
--> verified producer or consumer boundary
--> observed round trip
--> adapter readiness
--> governed evidence intake
-```
+The validated repository foundation is green. The active goal is an automated, evidence-backed historical compendium with reconstructable incident attribution, disclosure-gap tracking, presidential rhetoric comparison, and physical-source preservation.
 
 ## Governing rules
 
 ```text
-Preserve native mechanisms.
-Separate capability from verified contract.
-Use append-only receipts for transfer, review, correction, and supersession.
-Do not activate an adapter before live execution and acknowledgment are observed.
 Registration != verification.
 Partial disclosure != full disclosure.
 Presidential rhetoric != complete operational disclosure.
 Receipt completeness != lawful or ethical action.
-Receipt completeness == reconstructable attribution of the recorded why and who.
-Every incident stream must preserve who, what, why, when, and where.
-Missing evidence must produce an attributable gap receipt rather than a generic insufficient-data conclusion.
+Receipt completeness == reconstructable attribution of recorded who, what, why, when, and where.
+Missing evidence must identify the missing object, last known custodian, and custody status.
 ```
 
-## Installed repository mechanisms
+## Installed register and evidence surfaces
 
-- related-repository network and capability records;
-- contract-audit registry;
-- Trumpality producer boundary and acknowledgment schema;
-- producer acknowledgment succession validator;
-- non-fully-disclosed situations register;
-- presidential DHS/ICE rhetoric-to-policy alignment register;
-- presidential accountability framework;
-- governed research candidate for reported ICE vehicle-stop restrictions;
-- stage-two decision-attribution receipt schema, fixtures, and validator;
-- incident evidence-stream schema, Merkle rules, replication requirements, and semantic validator.
+- `registers/non-fully-disclosed-situations/README.md`
+- `registers/non-fully-disclosed-situations/register.json`
+- `registers/presidential-dhs-ice-rhetoric-policy-alignment/README.md`
+- `registers/presidential-dhs-ice-rhetoric-policy-alignment/register.json`
+- `registers/presidential-dhs-ice-rhetoric-policy-alignment/presidential-accountability-framework.md`
+- `registers/presidential-dhs-ice-rhetoric-policy-alignment/trump-physical-source-manifest.md`
+- `research-candidates/2026-07-14-ice-temporary-vehicle-stop-limits-after-fatal-shootings.md`
+- `incident-evidence-streams/2026-07-ice-vehicle-stop-shootings-evidentiary-revision.md`
 
-## Register state
+## Stage-two attribution and reconstruction mechanisms
 
-### Non-fully-disclosed situations
+- `schemas/decision-attribution-receipt.schema.json`
+- `scripts/validate_decision_attribution_receipts.py`
+- `decision-attribution-receipts/README.md`
+- two initial decision-attribution fixtures;
+- `schemas/incident-evidence-stream.schema.json`
+- `scripts/validate_incident_evidence_streams.py`
+- `incident-evidence-streams/README.md`
+
+The receipt and incident path is:
+
+```text
+directive or decision request
+-> who acted or decided
+-> what occurred
+-> why the action was selected
+-> when each transition occurred
+-> where the action and authority applied
+-> evidence available at that time
+-> objections, conflicts, and overrides
+-> consequence
+-> custody, replication, correction, and succession
+```
+
+## Current DHS/ICE register state
 
 ```yaml
-strict_policy_and_practice_contexts: 14
+non_fully_disclosed_policy_and_practice_contexts: 14
 event_instances: 2
-total_records: 16
-period_start: "2025-01-01"
-promotion_state: "register-only except separately linked candidates"
-```
-
-### Presidential DHS/ICE rhetoric-to-policy alignment
-
-```yaml
-statement_clusters: 9
-linked_non_disclosure_contexts: 16
-contexts_unlinked: 0
+total_non_disclosure_records: 16
+presidential_statement_clusters: 9
+statement_clusters_with_some_physical_primary_anchor: 6
+statement_clusters_still_requiring_exact_original_objects: 4
 final_findings: 0
 ```
 
-Supported alignment classes:
+## July 2026 vehicle-stop incidents — revised posture
 
-- `matches-known-policy`
-- `partially-matches`
-- `contrasts-with-known-implementation`
-- `states-opposite`
-- `later-overtaken-by-undisclosed-change`
-- `insufficient-evidence`
+The two fatal shootings and the reported tactical suspension have been reworked into a five-dimensional evidence record.
 
-## Stage two — decision-attribution receipts
+Current supportable findings:
 
-Installed:
+- two fatal ICE shootings occurred during vehicle-related immigration operations within six days;
+- reporting states neither person killed was the intended target of the underlying operation;
+- DHS or ICE asserted vehicle-related threat or public-safety justifications;
+- witness or family accounts dispute material portions of those accounts;
+- Reuters reported an ICE vehicle-stop suspension on July 14, 2026;
+- the primary directive and complete investigative records remain unavailable publicly.
 
-- `schemas/decision-attribution-receipt.schema.json`
-- `decision-attribution-receipts/README.md`
-- `decision-attribution-receipts/example/ice-arrest-quota-reported.json`
-- `decision-attribution-receipts/example/ice-vehicle-stop-suspension-reported.json`
-- `scripts/validate_decision_attribution_receipts.py`
+No causal, legal, or use-of-force conclusion has been promoted.
 
-The receipt path is:
+Primary evidence still required includes original video and audio, officer and command identities, mission authorization, exact timestamps and coordinates, communications, vehicle and ballistic forensics, witness and officer interviews, and the complete suspension directive with succession history.
 
-```text
-decision requested
--> decision actor
--> authority chain
--> evidence available
--> conflicts or objections
--> result and reason
--> override, if any
--> resulting action and consequence
--> responsibility chain
-```
+## Trump physical-source work
 
-The schema supports human, non-governed-AI, governed-AI, mixed, and unknown actors without presuming that governance makes a decision acceptable. It records authority and responsibility links as verified, reported, inferred, disputed, missing, or unknown.
+The source manifest now distinguishes:
 
-The two installed records are fixtures only:
+1. signed instruments and enacted statutes;
+2. official transcripts and recorded ceremonies;
+3. original presidential social-media objects;
+4. authenticated archive captures;
+5. contemporaneous wire reproductions used only as provisional carriers.
 
-1. reported ICE daily-arrest quota pressure;
-2. reported temporary ICE vehicle-stop suspension after fatal shootings.
+Located primary anchors include:
 
-They demonstrate attribution structure and do not constitute final historical or legal findings.
+- Executive Order 14159 for the January 20 enforcement program;
+- the enacted Laken Riley Act and recorded January 29 signing ceremony path;
+- contemporaneously preserved text of Trump’s June 12 Truth Social statement regarding farm, hotel, and leisure workers;
+- recorded White House remarks from the same date.
 
-## Stage two expansion — networked Merkle incident evidence streams
+Still required:
 
-Installed:
+- exact original objects for repeated “worst of the worst” statements;
+- authenticated June 15–16 reversal post and timestamp;
+- exact 2026 Trump statements before and after the Houston and Biddeford shootings;
+- complete source objects for presidential republication of ICE narrative products.
 
-- `schemas/incident-evidence-stream.schema.json`
-- `incident-evidence-streams/README.md`
-- `scripts/validate_incident_evidence_streams.py`
+## Remaining implementation areas
 
-Required reconstruction dimensions:
-
-```text
-who
-what
-why
-when
-where
-```
-
-Evidence path:
-
-```text
-source event
--> canonical SHA-256 payload hash
--> parent-hash lineage
--> ordered evidence event
--> incident Merkle root
--> independent replica acknowledgments
--> network anchors
--> reconstruction status
-```
-
-The stream includes directive, observation, evidence, decision, override, action, consequence, correction, supersession, custody, replication, and gap events.
-
-A stream cannot be marked complete unless every reconstruction dimension is complete. Any missing element must produce a `missing_data_receipt` that identifies the missing item, responsible or last-known custodian, and last-known status. An unresolved `gap` event blocks completion.
-
-Merkle roots are append-only incident-state commitments. Corrections and supersessions produce new roots linked to prior stream roots rather than replacing historical states. Replicas must acknowledge the same root, and the validator rejects insufficient replicas or root disagreement.
-
-The design cannot force a non-cooperating actor to generate evidence that never existed. It prevents known absence, custody loss, withheld evidence, conflicting roots, and incomplete reconstruction from being represented as an unattributed lack of data.
-
-## Attribution and reconstruction promotion requirements
-
-- primary or sufficiently corroborated decision and incident records;
-- exact or bounded decision and incident times;
-- identified authority, actor, custodian, and responsibility roles where available;
-- verified cross-register identifiers;
-- explicit distinction among verified, reported, inferred, disputed, missing, and unknown links;
-- canonical event hashes and resolvable parent hashes;
-- computed Merkle root and incident-state succession;
-- minimum independent replica acknowledgments with root agreement;
-- correction, supersession, and gap-resolution receipts;
-- validator integration into activation validation and CI.
-
-## Remaining Trumpality blockers
-
-```yaml
-contract_state: "partially-verified"
-adapter_state: "candidate-blocked"
-```
-
-- no complete successful shared weekly ingest and archive/monitor run is attached after repairs;
-- no observed native producer export has passed ledger validation;
-- no live acknowledgment has crossed repositories and been recorded by Trumpality;
-- correction and supersession are fixture-validated but not live-observed;
-- content-hash and claim-level duplicate handling remain incomplete;
-- privacy and sensitive-record filtering lacks representative tests;
-- shared StegVerse-Core workflow behavior remains partially unaudited.
-
-## Current next integration goal
-
-```text
-create first complete incident evidence-stream fixture
--> compute and verify its Merkle root
--> add independent replica acknowledgment fixtures
--> link decision-attribution receipts into incident streams
--> add cross-register identifier checks
--> integrate both validators into activation validation and CI
--> populate incident streams across the sixteen disclosure-gap contexts
--> implement correction, supersession, and gap-resolution succession
--> observe native Trumpality runs
--> validate one real producer export and live acknowledgment round trip
-```
+- archive or hash the physical source objects rather than storing URLs alone;
+- create statement-level source receipts with timecodes and surrounding context;
+- create the first computed Merkle incident fixture and replica acknowledgments;
+- integrate attribution and incident validators into activation validation and CI;
+- populate attribution receipts across all sixteen non-disclosure contexts;
+- add correction and supersession mechanics;
+- complete the live Trumpality producer-export and acknowledgment round trip;
+- install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki` when the register reaches release posture.
 
 ## Release posture
 
-The ledger foundation and all three register surfaces are installed. Stage two now includes decision attribution and a machine-readable networked Merkle incident-evidence-stream specification. It is not release-complete because the first complete incident fixture, computed root, replica fixtures, CI integration, full cross-register population, and live producer round-trip verification remain incomplete.
+The incident findings have been materially strengthened and the Trump source search has moved from summaries to a physical-source manifest. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, and full cross-register attribution remain incomplete.
 
 ## Archive readiness
 
-This handoff contains the complete current state, installed mechanisms, evidence boundaries, stage-two attribution and Merkle reconstruction implementation, remaining blockers, and next integration goal. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the current mechanisms, revised incident posture, located Trump source anchors, unresolved source gaps, remaining files, and next integration work. The complete thread is ready for archiving; no additional part of the thread is needed to move forward.
