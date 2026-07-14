@@ -1,0 +1,188 @@
+{
+  "register_id": "non-fully-disclosed-situations",
+  "jurisdiction": "United States Department of Homeland Security and components",
+  "period_start": "2025-01-01",
+  "status": "active-register",
+  "promotion_state": "register-only",
+  "governance": {
+    "registration_is_verification": false,
+    "agency_denial_requires_exclusion": false,
+    "repeated_applications_are_separate_instances": true,
+    "final_factual_findings_allowed": false
+  },
+  "included_event_classes": [
+    "individual-raid-before-full-official-disclosure",
+    "shooting-death-injury-or-detention-event",
+    "later-discovered-implementation-detail",
+    "agency-denied-disputed-allegation-with-independent-support",
+    "repeated-application-of-parent-directive"
+  ],
+  "contexts": [
+    {
+      "id": "nfd-2025-001",
+      "title": "Alien Enemies Act removal process activated before public release",
+      "type": "implementation-detail",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "court-record-supported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-002",
+      "title": "Living immigrants placed in Social Security death records",
+      "type": "data-practice",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-003",
+      "title": "IRS taxpayer-address access for immigration enforcement",
+      "type": "data-practice",
+      "disclosure_status": "implementation-details-not-disclosed",
+      "verification_status": "court-record-supported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-004",
+      "title": "Medicaid enrollee data transferred to DHS",
+      "type": "data-practice",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-005",
+      "title": "Escalating ICE daily arrest quotas",
+      "type": "operational-directive",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-006",
+      "title": "Residential entry using administrative warrants",
+      "type": "operational-directive",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "whistleblower-supported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-007",
+      "title": "Broad denial of bond-hearing eligibility",
+      "type": "procedural-directive",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-008",
+      "title": "ICE participation in reunification interviews",
+      "type": "operational-practice",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-009",
+      "title": "ICE access to state driver information through Nlets",
+      "type": "data-practice",
+      "disclosure_status": "implementation-details-not-disclosed",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-010",
+      "title": "Coordinated ICE viral-content and influencer operations",
+      "type": "institutional-practice",
+      "disclosure_status": "implementation-details-not-disclosed",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2025-011",
+      "title": "Reduced internal oversight and curtailed body-camera expansion",
+      "type": "institutional-change",
+      "disclosure_status": "partially-disclosed",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2026-012",
+      "title": "Expanded authority to detain previously admitted refugees",
+      "type": "procedural-directive",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "court-record-supported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2026-013",
+      "title": "Use of TSA Secure Flight records for routine immigration arrests",
+      "type": "data-practice",
+      "disclosure_status": "implementation-details-not-disclosed",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "nfd-2026-014",
+      "title": "Temporary suspension of immigration-related vehicle stops after fatal shootings",
+      "type": "operational-directive",
+      "disclosure_status": "not-announced-before-external-reporting",
+      "verification_status": "multi-source-reported",
+      "parent_context": null,
+      "promotion_state": "research-candidate-linked",
+      "linked_record": "research-candidates/2026-07-14-ice-temporary-vehicle-stop-limits-after-fatal-shootings.md"
+    },
+    {
+      "id": "nfd-2026-015",
+      "title": "Fatal shooting of Lorenzo Salgado Araujo during a Houston-area vehicle-stop operation",
+      "type": "shooting-or-death-event",
+      "disclosure_status": "event-not-fully-disclosed",
+      "verification_status": "multi-source-reported",
+      "parent_context": "nfd-2026-014",
+      "promotion_state": "register-only",
+      "final_factual_finding": null
+    },
+    {
+      "id": "nfd-2026-016",
+      "title": "Fatal shooting of Johan Sebastián Durán Guerrero during a Biddeford vehicle-stop operation",
+      "type": "shooting-or-death-event",
+      "disclosure_status": "event-not-fully-disclosed",
+      "verification_status": "multi-source-reported",
+      "parent_context": "nfd-2026-014",
+      "promotion_state": "register-only",
+      "final_factual_finding": null
+    }
+  ],
+  "event_instance_template": {
+    "id": null,
+    "title": null,
+    "type": "individual-event-instance",
+    "date_or_period": null,
+    "location": null,
+    "parent_context": null,
+    "first_public_observer": null,
+    "what_was_not_fully_disclosed": null,
+    "agency_response": null,
+    "disclosure_status": "still-unresolved",
+    "verification_status": "insufficient-for-promotion",
+    "sources": [],
+    "known_facts": [],
+    "disputed_claims": [],
+    "unknowns": [],
+    "promotion_state": "register-only",
+    "final_factual_finding": null
+  }
+}
