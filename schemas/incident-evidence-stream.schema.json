@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/incident-evidence-stream.schema.json",
+  "title": "Incident Evidence Stream",
+  "type": "object",
+  "required": [
+    "stream_id",
+    "incident_id",
+    "who",
+    "what",
+    "why",
+    "when",
+    "where",
+    "events",
+    "merkle",
+    "replication",
+    "reconstruction"
+  ],
+  "properties": {
+    "stream_id": {"type": "string", "minLength": 1},
+    "incident_id": {"type": "string", "minLength": 1},
+    "who": {
+      "type": "object",
+      "required": ["actors", "authority_sources", "responsibility_holders"],
+      "properties": {
+        "actors": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/entityRef"}},
+        "authority_sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/entityRef"}},
+        "responsibility_holders": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/entityRef"}}
+      },
+      "additionalProperties": false
+    },
+    "what": {
+      "type": "object",
+      "required": ["requested_action", "decision", "resulting_action", "consequence_status"],
+      "properties": {
+        "requested_action": {"type": "string", "minLength": 1},
+        "decision": {"type": "string", "minLength": 1},
+        "resulting_action": {"type": "string", "minLength": 1},
+        "consequence_status": {"enum": ["none-known", "reported", "observed", "disputed", "unknown"]}
+      },
+      "additionalProperties": false
+    },
+    "why": {
+      "type": "object",
+      "required": ["stated_reason", "evidence_refs", "authority_refs", "conflict_refs"],
+      "properties": {
+        "stated_reason": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "authority_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "conflict_refs": {"type": "array", "items": {"type": "string"}},
+        "unknown_reason_components": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "when": {
+      "type": "object",
+      "required": ["incident_start", "recorded_at"],
+      "properties": {
+        "incident_start": {"type": "string", "format": "date-time"},
+        "incident_end": {"type": ["string", "null"], "format": "date-time"},
+        "recorded_at": {"type": "string", "format": "date-time"},
+        "time_source_refs": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "where": {
+      "type": "object",
+      "required": ["jurisdiction", "location_status"],
+      "properties": {
+        "jurisdiction": {"type": "string", "minLength": 1},
+        "location_status": {"enum": ["exact", "approximate", "withheld", "unknown"]},
+        "location_text": {"type": ["string", "null"]},
+        "coordinates": {
+          "type": ["object", "null"],
+          "properties": {
+            "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+            "longitude": {"type": "number", "minimum": -180, "maximum": 180}
+          },
+          "required": ["latitude", "longitude"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/evidenceEvent"}
+    },
+    "merkle": {
+      "type": "object",
+      "required": ["algorithm", "leaf_order", "root_hash", "root_status"],
+      "properties": {
+        "algorithm": {"const": "sha256"},
+        "leaf_order": {"const": "event_sequence_ascending"},
+        "root_hash": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+        "root_status": {"enum": ["computed", "pending", "invalid"]},
+        "previous_stream_root": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+        "network_anchor_refs": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "replication": {
+      "type": "object",
+      "required": ["required_replicas", "acknowledgments"],
+      "properties": {
+        "required_replicas": {"type": "integer", "minimum": 2},
+        "acknowledgments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["replica_id", "root_hash", "acknowledged_at", "custody_status"],
+            "properties": {
+              "replica_id": {"type": "string"},
+              "root_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+              "acknowledged_at": {"type": "string", "format": "date-time"},
+              "custody_status": {"enum": ["stored", "verified", "quarantined", "missing"]}
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reconstruction": {
+      "type": "object",
+      "required": ["required_dimensions", "dimension_status", "complete", "missing_data_receipts"],
+      "properties": {
+        "required_dimensions": {"const": ["who", "what", "why", "when", "where"]},
+        "dimension_status": {
+          "type": "object",
+          "required": ["who", "what", "why", "when", "where"],
+          "properties": {
+            "who": {"enum": ["complete", "partial", "unknown"]},
+            "what": {"enum": ["complete", "partial", "unknown"]},
+            "why": {"enum": ["complete", "partial", "unknown"]},
+            "when": {"enum": ["complete", "partial", "unknown"]},
+            "where": {"enum": ["complete", "partial", "unknown"]}
+          },
+          "additionalProperties": false
+        },
+        "complete": {"type": "boolean"},
+        "missing_data_receipts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["dimension", "missing_item", "responsible_custodian", "last_known_status"],
+            "properties": {
+              "dimension": {"enum": ["who", "what", "why", "when", "where", "evidence", "authority", "custody"]},
+              "missing_item": {"type": "string"},
+              "responsible_custodian": {"type": "string"},
+              "last_known_status": {"type": "string"}
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "entityRef": {
+      "type": "object",
+      "required": ["entity_id", "entity_type", "role"],
+      "properties": {
+        "entity_id": {"type": "string"},
+        "entity_type": {"enum": ["human", "office", "agency", "non-governed-ai", "governed-ai", "system", "unknown"]},
+        "role": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "evidenceEvent": {
+      "type": "object",
+      "required": ["sequence", "event_id", "event_type", "recorded_at", "payload_hash", "parent_hashes", "origin", "custodian", "source_status"],
+      "properties": {
+        "sequence": {"type": "integer", "minimum": 0},
+        "event_id": {"type": "string"},
+        "event_type": {"enum": ["directive", "observation", "evidence", "decision", "override", "action", "consequence", "correction", "supersession", "custody", "replication", "gap"]},
+        "recorded_at": {"type": "string", "format": "date-time"},
+        "payload_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "parent_hashes": {"type": "array", "items": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+        "origin": {"type": "string"},
+        "custodian": {"type": "string"},
+        "source_status": {"enum": ["primary", "secondary", "reported", "disputed", "unknown"]},
+        "content_ref": {"type": ["string", "null"]},
+        "signature_ref": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
