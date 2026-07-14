@@ -1,0 +1,100 @@
+{
+  "receipt_id": "dar-ice-vehicle-stop-suspension-2026-example",
+  "receipt_version": "1.0.0",
+  "subject_context_id": "nfd-2026-014",
+  "linked_rhetoric_record_ids": ["rpa-2026-008"],
+  "decision_time": null,
+  "decision_time_status": "period-only",
+  "decision_requested": {
+    "action": "Temporarily suspend or limit immigration-related vehicle stops",
+    "target": "ICE vehicle-stop enforcement operations",
+    "scope": "Reported national or broad operational scope; exact scope not yet established",
+    "requested_by": "Unidentified ICE or DHS authority",
+    "request_source_record": null
+  },
+  "decision_actor": {
+    "actor_id": "ice-operational-command",
+    "actor_type": "mixed",
+    "office_or_component": "ICE operational leadership and field components",
+    "individual_identity_status": "unknown"
+  },
+  "authority_chain": [
+    {
+      "sequence": 1,
+      "authority_source": "Administration support for forceful field enforcement",
+      "authority_type": "presidential-directive",
+      "authority_status": "verified",
+      "record_reference": "rpa-2026-008"
+    },
+    {
+      "sequence": 2,
+      "authority_source": "Reported temporary vehicle-stop restriction",
+      "authority_type": "component-directive",
+      "authority_status": "reported",
+      "record_reference": "nfd-2026-014"
+    }
+  ],
+  "evidence_available": [
+    {
+      "evidence_id": "fatal-event-houston",
+      "evidence_type": "reported-fatal-shooting-event",
+      "evidence_status": "reported",
+      "relevance": "One of two fatal vehicle-stop events preceding the reported restriction",
+      "source_reference": "nfd-2026-015"
+    },
+    {
+      "evidence_id": "fatal-event-biddeford",
+      "evidence_type": "reported-fatal-shooting-event",
+      "evidence_status": "reported",
+      "relevance": "One of two fatal vehicle-stop events preceding the reported restriction",
+      "source_reference": "nfd-2026-016"
+    },
+    {
+      "evidence_id": "reported-directive",
+      "evidence_type": "external-reporting",
+      "evidence_status": "reported",
+      "relevance": "Supports existence of the temporary operational restriction",
+      "source_reference": "research-candidates/2026-07-14-ice-temporary-vehicle-stop-limits-after-fatal-shootings.md"
+    }
+  ],
+  "conflicts_or_objections": [
+    {
+      "raised_by": "Operational consequence record",
+      "conflict": "The reported restriction contrasts with the preceding public posture favoring aggressive field enforcement.",
+      "disposition": "accepted",
+      "record_reference": "rpa-2026-008"
+    }
+  ],
+  "decision_result": "modify",
+  "decision_reason": "Reportedly reduced or suspended a tactic after two fatal shootings created operational and public-accountability pressure.",
+  "override": null,
+  "resulting_action": "Immigration-related vehicle stops were reportedly limited or suspended temporarily.",
+  "known_consequence": "The tactical change became public through external reporting rather than advance DHS disclosure.",
+  "responsibility_chain": [
+    {
+      "sequence": 1,
+      "responsible_actor_or_office": "Office of the President",
+      "responsibility_type": "originated",
+      "basis": "Established and publicly supported the broader forceful-enforcement objective under which the tactic operated.",
+      "status": "verified"
+    },
+    {
+      "sequence": 2,
+      "responsible_actor_or_office": "DHS or ICE authority issuing the restriction",
+      "responsibility_type": "directed",
+      "basis": "Reportedly ordered the temporary tactical change; exact office and record remain unidentified.",
+      "status": "reported"
+    },
+    {
+      "sequence": 3,
+      "responsible_actor_or_office": "ICE field components",
+      "responsibility_type": "implemented",
+      "basis": "Would carry out the restriction at the operational level.",
+      "status": "inferred"
+    }
+  ],
+  "disclosure_posture": "not-disclosed-before-action",
+  "verification_status": "fixture",
+  "promotion_state": "fixture-only",
+  "final_legal_finding": null
+}
