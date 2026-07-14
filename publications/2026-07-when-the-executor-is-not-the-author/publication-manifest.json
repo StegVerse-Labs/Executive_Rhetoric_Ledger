@@ -1,0 +1,60 @@
+{
+  "publication_id": "erl-pub-2026-07-executor-not-author",
+  "title": "When the Executor Is Not the Author",
+  "subtitle": "Adversarial AI, Public Authority, and the Receipt Problem",
+  "publication_type": "generalized-public-report",
+  "status": "publication-candidate",
+  "date_prepared": "2026-07-14",
+  "audience": [
+    "LinkedIn",
+    "AI governance researchers",
+    "public-sector decision makers",
+    "evidence and accountability practitioners"
+  ],
+  "scope": {
+    "current_agency_identified": false,
+    "current_administration_identified": false,
+    "current_individual_accused": false,
+    "future_scenario": true,
+    "nonpartisan": true
+  },
+  "core_claim": "A reconstructable receipt structure does not make an action acceptable; it preserves why the action occurred and who supplied, sustained, modified, approved, or overrode the responsible authority.",
+  "reconstruction_dimensions": [
+    "who",
+    "what",
+    "why",
+    "when",
+    "where"
+  ],
+  "evidence_chain": [
+    "directive",
+    "authority",
+    "evidence",
+    "decision",
+    "override",
+    "action",
+    "consequence",
+    "correction-or-ratification"
+  ],
+  "files": {
+    "canonical_markdown": "publications/2026-07-when-the-executor-is-not-the-author/report.md",
+    "linkedin_introduction": "publications/2026-07-when-the-executor-is-not-the-author/linkedin-introduction.md",
+    "attachable_document": "adversarial_ai_public_authority_receipt_problem.docx",
+    "attachable_document_repository_status": "generated-outside-repository-binary-not-yet-committed"
+  },
+  "source_relationship": {
+    "derived_from_current_incident_findings": true,
+    "contains_current_incident_identifiers": false,
+    "contains_current_agency_names": false,
+    "contains_current_administration_names": false,
+    "preserves_receipt_model": true
+  },
+  "promotion_requirements": [
+    "commit or release the binary document with a SHA-256 digest",
+    "record final publication timestamp and platform URL",
+    "capture the posted LinkedIn object or authenticated archive",
+    "create a publication receipt linking source markdown, binary digest, and published object",
+    "record corrections or supersession append-only"
+  ],
+  "final_publication_receipt": null
+}
