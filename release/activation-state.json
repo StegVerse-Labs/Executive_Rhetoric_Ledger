@@ -6,7 +6,6 @@
   "current_pending_receipt": "validation_results/workflow-run-check-e8df043a.pending.json",
   "activation_runbook": "release/activation-runbook.md",
   "final_handoff": "release/final-activation-handoff.md",
-  "research_capture": "research-notes/2026-decision-economy-human-judgment.md",
   "required_before_activated": [
     "validation_result",
     "pending_receipt_supersession",
