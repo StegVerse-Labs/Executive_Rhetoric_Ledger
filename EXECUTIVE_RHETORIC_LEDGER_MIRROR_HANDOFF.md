@@ -118,7 +118,39 @@ Correction != deletion of prior history.
 Archive success != truth.
 Co-occurrence != causation.
 Repository origin != authority.
+Registration != verification.
+Agency denial != automatic exclusion.
+Partial disclosure != full disclosure.
 ```
+
+## Non-fully-disclosed situations register
+
+Installed:
+
+- `registers/non-fully-disclosed-situations/README.md`
+- `registers/non-fully-disclosed-situations/register.json`
+
+The separate register now preserves situations first made publicly observable through external reporting, litigation, whistleblowers, local officials, affected persons, leaked or internal records, or downstream operational effects before DHS or a component fully disclosed the relevant matter.
+
+Included classes:
+
+- individual raids reported before completion or meaningful official disclosure;
+- shootings, deaths, injuries, or detention events where the undisclosed matter was an event rather than a policy;
+- announced executive orders whose implementation details were uncovered later;
+- DHS-denied allegations with sufficient independent support to preserve as disputed;
+- separate applications of the same directive linked to one parent context.
+
+Initial machine-readable population:
+
+```yaml
+strict_policy_and_practice_contexts: 14
+event_instances_added: 2
+total_initial_register_records: 16
+period_start: "2025-01-01"
+promotion_state: "register-only except separately linked research candidates"
+```
+
+The two initial event instances are the fatal shootings of Lorenzo Salgado Araujo in the Houston area and Johan Sebastián Durán Guerrero in Biddeford. Both remain unresolved event records with no final factual finding.
 
 ## Remaining Trumpality blockers
 
@@ -163,8 +195,8 @@ observe native Trumpality runs
 
 ## Release posture
 
-The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, producer-side acknowledgment importer, and the latest governed research candidate are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
+The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, producer-side acknowledgment importer, governed research candidate, and separate non-fully-disclosed situations register are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
 
 ## Archive readiness
 
-This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, latest candidate intake, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, latest candidate intake, non-fully-disclosed situations register, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
