@@ -6,6 +6,34 @@ This framework clarifies what follows when a presidential public statement mater
 
 The absence of direct evidence that the President personally knew a specific undisclosed implementation detail does **not** erase presidential-office responsibility. It changes which responsibility pathway must be investigated.
 
+## Receipt-attribution principle
+
+The governed-versus-non-governed enforcement comparison is not a claim that a particular governance model is lawful, benevolent, non-hierarchical, or protective of innocent people. The relevant distinction is evidentiary continuity.
+
+A complete receipt structure preserves:
+
+```text
+what decision was requested
+-> what evidence was available
+-> what rule, objective, or directive was applied
+-> who supplied or changed that authority
+-> what objections, uncertainty, or conflicts were recorded
+-> who approved, rejected, sustained, or overrode the decision
+-> what action followed
+-> who accepted responsibility for the consequence
+```
+
+The receipt does not make the decision good. It makes the decision reconstructable.
+
+The central inquiry is therefore:
+
+```text
+Why was the action taken?
+Who caused, authorized, sustained, corrected, or overrode it?
+```
+
+A harmful governed decision may remain harmful. Its distinguishing feature is that the evidence chain should prevent the originating or overriding authority from disappearing behind the executing agent.
+
 ## Executive-accountability fork
 
 When DHS or ICE conduct materially conflicts with the President's public description of its mission, scope, safeguards, or target population, the register must test at least two principal pathways:
@@ -99,6 +127,7 @@ Policy contrast within a supervised executive department does implicate presiden
 Once the contradiction becomes known or reasonably knowable, continued direction, ratification, reward, non-correction, concealment, or materially misleading rhetoric must be separately tested.
 Absence of proven personal knowledge does not equal absence of presidential responsibility.
 Presidential responsibility does not automatically equal adjudicated criminal culpability.
+Receipt completeness does not validate the decision; it identifies the why and the who.
 ```
 
 ## Required register fields
@@ -119,6 +148,14 @@ Every mature comparison record should add:
 - `civil_rights_violation_status`
 - `criminal_culpability_status`
 - `immunity_analysis_status`
+- `decision_request_receipt`
+- `evidence_available_at_decision`
+- `directive_or_objective_applied`
+- `authority_origin`
+- `authority_change_history`
+- `objection_or_conflict_receipts`
+- `approval_rejection_or_override_actor`
+- `consequence_acceptance_actor`
 
 ## Governing rule
 
@@ -127,4 +164,5 @@ No knowledge finding may be invented.
 No responsibility finding may be erased merely because personal knowledge is unproven.
 No criminal finding may be declared without offense-specific proof.
 No agency may be used as a rhetorical shield against review of presidential direction, supervision, ratification, or failure to correct.
+No receipt may be treated as proof that the recorded decision was acceptable; its purpose is attribution and reconstruction.
 ```
