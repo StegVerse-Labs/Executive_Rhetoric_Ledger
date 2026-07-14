@@ -121,6 +121,9 @@ Repository origin != authority.
 Registration != verification.
 Agency denial != automatic exclusion.
 Partial disclosure != full disclosure.
+Presidential rhetoric != complete operational disclosure.
+Policy contrast != proof of presidential knowledge.
+Later policy change != retroactive falsification of an earlier statement.
 ```
 
 ## Non-fully-disclosed situations register
@@ -130,7 +133,7 @@ Installed:
 - `registers/non-fully-disclosed-situations/README.md`
 - `registers/non-fully-disclosed-situations/register.json`
 
-The separate register now preserves situations first made publicly observable through external reporting, litigation, whistleblowers, local officials, affected persons, leaked or internal records, or downstream operational effects before DHS or a component fully disclosed the relevant matter.
+The separate register preserves situations first made publicly observable through external reporting, litigation, whistleblowers, local officials, affected persons, leaked or internal records, or downstream operational effects before DHS or a component fully disclosed the relevant matter.
 
 Included classes:
 
@@ -151,6 +154,47 @@ promotion_state: "register-only except separately linked research candidates"
 ```
 
 The two initial event instances are the fatal shootings of Lorenzo Salgado Araujo in the Houston area and Johan Sebastián Durán Guerrero in Biddeford. Both remain unresolved event records with no final factual finding.
+
+## Presidential DHS/ICE rhetoric-to-policy alignment register
+
+Installed:
+
+- `registers/presidential-dhs-ice-rhetoric-policy-alignment/README.md`
+- `registers/presidential-dhs-ice-rhetoric-policy-alignment/register.json`
+
+Purpose:
+
+```text
+Presidential statement
+-> office and responsibility represented
+-> policy state publicly known at statement time
+-> policy state later established or reported
+-> linked non-disclosure contexts
+-> temporal comparison
+-> alignment classification
+```
+
+Initial population:
+
+```yaml
+statement_clusters: 9
+linked_non_disclosure_contexts: 16
+contexts_unlinked: 0
+final_findings: 0
+```
+
+Supported classifications are `matches-known-policy`, `partially-matches`, `contrasts-with-known-implementation`, `states-opposite`, `later-overtaken-by-undisclosed-change`, and `insufficient-evidence`.
+
+The initial result identifies repeated partial matches and contrasts. Trump publicly emphasized dangerous criminals, public safety, and forceful enforcement; later-discovered implementation also included arrest quotas, substantial arrests of people without criminal convictions, family-reunification enforcement, broad data repurposing, procedural detention expansions, and unannounced tactical reversals. No record treats contrast as proof that the President personally knew of an undisclosed implementation detail.
+
+Required next work:
+
+- archive complete official transcripts, videos, and presidential social-media posts;
+- replace summaries with exact statement text and timestamps;
+- establish policy-effective dates for every linked context;
+- distinguish contemporaneous contradiction from later succession;
+- add statement-level source-posture, correction, and supersession receipts;
+- validate all cross-register identifiers automatically.
 
 ## Remaining Trumpality blockers
 
@@ -195,8 +239,8 @@ observe native Trumpality runs
 
 ## Release posture
 
-The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, producer-side acknowledgment importer, governed research candidate, and separate non-fully-disclosed situations register are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
+The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, producer-side acknowledgment importer, governed research candidate, non-fully-disclosed situations register, and presidential DHS/ICE rhetoric-to-policy alignment register are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
 
 ## Archive readiness
 
-This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, latest candidate intake, non-fully-disclosed situations register, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, latest candidate intake, all three register surfaces, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
