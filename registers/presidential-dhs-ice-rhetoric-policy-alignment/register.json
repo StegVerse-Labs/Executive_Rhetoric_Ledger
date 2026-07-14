@@ -1,0 +1,260 @@
+{
+  "register_id": "presidential-dhs-ice-rhetoric-policy-alignment",
+  "period_start": "2025-01-20",
+  "status": "active-register",
+  "promotion_state": "register-only",
+  "subject": "President Donald Trump statements concerning DHS, ICE, immigration enforcement, detention, removal, and public-safety responsibilities",
+  "linked_register": "registers/non-fully-disclosed-situations/register.json",
+  "governance": {
+    "registration_is_final_factual_finding": false,
+    "later_policy_change_retroactively_falsifies_earlier_statement": false,
+    "silence_proves_intentional_concealment": false,
+    "policy_contrast_proves_presidential_knowledge": false,
+    "exact_quote_required_for_final_promotion": true,
+    "cross_register_ids_required": true
+  },
+  "alignment_classes": [
+    "matches-known-policy",
+    "partially-matches",
+    "contrasts-with-known-implementation",
+    "states-opposite",
+    "later-overtaken-by-undisclosed-change",
+    "insufficient-evidence"
+  ],
+  "statement_clusters": [
+    {
+      "id": "rpa-2025-001",
+      "date": "2025-01-20",
+      "context": "Inaugural address and opening immigration directives",
+      "statement_summary": "Trump described the administration as beginning removal of millions of criminal aliens and restoring border and public safety.",
+      "office_responsibility_presented": [
+        "DHS border security",
+        "ICE arrest and removal",
+        "public-safety prioritization",
+        "presidential direction of immigration enforcement"
+      ],
+      "known_policy_state_at_time": "Executive actions authorized broad interior enforcement, expedited removal, expanded interagency participation, detention growth, and removal operations beyond persons with serious criminal convictions.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-001",
+        "nfd-2025-005",
+        "nfd-2025-007"
+      ],
+      "alignment": "partially-matches",
+      "comparison": "The criminal-alien and public-safety framing matched a real priority but did not disclose the breadth of removal authority, later arrest quotas, or broad bond restrictions affecting categories beyond dangerous convicted offenders.",
+      "temporal_caution": "Some linked implementation details were adopted or clarified after the statement and must not be treated as already operative without effective-date evidence.",
+      "source_urls": [
+        "https://www.whitehouse.gov/remarks/2025/01/the-inaugural-address/",
+        "https://www.federalregister.gov/executive-order/14159"
+      ],
+      "verification_status": "official-statement-plus-policy-record",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-002",
+      "date": "2025-01-29",
+      "context": "Laken Riley Act signing",
+      "statement_summary": "Trump emphasized detention and removal of dangerous criminal offenders and framed DHS action as protection from violent crime.",
+      "office_responsibility_presented": [
+        "mandatory DHS detention",
+        "ICE custody",
+        "crime-focused public protection"
+      ],
+      "known_policy_state_at_time": "The statute covered specified arrests and charges, including some offenses not requiring a violent-crime conviction, and later enforcement expanded substantially beyond persons convicted of serious crimes.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-005",
+        "nfd-2025-007"
+      ],
+      "alignment": "partially-matches",
+      "comparison": "The statement accurately described a crime-linked detention law, but its dangerous-offender emphasis did not communicate the statute's charge-based breadth or the later quota-driven increase in arrests of people without criminal convictions.",
+      "source_urls": [
+        "https://www.congress.gov/bill/119th-congress/senate-bill/5",
+        "https://www.reuters.com/world/us/trumps-ice-arrests-non-criminals-despite-crime-focused-message-2025-06-13/"
+      ],
+      "verification_status": "official-law-plus-multi-source-comparison",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-003",
+      "period": "2025-01 through 2025-06",
+      "context": "Repeated worst-of-the-worst and dangerous-criminal enforcement framing",
+      "statement_summary": "Trump repeatedly characterized ICE operations as targeting murderers, gang members, drug traffickers, and the worst criminal offenders.",
+      "office_responsibility_presented": [
+        "targeted ICE enforcement",
+        "criminal threat removal",
+        "public-safety prioritization"
+      ],
+      "known_policy_state_at_time": "ICE arrests of people without criminal convictions rose sharply, while internal pressure sought approximately 3,000 arrests per day and broadened field activity.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-005",
+        "nfd-2025-008",
+        "nfd-2025-009"
+      ],
+      "alignment": "contrasts-with-known-implementation",
+      "comparison": "The public message presented a targeted dangerous-criminal mission, while reported implementation included large numbers of non-criminal arrests, enforcement connected to family-reunification interviews, and broad driver-data access.",
+      "source_urls": [
+        "https://www.reuters.com/world/us/trumps-ice-arrests-non-criminals-despite-crime-focused-message-2025-06-13/"
+      ],
+      "verification_status": "multi-source-reported-needs-statement-by-statement-archiving",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-004",
+      "period": "2025-03 through 2025-07",
+      "context": "Mass-deportation and all-available-tools rhetoric",
+      "statement_summary": "Trump publicly demanded the largest deportation operation in American history and encouraged ICE to use strong enforcement measures.",
+      "office_responsibility_presented": [
+        "maximum lawful removal capacity",
+        "DHS and ICE operational expansion",
+        "interagency enforcement"
+      ],
+      "known_policy_state_at_time": "Undisclosed or partially disclosed implementation included Social Security death-record coding, IRS address access, Medicaid data transfer, administrative-warrant residential entry, and broad information sharing.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-002",
+        "nfd-2025-003",
+        "nfd-2025-004",
+        "nfd-2025-006",
+        "nfd-2025-009"
+      ],
+      "alignment": "partially-matches",
+      "comparison": "The broad objective of maximizing removals was publicly clear, but the specific data repurposing, financial-disablement, residential-entry, and information-sharing methods were not disclosed by the rhetoric itself.",
+      "source_urls": [
+        "https://www.federalregister.gov/executive-order/14159"
+      ],
+      "verification_status": "policy-objective-clear-method-comparison-needs-primary-record-completion",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-005",
+      "period": "2025-06-12 through 2025-06-16",
+      "context": "Farm, hotel, restaurant, and workforce enforcement reversal",
+      "statement_summary": "Trump first acknowledged that aggressive enforcement was removing long-time workers from farms and hospitality businesses, then quickly directed ICE to pursue the mass-deportation program forcefully.",
+      "office_responsibility_presented": [
+        "presidential adjustment of ICE priorities",
+        "worksite enforcement",
+        "economic-impact balancing"
+      ],
+      "known_policy_state_at_time": "Reporting showed a short-lived effort to pause or limit enforcement in agriculture, hotels, and restaurants, followed by reversal and continued pressure for higher arrest totals.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-005"
+      ],
+      "alignment": "later-overtaken-by-undisclosed-change",
+      "comparison": "The initial public statement suggested a narrowing of enforcement against established workers, but the operational pause was short-lived and reversed without a stable, fully disclosed replacement policy.",
+      "source_urls": [
+        "https://www.reuters.com/world/us/trumps-ice-arrests-non-criminals-despite-crime-focused-message-2025-06-13/"
+      ],
+      "verification_status": "multi-source-reported-needs-complete-post-archive",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-006",
+      "period": "2025-03 through 2026-04",
+      "context": "Public-safety rationale versus undisclosed data-system repurposing",
+      "statement_summary": "Trump framed DHS and ICE expansion as necessary to identify and remove threats, criminals, gang members, and immigration violators.",
+      "office_responsibility_presented": [
+        "threat identification",
+        "immigration-status enforcement",
+        "public-safety information use"
+      ],
+      "known_policy_state_at_time": "External reporting later identified use of Social Security, IRS, Medicaid, Nlets driver, and TSA Secure Flight data in ways not fully announced beforehand.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-002",
+        "nfd-2025-003",
+        "nfd-2025-004",
+        "nfd-2025-009",
+        "nfd-2026-013"
+      ],
+      "alignment": "partially-matches",
+      "comparison": "The general enforcement purpose was consistent with administration policy, but the affected systems, secondary uses, scale, and consequences were materially absent from the public framing.",
+      "source_urls": [
+        "https://www.federalregister.gov/executive-order/14159"
+      ],
+      "verification_status": "cluster-level-comparison",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-007",
+      "period": "2025-01 through 2026-02",
+      "context": "Law-and-order and due-process framing versus procedural expansion",
+      "statement_summary": "Trump described immigration enforcement as restoring lawful order and carrying out existing national responsibilities against unlawful presence and dangerous actors.",
+      "office_responsibility_presented": [
+        "lawful detention",
+        "removal procedure",
+        "DHS execution of immigration law"
+      ],
+      "known_policy_state_at_time": "Later-disclosed directives included broad bond-hearing denial, detention authority over previously admitted refugees, and administrative-warrant residential entry.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-006",
+        "nfd-2025-007",
+        "nfd-2026-012"
+      ],
+      "alignment": "partially-matches",
+      "comparison": "The statements communicated a general law-enforcement role but did not disclose major procedural interpretations that expanded detention or entry authority and materially affected review rights.",
+      "source_urls": [
+        "https://www.federalregister.gov/executive-order/14159"
+      ],
+      "verification_status": "primary-directives-needed-for-final-comparison",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2026-008",
+      "period": "2026-01 through 2026-07",
+      "context": "Support for aggressive ICE field enforcement versus later tactical retreat after shootings",
+      "statement_summary": "Trump continued to support forceful immigration enforcement and characterized resistance to ICE operations as obstruction of public-safety duties.",
+      "office_responsibility_presented": [
+        "field enforcement",
+        "officer authority and safety",
+        "mass-deportation operations"
+      ],
+      "known_policy_state_at_time": "After multiple fatal shootings and public controversy, the administration reportedly shifted toward more targeted actions and ICE later suspended immigration-related vehicle stops after two additional fatal shootings.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-011",
+        "nfd-2026-014",
+        "nfd-2026-015",
+        "nfd-2026-016"
+      ],
+      "alignment": "later-overtaken-by-undisclosed-change",
+      "comparison": "The public posture favored aggressive field activity, while later unannounced tactical restrictions acknowledged operational risk. Reduced oversight and limited body-camera coverage also complicated assessment of whether field conduct matched publicly described responsibilities.",
+      "source_urls": [
+        "https://www.reuters.com/world/ice-suspends-vehicle-stops-us-immigration-enforcement-sources-say-2026-07-14/",
+        "https://www.reuters.com/legal/government/trump-officials-turn-over-withheld-evidence-immigration-agents-killings-renee-2026-07-13/"
+      ],
+      "verification_status": "multi-source-reported",
+      "promotion_state": "register-only"
+    },
+    {
+      "id": "rpa-2025-009",
+      "period": "2025-01 through 2026-07",
+      "context": "Presidential public message versus coordinated ICE narrative production",
+      "statement_summary": "Trump publicly promoted ICE operations as evidence of successful removal of dangerous offenders and restoration of control.",
+      "office_responsibility_presented": [
+        "public accountability",
+        "accurate executive communication",
+        "DHS and ICE public affairs"
+      ],
+      "known_policy_state_at_time": "External reporting described coordinated viral-content, selective editing, influencer engagement, and framing decisions inside ICE public-affairs operations.",
+      "linked_non_disclosure_contexts": [
+        "nfd-2025-010"
+      ],
+      "alignment": "insufficient-evidence",
+      "comparison": "The existence of coordinated messaging does not by itself prove presidential statements were false. It does establish a separate undisclosed production layer that must be evaluated when determining whether public examples represented overall enforcement activity.",
+      "source_urls": [],
+      "verification_status": "source-archive-required",
+      "promotion_state": "register-only"
+    }
+  ],
+  "coverage": {
+    "statement_clusters": 9,
+    "linked_non_disclosure_contexts": 16,
+    "contexts_unlinked": 0,
+    "final_findings": 0
+  },
+  "required_next_steps": [
+    "archive each complete Trump transcript, video, or social-media post",
+    "add exact quote text and timestamp",
+    "determine effective date for each linked policy or practice",
+    "separate contemporaneous contradiction from later policy succession",
+    "add statement-level source posture receipts",
+    "validate all linked nfd identifiers",
+    "create correction and supersession records when classifications change"
+  ]
+}
