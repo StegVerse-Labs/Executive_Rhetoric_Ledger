@@ -154,10 +154,17 @@ observe native Trumpality runs
 -> select first low-risk active federation
 ```
 
+## Latest governed candidate intake
+
+- `research-candidates/2026-07-14-ice-temporary-vehicle-stop-limits-after-fatal-shootings.md`
+- Classification: reported institutional operational response.
+- Posture: candidate-only; multi-source reporting exists, but the underlying ICE or DHS directive has not been obtained.
+- Required next evidence: primary directive, issuing authority, scope, exceptions, implementation evidence, duration, and later rescission or formalization.
+
 ## Release posture
 
-The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, and producer-side acknowledgment importer are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
+The ledger foundation, fourteen audits, capability registry, contract-audit registry, Trumpality producer boundary, acknowledgment schema, succession validator, producer-side acknowledgment importer, and the latest governed research candidate are installed. The adapter remains inactive because live workflow, transfer, correction, privacy, and shared-engine verification are incomplete.
 
 ## Archive readiness
 
-This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
+This handoff contains the complete current state, installed mechanisms, exact governance boundaries, remaining blockers, latest candidate intake, and next work. Earlier conversation context is not required; the complete thread is ready for archiving.
