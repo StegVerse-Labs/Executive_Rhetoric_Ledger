@@ -2,7 +2,7 @@
 
 ## Current task source of truth
 
-The validated repository foundation is green. The active goal is an automated, evidence-backed historical compendium with reconstructable incident attribution, disclosure-gap tracking, presidential rhetoric comparison, and physical-source preservation.
+The validated repository foundation is green. The active goal is an automated, evidence-backed historical compendium with reconstructable incident attribution, disclosure-gap tracking, presidential rhetoric comparison, physical-source preservation, and governed public publication.
 
 ## Governing rules
 
@@ -13,6 +13,8 @@ Presidential rhetoric != complete operational disclosure.
 Receipt completeness != lawful or ethical action.
 Receipt completeness == reconstructable attribution of recorded who, what, why, when, and where.
 Missing evidence must identify the missing object, last known custodian, and custody status.
+Publication != final adjudication.
+Generalization must remove current identifiers without weakening the attribution model.
 ```
 
 ## Installed register and evidence surfaces
@@ -82,7 +84,7 @@ Primary evidence still required includes original video and audio, officer and c
 
 ## Trump physical-source work
 
-The source manifest now distinguishes:
+The source manifest distinguishes:
 
 1. signed instruments and enacted statutes;
 2. official transcripts and recorded ceremonies;
@@ -104,21 +106,70 @@ Still required:
 - exact 2026 Trump statements before and after the Houston and Biddeford shootings;
 - complete source objects for presidential republication of ICE narrative products.
 
+## Generalized public-report packet
+
+Installed:
+
+- `publications/2026-07-when-the-executor-is-not-the-author/report.md`
+- `publications/2026-07-when-the-executor-is-not-the-author/linkedin-introduction.md`
+- `publications/2026-07-when-the-executor-is-not-the-author/publication-manifest.json`
+
+Title:
+
+```text
+When the Executor Is Not the Author
+Adversarial AI, Public Authority, and the Receipt Problem
+```
+
+The report generalizes the current accountability and incident-reconstruction work into a future administration, future agency, and human/autonomous/mixed executor scenario. It contains no current agency, administration, or individual accusation.
+
+Its preserved conclusion is:
+
+```text
+The receipt does not make the action acceptable.
+It makes the action attributable.
+```
+
+The report requires complete who, what, why, when, and where reconstruction and models the evidence chain as:
+
+```text
+directive
+-> authority
+-> evidence
+-> decision
+-> override
+-> action
+-> consequence
+-> correction or ratification
+```
+
+A polished DOCX was generated as `adversarial_ai_public_authority_receipt_problem.docx` outside the repository. The canonical Markdown and publication manifest are durable in-repository. The binary remains pending repository or release attachment, SHA-256 hashing, and publication-receipt linkage.
+
+## Publication promotion requirements
+
+- commit or release the generated DOCX binary and record its SHA-256 digest;
+- record final LinkedIn publication timestamp and URL;
+- capture or archive the published LinkedIn object;
+- create a publication receipt linking canonical Markdown, binary digest, introduction, and published object;
+- preserve corrections and supersession append-only;
+- verify no present agency or administration identifiers were reintroduced into the generalized artifact.
+
 ## Remaining implementation areas
 
-- archive or hash the physical source objects rather than storing URLs alone;
+- archive or hash physical source objects rather than storing URLs alone;
 - create statement-level source receipts with timecodes and surrounding context;
 - create the first computed Merkle incident fixture and replica acknowledgments;
 - integrate attribution and incident validators into activation validation and CI;
 - populate attribution receipts across all sixteen non-disclosure contexts;
 - add correction and supersession mechanics;
 - complete the live Trumpality producer-export and acknowledgment round trip;
+- attach and hash the public-report binary;
 - install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki` when the register reaches release posture.
 
 ## Release posture
 
-The incident findings have been materially strengthened and the Trump source search has moved from summaries to a physical-source manifest. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, and full cross-register attribution remain incomplete.
+The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, and a generalized public-report publication packet is installed. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, and the final binary publication receipt remain incomplete.
 
 ## Archive readiness
 
-This handoff contains the current mechanisms, revised incident posture, located Trump source anchors, unresolved source gaps, remaining files, and next integration work. The complete thread is ready for archiving; no additional part of the thread is needed to move forward.
+This handoff contains the current mechanisms, revised incident posture, located Trump source anchors, generalized publication packet, unresolved source gaps, remaining files, and next integration work. The complete thread is ready for archiving; no additional part of the thread is needed to move forward.
