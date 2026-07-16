@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC-GOVINFO-BUDGET-2026",
+  "title": "Budget of the United States Government, Fiscal Year 2026 collection",
+  "url": "https://www.govinfo.gov/app/collection/budget/2026",
+  "archive_url": "",
+  "access_date": "2026-07-16",
+  "publication_date": "2025",
+  "source_type": "budget-record",
+  "institutional_proximity": "direct-origin",
+  "evidence_role": "claimed-justification-source",
+  "verification_status": "verified-primary",
+  "admissibility_use": "admissible-for-administrative-record",
+  "confidence": "high",
+  "red_flags": [
+    "archive-needed"
+  ],
+  "notes": "Official Government Publishing Office collection for the President's Fiscal Year 2026 budget submission. Admissible to establish proposed executive-branch budget levels, priorities, and supporting documents. It is not evidence of enacted appropriations, obligations, expenditures, final outlays, or realized savings, and must not be compared directly with actual-year Treasury data without labeling the accounting stage."
+}
