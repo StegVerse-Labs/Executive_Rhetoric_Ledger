@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC-GAO-24-105833",
+  "title": "Fraud Risk Management: 2018-2022 Data Show Federal Government Loses an Estimated $233 Billion to $521 Billion Annually to Fraud, Based on Various Risk Environments",
+  "url": "https://www.gao.gov/products/gao-24-105833",
+  "archive_url": "",
+  "access_date": "2026-07-16",
+  "publication_date": "2024-04-16",
+  "source_type": "official-data",
+  "institutional_proximity": "oversight-reviewer",
+  "evidence_role": "control-comparison-source",
+  "verification_status": "verified-primary",
+  "admissibility_use": "admissible-for-outcome-measurement",
+  "confidence": "high",
+  "red_flags": [
+    "archive-needed"
+  ],
+  "notes": "Establishes GAO's government-wide estimated annual fraud-loss range using fiscal years 2018-2022 data. GAO states that the model is uncertainty-bounded, is not predictive, should not be applied at the agency or program level, cannot isolate pandemic fraud, and is not comparable to improper-payment estimates. The receipt may be used as a government-wide scale control, not as proof of DOGE-specific detection failure, program-level fraud, or future-year fraud loss."
+}
