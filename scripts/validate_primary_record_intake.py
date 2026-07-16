@@ -13,6 +13,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = ROOT / "schemas" / "primary-record-intake.schema.json"
 INTAKE_DIR = ROOT / "assessments" / "intake"
 ASSESSMENT_DIR = ROOT / "assessments" / "machine"
+STANDALONE_RECEIPT_DIRS = [
+    ROOT / "assessments" / "evidence" / "receipts",
+]
 
 
 def load_json(path: Path) -> object:
@@ -20,6 +23,31 @@ def load_json(path: Path) -> object:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError(f"Unable to load {path.relative_to(ROOT)}: {exc}") from exc
+
+
+def standalone_receipt_index() -> tuple[set[str], list[str]]:
+    source_ids: set[str] = set()
+    failures: list[str] = []
+
+    for directory in STANDALONE_RECEIPT_DIRS:
+        if not directory.exists():
+            continue
+        for path in sorted(directory.glob("*.json")):
+            try:
+                document = load_json(path)
+            except ValueError as exc:
+                failures.append(str(exc))
+                continue
+            if not isinstance(document, dict):
+                failures.append(f"{path.relative_to(ROOT)}: receipt must be a JSON object")
+                continue
+            source_id = str(document.get("source_id", "")).strip()
+            if not source_id:
+                failures.append(f"{path.relative_to(ROOT)}: missing source_id")
+                continue
+            source_ids.add(source_id)
+
+    return source_ids, failures
 
 
 def assessment_index() -> tuple[set[str], dict[str, set[str]], list[str]]:
@@ -63,6 +91,8 @@ def main() -> int:
         return 1
 
     topic_ids, receipt_ids_by_topic, failures = assessment_index()
+    standalone_receipts, standalone_failures = standalone_receipt_index()
+    failures.extend(standalone_failures)
 
     for path in files:
         try:
@@ -84,7 +114,7 @@ def main() -> int:
             failures.append(
                 f"{path.relative_to(ROOT)}:topic_id: no machine-readable assessment exists for {topic_id}"
             )
-        known_receipts = receipt_ids_by_topic.get(topic_id, set())
+        known_receipts = receipt_ids_by_topic.get(topic_id, set()) | standalone_receipts
 
         items = document.get("items", [])
         ids = [item.get("intake_id") for item in items if isinstance(item, dict)]
@@ -123,7 +153,7 @@ def main() -> int:
             for receipt_id in receipts:
                 if receipt_id not in known_receipts:
                     failures.append(
-                        f"{path.relative_to(ROOT)}:{intake_id}: source_receipt_id {receipt_id} is not present in assessment {topic_id}"
+                        f"{path.relative_to(ROOT)}:{intake_id}: source_receipt_id {receipt_id} is not present in assessment {topic_id} or the standalone receipt registry"
                     )
 
         print(f"CHECKED {path.relative_to(ROOT)}")
@@ -134,7 +164,10 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print(f"Validated {len(files)} primary-record intake queue(s) and assessment receipt links.")
+    print(
+        f"Validated {len(files)} primary-record intake queue(s), embedded assessment receipts, "
+        f"and {len(standalone_receipts)} standalone receipt id(s)."
+    )
     return 0
 
 
