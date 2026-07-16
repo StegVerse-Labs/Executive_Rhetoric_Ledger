@@ -145,6 +145,25 @@ directive
 
 A polished DOCX was generated as `adversarial_ai_public_authority_receipt_problem.docx` outside the repository. The canonical Markdown and publication manifest are durable in-repository. The binary remains pending repository or release attachment, SHA-256 hashing, and publication-receipt linkage.
 
+## DOGE budget and Musk legal-exposure assessment
+
+Installed July 15, 2026:
+
+- `assessments/2026-07-doge-budget-musk-federal-legal-exposure.md`
+- corresponding entry in `assessments/README.md`
+
+Current posture:
+
+```yaml
+record_type: "source-postured narrative assessment"
+source_receipts: "not-yet-installed"
+independent_verification: "pending"
+open_verification_items: 4
+final_legal_conclusion: false
+```
+
+The assessment preserves distinctions among publicly reported facts, asserted established findings, inference, legal analysis, and facts requiring subpoena power or additional primary records. It has been registered and indexed, but not promoted as independently verified. Next work for this record is to install source receipts, verify current dispositions, add controls and review artifacts, and determine whether a Political Influence Tree is warranted.
+
 ## Publication promotion requirements
 
 - commit or release the generated DOCX binary and record its SHA-256 digest;
@@ -164,12 +183,13 @@ A polished DOCX was generated as `adversarial_ai_public_authority_receipt_proble
 - add correction and supersession mechanics;
 - complete the live Trumpality producer-export and acknowledgment round trip;
 - attach and hash the public-report binary;
+- create source receipts, controls, review records, and current-status verification for the DOGE/Musk assessment;
 - install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki` when the register reaches release posture.
 
 ## Release posture
 
-The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, and a generalized public-report publication packet is installed. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, and the final binary publication receipt remain incomplete.
+The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, a generalized public-report publication packet is installed, and the DOGE/Musk assessment is registered with explicit pending-verification posture. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, final binary publication receipts, and source-posture artifacts for the new assessment remain incomplete.
 
 ## Archive readiness
 
-This handoff contains the current mechanisms, revised incident posture, located Trump source anchors, generalized publication packet, unresolved source gaps, remaining files, and next integration work. The complete thread is ready for archiving; no additional part of the thread is needed to move forward.
+This handoff contains the current mechanisms, revised incident posture, located Trump source anchors, generalized publication packet, registered DOGE/Musk assessment, unresolved source gaps, remaining files, and next integration work. The complete thread is ready for archiving; no additional part of the thread is needed to move forward.
