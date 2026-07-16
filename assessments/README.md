@@ -54,19 +54,25 @@ Validation records:
 ### DOGE, the FY2026 budget, and Musk's federal legal exposure
 
 ```yaml
+topic_id: "PIT-MODERN-2026-DOGE-MUSK-EXPOSURE"
 record_date: "2026-07-15"
 record_type: "source-postured narrative assessment"
+review_status: "evidence-acquisition-required"
 source_receipts: "not-yet-installed"
+primary_record_intake: "planned-not-yet-activated"
+control_status: "required-not-installed"
 independent_verification: "pending"
 open_verification_items: 4
 final_legal_conclusion: false
 ```
 
-Core record:
+Core records:
 
-- [DOGE, the FY2026 Budget, and Musk's Federal Legal Exposure: A Record](2026-07-doge-budget-musk-federal-legal-exposure.md)
+- [Narrative assessment](2026-07-doge-budget-musk-federal-legal-exposure.md)
+- [Governance review](reviews/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.review.md)
+- [Source acquisition plan](../research-candidates/2026-07-doge-musk-source-acquisition-plan.md)
 
-This record preserves its own distinctions among publicly reported facts, asserted established findings, inference, legal analysis, and matters requiring subpoena power or additional primary records. Repository inclusion does not independently validate its factual or legal claims. Promotion requires source receipts, control comparisons, current-status verification, and governed review.
+This record preserves its own distinctions among publicly reported facts, asserted established findings, inference, legal analysis, and matters requiring subpoena power or additional primary records. Repository inclusion does not independently validate its factual or legal claims. Promotion requires source receipts, a machine-readable Political Influence Tree, a primary-record intake queue, control comparisons, current-status verification, and governed review.
 
 ## Assessment rules
 
