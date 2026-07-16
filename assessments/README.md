@@ -58,10 +58,11 @@ topic_id: "PIT-MODERN-2026-DOGE-MUSK-EXPOSURE"
 record_date: "2026-07-15"
 record_type: "source-postured assessment with machine-readable review state"
 review_status: "evidence-acquisition-required"
-source_receipts: "3-installed; claim-level expansion required"
+source_receipts: "partial-register-installed"
 primary_record_intake: "active-12-items"
-control_status: "required-not-installed"
+control_status: "framework-installed-controls-unpopulated"
 current_status_verification: "SEC settlement partially updated through 2026-05-08 secondary reporting"
+validation_status: "pending-no-ci-status-reported"
 independent_verification: "pending"
 final_legal_conclusion: false
 ```
@@ -72,11 +73,16 @@ Core records:
 - [Machine-readable Political Influence Tree](machine/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.json)
 - [Governance review](reviews/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.review.md)
 - [Machine-readable primary-record intake queue](intake/2026-07-doge-musk-primary-record-intake.json)
+- [Source receipt register](evidence/2026-07-doge-musk-source-receipts.md)
+- [Control comparison framework](controls/2026-07-doge-musk-control-comparison.md)
 - [Source acquisition plan](../research-candidates/2026-07-doge-musk-source-acquisition-plan.md)
+- Pending validation receipt: `validation_results/doge-musk-assessment-9e0fe6d.pending.json`
 
 The machine-readable record includes a receipt for the submitted narrative, the federal conflict-of-interest statute, and May 8, 2026 reporting that a proposed $1.5 million SEC settlement had not been immediately approved. That reporting supersedes the narrative's earlier description of the SEC matter as merely awaiting current verification, but a final docket order remains required.
 
-Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or claimed historical uniqueness. Promotion requires claim-level primary receipts, controls, final current-status verification, independent review, and a validation receipt.
+The control framework defines administration-transition, agency-wide enforcement, SGE conflict-management, inspector-general-removal, procurement, budget-reallocation, and settlement-distribution controls. Those controls are not yet populated, so aggregate causation and exceptionalism remain research hypotheses.
+
+Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or claimed historical uniqueness. Promotion requires claim-level primary receipts, populated controls, final current-status verification, independent review, and a passed validation receipt.
 
 ## Assessment rules
 
