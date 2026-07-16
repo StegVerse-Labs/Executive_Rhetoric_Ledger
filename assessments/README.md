@@ -56,11 +56,11 @@ Validation records:
 ```yaml
 topic_id: "PIT-MODERN-2026-DOGE-MUSK-EXPOSURE"
 record_date: "2026-07-15"
-record_type: "source-postured assessment with machine-readable review state"
+record_type: "source-postured assessment with explicit embedded and standalone receipt dependencies"
 review_status: "evidence-acquisition-required"
-source_receipts: "partial-register-installed"
-primary_record_intake: "active-12-items"
-control_status: "framework-installed-controls-unpopulated"
+source_receipts: "3-embedded-plus-3-standalone-explicitly-linked"
+primary_record_intake: "active-12-items; fraud-and-budget-items-partially-located"
+control_status: "framework-installed-partially-sourced-controls-unpopulated"
 current_status_verification: "SEC settlement partially updated through 2026-05-08 secondary reporting"
 validation_status: "pending-no-ci-status-reported"
 independent_verification: "pending"
@@ -75,14 +75,20 @@ Core records:
 - [Machine-readable primary-record intake queue](intake/2026-07-doge-musk-primary-record-intake.json)
 - [Source receipt register](evidence/2026-07-doge-musk-source-receipts.md)
 - [Control comparison framework](controls/2026-07-doge-musk-control-comparison.md)
+- [Budget-stage map](evidence/2026-07-doge-musk-budget-stage-map.md)
 - [Source acquisition plan](../research-candidates/2026-07-doge-musk-source-acquisition-plan.md)
-- Pending validation receipt: `validation_results/doge-musk-assessment-9e0fe6d.pending.json`
+- [GAO fraud-estimate receipt](evidence/receipts/SRC-GAO-24-105833.json)
+- [FY2026 presidential budget collection receipt](evidence/receipts/SRC-GOVINFO-BUDGET-2026.json)
+- [Treasury MTS collection receipt](evidence/receipts/SRC-TREASURY-MTS-COLLECTION-001.json)
+- Pending validation receipts: `validation_results/doge-musk-assessment-9e0fe6d.pending.json` and `validation_results/doge-musk-budget-stage-ab73264.pending.json`
 
-The machine-readable record includes a receipt for the submitted narrative, the federal conflict-of-interest statute, and May 8, 2026 reporting that a proposed $1.5 million SEC settlement had not been immediately approved. That reporting supersedes the narrative's earlier description of the SEC matter as merely awaiting current verification, but a final docket order remains required.
+The machine-readable record explicitly declares its three standalone receipt dependencies. Those receipts establish a government-wide retrospective fraud-loss benchmark with methodological limits, the FY2026 presidential proposal collection, and Treasury's official reporting collection. They do not establish DOGE realized savings, enacted appropriations, exact FY2025 or FY2026 period values, aggregate causation, or matter-specific legal exposure.
+
+The record also includes embedded receipts for the submitted narrative, the federal conflict-of-interest statute, and May 8, 2026 reporting that a proposed $1.5 million SEC settlement had not been immediately approved. A final docket order remains required.
 
 The control framework defines administration-transition, agency-wide enforcement, SGE conflict-management, inspector-general-removal, procurement, budget-reallocation, and settlement-distribution controls. Those controls are not yet populated, so aggregate causation and exceptionalism remain research hypotheses.
 
-Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or claimed historical uniqueness. Promotion requires claim-level primary receipts, populated controls, final current-status verification, independent review, and a passed validation receipt.
+Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, realized savings, or claimed historical uniqueness. Promotion requires claim-level primary receipts, exact stage-normalized budget data, populated controls, final current-status verification, independent review, and a passed validation receipt.
 
 ## Assessment rules
 
@@ -93,7 +99,7 @@ Repository inclusion does not independently validate criminal liability, corrupt
 5. Protest purpose does not automatically legalize every protest action.
 6. Misconduct by one participant does not transfer to the entire crowd.
 7. Force must be reconstructed and assessed individually.
-8. Verified intake states require real Source Posture receipts in the matching Political Influence Tree.
+8. Verified intake states require real Source Posture receipts in the matching Political Influence Tree or explicit standalone receipt registry.
 9. Every force-event packet must link to real source receipts, real intake items, and applicable authority transitions.
 10. Directly observed, reported, and inferred events must remain distinguishable.
 11. Crowd movement, obstruction, warning, arrest, and force must remain separate questions unless evidence links them for a particular person and time.
