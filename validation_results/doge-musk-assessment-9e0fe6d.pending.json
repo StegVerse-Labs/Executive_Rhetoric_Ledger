@@ -1,0 +1,21 @@
+{
+  "validation_id": "VAL-DOGE-MUSK-2026-07-16-9E0FE6D",
+  "validation_status": "pending",
+  "checked_commit": "9e0fe6db7ab7853dba3eb50ccef0a3630a5460af",
+  "checked_paths": [
+    "assessments/2026-07-doge-budget-musk-federal-legal-exposure.md",
+    "assessments/machine/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.json",
+    "assessments/intake/2026-07-doge-musk-primary-record-intake.json",
+    "assessments/evidence/2026-07-doge-musk-source-receipts.md",
+    "assessments/controls/2026-07-doge-musk-control-comparison.md",
+    "assessments/reviews/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.review.md",
+    "research-candidates/2026-07-doge-musk-source-acquisition-plan.md"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": ".github/workflows/validate-ledger-schemas.yml"
+  },
+  "result_summary": "Machine-readable assessment and intake structures are installed. Source receipts remain partial, controls remain unpopulated, primary records remain incomplete, and GitHub Actions validation has not yet been recorded for this scope.",
+  "activation_effect": "activation-blocked",
+  "notes": "This receipt records structural scope and blockers only. It does not validate factual truth, legal liability, corrupt purpose, historical uniqueness, or source completeness. Supersede with a passed, failed, or blocked receipt after workflow and evidence review results are available."
+}
