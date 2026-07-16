@@ -19,6 +19,7 @@ ASSESSMENT_DIR = ROOT / "assessments" / "machine"
 ASSESSMENT_INDEX_PATH = ROOT / "assessments" / "README.md"
 REVIEW_DIR = ROOT / "assessments" / "reviews"
 CONTROL_DIR = ROOT / "assessments" / "controls"
+STANDALONE_RECEIPT_DIR = ROOT / "assessments" / "evidence" / "receipts"
 TREE_SCHEMA_PATH = ROOT / "schemas" / "political-influence-tree.schema.json"
 SOURCE_SCHEMA_PATH = ROOT / "schemas" / "source-posture.schema.json"
 
@@ -57,6 +58,31 @@ def find_topic_reference(directory: Path, topic_id: str) -> bool:
     return False
 
 
+def standalone_receipt_index() -> tuple[set[str], list[str]]:
+    source_ids: set[str] = set()
+    failures: list[str] = []
+    if not STANDALONE_RECEIPT_DIR.exists():
+        return source_ids, failures
+
+    for path in sorted(STANDALONE_RECEIPT_DIR.glob("*.json")):
+        try:
+            document = load_json(path)
+        except ValueError as exc:
+            failures.append(str(exc))
+            continue
+        if not isinstance(document, dict):
+            failures.append(f"{path.relative_to(ROOT)}: receipt must be a JSON object")
+            continue
+        source_id = str(document.get("source_id", "")).strip()
+        if not source_id:
+            failures.append(f"{path.relative_to(ROOT)}: missing source_id")
+            continue
+        if source_id in source_ids:
+            failures.append(f"{path.relative_to(ROOT)}: duplicate standalone source_id {source_id}")
+        source_ids.add(source_id)
+    return source_ids, failures
+
+
 def main() -> int:
     tree_schema = load_json(TREE_SCHEMA_PATH)
     source_schema = load_json(SOURCE_SCHEMA_PATH)
@@ -74,7 +100,7 @@ def main() -> int:
         print(f"FAIL: no assessment trees found in {ASSESSMENT_DIR.relative_to(ROOT)}", file=sys.stderr)
         return 1
 
-    failures: list[str] = []
+    standalone_ids, failures = standalone_receipt_index()
 
     for path in files:
         try:
@@ -130,6 +156,34 @@ def main() -> int:
                         f"{path.relative_to(ROOT)}:receipts.sources.{index}.{location}: {error.message}"
                     )
 
+        if isinstance(receipts, dict):
+            references = receipts.get("source_receipt_refs", [])
+            if references is not None and not isinstance(references, list):
+                failures.append(
+                    f"{path.relative_to(ROOT)}:receipts.source_receipt_refs: must be an array"
+                )
+                references = []
+            normalized_refs = [str(ref).strip() for ref in references if str(ref).strip()]
+            duplicates = sorted({ref for ref in normalized_refs if normalized_refs.count(ref) > 1})
+            for duplicate in duplicates:
+                failures.append(
+                    f"{path.relative_to(ROOT)}:receipts.source_receipt_refs: duplicate reference {duplicate}"
+                )
+            embedded_ids = {
+                str(source.get("source_id", "")).strip()
+                for source in sources
+                if isinstance(source, dict) and str(source.get("source_id", "")).strip()
+            }
+            for reference in normalized_refs:
+                if reference in embedded_ids:
+                    failures.append(
+                        f"{path.relative_to(ROOT)}:receipts.source_receipt_refs: {reference} is already embedded"
+                    )
+                elif reference not in standalone_ids:
+                    failures.append(
+                        f"{path.relative_to(ROOT)}:receipts.source_receipt_refs: standalone receipt {reference} not found"
+                    )
+
         classification = document.get("ledger_classification", {})
         control = document.get("control_comparison", {})
         if isinstance(control, dict) and control.get("required") is True:
@@ -165,7 +219,7 @@ def main() -> int:
         return 1
 
     print(
-        f"Validated {len(files)} assessment tree(s), index visibility, linked annotations, reviews, controls, and embedded source receipts."
+        f"Validated {len(files)} assessment tree(s), index visibility, linked annotations, reviews, controls, embedded receipts, and standalone receipt references."
     )
     return 0
 
