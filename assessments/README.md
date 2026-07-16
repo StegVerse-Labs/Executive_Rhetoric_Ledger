@@ -56,23 +56,27 @@ Validation records:
 ```yaml
 topic_id: "PIT-MODERN-2026-DOGE-MUSK-EXPOSURE"
 record_date: "2026-07-15"
-record_type: "source-postured narrative assessment"
+record_type: "source-postured assessment with machine-readable review state"
 review_status: "evidence-acquisition-required"
-source_receipts: "not-yet-installed"
-primary_record_intake: "planned-not-yet-activated"
+source_receipts: "3-installed; claim-level expansion required"
+primary_record_intake: "active-12-items"
 control_status: "required-not-installed"
+current_status_verification: "SEC settlement partially updated through 2026-05-08 secondary reporting"
 independent_verification: "pending"
-open_verification_items: 4
 final_legal_conclusion: false
 ```
 
 Core records:
 
 - [Narrative assessment](2026-07-doge-budget-musk-federal-legal-exposure.md)
+- [Machine-readable Political Influence Tree](machine/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.json)
 - [Governance review](reviews/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.review.md)
+- [Machine-readable primary-record intake queue](intake/2026-07-doge-musk-primary-record-intake.json)
 - [Source acquisition plan](../research-candidates/2026-07-doge-musk-source-acquisition-plan.md)
 
-This record preserves its own distinctions among publicly reported facts, asserted established findings, inference, legal analysis, and matters requiring subpoena power or additional primary records. Repository inclusion does not independently validate its factual or legal claims. Promotion requires source receipts, a machine-readable Political Influence Tree, a primary-record intake queue, control comparisons, current-status verification, and governed review.
+The machine-readable record includes a receipt for the submitted narrative, the federal conflict-of-interest statute, and May 8, 2026 reporting that a proposed $1.5 million SEC settlement had not been immediately approved. That reporting supersedes the narrative's earlier description of the SEC matter as merely awaiting current verification, but a final docket order remains required.
+
+Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or claimed historical uniqueness. Promotion requires claim-level primary receipts, controls, final current-status verification, independent review, and a validation receipt.
 
 ## Assessment rules
 
