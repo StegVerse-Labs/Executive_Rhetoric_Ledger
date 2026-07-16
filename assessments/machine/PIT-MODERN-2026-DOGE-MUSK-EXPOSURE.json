@@ -28,23 +28,31 @@
     "implied_basis": "Agency reductions and enforcement changes were treated as components of a broader efficiency program."
   },
   "factual_basis": {
-    "evidence_posture": "partially-structured-primary-record-acquisition-required",
+    "evidence_posture": "official-fraud-and-budget-source-classes-installed-exact-period-and-causal-records-required",
     "primary_records": [
       "18 U.S.C. § 208 statutory text",
+      "GAO government-wide fraud-loss estimate and methodology limitations",
+      "GPO FY2026 presidential budget proposal collection",
+      "Treasury Monthly Treasury Statement collection authority and data definition",
       "Federal court dockets and agency matter records remain required",
-      "FY2025 and FY2026 official budget and outlay records remain required"
+      "Exact FY2025 actual and FY2026 period values, enacted appropriations, obligations, and comparable CBO records remain required"
     ],
     "administrative_data": [],
     "court_records": [
       "Reuters reported in May 2026 that the SEC and Musk proposed a $1.5 million settlement that the district judge had not yet approved"
     ],
-    "budget_records": [],
+    "budget_records": [
+      "SRC-GOVINFO-BUDGET-2026 establishes the FY2026 presidential proposal collection only",
+      "SRC-TREASURY-MTS-COLLECTION-001 establishes the official Treasury receipts, outlays, and deficit reporting source but not yet exact period values"
+    ],
     "enforcement_records": [],
     "independent_analysis": [
       "Narrative assessment submitted July 15, 2026"
     ],
     "expert_testimony": [],
-    "official_investigations": [],
+    "official_investigations": [
+      "SRC-GAO-24-105833 provides a government-wide retrospective fraud-loss range and methodological limits; it is not agency-level or predictive"
+    ],
     "unsupported_assertions": [
       "A final finding that Musk caused each favorable disposition",
       "A final finding of corrupt purpose",
@@ -54,13 +62,15 @@
     "contradictions": [
       "Broad policy-change explanations may account for some agency actions independently of Musk-specific benefit",
       "Temporal clustering supports inquiry but does not independently prove particular-matter participation or corrupt purpose",
-      "Requested, enacted, obligated, and expended budget amounts must not be treated as interchangeable"
+      "Requested, enacted, obligated, and expended budget amounts must not be treated as interchangeable",
+      "The FY2026 presidential budget proposal cannot establish enacted or actual spending"
     ],
     "missing_records": [
       "Musk appointment instrument and SGE designation",
       "Ethics agreement, recusals, and any 18 U.S.C. § 208(b) waiver",
       "Current court and agency disposition records for every listed matter",
-      "DOGE savings methodology and correction history",
+      "DOGE savings ledger versions, methodology, correction history, and realized-savings records",
+      "Exact FY2025 actual and FY2026 period values, enacted appropriations, obligations, and comparable CBO records",
       "Comparable prior-administration and non-beneficiary controls"
     ]
   },
@@ -101,12 +111,14 @@
   },
   "control_comparison": {
     "required": true,
-    "status": "required-not-installed",
+    "status": "framework-installed-partially-sourced-controls-unpopulated",
     "comparable_red_jurisdictions": [],
     "comparable_blue_jurisdictions": [],
     "comparable_prior_administrations": [],
     "comparable_policy_instruments": ["Prior SGE conflict waivers and recusals"],
-    "comparable_fraud_or_harm_magnitude": ["GAO government-wide fraud estimates require primary receipt"],
+    "comparable_fraud_or_harm_magnitude": [
+      "GAO estimated a government-wide annual fraud-loss range using FY2018-FY2022 data; the source prohibits agency-level attribution and prediction"
+    ],
     "comparable_enforcement_tools": ["Agency-wide enforcement reductions affecting unrelated regulated entities"],
     "comparable_judicial_posture": ["Administration-transition dismissals or settlements without beneficiary government service"],
     "missing_controls": [
@@ -115,7 +127,7 @@
       "Comparable inspector-general removals",
       "Comparable enforcement settlements across administrations"
     ],
-    "comparison_notes": "Temporal convergence is a research signal, not a substitute for controls or particular-matter evidence."
+    "comparison_notes": "Temporal convergence is a research signal, not a substitute for controls or particular-matter evidence. Proposal, appropriation, obligation, outlay, and final-actual stages must remain separate."
   },
   "institutional_response": {
     "judicial_status": "Matter-specific court dispositions require docket-level verification; the SEC settlement was reported as unapproved in May 2026.",
@@ -137,14 +149,17 @@
     "no_challenge_found": false
   },
   "outcome_evidence": {
-    "measured_outcomes": [],
+    "measured_outcomes": [
+      "No DOGE realized-savings measure is promoted; the official Treasury reporting collection is identified but exact comparable period values remain uninstalled"
+    ],
     "claimed_outcomes": [
       "DOGE claimed savings and fraud-reduction benefits",
       "The narrative assessment claims aggregate federal spending increased and Musk-related exposure was broadly reduced"
     ],
     "projected_outcomes": [],
     "contradicted_outcomes": [
-      "Aggregate spending growth may contradict a broad net-budget-reduction claim but does not alone measure program-specific savings"
+      "Aggregate spending growth may contradict a broad net-budget-reduction claim but does not alone measure program-specific savings",
+      "The FY2026 presidential budget proposal cannot be used as evidence of enacted or actual spending"
     ],
     "no_measurable_effect_yet": false,
     "harm_documented": [],
@@ -152,12 +167,12 @@
     "insufficient_evidence": true
   },
   "ledger_classification": {
-    "evidence_posture": "catalogued-primary-record-acquisition-required",
+    "evidence_posture": "catalogued-official-source-classes-installed-exact-values-and-causal-records-required",
     "influence_posture": "official-role-confirmed-causal-lineage-incomplete",
     "authority_posture": "specific-participation-and-waiver-status-unresolved",
     "admissibility_status": "accepted-for-catalogue-and-research-planning-not-final-factual-or-legal-finding",
     "confidence": "medium",
-    "classification_notes": "The record supports structured inquiry and preservation of the asserted theory. It does not yet establish criminal liability, corrupt purpose, particular-matter participation, or unprecedented status."
+    "classification_notes": "The record supports structured inquiry and preservation of the asserted theory. Official fraud-scale, proposal, and Treasury reporting-source receipts are installed, but they do not establish DOGE realized savings, aggregate causation, criminal liability, corrupt purpose, particular-matter participation, or unprecedented status."
   },
   "receipts": {
     "sources": [
@@ -210,16 +225,23 @@
         "notes": "Establishes statutory text only; application to Musk requires role, waiver, participation, and particular-matter evidence."
       }
     ],
+    "source_receipt_refs": [
+      "SRC-GAO-24-105833",
+      "SRC-GOVINFO-BUDGET-2026",
+      "SRC-TREASURY-MTS-COLLECTION-001"
+    ],
     "archive_sources": [],
     "review_notes": [
       "Governance review: assessments/reviews/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.review.md",
-      "Source plan: research-candidates/2026-07-doge-musk-source-acquisition-plan.md"
+      "Source plan: research-candidates/2026-07-doge-musk-source-acquisition-plan.md",
+      "Budget-stage map: assessments/evidence/2026-07-doge-musk-budget-stage-map.md"
     ],
     "unresolved_questions": [
       "Was a § 208(b) waiver issued and what did it cover?",
       "What is the current final disposition of the SEC settlement?",
       "What are the current NLRB and FEC dispositions?",
-      "Did Musk personally and substantially participate in any particular matter affecting his companies?"
+      "Did Musk personally and substantially participate in any particular matter affecting his companies?",
+      "What are the exact comparable FY2025 actual and FY2026 period values, enacted appropriations, obligations, and CBO estimates?"
     ],
     "last_reviewed": "2026-07-16"
   }
