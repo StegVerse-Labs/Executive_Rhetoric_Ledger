@@ -1,0 +1,20 @@
+{
+  "validation_id": "VAL-DOGE-MUSK-BUDGET-STAGE-AB73264",
+  "validation_status": "pending",
+  "checked_commit": "ab73264799f2bbe53ad3172c0cc7c702a4888cfe",
+  "checked_paths": [
+    "assessments/evidence/receipts/SRC-TREASURY-MTS-COLLECTION-001.json",
+    "assessments/evidence/2026-07-doge-musk-budget-stage-map.md",
+    "scripts/validate_source_receipts.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "",
+    "run_url": ""
+  },
+  "result_summary": "GitHub returned no combined status checks for commit ab73264799f2bbe53ad3172c0cc7c702a4888cfe. The Treasury collection receipt and budget-stage map are installed, but CI success has not been observed and must not be inferred.",
+  "activation_effect": "no-activation-change",
+  "notes": "Supersede this receipt only after a concrete workflow run or equivalent local validation checks the standalone receipts and related assessment structure. Missing status is not a pass."
+}
