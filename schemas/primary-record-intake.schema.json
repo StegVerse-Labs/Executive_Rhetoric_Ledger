@@ -39,7 +39,10 @@
           "priority"
         ],
         "properties": {
-          "intake_id": {"type": "string", "pattern": "^DH-INTAKE-[0-9]{3}$"},
+          "intake_id": {
+            "type": "string",
+            "pattern": "^[A-Z0-9][A-Z0-9_-]*-INTAKE-[0-9]{3}$"
+          },
           "record_class": {"type": "string", "minLength": 1},
           "likely_custodians": {
             "type": "array",
