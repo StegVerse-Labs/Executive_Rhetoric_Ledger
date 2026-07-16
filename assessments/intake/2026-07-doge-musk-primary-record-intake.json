@@ -4,7 +4,7 @@
   "queue_status": "active",
   "created_date": "2026-07-16",
   "last_reviewed": "2026-07-16",
-  "notes": "Primary-record queue for testing budget, enforcement, ethics, waiver, and causation claims without promoting unverified legal conclusions.",
+  "notes": "Primary-record queue for testing budget, enforcement, ethics, waiver, and causation claims without promoting unverified legal conclusions. Embedded and standalone Source Posture receipt IDs are cross-validated by CI.",
   "items": [
     {
       "intake_id": "DOGE-MUSK-INTAKE-001",
@@ -107,24 +107,24 @@
       "record_class": "DOGE savings, fraud, cancellation, and correction ledger",
       "likely_custodians": ["United States DOGE Service", "Office of Management and Budget", "affected agencies"],
       "affected_branches": ["factual_basis", "claimed_justification", "outcome_evidence"],
-      "state": "requested",
+      "state": "located",
       "activation_effect": "Separates claimed, duplicated, corrected, announced, and realized savings and distinguishes fraud from other categories.",
       "privacy_posture": "public",
       "priority": "critical",
-      "source_receipt_ids": [],
-      "notes": "Preserve version history and correction dates."
+      "source_receipt_ids": ["SRC-GAO-24-105833"],
+      "notes": "The GAO receipt supplies only a government-wide fraud-loss scale control and methodological limitations. DOGE ledger versions, methodology, correction history, and realized-savings records remain required."
     },
     {
       "intake_id": "DOGE-MUSK-INTAKE-010",
       "record_class": "FY2025 actual and FY2026 requested, enacted, and projected budget records",
       "likely_custodians": ["Treasury", "Congressional Budget Office", "Office of Management and Budget", "Congress"],
       "affected_branches": ["budget_records", "claimed_justification", "outcome_evidence", "control_comparison"],
-      "state": "requested",
+      "state": "located",
       "activation_effect": "Permits comparable aggregate and program-level measurement without mixing accounting stages.",
       "privacy_posture": "public",
       "priority": "critical",
-      "source_receipt_ids": [],
-      "notes": "Label every figure as requested, enacted, obligated, expended, actual, or projected."
+      "source_receipt_ids": ["SRC-GOVINFO-BUDGET-2026", "SRC-TREASURY-MTS-COLLECTION-001"],
+      "notes": "The FY2026 proposal collection and Treasury MTS collection are verified source authorities. Exact FY2025 actuals, FY2026 period values, enacted appropriations, obligations, and CBO timing-adjusted comparisons remain required."
     },
     {
       "intake_id": "DOGE-MUSK-INTAKE-011",
