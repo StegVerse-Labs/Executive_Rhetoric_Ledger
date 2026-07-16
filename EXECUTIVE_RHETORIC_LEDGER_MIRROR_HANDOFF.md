@@ -114,14 +114,7 @@ Installed:
 - `publications/2026-07-when-the-executor-is-not-the-author/linkedin-introduction.md`
 - `publications/2026-07-when-the-executor-is-not-the-author/publication-manifest.json`
 
-Title:
-
-```text
-When the Executor Is Not the Author
-Adversarial AI, Public Authority, and the Receipt Problem
-```
-
-The report generalizes the current accountability and incident-reconstruction work into a future administration, future agency, and human/autonomous/mixed executor scenario. It contains no current agency, administration, or individual accusation.
+The report generalizes current accountability and incident-reconstruction work into a future administration, future agency, and human/autonomous/mixed executor scenario. It contains no current agency, administration, or individual accusation.
 
 Its preserved conclusion is:
 
@@ -130,39 +123,43 @@ The receipt does not make the action acceptable.
 It makes the action attributable.
 ```
 
-The report requires complete who, what, why, when, and where reconstruction and models the evidence chain as:
-
-```text
-directive
--> authority
--> evidence
--> decision
--> override
--> action
--> consequence
--> correction or ratification
-```
-
 A polished DOCX was generated as `adversarial_ai_public_authority_receipt_problem.docx` outside the repository. The canonical Markdown and publication manifest are durable in-repository. The binary remains pending repository or release attachment, SHA-256 hashing, and publication-receipt linkage.
 
 ## DOGE budget and Musk legal-exposure assessment
 
-Installed July 15, 2026:
+Installed and activated for structured review:
 
 - `assessments/2026-07-doge-budget-musk-federal-legal-exposure.md`
+- `assessments/machine/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.json`
+- `assessments/reviews/PIT-MODERN-2026-DOGE-MUSK-EXPOSURE.review.md`
+- `assessments/intake/2026-07-doge-musk-primary-record-intake.json`
+- `research-candidates/2026-07-doge-musk-source-acquisition-plan.md`
 - corresponding entry in `assessments/README.md`
 
 Current posture:
 
 ```yaml
-record_type: "source-postured narrative assessment"
-source_receipts: "not-yet-installed"
+record_type: "source-postured assessment with machine-readable review state"
+source_receipts: "3-installed; claim-level expansion required"
+primary_record_intake: "active-12-items"
+control_status: "required-not-installed"
 independent_verification: "pending"
-open_verification_items: 4
 final_legal_conclusion: false
 ```
 
-The assessment preserves distinctions among publicly reported facts, asserted established findings, inference, legal analysis, and facts requiring subpoena power or additional primary records. It has been registered and indexed, but not promoted as independently verified. Next work for this record is to install source receipts, verify current dispositions, add controls and review artifacts, and determine whether a Political Influence Tree is warranted.
+Installed receipts currently establish only:
+
+- the submitted narrative and its asserted research theory;
+- the text of 18 U.S.C. § 208, without proving its application to Musk;
+- Reuters reporting that a proposed $1.5 million SEC settlement existed and had not been immediately approved as of May 8, 2026.
+
+The SEC record therefore has a materially newer posture than the uploaded narrative: a proposed settlement existed by May 2026, but the final docket outcome still requires primary verification.
+
+The machine-readable assessment explicitly does not establish criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or historical uniqueness. The intake queue identifies custodians, activation effects, and evidence boundaries for twelve primary-record classes.
+
+## Schema generalization completed
+
+`schemas/primary-record-intake.schema.json` formerly required Delaney Hall-only identifiers matching `DH-INTAKE-*`. It now supports topic-specific uppercase identifiers while retaining compatibility with existing Delaney Hall records.
 
 ## Publication promotion requirements
 
@@ -183,13 +180,17 @@ The assessment preserves distinctions among publicly reported facts, asserted es
 - add correction and supersession mechanics;
 - complete the live Trumpality producer-export and acknowledgment round trip;
 - attach and hash the public-report binary;
-- create source receipts, controls, review records, and current-status verification for the DOGE/Musk assessment;
+- acquire claim-level primary receipts for the DOGE/Musk assessment;
+- verify final SEC, NLRB, FEC, waiver, and case-level disposition states;
+- install a reproducible historical control comparison for the DOGE/Musk assessment;
+- create an independent review and validation receipt after source acquisition;
+- confirm CI validation for the new Political Influence Tree and intake queue;
 - install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki` when the register reaches release posture.
 
 ## Release posture
 
-The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, a generalized public-report publication packet is installed, and the DOGE/Musk assessment is registered with explicit pending-verification posture. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, final binary publication receipts, and source-posture artifacts for the new assessment remain incomplete.
+The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, a generalized public-report publication packet is installed, and the DOGE/Musk record now has a machine-readable Political Influence Tree, governance review, reusable intake schema, three initial receipts, and a twelve-item acquisition queue. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, final binary publication receipts, claim-level DOGE/Musk primary records, controls, and final validation remain incomplete.
 
 ## Archive readiness
 
-This handoff contains the current mechanisms, revised incident posture, located Trump source anchors, generalized publication packet, registered DOGE/Musk assessment, unresolved source gaps, remaining files, and next integration work. The complete thread is ready for archiving; no additional part of the thread is needed to move forward.
+This handoff preserves the current mechanisms, installed DOGE/Musk machine records, source posture, unresolved primary-record classes, current validation boundary, remaining files, and next integration work. The complete thread is ready for archiving only after the active session either completes or durably hands off the remaining adjacent tasks; at present this session still owns further actionable repository work.
