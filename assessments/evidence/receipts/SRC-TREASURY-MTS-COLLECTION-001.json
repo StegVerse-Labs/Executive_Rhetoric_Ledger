@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC-TREASURY-MTS-COLLECTION-001",
+  "title": "Monthly Treasury Statement",
+  "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+  "archive_url": "",
+  "access_date": "2026-07-16",
+  "publication_date": "",
+  "source_type": "official-data",
+  "institutional_proximity": "direct-origin",
+  "evidence_role": "factual-basis-source",
+  "verification_status": "verified-primary",
+  "admissibility_use": "admissible-for-outcome-measurement",
+  "confidence": "high",
+  "red_flags": [
+    "archive-needed"
+  ],
+  "notes": "The Bureau of the Fiscal Service identifies the Monthly Treasury Statement as the monthly summary of federal receipts, outlays, surplus or deficit, and means of financing on a modified cash basis. The page states that the data moved to FiscalData.Treasury.gov in November 2025 and is available in CSV, JSON, and XML. This receipt establishes the official dataset, accounting basis, and measurement categories. It does not itself establish the June 2026 values because the current FiscalData endpoint could not be retrieved in this session; exact period values require machine-readable extraction or an archived monthly statement."
+}
