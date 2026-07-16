@@ -51,6 +51,23 @@ Validation records:
 - Superseded six-event repair-inclusive scope: `validation_results/delaney-hall-assessment-406f0f8c.pending.json`
 - Earlier superseded scopes remain preserved in `validation_results/`.
 
+### DOGE, the FY2026 budget, and Musk's federal legal exposure
+
+```yaml
+record_date: "2026-07-15"
+record_type: "source-postured narrative assessment"
+source_receipts: "not-yet-installed"
+independent_verification: "pending"
+open_verification_items: 4
+final_legal_conclusion: false
+```
+
+Core record:
+
+- [DOGE, the FY2026 Budget, and Musk's Federal Legal Exposure: A Record](2026-07-doge-budget-musk-federal-legal-exposure.md)
+
+This record preserves its own distinctions among publicly reported facts, asserted established findings, inference, legal analysis, and matters requiring subpoena power or additional primary records. Repository inclusion does not independently validate its factual or legal claims. Promotion requires source receipts, control comparisons, current-status verification, and governed review.
+
 ## Assessment rules
 
 1. Claim existence and claim truth remain separate.
