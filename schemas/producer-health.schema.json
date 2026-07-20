@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-health.schema.json",
+  "title": "Producer Retrieval Health",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_at", "producers", "authority"],
+  "properties": {
+    "generated_at": {"type": "string", "format": "date-time"},
+    "producers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repository", "manifest_path", "status", "attempts", "next_retry_at", "last_error", "retrieved_records", "quarantined_records"],
+        "properties": {
+          "repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+          "manifest_path": {"type": "string", "minLength": 1},
+          "status": {"enum": ["healthy", "degraded", "retry-scheduled", "quarantined", "unreachable"]},
+          "attempts": {"type": "integer", "minimum": 0},
+          "next_retry_at": {"type": ["string", "null"], "format": "date-time"},
+          "last_error": {"type": ["string", "null"]},
+          "retrieved_records": {"type": "integer", "minimum": 0},
+          "quarantined_records": {"type": "integer", "minimum": 0},
+          "producer_commit": {"type": ["string", "null"]},
+          "manifest_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_retrieve", "may_retry", "may_acknowledge", "may_promote", "may_deprecate"],
+      "properties": {
+        "may_retrieve": {"const": true},
+        "may_retry": {"const": true},
+        "may_acknowledge": {"const": true},
+        "may_promote": {"const": false},
+        "may_deprecate": {"const": false}
+      }
+    }
+  }
+}
