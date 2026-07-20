@@ -1,6 +1,12 @@
 name: Reconcile Producer Exports
 
 on:
+  pull_request:
+    paths:
+      - "schemas/producer-health.schema.json"
+      - "scripts/reconcile_producer_exports.py"
+      - "scripts/process_producer_intake.py"
+      - ".github/workflows/reconcile-producer-exports.yml"
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
@@ -18,7 +24,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: producer-export-reconciliation
+  group: producer-export-reconciliation-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -27,7 +33,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
@@ -41,6 +46,7 @@ jobs:
       - name: Retrieve manifests and reconcile producer health
         env:
           GH_TOKEN: ${{ github.token }}
+          RECONCILIATION_TIME: "2026-07-20T14:00:00Z"
         run: python scripts/reconcile_producer_exports.py
       - name: Process retrieved exports
         run: python scripts/process_producer_intake.py
@@ -59,6 +65,7 @@ jobs:
               raise SystemExit('Producer reconciliation exceeded authority')
           PY
       - name: Maintain governed reconciliation PR
+        if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
