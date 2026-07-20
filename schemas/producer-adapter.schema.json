@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-adapter.schema.json",
+  "title": "Executive Rhetoric Ledger Producer Adapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "producer", "consumer", "exports", "preservation", "authority", "lifecycle"],
+  "properties": {
+    "contract_version": {"const": "1.0.0"},
+    "producer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "capability_id", "record_classes"],
+      "properties": {
+        "repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+        "capability_id": {"type": "string", "minLength": 1},
+        "record_classes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["political", "institutional", "legal", "historical", "administrative", "action_record", "source_receipt"]}}
+      }
+    },
+    "consumer": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+    "exports": {
+      "type": "object", "additionalProperties": false,
+      "required": ["root_path", "format", "manifest_path", "receipt_path"],
+      "properties": {
+        "root_path": {"type": "string", "minLength": 1},
+        "format": {"enum": ["json", "jsonl"]},
+        "manifest_path": {"type": "string", "minLength": 1},
+        "receipt_path": {"type": "string", "minLength": 1}
+      }
+    },
+    "preservation": {
+      "type": "array", "minItems": 8, "uniqueItems": true,
+      "items": {"enum": ["native_record_id", "producer_path", "producer_commit", "source_url", "source_title", "source_attribution", "source_posture", "source_confidence", "archive_reference", "record_created_at", "record_updated_at", "supersedes", "corrects"]}
+    },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["export_status", "may_claim_truth", "may_classify_final", "may_promote", "requires_ledger_review"],
+      "properties": {
+        "export_status": {"const": "candidate-only"},
+        "may_claim_truth": {"const": false},
+        "may_classify_final": {"const": false},
+        "may_promote": {"const": false},
+        "requires_ledger_review": {"const": true}
+      }
+    },
+    "lifecycle": {
+      "type": "object", "additionalProperties": false,
+      "required": ["acknowledgment_states", "retry_policy", "deprecation_requires_governed_record"],
+      "properties": {
+        "acknowledgment_states": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"enum": ["received", "accepted-for-context", "needs-primary-source", "needs-archive", "rejected-duplicate", "rejected-unsupported", "rejected-out-of-scope"]}},
+        "retry_policy": {"type": "object", "additionalProperties": false, "required": ["max_attempts", "backoff_seconds"], "properties": {"max_attempts": {"type": "integer", "minimum": 1, "maximum": 10}, "backoff_seconds": {"type": "array", "minItems": 1, "items": {"type": "integer", "minimum": 1}}},
+        "deprecation_requires_governed_record": {"const": true}
+      }
+    }
+  }
+}
