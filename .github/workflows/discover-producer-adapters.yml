@@ -1,0 +1,63 @@
+name: Discover Producer Adapters
+
+on:
+  schedule:
+    - cron: "47 11 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "config/producer-discovery.json"
+      - "schemas/producer-adapter.schema.json"
+      - "scripts/discover_producer_adapters.py"
+      - ".github/workflows/discover-producer-adapters.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: producer-adapter-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Discover declared producers
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/discover_producer_adapters.py
+      - name: Validate discovered producer contracts
+        run: python scripts/validate_producer_adapters.py
+      - name: Maintain governed producer registry PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH="automation/producer-adapters"
+          git config user.name "stegverse-producer-discovery-bot"
+          git config user.email "stegverse-producer-discovery-bot@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add producer_adapters/discovered.json producer_adapters/discovery-failures.json
+          if git diff --cached --quiet; then
+            echo "No producer discovery changes."
+            exit 0
+          fi
+          git commit -m "chore: refresh governed producer adapter registry"
+          git push --force-with-lease origin "$BRANCH"
+          BODY="Automated producer declaration discovery. Discovery does not register, accept, classify, promote, or publish producer exports. All declarations remain governed-review-required."
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            gh pr edit "$BRANCH" --title "Refresh governed producer adapter registry" --body "$BODY"
+          else
+            gh pr create --base main --head "$BRANCH" --title "Refresh governed producer adapter registry" --body "$BODY"
+          fi
