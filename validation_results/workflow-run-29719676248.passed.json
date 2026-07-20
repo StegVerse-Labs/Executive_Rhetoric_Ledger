@@ -1,0 +1,22 @@
+{
+  "validation_id": "VAL-ERL-2026-07-20-RUN-29719676248",
+  "validation_status": "passed",
+  "checked_commit": "e9f340bd65b170b72082221f713ccffd20c158cd",
+  "checked_paths": [
+    ".github/workflows/validate-ledger-schemas.yml",
+    "scripts/run_activation_validation.py",
+    "scripts/validate_producer_exports.py",
+    "scripts/validate_validation_results.py",
+    "scripts/validate_activation_state.py",
+    "validation_results/workflow-run-check-e8df043a.pending.json"
+  ],
+  "validator": {
+    "type": "github-actions",
+    "path_or_name": "Validate Ledger Schemas",
+    "run_id": "29719676248",
+    "run_url": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/actions/runs/29719676248"
+  },
+  "result_summary": "GitHub Actions job validate-json-schemas completed successfully. All workflow steps passed, including producer exports, validation-result receipts, activation state, governance patterns, assessments, primary-record intake, force-event packets, related-repository network, capability registry, contract audits, portable evidence intake, and the combined activation validation.",
+  "activation_effect": "activation-ready",
+  "notes": "This receipt satisfies the missing validation-evidence gate for the checked commit. Activation remains incomplete until a validated producer export is promoted into a reviewed ledger receipt and final activation records are synchronized."
+}

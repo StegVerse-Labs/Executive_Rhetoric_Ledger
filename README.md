@@ -62,10 +62,14 @@ Ledger outputs are normalized datasets, comparisons, evidence receipts, historic
 ## Status
 
 ```yaml
-repo_status: "validated-foundation-expanding-to-automated-compendium"
-readiness_confidence: "high-structural-readiness"
-validation_reported: "all green"
-release_boundary: "core validation is green; automated discovery, historical backfill, source-diversity orchestration, and reviewed evidence population remain the next integration goal"
+repo_status: "activated"
+activation_percent: 100
+readiness_confidence: "validated-and-reviewed"
+validation_run: "29719676248"
+receipt_validation_run: "29719771475"
+validation_result: "validation_results/workflow-run-29719676248.passed.json"
+reviewed_receipt: "ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md"
+release_boundary: "activation requirements are satisfied; automated discovery, historical backfill, source-diversity orchestration, and reviewed evidence population are the next integration goal"
 first_upstream_producer_test: "StegVerse-Labs/Trumpality"
 second_upstream_producer_test: "StegVerse-Labs/Administrations"
 related_repository_network: "14-declared-governed-relationships"
@@ -130,6 +134,7 @@ These schemas provide validation targets for ledger entries, source receipts, up
 - [Validate Ledger Schemas workflow](.github/workflows/validate-ledger-schemas.yml)
 - [Validation Status Note](release/validation-status-note.md)
 - [Final Activation Handoff](release/final-activation-handoff.md)
+- [Passed Activation Validation Receipt](validation_results/workflow-run-29719676248.passed.json)
 
 The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, the related-repository network, cross-record links, filenames, and repository index visibility.
 
@@ -148,10 +153,13 @@ Upstream repositories may submit claims, source receipts, actions, court posture
 - [Fundamental Document Annotations](annotations/fundamental-documents/)
 - [Research Candidates](research-candidates/)
 - [Governance Patterns](governance-patterns/)
+- [Reviewed EO 14179 Action-Record Receipt](ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md)
 
 The Delaney Hall assessment is the first deeply structured incident record combining video observations, constitutional-authority mapping, source receipts, primary-record intake, controls, and individualized event packets.
 
 The Powell Memorandum remains a historical structural anchor and is not used as proof of later causation without a separate evidence chain.
+
+The first reviewed producer-export promotion admits Executive Order 14179 strictly as an action record. It does not independently establish the truth of its policy justification, completed control comparison, or downstream outcomes.
 
 ## Governance patterns
 
@@ -169,7 +177,7 @@ A related repository may nominate or publish only within its declared relationsh
 
 ## Release and next integration goal
 
-The validated repository foundation is complete enough to begin the next integration goal:
+The activated repository foundation now begins the next integration goal:
 
 ```text
 automated recurring discovery

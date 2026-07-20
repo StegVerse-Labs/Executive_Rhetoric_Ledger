@@ -2,172 +2,133 @@
 
 ## Purpose
 
-This handoff lets the next build session continue `Executive_Rhetoric_Ledger` activation without prior chat context.
+This handoff allows continuation of `StegVerse-Labs/Executive_Rhetoric_Ledger` without prior chat context.
 
 ## Current Goal
 
 ```text
-Goal: Executive Rhetoric Ledger activation evidence reconciliation
-Repository: StegVerse-Labs/Executive_Rhetoric_Ledger
-Activation state: activation-ready-pending-validation
-Activation percent: 99
+Completed goal: Executive Rhetoric Ledger activation evidence reconciliation
+Repository state: activated
+Activation percent: 100
 Activation issue: 2
+Activation PR: 5
+Next integration goal: automated recurring political-reality discovery and compendium maintenance
 ```
 
-## Source of Truth
+## Authoritative Source of Truth
 
 ```text
 release/activation-state.json
 release/final-activation-handoff.md
-release/activation-runbook.md
-release/activation-validation-request.json
+validation_results/workflow-run-29719676248.passed.json
+validation_results/workflow-run-check-e8df043a.pending.json
+ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md
+GitHub PR #5
 GitHub Issue #2
 ```
 
-Issue #1 was closed as completed while authoritative repository files still reported pending validation and promotion. Issue #2 owns reconciliation. Do not treat Issue #1 closure by itself as activation evidence.
+## Activation Evidence
 
-## Built Files
-
-```text
-schemas/activation-state.schema.json
-scripts/validate_activation_state.py
-scripts/run_activation_validation.py
-release/activation-runbook.md
-release/activation-state.json
-release/activation-validation-request.json
-release/activation-validation-matrix.md
-release/final-activation-handoff.md
-release/repo-structure-delta.md
-release/progress-footer-spec.md
-docs/EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md
-research-notes/2026-decision-economy-human-judgment.md
-research-notes/2026-dhs-fbi-accountability-chain-erosion.md
+```yaml
+initial_validation_run: "29719676248"
+initial_validated_commit: "e9f340bd65b170b72082221f713ccffd20c158cd"
+receipt_validation_run: "29719771475"
+receipt_validated_commit: "f0d8010630a89298580c667614102d64823c3932"
+validation_conclusion: "success"
+pending_receipt_status: "superseded"
+reviewed_receipt_status: "reviewed-promoted"
+final_activation_summary: "release/final-activation-handoff.md"
 ```
 
-## Current Contract
+Both runs completed every workflow step successfully, including producer exports, validation-result receipts, activation state, governance patterns, assessments, primary-record intake, force-event packets, related-repository declarations, capability and contract registries, portable evidence intake, and combined activation validation.
 
-This repository must not treat structure, examples, workflows, issue closure, validation requests, pending receipts, research notes, intake improvements, or unpromoted producer exports as activation.
+## Reviewed Receipt Promotion
 
-Activation requires:
-
-```text
-validation_result
-pending_receipt_supersession
-reviewed_receipt_promotion
-final_activation_summary
-```
-
-## Known Validation History
-
-GitHub Actions run `29175775176` on commit `15ae427c7572aee9f4ad07282900f336902c335f` failed because a governance-pattern entry used `not evidence-of-activation` rather than the canonical phrase `not activation evidence`.
-
-The wording repair was committed at:
+The first reviewed promotion is:
 
 ```text
-4a434eab627e486940eca6f4fe2bf9dd1a5aac9d
+ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md
 ```
 
-Runs `29176673852` and `29176683354` then exposed two README-index conditions:
+It admits Executive Order 14179 strictly as an `action_record` supported by a direct-origin Federal Register source and validated producer exports from:
 
 ```text
-README.md missing exact section: ## Governance patterns
-README.md missing exact entry path: governance-patterns/2026-continuity-capability-vs-activation-authority.md
+StegVerse-Labs/Trumpality @ fc032e774ec05b611c114a0549895ac225e6764b
+StegVerse-Labs/Administrations @ 840fa595cc921d223be0a30132c27855b28aba2f
 ```
-
-The README-index repair was committed at:
-
-```text
-83bb7868cc74f0e2810ceb6789ef7004db0aff30
-```
-
-Connector checks for commits `ac22a0c`, `f51297d`, `1176a4b`, and `609545e` returned no pull-request workflow runs. This does not prove failure. The observation is recorded in `release/activation-validation-request.json`, which requests a green workflow URL or equivalent reviewed local validation evidence bound to a commit SHA.
-
-A manifest defect was discovered after the research capture update: `release/activation-state.json` contained an undeclared `research_capture` property while `schemas/activation-state.schema.json` sets `additionalProperties: false`. The manifest was restored to schema compliance in commit:
-
-```text
-68635bba2fc9f19e8c85de107c8c5fd7b4643ffc
-```
-
-This repair does not constitute the complete activation validation result.
-
-## Research Capture
-
-The Tamrat Y “Decision Economy” discussion is durably preserved at:
-
-```text
-research-notes/2026-decision-economy-human-judgment.md
-```
-
-The July 2026 DHS–FBI accountability-chain sequence involving fatal ICE vehicle encounters, temporary suspension, presidential reversal, reported FBI investigative withdrawal, official denial, and constitutional/civil-rights risk is durably preserved at:
-
-```text
-research-notes/2026-dhs-fbi-accountability-chain-erosion.md
-```
-
-The second note records both the reported chronology and the user-identified recurring method while preserving explicit boundaries between established facts, disputed operational guidance, and analytical inference.
 
 Boundary:
 
 ```text
-Research capture != endorsement
-Research capture != proof of coordinated intent
-Research capture != final constitutional adjudication
-Research capture != reviewed ledger receipt
-Research capture != activation evidence
+Action text admitted != policy justification proven.
+Reviewed action record != completed control comparison.
+Producer provenance != producer final-classification authority.
 ```
 
-## Required Run Order
+## Research Capture
+
+The following remain bounded research notes rather than automatically reviewed ledger receipts:
 
 ```text
-1. Inspect Issue #2 and authoritative activation files.
-2. Use release/activation-validation-request.json to obtain a green workflow URL or equivalent reviewed validation evidence for commit 68635bba2fc9f19e8c85de107c8c5fd7b4643ffc or later.
-3. Record the validated commit SHA and evidence location.
-4. Supersede validation_results/workflow-run-check-e8df043a.pending.json with a concrete result receipt.
-5. Promote at least one validated producer export into a reviewed ledger receipt.
-6. Record the final activation summary.
-7. Update release/activation-state.json, release/final-activation-handoff.md, README.md, and this handoff together.
-8. Close Issue #2 only after all four activation requirements are durably satisfied.
-9. At release readiness, verify propagation to StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, StegVerse-Labs/admissibility-wiki, and StegVerse-Labs/stegguardian-wiki where pertinent.
+research-notes/2026-decision-economy-human-judgment.md
+research-notes/2026-dhs-fbi-accountability-chain-erosion.md
 ```
 
-## Evidence To Capture
-
 ```text
-GitHub workflow URL or equivalent reviewed validation evidence
-validated commit SHA
-superseding validation-result receipt path
-reviewed ledger receipt path
-final activation summary path
-Issue #2 closure event
+Research capture != endorsement.
+Research capture != proof of coordinated intent.
+Research capture != final constitutional adjudication.
+Repository activation != automatic candidate promotion.
 ```
 
-## Current Delta
+## Remaining Merge Sequence
 
 ```text
-Resolved: activation-state manifest, schema, and validator exist.
-Resolved: combined activation validation exists.
-Resolved: governance-pattern validator wording and README index were repaired.
-Resolved: stale activation ownership was moved from closed Issue #1 to open Issue #2.
-Resolved: Decision Economy research thread is durably captured with non-endorsement boundaries.
-Resolved: DHS-FBI accountability-chain erosion sequence is durably captured with evidence and inference boundaries.
-Resolved: machine-readable activation validation request exists.
-Resolved: undeclared research_capture property was removed from activation-state.json to restore schema compliance.
-Pending: green or equivalent complete validation evidence for commit 68635bba or later.
-Pending: pending receipt supersession.
-Pending: reviewed receipt promotion.
-Pending: final activation summary and synchronized activation-state update.
+1. Confirm the final PR workflow is green after activation-state, reviewed-receipt, README, and handoff synchronization.
+2. Merge PR #5.
+3. Close Issue #2 as completed with the merge SHA and activation evidence paths.
+4. Close Issue #4 because network-capable GitHub Actions validation was obtained.
+5. Create the next-goal issue for automated recurring discovery and compendium maintenance.
+6. Verify pertinent propagation to Site, Publisher, admissibility-wiki, and stegguardian-wiki.
+7. Tag/release when repository release policy and final main-branch validation permit it.
 ```
 
-## Remaining Files or Modules To Install
+## Next Integration Goal
 
 ```text
-Pending evidence -> StegVerse-Labs/Executive_Rhetoric_Ledger: workflow URL or equivalent reviewed validation transcript.
-Pending receipt -> StegVerse-Labs/Executive_Rhetoric_Ledger: superseding validation-result receipt.
-Pending promotion -> StegVerse-Labs/Executive_Rhetoric_Ledger: at least one reviewed producer-export ledger receipt.
-Pending summary -> StegVerse-Labs/Executive_Rhetoric_Ledger: final activation summary and synchronized state updates.
-Pending downstream review -> Site, Publisher, admissibility-wiki, stegguardian-wiki after release readiness, where pertinent.
+automated recurring discovery
+  -> candidate intake
+  -> source posture
+  -> adjacency and historical linkage
+  -> control discovery
+  -> governed review
+  -> compendium update
+  -> later outcome refresh
+```
+
+Priority modules:
+
+```text
+discovery-cycle manifests and recurring-search configuration
+source adapters and archive capture
+cross-repository producer adapters
+deduplication and incident clustering
+adjacency graph generation
+historical backfill queues
+contradiction and correction detection
+review assignment and promotion receipts
+publication and searchable compendium surfaces
+```
+
+## Downstream Destinations
+
+```text
+StegVerse-Labs/Site
+GCAT-BCAT-Engine/Publisher
+StegVerse-Labs/admissibility-wiki
+StegVerse-Labs/stegguardian-wiki
 ```
 
 ## Archive Readiness
 
-This handoff, Issue #2, the activation manifest, final activation handoff, validation request, and research notes contain the current decisions, evidence boundary, remaining work, ownership, and permitted continuation scope. Earlier chat context is not required.
+This handoff, PR #5, Issue #2, the activation manifest, final activation handoff, validation receipt, superseded receipt, and reviewed ledger receipt contain all unique continuation information. Earlier chat context is not required.

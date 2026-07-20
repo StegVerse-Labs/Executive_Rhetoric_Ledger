@@ -1,15 +1,15 @@
 {
   "repo": "StegVerse-Labs/Executive_Rhetoric_Ledger",
-  "repo_status": "activation-ready-pending-validation",
-  "activation_percent": 99,
+  "repo_status": "activated",
+  "activation_percent": 100,
   "activation_issue": 2,
-  "current_pending_receipt": "validation_results/workflow-run-check-e8df043a.pending.json",
+  "current_pending_receipt": "validation_results/workflow-run-29719676248.passed.json",
   "activation_runbook": "release/activation-runbook.md",
   "final_handoff": "release/final-activation-handoff.md",
   "required_before_activated": [
-    "validation_result",
-    "pending_receipt_supersession",
-    "reviewed_receipt_promotion",
-    "final_activation_summary"
+    "validation_result:satisfied:validation_results/workflow-run-29719676248.passed.json",
+    "pending_receipt_supersession:satisfied:validation_results/workflow-run-check-e8df043a.pending.json",
+    "reviewed_receipt_promotion:satisfied:ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md",
+    "final_activation_summary:satisfied:release/final-activation-handoff.md"
   ]
 }

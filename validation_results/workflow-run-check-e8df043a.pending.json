@@ -1,6 +1,6 @@
 {
   "validation_id": "VAL-ERL-2026-06-15-E8DF043A-PENDING",
-  "validation_status": "pending",
+  "validation_status": "superseded",
   "checked_commit": "e8df043a4117c57ec7aaf9d8f837392b1ef0cc94",
   "checked_paths": [
     "release/final-activation-handoff.md",
@@ -12,7 +12,7 @@
     "type": "github-actions",
     "path_or_name": "Validate Ledger Schemas"
   },
-  "result_summary": "No workflow run was visible for the latest final activation handoff commit at the time of this check. This receipt keeps activation pending without marking validation passed or failed.",
-  "activation_effect": "activation-blocked",
-  "notes": "Current latest pending receipt for the activation-ready-pending-validation state. Supersede after a green workflow run or equivalent reviewed validation result exists."
+  "result_summary": "The earlier no-visible-run observation has been superseded by successful GitHub Actions run 29719676248 for pull-request commit e9f340bd65b170b72082221f713ccffd20c158cd.",
+  "activation_effect": "no-activation-change",
+  "notes": "Superseded by validation_results/workflow-run-29719676248.passed.json. Supersession records validation evidence only and does not independently complete activation."
 }
