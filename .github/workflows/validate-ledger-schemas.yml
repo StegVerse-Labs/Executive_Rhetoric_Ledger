@@ -13,63 +13,90 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install validator
         run: python -m pip install --upgrade jsonschema referencing
+
       - name: Validate sample political influence tree
-        run: python - <<'PY'
-          import json
-          from pathlib import Path
-          from jsonschema import Draft202012Validator
-          schema = json.loads(Path('schemas/political-influence-tree.schema.json').read_text())
-          sample = json.loads(Path('samples/political-influence-tree.sample.json').read_text())
-          errors = list(Draft202012Validator(schema).iter_errors(sample))
-          if errors: raise SystemExit('Political influence tree sample failed validation')
-          PY
-      - name: Validate embedded source receipts
-        run: python scripts/validate_source_receipts.py
-      - name: Validate producer export examples
-        run: python scripts/validate_producer_exports.py
-      - name: Validate producer acknowledgments
-        run: python scripts/validate_producer_acknowledgments.py
-      - name: Validate validation result receipts
-        run: python scripts/validate_validation_results.py
-      - name: Validate activation state manifest
-        run: python scripts/validate_activation_state.py
-      - name: Validate governance patterns
-        run: python scripts/validate_governance_patterns.py
-      - name: Validate assessment Political Influence Trees
-        run: python scripts/validate_assessment_trees.py
-      - name: Validate primary-record intake queues
-        run: python scripts/validate_primary_record_intake.py
-      - name: Validate individualized force-event packets
-        run: python scripts/validate_force_event_packets.py
-      - name: Validate related repository network
-        run: python scripts/validate_related_repository_network.py
-      - name: Validate repository capability registry
-        run: python scripts/validate_repository_capabilities.py
-      - name: Validate repository contract audit registry
-        run: python scripts/validate_repository_contract_audits.py
-      - name: Validate portable evidence intake
-        run: python scripts/validate_portable_evidence_intake.py
-      - name: Validate recurring discovery foundation
-        run: python scripts/validate_recurring_discovery.py
-      - name: Validate source adapter and archive capture automation
-        run: python scripts/validate_source_capture.py
-      - name: Validate deterministic incident clustering
-        run: python scripts/validate_incident_clusters.py
-      - name: Regenerate deterministic discovery-cycle example
         run: |
-          python scripts/generate_discovery_cycle.py --config config/recurring-searches.example.json --started-at 2026-07-20T06:00:00Z --output /tmp/generated-cycle.json
           python - <<'PY'
           import json
           from pathlib import Path
-          expected = json.loads(Path('discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json').read_text())
-          generated = json.loads(Path('/tmp/generated-cycle.json').read_text())
-          if generated != expected: raise SystemExit('Generated discovery-cycle content does not match fixture')
+          from jsonschema import Draft202012Validator
+          schema = json.loads(Path("schemas/political-influence-tree.schema.json").read_text())
+          sample = json.loads(Path("samples/political-influence-tree.sample.json").read_text())
+          errors = list(Draft202012Validator(schema).iter_errors(sample))
+          if errors:
+              raise SystemExit("Political influence tree sample failed validation")
           PY
+
+      - name: Validate embedded source receipts
+        run: python scripts/validate_source_receipts.py
+
+      - name: Validate producer export examples
+        run: python scripts/validate_producer_exports.py
+
+      - name: Validate producer acknowledgments
+        run: python scripts/validate_producer_acknowledgments.py
+
+      - name: Validate validation result receipts
+        run: python scripts/validate_validation_results.py
+
+      - name: Validate activation state manifest
+        run: python scripts/validate_activation_state.py
+
+      - name: Validate governance patterns
+        run: python scripts/validate_governance_patterns.py
+
+      - name: Validate assessment Political Influence Trees
+        run: python scripts/validate_assessment_trees.py
+
+      - name: Validate primary-record intake queues
+        run: python scripts/validate_primary_record_intake.py
+
+      - name: Validate individualized force-event packets
+        run: python scripts/validate_force_event_packets.py
+
+      - name: Validate related repository network
+        run: python scripts/validate_related_repository_network.py
+
+      - name: Validate repository capability registry
+        run: python scripts/validate_repository_capabilities.py
+
+      - name: Validate repository contract audit registry
+        run: python scripts/validate_repository_contract_audits.py
+
+      - name: Validate portable evidence intake
+        run: python scripts/validate_portable_evidence_intake.py
+
+      - name: Validate recurring discovery foundation
+        run: python scripts/validate_recurring_discovery.py
+
+      - name: Validate source adapter and archive capture automation
+        run: python scripts/validate_source_capture.py
+
+      - name: Validate deterministic incident clustering
+        run: python scripts/validate_incident_clusters.py
+
+      - name: Regenerate deterministic discovery-cycle example
+        run: |
+          python scripts/generate_discovery_cycle.py \
+            --config config/recurring-searches.example.json \
+            --started-at 2026-07-20T06:00:00Z \
+            --output /tmp/generated-cycle.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          expected = json.loads(Path("discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json").read_text())
+          generated = json.loads(Path("/tmp/generated-cycle.json").read_text())
+          if generated != expected:
+              raise SystemExit("Generated discovery-cycle content does not match fixture")
+          PY
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
