@@ -13,15 +13,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install validator
         run: python -m pip install --upgrade jsonschema referencing
-
       - name: Validate sample political influence tree
         run: |
           python - <<'PY'
@@ -33,7 +30,6 @@ jobs:
           if list(Draft202012Validator(schema).iter_errors(sample)):
               raise SystemExit("Political influence tree sample failed validation")
           PY
-
       - name: Validate embedded source receipts
         run: python scripts/validate_source_receipts.py
       - name: Validate producer export examples
@@ -68,6 +64,10 @@ jobs:
         run: python scripts/validate_incident_clusters.py
       - name: Validate governed adjacency graph
         run: python scripts/validate_adjacency_graph.py
+      - name: Generate deterministic backfill and variance outputs
+        run: python scripts/generate_backfill_and_variance.py --generated-at 2026-07-20T06:00:00Z
+      - name: Validate historical backfill and variance boundaries
+        run: python scripts/validate_backfill_and_variance.py
       - name: Regenerate deterministic discovery-cycle example
         run: |
           python scripts/generate_discovery_cycle.py --config config/recurring-searches.example.json --started-at 2026-07-20T06:00:00Z --output /tmp/generated-cycle.json
