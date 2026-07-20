@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/archive-capture.schema.json",
+  "title": "Executive Rhetoric Ledger Archive Capture Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["capture_id", "adapter_id", "captured_at", "source_uri", "source_class", "content_sha256", "raw_archive_path", "candidate_path", "capture_status", "review_status"],
+  "properties": {
+    "capture_id": {"type": "string", "minLength": 1},
+    "adapter_id": {"type": "string", "minLength": 1},
+    "captured_at": {"type": "string", "format": "date-time"},
+    "source_uri": {"type": "string", "minLength": 1},
+    "source_class": {"type": "string", "minLength": 1},
+    "content_type": {"type": "string"},
+    "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "byte_length": {"type": "integer", "minimum": 0},
+    "raw_archive_path": {"type": "string", "minLength": 1},
+    "candidate_path": {"type": "string", "minLength": 1},
+    "capture_status": {"type": "string", "enum": ["captured", "duplicate", "failed"]},
+    "duplicate_of": {"type": "string"},
+    "review_status": {"type": "string", "const": "candidate-review-required"},
+    "error": {"type": "string"}
+  }
+}

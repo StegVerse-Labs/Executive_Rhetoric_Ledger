@@ -28,61 +28,15 @@ jobs:
           import json
           from pathlib import Path
           from jsonschema import Draft202012Validator
-
-          checks = [
-              (
-                  Path("schemas/political-influence-tree.schema.json"),
-                  Path("samples/political-influence-tree.sample.json"),
-              )
-          ]
-
-          for schema_path, sample_path in checks:
-              schema = json.loads(schema_path.read_text(encoding="utf-8"))
-              sample = json.loads(sample_path.read_text(encoding="utf-8"))
-              validator = Draft202012Validator(schema)
-              errors = sorted(validator.iter_errors(sample), key=lambda error: list(error.path))
-              if errors:
-                  print(f"Validation failed for {sample_path} against {schema_path}")
-                  for error in errors:
-                      path = ".".join(str(part) for part in error.path) or "<root>"
-                      print(f"- {path}: {error.message}")
-                  raise SystemExit(1)
-              print(f"Validated {sample_path} against {schema_path}")
+          schema_path = Path("schemas/political-influence-tree.schema.json")
+          sample_path = Path("samples/political-influence-tree.sample.json")
+          validator = Draft202012Validator(json.loads(schema_path.read_text()))
+          errors = list(validator.iter_errors(json.loads(sample_path.read_text())))
+          if errors:
+              raise SystemExit("Political influence tree sample failed validation")
           PY
 
       - name: Validate embedded source receipts
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from jsonschema import Draft202012Validator
-
-          source_schema = json.loads(Path("schemas/source-posture.schema.json").read_text(encoding="utf-8"))
-          sample = json.loads(Path("samples/political-influence-tree.sample.json").read_text(encoding="utf-8"))
-          validator = Draft202012Validator(source_schema)
-
-          sources = sample.get("receipts", {}).get("sources", [])
-          if not sources:
-              print("No sources found in sample receipts")
-              raise SystemExit(1)
-
-          failed = False
-          for index, source in enumerate(sources):
-              errors = sorted(validator.iter_errors(source), key=lambda error: list(error.path))
-              if errors:
-                  failed = True
-                  print(f"Source receipt {index} failed validation")
-                  for error in errors:
-                      path = ".".join(str(part) for part in error.path) or "<root>"
-                      print(f"- {path}: {error.message}")
-              else:
-                  print(f"Validated source receipt {index}")
-
-          if failed:
-              raise SystemExit(1)
-          PY
-
-      - name: Validate standalone source receipts
         run: python scripts/validate_source_receipts.py
 
       - name: Validate producer export examples
@@ -124,6 +78,9 @@ jobs:
       - name: Validate recurring discovery foundation
         run: python scripts/validate_recurring_discovery.py
 
+      - name: Validate source adapter and archive capture automation
+        run: python scripts/validate_source_capture.py
+
       - name: Regenerate deterministic discovery-cycle example
         run: |
           python scripts/generate_discovery_cycle.py \
@@ -133,12 +90,10 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-
-          expected = json.loads(Path("discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json").read_text(encoding="utf-8"))
-          generated = json.loads(Path("/tmp/generated-cycle.json").read_text(encoding="utf-8"))
+          expected = json.loads(Path("discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json").read_text())
+          generated = json.loads(Path("/tmp/generated-cycle.json").read_text())
           if generated != expected:
-              raise SystemExit("Generated discovery-cycle content does not match the committed deterministic fixture.")
-          print("Generated discovery-cycle content matches the committed fixture.")
+              raise SystemExit("Generated discovery-cycle content does not match the committed fixture.")
           PY
 
       - name: Run combined activation validation
