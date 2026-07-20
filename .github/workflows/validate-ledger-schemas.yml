@@ -130,7 +130,16 @@ jobs:
             --config config/recurring-searches.example.json \
             --started-at 2026-07-20T06:00:00Z \
             --output /tmp/generated-cycle.json
-          diff -u discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json /tmp/generated-cycle.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          expected = json.loads(Path("discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json").read_text(encoding="utf-8"))
+          generated = json.loads(Path("/tmp/generated-cycle.json").read_text(encoding="utf-8"))
+          if generated != expected:
+              raise SystemExit("Generated discovery-cycle content does not match the committed deterministic fixture.")
+          print("Generated discovery-cycle content matches the committed fixture.")
+          PY
 
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
