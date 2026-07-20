@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/publication-index.schema.json",
+  "title": "Reviewed Receipt Publication Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["publication_id", "generated_at", "publication_status", "entries", "authority"],
+  "properties": {
+    "publication_id": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "publication_status": {"const": "reviewed-only-compendium"},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["entry_id", "title", "receipt_path", "receipt_sha256", "review_status", "search_text"],
+        "properties": {
+          "entry_id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "receipt_path": {"type": "string", "pattern": "^ledger_receipts/reviewed/"},
+          "receipt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "review_status": {"const": "reviewed"},
+          "search_text": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewed_only", "may_include_candidates", "may_promote"],
+      "properties": {
+        "reviewed_only": {"const": true},
+        "may_include_candidates": {"const": false},
+        "may_promote": {"const": false}
+      }
+    }
+  }
+}
