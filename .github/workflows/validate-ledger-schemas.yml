@@ -38,13 +38,22 @@ jobs:
         run: python scripts/validate_producer_acknowledgments.py
       - name: Validate governed producer adapters
         run: |
-          jq -e '.properties.consumer.const == "StegVerse-Labs/Executive_Rhetoric_Ledger"' schemas/producer-adapter.schema.json
-          jq -e '.properties.authority.properties.may_claim_truth.const == false' schemas/producer-adapter.schema.json
-          jq -e '.properties.authority.properties.may_classify_final.const == false' schemas/producer-adapter.schema.json
-          jq -e '.properties.authority.properties.may_promote.const == false' schemas/producer-adapter.schema.json
-          jq -e '.properties.authority.properties.requires_ledger_review.const == true' schemas/producer-adapter.schema.json
-          jq -e '.authority.export_status == "candidate-only" and .authority.may_claim_truth == false and .authority.may_classify_final == false and .authority.may_promote == false and .authority.requires_ledger_review == true' samples/producer-adapter.sample.json
-          jq -e '.authority.discovery_may_register == false and .authority.discovery_may_promote == false and .authority.governed_deprecation_required == true' config/producer-discovery.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          schema = json.loads(Path("schemas/producer-adapter.schema.json").read_text())
+          sample = json.loads(Path("samples/producer-adapter.sample.json").read_text())
+          config = json.loads(Path("config/producer-discovery.json").read_text())
+          assert schema["properties"]["consumer"]["const"] == "StegVerse-Labs/Executive_Rhetoric_Ledger"
+          authority = schema["properties"]["authority"]["properties"]
+          assert authority["may_claim_truth"]["const"] is False
+          assert authority["may_classify_final"]["const"] is False
+          assert authority["may_promote"]["const"] is False
+          assert authority["requires_ledger_review"]["const"] is True
+          assert sample["authority"] == {"export_status": "candidate-only", "may_claim_truth": False, "may_classify_final": False, "may_promote": False, "requires_ledger_review": True}
+          assert config["authority"] == {"discovery_may_register": False, "discovery_may_promote": False, "governed_deprecation_required": True}
+          print("Validated governed producer adapter authority boundaries.")
+          PY
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
       - name: Validate activation state manifest
