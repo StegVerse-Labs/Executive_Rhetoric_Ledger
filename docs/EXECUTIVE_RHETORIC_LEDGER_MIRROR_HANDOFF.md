@@ -41,6 +41,7 @@ release/repo-structure-delta.md
 release/progress-footer-spec.md
 docs/EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md
 research-notes/2026-decision-economy-human-judgment.md
+research-notes/2026-dhs-fbi-accountability-chain-erosion.md
 ```
 
 ## Current Contract
@@ -97,10 +98,20 @@ The Tamrat Y “Decision Economy” discussion is durably preserved at:
 research-notes/2026-decision-economy-human-judgment.md
 ```
 
+The July 2026 DHS–FBI accountability-chain sequence involving fatal ICE vehicle encounters, temporary suspension, presidential reversal, reported FBI investigative withdrawal, official denial, and constitutional/civil-rights risk is durably preserved at:
+
+```text
+research-notes/2026-dhs-fbi-accountability-chain-erosion.md
+```
+
+The second note records both the reported chronology and the user-identified recurring method while preserving explicit boundaries between established facts, disputed operational guidance, and analytical inference.
+
 Boundary:
 
 ```text
 Research capture != endorsement
+Research capture != proof of coordinated intent
+Research capture != final constitutional adjudication
 Research capture != reviewed ledger receipt
 Research capture != activation evidence
 ```
@@ -138,6 +149,7 @@ Resolved: combined activation validation exists.
 Resolved: governance-pattern validator wording and README index were repaired.
 Resolved: stale activation ownership was moved from closed Issue #1 to open Issue #2.
 Resolved: Decision Economy research thread is durably captured with non-endorsement boundaries.
+Resolved: DHS-FBI accountability-chain erosion sequence is durably captured with evidence and inference boundaries.
 Resolved: machine-readable activation validation request exists.
 Resolved: undeclared research_capture property was removed from activation-state.json to restore schema compliance.
 Pending: green or equivalent complete validation evidence for commit 68635bba or later.
@@ -158,4 +170,4 @@ Pending downstream review -> Site, Publisher, admissibility-wiki, stegguardian-w
 
 ## Archive Readiness
 
-This handoff, Issue #2, the activation manifest, final activation handoff, validation request, and research note contain the current decisions, evidence boundary, remaining work, ownership, and permitted continuation scope. Earlier chat context is not required.
+This handoff, Issue #2, the activation manifest, final activation handoff, validation request, and research notes contain the current decisions, evidence boundary, remaining work, ownership, and permitted continuation scope. Earlier chat context is not required.
