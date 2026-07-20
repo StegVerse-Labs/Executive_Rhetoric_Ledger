@@ -1,0 +1,23 @@
+{
+  "adapters": [
+    {
+      "adapter_id": "LOCAL_DHS_FBI_SEQUENCE_FIXTURE",
+      "enabled": true,
+      "adapter_type": "local-json",
+      "source_class": "national-reporting",
+      "endpoint": "source_fixtures/dhs-fbi-accountability-sequence.json",
+      "timeout_seconds": 30,
+      "capture_policy": {
+        "retain_raw": true,
+        "hash_algorithm": "sha256",
+        "deduplicate": true,
+        "archive_directory": "archive/captures"
+      },
+      "review_boundary": {
+        "automation_may_capture": true,
+        "automation_may_propose": true,
+        "automation_may_promote": false
+      }
+    }
+  ]
+}
