@@ -4,17 +4,19 @@
 
 This handoff allows continuation of `StegVerse-Labs/Executive_Rhetoric_Ledger` without prior chat context.
 
-## Current Goal
+## Current State
 
 ```text
 Repository state: activated
-Completed activation PR: #5
+Activation PR: #5
 Activation merge: 3ad8fc8ffb26b4e6a1f1452d8c2db88f4a856a20
 Current integration goal: automated recurring political-reality discovery and compendium maintenance
 Current issue: #6
-Completed recurring-discovery foundation PR: #7
-Recurring-discovery foundation merge: 41449b872cadd3b880e2e9e5dc655fefddfd6178
-Next tranche: source adapters and archive capture
+Recurring-discovery foundation PR: #7
+Source-adapter/archive automation PR: #8
+Deduplication/clustering automation PR: #9
+Latest merged tranche: deterministic candidate deduplication and incident clustering
+Next tranche: adjacency and historical-link graph generation
 ```
 
 ## Authoritative Source of Truth
@@ -22,51 +24,75 @@ Next tranche: source adapters and archive capture
 ```text
 release/activation-state.json
 release/final-activation-handoff.md
-validation_results/workflow-run-29719676248.passed.json
-ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md
 schemas/recurring-search-config.schema.json
 config/recurring-searches.example.json
 schemas/discovery-cycle.schema.json
 scripts/generate_discovery_cycle.py
-scripts/validate_recurring_discovery.py
-discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json
+schemas/source-adapter.schema.json
+schemas/archive-capture.schema.json
+config/source-adapters.json
+scripts/run_source_capture.py
+scripts/validate_source_capture.py
+schemas/incident-cluster.schema.json
+scripts/cluster_discovery_candidates.py
+scripts/validate_incident_clusters.py
+.github/workflows/run-recurring-discovery.yml
+.github/workflows/validate-ledger-schemas.yml
 GitHub Issue #6
 ```
 
-## Completed Activation Baseline
+## Completed Automation Chain
 
-The repository is activated at 100%. Activation evidence, pending-receipt supersession, reviewed producer-export promotion, final activation summary, README synchronization, and mirror synchronization were completed through PR #5.
-
-The first reviewed producer-export promotion admits Executive Order 14179 strictly as an `action_record`. It does not prove the truth of the order's policy justification, completed control comparison, or downstream outcomes.
-
-## Completed Recurring-Discovery Foundation
-
-PR #7 added and merged:
+The repository now performs the following mechanical work without an operator command:
 
 ```text
-schemas/recurring-search-config.schema.json
-config/recurring-searches.example.json
-scripts/generate_discovery_cycle.py
-scripts/validate_recurring_discovery.py
-discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json
-.github/workflows/validate-ledger-schemas.yml integration
+scheduled GitHub Actions trigger
+  -> discovery-cycle generation
+  -> configured source retrieval
+  -> immutable raw-content retention
+  -> SHA-256 fingerprinting
+  -> duplicate detection
+  -> archive receipt generation
+  -> review-required candidate generation
+  -> deterministic incident clustering
+  -> complete schema and boundary validation
+  -> automation branch update
+  -> governed candidate PR creation or refresh
 ```
 
-GitHub Actions run `29721009747` passed:
+PR #8 merged as:
 
 ```text
-recurring-search configuration validation
-discovery-cycle schema validation
-deterministic semantic regeneration check
-all pre-existing ledger validation
-combined activation validation
+d6b851729a14e48d108c8c69e3e316a85b0e5011
 ```
+
+Its validation run `29721378955` passed source adapters, archive capture, retained raw content, candidate-only authority, all prior ledger checks, and combined activation validation.
+
+PR #9 merged as:
+
+```text
+02fcdee25f09b2eb616a324d4010c1bed47f8785
+```
+
+Its validation run `29721586390` passed exact-hash deduplication, normalized-token Jaccard clustering, one-cluster-per-candidate enforcement, non-merge/non-promotion authority boundaries, all prior ledger checks, and combined activation validation.
+
+## Manual-Task Elimination Rule
+
+```text
+Mechanical execution must remain automated.
+Human review is retained only where final evidentiary or publication authority is required.
+Automation may prepare, validate, group, route, and open review surfaces.
+Automation may not silently substitute itself for governed review authority.
+```
+
+The scheduled workflow owns routine timing, generation, capture, validation, branch mutation, and pull-request creation. No recurring operator command is required.
 
 ## Governance Boundary
 
 ```text
 Automation may discover, retrieve, fingerprint, deduplicate, classify, cluster, and propose.
 Automation may not independently convert claim existence into claim truth.
+Automation may not merge evidence records merely because they appear similar.
 Automation may not erase contradictions.
 Automation may not assign final legal liability.
 Automation may not publish or promote candidates into reviewed ledger receipts.
@@ -76,28 +102,27 @@ Repository activation != automatic candidate promotion.
 
 ## Next Required Tranche
 
-Build source adapters and archive capture with these requirements:
+Build adjacency and historical-link graph generation with no manual execution dependency:
 
 ```text
-1. Define a source-adapter contract with explicit source class and provenance.
-2. Define archive-capture records containing retrieval time, canonical URL, archive location, fingerprint, and retrieval status.
-3. Add deterministic validators and examples.
-4. Connect adapter outputs to discovery-cycle candidate source receipts without marking them reviewed.
-5. Add CI coverage.
-6. Preserve retry, failure, correction, and supersession states.
+1. Define graph node and edge schemas.
+2. Generate deterministic candidate-to-candidate and candidate-to-topic links.
+3. Preserve relationship type, evidence basis, confidence, and contradiction posture.
+4. Prevent automation from asserting causation or final identity.
+5. Add graph generation to the scheduled recurring-discovery workflow.
+6. Validate graph determinism and authority boundaries in CI.
+7. Include graph outputs in the automatically maintained candidate PR.
 ```
 
 ## Remaining Modules
 
 ```text
-source adapters and archive capture
-cross-repository producer adapters
-deduplication and incident clustering
-adjacency graph generation
+adjacency and historical-link graph generation
 historical backfill queues
 contradiction and correction detection
 review assignment and promotion receipts
 publication and searchable compendium surfaces
+cross-repository producer adapters
 ```
 
 ## Downstream Destinations
@@ -113,4 +138,4 @@ StegVerse-Labs/stegguardian-wiki
 
 ## Archive Readiness
 
-This handoff, Issue #6, merged PRs #5 and #7, activation evidence, reviewed receipt, recurring-search schema/configuration, generator, validator, deterministic cycle fixture, and CI history preserve all unique continuation information. Earlier chat context is not required.
+This handoff, Issue #6, merged PRs #5, #7, #8, and #9, the activation evidence, automated workflows, schemas, generators, validators, archive receipts, candidates, and clustering contracts preserve all unique continuation information. Earlier chat context is not required.
