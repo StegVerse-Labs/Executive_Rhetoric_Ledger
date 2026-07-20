@@ -6,6 +6,7 @@ on:
       - "schemas/producer-health.schema.json"
       - "scripts/reconcile_producer_exports.py"
       - "scripts/process_producer_intake.py"
+      - "scripts/route_producer_intake.py"
       - ".github/workflows/reconcile-producer-exports.yml"
   schedule:
     - cron: "17 */6 * * *"
@@ -17,6 +18,7 @@ on:
       - "schemas/producer-health.schema.json"
       - "scripts/reconcile_producer_exports.py"
       - "scripts/process_producer_intake.py"
+      - "scripts/route_producer_intake.py"
       - ".github/workflows/reconcile-producer-exports.yml"
 
 permissions:
@@ -50,7 +52,9 @@ jobs:
         run: python scripts/reconcile_producer_exports.py
       - name: Process retrieved exports
         run: python scripts/process_producer_intake.py
-      - name: Validate producer health contract
+      - name: Route acknowledgments and governed review packets
+        run: python scripts/route_producer_intake.py
+      - name: Validate producer health and routing authority
         run: |
           python - <<'PY'
           import json
@@ -63,6 +67,14 @@ jobs:
               raise SystemExit(errors[0].message)
           if health['authority']['may_promote'] or health['authority']['may_deprecate']:
               raise SystemExit('Producer reconciliation exceeded authority')
+          for path in Path('producer_intake/acknowledgments').glob('**/*.json'):
+              document = json.loads(path.read_text())
+              if document['authority']['may_promote'] or document['authority']['may_publish']:
+                  raise SystemExit('Producer acknowledgment exceeded authority')
+          for path in Path('producer_intake/review-queue').glob('*.json'):
+              document = json.loads(path.read_text())
+              if document['authority']['automation_may_approve'] or document['authority']['automation_may_promote']:
+                  raise SystemExit('Producer review routing exceeded authority')
           PY
       - name: Maintain governed reconciliation PR
         if: github.event_name != 'pull_request'
@@ -80,7 +92,7 @@ jobs:
           fi
           git commit -m "chore: reconcile declared producer exports"
           git push --force-with-lease origin "$BRANCH"
-          BODY="Automated retrieval, hashing, quarantine, retry scheduling, health reconciliation, and intake acknowledgment. Retrieval and acknowledgment do not confer final classification, promotion, publication, or producer deprecation authority."
+          BODY="Automated retrieval, hashing, quarantine, retry scheduling, health reconciliation, intake acknowledgment, and governed review routing. Retrieval and acknowledgment do not confer final classification, promotion, publication, or producer deprecation authority."
           if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
             gh pr edit "$BRANCH" --title "Reconcile declared producer exports" --body "$BODY"
           else
