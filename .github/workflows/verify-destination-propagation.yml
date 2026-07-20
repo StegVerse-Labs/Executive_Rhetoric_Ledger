@@ -1,0 +1,55 @@
+name: Verify Destination Propagation
+
+on:
+  schedule:
+    - cron: "47 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: destination-propagation-verification
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Verify destination-owned acknowledgments
+        run: python scripts/verify_destination_acknowledgments.py
+      - name: Validate propagation manifest
+        run: python scripts/validate_destination_propagation.py
+      - name: Create or update propagation verification PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH="automation/destination-propagation-verification"
+          git config user.name "stegverse-propagation-bot"
+          git config user.email "stegverse-propagation-bot@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add propagation/verification.json
+          if git diff --cached --quiet; then
+            echo "No propagation status change."
+            exit 0
+          fi
+          git commit -m "chore: refresh destination propagation verification"
+          git push --force-with-lease origin "$BRANCH"
+          BODY="Destination status is derived only from destination-owned acknowledgment receipts bound to the current compendium hash. Source automation cannot self-acknowledge delivery or close Issue #6."
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            gh pr edit "$BRANCH" --title "Refresh destination propagation verification" --body "$BODY"
+          else
+            gh pr create --base main --head "$BRANCH" --title "Refresh destination propagation verification" --body "$BODY"
+          fi

@@ -1,0 +1,15 @@
+{
+  "source_repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "source_path": "publication/compendium.json",
+  "destinations": [
+    {"repository": "StegVerse-Labs/Site", "target_path": "public/data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"},
+    {"repository": "GCAT-BCAT-Engine/Publisher", "target_path": "publication_inputs/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"},
+    {"repository": "StegVerse-Labs/admissibility-wiki", "target_path": "data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"},
+    {"repository": "StegVerse-Labs/stegguardian-wiki", "target_path": "data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"}
+  ],
+  "authority": {
+    "source_may_prepare": true,
+    "destination_must_acknowledge": true,
+    "source_may_self_acknowledge": false
+  }
+}

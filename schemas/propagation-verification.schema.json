@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/propagation-verification.schema.json",
+  "title": "Propagation Verification Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_id", "generated_at", "source_sha256", "required_destinations", "destination_status", "complete", "authority"],
+  "properties": {
+    "manifest_id": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "required_destinations": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string"}},
+    "destination_status": {
+      "type": "array", "minItems": 4,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["repository", "status", "acknowledgment_path"],
+        "properties": {
+          "repository": {"type": "string"},
+          "status": {"enum": ["pending", "acknowledged", "failed", "deprecated"]},
+          "acknowledgment_path": {"type": ["string", "null"]},
+          "destination_commit": {"type": ["string", "null"]},
+          "reason": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "complete": {"type": "boolean"},
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["may_verify", "may_fabricate_acknowledgment", "may_close_issue"],
+      "properties": {
+        "may_verify": {"const": true},
+        "may_fabricate_acknowledgment": {"const": false},
+        "may_close_issue": {"const": false}
+      }
+    }
+  }
+}

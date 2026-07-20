@@ -76,6 +76,10 @@ jobs:
         run: python scripts/generate_compendium_and_deliveries.py --generated-at 2026-07-20T06:00:00Z
       - name: Validate reviewed-only publication and delivery boundaries
         run: python scripts/validate_compendium_and_deliveries.py
+      - name: Generate pending propagation verification
+        run: python scripts/verify_destination_acknowledgments.py --generated-at 2026-07-20T06:00:00Z
+      - name: Validate destination propagation contracts
+        run: python scripts/validate_destination_propagation.py
       - name: Regenerate deterministic discovery-cycle example
         run: |
           python scripts/generate_discovery_cycle.py --config config/recurring-searches.example.json --started-at 2026-07-20T06:00:00Z --output /tmp/generated-cycle.json

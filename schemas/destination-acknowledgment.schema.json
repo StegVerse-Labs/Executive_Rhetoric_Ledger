@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/destination-acknowledgment.schema.json",
+  "title": "Destination-Owned Publication Acknowledgment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["acknowledgment_id", "destination_repository", "destination_commit", "source_publication", "target_path", "validation", "status", "authority"],
+  "properties": {
+    "acknowledgment_id": {"type": "string", "minLength": 1},
+    "destination_repository": {"type": "string", "minLength": 1},
+    "destination_commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+    "source_publication": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "path", "sha256"],
+      "properties": {
+        "repository": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+        "path": {"const": "publication/compendium.json"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "target_path": {"type": "string", "minLength": 1},
+    "validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["validated_at", "validator", "content_hash_matches", "destination_checks_passed"],
+      "properties": {
+        "validated_at": {"type": "string", "format": "date-time"},
+        "validator": {"type": "string", "minLength": 1},
+        "content_hash_matches": {"const": true},
+        "destination_checks_passed": {"const": true}
+      }
+    },
+    "status": {"const": "acknowledged"},
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["owned_by_destination", "source_may_self_acknowledge"],
+      "properties": {
+        "owned_by_destination": {"const": true},
+        "source_may_self_acknowledge": {"const": false}
+      }
+    }
+  }
+}
