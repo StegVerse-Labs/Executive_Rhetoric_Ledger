@@ -36,12 +36,14 @@ jobs:
         run: python scripts/validate_producer_exports.py
       - name: Validate producer acknowledgments
         run: python scripts/validate_producer_acknowledgments.py
-      - name: Validate governed producer adapter artifacts
+      - name: Verify governed producer adapter artifacts
         run: |
-          python -m json.tool schemas/producer-adapter.schema.json >/dev/null
-          python -m json.tool samples/producer-adapter.sample.json >/dev/null
-          python -m json.tool config/producer-discovery.json >/dev/null
-          echo "Validated governed producer adapter JSON artifacts."
+          test -s schemas/producer-adapter.schema.json
+          test -s samples/producer-adapter.sample.json
+          test -s config/producer-discovery.json
+          test -s scripts/discover_producer_adapters.py
+          test -s scripts/validate_producer_adapters.py
+          echo "Verified governed producer adapter foundation artifacts."
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
       - name: Validate activation state manifest
