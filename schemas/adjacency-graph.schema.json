@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/adjacency-graph.schema.json",
+  "title": "Executive Rhetoric Ledger Candidate Adjacency Graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["graph_id", "graph_status", "generated_from", "nodes", "edges", "review_status", "automation_authority"],
+  "properties": {
+    "graph_id": {"type": "string", "minLength": 1},
+    "graph_status": {"type": "string", "const": "candidate-graph"},
+    "generated_from": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["node_id", "node_type", "label", "review_status"],
+        "properties": {
+          "node_id": {"type": "string", "minLength": 1},
+          "node_type": {"type": "string", "enum": ["candidate", "cluster", "topic"]},
+          "label": {"type": "string", "minLength": 1},
+          "review_status": {"type": "string", "const": "candidate-review-required"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["edge_id", "source", "target", "relationship_type", "evidence_basis", "confidence", "causation_asserted", "review_status"],
+        "properties": {
+          "edge_id": {"type": "string", "minLength": 1},
+          "source": {"type": "string", "minLength": 1},
+          "target": {"type": "string", "minLength": 1},
+          "relationship_type": {"type": "string", "enum": ["member-of-cluster", "topical-overlap", "historical-link-candidate", "shared-content-hash", "contradiction-candidate"]},
+          "evidence_basis": {"type": "string", "minLength": 1},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "causation_asserted": {"type": "boolean", "const": false},
+          "review_status": {"type": "string", "const": "edge-review-required"}
+        }
+      }
+    },
+    "review_status": {"type": "string", "const": "graph-review-required"},
+    "automation_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_link", "may_assert_identity", "may_assert_causation", "may_publish"],
+      "properties": {
+        "may_link": {"type": "boolean", "const": true},
+        "may_assert_identity": {"type": "boolean", "const": false},
+        "may_assert_causation": {"type": "boolean", "const": false},
+        "may_publish": {"type": "boolean", "const": false}
+      }
+    }
+  }
+}
