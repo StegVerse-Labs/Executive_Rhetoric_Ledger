@@ -5,7 +5,7 @@
     {"repository": "StegVerse-Labs/Site", "target_path": "public/data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"},
     {"repository": "GCAT-BCAT-Engine/Publisher", "target_path": "publication_inputs/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"},
     {"repository": "StegVerse-Labs/admissibility-wiki", "target_path": "data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"},
-    {"repository": "StegVerse-002/StegGuardian", "target_path": "data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json", "supersedes_destination": "StegVerse-Labs/stegguardian-wiki"}
+    {"repository": "StegVerse-002/StegGuardian", "target_path": "data/executive-rhetoric-ledger/compendium.json", "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json"}
   ],
   "authority": {
     "source_may_prepare": true,
