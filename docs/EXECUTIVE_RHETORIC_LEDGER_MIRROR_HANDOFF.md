@@ -8,119 +8,114 @@ This handoff allows continuation of `StegVerse-Labs/Executive_Rhetoric_Ledger` w
 
 ```text
 Repository state: activated
-Recurring political-reality discovery and compendium maintenance: implementation complete
-Current issue: #6, ready for closure after final validation merge
-Propagation-resolution issue: #15, ready for closure
-Canonical reviewed compendium: publication/compendium.json
-Canonical propagation verification: propagation/verification.json
-Final validation PR: agent/complete-recurring-discovery
+Recurring discovery and four-destination propagation: complete
+Current integration goal: governed authoritative producer-adapter expansion
+Current issue: #18
+Latest completed PR: #19
+Latest merge: 575adaf7ce6feb24e8a3d110ccb5ad74e9ceb873
+Latest validation run: 29744602740
+Next tranche: automated export retrieval, deterministic intake acknowledgments, retry/failure reconciliation
 ```
 
-## Completed Automation Chain
+## Completed Producer-Adapter Foundation
 
 ```text
-scheduled trigger
-  -> governed discovery-cycle generation
+producer declaration path:
+  .stegverse/executive-rhetoric-ledger-producer.json
+
+consumer schema:
+  schemas/producer-adapter.schema.json
+
+cross-organization discovery configuration:
+  config/producer-discovery.json
+
+discovery implementation:
+  scripts/discover_producer_adapters.py
+  scripts/validate_producer_adapters.py
+  .github/workflows/discover-producer-adapters.yml
+
+CI integration:
+  .github/workflows/validate-ledger-schemas.yml
+```
+
+PR #19 established a versioned, repository-neutral producer contract; scheduled discovery across configured organizations; governed registry PR maintenance; identity, preservation, retry, and authority boundaries; and CI presence validation. Validation run `29744602740` passed every existing repository gate, deterministic regeneration, destination propagation validation, and combined activation validation.
+
+## Producer-Owned Declarations Installed
+
+```text
+StegVerse-Labs/Trumpality
+  declaration PR: #1
+  merge: 8a62f7c0d2b754edf8b0dfde84956b5074abcd90
+  capability: political, historical, action-record, and source-receipt exports
+
+StegVerse-Labs/Administrations
+  declaration PR: #1
+  merge: 47190b72646170a6fd1e76ec9e0f3a1cb3e028f7
+  capability: institutional, administrative, historical, action-record, and source-receipt exports
+```
+
+Producer discovery is declaration-driven. The consumer does not maintain a hard-coded repository allowlist. Organization scopes limit search cost; producer-owned declarations establish capability claims.
+
+## Completed Automation Baseline
+
+```text
+scheduled political-reality discovery
   -> source capture and immutable archival
-  -> SHA-256 fingerprinting and deduplication
-  -> incident clustering
-  -> adjacency and historical-link candidates
-  -> historical-backfill queues
-  -> contradiction/correction variance candidates
-  -> review routing, quorum calculation, and packet assembly
-  -> promotion-candidate receipt preparation
-  -> reviewed-only JSON and static HTML compendium generation
-  -> canonical reviewed publication update
-  -> cross-repository delivery-manifest generation
-  -> destination-owned synchronization and acknowledgment
-  -> source-side propagation verification
-  -> governed review-surface refresh
+  -> fingerprinting and deduplication
+  -> clustering and adjacency candidates
+  -> historical backfill and variance candidates
+  -> governed review routing and promotion candidates
+  -> reviewed-only publication
+  -> four-destination synchronization and acknowledgment
+  -> propagation verification
+
+scheduled producer discovery
+  -> scan configured organizations
+  -> locate producer-owned declarations
+  -> preserve repository identity and visibility
+  -> validate candidate-only authority posture
+  -> record discovery failures without treating them as deprecation
+  -> maintain governed registry review PR
 ```
-
-## Completed Source Tranches
-
-```text
-PR #7  recurring-discovery foundation
-PR #8  source adapters and archive capture
-PR #9  deduplication and incident clustering
-PR #10 adjacency and historical-link candidate graphs
-PR #11 historical backfill and variance detection
-PR #12 governed review routing and promotion candidates
-PR #13 reviewed compendium and delivery preparation
-PR #14 destination acknowledgment verification
-```
-
-## Canonical Publication
-
-`publication/compendium.json` contains reviewed receipts only and explicitly prohibits candidate inclusion or automated promotion.
-
-Current reviewed publication:
-
-```text
-publication_id: COMPENDIUM-05405C50139CED5FD45B
-source_sha256: bc915f288745cbb582871384a5895fabdf26e311a725112d720d120afee58d09
-reviewed entries: 1
-```
-
-## Completed Destination Propagation
-
-```text
-StegVerse-Labs/Site
-  synchronization PR: #22
-  merge: 5aa965054d941f5373f2b1f2b342d2650c04ccf1
-  destination content commit: 51f33bd176f85ad36d5cc02b97bdf414ddb01032
-  acknowledgment: receipts/executive-rhetoric-ledger-ack.json
-
-GCAT-BCAT-Engine/Publisher
-  synchronization PR: #13
-  merge: 4e9ebda847b151e6709340a7c7fc5208d6d2ac2b
-  destination content commit: ae44f2f36b85f0275386cda3f8c264145867c4bb
-  acknowledgment: receipts/executive-rhetoric-ledger-ack.json
-
-StegVerse-Labs/admissibility-wiki
-  synchronization PR: #33
-  merge: 346a6a54a5037e859b49813d029cd283fe19e64b
-  destination content commit: 9f1bfcb7d686abdccb6f9df926f693eb5a0ca4fb
-  acknowledgment: receipts/executive-rhetoric-ledger-ack.json
-
-StegVerse-002/StegGuardian
-  authoritative replacement for unresolved StegVerse-Labs/stegguardian-wiki reference
-  synchronization PR: #3
-  merge: 33a3f2a0b3dabebd2db820efbdf7f3934859294a
-  destination content commit: 8590b6029ca36cb962479668cf5de94ad62793c6
-  acknowledgment: receipts/executive-rhetoric-ledger-ack.json
-```
-
-`config/destination-adapters.json` now names the authoritative `StegVerse-002/StegGuardian` repository. `propagation/verification.json` records all four required destinations as acknowledged and binds them to the canonical compendium SHA-256.
 
 ## Manual-Task Elimination Rule
 
 ```text
-Mechanical execution remains automated.
-Human review remains only where final evidentiary, promotion, publication, destination acceptance, or deprecation authority is required.
-Automation may discover, capture, validate, group, link, route, prepare, synchronize, and verify.
-Automation may not fabricate truth, review approval, destination acknowledgment, legal liability, or causal identity.
+Mechanical producer discovery, retrieval, hashing, validation, acknowledgment, retry, and status reconciliation must be automated.
+Human authority remains only for final evidentiary review, promotion, publication, and governed producer deprecation.
+Automation may discover and validate a declaration.
+Automation may not silently register a producer, classify its claims as true, promote its exports, or deprecate it.
 ```
-
-No recurring operator command is required for the implemented recurring-discovery, compendium, or propagation lifecycle.
 
 ## Governance Boundary
 
 ```text
-Research capture != reviewed ledger receipt.
-Generated promotion candidate != promotion authority.
-Reviewed-only publication excludes candidates and unresolved variance.
-A delivery manifest != destination acknowledgment.
-Destination acknowledgment must be destination-owned and hash-bound.
-The source repository may verify but may not self-acknowledge.
+Producer declaration != producer registration.
+Producer export authority != final ledger classification authority.
+Candidate export != reviewed ledger receipt.
+Successful retrieval != evidence acceptance.
+Intake acknowledgment != promotion.
+Discovery failure != governed deprecation.
 Adjacency != identity or causation.
-Variance detection != contradiction resolution or falsehood finding.
 ```
 
-## Next Goal Reset
+## Next Required Tranche
 
-After final validation and closure of Issues #6 and #15, reset progress to the next integration goal. The next recommended goal is ecosystem-wide producer adapter expansion and governed ingestion from additional authoritative political and institutional repositories.
+Build automated producer export retrieval and intake reconciliation:
+
+```text
+1. Define producer export-manifest and intake-acknowledgment schemas.
+2. Retrieve declared manifests and export records from discovered producers.
+3. Bind every record to producer repository, commit, path, and SHA-256.
+4. Validate chronology, source posture, correction, and supersession fields.
+5. Deduplicate against prior producer exports and reviewed receipts.
+6. Generate destination-owned intake acknowledgments with explicit states.
+7. Retry transient failures according to the producer declaration policy.
+8. Quarantine malformed, identity-mismatched, or authority-violating exports.
+9. Route valid exports into existing governed review assignment.
+10. Maintain machine-readable producer health and reconciliation status.
+```
 
 ## Archive Readiness
 
-This handoff, Issues #6 and #15, source PRs #5 and #7 through #14, destination synchronization PRs, canonical publication, destination acknowledgments, propagation verification, schemas, workflows, scripts, and validation history preserve all unique continuation information. Earlier chat context is not required.
+Issue #18, PR #19, the producer declarations in Trumpality and Administrations, this handoff, and the merged recurring-discovery and propagation records preserve all unique continuation information. Earlier chat context is not required.
