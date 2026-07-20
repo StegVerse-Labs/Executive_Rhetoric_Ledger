@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-intake-result.schema.json",
+  "title": "Producer Intake Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["intake_id", "generated_at", "producer_repository", "producer_commit", "export_path", "export_sha256", "status", "chronology", "authority"],
+  "properties": {
+    "intake_id": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "producer_repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+    "producer_commit": {"type": "string", "minLength": 7},
+    "export_path": {"type": "string", "minLength": 1},
+    "export_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "status": {"enum": ["received", "duplicate", "quarantined", "retry-pending", "review-required"]},
+    "chronology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_at", "updated_at", "supersedes", "corrects"],
+      "properties": {
+        "created_at": {"type": ["string", "null"]},
+        "updated_at": {"type": ["string", "null"]},
+        "supersedes": {"type": ["string", "null"]},
+        "corrects": {"type": ["string", "null"]}
+      }
+    },
+    "reason": {"type": ["string", "null"]},
+    "retry": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["attempt", "next_retry_at"],
+      "properties": {
+        "attempt": {"type": "integer", "minimum": 1},
+        "next_retry_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_acknowledge_receipt", "may_classify_final", "may_promote", "requires_review"],
+      "properties": {
+        "may_acknowledge_receipt": {"const": true},
+        "may_classify_final": {"const": false},
+        "may_promote": {"const": false},
+        "requires_review": {"const": true}
+      }
+    }
+  }
+}
