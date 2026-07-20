@@ -36,6 +36,8 @@ jobs:
         run: python scripts/validate_producer_exports.py
       - name: Validate producer acknowledgments
         run: python scripts/validate_producer_acknowledgments.py
+      - name: Validate governed producer adapters
+        run: python scripts/validate_producer_adapters.py
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
       - name: Validate activation state manifest
