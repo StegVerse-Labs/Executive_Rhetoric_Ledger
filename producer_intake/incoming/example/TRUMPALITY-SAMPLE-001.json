@@ -1,0 +1,21 @@
+{
+  "ingestion_id": "TRUMPALITY-SAMPLE-001",
+  "producer_repo": "StegVerse-Labs/Trumpality",
+  "producer_path": "datasets/exports/executive-rhetoric-ledger/TRUMPALITY-SAMPLE-001.json",
+  "producer_commit": "8a62f7c0d2b754edf8b0dfde84956b5074abcd90",
+  "ingestion_date": "2026-07-20T13:15:00Z",
+  "object_class": "source_receipt",
+  "review_status": "pending",
+  "source_receipts": [
+    {
+      "source_id": "trumpality:sample-001",
+      "title": "Producer intake validation fixture",
+      "url": "https://example.invalid/source",
+      "evidence_role": "context-only-source"
+    }
+  ],
+  "record_created_at": "2026-07-20T13:00:00Z",
+  "record_updated_at": "2026-07-20T13:10:00Z",
+  "supersedes": null,
+  "corrects": null
+}
