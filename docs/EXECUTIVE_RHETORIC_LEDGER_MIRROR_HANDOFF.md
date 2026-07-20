@@ -7,12 +7,14 @@ This handoff allows continuation of `StegVerse-Labs/Executive_Rhetoric_Ledger` w
 ## Current Goal
 
 ```text
-Completed goal: Executive Rhetoric Ledger activation evidence reconciliation
 Repository state: activated
-Activation percent: 100
-Activation issue: 2
-Activation PR: 5
-Next integration goal: automated recurring political-reality discovery and compendium maintenance
+Completed activation PR: #5
+Activation merge: 3ad8fc8ffb26b4e6a1f1452d8c2db88f4a856a20
+Current integration goal: automated recurring political-reality discovery and compendium maintenance
+Current issue: #6
+Completed recurring-discovery foundation PR: #7
+Recurring-discovery foundation merge: 41449b872cadd3b880e2e9e5dc655fefddfd6178
+Next tranche: source adapters and archive capture
 ```
 
 ## Authoritative Source of Truth
@@ -21,95 +23,73 @@ Next integration goal: automated recurring political-reality discovery and compe
 release/activation-state.json
 release/final-activation-handoff.md
 validation_results/workflow-run-29719676248.passed.json
-validation_results/workflow-run-check-e8df043a.pending.json
 ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md
-GitHub PR #5
-GitHub Issue #2
+schemas/recurring-search-config.schema.json
+config/recurring-searches.example.json
+schemas/discovery-cycle.schema.json
+scripts/generate_discovery_cycle.py
+scripts/validate_recurring_discovery.py
+discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json
+GitHub Issue #6
 ```
 
-## Activation Evidence
+## Completed Activation Baseline
 
-```yaml
-initial_validation_run: "29719676248"
-initial_validated_commit: "e9f340bd65b170b72082221f713ccffd20c158cd"
-receipt_validation_run: "29719771475"
-receipt_validated_commit: "f0d8010630a89298580c667614102d64823c3932"
-validation_conclusion: "success"
-pending_receipt_status: "superseded"
-reviewed_receipt_status: "reviewed-promoted"
-final_activation_summary: "release/final-activation-handoff.md"
-```
+The repository is activated at 100%. Activation evidence, pending-receipt supersession, reviewed producer-export promotion, final activation summary, README synchronization, and mirror synchronization were completed through PR #5.
 
-Both runs completed every workflow step successfully, including producer exports, validation-result receipts, activation state, governance patterns, assessments, primary-record intake, force-event packets, related-repository declarations, capability and contract registries, portable evidence intake, and combined activation validation.
+The first reviewed producer-export promotion admits Executive Order 14179 strictly as an `action_record`. It does not prove the truth of the order's policy justification, completed control comparison, or downstream outcomes.
 
-## Reviewed Receipt Promotion
+## Completed Recurring-Discovery Foundation
 
-The first reviewed promotion is:
+PR #7 added and merged:
 
 ```text
-ledger_receipts/reviewed/PIT-MODERN-2025-AI-EO-14179__action-record.reviewed.md
+schemas/recurring-search-config.schema.json
+config/recurring-searches.example.json
+scripts/generate_discovery_cycle.py
+scripts/validate_recurring_discovery.py
+discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json
+.github/workflows/validate-ledger-schemas.yml integration
 ```
 
-It admits Executive Order 14179 strictly as an `action_record` supported by a direct-origin Federal Register source and validated producer exports from:
+GitHub Actions run `29721009747` passed:
 
 ```text
-StegVerse-Labs/Trumpality @ fc032e774ec05b611c114a0549895ac225e6764b
-StegVerse-Labs/Administrations @ 840fa595cc921d223be0a30132c27855b28aba2f
+recurring-search configuration validation
+discovery-cycle schema validation
+deterministic semantic regeneration check
+all pre-existing ledger validation
+combined activation validation
 ```
 
-Boundary:
+## Governance Boundary
 
 ```text
-Action text admitted != policy justification proven.
-Reviewed action record != completed control comparison.
-Producer provenance != producer final-classification authority.
-```
-
-## Research Capture
-
-The following remain bounded research notes rather than automatically reviewed ledger receipts:
-
-```text
-research-notes/2026-decision-economy-human-judgment.md
-research-notes/2026-dhs-fbi-accountability-chain-erosion.md
-```
-
-```text
-Research capture != endorsement.
-Research capture != proof of coordinated intent.
-Research capture != final constitutional adjudication.
+Automation may discover, retrieve, fingerprint, deduplicate, classify, cluster, and propose.
+Automation may not independently convert claim existence into claim truth.
+Automation may not erase contradictions.
+Automation may not assign final legal liability.
+Automation may not publish or promote candidates into reviewed ledger receipts.
+Research capture != reviewed ledger receipt.
 Repository activation != automatic candidate promotion.
 ```
 
-## Remaining Merge Sequence
+## Next Required Tranche
+
+Build source adapters and archive capture with these requirements:
 
 ```text
-1. Confirm the final PR workflow is green after activation-state, reviewed-receipt, README, and handoff synchronization.
-2. Merge PR #5.
-3. Close Issue #2 as completed with the merge SHA and activation evidence paths.
-4. Close Issue #4 because network-capable GitHub Actions validation was obtained.
-5. Create the next-goal issue for automated recurring discovery and compendium maintenance.
-6. Verify pertinent propagation to Site, Publisher, admissibility-wiki, and stegguardian-wiki.
-7. Tag/release when repository release policy and final main-branch validation permit it.
+1. Define a source-adapter contract with explicit source class and provenance.
+2. Define archive-capture records containing retrieval time, canonical URL, archive location, fingerprint, and retrieval status.
+3. Add deterministic validators and examples.
+4. Connect adapter outputs to discovery-cycle candidate source receipts without marking them reviewed.
+5. Add CI coverage.
+6. Preserve retry, failure, correction, and supersession states.
 ```
 
-## Next Integration Goal
+## Remaining Modules
 
 ```text
-automated recurring discovery
-  -> candidate intake
-  -> source posture
-  -> adjacency and historical linkage
-  -> control discovery
-  -> governed review
-  -> compendium update
-  -> later outcome refresh
-```
-
-Priority modules:
-
-```text
-discovery-cycle manifests and recurring-search configuration
 source adapters and archive capture
 cross-repository producer adapters
 deduplication and incident clustering
@@ -122,6 +102,8 @@ publication and searchable compendium surfaces
 
 ## Downstream Destinations
 
+At release readiness, verify pertinent propagation to:
+
 ```text
 StegVerse-Labs/Site
 GCAT-BCAT-Engine/Publisher
@@ -131,4 +113,4 @@ StegVerse-Labs/stegguardian-wiki
 
 ## Archive Readiness
 
-This handoff, PR #5, Issue #2, the activation manifest, final activation handoff, validation receipt, superseded receipt, and reviewed ledger receipt contain all unique continuation information. Earlier chat context is not required.
+This handoff, Issue #6, merged PRs #5 and #7, activation evidence, reviewed receipt, recurring-search schema/configuration, generator, validator, deterministic cycle fixture, and CI history preserve all unique continuation information. Earlier chat context is not required.
