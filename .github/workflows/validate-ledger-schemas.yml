@@ -44,6 +44,30 @@ jobs:
           test -s scripts/discover_producer_adapters.py
           test -s scripts/validate_producer_adapters.py
           echo "Verified governed producer adapter foundation artifacts."
+      - name: Generate and validate producer intake results
+        run: |
+          rm -rf /tmp/producer-intake-results /tmp/producer-intake-quarantine
+          python scripts/process_producer_intake.py \
+            --input producer_intake/incoming \
+            --output /tmp/producer-intake-results \
+            --quarantine /tmp/producer-intake-quarantine \
+            --generated-at 2026-07-20T13:30:00Z
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+          schema = json.loads(Path("schemas/producer-intake-result.schema.json").read_text())
+          files = sorted(Path("/tmp/producer-intake-results").glob("ERL-INTAKE-*.json"))
+          if not files:
+              raise SystemExit("Producer intake emitted no result receipts")
+          for path in files:
+              document = json.loads(path.read_text())
+              errors = list(Draft202012Validator(schema).iter_errors(document))
+              if errors:
+                  raise SystemExit(f"Producer intake result failed schema validation: {path}")
+              if document["authority"]["may_promote"] or document["authority"]["may_classify_final"]:
+                  raise SystemExit("Producer intake exceeded authority")
+          PY
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
       - name: Validate activation state manifest
