@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/cross-repository-delivery.schema.json",
+  "title": "Cross-Repository Delivery Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["delivery_id", "generated_at", "source_publication", "destinations", "authority"],
+  "properties": {
+    "delivery_id": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "source_publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"const": "publication/compendium.json"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "destinations": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repository", "target_path", "delivery_status", "acknowledgment_required", "acknowledgment"],
+        "properties": {
+          "repository": {"type": "string", "minLength": 1},
+          "target_path": {"type": "string", "minLength": 1},
+          "delivery_status": {"enum": ["prepared", "delivered", "acknowledged", "failed"]},
+          "acknowledgment_required": {"const": true},
+          "acknowledgment": {"type": ["object", "null"]}
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_prepare", "may_claim_delivery", "may_claim_acknowledgment"],
+      "properties": {
+        "may_prepare": {"const": true},
+        "may_claim_delivery": {"const": false},
+        "may_claim_acknowledgment": {"const": false}
+      }
+    }
+  }
+}
