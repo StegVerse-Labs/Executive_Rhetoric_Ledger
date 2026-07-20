@@ -15,8 +15,9 @@ Current issue: #6
 Recurring-discovery foundation PR: #7
 Source-adapter/archive automation PR: #8
 Deduplication/clustering automation PR: #9
-Latest merged tranche: deterministic candidate deduplication and incident clustering
-Next tranche: adjacency and historical-link graph generation
+Adjacency graph automation PR: #10
+Latest merge: 02d4eb915394e0d7b52208e0187ef48a13a980b9
+Next tranche: historical backfill queues and contradiction/correction detection
 ```
 
 ## Authoritative Source of Truth
@@ -36,6 +37,9 @@ scripts/validate_source_capture.py
 schemas/incident-cluster.schema.json
 scripts/cluster_discovery_candidates.py
 scripts/validate_incident_clusters.py
+schemas/adjacency-graph.schema.json
+scripts/generate_adjacency_graph.py
+scripts/validate_adjacency_graph.py
 .github/workflows/run-recurring-discovery.yml
 .github/workflows/validate-ledger-schemas.yml
 GitHub Issue #6
@@ -55,44 +59,45 @@ scheduled GitHub Actions trigger
   -> archive receipt generation
   -> review-required candidate generation
   -> deterministic incident clustering
-  -> complete schema and boundary validation
+  -> deterministic adjacency and historical-link candidate generation
+  -> complete schema and authority-boundary validation
   -> automation branch update
   -> governed candidate PR creation or refresh
 ```
 
-PR #8 merged as:
+Completed merges and validation:
 
 ```text
-d6b851729a14e48d108c8c69e3e316a85b0e5011
+PR #8 -> d6b851729a14e48d108c8c69e3e316a85b0e5011
+Validation run -> 29721378955
+
+PR #9 -> 02fcdee25f09b2eb616a324d4010c1bed47f8785
+Validation run -> 29721586390
+
+PR #10 -> 02d4eb915394e0d7b52208e0187ef48a13a980b9
+Validation run -> 29721775197
 ```
 
-Its validation run `29721378955` passed source adapters, archive capture, retained raw content, candidate-only authority, all prior ledger checks, and combined activation validation.
-
-PR #9 merged as:
-
-```text
-02fcdee25f09b2eb616a324d4010c1bed47f8785
-```
-
-Its validation run `29721586390` passed exact-hash deduplication, normalized-token Jaccard clustering, one-cluster-per-candidate enforcement, non-merge/non-promotion authority boundaries, all prior ledger checks, and combined activation validation.
+The latest run passed graph schema validation, node/edge integrity, deterministic generation, non-identity and non-causation authority limits, all prior recurring-discovery checks, and combined activation validation.
 
 ## Manual-Task Elimination Rule
 
 ```text
 Mechanical execution must remain automated.
 Human review is retained only where final evidentiary or publication authority is required.
-Automation may prepare, validate, group, route, and open review surfaces.
+Automation may prepare, validate, group, link, route, and open review surfaces.
 Automation may not silently substitute itself for governed review authority.
 ```
 
-The scheduled workflow owns routine timing, generation, capture, validation, branch mutation, and pull-request creation. No recurring operator command is required.
+The scheduled workflow owns routine timing, generation, capture, hashing, deduplication, clustering, graph generation, validation, branch mutation, and pull-request creation. No recurring operator command is required.
 
 ## Governance Boundary
 
 ```text
-Automation may discover, retrieve, fingerprint, deduplicate, classify, cluster, and propose.
+Automation may discover, retrieve, fingerprint, deduplicate, classify, cluster, link, and propose.
 Automation may not independently convert claim existence into claim truth.
 Automation may not merge evidence records merely because they appear similar.
+Automation may not assert identity or causation from adjacency.
 Automation may not erase contradictions.
 Automation may not assign final legal liability.
 Automation may not publish or promote candidates into reviewed ledger receipts.
@@ -102,22 +107,23 @@ Repository activation != automatic candidate promotion.
 
 ## Next Required Tranche
 
-Build adjacency and historical-link graph generation with no manual execution dependency:
+Build historical backfill queues and contradiction/correction detection with no manual execution dependency:
 
 ```text
-1. Define graph node and edge schemas.
-2. Generate deterministic candidate-to-candidate and candidate-to-topic links.
-3. Preserve relationship type, evidence basis, confidence, and contradiction posture.
-4. Prevent automation from asserting causation or final identity.
-5. Add graph generation to the scheduled recurring-discovery workflow.
-6. Validate graph determinism and authority boundaries in CI.
-7. Include graph outputs in the automatically maintained candidate PR.
+1. Define historical-backfill request and queue schemas.
+2. Generate prioritized backfill tasks from graph gaps and configured controls.
+3. Define contradiction and correction candidate schemas.
+4. Compare current captures against prior statements, guidance, and outcomes.
+5. Preserve temporal order, source posture, and supersession relationships.
+6. Prevent automation from declaring a contradiction resolved or a statement false.
+7. Add queue and detection generation to the scheduled workflow.
+8. Validate determinism and authority boundaries in CI.
+9. Include outputs in the automatically maintained candidate PR.
 ```
 
 ## Remaining Modules
 
 ```text
-adjacency and historical-link graph generation
 historical backfill queues
 contradiction and correction detection
 review assignment and promotion receipts
@@ -138,4 +144,4 @@ StegVerse-Labs/stegguardian-wiki
 
 ## Archive Readiness
 
-This handoff, Issue #6, merged PRs #5, #7, #8, and #9, the activation evidence, automated workflows, schemas, generators, validators, archive receipts, candidates, and clustering contracts preserve all unique continuation information. Earlier chat context is not required.
+This handoff, Issue #6, merged PRs #5, #7, #8, #9, and #10, activation evidence, automated workflows, schemas, generators, validators, archive receipts, candidates, clusters, and adjacency graphs preserve all unique continuation information. Earlier chat context is not required.
