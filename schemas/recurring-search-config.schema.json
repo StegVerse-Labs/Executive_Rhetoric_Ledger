@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/recurring-search-config.schema.json",
+  "title": "Recurring Political Reality Search Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["config_id", "enabled", "cadence", "scope", "source_classes", "searches", "review_boundary"],
+  "properties": {
+    "config_id": {"type": "string", "minLength": 1},
+    "enabled": {"type": "boolean"},
+    "cadence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frequency", "interval"],
+      "properties": {
+        "frequency": {"type": "string", "enum": ["hourly", "daily", "weekly", "monthly", "manual"]},
+        "interval": {"type": "integer", "minimum": 1},
+        "timezone": {"type": "string", "minLength": 1}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topics", "time_window", "jurisdictions"],
+      "properties": {
+        "topics": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "time_window": {"type": "string", "minLength": 1},
+        "jurisdictions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "actors": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "agencies": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "source_classes": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "primary-legal-record", "official-government", "court-record", "legislative-oversight",
+          "original-media", "local-reporting", "national-reporting", "international-reporting",
+          "partisan-or-ideological-reporting", "advocacy-record", "academic-or-expert",
+          "affected-person-or-witness", "historical-archive"
+        ]
+      }
+    },
+    "searches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["search_id", "query_template", "discovery_class", "priority"],
+        "properties": {
+          "search_id": {"type": "string", "minLength": 1},
+          "query_template": {"type": "string", "minLength": 1},
+          "discovery_class": {
+            "type": "string",
+            "enum": ["captured-topic-refresh", "adjacent-incident", "new-incident", "historical-backfill", "control-discovery", "contradiction-discovery", "outcome-refresh"]
+          },
+          "priority": {"type": "string", "enum": ["critical", "high", "medium", "low"]},
+          "enabled": {"type": "boolean", "default": true}
+        }
+      }
+    },
+    "review_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["automation_may_propose", "automation_may_publish", "required_review_states"],
+      "properties": {
+        "automation_may_propose": {"type": "boolean", "const": true},
+        "automation_may_publish": {"type": "boolean", "const": false},
+        "required_review_states": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "notes": {"type": "string"}
+  }
+}
