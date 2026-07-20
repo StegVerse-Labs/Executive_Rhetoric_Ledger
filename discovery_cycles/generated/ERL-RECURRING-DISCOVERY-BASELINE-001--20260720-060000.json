@@ -1,0 +1,71 @@
+{
+  "cycle_id": "ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000",
+  "cycle_status": "planned",
+  "started_at": "2026-07-20T06:00:00Z",
+  "scope": {
+    "topics": [
+      "executive rhetoric",
+      "federal enforcement",
+      "constitutional and civil-rights accountability"
+    ],
+    "time_window": "rolling-14-days-with-historical-links",
+    "jurisdictions": ["United States federal"],
+    "actors": ["President", "Attorney General", "DHS Secretary", "FBI Director"],
+    "agencies": ["Department of Justice", "Federal Bureau of Investigation", "Department of Homeland Security", "Immigration and Customs Enforcement"]
+  },
+  "discovery_classes": [
+    "captured-topic-refresh",
+    "contradiction-discovery",
+    "control-discovery",
+    "new-incident"
+  ],
+  "source_classes": [
+    "primary-legal-record",
+    "official-government",
+    "court-record",
+    "legislative-oversight",
+    "local-reporting",
+    "national-reporting",
+    "advocacy-record"
+  ],
+  "queries": [
+    {
+      "query_id": "captured-topic-refresh",
+      "query_text": "Refresh existing ledger topics for new official actions, corrections, litigation, oversight, and measurable outcomes.",
+      "discovery_class": "captured-topic-refresh",
+      "status": "planned"
+    },
+    {
+      "query_id": "new-federal-enforcement-incidents",
+      "query_text": "Find newly reported federal enforcement incidents involving use of force, detention, constitutional claims, or changes to investigative responsibility.",
+      "discovery_class": "new-incident",
+      "status": "planned"
+    },
+    {
+      "query_id": "accountability-chain-contradictions",
+      "query_text": "Find contradictions between public statements, internal guidance, agency practice, court records, congressional oversight, and later policy implementation.",
+      "discovery_class": "contradiction-discovery",
+      "status": "planned"
+    },
+    {
+      "query_id": "historical-accountability-controls",
+      "query_text": "Find historical controls and precedents for comparable enforcement, civil-rights investigation, agency self-investigation, and executive intervention.",
+      "discovery_class": "control-discovery",
+      "status": "planned"
+    }
+  ],
+  "candidate_outputs": {
+    "new_topics": [],
+    "source_receipts": [],
+    "adjacency_links": [],
+    "control_candidates": [],
+    "contradictions": [],
+    "outcome_updates": []
+  },
+  "review_boundary": {
+    "automation_may_propose": true,
+    "automation_may_publish": false,
+    "required_review_states": ["candidate-generated", "source-posture-reviewed", "ledger-review-required"]
+  },
+  "notes": "Generated from recurring-search configuration. Planned queries are candidates only and require governed review before publication or ledger promotion."
+}
