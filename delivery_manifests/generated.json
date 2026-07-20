@@ -4,7 +4,7 @@
     "may_claim_delivery": false,
     "may_prepare": true
   },
-  "delivery_id": "DELIVERY-BC915F288745CBB58287",
+  "delivery_id": "DELIVERY-A92D53ADA93C7C4C6BDA",
   "destinations": [
     {
       "acknowledgment": null,
@@ -35,9 +35,9 @@
       "target_path": "data/executive-rhetoric-ledger/compendium.json"
     }
   ],
-  "generated_at": "2026-07-20T07:11:46Z",
+  "generated_at": "2026-07-20T14:33:00Z",
   "source_publication": {
     "path": "publication/compendium.json",
-    "sha256": "bc915f288745cbb582871384a5895fabdf26e311a725112d720d120afee58d09"
+    "sha256": "a92d53ada93c7c4c6bdaf1351c22dc17dc3f51dd075231553fb9bae3c5ac438c"
   }
 }
