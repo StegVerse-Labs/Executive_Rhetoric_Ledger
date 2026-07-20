@@ -11,7 +11,7 @@ required = {
     "StegVerse-Labs/Site",
     "GCAT-BCAT-Engine/Publisher",
     "StegVerse-Labs/admissibility-wiki",
-    "StegVerse-Labs/stegguardian-wiki",
+    "StegVerse-002/StegGuardian",
 }
 if set(repositories) != required or len(repositories) != len(set(repositories)):
     raise SystemExit("Destination adapter registry must contain each required destination exactly once.")
@@ -29,6 +29,8 @@ if manifest_path.exists():
     errors = list(Draft202012Validator(schema).iter_errors(document))
     if errors:
         raise SystemExit("Propagation verification manifest failed schema validation.")
+    if set(document["required_destinations"]) != required:
+        raise SystemExit("Propagation verification required destinations do not match the authoritative adapter registry.")
     if document["authority"]["may_fabricate_acknowledgment"] or document["authority"]["may_close_issue"]:
         raise SystemExit("Propagation verifier exceeded its authority.")
 
