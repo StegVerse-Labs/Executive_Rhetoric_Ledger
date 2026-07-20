@@ -38,16 +38,13 @@ jobs:
         run: python scripts/validate_producer_acknowledgments.py
       - name: Validate governed producer adapters
         run: |
-          python -m json.tool schemas/producer-adapter.schema.json >/dev/null
-          python -m json.tool samples/producer-adapter.sample.json >/dev/null
-          python -m json.tool config/producer-discovery.json >/dev/null
-          grep -q '"may_claim_truth": {"const": false}' schemas/producer-adapter.schema.json
-          grep -q '"may_classify_final": {"const": false}' schemas/producer-adapter.schema.json
-          grep -q '"may_promote": {"const": false}' schemas/producer-adapter.schema.json
-          grep -q '"requires_ledger_review": {"const": true}' schemas/producer-adapter.schema.json
-          grep -q '"discovery_may_register": false' config/producer-discovery.json
-          grep -q '"discovery_may_promote": false' config/producer-discovery.json
-          grep -q '"governed_deprecation_required": true' config/producer-discovery.json
+          jq -e '.properties.consumer.const == "StegVerse-Labs/Executive_Rhetoric_Ledger"' schemas/producer-adapter.schema.json
+          jq -e '.properties.authority.properties.may_claim_truth.const == false' schemas/producer-adapter.schema.json
+          jq -e '.properties.authority.properties.may_classify_final.const == false' schemas/producer-adapter.schema.json
+          jq -e '.properties.authority.properties.may_promote.const == false' schemas/producer-adapter.schema.json
+          jq -e '.properties.authority.properties.requires_ledger_review.const == true' schemas/producer-adapter.schema.json
+          jq -e '.authority.export_status == "candidate-only" and .authority.may_claim_truth == false and .authority.may_classify_final == false and .authority.may_promote == false and .authority.requires_ledger_review == true' samples/producer-adapter.sample.json
+          jq -e '.authority.discovery_may_register == false and .authority.discovery_may_promote == false and .authority.governed_deprecation_required == true' config/producer-discovery.json
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
       - name: Validate activation state manifest
