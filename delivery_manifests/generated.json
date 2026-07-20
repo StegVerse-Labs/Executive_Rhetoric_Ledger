@@ -1,0 +1,43 @@
+{
+  "authority": {
+    "may_claim_acknowledgment": false,
+    "may_claim_delivery": false,
+    "may_prepare": true
+  },
+  "delivery_id": "DELIVERY-BC915F288745CBB58287",
+  "destinations": [
+    {
+      "acknowledgment": null,
+      "acknowledgment_required": true,
+      "delivery_status": "prepared",
+      "repository": "StegVerse-Labs/Site",
+      "target_path": "data/executive-rhetoric-ledger/compendium.json"
+    },
+    {
+      "acknowledgment": null,
+      "acknowledgment_required": true,
+      "delivery_status": "prepared",
+      "repository": "GCAT-BCAT-Engine/Publisher",
+      "target_path": "inputs/executive-rhetoric-ledger/compendium.json"
+    },
+    {
+      "acknowledgment": null,
+      "acknowledgment_required": true,
+      "delivery_status": "prepared",
+      "repository": "StegVerse-Labs/admissibility-wiki",
+      "target_path": "data/executive-rhetoric-ledger/compendium.json"
+    },
+    {
+      "acknowledgment": null,
+      "acknowledgment_required": true,
+      "delivery_status": "prepared",
+      "repository": "StegVerse-Labs/stegguardian-wiki",
+      "target_path": "data/executive-rhetoric-ledger/compendium.json"
+    }
+  ],
+  "generated_at": "2026-07-20T07:11:46Z",
+  "source_publication": {
+    "path": "publication/compendium.json",
+    "sha256": "bc915f288745cbb582871384a5895fabdf26e311a725112d720d120afee58d09"
+  }
+}
