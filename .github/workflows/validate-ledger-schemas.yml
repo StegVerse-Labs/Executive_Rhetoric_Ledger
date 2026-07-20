@@ -121,5 +121,16 @@ jobs:
       - name: Validate portable evidence intake
         run: python scripts/validate_portable_evidence_intake.py
 
+      - name: Validate recurring discovery foundation
+        run: python scripts/validate_recurring_discovery.py
+
+      - name: Regenerate deterministic discovery-cycle example
+        run: |
+          python scripts/generate_discovery_cycle.py \
+            --config config/recurring-searches.example.json \
+            --started-at 2026-07-20T06:00:00Z \
+            --output /tmp/generated-cycle.json
+          diff -u discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json /tmp/generated-cycle.json
+
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
