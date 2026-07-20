@@ -11,12 +11,12 @@ Repository state: activated
 Recurring discovery and four-destination propagation: complete
 Current integration goal: governed authoritative producer-adapter expansion
 Current issue: #18
-Latest completed consumer PR: #23
-Latest consumer merge: 6ffa8b02d7d6e80b9c945cf40df59fd9b6adc79d
-Full ledger validation run: 29749431985
-Live reconciliation and routing run: 29749432039
-Producer-adapter expansion state: producer-owned manifests, live retrieval, hashing, quarantine, retry, health, acknowledgments, and governed review routing complete
-Next tranche: cross-cycle chronology reconciliation, producer-side acknowledgment consumption, completion verification, and additional authoritative producer onboarding
+Latest completed consumer PR: #25
+Latest consumer merge: c4b36f734662533acd48eb4e1b40c431f7b88f4d
+Full ledger validation run: 29756116470
+Producer completion reconciliation run: 29756116606
+Producer-adapter expansion state: producer manifests, live retrieval, hashing, quarantine, retry, health, acknowledgments, review routing, chronology reconciliation, completion verification, and reviewed-only eligibility enforcement complete
+Next tranche: producer-side acknowledgment consumption receipts, additional authoritative producer onboarding, and final reviewed-output propagation evidence
 ```
 
 ## Completed Producer-Adapter System
@@ -29,12 +29,14 @@ consumer schemas:
   schemas/producer-adapter.schema.json
   schemas/producer-intake-result.schema.json
   schemas/producer-health.schema.json
+  schemas/producer-completion-state.schema.json
 
 consumer automation:
   scripts/discover_producer_adapters.py
   scripts/reconcile_producer_exports.py
   scripts/process_producer_intake.py
   scripts/route_producer_intake.py
+  scripts/reconcile_producer_completion.py
   .github/workflows/discover-producer-adapters.yml
   .github/workflows/reconcile-producer-exports.yml
 
@@ -46,15 +48,16 @@ consumer outputs:
   producer_intake/acknowledgments/
   producer_intake/review-queue/
   producer_intake/producer-health.json
+  producer_intake/completion-state.json
 ```
 
-PR #19 established declaration-driven producer discovery. PR #20 added deterministic intake hashing, deduplication, quarantine, chronology preservation, and review-required intake results. PR #21 added live manifest retrieval, SHA-256 verification, producer health, declared-backoff retries, and automated reconciliation. PR #23 added deterministic producer-specific acknowledgments and governed pending-review packets.
+PR #19 established declaration-driven producer discovery. PR #20 added deterministic intake hashing, deduplication, quarantine, chronology preservation, and review-required intake results. PR #21 added live manifest retrieval, SHA-256 verification, producer health, declared-backoff retries, and automated reconciliation. PR #23 added deterministic producer-specific acknowledgments and governed pending-review packets. PR #25 added cross-cycle correction and supersession reconciliation, cycle and unresolved-reference detection, acknowledgment-consumption state, capability-completion verification, and reviewed-only compendium eligibility enforcement.
 
 Validation evidence:
 
 ```text
-29749431985  full ledger suite: PASS
-29749432039  live retrieval, intake, acknowledgment, and review routing: PASS
+29756116470  full ledger suite: PASS
+29756116606  producer chronology, completion, and authority reconciliation: PASS
 ```
 
 ## Producer-Owned Manifest Systems
@@ -79,25 +82,26 @@ StegVerse-Labs/Administrations
 scheduled producer discovery
   -> producer-owned declaration validation
   -> producer-owned manifest publication
-  -> live manifest retrieval
-  -> producer identity and manifest hash verification
-  -> export record retrieval and SHA-256 verification
-  -> valid-record staging
-  -> malformed/hash-mismatch quarantine
-  -> deterministic intake result generation
-  -> producer health and retry reconciliation
-  -> producer-specific acknowledgment generation
-  -> governed pending-review packet generation
+  -> live manifest and record retrieval
+  -> repository, path, commit, and SHA-256 verification
+  -> valid-record staging or quarantine
+  -> deterministic intake result
+  -> producer-specific acknowledgment
+  -> governed pending-review packet
+  -> cross-cycle chronology reconciliation
+  -> acknowledgment-consumption state
+  -> producer capability-completion verification
+  -> reviewed-only compendium eligibility check
   -> governed reconciliation PR refresh
 ```
 
 ## Manual-Task Elimination Rule
 
 ```text
-Mechanical producer discovery, manifest publication, retrieval, hashing, validation, acknowledgment, retry, health reconciliation, review routing, and PR refresh remain automated.
+Mechanical producer discovery, manifest publication, retrieval, hashing, validation, acknowledgment, retry, health reconciliation, review routing, chronology reconciliation, completion verification, eligibility checking, and PR refresh remain automated.
 Human authority remains only for final evidentiary review, promotion, publication, and governed producer deprecation.
-Automation may fetch, hash, stage, deduplicate, quarantine, acknowledge, assign review, and retry.
-Automation may not register a producer as authoritative, approve a review, classify claims as true, promote exports, publish unresolved records, or deprecate a producer.
+Automation may fetch, hash, stage, deduplicate, quarantine, acknowledge, assign review, reconcile chronology, verify completion, and identify a durable reviewed receipt.
+Automation may not approve a review, resolve evidentiary meaning, classify claims as true, promote exports, publish unresolved records, or deprecate a producer.
 ```
 
 ## Governance Boundary
@@ -105,25 +109,23 @@ Automation may not register a producer as authoritative, approve a review, class
 ```text
 Producer declaration != producer registration.
 Producer manifest != evidence acceptance.
-Successful retrieval != final admissibility.
-Candidate export != reviewed ledger receipt.
+Chronology link != factual correction determination.
+Acknowledgment consumption != producer acceptance authority.
+Capability completion != evidentiary standing.
+Reviewed-output eligibility requires a durable reviewed receipt.
 Intake acknowledgment != promotion.
 Review assignment != review approval.
-Quarantine != final rejection.
-Producer health != evidentiary standing.
 ```
 
 ## Next Required Tranche
 
 ```text
-1. Reconcile chronology, correction, and supersession chains across repeated intake cycles.
-2. Add producer-side acknowledgment consumption without granting producer acceptance authority.
-3. Verify deterministic completion state for each registered producer capability.
-4. Route reviewed producer records into reviewed-only compendium eligibility.
-5. Discover and onboard additional authoritative political, legal, institutional, and historical producers.
-6. Close Issue #18 only after producer completion-state and reviewed-output propagation evidence are durable.
+1. Install producer-side acknowledgment-consumption receipts in Trumpality and Administrations.
+2. Discover and onboard additional authoritative political, legal, institutional, and historical producers.
+3. Verify at least one reviewed producer record entering the reviewed-only compendium and completed destination propagation chain.
+4. Close Issue #18 only after producer-side consumption and reviewed-output propagation evidence are durable.
 ```
 
 ## Archive Readiness
 
-Issue #18, PRs #19 through #23, producer PRs #1 and #2, canonical producer manifests, workflows, schemas, scripts, validation runs, acknowledgments, review packets, and this handoff preserve all unique continuation information. Earlier chat context is not required.
+Issue #18, PRs #19 through #25, producer PRs #1 and #2, canonical producer manifests, workflows, schemas, scripts, validation runs, acknowledgments, review packets, completion state, and this handoff preserve all unique continuation information. Earlier chat context is not required.
