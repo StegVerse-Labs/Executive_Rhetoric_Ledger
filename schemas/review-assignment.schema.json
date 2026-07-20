@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/review-assignment.schema.json",
+  "title": "Governed Review Assignment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["assignment_id", "subject_id", "subject_type", "queue", "risk_level", "required_authority", "quorum", "packet_refs", "status", "automation_authority"],
+  "properties": {
+    "assignment_id": {"type": "string", "minLength": 1},
+    "subject_id": {"type": "string", "minLength": 1},
+    "subject_type": {"type": "string", "enum": ["candidate", "cluster", "graph", "variance", "backfill"]},
+    "queue": {"type": "string", "enum": ["source-posture", "civil-rights-high-risk", "contradiction-review", "historical-control", "standard-ledger"]},
+    "risk_level": {"type": "string", "enum": ["critical", "high", "medium", "low"]},
+    "required_authority": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "enum": ["evidence-reviewer", "civil-rights-reviewer", "legal-reviewer", "historical-control-reviewer", "ledger-promoter"]}},
+    "quorum": {"type": "integer", "minimum": 1},
+    "packet_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "status": {"type": "string", "enum": ["review-required", "in-review", "decision-recorded", "superseded"]},
+    "decision_receipt_refs": {"type": "array", "items": {"type": "string"}},
+    "automation_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_route", "may_approve", "may_reject", "may_promote"],
+      "properties": {
+        "may_route": {"const": true},
+        "may_approve": {"const": false},
+        "may_reject": {"const": false},
+        "may_promote": {"const": false}
+      }
+    }
+  }
+}
