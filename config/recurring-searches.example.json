@@ -1,0 +1,65 @@
+{
+  "config_id": "ERL-RECURRING-DISCOVERY-BASELINE-001",
+  "enabled": true,
+  "cadence": {
+    "frequency": "daily",
+    "interval": 1,
+    "timezone": "America/Chicago"
+  },
+  "scope": {
+    "topics": [
+      "executive rhetoric",
+      "federal enforcement",
+      "constitutional and civil-rights accountability"
+    ],
+    "time_window": "rolling-14-days-with-historical-links",
+    "jurisdictions": ["United States federal"],
+    "actors": ["President", "Attorney General", "DHS Secretary", "FBI Director"],
+    "agencies": ["Department of Justice", "Federal Bureau of Investigation", "Department of Homeland Security", "Immigration and Customs Enforcement"]
+  },
+  "source_classes": [
+    "primary-legal-record",
+    "official-government",
+    "court-record",
+    "legislative-oversight",
+    "local-reporting",
+    "national-reporting",
+    "advocacy-record"
+  ],
+  "searches": [
+    {
+      "search_id": "captured-topic-refresh",
+      "query_template": "Refresh existing ledger topics for new official actions, corrections, litigation, oversight, and measurable outcomes.",
+      "discovery_class": "captured-topic-refresh",
+      "priority": "critical",
+      "enabled": true
+    },
+    {
+      "search_id": "new-federal-enforcement-incidents",
+      "query_template": "Find newly reported federal enforcement incidents involving use of force, detention, constitutional claims, or changes to investigative responsibility.",
+      "discovery_class": "new-incident",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "search_id": "accountability-chain-contradictions",
+      "query_template": "Find contradictions between public statements, internal guidance, agency practice, court records, congressional oversight, and later policy implementation.",
+      "discovery_class": "contradiction-discovery",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "search_id": "historical-accountability-controls",
+      "query_template": "Find historical controls and precedents for comparable enforcement, civil-rights investigation, agency self-investigation, and executive intervention.",
+      "discovery_class": "control-discovery",
+      "priority": "medium",
+      "enabled": true
+    }
+  ],
+  "review_boundary": {
+    "automation_may_propose": true,
+    "automation_may_publish": false,
+    "required_review_states": ["candidate-generated", "source-posture-reviewed", "ledger-review-required"]
+  },
+  "notes": "Automation creates discovery candidates only. It may not convert reporting into established fact or promote candidates into reviewed ledger receipts."
+}
