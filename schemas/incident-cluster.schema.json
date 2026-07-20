@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/incident-cluster.schema.json",
+  "title": "Executive Rhetoric Ledger Incident Cluster",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cluster_id", "cluster_status", "member_candidate_ids", "member_hashes", "cluster_key", "similarity_method", "review_status", "automation_authority"],
+  "properties": {
+    "cluster_id": {"type": "string", "minLength": 1},
+    "cluster_status": {"type": "string", "const": "candidate-cluster"},
+    "member_candidate_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "member_hashes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "cluster_key": {"type": "string", "minLength": 1},
+    "similarity_method": {"type": "string", "enum": ["exact-content-hash", "normalized-token-jaccard"]},
+    "minimum_similarity": {"type": "number", "minimum": 0, "maximum": 1},
+    "review_status": {"type": "string", "const": "cluster-review-required"},
+    "automation_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_group", "may_merge_records", "may_promote"],
+      "properties": {
+        "may_group": {"type": "boolean", "const": true},
+        "may_merge_records": {"type": "boolean", "const": false},
+        "may_promote": {"type": "boolean", "const": false}
+      }
+    }
+  }
+}

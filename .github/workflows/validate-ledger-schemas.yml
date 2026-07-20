@@ -28,10 +28,9 @@ jobs:
           import json
           from pathlib import Path
           from jsonschema import Draft202012Validator
-          schema_path = Path("schemas/political-influence-tree.schema.json")
-          sample_path = Path("samples/political-influence-tree.sample.json")
-          validator = Draft202012Validator(json.loads(schema_path.read_text()))
-          errors = list(validator.iter_errors(json.loads(sample_path.read_text())))
+          schema = json.loads(Path("schemas/political-influence-tree.schema.json").read_text())
+          sample = json.loads(Path("samples/political-influence-tree.sample.json").read_text())
+          errors = list(Draft202012Validator(schema).iter_errors(sample))
           if errors:
               raise SystemExit("Political influence tree sample failed validation")
           PY
@@ -81,6 +80,9 @@ jobs:
       - name: Validate source adapter and archive capture automation
         run: python scripts/validate_source_capture.py
 
+      - name: Validate deterministic incident clustering
+        run: python scripts/validate_incident_clusters.py
+
       - name: Regenerate deterministic discovery-cycle example
         run: |
           python scripts/generate_discovery_cycle.py \
@@ -93,7 +95,7 @@ jobs:
           expected = json.loads(Path("discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json").read_text())
           generated = json.loads(Path("/tmp/generated-cycle.json").read_text())
           if generated != expected:
-              raise SystemExit("Generated discovery-cycle content does not match the committed fixture.")
+              raise SystemExit("Generated discovery-cycle content does not match fixture")
           PY
 
       - name: Run combined activation validation
