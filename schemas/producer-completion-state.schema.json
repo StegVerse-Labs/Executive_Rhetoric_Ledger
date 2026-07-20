@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-completion-state.schema.json",
+  "title": "Producer Completion State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_at", "producers", "reviewed_output_eligibility", "authority"],
+  "properties": {
+    "generated_at": {"type": "string", "format": "date-time"},
+    "producers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repository", "manifest_live", "records_seen", "records_acknowledged", "records_review_routed", "chronology_state", "acknowledgment_consumption", "capability_complete"],
+        "properties": {
+          "repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+          "manifest_live": {"type": "boolean"},
+          "records_seen": {"type": "integer", "minimum": 0},
+          "records_acknowledged": {"type": "integer", "minimum": 0},
+          "records_review_routed": {"type": "integer", "minimum": 0},
+          "chronology_state": {"enum": ["empty", "consistent", "unresolved-reference", "cycle-detected"]},
+          "acknowledgment_consumption": {"enum": ["none", "available", "complete"]},
+          "capability_complete": {"type": "boolean"}
+        }
+      }
+    },
+    "reviewed_output_eligibility": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["intake_id", "producer_repository", "status", "reason"],
+        "properties": {
+          "intake_id": {"type": "string", "minLength": 1},
+          "producer_repository": {"type": "string"},
+          "status": {"enum": ["ineligible-unreviewed", "eligible-reviewed-only"]},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_reconcile_chronology", "may_record_ack_consumption", "may_mark_reviewed_eligibility", "may_approve_review", "may_promote", "may_publish"],
+      "properties": {
+        "may_reconcile_chronology": {"const": true},
+        "may_record_ack_consumption": {"const": true},
+        "may_mark_reviewed_eligibility": {"const": true},
+        "may_approve_review": {"const": false},
+        "may_promote": {"const": false},
+        "may_publish": {"const": false}
+      }
+    }
+  }
+}
