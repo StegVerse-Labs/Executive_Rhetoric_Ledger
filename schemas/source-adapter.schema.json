@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/source-adapter.schema.json",
+  "title": "Executive Rhetoric Ledger Source Adapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["adapter_id", "enabled", "adapter_type", "source_class", "endpoint", "capture_policy", "review_boundary"],
+  "properties": {
+    "adapter_id": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9_-]+$"},
+    "enabled": {"type": "boolean"},
+    "adapter_type": {"type": "string", "enum": ["local-json", "http-json", "rss-atom", "html-document"]},
+    "source_class": {"type": "string", "enum": ["primary-legal-record", "official-government", "court-record", "legislative-oversight", "original-media", "local-reporting", "national-reporting", "international-reporting", "partisan-or-ideological-reporting", "advocacy-record", "academic-or-expert", "affected-person-or-witness", "historical-archive"]},
+    "endpoint": {"type": "string", "minLength": 1},
+    "request_headers": {"type": "object", "additionalProperties": {"type": "string"}},
+    "timeout_seconds": {"type": "integer", "minimum": 1, "maximum": 120, "default": 30},
+    "capture_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retain_raw", "hash_algorithm", "deduplicate", "archive_directory"],
+      "properties": {
+        "retain_raw": {"type": "boolean", "const": true},
+        "hash_algorithm": {"type": "string", "const": "sha256"},
+        "deduplicate": {"type": "boolean", "const": true},
+        "archive_directory": {"type": "string", "minLength": 1}
+      }
+    },
+    "review_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["automation_may_capture", "automation_may_propose", "automation_may_promote"],
+      "properties": {
+        "automation_may_capture": {"type": "boolean", "const": true},
+        "automation_may_propose": {"type": "boolean", "const": true},
+        "automation_may_promote": {"type": "boolean", "const": false}
+      }
+    }
+  }
+}
