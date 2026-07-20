@@ -30,65 +30,47 @@ jobs:
           from jsonschema import Draft202012Validator
           schema = json.loads(Path("schemas/political-influence-tree.schema.json").read_text())
           sample = json.loads(Path("samples/political-influence-tree.sample.json").read_text())
-          errors = list(Draft202012Validator(schema).iter_errors(sample))
-          if errors:
+          if list(Draft202012Validator(schema).iter_errors(sample)):
               raise SystemExit("Political influence tree sample failed validation")
           PY
 
       - name: Validate embedded source receipts
         run: python scripts/validate_source_receipts.py
-
       - name: Validate producer export examples
         run: python scripts/validate_producer_exports.py
-
       - name: Validate producer acknowledgments
         run: python scripts/validate_producer_acknowledgments.py
-
       - name: Validate validation result receipts
         run: python scripts/validate_validation_results.py
-
       - name: Validate activation state manifest
         run: python scripts/validate_activation_state.py
-
       - name: Validate governance patterns
         run: python scripts/validate_governance_patterns.py
-
       - name: Validate assessment Political Influence Trees
         run: python scripts/validate_assessment_trees.py
-
       - name: Validate primary-record intake queues
         run: python scripts/validate_primary_record_intake.py
-
       - name: Validate individualized force-event packets
         run: python scripts/validate_force_event_packets.py
-
       - name: Validate related repository network
         run: python scripts/validate_related_repository_network.py
-
       - name: Validate repository capability registry
         run: python scripts/validate_repository_capabilities.py
-
       - name: Validate repository contract audit registry
         run: python scripts/validate_repository_contract_audits.py
-
       - name: Validate portable evidence intake
         run: python scripts/validate_portable_evidence_intake.py
-
       - name: Validate recurring discovery foundation
         run: python scripts/validate_recurring_discovery.py
-
       - name: Validate source adapter and archive capture automation
         run: python scripts/validate_source_capture.py
-
       - name: Validate deterministic incident clustering
         run: python scripts/validate_incident_clusters.py
-
+      - name: Validate governed adjacency graph
+        run: python scripts/validate_adjacency_graph.py
       - name: Regenerate deterministic discovery-cycle example
         run: |
-          python scripts/generate_discovery_cycle.py \
-            --config config/recurring-searches.example.json \
-            --started-at 2026-07-20T06:00:00Z \
-            --output /tmp/generated-cycle.json
+          python scripts/generate_discovery_cycle.py --config config/recurring-searches.example.json --started-at 2026-07-20T06:00:00Z --output /tmp/generated-cycle.json
           python - <<'PY'
           import json
           from pathlib import Path
@@ -97,6 +79,5 @@ jobs:
           if generated != expected:
               raise SystemExit("Generated discovery-cycle content does not match fixture")
           PY
-
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
