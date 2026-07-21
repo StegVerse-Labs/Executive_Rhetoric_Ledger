@@ -1,0 +1,71 @@
+name: Materialize Issue 26 Governed Review
+
+on:
+  issue_comment:
+    types: [created, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  materialize:
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.number == 26
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --upgrade jsonschema referencing
+      - name: Fetch Issue 26 comments and producer manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --paginate repos/${{ github.repository }}/issues/26/comments > /tmp/issue26-comments.json
+          gh api repos/StegVerse-Labs/Administrations/contents/datasets/exports/executive-rhetoric-ledger/manifest.json \
+            --jq '.content' | tr -d '\n' | base64 -d > /tmp/administrations-manifest.json
+      - name: Materialize bounded receipt
+        id: materialize
+        run: |
+          rm -rf /tmp/issue26-review
+          python scripts/materialize_issue26_review.py \
+            --comments /tmp/issue26-comments.json \
+            --manifest /tmp/administrations-manifest.json \
+            --receipt /tmp/issue26-review/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json \
+            --state /tmp/issue26-review/state.json
+          created=$(python -c 'import json; print(str(json.load(open("/tmp/issue26-review/state.json"))["receipt_created"]).lower())')
+          echo "created=$created" >> "$GITHUB_OUTPUT"
+      - name: Create or update governed review branch
+        if: steps.materialize.outputs.created == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="governed/issue-26-review-receipt"
+          git fetch origin "$branch" || true
+          if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+            git checkout -B "$branch" "origin/$branch"
+          else
+            git checkout -b "$branch"
+          fi
+          mkdir -p producer_intake/reviewed-receipts producer_intake/review-activation
+          cp /tmp/issue26-review/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json producer_intake/reviewed-receipts/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json
+          python scripts/verify_governed_producer_review.py
+          git config user.name "stegverse-governance-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add producer_intake/reviewed-receipts/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json producer_intake/review-activation/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Record governed Issue 26 review receipt"
+          git push --force-with-lease origin "$branch"
+          existing=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$existing" ]; then
+            gh pr create \
+              --head "$branch" \
+              --base main \
+              --title "Record governed EO 14179 producer review" \
+              --body "Materializes the latest valid Issue #26 human disposition, resolves the producer export SHA-256 automatically, validates scope, and runs the existing reviewed-output activation path. Automation did not create or broaden the decision."
+          fi
