@@ -1,0 +1,76 @@
+name: Aggregate Issue 30 Governed Review
+
+on:
+  issue_comment:
+    types: [created, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  aggregate:
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.number == 30
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Fetch all Issue 30 comments
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --paginate repos/${{ github.repository }}/issues/30/comments > /tmp/issue30-comments.json
+      - name: Aggregate governed reviewer comments
+        run: |
+          rm -rf /tmp/issue30-review
+          mkdir -p /tmp/issue30-review
+          python scripts/aggregate_issue30_review.py \
+            --comments /tmp/issue30-comments.json \
+            --receipt /tmp/issue30-review/RRM-SPI-2025-03-15.json \
+            --state /tmp/issue30-review/state.json
+          cat /tmp/issue30-review/state.json
+      - name: Prepare governed receipt branch
+        id: prepare
+        run: |
+          created=$(python -c 'import json; print(str(json.load(open("/tmp/issue30-review/state.json"))["receipt_created"]).lower())')
+          echo "created=$created" >> "$GITHUB_OUTPUT"
+          if [ "$created" != "true" ]; then
+            exit 0
+          fi
+          branch="governed/issue-30-review-receipt"
+          git fetch origin "$branch" || true
+          if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+            git checkout -B "$branch" "origin/$branch"
+          else
+            git checkout -b "$branch"
+          fi
+          mkdir -p assessments/reviewed-receipts review_state
+          cp /tmp/issue30-review/RRM-SPI-2025-03-15.json assessments/reviewed-receipts/RRM-SPI-2025-03-15.json
+          cp /tmp/issue30-review/state.json review_state/RRM-SPI-2025-03-15.json
+          git config user.name "stegverse-governance-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assessments/reviewed-receipts/RRM-SPI-2025-03-15.json review_state/RRM-SPI-2025-03-15.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Record governed Issue 30 review receipt"
+          git push --force-with-lease origin "$branch"
+      - name: Open or update governed integration PR
+        if: steps.prepare.outputs.created == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="governed/issue-30-review-receipt"
+          existing=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$existing" ]; then
+            gh pr create \
+              --head "$branch" \
+              --base main \
+              --title "Record governed Ruben Ray Martinez review receipt" \
+              --body "Aggregates matching, independently authored Issue #30 reviewer comments into a schema-valid receipt. Automation did not select the disposition or expand reviewer findings. Closes #30 only after validation and reviewed-output propagation complete."
+          fi
