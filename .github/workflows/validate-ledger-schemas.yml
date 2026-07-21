@@ -44,6 +44,23 @@ jobs:
           test -s scripts/discover_producer_adapters.py
           test -s scripts/validate_producer_adapters.py
           echo "Verified governed producer adapter foundation artifacts."
+      - name: Validate governed review gate without a receipt
+        run: |
+          rm -rf /tmp/governed-review
+          python scripts/verify_governed_producer_review.py \
+            --receipt /tmp/governed-review/nonexistent.json \
+            --output /tmp/governed-review/activation.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          state = json.loads(Path('/tmp/governed-review/activation.json').read_text())
+          if state['status'] != 'awaiting-governed-review':
+              raise SystemExit('Missing review receipt did not preserve blocked state')
+          if state['compendium_eligible'] or state['propagation_eligible']:
+              raise SystemExit('Unreviewed producer record became eligible')
+          if state['authority']['automation_created_decision']:
+              raise SystemExit('Automation claimed review authority')
+          PY
       - name: Generate and validate producer intake results
         run: |
           rm -rf /tmp/producer-intake-results /tmp/producer-intake-quarantine
