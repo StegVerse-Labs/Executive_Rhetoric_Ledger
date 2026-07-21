@@ -34,17 +34,18 @@ jobs:
         run: python -m pip install --upgrade jsonschema referencing
       - name: Verify governed review receipt
         run: python scripts/verify_governed_producer_review.py
-      - name: Stop when no approved receipt exists
+      - name: Determine reviewed-only eligibility
         id: gate
         run: |
-          python - <<'PY'
+          ELIGIBLE=$(python - <<'PY'
           import json
           from pathlib import Path
           path = Path('producer_intake/review-activation/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json')
           state = json.loads(path.read_text())
-          with open('$GITHUB_OUTPUT', 'a') as handle:
-              handle.write(f"eligible={'true' if state.get('compendium_eligible') else 'false'}\n")
+          print('true' if state.get('compendium_eligible') else 'false')
           PY
+          )
+          echo "eligible=$ELIGIBLE" >> "$GITHUB_OUTPUT"
       - name: Generate reviewed-only compendium and delivery manifests
         if: steps.gate.outputs.eligible == 'true'
         run: python scripts/generate_compendium_and_deliveries.py
