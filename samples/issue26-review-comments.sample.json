@@ -1,0 +1,8 @@
+[
+  {
+    "id": 260001,
+    "created_at": "2026-07-21T15:00:00Z",
+    "user": {"login": "governed-reviewer"},
+    "body": "ERL-PRODUCER-REVIEW-V1\ndisposition: approved-action-record\nrationale: The record is approved only as evidence that Executive Order 14179 was issued and contains the documented text; embedded claims and broader causation remain unproven.\ndocuments-issuance-and-text: true"
+  }
+]
