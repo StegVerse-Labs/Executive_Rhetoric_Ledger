@@ -1,0 +1,10 @@
+{
+  "producer_repo": "StegVerse-Labs/Administrations",
+  "exports": [
+    {
+      "ingestion_id": "ADMINISTRATIONS-EXPORT-EO14179-ACTION-001",
+      "path": "datasets/exports/executive-rhetoric-ledger/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json",
+      "sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    }
+  ]
+}
