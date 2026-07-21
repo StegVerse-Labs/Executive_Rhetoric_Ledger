@@ -1,0 +1,19 @@
+{
+  "event_id": "RRM-FORCE-003",
+  "case_id": "RRM-SPI-2025-03-15",
+  "event_status": "candidate-review-required",
+  "event_type": "post-force-restraint",
+  "event_date": "2025-03-15",
+  "location": "South Padre Island, Texas",
+  "subject": {"name": "Ruben Ray Martinez", "identity_status": "identified", "citizenship_posture": "reported United States citizen", "role_status": "wounded force subject"},
+  "government_action": {"agency": "Federal and local personnel at the scene", "actor_identity_status": "partially-identified", "action_description": "Personnel controlled the vehicle and scene after the shooting; the timing and nature of restraint and medical response require reconstruction.", "force_tools": ["scene control", "possible restraint"]},
+  "official_assertions": [],
+  "observed_or_reported_evidence": ["Reporting identifies unresolved questions concerning immediate medical response and post-shooting restraint practices.", "The currently catalogued public record is insufficient to reconstruct the full post-shooting timeline."],
+  "material_variances": ["The absence of a complete public medical-response timeline prevents evaluation of whether post-force duties were satisfied."],
+  "prohibited_inferences": ["Missing public records do not prove delayed aid or misconduct.", "Scene-security needs do not automatically resolve medical-response obligations."],
+  "missing_evidence": ["EMS dispatch and arrival records", "Body-camera footage after the firearm discharge", "Medical aid and restraint chronology", "Officer reports concerning scene safety and aid", "Autopsy and emergency-treatment records where lawfully available"],
+  "source_refs": ["research-candidates/2025-ruben-ray-martinez-south-padre-island.md", "Texas Tribune 2026-05-04 reconstruction"],
+  "review_routing": {"queue": "civil-rights-high-risk", "risk_level": "critical", "required_authority": ["evidence-reviewer", "civil-rights-reviewer", "legal-reviewer", "medical-evidence-reviewer"], "minimum_quorum": 2},
+  "classification": {"necessity": "not-established", "proportionality": "not-established", "lawfulness": "not-established", "official_account_reconciled": false, "confidence": "unknown", "notes": "The post-shooting response remains evidence-incomplete."},
+  "authority": {"automation_may_catalogue": true, "automation_may_flag_variance": true, "automation_may_decide_liability": false, "automation_may_find_constitutional_violation": false, "automation_may_publish": false}
+}
