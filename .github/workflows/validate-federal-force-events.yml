@@ -1,0 +1,31 @@
+name: Validate Federal Force Events
+
+on:
+  pull_request:
+    paths:
+      - "schemas/federal-force-event.schema.json"
+      - "assessments/events/RRM-FORCE-*.json"
+      - "scripts/validate_federal_force_events.py"
+      - ".github/workflows/validate-federal-force-events.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "schemas/federal-force-event.schema.json"
+      - "assessments/events/RRM-FORCE-*.json"
+      - "scripts/validate_federal_force_events.py"
+      - ".github/workflows/validate-federal-force-events.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Validate federal force-event packets
+        run: python scripts/validate_federal_force_events.py
