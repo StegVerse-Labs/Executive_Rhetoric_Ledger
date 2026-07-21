@@ -1,0 +1,22 @@
+{
+  "review_receipt_id": "REPLACE-WITH-DURABLE-ID",
+  "review_issue": 26,
+  "reviewer": "REPLACE-WITH-REVIEWER-IDENTITY",
+  "reviewed_at": "REPLACE-WITH-ISO-8601-TIMESTAMP",
+  "producer_repository": "StegVerse-Labs/Administrations",
+  "intake_id": "ADMINISTRATIONS-EXPORT-EO14179-ACTION-001",
+  "export_sha256": "REPLACE-WITH-VERIFIED-64-CHARACTER-SHA256",
+  "disposition": "REPLACE-WITH-ONE-ALLOWED-DISPOSITION",
+  "rationale": "Record the bounded evidentiary rationale. Approval may cover issuance and text of EO 14179 only; it may not establish truth of embedded rhetoric or broader causation.",
+  "scope": {
+    "documents_issuance_and_text": false,
+    "proves_embedded_rhetoric_truth": false,
+    "permits_broader_causation_claim": false
+  },
+  "authority": {
+    "human_reviewed": true,
+    "automation_may_verify": true,
+    "automation_may_create_decision": false,
+    "automation_may_expand_scope": false
+  }
+}
