@@ -1,0 +1,19 @@
+{
+  "event_id": "RRM-FORCE-002",
+  "case_id": "RRM-SPI-2025-03-15",
+  "event_status": "candidate-review-required",
+  "event_type": "firearm-discharge",
+  "event_date": "2025-03-15",
+  "location": "South Padre Island, Texas",
+  "subject": {"name": "Ruben Ray Martinez", "identity_status": "identified", "citizenship_posture": "reported United States citizen", "role_status": "driver and fatal-force subject"},
+  "government_action": {"agency": "Homeland Security Investigations", "actor_identity_status": "identified in later records", "action_description": "An HSI agent fired into Martinez's vehicle, fatally wounding him.", "force_tools": ["firearm"]},
+  "official_assertions": ["DHS described the shooting as defensive force after Martinez intentionally struck an agent with the vehicle."],
+  "observed_or_reported_evidence": ["Released recordings reportedly show slow or nearly stationary vehicle movement around the time shots were fired.", "The recordings do not fully show every movement beside the driver's window.", "Martinez died from the gunfire."],
+  "material_variances": ["The timing, vehicle movement, line of sight, agent position, commands, and perceived threat require frame-level reconstruction before the defensive-force account can be reconciled."],
+  "prohibited_inferences": ["A fatal outcome does not alone establish unlawfulness.", "A grand-jury non-indictment does not establish that every factual element of the public account was proven.", "Incomplete video does not permit filling gaps in favor of either party."],
+  "missing_evidence": ["Complete synchronized recordings", "Firearms and trajectory analysis", "Agent use-of-force reports and compelled statements", "Component use-of-force policy applicable on the event date", "Autopsy and medical records where lawfully available", "Evidence presented to the grand jury"],
+  "source_refs": ["research-candidates/2025-ruben-ray-martinez-south-padre-island.md", "Texas Tribune 2026-02-20 records reporting", "Texas Tribune 2026-03-06 video reporting", "Associated Press 2026 reporting", "Reuters 2026-02-21 reporting"],
+  "review_routing": {"queue": "civil-rights-high-risk", "risk_level": "critical", "required_authority": ["evidence-reviewer", "civil-rights-reviewer", "legal-reviewer"], "minimum_quorum": 2},
+  "classification": {"necessity": "disputed", "proportionality": "not-established", "lawfulness": "not-established", "official_account_reconciled": false, "confidence": "low", "notes": "The fatal firearm discharge is established; justification and legal standing remain unresolved."},
+  "authority": {"automation_may_catalogue": true, "automation_may_flag_variance": true, "automation_may_decide_liability": false, "automation_may_find_constitutional_violation": false, "automation_may_publish": false}
+}
