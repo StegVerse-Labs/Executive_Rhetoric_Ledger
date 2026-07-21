@@ -1,0 +1,48 @@
+name: Monitor Ruben Ray Martinez Evidence
+
+on:
+  schedule:
+    - cron: "17 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run case evidence monitor
+        run: python scripts/run_case_evidence_monitor.py
+      - name: Create or update governed discovery PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="discovery/ruben-ray-martinez-evidence"
+          git fetch origin "$branch" || true
+          if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+            git checkout -B "$branch" "origin/$branch"
+          else
+            git checkout -b "$branch"
+          fi
+          git config user.name "stegverse-discovery-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add discovery_candidates/ruben-ray-martinez/latest.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Refresh Ruben Ray Martinez evidence candidates"
+          git push --force-with-lease origin "$branch"
+          existing=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$existing" ]; then
+            gh pr create \
+              --head "$branch" \
+              --base main \
+              --title "Refresh Ruben Ray Martinez evidence candidates" \
+              --body "Daily keyless discovery refresh for Issue #30. Results remain candidate-generated with no evidentiary or publication effect until governed review."
+          fi

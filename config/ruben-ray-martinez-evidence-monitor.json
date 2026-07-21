@@ -1,0 +1,31 @@
+{
+  "monitor_id": "ERL-RRM-EVIDENCE-MONITOR-001",
+  "case_id": "RRM-SPI-2025-03-15",
+  "enabled": true,
+  "cadence": "daily",
+  "queries": [
+    "\"Ruben Ray Martinez\" South Padre Island",
+    "\"Ruben Ray Martinez\" DHS HSI",
+    "\"Ruben Ray Martinez\" body camera",
+    "\"Ruben Ray Martinez\" grand jury",
+    "\"Ruben Ray Martinez\" inspector general",
+    "\"Ruben Ray Martinez\" lawsuit"
+  ],
+  "evidence_gaps": [
+    "complete synchronized body-camera and security recordings",
+    "HSI use-of-force reports and applicable component policy",
+    "agent and witness statements",
+    "medical-response and restraint chronology",
+    "autopsy, firearms, trajectory, and vehicle evidence",
+    "grand-jury evidence or later court filings",
+    "DHS inspector-general, congressional, administrative, or civil findings"
+  ],
+  "review_boundary": {
+    "automation_may_discover": true,
+    "automation_may_deduplicate": true,
+    "automation_may_stage_candidates": true,
+    "automation_may_establish_fact": false,
+    "automation_may_change_review_disposition": false,
+    "automation_may_publish": false
+  }
+}
