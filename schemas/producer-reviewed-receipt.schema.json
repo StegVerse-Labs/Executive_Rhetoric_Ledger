@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/producer-reviewed-receipt.schema.json",
+  "title": "Governed Producer Reviewed Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["review_receipt_id", "review_issue", "reviewer", "reviewed_at", "producer_repository", "intake_id", "export_sha256", "disposition", "rationale", "scope", "authority"],
+  "properties": {
+    "review_receipt_id": {"type": "string", "minLength": 1},
+    "review_issue": {"const": 26},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "producer_repository": {"const": "StegVerse-Labs/Administrations"},
+    "intake_id": {"const": "ADMINISTRATIONS-EXPORT-EO14179-ACTION-001"},
+    "export_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "disposition": {"enum": ["approved-action-record", "needs-primary-source", "needs-context-revision", "rejected-unsupported", "rejected-out-of-scope"]},
+    "rationale": {"type": "string", "minLength": 20},
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["documents_issuance_and_text", "proves_embedded_rhetoric_truth", "permits_broader_causation_claim"],
+      "properties": {
+        "documents_issuance_and_text": {"type": "boolean"},
+        "proves_embedded_rhetoric_truth": {"const": false},
+        "permits_broader_causation_claim": {"const": false}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["human_reviewed", "automation_may_verify", "automation_may_create_decision", "automation_may_expand_scope"],
+      "properties": {
+        "human_reviewed": {"const": true},
+        "automation_may_verify": {"const": true},
+        "automation_may_create_decision": {"const": false},
+        "automation_may_expand_scope": {"const": false}
+      }
+    }
+  }
+}
