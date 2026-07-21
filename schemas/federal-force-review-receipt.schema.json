@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/federal-force-review-receipt.schema.json",
+  "title": "Governed Federal Force Review Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["receipt_version", "issue_number", "case_id", "reviewed_event_ids", "disposition", "reviewers", "findings", "evidence_limits", "created_at", "authority"],
+  "properties": {
+    "receipt_version": {"const": "1.0"},
+    "issue_number": {"const": 30},
+    "case_id": {"const": "RRM-SPI-2025-03-15"},
+    "reviewed_event_ids": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"enum": ["RRM-FORCE-001", "RRM-FORCE-002", "RRM-FORCE-003"]}},
+    "disposition": {"enum": ["accepted-with-limitations", "needs-more-evidence", "disputed", "rejected-unsupported", "rejected-out-of-scope"]},
+    "reviewers": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["github_login", "authority", "comment_id", "comment_created_at"],
+        "properties": {
+          "github_login": {"type": "string", "minLength": 1},
+          "authority": {"enum": ["evidence-reviewer", "civil-rights-reviewer", "legal-reviewer", "medical-evidence-reviewer"]},
+          "comment_id": {"type": "integer", "minimum": 1},
+          "comment_created_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "findings": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "evidence_limits": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "created_at": {"type": "string", "format": "date-time"},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["automation_aggregated_comments", "automation_selected_disposition", "automation_expanded_findings", "publication_authorized"],
+      "properties": {
+        "automation_aggregated_comments": {"const": true},
+        "automation_selected_disposition": {"const": false},
+        "automation_expanded_findings": {"const": false},
+        "publication_authorized": {"type": "boolean"}
+      }
+    }
+  }
+}
