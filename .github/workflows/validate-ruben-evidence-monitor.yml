@@ -1,0 +1,46 @@
+name: Validate Ruben Ray Martinez Evidence Monitor
+
+on:
+  pull_request:
+    paths:
+      - "config/ruben-ray-martinez-evidence-monitor.json"
+      - "scripts/run_case_evidence_monitor.py"
+      - "samples/ruben-ray-martinez-news.sample.xml"
+      - ".github/workflows/monitor-ruben-ray-martinez-evidence.yml"
+      - ".github/workflows/validate-ruben-evidence-monitor.yml"
+  push:
+    branches: [main]
+    paths:
+      - "config/ruben-ray-martinez-evidence-monitor.json"
+      - "scripts/run_case_evidence_monitor.py"
+      - "samples/ruben-ray-martinez-news.sample.xml"
+      - ".github/workflows/monitor-ruben-ray-martinez-evidence.yml"
+      - ".github/workflows/validate-ruben-evidence-monitor.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Generate deterministic discovery state
+        run: |
+          python scripts/run_case_evidence_monitor.py \
+            --fixture samples/ruben-ray-martinez-news.sample.xml \
+            --generated-at 2026-07-21T12:30:00Z \
+            --output /tmp/ruben-monitor.json
+      - name: Verify candidate-only authority
+        run: |
+          python - <<'PY'
+          import json
+          state = json.load(open('/tmp/ruben-monitor.json'))
+          assert state['status'] == 'healthy'
+          assert state['candidate_count'] == 1
+          assert state['candidates'][0]['review_status'] == 'candidate-generated'
+          assert state['candidates'][0]['evidence_effect'] == 'none-until-reviewed'
+          assert state['authority']['automation_may_establish_fact'] is False
+          assert state['authority']['automation_may_change_review_disposition'] is False
+          assert state['authority']['automation_may_publish'] is False
+          PY
