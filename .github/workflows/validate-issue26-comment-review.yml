@@ -1,0 +1,67 @@
+name: Validate Issue 26 Comment Review
+
+on:
+  pull_request:
+    paths:
+      - "scripts/materialize_issue26_review.py"
+      - "samples/issue26-review-comments.sample.json"
+      - "samples/issue26-administrations-manifest.sample.json"
+      - ".github/workflows/materialize-issue26-review.yml"
+      - ".github/workflows/validate-issue26-comment-review.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/materialize_issue26_review.py"
+      - "samples/issue26-review-comments.sample.json"
+      - "samples/issue26-administrations-manifest.sample.json"
+      - ".github/workflows/materialize-issue26-review.yml"
+      - ".github/workflows/validate-issue26-comment-review.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --upgrade jsonschema referencing
+      - name: Materialize deterministic receipt
+        run: |
+          rm -rf /tmp/issue26-test
+          python scripts/materialize_issue26_review.py \
+            --comments samples/issue26-review-comments.sample.json \
+            --manifest samples/issue26-administrations-manifest.sample.json \
+            --receipt /tmp/issue26-test/receipt.json \
+            --state /tmp/issue26-test/state.json
+          python - <<'PY'
+          import json
+          receipt = json.load(open('/tmp/issue26-test/receipt.json'))
+          state = json.load(open('/tmp/issue26-test/state.json'))
+          assert state['receipt_created'] is True
+          assert state['manual_mechanics_remaining'] is False
+          assert state['human_authority_remaining'] is False
+          assert receipt['export_sha256'] == '0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef'
+          assert receipt['disposition'] == 'approved-action-record'
+          assert receipt['scope']['documents_issuance_and_text'] is True
+          assert receipt['scope']['proves_embedded_rhetoric_truth'] is False
+          assert receipt['scope']['permits_broader_causation_claim'] is False
+          assert receipt['authority']['automation_may_create_decision'] is False
+          PY
+      - name: Prove absent comment remains blocked
+        run: |
+          echo '[]' > /tmp/no-comments.json
+          rm -rf /tmp/issue26-blocked
+          python scripts/materialize_issue26_review.py \
+            --comments /tmp/no-comments.json \
+            --manifest samples/issue26-administrations-manifest.sample.json \
+            --receipt /tmp/issue26-blocked/receipt.json \
+            --state /tmp/issue26-blocked/state.json
+          test ! -e /tmp/issue26-blocked/receipt.json
+          python - <<'PY'
+          import json
+          state = json.load(open('/tmp/issue26-blocked/state.json'))
+          assert state['status'] == 'awaiting-governed-review'
+          assert state['manual_mechanics_remaining'] is False
+          assert state['human_authority_remaining'] is True
+          PY
