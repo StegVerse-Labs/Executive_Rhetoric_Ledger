@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate individualized force-event packets and their cross-record links."""
+"""Validate Delaney Hall individualized force-event packets and their cross-record links."""
 
 from __future__ import annotations
 
@@ -50,9 +50,9 @@ def main() -> int:
         print(f"FAIL: unable to read {ASSESSMENT_INDEX.relative_to(ROOT)}: {exc}", file=sys.stderr)
         return 1
 
-    files = sorted(EVENT_DIR.glob("*.json"))
+    files = sorted(EVENT_DIR.glob("DH-FORCE-*.json"))
     if not files:
-        print("FAIL: no force-event packets found", file=sys.stderr)
+        print("FAIL: no Delaney Hall force-event packets found", file=sys.stderr)
         return 1
 
     failures: list[str] = []
@@ -122,7 +122,7 @@ def main() -> int:
         return 1
 
     print(
-        f"Validated {len(files)} individualized force-event packet(s), filenames, and assessment-index links."
+        f"Validated {len(files)} Delaney Hall individualized force-event packet(s), filenames, and assessment-index links."
     )
     return 0
 

@@ -1,0 +1,19 @@
+{
+  "event_id": "RRM-FORCE-001",
+  "case_id": "RRM-SPI-2025-03-15",
+  "event_status": "candidate-review-required",
+  "event_type": "vehicle-encounter",
+  "event_date": "2025-03-15",
+  "location": "South Padre Island, Texas",
+  "subject": {"name": "Ruben Ray Martinez", "identity_status": "identified", "citizenship_posture": "reported United States citizen", "role_status": "driver"},
+  "government_action": {"agency": "Homeland Security Investigations assisting local police", "actor_identity_status": "partially-identified", "action_description": "Federal agents interacted with and positioned around Martinez's vehicle near a traffic-control scene.", "force_tools": []},
+  "official_assertions": ["DHS stated that Martinez intentionally struck or ran over an agent with the vehicle.", "Records describe an agent receiving treatment for a knee injury."],
+  "observed_or_reported_evidence": ["Released body-camera and security footage reportedly shows the vehicle moving slowly or nearly stationary near the time of the shooting.", "Brake lights are visible in released footage.", "Audio reportedly includes an instruction to keep moving followed by commands to stop.", "The passenger disputed intentional contact with an agent."],
+  "material_variances": ["The visible vehicle movement and conflicting commands require reconciliation with the assertion of an intentional vehicle assault.", "The available footage does not show every movement beside the driver's window."],
+  "prohibited_inferences": ["Video variance alone does not prove criminal liability or constitutional violation.", "An agent injury does not by itself establish intent or complete chronology."],
+  "missing_evidence": ["Complete unedited body-camera and security recordings", "Scene diagram and vehicle telemetry if available", "All agent and witness statements", "Medical documentation concerning the reported agent injury", "Dispatch and command records"],
+  "source_refs": ["research-candidates/2025-ruben-ray-martinez-south-padre-island.md", "Texas Tribune 2026-03-06 reporting", "Texas Tribune 2026-05-04 reconstruction", "CBS News body-camera analysis"],
+  "review_routing": {"queue": "civil-rights-high-risk", "risk_level": "critical", "required_authority": ["evidence-reviewer", "civil-rights-reviewer", "legal-reviewer"], "minimum_quorum": 2},
+  "classification": {"necessity": "not-established", "proportionality": "not-established", "lawfulness": "not-established", "official_account_reconciled": false, "confidence": "low", "notes": "Chronology and intent remain unresolved."},
+  "authority": {"automation_may_catalogue": true, "automation_may_flag_variance": true, "automation_may_decide_liability": false, "automation_may_find_constitutional_violation": false, "automation_may_publish": false}
+}
