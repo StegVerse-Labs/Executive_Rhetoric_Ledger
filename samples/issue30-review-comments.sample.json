@@ -1,0 +1,14 @@
+[
+  {
+    "id": 300001,
+    "created_at": "2026-07-21T14:00:00Z",
+    "user": {"login": "evidence-reviewer-one"},
+    "body": "ERL-REVIEW-V1\ndisposition: accepted-with-limitations\nauthority: evidence-reviewer\nfinding: The fatal shooting and material variance between the public account and released recordings are sufficiently supported for constrained catalogue treatment.\nevidence-limit: Complete synchronized recordings, component reports, medical records, and grand-jury evidence remain unavailable."
+  },
+  {
+    "id": 300002,
+    "created_at": "2026-07-21T14:05:00Z",
+    "user": {"login": "civil-rights-reviewer-two"},
+    "body": "ERL-REVIEW-V1\ndisposition: accepted-with-limitations\nauthority: civil-rights-reviewer\nfinding: The case warrants reviewed inclusion as an unresolved federal fatal-force event without a final liability or constitutional conclusion.\nevidence-limit: The available public record does not complete the threat, intent, medical-response, or legal-authority reconstruction."
+  }
+]
