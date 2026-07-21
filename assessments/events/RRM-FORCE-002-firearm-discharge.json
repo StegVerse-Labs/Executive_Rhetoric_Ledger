@@ -6,7 +6,7 @@
   "event_date": "2025-03-15",
   "location": "South Padre Island, Texas",
   "subject": {"name": "Ruben Ray Martinez", "identity_status": "identified", "citizenship_posture": "reported United States citizen", "role_status": "driver and fatal-force subject"},
-  "government_action": {"agency": "Homeland Security Investigations", "actor_identity_status": "identified in later records", "action_description": "An HSI agent fired into Martinez's vehicle, fatally wounding him.", "force_tools": ["firearm"]},
+  "government_action": {"agency": "Homeland Security Investigations", "actor_identity_status": "identified", "action_description": "An HSI agent, identified in later records, fired into Martinez's vehicle, fatally wounding him.", "force_tools": ["firearm"]},
   "official_assertions": ["DHS described the shooting as defensive force after Martinez intentionally struck an agent with the vehicle."],
   "observed_or_reported_evidence": ["Released recordings reportedly show slow or nearly stationary vehicle movement around the time shots were fired.", "The recordings do not fully show every movement beside the driver's window.", "Martinez died from the gunfire."],
   "material_variances": ["The timing, vehicle movement, line of sight, agent position, commands, and perceived threat require frame-level reconstruction before the defensive-force account can be reconciled."],
