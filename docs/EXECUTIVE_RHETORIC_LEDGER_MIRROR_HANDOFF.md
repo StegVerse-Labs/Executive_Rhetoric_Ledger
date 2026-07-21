@@ -15,8 +15,9 @@ Latest completed consumer PR: #25
 Latest consumer merge: c4b36f734662533acd48eb4e1b40c431f7b88f4d
 Full ledger validation run: 29756116470
 Producer completion reconciliation run: 29756116606
-Producer-adapter expansion state: producer manifests, live retrieval, hashing, quarantine, retry, health, acknowledgments, review routing, chronology reconciliation, completion verification, and reviewed-only eligibility enforcement complete
-Next tranche: producer-side acknowledgment consumption receipts, additional authoritative producer onboarding, and final reviewed-output propagation evidence
+Producer-side acknowledgment consumption: installed in both declared producers
+Producer-adapter expansion state: mechanically complete through producer-owned acknowledgment observation and reviewed-only eligibility enforcement
+Remaining authority gate: one actual governed reviewed producer receipt followed by compendium inclusion and four-destination propagation evidence
 ```
 
 ## Completed Producer-Adapter System
@@ -60,20 +61,24 @@ Validation evidence:
 29756116606  producer chronology, completion, and authority reconciliation: PASS
 ```
 
-## Producer-Owned Manifest Systems
+## Producer-Owned Systems
 
 ```text
 StegVerse-Labs/Trumpality
   declaration merge: 8a62f7c0d2b754edf8b0dfde84956b5074abcd90
   manifest-system merge: c8a4bc85649bcce2b1aeabe805e2e07023ffbcf8
+  acknowledgment-consumption merge: 0ac8f7f7792b796f1e6e2978032c2eddcb565efd
   canonical manifest: datasets/exports/executive-rhetoric-ledger/manifest.json
-  current state: valid empty manifest; future emitted candidates populate automatically
+  consumption receipts: data/receipts/executive-rhetoric-ledger-acknowledgments/
+  current state: valid empty manifest; future candidates and acknowledgments are handled automatically
 
 StegVerse-Labs/Administrations
   declaration merge: 47190b72646170a6fd1e76ec9e0f3a1cb3e028f7
   manifest-system merge: a96262311b199b5124c78367e8ebe372bd7c4578
+  acknowledgment-consumption merge: 2e6e0d225dd2c7f8b631f1e9a1e0a776c44893ee
   canonical manifest: exports/executive-rhetoric-ledger/manifest.json
-  current state: live manifest with SHA-256-bound EO 14179 action-record candidate
+  consumption receipts: receipts/executive-rhetoric-ledger-acknowledgments/
+  current state: live SHA-256-bound EO 14179 action-record candidate; acknowledgment observation automated
 ```
 
 ## Automated Chain
@@ -86,22 +91,22 @@ scheduled producer discovery
   -> repository, path, commit, and SHA-256 verification
   -> valid-record staging or quarantine
   -> deterministic intake result
-  -> producer-specific acknowledgment
+  -> consumer-owned acknowledgment
+  -> producer-owned acknowledgment-consumption receipt
   -> governed pending-review packet
   -> cross-cycle chronology reconciliation
-  -> acknowledgment-consumption state
   -> producer capability-completion verification
-  -> reviewed-only compendium eligibility check
+  -> durable reviewed-receipt eligibility check
   -> governed reconciliation PR refresh
 ```
 
 ## Manual-Task Elimination Rule
 
 ```text
-Mechanical producer discovery, manifest publication, retrieval, hashing, validation, acknowledgment, retry, health reconciliation, review routing, chronology reconciliation, completion verification, eligibility checking, and PR refresh remain automated.
+Mechanical producer discovery, manifest publication, retrieval, hashing, validation, acknowledgment, acknowledgment consumption, retry, health reconciliation, review routing, chronology reconciliation, completion verification, eligibility checking, and PR refresh remain automated.
 Human authority remains only for final evidentiary review, promotion, publication, and governed producer deprecation.
-Automation may fetch, hash, stage, deduplicate, quarantine, acknowledge, assign review, reconcile chronology, verify completion, and identify a durable reviewed receipt.
-Automation may not approve a review, resolve evidentiary meaning, classify claims as true, promote exports, publish unresolved records, or deprecate a producer.
+Automation may observe and bind a governed review decision after it exists.
+Automation may not create, infer, or simulate review approval.
 ```
 
 ## Governance Boundary
@@ -112,20 +117,23 @@ Producer manifest != evidence acceptance.
 Chronology link != factual correction determination.
 Acknowledgment consumption != producer acceptance authority.
 Capability completion != evidentiary standing.
-Reviewed-output eligibility requires a durable reviewed receipt.
+Reviewed-output eligibility requires a durable governed reviewed receipt.
 Intake acknowledgment != promotion.
 Review assignment != review approval.
+No reviewed receipt currently exists for ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.
 ```
 
 ## Next Required Tranche
 
 ```text
-1. Install producer-side acknowledgment-consumption receipts in Trumpality and Administrations.
-2. Discover and onboard additional authoritative political, legal, institutional, and historical producers.
-3. Verify at least one reviewed producer record entering the reviewed-only compendium and completed destination propagation chain.
-4. Close Issue #18 only after producer-side consumption and reviewed-output propagation evidence are durable.
+1. Receive a genuine governed review decision for a producer review packet.
+2. Validate and bind that durable reviewed receipt without changing its authority.
+3. Include the reviewed producer record in the reviewed-only compendium.
+4. Verify the updated compendium through all four destination-owned acknowledgment chains.
+5. Continue declaration-driven discovery for additional producers; do not hard-code or fabricate one merely to close the issue.
+6. Close Issue #18 only after reviewed-output propagation evidence is durable.
 ```
 
 ## Archive Readiness
 
-Issue #18, PRs #19 through #25, producer PRs #1 and #2, canonical producer manifests, workflows, schemas, scripts, validation runs, acknowledgments, review packets, completion state, and this handoff preserve all unique continuation information. Earlier chat context is not required.
+Issue #18, PRs #19 through #25, producer PRs #1 through #3, canonical producer manifests, acknowledgment-consumption workflows, validation runs, completion state, and this handoff preserve all unique continuation information. Earlier chat context is not required.
