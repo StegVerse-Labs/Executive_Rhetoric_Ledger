@@ -27,6 +27,7 @@ Generalization must remove current identifiers without weakening the attribution
 - `registers/presidential-dhs-ice-rhetoric-policy-alignment/trump-physical-source-manifest.md`
 - `research-candidates/2026-07-14-ice-temporary-vehicle-stop-limits-after-fatal-shootings.md`
 - `incident-evidence-streams/2026-07-ice-vehicle-stop-shootings-evidentiary-revision.md`
+- `research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md`
 
 ## Stage-two attribution and reconstruction mechanisms
 
@@ -157,6 +158,41 @@ The SEC record therefore has a materially newer posture than the uploaded narrat
 
 The machine-readable assessment explicitly does not establish criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or historical uniqueness. The intake queue identifies custodians, activation effects, and evidence boundaries for twelve primary-record classes.
 
+## xAI Colossus 2 environmental-justice candidate
+
+Installed for governed review:
+
+- `research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md`
+
+Current posture:
+
+```yaml
+record_type: "research-candidate"
+classification:
+  - "corporate-aligned executive rhetoric"
+  - "environmental-justice risk"
+  - "disparate procedural protection candidate"
+  - "national-security justification for private infrastructure"
+  - "regulatory-exemption and enforcement-gap candidate"
+  - "civil-rights-high-risk review queue"
+final_legal_conclusion: false
+primary_records: "required"
+control_comparison: "required"
+independent_review: "pending"
+```
+
+The candidate preserves reporting that xAI deployed 59 gas turbines associated with Colossus 2, the dispute over temporary or portable classification and federal clean-air permitting, the proximity of predominantly Black communities with elevated respiratory-disease burdens, Mississippi's permit posture, the NAACP litigation, and reported federal national-security and economic-interest arguments. It explicitly separates environmental-justice concern, disparate-impact evidence, intentional-discrimination proof, Clean Air Act questions, and formal civil-rights liability.
+
+The preserved rhetorical framing is:
+
+```text
+The community bears the risk.
+The corporation receives the presumption.
+The government supplies the justification.
+```
+
+This framing is recorded as a user-supplied interpretive claim and is not promoted as an adjudicated finding.
+
 ## Schema generalization completed
 
 `schemas/primary-record-intake.schema.json` formerly required Delaney Hall-only identifiers matching `DH-INTAKE-*`. It now supports topic-specific uppercase identifiers while retaining compatibility with existing Delaney Hall records.
@@ -184,13 +220,17 @@ The machine-readable assessment explicitly does not establish criminal liability
 - verify final SEC, NLRB, FEC, waiver, and case-level disposition states;
 - install a reproducible historical control comparison for the DOGE/Musk assessment;
 - create an independent review and validation receipt after source acquisition;
+- acquire and preserve Reuters, MDEQ, DOJ, EPA, court, CDC, Census, NAACP, Earthjustice, SELC, and xAI primary or source-posture receipts for the Colossus 2 candidate;
+- reconcile turbine counts, permit coverage, operating dates, emissions controls, and temporary-equipment classifications;
+- build a comparable-project control set for the Colossus 2 candidate;
+- track judicial, regulatory, emissions, and community-health outcomes;
 - confirm CI validation for the new Political Influence Tree and intake queue;
 - install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki` when the register reaches release posture.
 
 ## Release posture
 
-The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, a generalized public-report publication packet is installed, and the DOGE/Musk record now has a machine-readable Political Influence Tree, governance review, reusable intake schema, three initial receipts, and a twelve-item acquisition queue. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, final binary publication receipts, claim-level DOGE/Musk primary records, controls, and final validation remain incomplete.
+The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, a generalized public-report publication packet is installed, the DOGE/Musk record now has a machine-readable Political Influence Tree, governance review, reusable intake schema, three initial receipts, and a twelve-item acquisition queue, and the xAI Colossus 2 environmental-justice and regulatory-exemption record is now durably preserved as a governed research candidate. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, final binary publication receipts, claim-level DOGE/Musk primary records, Colossus 2 primary records and controls, and final validation remain incomplete.
 
 ## Archive readiness
 
-This handoff preserves the current mechanisms, installed DOGE/Musk machine records, source posture, unresolved primary-record classes, current validation boundary, remaining files, and next integration work. The complete thread is ready for archiving only after the active session either completes or durably hands off the remaining adjacent tasks; at present this session still owns further actionable repository work.
+This handoff preserves the current mechanisms, installed DOGE/Musk machine records, the xAI Colossus 2 candidate, source posture, unresolved primary-record classes, current validation boundary, remaining files, and next integration work. The complete thread is ready for archiving without any additional part of the thread needed to move forward.
