@@ -1,0 +1,96 @@
+{
+  "topic_id": "PIT-MODERN-2026-XAI-COLOSSUS2-EJ",
+  "packet_status": "initial-source-posture",
+  "created_date": "2026-07-22",
+  "last_reviewed": "2026-07-22",
+  "final_legal_conclusion": false,
+  "notes": "Initial source-posture packet for the xAI Colossus 2 environmental-justice and regulatory-exemption candidate. These receipts establish what sources reported, alleged, or publicly argued; they do not substitute for the underlying permit, docket, emissions, civil-rights, or agency records.",
+  "sources": [
+    {
+      "source_id": "SRC-2026-XAI-COLOSSUS2-AP-DOJ-001",
+      "title": "In boost to Musk, Justice Department seeks to dismiss air pollution lawsuit against xAI data center",
+      "url": "https://apnews.com/article/musk-xai-data-center-memphis-pollution-naacp-0e981ca0508d7e4144662392d9d66ab2",
+      "archive_url": "",
+      "access_date": "2026-07-22",
+      "publication_date": "",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "institutional-response-source",
+      "verification_status": "verified-secondary",
+      "admissibility_use": "admissible-for-court-posture",
+      "confidence": "high",
+      "red_flags": [
+        "no-primary-source-linked",
+        "archive-needed",
+        "missing-date"
+      ],
+      "supported_record": [
+        "Associated Press reported that DOJ sought to intervene and dismiss the lawsuit.",
+        "Associated Press reported that DOJ framed the data center as critical to the economy and the U.S. military and invoked national security, energy independence, and innovation.",
+        "Associated Press reported the NAACP's Clean Air Act allegations and the opposing positions of Mississippi officials, environmental counsel, and xAI or SpaceX representatives."
+      ],
+      "limitations": [
+        "The receipt proves the AP report and quoted public positions, not the truth of every underlying allegation.",
+        "The complete DOJ motion, declarations, exhibits, docket history, and court ruling remain required.",
+        "The article page did not expose a reliable publication date in the retrieved metadata, so the date remains unfilled pending verification."
+      ],
+      "notes": "Use to establish reported DOJ intervention posture and the national-security/economic framing. Do not use as a substitute for the filed motion or as proof of Clean Air Act liability."
+    },
+    {
+      "source_id": "SRC-2026-XAI-COLOSSUS2-NAACP-001",
+      "title": "NAACP Sues xAI for Illegal Pollution from Data Center Power Plant",
+      "url": "https://naacp.org/articles/naacp-sues-xai-illegal-pollution-data-center-power-plant",
+      "archive_url": "",
+      "access_date": "2026-07-22",
+      "publication_date": "",
+      "source_type": "advocacy-material",
+      "institutional_proximity": "interested-party",
+      "evidence_role": "surface-claim-source",
+      "verification_status": "verified-secondary",
+      "admissibility_use": "admissible-for-claim-text",
+      "confidence": "high",
+      "red_flags": [
+        "advocacy-source-used-as-factual-basis",
+        "archive-needed",
+        "missing-date"
+      ],
+      "supported_record": [
+        "Establishes the NAACP's public allegations, requested accountability, and litigation theory.",
+        "Identifies the complainant's stated environmental-justice and community-health concerns."
+      ],
+      "limitations": [
+        "The source is an interested-party account and does not establish the truth of its allegations.",
+        "The complaint, declarations, exhibits, docket entries, and court findings remain required."
+      ],
+      "notes": "Admissible for the NAACP's claim text and asserted injury theory only."
+    },
+    {
+      "source_id": "SRC-2026-XAI-COLOSSUS2-EARTHJUSTICE-001",
+      "title": "Illegal Pollution from Data Center Power Plants Shouldn’t Harm Our Communities. We’re Suing xAI.",
+      "url": "https://earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus",
+      "archive_url": "",
+      "access_date": "2026-07-22",
+      "publication_date": "",
+      "source_type": "advocacy-material",
+      "institutional_proximity": "advocacy-party",
+      "evidence_role": "institutional-response-source",
+      "verification_status": "verified-secondary",
+      "admissibility_use": "admissible-for-claim-text",
+      "confidence": "high",
+      "red_flags": [
+        "advocacy-source-used-as-factual-basis",
+        "archive-needed",
+        "missing-date"
+      ],
+      "supported_record": [
+        "Establishes counsel's public description of the case, alleged permit failures, requested relief, and community-harm theory.",
+        "Provides a source pointer for the NAACP representation and related litigation materials."
+      ],
+      "limitations": [
+        "The case page is advocacy material and cannot independently establish emissions, permit applicability, causation, or legal liability.",
+        "Underlying filings and government records remain required."
+      ],
+      "notes": "Use for counsel's stated position and litigation chronology, not as independent proof of the alleged violations."
+    }
+  ]
+}
