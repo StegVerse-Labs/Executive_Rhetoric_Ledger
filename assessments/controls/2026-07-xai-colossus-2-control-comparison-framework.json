@@ -1,0 +1,156 @@
+{
+  "control_id": "CONTROL-PIT-MODERN-2026-XAI-COLOSSUS2-EJ",
+  "topic_id": "PIT-MODERN-2026-XAI-COLOSSUS2-EJ",
+  "status": "framework-installed-controls-unpopulated",
+  "created_date": "2026-07-22",
+  "last_reviewed": "2026-07-22",
+  "purpose": "Provide a reproducible comparison framework for testing whether xAI Colossus 2 received materially different permitting, enforcement, public-participation, or federal-intervention treatment than similarly situated private generation or data-center projects.",
+  "prohibited_inference": "No disparate-treatment, novelty, discriminatory-intent, or exceptional-favor conclusion may be promoted from this framework until comparable projects are populated with primary records and scored under the same rules.",
+  "unit_of_comparison": "One private data-center or industrial project using on-site combustion generation at a scale capable of triggering major-source, preconstruction, aggregation, or equivalent state permitting review.",
+  "inclusion_criteria": [
+    "Project operated or proposed at least 50 megawatts of on-site combustion generation, or a documented equivalent emissions potential.",
+    "Project required or disputed preconstruction air permitting, source aggregation, temporary-equipment classification, or comparable environmental review.",
+    "Project was located within five miles of a residential population or another reproducibly defined exposure area.",
+    "Public records exist for permit timing, equipment scope, enforcement posture, and community participation.",
+    "Project chronology overlaps 2015-2026 unless included as a historical doctrinal control."
+  ],
+  "exclusion_criteria": [
+    "Emergency generators used only for short-duration reliability testing with no evidence of sustained primary-power operation.",
+    "Projects lacking sufficient records to establish capacity, fuel, operating posture, or permit chronology.",
+    "Government-owned military generation unless used specifically as a national-security-authority control.",
+    "Projects selected solely because of political salience without technical comparability."
+  ],
+  "required_strata": {
+    "community_demographics": [
+      "predominantly Black or other historically burdened community",
+      "predominantly white community",
+      "mixed-demographic community"
+    ],
+    "baseline_pollution_burden": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ],
+    "jurisdictional_posture": [
+      "Republican-led state government",
+      "Democratic-led state government",
+      "mixed or nonpartisan state posture"
+    ],
+    "administration": [
+      "current federal administration",
+      "prior federal administration"
+    ],
+    "project_status": [
+      "permitted before operation",
+      "operated before permit",
+      "temporary-equipment dispute",
+      "enforcement before operation",
+      "enforcement after operation"
+    ]
+  },
+  "comparison_dimensions": [
+    {
+      "dimension_id": "capacity-and-equipment",
+      "fields": ["megawatts", "unit_count", "fuel", "equipment_models", "stationary_or_mobile", "operating_role"],
+      "weight": "critical"
+    },
+    {
+      "dimension_id": "permit-chronology",
+      "fields": ["application_date", "construction_start", "operation_start", "permit_issue_date", "covered_units", "uncovered_units"],
+      "weight": "critical"
+    },
+    {
+      "dimension_id": "regulatory-classification",
+      "fields": ["major_source_status", "aggregation_analysis", "temporary_or_portable_claim", "agency_determination", "legal_authority"],
+      "weight": "critical"
+    },
+    {
+      "dimension_id": "enforcement-posture",
+      "fields": ["inspection_date", "notice_of_violation", "administrative_order", "civil_penalty", "injunction", "shutdown_or_limit", "remediation"],
+      "weight": "critical"
+    },
+    {
+      "dimension_id": "public-participation",
+      "fields": ["notice_before_operation", "comment_period", "hearing_location", "language_access", "agency_response_to_comments", "timing_conflicts"],
+      "weight": "high"
+    },
+    {
+      "dimension_id": "community-burden",
+      "fields": ["demographics", "baseline_air_quality", "asthma_rate", "copd_rate", "other_health_indicators", "cumulative_burden_method"],
+      "weight": "high"
+    },
+    {
+      "dimension_id": "federal-intervention",
+      "fields": ["epa_action", "doj_action", "white_house_or_interagency_role", "national_security_claim", "economic_interest_claim", "military_interest_claim"],
+      "weight": "critical"
+    },
+    {
+      "dimension_id": "judicial-posture",
+      "fields": ["citizen_suit", "standing", "dismissal", "preliminary_injunction", "merits_ruling", "settlement", "appeal"],
+      "weight": "high"
+    },
+    {
+      "dimension_id": "outcomes",
+      "fields": ["actual_emissions", "permit_revision", "penalty_amount", "operating_limits", "community_monitoring", "health_or_exposure_findings"],
+      "weight": "high"
+    }
+  ],
+  "scoring_rules": {
+    "comparability_scale": {
+      "3": "closely comparable on capacity, operating role, permit issue, residential proximity, and chronology",
+      "2": "comparable on at least four critical dimensions with explainable differences",
+      "1": "near control useful for one or two doctrinal or enforcement dimensions",
+      "0": "not comparable and excluded from outcome inference"
+    },
+    "treatment_difference_scale": {
+      "2": "materially more favorable or less burdensome treatment supported by primary records",
+      "1": "possible difference requiring additional records",
+      "0": "no material difference established",
+      "-1": "more burdensome treatment than the target project"
+    },
+    "minimum_for_disparate_treatment_review": "At least three controls with comparability score 2 or 3, including at least one differently situated demographic control and one prior-administration or different-jurisdiction control."
+  },
+  "candidate_control_slots": [
+    {
+      "slot_id": "CTRL-XAI-001",
+      "description": "Large data center with on-site gas generation in a predominantly white residential area",
+      "state": "unpopulated"
+    },
+    {
+      "slot_id": "CTRL-XAI-002",
+      "description": "Large data center with on-site gas generation in a historically burdened minority community",
+      "state": "unpopulated"
+    },
+    {
+      "slot_id": "CTRL-XAI-003",
+      "description": "Industrial project where preconstruction enforcement occurred before operation",
+      "state": "unpopulated"
+    },
+    {
+      "slot_id": "CTRL-XAI-004",
+      "description": "Coordinated mobile or temporary generator fleet subjected to source-aggregation review",
+      "state": "unpopulated"
+    },
+    {
+      "slot_id": "CTRL-XAI-005",
+      "description": "Private infrastructure project receiving explicit federal national-security support",
+      "state": "unpopulated"
+    },
+    {
+      "slot_id": "CTRL-XAI-006",
+      "description": "Comparable project under a prior federal administration",
+      "state": "unpopulated"
+    }
+  ],
+  "required_primary_records_per_control": [
+    "signed permit and technical support documents",
+    "equipment inventory and operating chronology",
+    "inspection and enforcement records",
+    "public notice, hearing, and comment records",
+    "demographic and baseline-burden datasets",
+    "court filings and orders where litigation occurred",
+    "federal intervention records where applicable"
+  ],
+  "review_boundary": "The framework is complete as a method but contains no populated controls. It may support acquisition planning and prevent cherry-picking; it may not support a finding that Colossus 2 received preferential, discriminatory, unlawful, or unprecedented treatment."
+}
