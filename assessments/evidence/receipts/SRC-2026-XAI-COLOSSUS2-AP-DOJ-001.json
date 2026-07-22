@@ -1,0 +1,16 @@
+{
+  "source_id": "SRC-2026-XAI-COLOSSUS2-AP-DOJ-001",
+  "title": "In boost to Musk, Justice Department seeks to dismiss air pollution lawsuit against xAI data center",
+  "url": "https://apnews.com/article/0e981ca0508d7e4144662392d9d66ab2",
+  "archive_url": "",
+  "access_date": "2026-07-22",
+  "publication_date": "2026-06-16",
+  "source_type": "news-report",
+  "institutional_proximity": "media-intermediary",
+  "evidence_role": "reported-federal-litigation-position",
+  "verification_status": "verified-secondary",
+  "admissibility_use": "admissible-for-reported-DOJ-position-and-contemporaneous-context",
+  "confidence": "high",
+  "red_flags": ["complete-doj-filing-required", "complete-docket-required", "archive-needed"],
+  "notes": "Supports that AP reported DOJ sought dismissal and invoked national-security and economic interests. The complete DOJ filing, cited evidence, limiting language, xAI response, and judicial disposition remain required before primary verification or legal conclusions."
+}
