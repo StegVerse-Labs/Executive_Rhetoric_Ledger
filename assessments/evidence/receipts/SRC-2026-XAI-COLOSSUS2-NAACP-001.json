@@ -5,12 +5,12 @@
   "archive_url": "",
   "access_date": "2026-07-22",
   "publication_date": "2026-04-14",
-  "source_type": "advocacy-record",
-  "institutional_proximity": "named-plaintiff",
-  "evidence_role": "litigation-and-allegation-source",
-  "verification_status": "verified-primary-party-statement",
-  "admissibility_use": "admissible-for-party-position-and-filing-existence",
+  "source_type": "advocacy-material",
+  "institutional_proximity": "advocacy-party",
+  "evidence_role": "institutional-response-source",
+  "verification_status": "partially-verified",
+  "admissibility_use": "admissible-for-claim-text",
   "confidence": "high",
-  "red_flags": ["party-advocacy", "complete-docket-required", "archive-needed"],
+  "red_flags": ["advocacy-source-used-as-factual-basis", "no-primary-source-linked", "archive-needed"],
   "notes": "Establishes the NAACP's stated allegations, representation, filing date, and requested litigation posture. It does not independently establish turbine counts, emissions, permit violations, health effects, discriminatory intent, liability, or judicial findings."
 }
