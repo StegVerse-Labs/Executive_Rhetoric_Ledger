@@ -1,0 +1,12 @@
+{
+  "authority": {
+    "automation_created_decision": false,
+    "automation_may_publish_without_approval": false,
+    "automation_may_verify": true
+  },
+  "compendium_eligible": false,
+  "intake_id": "ADMINISTRATIONS-EXPORT-EO14179-ACTION-001",
+  "propagation_eligible": false,
+  "review_issue": 26,
+  "status": "awaiting-governed-review"
+}

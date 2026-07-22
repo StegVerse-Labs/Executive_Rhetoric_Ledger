@@ -1,9 +1,14 @@
 {
   "authority": {
+    "may_change_destination_verification_labels": false,
+    "may_change_native_source_records": false,
+    "may_claim_acknowledgment": false,
+    "may_claim_delivery": false,
+    "may_establish_culpability": false,
     "may_include_candidates": false,
-    "may_promote": false,
     "reviewed_only": true
   },
+  "destination_repository": "StegVerse-Labs/Trumpality",
   "entries": [
     {
       "entry_id": "310B79CD1FBE8D2148EC",
@@ -14,7 +19,11 @@
       "title": "Reviewed Ledger Receipt: EO 14179 Action Record"
     }
   ],
+  "evidence_boundary": "Person-specific collection must distinguish verbatim statement, reported statement, interpretation, action, legal finding, allegation, and measurable outcome.",
   "generated_at": "2026-07-22T04:07:14Z",
-  "publication_id": "COMPENDIUM-05405C50139CED5FD45B",
-  "publication_status": "reviewed-only-compendium"
+  "projection_id": "PERSON-PROJECTION-52A448F378F954A10E3F",
+  "projection_sha256": "bd26096f64b6a28c9fa432df9d29ccb31ea1151b2eb1e83175f5e4ab86255869",
+  "projection_status": "reviewed-ledger-projection",
+  "schema": "stegverse.executive_rhetoric_ledger.person_specific_projection.v1",
+  "source_repository": "StegVerse-Labs/Executive_Rhetoric_Ledger"
 }
