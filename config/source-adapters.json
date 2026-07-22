@@ -22,7 +22,7 @@
     {
       "adapter_id": "SCSJ_REISINI_ROOS_CASE_PAGE",
       "enabled": true,
-      "adapter_type": "http",
+      "adapter_type": "html-document",
       "source_class": "advocacy-record",
       "endpoint": "https://southerncoalition.org/case/reisini-roos-v-u-s-department-of-homeland-security-et-al/",
       "request_headers": {
@@ -44,7 +44,7 @@
     {
       "adapter_id": "SCSJ_REISINI_ROOS_FTCA_ANNOUNCEMENT",
       "enabled": true,
-      "adapter_type": "http",
+      "adapter_type": "html-document",
       "source_class": "advocacy-record",
       "endpoint": "https://southerncoalition.org/two-women-assaulted-arrested-during-operation-charlottes-web-file-federal-claims-against-immigration-agents/",
       "request_headers": {
@@ -66,7 +66,7 @@
     {
       "adapter_id": "WBTV_REISINI_ROOS_OPERATION_CHARLOTTES_WEB",
       "enabled": true,
-      "adapter_type": "http",
+      "adapter_type": "html-document",
       "source_class": "local-reporting",
       "endpoint": "https://www.wbtv.com/2026/07/22/charlotte-women-file-claims-notice-against-us-government-after-arrest-during-operation-charlottes-web/",
       "request_headers": {
