@@ -1,0 +1,84 @@
+{
+  "topic_id": "PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY",
+  "packet_status": "initial-source-posture",
+  "created_date": "2026-07-22",
+  "last_reviewed": "2026-07-22",
+  "final_legal_conclusion": false,
+  "notes": "Initial source-posture packet for the Daniel Siad death, investigation-continuity, and evidence-custody candidate. These receipts establish what publishers reported and what discovery carriers exposed; they do not prove cause of death, criminal conduct, conspiracy, or the evidentiary meaning of document references.",
+  "sources": [
+    {
+      "source_id": "SRC-2026-DANIEL-SIAD-REUTERS-001",
+      "title": "French modelling scout linked to Epstein found dead",
+      "url": "https://www.reuters.com/world/french-modelling-scout-linked-epstein-found-dead-2026-07-22/",
+      "archive_url": "",
+      "access_date": "2026-07-22",
+      "publication_date": "2026-07-22",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "factual-basis-source",
+      "verification_status": "verified-secondary",
+      "admissibility_use": "admissible-for-context-only",
+      "confidence": "high",
+      "red_flags": ["no-primary-source-linked", "archive-needed"],
+      "supported_record": [
+        "Reuters reported that Daniel Siad was found dead at his home outside Paris.",
+        "Reuters reported that the Nanterre prosecutor's office opened a cause-of-death investigation and ordered an autopsy.",
+        "Reuters reported that Siad's name appeared nearly 2,000 times in released DOJ Epstein-related files.",
+        "Reuters reported allegations by multiple women and Siad's denial, and carried his lawyer's statement that he had not been formally subjected to judicial proceedings."
+      ],
+      "limitations": [
+        "The report does not establish cause or manner of death.",
+        "The report does not establish the evidentiary meaning of the nearly 2,000 references.",
+        "The report does not prove any allegation of rape, trafficking, conspiracy, coercion, concealment, or criminal participation.",
+        "French prosecutorial, autopsy, court, complaint, and custody records remain required."
+      ],
+      "notes": "Use to establish the reported death, official investigative posture, reported document-reference count, allegations, denials, and attorney statement only."
+    },
+    {
+      "source_id": "SRC-2026-DANIEL-SIAD-WSJ-001",
+      "title": "Modeling Scout With Epstein Ties Found Dead",
+      "url": "https://www.wsj.com/world/europe/modeling-scout-with-epstein-ties-found-dead-fa2ffdaa",
+      "archive_url": "",
+      "access_date": "2026-07-22",
+      "publication_date": "",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "context-only-source",
+      "verification_status": "partially-verified",
+      "admissibility_use": "admissible-for-context-only",
+      "confidence": "medium",
+      "red_flags": ["no-primary-source-linked", "archive-needed", "missing-date"],
+      "supported_record": [
+        "Provides an additional publisher account concerning Siad's reported modelling-network role and Epstein-related documentary links."
+      ],
+      "limitations": [
+        "Underlying DOJ documents, French records, and full article metadata remain required.",
+        "No allegation or network inference may be promoted solely from this account."
+      ],
+      "notes": "Secondary corroboration and source-discovery pointer only."
+    },
+    {
+      "source_id": "SRC-2026-DANIEL-SIAD-MSN-CARRIER-001",
+      "title": "Modeling scout with Epstein ties found dead — MSN carrier",
+      "url": "https://www.msn.com/en-us/news/news/content/ar-AA28s2kO?ocid=sapphireappshare",
+      "archive_url": "",
+      "access_date": "2026-07-22",
+      "publication_date": "",
+      "source_type": "unknown-source-type",
+      "institutional_proximity": "commentary-layer",
+      "evidence_role": "context-only-source",
+      "verification_status": "unverified",
+      "admissibility_use": "admissible-for-context-only",
+      "confidence": "low",
+      "red_flags": ["archive-needed", "missing-date", "missing-author-or-institution"],
+      "supported_record": [
+        "Establishes the user-supplied discovery URL that surfaced the report."
+      ],
+      "limitations": [
+        "The carrier is not used to establish death, cause, allegations, network links, or investigation status.",
+        "The originating publisher and article succession must be preserved separately."
+      ],
+      "notes": "Discovery and provenance pointer only."
+    }
+  ]
+}
