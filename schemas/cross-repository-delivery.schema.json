@@ -23,14 +23,34 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["repository", "target_path", "delivery_status", "acknowledgment_required", "acknowledgment"],
+        "required": ["repository", "target_path", "delivery_status", "acknowledgment_required", "acknowledgment", "delivery_scope"],
         "properties": {
           "repository": {"type": "string", "minLength": 1},
           "target_path": {"type": "string", "minLength": 1},
+          "source_path": {"type": "string", "pattern": "^person_specific_projections/[a-z0-9-]+\\.json$"},
+          "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
           "delivery_status": {"enum": ["prepared", "delivered", "acknowledged", "failed"]},
           "acknowledgment_required": {"const": true},
-          "acknowledgment": {"type": ["object", "null"]}
-        }
+          "acknowledgment": {"type": ["object", "null"]},
+          "delivery_scope": {"enum": ["reviewed-compendium", "explicitly-related-reviewed-records-only"]}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"delivery_scope": {"const": "explicitly-related-reviewed-records-only"}}},
+            "then": {"required": ["source_path", "source_sha256"]}
+          },
+          {
+            "if": {"properties": {"delivery_scope": {"const": "reviewed-compendium"}}},
+            "then": {
+              "not": {
+                "anyOf": [
+                  {"required": ["source_path"]},
+                  {"required": ["source_sha256"]}
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "authority": {

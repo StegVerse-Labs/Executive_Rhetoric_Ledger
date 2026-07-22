@@ -6,8 +6,11 @@ on:
       - main
     paths:
       - "producer_intake/reviewed-receipts/**"
+      - "ledger_receipts/reviewed/**"
       - "schemas/producer-reviewed-receipt.schema.json"
+      - "integration/related-repositories.json"
       - "scripts/verify_governed_producer_review.py"
+      - "scripts/generate_compendium_and_deliveries.py"
       - ".github/workflows/activate-reviewed-producer-record.yml"
   workflow_dispatch:
 
@@ -46,9 +49,9 @@ jobs:
           PY
           )
           echo "eligible=$ELIGIBLE" >> "$GITHUB_OUTPUT"
-      - name: Generate reviewed-only compendium and delivery manifests
+      - name: Generate reviewed-only compendium, person projections, and delivery manifests
         if: steps.gate.outputs.eligible == 'true'
-        run: python scripts/generate_compendium_and_deliveries.py
+        run: python scripts/generate_compendium_and_deliveries.py --generated-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
       - name: Verify destination propagation state
         if: steps.gate.outputs.eligible == 'true'
         run: python scripts/verify_destination_acknowledgments.py
@@ -60,14 +63,14 @@ jobs:
           git config user.name "stegverse-reviewed-producer-bot"
           git config user.email "stegverse-reviewed-producer-bot@users.noreply.github.com"
           git checkout -B "$BRANCH"
-          git add producer_intake/review-activation publication delivery_manifests propagation
+          git add producer_intake/review-activation publication person_specific_projections delivery_manifests propagation
           if git diff --cached --quiet; then
             echo "No post-review activation changes."
             exit 0
           fi
           git commit -m "chore: activate governed producer review result"
           git push --force-with-lease origin "$BRANCH"
-          BODY="Verified human-authored review receipt and generated only the mechanically authorized activation state. Automation did not create or broaden the review decision. Reviewed-only publication outputs are included only when the receipt disposition is approved-action-record."
+          BODY="Verified human-authored review receipt and generated only the mechanically authorized activation state. Automation did not create or broaden the review decision. Reviewed-only publication outputs and explicitly related person-specific projections are included only when the receipt disposition is approved-action-record. Person-specific projections cannot change native source records, destination verification labels, or evidentiary standing."
           if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
             gh pr edit "$BRANCH" --title "Activate governed producer review result" --body "$BODY"
           else
