@@ -5,6 +5,8 @@ record_type: "research-candidate"
 status: "candidate-review-required"
 date_opened: "2026-07-22"
 primary_subject: "xAI Colossus 2 gas-turbine deployment"
+topic_id: "PIT-MODERN-2026-XAI-COLOSSUS2-EJ"
+primary_record_intake: "assessments/intake/2026-07-xai-colossus-2-primary-record-intake.json"
 location_scope:
   - "Southaven, Mississippi"
   - "Memphis, Tennessee metropolitan airshed"
@@ -64,6 +66,12 @@ That sentence is preserved as user-supplied rhetorical framing, not as an adjudi
 
 ## Claims requiring primary verification
 
+The active 12-item queue is maintained at:
+
+`assessments/intake/2026-07-xai-colossus-2-primary-record-intake.json`
+
+It covers:
+
 1. Exact turbine inventory by serial number, model, installation date, operating period, and location.
 2. Which turbines were covered by the March 2026 state permit and which remained outside it.
 3. Federal major-source and preconstruction-permit applicability, including EPA's current legal position.
@@ -74,6 +82,8 @@ That sentence is preserved as user-supplied rhetorical framing, not as an adjudi
 8. Census and CDC methodology supporting demographic and respiratory-disease comparisons.
 9. Comparable permitting and enforcement treatment for similarly scaled projects in differently situated communities.
 10. Any evidence supporting or refuting intentional discrimination, disparate treatment, disparate impact, or a civil-rights enforcement failure.
+11. Complete xAI and MZX Tech statements, evidence, and legal responses.
+12. Title VI and environmental-justice complaint, investigation, finding, or closure records.
 
 ## Civil-rights and environmental-justice posture
 
