@@ -1,0 +1,16 @@
+{
+  "source_id": "SRC-2026-XAI-COLOSSUS2-NAACP-001",
+  "title": "NAACP Sues xAI for Illegal Pollution from Data Center Power Plant",
+  "url": "https://naacp.org/articles/naacp-sues-xai-illegal-pollution-data-center-power-plant",
+  "archive_url": "",
+  "access_date": "2026-07-22",
+  "publication_date": "2026-04-14",
+  "source_type": "advocacy-record",
+  "institutional_proximity": "named-plaintiff",
+  "evidence_role": "litigation-and-allegation-source",
+  "verification_status": "verified-primary-party-statement",
+  "admissibility_use": "admissible-for-party-position-and-filing-existence",
+  "confidence": "high",
+  "red_flags": ["party-advocacy", "complete-docket-required", "archive-needed"],
+  "notes": "Establishes the NAACP's stated allegations, representation, filing date, and requested litigation posture. It does not independently establish turbine counts, emissions, permit violations, health effects, discriminatory intent, liability, or judicial findings."
+}
