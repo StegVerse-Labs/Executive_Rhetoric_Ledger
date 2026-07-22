@@ -26,6 +26,8 @@ final_legal_conclusion: false
 cause_of_death: "undetermined pending autopsy"
 admissibility: "provisional-source-postured-candidate"
 confidence: "medium"
+related_intake_queue: "assessments/intake/2026-07-daniel-siad-primary-record-intake.json"
+related_source_posture_packet: "assessments/source-posture/2026-07-daniel-siad-initial-source-receipts.json"
 ```
 
 ## Candidate summary
@@ -64,6 +66,15 @@ The appropriate ledger question is:
 
 > Did the death materially reduce the recoverability of evidence, testimony, accountability, or network reconstruction—and what records were preserved before that loss occurred?
 
+## Installed evidence-governance surfaces
+
+- `assessments/intake/2026-07-daniel-siad-primary-record-intake.json`
+- `assessments/source-posture/2026-07-daniel-siad-initial-source-receipts.json`
+
+The intake queue contains ten governed record classes covering prosecutor and death-investigation records, autopsy and toxicology, pre-death investigative chronology, the full defense statement, DOJ document mapping, victim complaints and procedural status, device and business-record custody, cross-border preservation, network records, and post-death rumor correction.
+
+The source-posture packet separates Reuters reporting, Wall Street Journal context, and the user-supplied MSN carrier. None is treated as a substitute for French primary records, DOJ document-level mapping, autopsy evidence, or verified custody records.
+
 ## Initial source posture
 
 ### Reuters
@@ -71,6 +82,7 @@ The appropriate ledger question is:
 - Source type: news report.
 - Role: factual event, prosecutor posture, attorney statement, and investigation-continuity context.
 - Admissibility: secondary support pending French prosecutorial and autopsy records.
+- Receipt: `SRC-2026-DANIEL-SIAD-REUTERS-001`.
 - URL: `https://www.reuters.com/world/french-modelling-scout-linked-epstein-found-dead-2026-07-22/`
 
 ### Wall Street Journal
@@ -78,6 +90,7 @@ The appropriate ledger question is:
 - Source type: news report.
 - Role: additional reporting on Siad's alleged recruiting activity and documentary links.
 - Admissibility: secondary support only; underlying DOJ documents and French records remain required.
+- Receipt: `SRC-2026-DANIEL-SIAD-WSJ-001`.
 - URL: `https://www.wsj.com/world/europe/modeling-scout-with-epstein-ties-found-dead-fa2ffdaa`
 
 ### User-supplied MSN carrier URL
@@ -85,6 +98,7 @@ The appropriate ledger question is:
 - Source type: aggregation carrier.
 - Role: discovery pointer.
 - Admissibility: context only; not used as primary evidence.
+- Receipt: `SRC-2026-DANIEL-SIAD-MSN-CARRIER-001`.
 - URL: `https://www.msn.com/en-us/news/news/content/ar-AA28s2kO?ocid=sapphireappshare`
 
 ## Required next records
