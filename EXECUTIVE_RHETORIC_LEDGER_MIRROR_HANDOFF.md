@@ -15,6 +15,8 @@ Receipt completeness == reconstructable attribution of recorded who, what, why, 
 Missing evidence must identify the missing object, last known custodian, and custody status.
 Publication != final adjudication.
 Generalization must remove current identifiers without weakening the attribution model.
+Death under investigation != manner, motive, coordination, or evidence loss.
+Document-reference frequency != culpability or evidentiary weight.
 ```
 
 ## Installed register and evidence surfaces
@@ -28,6 +30,7 @@ Generalization must remove current identifiers without weakening the attribution
 - `research-candidates/2026-07-14-ice-temporary-vehicle-stop-limits-after-fatal-shootings.md`
 - `incident-evidence-streams/2026-07-ice-vehicle-stop-shootings-evidentiary-revision.md`
 - `research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md`
+- `research-candidates/2026-07-daniel-siad-epstein-network-death-and-evidence-continuity.md`
 
 ## Stage-two attribution and reconstruction mechanisms
 
@@ -143,45 +146,38 @@ Current posture:
 record_type: "source-postured assessment with machine-readable review state"
 source_receipts: "3-installed; claim-level expansion required"
 primary_record_intake: "active-12-items"
-control_status: "required-not-installed"
+control_status: "framework-installed-partially-sourced-controls-unpopulated"
 independent_verification: "pending"
 final_legal_conclusion: false
 ```
 
-Installed receipts currently establish only:
+The machine-readable assessment explicitly does not establish criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or historical uniqueness.
 
-- the submitted narrative and its asserted research theory;
-- the text of 18 U.S.C. § 208, without proving its application to Musk;
-- Reuters reporting that a proposed $1.5 million SEC settlement existed and had not been immediately approved as of May 8, 2026.
+## xAI Colossus 2 environmental-justice assessment
 
-The SEC record therefore has a materially newer posture than the uploaded narrative: a proposed settlement existed by May 2026, but the final docket outcome still requires primary verification.
-
-The machine-readable assessment explicitly does not establish criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, or historical uniqueness. The intake queue identifies custodians, activation effects, and evidence boundaries for twelve primary-record classes.
-
-## xAI Colossus 2 environmental-justice candidate
-
-Installed for governed review:
+Installed:
 
 - `research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md`
+- `assessments/machine/PIT-MODERN-2026-XAI-COLOSSUS2-EJ.json`
+- `assessments/reviews/PIT-MODERN-2026-XAI-COLOSSUS2-EJ.review.md`
+- `assessments/intake/2026-07-xai-colossus-2-primary-record-intake.json`
+- `assessments/source-posture/2026-07-xai-colossus-2-initial-source-receipts.json`
+- `assessments/controls/2026-07-xai-colossus-2-control-comparison-framework.json`
+- `assessments/reviews/CONTROL-PIT-MODERN-2026-XAI-COLOSSUS2-EJ.review.md`
+- corresponding entry in `assessments/README.md`
 
 Current posture:
 
 ```yaml
-record_type: "research-candidate"
-classification:
-  - "corporate-aligned executive rhetoric"
-  - "environmental-justice risk"
-  - "disparate procedural protection candidate"
-  - "national-security justification for private infrastructure"
-  - "regulatory-exemption and enforcement-gap candidate"
-  - "civil-rights-high-risk review queue"
+record_type: "source-postured environmental-justice and executive-rhetoric assessment"
+source_receipts: "3-initial-secondary-and-advocacy-receipts"
+primary_record_intake: "active-12-items"
+control_status: "method-installed-controls-unpopulated"
+independent_verification: "pending"
 final_legal_conclusion: false
-primary_records: "required"
-control_comparison: "required"
-independent_review: "pending"
 ```
 
-The candidate preserves reporting that xAI deployed 59 gas turbines associated with Colossus 2, the dispute over temporary or portable classification and federal clean-air permitting, the proximity of predominantly Black communities with elevated respiratory-disease burdens, Mississippi's permit posture, the NAACP litigation, and reported federal national-security and economic-interest arguments. It explicitly separates environmental-justice concern, disparate-impact evidence, intentional-discrimination proof, Clean Air Act questions, and formal civil-rights liability.
+The record preserves the reported turbine deployment, disputed permit and temporary-equipment posture, NAACP litigation, reported DOJ national-security and economic-interest framing, and the environmental-justice question. It does not establish permit liability, intentional discrimination, project-specific health causation, unlawful federal intervention, preferential treatment, or civil-rights liability.
 
 The preserved rhetorical framing is:
 
@@ -191,11 +187,43 @@ The corporation receives the presumption.
 The government supplies the justification.
 ```
 
-This framing is recorded as a user-supplied interpretive claim and is not promoted as an adjudicated finding.
+That framing remains a user-supplied interpretive claim rather than an adjudicated finding.
 
-## Schema generalization completed
+## Daniel Siad death and evidence-continuity assessment
 
-`schemas/primary-record-intake.schema.json` formerly required Delaney Hall-only identifiers matching `DH-INTAKE-*`. It now supports topic-specific uppercase identifiers while retaining compatibility with existing Delaney Hall records.
+Installed:
+
+- `research-candidates/2026-07-daniel-siad-epstein-network-death-and-evidence-continuity.md`
+- `assessments/intake/2026-07-daniel-siad-primary-record-intake.json`
+- `assessments/source-posture/2026-07-daniel-siad-initial-source-receipts.json`
+- `assessments/machine/PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY.json`
+- `assessments/reviews/PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY.review.md`
+- corresponding entry in `assessments/README.md`
+
+Current posture:
+
+```yaml
+record_type: "source-postured investigation-continuity and evidence-custody assessment"
+source_receipts: "Reuters, Wall Street Journal, and MSN carrier receipts installed"
+primary_record_intake: "active-10-items"
+control_status: "not required for initial continuity catalogue"
+independent_verification: "pending"
+final_legal_conclusion: false
+cause_of_death_finding: false
+conspiracy_finding: false
+```
+
+The assessment focuses on recoverability: what evidence, devices, accounts, business records, testimony, cross-border requests, and third-party copies existed before and after the death. It does not establish homicide, suicide, coercion, concealment, trafficking liability, conspiracy, obstruction, or intentional evidence destruction.
+
+Required next records include the Nanterre prosecutor statement, autopsy and toxicology findings, pre-death investigative chronology, document-level DOJ reference mapping, victim-procedure records with privacy controls, evidence-custody inventory, and cross-border preservation or legal-assistance records.
+
+## Schema and validation integration
+
+`schemas/primary-record-intake.schema.json` supports topic-specific uppercase intake identifiers while retaining compatibility with existing Delaney Hall records.
+
+`validate_assessment_trees.py` requires machine assessments to be visible in `assessments/README.md`, linked to existing annotations, accompanied by review files when in review or publication status, and connected to controls when the assessment declares controls required.
+
+The Daniel Siad record declares controls not required for initial evidence-continuity catalogue status. Any later claim of unusual mortality, coordinated elimination, obstruction, exceptional treatment, or patterned investigative loss would require a separately governed control methodology.
 
 ## Publication promotion requirements
 
@@ -218,19 +246,20 @@ This framing is recorded as a user-supplied interpretive claim and is not promot
 - attach and hash the public-report binary;
 - acquire claim-level primary receipts for the DOGE/Musk assessment;
 - verify final SEC, NLRB, FEC, waiver, and case-level disposition states;
-- install a reproducible historical control comparison for the DOGE/Musk assessment;
-- create an independent review and validation receipt after source acquisition;
-- acquire and preserve Reuters, MDEQ, DOJ, EPA, court, CDC, Census, NAACP, Earthjustice, SELC, and xAI primary or source-posture receipts for the Colossus 2 candidate;
-- reconcile turbine counts, permit coverage, operating dates, emissions controls, and temporary-equipment classifications;
-- build a comparable-project control set for the Colossus 2 candidate;
-- track judicial, regulatory, emissions, and community-health outcomes;
-- confirm CI validation for the new Political Influence Tree and intake queue;
-- install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki` when the register reaches release posture.
+- populate the DOGE/Musk control framework;
+- acquire and preserve MDEQ, DOJ, EPA, court, CDC, Census, NAACP, Earthjustice, SELC, xAI, and comparable-project records for the Colossus 2 assessment;
+- populate at least three strong Colossus 2 controls before any treatment-difference conclusion;
+- acquire French prosecutorial, autopsy, toxicology, procedural, custody, and cross-border records for the Daniel Siad assessment;
+- map the reported DOJ Siad references at document level rather than by aggregate count;
+- preserve victim privacy while recording complaint and procedural status;
+- create independent review and validation receipts after primary-source acquisition;
+- confirm CI validation for new assessment trees and intake queues;
+- install or verify pertinent updates in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, `stegguardian-wiki`, and the relevant Epstein-adjacent repositories when release posture is reached.
 
 ## Release posture
 
-The incident findings have been materially strengthened, the Trump source search has moved from summaries to a physical-source manifest, a generalized public-report publication packet is installed, the DOGE/Musk record now has a machine-readable Political Influence Tree, governance review, reusable intake schema, three initial receipts, and a twelve-item acquisition queue, and the xAI Colossus 2 environmental-justice and regulatory-exemption record is now durably preserved as a governed research candidate. The repository is not ready for tagging because original media objects, hashes, statement-level receipts, Merkle fixtures, CI integration, full cross-register attribution, final binary publication receipts, claim-level DOGE/Musk primary records, Colossus 2 primary records and controls, and final validation remain incomplete.
+The repository now contains governed machine-readable assessments for DOGE/Musk, xAI Colossus 2, and Daniel Siad evidence continuity, with linked reviews, intake queues, source posture, and explicit promotion boundaries. The repository is not ready for tagging because original media and primary objects, hashes, statement-level receipts, Merkle fixtures, CI confirmation, full cross-register attribution, publication receipts, populated controls where required, French primary records, DOJ document-level mapping, and final independent validation remain incomplete.
 
 ## Archive readiness
 
-This handoff preserves the current mechanisms, installed DOGE/Musk machine records, the xAI Colossus 2 candidate, source posture, unresolved primary-record classes, current validation boundary, remaining files, and next integration work. The complete thread is ready for archiving without any additional part of the thread needed to move forward.
+This handoff preserves the current mechanisms, installed machine records, source posture, intake queues, review boundaries, unresolved primary-record classes, validation requirements, and next integration work. The complete thread is ready for archiving without any additional part of the thread needed to move forward.
