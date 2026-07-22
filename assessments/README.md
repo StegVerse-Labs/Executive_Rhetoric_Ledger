@@ -90,6 +90,37 @@ The control framework defines administration-transition, agency-wide enforcement
 
 Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, realized savings, or claimed historical uniqueness. Promotion requires claim-level primary receipts, exact stage-normalized budget data, populated controls, final current-status verification, independent review, and a passed validation receipt.
 
+### xAI Colossus 2 permitting, environmental justice, and federal intervention
+
+```yaml
+topic_id: "PIT-MODERN-2026-XAI-COLOSSUS2-EJ"
+record_date: "2026-07-22"
+record_type: "source-postured environmental-justice and executive-rhetoric assessment"
+review_status: "conditional-catalogue-acceptance"
+source_receipts: "3-initial-secondary-and-advocacy-receipts"
+primary_record_intake: "active-12-items; litigation-and-DOJ-paths-located"
+control_status: "method-installed-controls-unpopulated"
+validation_status: "pending-ci-confirmation"
+independent_verification: "pending"
+final_legal_conclusion: false
+```
+
+Core records:
+
+- [Research candidate](../research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md)
+- [Machine-readable Political Influence Tree](machine/PIT-MODERN-2026-XAI-COLOSSUS2-EJ.json)
+- [Governance review](reviews/PIT-MODERN-2026-XAI-COLOSSUS2-EJ.review.md)
+- [Machine-readable primary-record intake queue](intake/2026-07-xai-colossus-2-primary-record-intake.json)
+- [Initial source-posture packet](source-posture/2026-07-xai-colossus-2-initial-source-receipts.json)
+- [Control-comparison framework](controls/2026-07-xai-colossus-2-control-comparison-framework.json)
+- [Control-method review](reviews/CONTROL-PIT-MODERN-2026-XAI-COLOSSUS2-EJ.review.md)
+
+The record preserves the reported turbine deployment, the dispute over temporary or portable classification and federal clean-air permitting, the proximity of predominantly Black communities with elevated respiratory-disease burdens, the NAACP litigation, and the reported DOJ national-security and economic-interest framing.
+
+The three installed source receipts establish the existence and content of AP, NAACP, and Earthjustice reporting or advocacy positions. They do not establish permit applicability, emissions totals, intentional discrimination, project-specific health causation, unlawful federal intervention, or final civil-rights liability.
+
+The control framework defines technical, chronological, demographic, pollution-burden, jurisdictional, and administration comparison requirements. No preferential-treatment, disparate-treatment, uniqueness, or discriminatory-enforcement conclusion may be promoted until populated controls and primary records satisfy the review threshold.
+
 ## Assessment rules
 
 1. Claim existence and claim truth remain separate.
