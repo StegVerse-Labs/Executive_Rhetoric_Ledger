@@ -121,6 +121,37 @@ The three installed source receipts establish the existence and content of AP, N
 
 The control framework defines technical, chronological, demographic, pollution-burden, jurisdictional, and administration comparison requirements. No preferential-treatment, disparate-treatment, uniqueness, or discriminatory-enforcement conclusion may be promoted until populated controls and primary records satisfy the review threshold.
 
+### Daniel Siad death, Epstein-network investigation continuity, and evidence custody
+
+```yaml
+topic_id: "PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY"
+record_date: "2026-07-22"
+record_type: "source-postured investigation-continuity and evidence-custody assessment"
+review_status: "conditional-catalogue-acceptance"
+source_receipts: "3-initial-secondary-and-carrier-receipts"
+primary_record_intake: "active-10-items"
+control_status: "not-required-for-initial-continuity-catalogue"
+validation_status: "pending-ci-confirmation"
+independent_verification: "pending"
+final_legal_conclusion: false
+cause_of_death_finding: false
+conspiracy_finding: false
+```
+
+Core records:
+
+- [Research candidate](../research-candidates/2026-07-daniel-siad-epstein-network-death-and-evidence-continuity.md)
+- [Machine-readable Political Influence Tree](machine/PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY.json)
+- [Governance review](reviews/PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY.review.md)
+- [Machine-readable primary-record intake queue](intake/2026-07-daniel-siad-primary-record-intake.json)
+- [Initial source-posture packet](source-posture/2026-07-daniel-siad-initial-source-receipts.json)
+
+The record preserves the reported death, the reported French cause-of-death investigation and autopsy order, the existence of repeated DOJ-file references, reported allegations and denials, and the resulting evidence-continuity questions.
+
+The governing issue is recoverability: what evidence, devices, accounts, business records, testimony, cross-border requests, and third-party copies were preserved before and after the death. The record does not establish homicide, suicide, coercion, concealment, trafficking liability, conspiracy, obstruction, or intentional evidence destruction.
+
+The MSN URL is retained only as a discovery and provenance carrier. Reuters and Wall Street Journal materials remain secondary; French prosecutorial records, autopsy and toxicology, DOJ document-level mapping, victim-procedure records, and custody evidence remain required.
+
 ## Assessment rules
 
 1. Claim existence and claim truth remain separate.
@@ -137,7 +168,9 @@ The control framework defines technical, chronological, demographic, pollution-b
 12. Reported arrest totals do not establish probable cause, resistance, or force justification for any specific person.
 13. Structural validation cannot establish factual truth, lawful authority, or constitutional justification.
 14. Accepted, deprecated, superseded, disputed, and rejected states must follow the repository governance policy.
+15. Death under investigation does not establish manner, motive, coordination, or evidentiary loss.
+16. Document-reference frequency does not establish authorship, conduct, culpability, or evidentiary weight.
 
 ## Promotion boundary
 
-An assessment may not advance because its narrative is persuasive or politically useful. Promotion requires source posture, required controls, review status, event-specific evidence, validation status, and classification scope to remain mutually consistent.
+An assessment may not advance because its narrative is persuasive, suspicious, emotionally salient, or politically useful. Promotion requires source posture, required controls, review status, event-specific evidence, validation status, and classification scope to remain mutually consistent.
