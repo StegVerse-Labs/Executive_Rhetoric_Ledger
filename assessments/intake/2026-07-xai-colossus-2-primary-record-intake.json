@@ -4,7 +4,7 @@
   "queue_status": "active",
   "created_date": "2026-07-22",
   "last_reviewed": "2026-07-22",
-  "notes": "Primary-record queue for testing permitting, emissions, environmental-justice, civil-rights, national-security, and corporate-state-alignment claims without promoting unverified legal conclusions.",
+  "notes": "Primary-record queue for testing permitting, emissions, environmental-justice, civil-rights, national-security, and corporate-state-alignment claims without promoting unverified legal conclusions. Initial AP, NAACP, and Earthjustice source-posture receipts are installed; they locate relevant litigation and institutional-response paths but do not complete the primary-record requirements.",
   "items": [
     {
       "intake_id": "XAI-COLOSSUS2-INTAKE-001",
@@ -59,24 +59,28 @@
       "record_class": "NAACP litigation docket, complaint, declarations, exhibits, preliminary-injunction filings, and orders",
       "likely_custodians": ["adjudicating federal court", "NAACP", "Earthjustice", "Southern Environmental Law Center", "xAI", "MZX Tech"],
       "affected_branches": ["court_records", "contradictions", "institutional_response", "outcome_evidence"],
-      "state": "requested",
+      "state": "located",
       "activation_effect": "Preserves the parties' exact allegations, evidence, defenses, requested remedies, and judicial findings without relying on media summaries.",
       "privacy_posture": "public",
       "priority": "critical",
-      "source_receipt_ids": [],
-      "notes": "Capture docket succession and distinguish allegations, declarations, expert evidence, and court findings."
+      "source_receipt_ids": [
+        "SRC-2026-XAI-COLOSSUS2-NAACP-001",
+        "SRC-2026-XAI-COLOSSUS2-EARTHJUSTICE-001",
+        "SRC-2026-XAI-COLOSSUS2-AP-DOJ-001"
+      ],
+      "notes": "Public source pages identify and describe the litigation, but the complete docket, complaint, declarations, exhibits, defense filings, and orders still require acquisition and verification."
     },
     {
       "intake_id": "XAI-COLOSSUS2-INTAKE-006",
       "record_class": "Department of Justice filings and supporting authority concerning dismissal, national security, and economic interests",
       "likely_custodians": ["United States Department of Justice", "adjudicating federal court"],
       "affected_branches": ["executive_rhetoric", "claimed_justification", "institutional_response", "action_conversion"],
-      "state": "requested",
+      "state": "located",
       "activation_effect": "Establishes the precise federal argument and whether private data-center interests were framed as national-security or public-interest necessities.",
       "privacy_posture": "public",
       "priority": "critical",
-      "source_receipt_ids": [],
-      "notes": "Preserve the complete filing, cited declarations, authority, requested disposition, and any limiting language."
+      "source_receipt_ids": ["SRC-2026-XAI-COLOSSUS2-AP-DOJ-001"],
+      "notes": "AP reports and links the DOJ motion and preserves the stated national-security, economic, energy-independence, and innovation framing. The complete filing, cited declarations, authority, requested disposition, and limiting language remain required before primary verification."
     },
     {
       "intake_id": "XAI-COLOSSUS2-INTAKE-007",
@@ -131,12 +135,12 @@
       "record_class": "xAI and MZX Tech public statements, legal responses, technical explanations, and national-security assertions",
       "likely_custodians": ["xAI", "MZX Tech", "company counsel", "archived public communications"],
       "affected_branches": ["claimed_justification", "contradictions", "executive_rhetoric", "factual_basis"],
-      "state": "requested",
+      "state": "located",
       "activation_effect": "Preserves the operator's complete position and prevents adverse-party summaries from substituting for the company's own claims and evidence.",
       "privacy_posture": "public",
       "priority": "high",
-      "source_receipt_ids": [],
-      "notes": "Capture original objects, timestamps, revisions, deletions, and surrounding context."
+      "source_receipt_ids": ["SRC-2026-XAI-COLOSSUS2-AP-DOJ-001"],
+      "notes": "AP records that SpaceX did not respond to its current request and reports the prior company position that it complies with law and takes environmental responsibilities seriously. Original company objects, filings, timestamps, revisions, and technical evidence remain required."
     },
     {
       "intake_id": "XAI-COLOSSUS2-INTAKE-012",
