@@ -1,0 +1,127 @@
+{
+  "topic_id": "PIT-MODERN-2026-XAI-COLOSSUS2-EJ",
+  "topic_name": "xAI Colossus 2 environmental justice and regulatory-exemption review",
+  "entry_status": "review",
+  "jurisdiction": "United States federal and Mississippi state",
+  "time_window": "2025-2026",
+  "created_date": "2026-07-22",
+  "last_reviewed": "2026-07-22",
+  "related_standard": "standards/political-influence-tree-standard.md",
+  "related_annotation": "research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md",
+  "surface_claim": {
+    "claim_text": "Public sources allege that xAI operated gas turbines for Colossus 2 without required federal air permits and that federal intervention favored continued operation despite community environmental-justice concerns.",
+    "exact_quote_available": false,
+    "speaker_or_institution": "Compiled research candidate",
+    "office_or_role": "Repository-submitted research record",
+    "date": "2026-07-22",
+    "venue": "Executive Rhetoric Ledger",
+    "jurisdiction": "United States",
+    "source_url": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md",
+    "source_type": "secondary-analysis",
+    "transcript_available": false,
+    "archive_url": ""
+  },
+  "claimed_justification": {
+    "category": "national-security-economic-development-and-infrastructure-speed",
+    "stated_basis": "Public reporting describes national-security, economic, energy-independence, and innovation arguments for continued data-center operation.",
+    "quoted_basis": "The exact DOJ filing and complete operator statements remain required.",
+    "implied_basis": "Rapid AI infrastructure deployment may be treated as outweighing ordinary permitting delay and community procedural burdens."
+  },
+  "factual_basis": {
+    "evidence_posture": "party-and-secondary-source-posture-installed-primary-regulatory-and-court-records-required",
+    "primary_records": [],
+    "administrative_data": [],
+    "court_records": ["NAACP and Earthjustice public pages identify a filed Clean Air Act action and requested relief; the full docket remains required."],
+    "budget_records": [],
+    "enforcement_records": [],
+    "independent_analysis": ["Repository research candidate opened July 22, 2026"],
+    "expert_testimony": [],
+    "official_investigations": [],
+    "unsupported_assertions": ["A final Clean Air Act violation", "A final civil-rights violation", "Intentional discrimination", "Corrupt federal intervention", "Verified turbine and emissions totals"],
+    "contradictions": ["Plaintiffs characterize the turbines as an unpermitted stationary source; operator and state positions concerning temporary or portable equipment require primary records."],
+    "missing_records": ["Complete federal docket and DOJ filing", "Signed MDEQ permit and technical support documents", "Turbine inventory and operating logs", "Actual emissions and monitoring data", "EPA applicability records", "Complete xAI and MZX Tech statements"]
+  },
+  "influence_lineage": {
+    "influence_posture": "corporate-state-alignment-signal-causal-lineage-unresolved",
+    "known_origin_points": ["Colossus 2 data-center power demand", "State air-permitting process", "NAACP Clean Air Act litigation", "Reported DOJ intervention"],
+    "institutional_amplifiers": ["xAI", "MZX Tech", "Mississippi Department of Environmental Quality", "Department of Justice", "EPA"],
+    "media_amplifiers": ["Associated Press", "Reuters", "advocacy communications"],
+    "legal_networks": ["NAACP", "Earthjustice", "Southern Environmental Law Center"],
+    "funding_or_donor_links": [],
+    "policy_documents": ["Clean Air Act applicability and permitting records remain required"],
+    "academic_or_expert_sources": [],
+    "lobbying_channels": [],
+    "party_or_campaign_documents": [],
+    "religious_or_cultural_institutions": [],
+    "activist_organizations": ["NAACP", "Earthjustice", "Southern Environmental Law Center"],
+    "foreign_influence_indicators": [],
+    "unknown_nodes": ["Exact federal decision chain", "Exact state aggregation analysis", "Operator-government communications", "Actual emissions and controls"]
+  },
+  "action_conversion": {
+    "authority_posture": "litigation-and-permitting-actions-identified-final-authority-and-legality-unresolved",
+    "action_type": "permitting, enforcement posture, federal litigation intervention, and continued infrastructure operation",
+    "instrument": "State permit, Clean Air Act filings, and reported DOJ motion",
+    "instrument_url": "",
+    "date": "2026",
+    "actor": "Multiple corporate, state, federal, and civil-society actors",
+    "enforcing_entity": "MDEQ, EPA, DOJ, and the federal court as applicable",
+    "implementation_status": "Litigation and permitting activity are reported; primary record reconstruction remains incomplete.",
+    "affected_population_or_program": "North Mississippi and Memphis-area communities, air-quality regulation, and AI data-center infrastructure"
+  },
+  "control_comparison": {
+    "required": true,
+    "status": "required-unpopulated",
+    "comparable_red_jurisdictions": [],
+    "comparable_blue_jurisdictions": [],
+    "comparable_prior_administrations": [],
+    "comparable_policy_instruments": ["Large stationary-source and temporary-equipment permitting decisions"],
+    "comparable_fraud_or_harm_magnitude": [],
+    "comparable_enforcement_tools": ["Preconstruction permits, injunctions, enforcement discretion, citizen suits"],
+    "comparable_judicial_posture": ["Federal intervention in private environmental litigation"],
+    "missing_controls": ["Comparable data centers", "Comparable private generation projects", "Comparable communities and pollution burdens", "Cross-administration federal intervention cases"],
+    "comparison_notes": "No claim of exceptional treatment is final until comparable projects and enforcement postures are installed."
+  },
+  "institutional_response": {
+    "judicial_status": "A federal Clean Air Act action and requests for relief are identified through party sources; complete docket and orders remain required.",
+    "administrative_status": "State permitting and temporary-equipment positions are reported but primary permit and correspondence records remain required.",
+    "legislative_status": "No complete legislative-oversight record installed.",
+    "oversight_status": "EPA, Title VI, civil-rights, and environmental-justice complaint records remain unresolved.",
+    "injunctions": [],
+    "stays": [],
+    "dismissals": [],
+    "remands": [],
+    "settlements": [],
+    "reversals": [],
+    "pending_reviews": ["Complete docket acquisition", "Permit verification", "Actual-emissions reconstruction", "Civil-rights review", "Control comparison"],
+    "no_challenge_found": false
+  },
+  "outcome_evidence": {
+    "measured_outcomes": [],
+    "claimed_outcomes": ["Economic and national-security benefits", "Community pollution and health burdens", "Permit and enforcement flexibility"],
+    "projected_outcomes": [],
+    "contradicted_outcomes": [],
+    "no_measurable_effect_yet": false,
+    "harm_documented": [],
+    "benefit_documented": [],
+    "insufficient_evidence": true
+  },
+  "ledger_classification": {
+    "evidence_posture": "source-postured-candidate-primary-records-required",
+    "influence_posture": "corporate-state-alignment-signal-causal-lineage-incomplete",
+    "authority_posture": "permit-legality-federal-authority-and-civil-rights-findings-unresolved",
+    "admissibility_status": "accepted-for-catalogue-intake-and-governed-review-not-final-factual-or-legal-finding",
+    "confidence": "medium",
+    "classification_notes": "The record supports preservation and structured review. It does not establish a permit violation, civil-rights violation, discriminatory intent, corrupt purpose, verified emissions, or final judicial disposition."
+  },
+  "receipts": {
+    "sources": [
+      {"source_id": "SRC-2026-XAI-COLOSSUS2-NAACP-001", "title": "NAACP Sues xAI for Illegal Pollution from Data Center Power Plant", "url": "https://naacp.org/articles/naacp-sues-xai-illegal-pollution-data-center-power-plant", "source_type": "advocacy-record", "verification_status": "verified-primary-party-statement"},
+      {"source_id": "SRC-2026-XAI-COLOSSUS2-EARTHJUSTICE-001", "title": "Illegal Pollution from Data Center Power Plants Shouldn't Harm Our Communities. We're Suing xAI.", "url": "https://earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus", "source_type": "advocacy-record", "verification_status": "verified-primary-party-statement"},
+      {"source_id": "SRC-2026-XAI-COLOSSUS2-AP-DOJ-001", "title": "In boost to Musk, Justice Department seeks to dismiss air pollution lawsuit against xAI data center", "url": "https://apnews.com/article/0e981ca0508d7e4144662392d9d66ab2", "source_type": "news-report", "verification_status": "verified-secondary"}
+    ],
+    "archive_sources": [],
+    "review_notes": ["Research candidate: research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md", "Primary-record queue: assessments/intake/2026-07-xai-colossus-2-primary-record-intake.json"],
+    "unresolved_questions": ["What equipment was installed and operated?", "What permits applied?", "What exactly did DOJ argue?", "What are the actual emissions and community impacts?", "How were comparable projects treated?"],
+    "last_reviewed": "2026-07-22"
+  }
+}
