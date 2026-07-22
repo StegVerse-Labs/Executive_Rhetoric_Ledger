@@ -1,0 +1,130 @@
+{
+  "queue_id": "QUEUE-PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY",
+  "topic_id": "PIT-MODERN-2026-DANIEL-SIAD-CONTINUITY",
+  "queue_status": "active",
+  "created_date": "2026-07-22",
+  "last_reviewed": "2026-07-22",
+  "notes": "Primary-record queue for reconstructing cause-of-death posture, investigative status, evidence custody, victim-record continuity, DOJ document references, and cross-border preservation without inferring homicide, suicide, coercion, concealment, or coordinated elimination.",
+  "items": [
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-001",
+      "record_class": "Nanterre prosecutor statement, death-investigation opening record, scene classification, and case reference",
+      "likely_custodians": ["Nanterre prosecutor's office", "French National Police", "local investigating magistrate if appointed"],
+      "affected_branches": ["factual_basis", "institutional_response", "cause_of_death", "timeline"],
+      "state": "located",
+      "activation_effect": "Establishes the official death-investigation posture, date, place, authority, and whether any suspicious-circumstances determination was made.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": ["SRC-2026-DANIEL-SIAD-REUTERS-001"],
+      "notes": "Reuters reports the prosecutor posture; the official statement or case record remains required for primary verification."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-002",
+      "record_class": "Autopsy, toxicology, medical-examiner, and final cause-and-manner-of-death records",
+      "likely_custodians": ["French forensic medical authority", "Nanterre prosecutor's office", "authorized family or counsel"],
+      "affected_branches": ["cause_of_death", "outcome_evidence", "contradictions", "rumor_control"],
+      "state": "requested",
+      "activation_effect": "Resolves the medically supportable cause and manner of death and prevents speculation from substituting for forensic evidence.",
+      "privacy_posture": "privacy-sensitive",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Preserve the difference between preliminary findings, toxicology, final opinion, and any sealed or family-restricted records."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-003",
+      "record_class": "French investigative chronology before death, including summonses, interviews, searches, seizures, complaints, referrals, and prosecutorial decisions",
+      "likely_custodians": ["Nanterre prosecutor's office", "French police", "French judiciary", "complainants' counsel", "Siad's counsel"],
+      "affected_branches": ["investigation_continuity", "authority_timeline", "institutional_response", "evidence_custody"],
+      "state": "requested",
+      "activation_effect": "Determines whether Siad was a witness, suspect, target, uncharged subject, or merely referenced person and what investigative opportunities existed before death.",
+      "privacy_posture": "restricted-or-sealed",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Do not infer inactivity or active targeting from public silence; seek formal status and dated procedural records."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-004",
+      "record_class": "Complete attorney statement and representation records concerning charge status, innocence assertions, and prior contact with investigators",
+      "likely_custodians": ["Siad's counsel", "French media holding the full interview", "court or prosecutor correspondence files"],
+      "affected_branches": ["contradictions", "claimed_status", "timeline", "source_posture"],
+      "state": "located",
+      "activation_effect": "Preserves the defense position in full and distinguishes no formal charge from no investigation, no complaint, or no evidentiary interest.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": ["SRC-2026-DANIEL-SIAD-REUTERS-001"],
+      "notes": "Reuters carries the reported statement; the complete original statement, date, and context remain required."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-005",
+      "record_class": "DOJ Epstein-file references to Daniel Siad, with document identifiers, page locations, authorship, date, context, and evidentiary role",
+      "likely_custodians": ["United States Department of Justice", "Federal Bureau of Investigation", "National Archives", "court repositories", "released-document custodians"],
+      "affected_branches": ["network_reconstruction", "factual_basis", "evidence_lineage", "cross_jurisdiction"],
+      "state": "located",
+      "activation_effect": "Replaces aggregate mention counts with claim-level mapping showing whether each reference is a contact record, allegation, scheduling item, address-book entry, witness statement, or duplicate.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": ["SRC-2026-DANIEL-SIAD-REUTERS-001", "SRC-2026-DANIEL-SIAD-WSJ-001"],
+      "notes": "The reported nearly 2,000 mentions must be deduplicated and classified before any network or conduct inference is permitted."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-006",
+      "record_class": "Victim complaints, witness statements, investigative referrals, and procedural status of allegations involving rape or trafficking",
+      "likely_custodians": ["French prosecutors", "French courts", "complainants' counsel", "victim-support organizations", "authorized media archives"],
+      "affected_branches": ["victim_record_continuity", "factual_basis", "institutional_response", "outcome_evidence"],
+      "state": "requested",
+      "activation_effect": "Separates reported allegations, formal complaints, corroborating evidence, prosecutorial action, and unresolved claims while preserving victim evidence after the subject's death.",
+      "privacy_posture": "privacy-sensitive",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Protect identities and sensitive details; do not convert allegations or denials into findings."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-007",
+      "record_class": "Digital-device, account, communications, business-record, financial, travel, photographic, and agency-record custody inventory",
+      "likely_custodians": ["French investigators", "Siad estate", "modelling agencies", "telecommunications and cloud providers", "banks", "travel providers", "third-party correspondents"],
+      "affected_branches": ["evidence_custody", "recoverability", "network_reconstruction", "succession"],
+      "state": "requested",
+      "activation_effect": "Determines which evidence existed, what was secured before or after death, who holds it, and whether reconstruction remains possible without testimony.",
+      "privacy_posture": "restricted-or-sealed",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Track each object by custodian, legal authority, hash or identifier, acquisition date, access status, and succession history."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-008",
+      "record_class": "Cross-border preservation requests, mutual legal assistance, subpoenas, letters rogatory, and evidence-transfer records",
+      "likely_custodians": ["French Ministry of Justice", "United States Department of Justice", "FBI", "French prosecutors", "foreign central authorities"],
+      "affected_branches": ["cross_jurisdiction", "evidence_custody", "authority_timeline", "institutional_response"],
+      "state": "requested",
+      "activation_effect": "Establishes whether French and U.S. authorities preserved or transferred evidence before or after the death and which requests remain pending.",
+      "privacy_posture": "restricted-or-sealed",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Record request date, requesting authority, scope, response, legal basis, and unresolved gaps."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-009",
+      "record_class": "Relationship and business-network records connecting Siad, Jean-Luc Brunel, Jeffrey Epstein, agencies, recruiters, travel, payments, and identified intermediaries",
+      "likely_custodians": ["DOJ", "FBI", "French investigators", "courts", "modelling agencies", "financial institutions", "estate and corporate archives"],
+      "affected_branches": ["network_reconstruction", "influence_lineage", "factual_basis", "control_comparison"],
+      "state": "requested",
+      "activation_effect": "Supports a traceable network map that distinguishes direct records, hearsay, duplicate references, business contact, and alleged conduct.",
+      "privacy_posture": "privacy-sensitive",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "No adjacency alone may be treated as proof of criminal participation."
+    },
+    {
+      "intake_id": "DANIEL-SIAD-INTAKE-010",
+      "record_class": "Post-death rumor, correction, amplification, and source-succession register",
+      "likely_custodians": ["news publishers", "social platforms", "fact-checking archives", "prosecutor communications", "repository archive capture"],
+      "affected_branches": ["rumor_control", "public_suspicion", "corrections", "publication_boundary"],
+      "state": "requested",
+      "activation_effect": "Separates verified death and investigation facts from unsupported claims of murder, suicide, coercion, concealment, or coordinated elimination.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": ["SRC-2026-DANIEL-SIAD-MSN-CARRIER-001"],
+      "notes": "Preserve original claims, timestamps, corrections, deletions, and authoritative updates append-only."
+    }
+  ]
+}
