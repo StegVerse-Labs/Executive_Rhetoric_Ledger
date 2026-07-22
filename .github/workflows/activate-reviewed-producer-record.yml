@@ -35,25 +35,30 @@ jobs:
           python-version: "3.11"
       - name: Install validator
         run: python -m pip install --upgrade jsonschema referencing
-      - name: Verify governed review receipt
+      - name: Verify governed producer review receipt when present
         run: python scripts/verify_governed_producer_review.py
-      - name: Determine reviewed-only eligibility
+      - name: Determine producer activation and reviewed-output eligibility
         id: gate
         run: |
-          ELIGIBLE=$(python - <<'PY'
+          python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           from pathlib import Path
-          path = Path('producer_intake/review-activation/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json')
-          state = json.loads(path.read_text())
-          print('true' if state.get('compendium_eligible') else 'false')
+
+          activation_path = Path('producer_intake/review-activation/ADMINISTRATIONS-EXPORT-EO14179-ACTION-001.json')
+          activation = json.loads(activation_path.read_text())
+          producer_eligible = bool(activation.get('compendium_eligible'))
+          reviewed_receipts = sorted(Path('ledger_receipts/reviewed').glob('*.md'))
+          reviewed_outputs_eligible = bool(reviewed_receipts)
+
+          print(f"producer_eligible={'true' if producer_eligible else 'false'}")
+          print(f"reviewed_outputs_eligible={'true' if reviewed_outputs_eligible else 'false'}")
+          print(f"reviewed_receipt_count={len(reviewed_receipts)}")
           PY
-          )
-          echo "eligible=$ELIGIBLE" >> "$GITHUB_OUTPUT"
       - name: Generate reviewed-only compendium, person projections, and delivery manifests
-        if: steps.gate.outputs.eligible == 'true'
+        if: steps.gate.outputs.reviewed_outputs_eligible == 'true'
         run: python scripts/generate_compendium_and_deliveries.py --generated-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
       - name: Verify destination propagation state
-        if: steps.gate.outputs.eligible == 'true'
+        if: steps.gate.outputs.reviewed_outputs_eligible == 'true'
         run: python scripts/verify_destination_acknowledgments.py
       - name: Maintain governed post-review PR
         env:
@@ -68,11 +73,11 @@ jobs:
             echo "No post-review activation changes."
             exit 0
           fi
-          git commit -m "chore: activate governed producer review result"
+          git commit -m "chore: activate governed reviewed outputs"
           git push --force-with-lease origin "$BRANCH"
-          BODY="Verified human-authored review receipt and generated only the mechanically authorized activation state. Automation did not create or broaden the review decision. Reviewed-only publication outputs and explicitly related person-specific projections are included only when the receipt disposition is approved-action-record. Person-specific projections cannot change native source records, destination verification labels, or evidentiary standing."
+          BODY="Generated only from existing governed reviewed ledger receipts. Producer-specific promotion remains controlled by its separate reviewed receipt. Reviewed-only publication outputs and explicitly related person-specific projections cannot include candidates, change native source records or destination verification labels, establish culpability, or claim delivery or acknowledgment."
           if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
-            gh pr edit "$BRANCH" --title "Activate governed producer review result" --body "$BODY"
+            gh pr edit "$BRANCH" --title "Activate governed reviewed outputs" --body "$BODY"
           else
-            gh pr create --base main --head "$BRANCH" --title "Activate governed producer review result" --body "$BODY"
+            gh pr create --base main --head "$BRANCH" --title "Activate governed reviewed outputs" --body "$BODY"
           fi
