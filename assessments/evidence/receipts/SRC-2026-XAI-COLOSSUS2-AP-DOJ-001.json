@@ -7,10 +7,10 @@
   "publication_date": "2026-06-16",
   "source_type": "news-report",
   "institutional_proximity": "media-intermediary",
-  "evidence_role": "reported-federal-litigation-position",
+  "evidence_role": "institutional-response-source",
   "verification_status": "verified-secondary",
-  "admissibility_use": "admissible-for-reported-DOJ-position-and-contemporaneous-context",
+  "admissibility_use": "admissible-for-context-only",
   "confidence": "high",
-  "red_flags": ["complete-doj-filing-required", "complete-docket-required", "archive-needed"],
+  "red_flags": ["no-primary-source-linked", "archive-needed"],
   "notes": "Supports that AP reported DOJ sought dismissal and invoked national-security and economic interests. The complete DOJ filing, cited evidence, limiting language, xAI response, and judicial disposition remain required before primary verification or legal conclusions."
 }
