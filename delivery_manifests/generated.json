@@ -4,11 +4,12 @@
     "may_claim_delivery": false,
     "may_prepare": true
   },
-  "delivery_id": "DELIVERY-A92D53ADA93C7C4C6BDA",
+  "delivery_id": "DELIVERY-3DC4A80CB0B59D0A9EC3",
   "destinations": [
     {
       "acknowledgment": null,
       "acknowledgment_required": true,
+      "delivery_scope": "reviewed-compendium",
       "delivery_status": "prepared",
       "repository": "StegVerse-Labs/Site",
       "target_path": "data/executive-rhetoric-ledger/compendium.json"
@@ -16,6 +17,7 @@
     {
       "acknowledgment": null,
       "acknowledgment_required": true,
+      "delivery_scope": "reviewed-compendium",
       "delivery_status": "prepared",
       "repository": "GCAT-BCAT-Engine/Publisher",
       "target_path": "inputs/executive-rhetoric-ledger/compendium.json"
@@ -23,6 +25,7 @@
     {
       "acknowledgment": null,
       "acknowledgment_required": true,
+      "delivery_scope": "reviewed-compendium",
       "delivery_status": "prepared",
       "repository": "StegVerse-Labs/admissibility-wiki",
       "target_path": "data/executive-rhetoric-ledger/compendium.json"
@@ -30,14 +33,25 @@
     {
       "acknowledgment": null,
       "acknowledgment_required": true,
+      "delivery_scope": "reviewed-compendium",
       "delivery_status": "prepared",
       "repository": "StegVerse-Labs/stegguardian-wiki",
       "target_path": "data/executive-rhetoric-ledger/compendium.json"
+    },
+    {
+      "acknowledgment": null,
+      "acknowledgment_required": true,
+      "delivery_scope": "explicitly-related-reviewed-records-only",
+      "delivery_status": "prepared",
+      "repository": "StegVerse-Labs/Trumpality",
+      "source_path": "person_specific_projections/trumpality.json",
+      "source_sha256": "38f7df7d5b364478fd9e823d0f3f2a5c3f97373636b30cddf29f474a71d0b77d",
+      "target_path": "data/receipts/ledger_reviewed_projections/latest.json"
     }
   ],
-  "generated_at": "2026-07-20T14:33:00Z",
+  "generated_at": "2026-07-22T04:07:14Z",
   "source_publication": {
     "path": "publication/compendium.json",
-    "sha256": "a92d53ada93c7c4c6bdaf1351c22dc17dc3f51dd075231553fb9bae3c5ac438c"
+    "sha256": "3dc4a80cb0b59d0a9ec36c43ebcd24a9b2f157e3b587bac20cd1633a9854cee1"
   }
 }

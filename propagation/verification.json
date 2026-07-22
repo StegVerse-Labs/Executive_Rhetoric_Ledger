@@ -1,47 +1,47 @@
 {
-  "manifest_id": "PROPAGATION-BC915F288745CBB58287",
-  "generated_at": "2026-07-20T07:25:00Z",
-  "source_sha256": "bc915f288745cbb582871384a5895fabdf26e311a725112d720d120afee58d09",
+  "authority": {
+    "may_close_issue": false,
+    "may_fabricate_acknowledgment": false,
+    "may_verify": true
+  },
+  "complete": false,
+  "destination_status": [
+    {
+      "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json",
+      "destination_commit": null,
+      "reason": "destination receipt exists but failed binding or authority checks",
+      "repository": "StegVerse-Labs/Site",
+      "status": "failed"
+    },
+    {
+      "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json",
+      "destination_commit": null,
+      "reason": "destination receipt exists but failed binding or authority checks",
+      "repository": "GCAT-BCAT-Engine/Publisher",
+      "status": "failed"
+    },
+    {
+      "acknowledgment_path": "receipts/executive-rhetoric-ledger-ack.json",
+      "destination_commit": null,
+      "reason": "destination receipt exists but failed binding or authority checks",
+      "repository": "StegVerse-Labs/admissibility-wiki",
+      "status": "failed"
+    },
+    {
+      "acknowledgment_path": null,
+      "destination_commit": null,
+      "reason": "destination acknowledgment not found",
+      "repository": "StegVerse-002/StegGuardian",
+      "status": "pending"
+    }
+  ],
+  "generated_at": "2026-07-22T04:07:14Z",
+  "manifest_id": "PROP-3DC4A80CB0B59D0A9EC3",
   "required_destinations": [
     "StegVerse-Labs/Site",
     "GCAT-BCAT-Engine/Publisher",
     "StegVerse-Labs/admissibility-wiki",
     "StegVerse-002/StegGuardian"
   ],
-  "destination_status": [
-    {
-      "repository": "StegVerse-Labs/Site",
-      "status": "acknowledged",
-      "acknowledgment_path": "https://github.com/StegVerse-Labs/Site/blob/main/receipts/executive-rhetoric-ledger-ack.json",
-      "destination_commit": "51f33bd176f85ad36d5cc02b97bdf414ddb01032",
-      "reason": null
-    },
-    {
-      "repository": "GCAT-BCAT-Engine/Publisher",
-      "status": "acknowledged",
-      "acknowledgment_path": "https://github.com/GCAT-BCAT-Engine/Publisher/blob/main/receipts/executive-rhetoric-ledger-ack.json",
-      "destination_commit": "ae44f2f36b85f0275386cda3f8c264145867c4bb",
-      "reason": null
-    },
-    {
-      "repository": "StegVerse-Labs/admissibility-wiki",
-      "status": "acknowledged",
-      "acknowledgment_path": "https://github.com/StegVerse-Labs/admissibility-wiki/blob/main/receipts/executive-rhetoric-ledger-ack.json",
-      "destination_commit": "9f1bfcb7d686abdccb6f9df926f693eb5a0ca4fb",
-      "reason": null
-    },
-    {
-      "repository": "StegVerse-002/StegGuardian",
-      "status": "acknowledged",
-      "acknowledgment_path": "https://github.com/StegVerse-002/StegGuardian/blob/main/receipts/executive-rhetoric-ledger-ack.json",
-      "destination_commit": "8590b6029ca36cb962479668cf5de94ad62793c6",
-      "reason": "Authoritative StegGuardian repository; replaces unresolved StegVerse-Labs/stegguardian-wiki reference."
-    }
-  ],
-  "complete": true,
-  "authority": {
-    "may_verify": true,
-    "may_fabricate_acknowledgment": false,
-    "may_close_issue": false
-  }
+  "source_sha256": "3dc4a80cb0b59d0a9ec36c43ebcd24a9b2f157e3b587bac20cd1633a9854cee1"
 }
