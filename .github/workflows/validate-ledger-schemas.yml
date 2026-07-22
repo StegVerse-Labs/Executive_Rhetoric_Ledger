@@ -17,8 +17,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install validator
-        run: python -m pip install --upgrade jsonschema referencing
+      - name: Install validator and validate primary-record intake early
+        run: |
+          python -m pip install --upgrade jsonschema referencing
+          python scripts/validate_primary_record_intake.py
       - name: Validate sample political influence tree
         run: |
           python - <<'PY'
