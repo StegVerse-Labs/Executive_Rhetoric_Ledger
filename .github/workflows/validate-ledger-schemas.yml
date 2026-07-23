@@ -109,6 +109,45 @@ jobs:
         run: python scripts/validate_recurring_discovery.py
       - name: Validate governed source-family discovery
         run: python scripts/validate_source_family_discovery.py
+      - name: Smoke-test live source-family indexes without publishing
+        run: |
+          python scripts/discover_source_family_links.py \
+            --config config/source-families.json \
+            --base-config config/source-adapters.json \
+            --output /tmp/source-adapters.live.json \
+            --receipt /tmp/source-family-discovery.live.json \
+            --discovered-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          receipt = json.loads(Path('/tmp/source-family-discovery.live.json').read_text())
+          if receipt['execution_status'] != 'PASS':
+              raise SystemExit('No live source family was reachable')
+          if receipt['successful_family_count'] < 1:
+              raise SystemExit('Live smoke test retained no successful source family')
+          if receipt['authority']['may_promote']:
+              raise SystemExit('Live smoke test gained promotion authority')
+          print(json.dumps({
+              'successful_family_count': receipt['successful_family_count'],
+              'failed_family_count': receipt['failed_family_count'],
+              'new_adapter_count': receipt['new_adapter_count'],
+              'families': [
+                  {
+                      'family_id': item['family_id'],
+                      'fetch_status': item['fetch_status'],
+                      'discovered_count': item['discovered_count'],
+                      'error': item['error'],
+                  }
+                  for item in receipt['families']
+              ],
+          }, indent=2))
+          PY
+      - name: Upload live source-family smoke receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-family-live-smoke
+          path: /tmp/source-family-discovery.live.json
+          if-no-files-found: error
       - name: Validate source adapter and archive capture automation
         run: python scripts/validate_source_capture.py
       - name: Validate deterministic incident clustering
