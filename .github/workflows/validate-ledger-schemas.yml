@@ -91,8 +91,24 @@ jobs:
         run: python scripts/validate_activation_state.py
       - name: Validate governance patterns
         run: python scripts/validate_governance_patterns.py
-      - name: Validate assessment Political Influence Trees
-        run: python scripts/validate_assessment_trees.py
+      - name: Capture assessment Political Influence Tree validation
+        id: assessment
+        shell: bash
+        run: |
+          set +e
+          python scripts/validate_assessment_trees.py > /tmp/assessment-validation.log 2>&1
+          STATUS=$?
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+          cat /tmp/assessment-validation.log
+          exit 0
+      - name: Upload assessment validation diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: assessment-validation-diagnostic
+          path: /tmp/assessment-validation.log
+          if-no-files-found: error
+      - name: Enforce assessment Political Influence Tree validation
+        run: test "${{ steps.assessment.outputs.status }}" = "0"
       - name: Validate primary-record intake queues
         run: python scripts/validate_primary_record_intake.py
       - name: Validate individualized force-event packets
