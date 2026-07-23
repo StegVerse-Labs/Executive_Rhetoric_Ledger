@@ -107,6 +107,8 @@ jobs:
         run: python scripts/validate_portable_evidence_intake.py
       - name: Validate recurring discovery foundation
         run: python scripts/validate_recurring_discovery.py
+      - name: Validate governed source-family discovery
+        run: python scripts/validate_source_family_discovery.py
       - name: Validate source adapter and archive capture automation
         run: python scripts/validate_source_capture.py
       - name: Validate deterministic incident clustering
