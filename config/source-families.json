@@ -1,0 +1,61 @@
+{
+  "families": [
+    {
+      "family_id": "FEDERAL_REGISTER_DHS",
+      "enabled": true,
+      "index_type": "html-index",
+      "index_url": "https://www.federalregister.gov/agencies/homeland-security-department",
+      "source_class": "primary-legal-record",
+      "allowed_hosts": ["www.federalregister.gov"],
+      "allowed_path_prefixes": ["/documents/"],
+      "relevance_terms": ["immigration", "enforcement", "detention", "civil rights", "border", "investigation", "executive order"],
+      "max_links": 30,
+      "request_headers": {"User-Agent": "StegVerse-ERL-Discovery/1.0"},
+      "review_boundary": {"automation_may_discover": true, "automation_may_capture": true, "automation_may_promote": false}
+    },
+    {
+      "family_id": "DOJ_PRESS_RELEASES",
+      "enabled": true,
+      "index_type": "html-index",
+      "index_url": "https://www.justice.gov/news/press-releases",
+      "source_class": "official-government",
+      "allowed_hosts": ["www.justice.gov"],
+      "allowed_path_prefixes": ["/opa/pr/", "/ag/media/", "/crt/case-document/"],
+      "relevance_terms": ["civil rights", "immigration", "federal officer", "investigation", "constitutional", "detention", "use of force", "homeland security"],
+      "max_links": 40,
+      "request_headers": {"User-Agent": "StegVerse-ERL-Discovery/1.0"},
+      "review_boundary": {"automation_may_discover": true, "automation_may_capture": true, "automation_may_promote": false}
+    },
+    {
+      "family_id": "ICE_NEWSROOM",
+      "enabled": true,
+      "index_type": "html-index",
+      "index_url": "https://www.ice.gov/newsroom",
+      "source_class": "official-government",
+      "allowed_hosts": ["www.ice.gov"],
+      "allowed_path_prefixes": ["/news/releases/", "/newsroom/"],
+      "relevance_terms": ["arrest", "operation", "enforcement", "detention", "officer", "investigation", "immigration"],
+      "max_links": 40,
+      "request_headers": {"User-Agent": "StegVerse-ERL-Discovery/1.0"},
+      "review_boundary": {"automation_may_discover": true, "automation_may_capture": true, "automation_may_promote": false}
+    },
+    {
+      "family_id": "CBP_MEDIA_RELEASES",
+      "enabled": true,
+      "index_type": "html-index",
+      "index_url": "https://www.cbp.gov/newsroom/media-releases/all",
+      "source_class": "official-government",
+      "allowed_hosts": ["www.cbp.gov"],
+      "allowed_path_prefixes": ["/newsroom/", "/newsroom/local-media-release/", "/newsroom/national-media-release/"],
+      "relevance_terms": ["border patrol", "arrest", "operation", "use of force", "detention", "immigration", "enforcement"],
+      "max_links": 40,
+      "request_headers": {"User-Agent": "StegVerse-ERL-Discovery/1.0"},
+      "review_boundary": {"automation_may_discover": true, "automation_may_capture": true, "automation_may_promote": false}
+    }
+  ],
+  "authority": {
+    "discovery_may_create_candidates": true,
+    "discovery_may_promote": false,
+    "human_review_required": true
+  }
+}
