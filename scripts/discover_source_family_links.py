@@ -2,18 +2,22 @@
 """Discover allowlisted, relevance-filtered links and emit existing source adapters.
 
 Discovery creates capture candidates only. It never promotes or classifies records.
+Each enabled source family is isolated so one unavailable index cannot suppress the
+remaining sweep. The command fails only when every enabled family fails.
 """
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import urllib.error
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parents[1]
+
 
 class LinkParser(HTMLParser):
     def __init__(self) -> None:
@@ -86,14 +90,22 @@ def adapter_for(family: dict, url: str) -> dict:
             "retain_raw": True,
             "hash_algorithm": "sha256",
             "deduplicate": True,
-            "archive_directory": "archive/captures"
+            "archive_directory": "archive/captures",
         },
         "review_boundary": {
             "automation_may_capture": True,
             "automation_may_propose": True,
-            "automation_may_promote": False
-        }
+            "automation_may_promote": False,
+        },
     }
+
+
+def error_text(exc: Exception) -> str:
+    if isinstance(exc, urllib.error.HTTPError):
+        return f"HTTP {exc.code}: {exc.reason}"
+    if isinstance(exc, urllib.error.URLError):
+        return f"URL error: {exc.reason}"
+    return f"{type(exc).__name__}: {exc}"
 
 
 def main() -> int:
@@ -109,34 +121,52 @@ def main() -> int:
     base = load_json(ROOT / args.base_config)
     discovered: list[dict] = []
     family_results: list[dict] = []
+    enabled_count = 0
+    successful_count = 0
 
     for family in config["families"]:
         if not family["enabled"]:
             continue
-        payload = fetch_index(family)
-        parser_ = LinkParser()
-        parser_.feed(payload.decode("utf-8", errors="replace"))
-        accepted: list[str] = []
-        seen: set[str] = set()
-        for href, anchor_text in parser_.links:
-            url = canonical_url(family["index_url"], href)
-            if not url or url in seen or not allowed(url, family):
-                continue
-            if not relevant(f"{anchor_text} {url}", family["relevance_terms"]):
-                continue
-            seen.add(url)
-            accepted.append(url)
-            if len(accepted) >= family["max_links"]:
-                break
-        discovered.extend(adapter_for(family, url) for url in accepted)
-        family_results.append({
-            "family_id": family["family_id"],
-            "index_url": family["index_url"],
-            "index_sha256": hashlib.sha256(payload).hexdigest(),
-            "discovered_count": len(accepted),
-            "candidate_urls": accepted,
-            "promotion_authority": False
-        })
+        enabled_count += 1
+        try:
+            payload = fetch_index(family)
+            parser_ = LinkParser()
+            parser_.feed(payload.decode("utf-8", errors="replace"))
+            accepted: list[str] = []
+            seen: set[str] = set()
+            for href, anchor_text in parser_.links:
+                url = canonical_url(family["index_url"], href)
+                if not url or url in seen or not allowed(url, family):
+                    continue
+                if not relevant(f"{anchor_text} {url}", family["relevance_terms"]):
+                    continue
+                seen.add(url)
+                accepted.append(url)
+                if len(accepted) >= family["max_links"]:
+                    break
+            discovered.extend(adapter_for(family, url) for url in accepted)
+            successful_count += 1
+            family_results.append({
+                "family_id": family["family_id"],
+                "index_url": family["index_url"],
+                "fetch_status": "PASS",
+                "index_sha256": hashlib.sha256(payload).hexdigest(),
+                "discovered_count": len(accepted),
+                "candidate_urls": accepted,
+                "error": None,
+                "promotion_authority": False,
+            })
+        except (OSError, UnicodeError, urllib.error.URLError) as exc:
+            family_results.append({
+                "family_id": family["family_id"],
+                "index_url": family["index_url"],
+                "fetch_status": "FAILED",
+                "index_sha256": None,
+                "discovered_count": 0,
+                "candidate_urls": [],
+                "error": error_text(exc),
+                "promotion_authority": False,
+            })
 
     existing = {item["endpoint"] for item in base["adapters"]}
     unique = [item for item in discovered if item["endpoint"] not in existing]
@@ -145,9 +175,14 @@ def main() -> int:
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(runtime, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
+    failed_count = enabled_count - successful_count
     receipt = {
-        "schema": "stegverse.executive_rhetoric_ledger.source_family_discovery.v1",
+        "schema": "stegverse.executive_rhetoric_ledger.source_family_discovery.v2",
         "discovered_at": args.discovered_at,
+        "execution_status": "PASS" if successful_count > 0 else "FAILED",
+        "enabled_family_count": enabled_count,
+        "successful_family_count": successful_count,
+        "failed_family_count": failed_count,
         "families": family_results,
         "runtime_adapter_count": len(runtime["adapters"]),
         "new_adapter_count": len(unique),
@@ -155,13 +190,18 @@ def main() -> int:
             "may_discover": True,
             "may_capture": True,
             "may_promote": False,
-            "human_review_required": True
-        }
+            "human_review_required": True,
+        },
     }
     receipt_path = ROOT / args.receipt
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
     receipt_path.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(str(output.relative_to(ROOT)))
+
+    if enabled_count == 0:
+        raise SystemExit("No enabled source families")
+    if successful_count == 0:
+        raise SystemExit("Every enabled source family failed; see discovery receipt")
     return 0
 
 
