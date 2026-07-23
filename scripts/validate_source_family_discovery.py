@@ -38,6 +38,7 @@ def main() -> int:
                     "enabled": True,
                     "index_type": "local-html-index",
                     "index_url": "source_fixtures/does-not-exist.html",
+                    "link_base_url": "https://failed.example.gov/index",
                     "source_class": "official-government",
                     "allowed_hosts": ["failed.example.gov"],
                     "allowed_path_prefixes": ["/news/"],
@@ -54,6 +55,7 @@ def main() -> int:
                     "enabled": True,
                     "index_type": "local-html-index",
                     "index_url": "source_fixtures/source-family-index.html",
+                    "link_base_url": "https://example.gov/index",
                     "source_class": "official-government",
                     "allowed_hosts": ["example.gov"],
                     "allowed_path_prefixes": ["/news/"],
@@ -104,7 +106,7 @@ def main() -> int:
         if result["new_adapter_count"] != 2 or result["authority"]["may_promote"]:
             raise SystemExit("Discovery receipt authority/count mismatch")
 
-    print("Validated source-family discovery, failure isolation, and candidate-only authority.")
+    print("Validated source-family discovery, failure isolation, relative-link resolution, and candidate-only authority.")
     return 0
 
 
