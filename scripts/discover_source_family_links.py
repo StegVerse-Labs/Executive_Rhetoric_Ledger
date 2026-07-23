@@ -134,8 +134,9 @@ def main() -> int:
             parser_.feed(payload.decode("utf-8", errors="replace"))
             accepted: list[str] = []
             seen: set[str] = set()
+            link_base = family.get("link_base_url", family["index_url"])
             for href, anchor_text in parser_.links:
-                url = canonical_url(family["index_url"], href)
+                url = canonical_url(link_base, href)
                 if not url or url in seen or not allowed(url, family):
                     continue
                 if not relevant(f"{anchor_text} {url}", family["relevance_terms"]):
