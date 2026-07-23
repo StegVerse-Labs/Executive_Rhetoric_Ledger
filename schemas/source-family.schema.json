@@ -10,6 +10,7 @@
     "enabled": {"type": "boolean"},
     "index_type": {"enum": ["html-index", "local-html-index"]},
     "index_url": {"type": "string", "minLength": 1},
+    "link_base_url": {"type": "string", "pattern": "^https?://"},
     "source_class": {"type": "string", "enum": ["primary-legal-record", "official-government", "court-record", "legislative-oversight", "local-reporting", "national-reporting", "advocacy-record", "historical-archive"]},
     "allowed_hosts": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
     "allowed_path_prefixes": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^/"}},
