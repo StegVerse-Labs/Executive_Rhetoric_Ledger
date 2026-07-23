@@ -108,6 +108,13 @@ def error_text(exc: Exception) -> str:
     return f"{type(exc).__name__}: {exc}"
 
 
+def display_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config/source-families.json")
@@ -197,7 +204,7 @@ def main() -> int:
     receipt_path = ROOT / args.receipt
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
     receipt_path.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(str(output.relative_to(ROOT)))
+    print(display_path(output))
 
     if enabled_count == 0:
         raise SystemExit("No enabled source families")
