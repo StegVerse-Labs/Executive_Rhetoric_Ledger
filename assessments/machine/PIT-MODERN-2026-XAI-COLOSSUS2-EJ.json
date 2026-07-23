@@ -76,7 +76,7 @@
     "comparable_prior_administrations": [],
     "comparable_policy_instruments": ["Large stationary-source and temporary-equipment permitting decisions"],
     "comparable_fraud_or_harm_magnitude": [],
-    "comparable_enforcement_tools": ["Preconstruction permits, injunctions, enforcement discretion, citizen suits"],
+    "comparable_enforcement_tools": ["Preconstruction permits", "injunctions", "enforcement discretion", "citizen suits"],
     "comparable_judicial_posture": ["Federal intervention in private environmental litigation"],
     "missing_controls": ["Comparable data centers", "Comparable private generation projects", "Comparable communities and pollution burdens", "Cross-administration federal intervention cases"],
     "comparison_notes": "No claim of exceptional treatment is final until comparable projects and enforcement postures are installed."
@@ -115,9 +115,27 @@
   },
   "receipts": {
     "sources": [
-      {"source_id": "SRC-2026-XAI-COLOSSUS2-NAACP-001", "title": "NAACP Sues xAI for Illegal Pollution from Data Center Power Plant", "url": "https://naacp.org/articles/naacp-sues-xai-illegal-pollution-data-center-power-plant", "source_type": "advocacy-record", "verification_status": "verified-primary-party-statement"},
-      {"source_id": "SRC-2026-XAI-COLOSSUS2-EARTHJUSTICE-001", "title": "Illegal Pollution from Data Center Power Plants Shouldn't Harm Our Communities. We're Suing xAI.", "url": "https://earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus", "source_type": "advocacy-record", "verification_status": "verified-primary-party-statement"},
-      {"source_id": "SRC-2026-XAI-COLOSSUS2-AP-DOJ-001", "title": "In boost to Musk, Justice Department seeks to dismiss air pollution lawsuit against xAI data center", "url": "https://apnews.com/article/0e981ca0508d7e4144662392d9d66ab2", "source_type": "news-report", "verification_status": "verified-secondary"}
+      {
+        "source_id": "SRC-2026-XAI-COLOSSUS2-CANDIDATE-001",
+        "title": "xAI Colossus 2 environmental justice and regulatory-exemption research candidate",
+        "url": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md",
+        "archive_url": "",
+        "access_date": "2026-07-22",
+        "publication_date": "2026-07-22",
+        "source_type": "secondary-analysis",
+        "institutional_proximity": "commentary-layer",
+        "evidence_role": "surface-claim-source",
+        "verification_status": "unverified",
+        "admissibility_use": "admissible-for-claim-text",
+        "confidence": "medium",
+        "red_flags": ["no-primary-source-linked", "archive-needed"],
+        "notes": "Admissible to preserve the submitted research theory and collection plan, not to establish the truth of its factual or legal claims."
+      }
+    ],
+    "source_receipt_refs": [
+      "SRC-2026-XAI-COLOSSUS2-NAACP-001",
+      "SRC-2026-XAI-COLOSSUS2-EARTHJUSTICE-001",
+      "SRC-2026-XAI-COLOSSUS2-AP-DOJ-001"
     ],
     "archive_sources": [],
     "review_notes": ["Research candidate: research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md", "Primary-record queue: assessments/intake/2026-07-xai-colossus-2-primary-record-intake.json"],
