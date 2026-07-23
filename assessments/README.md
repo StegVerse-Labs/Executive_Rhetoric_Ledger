@@ -90,6 +90,32 @@ The control framework defines administration-transition, agency-wide enforcement
 
 Repository inclusion does not independently validate criminal liability, corrupt purpose, particular-matter participation, waiver status, aggregate causation, realized savings, or claimed historical uniqueness. Promotion requires claim-level primary receipts, exact stage-normalized budget data, populated controls, final current-status verification, independent review, and a passed validation receipt.
 
+### xAI Colossus 2 environmental justice and regulatory-exemption review
+
+```yaml
+topic_id: "PIT-MODERN-2026-XAI-COLOSSUS2-EJ"
+record_date: "2026-07-22"
+review_status: "evidence-acquisition-required"
+source_receipts: "1-embedded-plus-3-standalone-explicitly-linked"
+primary_record_intake: "active-12-items"
+control_status: "required-unpopulated"
+validation_status: "pending"
+final_legal_conclusion: false
+```
+
+Core records:
+
+- [Research candidate](../research-candidates/2026-07-xai-colossus-2-environmental-justice-regulatory-exemption.md)
+- [Machine-readable Political Influence Tree](machine/PIT-MODERN-2026-XAI-COLOSSUS2-EJ.json)
+- [Governance review](reviews/PIT-MODERN-2026-XAI-COLOSSUS2-EJ.review.md)
+- [Control comparison framework](controls/2026-07-xai-colossus-2-control-comparison.md)
+- [Machine-readable primary-record intake queue](intake/2026-07-xai-colossus-2-primary-record-intake.json)
+- [NAACP source-posture receipt](evidence/receipts/SRC-2026-XAI-COLOSSUS2-NAACP-001.json)
+- [Earthjustice source-posture receipt](evidence/receipts/SRC-2026-XAI-COLOSSUS2-EARTHJUSTICE-001.json)
+- [Associated Press/DOJ source-posture receipt](evidence/receipts/SRC-2026-XAI-COLOSSUS2-AP-DOJ-001.json)
+
+This assessment preserves allegations, party positions, reported federal intervention, and a primary-record acquisition plan. It does not establish permit illegality, a civil-rights violation, discriminatory intent, corrupt purpose, verified emissions, causation, or final judicial disposition.
+
 ## Assessment rules
 
 1. Claim existence and claim truth remain separate.
