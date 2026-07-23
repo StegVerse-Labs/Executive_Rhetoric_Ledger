@@ -1,0 +1,1 @@
+The source-family discovery layer reuses the existing recurring-discovery workflow, source-adapter schema, archive capture, hashing, deduplication, clustering, adjacency, historical backfill, governed review routing, and reviewed-only publication controls. It does not create a second scheduler or publication path.
