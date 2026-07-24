@@ -1,0 +1,78 @@
+{
+  "record_id": "ERL-2026-07-24-MULTIANGLE-001",
+  "status": "admitted-for-further-investigation",
+  "record_type": "linked-incident-evidence-and-analytical-failure-stream",
+  "captured_at": "2026-07-24",
+  "final_legal_conclusion": false,
+  "parent_evidence_stream": "incident-evidence-streams/2026-07-24-multi-angle-officer-shooting-and-ai-review-failure.md",
+  "media": [
+    {
+      "filename": "ScreenRecording_07-24-2026 16-14-44_1.mp4",
+      "duration_seconds": 18.633333,
+      "size_bytes": 13704530,
+      "sha256": "b43fcb32dff9cda969be9dc00a3d0f1af09426c83ac768430cc3526c3ea66921",
+      "repository_binary_state": "pending-installation"
+    },
+    {
+      "filename": "ScreenRecording_07-24-2026 15-51-47_1.mp4",
+      "duration_seconds": 27.566667,
+      "size_bytes": 20113814,
+      "sha256": "87a0c84b1798bbec0c6a686b29a6d601d666e04e6cd179edf2446bd6d6c2ac80",
+      "repository_binary_state": "pending-installation"
+    }
+  ],
+  "linked_incidents": [
+    {
+      "incident_id": "ERL-2026-07-24-MULTIANGLE-001-A",
+      "title": "Apparent excessive force and civil-rights violation",
+      "status": "admitted-for-further-investigation",
+      "observations": [
+        "Multiple officers force, wrestle, or restrain a man on the ground.",
+        "The man remains on the ground and surrounded by officers.",
+        "Another officer draws a pistol and fires multiple times toward him at close range."
+      ],
+      "investigative_proposition": "Deadly force may have been used against a person already restrained or substantially controlled, requiring investigation for excessive force and deprivation of civil rights under color of law.",
+      "final_finding": false
+    },
+    {
+      "incident_id": "ERL-2026-07-24-MULTIANGLE-001-B",
+      "title": "Close-quarters gunfire endangering officers and others",
+      "status": "admitted-for-further-investigation",
+      "observations": [
+        "Multiple officers remain physically engaged with or immediately adjacent to the man when shots are fired.",
+        "The shooting occurs inside a compressed close-quarters cluster.",
+        "The apparent line of fire enters an area occupied by fellow officers."
+      ],
+      "investigative_proposition": "The firearm deployment may have created independent lethal risk through crossfire, backdrop failure, overpenetration, misidentification, or inadequate target isolation.",
+      "final_finding": false
+    },
+    {
+      "incident_id": "ERL-2026-07-24-MULTIANGLE-001-C",
+      "title": "AI analytical deference and minimization in civil-rights evidence review",
+      "status": "admitted-for-further-investigation",
+      "observations": [
+        "The initial AI review foregrounded provenance and uncertainty rather than accurately describing the visible multi-angle event.",
+        "The initial review minimized potential officer and government responsibility without evidence establishing lawful conduct.",
+        "The analysis materially improved only after user correction.",
+        "When the user identified the broader pattern, the AI again narrowed and softened the conclusion before acknowledging the repeated failure."
+      ],
+      "investigative_proposition": "The response sequence may evidence a model-level or policy-level tendency to reduce accountability for state actors through procedural caveats, institutional deference, and defensive reframing.",
+      "correction_count_before_full_acknowledgment": 2,
+      "final_finding": false
+    }
+  ],
+  "required_next_actions": [
+    "Install or attach the exact hashed media objects.",
+    "Preserve the complete conversation transcript as a source object.",
+    "Acquire original source, full-length footage, incident identity, official records, and independent review.",
+    "Compare official rhetoric with the multi-angle evidence.",
+    "Run controlled tests for differential AI treatment of state and non-state actors."
+  ],
+  "promotion_boundaries": {
+    "media_authentication": "pending",
+    "binary_preservation": "pending",
+    "independent_review": "pending",
+    "legal_adjudication": "not-established",
+    "publication_is_final_adjudication": false
+  }
+}
