@@ -1,0 +1,100 @@
+{
+  "chronology_id": "CHR-2026-07-28-30-IRAN-JORDAN-FIRSTNET",
+  "version": "0.1.0",
+  "status": "incomplete",
+  "normalization_policy": {
+    "canonical_timezone": "UTC",
+    "retain_source_timezone": true,
+    "precision_values": ["exact", "minute", "hour", "approximate", "unknown"],
+    "rule": "No inferred timestamp may be promoted above its source precision. Publication time, event time, statement time, and first-indexed time remain distinct fields."
+  },
+  "events": [
+    {
+      "id": "EV-001",
+      "label": "communications degradation observed",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "America/Chicago",
+      "precision": "approximate",
+      "posture": "firsthand_observation",
+      "notes": "Simultaneous degradation affected an AT&T FirstNet line and Astound fixed broadband; exact start and recovery times require device, carrier, or support records."
+    },
+    {
+      "id": "EV-002",
+      "label": "Iranian ballistic missile launch toward U.S. facilities in Jordan",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": null,
+      "precision": "minute",
+      "posture": "official_claim_requires_capture",
+      "notes": "Populate only from preserved CENTCOM, Jordanian, or telemetry source. Do not substitute article publication time."
+    },
+    {
+      "id": "EV-003",
+      "label": "CENTCOM attempted surprise attack characterization",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": null,
+      "precision": "minute",
+      "posture": "official_publication_requires_capture",
+      "notes": "Retain original platform timestamp, edit history, and archive hash."
+    },
+    {
+      "id": "EV-004",
+      "label": "Jordanian military interception disclosure",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Amman",
+      "precision": "minute",
+      "posture": "official_publication_requires_capture",
+      "notes": "Distinguish military statement issuance from Petra indexing and republication."
+    },
+    {
+      "id": "EV-005",
+      "label": "IRGC Notice No. 52 publication",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Tehran",
+      "precision": "minute",
+      "posture": "official_publication_requires_capture",
+      "notes": "Preserve Persian original; connect IRNA Persian, Arabic, and English derivatives without treating translations as independent event confirmations."
+    },
+    {
+      "id": "EV-006",
+      "label": "U.S. executive punitive retaliation rhetoric",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": null,
+      "precision": "minute",
+      "posture": "official_or_recorded_remarks_requires_capture",
+      "notes": "Preserve exact wording and distinguish live remarks, transcript, social post, and secondary quotation."
+    },
+    {
+      "id": "EV-007",
+      "label": "U.S. strike campaign execution begins",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": null,
+      "precision": "minute",
+      "posture": "official_operational_claim_requires_capture",
+      "notes": "Do not infer authorization time from execution time."
+    },
+    {
+      "id": "EV-008",
+      "label": "Iranian after-action assessment",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Tehran",
+      "precision": "unknown",
+      "posture": "not_located",
+      "notes": "Absence must be rechecked against official military and government channels before being recorded as bounded absence."
+    }
+  ],
+  "required_outputs": [
+    "chronology_with_populated_source_times",
+    "source_capture_hashes",
+    "publication_latency_calculations",
+    "event_to_rhetoric_transition_intervals",
+    "uncertainty_annotations"
+  ]
+}
