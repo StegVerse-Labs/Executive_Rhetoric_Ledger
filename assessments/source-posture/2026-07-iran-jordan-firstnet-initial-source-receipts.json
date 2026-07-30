@@ -1,0 +1,228 @@
+{
+  "topic_id": "PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET",
+  "packet_status": "initial-source-posture",
+  "created_date": "2026-07-30",
+  "last_reviewed": "2026-07-30",
+  "final_legal_conclusion": false,
+  "orchestration_finding": false,
+  "iranian_telecom_attribution": false,
+  "notes": "Initial source-posture packet for the July 28-30 Iran-Jordan-FirstNet escalation candidate. These receipts preserve official and secondary claim provenance. They do not establish orchestration, a FirstNet systemwide failure, Iranian responsibility for network degradation, forced Jordanian alignment, unlawful retaliation, or proportionality.",
+  "sources": [
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-CENTCOM-001",
+      "title": "CENTCOM statement characterizing an attempted surprise attack",
+      "url": "https://x.com/CENTCOM/status/2082231500318114110",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-28",
+      "source_type": "official-social-media-object",
+      "institutional_proximity": "primary-official",
+      "evidence_role": "surface-claim-and-timeline-source",
+      "verification_status": "located-primary-object-metadata-capture-needed",
+      "admissibility_use": "admissible-for-official-claim-text",
+      "confidence": "high",
+      "red_flags": ["archive-needed", "native-metadata-needed", "intent-characterization-not-independent-fact"],
+      "supported_record": [
+        "CENTCOM publicly attributed the launch to Iran and characterized it as an attempted surprise attack against U.S. forces.",
+        "The statement supplied a stated launch time and claimed interception outcome."
+      ],
+      "limitations": [
+        "The statement does not independently prove the asserted surprise condition or disclose the complete intelligence basis.",
+        "Native platform metadata, approval history, and any edits or succession remain required."
+      ],
+      "notes": "Preserve the exact original object and distinguish official characterization from reconstructed physical fact."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-PETRA-001",
+      "title": "Jordanian air defenses intercept five missiles fired from Iran",
+      "url": "https://petra.gov.jo/en/news/jordanian-air-defenses-intercept-five-missiles-fired-from-iran",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-29",
+      "source_type": "state-news-agency-report",
+      "institutional_proximity": "official-government-carrier",
+      "evidence_role": "interception-and-sovereignty-posture-source",
+      "verification_status": "verified-official-carrier",
+      "admissibility_use": "admissible-for-jordanian-official-claim",
+      "confidence": "high",
+      "red_flags": ["archive-needed", "earlier-informal-notice-unresolved"],
+      "supported_record": [
+        "Jordan publicly claimed its defenses intercepted and destroyed five missiles fired from Iran.",
+        "The indexed Petra publication followed the reported launch by several hours."
+      ],
+      "limitations": [
+        "The statement does not establish the total number Iran launched.",
+        "It does not prove whether an earlier Jordanian briefing or notice existed outside the indexed Petra page.",
+        "It does not establish U.S. control of Jordanian disclosure timing."
+      ],
+      "notes": "Use for Jordan's official claim and indexed publication sequence only."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-SEPAH-001",
+      "title": "IRGC Notice No. 52 concerning U.S. military targets in Jordan",
+      "url": "https://sepahnews.ir/fa/services/9/10",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-29",
+      "source_type": "official-military-statement",
+      "institutional_proximity": "primary-official",
+      "evidence_role": "iranian-responsibility-and-target-description-source",
+      "verification_status": "located-primary-object-exact-page-capture-needed",
+      "admissibility_use": "admissible-for-official-claim-text",
+      "confidence": "high",
+      "red_flags": ["exact-item-url-needed", "archive-needed", "translation-review-needed"],
+      "supported_record": [
+        "The IRGC publicly claimed an operation using several ballistic missiles.",
+        "The communiqué described a U.S. air base and a U.S. central-command facility in Jordan as targets."
+      ],
+      "limitations": [
+        "The communiqué did not state an exact launch count.",
+        "It did not provide a missile-to-target allocation or verified battle-damage assessment.",
+        "It did not establish successful impact."
+      ],
+      "notes": "Acquire and hash the exact Notice No. 52 page and preserve the Persian text as the controlling source."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-IRNA-FA-001",
+      "title": "IRNA Persian reproduction of IRGC Notice No. 52",
+      "url": "https://www.irna.ir/news/86222422/",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-29",
+      "source_type": "state-news-agency-report",
+      "institutional_proximity": "official-government-carrier",
+      "evidence_role": "translation-and-publication-succession-source",
+      "verification_status": "verified-official-carrier",
+      "admissibility_use": "admissible-for-claim-provenance",
+      "confidence": "high",
+      "red_flags": ["archive-needed", "complete-translation-review-needed"],
+      "supported_record": [
+        "IRNA Persian reproduced the IRGC communiqué and used an unspecified quantity equivalent to several or a few ballistic missiles.",
+        "The Persian publication preceded the later IRNA English adaptation."
+      ],
+      "limitations": [
+        "IRNA is a carrier of the military statement rather than independent verification of launch effects.",
+        "The wording does not validate the Jordanian count of five as the total launch count."
+      ],
+      "notes": "Preserve full Persian text and compare line-by-line with later English and Arabic adaptations."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-IRNA-EN-001",
+      "title": "US air base, CENTCOM headquarters in Jordan targeted: IRGC",
+      "url": "https://en.irna.ir/news/86222477/US-air-base-CENTCOM-headquarters-in-Jordan-targeted-IRGC",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-29",
+      "source_type": "state-news-agency-translation",
+      "institutional_proximity": "official-government-carrier",
+      "evidence_role": "english-language-claim-provenance-source",
+      "verification_status": "verified-official-carrier",
+      "admissibility_use": "admissible-for-translated-claim-text",
+      "confidence": "high",
+      "red_flags": ["archive-needed", "condensed-adaptation", "not-controlling-language"],
+      "supported_record": [
+        "IRNA English carried the IRGC responsibility claim and described several ballistic missiles and two target categories."
+      ],
+      "limitations": [
+        "The English report is a condensed adaptation rather than the controlling original communiqué.",
+        "It does not independently verify impacts, count, target occupancy, or strategic rationale."
+      ],
+      "notes": "Use with the Persian source, not as a substitute for it."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-TRUMP-REUTERS-001",
+      "title": "Trump says U.S. will hit Iran hard after attack",
+      "url": "https://www.reuters.com/world/middle-east/trump-says-will-hit-iran-hard-after-attack-was-briefed-egypt-tanker-2026-07-29/",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-29",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "executive-rhetoric-source",
+      "verification_status": "verified-secondary-original-object-needed",
+      "admissibility_use": "admissible-for-context-only",
+      "confidence": "high",
+      "red_flags": ["original-video-or-transcript-needed", "archive-needed"],
+      "supported_record": [
+        "Reuters reported punitive presidential language including that Iran would be hit very hard and that it was our turn."
+      ],
+      "limitations": [
+        "The wire account does not replace the complete original video, transcript, question context, or platform object.",
+        "The rhetoric does not independently establish the complete operational basis for retaliation."
+      ],
+      "notes": "Acquire the White House or pool primary object before statement-level promotion."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-JORDAN-US-STRIKES-REUTERS-001",
+      "title": "U.S. carries out fresh Iran strikes, CENTCOM says",
+      "url": "https://www.reuters.com/world/middle-east/us-carries-out-fresh-iran-strikes-centcom-says-2026-07-30/",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-30",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "operation-scope-and-timeline-source",
+      "verification_status": "verified-secondary-primary-operational-record-needed",
+      "admissibility_use": "admissible-for-context-only",
+      "confidence": "high",
+      "red_flags": ["primary-centcom-release-needed", "target-effects-unverified", "archive-needed"],
+      "supported_record": [
+        "Reuters reported a U.S. operation lasting about two hours and striking numerous Iranian command, missile, drone, coastal-defense, surveillance, and maritime targets.",
+        "The reported breadth supports the inference that substantial target preparation predated the missile launch."
+      ],
+      "limitations": [
+        "The report does not disclose target-package preparation dates, authorization chronology, classified threat inputs, or independently verified effects.",
+        "Prior preparation does not by itself prove orchestration or illegality."
+      ],
+      "notes": "Acquire the underlying CENTCOM release, target list, imagery, and later damage assessment."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-CISA-ADVISORY-001",
+      "title": "Joint advisory concerning Iranian-affiliated activity against critical infrastructure",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-22",
+      "source_type": "official-cybersecurity-advisory",
+      "institutional_proximity": "primary-official",
+      "evidence_role": "threat-context-source",
+      "verification_status": "verified-primary",
+      "admissibility_use": "admissible-for-threat-context-only",
+      "confidence": "high",
+      "red_flags": ["does-not-identify-telecom-victim", "does-not-attribute-july-28-event"],
+      "supported_record": [
+        "Federal agencies publicly warned of Iranian-affiliated activity against U.S. critical infrastructure shortly before the July 28 events."
+      ],
+      "limitations": [
+        "The advisory does not identify AT&T, FirstNet, Astound, or the observed July 28 degradation as victims.",
+        "It does not prove that the advisory was bait, that the network event was staged, or that cyber activity influenced the strike authorization."
+      ],
+      "notes": "Use only to establish contemporaneous threat context until incident-specific attribution exists."
+    },
+    {
+      "source_id": "SRC-2026-IRAN-FIRSTNET-USER-OBS-001",
+      "title": "Firsthand observation of concurrent Astound and FirstNet degradation",
+      "url": "",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2026-07-28",
+      "source_type": "firsthand-user-observation",
+      "institutional_proximity": "direct-observer",
+      "evidence_role": "incident-observation-source",
+      "verification_status": "unverified-firsthand-provider-records-needed",
+      "admissibility_use": "admissible-for-observation-intake-only",
+      "confidence": "medium",
+      "red_flags": ["provider-telemetry-needed", "timestamps-needed", "geographic-scope-unresolved", "common-cause-unproven"],
+      "supported_record": [
+        "A genuine FirstNet line and an Astound fixed-broadband connection were reported as substantially degraded during the same period.",
+        "Both services later improved without local equipment changes.",
+        "A non-beta iPhone on the same household network also experienced mobile-service problems, weakening a beta-iOS-only explanation."
+      ],
+      "limitations": [
+        "The observation does not establish a systemwide FirstNet failure, a shared network component, cyber tampering, Iranian attribution, or staging.",
+        "Provider logs, device records, location history, screenshots, support transcripts, and regulatory records remain required."
+      ],
+      "notes": "Preserve as a firsthand incident report with strict separation between observed degradation and inferred cause."
+    }
+  ]
+}
