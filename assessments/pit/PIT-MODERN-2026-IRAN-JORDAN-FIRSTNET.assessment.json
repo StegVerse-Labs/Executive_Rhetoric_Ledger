@@ -1,0 +1,118 @@
+{
+  "assessment_id": "PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET",
+  "version": "0.1.0",
+  "status": "research_candidate",
+  "final_finding": false,
+  "incident_window": {
+    "start": "2026-07-28T00:00:00Z",
+    "end": null,
+    "timezone_policy": "retain source-local timestamp and normalize separately to UTC"
+  },
+  "research_question": "Did a limited Iranian missile launch serve as the public activation event for a pre-existing U.S. escalation architecture whose complete decision basis included undisclosed cross-domain inputs?",
+  "actors": [
+    {"id": "IRGC", "type": "military", "jurisdiction": "Iran"},
+    {"id": "CENTCOM", "type": "military_command", "jurisdiction": "United States"},
+    {"id": "US_EXECUTIVE", "type": "executive", "jurisdiction": "United States"},
+    {"id": "JAF", "type": "military", "jurisdiction": "Jordan"},
+    {"id": "PETRA", "type": "state_news_agency", "jurisdiction": "Jordan"},
+    {"id": "FIRSTNET_ATT", "type": "public_safety_communications", "jurisdiction": "United States"},
+    {"id": "ASTOUND", "type": "communications_provider", "jurisdiction": "United States"}
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "claim": "Iranian ballistic missiles were launched toward U.S. facilities in Jordan.",
+      "posture": "official_claim_correlated_across_adversarial_sources",
+      "confidence": "high",
+      "requires_primary_receipt": true
+    },
+    {
+      "id": "OBS-002",
+      "claim": "Jordan publicly reported intercepting five Iranian missiles.",
+      "posture": "official_jordanian_claim",
+      "confidence": "high_as_to_claim_not_telemetry",
+      "requires_primary_receipt": true
+    },
+    {
+      "id": "OBS-003",
+      "claim": "Iran's official military notice described the quantity only as several ballistic missiles and did not publish an after-action damage assessment.",
+      "posture": "official_iranian_claim_and_document_absence",
+      "confidence": "high",
+      "requires_primary_receipt": true
+    },
+    {
+      "id": "OBS-004",
+      "claim": "CENTCOM rapidly characterized the event as an attempted surprise attack.",
+      "posture": "official_rhetorical_characterization",
+      "confidence": "high_as_to_wording",
+      "requires_primary_receipt": true
+    },
+    {
+      "id": "OBS-005",
+      "claim": "A broad U.S. strike operation followed using a target architecture that necessarily required substantial prior preparation.",
+      "posture": "mixed_official_reporting_and_operational_inference",
+      "confidence": "high_for_prior_preparation_low_for_exact_authorization_time",
+      "requires_primary_receipt": true
+    },
+    {
+      "id": "OBS-006",
+      "claim": "A firsthand observer experienced simultaneous degradation of an AT&T FirstNet line and Astound fixed broadband, followed by recovery without local equipment changes.",
+      "posture": "firsthand_observation",
+      "confidence": "high_as_to_observed_effect_low_as_to_cause",
+      "requires_primary_receipt": false
+    }
+  ],
+  "rhetorical_transitions": [
+    {
+      "id": "RT-001",
+      "from": "missile_launch_event",
+      "to": "attempted_surprise_attack_frame",
+      "actor": "CENTCOM",
+      "effect_under_review": "narrative_priority_and_intent_assignment"
+    },
+    {
+      "id": "RT-002",
+      "from": "attempted_surprise_attack_frame",
+      "to": "punitive_retaliation_frame",
+      "actor": "US_EXECUTIVE",
+      "effect_under_review": "public_legitimacy_for_prepared_campaign_execution"
+    },
+    {
+      "id": "RT-003",
+      "from": "later_jordanian_interception_disclosure",
+      "to": "apparent_allied_defense_alignment",
+      "actor": "JAF_PETRA",
+      "effect_under_review": "whether_publication_order_constrained_sovereignty_interpretation"
+    }
+  ],
+  "hypotheses": [
+    {"id": "H1", "label": "ordinary_contingency_activation", "status": "plausible", "promotion_level": "unresolved"},
+    {"id": "H2", "label": "accumulated_conflict_response", "status": "plausible", "promotion_level": "unresolved"},
+    {"id": "H3", "label": "undisclosed_threat_inputs", "status": "plausible", "promotion_level": "unresolved"},
+    {"id": "H4", "label": "event_exploitation", "status": "supported_as_inquiry_not_finding", "promotion_level": "candidate"},
+    {"id": "H5", "label": "shaped_intelligence_or_induced_action", "status": "unsupported_but_material", "promotion_level": "prohibited_without_primary_evidence"},
+    {"id": "H6", "label": "communications_degradation_unrelated_or_accidental", "status": "plausible", "promotion_level": "unresolved"}
+  ],
+  "prohibited_collapses": [
+    "five_intercepted_equals_five_launched",
+    "prepared_target_architecture_equals_preauthorized_execution",
+    "simultaneous_network_degradation_equals_common_cause",
+    "firstnet_degradation_equals_iranian_compromise",
+    "jordanian_interception_equals_voluntary_political_alignment",
+    "rapid_rhetoric_equals_prior_orchestration"
+  ],
+  "promotion_requirements": [
+    "primary_source_capture_and_hashes",
+    "normalized_timestamp_receipt",
+    "claim_level_contradiction_matrix",
+    "authorization_chronology_or_bounded_absence",
+    "telecom_incident_records_or_bounded_absence",
+    "independent_review_receipt",
+    "machine_validation_pass"
+  ],
+  "current_determination": {
+    "admissible_statement": "The missile event activated a pre-existing operational and rhetorical architecture; the complete causal basis remains unverified.",
+    "inadmissible_statement": "The United States orchestrated the launch or Iran compromised FirstNet.",
+    "review_state": "open"
+  }
+}
