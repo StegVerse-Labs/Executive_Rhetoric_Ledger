@@ -1,12 +1,12 @@
 {
   "chronology_id": "CHR-2026-07-28-30-IRAN-JORDAN-FIRSTNET",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "incomplete",
   "normalization_policy": {
     "canonical_timezone": "UTC",
     "retain_source_timezone": true,
     "precision_values": ["exact", "minute", "hour", "approximate", "unknown"],
-    "rule": "No inferred timestamp may be promoted above its source precision. Publication time, event time, statement time, and first-indexed time remain distinct fields."
+    "rule": "No inferred timestamp may be promoted above its source precision. Publication time, event time, statement time, first-indexed time, and later confirmation time remain distinct fields."
   },
   "events": [
     {
@@ -21,13 +21,13 @@
     },
     {
       "id": "EV-002",
-      "label": "Iranian ballistic missile launch toward U.S. facilities in Jordan",
+      "label": "original Iranian ballistic missile launch toward U.S. facilities in Jordan",
       "event_time_utc": null,
       "source_local_time": null,
       "source_timezone": null,
       "precision": "minute",
       "posture": "official_claim_requires_capture",
-      "notes": "Populate only from preserved CENTCOM, Jordanian, or telemetry source. Do not substitute article publication time."
+      "notes": "Populate only from preserved CENTCOM, Jordanian, Iranian, or telemetry source. Do not substitute article publication time."
     },
     {
       "id": "EV-003",
@@ -41,13 +41,13 @@
     },
     {
       "id": "EV-004",
-      "label": "Jordanian military interception disclosure",
+      "label": "Jordanian military interception disclosure for original event",
       "event_time_utc": null,
       "source_local_time": null,
       "source_timezone": "Asia/Amman",
       "precision": "minute",
       "posture": "official_publication_requires_capture",
-      "notes": "Distinguish military statement issuance from Petra indexing and republication."
+      "notes": "Distinguish military statement issuance from Petra indexing and republication. Do not merge with later five-interception reporting without event-identity proof."
     },
     {
       "id": "EV-005",
@@ -88,6 +88,76 @@
       "precision": "unknown",
       "posture": "not_located",
       "notes": "Absence must be rechecked against official military and government channels before being recorded as bounded absence."
+    },
+    {
+      "id": "EV-009",
+      "label": "reported two-hour U.S. strike wave against IRGC targets",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "America/New_York",
+      "precision": "minute",
+      "posture": "official_operational_claim_requires_capture",
+      "notes": "Reported as occurring within the defined July 29-30 24-hour window. Preserve official start and end times separately from publication time."
+    },
+    {
+      "id": "EV-010",
+      "label": "later Jordan-directed Iranian launch or interception episode",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Amman",
+      "precision": "unknown",
+      "posture": "secondary_report_requires_primary_disambiguation",
+      "notes": "Reported as another five-interception event on a subsequent day. Same count does not establish same launch. Obtain original Jordanian statement and sequence identity."
+    },
+    {
+      "id": "EV-011",
+      "label": "reported attack in Kuwait with fatality",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Kuwait",
+      "precision": "unknown",
+      "posture": "secondary_report_requires_primary_capture",
+      "notes": "Treat attack, attribution, target, and casualty as separate claims until original Kuwaiti records are preserved."
+    },
+    {
+      "id": "EV-012",
+      "label": "Egyptian confirmation that a drone caused Damietta vessel fires",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Africa/Cairo",
+      "precision": "unknown",
+      "posture": "confirmation_time_distinct_from_event_time",
+      "notes": "The confirmation may fall within the 24-hour reporting window while the physical strike may predate it. Attribution remains unresolved."
+    },
+    {
+      "id": "EV-013",
+      "label": "QatarEnergy-controlled LNG transit through Hormuz",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Tehran",
+      "precision": "unknown",
+      "posture": "tracking_and_reporting_claim_requires_capture",
+      "notes": "May fall within the window, but publication date cannot substitute for vessel event time. Preserve tracking source and any Iranian route-approval statement separately."
+    },
+    {
+      "id": "EV-014",
+      "label": "Saudi offensive participation in Iraq escalation",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Riyadh",
+      "precision": "unknown",
+      "posture": "context_predates_strict_window",
+      "notes": "Relevant to the expanding event graph but must not be represented as originating inside the July 29-30 24-hour window without contrary primary evidence."
+    },
+    {
+      "id": "EV-015",
+      "label": "Houthi maritime threats or blockade claims",
+      "event_time_utc": null,
+      "source_local_time": null,
+      "source_timezone": "Asia/Aden",
+      "precision": "unknown",
+      "posture": "context_predates_strict_window",
+      "notes": "Continuing regional context, not a newly originated event within the defined window."
     }
   ],
   "required_outputs": [
@@ -95,6 +165,8 @@
     "source_capture_hashes",
     "publication_latency_calculations",
     "event_to_rhetoric_transition_intervals",
+    "event_identity_resolution_for_jordan_sequences",
+    "event_time_vs_confirmation_time_classification",
     "uncertainty_annotations"
   ]
 }
