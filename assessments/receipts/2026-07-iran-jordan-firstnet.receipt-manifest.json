@@ -1,0 +1,26 @@
+{
+  "manifest_id": "RECEIPTS-2026-07-IRAN-JORDAN-FIRSTNET",
+  "assessment_id": "PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET",
+  "status": "acquisition_open",
+  "hash_algorithm": "sha256",
+  "custody_policy": {
+    "preserve_original_bytes": true,
+    "preserve_original_url": true,
+    "preserve_retrieval_time_utc": true,
+    "preserve_source_local_timestamp": true,
+    "translation_must_link_to_original": true,
+    "secondary_reporting_cannot_replace_primary_object": true
+  },
+  "receipts": [
+    {"id":"R-001","object":"CENTCOM original launch statement","claim_ids":["OBS-001","OBS-004"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-002","object":"Jordanian Armed Forces or Petra original interception statement","claim_ids":["OBS-002"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-003","object":"IRGC Sepah News Notice No. 52 Persian original","claim_ids":["OBS-003"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-004","object":"IRNA English adaptation linked to Persian original","claim_ids":["OBS-003"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-005","object":"U.S. executive retaliation remarks original recording or transcript","claim_ids":["RT-002"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-006","object":"Official U.S. description of subsequent strike target set","claim_ids":["OBS-005"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-007","object":"AT&T or FirstNet incident record for affected period","claim_ids":["OBS-006"],"status":"not_publicly_acquired","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-008","object":"Astound incident record for affected period","claim_ids":["OBS-006"],"status":"not_publicly_acquired","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-009","object":"Firsthand observer declaration and contemporaneous device or support records","claim_ids":["OBS-006"],"status":"pending_private_receipt","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null}
+  ],
+  "promotion_rule": "No claim may be promoted from research candidate solely because a receipt slot exists. Original content, custody metadata, hash, contradiction review, and independent review are required."
+}
