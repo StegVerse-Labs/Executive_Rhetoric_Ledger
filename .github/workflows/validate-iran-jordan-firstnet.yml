@@ -1,0 +1,35 @@
+name: Validate Iran-Jordan-FirstNet Assessment
+
+on:
+  pull_request:
+    paths:
+      - "assessments/pit/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.assessment.json"
+      - "assessments/chronology/2026-07-28-30-iran-jordan-firstnet.normalized.json"
+      - "assessments/contradictions/2026-07-iran-jordan-firstnet.matrix.md"
+      - "assessments/receipts/2026-07-iran-jordan-firstnet.receipt-manifest.json"
+      - "assessments/reviews/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.independent-review.json"
+      - "scripts/validate_iran_jordan_firstnet_assessment.py"
+      - ".github/workflows/validate-iran-jordan-firstnet.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "assessments/pit/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.assessment.json"
+      - "assessments/chronology/2026-07-28-30-iran-jordan-firstnet.normalized.json"
+      - "assessments/contradictions/2026-07-iran-jordan-firstnet.matrix.md"
+      - "assessments/receipts/2026-07-iran-jordan-firstnet.receipt-manifest.json"
+      - "assessments/reviews/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.independent-review.json"
+      - "scripts/validate_iran_jordan_firstnet_assessment.py"
+      - ".github/workflows/validate-iran-jordan-firstnet.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate governed incident assessment
+        run: python scripts/validate_iran_jordan_firstnet_assessment.py
