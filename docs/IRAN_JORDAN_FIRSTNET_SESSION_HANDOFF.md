@@ -38,29 +38,17 @@ Promotion requires primary-source capture, source custody, hashes, timestamp nor
 The repository contains:
 
 - `research-candidates/2026-07-28-iran-jordan-firstnet-escalation-rhetoric.md`
-  - Parent narrative candidate and competing hypotheses H1–H6.
 - `research-candidates/2026-07-30-iran-war-24h-qualified-addendum.md`
-  - Correction separating newly occurred, newly announced, newly confirmed, unresolved-time, and older-context events.
 - `assessments/pit/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.assessment.json`
-  - Machine-readable assessment, actors, observations, rhetorical transitions, prohibited collapses, and promotion requirements.
 - `assessments/chronology/2026-07-28-30-iran-jordan-firstnet.normalized.json`
-  - Chronology schema preserving source-local time, timezone, UTC normalization, precision, and event identity.
 - `assessments/contradictions/2026-07-iran-jordan-firstnet.matrix.md`
-  - Contradiction and non-equivalence controls.
 - `assessments/intake/2026-07-iran-jordan-firstnet-primary-record-intake.json`
-  - Primary-record acquisition targets.
 - `assessments/source-posture/2026-07-iran-jordan-firstnet-initial-source-receipts.json`
-  - Initial source posture and claim classifications.
 - `assessments/receipts/2026-07-iran-jordan-firstnet.receipt-manifest.json`
-  - Receipt slots, custody policy, hash requirements, and expanded regional branches.
 - `assessments/reviews/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.review.md`
-  - Human-readable review boundary.
 - `assessments/reviews/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.independent-review.json`
-  - Independent-review intake; currently unassigned and unsigned.
 - `scripts/validate_iran_jordan_firstnet_assessment.py`
-  - Structural validator preventing premature promotion and chronology precision violations.
 - `.github/workflows/validate-iran-jordan-firstnet.yml`
-  - CI workflow for the governed assessment.
 
 ## Important conclusions already reached
 
@@ -70,27 +58,49 @@ The repository contains:
 4. Iran did not publish a located after-action assessment explaining success, failure, Jordan's political posture, or anticipated U.S. retaliation.
 5. The broad U.S. strike operation necessarily relied on prior contingency planning and target development, but this does not prove prior knowledge, inducement, or preauthorization.
 6. The FirstNet and Astound degradation is preserved as a firsthand cross-domain antecedent; cause and attribution remain unresolved.
-7. The prior broad "last 24 hours" synthesis was corrected. Event time, announcement time, publication time, confirmation time, and analytical publication time must remain separate.
+7. Event time, announcement time, publication time, confirmation time, and analytical publication time must remain separate.
 8. Reports of five Jordanian interceptions on adjacent dates may represent separate episodes. Same count plus same jurisdiction plus adjacent date does not prove event identity.
+
+## Session update — 2026-07-30 primary capture cycle
+
+### Repository changes completed
+
+1. Captured the official Petra English carrier object for the July 29 Jordanian five-missile interception claim:
+   - `sources/2026-07/2026-07-29-petra-jordan-five-missiles.md`
+   - original URL: `https://petra.gov.jo/en/news/jordanian-air-defenses-intercept-five-missiles-fired-from-iran`
+   - issuing authority: Jordanian Armed Forces-Arab Army, carried by Petra
+   - source-local publication: `2026-07-29T07:48:26+03:00`
+   - normalized publication: `2026-07-29T04:48:26Z`
+   - repository-capture SHA-256: `a5d6b84f754946afea370f327e85c1444c441461f35a6ba0570fdfc17452409f`
+   - custody limitation: textual source-visible capture, not a byte-for-byte WARC or native platform export.
+2. Updated receipt `R-002` to `captured` with authority, retrieval, timestamp, language, derivative, content-path, hash, supported-claim, and limitation fields.
+3. Added `assessments/event-identity/2026-07-jordan-five-interception-disambiguation.md`.
+4. Preserved `EV-004` and `EV-010` as separate nodes with identity unresolved and merge prohibited pending the second primary object.
+
+### Current evidence consequence
+
+The July 29 Petra object establishes Jordan's official claim that five missiles fired from Iran toward Jordan were intercepted and destroyed. It does not establish the total launched, successful impacts, U.S. control of publication timing, or identity with any adjacent report. The second five-interception report remains uncaptured; therefore the record cannot yet determine whether two physical attacks occurred, but it also cannot merge the reports.
+
+### Commits in this cycle
+
+- `0d931784bf722076affbdd51351fb9ce33f7063a` — Petra source capture.
+- `c61c1f37b80cd963ea5d88efa770ada6f15ed14d` — receipt manifest update.
+- `2a661fada16e403b2125db3e46e5ecfca7037301` — event-identity disambiguation record.
 
 ## Immediate next goals
 
 Proceed in this order:
 
-1. Acquire and preserve original primary objects for the first six public claims:
-   - CENTCOM original missile statement and metadata;
-   - Jordanian Armed Forces and Petra original interception statement(s);
-   - Sepah News Notice No. 52 Persian original;
-   - IRNA Persian and English derivatives linked to the original;
-   - original U.S. executive retaliation remarks or recording;
-   - official U.S. description of the two-hour strike wave and target set.
-2. Record original URLs, retrieval timestamps, source-local timestamps, content paths, and SHA-256 hashes in the receipt manifest.
-3. Populate chronology entries only to the precision supported by the primary source.
-4. Resolve whether the July 28 and July 30 Jordan five-interception reports are distinct events.
-5. Add bounded branches for Kuwait, Damietta, controlled Hormuz transit, Saudi–Iraq operations, and Houthi maritime declarations only after original-source capture.
-6. Run `python scripts/validate_iran_jordan_firstnet_assessment.py` locally or through GitHub Actions and preserve the result.
-7. Do not mark the independent-review requirement complete until a named reviewer, conflict declaration, answers, determination, timestamp, and signature or receipt are present.
-8. Update this handoff after every substantial repository change so a new chat can resume without relying on conversation memory.
+1. Acquire and preserve the exact CENTCOM original post and metadata for status `2082231500318114110`; the object is located but the accessible retrieval returned no source text.
+2. Acquire the exact Sepah News Notice No. 52 item page, not merely the section URL.
+3. Preserve IRNA Persian `86222422` and English `86222477` as linked derivatives, with the Persian object controlling quantity and target-language interpretation.
+4. Acquire the original White House, pool, or presidential recording/transcript for the retaliation remarks.
+5. Acquire the official CENTCOM release or native object describing the reported two-hour strike wave and target classes.
+6. Locate and preserve the second original Jordanian five-interception statement. Do not merge it with the July 29 object.
+7. Populate the normalized chronology only with source-supported time dimensions. The July 29 Petra timestamp is publication time, not physical-event time or prior statement-issuance time.
+8. Inspect the GitHub Actions result triggered by the receipt-manifest change and preserve the validation run/job result.
+9. Keep independent review unassigned and the assessment at `research_candidate` until all promotion requirements are satisfied.
+10. Update this handoff after every substantial repository change.
 
 ## Research and writing rules
 
@@ -106,21 +116,8 @@ Proceed in this order:
 
 ## Completion condition
 
-This work is complete only when the incident record has:
-
-- preserved primary objects and hashes;
-- normalized and uncertainty-annotated chronology;
-- event-identity resolution;
-- claim-to-receipt mapping;
-- contradiction review;
-- passing machine validation;
-- independent review receipt;
-- and a bounded final determination stating exactly what is established, unresolved, contradicted, or inadmissible.
+This work is complete only when the incident record has preserved primary objects and hashes, normalized and uncertainty-annotated chronology, event-identity resolution, claim-to-receipt mapping, contradiction review, passing machine validation, independent review receipt, and a bounded final determination stating exactly what is established, unresolved, contradicted, or inadmissible.
 
 ## Required response convention
 
-Every future assistant response in this workstream must end with:
-
-1. current repository progress lines;
-2. a delta statement describing what changed;
-3. a copy-ready `Next session prompt` that points directly to this handoff and all task-specific files needed for the next action.
+Every future assistant response in this workstream must end with current repository progress lines, a delta statement describing what changed, and a copy-ready next-session prompt pointing directly to this handoff and all task-specific files needed for the next action.
