@@ -3,6 +3,7 @@
   "assessment_id": "PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET",
   "status": "acquisition_open",
   "hash_algorithm": "sha256",
+  "last_updated_utc": "2026-07-30T22:24:00Z",
   "custody_policy": {
     "preserve_original_bytes": true,
     "preserve_original_url": true,
@@ -14,7 +15,7 @@
   },
   "receipts": [
     {"id":"R-001","object":"CENTCOM original launch statement","claim_ids":["OBS-001","OBS-004"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
-    {"id":"R-002","object":"Jordanian Armed Forces or Petra original interception statement for original episode","claim_ids":["OBS-002","EV-004"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-002","object":"Jordanian Armed Forces statement carried by Petra for the July 29 episode","claim_ids":["OBS-002","EV-004"],"status":"captured","source_url":"https://petra.gov.jo/en/news/jordanian-air-defenses-intercept-five-missiles-fired-from-iran","issuing_authority":"Jordanian Armed Forces-Arab Army, carried by Jordan News Agency (Petra)","retrieved_at_utc":"2026-07-30T22:24:00Z","source_local_statement_or_publication_timestamp":"2026-07-29T07:48:26+03:00","normalized_utc_timestamp":"2026-07-29T04:48:26Z","timestamp_precision":"second","original_language_status":"English official-carrier publication","derivative_relationships":["Petra official-carrier report of a Jordanian Armed Forces statement","earlier military issuance time not established"],"sha256":"a5d6b84f754946afea370f327e85c1444c441461f35a6ba0570fdfc17452409f","content_path":"sources/2026-07/2026-07-29-petra-jordan-five-missiles.md","claims_supported":["Jordan officially claimed interception and destruction of five missiles fired from Iran toward Jordan","Jordan framed the action as protection of sovereignty, security, and airspace"],"claims_contradicted":[],"limitations":["does not establish total launched","does not establish event identity with another five-interception report","does not establish U.S. control of publication timing"]},
     {"id":"R-003","object":"IRGC Sepah News Notice No. 52 Persian original","claim_ids":["OBS-003"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-004","object":"IRNA English adaptation linked to Persian original","claim_ids":["OBS-003"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-005","object":"U.S. executive retaliation remarks original recording or transcript","claim_ids":["RT-002"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
