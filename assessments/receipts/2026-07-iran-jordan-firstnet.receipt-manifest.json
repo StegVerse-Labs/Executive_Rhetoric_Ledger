@@ -9,18 +9,26 @@
     "preserve_retrieval_time_utc": true,
     "preserve_source_local_timestamp": true,
     "translation_must_link_to_original": true,
-    "secondary_reporting_cannot_replace_primary_object": true
+    "secondary_reporting_cannot_replace_primary_object": true,
+    "event_time_must_not_be_inferred_from_publication_time": true
   },
   "receipts": [
     {"id":"R-001","object":"CENTCOM original launch statement","claim_ids":["OBS-001","OBS-004"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
-    {"id":"R-002","object":"Jordanian Armed Forces or Petra original interception statement","claim_ids":["OBS-002"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-002","object":"Jordanian Armed Forces or Petra original interception statement for original episode","claim_ids":["OBS-002","EV-004"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-003","object":"IRGC Sepah News Notice No. 52 Persian original","claim_ids":["OBS-003"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-004","object":"IRNA English adaptation linked to Persian original","claim_ids":["OBS-003"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-005","object":"U.S. executive retaliation remarks original recording or transcript","claim_ids":["RT-002"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
-    {"id":"R-006","object":"Official U.S. description of subsequent strike target set","claim_ids":["OBS-005"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-006","object":"Official U.S. description of subsequent strike target set","claim_ids":["OBS-005","EV-007"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-007","object":"AT&T or FirstNet incident record for affected period","claim_ids":["OBS-006"],"status":"not_publicly_acquired","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
     {"id":"R-008","object":"Astound incident record for affected period","claim_ids":["OBS-006"],"status":"not_publicly_acquired","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
-    {"id":"R-009","object":"Firsthand observer declaration and contemporaneous device or support records","claim_ids":["OBS-006"],"status":"pending_private_receipt","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null}
+    {"id":"R-009","object":"Firsthand observer declaration and contemporaneous device or support records","claim_ids":["OBS-006"],"status":"pending_private_receipt","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-010","object":"Official CENTCOM statement identifying start, end, and target classes for the reported two-hour strike wave","claim_ids":["EV-009"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-011","object":"Original Jordanian statement for the later five-interception episode","claim_ids":["EV-010"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-012","object":"Original Kuwaiti government, military, or emergency record for attack and casualty claims","claim_ids":["EV-011"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-013","object":"Original Egyptian authority statement confirming drone causation at Damietta and preserving incident time","claim_ids":["EV-012"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-014","object":"Original vessel-tracking record and Iranian route-approval statement for QatarEnergy-controlled Hormuz transit","claim_ids":["EV-013"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-015","object":"Original Saudi statement or operational record establishing the start and scope of offensive participation in Iraq","claim_ids":["EV-014"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null},
+    {"id":"R-016","object":"Original Houthi statement establishing date and scope of maritime blockade or threat claims","claim_ids":["EV-015"],"status":"missing","source_url":null,"retrieved_at_utc":null,"sha256":null,"content_path":null}
   ],
-  "promotion_rule": "No claim may be promoted from research candidate solely because a receipt slot exists. Original content, custody metadata, hash, contradiction review, and independent review are required."
+  "promotion_rule": "No claim may be promoted from research candidate solely because a receipt slot exists. Original content, custody metadata, hash, contradiction review, timestamp normalization, event-identity resolution, and independent review are required."
 }
