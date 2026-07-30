@@ -1,0 +1,183 @@
+{
+  "topic_id": "ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001",
+  "packet_status": "initial-source-posture",
+  "created_date": "2026-07-30",
+  "last_reviewed": "2026-07-30",
+  "final_legal_conclusion": false,
+  "notes": "Initial source-posture packet for the Jenna Ellis–Dan Scavino transfer-of-power statement chain. These receipts distinguish authentication of the proffer recording, proof that Ellis made the statement, support for Scavino's proximity and capacity to know, contextual corroboration, and unresolved proof of Trump's actual intent or instruction.",
+  "sources": [
+    {
+      "source_id": "SRC-ELLIS-SCAVINO-ABC-PROFFER-001",
+      "title": "'The boss is not going to leave': Proffer videos show ex-Trump lawyers telling Georgia prosecutors about efforts to overturn 2020 election",
+      "url": "https://abcnews.go.com/US/boss-leave-proffer-videos-show-trump-lawyers-telling/story?id=104831939",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2023-11-13",
+      "source_type": "news-report-with-primary-video-excerpts",
+      "institutional_proximity": "media-carrier-of-case-discovery",
+      "evidence_role": "statement-and-recording-authentication-source",
+      "verification_status": "verified-secondary-with-direct-audiovisual-excerpt",
+      "admissibility_use": "admissible-for-what-Ellis-said-and-publication-provenance",
+      "confidence": "high",
+      "red_flags": [
+        "excerpt-not-complete-proffer",
+        "original-file-metadata-not-acquired",
+        "archive-needed"
+      ],
+      "supported_record": [
+        "ABC published audiovisual excerpts of Ellis's October 23, 2023 Fulton County proffer.",
+        "The excerpt directly records Ellis attributing the 'not going to leave' and 'stay in power' statements to Dan Scavino.",
+        "ABC reported that Ellis identified the setting, approximate date, litigation context, tone, reciprocal exchange, and alcohol consumption.",
+        "ABC reported that Scavino did not respond to its request for comment."
+      ],
+      "limitations": [
+        "The source proves Ellis made the allegation, not that Scavino made the statement or accurately represented Trump.",
+        "The published material is excerpted rather than the complete proffer.",
+        "No contemporaneous corroborating object is supplied."
+      ],
+      "notes": "Primary carrier for the public audiovisual statement. Do not collapse Ellis's recorded allegation into direct proof of Trump's state of mind."
+    },
+    {
+      "source_id": "SRC-ELLIS-SCAVINO-ABC-PROTECTIVE-002",
+      "title": "Fulton County judge indicates he'll issue protective order in Trump case after confidential video disclosure",
+      "url": "https://abcnews.go.com/US/georgia-prosecutors-emergency-protective-order-trump-case-video-disclosure/story?id=104882446",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2023-11-15",
+      "source_type": "court-proceeding-report",
+      "institutional_proximity": "media-reporting-on-court-response",
+      "evidence_role": "case-material-authentication-source",
+      "verification_status": "verified-secondary",
+      "admissibility_use": "admissible-for-disclosure-and-custody-posture",
+      "confidence": "high",
+      "red_flags": [
+        "underlying-motion-and-order-needed",
+        "archive-needed"
+      ],
+      "supported_record": [
+        "Prosecutors treated the disclosed proffer videos as confidential criminal discovery and sought a protective order.",
+        "The court addressed controls over further disclosure.",
+        "The public excerpts did not represent the complete proffer sessions."
+      ],
+      "limitations": [
+        "The report does not itself provide the complete discovery object, motion, hearing transcript, or final order.",
+        "Authentication of case custody does not validate every statement inside the recording."
+      ],
+      "notes": "Strengthens authenticity and custody provenance of the leaked video while reinforcing incompleteness of the public excerpt."
+    },
+    {
+      "source_id": "SRC-ELLIS-SCAVINO-CONGRESS-CONTEMPT-003",
+      "title": "H. Rept. 117-284 — Resolution recommending contempt findings for Peter Navarro and Daniel Scavino Jr.",
+      "url": "https://www.congress.gov/committee-report/117th-congress/house-report/284",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2022-03-29",
+      "source_type": "official-congressional-record",
+      "institutional_proximity": "government-primary-record",
+      "evidence_role": "Scavino-access-and-context-source",
+      "verification_status": "verified-primary",
+      "admissibility_use": "admissible-for-officially-recorded-committee-findings-and-source-pointers",
+      "confidence": "high",
+      "red_flags": [
+        "committee-findings-not-judicial-fact-findings",
+        "underlying-witness-and-document-citations-should-be-acquired"
+      ],
+      "supported_record": [
+        "The committee described Scavino as responsible for Trump's social-media and communications strategy and involved in post-election efforts.",
+        "The record states that Scavino attended meetings concerning challenges to the election and worked closely with Trump on messaging.",
+        "The record preserves contemporaneous Trump and Scavino social-media activity during the period surrounding the alleged conversation.",
+        "The committee documented Scavino's refusal to provide requested testimony and documents."
+      ],
+      "limitations": [
+        "The congressional record does not corroborate the specific Ellis–Scavino party conversation.",
+        "Refusal to comply is an evidence gap and must not be treated as an admission.",
+        "Committee characterizations should be traced to their underlying exhibits and witnesses."
+      ],
+      "notes": "Materially strengthens Scavino's capacity-to-know node, not the truth of the quoted statement itself."
+    },
+    {
+      "source_id": "SRC-ELLIS-SCAVINO-J6-FINAL-004",
+      "title": "Select January 6th Committee Final Report and Supporting Materials Collection",
+      "url": "https://www.govinfo.gov/collection/january-6th-committee-final-report",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2022-12-22",
+      "source_type": "official-government-report-collection",
+      "institutional_proximity": "government-primary-record-collection",
+      "evidence_role": "contextual-corroboration-and-source-discovery",
+      "verification_status": "verified-primary-collection",
+      "admissibility_use": "admissible-for-official-reporting-and-underlying-transcript-discovery",
+      "confidence": "high",
+      "red_flags": [
+        "specific-transcripts-and-exhibits-not-yet-captured",
+        "committee-conclusions-require-claim-level-mapping"
+      ],
+      "supported_record": [
+        "The collection provides the official report, witness transcripts, videos, and supporting materials concerning post-election conduct and the transfer of power.",
+        "It supplies a primary-source path for testing whether other insiders independently described Trump's refusal to acknowledge defeat.",
+        "It supplies source paths concerning Scavino's proximity, communications role, and January 6 contacts."
+      ],
+      "limitations": [
+        "The collection-level receipt does not identify every claim-level page, transcript line, or exhibit needed for promotion.",
+        "Contextual consistency cannot substitute for proof of the specific Ellis–Scavino exchange."
+      ],
+      "notes": "Use as the official acquisition surface for claim-level transcript and exhibit receipts."
+    },
+    {
+      "source_id": "SRC-ELLIS-SCAVINO-CONGRESS-HEARING-005",
+      "title": "On the January 6th Investigation — hearing transcript",
+      "url": "https://www.congress.gov/event/117th-congress/house-event/114977/text",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2022-07-21",
+      "source_type": "official-hearing-transcript",
+      "institutional_proximity": "government-primary-record",
+      "evidence_role": "insider-testimony-context-source",
+      "verification_status": "verified-primary",
+      "admissibility_use": "admissible-for-recorded-testimony-and-presented-documents",
+      "confidence": "high",
+      "red_flags": [
+        "claim-level-witness-attribution-needed",
+        "hearing-presentation-may-summarize-underlying-material"
+      ],
+      "supported_record": [
+        "The hearing record includes White House testimony that legal avenues had closed and that Trump disagreed with that assessment.",
+        "The hearing record documents continued edits and pressure concerning certification and the January 6 speech.",
+        "The record provides independent contextual evidence of resistance to acknowledging the election's end."
+      ],
+      "limitations": [
+        "The hearing does not directly authenticate the Ellis–Scavino conversation.",
+        "Each insider account must be assessed separately for perception, hearsay, completeness, and contradiction."
+      ],
+      "notes": "Contextual corroboration only. Does not convert the Scavino attribution into direct Trump speech."
+    },
+    {
+      "source_id": "SRC-ELLIS-SCAVINO-ELLIS-PLEA-006",
+      "title": "Jenna Ellis pleads guilty to aiding and abetting false statements in Georgia election case",
+      "url": "https://apnews.com/article/c4dbacd3e4bbb5415ebd3d42d8fa3128",
+      "archive_url": "",
+      "access_date": "2026-07-30",
+      "publication_date": "2023-10-24",
+      "source_type": "news-report-on-court-proceeding",
+      "institutional_proximity": "media-intermediary-with-courtroom-access",
+      "evidence_role": "witness-incentive-and-reliability-source",
+      "verification_status": "verified-secondary",
+      "admissibility_use": "admissible-for-reported-plea-posture-pending-primary-plea-record",
+      "confidence": "high",
+      "red_flags": [
+        "primary-plea-and-cooperation-documents-needed",
+        "archive-needed"
+      ],
+      "supported_record": [
+        "Ellis pleaded guilty to aiding and abetting false statements one day after the reported proffer session.",
+        "Her plea posture creates both a truthfulness obligation and a cooperation incentive.",
+        "Her acknowledged failure to verify prior election representations is relevant to reliability assessment."
+      ],
+      "limitations": [
+        "A plea incentive neither proves nor disproves the proffer statement.",
+        "The complete plea agreement, proffer protections, truthfulness clause, transcript, and sentencing consequences remain required."
+      ],
+      "notes": "Use symmetrically: cooperation increases consequences for lying but also creates an incentive to provide useful information."
+    }
+  ]
+}
