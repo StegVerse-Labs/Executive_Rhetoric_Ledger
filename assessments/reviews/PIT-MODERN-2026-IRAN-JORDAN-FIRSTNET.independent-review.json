@@ -1,0 +1,33 @@
+{
+  "review_id": "IR-PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET-001",
+  "assessment_id": "PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET",
+  "status": "unassigned",
+  "reviewer": {
+    "name": null,
+    "affiliation": null,
+    "conflicts_declared": false,
+    "conflicts": []
+  },
+  "scope": [
+    "source provenance",
+    "timestamp normalization",
+    "claim-to-receipt mapping",
+    "contradiction handling",
+    "inference discipline",
+    "promotion admissibility"
+  ],
+  "required_questions": [
+    {"id":"Q1","question":"Does each promoted factual statement resolve to a preserved primary object?","answer":null,"notes":null},
+    {"id":"Q2","question":"Are official claims distinguished from independently established physical events?","answer":null,"notes":null},
+    {"id":"Q3","question":"Are five intercepted and several launched kept non-equivalent?","answer":null,"notes":null},
+    {"id":"Q4","question":"Is prior operational preparation kept distinct from prior knowledge or inducement?","answer":null,"notes":null},
+    {"id":"Q5","question":"Is communications degradation kept distinct from common-cause and Iranian-attribution findings?","answer":null,"notes":null},
+    {"id":"Q6","question":"Does the chronology preserve original timezone and source precision?","answer":null,"notes":null},
+    {"id":"Q7","question":"Is any orchestration conclusion presently admissible?","answer":null,"notes":null}
+  ],
+  "determination": null,
+  "allowed_determinations": ["return_for_evidence","remain_research_candidate","promote_bounded_finding","reject_candidate"],
+  "signed_at_utc": null,
+  "signature_or_receipt": null,
+  "promotion_rule": "An unassigned or unsigned review cannot satisfy the independent_review_receipt requirement."
+}
