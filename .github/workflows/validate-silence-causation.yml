@@ -1,0 +1,32 @@
+name: Validate silence-causation assessments
+
+on:
+  push:
+    paths:
+      - "standards/silence-causation-assessment-standard.md"
+      - "schemas/silence-causation-assessment.schema.json"
+      - "assessments/silence-causation/**"
+      - "scripts/validate_silence_causation_assessment.py"
+      - ".github/workflows/validate-silence-causation.yml"
+  pull_request:
+    paths:
+      - "standards/silence-causation-assessment-standard.md"
+      - "schemas/silence-causation-assessment.schema.json"
+      - "assessments/silence-causation/**"
+      - "scripts/validate_silence_causation_assessment.py"
+      - ".github/workflows/validate-silence-causation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check jsonschema
+      - run: python scripts/validate_silence_causation_assessment.py
