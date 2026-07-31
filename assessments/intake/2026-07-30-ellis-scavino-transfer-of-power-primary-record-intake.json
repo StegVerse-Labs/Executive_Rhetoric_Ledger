@@ -1,0 +1,115 @@
+{
+  "queue_id": "ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001-PRIMARY",
+  "topic_id": "ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001",
+  "queue_status": "active",
+  "created_date": "2026-07-30",
+  "last_reviewed": "2026-07-30",
+  "notes": "Claim-level acquisition queue. Located carrier material must not be treated as the complete primary object. Trump intent, Scavino knowledge, the alleged conversation, Ellis memory, the Fulton recording, and media recirculation remain separate branches.",
+  "items": [
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-001",
+      "record_class": "complete Fulton County Ellis proffer audiovisual object, metadata, discovery identifier, and transcript",
+      "likely_custodians": ["Fulton County District Attorney", "Fulton County Superior Court discovery custodians", "defense counsel recipients"],
+      "affected_branches": ["Ellis proffer account", "excerpt completeness", "recording authentication"],
+      "state": "restricted-or-sealed",
+      "activation_effect": "Determines exact surrounding context, qualifications, continuity, editing boundaries, and whether additional corroboration was supplied.",
+      "privacy_posture": "restricted-or-sealed",
+      "priority": "critical",
+      "source_receipt_ids": ["SRC-ELLIS-SCAVINO-ABC-PROFFER-001", "SRC-ELLIS-SCAVINO-ABC-PROTECTIVE-002"]
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-002",
+      "record_class": "Ellis plea agreement, factual basis, plea-hearing transcript, cooperation and truthfulness terms",
+      "likely_custodians": ["Fulton County Superior Court Clerk", "Fulton County District Attorney", "Ellis defense counsel"],
+      "affected_branches": ["Ellis reliability", "cooperation incentive", "breach consequences"],
+      "state": "located",
+      "activation_effect": "Allows exact treatment of truthfulness duties, use restrictions, breach standards, and admitted conduct instead of relying on media summaries.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": ["SRC-ELLIS-SCAVINO-ELLIS-PLEA-006"]
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-003",
+      "record_class": "December 19, 2020 White House Christmas-party event, guest, access, schedule, photo, video, and security records",
+      "likely_custodians": ["National Archives and Records Administration", "Trump Presidential Library records program", "United States Secret Service", "White House Photo Office records", "event invitees and media pools"],
+      "affected_branches": ["event date", "location", "attendance", "opportunity for conversation"],
+      "state": "requested",
+      "activation_effect": "Can corroborate presence and opportunity but cannot by itself prove the content of the conversation.",
+      "privacy_posture": "public",
+      "priority": "critical"
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-004",
+      "record_class": "Ellis-Scavino messages, emails, call records, calendars, notes, and contemporaneous disclosures from December 11-20, 2020",
+      "likely_custodians": ["Jenna Ellis", "Dan Scavino", "Trump campaign records custodians", "White House records custodians", "device and cloud service providers subject to lawful process"],
+      "affected_branches": ["direct corroboration of conversation", "timing", "later memory consistency"],
+      "state": "requested",
+      "activation_effect": "Could directly corroborate, qualify, or contradict the exchange and distinguish contemporaneous memory from later reconstruction.",
+      "privacy_posture": "restricted-or-sealed",
+      "priority": "critical"
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-005",
+      "record_class": "Scavino testimony, depositions, interviews, messages, privilege logs, and explicit response to Ellis account",
+      "likely_custodians": ["House Select Committee January 6 records collection", "Department of Justice", "Fulton County prosecutors", "Dan Scavino and counsel", "National Archives and Records Administration"],
+      "affected_branches": ["Scavino access", "Scavino knowledge", "whether Scavino spoke", "whether statement was characterization or instruction"],
+      "state": "requested",
+      "activation_effect": "A sworn merits response or contemporaneous message could materially strengthen or weaken the central conversation node; silence alone has no admission value.",
+      "privacy_posture": "unknown",
+      "priority": "critical",
+      "source_receipt_ids": ["SRC-ELLIS-SCAVINO-CONGRESS-CONTEMPT-003", "SRC-ELLIS-SCAVINO-J6-FINAL-004"]
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-006",
+      "record_class": "Trump-Scavino communications, meeting records, drafting records, and message-transmission records from December 11-20, 2020",
+      "likely_custodians": ["National Archives and Records Administration", "House Select Committee January 6 records collection", "Department of Justice", "Trump and Scavino counsel or records custodians"],
+      "affected_branches": ["Trump actual intent", "Scavino knowledge", "specific operational plan"],
+      "state": "requested",
+      "activation_effect": "Required to distinguish Scavino inference or rhetoric from a direct Trump instruction and to test whether any specific operational plan existed.",
+      "privacy_posture": "restricted-or-sealed",
+      "priority": "critical"
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-007",
+      "record_class": "claim-level January 6 Committee transcripts, exhibits, and source citations concerning Scavino access and Trump post-election intent",
+      "likely_custodians": ["Government Publishing Office", "National Archives and Records Administration", "House of Representatives records custodians"],
+      "affected_branches": ["Scavino proximity", "Trump general state of mind", "message drafting and transmission"],
+      "state": "located",
+      "activation_effect": "Provides primary contextual corroboration and source-discovery paths but does not establish the Ellis-Scavino conversation.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": ["SRC-ELLIS-SCAVINO-J6-FINAL-004", "SRC-ELLIS-SCAVINO-CONGRESS-HEARING-005"]
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-008",
+      "record_class": "direct Trump public statements and contemporaneous conduct from December 11-20, 2020",
+      "likely_custodians": ["National Archives and Records Administration", "Trump social-media archive custodians", "White House transcript archive", "court and election-official records custodians"],
+      "affected_branches": ["Trump general state of mind", "specific instruction", "operational plan"],
+      "state": "located",
+      "activation_effect": "Can test contextual consistency while remaining insufficient alone to prove a private instruction transmitted through Scavino.",
+      "privacy_posture": "public",
+      "priority": "high"
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-009",
+      "record_class": "Ellis interviews, testimony, public statements, notes, and prior or later retellings of the party exchange",
+      "likely_custodians": ["Jenna Ellis", "Fulton County prosecutors", "media organizations", "professional disciplinary bodies", "congressional or judicial custodians"],
+      "affected_branches": ["memory consistency", "impeachment", "corroboration chronology"],
+      "state": "requested",
+      "activation_effect": "Allows comparison for additions, omissions, wording shifts, date shifts, and prior consistent or inconsistent statements.",
+      "privacy_posture": "unknown",
+      "priority": "high"
+    },
+    {
+      "intake_id": "ELLIS_SCAVINO-INTAKE-010",
+      "record_class": "original ABC, Washington Post, and AJC media files, transcripts, edit decision records, and publication metadata",
+      "likely_custodians": ["ABC News", "The Washington Post", "The Atlanta Journal-Constitution", "source counsel who supplied discovery excerpts"],
+      "affected_branches": ["media excerpt provenance", "caption accuracy", "editing boundaries"],
+      "state": "located",
+      "activation_effect": "Preserves the carrier chain and identifies differences among the primary excerpt, reporter framing, headlines, and social-media captions.",
+      "privacy_posture": "public",
+      "priority": "medium",
+      "source_receipt_ids": ["SRC-ELLIS-SCAVINO-ABC-PROFFER-001"]
+    }
+  ]
+}
