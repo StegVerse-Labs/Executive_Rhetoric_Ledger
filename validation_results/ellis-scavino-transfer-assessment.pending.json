@@ -1,0 +1,28 @@
+{
+  "validation_id": "ERL-VALIDATION-ELLIS-SCAVINO-2026-07-30-001",
+  "topic_id": "PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER",
+  "recorded_at": "2026-07-30",
+  "status": "pending",
+  "validated_commit": "698cd403b48cf3dbd091e99131d9b121bfda8cd9",
+  "validators_required": [
+    "scripts/validate_assessment_trees.py",
+    "scripts/run_activation_validation.py",
+    ".github/workflows/validate-ledger-schemas.yml"
+  ],
+  "direct_execution_evidence": [],
+  "ci_evidence": [],
+  "structural_checks_completed": [
+    "primary-record intake queue created against schemas/primary-record-intake.schema.json conventions",
+    "claim-level contradiction matrix installed",
+    "machine-readable assessment linked to existing annotation, review, intake, and source-posture packet",
+    "dedicated assessment index installed",
+    "promotion boundary preserved"
+  ],
+  "unresolved": [
+    "direct validator execution result",
+    "GitHub Actions run and job conclusion for the committed assessment tree",
+    "complete primary proffer and plea objects",
+    "independent corroboration of the Ellis-Scavino conversation"
+  ],
+  "notes": "Pending is intentional. No validator or CI success is claimed until direct execution evidence is preserved."
+}
