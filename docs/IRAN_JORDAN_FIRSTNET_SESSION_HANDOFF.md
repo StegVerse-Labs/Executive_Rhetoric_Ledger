@@ -47,6 +47,7 @@ The repository contains:
 - `assessments/receipts/2026-07-iran-jordan-firstnet.receipt-manifest.json`
 - `assessments/reviews/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.review.md`
 - `assessments/reviews/PIT-MODERN-2026-IRAN-JORDAN-FIRSTNET.independent-review.json`
+- `assessments/validation/2026-07-30-iran-jordan-firstnet-github-actions-receipt.md`
 - `scripts/validate_iran_jordan_firstnet_assessment.py`
 - `.github/workflows/validate-iran-jordan-firstnet.yml`
 
@@ -87,18 +88,37 @@ The July 29 Petra object establishes Jordan's official claim that five missiles 
 - `c61c1f37b80cd963ea5d88efa770ada6f15ed14d` — receipt manifest update.
 - `2a661fada16e403b2125db3e46e5ecfca7037301` — event-identity disambiguation record.
 
+## Session update — 2026-07-30 validation-evidence acquisition
+
+### Repository change completed
+
+Added `assessments/validation/2026-07-30-iran-jordan-firstnet-github-actions-receipt.md` in commit `0961e3a38f921302b064cc76ec090ee0d44034f4`.
+
+### Validation evidence result
+
+- A commit-scoped workflow-run lookup for `c61c1f37b80cd963ea5d88efa770ada6f15ed14d` returned no runs.
+- A commit combined-status lookup returned no statuses.
+- Repository search found no previously preserved validation receipt keyed to that commit.
+- The available commit-run action is limited to pull-request-triggered runs, while the workflow also triggers on pushes to `main`; therefore the empty result is not evidence that no run occurred.
+- No run ID, job ID, conclusion, timestamps, or exact validator output was exposed and none was inferred.
+- The validator and workflow surfaces were inspected. The workflow invokes `python scripts/validate_iran_jordan_firstnet_assessment.py`, but this session does not claim the hosted job passed or failed.
+
+### Evidentiary consequence
+
+Machine validation remains unresolved at the native-run receipt layer. The assessment remains `research_candidate`; receipt acquisition remains open; chronology remains incomplete; independent review remains unassigned.
+
 ## Immediate next goals
 
 Proceed in this order:
 
-1. Acquire and preserve the exact CENTCOM original post and metadata for status `2082231500318114110`; the object is located but the accessible retrieval returned no source text.
-2. Acquire the exact Sepah News Notice No. 52 item page, not merely the section URL.
-3. Preserve IRNA Persian `86222422` and English `86222477` as linked derivatives, with the Persian object controlling quantity and target-language interpretation.
-4. Acquire the original White House, pool, or presidential recording/transcript for the retaliation remarks.
-5. Acquire the official CENTCOM release or native object describing the reported two-hour strike wave and target classes.
-6. Locate and preserve the second original Jordanian five-interception statement. Do not merge it with the July 29 object.
-7. Populate the normalized chronology only with source-supported time dimensions. The July 29 Petra timestamp is publication time, not physical-event time or prior statement-issuance time.
-8. Inspect the GitHub Actions result triggered by the receipt-manifest change and preserve the validation run/job result.
+1. Acquire native GitHub Actions metadata and logs for the run associated with `c61c1f37b80cd963ea5d88efa770ada6f15ed14d` or the latest relevant commit, preserving run ID, job ID, SHA, event, conclusions, timestamps, step results, exact validator output, and canonical URLs.
+2. Acquire and preserve the exact CENTCOM original post and metadata for status `2082231500318114110`; do not reconstruct missing source text from secondary reporting.
+3. Acquire the exact Sepah News Notice No. 52 item page, not merely the section URL.
+4. Preserve IRNA Persian `86222422` and English `86222477` as separate linked derivatives, with the Persian object controlling original-language quantity and target interpretation.
+5. Acquire the original White House, pool, presidential-platform, recording, or transcript object for the retaliation remarks.
+6. Acquire the official CENTCOM or other U.S. military object describing the reported two-hour strike wave, target classes, and any stated start or end times.
+7. Locate and preserve the second original Jordanian five-interception statement. Do not merge it with the July 29 object.
+8. Populate the normalized chronology only with source-supported time dimensions.
 9. Keep independent review unassigned and the assessment at `research_candidate` until all promotion requirements are satisfied.
 10. Update this handoff after every substantial repository change.
 
