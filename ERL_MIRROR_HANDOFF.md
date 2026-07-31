@@ -10,6 +10,7 @@ Build and validate a governed refusal-analysis capability that maps exact questi
 
 Active implementation branch: `feature/silence-causation-governance`
 Active pull request: `#46`
+Next execution prompt: `docs/SILENCE_CAUSATION_NEXT_SESSION_PROMPT.md`
 
 ## Governing rule
 
@@ -27,12 +28,14 @@ The initial research-candidate test concerns Anthony Fauci's July 29, 2026 appea
 4. `assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md`
 5. `scripts/validate_silence_causation_assessment.py`
 6. `.github/workflows/validate-silence-causation.yml`
+7. `docs/SILENCE_CAUSATION_NEXT_SESSION_PROMPT.md`
 
 ## Latest execution evidence
 
 - Initial PR validation run `30589764468` failed before assessment validation because the JSON Schema was syntactically invalid at line 40.
 - Commit `38d241e05377070448112a6f1085244bf2c0bfc4` replaced the malformed schema with valid structured JSON Schema.
 - Commit `e027a86b40fe978cb1c3d28017264cc34159fe34` installed the source-capture and atomic-question-ledger execution plan.
+- Commit `cc8a9567eab6a0232160666004a44a467bdd3025` installed the authoritative next-session execution prompt.
 - A fresh workflow result for the repaired head was not yet visible when this handoff was updated. Do not claim CI success until the run is inspected directly.
 
 ## Remaining required artifacts and work
