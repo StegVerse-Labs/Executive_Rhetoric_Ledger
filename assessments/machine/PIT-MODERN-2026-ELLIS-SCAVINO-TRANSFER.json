@@ -1,0 +1,148 @@
+{
+  "topic_id": "PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER",
+  "topic_name": "Jenna Ellis-Dan Scavino transfer-of-power statement evidence chain",
+  "entry_status": "review",
+  "jurisdiction": "United States; Georgia criminal proceeding; federal presidential-records and congressional-records context",
+  "time_window": "2020-12-11 through 2023-11-15, with continuing record acquisition",
+  "created_date": "2026-07-30",
+  "last_reviewed": "2026-07-30",
+  "related_standard": "standards/political-influence-tree-standard.md",
+  "related_annotation": "research-candidates/2026-07-30-jenna-ellis-scavino-transfer-of-power-chain.md",
+  "surface_claim": {
+    "claim_text": "Jenna Ellis told Fulton County prosecutors that Dan Scavino said President Trump would not leave office and that they would remain in power after the 2020 election.",
+    "exact_quote_available": true,
+    "speaker_or_institution": "Jenna Ellis, attributing words to Dan Scavino",
+    "office_or_role": "Former Trump campaign legal adviser; White House deputy chief of staff attribution",
+    "date": "2023-10-23 proffer describing an alleged 2020-12-19 encounter",
+    "venue": "Fulton County proffer interview; alleged White House Christmas party",
+    "jurisdiction": "Georgia and United States federal executive context",
+    "source_url": "https://abcnews.go.com/US/boss-leave-proffer-videos-show-trump-lawyers-telling/story?id=104831939",
+    "source_type": "news carrier with direct audiovisual discovery excerpt",
+    "transcript_available": true,
+    "archive_url": ""
+  },
+  "claimed_justification": {
+    "category": "executive-intent-attribution-and-transfer-of-power",
+    "stated_basis": "The allegation is preserved because it may bear on Scavino's understanding of Trump's post-election intent, while remaining a layered attribution rather than direct Trump speech.",
+    "quoted_basis": "the boss is not going to leave under any circumstances",
+    "implied_basis": "Scavino's proximity could make his characterization informed, but access and contextual consistency do not establish a direct instruction."
+  },
+  "factual_basis": {
+    "evidence_posture": "direct-proof-that-Ellis-made-the-allegation; conversation-and-Trump-intent-unconfirmed",
+    "primary_records": [
+      "Public audiovisual excerpt of Ellis's October 23, 2023 proffer",
+      "Official congressional report and supporting-material collection establishing Scavino access and communications role",
+      "Complete proffer, plea instruments, event records, and communications remain required"
+    ],
+    "administrative_data": [],
+    "court_records": ["Reported Fulton County plea and protective-order proceedings; exact instruments pending acquisition"],
+    "budget_records": [],
+    "enforcement_records": [],
+    "independent_analysis": ["Claim-level contradiction matrix and source-posture packet installed in this repository"],
+    "expert_testimony": [],
+    "official_investigations": ["Fulton County election-interference prosecution", "House Select Committee January 6 investigation"],
+    "unsupported_assertions": [
+      "That Ellis personally heard Trump issue the statement",
+      "That Scavino made the statement exactly as recalled",
+      "That Scavino transmitted a direct Trump instruction",
+      "That Trump authorized a specific unlawful retention plan",
+      "That Scavino silence constitutes an admission"
+    ],
+    "contradictions": [
+      "No contemporaneous record or independent witness to the alleged conversation is installed",
+      "Ellis reported alcohol consumption and recalled the exchange nearly three years later",
+      "Ellis had both truthfulness and cooperation incentives and pleaded guilty to aiding false statements",
+      "The public object is excerpted rather than the complete proffer",
+      "Trump ultimately transferred office on January 20, 2021"
+    ],
+    "missing_records": [
+      "Complete proffer video, transcript, metadata, and discovery identifier",
+      "Plea agreement, factual basis, plea transcript, and cooperation terms",
+      "White House event, access, photo, video, and security records",
+      "Ellis-Scavino contemporaneous communications or notes",
+      "Scavino sworn confirmation, denial, or qualification",
+      "Trump-Scavino communications tied to the alleged characterization",
+      "Claim-level January 6 transcripts and exhibits",
+      "Original media files and social-caption provenance objects"
+    ]
+  },
+  "influence_lineage": {
+    "influence_posture": "layered-attribution-chain-with-media-compression-risk",
+    "known_origin_points": ["Alleged Trump intent", "Scavino characterization", "Ellis memory", "Fulton proffer", "discovery disclosure", "media excerpt", "social caption"],
+    "institutional_amplifiers": ["Fulton County prosecution", "House Select Committee January 6 records collection"],
+    "media_amplifiers": ["ABC News", "The Washington Post", "The Atlanta Journal-Constitution", "social-media accounts"],
+    "legal_networks": ["Fulton County prosecutors and defense counsel", "Ellis counsel", "Scavino counsel", "Trump counsel"],
+    "funding_or_donor_links": [],
+    "policy_documents": ["Presidential Records Act and applicable criminal-discovery controls remain acquisition context rather than merits findings"],
+    "academic_or_expert_sources": [],
+    "lobbying_channels": [],
+    "party_or_campaign_documents": ["Trump campaign and White House communications records remain required"],
+    "religious_or_cultural_institutions": [],
+    "activist_organizations": [],
+    "foreign_influence_indicators": [],
+    "unknown_nodes": ["Whether the conversation occurred", "Whether Scavino was quoting, characterizing, joking, boasting, or inferring", "Whether Trump conveyed a specific instruction", "Whether any operational plan was linked to the alleged words"]
+  },
+  "action_conversion": {
+    "authority_posture": "no-specific-operational-authority-established-by-this-chain",
+    "action_type": "post-election political and legal resistance; alleged transfer-of-power characterization",
+    "instrument": "No specific instrument identified in the Ellis excerpt",
+    "instrument_url": "",
+    "date": "2020-12-19 alleged conversation; 2023-10-23 recorded allegation",
+    "actor": "Trump, Scavino, and Ellis occupy separate attribution nodes",
+    "enforcing_entity": "No enforcing entity established by this chain",
+    "implementation_status": "Contextual post-election efforts are documented elsewhere; this chain does not independently establish a concrete retention plan",
+    "affected_population_or_program": "Presidential transfer of power, election certification, public confidence, and criminal-case evidence integrity"
+  },
+  "control_comparison": {
+    "required": false,
+    "status": "not-required-for-initial-attribution-chain-review",
+    "comparable_red_jurisdictions": [],
+    "comparable_blue_jurisdictions": [],
+    "comparable_prior_administrations": [],
+    "comparable_policy_instruments": [],
+    "comparable_fraud_or_harm_magnitude": [],
+    "comparable_enforcement_tools": [],
+    "comparable_judicial_posture": [],
+    "missing_controls": [],
+    "comparison_notes": "The immediate issue is claim attribution and corroboration, not comparative prevalence. Controls would be required for broader historical uniqueness claims."
+  },
+  "institutional_response": {
+    "judicial_status": "Ellis entered a guilty plea; no adjudication establishes the Scavino conversation or Trump intent proposition.",
+    "administrative_status": "Presidential and White House record acquisition remains pending.",
+    "legislative_status": "Congressional records establish Scavino's proximity and nonproduction posture but not the alleged conversation.",
+    "oversight_status": "Claim-level acquisition and independent review pending.",
+    "injunctions": [],
+    "stays": [],
+    "dismissals": [],
+    "remands": [],
+    "settlements": [],
+    "reversals": [],
+    "pending_reviews": ["Complete proffer review", "Plea-term review", "Event and access reconstruction", "Communications acquisition", "Scavino merits response", "Independent governance review"],
+    "no_challenge_found": false
+  },
+  "outcome_evidence": {
+    "measured_outcomes": ["Trump departed office on January 20, 2021"],
+    "claimed_outcomes": ["Ellis alleged that Scavino expected the group to remain in power"],
+    "projected_outcomes": [],
+    "contradicted_outcomes": ["The literal prediction of remaining in office under all circumstances was not the final outcome"],
+    "no_measurable_effect_yet": false,
+    "harm_documented": [],
+    "benefit_documented": [],
+    "insufficient_evidence": true
+  },
+  "ledger_classification": {
+    "evidence_posture": "allegation-authenticated-conversation-unconfirmed-intent-contextually-supported-plan-unproven",
+    "influence_posture": "Scavino-access-high-specific-transmission-unresolved",
+    "authority_posture": "no-specific-unlawful-retention-authority-established",
+    "admissibility_status": "accepted-for-research-and-structured-review-not-publication-finding",
+    "confidence": "medium",
+    "classification_notes": "Proof that Ellis made the allegation is very high. Proof that Scavino said it is moderate-unconfirmed. Proof that he accurately conveyed Trump intent is moderate and contextual. Proof of a specific unlawful plan is low from this chain alone."
+  },
+  "receipts": {
+    "sources": [],
+    "review_records": ["assessments/reviews/PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER.review.md"],
+    "validation_records": ["validation_results/ellis-scavino-transfer-assessment.pending.json"],
+    "related_intake_queue": "assessments/intake/2026-07-30-ellis-scavino-transfer-of-power-primary-record-intake.json",
+    "related_source_posture_packet": "assessments/source-posture/2026-07-30-ellis-scavino-transfer-of-power-source-receipts.json"
+  }
+}
