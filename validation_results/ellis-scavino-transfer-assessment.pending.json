@@ -1,28 +1,21 @@
 {
   "validation_id": "ERL-VALIDATION-ELLIS-SCAVINO-2026-07-30-001",
-  "topic_id": "PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER",
-  "recorded_at": "2026-07-30",
-  "status": "pending",
-  "validated_commit": "698cd403b48cf3dbd091e99131d9b121bfda8cd9",
-  "validators_required": [
-    "scripts/validate_assessment_trees.py",
-    "scripts/run_activation_validation.py",
-    ".github/workflows/validate-ledger-schemas.yml"
+  "validation_status": "pending",
+  "checked_commit": "698cd403b48cf3dbd091e99131d9b121bfda8cd9",
+  "checked_paths": [
+    "research-candidates/2026-07-30-jenna-ellis-scavino-transfer-of-power-chain.md",
+    "assessments/source-posture/2026-07-30-ellis-scavino-transfer-of-power-source-receipts.json",
+    "assessments/intake/2026-07-30-ellis-scavino-transfer-of-power-primary-record-intake.json",
+    "assessments/contradictions/2026-07-30-ellis-scavino-transfer-of-power.matrix.md",
+    "assessments/machine/PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER.json",
+    "assessments/reviews/PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER.review.md",
+    "assessments/ELLIS_SCAVINO_TRANSFER_CHAIN_INDEX.md"
   ],
-  "direct_execution_evidence": [],
-  "ci_evidence": [],
-  "structural_checks_completed": [
-    "primary-record intake queue created against schemas/primary-record-intake.schema.json conventions",
-    "claim-level contradiction matrix installed",
-    "machine-readable assessment linked to existing annotation, review, intake, and source-posture packet",
-    "dedicated assessment index installed",
-    "promotion boundary preserved"
-  ],
-  "unresolved": [
-    "direct validator execution result",
-    "GitHub Actions run and job conclusion for the committed assessment tree",
-    "complete primary proffer and plea objects",
-    "independent corroboration of the Ellis-Scavino conversation"
-  ],
-  "notes": "Pending is intentional. No validator or CI success is claimed until direct execution evidence is preserved."
+  "validator": {
+    "type": "manual-review",
+    "path_or_name": "Pending direct execution of scripts/validate_assessment_trees.py, scripts/run_activation_validation.py, and .github/workflows/validate-ledger-schemas.yml"
+  },
+  "result_summary": "Validation remains pending. Structural review confirms that the primary-record intake queue, claim-level contradiction matrix, linked machine assessment, dedicated assessment index, and promotion boundary are present, but no direct validator execution result or GitHub Actions success is claimed. Unresolved evidence includes the complete primary proffer and plea objects and independent corroboration of the alleged Ellis-Scavino conversation.",
+  "activation_effect": "activation-blocked",
+  "notes": "Topic: PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER. Recorded 2026-07-30. Pending is intentional. Required validators: scripts/validate_assessment_trees.py; scripts/run_activation_validation.py; .github/workflows/validate-ledger-schemas.yml. Direct execution evidence: none preserved. CI evidence: none preserved. Structural checks completed: primary-record intake queue created under schema conventions; claim-level contradiction matrix installed; machine-readable assessment linked to annotation, review, intake, and source-posture records; dedicated assessment index installed; promotion boundary preserved. Unresolved: direct validator execution result; GitHub Actions run and job conclusion for the committed assessment tree; complete primary proffer and plea objects; independent corroboration of the Ellis-Scavino conversation. This conversion changes only the receipt representation to the canonical validation-result schema and does not assert validator success or alter the task's evidence semantics."
 }
