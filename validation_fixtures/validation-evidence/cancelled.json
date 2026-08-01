@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "governed-validator-execution-evidence",
+  "manifest_id": "fixture-cancelled",
+  "subject_id": "fixture",
+  "capture_started_at": "2026-07-31T21:59:00Z",
+  "capture_completed_at": "2026-07-31T21:59:00Z",
+  "execution_environment": {"run_id": "103", "run_attempt": "1", "head_commit": "dddddddddddddddddddddddddddddddddddddddd"},
+  "validators": [{"name": "cancelled", "command": ["python", "-c", "print('not-run')"], "required": true, "started_at": "2026-07-31T21:59:00Z", "completed_at": "2026-07-31T21:59:00Z", "exit_code": 130, "conclusion": "cancelled", "stdout": "", "stderr": "workflow cancelled\n", "log_path": "cancelled.log", "log_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "log_byte_size": 19}],
+  "first_failed_validator": "cancelled",
+  "overall_conclusion": "cancelled",
+  "activation_effect": "indeterminate",
+  "authority": {"may_promote_publication": false, "may_assert_primary_source_completion": false, "may_change_chain_node_confidence": false},
+  "notes": "Cancellation is distinct from validator failure and cannot activate anything."
+}
