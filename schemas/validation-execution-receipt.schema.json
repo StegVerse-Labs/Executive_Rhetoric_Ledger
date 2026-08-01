@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/validation-execution-receipt.schema.json",
+  "title": "Validation Execution Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "receipt_type", "manifest_id", "capture_started_at", "capture_completed_at", "execution_environment", "validators", "overall_conclusion", "authority"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "receipt_type": {"const": "governed-validator-execution-evidence"},
+    "manifest_id": {"type": "string"},
+    "subject_id": {"type": "string"},
+    "capture_started_at": {"type": "string", "format": "date-time"},
+    "capture_completed_at": {"type": "string", "format": "date-time"},
+    "execution_environment": {"type": "object"},
+    "validators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "command", "started_at", "completed_at", "exit_code", "conclusion", "stdout", "stderr", "log_path", "log_sha256", "log_byte_size"],
+        "properties": {
+          "name": {"type": "string"},
+          "command": {"type": "array", "items": {"type": "string"}},
+          "started_at": {"type": "string", "format": "date-time"},
+          "completed_at": {"type": "string", "format": "date-time"},
+          "exit_code": {"type": "integer"},
+          "conclusion": {"enum": ["success", "failure", "cancelled", "partial", "error"]},
+          "stdout": {"type": "string"},
+          "stderr": {"type": "string"},
+          "log_path": {"type": "string"},
+          "log_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "log_byte_size": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "first_failed_validator": {"type": ["string", "null"]},
+    "overall_conclusion": {"enum": ["success", "failure", "cancelled", "partial", "error"]},
+    "activation_effect": {"enum": ["validator-layer-passed", "activation-blocked", "indeterminate"]},
+    "authority": {
+      "type": "object",
+      "required": ["may_promote_publication", "may_assert_primary_source_completion", "may_change_chain_node_confidence"],
+      "properties": {
+        "may_promote_publication": {"const": false},
+        "may_assert_primary_source_completion": {"const": false},
+        "may_change_chain_node_confidence": {"const": false}
+      }
+    },
+    "notes": {"type": "string"}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "fixture_version": "1.0.0",
+  "fixtures": [
+    {"id": "success", "path": "success.json", "expected_conclusion": "success", "expected_activation_effect": "validator-layer-passed"},
+    {"id": "failure", "path": "failure.json", "expected_conclusion": "failure", "expected_activation_effect": "activation-blocked"},
+    {"id": "partial", "path": "partial.json", "expected_conclusion": "partial", "expected_activation_effect": "indeterminate"},
+    {"id": "cancelled", "path": "cancelled.json", "expected_conclusion": "cancelled", "expected_activation_effect": "indeterminate"},
+    {"id": "rerun", "path": "rerun.json", "expected_conclusion": "success", "expected_activation_effect": "validator-layer-passed"}
+  ]
+}
