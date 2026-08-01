@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "governed-validator-execution-evidence",
+  "manifest_id": "fixture-success",
+  "subject_id": "fixture",
+  "capture_started_at": "2026-07-31T21:59:00Z",
+  "capture_completed_at": "2026-07-31T21:59:01Z",
+  "execution_environment": {"run_id": "100", "run_attempt": "1", "head_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+  "validators": [{"name": "pass", "command": ["python", "-c", "print('ok')"], "required": true, "started_at": "2026-07-31T21:59:00Z", "completed_at": "2026-07-31T21:59:01Z", "exit_code": 0, "conclusion": "success", "stdout": "ok\n", "stderr": "", "log_path": "pass.log", "log_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "log_byte_size": 3}],
+  "first_failed_validator": null,
+  "overall_conclusion": "success",
+  "activation_effect": "validator-layer-passed",
+  "authority": {"may_promote_publication": false, "may_assert_primary_source_completion": false, "may_change_chain_node_confidence": false},
+  "notes": "Positive fixture only."
+}
