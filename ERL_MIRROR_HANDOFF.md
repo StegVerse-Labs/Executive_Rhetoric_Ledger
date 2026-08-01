@@ -32,22 +32,24 @@ The initial research-candidate test concerns Anthony Fauci's July 29, 2026 appea
 
 ## Latest execution evidence
 
-- PR `#46` remains open and non-draft at branch head `14d5ccc9eb1c439bdc8ab93b4070b901281fc5b1`.
-- The current changed-file set contains exactly the eight governed silence-causation files listed above.
-- The Ellis–Scavino task handoff, canonical validation-result schema, and incompatible pending receipt were read from `main` before mutation.
-- Commit `0c86fa34037a649d6776c3cda6911e06447afdeb` on `main` converted `validation_results/ellis-scavino-transfer-assessment.pending.json` to `schemas/validation-result.schema.json` without changing its `pending` status, unresolved evidence, activation block, or publication boundary.
-- The canonicalized receipt preserves the prior structural checks and unresolved items in `result_summary` and `notes`; it does not claim direct validator execution or CI success.
-- No pull-request-triggered workflow runs were returned for commit `0c86fa34037a649d6776c3cda6911e06447afdeb` when inspected immediately after commit.
-- PR mergeability temporarily reported false immediately after the base mutation while GitHub had not yet refreshed the effective merge state. This is not treated as a substantive conflict finding.
-- Earlier verified evidence remains: run `30593683918`, `Validate silence-causation assessments`, succeeded; run `30593683913`, `Validate Ledger Schemas`, failed at job `91041276028`, step `Validate validation result receipts`, due to the now-corrected Ellis–Scavino receipt representation.
+- PR `#46` remains open and non-draft.
+- Branch head before this handoff update: `4859945237fda32f6efd0f5eafa69f1ed2957ffc`.
+- Run `30639708784`, `Validate silence-causation assessments`, succeeded on that head.
+- Run `30639708810`, `Validate Ledger Schemas`, failed at job `91186218718`, step `Enforce assessment Political Influence Tree validation`.
+- Complete logs prove that the earlier Ellis–Scavino validation-result receipt defect is repaired: `validation_results/ellis-scavino-transfer-assessment.pending.json` passed canonical receipt validation.
+- The remaining failure had two causes: `assessments/machine/ERL-2026-07-24-MULTIANGLE-001.json` is a non-PIT incident/evidence record sharing the machine directory but was incorrectly forced through the Political Influence Tree schema; and the Ellis–Scavino PIT and related annotation were visible in the dedicated `assessments/ELLIS_SCAVINO_TRANSFER_CHAIN_INDEX.md` but the validator searched only `assessments/README.md`.
+- Mainline commit `2144d1afb5bdfc1f05f46399c4032b315bc557e7` repaired `scripts/validate_assessment_trees.py` without changing either evidence record. The validator now selects PIT records by explicit `topic_id` or the `PIT-` filename convention, reports non-PIT machine records as skipped, and uses the root plus dedicated `*INDEX.md` assessment indexes as the visibility corpus.
+- The repair retains failure behavior when no PIT records are selected and preserves all schema, source-receipt, review, control, classification, and linkage checks for actual PIT records.
 
 ## Current validation posture
 
-The proven schema incompatibility has been repaired on `main`. Repository-wide CI success is still not authorized until GitHub produces and this task directly inspects refreshed merge-head runs showing both `Validate silence-causation assessments` and `Validate Ledger Schemas` green on the same effective head.
+The two directly proven repository-wide validator defects are repaired on `main`. Repository-wide CI success is not yet authorized until GitHub produces and this task directly inspects refreshed merge-head runs showing both `Validate silence-causation assessments` and `Validate Ledger Schemas` green on the same effective head.
+
+Even after structural CI becomes green, the Fauci case remains a `research_candidate` and `not_assessable` until the primary proceeding record, atomic question ledger, controls, contradiction review, and independent review exist. Structural capability activation must not be represented as a published motive finding.
 
 ## Remaining required artifacts and work
 
-1. Reinspect refreshed PR mergeability, effective merge head, workflow runs, jobs, steps, logs, and conclusions after base commit `0c86fa34037a649d6776c3cda6911e06447afdeb`.
+1. Reinspect refreshed PR mergeability, effective merge head, workflow runs, jobs, steps, logs, and conclusions after mainline validator repair commit `2144d1afb5bdfc1f05f46399c4032b315bc557e7`.
 2. A source-custodied question ledger derived from the official transcript or video.
 3. Native capture or immutable custody pointer for the official proceeding video.
 4. Official transcript when available, committee exhibits, process records, witness correspondence, and cited prior testimony.
@@ -58,12 +60,13 @@ The proven schema incompatibility has been repaired on `main`. Repository-wide C
 
 ## Immediate sequence
 
-1. Confirm both PR workflows green on the same effective branch/merge head after the mainline receipt repair.
-2. Capture official hearing objects and record retrieval time, authority, byte length, media type, SHA-256, custody path, completeness, and transformations.
-3. Decompose every compound question into atomic propositions while preserving its parent turn and exact wording.
-4. Map each response to events, people, documents, prior testimony, and possible exposure classes.
-5. Execute controls before ranking hypotheses.
-6. Keep the case at `research_candidate` until primary capture, machine validation, contradiction review, and independent review are complete.
+1. Confirm both PR workflows green on the same effective branch/merge head after mainline validator repair commit `2144d1afb5bdfc1f05f46399c4032b315bc557e7`.
+2. If structural CI is green and PR authority permits, merge the capability without promoting the incomplete Fauci case beyond `research_candidate` / `not_assessable`.
+3. Capture official hearing objects and record retrieval time, authority, byte length, media type, SHA-256, custody path, completeness, and transformations.
+4. Decompose every compound question into atomic propositions while preserving its parent turn and exact wording.
+5. Map each response to events, people, documents, prior testimony, and possible exposure classes.
+6. Execute controls before ranking hypotheses.
+7. Keep the case at `research_candidate` until primary capture, machine validation, contradiction review, and independent review are complete.
 
 ## Cross-repository integration candidates
 
@@ -82,4 +85,4 @@ The capability is complete when a reviewer can reconstruct, from preserved prima
 
 ## Archive readiness
 
-This handoff now preserves the canonical receipt repair commit, unchanged pending evidence semantics, current CI uncertainty, exact remaining validation dependency, required primary-source artifacts, and continuation sequence. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
+This handoff preserves the canonical receipt repair, the complete later CI failure, the assessment-validator scope and index-discovery repair, exact commits and run identifiers, unchanged evidence boundaries, and the next execution sequence. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
