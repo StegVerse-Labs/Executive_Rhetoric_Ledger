@@ -1,0 +1,84 @@
+{
+  "workstream_id": "ERL-SC-2026-FAUCI-HSGAC-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "status": "active_build",
+  "branch": "feature/fauci-hsgac-source-custody",
+  "coordination_issue": 47,
+  "governing_standard": "standards/silence-causation-assessment-standard.md",
+  "base_assessment": "assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json",
+  "source_capture_plan": "assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md",
+  "current_classification": {
+    "case_status": "research_candidate",
+    "question_causation_status": "not_assessable",
+    "motive_finding_authorized": false,
+    "publication_finding_authorized": false
+  },
+  "workstreams": [
+    {
+      "id": "WS-A",
+      "name": "primary-source-custody",
+      "status": "ready",
+      "dependencies": [],
+      "outputs": [
+        "source-receipt-manifest",
+        "official-hearing-page-capture",
+        "official-video-custody-record",
+        "official-transcript-custody-record",
+        "exhibit-and-process-record-receipts"
+      ]
+    },
+    {
+      "id": "WS-B",
+      "name": "atomic-question-reconstruction",
+      "status": "blocked_on_preserved_official_record",
+      "dependencies": ["WS-A"],
+      "outputs": [
+        "machine-readable-atomic-question-ledger",
+        "human-readable-question-ledger-review"
+      ]
+    },
+    {
+      "id": "WS-C",
+      "name": "chronology-and-authority-graph",
+      "status": "ready_for_verified-metadata",
+      "dependencies": ["WS-A"],
+      "outputs": [
+        "normalized-chronology",
+        "participant-authority-graph"
+      ]
+    },
+    {
+      "id": "WS-D",
+      "name": "controls-and-hypothesis-testing",
+      "status": "blocked_on_substantially-complete-question-ledger",
+      "dependencies": ["WS-B", "WS-C"],
+      "outputs": [
+        "control-comparison-report",
+        "documentary-conflict-map",
+        "updated-bounded-assessment"
+      ]
+    },
+    {
+      "id": "WS-E",
+      "name": "contradiction-independent-review-and-validation",
+      "status": "blocked_on_validator-clean-assessment-artifacts",
+      "dependencies": ["WS-D"],
+      "outputs": [
+        "contradiction-review",
+        "independent-review",
+        "positive-negative-indeterminate-validator-fixtures",
+        "validation-receipt"
+      ]
+    }
+  ],
+  "coordination_rules": [
+    "Primary-source capture may proceed in parallel by source family.",
+    "Atomic question reconstruction must derive from preserved official video or transcript objects.",
+    "Chronology and authority graph may begin from verified metadata while unresolved edges remain explicit.",
+    "Controls must not begin from an incomplete question set unless marked partial and non-promotional.",
+    "Political-pressure or coercion scoring requires sourced actor, channel, timing, and nature evidence.",
+    "Silence, refusal, privilege, memory limitation, and constitutional invocation are response states, not admissions.",
+    "The case remains research_candidate and not_assessable until promotion gates are satisfied."
+  ],
+  "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator."
+}
