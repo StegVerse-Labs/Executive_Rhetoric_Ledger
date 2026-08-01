@@ -3,7 +3,9 @@
 
 This validator reuses the repository's existing Political Influence Tree and
 Source Posture schemas. It intentionally does not introduce a parallel
-assessment schema.
+assessment schema. Non-PIT JSON records that share ``assessments/machine`` are
+preserved but excluded from PIT validation unless they declare a ``topic_id``
+or use the repository's ``PIT-`` filename convention.
 """
 
 from __future__ import annotations
@@ -17,6 +19,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 ASSESSMENT_DIR = ROOT / "assessments" / "machine"
 ASSESSMENT_INDEX_PATH = ROOT / "assessments" / "README.md"
+ASSESSMENT_ROOT = ROOT / "assessments"
 REVIEW_DIR = ROOT / "assessments" / "reviews"
 CONTROL_DIR = ROOT / "assessments" / "controls"
 STANDALONE_RECEIPT_DIR = ROOT / "assessments" / "evidence" / "receipts"
@@ -36,6 +39,27 @@ def read_text(path: Path) -> str:
         return path.read_text(encoding="utf-8")
     except OSError as exc:
         raise ValueError(f"Unable to read {path.relative_to(ROOT)}: {exc}") from exc
+
+
+def assessment_index_text() -> str:
+    """Return root and dedicated assessment indexes as one visibility corpus."""
+    paths = [ASSESSMENT_INDEX_PATH]
+    paths.extend(sorted(ASSESSMENT_ROOT.glob("*INDEX.md")))
+    sections: list[str] = []
+    seen: set[Path] = set()
+    for path in paths:
+        if path in seen:
+            continue
+        seen.add(path)
+        sections.append(read_text(path))
+    return "\n".join(sections)
+
+
+def is_political_influence_tree(path: Path, document: object) -> bool:
+    """Select only records governed by the Political Influence Tree schema."""
+    if not isinstance(document, dict):
+        return path.name.startswith("PIT-")
+    return path.name.startswith("PIT-") or bool(str(document.get("topic_id", "")).strip())
 
 
 def format_errors(path: Path, errors: list) -> list[str]:
@@ -90,17 +114,19 @@ def main() -> int:
     source_validator = Draft202012Validator(source_schema)
 
     try:
-        assessment_index = read_text(ASSESSMENT_INDEX_PATH)
+        assessment_index = assessment_index_text()
     except ValueError as exc:
         print(f"FAIL: {exc}", file=sys.stderr)
         return 1
 
     files = sorted(ASSESSMENT_DIR.glob("*.json"))
     if not files:
-        print(f"FAIL: no assessment trees found in {ASSESSMENT_DIR.relative_to(ROOT)}", file=sys.stderr)
+        print(f"FAIL: no machine-readable assessment records found in {ASSESSMENT_DIR.relative_to(ROOT)}", file=sys.stderr)
         return 1
 
     standalone_ids, failures = standalone_receipt_index()
+    validated_count = 0
+    skipped_count = 0
 
     for path in files:
         try:
@@ -109,6 +135,12 @@ def main() -> int:
             failures.append(str(exc))
             continue
 
+        if not is_political_influence_tree(path, document):
+            skipped_count += 1
+            print(f"SKIPPED {path.relative_to(ROOT)} (non-PIT machine record)")
+            continue
+
+        validated_count += 1
         tree_errors = sorted(
             tree_validator.iter_errors(document), key=lambda error: list(error.path)
         )
@@ -122,12 +154,12 @@ def main() -> int:
 
         if topic_id and topic_id not in assessment_index:
             failures.append(
-                f"{path.relative_to(ROOT)}:topic_id: {topic_id} is not visible in assessments/README.md"
+                f"{path.relative_to(ROOT)}:topic_id: {topic_id} is not visible in an assessment index"
             )
 
         if path.name not in assessment_index:
             failures.append(
-                f"{path.relative_to(ROOT)}: machine assessment file is not linked from assessments/README.md"
+                f"{path.relative_to(ROOT)}: machine assessment file is not linked from an assessment index"
             )
 
         if related_annotation:
@@ -138,7 +170,7 @@ def main() -> int:
                 )
             elif annotation_path.name not in assessment_index:
                 failures.append(
-                    f"{path.relative_to(ROOT)}:related_annotation: {annotation_path.name} is not linked from assessments/README.md"
+                    f"{path.relative_to(ROOT)}:related_annotation: {annotation_path.name} is not linked from an assessment index"
                 )
 
         receipts = document.get("receipts", {})
@@ -212,6 +244,9 @@ def main() -> int:
 
         print(f"CHECKED {path.relative_to(ROOT)}")
 
+    if validated_count == 0:
+        failures.append("No Political Influence Tree assessment records were selected for validation")
+
     if failures:
         print("Assessment tree validation failed:", file=sys.stderr)
         for failure in failures:
@@ -219,7 +254,7 @@ def main() -> int:
         return 1
 
     print(
-        f"Validated {len(files)} assessment tree(s), index visibility, linked annotations, reviews, controls, embedded receipts, and standalone receipt references."
+        f"Validated {validated_count} Political Influence Tree assessment(s), index visibility, linked annotations, reviews, controls, embedded receipts, and standalone receipt references; skipped {skipped_count} explicitly non-PIT machine record(s)."
     )
     return 0
 
