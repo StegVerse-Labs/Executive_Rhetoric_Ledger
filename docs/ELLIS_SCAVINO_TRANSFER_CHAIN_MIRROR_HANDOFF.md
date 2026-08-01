@@ -4,6 +4,13 @@
 
 This handoff governs continuation of `ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001` and its machine assessment `PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER`.
 
+## Current repository lineage
+
+- requested prior commit: `0dc634f16b518272ffffebd63130b6b814fc4313`
+- embedded-source-receipt repair: `31f9c80e884d1f90a711aaa853ae02b2596e72a3`
+- canonical pending-validation-receipt repair: `0c86fa34037a649d6776c3cda6911e06447afdeb`
+- bounded CI-acquisition receipt commit: `f29cfc2a20f6fd9a14ce19eb45dd5a4f5d590773`
+
 ## Installed artifacts
 
 - `research-candidates/2026-07-30-jenna-ellis-scavino-transfer-of-power-chain.md`
@@ -14,6 +21,7 @@ This handoff governs continuation of `ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001`
 - `assessments/reviews/PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER.review.md`
 - `assessments/ELLIS_SCAVINO_TRANSFER_CHAIN_INDEX.md`
 - `validation_results/ellis-scavino-transfer-assessment.pending.json`
+- `assessments/validation/2026-07-31-ellis-scavino-github-actions-receipt.md`
 
 ## Current finding posture
 
@@ -27,6 +35,7 @@ direct_Trump_instruction_transmitted_through_Scavino: "low-unresolved"
 concrete_unlawful_retention_plan_proven_by_this_chain: "low"
 review_status: "conditional-structured-review-acceptance"
 publication_status: "not-approved"
+validation_status: "pending-direct-validator-and-native-CI-evidence"
 final_finding: false
 ```
 
@@ -53,7 +62,7 @@ No node may inherit the confidence of the node below it.
 4. Official January 6 records provide primary acquisition paths for contextual evidence concerning Trump's refusal to acknowledge defeat and Scavino's communications role.
 5. Multiple media carriers consistently identify December 19, 2020 as the reported encounter date.
 
-## Evidence that decreased chain validity or limits inference
+## Evidence that decreases chain validity or limits inference
 
 1. No contemporaneous recording, message, note, independent witness, or sworn Scavino confirmation has been preserved.
 2. The public recording is an excerpt; the complete proffer, transcript, metadata, and discovery identifier remain unavailable.
@@ -78,22 +87,24 @@ Ten claim-level objects are queued. Critical objects are:
 - claim-level January 6 transcripts and exhibits;
 - original media files, edit boundaries, captions, and publication metadata.
 
-Likely custodians include the Fulton County District Attorney, Fulton County Superior Court Clerk and discovery custodians, Ellis and Scavino counsel, National Archives and Records Administration, United States Secret Service, White House Photo Office records, House January 6 records custodians, Department of Justice, campaign records custodians, and the relevant media organizations.
-
-## Contradiction classes
-
-The installed matrix separates:
-
-- direct corroboration of the conversation: none independently preserved;
-- corroboration of Scavino access and knowledge capacity: strong;
-- corroboration of Trump's general state of mind: moderate-to-strong contextually, pending claim-level sourcing;
-- corroboration of a specific operational plan: low from this chain;
-- contradiction or impeachment: elapsed time, alcohol, cooperation incentives, prior false-statement conduct, excerpt incompleteness, and eventual transfer;
-- unresolved absence: complete proffer, plea instruments, event records, communications, Scavino response, and claim-level exhibits.
+Likely custodians include the Fulton County District Attorney, Fulton County Superior Court Clerk and discovery custodians, Ellis and Scavino counsel, National Archives and Records Administration, United States Secret Service, White House Photo Office records, House January 6 records custodians, Department of Justice, campaign records custodians, and relevant media organizations.
 
 ## Validation and CI posture
 
-`validation_results/ellis-scavino-transfer-assessment.pending.json` records the honest current posture. Direct execution evidence for `scripts/validate_assessment_trees.py`, `scripts/run_activation_validation.py`, and `.github/workflows/validate-ledger-schemas.yml` remains required. No validator or CI success may be reported unless a run, job, and conclusion are directly inspected.
+Commit `31f9c80e884d1f90a711aaa853ae02b2596e72a3` embedded six schema-normalized receipts into the machine assessment.
+
+Commit `0c86fa34037a649d6776c3cda6911e06447afdeb` conformed the pending validation receipt to the canonical validation-result representation without asserting success.
+
+The bounded receipt at `assessments/validation/2026-07-31-ellis-scavino-github-actions-receipt.md` records direct retrieval attempts for the repair and then-current head. The available connector returned no commit-scoped pull-request runs and no combined statuses. Because the connector filters commit-run retrieval to pull-request-triggered runs while the workflow also runs on pushes to `main`, those empty results do not establish that no push run occurred.
+
+Direct execution evidence remains required for:
+
+- `python scripts/validate_assessment_trees.py`
+- `python scripts/validate_primary_record_intake.py`
+- `python scripts/run_activation_validation.py`
+- `.github/workflows/validate-ledger-schemas.yml`
+
+No validator or CI success may be reported until exact command, exit code, stdout, stderr, workflow run ID, run attempt, job ID, steps, conclusion, logs, and artifacts are directly preserved.
 
 ## Promotion boundary
 
@@ -101,12 +112,12 @@ Do not represent the clip as direct Trump speech, independent proof that Scavino
 
 ## Current disposition
 
-The record remains a research candidate and has advanced to conditional structured review. It does not qualify for publication as a factual determination that Trump personally ordered an unlawful refusal to leave office. Tagging, Site mirroring, Publisher distribution, and wiki determination are not authorized.
+The record remains a research candidate in conditional structured review. It does not qualify for publication as a factual determination that Trump personally ordered an unlawful refusal to leave office. Tagging, release, Site mirroring, Publisher distribution, admissibility-wiki determination, and stegguardian-wiki determination are not authorized.
 
 ## Exact next-session prompt
 
-Use the connected GitHub account directly and continue `ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001` in `StegVerse-Labs/Executive_Rhetoric_Ledger`. Read `EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md`, `docs/ELLIS_SCAVINO_TRANSFER_CHAIN_MIRROR_HANDOFF.md`, the research candidate, source-posture packet, intake queue, contradiction matrix, machine assessment, review, dedicated assessment index, validation receipt, and every referenced schema and validator before mutation. First inspect CI for commit `774567ade0187300ea3d0f5e8889174a829e4d44` and run or trigger every applicable validator if direct actions permit. Then acquire and preserve the complete Fulton County Ellis proffer and transcript; the plea agreement, factual basis, plea transcript, truthfulness, breach, cooperation, and statement-use terms; December 19, 2020 White House event and access records; Ellis–Scavino and Trump–Scavino communications; claim-level January 6 transcripts and exhibits; and an attributable Scavino merits response. Update confidence only at the affected chain node. Do not treat silence as admission, contextual consistency as direct corroboration, or Ellis's plea as automatic validation or disqualification. Commit all completed work, preserve exact validation evidence, and update this handoff.
+Use the connected GitHub account directly and continue `ERL-CHAIN-2026-ELLIS-SCAVINO-TRANSFER-001` in `StegVerse-Labs/Executive_Rhetoric_Ledger` on `main`. Read `EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md`, this handoff, the research candidate, source-posture packet, intake queue, contradiction matrix, machine assessment, governance review, dedicated index, pending validation receipt, `assessments/validation/2026-07-31-ellis-scavino-github-actions-receipt.md`, every referenced schema and validator, and `.github/workflows/validate-ledger-schemas.yml` before mutation. Treat repository state and native execution evidence as authoritative. First inspect or dispatch `Validate Ledger Schemas` for commit `31f9c80e884d1f90a711aaa853ae02b2596e72a3`, commit `0c86fa34037a649d6776c3cda6911e06447afdeb`, commit `f29cfc2a20f6fd9a14ce19eb45dd5a4f5d590773`, and the newest repository head. Preserve run IDs, attempts, jobs, steps, logs, artifacts, exact validator commands, exit codes, stdout, stderr, and conclusions. Repair only directly proven defects. Then acquire and preserve the complete Fulton County Ellis proffer and transcript; plea agreement, factual basis, plea transcript, truthfulness, breach, cooperation, and statement-use terms; December 19, 2020 White House event and access records; Ellis–Scavino and Trump–Scavino communications; claim-level January 6 transcripts and exhibits; original carrier objects; and an attributable Scavino merits response. Update confidence only at the directly affected chain node. Do not treat silence as admission, contextual consistency as direct corroboration, or Ellis's plea as automatic validation or disqualification. Preserve `publication_status: not-approved` unless every release gate is directly satisfied.
 
 ## Archive readiness
 
-This handoff preserves the current artifacts, confidence by chain link, contradiction classes, unresolved objects and custodians, validation posture, promotion boundary, and exact continuation prompt. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
+This handoff preserves current commits, installed records, confidence by chain link, contradiction classes, unresolved objects and custodians, bounded CI-access evidence, validation posture, promotion boundary, and exact continuation prompt. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
