@@ -1,7 +1,7 @@
 {
   "validation_id": "ERL-VALIDATION-ELLIS-SCAVINO-2026-07-30-001",
   "validation_status": "pending",
-  "checked_commit": "698cd403b48cf3dbd091e99131d9b121bfda8cd9",
+  "checked_commit": "f683a57368cfc5097c51a63e9206f4dc361a62f9",
   "checked_paths": [
     "research-candidates/2026-07-30-jenna-ellis-scavino-transfer-of-power-chain.md",
     "assessments/source-posture/2026-07-30-ellis-scavino-transfer-of-power-source-receipts.json",
@@ -9,13 +9,15 @@
     "assessments/contradictions/2026-07-30-ellis-scavino-transfer-of-power.matrix.md",
     "assessments/machine/PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER.json",
     "assessments/reviews/PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER.review.md",
-    "assessments/ELLIS_SCAVINO_TRANSFER_CHAIN_INDEX.md"
+    "assessments/ELLIS_SCAVINO_TRANSFER_CHAIN_INDEX.md",
+    "assessments/validation/2026-07-31-ellis-scavino-github-actions-receipt.md",
+    "docs/ELLIS_SCAVINO_TRANSFER_CHAIN_MIRROR_HANDOFF.md"
   ],
   "validator": {
     "type": "manual-review",
-    "path_or_name": "Pending direct execution of scripts/validate_assessment_trees.py, scripts/run_activation_validation.py, and .github/workflows/validate-ledger-schemas.yml"
+    "path_or_name": "Pending direct execution of scripts/validate_assessment_trees.py, scripts/validate_primary_record_intake.py, scripts/run_activation_validation.py, and .github/workflows/validate-ledger-schemas.yml"
   },
-  "result_summary": "Validation remains pending. Structural review confirms that the primary-record intake queue, claim-level contradiction matrix, linked machine assessment, dedicated assessment index, and promotion boundary are present, but no direct validator execution result or GitHub Actions success is claimed. Unresolved evidence includes the complete primary proffer and plea objects and independent corroboration of the alleged Ellis-Scavino conversation.",
+  "result_summary": "Validation remains pending. The machine assessment contains six embedded schema-normalized source receipts, the validation receipt uses the canonical representation, the dedicated index and chain handoff are synchronized, and a bounded GitHub Actions acquisition receipt records empty commit-scoped connector results without inferring workflow success or failure. No native validator exit code, workflow run ID, job ID, step conclusion, log, or artifact has been preserved. Primary evidence and independent corroboration remain incomplete.",
   "activation_effect": "activation-blocked",
-  "notes": "Topic: PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER. Recorded 2026-07-30. Pending is intentional. Required validators: scripts/validate_assessment_trees.py; scripts/run_activation_validation.py; .github/workflows/validate-ledger-schemas.yml. Direct execution evidence: none preserved. CI evidence: none preserved. Structural checks completed: primary-record intake queue created under schema conventions; claim-level contradiction matrix installed; machine-readable assessment linked to annotation, review, intake, and source-posture records; dedicated assessment index installed; promotion boundary preserved. Unresolved: direct validator execution result; GitHub Actions run and job conclusion for the committed assessment tree; complete primary proffer and plea objects; independent corroboration of the Ellis-Scavino conversation. This conversion changes only the receipt representation to the canonical validation-result schema and does not assert validator success or alter the task's evidence semantics."
+  "notes": "Topic: PIT-MODERN-2026-ELLIS-SCAVINO-TRANSFER. Repair lineage: 31f9c80e884d1f90a711aaa853ae02b2596e72a3 embedded six source receipts; 0c86fa34037a649d6776c3cda6911e06447afdeb conformed this receipt to the canonical schema; f29cfc2a20f6fd9a14ce19eb45dd5a4f5d590773 installed the bounded CI-acquisition receipt; cf1616e10ba8f0c4cae18b151f080fc87a43bda9 advanced the chain handoff; f683a57368cfc5097c51a63e9206f4dc361a62f9 synchronized the dedicated index. The available connector returned no pull-request-triggered commit runs and no combined statuses for the inspected repair and head commits, but it does not expose general push-run listing or dispatch. Empty results are not proof that no push run occurred. Unresolved: exact validator commands and exit codes from a runnable environment; native GitHub Actions run, job, step, log, and artifact evidence; complete Fulton County proffer and transcript; exact Ellis plea and cooperation instruments; event and access records; Ellis-Scavino and Trump-Scavino communications; attributable Scavino merits response; claim-level January 6 exhibits; original media carrier objects; independent governance review. Publication status remains not-approved and all downstream release or wiki actions remain blocked."
 }
