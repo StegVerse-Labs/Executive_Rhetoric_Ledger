@@ -33,23 +33,24 @@ The initial research-candidate test concerns Anthony Fauci's July 29, 2026 appea
 ## Latest execution evidence
 
 - PR `#46` remains open and non-draft.
-- Branch head before this handoff update: `4859945237fda32f6efd0f5eafa69f1ed2957ffc`.
-- Run `30639708784`, `Validate silence-causation assessments`, succeeded on that head.
-- Run `30639708810`, `Validate Ledger Schemas`, failed at job `91186218718`, step `Enforce assessment Political Influence Tree validation`.
-- Complete logs prove that the earlier Ellis–Scavino validation-result receipt defect is repaired: `validation_results/ellis-scavino-transfer-assessment.pending.json` passed canonical receipt validation.
-- The remaining failure had two causes: `assessments/machine/ERL-2026-07-24-MULTIANGLE-001.json` is a non-PIT incident/evidence record sharing the machine directory but was incorrectly forced through the Political Influence Tree schema; and the Ellis–Scavino PIT and related annotation were visible in the dedicated `assessments/ELLIS_SCAVINO_TRANSFER_CHAIN_INDEX.md` but the validator searched only `assessments/README.md`.
-- Mainline commit `2144d1afb5bdfc1f05f46399c4032b315bc557e7` repaired `scripts/validate_assessment_trees.py` without changing either evidence record. The validator now selects PIT records by explicit `topic_id` or the `PIT-` filename convention, reports non-PIT machine records as skipped, and uses the root plus dedicated `*INDEX.md` assessment indexes as the visibility corpus.
-- The repair retains failure behavior when no PIT records are selected and preserves all schema, source-receipt, review, control, classification, and linkage checks for actual PIT records.
+- Run `30678285119`, `Validate silence-causation assessments`, succeeded at branch head `68445f7bba07485d82619fa5d10564db1b78784e`.
+- Run `30678285146`, `Validate Ledger Schemas`, failed at job `91309905217`, step `Validate primary-record intake queues`.
+- The same run directly confirmed that validation-result receipts and the repaired Political Influence Tree validator now pass. The PIT validator validated five PIT assessments and explicitly skipped `assessments/machine/ERL-2026-07-24-MULTIANGLE-001.json` as a non-PIT machine record.
+- Complete logs identified three primary-record intake validator defects: machine-assessment discovery excluded `assessments/pit`; Ellis–Scavino intake uses the governed chain record ID while its PIT assessment uses a distinct topic ID; and source receipts may be preserved in task-specific source-posture packets rather than embedded only in the machine assessment.
+- The same logs identified schema vocabulary drift in `assessments/intake/2026-07-iran-jordan-firstnet-primary-record-intake.json`, where the records preserve more specific restricted, classified, provider, diplomatic, law-enforcement, and regulatory custody postures than the schema previously allowed.
+- Mainline commit `98fda88b97a920343ff989578fcb60936930ae78` repaired `scripts/validate_primary_record_intake.py`. It now discovers governed assessment records in `assessments/machine` and `assessments/pit`, skips non-assessment machine records without treating them as malformed, resolves explicit governed record-ID aliases, and indexes source IDs from task-specific source-posture and receipt packets.
+- Mainline commit `7268d7ec10a7fed2874594e0b5c0dfef331821f6` extended `schemas/primary-record-intake.schema.json` to preserve the existing classified-or-restricted, restricted-or-confidential, customer-and-provider-restricted, confidential-regulatory, classified-or-law-enforcement-sensitive, and diplomatic-or-restricted custody distinctions.
+- These repairs do not promote any assessment, fabricate receipt evidence, weaken verified-state requirements, or alter the Fauci case classification.
 
 ## Current validation posture
 
-The two directly proven repository-wide validator defects are repaired on `main`. Repository-wide CI success is not yet authorized until GitHub produces and this task directly inspects refreshed merge-head runs showing both `Validate silence-causation assessments` and `Validate Ledger Schemas` green on the same effective head.
+The directly proven validation-result, PIT-scope/index, intake-discovery, alias-resolution, source-packet, and privacy-vocabulary defects are repaired on `main`. Repository-wide CI success is not authorized until GitHub produces and this task directly inspects refreshed merge-head runs showing both `Validate silence-causation assessments` and `Validate Ledger Schemas` green on the same effective head.
 
 Even after structural CI becomes green, the Fauci case remains a `research_candidate` and `not_assessable` until the primary proceeding record, atomic question ledger, controls, contradiction review, and independent review exist. Structural capability activation must not be represented as a published motive finding.
 
 ## Remaining required artifacts and work
 
-1. Reinspect refreshed PR mergeability, effective merge head, workflow runs, jobs, steps, logs, and conclusions after mainline validator repair commit `2144d1afb5bdfc1f05f46399c4032b315bc557e7`.
+1. Reinspect refreshed PR mergeability, effective merge head, workflow runs, jobs, steps, logs, and conclusions after mainline commits `98fda88b97a920343ff989578fcb60936930ae78` and `7268d7ec10a7fed2874594e0b5c0dfef331821f6`.
 2. A source-custodied question ledger derived from the official transcript or video.
 3. Native capture or immutable custody pointer for the official proceeding video.
 4. Official transcript when available, committee exhibits, process records, witness correspondence, and cited prior testimony.
@@ -60,7 +61,7 @@ Even after structural CI becomes green, the Fauci case remains a `research_candi
 
 ## Immediate sequence
 
-1. Confirm both PR workflows green on the same effective branch/merge head after mainline validator repair commit `2144d1afb5bdfc1f05f46399c4032b315bc557e7`.
+1. Confirm both PR workflows green on the same effective branch/merge head after the intake validator and schema repairs.
 2. If structural CI is green and PR authority permits, merge the capability without promoting the incomplete Fauci case beyond `research_candidate` / `not_assessable`.
 3. Capture official hearing objects and record retrieval time, authority, byte length, media type, SHA-256, custody path, completeness, and transformations.
 4. Decompose every compound question into atomic propositions while preserving its parent turn and exact wording.
@@ -85,4 +86,4 @@ The capability is complete when a reviewer can reconstruct, from preserved prima
 
 ## Archive readiness
 
-This handoff preserves the canonical receipt repair, the complete later CI failure, the assessment-validator scope and index-discovery repair, exact commits and run identifiers, unchanged evidence boundaries, and the next execution sequence. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
+This handoff preserves the complete validator-repair chain, exact commits and run identifiers, unchanged evidence and publication boundaries, remaining primary-source work, and the next execution sequence. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
