@@ -46,7 +46,7 @@ def github_environment() -> dict[str, Any]:
         "runner_name": os.getenv("RUNNER_NAME", ""),
         "runner_os": os.getenv("RUNNER_OS", ""),
         "run_url": f"{server}/{repository}/actions/runs/{run_id}" if repository and run_id else "",
-        "attempt_url": f"{server}/{repository}/actions/runs/{run_id}/attempts/{attempt}" if repository and run_id and attempt else ""
+        "attempt_url": f"{server}/{repository}/actions/runs/{run_id}/attempts/{attempt}" if repository and run_id and attempt else "",
     }
 
 
@@ -56,7 +56,14 @@ def run_entry(entry: dict[str, Any], output_dir: Path) -> dict[str, Any]:
     timeout = entry.get("timeout_seconds")
     cwd = entry.get("working_directory", ".")
     try:
-        process = subprocess.run(command, cwd=cwd, text=True, capture_output=True, check=False, timeout=timeout)
+        process = subprocess.run(
+            command,
+            cwd=cwd,
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=timeout,
+        )
         exit_code = process.returncode
         stdout = process.stdout
         stderr = process.stderr
@@ -66,10 +73,15 @@ def run_entry(entry: dict[str, Any], output_dir: Path) -> dict[str, Any]:
         stdout = exc.stdout or ""
         stderr = (exc.stderr or "") + "\nvalidator timed out"
         conclusion = "error"
+
     completed = utc_now()
-    log_path = output_dir / f"{entry['id']}.log"
+    log_name = f"{entry['id']}.log"
+    log_path = output_dir / log_name
     log_path.write_text(
-        f"command: {' '.join(command)}\nexit_code: {exit_code}\n--- stdout ---\n{stdout}\n--- stderr ---\n{stderr}",
+        f"command: {' '.join(command)}\n"
+        f"exit_code: {exit_code}\n"
+        f"--- stdout ---\n{stdout}\n"
+        f"--- stderr ---\n{stderr}",
         encoding="utf-8",
     )
     return {
@@ -81,7 +93,7 @@ def run_entry(entry: dict[str, Any], output_dir: Path) -> dict[str, Any]:
         "conclusion": conclusion,
         "stdout": stdout,
         "stderr": stderr,
-        "log_path": str(log_path),
+        "log_path": log_name,
         "log_sha256": digest(log_path),
         "log_byte_size": log_path.stat().st_size,
     }
@@ -115,27 +127,56 @@ def main() -> int:
         "capture_completed_at": completed,
         "execution_environment": github_environment(),
         "validators": results,
-        "first_failed_validator": next((r["name"] for r in results if r["exit_code"] != 0), None),
+        "first_failed_validator": next(
+            (result["name"] for result in results if result["exit_code"] != 0),
+            None,
+        ),
         "overall_conclusion": "success" if success else "failure",
         "activation_effect": "validator-layer-passed" if success else "activation-blocked",
         "authority": {
             "may_promote_publication": False,
             "may_assert_primary_source_completion": False,
-            "may_change_chain_node_confidence": False
+            "may_change_chain_node_confidence": False,
         },
-        "notes": "Validator success proves only recorded execution for the identified manifest, commit, and run."
+        "notes": "Validator success proves only recorded execution for the identified manifest, commit, and run.",
     }
     receipt_path = output_dir / "validation-execution-receipt.json"
     receipt_path.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+
     files = []
     for path in sorted(output_dir.iterdir()):
         if path.is_file():
-            files.append({"path": str(path), "sha256": digest(path), "byte_size": path.stat().st_size})
-    (output_dir / "artifact-manifest.json").write_text(
-        json.dumps({"generated_at": completed, "manifest_id": manifest["manifest_id"], "files": files}, indent=2) + "\n",
+            files.append(
+                {
+                    "path": path.name,
+                    "sha256": digest(path),
+                    "byte_size": path.stat().st_size,
+                }
+            )
+    manifest_path = output_dir / "artifact-manifest.json"
+    manifest_path.write_text(
+        json.dumps(
+            {
+                "generated_at": completed,
+                "manifest_id": manifest["manifest_id"],
+                "files": files,
+            },
+            indent=2,
+        )
+        + "\n",
         encoding="utf-8",
     )
-    print(json.dumps({"overall_conclusion": receipt["overall_conclusion"], "receipt_path": str(receipt_path)}, indent=2))
+
+    print(
+        json.dumps(
+            {
+                "overall_conclusion": receipt["overall_conclusion"],
+                "receipt_path": str(receipt_path),
+                "manifest_path": str(manifest_path),
+            },
+            indent=2,
+        )
+    )
     return 0
 
 
