@@ -1,0 +1,70 @@
+name: Validate Validation Evidence Layer
+
+on:
+  pull_request:
+    paths:
+      - "schemas/validation-evidence-manifest.schema.json"
+      - "schemas/validation-execution-receipt.schema.json"
+      - "validation_manifests/**"
+      - "validation_evidence/fixtures/**"
+      - "scripts/capture_validation_manifest.py"
+      - "scripts/validate_validation_evidence.py"
+      - ".github/workflows/capture-validation-evidence.yml"
+      - ".github/workflows/validate-validation-evidence.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-contract-and-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install schema validator
+        run: python -m pip install --upgrade pip jsonschema
+
+      - name: Validate governed manifest and fixture receipts
+        run: python scripts/validate_validation_evidence.py --fixtures
+
+      - name: Smoke-test manifest-driven capture
+        run: |
+          rm -rf /tmp/validation-evidence-smoke
+          python scripts/capture_validation_manifest.py \
+            --manifest validation_manifests/repository-core.json \
+            --subject-id Executive_Rhetoric_Ledger \
+            --output /tmp/validation-evidence-smoke
+
+      - name: Validate generated smoke receipt
+        run: |
+          python scripts/validate_validation_evidence.py \
+            --manifest validation_manifests/repository-core.json \
+            --receipt /tmp/validation-evidence-smoke/validation-execution-receipt.json
+
+      - name: Upload generated evidence before enforcement
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-evidence-layer-smoke-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/validation-evidence-smoke
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Enforce generated receipt conclusion
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          receipt = json.loads(Path('/tmp/validation-evidence-smoke/validation-execution-receipt.json').read_text())
+          if receipt['overall_conclusion'] != 'success':
+              raise SystemExit('generated validation-evidence receipt is not successful')
+          print('generated validation-evidence receipt conclusion: success')
+          PY
