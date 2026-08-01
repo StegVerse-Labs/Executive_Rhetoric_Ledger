@@ -1,0 +1,150 @@
+{
+  "assessment_id": "ERL-SCA-2026-07-29-FAUCI-HSGAC",
+  "status": "research_candidate",
+  "proceeding": {
+    "title": "Testimony of Anthony Fauci",
+    "date": "2026-07-29",
+    "authority": "U.S. Senate Committee on Homeland Security and Governmental Affairs",
+    "witness": "Anthony Fauci",
+    "venue": "Senate Dirksen Building, SD-342",
+    "oath_status": "unknown",
+    "subpoena_posture": "public reporting describes compelled appearance; primary process record not yet captured",
+    "counsel_present": true
+  },
+  "source_posture": {
+    "complete_primary_record": false,
+    "sources": [
+      {
+        "source_id": "SRC-HSGAC-HEARING-PAGE",
+        "source_type": "official_committee_hearing_page",
+        "url": "https://www.hsgac.senate.gov/hearings/testimony-of-anthony-fauci/",
+        "custody_status": "located",
+        "content_path": null,
+        "sha256": null
+      },
+      {
+        "source_id": "SRC-REUTERS-2026-07-29",
+        "source_type": "wire_report",
+        "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/fauci-face-rand-pauls-us-senate-committee-after-diary-release-2026-07-29/",
+        "custody_status": "located",
+        "content_path": null,
+        "sha256": null
+      }
+    ],
+    "missing_primary_objects": [
+      "complete official hearing video or native downloadable object",
+      "official transcript with exact question wording",
+      "member exhibits and referenced documents",
+      "witness and counsel correspondence concerning appearance and invocation posture",
+      "question-by-question timestamps"
+    ]
+  },
+  "questions": [],
+  "events": [
+    {
+      "event_id": "EV-HEARING-2026-07-29",
+      "description": "Anthony Fauci appeared before HSGAC and repeatedly invoked the Fifth Amendment according to public reporting.",
+      "time_dimensions": {
+        "proceeding_time": "2026-07-29T08:30:00-04:00",
+        "publication_time": "2026-07-29",
+        "analysis_time": "2026-07-30"
+      },
+      "source_ids": ["SRC-HSGAC-HEARING-PAGE", "SRC-REUTERS-2026-07-29"]
+    },
+    {
+      "event_id": "EV-BIDEN-PARDON-2025-01",
+      "description": "Former President Joseph Biden issued a pardon covering a defined pre-2025 period; exact instrument must be captured before legal-scope analysis.",
+      "time_dimensions": {"event_time": "2025-01"},
+      "source_ids": ["SRC-REUTERS-2026-07-29"]
+    }
+  ],
+  "participants": [
+    {
+      "participant_id": "P-FAUCI",
+      "name": "Anthony Fauci",
+      "roles": ["witness", "former NIAID director"],
+      "edges": []
+    },
+    {
+      "participant_id": "P-RAND-PAUL",
+      "name": "Rand Paul",
+      "roles": ["committee chair", "questioner", "public advocate for prosecution or contempt proceedings"],
+      "edges": [
+        {
+          "edge_type": "oversight_questioning",
+          "target": "P-FAUCI",
+          "evidence_status": "documented",
+          "source_ids": ["SRC-HSGAC-HEARING-PAGE", "SRC-REUTERS-2026-07-29"]
+        }
+      ]
+    },
+    {
+      "participant_id": "P-DONALD-TRUMP",
+      "name": "Donald Trump",
+      "roles": ["current U.S. president", "president during first pandemic year"],
+      "edges": [
+        {
+          "edge_type": "historical_executive_administration_context",
+          "target": "P-FAUCI",
+          "evidence_status": "documented",
+          "source_ids": []
+        },
+        {
+          "edge_type": "private_advice_or_pressure_concerning_testimony",
+          "target": "P-FAUCI",
+          "evidence_status": "unknown",
+          "source_ids": []
+        }
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "H-BLANKET-COUNSEL",
+      "class": "blanket_counsel_strategy",
+      "statement": "Counsel advised a broad invocation strategy to avoid creating new post-pardon statements, waiver disputes, or selective-answer evidentiary distinctions.",
+      "supporting_evidence": ["Public reporting describes more than 100 invocations, including responses to some apparently low-exposure questions."],
+      "contrary_evidence": [],
+      "assumptions": ["The reported breadth accurately reflects the complete proceeding."],
+      "discriminating_evidence": ["Exact question ledger", "counsel correspondence", "comparison of harmless and exposure-bearing questions"],
+      "score": {"evidence_support": 1, "pattern_fit": 2, "document_conflict_fit": 0, "authority_network_fit": 0, "alternative_explanation_penalty": 2, "missing_evidence_penalty": 4, "bounded_total": -3}
+    },
+    {
+      "hypothesis_id": "H-PERSONAL-LEGAL",
+      "class": "personal_legal_exposure",
+      "statement": "Answers could create new criminal exposure through present testimony or contradictions not covered by prior pardon scope.",
+      "supporting_evidence": ["Public reporting identifies threatened prosecution, contempt proceedings, and concern about post-pardon statements."],
+      "contrary_evidence": ["The legal scope and viability of exposure remain disputed and are not adjudicated in this record."],
+      "assumptions": ["At least some questions sought facts capable of producing new exposure."],
+      "discriminating_evidence": ["Exact questions", "pardon instrument", "prior sworn statements", "committee exhibits", "counsel legal position"],
+      "score": {"evidence_support": 2, "pattern_fit": 1, "document_conflict_fit": 0, "authority_network_fit": 0, "alternative_explanation_penalty": 2, "missing_evidence_penalty": 4, "bounded_total": -3}
+    },
+    {
+      "hypothesis_id": "H-POLITICAL-PRESSURE",
+      "class": "political_pressure_or_coercion",
+      "statement": "One or more political actors pressured or advised Fauci to remain silent to protect interests beyond his personal legal exposure.",
+      "supporting_evidence": [],
+      "contrary_evidence": ["No captured evidence currently identifies a communication, threat, offer, intermediary, or direction from President Trump or another political actor concerning Fauci's testimony strategy."],
+      "assumptions": ["A private pressure channel existed."],
+      "discriminating_evidence": ["communications metadata", "witness or counsel testimony", "intermediary records", "documented threat or benefit tied to silence"],
+      "score": {"evidence_support": 0, "pattern_fit": 0, "document_conflict_fit": 0, "authority_network_fit": 1, "alternative_explanation_penalty": 4, "missing_evidence_penalty": 4, "bounded_total": -7}
+    }
+  ],
+  "controls": [
+    {"control_id": "C-ANSWERED-VS-REFUSED", "status": "missing", "description": "Compare answered and refused questions across the complete proceeding.", "result": "Blocked by missing atomic question ledger."},
+    {"control_id": "C-HARMLESS-VS-EXPOSURE", "status": "missing", "description": "Compare apparently harmless questions with questions carrying legal or documentary predicates.", "result": "Blocked by missing exact wording."},
+    {"control_id": "C-ACTOR-ADMINISTRATION", "status": "missing", "description": "Compare invocation pattern across questions naming different actors, agencies, and administrations.", "result": "Blocked by missing exact wording."}
+  ],
+  "classification": "not_assessable",
+  "limitations": [
+    "No complete primary question ledger is preserved.",
+    "Question wording, sequence, premise quality, and response selectivity cannot yet be reconstructed.",
+    "No evidence currently establishes private advice or coercion by the current president or any intermediary.",
+    "Scores are implementation-test values and are not probabilities or findings of motive."
+  ],
+  "review": {
+    "contradiction_review": "not_started",
+    "independent_review": "unassigned",
+    "reviewer": null
+  }
+}
