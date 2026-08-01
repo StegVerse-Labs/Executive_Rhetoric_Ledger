@@ -1,0 +1,73 @@
+name: Capture Validation Evidence
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: Governed validator manifest path
+        required: true
+        default: validation_manifests/repository-core.json
+      subject_id:
+        description: Optional assessment or repository subject identifier
+        required: false
+        default: Executive_Rhetoric_Ledger
+  workflow_call:
+    inputs:
+      manifest:
+        required: true
+        type: string
+      subject_id:
+        required: false
+        type: string
+        default: Executive_Rhetoric_Ledger
+
+permissions:
+  contents: read
+
+env:
+  EVIDENCE_DIR: validation_evidence/current
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validation dependencies
+        run: python -m pip install --upgrade pip jsonschema
+
+      - name: Capture governed validation evidence
+        id: capture
+        continue-on-error: true
+        run: |
+          python scripts/capture_validation_manifest.py \
+            --manifest "${{ inputs.manifest }}" \
+            --subject-id "${{ inputs.subject_id }}" \
+            --output "$EVIDENCE_DIR"
+
+      - name: Upload evidence before enforcement
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ env.EVIDENCE_DIR }}
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Enforce receipt conclusion
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          receipt = json.loads(Path("validation_evidence/current/validation-execution-receipt.json").read_text())
+          if receipt["overall_conclusion"] != "success":
+              raise SystemExit("validation evidence receipt is not successful")
+          print("validation evidence receipt conclusion: success")
+          PY
