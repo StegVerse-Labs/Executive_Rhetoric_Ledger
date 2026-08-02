@@ -1,0 +1,37 @@
+name: Validate durable task state
+
+on:
+  push:
+    paths:
+      - "task-state/**"
+      - "scripts/validate_task_state_registry.py"
+      - ".github/workflows/validate-task-state.yml"
+      - "incident-evidence-streams/**"
+      - "assessments/machine/**"
+  pull_request:
+    paths:
+      - "task-state/**"
+      - "scripts/validate_task_state_registry.py"
+      - ".github/workflows/validate-task-state.yml"
+      - "incident-evidence-streams/**"
+      - "assessments/machine/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-task-state:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate task-state registries
+        run: |
+          set -euo pipefail
+          python scripts/validate_task_state_registry.py task-state/ERL-2026-07-24-MULTIANGLE-001.json
