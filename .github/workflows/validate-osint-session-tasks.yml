@@ -1,0 +1,42 @@
+name: Validate OSINT Session Tasks
+
+on:
+  pull_request:
+    paths:
+      - "coordination/osint-session-tasks.json"
+      - "scripts/validate_osint_session_tasks.py"
+      - "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md"
+      - "docs/OSINT_SESSION_EXECUTION_INVENTORY.md"
+      - ".github/workflows/validate-osint-session-tasks.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "coordination/osint-session-tasks.json"
+      - "scripts/validate_osint_session_tasks.py"
+      - "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md"
+      - "docs/OSINT_SESSION_EXECUTION_INVENTORY.md"
+      - ".github/workflows/validate-osint-session-tasks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-session-tasks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate task registry, claims, expirations, and collisions
+        run: python scripts/validate_osint_session_tasks.py
+      - name: Verify canonical continuation records
+        run: |
+          test -s docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md
+          test -s docs/OSINT_SESSION_EXECUTION_INVENTORY.md
+          test -s coordination/osint-session-tasks.json
+          echo "Canonical OSINT continuation state is installed."
