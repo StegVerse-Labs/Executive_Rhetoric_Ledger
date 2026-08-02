@@ -1,8 +1,9 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.session_archival_receipt.v1",
   "goal_id": "ERL-OSINT-CONSOLIDATION-2026-08-02",
-  "archive_state": "ARCHIVE_READY_PENDING_RECEIPT_VALIDATION",
+  "archive_state": "ARCHIVE_READY_VERIFIED",
   "generated_at": "2026-08-02T13:30:00Z",
+  "sealed_at": "2026-08-02T17:08:00Z",
   "canonical_handoff": "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
   "canonical_inventory": "docs/OSINT_SESSION_EXECUTION_INVENTORY.md",
   "task_registry": "coordination/osint-session-tasks.json",
@@ -31,6 +32,10 @@
     "task_registry_result": "PASS",
     "full_ledger_workflow_run": 30749881363,
     "full_ledger_result": "PASS",
+    "archival_task_workflow_run": 30750092581,
+    "archival_task_result": "PASS",
+    "archival_full_ledger_workflow_run": 30750092578,
+    "archival_full_ledger_result": "PASS",
     "live_osint_workflow_run": 29999867554,
     "live_osint_artifact": 8560503648,
     "live_osint_artifact_digest": "sha256:e8e336bf2cd67d0cb3d2e8bd5b2a4f75fe34071009dd3a6e16a00142f68a7f19"
