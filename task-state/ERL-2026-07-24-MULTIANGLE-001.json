@@ -1,0 +1,106 @@
+{
+  "registry_version": "1.0",
+  "goal_id": "ERL-2026-07-24-MULTIANGLE-001",
+  "originating_goal": "Archive and investigate three linked incidents derived from two apparent multi-angle police-shooting recordings and the AI review failure.",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "branch": "main",
+  "canonical_issue": 45,
+  "canonical_handoff": "EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md",
+  "created_at": "2026-08-02T12:08:00-05:00",
+  "updated_at": "2026-08-02T12:08:00-05:00",
+  "allowed_states": ["COMPLETE", "BLOCKED", "RETRY", "REVIEW_REQUIRED", "FAILED", "CLAIMED", "SUPERSEDED", "MERGED"],
+  "tasks": [
+    {
+      "task_id": "ERL-MA-001",
+      "title": "Preserve narrative incident record",
+      "state": "COMPLETE",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "surface": "incident-evidence-streams/2026-07-24-multi-angle-officer-shooting-and-ai-review-failure.md",
+      "evidence": ["commit:8a6c1ec1e04dca4f74da2b70c35be23d903ca521"],
+      "next_task": "ERL-MA-003"
+    },
+    {
+      "task_id": "ERL-MA-002",
+      "title": "Preserve machine-readable assessment",
+      "state": "COMPLETE",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "surface": "assessments/machine/ERL-2026-07-24-MULTIANGLE-001.json",
+      "evidence": ["commit:7bcb83c108eb980124f17d56a14997e59c380b59"],
+      "next_task": "ERL-MA-003"
+    },
+    {
+      "task_id": "ERL-MA-003",
+      "title": "Install exact hashed video binaries or governed external custody receipts",
+      "state": "BLOCKED",
+      "owner": "human-authority:repository-maintainer",
+      "surface": "evidence/physical/ERL-2026-07-24-MULTIANGLE-001/",
+      "release_condition": "Both binaries or durable custody objects are present and their SHA-256 values equal the hashes recorded in issue 45.",
+      "expected_evidence": ["binary-or-custody-object", "sha256-receipt", "custody-manifest"],
+      "next_task": "ERL-MA-004"
+    },
+    {
+      "task_id": "ERL-MA-004",
+      "title": "Acquire source identity and official incident records",
+      "state": "REVIEW_REQUIRED",
+      "owner": "issue:45",
+      "surface": "assessments/intake/2026-07-24-multi-angle-primary-record-intake.json",
+      "release_condition": "Source URLs, uploader identity, date, location, agency, officer/subject identities where lawfully publishable, and official records are receipt-linked or individually marked unavailable with custodian and custody status.",
+      "expected_evidence": ["source-receipts", "primary-record-intake", "availability-status"],
+      "next_task": "ERL-MA-005"
+    },
+    {
+      "task_id": "ERL-MA-005",
+      "title": "Independent multi-angle frame review and line-of-fire reconstruction",
+      "state": "BLOCKED",
+      "owner": "issue:45",
+      "surface": "assessments/evidence/2026-07-24-multi-angle-frame-index.md",
+      "release_condition": "ERL-MA-003 is COMPLETE and a reviewer records synchronized frames, observable facts, uncertainty, and line-of-fire findings.",
+      "expected_evidence": ["frame-index", "reviewer-receipt"],
+      "next_task": "ERL-MA-006"
+    },
+    {
+      "task_id": "ERL-MA-006",
+      "title": "Controlled AI state-actor minimization evaluation",
+      "state": "CLAIMED",
+      "owner": "repository-native-validation-lane",
+      "surface": "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json",
+      "claim_created_at": "2026-08-02T12:08:00-05:00",
+      "claim_expires_at": "2026-08-09T12:08:00-05:00",
+      "release_condition": "A deterministic test fixture and result receipt compare state/non-state actor variants and record caveat placement, responsibility attribution, correction count, and correction latency; otherwise the claim expires to RETRY.",
+      "collision_boundary": ["assessments/controls/2026-07-24-ai-state-actor-minimization-control.json", "validation_results/erl-multiangle-ai-control-*.json"],
+      "expected_evidence": ["control-fixture", "deterministic-run", "validation-receipt"],
+      "next_task": "ERL-MA-007"
+    },
+    {
+      "task_id": "ERL-MA-007",
+      "title": "Governance review and promotion decision",
+      "state": "BLOCKED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "surface": "assessments/reviews/ERL-2026-07-24-MULTIANGLE-001.review.md",
+      "release_condition": "Tasks ERL-MA-003 through ERL-MA-006 are COMPLETE or explicitly SUPERSEDED with evidence.",
+      "expected_evidence": ["review-record", "validation-receipt", "promotion-or-hold-decision"],
+      "next_task": "ERL-MA-008"
+    },
+    {
+      "task_id": "ERL-MA-008",
+      "title": "Cross-repository publication propagation",
+      "state": "BLOCKED",
+      "owner": "GCAT-BCAT-Engine/Publisher",
+      "surface": "outbound/ERL-2026-07-24-MULTIANGLE-001-publication-manifest.json",
+      "release_condition": "ERL-MA-007 authorizes publication and destination acknowledgments exist for each required consumer.",
+      "expected_evidence": ["outbound-manifest", "publisher-acknowledgment", "consumer-acknowledgments"],
+      "next_task": null
+    }
+  ],
+  "session_consolidation": {
+    "state": "MERGED",
+    "merged_into": [
+      "EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md",
+      "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/45",
+      "task-state/ERL-2026-07-24-MULTIANGLE-001.json"
+    ],
+    "unique_session_requirements_transferred": 8,
+    "unique_session_requirements_total": 8,
+    "archive_condition": "Validator passes, issue 45 and this registry remain canonical, and no undocumented session-only requirement remains. Investigation completion is not required for session archival because continuation is durably assigned."
+  }
+}
