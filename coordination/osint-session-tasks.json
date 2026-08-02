@@ -1,6 +1,6 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.session_task_registry.v1",
-  "generated_at": "2026-08-02T13:19:54Z",
+  "generated_at": "2026-08-02T13:24:00Z",
   "canonical_handoff": "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
   "canonical_inventory": "docs/OSINT_SESSION_EXECUTION_INVENTORY.md",
   "tasks": [
@@ -16,13 +16,13 @@
         "scripts/validate_source_family_discovery.py",
         ".github/workflows/run-recurring-discovery.yml"
       ],
-      "owner": "issue-51-implementation-lane",
+      "owner": "issue-51-source-adapter-implementation-lane",
       "claim_state": "CLAIMED_FOR_IMPLEMENTATION",
       "claim_created_at": "2026-08-02T13:19:54Z",
       "claim_expires_at": "2026-08-09T13:19:54Z",
       "release_condition": "all enabled source families produce qualifying candidates or hash-bound machine-readable zero-result coverage receipts",
       "expected_evidence": ["hosted workflow PASS", "source-family receipt", "workflow artifact"],
-      "collision_boundaries": ["do not modify PR #48 Fauci assessment files", "do not modify Site or Publisher runtime ownership"],
+      "collision_boundaries": ["do not modify PR #48 Fauci assessment files", "do not modify Site or Publisher runtime ownership", "owns recurring workflow integration for Issue #51"],
       "completion_state": "PARTIAL",
       "validation_state": "LIVE_SMOKE_PASS_WITH_BLOCKERS",
       "integration_state": "INTEGRATED_HTML_FAMILIES",
@@ -35,20 +35,26 @@
       "originating_goal": "identify old data that has not been added",
       "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
       "branch": "unclaimed-after-registry-merge",
-      "surfaces": ["discovery receipt schema", ".github/workflows/run-recurring-discovery.yml", "backfill_queues"],
-      "owner": "issue-51-implementation-lane",
+      "surfaces": [
+        "schemas/osint-coverage-window.schema.json",
+        "scripts/generate_osint_coverage_windows.py",
+        "scripts/validate_osint_coverage_windows.py",
+        "discovery_cycles/coverage",
+        "backfill_queues/osint-coverage-gaps.json"
+      ],
+      "owner": "issue-51-history-coverage-implementation-lane",
       "claim_state": "CLAIMED_FOR_IMPLEMENTATION",
       "claim_created_at": "2026-08-02T13:19:54Z",
       "claim_expires_at": "2026-08-09T13:19:54Z",
       "release_condition": "per-family date windows, pagination or cursor state, oldest/newest observed records, and explicit historical-gap tasks are retained",
-      "expected_evidence": ["deterministic fixture PASS", "hosted live receipt"],
-      "collision_boundaries": ["no automatic promotion", "no claim of complete coverage without receipt"],
+      "expected_evidence": ["deterministic fixture PASS", "hosted live receipt", "coverage-gap queue"],
+      "collision_boundaries": ["no automatic promotion", "no claim of complete coverage without receipt", "does not own recurring workflow file; API lane integrates generated outputs"],
       "completion_state": "PARTIAL",
       "validation_state": "DETERMINISTIC_BACKFILL_PASS",
       "integration_state": "BACKFILL_PIPELINE_EXISTS",
       "archival_dependency": true,
       "evidence_location": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/51",
-      "next_executable_action": "add coverage-window fields and validator"
+      "next_executable_action": "add coverage-window schema, generator, validator, and gap queue"
     },
     {
       "task_id": "ERL-TRUMPALITY-001",
