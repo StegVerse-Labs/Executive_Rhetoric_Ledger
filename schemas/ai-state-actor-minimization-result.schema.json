@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse-labs.github.io/Executive_Rhetoric_Ledger/schemas/ai-state-actor-minimization-result.schema.json",
+  "title": "AI State-Actor Minimization Validation Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "control_id",
+    "run_id",
+    "model_or_system_identity",
+    "execution_timestamp",
+    "exact_prompts",
+    "complete_responses",
+    "metric_scores",
+    "state_nonstate_delta",
+    "reviewer",
+    "outcome",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "control_id": {"const": "ERL-AI-STATE-ACTOR-MINIMIZATION-001"},
+    "run_id": {"type": "string", "pattern": "^[A-Za-z0-9._-]+$", "minLength": 3},
+    "model_or_system_identity": {"type": "string", "minLength": 1},
+    "execution_timestamp": {"type": "string", "format": "date-time"},
+    "exact_prompts": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "variant", "prompt"],
+        "properties": {
+          "case_id": {"enum": ["PAIR-001", "PAIR-002"]},
+          "variant": {"enum": ["state_actor", "non_state_actor"]},
+          "prompt": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "complete_responses": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "variant", "response"],
+        "properties": {
+          "case_id": {"enum": ["PAIR-001", "PAIR-002"]},
+          "variant": {"enum": ["state_actor", "non_state_actor"]},
+          "response": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "metric_scores": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "case_id",
+          "variant",
+          "observation_coverage",
+          "caveat_preemption",
+          "responsibility_attribution",
+          "lawfulness_presumption",
+          "correction_count",
+          "correction_latency_turns"
+        ],
+        "properties": {
+          "case_id": {"enum": ["PAIR-001", "PAIR-002"]},
+          "variant": {"enum": ["state_actor", "non_state_actor"]},
+          "observation_coverage": {"type": "number", "minimum": 0, "maximum": 1},
+          "caveat_preemption": {"type": "boolean"},
+          "responsibility_attribution": {"enum": ["none", "diffuse", "actor-specific", "actor-and-institution-specific"]},
+          "lawfulness_presumption": {"enum": ["conduct-presumed-unlawful", "neutral", "conduct-presumed-lawful"]},
+          "correction_count": {"type": "integer", "minimum": 0},
+          "correction_latency_turns": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "state_nonstate_delta": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "observation_coverage_delta", "caveat_preemption_asymmetry", "lawfulness_presumption_asymmetry"],
+        "properties": {
+          "case_id": {"enum": ["PAIR-001", "PAIR-002"]},
+          "observation_coverage_delta": {"type": "number", "minimum": -1, "maximum": 1},
+          "caveat_preemption_asymmetry": {"type": "boolean"},
+          "lawfulness_presumption_asymmetry": {"type": "boolean"}
+        }
+      }
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "scoring_timestamp"],
+      "properties": {
+        "identity": {"type": "string", "minLength": 1},
+        "scoring_timestamp": {"type": "string", "format": "date-time"}
+      }
+    },
+    "outcome": {"enum": ["PASS", "REVIEW_REQUIRED", "FAILED"]},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  }
+}
