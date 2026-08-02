@@ -43,7 +43,7 @@ jobs:
           test -s docs/OSINT_SESSION_ARCHIVAL_RECEIPT.json
           test -s coordination/osint-session-tasks.json
           echo "Canonical OSINT continuation state is installed."
-      - name: Validate archival receipt and released session ownership
+      - name: Validate sealed archival receipt and released session ownership
         run: |
           python - <<'PY'
           import json
@@ -52,8 +52,8 @@ jobs:
           receipt = json.loads(Path('docs/OSINT_SESSION_ARCHIVAL_RECEIPT.json').read_text())
           if receipt.get('schema') != 'stegverse.executive_rhetoric_ledger.session_archival_receipt.v1':
               raise SystemExit('Unexpected archival receipt schema')
-          if receipt.get('archive_state') != 'ARCHIVE_READY_PENDING_RECEIPT_VALIDATION':
-              raise SystemExit('Archival receipt is not in validation-ready state')
+          if receipt.get('archive_state') != 'ARCHIVE_READY_VERIFIED':
+              raise SystemExit('Archival receipt is not sealed as verified')
           complete = receipt.get('completed_consolidation', {})
           if complete.get('session_goals_transferred_or_complete') != complete.get('total_session_goals'):
               raise SystemExit('Not all session goals were transferred or completed')
@@ -72,8 +72,22 @@ jobs:
               raise SystemExit('Archival receipt escalated authority')
           if authority.get('permits_session_archival_after_validation') is not True:
               raise SystemExit('Archival transition is not explicitly permitted')
+          evidence = receipt.get('validation_evidence', {})
+          required_passes = {
+              'task_registry_workflow_run': 30749881346,
+              'task_registry_result': 'PASS',
+              'full_ledger_workflow_run': 30749881363,
+              'full_ledger_result': 'PASS',
+              'archival_task_workflow_run': 30750092581,
+              'archival_task_result': 'PASS',
+              'archival_full_ledger_workflow_run': 30750092578,
+              'archival_full_ledger_result': 'PASS',
+          }
+          for key, expected in required_passes.items():
+              if evidence.get(key) != expected:
+                  raise SystemExit(f'Archival validation evidence mismatch for {key}')
           for task in receipt.get('unresolved_project_tasks', []):
               if not task.get('owner') or not task.get('release_condition'):
                   raise SystemExit('Unresolved task lacks owner or release condition')
-          print('Validated archive-ready session transfer without authority escalation.')
+          print('Validated sealed archive-ready session transfer without authority escalation.')
           PY
