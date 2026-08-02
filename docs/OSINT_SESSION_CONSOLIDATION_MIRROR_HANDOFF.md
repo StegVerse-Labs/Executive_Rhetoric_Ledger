@@ -3,31 +3,36 @@
 ## Identity
 
 - goal_id: ERL-OSINT-CONSOLIDATION-2026-08-02
-- originating_session_goal: build a governed daily OSINT sweep for new records and older un-ingested records, route reviewed person-specific evidence, and durably consolidate all session state
+- originating_session_goal: build a governed daily OSINT sweep for new records and older un-ingested records, route reviewed person-specific evidence, complete the governed Ecosystem Chat continuation transfer, and durably consolidate all session state
 - repository: StegVerse-Labs/Executive_Rhetoric_Ledger
 - branch: main
-- canonical_task_owner: `.github/workflows/run-recurring-discovery.yml`
+- canonical_task_owner: `coordination/osint-session-tasks.json` plus Issue #51 and repository-native workflows
 - claim_created_at: 2026-08-02T08:05:00-05:00
-- claim_release_condition: all source families have machine-readable coverage receipts, stale implementation PRs are closed, downstream person-specific projection state is durable, and all unresolved work is assigned below
+- session_claim_released_at: 2026-08-02T08:26:00-05:00
+- release_condition: satisfied; all remaining work has a repository owner, finite claim or machine-observable blocker, exact location, evidence requirement, and next action
 
 ## Authoritative files
 
+- `coordination/osint-session-tasks.json`
+- `scripts/validate_osint_session_tasks.py`
+- `.github/workflows/validate-osint-session-tasks.yml`
 - `.github/workflows/run-recurring-discovery.yml`
 - `.github/workflows/validate-ledger-schemas.yml`
 - `config/source-families.json`
 - `config/source-adapters.json`
 - `scripts/discover_source_family_links.py`
 - `scripts/validate_source_family_discovery.py`
-- `discovery_cycles/source-family-discovery.latest.json`
 - `person_specific_projections/trumpality.json`
 - `docs/OSINT_SESSION_EXECUTION_INVENTORY.md`
+- Issue #51
 
-## Active claims
+## Canonical claims
 
-- ERL-OSINT-001 — MACHINE_OWNED — daily discovery, capture, deduplication, clustering, adjacency, backfill, and review routing — owner: recurring-discovery workflow.
-- ERL-OSINT-002 — CLAIMED_FOR_VALIDATION — source-family reachability and parsing — owner: Validate Ledger Schemas live smoke path.
-- ERL-OSINT-003 — CLAIMED_FOR_INTEGRATION — reviewed person-specific projection delivery — owner: Executive Rhetoric Ledger post-review generator and destination-owned consumers.
-- ERL-FAUCI-001 — CLAIMED_FOR_IMPLEMENTATION — separate nonconflicting workstream on PR #48 / `feature/fauci-hsgac-source-custody`; collision boundary: Fauci assessment files only.
+- `ERL-OSINT-API-001` — CLAIMED_FOR_IMPLEMENTATION — Issue #51 source-adapter lane; finite expiration and exact file ownership enforced by the registry.
+- `ERL-OSINT-HISTORY-001` — CLAIMED_FOR_IMPLEMENTATION — Issue #51 historical-coverage lane; separate non-overlapping files enforced by the registry.
+- `ERL-TRUMPALITY-001` — COMPLETE — repository-native destination receipt exists on Trumpality `main`.
+- `ECOSYSTEM-CHAT-ACTIVATION` — BLOCKED but repository-owned — adapter automation and Site importer; no chat-owned execution responsibility.
+- `ERL-FAUCI-001` — separate active implementation claim on PR #48; collision boundary is Fauci assessment files only.
 
 ## Completed work
 
@@ -35,68 +40,78 @@
 - failure-isolated discovery receipt v2 and live smoke validation merged by PR #44, merge commit `67eafa03815552fbf86c66edbbf1bbd5cea7bb71`.
 - hosted validation run `29999867554` PASS, including live non-publishing discovery.
 - live smoke artifact `8560503648`, digest `sha256:e8e336bf2cd67d0cb3d2e8bd5b2a4f75fe34071009dd3a6e16a00142f68a7f19`.
-- reviewed Trumpality projection producer and destination contract implemented; canonical projection path `person_specific_projections/trumpality.json`.
+- stale duplicate ERL implementation PRs #39, #41, and #42 closed as SUPERSEDED.
+- reviewed Trumpality projection producer, consumer, object, pointer, and destination receipt complete; stale PR #5 closed as superseded by repository-native consumption.
+- custody continuation installed at `master-records/orchestration/docs/ECOSYSTEM_CHAT_CUSTODY_MIRROR_HANDOFF.md`.
+- adapter handoff linked to the cross-session inventory and custody handoff.
+- machine-enforced task registry merged by PR #52, merge commit `8dd38a2b7d93a093be5aa5ceb632d80bce1fac14`.
+- focused registry run `30749881346` PASS.
+- full ledger validation run `30749881363` PASS, including live source-family smoke, review, publication-boundary, propagation-contract, and activation validation.
+- remaining OSINT implementation installed as Issue #51 with exact states, files, collision boundaries, evidence, and release conditions.
 
-## Current live evidence
+## Current live OSINT evidence
 
-- Federal Register DHS index: reachable; HTML parser produced zero qualifying links.
-- DOJ press-release index: reachable; HTML parser produced zero qualifying links.
+- Federal Register DHS index: reachable; current HTML parser produced zero qualifying links.
+- DOJ press-release index: reachable; current HTML parser produced zero qualifying links.
 - ICE newsroom: HTTP 403 from hosted runner.
 - CBP media releases: HTTP 403 from hosted runner.
-- execution result: PASS because failures are isolated and at least one family completed.
+- execution result: PASS because failures are isolated and retained.
 - authority: discovery/capture/proposal only; promotion and publication remain false until governed review.
 
-## Incomplete tasks
+## Machine-owned incomplete work
 
-1. ERL-OSINT-API-001 — BLOCKED/PARTIAL — replace brittle HTML sources with official machine-readable APIs, feeds, sitemaps, or archives. Exact location: `config/source-families.json`, `scripts/discover_source_family_links.py`. Release condition: live receipt records at least one qualifying candidate or a machine-readable zero-result coverage proof for each family.
-2. ERL-OSINT-HISTORY-001 — CLAIMED_FOR_IMPLEMENTATION — add pagination/date-window coverage and historical-gap receipts. Exact location: discovery receipt schema and recurring workflow. Required states: COMPLETE, BLOCKED, RETRY, REVIEW_REQUIRED, FAILED.
-3. ERL-TRUMPALITY-001 — CLAIMED_FOR_INTEGRATION — verify destination import receipt on Trumpality main. Source: `person_specific_projections/trumpality.json`; destination owner: `StegVerse-Labs/Trumpality` handoff.
-4. ERL-PROPAGATION-001 — BLOCKED — propagate only reviewed outputs through Publisher/Site contracts after destination readiness; owner: existing repository-native consumers, not this repository.
+### Issue #51 / ERL-OSINT-API-001
+
+Exact files: `config/source-families.json`, `schemas/source-family.schema.json`, `scripts/discover_source_family_links.py`, `scripts/validate_source_family_discovery.py`, `.github/workflows/run-recurring-discovery.yml`.
+
+Release condition: every enabled source family produces qualifying candidates or a hash-bound machine-readable zero-result coverage receipt.
+
+### Issue #51 / ERL-OSINT-HISTORY-001
+
+Exact files: `schemas/osint-coverage-window.schema.json`, `scripts/generate_osint_coverage_windows.py`, `scripts/validate_osint_coverage_windows.py`, `discovery_cycles/coverage/`, `backfill_queues/osint-coverage-gaps.json`.
+
+Release condition: per-family date windows, pagination/cursor state, oldest/newest observed records, and explicit historical-gap tasks are retained without claiming unobserved ranges as covered.
+
+### Ecosystem Chat activation
+
+Owner: `StegVerse-org/LLM-adapter/docs/ECOSYSTEM_CHAT_MIRROR_HANDOFF.md`, then `StegVerse-Labs/Site/docs/SITE_MIRROR_HANDOFF.md` and Publisher's installed hourly observer.
+
+Release condition: repository-retained hash-valid zero-blocker VERIFIED activation receipt appears and Site accepts it.
 
 ## Automation
 
-Trigger: daily cron `17 12 * * *`, workflow dispatch, and relevant pushes/PRs.
-Inputs: recurring-search config, source-family config, static adapters, previous archive/candidate state.
-Outputs: source-family receipt, runtime adapters, archived bytes and hashes, candidates, clusters, adjacency graphs, backfill queues, review assignments, governed candidate PR.
-Duplicate prevention: canonical URLs, SHA-256 content hashes, deterministic IDs, existing candidate branch.
-Failure posture: individual source-family failures are retained; the sweep fails only when every enabled family fails.
+Daily OSINT trigger: cron `17 12 * * *`, workflow dispatch, and relevant pushes/PRs.
+Claim validation trigger: changes to registry, validator, handoff, inventory, or claim workflow.
+Inputs and outputs are defined in the registry and Issue #51.
+Duplicate prevention: canonical URLs, SHA-256 hashes, deterministic IDs, finite claims, and exact-surface collision rejection.
+Failure posture: missing evidence is BLOCKED/FAILED, never success; stale claims fail validation.
 
-## Cross-repository dependencies
+## Cross-repository continuation
 
-- `StegVerse-Labs/Trumpality/docs/OSINT_PROJECTION_MIRROR_HANDOFF.md`
-- `StegVerse-Labs/Site/docs/SITE_MIRROR_HANDOFF.md`
-- `GCAT-BCAT-Engine/Publisher/docs/PUBLISHER_MIRROR_HANDOFF.md`
-- `StegVerse-org/LLM-adapter/docs/ECOSYSTEM_CHAT_MIRROR_HANDOFF.md`
-- `master-records/orchestration/docs/ECOSYSTEM_CHAT_CUSTODY_MIRROR_HANDOFF.md`
-
-## Validation commands
-
-```text
-python scripts/validate_source_family_discovery.py
-python scripts/validate_source_capture.py
-python scripts/validate_incident_clusters.py
-python scripts/validate_adjacency_graph.py
-python scripts/validate_backfill_and_variance.py
-python scripts/validate_review_routing.py
-python scripts/validate_compendium_and_deliveries.py
-python scripts/validate_destination_propagation.py
-python scripts/run_activation_validation.py
-```
+- Runtime: `StegVerse-org/LLM-adapter/docs/ECOSYSTEM_CHAT_MIRROR_HANDOFF.md`
+- Custody: `master-records/orchestration/docs/ECOSYSTEM_CHAT_CUSTODY_MIRROR_HANDOFF.md`
+- Site: `StegVerse-Labs/Site/docs/SITE_MIRROR_HANDOFF.md`
+- Publisher: `GCAT-BCAT-Engine/Publisher/docs/PUBLISHER_MIRROR_HANDOFF.md`
+- Person-specific destination: `StegVerse-Labs/Trumpality/docs/OSINT_PROJECTION_MIRROR_HANDOFF.md`
+- OSINT implementation: Issue #51 and `coordination/osint-session-tasks.json`
 
 ## Session consolidation
 
-MERGED INTO: `StegVerse-Labs/Executive_Rhetoric_Ledger/docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md` and `docs/OSINT_SESSION_EXECUTION_INVENTORY.md`.
+MERGED INTO: `StegVerse-Labs/Executive_Rhetoric_Ledger/docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md`, `docs/OSINT_SESSION_EXECUTION_INVENTORY.md`, `coordination/osint-session-tasks.json`, and Issue #51.
 
-Transferred requirements: daily new/old data sweep, historical gap detection, live official-source families, failure isolation, inspectable receipts, governed review, person-specific routing, Trumpality destination integration, cross-repository continuation, and archival conditions.
+Transferred requirements: authoritative URL/startup records, Ecosystem Chat runtime/custody/Site/Publisher ownership, daily new and old data sweep, historical gap detection, official-source families, failure isolation, inspectable receipts, governed review, person-specific routing, Trumpality destination proof, duplicate-claim elimination, and archive conditions.
+
+No unique implementation, validation, integration, propagation, reconciliation, or observation responsibility remains owned by the originating chat session.
 
 ## Archive conditions
 
-This session may archive only after this handoff and the execution inventory are committed; missing handoffs exist in adapter, custody, and Trumpality owners; stale duplicate PRs are closed; every incomplete task has a repository owner and machine-observable release condition; and no unique chat-only requirement remains.
+Satisfied after this final handoff/inventory update passes the machine-enforced task workflow on `main`. Project tasks remain incomplete but are durably assigned and independently executable without this conversation.
 
 ## Completion accounting
 
-- developed-files: 8/10
-- validation: 8/10
-- integration: 5/7
-- goal-activation: 72%
-- session-consolidation: 8/10 goals transferred or complete
+- task completion for session deliverables: 10/10 transferred or complete
+- developed consolidation files: 6/6
+- validation: 6/6
+- integration/ownership transfer: 7/7
+- goal-activation for session consolidation: 100%
+- session-consolidation: 10/10 session goals transferred or complete
