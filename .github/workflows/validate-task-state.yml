@@ -5,16 +5,26 @@ on:
     paths:
       - "task-state/**"
       - "scripts/validate_task_state_registry.py"
+      - "scripts/validate_ai_state_actor_results.py"
+      - "schemas/ai-state-actor-minimization-result.schema.json"
+      - "tests/fixtures/ai-state-actor-minimization*.json"
+      - "validation_results/erl-multiangle-ai-control-*.json"
       - ".github/workflows/validate-task-state.yml"
       - "incident-evidence-streams/**"
       - "assessments/machine/**"
+      - "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json"
   pull_request:
     paths:
       - "task-state/**"
       - "scripts/validate_task_state_registry.py"
+      - "scripts/validate_ai_state_actor_results.py"
+      - "schemas/ai-state-actor-minimization-result.schema.json"
+      - "tests/fixtures/ai-state-actor-minimization*.json"
+      - "validation_results/erl-multiangle-ai-control-*.json"
       - ".github/workflows/validate-task-state.yml"
       - "incident-evidence-streams/**"
       - "assessments/machine/**"
+      - "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json"
   workflow_dispatch:
 
 permissions:
@@ -31,7 +41,25 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate task-state registries
+      - name: Compile validators
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/validate_task_state_registry.py scripts/validate_ai_state_actor_results.py
+      - name: Validate task-state registry
         run: |
           set -euo pipefail
           python scripts/validate_task_state_registry.py task-state/ERL-2026-07-24-MULTIANGLE-001.json
+      - name: Validate deterministic AI differential fixture
+        run: |
+          set -euo pipefail
+          python scripts/validate_ai_state_actor_results.py tests/fixtures/ai-state-actor-minimization.review-required.json
+      - name: Validate installed AI differential receipts
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          receipts=(validation_results/erl-multiangle-ai-control-*.json)
+          if (( ${#receipts[@]} > 0 )); then
+            python scripts/validate_ai_state_actor_results.py "${receipts[@]}"
+          else
+            echo "No governed AI differential execution receipts installed; REVIEW_REQUIRED remains active."
+          fi
