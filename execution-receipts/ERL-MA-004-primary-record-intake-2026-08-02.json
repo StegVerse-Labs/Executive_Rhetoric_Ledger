@@ -1,0 +1,24 @@
+{
+  "receipt_version": "1.0",
+  "task_id": "ERL-MA-004",
+  "goal_id": "ERL-2026-07-24-MULTIANGLE-001",
+  "recorded_at": "2026-08-02T20:45:00Z",
+  "state": "REVIEW_REQUIRED",
+  "installed_surface": "assessments/intake/2026-07-24-multi-angle-primary-record-intake.json",
+  "installed_commit": "47ec52f7860576f3016a4e6d88bca4dbc6a9ffe3",
+  "task_state_commit": "15471b561ad9892fcc670f0f5713cf4488ac83a7",
+  "registered_record_classes": 10,
+  "registered_items": [
+    "two exact submitted-video binaries",
+    "originating public-source objects",
+    "incident identity and agency records",
+    "unedited video continuity",
+    "law-enforcement audiovisual records",
+    "use-of-force and supervisory records",
+    "forensic and medical records",
+    "official rhetoric objects",
+    "complete originating conversation"
+  ],
+  "completion_boundary": "The queue is installed and each item has a custodian, custody status, state, and release condition. No missing source is represented as acquired or authenticated.",
+  "next_executable_action": "Acquire or formally disposition individual intake objects and attach source receipts under Issue #45."
+}
