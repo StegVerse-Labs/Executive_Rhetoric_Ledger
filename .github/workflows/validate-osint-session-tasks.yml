@@ -7,6 +7,7 @@ on:
       - "scripts/validate_osint_session_tasks.py"
       - "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md"
       - "docs/OSINT_SESSION_EXECUTION_INVENTORY.md"
+      - "docs/OSINT_SESSION_ARCHIVAL_RECEIPT.json"
       - ".github/workflows/validate-osint-session-tasks.yml"
   push:
     branches:
@@ -16,6 +17,7 @@ on:
       - "scripts/validate_osint_session_tasks.py"
       - "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md"
       - "docs/OSINT_SESSION_EXECUTION_INVENTORY.md"
+      - "docs/OSINT_SESSION_ARCHIVAL_RECEIPT.json"
       - ".github/workflows/validate-osint-session-tasks.yml"
   workflow_dispatch:
 
@@ -38,5 +40,40 @@ jobs:
         run: |
           test -s docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md
           test -s docs/OSINT_SESSION_EXECUTION_INVENTORY.md
+          test -s docs/OSINT_SESSION_ARCHIVAL_RECEIPT.json
           test -s coordination/osint-session-tasks.json
           echo "Canonical OSINT continuation state is installed."
+      - name: Validate archival receipt and released session ownership
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          receipt = json.loads(Path('docs/OSINT_SESSION_ARCHIVAL_RECEIPT.json').read_text())
+          if receipt.get('schema') != 'stegverse.executive_rhetoric_ledger.session_archival_receipt.v1':
+              raise SystemExit('Unexpected archival receipt schema')
+          if receipt.get('archive_state') != 'ARCHIVE_READY_PENDING_RECEIPT_VALIDATION':
+              raise SystemExit('Archival receipt is not in validation-ready state')
+          complete = receipt.get('completed_consolidation', {})
+          if complete.get('session_goals_transferred_or_complete') != complete.get('total_session_goals'):
+              raise SystemExit('Not all session goals were transferred or completed')
+          if receipt.get('session_owned_active_tasks'):
+              raise SystemExit('Session still owns active tasks')
+          if receipt.get('session_owned_active_claims'):
+              raise SystemExit('Session still owns active claims')
+          authority = receipt.get('authority', {})
+          prohibited = [
+              'grants_execution_authority',
+              'grants_publication_authority',
+              'grants_review_authority',
+              'grants_activation_authority',
+          ]
+          if any(authority.get(key) for key in prohibited):
+              raise SystemExit('Archival receipt escalated authority')
+          if authority.get('permits_session_archival_after_validation') is not True:
+              raise SystemExit('Archival transition is not explicitly permitted')
+          for task in receipt.get('unresolved_project_tasks', []):
+              if not task.get('owner') or not task.get('release_condition'):
+                  raise SystemExit('Unresolved task lacks owner or release condition')
+          print('Validated archive-ready session transfer without authority escalation.')
+          PY
