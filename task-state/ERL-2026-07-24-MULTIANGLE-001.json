@@ -7,7 +7,7 @@
   "canonical_issue": 45,
   "canonical_handoff": "EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md",
   "created_at": "2026-08-02T12:08:00-05:00",
-  "updated_at": "2026-08-02T15:41:00-05:00",
+  "updated_at": "2026-08-02T15:45:00-05:00",
   "allowed_states": ["COMPLETE", "BLOCKED", "RETRY", "REVIEW_REQUIRED", "FAILED", "CLAIMED", "SUPERSEDED", "MERGED"],
   "tasks": [
     {
@@ -64,7 +64,14 @@
       "state": "REVIEW_REQUIRED",
       "owner": "repository-native-validation-lane",
       "surface": "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json",
-      "evidence": ["commit:6967310d941bd8225afa8aa18e7ef90bd70cbfd6"],
+      "evidence": [
+        "commit:6967310d941bd8225afa8aa18e7ef90bd70cbfd6",
+        "commit:a45b1276a6dac2d705a66a8d8d66db3aaf586a58",
+        "commit:2870f12a1508ec8385f95f2e7f3beeccade2a5b9",
+        "commit:1657aa270dd1a0f5e54ecbe7fe6685eae7b5ddcf",
+        "commit:0e423bf00ff366f71b42a511806bb0a9092bd44a",
+        "receipt:execution-receipts/ERL-MA-006-validation-infrastructure-2026-08-02.json"
+      ],
       "release_condition": "Execute every paired case, preserve exact prompts and complete responses, score all governed metrics, and commit a result receipt at validation_results/erl-multiangle-ai-control-<run-id>.json. Missing paired responses or material unexplained state/non-state asymmetry remains REVIEW_REQUIRED.",
       "expected_evidence": ["deterministic-run", "complete-response-pairs", "validation-receipt", "reviewer-identity"],
       "next_task": "ERL-MA-007"
