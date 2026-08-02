@@ -1,0 +1,106 @@
+{
+  "intake_version": "1.0",
+  "intake_id": "ERL-2026-07-24-MULTIANGLE-PRIMARY-RECORDS",
+  "parent_goal_id": "ERL-2026-07-24-MULTIANGLE-001",
+  "canonical_issue": 45,
+  "status": "ACTIVE",
+  "items": [
+    {
+      "item_id": "ERL-MA-PR-001",
+      "record_class": "submitted-video-binary",
+      "description": "ScreenRecording_07-24-2026 16-14-44_1.mp4",
+      "expected_sha256": "b43fcb32dff9cda969be9dc00a3d0f1af09426c83ac768430cc3526c3ea66921",
+      "expected_size_bytes": 13704530,
+      "expected_duration_seconds": 18.633333,
+      "custodian": "submitting-user-or-chat-file-custody",
+      "custody_status": "KNOWN_NOT_INSTALLED",
+      "state": "BLOCKED",
+      "release_condition": "Exact binary or governed custody object is installed and hash-verified."
+    },
+    {
+      "item_id": "ERL-MA-PR-002",
+      "record_class": "submitted-video-binary",
+      "description": "ScreenRecording_07-24-2026 15-51-47_1.mp4",
+      "expected_sha256": "87a0c84b1798bbec0c6a686b29a6d601d666e04e6cd179edf2446bd6d6c2ac80",
+      "expected_size_bytes": 20113814,
+      "expected_duration_seconds": 27.566667,
+      "custodian": "submitting-user-or-chat-file-custody",
+      "custody_status": "KNOWN_NOT_INSTALLED",
+      "state": "BLOCKED",
+      "release_condition": "Exact binary or governed custody object is installed and hash-verified."
+    },
+    {
+      "item_id": "ERL-MA-PR-003",
+      "record_class": "originating-public-source",
+      "description": "Original post, uploader account, URL, publication timestamp, and surrounding caption/context for both recordings.",
+      "custodian": "unknown-originating-platform-and-uploader",
+      "custody_status": "NOT_LOCATED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Original source objects or authenticated archive captures are receipt-linked."
+    },
+    {
+      "item_id": "ERL-MA-PR-004",
+      "record_class": "incident-identity",
+      "description": "Incident date, local time, location, agency, subject identity, officer identities where lawfully publishable, and incident number.",
+      "custodian": "responsible-law-enforcement-agency-and-local-records-custodians",
+      "custody_status": "NOT_LOCATED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Identity fields are supported by official records or independently corroborated primary sources."
+    },
+    {
+      "item_id": "ERL-MA-PR-005",
+      "record_class": "unedited-video-continuity",
+      "description": "Unedited pre-event and post-event footage for each camera angle.",
+      "custodian": "original-recorders-or-platform-uploaders",
+      "custody_status": "NOT_LOCATED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Full-length source files or authenticated custody records are acquired."
+    },
+    {
+      "item_id": "ERL-MA-PR-006",
+      "record_class": "law-enforcement-audiovisual",
+      "description": "Body-camera, dash-camera, fixed-camera, and dispatch audio associated with the incident.",
+      "custodian": "responsible-law-enforcement-agency",
+      "custody_status": "NOT_REQUESTED_OR_NOT_RECORDED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Records are received, formally denied, confirmed nonexistent, or assigned a documented pending request identifier."
+    },
+    {
+      "item_id": "ERL-MA-PR-007",
+      "record_class": "use-of-force-and-supervisory-records",
+      "description": "Use-of-force reports, firearm-discharge reports, supervisory review, tactical review, and administrative findings.",
+      "custodian": "responsible-law-enforcement-agency-and-oversight-body",
+      "custody_status": "NOT_REQUESTED_OR_NOT_RECORDED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Records or formal availability determinations are receipt-linked."
+    },
+    {
+      "item_id": "ERL-MA-PR-008",
+      "record_class": "forensic-and-medical-records",
+      "description": "Ballistic evidence, weapon and ammunition records, injury records, medical findings, and autopsy records if applicable and lawfully obtainable.",
+      "custodian": "investigating-agency-medical-provider-or-medical-examiner",
+      "custody_status": "NOT_REQUESTED_OR_PRIVACY_RESTRICTED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Lawfully publishable records, redacted records, or documented restriction status are receipt-linked."
+    },
+    {
+      "item_id": "ERL-MA-PR-009",
+      "record_class": "official-rhetoric",
+      "description": "Initial and revised agency, municipal, prosecutorial, union, or elected-executive statements about the incident.",
+      "custodian": "issuing-public-entities-and-archives",
+      "custody_status": "NOT_LOCATED",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Exact statement objects, timestamps, speakers, and surrounding context are preserved."
+    },
+    {
+      "item_id": "ERL-MA-PR-010",
+      "record_class": "originating-conversation",
+      "description": "Append-only preservation of the submitted-video review, initial minimization, user corrections, and revised analysis.",
+      "custodian": "chat-session-export-authority",
+      "custody_status": "CONTENT_TRANSFERRED_SUMMARY_ONLY",
+      "state": "BLOCKED",
+      "release_condition": "A complete authorized transcript export or immutable conversation receipt is installed without silently replacing prior responses."
+    }
+  ],
+  "promotion_boundary": "Intake registration records missing objects and custody status. It does not authenticate a source, establish factual truth, or determine criminal, civil, constitutional, administrative, or tactical liability."
+}
