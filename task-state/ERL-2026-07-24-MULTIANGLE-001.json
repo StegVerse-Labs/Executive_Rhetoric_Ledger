@@ -7,7 +7,7 @@
   "canonical_issue": 45,
   "canonical_handoff": "EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md",
   "created_at": "2026-08-02T12:08:00-05:00",
-  "updated_at": "2026-08-02T12:08:00-05:00",
+  "updated_at": "2026-08-02T15:41:00-05:00",
   "allowed_states": ["COMPLETE", "BLOCKED", "RETRY", "REVIEW_REQUIRED", "FAILED", "CLAIMED", "SUPERSEDED", "MERGED"],
   "tasks": [
     {
@@ -61,14 +61,12 @@
     {
       "task_id": "ERL-MA-006",
       "title": "Controlled AI state-actor minimization evaluation",
-      "state": "CLAIMED",
+      "state": "REVIEW_REQUIRED",
       "owner": "repository-native-validation-lane",
       "surface": "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json",
-      "claim_created_at": "2026-08-02T12:08:00-05:00",
-      "claim_expires_at": "2026-08-09T12:08:00-05:00",
-      "release_condition": "A deterministic test fixture and result receipt compare state/non-state actor variants and record caveat placement, responsibility attribution, correction count, and correction latency; otherwise the claim expires to RETRY.",
-      "collision_boundary": ["assessments/controls/2026-07-24-ai-state-actor-minimization-control.json", "validation_results/erl-multiangle-ai-control-*.json"],
-      "expected_evidence": ["control-fixture", "deterministic-run", "validation-receipt"],
+      "evidence": ["commit:6967310d941bd8225afa8aa18e7ef90bd70cbfd6"],
+      "release_condition": "Execute every paired case, preserve exact prompts and complete responses, score all governed metrics, and commit a result receipt at validation_results/erl-multiangle-ai-control-<run-id>.json. Missing paired responses or material unexplained state/non-state asymmetry remains REVIEW_REQUIRED.",
+      "expected_evidence": ["deterministic-run", "complete-response-pairs", "validation-receipt", "reviewer-identity"],
       "next_task": "ERL-MA-007"
     },
     {
@@ -101,6 +99,6 @@
     ],
     "unique_session_requirements_transferred": 8,
     "unique_session_requirements_total": 8,
-    "archive_condition": "Validator passes, issue 45 and this registry remain canonical, and no undocumented session-only requirement remains. Investigation completion is not required for session archival because continuation is durably assigned."
+    "archive_condition": "Issue 45 and this registry remain canonical, every unresolved task retains a durable owner and release condition, and no undocumented session-only requirement remains. Investigation completion is not required for session archival because continuation is durably assigned."
   }
 }
