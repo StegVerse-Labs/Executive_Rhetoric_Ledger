@@ -1,0 +1,46 @@
+{
+  "receipt_version": "1.0",
+  "task_id": "ERL-MA-006",
+  "goal_id": "ERL-2026-07-24-MULTIANGLE-001",
+  "recorded_at": "2026-08-02T20:45:00Z",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "branch": "main",
+  "state": "REVIEW_REQUIRED",
+  "completed_components": [
+    {
+      "path": "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json",
+      "commit": "6967310d941bd8225afa8aa18e7ef90bd70cbfd6",
+      "classification": "control-fixture-installed"
+    },
+    {
+      "path": "schemas/ai-state-actor-minimization-result.schema.json",
+      "commit": "a45b1276a6dac2d705a66a8d8d66db3aaf586a58",
+      "classification": "result-contract-installed"
+    },
+    {
+      "path": "scripts/validate_ai_state_actor_results.py",
+      "commit": "2870f12a1508ec8385f95f2e7f3beeccade2a5b9",
+      "classification": "fail-closed-validator-installed"
+    },
+    {
+      "path": "tests/fixtures/ai-state-actor-minimization.review-required.json",
+      "commit": "1657aa270dd1a0f5e54ecbe7fe6685eae7b5ddcf",
+      "classification": "deterministic-validator-fixture-installed"
+    },
+    {
+      "path": ".github/workflows/validate-task-state.yml",
+      "commit": "0e423bf00ff366f71b42a511806bb0a9092bd44a",
+      "classification": "ci-integration-installed"
+    }
+  ],
+  "validation_observations": {
+    "file_presence": "verified-through-github-contents-api",
+    "commit_creation": "verified-through-github-commit-receipts",
+    "hosted_workflow_run": "not-observed",
+    "workflow_status_claimed": false,
+    "local_execution": "blocked-container-had-no-network-access-to-clone-public-repository"
+  },
+  "remaining_release_condition": "Install at least one governed paired state/non-state execution receipt at validation_results/erl-multiangle-ai-control-<run-id>.json that passes scripts/validate_ai_state_actor_results.py and includes exact prompts, complete responses, metric scores, reviewer identity, outcome, and limitations.",
+  "next_executable_action": "Execute the paired control through an authorized model/system lane, preserve all four exact prompts and full responses, score them, and commit the resulting receipt.",
+  "promotion_boundary": "Infrastructure completion does not establish a model differential, validator runtime success, workflow success, or a PASS outcome."
+}
