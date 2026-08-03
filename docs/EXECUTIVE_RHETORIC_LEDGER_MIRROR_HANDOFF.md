@@ -115,6 +115,21 @@ Automation may validate and execute a review decision after it exists.
 Automation may not create, infer, simulate, or broaden review approval.
 ```
 
+## Consolidated Session Goals
+
+The Tamrat Y “Decision Economy” session and its derived human-judgment/admissibility requirements are fully transferred to durable repository records:
+
+```text
+research-notes/2026-decision-economy-human-judgment.md
+docs/session-consolidation/TAMRAT_DECISION_ECONOMY_SESSION_CONSOLIDATION.md
+```
+
+The consolidation record contains the complete execution inventory, convergence classification, validation evidence, authority boundary, remaining owner, machine-observable release condition, and archival determination. That originating chat session owns no remaining implementation, validation, integration, propagation, reconciliation, or observation claim.
+
+```text
+MERGED INTO: StegVerse-Labs/Executive_Rhetoric_Ledger/docs/EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md
+```
+
 ## Next Required Action
 
 ```text
@@ -128,4 +143,4 @@ Automation may not create, infer, simulate, or broaden review approval.
 
 ## Archive Readiness
 
-Issues #18 and #26, PRs #19 through #27, producer PRs #1 through #3, canonical producer manifests, acknowledgment-consumption workflows, reviewed-receipt schema/template, validation run `29804236495`, and this handoff preserve all unique continuation information. Earlier chat context is not required.
+Issues #18 and #26, PRs #19 through #27, producer PRs #1 through #3, canonical producer manifests, acknowledgment-consumption workflows, reviewed-receipt schema/template, validation run `29804236495`, the Decision Economy research note, the session-consolidation inventory, and this handoff preserve all unique continuation information. Earlier chat context is not required.
