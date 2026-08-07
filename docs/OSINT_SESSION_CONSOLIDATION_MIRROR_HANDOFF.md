@@ -14,6 +14,8 @@
 ## Authoritative files
 
 - `coordination/osint-session-tasks.json`
+- `coordination/dpoi-directional-session-inventory.md`
+- `coordination/dpoi-directional-session-receipt.json`
 - `scripts/validate_osint_session_tasks.py`
 - `.github/workflows/validate-osint-session-tasks.yml`
 - `.github/workflows/run-recurring-discovery.yml`
@@ -59,6 +61,8 @@
 - DPOI configuration now carries evidence directions (`strengthen`, `weaken`, `disambiguate`), directional terms, ambiguity-resolution terms, state dimensions, `candidate_only=true`, and `no_result_effect=no-update`.
 - DPOI candidate output lane `dpoi_evidence_candidates` is generated without promotion authority.
 - Issue #51 body now durably includes the crawler-side directional receipt requirement and exact release evidence.
+- DPOI consolidation task registry commit `7df127a92886f26f98b10ac807c1199a5dd4f7f6` validated by `Validate OSINT Session Tasks` run `31189155118` PASS and `Validate Ledger Schemas` run `31189155841` PASS.
+- DPOI session receipt and execution inventory are installed under `coordination/` and referenced by this handoff.
 
 ## DPOI directional discovery contract
 
@@ -121,7 +125,10 @@ Release condition: repository-retained hash-valid zero-blocker VERIFIED activati
 - `python scripts/validate_osint_session_tasks.py`
 - `python scripts/run_activation_validation.py`
 
-Hosted authoritative workflow: `.github/workflows/validate-ledger-schemas.yml`.
+Hosted authoritative workflows:
+
+- `.github/workflows/validate-osint-session-tasks.yml`
+- `.github/workflows/validate-ledger-schemas.yml`
 
 ## Integration and propagation obligations
 
@@ -130,10 +137,35 @@ Hosted authoritative workflow: `.github/workflows/validate-ledger-schemas.yml`.
 - Reviewed-only outputs may propagate through existing compendium/person-projection contracts; discovery candidates themselves may not propagate as findings.
 - Site, Publisher, admissibility-wiki, stegguardian-wiki, and master-records propagation are not implied by discovery or candidate creation.
 
+## Completion metrics
+
+### DPOI directional enhancement — session goal denominator
+
+Required deliverables: 8.
+
+1. recurring-search DPOI parameter schema — COMPLETE;
+2. configured DPOI directional parameters — COMPLETE;
+3. discovery-cycle propagation — COMPLETE;
+4. deterministic discovery-cycle fixture — COMPLETE;
+5. DPOI governance contract — COMPLETE;
+6. PR merge to `main` — COMPLETE;
+7. hosted main validation — COMPLETE;
+8. durable transfer of overlapping crawler integration into canonical Issue #51 claim — COMPLETE.
+
+- task completion: 8/8 = 100%
+- developed-file completion: 6/6 requested-category-search production/config/schema surfaces = 100%
+- validation completion: 4/4 required validation receipts = 100% (`31188379290`, `31188450324`, `31189155118`, `31189155841`)
+- integration completion for requested category-search capability: 3/3 = 100%
+- adjacent crawler-receipt integration: 0/1 complete here; MERGED INTO canonical Issue #51 active claim and therefore not session-owned
+- propagation completion: 1/1 required for this capability = 100% (canonical recurring discovery on `main`); downstream publication intentionally not required/authorized
+- goal activation: 100% for DPOI-directed category-search parameters
+- session consolidation: 4/4 session-specific goals transferred or complete = 100%
+- archival readiness: 100% once this final handoff seal is followed by the existing task-registry/full-ledger validators remaining green
+
 ## Session consolidation state
 
 The originating OSINT session is consolidated and released. The later DPOI-directional requirement is fully transferred: implemented recurring-search components are canonical on `main`; the only overlapping crawler work is durably merged into Issue #51's pre-existing active claim.
 
 MERGED INTO: `StegVerse-Labs/Executive_Rhetoric_Ledger` / `docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md` / `coordination/osint-session-tasks.json` / Issue #51.
 
-Archive condition for the DPOI-enhancement session: satisfied once this handoff and the task registry contain the merged state and main validation evidence. No chat-only implementation authority remains.
+Archive condition for the DPOI-enhancement session: all unique requirements are implemented or durably transferred, no conflicting claim was created, the active crawler claim has finite expiration and machine-observable release evidence, and no chat-only implementation authority remains.
