@@ -1,0 +1,24 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.person_event_evaluation_completion.v1",
+  "goal": "ecosystem-wide person/event current-state evaluation normalization",
+  "completed": [
+    "canonical ERL standard",
+    "machine conformance registry",
+    "registry validator and workflow",
+    "Trumpality reviewed-projection contract v2",
+    "Trumpality append-only Evidence Movement Ledger baseline",
+    "Trumpality current-state index baseline",
+    "Trumpality current-state validator and workflow",
+    "Site Fauci candidate workload issue #235",
+    "Fauci evidence-workstream linkage"
+  ],
+  "pending": [
+    "hosted validation observation for ERL registry workflow",
+    "hosted validation observation for Trumpality current-state workflow",
+    "Site repository-native admission and public cluster implementation"
+  ],
+  "site_pending_is_session_blocker": false,
+  "reason": "Site issue #235 is durably assigned with a machine-observable admission condition and cannot be externally claimed while the Site orchestrator disallows external workload ownership.",
+  "authority_effect": false,
+  "publication_effect": false
+}
