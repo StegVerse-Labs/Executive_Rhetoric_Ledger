@@ -58,11 +58,14 @@ Every public Site subject cluster uses the seven-page projection structure and p
 
 ## Validation evidence
 
-- ERL canonical V1 registry workflow run `31194350884`: SUCCESS
-- ERL repository-wide `Validate Ledger Schemas` run `31194697316`: SUCCESS
-- Trumpality `Validate Current State Evaluation` run `31194156570`: SUCCESS
-- Trumpality `Test Readiness` run `31194714101`: SUCCESS
-- validation observer `coordination/person-event-evaluation-validation-pending.json`: superseded by success receipts
+Post-duplicate-cleanup canonical validation:
+- ERL canonical V1 registry workflow run `31196178964`: SUCCESS on `main`.
+- ERL repository-wide `Validate Ledger Schemas` run `31196244317`: SUCCESS on `main`; all 40 substantive validation stages passed.
+- Trumpality `Validate Current State Evaluation` run `31194156570`: SUCCESS on `main`.
+- Trumpality `Test Readiness` run `31194714101`: SUCCESS on `main`.
+- validation observer `coordination/person-event-evaluation-validation-pending.json`: superseded by success receipts.
+
+Earlier pre-cleanup successful runs `31194350884` and `31194697316` remain historical evidence but are not the terminal validation receipts for this rollout.
 
 ## Integration and propagation
 
@@ -105,7 +108,7 @@ Transferred session goals:
 5. ecosystem-wide person/event rule → V1 registry and validator.
 6. Site Fauci cluster + bottom-of-home Evidence Update Ledger → Site issue #235.
 
-Session-specific implementation claim: `COMPLETE / RELEASED` once post-consolidation hosted validation succeeds. No unique chat-only requirement remains.
+Session-specific implementation claim: `COMPLETE / RELEASED`. Post-consolidation canonical validation succeeded and no unique chat-only requirement remains.
 
 ## Completion accounting
 
@@ -126,7 +129,7 @@ Denominator for this rollout: 10 required deliverable groups.
 - developed files: 10/10 = 100%
 - scaffolding/stubs: 0
 - missing required files: 0 for this rollout
-- validation: 4/4 = 100% after final hosted recheck
+- validation: 4/4 = 100%
 - integration: 3/3 = 100% (ERL authority, Trumpality consumer, Site durable transfer)
 - propagation: 2/3 operational destinations established; Site public deployment intentionally pending repository admission
 - goal activation: 100% for evaluation normalization; this does not mean Fauci case or Site cluster is substantively complete
@@ -134,6 +137,6 @@ Denominator for this rollout: 10 required deliverable groups.
 
 ## Archive conditions
 
-Archive when the canonical V1 workflow and repository-wide validation are green after duplicate cleanup, Trumpality validation remains green, Site issue #235 remains the durable pending public-projection owner, and no session-owned claim remains.
+SATISFIED for this session. The canonical V1 workflow and repository-wide validation are green after duplicate cleanup, Trumpality validation is green and its handoff points to the V1 registry, Site issue #235 remains the durable pending public-projection owner under repository orchestration, ERL Issue #47/PR #48 owns the active Fauci evidence lane, and no session-owned claim remains.
 
 MERGED INTO: `StegVerse-Labs/Executive_Rhetoric_Ledger/docs/PERSON_EVENT_EVALUATION_MIRROR_HANDOFF.md` with downstream continuation at `StegVerse-Labs/Site#235`, ERL Issue #47/PR #48, and Trumpality scheduled consumer.
