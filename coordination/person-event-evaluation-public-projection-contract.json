@@ -1,0 +1,20 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.person_event_public_projection_contract.v1",
+  "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "site_repository": "StegVerse-Labs/Site",
+  "first_cluster": "Fauci / July 29 2026 HSGAC",
+  "site_issue": 235,
+  "required_pages": ["Overview / Current State", "Evidence", "DPOIs", "Chronology & Authority", "Analysis", "Evidence Gaps", "Method"],
+  "home_page": {
+    "evidence_update_ledger_location": "near_bottom_of_principal_explanatory_content",
+    "style_reference": "child-governance / child-safety explanatory change-history pattern",
+    "required_fields": ["date_time", "evidence_source", "dpoi_ids", "direction", "previous_state_summary", "current_state_summary", "review_state", "detail_or_custody_ref"],
+    "allowed_directions": ["strengthen", "weaken", "disambiguate", "contextualize", "no-update"],
+    "no_update_visible": true
+  },
+  "source_rule": "public rendering consumes reviewed ERL state/evidence movements; raw discovery candidates are not findings",
+  "current_fauci_boundary": "research_candidate / not_assessable",
+  "site_execution_state": "PENDING_REPOSITORY_ORCHESTRATOR_ADMISSION",
+  "authority_effect": false,
+  "publication_effect": false
+}
