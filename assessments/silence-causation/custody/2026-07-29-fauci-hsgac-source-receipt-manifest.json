@@ -1,0 +1,34 @@
+{
+  "manifest_id": "ERL-SC-2026-FAUCI-HSGAC-SOURCE-CUSTODY-001",
+  "assessment_id": "ERL-SCA-2026-07-29-FAUCI-HSGAC",
+  "created_at_utc": "2026-08-07T07:23:00Z",
+  "capture_agent": "ChatGPT connected-repository integration lane",
+  "status": "partial",
+  "objects": [
+    {
+      "source_id": "SRC-HSGAC-HEARING-PAGE-2026-07-29",
+      "issuing_authority": "U.S. Senate Committee on Homeland Security & Governmental Affairs",
+      "canonical_url": "https://www.hsgac.senate.gov/hearings/testimony-of-anthony-fauci/",
+      "retrieval_timestamp_utc": "2026-08-07T07:23:00Z",
+      "repository_path": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-hearing-page.snapshot.txt",
+      "media_type": "text/plain; transformed-from-official-html-metadata",
+      "byte_length": 1215,
+      "sha256": "501c501e5889a5c4c51bbcc72e476edbf30e334269532cf012d6d1905dc42b9c",
+      "completeness_state": "metadata-only-transformed-snapshot",
+      "known_omissions": [
+        "native byte-for-byte HTML object",
+        "native hearing video object or immutable official media target",
+        "official transcript",
+        "committee exhibits and process records",
+        "witness and counsel correspondence"
+      ],
+      "transformation_history": [
+        "Official committee page was retrieved through the web text extraction path.",
+        "Proceeding metadata, member-statement availability, witness identity/role, and existence of the media-open control were normalized into a repository text snapshot.",
+        "No claim is made that the snapshot preserves the native HTML byte stream."
+      ],
+      "verification_state": "official-source-metadata-verified-native-object-not-captured"
+    }
+  ],
+  "promotion_boundary": "This manifest records custody posture only. It does not authorize atomic question reconstruction, motive inference, legal conclusion, or publication promotion until the native proceeding record is preserved sufficiently to reconstruct the hearing."
+}
