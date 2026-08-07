@@ -2,15 +2,17 @@
 
 ## Authority
 
-This file is the repository-wide continuity source of truth for `StegVerse-Labs/Executive_Rhetoric_Ledger`. Task-specific handoffs remain authoritative within their bounded incident scope and must be read before modifying those records.
+This file is the repository-wide continuity source of truth for `StegVerse-Labs/Executive_Rhetoric_Ledger`. Task-specific evidence and inventories remain authoritative within their bounded incident scope and must be read before modifying those records.
 
 ## Current activation goal
 
 Build and validate a governed refusal-analysis capability that maps exact questions, responses, events, people, authority relationships, documentary conflicts, and bounded exposure hypotheses without treating silence as proof.
 
-Active implementation branch: `feature/silence-causation-governance`
-Active pull request: `#46`
+Canonical branch: `main`
+Silence-causation implementation PR: `#46` — **MERGED** on 2026-08-01
+Merge commit: `9beb274bacb290e137953671832af080feacbd0a`
 Next execution prompt: `docs/SILENCE_CAUSATION_NEXT_SESSION_PROMPT.md`
+Session-specific execution inventory: `assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md`
 
 ## Governing rule
 
@@ -18,7 +20,7 @@ Silence, refusal, privilege, memory failure, and invocation of constitutional ri
 
 ## Active test case
 
-The initial research-candidate test concerns Anthony Fauci's July 29, 2026 appearance before the U.S. Senate Committee on Homeland Security and Governmental Affairs. The exact question-by-question transcript is not yet preserved in the repository; therefore all question-level conclusions remain blocked pending primary capture.
+The initial research-candidate test concerns Anthony Fauci's July 29, 2026 appearance before the U.S. Senate Committee on Homeland Security and Governmental Affairs. The exact source-custodied question-by-question ledger is not yet preserved in the repository; therefore question-level motive or exposure conclusions remain blocked pending primary capture.
 
 ## Installed artifacts
 
@@ -29,45 +31,71 @@ The initial research-candidate test concerns Anthony Fauci's July 29, 2026 appea
 5. `scripts/validate_silence_causation_assessment.py`
 6. `.github/workflows/validate-silence-causation.yml`
 7. `docs/SILENCE_CAUSATION_NEXT_SESSION_PROMPT.md`
+8. `assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md`
 
-## Latest execution evidence
+## Latest directly verified execution evidence
 
-- PR `#46` remains open and non-draft.
-- Run `30678285119`, `Validate silence-causation assessments`, succeeded at branch head `68445f7bba07485d82619fa5d10564db1b78784e`.
-- Run `30678285146`, `Validate Ledger Schemas`, failed at job `91309905217`, step `Validate primary-record intake queues`.
-- The same run directly confirmed that validation-result receipts and the repaired Political Influence Tree validator now pass. The PIT validator validated five PIT assessments and explicitly skipped `assessments/machine/ERL-2026-07-24-MULTIANGLE-001.json` as a non-PIT machine record.
-- Complete logs identified three primary-record intake validator defects: machine-assessment discovery excluded `assessments/pit`; Ellis–Scavino intake uses the governed chain record ID while its PIT assessment uses a distinct topic ID; and source receipts may be preserved in task-specific source-posture packets rather than embedded only in the machine assessment.
-- The same logs identified schema vocabulary drift in `assessments/intake/2026-07-iran-jordan-firstnet-primary-record-intake.json`, where the records preserve more specific restricted, classified, provider, diplomatic, law-enforcement, and regulatory custody postures than the schema previously allowed.
-- Mainline commit `98fda88b97a920343ff989578fcb60936930ae78` repaired `scripts/validate_primary_record_intake.py`. It now discovers governed assessment records in `assessments/machine` and `assessments/pit`, skips non-assessment machine records without treating them as malformed, resolves explicit governed record-ID aliases, and indexes source IDs from task-specific source-posture and receipt packets.
-- Mainline commit `7268d7ec10a7fed2874594e0b5c0dfef331821f6` extended `schemas/primary-record-intake.schema.json` to preserve the existing classified-or-restricted, restricted-or-confidential, customer-and-provider-restricted, confidential-regulatory, classified-or-law-enforcement-sensitive, and diplomatic-or-restricted custody distinctions.
-- These repairs do not promote any assessment, fabricate receipt evidence, weaken verified-state requirements, or alter the Fauci case classification.
+- PR `#46`, `Add governed silence-causation assessment capability`, is merged into `main`.
+- Merge commit: `9beb274bacb290e137953671832af080feacbd0a`.
+- Main workflow run `30678409023`, `Validate silence-causation assessments`, completed `success` on merge commit `9beb274bacb290e137953671832af080feacbd0a`.
+- The earlier intake-validator and schema-vocabulary repairs remain preserved on `main`; they do not alter the Fauci case classification.
+- Current repository head before the 2026-08-07 session-transfer commits was `51bb94a98c5659ac72a591785fda680be85878b0`.
+- Session inventory commit: `e011be09a7bb315a3f18564980f8373761bfe4c0`.
+- A refreshed silence-causation workflow run triggered by the session inventory must be inspected before claiming validation of the new transfer state.
+
+## 2026-08-07 session consolidation
+
+Task ID: `ERL-SCA-FAUCI-SESSION-2026-08-07`
+Originating session goal: determine whether the July 29 Fauci HSGAC question/refusal pattern exposes any materially more concerning bounded scenario, then overlay actual decision authority, administration continuity, personnel lifecycle, records topology, and independently reconstructable documentary conflicts.
+
+Canonical continuation: `StegVerse-Labs/Executive_Rhetoric_Ledger/main` → this handoff + `docs/SILENCE_CAUSATION_NEXT_SESSION_PROMPT.md` + `assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md`.
+
+Claim state: `MERGED_INTO_CANONICAL_WORKSTREAM` after requirements transfer. No competing assessment implementation claim was created. Collision boundary remains: do not promote the Fauci assessment beyond `research_candidate` / `not_assessable` without primary capture, controls, contradiction review, and independent review.
+
+The session-specific inventory durably transfers these unique requirements:
+
+- treat blanket refusal as a baseline control and discount raw Fifth count;
+- prefer independently reconstructable question clusters over silence-based inference;
+- map each question to the actual authority holder at the relevant timestamp and flag possible authority misassignment;
+- reconstruct relevant first/second Trump administration continuity only where a sourced edge intersects NIH/NIAID/HHS/OMB/White House/grantee decision, funding, records, scientific-review, or testimony paths;
+- classify personnel departure, retirement, reassignment, sanction, indictment, later appointment, and continued domain participation separately;
+- keep Hugh Auchincloss retirement motive unresolved among ordinary age/health/career timing/anticipated transition unless direct evidence discriminates;
+- distinguish deletion language, actual deletion, destruction of a federal record, private-channel use, pending preservation/FOIA duty, and intent;
+- distinguish information reaching Fauci from Fauci knowing why a private channel was selected;
+- compare Fauci's characterization of Morens's functional role against primary records of actual tasking/briefing;
+- normalize generic gain of function, regulated P3CO/ePPP research, and pandemic causation as separate propositions;
+- test whether records behavior was Morens-specific or an Office-of-the-Director practice, with Greg Folkers as the next bounded discriminator.
+
+These are research and control requirements, not findings.
 
 ## Current validation posture
 
-The directly proven validation-result, PIT-scope/index, intake-discovery, alias-resolution, source-packet, and privacy-vocabulary defects are repaired on `main`. Repository-wide CI success is not authorized until GitHub produces and this task directly inspects refreshed merge-head runs showing both `Validate silence-causation assessments` and `Validate Ledger Schemas` green on the same effective head.
+Structural silence-causation capability is installed and has a directly verified green merge workflow. The 2026-08-07 session-transfer commit has triggered a new validation cycle that must be inspected. The Fauci case itself remains `research_candidate` and `not_assessable` until primary proceeding capture, atomic question ledger, controls, contradiction review, and independent review exist.
 
-Even after structural CI becomes green, the Fauci case remains a `research_candidate` and `not_assessable` until the primary proceeding record, atomic question ledger, controls, contradiction review, and independent review exist. Structural capability activation must not be represented as a published motive finding.
+Structural capability activation must not be represented as a published motive finding.
 
 ## Remaining required artifacts and work
 
-1. Reinspect refreshed PR mergeability, effective merge head, workflow runs, jobs, steps, logs, and conclusions after mainline commits `98fda88b97a920343ff989578fcb60936930ae78` and `7268d7ec10a7fed2874594e0b5c0dfef331821f6`.
-2. A source-custodied question ledger derived from the official transcript or video.
-3. Native capture or immutable custody pointer for the official proceeding video.
-4. Official transcript when available, committee exhibits, process records, witness correspondence, and cited prior testimony.
-5. A normalized event chronology and participant/authority graph grounded in those sources.
-6. Answered-versus-refused, harmless-versus-exposure, actor/administration, topic/document, and sequence controls.
-7. Contradiction review and independent review.
-8. Positive, negative, and indeterminate validator fixtures for the expanded question-level artifacts.
+1. Inspect the workflow run triggered by the 2026-08-07 session inventory and confirm job/step conclusion.
+2. Capture the official committee hearing page and native/authoritative video object with custody metadata.
+3. Capture the official transcript when available, committee exhibits, process records, witness correspondence, pardon instrument, and cited prior testimony.
+4. Create a source-custodied atomic question ledger derived from the official transcript/video.
+5. Create a normalized event chronology and participant/authority graph grounded in primary sources.
+6. Add authority-assignment and personnel-lifecycle controls from the 2026-08-07 inventory.
+7. Execute answered/refused, harmless/exposure, actor/administration, topic/document, sequence, blanket-counsel, records-chronology, channel-purpose, and semantic-normalization controls.
+8. Reconstruct Tier-1 documentary conflict candidates: records/deletion testimony, Morens/private-channel information flow and knowledge boundary, and gain-of-function definition normalization.
+9. Reconstruct Greg Folkers / Office-of-the-Director records behavior as the next institutional discriminator.
+10. Complete contradiction review and independent review.
+11. Add positive, negative, and indeterminate validator fixtures for expanded question-level artifacts.
 
-## Immediate sequence
+## Automation and task ownership
 
-1. Confirm both PR workflows green on the same effective branch/merge head after the intake validator and schema repairs.
-2. If structural CI is green and PR authority permits, merge the capability without promoting the incomplete Fauci case beyond `research_candidate` / `not_assessable`.
-3. Capture official hearing objects and record retrieval time, authority, byte length, media type, SHA-256, custody path, completeness, and transformations.
-4. Decompose every compound question into atomic propositions while preserving its parent turn and exact wording.
-5. Map each response to events, people, documents, prior testimony, and possible exposure classes.
-6. Execute controls before ranking hypotheses.
-7. Keep the case at `research_candidate` until primary capture, machine validation, contradiction review, and independent review are complete.
+- Validation owner: `.github/workflows/validate-silence-causation.yml`.
+- Trigger: push or pull-request changes to silence-causation standard, schema, assessments, validator, or workflow; manual `workflow_dispatch` is also available.
+- Deterministic output: validator pass/fail in hosted workflow logs.
+- Fail-closed boundary: assessment remains non-activated when required evidence/review is absent.
+- Primary-source acquisition remains a named repository task under this handoff and the source-capture plan; it is not represented as completed until custody evidence exists.
+- No Site, Publisher, admissibility-wiki, or stegguardian-wiki propagation is authorized before release posture.
 
 ## Cross-repository integration candidates
 
@@ -78,12 +106,24 @@ When this capability reaches release posture, verify whether its schemas and pub
 - `admissibility-wiki`
 - `stegguardian-wiki`
 
-No downstream installation is authorized merely by this handoff. Read each destination repository's mirror handoff before mutation.
+Read each destination repository's `*_MIRROR_HANDOFF.md` before any mutation. No downstream installation is authorized merely by this handoff.
 
 ## Completion condition
 
 The capability is complete when a reviewer can reconstruct, from preserved primary records, why each hypothesis was included or excluded; reproduce the scores; distinguish observed silence from inferred motive; identify missing discriminating evidence; and obtain the same bounded classification from the validator.
 
+## Quantified posture
+
+Denominator for the active Fauci activation goal is 10 required capability/evidence groups: structural standard/schema, validator/workflow, source-capture plan, primary proceeding custody, atomic question ledger, chronology/authority graph, control-comparison package, documentary-conflict map, contradiction review, independent review/activation decision.
+
+- Task completion: 3/10 durable groups complete = 30%.
+- Developed-file completion: 8 installed durable artifacts / 13 currently required durable artifact groups = 62%.
+- Validation completion: 3/8 required validation groups directly proven = 38%.
+- Integration completion: 3/10 required capability groups integrated into the canonical workstream = 30%.
+- Propagation completion: 0/4 candidate downstream repositories = 0%; propagation is not yet authorized.
+- Goal activation: 30%.
+- Session consolidation: 15/15 session-specific goals transferred into the canonical inventory = 100% after the handoff/prompt links are committed.
+
 ## Archive readiness
 
-This handoff preserves the complete validator-repair chain, exact commits and run identifiers, unchanged evidence and publication boundaries, remaining primary-source work, and the next execution sequence. The complete thread is ready for archiving without any additional portion of the prior conversation being needed to continue.
+The prior silence-causation implementation PR is merged and the 2026-08-07 session's unique requirements are being transferred into repository state. This session is not archive-ready until the inventory is linked from both this handoff and the next-session prompt and the resulting repository workflow state is inspected. Once those conditions are satisfied, the conversation itself will no longer contain unique execution authority or requirements.
