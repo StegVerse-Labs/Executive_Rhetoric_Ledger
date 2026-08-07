@@ -1,12 +1,12 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.session_task_registry.v1",
-  "generated_at": "2026-08-02T13:24:00Z",
+  "generated_at": "2026-08-07T14:44:00Z",
   "canonical_handoff": "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
   "canonical_inventory": "docs/OSINT_SESSION_EXECUTION_INVENTORY.md",
   "tasks": [
     {
       "task_id": "ERL-OSINT-API-001",
-      "originating_goal": "daily governed OSINT sweep for new records and older un-ingested records",
+      "originating_goal": "daily governed OSINT sweep for new records and older un-ingested records, including proposition-relative DPOI evidence discovery",
       "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
       "branch": "unclaimed-after-registry-merge",
       "surfaces": [
@@ -20,15 +20,25 @@
       "claim_state": "CLAIMED_FOR_IMPLEMENTATION",
       "claim_created_at": "2026-08-02T13:19:54Z",
       "claim_expires_at": "2026-08-09T13:19:54Z",
-      "release_condition": "all enabled source families produce qualifying candidates or hash-bound machine-readable zero-result coverage receipts",
-      "expected_evidence": ["hosted workflow PASS", "source-family receipt", "workflow artifact"],
-      "collision_boundaries": ["do not modify PR #48 Fauci assessment files", "do not modify Site or Publisher runtime ownership", "owns recurring workflow integration for Issue #51"],
+      "release_condition": "all enabled source families produce qualifying candidates or hash-bound machine-readable zero-result coverage receipts, and source-family candidate receipts retain matched DPOI directional terms or rule identifiers plus affected state dimensions while preserving candidate-only authority",
+      "expected_evidence": [
+        "hosted workflow PASS",
+        "source-family receipt",
+        "workflow artifact",
+        "directional candidate metadata or governed zero-result coverage proof"
+      ],
+      "collision_boundaries": [
+        "do not modify PR #48 Fauci assessment files",
+        "do not modify Site or Publisher runtime ownership",
+        "owns recurring workflow integration for Issue #51",
+        "DPOI crawler-side receipt enrichment must occur in this lane rather than a competing branch while claim is active"
+      ],
       "completion_state": "PARTIAL",
       "validation_state": "LIVE_SMOKE_PASS_WITH_BLOCKERS",
-      "integration_state": "INTEGRATED_HTML_FAMILIES",
+      "integration_state": "INTEGRATED_HTML_FAMILIES_DPOI_RECEIPT_ENRICHMENT_PENDING",
       "archival_dependency": true,
       "evidence_location": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/51",
-      "next_executable_action": "implement Federal Register machine-readable adapter and coverage receipt"
+      "next_executable_action": "implement Federal Register machine-readable adapter and emit proposition-relative DPOI directional candidate metadata in the source-family receipt contract"
     },
     {
       "task_id": "ERL-OSINT-HISTORY-001",
@@ -55,6 +65,42 @@
       "archival_dependency": true,
       "evidence_location": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/51",
       "next_executable_action": "add coverage-window schema, generator, validator, and gap queue"
+    },
+    {
+      "task_id": "ERL-DPOI-DIRECTIONAL-001",
+      "originating_goal": "add category-search parameters so discovered data can strengthen or weaken a DPOI and disambiguate the current collected-data state",
+      "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "branch": "main",
+      "surfaces": [
+        "config/recurring-searches.example.json",
+        "schemas/recurring-search-config.schema.json",
+        "schemas/discovery-cycle.schema.json",
+        "scripts/generate_discovery_cycle.py",
+        "discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json",
+        "docs/DPOI_DIRECTIONAL_DISCOVERY.md"
+      ],
+      "owner": "recurring-discovery-category-search-contract",
+      "claim_state": "COMPLETE",
+      "claim_created_at": "2026-08-07T14:33:00Z",
+      "claim_expires_at": null,
+      "release_condition": "satisfied for recurring-search/category-search contract; crawler-side receipt enrichment merged into ERL-OSINT-API-001",
+      "expected_evidence": [
+        "PR #55 merged",
+        "merge commit 5a513639798dc55b8166f0489c325b117d4bf5fa",
+        "main Validate Ledger Schemas run 31188450324 PASS"
+      ],
+      "collision_boundaries": [
+        "no automatic DPOI state mutation",
+        "no candidate promotion without governed review",
+        "no-result effect remains no-update absent independent coverage-completeness evidence",
+        "source-family crawler files remain owned by ERL-OSINT-API-001 until its claim releases"
+      ],
+      "completion_state": "COMPLETE",
+      "validation_state": "VALIDATED_MAIN_ALL_40_STAGES_PASS",
+      "integration_state": "INTEGRATED_RECURRING_DISCOVERY",
+      "archival_dependency": false,
+      "evidence_location": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/pull/55",
+      "next_executable_action": "machine-owned recurring discovery uses DPOI search parameters; Issue #51 completes crawler-side directional receipt enrichment"
     },
     {
       "task_id": "ERL-TRUMPALITY-001",
