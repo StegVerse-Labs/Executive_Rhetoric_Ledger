@@ -1,0 +1,11 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.person_event_evaluation_hosted_validation_observer.v1",
+  "state": "OBSERVE_WORKFLOWS",
+  "workflows": [
+    "StegVerse-Labs/Executive_Rhetoric_Ledger/.github/workflows/validate-person-event-evaluation-registry-v1.yml",
+    "StegVerse-Labs/Trumpality/.github/workflows/validate-current-state-evaluation.yml"
+  ],
+  "success_condition": "both latest main runs complete success",
+  "failure_condition": "either latest main run completes failure/cancelled and retains a repair task",
+  "authority_effect": false
+}
