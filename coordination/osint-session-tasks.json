@@ -1,6 +1,6 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.session_task_registry.v1",
-  "generated_at": "2026-08-07T14:44:00Z",
+  "generated_at": "2026-08-07T14:49:00Z",
   "canonical_handoff": "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
   "canonical_inventory": "docs/OSINT_SESSION_EXECUTION_INVENTORY.md",
   "tasks": [
@@ -77,7 +77,10 @@
         "schemas/discovery-cycle.schema.json",
         "scripts/generate_discovery_cycle.py",
         "discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json",
-        "docs/DPOI_DIRECTIONAL_DISCOVERY.md"
+        "docs/DPOI_DIRECTIONAL_DISCOVERY.md",
+        "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
+        "coordination/dpoi-directional-session-receipt.json",
+        "coordination/dpoi-directional-session-inventory.md"
       ],
       "owner": "recurring-discovery-category-search-contract",
       "claim_state": "COMPLETE",
@@ -87,7 +90,11 @@
       "expected_evidence": [
         "PR #55 merged",
         "merge commit 5a513639798dc55b8166f0489c325b117d4bf5fa",
-        "main Validate Ledger Schemas run 31188450324 PASS"
+        "main Validate Ledger Schemas run 31188450324 PASS",
+        "OSINT task validation run 31189155118 PASS",
+        "ledger validation run 31189155841 PASS",
+        "handoff metrics commit 24e5f8cdb9b0f30ee904321638ecb32789d9253e",
+        "session inventory validation-state commit 0c8c78e9239483721333fb1d60eb314cceeee3c2"
       ],
       "collision_boundaries": [
         "no automatic DPOI state mutation",
@@ -96,8 +103,8 @@
         "source-family crawler files remain owned by ERL-OSINT-API-001 until its claim releases"
       ],
       "completion_state": "COMPLETE",
-      "validation_state": "VALIDATED_MAIN_ALL_40_STAGES_PASS",
-      "integration_state": "INTEGRATED_RECURRING_DISCOVERY",
+      "validation_state": "VALIDATED_MAIN_AND_CONSOLIDATION",
+      "integration_state": "INTEGRATED_RECURRING_DISCOVERY_AND_TRANSFERRED_CRAWLER_CONTINUATION",
       "archival_dependency": false,
       "evidence_location": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/pull/55",
       "next_executable_action": "machine-owned recurring discovery uses DPOI search parameters; Issue #51 completes crawler-side directional receipt enrichment"
