@@ -8,17 +8,21 @@
   "base_assessment": "assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json",
   "source_capture_plan": "assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md",
   "session_requirement_source": "assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md",
+  "source_custody_manifest": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-receipt-manifest.json",
   "integration_validation": {
     "repository_wide_dependency": "Issue #45 primary-record intake schema reconciliation",
-    "dependency_state": "resolved_on_main",
+    "dependency_state": "resolved_and_validated",
     "resolution_commits": [
       "8b863244d5bf6a4a91d01315b3022eb6e7d6bb6c",
       "d0b63c9f2dba2d8206932b8a777e2ae18ce4d5f4"
     ],
     "main_validation_run": 31157270600,
     "main_validation_result": "success",
-    "merge_head_revalidation": "required_after_this_commit",
-    "note": "The Issue #45 intake record was normalized to the canonical primary-record intake schema without promoting evidence states; this workstream commit exists to trigger and preserve a fresh PR #48 merge-head validation against the repaired main branch."
+    "pr_merge_head_schema_run": 31157383308,
+    "pr_merge_head_schema_result": "success",
+    "pr_silence_causation_run": 31157383528,
+    "pr_silence_causation_result": "success",
+    "note": "The Issue #45 intake record was normalized to the canonical primary-record intake schema without promoting evidence states; main and PR #48 validation were directly inspected green before this source-custody advancement."
   },
   "current_classification": {
     "case_status": "research_candidate",
@@ -30,8 +34,24 @@
     {
       "id": "WS-A",
       "name": "primary-source-custody",
-      "status": "ready",
+      "status": "partial_official_metadata_and_statements_located",
       "dependencies": [],
+      "completed_or_installed": [
+        "official hearing-page transformed metadata snapshot",
+        "case source-custody manifest",
+        "official Chairman Rand Paul opening-statement PDF located and visually verified",
+        "official Ranking Member Gary Peters opening-statement PDF located and visually verified"
+      ],
+      "remaining": [
+        "native byte-for-byte hearing page object or immutable archive",
+        "native official hearing video or immutable official media target",
+        "official transcript when available",
+        "native PDF bytes and hashes for located member statements",
+        "committee exhibits and process records",
+        "witness and counsel correspondence",
+        "applicable pardon instrument and authoritative scope record",
+        "prior sworn testimony and documentary records expressly referenced in questions"
+      ],
       "outputs": [
         "source-receipt-manifest",
         "official-hearing-page-capture",
@@ -146,6 +166,7 @@
     "Silence, refusal, privilege, memory limitation, and constitutional invocation are response states, not admissions.",
     "Question specificity does not prove that the committee possessed the implied evidentiary predicate.",
     "Personnel timing or political proximity may preserve a hypothesis but does not establish motive or coordination.",
+    "Located official primary objects without native byte custody and hashes do not count as complete capture.",
     "The case remains research_candidate and not_assessable until promotion gates are satisfied."
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator."
