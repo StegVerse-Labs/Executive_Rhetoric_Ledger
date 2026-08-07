@@ -9,6 +9,8 @@
   "source_capture_plan": "assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md",
   "session_requirement_source": "assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md",
   "source_custody_manifest": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-receipt-manifest.json",
+  "source_acquisition_queue": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-acquisition-queue.json",
+  "verified_metadata_chronology": "assessments/silence-causation/2026-07-29-fauci-hsgac-verified-metadata-chronology.json",
   "integration_validation": {
     "repository_wide_dependency": "Issue #45 primary-record intake schema reconciliation",
     "dependency_state": "resolved_and_validated",
@@ -22,7 +24,11 @@
     "pr_merge_head_schema_result": "success",
     "pr_silence_causation_run": 31157383528,
     "pr_silence_causation_result": "success",
-    "note": "The Issue #45 intake record was normalized to the canonical primary-record intake schema without promoting evidence states; main and PR #48 validation were directly inspected green before this source-custody advancement."
+    "source_custody_schema_run": 31157692281,
+    "source_custody_schema_result": "success",
+    "source_custody_silence_run": 31157692294,
+    "source_custody_silence_result": "success",
+    "note": "Issue #45 was normalized without promoting evidence states. The Fauci lane then passed repository-wide and silence-causation validation before chronology/acquisition-queue advancement."
   },
   "current_classification": {
     "case_status": "research_candidate",
@@ -30,15 +36,38 @@
     "motive_finding_authorized": false,
     "publication_finding_authorized": false
   },
+  "active_claims": [
+    {
+      "claim_id": "ERL-SC-FAUCI-PR48-IMPLEMENTATION",
+      "role": "canonical implementation",
+      "owner": "Issue #47 / PR #48",
+      "surfaces": ["assessments/silence-causation/**"],
+      "state": "CLAIMED_FOR_IMPLEMENTATION",
+      "release_condition": "All WS-A through WS-E gates complete or explicitly superseded with evidence."
+    },
+    {
+      "claim_id": "ERL-SC-FAUCI-WS-C-METADATA-SEED-2026-08-07",
+      "role": "distinct verified-metadata integration",
+      "owner": "PR #48 workstream",
+      "surfaces": [
+        "assessments/silence-causation/2026-07-29-fauci-hsgac-verified-metadata-chronology.json",
+        "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-acquisition-queue.json"
+      ],
+      "state": "COMPLETE",
+      "evidence": ["commit:eaea5aed9c4f76e9cbbf33bb7affb33a3a996c7b", "commit:a13d5a1a2a67837cfd301ea3ade721a1129a7cda"],
+      "release_condition": "Files committed, linked from canonical workstream, and branch validation inspected green after integration."
+    }
+  ],
   "workstreams": [
     {
       "id": "WS-A",
       "name": "primary-source-custody",
-      "status": "partial_official_metadata_and_statements_located",
+      "status": "partial_with_deterministic_acquisition_queue",
       "dependencies": [],
       "completed_or_installed": [
         "official hearing-page transformed metadata snapshot",
         "case source-custody manifest",
+        "deterministic source-acquisition queue with explicit states and release conditions",
         "official Chairman Rand Paul opening-statement PDF located and visually verified",
         "official Ranking Member Gary Peters opening-statement PDF located and visually verified"
       ],
@@ -54,6 +83,7 @@
       ],
       "outputs": [
         "source-receipt-manifest",
+        "source-acquisition-queue",
         "official-hearing-page-capture",
         "official-video-custody-record",
         "official-transcript-custody-record",
@@ -75,8 +105,20 @@
     {
       "id": "WS-C",
       "name": "chronology-and-authority-graph",
-      "status": "ready_for_verified-metadata",
+      "status": "partial_verified_metadata_seed_installed",
       "dependencies": ["WS-A"],
+      "completed_or_installed": [
+        "verified hearing metadata chronology seed",
+        "member-statement claim candidates separated from observed facts",
+        "explicit rule prohibiting conversion of member allegations into authority/causation edges without independent primary evidence"
+      ],
+      "remaining": [
+        "participant authority graph",
+        "verified decision/funding/records/scientific-review edges",
+        "personnel lifecycle chronology",
+        "administration continuity edges",
+        "independent document/witness paths for candidate claims"
+      ],
       "outputs": [
         "normalized-chronology",
         "participant-authority-graph",
@@ -161,6 +203,7 @@
     "Primary-source capture may proceed in parallel by source family.",
     "Atomic question reconstruction must derive from preserved official video or transcript objects.",
     "Chronology and authority graph may begin from verified metadata while unresolved edges remain explicit.",
+    "Member-statement allegations remain candidate claims until independently reconstructed from primary records.",
     "Controls must not begin from an incomplete question set unless marked partial and non-promotional.",
     "Political-pressure or coercion scoring requires sourced actor, channel, timing, and nature evidence.",
     "Silence, refusal, privilege, memory limitation, and constitutional invocation are response states, not admissions.",
