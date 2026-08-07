@@ -1,0 +1,42 @@
+{
+  "receipt_id": "ERL-DPOI-DIRECTIONAL-SESSION-2026-08-07",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "canonical_branch": "main",
+  "originating_goal": "Add category-search parameters so discovered data can strengthen or weaken a DPOI and disambiguate the current state of collected data.",
+  "canonical_handoff": "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
+  "canonical_task_registry": "coordination/osint-session-tasks.json",
+  "canonical_issue": 51,
+  "implemented": {
+    "pull_request": 55,
+    "merge_commit": "5a513639798dc55b8166f0489c325b117d4bf5fa",
+    "surfaces": [
+      "config/recurring-searches.example.json",
+      "schemas/recurring-search-config.schema.json",
+      "schemas/discovery-cycle.schema.json",
+      "scripts/generate_discovery_cycle.py",
+      "discovery_cycles/generated/ERL-RECURRING-DISCOVERY-BASELINE-001--20260720-060000.json",
+      "docs/DPOI_DIRECTIONAL_DISCOVERY.md"
+    ],
+    "main_validation_run": 31188450324,
+    "validation_result": "PASS_ALL_40_STAGES"
+  },
+  "governance": {
+    "candidate_directions": ["strengthen", "weaken", "disambiguate"],
+    "direction_is_proposition_relative": true,
+    "automatic_dpoi_state_mutation": false,
+    "automatic_promotion": false,
+    "zero_result_effect": "no-update",
+    "coverage_completeness_required_for_stronger_negative_inference": true
+  },
+  "continuation": {
+    "crawler_receipt_enrichment_state": "MERGED_INTO_CANONICAL_WORKSTREAM",
+    "owner_task": "ERL-OSINT-API-001",
+    "owner_issue": 51,
+    "claim_expires_at": "2026-08-09T13:19:54Z",
+    "release_condition": "Every enabled source family produces qualifying candidates or hash-bound machine-readable zero-result coverage receipts and source-family candidate receipts retain matched DPOI directional terms or rule identifiers plus affected state dimensions while preserving candidate-only authority.",
+    "next_executable_action": "Implement the Federal Register machine-readable adapter and emit proposition-relative DPOI directional candidate metadata in the same source-family receipt contract."
+  },
+  "session_state": "MERGED_INTO_CANONICAL_WORKSTREAM",
+  "archive_ready": true,
+  "archive_basis": "The recurring-search DPOI contract is merged and validated; the only incomplete overlapping crawler work is assigned to a pre-existing active Issue #51 claim with finite expiration, collision boundaries, expected evidence, and machine-observable release condition."
+}
