@@ -38,6 +38,7 @@ def build_cycle(config: dict, started_at: str) -> dict:
             "query_text": item["query_template"],
             "discovery_class": item["discovery_class"],
             "status": "planned",
+            "dpoi_search_parameters": item["dpoi_search_parameters"],
         }
         for item in enabled_searches
     ]
@@ -57,9 +58,10 @@ def build_cycle(config: dict, started_at: str) -> dict:
             "control_candidates": [],
             "contradictions": [],
             "outcome_updates": [],
+            "dpoi_evidence_candidates": [],
         },
         "review_boundary": config["review_boundary"],
-        "notes": "Generated from recurring-search configuration. Planned queries are candidates only and require governed review before publication or ledger promotion.",
+        "notes": "Generated from recurring-search configuration. DPOI directional parameters can identify evidence candidates that may strengthen, weaken, or disambiguate a data point of interest, but automation may not change DPOI state or treat a zero-result search as disproof.",
     }
 
 
