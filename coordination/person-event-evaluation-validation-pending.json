@@ -1,10 +1,16 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.person_event_evaluation_validation_pending.v1",
-  "state": "MACHINE_OBSERVATION_PENDING",
+  "state": "SUPERSEDED_BY_SUCCESS_RECEIPTS",
   "required_observations": [
-    "StegVerse-Labs/Executive_Rhetoric_Ledger/.github/workflows/validate-person-event-evaluation-registry-v1.yml completes success on current main",
+    "StegVerse-Labs/Executive_Rhetoric_Ledger/.github/workflows/validate-person-event-evaluation-registry-v1.yml completes success on current canonical registry",
     "StegVerse-Labs/Trumpality/.github/workflows/validate-current-state-evaluation.yml completes success on current main"
   ],
-  "next_action": "inspect hosted workflow runs and, if green, supersede this pending record with validation receipt",
+  "observed": {
+    "erl_registry_run": 31194350884,
+    "erl_registry_result": "success",
+    "trumpality_current_state_run": 31194156570,
+    "trumpality_current_state_result": "success"
+  },
+  "next_action": "none for this observer; future governed changes trigger repository-native validators",
   "authority_effect": false
 }
