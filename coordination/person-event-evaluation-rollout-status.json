@@ -1,0 +1,29 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.person_event_evaluation_rollout_status.v1",
+  "as_of": "2026-08-07T15:49:00Z",
+  "standard_commit": "279ba776db1ec1b983d07a3e5e8e3dd1b36e426f",
+  "registry_commit": "4be0729a1219317f15345effd08b998db7299a1f",
+  "registry_validator_commit": "a334eea36a99a30954cdb50af992d518c4ef8190",
+  "registry_workflow_commit": "42df2667f9c20609650a72e5df1eef3ec1c0bf2a",
+  "rollout_commit": "8b20bd32df3381aeded57e271f46df28e1d08178",
+  "activation_receipt_commit": "d8bfe72a4929a9da97cd78ed5334f5a720012a2f",
+  "handoff_commit": "f80b8cd3213db1d678c1344b2df4075ff6582c84",
+  "completion_record_commit": "76d0f96f2dd7217bf62fb26f1189207b1c84f22e",
+  "trumpality": {
+    "state": "CONFORMING_IMPLEMENTED",
+    "contract_commit": "ce8c0a0d09ab7c5651fffb24238fab4fb67d9133",
+    "ledger_commit": "c64835e023de1bb0cf8e5f6329158490ba22d073",
+    "current_state_commit": "810d47a2bf1cca0a8d15886b26c03e5153100518",
+    "validator_commit": "830abbb3941a5cd74dc4111d72a40b315973b52a",
+    "workflow_commit": "af07bf8567609e372775ef2be32f64a83b3ba12d",
+    "handoff_commit": "28beeae63fcdaf47d3110460eefd055241106181",
+    "activation_receipt_commit": "13511137c062af6c69ccfdf1a4bee689a02d9e4f",
+    "consumer_handoff_commit": "5c83ac593e1dd916fed0c9d79a151d9b53c8fa98"
+  },
+  "site_fauci": {
+    "state": "PENDING_REPOSITORY_ORCHESTRATOR_ADMISSION",
+    "issue": 235,
+    "evaluation_source_issue": 47,
+    "external_claim_created": false
+  }
+}
