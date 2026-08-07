@@ -22,7 +22,8 @@
         "StegVerse-Labs/Trumpality@810d47a2bf1cca0a8d15886b26c03e5153100518",
         "StegVerse-Labs/Trumpality@830abbb3941a5cd74dc4111d72a40b315973b52a",
         "StegVerse-Labs/Trumpality@af07bf8567609e372775ef2be32f64a83b3ba12d",
-        "StegVerse-Labs/Trumpality@28beeae63fcdaf47d3110460eefd055241106181"
+        "StegVerse-Labs/Trumpality@28beeae63fcdaf47d3110460eefd055241106181",
+        "workflow:31194156570:success"
       ],
       "next_action": "scheduled consumer materializes future reviewed directional updates under contract v2; hosted validator confirms each governed state"
     },
@@ -35,15 +36,7 @@
       "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
       "source_workstream": "Issue #47 / PR #48 / feature/fauci-hsgac-source-custody",
       "site_candidate_issue": 235,
-      "required_pages": [
-        "Overview / Current State",
-        "Evidence",
-        "DPOIs",
-        "Chronology & Authority",
-        "Analysis",
-        "Evidence Gaps",
-        "Method"
-      ],
+      "required_pages": ["Overview / Current State", "Evidence", "DPOIs", "Chronology & Authority", "Analysis", "Evidence Gaps", "Method"],
       "home_page_evidence_update_ledger_required": true,
       "public_no_update_state_required": true,
       "current_source_classification": "research_candidate / not_assessable",
@@ -58,5 +51,11 @@
       "next_action": "Site repository-native orchestrator admits issue #235 and builds the public cluster from reviewed ERL projections"
     }
   ],
+  "hosted_validation": {
+    "canonical_registry_workflow_run": 31194350884,
+    "canonical_registry_workflow_result": "success",
+    "trumpality_current_state_workflow_run": 31194156570,
+    "trumpality_current_state_workflow_result": "success"
+  },
   "default_rule": "Any repository whose primary purpose is preserving information about a person, institution, event, incident, or decision must register as CONFORMING or EXEMPT_REVIEWED before claiming an evaluation structure independent of ERL."
 }
