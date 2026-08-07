@@ -61,16 +61,32 @@ def validate_governance(data: dict) -> list[str]:
     return errors
 
 
+def is_assessment_record(data: object) -> bool:
+    """Return True only for governed silence-causation assessment objects.
+
+    The assessment directory also contains coordination/workstream records. Those
+    records have their own contracts and must not be forced through the assessment
+    schema merely because they share the case directory.
+    """
+    return isinstance(data, dict) and isinstance(data.get("assessment_id"), str)
+
+
 def main() -> int:
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
     files = sorted(ASSESSMENTS.glob("*.json"))
     if not files:
-        print("No silence-causation assessments found.", file=sys.stderr)
+        print("No silence-causation JSON records found.", file=sys.stderr)
         return 1
 
     failures = 0
+    validated = 0
     for path in files:
         data = json.loads(path.read_text(encoding="utf-8"))
+        if not is_assessment_record(data):
+            print(f"SKIP {path}: non-assessment silence-causation record")
+            continue
+
+        validated += 1
         try:
             jsonschema.Draft202012Validator(schema, format_checker=jsonschema.FormatChecker()).validate(data)
         except jsonschema.ValidationError as exc:
@@ -84,6 +100,10 @@ def main() -> int:
                 print(f"FAIL {path}: governance: {error}")
         else:
             print(f"PASS {path}")
+
+    if validated == 0:
+        print("No governed silence-causation assessment records found.", file=sys.stderr)
+        return 1
 
     return 1 if failures else 0
 
