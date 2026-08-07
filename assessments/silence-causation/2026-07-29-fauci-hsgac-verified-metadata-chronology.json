@@ -1,0 +1,76 @@
+{
+  "chronology_id": "ERL-SC-2026-FAUCI-HSGAC-CHRONOLOGY-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "status": "partial_verified_metadata_only",
+  "governing_rule": "Only directly verified official-source metadata is admitted as an observed event. Assertions contained in member statements are retained separately as candidate claims requiring independent source reconstruction before they may become authority, causation, or contradiction edges.",
+  "events": [
+    {
+      "event_id": "EV-001",
+      "timestamp_local": "2026-07-29T08:30:00-04:00",
+      "event_type": "committee_hearing",
+      "observed_fact": "The U.S. Senate Committee on Homeland Security and Governmental Affairs scheduled the full committee hearing titled 'Testimony of Anthony Fauci' for July 29, 2026 at 8:30am in Senate Dirksen Building SD-342.",
+      "source_id": "SRC-HSGAC-HEARING-PAGE-2026-07-29",
+      "evidence_posture": "verified_official_metadata"
+    },
+    {
+      "event_id": "EV-002",
+      "timestamp_local": "2026-07-29",
+      "event_type": "witness_role_metadata",
+      "observed_fact": "The official hearing page identifies Anthony Fauci, M.D., as Former Director (1984-2022), National Institute of Allergy and Infectious Diseases, National Institutes of Health, U.S. Department of Health and Human Services.",
+      "source_id": "SRC-HSGAC-HEARING-PAGE-2026-07-29",
+      "evidence_posture": "verified_official_metadata"
+    },
+    {
+      "event_id": "EV-003",
+      "timestamp_local": "2026-07-29",
+      "event_type": "member_statement",
+      "observed_fact": "The official hearing page links a five-page opening statement for Chairman Rand Paul.",
+      "source_id": "SRC-HSGAC-PAUL-OPENING-2026-07-29",
+      "evidence_posture": "official_object_located_native_bytes_not_custodied"
+    },
+    {
+      "event_id": "EV-004",
+      "timestamp_local": "2026-07-29",
+      "event_type": "member_statement",
+      "observed_fact": "The official hearing page links a three-page opening statement for Ranking Member Gary Peters.",
+      "source_id": "SRC-HSGAC-PETERS-OPENING-2026-07-29",
+      "evidence_posture": "official_object_located_native_bytes_not_custodied"
+    }
+  ],
+  "candidate_claims_requiring_independent_reconstruction": [
+    {
+      "claim_id": "CLM-PAUL-001",
+      "speaker": "Rand Paul",
+      "source_id": "SRC-HSGAC-PAUL-OPENING-2026-07-29",
+      "claim_summary": "The opening statement attributes March 14-15, 2020 communications to Fauci concerning task-force recommendations and school-closing influence.",
+      "required_next_evidence": "Preserve and verify the referenced contemporaneous communications before constructing an influence or authority edge.",
+      "state": "unverified_statement_claim"
+    },
+    {
+      "claim_id": "CLM-PAUL-002",
+      "speaker": "Rand Paul",
+      "source_id": "SRC-HSGAC-PAUL-OPENING-2026-07-29",
+      "claim_summary": "The opening statement alleges NIAID/NIH funding, research classification, records-deletion, and COVID-origin conflicts involving Fauci.",
+      "required_next_evidence": "Resolve each proposition against the specific grant records, contemporaneous definitions, communications, prior sworn testimony, and federal-records evidence referenced by the statement.",
+      "state": "unverified_statement_claim"
+    },
+    {
+      "claim_id": "CLM-PETERS-001",
+      "speaker": "Gary Peters",
+      "source_id": "SRC-HSGAC-PETERS-OPENING-2026-07-29",
+      "claim_summary": "The opening statement characterizes the majority investigation as selective and alleges minority-access/process deficiencies.",
+      "required_next_evidence": "Preserve committee rules, correspondence, access records, document-release history, and other process records before making a procedural-fairness finding.",
+      "state": "unverified_statement_claim"
+    },
+    {
+      "claim_id": "CLM-PETERS-002",
+      "speaker": "Gary Peters",
+      "source_id": "SRC-HSGAC-PETERS-OPENING-2026-07-29",
+      "claim_summary": "The opening statement attributes current public-health workforce, funding, and grantmaking changes to the Trump administration and specifically references Russell Vought.",
+      "required_next_evidence": "Verify current personnel, OMB/HHS/NIH authorities, budget and grantmaking actions, and dated implementation records before constructing administration-continuity or funding-authority edges.",
+      "state": "unverified_statement_claim"
+    }
+  ],
+  "next_executable_action": "Add verified chronology and authority edges only after the corresponding primary record is receipt-linked; do not transform member-statement allegations into findings.",
+  "promotion_boundary": "This seed does not establish motive, guilt, concealment, funding causation, procedural misconduct, or administration responsibility. It may support source acquisition priorities and verified proceeding metadata only."
+}
