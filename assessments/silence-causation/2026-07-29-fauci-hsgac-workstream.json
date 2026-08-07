@@ -7,6 +7,7 @@
   "governing_standard": "standards/silence-causation-assessment-standard.md",
   "base_assessment": "assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json",
   "source_capture_plan": "assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md",
+  "session_requirement_source": "assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md",
   "current_classification": {
     "case_status": "research_candidate",
     "question_causation_status": "not_assessable",
@@ -24,7 +25,8 @@
         "official-hearing-page-capture",
         "official-video-custody-record",
         "official-transcript-custody-record",
-        "exhibit-and-process-record-receipts"
+        "exhibit-and-process-record-receipts",
+        "prior-testimony-and-official-communication-receipts"
       ]
     },
     {
@@ -34,7 +36,8 @@
       "dependencies": ["WS-A"],
       "outputs": [
         "machine-readable-atomic-question-ledger",
-        "human-readable-question-ledger-review"
+        "human-readable-question-ledger-review",
+        "authority-assignment-per-question"
       ]
     },
     {
@@ -44,7 +47,9 @@
       "dependencies": ["WS-A"],
       "outputs": [
         "normalized-chronology",
-        "participant-authority-graph"
+        "participant-authority-graph",
+        "personnel-lifecycle-chronology",
+        "administration-continuity-edges"
       ]
     },
     {
@@ -55,6 +60,9 @@
       "outputs": [
         "control-comparison-report",
         "documentary-conflict-map",
+        "records-chronology-control",
+        "channel-purpose-control",
+        "gain-of-function-semantic-normalization",
         "updated-bounded-assessment"
       ]
     },
@@ -71,6 +79,52 @@
       ]
     }
   ],
+  "required_discriminators": [
+    {
+      "id": "D-BLANKET-REFUSAL-BASELINE",
+      "requirement": "Compute refusal distribution across harmless and exposure-bearing questions before assigning discriminatory value to any individual Fifth Amendment invocation."
+    },
+    {
+      "id": "D-AUTHORITY-ASSIGNMENT",
+      "requirement": "For each atomic question, identify the formal or documented de facto authority holder at the relevant timestamp and flag possible authority misassignment."
+    },
+    {
+      "id": "D-PERSONNEL-LIFECYCLE",
+      "requirement": "Classify transition, retirement, reassignment, sanction, indictment or other legal process, later appointment, and continued domain participation as separate lifecycle events; clustered departures require broad restructuring as a competing explanation unless direct evidence narrows causation."
+    },
+    {
+      "id": "D-AUCHINCLOSS-RETIREMENT",
+      "requirement": "Preserve Hugh Auchincloss retirement motive as unresolved among age, health, ordinary career timing, or anticipated administration transition unless direct evidence discriminates."
+    },
+    {
+      "id": "D-ADMINISTRATION-CONTINUITY",
+      "requirement": "Map first/second Trump administration continuity only where a sourced edge connects an actor to NIH, NIAID, HHS, OMB, White House, grantee, funding, records, scientific-review, or testimony authority relevant to the case."
+    },
+    {
+      "id": "D-RECORDS-CHRONOLOGY",
+      "requirement": "Distinguish deletion language, actual deletion, destruction of a federal record, private-channel use, pending FOIA or preservation duty, and intent to defeat disclosure."
+    },
+    {
+      "id": "D-CHANNEL-PURPOSE",
+      "requirement": "Do not infer that a recipient knew why a private channel was selected merely because information reached the recipient; require acknowledgement, metadata, testimony, or equivalent evidence for knowledge of concealment purpose."
+    },
+    {
+      "id": "D-MORENS-ROLE-CHARACTERIZATION",
+      "requirement": "Compare sworn descriptions of David Morens's functional role with primary records of actual tasking, briefing, grantee contact, policy contribution, and information routing."
+    },
+    {
+      "id": "D-FOLKERS-OFFICE-PRACTICE",
+      "requirement": "Reconstruct Greg Folkers and Office-of-the-Director communication and records behavior to test Morens-specific conduct against a broader office-practice hypothesis without presuming either conclusion."
+    },
+    {
+      "id": "D-GOF-SEMANTICS",
+      "requirement": "Keep generic biological gain of function, regulated P3CO/ePPP research, and pandemic causation as separate propositions tied to contemporaneous definitions and experiment records."
+    },
+    {
+      "id": "D-INDEPENDENT-ANSWER-RECONSTRUCTION",
+      "requirement": "Prioritize question clusters that can be answered independently from documents or third parties over inference from refusal alone."
+    }
+  ],
   "coordination_rules": [
     "Primary-source capture may proceed in parallel by source family.",
     "Atomic question reconstruction must derive from preserved official video or transcript objects.",
@@ -78,7 +132,9 @@
     "Controls must not begin from an incomplete question set unless marked partial and non-promotional.",
     "Political-pressure or coercion scoring requires sourced actor, channel, timing, and nature evidence.",
     "Silence, refusal, privilege, memory limitation, and constitutional invocation are response states, not admissions.",
+    "Question specificity does not prove that the committee possessed the implied evidentiary predicate.",
+    "Personnel timing or political proximity may preserve a hypothesis but does not establish motive or coordination.",
     "The case remains research_candidate and not_assessable until promotion gates are satisfied."
   ],
-  "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator."
+  "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator."
 }
