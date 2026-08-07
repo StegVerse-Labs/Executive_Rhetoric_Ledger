@@ -8,6 +8,18 @@
   "base_assessment": "assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json",
   "source_capture_plan": "assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md",
   "session_requirement_source": "assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md",
+  "integration_validation": {
+    "repository_wide_dependency": "Issue #45 primary-record intake schema reconciliation",
+    "dependency_state": "resolved_on_main",
+    "resolution_commits": [
+      "8b863244d5bf6a4a91d01315b3022eb6e7d6bb6c",
+      "d0b63c9f2dba2d8206932b8a777e2ae18ce4d5f4"
+    ],
+    "main_validation_run": 31157270600,
+    "main_validation_result": "success",
+    "merge_head_revalidation": "required_after_this_commit",
+    "note": "The Issue #45 intake record was normalized to the canonical primary-record intake schema without promoting evidence states; this workstream commit exists to trigger and preserve a fresh PR #48 merge-head validation against the repaired main branch."
+  },
   "current_classification": {
     "case_status": "research_candidate",
     "question_causation_status": "not_assessable",
