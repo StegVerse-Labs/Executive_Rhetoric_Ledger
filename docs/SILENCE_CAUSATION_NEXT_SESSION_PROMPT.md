@@ -4,99 +4,89 @@ Use the connected GitHub repository directly and continue the governed silence-c
 
 - Organization: `StegVerse-Labs`
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
-- Active branch: `feature/silence-causation-governance`
-- Active pull request: `#46`
+- Canonical branch: `main`
+- Merged capability PR: `#46`
+- Active evidence issue: `#47` — `Build source-custodied Fauci HSGAC question-level assessment`
+- Active evidence branch named by Issue #47: `feature/fauci-hsgac-source-custody`
+- Session-specific transfer inventory: `assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md`
 
-Do not rely on prior chat claims as proof. Repository state, preserved primary evidence, workflow results, and committed receipts are authoritative.
+Do not rely on prior chat claims as proof. Repository state, preserved primary evidence, workflow results, issue state, committed receipts, and official source custody are authoritative.
 
 ## Required reading order
 
-Before making any decision or mutation, read these files in full and in this order:
-
 1. `ERL_MIRROR_HANDOFF.md`
-2. `docs/SILENCE_CAUSATION_NEXT_SESSION_PROMPT.md`
-3. `standards/silence-causation-assessment-standard.md`
-4. `assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md`
-5. `schemas/silence-causation-assessment.schema.json`
-6. `assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json`
-7. `scripts/validate_silence_causation_assessment.py`
-8. `.github/workflows/validate-silence-causation.yml`
-9. Every newer or more specific applicable `*_MIRROR_HANDOFF.md` or `*_NEXT_SESSION_PROMPT.md`.
+2. this file
+3. Issue `#47` and its comments
+4. `assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md`
+5. `standards/silence-causation-assessment-standard.md`
+6. `assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md`
+7. `schemas/silence-causation-assessment.schema.json`
+8. `assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json`
+9. `scripts/validate_silence_causation_assessment.py`
+10. `.github/workflows/validate-silence-causation.yml`
+11. every newer or more specific applicable `*_MIRROR_HANDOFF.md` or `*_NEXT_SESSION_PROMPT.md`.
 
-Then inspect PR `#46`, the latest branch commits, every workflow run attached to the current head, failed jobs, steps, complete logs, and every changed file.
+Then inspect the active evidence branch, open PRs if any, latest commits, workflow runs on the effective head, jobs, steps, logs, and changed files before claiming implementation or validation.
 
 ## Latest directly verified state
 
-- PR `#46` was open, mergeable, and non-draft.
-- Verified pre-update branch head: `9b8a36bfa6e15565007cb95a55d4acb8832197e0`.
-- Run `30593683918`, `Validate silence-causation assessments`, concluded `success`.
-- Run `30593683913`, `Validate Ledger Schemas`, concluded `failure`.
-- Failed job: `91041276028`, `validate-json-schemas`.
-- Failed step: `Validate validation result receipts`.
-- Complete logs show that `validation_results/ellis-scavino-transfer-assessment.pending.json`, introduced from newer `main` state into the PR merge test, does not conform to `schemas/validation-result.schema.json`. It uses parallel fields including `topic_id`, `recorded_at`, `status`, `validated_commit`, `validators_required`, `direct_execution_evidence`, `ci_evidence`, `structural_checks_completed`, and `unresolved`; the schema requires `validation_status`, `checked_commit`, `checked_paths`, `validator`, `result_summary`, and `activation_effect` and rejects additional properties.
-- The incompatible file is not present on the silence-causation branch itself. Do not create a competing same-path branch file without first reading the Ellis–Scavino handoff and preserving that task's evidence semantics.
-- Handoff evidence update commit: `f9ee03d66dd3d840122707dd0eb4ed1aef183052`.
-- This prompt update commit must be inspected from repository state before use as proof.
-
-## Immediate blocking sequence
-
-1. Read the applicable Ellis–Scavino task handoff and schema/validator authority governing `validation_results/ellis-scavino-transfer-assessment.pending.json`.
-2. Convert that receipt to the canonical validation-result schema without discarding its unresolved items or falsely claiming validator success; use `notes` and `result_summary` to preserve bounded detail where the schema provides no dedicated field.
-3. Preserve the correction in the authorized task scope, then inspect the new PR merge-head runs.
-4. Do not claim repository-wide CI success until both `Validate silence-causation assessments` and `Validate Ledger Schemas` are green on the same effective head.
+- PR `#46`, `Add governed silence-causation assessment capability`, merged into `main` on 2026-08-01.
+- Merge commit: `9beb274bacb290e137953671832af080feacbd0a`.
+- Main workflow run `30678409023`, `Validate silence-causation assessments`, concluded `success` on that merge commit.
+- Issue `#47` is the canonical remaining evidence-layer workstream.
+- The Fauci case remains `research_candidate` / `not_assessable` because complete primary question custody, atomic ledger, controls, contradiction review, and independent review are not complete.
+- Session-transfer inventory commit: `e011be09a7bb315a3f18564980f8373761bfe4c0`.
+- Handoff-state update commit: `ac60d82ccc9faf2fd7830081435a6c63d626a958`.
+- Issue #47 comment `5213668505` transfers the 2026-08-07 authority/lifecycle/records-control requirements into the canonical evidence workstream.
 
 ## Governing analytical boundary
 
 Silence, refusal, privilege, memory failure, and invocation of constitutional rights are observable response states, not admissions.
 
-The system may narrow plausible causal or exposure hypotheses only through preserved evidence and controlled comparison. Political proximity, hostility, pressure, or institutional interest may justify preserving a hypothesis but may not be treated as proof of coercion, coordination, concealed guilt, or motive.
+The system may narrow plausible causal or exposure hypotheses only through preserved evidence and controlled comparison. Political proximity, hostility, pressure, institutional interest, clustered departures, or later legal events may justify preserving a hypothesis but may not be treated as proof of coercion, coordination, concealed guilt, or motive.
 
 Every conclusion must distinguish observed fact, sourced proposition, inference, hypothesis, missing discriminating evidence, disconfirming condition, and publication boundary.
 
 ## Primary objective
 
-Advance the capability from framework status toward an executable, source-custodied, question-level assessment of Anthony Fauci's July 29, 2026 HSGAC appearance.
+Advance the source-custodied evidence layer in Issue #47 toward an executable question-level assessment of Anthony Fauci's July 29, 2026 HSGAC appearance.
 
-## Required execution sequence after CI repair
+## Required execution sequence
 
-1. Capture the official committee hearing page, official video, official transcript when available, exhibits, witness correspondence, process records, relevant pardon instrument, cited prior testimony, and relevant official communications. Prefer government and primary sources.
-2. For each object preserve source authority, retrieval timestamp, canonical locator, media type, byte length where available, SHA-256 where bytes can be captured, completeness, custody path or immutable pointer, and transformation history.
-3. Create an atomic question ledger preserving exact question-turn wording and timestamps, parent turns, embedded premises, requested facts, people, organizations, dates, documents, response text, counsel intervention, refusal basis, response class, and evidence references.
-4. Distinguish complete refusal, partial answer, qualified answer, memory limitation, privilege assertion, constitutional invocation, procedural objection, nonresponsive answer, and interrupted or withdrawn question.
-5. Construct a normalized chronology and participant/authority graph separating formal decision, advisory, funding, scientific-review, communications, records-custody, reporting, shared-representation, political-affiliation, alleged informal-pressure, and documented intermediary edges. Do not infer informal pressure from proximity alone.
-6. Run answered/refused, harmless/exposure-bearing, topic, document, sequence, questioner, administration-era, non-administration, blanket-counsel, malformed/compound, argumentative, privilege-sensitive, memory, and record-access controls before ranking hypotheses.
-7. Preserve and test H1 personal legal exposure; H2 contradiction with prior testimony or public representation; H3 protection of another participant; H4 institutional liability or narrative containment; H5 political pressure or coercion; H6 blanket counsel strategy; H7 defective/ambiguous/compound/hostile framing; H8 privilege/confidentiality/classification/records restriction; H9 genuine memory limitation.
-8. No political-pressure or coercion hypothesis may receive an affirmative evidentiary score without a sourced communication, instruction, threat, offered benefit, intermediary edge, independently corroborated pressure channel, or equivalent direct or strongly reconstructable evidence identifying actor, channel, timing, and nature.
-9. Preserve non-findings exactly. Keep the case at `research_candidate` or `not_assessable` wherever evidence does not authorize a stronger classification. Absence of explanation is not proof of concealment, and Fifth Amendment invocation is not proof an allegation is true.
+1. Capture the official committee hearing page, official/native video or immutable official pointer, official transcript when available, exhibits, witness correspondence, process records, applicable pardon instrument, cited prior testimony, and relevant official communications.
+2. Preserve source authority, retrieval timestamp, canonical locator, media type, byte length where available, SHA-256 where bytes can be captured, completeness, custody path/pointer, and transformation history.
+3. Build the atomic question ledger from preserved primary video/transcript objects; preserve exact wording, parent turns, embedded premises, requested facts, people, organizations, dates, documents, response text, counsel intervention, refusal basis, response class, and evidence references.
+4. Build a normalized chronology and participant/authority graph with role-specific edges for formal decision, advisory, funding, scientific review, records custody, communications, reporting, investigatory authority, and documented intermediary relationships.
+5. Add the 2026-08-07 controls: authority assignment, personnel lifecycle, transition clustering, records chronology, channel purpose, role-characterization conflict, gain-of-function semantic normalization, and independent-answer reconstruction.
+6. Preserve Hugh Auchincloss retirement motive as unresolved unless direct evidence discriminates among ordinary age/health/career timing/anticipated transition explanations.
+7. Reconstruct relevant first/second Trump administration continuity only where an official/primary source establishes a decision, funding, records, scientific-review, or testimony edge.
+8. Reconstruct Tier-1 documentary conflicts: records/deletion testimony; Morens/private-channel information flow and Fauci knowledge boundary; generic gain-of-function vs P3CO/ePPP vs pandemic-causation propositions.
+9. Next institutional discriminator: reconstruct Greg Folkers / Office-of-the-Director communication and records behavior to test Morens-specific versus broader office practice.
+10. Run answered/refused, harmless/exposure, topic, document, sequence, questioner, administration-era, blanket-counsel, malformed/compound, privilege-sensitive, memory, record-access, and the added controls before ranking hypotheses.
+11. Complete contradiction review and independent review only after validator-clean artifacts exist.
+12. Preserve `research_candidate` / `not_assessable` wherever evidence does not authorize a stronger classification.
 
 ## Required artifacts
 
-Create or complete according to repository conventions:
+Create or complete according to repository conventions and Issue #47:
 
 - source-receipt manifest;
 - machine-readable atomic question ledger;
 - human-readable question-ledger review;
 - normalized chronology;
 - participant and authority graph;
+- personnel-lifecycle extension or equivalent governed chronology fields;
 - prior-testimony and documentary-conflict map;
-- control-comparison report;
-- updated silence-causation assessment;
+- control-comparison report including authority-assignment and records/channel controls;
+- updated bounded silence-causation assessment;
 - contradiction-review records;
 - independent-review records;
-- positive, negative, and indeterminate validator tests and fixtures.
+- positive, negative, and indeterminate validator tests/fixtures.
 
-Use existing registries, indexes, schemas, naming conventions, and validators. Do not create parallel formats without inspecting repository authority files.
-
-## Continuity and publication boundary
-
-Update `ERL_MIRROR_HANDOFF.md` and this prompt whenever execution state materially changes, preserving exact commits, run IDs, job and step conclusions, source hashes, custody state, completed artifacts, blockers, and next actions.
-
-Do not publish a motive determination merely because one hypothesis ranks above another. Publication requires primary evidence capture, reproducible scoring, contradiction review, independent review, explicit uncertainty, and separation of fact from inference.
-
-When release posture is reached, inspect destination handoffs before any mutation in `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, or `stegguardian-wiki`.
+Do not create parallel formats without inspecting repository authority files.
 
 ## Completion condition
 
-The activation goal is complete when an independent reviewer can reconstruct every atomic question and response from preserved primary records; reproduce chronology, authority edges, controls, and hypothesis scores; distinguish observed silence from inferred motive; identify evidence that would change the result; and obtain the same bounded classification from the validator.
+The activation goal is complete when an independent reviewer can reconstruct every atomic question and response from preserved primary records; reproduce chronology, authority edges, lifecycle distinctions, controls, and bounded hypothesis scores; distinguish observed silence from inferred motive; identify evidence that would change the result; and obtain the same bounded classification from the validator.
 
-Continue autonomously within repository authority. Do not ask for confirmation where a reversible, evidence-preserving action is authorized. Stop only at a genuine external dependency, unavailable authority, or unresolved high-impact ambiguity, and record the blocker precisely in the handoff.
+Continue autonomously within repository authority. Do not duplicate Issue #47 ownership. Use repository-native issue/branch/workflow state as the coordination layer. Stop only at a genuine unavailable source, authority boundary, or unresolved high-impact ambiguity, and record the blocker precisely in Issue #47 and `ERL_MIRROR_HANDOFF.md`.
