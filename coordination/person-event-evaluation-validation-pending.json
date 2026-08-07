@@ -1,0 +1,10 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.person_event_evaluation_validation_pending.v1",
+  "state": "MACHINE_OBSERVATION_PENDING",
+  "required_observations": [
+    "StegVerse-Labs/Executive_Rhetoric_Ledger/.github/workflows/validate-person-event-evaluation-registry-v1.yml completes success on current main",
+    "StegVerse-Labs/Trumpality/.github/workflows/validate-current-state-evaluation.yml completes success on current main"
+  ],
+  "next_action": "inspect hosted workflow runs and, if green, supersede this pending record with validation receipt",
+  "authority_effect": false
+}
