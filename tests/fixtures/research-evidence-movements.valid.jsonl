@@ -1,0 +1,2 @@
+{"movement_id":"MOVE-1","review_state":"REVIEWED","candidate_id":"C1","trajectory_ids":["T1"],"movement":"weaken","authority_effect":"NONE","final_conclusion":false}
+{"movement_id":"MOVE-2","review_state":"REVIEWED","candidate_id":"C2","trajectory_ids":["T2"],"movement":"strengthen","authority_effect":"NONE","final_conclusion":false,"new_trajectory":{"trajectory_id":"T3","title":"New mixed mechanism","state":"OPEN","priority":"MEDIUM","acquisition_queries":["q3"]}}
