@@ -1,0 +1,32 @@
+{
+  "receipt_type": "local-deterministic-validation",
+  "date": "2026-08-11",
+  "capability": "all-trajectory acquisition queue builder",
+  "implementation": "scripts/build_research_acquisition_queue.py",
+  "fixture": "tests/test_research_acquisition_queue.py",
+  "observed_execution": {
+    "fixture_trajectories": 4,
+    "eligible_open_or_active": 3,
+    "first_run_new_requests": 3,
+    "second_run_existing_requests": 3,
+    "second_run_new_requests": 0,
+    "persisted_request_count": 3,
+    "saturated_trajectory_scheduled": false,
+    "duplicate_request_ids": false
+  },
+  "result": "PASS",
+  "validated_properties": [
+    "all OPEN/ACTIVE trajectories are included",
+    "alternative and null trajectories are treated as first-class acquisition paths",
+    "SATURATED trajectories are excluded from new scheduling",
+    "request IDs are deterministic",
+    "re-running the builder is idempotent"
+  ],
+  "not_proven_by_this_receipt": [
+    "network source acquisition",
+    "subject-repository adapter behavior against a live source whitelist",
+    "candidate transport into ERL",
+    "graph/frontier movement from retrieved evidence",
+    "hosted workflow validation"
+  ]
+}
