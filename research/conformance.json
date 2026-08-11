@@ -23,6 +23,13 @@
   "native_records_mutation_by_erl_sidecar": false,
   "github_token_authority": "NONE",
   "credential_authority": "TV/TVC where applicable",
-  "validation_state": "PARTIAL_VALIDATION",
-  "next_action": "validate registered repo conformance profiles, candidate intake/transport, and evidence-movement/frontier expansion under Issue #60"
+  "validation_state": "CONFORMING",
+  "validation_evidence": [
+    "research/receipts/2026-08-11-all-trajectory-queue-local-validation.json",
+    "research/receipts/2026-08-11-research-candidate-intake-local-validation.json",
+    "research/receipts/2026-08-11-evidence-movement-engine-local-validation.json",
+    "research/receipts/2026-08-11-candidate-collision-local-validation.json",
+    "coordination/research-surface-registry.v1.json:7/7 acquisition surfaces CONFORMING"
+  ],
+  "next_action": "continue trajectory acquisition and reviewed evidence movement under Issue #47/frontier; Issue #60 implementation/validation claim may release"
 }
