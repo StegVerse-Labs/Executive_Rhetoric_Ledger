@@ -1,55 +1,106 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.research_surface_registry.v1",
   "standard": "standards/multi-trajectory-research-surface.v1.md",
-  "generated_at": "2026-08-11T15:34:00Z",
+  "generated_at": "2026-08-11T15:48:00Z",
   "canonical_task": "Issue #60",
   "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
-  "states": ["CONFORMING", "PENDING_ADMISSION", "EXEMPT_REVIEWED", "SUPERSEDED"],
+  "states": ["CONFORMING", "PENDING_VALIDATION", "PENDING_ADMISSION", "EXEMPT_REVIEWED", "SUPERSEDED"],
   "entries": [
     {
       "repository": "StegVerse-Labs/Trumpality",
       "domain": "person-subject public-life and executive-rhetoric evidence",
-      "state": "CONFORMING",
+      "state": "PENDING_VALIDATION",
       "existing_search_surface": "scripts/search_agent.py",
+      "trajectory_adapter": "scripts/erl_research_agent.py",
+      "frontier": "research/frontier.json",
       "candidate_export": "core/exports/export_ledger_candidates.py",
       "reviewed_projection_handoff": "docs/OSINT_PROJECTION_MIRROR_HANDOFF.md",
-      "next_action": "adapt existing search agent to ERL trajectory-scoped acquisition contract under Issue #60"
+      "evidence": [
+        "StegVerse-Labs/Trumpality@118e1f0b408a8fd239b2baf6f1a66746b9168208",
+        "StegVerse-Labs/Trumpality@2e11526cc3e5a772e97ed33d4966ee1f7a3adfee",
+        "StegVerse-Labs/Trumpality@2a90ce0648fffd87811d6b9770be3b7a1ef2361c",
+        "StegVerse-Labs/Trumpality@86d41cc1cab3c0f6e7c5d7c9b5ec76bc8b7fcd19"
+      ],
+      "next_action": "run deterministic multi-trajectory fixture; validate lead-only/no-native-mutation behavior; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/Administrations",
       "domain": "institutional executive behavior by presidential term",
-      "state": "PENDING_ADMISSION",
-      "next_action": "install common research surface and ERL candidate boundary"
+      "state": "PENDING_VALIDATION",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": [
+        "StegVerse-Labs/Administrations@824aa5463febf9cffe846f9d4625801bb23e9659",
+        "StegVerse-Labs/Administrations@350101fca5144b49504eb6f7ffd3281c0153d900"
+      ],
+      "next_action": "run populated deterministic fixture and ERL intake validation; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/StegBiography",
       "domain": "evidence-linked biographical reconstruction umbrella",
-      "state": "PENDING_ADMISSION",
-      "next_action": "install common research surface and ERL candidate boundary"
+      "state": "PENDING_VALIDATION",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": [
+        "StegVerse-Labs/StegBiography@06857da5d83c26278ea21748173643b6ad6c0d47",
+        "StegVerse-Labs/StegBiography@79286fdfa5725bee7319ff56f6a594a79391a598"
+      ],
+      "next_action": "run populated deterministic fixture and ERL intake validation; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/Epsteinality",
       "domain": "person-specific biography and associated people/events",
-      "state": "PENDING_ADMISSION",
-      "next_action": "install common research surface and ERL candidate boundary"
+      "state": "PENDING_VALIDATION",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": [
+        "StegVerse-Labs/Epsteinality@7340b65c4a95a8d901c26244940b8b7bc5e4db8c",
+        "StegVerse-Labs/Epsteinality@831fae6b0fed149aca3c5461372321248b75337d"
+      ],
+      "next_action": "run populated deterministic fixture and ERL intake validation; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/Maxwellality",
       "domain": "person-specific biography, events, people, locations",
-      "state": "PENDING_ADMISSION",
-      "next_action": "install common research surface and ERL candidate boundary"
+      "state": "PENDING_VALIDATION",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": [
+        "StegVerse-Labs/Maxwellality@8babcbcf1d415f94324a27ad5ff182dfc2bc510a",
+        "StegVerse-Labs/Maxwellality@399e65177b42d7407886f52ad3150bb5517d26a1"
+      ],
+      "next_action": "run populated deterministic fixture and ERL intake validation; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/Giuffre-ality",
       "domain": "person-specific biography, events, locations, stories and memoir records",
-      "state": "PENDING_ADMISSION",
-      "next_action": "install common research surface and ERL candidate boundary"
+      "state": "PENDING_VALIDATION",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": [
+        "StegVerse-Labs/Giuffre-ality@c35983e12ff5c9d4d6c4a712af0973ace966fab1",
+        "StegVerse-Labs/Giuffre-ality@c8fa020339d2366abc657dc8c47450bf719e95e5"
+      ],
+      "next_action": "run populated deterministic fixture and ERL intake validation; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/FREE-DOM",
       "domain": "evidence-first Epstein-era event/court/source research",
-      "state": "PENDING_ADMISSION",
-      "next_action": "align existing AI Search Agent outputs with ERL trajectory-scoped candidate packets without changing native privacy policy"
+      "state": "PENDING_VALIDATION",
+      "existing_search_surface": "scripts/search_agent.py",
+      "trajectory_adapter": "scripts/erl_research_agent.py",
+      "frontier": "research/frontier.json",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": [
+        "StegVerse-Labs/FREE-DOM@440b646f8b3692be6c4d6f65199443c6aaa83632",
+        "StegVerse-Labs/FREE-DOM@f064716f8338adeb138b79d1795511774928ecac"
+      ],
+      "next_action": "run deterministic trajectory fixture; verify privacy and native-record immutability; then promote to CONFORMING"
     },
     {
       "repository": "StegVerse-Labs/Site",
