@@ -42,8 +42,9 @@ Every conforming repository must contain:
 4. `research/acquisition_requests.jsonl` append-only ERL/domain acquisition requests.
 5. `research/source_candidates.jsonl` append-only discovered source candidates.
 6. `research/research_receipts.jsonl` append-only acquisition/search receipts.
-7. `data/sources/sources_whitelist.csv` or an explicit governed equivalent.
-8. `scripts/search_agent.py` or an equivalent executable discovery adapter.
+7. `research/conformance.json` machine-readable declaration of authority, recurrence posture, adapter, transport boundary, and validation state.
+8. `data/sources/sources_whitelist.csv` or an explicit governed equivalent.
+9. `scripts/search_agent.py` or an equivalent executable discovery adapter.
 
 ## Frontier semantics
 
@@ -98,42 +99,56 @@ A research adapter must:
 
 ## Recurring-search necessity threshold
 
-A repository does **not** require recurring OSINT merely because it is a research repository. Recurring acquisition becomes a required part of the research surface when the subject is materially dynamic and a one-time search cannot preserve current evidentiary state.
+Recurring research is attached to trajectories/evidence gaps, not merely to repository identity.
 
-### Hard triggers
+A trajectory MUST be classified `REQUIRED` when any hard trigger is true:
+- it is OPEN/ACTIVE and relevant evidence can emerge after the current observation time;
+- the repository or ERL publishes a current-state/freshness claim dependent on new evidence;
+- an existing evidence observer/monitor already owns unresolved acquisition work;
+- an unresolved gap depends on a future filing, hearing, investigation, release, litigation event, policy action, public statement, or other externally observable change;
+- a reviewed projection can materially change when new evidence appears.
 
-Recurring search is REQUIRED when **any one** of the following is true:
-1. The repository tracks an ACTIVE/OPEN trajectory whose expected evidence can appear after the current research run (for example hearings, filings, appointments, statements, investigations, releases, litigation, agency actions, deaths, records disclosures, or policy changes).
-2. The repository has an explicit freshness/current-state claim that would become misleading without periodic source checking.
-3. The repository has a machine-owned observer, monitor, watch, scheduled ingest/search, or dependency-release condition whose purpose is source/evidence discovery rather than merely CI validation.
-4. The research frontier contains a time-dependent gap with a defined future source class or event trigger.
-5. The repository publishes or exports a current-state projection consumed by ERL or another governed surface and new public evidence could materially change that projection.
+A trajectory SHOULD normally be classified `SHOULD` when two or more soft triggers are true:
+- the subject/institution remains active;
+- relevant public conduct recurs;
+- primary records are released irregularly;
+- a trajectory depends on external events not controlled by the repository;
+- the relevant source set changes over time;
+- recurring external ingest already exists;
+- missing new evidence would materially degrade the research state;
+- multiple unresolved trajectories depend on the same changing source domain.
 
-### Soft triggers
+Allowed recurrence classifications are:
+- `REQUIRED` — recurring acquisition is necessary to maintain a truthful research state;
+- `SHOULD` — recurring acquisition is structurally useful but not currently mandatory;
+- `NOT_REQUIRED` — evidence is closed/historical/saturated or the repository is consumer-only;
+- `DELEGATED` — another named canonical acquisition surface owns recurrence.
 
-Recurring search SHOULD be installed when **two or more** of the following are true:
-- the subject is a living person or active institution/administration;
-- the subject has repeated public acts or statements relevant to the repository scope;
-- new primary records are released irregularly;
-- unresolved trajectories depend on external developments;
-- the source set changes materially over time;
-- the repository already performs recurring ingest of external source records;
-- the cost of missing a new record is greater than the cost/noise of periodic checking;
-- the repository has more than one ACTIVE trajectory with unresolved acquisition requests.
+Cadence is determined by evidence volatility, not perceived importance:
+- hourly/daily for rapidly changing events;
+- daily/weekly for active policy, public figures, investigations, litigation, or current-state claims;
+- weekly/monthly for slowly evolving archival/biographical records;
+- event-driven when an authoritative system emits a deterministic change signal.
 
-### Recurrence not required
+Every recurring trajectory must declare a cadence, owner, observable trigger, stop/saturation condition, and receipt location. A repository schedule that merely reimports static seeds is transport/ingest, not automatically a recurring research monitor.
 
-Recurring search is normally NOT required when all evidence is closed/historical, all trajectories are SATURATED/SUPERSEDED/MERGED, the repository is only a reviewed publication/consumer surface, or its inputs are entirely supplied by another canonical acquisition owner.
+## Machine-readable conformance profile
 
-### Cadence selection
+Every in-scope repository must keep `research/conformance.json` synchronized with its canonical handoff and the ERL registry. At minimum it records:
+- repository and role;
+- canonical ERL owner/issue;
+- evaluation authority;
+- acquisition authority;
+- local adapter path;
+- recurrence classification and owner;
+- whether an existing scheduled ingest is `research`, `transport`, `mixed`, or `none`;
+- candidate posture (`lead-only`/`context-only` until ERL review);
+- native-record mutation permission (normally false for the ERL sidecar);
+- GitHub-token authority (`NONE`);
+- TV/TVC credential authority where applicable;
+- validation state and next executable validation action.
 
-Cadence must follow evidence volatility rather than repository importance:
-- **hourly/daily:** rapidly changing active events, hearings, litigation actions, crisis/public-safety events, official announcement streams, or explicit condition watches;
-- **daily/weekly:** active public figures, administrations, policy programs, recurring releases, investigations, or unresolved current-state propositions;
-- **weekly/monthly:** slowly changing biography/institutional histories where new records appear irregularly;
-- **event-driven only:** when an authoritative upstream system emits deterministic source-change signals.
-
-The recurrence decision must be stored in the repository handoff or research registry as one of `REQUIRED`, `SHOULD`, `NOT_REQUIRED`, or `DELEGATED`, together with the trigger(s), cadence, owner, and release condition.
+A repository is not on the same governed research plane merely because matching files exist. Its conformance profile, handoff, and ERL registry entry must agree.
 
 ## Credential and execution authority
 
@@ -153,4 +168,4 @@ A repository is conforming when a reviewer can reproduce:
 5. which evidence was contradictory or null;
 6. which new trajectories were created;
 7. why no local search result independently changed an ERL conclusion;
-8. why recurring search is or is not required, and who owns it if delegated.
+8. who owns recurrence and whether scheduled ingest is research or transport.
