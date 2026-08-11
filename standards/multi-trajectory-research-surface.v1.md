@@ -89,13 +89,14 @@ Every discovered candidate must preserve:
 ## Search behavior
 
 A research adapter must:
-- search every ACTIVE trajectory with unresolved acquisition gaps;
+- search every ACTIVE trajectory with unresolved acquisition gaps that it actually owns under the recurrence/dispatch contract;
 - never rank a source higher merely because it agrees with a trajectory;
-- preserve contradictory and null-result evidence;
-- create new trajectory candidates when evidence reveals a materially distinct explanation;
-- deduplicate by normalized source identity/hash;
+- preserve potentially supporting, contrary, contextual, and null-result candidate evidence without local conclusion promotion;
+- deduplicate by normalized source identity/hash while preserving acquisition provenance;
 - append receipts rather than silently rewriting history;
 - fail closed when source provenance is unavailable for a requested verified capture.
+
+A subject/domain acquisition adapter does **not** create or promote an authoritative new trajectory on its own. When a candidate appears to reveal a materially distinct explanation, the adapter preserves the candidate and relevant acquisition context. ERL review then decides whether to create a new trajectory through the reviewed evidence-movement/frontier engine. This keeps new-trajectory discovery open without transferring evaluation authority to the acquisition surface.
 
 ## Recurring-search necessity threshold
 
@@ -132,6 +133,8 @@ Cadence is determined by evidence volatility, not perceived importance:
 
 Every recurring trajectory must declare a cadence, owner, observable trigger, stop/saturation condition, and receipt location. A repository schedule that merely reimports static seeds is transport/ingest, not automatically a recurring research monitor.
 
+For a repository-level `DELEGATED` posture, automatic frontier recurrence MUST be suppressed unless an individual trajectory explicitly overrides delegation under the ERL contract. Explicit acquisition requests from ERL remain executable. This prevents umbrella repositories from duplicating subject-owned recurrence while preserving directed research capability.
+
 ## Machine-readable conformance profile
 
 Every in-scope repository must keep `research/conformance.json` synchronized with its canonical handoff and the ERL registry. At minimum it records:
@@ -161,11 +164,11 @@ Local repositories export discovered candidates to ERL as pending/context-only r
 ## Conformance target
 
 A repository is conforming when a reviewer can reproduce:
-1. which trajectories were active;
-2. which acquisition requests were generated;
+1. which trajectories were active and which recurrence owner was responsible;
+2. which acquisition requests were generated or explicitly dispatched;
 3. which sources were searched and found;
 4. which candidates were emitted;
-5. which evidence was contradictory or null;
-6. which new trajectories were created;
+5. which potentially supporting, contrary, contextual, or null-result evidence was preserved without local conclusion promotion;
+6. how candidate evidence reaches ERL review and, when warranted, creates a new trajectory only through the reviewed ERL movement/frontier path;
 7. why no local search result independently changed an ERL conclusion;
 8. who owns recurrence and whether scheduled ingest is research or transport.
