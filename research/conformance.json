@@ -1,0 +1,28 @@
+{
+  "schema": "stegverse.erl.research_conformance.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "role": "research-frontier-and-evaluation-authority",
+  "canonical_owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#60",
+  "evaluation_authority": "self",
+  "acquisition_authority": "orchestrates registered domain surfaces and may own case-specific monitors",
+  "adapter": "scripts/build_all_trajectory_acquisition_queue.py",
+  "frontier": "research/frontier.json",
+  "recurrence": {
+    "classification": "REQUIRED",
+    "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+    "cadence_default": "trajectory-specific",
+    "basis": "ERL owns current-state evidence monitors and research-frontier gaps, including the active Ruben Ray Martinez daily evidence monitor",
+    "stop_condition": "trajectory SATURATED/SUPERSEDED/MERGED or recurrence DELEGATED to a registered acquisition surface"
+  },
+  "scheduled_ingest": {
+    "classification": "research",
+    "paths": ["config/ruben-ray-martinez-evidence-monitor.json"],
+    "note": "Case-specific recurring monitors are governed research when tied to explicit evidence gaps; generic import schedules are transport only."
+  },
+  "candidate_posture": "pending/context-only until ERL custody and review",
+  "native_records_mutation_by_erl_sidecar": false,
+  "github_token_authority": "NONE",
+  "credential_authority": "TV/TVC where applicable",
+  "validation_state": "PARTIAL_VALIDATION",
+  "next_action": "validate registered repo conformance profiles, candidate intake/transport, and evidence-movement/frontier expansion under Issue #60"
+}
