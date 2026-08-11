@@ -96,6 +96,45 @@ A research adapter must:
 - append receipts rather than silently rewriting history;
 - fail closed when source provenance is unavailable for a requested verified capture.
 
+## Recurring-search necessity threshold
+
+A repository does **not** require recurring OSINT merely because it is a research repository. Recurring acquisition becomes a required part of the research surface when the subject is materially dynamic and a one-time search cannot preserve current evidentiary state.
+
+### Hard triggers
+
+Recurring search is REQUIRED when **any one** of the following is true:
+1. The repository tracks an ACTIVE/OPEN trajectory whose expected evidence can appear after the current research run (for example hearings, filings, appointments, statements, investigations, releases, litigation, agency actions, deaths, records disclosures, or policy changes).
+2. The repository has an explicit freshness/current-state claim that would become misleading without periodic source checking.
+3. The repository has a machine-owned observer, monitor, watch, scheduled ingest/search, or dependency-release condition whose purpose is source/evidence discovery rather than merely CI validation.
+4. The research frontier contains a time-dependent gap with a defined future source class or event trigger.
+5. The repository publishes or exports a current-state projection consumed by ERL or another governed surface and new public evidence could materially change that projection.
+
+### Soft triggers
+
+Recurring search SHOULD be installed when **two or more** of the following are true:
+- the subject is a living person or active institution/administration;
+- the subject has repeated public acts or statements relevant to the repository scope;
+- new primary records are released irregularly;
+- unresolved trajectories depend on external developments;
+- the source set changes materially over time;
+- the repository already performs recurring ingest of external source records;
+- the cost of missing a new record is greater than the cost/noise of periodic checking;
+- the repository has more than one ACTIVE trajectory with unresolved acquisition requests.
+
+### Recurrence not required
+
+Recurring search is normally NOT required when all evidence is closed/historical, all trajectories are SATURATED/SUPERSEDED/MERGED, the repository is only a reviewed publication/consumer surface, or its inputs are entirely supplied by another canonical acquisition owner.
+
+### Cadence selection
+
+Cadence must follow evidence volatility rather than repository importance:
+- **hourly/daily:** rapidly changing active events, hearings, litigation actions, crisis/public-safety events, official announcement streams, or explicit condition watches;
+- **daily/weekly:** active public figures, administrations, policy programs, recurring releases, investigations, or unresolved current-state propositions;
+- **weekly/monthly:** slowly changing biography/institutional histories where new records appear irregularly;
+- **event-driven only:** when an authoritative upstream system emits deterministic source-change signals.
+
+The recurrence decision must be stored in the repository handoff or research registry as one of `REQUIRED`, `SHOULD`, `NOT_REQUIRED`, or `DELEGATED`, together with the trigger(s), cadence, owner, and release condition.
+
 ## Credential and execution authority
 
 No GitHub token is research, evaluation, or evidentiary authority. TV/TVC governs applicable credentialing. Repository automation may transport, validate, and persist declared artifacts only within its stated authority boundary.
@@ -113,4 +152,5 @@ A repository is conforming when a reviewer can reproduce:
 4. which candidates were emitted;
 5. which evidence was contradictory or null;
 6. which new trajectories were created;
-7. why no local search result independently changed an ERL conclusion.
+7. why no local search result independently changed an ERL conclusion;
+8. why recurring search is or is not required, and who owns it if delegated.
