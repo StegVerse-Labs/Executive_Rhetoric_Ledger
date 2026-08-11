@@ -1,0 +1,15 @@
+{
+  "schema": "stegverse.erl.research_frontier.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "rules": {
+    "all_trajectories_required": true,
+    "new_trajectory_discovery_allowed": true,
+    "binary_support_refute_forbidden": true,
+    "local_conclusion_promotion": false
+  },
+  "trajectories": [
+    {"trajectory_id": "T1", "title": "Primary", "state": "ACTIVE", "priority": "HIGH", "acquisition_queries": ["q1"]},
+    {"trajectory_id": "T2", "title": "Null", "state": "ACTIVE", "priority": "HIGH", "acquisition_queries": ["q2"]}
+  ]
+}
