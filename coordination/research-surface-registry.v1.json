@@ -1,7 +1,7 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.research_surface_registry.v1",
   "standard": "standards/multi-trajectory-research-surface.v1.md",
-  "generated_at": "2026-08-11T18:15:00Z",
+  "generated_at": "2026-08-11T18:22:00Z",
   "canonical_task": "Issue #60",
   "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
   "states": ["CONFORMING", "PENDING_VALIDATION", "PENDING_ADMISSION", "EXEMPT_REVIEWED", "SUPERSEDED"],
@@ -9,14 +9,14 @@
     {
       "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
       "domain": "cross-repository research frontier, evidence movement, and governed evaluation",
-      "state": "PENDING_VALIDATION",
+      "state": "CONFORMING",
       "role": "research-frontier-and-evaluation-authority",
       "conformance": "research/conformance.json",
       "recurrence": "REQUIRED",
       "scheduled_ingest_classification": "research",
       "native_monitor": "config/ruben-ray-martinez-evidence-monitor.json",
-      "evidence": ["StegVerse-Labs/Executive_Rhetoric_Ledger@22d8021f31bd48131de2ce590f7d1703687dc149", "StegVerse-Labs/Executive_Rhetoric_Ledger@493f0bd0dde673a945dc19419580071cec9996d1"],
-      "next_action": "validate ERL authority surface against fully conforming acquisition estate, then decide Issue #60 release/closure"
+      "evidence": ["StegVerse-Labs/Executive_Rhetoric_Ledger@d3a17f656cdc537e54c31fbd59eb08673605e1a8", "research/receipts/2026-08-11-all-trajectory-queue-local-validation.json", "research/receipts/2026-08-11-research-candidate-intake-local-validation.json", "research/receipts/2026-08-11-evidence-movement-engine-local-validation.json", "research/receipts/2026-08-11-candidate-collision-local-validation.json"],
+      "next_action": "continue active trajectory research under frontier/Issue #47; Issue #60 implementation-validation claim may release"
     },
     {
       "repository": "StegVerse-Labs/Trumpality",
