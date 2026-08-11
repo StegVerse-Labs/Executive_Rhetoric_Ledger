@@ -1,7 +1,7 @@
 {
   "schema": "stegverse.executive_rhetoric_ledger.research_surface_registry.v1",
   "standard": "standards/multi-trajectory-research-surface.v1.md",
-  "generated_at": "2026-08-11T17:00:00Z",
+  "generated_at": "2026-08-11T17:58:00Z",
   "canonical_task": "Issue #60",
   "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
   "states": ["CONFORMING", "PENDING_VALIDATION", "PENDING_ADMISSION", "EXEMPT_REVIEWED", "SUPERSEDED"],
@@ -49,15 +49,15 @@
     {
       "repository": "StegVerse-Labs/StegBiography",
       "domain": "evidence-linked biographical reconstruction umbrella",
-      "state": "PENDING_VALIDATION",
+      "state": "CONFORMING",
       "trajectory_adapter": "scripts/search_agent.py",
       "frontier": "research/frontier.json",
       "conformance": "research/conformance.json",
       "recurrence": "DELEGATED",
       "scheduled_ingest_classification": "none",
       "handoff": "RESEARCH_MIRROR_HANDOFF.md",
-      "evidence": ["StegVerse-Labs/StegBiography@79286fdfa5725bee7319ff56f6a594a79391a598", "StegVerse-Labs/StegBiography@2c27df3e76c7a4d76dc73126a0e3eb1aa94fd1f7"],
-      "next_action": "validate delegated recurrence and deterministic acquisition fixture; then promote to CONFORMING"
+      "evidence": ["StegVerse-Labs/StegBiography@6fe2ec4af4f26806fdbb39606d996e1c39821f76", "StegVerse-Labs/StegBiography@a8b51a6068587d47847c242beecb0f0e85096e4f", "StegVerse-Labs/StegBiography@2a6a316e8d6947937a7ff927e708dd3799f95e64"],
+      "next_action": "remain delegated to registered subject surfaces; explicit ERL acquisition requests remain admissible without autonomous umbrella recurrence"
     },
     {
       "repository": "StegVerse-Labs/Epsteinality",
