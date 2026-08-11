@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl/research-frontier.v1.json",
+  "title": "ERL Multi-Trajectory Research Frontier",
+  "type": "object",
+  "required": ["schema", "repository", "evaluation_authority", "trajectories", "rules"],
+  "properties": {
+    "schema": {"const": "stegverse.erl.research_frontier.v1"},
+    "repository": {"type": "string", "minLength": 3},
+    "evaluation_authority": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+    "canonical_task": {"type": "string"},
+    "trajectories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trajectory_id", "title", "state"],
+        "properties": {
+          "trajectory_id": {"type": "string", "minLength": 3},
+          "title": {"type": "string", "minLength": 3},
+          "state": {"enum": ["OPEN", "ACTIVE", "BLOCKED", "SATURATED", "SUPERSEDED", "MERGED"]},
+          "parent_trajectory_id": {"type": ["string", "null"]},
+          "known_nodes": {"type": "array", "items": {"type": "string"}},
+          "known_edges": {"type": "array", "items": {"type": "string"}},
+          "unsupported_edges": {"type": "array", "items": {"type": "string"}},
+          "expected_signatures": {"type": "array", "items": {"type": "string"}},
+          "disconfirmers": {"type": "array", "items": {"type": "string"}},
+          "source_classes": {"type": "array", "items": {"type": "string"}},
+          "priority": {"enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]},
+          "acquisition_queries": {"type": "array", "items": {"type": "string", "minLength": 2}},
+          "expansion_conditions": {"type": "array", "items": {"type": "string"}},
+          "stop_conditions": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "rules": {
+      "type": "object",
+      "required": ["all_trajectories_required", "new_trajectory_discovery_allowed", "binary_support_refute_forbidden", "local_conclusion_promotion"],
+      "properties": {
+        "all_trajectories_required": {"const": true},
+        "new_trajectory_discovery_allowed": {"const": true},
+        "binary_support_refute_forbidden": {"const": true},
+        "local_conclusion_promotion": {"const": false}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
