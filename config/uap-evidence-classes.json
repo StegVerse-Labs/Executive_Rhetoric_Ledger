@@ -1,0 +1,36 @@
+{
+  "contract_version": "stegverse.erl.uap-evidence-classes/v1",
+  "root": "assessments/uap-media",
+  "evidence_classes": {
+    "official-record": "evidence/official-records",
+    "testimony": "evidence/testimony",
+    "media-primary": "evidence/media-primary",
+    "secondary-reporting": "evidence/secondary-reporting",
+    "technical-scientific": "evidence/technical-scientific",
+    "archival-historical": "evidence/archival-historical"
+  },
+  "derived_classes": {
+    "claim": "claims",
+    "chronology": "chronologies",
+    "lineage": "lineage",
+    "control": "controls",
+    "analysis": "analysis",
+    "review": "reviews",
+    "receipt": "receipts"
+  },
+  "rules": {
+    "require_evidence_class_on_json_under_evidence": true,
+    "require_derived_class_on_json_under_derived_namespaces": true,
+    "analysis_under_evidence_forbidden": true,
+    "cross_class_links_by_reference_only": true,
+    "class_promotion_by_copy_forbidden": true,
+    "native_transformed_identity_distinct": true,
+    "conflicting_evidence_preserved": true
+  },
+  "authority": {
+    "credential_authority": "TV/TVC",
+    "github_token_runtime_authority": "NONE",
+    "non_tv_tvc_secret_or_token_required": false,
+    "classification_grants_factual_authority": false
+  }
+}
