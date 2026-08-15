@@ -5,14 +5,20 @@ on:
     paths:
       - 'assessments/uap-media/**'
       - 'config/uap-evidence-classes.json'
+      - 'config/uap-media-source-queue.json'
       - 'scripts/validate_uap_evidence_classes.py'
+      - 'scripts/process_uap_source_queue.py'
+      - 'tests/test_uap_source_queue.py'
       - '.github/workflows/validate-uap-evidence-classes.yml'
   push:
     branches: [main]
     paths:
       - 'assessments/uap-media/**'
       - 'config/uap-evidence-classes.json'
+      - 'config/uap-media-source-queue.json'
       - 'scripts/validate_uap_evidence_classes.py'
+      - 'scripts/process_uap_source_queue.py'
+      - 'tests/test_uap_source_queue.py'
       - '.github/workflows/validate-uap-evidence-classes.yml'
   workflow_dispatch:
 
@@ -33,6 +39,10 @@ jobs:
           python-version: '3.11'
       - name: Validate canonical tree
         run: env -u GITHUB_TOKEN -u GH_TOKEN python scripts/validate_uap_evidence_classes.py
+      - name: Validate source queue without network credentials
+        run: env -u GITHUB_TOKEN -u GH_TOKEN python scripts/process_uap_source_queue.py --receipt /tmp/uap-source-queue-validation.json
+      - name: Test credential-free source worker
+        run: env -u GITHUB_TOKEN -u GH_TOKEN python -m unittest -v tests.test_uap_source_queue
       - name: Prove class mixing fails closed
         shell: bash
         run: |
