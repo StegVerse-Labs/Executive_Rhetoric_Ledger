@@ -1,0 +1,125 @@
+{
+  "registry_version": "1.0",
+  "goal_id": "UAP-MEDIA-001",
+  "originating_goal": "Determine whether the apparent rise in documentary-style UAP/UFO media from 2017-2026 is related to incremental United States government UAP disclosure/reporting/declassification activity, preserve evidence classes in separate locations, and test Bob Lazar as a longitudinal claim-lineage case.",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "branch": "main",
+  "canonical_issue": 62,
+  "canonical_handoff": "docs/UAP_MEDIA_RESEARCH_MIRROR_HANDOFF.md",
+  "created_at": "2026-08-15T01:26:00-05:00",
+  "updated_at": "2026-08-15T01:26:00-05:00",
+  "allowed_states": ["COMPLETE", "BLOCKED", "RETRY", "REVIEW_REQUIRED", "FAILED", "CLAIMED", "SUPERSEDED", "MERGED"],
+  "tasks": [
+    {
+      "task_id": "UAP-MEDIA-001",
+      "title": "Preserve research hypothesis and competing explanations",
+      "state": "COMPLETE",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "research-candidates/2026-uap-disclosure-documentary-feedback-loop.md",
+      "evidence": ["commit:757be9523bfa0bc0a6acd3c40fc3ddd8e5aa5286", "commit:ce42a23e62866d70452947c3364f1897e921ac38"],
+      "next_task": "UAP-MEDIA-002"
+    },
+    {
+      "task_id": "UAP-MEDIA-002",
+      "title": "Install and validate physical evidence-class separation",
+      "state": "COMPLETE",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "surface": "config/uap-evidence-classes.json",
+      "evidence": [
+        "commit:e530280727d015f2c39fcfd505b693635658793b",
+        "commit:e5cdb3a4b7fb2dfeb8ad2da1d19a8481e1f937af",
+        "commit:eeab1aad21fe435fbcd340c4bb066b45209861d5",
+        "workflow:31869000972:success"
+      ],
+      "next_task": "UAP-MEDIA-003"
+    },
+    {
+      "task_id": "UAP-MEDIA-003",
+      "title": "Materialize class-specific canonical evidence stores",
+      "state": "COMPLETE",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "surface": "assessments/uap-media/evidence/official-records/README.md",
+      "evidence": [
+        "commit:793a6379a598d08b40e86e3021dd19982a1dda38",
+        "commit:9bbc70886c700ee27757b284925e845a01214b1f",
+        "commit:b997b056aaf9010df2264ab384e74d622b0b10e7",
+        "commit:4358fe187414c97dfa9afb74a72256e25d3da0d6",
+        "commit:147c9f10d3cefa5d46596cac0451c5e616f2154b",
+        "commit:b6f827ee82b90105aa642565d8baf8ad04d79d60",
+        "workflow:31869000972:success"
+      ],
+      "next_task": "UAP-MEDIA-004"
+    },
+    {
+      "task_id": "UAP-MEDIA-004",
+      "title": "Acquire and receipt official UAP event sources for 2017-2026",
+      "state": "REVIEW_REQUIRED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "assessments/uap-media/evidence/official-records/",
+      "release_condition": "The bounded source queue is processed without credentials, authoritative objects are retained under official-records with hashes/provenance, and each item is independently class-validated.",
+      "expected_evidence": ["source-queue", "native-or-custody-object", "sha256-receipt", "class-validation-receipt"],
+      "next_task": "UAP-MEDIA-005"
+    },
+    {
+      "task_id": "UAP-MEDIA-005",
+      "title": "Build documentary/media corpus with reproducible inclusion criteria",
+      "state": "REVIEW_REQUIRED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "assessments/uap-media/evidence/media-primary/",
+      "release_condition": "The media inclusion contract is installed and the initial corpus is independently sourced, dated, deduplicated, class-valid, and receipt-linked.",
+      "expected_evidence": ["inclusion-contract", "media-source-receipts", "deduplication-receipt"],
+      "next_task": "UAP-MEDIA-006"
+    },
+    {
+      "task_id": "UAP-MEDIA-006",
+      "title": "Build Bob Lazar atomic claim and evidence-reference ledger",
+      "state": "BLOCKED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "assessments/uap-media/claims/",
+      "release_condition": "Sufficient testimony, archival/historical, official-record, technical/scientific, media-primary, and secondary-reporting objects exist to construct atomic claims without collapsing evidence classes.",
+      "expected_evidence": ["atomic-claim-ledger", "immutable-cross-class-references", "contradiction-map"],
+      "next_task": "UAP-MEDIA-007"
+    },
+    {
+      "task_id": "UAP-MEDIA-007",
+      "title": "Build general-documentary and platform-growth control corpus",
+      "state": "BLOCKED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "assessments/uap-media/controls/",
+      "release_condition": "A reproducible non-UAP documentary/control dataset exists for the same relevant years and platforms with its own inclusion rules and source receipts.",
+      "expected_evidence": ["control-inclusion-contract", "control-corpus", "control-validation-receipt"],
+      "next_task": "UAP-MEDIA-008"
+    },
+    {
+      "task_id": "UAP-MEDIA-008",
+      "title": "Execute event-window, lag, terminology, and source-lineage analysis",
+      "state": "BLOCKED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "assessments/uap-media/analysis/",
+      "release_condition": "UAP-MEDIA-004, UAP-MEDIA-005, UAP-MEDIA-006, and UAP-MEDIA-007 are COMPLETE or explicitly SUPERSEDED with evidence.",
+      "expected_evidence": ["event-window-analysis", "lag-distribution", "terminology-shift-analysis", "source-lineage-graph"],
+      "next_task": "UAP-MEDIA-009"
+    },
+    {
+      "task_id": "UAP-MEDIA-009",
+      "title": "Independent reconstruction and governed review",
+      "state": "BLOCKED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "surface": "assessments/uap-media/reviews/",
+      "release_condition": "A reviewer independently reconstructs the evidence-class assignments, timelines, atomic claims, controls, and derived analyses and records result-changing disagreements before any causal/publication finding.",
+      "expected_evidence": ["independent-review", "reconstruction-receipt", "promotion-or-hold-decision"],
+      "next_task": null
+    }
+  ],
+  "session_consolidation": {
+    "state": "MERGED",
+    "merged_into": [
+      "docs/UAP_MEDIA_RESEARCH_MIRROR_HANDOFF.md",
+      "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/62",
+      "task-state/UAP-MEDIA-001.json"
+    ],
+    "unique_session_requirements_transferred": 4,
+    "unique_session_requirements_total": 4,
+    "archive_condition": "Every remaining UAP research task retains a durable owner and machine-observable release condition, evidence-class validation remains active, and any source-acquisition worker path is installed without non-TV/TVC credential authority."
+  }
+}
