@@ -1,0 +1,68 @@
+{
+  "contract_version": "stegverse.erl.uap-media-corpus/v1",
+  "goal_id": "UAP-MEDIA-001",
+  "corpus_id": "UAP-DOCUMENTARY-MEDIA-2017-2026",
+  "evidence_class": "media-primary",
+  "date_window": {
+    "start": "2017-01-01",
+    "end": "2026-08-15",
+    "date_basis": "first_public_release_or_publisher_listing"
+  },
+  "unit_of_analysis": "distinct_documentary_style_release",
+  "include_when_all": [
+    "release concerns UFO, UAP, extraterrestrial visitation, alleged recovered craft, government UAP investigation, or a named UAP witness/claim lineage",
+    "release is documentary, docuseries, investigative nonfiction special, or long-form documentary-style video",
+    "a first-party publisher/platform listing or independently preserved release record identifies the title and release/publication date",
+    "release can be represented as a distinct work rather than only a clip, trailer, excerpt, repost, reaction, or duplicate upload"
+  ],
+  "exclude_when_any": [
+    "fictional drama or scripted entertainment presented as fiction",
+    "standalone news segment shorter than the corpus long-form threshold unless it is the canonical release container for a documentary special",
+    "trailer, teaser, excerpt, reaction, commentary-only derivative, or duplicate upload of an already represented work",
+    "release date cannot be reproduced from a publisher record, archive, or two independent secondary records",
+    "content is inaccessible enough that its subject and format cannot be classified without guessing"
+  ],
+  "long_form_threshold_minutes": 20,
+  "required_fields": [
+    "media_id",
+    "title",
+    "publisher_or_platform",
+    "release_date",
+    "format",
+    "duration_minutes_or_unknown",
+    "first_party_source_ref_or_null",
+    "independent_release_source_refs",
+    "named_people",
+    "official_records_cited",
+    "major_claim_ids",
+    "new_primary_evidence_claimed",
+    "prior_production_reuse_refs",
+    "inclusion_decision",
+    "inclusion_reason"
+  ],
+  "deduplication": {
+    "primary_key": "publisher_or_platform + normalized_title + release_date",
+    "alternate_release_policy": "retain materially re-edited or independently released versions as separate works only when their evidentiary content differs; otherwise link as alternate distribution",
+    "episode_policy": "represent a docuseries at series level and retain episode-level child records only when episode-specific claim lineage is analyzed"
+  },
+  "classification_boundaries": {
+    "publisher_metadata_is_evidence_of_release_metadata_only": true,
+    "documentary_claims_are_not_facts_by_publication": true,
+    "official_record_shown_in_media_must_be_independently_custodied": true,
+    "testimony_extracted_from_media_remains_testimony": true,
+    "analysis_may_not_reside_in_media_primary": true
+  },
+  "freeze_policy": {
+    "criteria_freeze_before_outcome_analysis": true,
+    "criteria_change_requires_version_increment": true,
+    "criteria_change_requires_reason_receipt": true,
+    "retroactive_reclassification_must_preserve_prior_decision": true
+  },
+  "authority": {
+    "credential_authority": "TV/TVC",
+    "credential_requirement": "NONE",
+    "github_token_runtime_authority": "NONE",
+    "publication_authority": false,
+    "causal_finding_authority": false
+  }
+}
