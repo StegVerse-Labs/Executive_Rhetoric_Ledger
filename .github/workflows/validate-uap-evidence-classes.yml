@@ -6,7 +6,10 @@ on:
       - 'assessments/uap-media/**'
       - 'config/uap-evidence-classes.json'
       - 'config/uap-media-source-queue.json'
+      - 'config/uap-media-corpus-inclusion.json'
+      - 'config/uap-control-corpus-inclusion.json'
       - 'scripts/validate_uap_evidence_classes.py'
+      - 'scripts/validate_uap_research_contracts.py'
       - 'scripts/process_uap_source_queue.py'
       - 'tests/test_uap_source_queue.py'
       - '.github/workflows/validate-uap-evidence-classes.yml'
@@ -16,7 +19,10 @@ on:
       - 'assessments/uap-media/**'
       - 'config/uap-evidence-classes.json'
       - 'config/uap-media-source-queue.json'
+      - 'config/uap-media-corpus-inclusion.json'
+      - 'config/uap-control-corpus-inclusion.json'
       - 'scripts/validate_uap_evidence_classes.py'
+      - 'scripts/validate_uap_research_contracts.py'
       - 'scripts/process_uap_source_queue.py'
       - 'tests/test_uap_source_queue.py'
       - '.github/workflows/validate-uap-evidence-classes.yml'
@@ -39,6 +45,8 @@ jobs:
           python-version: '3.11'
       - name: Validate canonical tree
         run: env -u GITHUB_TOKEN -u GH_TOKEN python scripts/validate_uap_evidence_classes.py
+      - name: Validate media and control corpus contracts
+        run: env -u GITHUB_TOKEN -u GH_TOKEN python scripts/validate_uap_research_contracts.py
       - name: Validate source queue without network credentials
         run: env -u GITHUB_TOKEN -u GH_TOKEN python scripts/process_uap_source_queue.py --receipt /tmp/uap-source-queue-validation.json
       - name: Test credential-free source worker
