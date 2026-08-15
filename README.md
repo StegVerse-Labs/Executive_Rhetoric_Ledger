@@ -132,11 +132,12 @@ These schemas provide validation targets for ledger entries, source receipts, up
 ## Validation
 
 - [Validate Ledger Schemas workflow](.github/workflows/validate-ledger-schemas.yml)
+- [Validate UAP Evidence Classes workflow](.github/workflows/validate-uap-evidence-classes.yml)
 - [Validation Status Note](release/validation-status-note.md)
 - [Final Activation Handoff](release/final-activation-handoff.md)
 - [Passed Activation Validation Receipt](validation_results/workflow-run-29719676248.passed.json)
 
-The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, the related-repository network, cross-record links, filenames, and repository index visibility.
+The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, the related-repository network, cross-record links, filenames, and repository index visibility. The UAP evidence-class workflow separately fails closed on class mixing under `assessments/uap-media/**`.
 
 ## Cross-repo ingestion
 
@@ -164,6 +165,7 @@ The first reviewed producer-export promotion admits Executive Order 14179 strict
 ## Governance patterns
 
 - [Continuity Capability vs Activation Authority](governance-patterns/2026-continuity-capability-vs-activation-authority.md)
+- [Asymmetric Partisan Attribution Failure](governance-patterns/2026-asymmetric-partisan-attribution-failure.md)
 
 Governance-pattern entries record reusable authority, continuity, admissibility, and evidence distinctions without treating repository structure or workflow visibility as activation evidence.
 
