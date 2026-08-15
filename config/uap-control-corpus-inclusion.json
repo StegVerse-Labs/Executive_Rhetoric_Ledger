@@ -1,0 +1,66 @@
+{
+  "contract_version": "stegverse.erl.uap-control-corpus/v1",
+  "goal_id": "UAP-MEDIA-001",
+  "control_id": "GENERAL-DOCUMENTARY-CONTROL-2017-2026",
+  "derived_class": "control",
+  "date_window": {
+    "start": "2017-01-01",
+    "end": "2026-08-15"
+  },
+  "purpose": "Estimate whether observed UAP documentary growth exceeds broader documentary-style publication/platform growth rather than attributing all temporal change to UAP disclosure events.",
+  "matching_dimensions": [
+    "calendar_year",
+    "publisher_or_platform_family",
+    "format_family",
+    "duration_band",
+    "distribution_mode"
+  ],
+  "eligible_control_topics": [
+    "true crime",
+    "historical investigation",
+    "science or technology investigation",
+    "government or institutional investigation",
+    "paranormal topic not centered on UFO/UAP/extraterrestrial claims"
+  ],
+  "exclude_when_any": [
+    "work materially concerns UFO/UAP/extraterrestrial visitation or the same principal UAP witnesses/claims under study",
+    "work was selected because its publication trend resembles the UAP result after outcome inspection",
+    "release identity/date cannot be reproduced",
+    "work is fictional drama presented as fiction",
+    "trailer, teaser, clip, reaction, or duplicate distribution without distinct evidentiary content"
+  ],
+  "selection_policy": {
+    "pre_analysis_freeze_required": true,
+    "minimum_topics_per_year_when_available": 3,
+    "prefer_same_platform_sampling": true,
+    "document_missing_cells": true,
+    "never_impute_missing_release_counts_as_zero_without_evidence": true,
+    "retain_all_exclusions_with_reason": true
+  },
+  "required_fields": [
+    "control_media_id",
+    "topic_family",
+    "title",
+    "publisher_or_platform",
+    "release_date",
+    "format",
+    "duration_minutes_or_unknown",
+    "source_refs",
+    "matching_dimensions",
+    "inclusion_decision",
+    "inclusion_reason"
+  ],
+  "analysis_constraints": {
+    "control_corpus_is_not_evidence_of_uap_claim_truth": true,
+    "control_results_may_adjust_media_growth_inference_only": true,
+    "platform_growth_and_topic_growth_must_be_reported_separately": true,
+    "post_hoc_control_replacement_requires_versioned_receipt": true
+  },
+  "authority": {
+    "credential_authority": "TV/TVC",
+    "credential_requirement": "NONE",
+    "github_token_runtime_authority": "NONE",
+    "publication_authority": false,
+    "causal_finding_authority": false
+  }
+}
