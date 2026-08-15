@@ -120,10 +120,10 @@ def acquire_item(item: dict[str, Any], output_root: Path, timeout: float) -> dic
         "native_object": destination.relative_to(output_root).as_posix(),
         "authority": {
             "credential_authority": "TV/TVC",
-            "credential_used": false,
-            "github_token_used": false,
-            "promotion_authority": false,
-            "factual_finding_authority": false
+            "credential_used": False,
+            "github_token_used": False,
+            "promotion_authority": False,
+            "factual_finding_authority": False
         }
     }
     receipt_path.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -147,8 +147,6 @@ def main() -> int:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
 
-    # Tokens may exist in a host process, but this worker never consumes them.
-    # Remove them before any network operation and record that boundary.
     inherited = {name: bool(os.environ.get(name)) for name in FORBIDDEN_ENV}
     for name in FORBIDDEN_ENV:
         os.environ.pop(name, None)
@@ -168,12 +166,12 @@ def main() -> int:
     receipt = {
         "derived_class": "receipt",
         "goal_id": queue.get("goal_id"),
-        "execution_status": "PASS" if all(r.get("status") == "COMPLETE" for r in results) else ("VALIDATED_ONLY" if not args.fetch else "RETRY"),
-        "queue_valid": true,
+        "execution_status": "PASS" if args.fetch and results and all(r.get("status") == "COMPLETE" for r in results) else ("VALIDATED_ONLY" if not args.fetch else "RETRY"),
+        "queue_valid": True,
         "fetch_requested": args.fetch,
         "credential_authority": "TV/TVC",
         "credential_requirement": "NONE",
-        "github_token_used": false,
+        "github_token_used": False,
         "inherited_token_presence_removed_before_network": inherited,
         "results": results
     }
