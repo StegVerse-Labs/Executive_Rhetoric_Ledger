@@ -7,7 +7,7 @@
   "canonical_issue": 62,
   "canonical_handoff": "docs/UAP_MEDIA_RESEARCH_MIRROR_HANDOFF.md",
   "created_at": "2026-08-15T01:26:00-05:00",
-  "updated_at": "2026-08-15T01:26:00-05:00",
+  "updated_at": "2026-08-15T01:33:00-05:00",
   "allowed_states": ["COMPLETE", "BLOCKED", "RETRY", "REVIEW_REQUIRED", "FAILED", "CLAIMED", "SUPERSEDED", "MERGED"],
   "tasks": [
     {
@@ -29,7 +29,8 @@
         "commit:e530280727d015f2c39fcfd505b693635658793b",
         "commit:e5cdb3a4b7fb2dfeb8ad2da1d19a8481e1f937af",
         "commit:eeab1aad21fe435fbcd340c4bb066b45209861d5",
-        "workflow:31869000972:success"
+        "workflow:31869000972:success",
+        "workflow:31869689144:success"
       ],
       "next_task": "UAP-MEDIA-003"
     },
@@ -46,7 +47,8 @@
         "commit:4358fe187414c97dfa9afb74a72256e25d3da0d6",
         "commit:147c9f10d3cefa5d46596cac0451c5e616f2154b",
         "commit:b6f827ee82b90105aa642565d8baf8ad04d79d60",
-        "workflow:31869000972:success"
+        "workflow:31869000972:success",
+        "workflow:31869689144:success"
       ],
       "next_task": "UAP-MEDIA-004"
     },
@@ -54,26 +56,44 @@
       "task_id": "UAP-MEDIA-004",
       "title": "Acquire and receipt official UAP event sources for 2017-2026",
       "state": "REVIEW_REQUIRED",
-      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "execution_class": "MACHINE_OWNED",
+      "owner": "StegVerse-Labs/.github:SHWP-ERL-UAP-MEDIA-001 + StegVerse-Labs/Executive_Rhetoric_Ledger#62",
       "surface": "assessments/uap-media/evidence/official-records/",
-      "release_condition": "The bounded source queue is processed without credentials, authoritative objects are retained under official-records with hashes/provenance, and each item is independently class-validated.",
-      "expected_evidence": ["source-queue", "native-or-custody-object", "sha256-receipt", "class-validation-receipt"],
+      "machine_handoff": "StegVerse-Labs/.github/handoffs/SHWP-ERL-UAP-MEDIA-001.json",
+      "machine_registry": "StegVerse-Labs/.github/control/worker-registry.d/erl-uap-media-001.json",
+      "release_condition": "The registered public-source worker resolves a locally materialized ERL source tree, processes the bounded allowlisted queue without credentials, preserves authoritative objects under official-records with hashes/provenance, and emits its terminal acquisition receipt.",
+      "evidence": [
+        "config/uap-media-source-queue.json",
+        "scripts/process_uap_source_queue.py",
+        "workflow:31869248127:success",
+        "StegVerse-Labs/.github#175:completed",
+        "StegVerse-Labs/.github:workflow:31869598566:success",
+        "StegVerse-Labs/.github:workflow:31869598547:success"
+      ],
+      "expected_evidence": ["native-or-custody-object", "sha256-receipt", "class-validation-receipt", "terminal-worker-receipt"],
       "next_task": "UAP-MEDIA-005"
     },
     {
       "task_id": "UAP-MEDIA-005",
       "title": "Build documentary/media corpus with reproducible inclusion criteria",
       "state": "REVIEW_REQUIRED",
-      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
+      "execution_class": "MACHINE_SUPPORTED",
+      "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62 + StegVerse-Labs/.github:SHWP-ERL-UAP-MEDIA-001",
       "surface": "assessments/uap-media/evidence/media-primary/",
-      "release_condition": "The media inclusion contract is installed and the initial corpus is independently sourced, dated, deduplicated, class-valid, and receipt-linked.",
-      "expected_evidence": ["inclusion-contract", "media-source-receipts", "deduplication-receipt"],
+      "release_condition": "The frozen media inclusion contract is satisfied and the media corpus is independently sourced, dated, deduplicated, class-valid, and receipt-linked. Initial allowlisted media-primary acquisition is machine-owned by SHWP-ERL-UAP-MEDIA-001.",
+      "evidence": [
+        "commit:2493c70e2d5d5f7cabdc5903ecf99019d85d54a8",
+        "commit:70a0a6883d502f1e918df089b4e8a47c7af2fcb0",
+        "workflow:31869689144:success"
+      ],
+      "expected_evidence": ["media-source-receipts", "deduplication-receipt", "inclusion-decision-records"],
       "next_task": "UAP-MEDIA-006"
     },
     {
       "task_id": "UAP-MEDIA-006",
       "title": "Build Bob Lazar atomic claim and evidence-reference ledger",
       "state": "BLOCKED",
+      "execution_class": "DEPENDENCY_BOUND_RESEARCH",
       "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
       "surface": "assessments/uap-media/claims/",
       "release_condition": "Sufficient testimony, archival/historical, official-record, technical/scientific, media-primary, and secondary-reporting objects exist to construct atomic claims without collapsing evidence classes.",
@@ -83,17 +103,24 @@
     {
       "task_id": "UAP-MEDIA-007",
       "title": "Build general-documentary and platform-growth control corpus",
-      "state": "BLOCKED",
+      "state": "REVIEW_REQUIRED",
+      "execution_class": "DEPENDENCY_BOUND_RESEARCH",
       "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
       "surface": "assessments/uap-media/controls/",
-      "release_condition": "A reproducible non-UAP documentary/control dataset exists for the same relevant years and platforms with its own inclusion rules and source receipts.",
-      "expected_evidence": ["control-inclusion-contract", "control-corpus", "control-validation-receipt"],
+      "release_condition": "The frozen control inclusion contract is populated with a reproducible non-UAP documentary/control dataset for the same years/platform families, with source receipts and documented missing cells.",
+      "evidence": [
+        "commit:3a90b86713c9f617d90f87b82772acdb65b91790",
+        "commit:70a0a6883d502f1e918df089b4e8a47c7af2fcb0",
+        "workflow:31869689144:success"
+      ],
+      "expected_evidence": ["control-corpus", "control-source-receipts", "control-validation-receipt"],
       "next_task": "UAP-MEDIA-008"
     },
     {
       "task_id": "UAP-MEDIA-008",
       "title": "Execute event-window, lag, terminology, and source-lineage analysis",
       "state": "BLOCKED",
+      "execution_class": "DEPENDENCY_BOUND_RESEARCH",
       "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
       "surface": "assessments/uap-media/analysis/",
       "release_condition": "UAP-MEDIA-004, UAP-MEDIA-005, UAP-MEDIA-006, and UAP-MEDIA-007 are COMPLETE or explicitly SUPERSEDED with evidence.",
@@ -104,6 +131,7 @@
       "task_id": "UAP-MEDIA-009",
       "title": "Independent reconstruction and governed review",
       "state": "BLOCKED",
+      "execution_class": "INDEPENDENT_REVIEW_REQUIRED",
       "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#62",
       "surface": "assessments/uap-media/reviews/",
       "release_condition": "A reviewer independently reconstructs the evidence-class assignments, timelines, atomic claims, controls, and derived analyses and records result-changing disagreements before any causal/publication finding.",
@@ -116,10 +144,14 @@
     "merged_into": [
       "docs/UAP_MEDIA_RESEARCH_MIRROR_HANDOFF.md",
       "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/62",
-      "task-state/UAP-MEDIA-001.json"
+      "task-state/UAP-MEDIA-001.json",
+      "StegVerse-Labs/.github/handoffs/SHWP-ERL-UAP-MEDIA-001.json",
+      "StegVerse-Labs/.github/control/worker-registry.d/erl-uap-media-001.json"
     ],
     "unique_session_requirements_transferred": 4,
     "unique_session_requirements_total": 4,
-    "archive_condition": "Every remaining UAP research task retains a durable owner and machine-observable release condition, evidence-class validation remains active, and any source-acquisition worker path is installed without non-TV/TVC credential authority."
+    "chat_execution_owner": "NONE_AFTER_DURABLE_TRANSFER",
+    "remaining_work_requires_thread": false,
+    "archive_condition": "Satisfied for this session when the bounded UAP handoff reflects workflow 31869689144 and the machine continuation references above; empirical research remains incomplete but is durably owned and release-conditioned."
   }
 }
