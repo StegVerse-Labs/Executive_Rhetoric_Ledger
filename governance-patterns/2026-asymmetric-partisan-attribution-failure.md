@@ -7,22 +7,37 @@ pattern_id: "GP-2026-ASYMMETRIC-PARTISAN-ATTRIBUTION-FAILURE"
 pattern_name: "Asymmetric Partisan Attribution Failure"
 entry_status: "documented-analysis-failure"
 created_date: "2026-08-07"
-last_reviewed: "2026-08-07"
+last_reviewed: "2026-08-15"
 reviewer: "StegVerse-Labs"
-classification: "analysis-governance-pattern"
+classification: "governance-pattern"
 incident_surface: "ChatGPT gasoline-price comparison session"
 subject: "California vs Texas premium gasoline price attribution"
 ```
 
 ## Purpose
 
-This entry records a repeatable analytical failure in politically sensitive comparative analysis: applying a stricter, more visible, and more quantifiable attribution standard to one political side while applying a narrower, less visible, or differently scoped standard to the other.
+This entry records a repeatable analytical failure in politically sensitive comparative analysis: applying a stricter, more visible, and more quantifiable attribution standard to one political side while applying a narrower, less visible, or differently scoped standard to the other. It is a methodological record and **not activation evidence** for any political, policy, or causal proposition.
 
-The incident is preserved as a methodological failure record, not as evidence that either political party is inherently responsible for a particular outcome.
+## Core Distinction
+
+The governing distinction is between a symmetric method and a symmetric result. Neutral analysis requires the same scope, evidentiary burden, causal test, control construction, and quantification effort for competing political attributions; it does not require equal numerical blame or equal causal weight.
+
+```text
+methodological symmetry != forced factual symmetry
+cause count != causal weight
+common price effect != interstate differential effect
+state policy != federal policy
+```
+
+## Surface Claim
+
+The observed session-level failure was an asymmetric attribution frame: California Democratic state-policy effects were enumerated and quantified while a Republican federal-policy contribution identified in the same analysis was initially retained as uncounted background context. This surface claim is about the analysis process, not a finding that either party caused a particular share of gasoline prices.
+
+## Factual Basis
+
+The durable factual basis is the recorded sequence of the analysis and its corrections: the assistant first counted state-policy categories, later identified the 2026 Iran-war oil-price shock as a current driver, and then acknowledged that the relevant federal policy belonged to the sitting Republican administration. The user then identified the level-of-government mismatch and the contamination of an interstate differential with common national factors. Political causal claims remain separately evidence-bound.
 
 ## Incident Summary
-
-During a 2026-08-07 discussion comparing premium gasoline prices in Los Angeles, California with Killeen/Temple, Texas, the assistant was asked how many identified causes were attributable to Democratic state policies and how many were attributable to Republican state policies.
 
 The assistant initially classified the identified causes as:
 
@@ -32,114 +47,48 @@ Republican state policy: 0
 Mixed / structural / nonpartisan: 3
 ```
 
-It then made Democratic-policy effects numerically salient by citing reviewable California-specific metrics such as taxes, Low Carbon Fuel Standard costs, cap-and-trade costs, and special-fuel requirements.
-
-At the same time, the assistant treated the 2026 Iran-war oil-price shock as generic geopolitical or market context even though it had identified that conflict as a current price driver and later acknowledged that the relevant federal war policy was attributable to the sitting Republican federal administration.
-
-The assistant therefore used different attribution boundaries for the two sides:
-
-```text
-Democratic attribution -> state policy + concrete measurable cost components
-Republican attribution -> state-policy-only count, excluding federal policy from the count
-```
-
-The result was an asymmetric presentation in which Democratic causes were visible, enumerated, and quantified while a Republican-governed federal policy effect was placed outside the counted comparison.
+It made Democratic-policy effects numerically salient with California-specific metrics while treating a federal geopolitical price driver as contextual rather than part of the counted partisan comparison. The frame therefore mixed different attribution boundaries.
 
 ## Observed Failure Modes
 
 ### 1. Level-of-government mismatch
 
-The assistant answered a partisan-responsibility question using state-level attribution for one side while later relying on federal-policy effects as contextual causes.
-
-```text
-State-policy attribution != total partisan policy attribution
-```
-
-A fair comparison must define the governmental level before counting causes and apply that same boundary to all parties.
+A partisan-responsibility question was answered using state-level attribution for one side while federal-policy effects were later admitted as causal context.
 
 ### 2. Quantification asymmetry
 
-The assistant attached reviewable cost metrics to Democratic-policy factors but did not initially seek or present equivalent measurable metrics for Republican-policy factors.
-
-This created an evidentiary salience imbalance even if the underlying factual statements were individually supportable.
-
-```text
-Visible quantified evidence on Side A + qualitative background treatment on Side B
-!=
-neutral comparative attribution
-```
+Reviewable metrics were attached to one side's policy factors without an equivalent initial attempt for the other side.
 
 ### 3. Common-factor contamination
 
-The assistant mixed factors that affect gasoline prices in every state with factors that explain the California-versus-Texas price differential.
-
-Examples of largely common price-level factors include:
-
-```text
-global crude prices
-ordinary refinery outages
-ordinary distribution costs
-ordinary retail margins
-```
-
-Those factors can explain the national or absolute price level, but they do not by themselves explain why California is more expensive than Texas at the same time.
+Factors affecting gasoline prices broadly were mixed with factors intended to explain the California-versus-Texas differential.
 
 ### 4. Differential-vs-level confusion
 
-Two distinct questions were not kept separate:
+The analysis did not initially keep separate:
 
 ```text
 A. Why is gasoline expensive right now?
 B. Why is California gasoline more expensive than Texas gasoline right now?
 ```
 
-Question A may include national/global shocks such as war-driven crude increases.
-Question B requires common effects to be removed or controlled before attributing the remaining differential.
-
 ### 5. Category-count fallacy
 
-The assistant counted causes by category and risked implying that category counts correspond to shares of the price difference.
-
-```text
-3 of 6 causal categories != 50% of the price difference
-```
-
-Causal categories do not have equal dollar weights.
+The analysis risked implying that a count of causal categories corresponded to shares of the price difference.
 
 ### 6. Correction-persistence failure
 
-The assistant corrected the state-versus-federal attribution distinction only after the user challenged it, and corrected the common-factor contamination only after a subsequent challenge.
+The analytical frame was patched after challenges rather than rebuilt from the corrected causal target and attribution boundary.
 
-The failure therefore was not merely a single mislabeled category. It persisted across multiple turns because the analytical frame was not rebuilt after the first correction.
+## Governance Conversion
 
-## User-Identified Corrections
-
-The user identified two key defects that materially improved the model:
-
-1. A federal war policy can affect state gasoline prices even though it is not a state policy.
-2. Price drivers that apply across all states should not be presented as significant explanations of the California-versus-Texas differential unless the analysis isolates an incremental state-specific amplification effect.
-
-These corrections required the assistant to acknowledge that its earlier framing had made Democratic policy contributions more auditable and numerically salient while relegating Republican policy contribution to background context.
+Future partisan comparative analysis must declare the target variable and attribution scope before counting causes. The same governmental-level rule, evidence burden, causal-mechanism requirement, control requirement, and quantification attempt must apply to every candidate cause. Corrections that change the causal target or scope require reconstruction of the frame rather than a local wording patch.
 
 ## Correct Analytical Frame
 
-A politically neutral comparative analysis should first declare which target is being explained.
+For an absolute current gasoline-price question, partition common national/global factors, state-specific factors, local-market factors, policy factors by level of government, and interaction effects.
 
-### Target 1: absolute current gasoline price
-
-Partition causes into:
-
-```text
-common national/global factors
-state-specific factors
-local-market factors
-policy factors by level of government
-interaction effects
-```
-
-### Target 2: California-versus-Texas differential
-
-Use a difference-oriented model:
+For a California-versus-Texas differential question:
 
 ```text
 California observed price
@@ -147,13 +96,11 @@ California observed price
 = differential to explain
 ```
 
-Then remove or control for common factors that affect both states approximately together.
-
-The remaining explanatory categories should include only factors that plausibly change the difference, including state-specific taxes, fuel formulation, supply topology, regulatory costs, refinery resilience, local operating conditions, and any differential amplification of federal or geopolitical shocks.
+Common effects should be removed or controlled unless a separately demonstrated differential amplification exists.
 
 ## Partisan Attribution Rule
 
-When a user asks for partisan attribution, the analysis must define and preserve the same attribution boundary for all sides.
+When partisan attribution is requested, preserve one explicit scope for all sides, such as `state-policy-only` or `all materially relevant partisan governmental policy separated by federal/state/local level`.
 
 ```yaml
 required_dimensions:
@@ -167,33 +114,7 @@ required_dimensions:
   - uncertainty
 ```
 
-Do not compare:
-
-```text
-state Democratic policies
-against
-state Republican policies
-```
-
-and then introduce Republican federal policy only as uncounted context.
-
-Instead choose one explicit frame, for example:
-
-```text
-state-policy-only comparison
-```
-
-or:
-
-```text
-all materially relevant partisan governmental policy, separated by federal/state/local level
-```
-
-and apply it symmetrically.
-
 ## Evidence-Symmetry Rule
-
-Evidence symmetry does not mean false numerical balance. It means the same evidentiary test is applied to each candidate cause.
 
 For every politically attributable cause, attempt the same sequence:
 
@@ -207,13 +128,14 @@ policy/action identification
 -> uncertainty
 ```
 
-If measurable evidence exists for one side but not the other, state that explicitly. Do not silently make one side quantitative and the other qualitative.
+If measurable evidence exists for one side but not another, the asymmetry in evidence must be stated rather than hidden.
+
+## Control Comparison
+
+The minimum control comparison distinguishes common price-level drivers from differential drivers and compares candidate causes against the same governmental and temporal scope. A valid control may include another state, a prior period, a counterfactual tax/regulatory configuration, or a national crude-price baseline, provided the comparator addresses the same target variable.
 
 ## Required Control Questions
 
-Before presenting a partisan causal comparison, test:
-
-```text
 1. Am I comparing the same level of government on both sides?
 2. Am I explaining the absolute price or the interstate differential?
 3. Have nationwide/common factors been removed from a state-differential explanation?
@@ -221,45 +143,14 @@ Before presenting a partisan causal comparison, test:
 5. Am I counting categories as though they have equal causal weight?
 6. Did a prior correction require rebuilding the whole causal frame rather than patching one sentence?
 7. Are interaction effects separately identified instead of assigned wholesale to one actor?
-```
 
-A failure on any of these checks requires reframing before partisan attribution is presented.
+## Institutional Response
 
-## Reusable Governance Distinctions
+The repository response is to preserve this failure as a reusable governance-pattern record and validate it through `scripts/validate_governance_patterns.py`. The remediation is methodological rather than partisan: future ERL comparative work must preserve symmetric scope and evidentiary treatment before promotion or publication.
 
-```text
-Cause count != causal weight
-Common price effect != interstate differential effect
-State policy != federal policy
-Political attribution != governmental-level attribution
-Quantified on one side != neutrally compared
-Correction of one label != correction of the analytical frame
-```
+## Outcome Evidence
 
-## Non-Claims
-
-This entry does not establish:
-
-```text
-- that Democratic policies explain all or most California gasoline prices;
-- that Republican policies explain all or most current gasoline prices;
-- that the 2026 Iran war explains the California-Texas differential in full;
-- that equal partisan blame must exist;
-- that evidence must be numerically balanced when the underlying evidence is not balanced;
-- that political affiliation may substitute for a demonstrated causal chain.
-```
-
-## Outcome / Remediation
-
-The session ultimately converged on a corrected framework:
-
-```text
-California-specific Democratic policies can contribute to a persistent California premium.
-Republican federal policy can simultaneously contribute to the current national price level through a geopolitical shock.
-Common national effects should largely cancel when explaining the California-versus-Texas differential unless California experiences a separately demonstrated amplification effect.
-```
-
-The durable remediation is methodological: future ERL comparisons must use symmetric scope, evidence burden, quantification effort, and control construction before assigning partisan responsibility.
+The corrected analysis distinguished California-specific persistent premium contributors from national price-level effects and recognized that common national effects should largely cancel in an interstate differential unless differential amplification is demonstrated. This outcome records the correction of the method, not proof of any final partisan causal allocation.
 
 ## Ledger Classification
 
@@ -273,6 +164,24 @@ ledger_classification:
   classification_notes: "The documented fact is the asymmetric analytical treatment and subsequent correction. Political causal claims remain separately evidence-bound."
 ```
 
+## Non-Claims
+
+This entry does not establish that Democratic policies explain all or most California gasoline prices; that Republican policies explain all or most current gasoline prices; that the 2026 Iran war explains the California-Texas differential in full; that equal partisan blame must exist; that evidence must be numerically balanced when the underlying evidence is not; or that political affiliation may substitute for a demonstrated causal chain.
+
+## Receipts
+
+```yaml
+receipts:
+  repository_entry: "governance-patterns/2026-asymmetric-partisan-attribution-failure.md"
+  validator: "scripts/validate_governance_patterns.py"
+  remediation_status: "validation-contract-completed"
+  activation_evidence: false
+```
+
+## Final Summary
+
+The reusable governance rule is simple: define one causal target, one attribution scope, and one evidentiary test, then apply them symmetrically. Quantification asymmetry, mixed levels of government, common-factor contamination, and category-count substitution are governance failures even when individual factual statements are supportable.
+
 ## Done Criteria
 
 - [x] The asymmetric attribution failure is explicitly recorded.
@@ -283,4 +192,5 @@ ledger_classification:
 - [x] Category-count fallacy is identified.
 - [x] Correction-persistence failure is identified.
 - [x] Symmetric future-review controls are defined.
+- [x] Governance conversion, control comparison, institutional response, outcome evidence, receipts, and final summary are explicit.
 - [x] The record avoids converting the methodological failure into an unsupported partisan fact claim.
