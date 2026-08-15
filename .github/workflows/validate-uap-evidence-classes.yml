@@ -1,0 +1,60 @@
+name: Validate UAP Evidence Classes
+
+on:
+  pull_request:
+    paths:
+      - 'assessments/uap-media/**'
+      - 'config/uap-evidence-classes.json'
+      - 'scripts/validate_uap_evidence_classes.py'
+      - '.github/workflows/validate-uap-evidence-classes.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assessments/uap-media/**'
+      - 'config/uap-evidence-classes.json'
+      - 'scripts/validate_uap_evidence_classes.py'
+      - '.github/workflows/validate-uap-evidence-classes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-uap-evidence-separation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate canonical tree
+        run: env -u GITHUB_TOKEN -u GH_TOKEN python scripts/validate_uap_evidence_classes.py
+      - name: Prove class mixing fails closed
+        shell: bash
+        run: |
+          set -euo pipefail
+          trap 'rm -f assessments/uap-media/evidence/official-records/__negative_probe.json' EXIT
+          cat > assessments/uap-media/evidence/official-records/__negative_probe.json <<'JSON'
+          {
+            "evidence_class": "secondary-reporting",
+            "source_id": "NEGATIVE-PROBE-ONLY"
+          }
+          JSON
+          set +e
+          env -u GITHUB_TOKEN -u GH_TOKEN python scripts/validate_uap_evidence_classes.py > /tmp/uap-negative-probe.log 2>&1
+          status=$?
+          set -e
+          cat /tmp/uap-negative-probe.log
+          if [ "$status" -eq 0 ]; then
+            echo 'Validator accepted an intentionally misfiled evidence object.' >&2
+            exit 1
+          fi
+          grep -q 'evidence_class mismatch' /tmp/uap-negative-probe.log
+      - name: Revalidate after negative probe cleanup
+        run: |
+          rm -f assessments/uap-media/evidence/official-records/__negative_probe.json
+          env -u GITHUB_TOKEN -u GH_TOKEN python scripts/validate_uap_evidence_classes.py
