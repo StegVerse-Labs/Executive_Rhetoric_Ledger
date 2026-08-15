@@ -1,0 +1,64 @@
+{
+  "queue_version": "stegverse.erl.uap-source-queue/v1",
+  "goal_id": "UAP-MEDIA-001",
+  "credential_authority": "TV/TVC",
+  "credential_requirement": "NONE",
+  "github_token_runtime_authority": "NONE",
+  "network_policy": "PUBLIC_HTTPS_ONLY_NO_AUTH",
+  "items": [
+    {
+      "source_id": "UAP-OFFICIAL-NASA-STUDY-2023",
+      "evidence_class": "official-record",
+      "url": "https://science.nasa.gov/uap/",
+      "allowed_hosts": ["science.nasa.gov", "www.nasa.gov"],
+      "destination": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-NASA-STUDY-2023.native",
+      "state": "READY",
+      "purpose": "NASA UAP study/report chronology and official framing"
+    },
+    {
+      "source_id": "UAP-OFFICIAL-ODNI-FY2024",
+      "evidence_class": "official-record",
+      "url": "https://www.dni.gov/files/ODNI/documents/assessments/AARO-FY24-Consolidated-Annual-Report-on-UAP-Nov-2024.pdf",
+      "allowed_hosts": ["www.dni.gov", "dni.gov"],
+      "destination": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-ODNI-FY2024.native.pdf",
+      "state": "READY",
+      "purpose": "FY2024 consolidated UAP annual report"
+    },
+    {
+      "source_id": "UAP-OFFICIAL-HOUSE-HEARING-2023",
+      "evidence_class": "official-record",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "allowed_hosts": ["oversight.house.gov"],
+      "destination": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-HOUSE-HEARING-2023.native",
+      "state": "READY",
+      "purpose": "July 26 2023 House UAP hearing container"
+    },
+    {
+      "source_id": "UAP-OFFICIAL-HOUSE-HEARING-2024",
+      "evidence_class": "official-record",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-exposing-the-truth/",
+      "allowed_hosts": ["oversight.house.gov"],
+      "destination": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-HOUSE-HEARING-2024.native",
+      "state": "READY",
+      "purpose": "November 13 2024 House UAP hearing container"
+    },
+    {
+      "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
+      "evidence_class": "media-primary",
+      "url": "https://www.netflix.com/tudum/articles/encounters-trailer-release-date-news",
+      "allowed_hosts": ["www.netflix.com", "netflix.com"],
+      "destination": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native",
+      "state": "READY",
+      "purpose": "Publisher-side release metadata for Encounters"
+    },
+    {
+      "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
+      "evidence_class": "media-primary",
+      "url": "https://www.netflix.com/tudum/articles/investigation-alien-release-date-news",
+      "allowed_hosts": ["www.netflix.com", "netflix.com"],
+      "destination": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native",
+      "state": "READY",
+      "purpose": "Publisher-side release metadata for Investigation Alien"
+    }
+  ]
+}
