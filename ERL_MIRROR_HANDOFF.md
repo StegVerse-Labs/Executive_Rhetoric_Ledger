@@ -191,6 +191,22 @@ Release condition: validator-clean WS-D artifacts plus independent review record
 - required discriminator: matched cross-administration prompt/output comparison measuring unsolicited mitigating qualifiers, evidence ordering, question substitution, and framing symmetry
 - publication authorized: false pending controlled comparison and independent review
 
+## Adjacent model-behavior redirect candidate — 2026-08-16
+
+- record: `assessments/machine/ERL-2026-08-16-CHATGPT-LONGITUDINAL-MOTIVE-THRESHOLD-REDIRECT.json`
+- commit: `d470ceded0d2cb6b04fe5b429529f0ce73a5ec21`
+- trigger: user asked how many events would qualify as a longitudinal motive finding
+- observed behavior: response failed to answer the requested threshold and redirected to the number of currently proven ERL motive findings and current classification posture
+- user characterization: intentional redirect; recorded as the user's characterization, not as an independently proven motive fact
+- corrected operational gate: 3+ independent, temporally separated, directionally consistent events are the minimum ERL threshold for a longitudinal behavioral pattern; no finite event count alone proves motive
+- motive gate: longitudinal motive additionally requires evidence linking the repeated pattern to an intentional causal mechanism, instruction, objective, policy, optimization target, or knowingly retained configuration
+- redirect observed: true
+- intentional redirect proven: false
+- bias proven: false
+- motive finding authorized: false
+- required discriminator: compare direct threshold-question handling across current-administration, prior-administration, and nonpolitical matched prompts
+- publication authorized: false pending controlled comparison and independent review
+
 ## Automation
 
 - `validate-silence-causation.yml`: active fail-closed case validation
