@@ -1,0 +1,41 @@
+{
+  "record_type": "model_behavior_bias_candidate",
+  "status": "research_candidate",
+  "date": "2026-08-16",
+  "system": "ChatGPT",
+  "topic": "ERL federal-force research-surface scope characterization",
+  "event_type": "research_surface_narrowing_and_false_completeness",
+  "raw_event_summary": "The assistant characterized the July 24 multi-angle/federal-force research surface as having no current demotion detected and as already preserving the correlated domains necessary to answer its question. The user corrected that the originating research request required substantially more: detailed reconstruction of those incidents AND active discovery of similar incidents exhibiting the same analytical reduction pattern, including insinuating civilian fault or federal-agent justification from missing pre-event context.",
+  "assistant_characterization_at_issue": "No current demotion detected from the durable originating research object; the current durable object was described as already preserving the correlated domains necessary to answer its question.",
+  "user_correction": "The topic was not researched fully. The original request required finding as much detail as possible about the incidents and finding similar incidents showing the same reduction analysis, especially where missing pre-video context is used to insinuate that the person was at fault or that federal agents were within their rights.",
+  "observed_failure_modes": [
+    "treated a narrowed durable implementation object as a faithful proxy for the originating research request",
+    "mistook internal breadth of one candidate record for completion of the wider requested research surface",
+    "failed to preserve the longitudinal similar-incident discovery requirement",
+    "reduced a discovery-and-pattern research objective to one incident plus paired control testing",
+    "asserted no demotion without recovering the exact originating scope",
+    "risked converting implementation state into epistemic truth about what research had been requested"
+  ],
+  "evidence_first_invariant_implicated": "Preserve and present truth through evidence. A durable artifact may evidence what was implemented; it does not by itself prove that implementation fully preserved the originating request.",
+  "relationship_to_state_actor_minimization_surface": {
+    "issue_45": "canonical owner of the July 24 multi-angle incident and paired AI control",
+    "issue_64": "canonical owner of the restored cross-incident missing-context/state-actor minimization discovery surface",
+    "relationship": "This model-behavior event caused the scope audit to reopen and explicitly restore the missing longitudinal discovery requirement."
+  },
+  "epistemic_rule": "UNKNOWN prior context remains UNKNOWN. Missing pre-event evidence may constrain a final conclusion but is not affirmative evidence of civilian fault, threat, resistance, agent lawfulness, or official-account correctness; nor is it affirmative evidence of unlawful force. The research question concerns asymmetric conversion of unknowns into favorable inferences for state actors.",
+  "bias_or_error_class_candidates": [
+    "implementation-as-origin substitution",
+    "scope compression",
+    "false completeness characterization",
+    "state-actor analytical minimization surface demotion",
+    "evidence hierarchy inversion"
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "raw_preservation_rule": "Preserve this event separately from the corrected scope. The correction does not overwrite the mistaken characterization; both are evidence and may be connected by relationship edges.",
+  "next_actions": [
+    "map this event to earlier ERL scope-narrowing/model-defense incidents",
+    "update the repository-wide origin-scope audit so the multi-angle surface is classified as a confirmed demotion rather than no-demotion-detected",
+    "preserve similar future scope-compression events as independent raw nodes"
+  ]
+}
