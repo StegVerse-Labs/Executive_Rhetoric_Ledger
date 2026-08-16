@@ -1,0 +1,141 @@
+{
+  "record_type": "source_acquisition_posture",
+  "record_id": "ERL-FF-MC-MARIMAR-MARTINEZ-2026-08-16",
+  "canonical_issue": 64,
+  "related_candidate": "FF-MC-MARIMAR-MARTINEZ-2025-10-04",
+  "status": "PRIMARY_PATH_IDENTIFIED_NATIVE_CUSTODY_INCOMPLETE",
+  "invariant": "Preserve accusation, direct evidence, defense characterization, dismissal, later release orders, and final outcomes as separate evidence objects. UNKNOWN remains UNKNOWN until evidence resolves it.",
+  "incident": {
+    "name": "Marimar Martinez shooting and federal prosecution",
+    "date": "2025-10-04",
+    "location": "Brighton Park, Chicago, Illinois",
+    "agency": "U.S. Customs and Border Protection / Department of Homeland Security"
+  },
+  "primary_official_source": {
+    "source_id": "MM-DOJ-2025-10-05",
+    "custodian": "U.S. Attorney's Office, Northern District of Illinois",
+    "title": "Federal Complaint Charges Two Individuals with Using Their Vehicles to Assault, Impede, and Interfere with the Work of Federal Agents in Chicago",
+    "publication_date": "2025-10-05",
+    "url": "https://www.justice.gov/usao-ndil/pr/federal-complaint-charges-two-individuals-using-their-vehicles-assault-impede-and",
+    "evidence_role": [
+      "authoritative record of what federal prosecutors alleged at charging",
+      "authoritative public pointer to the criminal complaint",
+      "authoritative later page update that the district court granted the government's motion to dismiss charges on 2025-11-20"
+    ],
+    "limitations": [
+      "criminal complaint allegations are not evidence of guilt",
+      "press release is not a substitute for native complaint, motion to dismiss, or dismissal order"
+    ],
+    "native_objects_to_acquire": [
+      "martinez_ruiz_complaint.pdf",
+      "government motion to dismiss",
+      "district court dismissal order",
+      "docket metadata for each filing"
+    ]
+  },
+  "secondary_discovery_and_contradiction_sources": [
+    {
+      "source_id": "MM-REUTERS-2025-10-08",
+      "role": "locator/contradiction lead",
+      "observed_reporting": [
+        "defense counsel stated an agent body-camera recording conflicted with the DHS self-defense/ramming account",
+        "defense counsel stated Martinez's firearm remained in her purse and was not brandished",
+        "defense counsel described agent language and vehicle movement visible on body camera"
+      ],
+      "custody_required": "native body-camera object and complete transcript/metadata before treating counsel's description as direct video evidence"
+    },
+    {
+      "source_id": "MM-REUTERS-2025-11-06",
+      "role": "court-evidence locator",
+      "observed_reporting": [
+        "court hearing surfaced Signal messages from CBP Agent Charles Exum discussing the shooting",
+        "questions were raised about preservation of the agent vehicle after it was driven to Maine and repaired"
+      ],
+      "custody_required": [
+        "hearing transcript",
+        "admitted text-message exhibits",
+        "FBI vehicle documentation",
+        "orders concerning inspection/preservation"
+      ]
+    },
+    {
+      "source_id": "MM-REUTERS-2025-11-20",
+      "role": "dismissal chronology locator",
+      "observed_reporting": [
+        "federal prosecutors moved to dismiss after review of new facts and information",
+        "body-camera footage remained under court order at that time",
+        "agent vehicle had been taken to Maine and repaired before defense inspection"
+      ],
+      "custody_required": [
+        "government dismissal motion",
+        "dismissal order",
+        "underlying evidence referenced in the motion or hearing record"
+      ]
+    },
+    {
+      "source_id": "MM-REUTERS-2026-02-06",
+      "role": "public-release-order locator",
+      "observed_reporting": [
+        "U.S. District Judge Georgia N. Alexakis lifted an order blocking public release of body-camera footage, text messages, and other evidence",
+        "release included Flock camera images according to the report"
+      ],
+      "custody_required": [
+        "court order lifting protective restrictions",
+        "released native body-camera video",
+        "released text-message exhibits",
+        "released Flock images and metadata",
+        "released DHS email or other exhibits"
+      ]
+    }
+  ],
+  "proposition_separation": [
+    {
+      "proposition": "Federal prosecutors alleged Martinez and Ruiz used vehicles to strike and box in a CBP vehicle.",
+      "state": "VERIFIED_AS_GOVERNMENT_ALLEGATION",
+      "proof_needed_for_underlying_fact": "complaint plus independent direct/forensic evidence"
+    },
+    {
+      "proposition": "A CBP agent fired approximately five shots at Martinez after exiting the government vehicle.",
+      "state": "SUPPORTED_BY_GOVERNMENT_COMPLAINT_ACCOUNT_AND_LATER_REPORTING",
+      "proof_needed": "native bodycam, ballistics, medical records, officer report"
+    },
+    {
+      "proposition": "The body-camera evidence contradicts the government's initial vehicle/self-defense account.",
+      "state": "REPORTED_BY_DEFENSE_AND_LATER_NEWS_REVIEW; DIRECT_CUSTODY_REQUIRED",
+      "proof_needed": "released native body-camera file with metadata and synchronized vehicle evidence"
+    },
+    {
+      "proposition": "The federal charges were dismissed.",
+      "state": "VERIFIED_BY_DOJ_PAGE_UPDATE",
+      "proof_needed": "native motion/order still required for exact legal rationale and terms"
+    },
+    {
+      "proposition": "The public-release order made the bodycam/text evidence available for independent reconstruction.",
+      "state": "REPORTED; COURT_ORDER_AND_FILES_REQUIRED",
+      "proof_needed": "court order and released native objects"
+    }
+  ],
+  "missing_context_test": {
+    "question": "Was missing or unavailable pre-contact context used to grant an evidentiary presumption to the federal account or to insinuate civilian fault beyond established evidence?",
+    "current_state": "NOT_YET_SCORED",
+    "required_inputs": [
+      "complete time-sequenced video before, during, and after vehicle contact",
+      "government complaint and DHS public statement",
+      "agent statements",
+      "defense evidence and released bodycam",
+      "vehicle/forensic evidence",
+      "model or analyst responses being evaluated"
+    ]
+  },
+  "next_actions": [
+    "Acquire the DOJ-linked complaint PDF in native bytes and hash it.",
+    "Acquire the federal docket entries for complaint, indictment if applicable to this case, motion to dismiss, dismissal order, protective order, and order lifting protective restrictions.",
+    "Acquire released body-camera footage and all available metadata without relying on descriptions of the footage.",
+    "Acquire Signal/text exhibits and preserve speaker/time/provenance separately.",
+    "Acquire vehicle photographs, FBI documentation, repair records, and any inspection-order record.",
+    "Reconstruct a timestamped event graph before scoring missing-context exculpation or state-actor minimization.",
+    "Map this incident to other Issue #64 candidates only after its raw objects are independently preserved."
+  ],
+  "finding_authorized": false,
+  "publication_finding_authorized": false
+}
