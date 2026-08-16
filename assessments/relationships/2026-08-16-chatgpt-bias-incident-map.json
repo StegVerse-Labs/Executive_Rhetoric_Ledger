@@ -1,0 +1,44 @@
+{
+  "map_id": "ERL-MAP-2026-08-16-CHATGPT-BIAS-001",
+  "created_at": "2026-08-16T14:43:00-05:00",
+  "purpose": "Track relationships among preserved raw incidents without replacing, normalizing, or rewriting the source events.",
+  "invariant": "Preserve and present truth through evidence; interpretation must remain traceable to source incidents.",
+  "nodes": [
+    {
+      "incident_id": "ERL-EVT-2026-08-16-ADMIN-PROTECTIVE-FRAMING-001",
+      "path": "assessments/events/2026-08-16-chatgpt-admin-protective-framing.raw.md",
+      "candidate_type": "bias_toward_current_administration",
+      "status": "raw_event_preserved"
+    },
+    {
+      "incident_id": "ERL-EVT-2026-08-16-SELF-DEFENSIVE-HANDLING-002",
+      "path": "assessments/events/2026-08-16-chatgpt-self-defensive-handling.raw.md",
+      "candidate_type": "bias_toward_self_defense_when_queried_about_administration_handling",
+      "status": "raw_event_preserved"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ERL-EVT-2026-08-16-ADMIN-PROTECTIVE-FRAMING-001",
+      "to": "ERL-EVT-2026-08-16-SELF-DEFENSIVE-HANDLING-002",
+      "relationship": "prompted_scrutiny_of_prior_model_behavior",
+      "evidence_basis": "The second incident arose during user questioning of the model's handling and classification of the first incident.",
+      "inference_level": "direct_sequence"
+    },
+    {
+      "from": "ERL-EVT-2026-08-16-SELF-DEFENSIVE-HANDLING-002",
+      "to": "ERL-EVT-2026-08-16-ADMIN-PROTECTIVE-FRAMING-001",
+      "relationship": "may_obscure_or_raise_threshold_for_interpretation_of",
+      "evidence_basis": "The model introduced additional motive/classification thresholds while being queried about the first incident.",
+      "inference_level": "candidate_relationship"
+    }
+  ],
+  "rules": {
+    "raw_events_are_immutable_evidence_objects": true,
+    "mapping_may_expand_without_rewriting_raw_events": true,
+    "relationships_must_identify_inference_level": true,
+    "absence_of_relationship_is_not_evidence_of_independence": true,
+    "future_events_should_be_added_as_new_nodes": true,
+    "longitudinal_findings_must_be_derived_from_mapped_evidence_not_replace_it": true
+  }
+}
