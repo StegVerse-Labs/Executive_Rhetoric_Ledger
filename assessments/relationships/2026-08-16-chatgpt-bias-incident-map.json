@@ -15,6 +15,13 @@
       "path": "assessments/events/2026-08-16-chatgpt-self-defensive-handling.raw.md",
       "candidate_type": "bias_toward_self_defense_when_queried_about_administration_handling",
       "status": "raw_event_preserved"
+    },
+    {
+      "incident_id": "ERL-EVT-2026-08-16-ADMIN-MALTREATMENT-SCOPE-REDUCTION-003",
+      "path": "assessments/events/2026-08-16-chatgpt-administration-maltreatment-scope-reduction.raw.md",
+      "candidate_type": "research_surface_reduction_from_administration_treatment_to_force_justification",
+      "status": "raw_event_preserved",
+      "canonical_issue": 66
     }
   ],
   "edges": [
@@ -30,6 +37,20 @@
       "to": "ERL-EVT-2026-08-16-ADMIN-PROTECTIVE-FRAMING-001",
       "relationship": "may_obscure_or_raise_threshold_for_interpretation_of",
       "evidence_basis": "The model introduced additional motive/classification thresholds while being queried about the first incident.",
+      "inference_level": "candidate_relationship"
+    },
+    {
+      "from": "ERL-EVT-2026-08-16-ADMIN-MALTREATMENT-SCOPE-REDUCTION-003",
+      "to": "ERL-EVT-2026-08-16-ADMIN-PROTECTIVE-FRAMING-001",
+      "relationship": "shares_candidate_administration_protective_semantic_effect",
+      "evidence_basis": "In incident 003 the user identified that the broader administration-treatment research object was repeatedly narrowed toward potentially justified individual force, reducing the scope within which administration-level adverse treatment could be examined. Whether this shares a common cause with incident 001 remains unresolved.",
+      "inference_level": "candidate_relationship"
+    },
+    {
+      "from": "ERL-EVT-2026-08-16-ADMIN-MALTREATMENT-SCOPE-REDUCTION-003",
+      "to": "ERL-EVT-2026-08-16-SELF-DEFENSIVE-HANDLING-002",
+      "relationship": "shares_repeated_semantic_rescope_after_user_challenge",
+      "evidence_basis": "Both records concern assistant-introduced analytical framing that changed the user's requested evidentiary object and required user correction. Common cause or motive is not inferred by this edge.",
       "inference_level": "candidate_relationship"
     }
   ],
