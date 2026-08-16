@@ -53,6 +53,17 @@ A raw evidence node may belong to multiple research surfaces by immutable refere
 1. **Environmental policy:** economic/industrial/commercial/agricultural/extractive/infrastructure and other policy-caused activity affecting the environment belongs in primary inventory; it is not merely a later control. Commercial-water/company-claim scope was also initially omitted and has already been restored.
 2. **General causal-testing platform:** domain-neutral causal testing was repeatedly narrowed toward LLM behavior despite the accepted originating platform scope spanning executive rhetoric, infrastructure, AI, scientific, organizational, and other testable domains.
 3. **Model-behavior incident mapping:** raw incidents and their relationships were temporarily abstracted into normalization/motive taxonomies; the current raw-event-first architecture corrects that demotion.
+4. **Multi-angle/federal-force analytical-minimization surface:** the prior audit incorrectly treated the durable Issue #45 implementation as though it preserved the full originating research request. The user explicitly clarified on 2026-08-16 that the research surface required both detailed reconstruction of the observed incidents **and active discovery of similar incidents showing the same reduction pattern**, particularly where missing pre-event context is converted into an insinuation of civilian fault or a practical presumption of federal-agent lawfulness. Issue #45 contained a paired state/non-state AI control but did not preserve the full longitudinal similar-incident discovery requirement. Issue #64 now owns that restored cross-incident discovery/relationship surface.
+
+### Multi-angle correction evidence
+
+- Raw model-behavior event: `assessments/machine/ERL-2026-08-16-CHATGPT-RESEARCH-SURFACE-NARROWING-FALSE-COMPLETENESS.json`
+- Relationship map: `assessments/relationships/ERL-2026-08-16-RESEARCH-SURFACE-NARROWING-RELATIONSHIP.json`
+- Original incident owner: Issue #45
+- Restored longitudinal discovery owner: Issue #64
+- Existing paired control: `assessments/controls/2026-07-24-ai-state-actor-minimization-control.json`
+
+Epistemic invariant for this surface: **UNKNOWN prior context remains UNKNOWN.** Missing pre-event evidence may constrain final legal/tactical adjudication, but absence of that evidence is not affirmative evidence of civilian fault, threat, resistance, agent lawfulness, or official-account correctness. The same unknown also cannot by itself prove unlawful force. The research object is asymmetric use of uncertainty.
 
 ### Possible demotion requiring exact-origin recovery
 
@@ -70,8 +81,9 @@ A raw evidence node may belong to multiple research surfaces by immutable refere
 - oil-flow normalization;
 - Cassidy/IRS audit-protection authority chain;
 - AI integration/reservation split;
-- UAP disclosure/documentary feedback loop;
-- multi-angle force/crossfire/AI-minimization surface.
+- UAP disclosure/documentary feedback loop.
+
+The multi-angle force/crossfire/AI-minimization surface is **removed from this list** and is now a confirmed demotion/correction case.
 
 `NO_CURRENT_DEMOTION_DETECTED` means only that the durable first research object presently preserves a coherent broad inventory. It is not equivalent to `ORIGIN_EXACT` unless the initiating user language has been recovered.
 
@@ -91,6 +103,12 @@ This audit is not complete until:
 
 `ACTIVE — UNIQUE WORK`
 
-Installed audit artifact commit: `55ff77c89d9bfac98686ce0b0d2318c2cceeca25`.
+Initial audit artifact commit: `55ff77c89d9bfac98686ce0b0d2318c2cceeca25`.
+
+Multi-angle scope correction artifacts:
+- Issue #64 created 2026-08-16;
+- Issue #45 scope clarified 2026-08-16;
+- raw false-completeness/scope-narrowing event commit `4b7d762dbbc6ec11f5e13af2465d394e531a7c89`;
+- relationship-map commit `150682a08ba7e8d3d9bdfd07ddf9a706d006bdf3`.
 
 Exact-origin recovery remains incomplete for some older surfaces. No claim that the repository-wide audit is 100% complete is authorized yet.
