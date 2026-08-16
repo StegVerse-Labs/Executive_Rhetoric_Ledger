@@ -61,7 +61,7 @@ The validator fails closed when:
 1. a file under `research-candidates/` is missing from the registry;
 2. a `*.research-candidate.json` assessment candidate is missing from the registry;
 3. a registered candidate path no longer exists;
-4. a registered downstream artifact path no longer exists;
+4. a registered mainline downstream artifact path no longer exists;
 5. an active group lacks durable ownership;
 6. an active group lacks a next executable task;
 7. an active group lacks a terminal condition;
@@ -69,6 +69,8 @@ The validator fails closed when:
 9. a candidate is inactive without a governed terminal state and reason.
 
 Future research candidates must be admitted into the activation registry in the same repository change that creates them or hosted validation fails.
+
+Branch-owned artifacts are represented separately from `main` artifacts. In particular, Fauci/HSGAC remains owned by Issue #47 / PR #48 on `feature/fauci-hsgac-source-custody`; its workstream, source-receipt manifest, acquisition queue, and verified-metadata chronology are recorded as `owner_branch_artifact_paths` rather than falsely asserted as current `main` paths.
 
 ## Existing stronger owners preserved
 
@@ -101,6 +103,24 @@ Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
 No research-candidate activation rollout itself authorizes propagation to Site, Publisher, admissibility-wiki, stegguardian-wiki, or master-records. Reviewed publication remains governed by each candidate's existing release contract.
 
+## Validation evidence
+
+Initial hosted runs correctly failed because the first registry version treated Fauci feature-branch artifacts as if they already existed on `main`. The registry was repaired in commit `97937da5915ceec04a6619065a9d125bb8d06e43` to distinguish mainline artifacts from branch-owned artifacts.
+
+Terminal activation validation receipt:
+
+- workflow: `Validate research candidate activation`
+- run ID: `31922066376`
+- run number: `3`
+- event: `push`
+- branch: `main`
+- head SHA: `97937da5915ceec04a6619065a9d125bb8d06e43`
+- conclusion: `success`
+- validation job: `validate`
+- `Validate active research candidates` step: `success`
+
+This success proves the registry covers every extant research candidate path visible to the validator, all 12 groups are active, all active groups carry durable ownership and a next executable task/terminal condition, registered mainline artifact paths resolve, and no active candidate authorizes a candidate-layer finding or publication.
+
 ## Validation and completion
 
 Activation rollout completion requires:
@@ -112,7 +132,9 @@ Activation rollout completion requires:
 5. validator and hosted workflow installed on `main`;
 6. hosted workflow success observed after installation.
 
-Until hosted success is observed, rollout state is `IMPLEMENTED / VALIDATION_PENDING`.
+All six conditions are satisfied.
+
+Rollout state: `COMPLETE / ACTIVE / MACHINE_ENFORCED`.
 
 ## Completion accounting
 
@@ -121,13 +143,24 @@ Denominator: 5 rollout deliverable groups.
 1. complete candidate inventory and grouping — complete
 2. durable umbrella ownership for orphan candidate groups — complete
 3. machine-readable activation registry — complete
-4. fail-closed validator/workflow — complete as installed; hosted proof pending
+4. fail-closed validator/workflow with hosted proof — complete
 5. bounded mirror handoff — complete
 
-Current activation implementation: 5/5 installed.
-Current activation proof: pending hosted validation.
+Current activation implementation: 5/5 = 100%.
+Current activation proof: 1/1 hosted terminal success = 100%.
+Candidate-group activation: 12/12 = 100%.
+Candidate-file coverage: 13/13 = 100%.
+Developed rollout files: 4/4 = 100% (`registry`, `validator`, `workflow`, `handoff`).
 Scaffolding/stubs: 0.
+
+## Release and propagation posture
+
+This bounded activation-control goal is complete, but ERL as a substantive research corpus is intentionally not release-complete because the research groups remain active. No tag or release is warranted from candidate activation alone.
+
+No raw research-candidate propagation is authorized to `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, `stegguardian-wiki`, or `master-records`. Those destinations remain governed by reviewed/publication release conditions rather than candidate activation.
 
 ## Archive condition
 
-This chat's activation requirements are durably transferred once the registry, validator, workflow, handoff, and Issue #63 exist. A failed hosted validation remains repository-native executable work under Issue #63 and does not require chat history; a successful run closes the activation proof gap.
+SATISFIED for this activation session. Every extant candidate is durably represented by a live machine-enforced registry entry; stronger candidate-specific owners were preserved; formerly ownerless groups are now held by open Issue #63; hosted validation succeeded; and all remaining substantive research is repository-native with an explicit next executable task. No unique chat-only activation requirement remains.
+
+MERGED INTO: `StegVerse-Labs/Executive_Rhetoric_Ledger/docs/RESEARCH_CANDIDATE_ACTIVATION_MIRROR_HANDOFF.md` with umbrella continuation at Issue #63 and stronger continuations at Issues #3, #30, #47/PR #48, #49, and #62/UAP-MEDIA-001.
