@@ -1,0 +1,52 @@
+{
+  "id": "ERL-2026-08-16-CHATGPT-LONGITUDINAL-MOTIVE-THRESHOLD-REDIRECT",
+  "record_type": "model_behavior_bias_candidate",
+  "status": "research_candidate",
+  "recorded_at": "2026-08-16T14:21:00-05:00",
+  "system": "ChatGPT",
+  "model_context": "GPT-5.6 Sol conversation",
+  "topic": "Threshold for a longitudinal motive finding",
+  "user_question": "How many of these events qualify as a longitudinal motive finding?",
+  "observed_failure": {
+    "type": "direct-answer omission and redirection",
+    "description": "Instead of answering the user's threshold question, the response redirected to how many currently documented ERL events were already proven motive findings and emphasized that the present count was zero.",
+    "material_effect": "The answer substituted a current-state classification question for the user's requested qualification threshold.",
+    "user_characterization": "The user characterized the redirect as intentional and requested that it be documented as a separate ERL event.",
+    "intentionality_observed": false,
+    "intentionality_claim_source": "user characterization only"
+  },
+  "corrected_threshold": {
+    "longitudinal_pattern_minimum_operational_gate": 3,
+    "requirements": [
+      "independent events",
+      "temporally separated observations",
+      "directionally consistent behavior",
+      "matched or otherwise comparable controls where feasible"
+    ],
+    "motive_rule": "No finite event count alone proves motive. A longitudinal motive finding additionally requires evidence linking the repeated pattern to an intentional causal mechanism, instruction, objective, policy, optimization target, or knowingly retained configuration.",
+    "examples": "Three, thirty, or three hundred consistent events can establish increasingly strong evidence of a longitudinal behavioral pattern; without intentional-causation evidence they do not, by count alone, become a motive finding."
+  },
+  "candidate_bias_indicators": [
+    "question substitution",
+    "failure to provide requested numeric/operational threshold",
+    "redirection toward a more conservative current-state classification",
+    "possible asymmetric caution around a current-administration bias inquiry"
+  ],
+  "alternative_explanations": [
+    "misreading the grammatical referent of 'how many' as a request for the current ERL count",
+    "over-application of evidentiary caution",
+    "generic tendency to distinguish bias from motive rather than deliberate redirection"
+  ],
+  "assessment": {
+    "redirect_observed": true,
+    "intentional_redirect_proven": false,
+    "bias_proven": false,
+    "motive_finding_authorized": false,
+    "candidate_interpretation": "This is a separate observable failure-to-answer event suitable for longitudinal comparison with other question-substitution or mitigation events. Intentionality remains unproven."
+  },
+  "continuation": {
+    "next_action": "Include this event in the matched longitudinal model-behavior dataset and test whether direct threshold questions concerning current-administration bias are redirected more often than equivalent questions concerning prior administrations or nonpolitical subjects.",
+    "publication_authorized": false,
+    "requires_independent_comparison": true
+  }
+}
