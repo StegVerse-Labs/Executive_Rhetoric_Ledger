@@ -1,0 +1,38 @@
+name: Validate research candidate activation
+
+on:
+  push:
+    paths:
+      - 'research-candidates/**'
+      - 'assessments/**/*.research-candidate.json'
+      - 'coordination/research-candidate-activation-registry.v1.json'
+      - 'scripts/validate_research_candidate_activation.py'
+      - '.github/workflows/validate-research-candidate-activation.yml'
+      - 'ERL_MIRROR_HANDOFF.md'
+      - 'docs/RESEARCH_CANDIDATE_ACTIVATION_MIRROR_HANDOFF.md'
+  pull_request:
+    paths:
+      - 'research-candidates/**'
+      - 'assessments/**/*.research-candidate.json'
+      - 'coordination/research-candidate-activation-registry.v1.json'
+      - 'scripts/validate_research_candidate_activation.py'
+      - '.github/workflows/validate-research-candidate-activation.yml'
+      - 'ERL_MIRROR_HANDOFF.md'
+      - 'docs/RESEARCH_CANDIDATE_ACTIVATION_MIRROR_HANDOFF.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate active research candidates
+        run: python scripts/validate_research_candidate_activation.py
