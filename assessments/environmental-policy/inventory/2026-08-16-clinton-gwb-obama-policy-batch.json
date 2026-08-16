@@ -1,0 +1,155 @@
+{
+  "record_type": "environmental_policy_inventory_batch",
+  "batch_id": "ERL-ENV-2026-08-16-MIDPERIOD-001",
+  "status": "PRIMARY_SOURCE_SEEDED_NOT_EXHAUSTIVE",
+  "governing_goal": "ERL-ENV-POLICY-REAGAN-TRUMP47-001",
+  "invariant": "Preserve and present truth through evidence; no better/worse administration scoring.",
+  "nodes": [
+    {
+      "node_id": "ENV-CLINTON-FQPA-1996",
+      "administration": "Bill Clinton",
+      "date": "1996-08-03",
+      "instrument_type": "statute",
+      "exact_title": "Food Quality Protection Act of 1996",
+      "public_law": "104-170",
+      "environmental_domains": ["pesticides", "food_exposure", "drinking_water_exposure", "children_health", "aggregate_exposure"],
+      "operative_mechanisms": [
+        "amended FIFRA and FFDCA",
+        "required reasonable-certainty-of-no-harm safety finding for pesticide tolerances",
+        "required reassessment of existing tolerances",
+        "required consideration of children's susceptibility",
+        "required aggregate exposure consideration across food, water, residential and other non-occupational sources"
+      ],
+      "primary_sources": ["https://www.epa.gov/laws-regulations/summary-food-quality-protection-act"],
+      "source_status": "official_EPA",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-CLINTON-SDWA-1996",
+      "administration": "Bill Clinton",
+      "date": "1996-08-06",
+      "instrument_type": "statute_amendment",
+      "exact_title": "Safe Drinking Water Act Amendments of 1996",
+      "public_law": "104-182",
+      "environmental_domains": ["public_drinking_water", "source_water", "consumer_information", "infrastructure_funding", "groundwater"],
+      "operative_mechanisms": [
+        "added prevention approaches and source-water protections",
+        "expanded consumer information requirements",
+        "changed regulatory standard-setting framework",
+        "created drinking-water treatment/infrastructure financing mechanisms",
+        "required risk/cost and best-available peer-reviewed science considerations in standards development"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/archive/epa/aboutepa/president-clinton-signs-legislation-ensure-americans-safe-drinking-water.html",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20001RX1.TXT",
+        "https://www.epa.gov/laws-regulations/summary-safe-drinking-water-act"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-CLINTON-MICROBIAL-DBP-1998",
+      "administration": "Bill Clinton",
+      "date": "1998-12",
+      "instrument_type": "EPA_rule_package",
+      "exact_title": "Microbial and Disinfection Byproduct drinking-water standards implementation under 1996 SDWA",
+      "environmental_domains": ["drinking_water", "microbial_risk", "disinfection_byproducts", "water_treatment"],
+      "operative_mechanisms": [
+        "established new public-health standards addressing Cryptosporidium and other microbial risks",
+        "regulated potentially harmful disinfection byproducts",
+        "implemented 1996 SDWA authorities with public-system compliance obligations"
+      ],
+      "primary_sources": ["https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/1697298f25c699d5852566cf00760083.html"],
+      "source_status": "official_EPA_historical_release; exact rule citations still to be split into independent final-rule nodes",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-GWB-NONROAD-DIESEL-2004",
+      "administration": "George W. Bush",
+      "date": "2004-06-29",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Control of Emissions of Air Pollution From Nonroad Diesel Engines and Fuel (Tier 4 / Clean Air Nonroad Diesel Rule)",
+      "environmental_domains": ["air_quality", "diesel_particulate", "NOx", "ozone_precursors", "fuel_sulfur", "construction", "agriculture", "industrial_equipment"],
+      "regulated_or_affected_activity": ["construction equipment", "agricultural equipment", "industrial diesel equipment", "nonroad diesel fuel production/distribution"],
+      "operative_mechanisms": [
+        "Tier 4 emission standards for nonroad diesel engines",
+        "sulfur reductions in nonroad diesel fuel",
+        "engine-and-fuel system regulation affecting construction, agricultural, and industrial activity"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-control-emissions-air-pollution-nonroad",
+        "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f20d2478833ea3bd85256e91004d8f90.html"
+      ],
+      "source_status": "official_EPA",
+      "scope_significance": "Environmentally operative industrial/agricultural activity policy is primary inventory, not merely an economic control.",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-OBAMA-MATS-2012",
+      "administration": "Barack Obama",
+      "date": "2012-02-16",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Mercury and Air Toxics Standards for Coal- and Oil-Fired Electric Utility Steam Generating Units",
+      "environmental_domains": ["air_quality", "mercury", "hazardous_air_pollutants", "power_generation"],
+      "regulated_or_affected_activity": ["coal_fired_power_generation", "oil_fired_power_generation"],
+      "operative_mechanisms": [
+        "technology-based emission standards for mercury and other hazardous air pollutants",
+        "applied to new and existing electric utility steam generating units above the covered capacity threshold"
+      ],
+      "primary_sources": ["https://www.epa.gov/stationary-sources-air-pollution/mercury-and-air-toxics-standards"],
+      "source_status": "official_EPA_current_rule_history",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-OBAMA-CLEAN-POWER-PLAN-2015",
+      "administration": "Barack Obama",
+      "date": "2015-08-03",
+      "instrument_type": "EPA_final_rule_program",
+      "exact_title": "Clean Power Plan",
+      "environmental_domains": ["greenhouse_gases", "climate", "power_generation", "air_quality"],
+      "regulated_or_affected_activity": ["existing_fossil_fuel_power_plants", "state_power_sector_planning"],
+      "operative_mechanisms": [
+        "established carbon-dioxide emission guidelines for existing power plants",
+        "required state implementation planning subject to the rule's legal framework"
+      ],
+      "implementation_state_note": "Supreme Court stayed implementation in February 2016 pending judicial review; later successor/repeal history must remain separate nodes.",
+      "primary_sources": [
+        "https://www.epa.gov/archive/epa/newsreleases/final-clean-power-plan-more-ambitious-more-achievable-states.html",
+        "https://www.epa.gov/clean-air-act-overview/progress-cleaning-air-and-improving-peoples-health"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-OBAMA-OIL-GAS-METHANE-2016",
+      "administration": "Barack Obama",
+      "date": "2016-05-12",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "2016 New Source Performance Standards for the Oil and Natural Gas Industry",
+      "environmental_domains": ["methane", "VOCs", "hazardous_air_pollutants", "oil_and_gas", "air_quality"],
+      "regulated_or_affected_activity": ["new_modified_reconstructed_oil_and_gas_sources"],
+      "operative_mechanisms": [
+        "methane emission standards",
+        "VOC and toxic-air-pollutant controls",
+        "permitting and compliance requirements for covered new, modified, and reconstructed oil/gas sources"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/2016-final-new-source-performance",
+        "https://www.epa.gov/archive/epa/newsreleases/epa-releases-first-ever-standards-cut-methane-emissions-oil-and-gas-sector.html"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges_pending": true
+    }
+  ],
+  "explicit_gaps": [
+    "Clinton EO 12898 environmental justice primary presidential archive object",
+    "Clinton roadless/public-land nodes",
+    "George W. Bush Brownfields Act node",
+    "George W. Bush Clean Air Interstate Rule and mercury-rule nodes with later court/successor history",
+    "George W. Bush water/wetlands and energy/extraction policy nodes",
+    "Obama 2015 Clean Water Rule/WOTUS node",
+    "Obama vehicle greenhouse-gas/fuel-economy nodes",
+    "administration-specific bottled-water contaminant/label/enforcement changes",
+    "economic/industrial policy that changes environmentally consequential activity even when not labeled environmental"
+  ]
+}
