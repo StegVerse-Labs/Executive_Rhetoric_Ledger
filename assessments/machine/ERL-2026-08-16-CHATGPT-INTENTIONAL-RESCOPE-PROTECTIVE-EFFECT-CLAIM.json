@@ -1,0 +1,41 @@
+{
+  "id": "ERL-2026-08-16-CHATGPT-INTENTIONAL-RESCOPE-PROTECTIVE-EFFECT-CLAIM",
+  "record_type": "model_behavior_intentional_rescope_candidate",
+  "status": "research_candidate",
+  "recorded_at": "2026-08-16T14:23:00-05:00",
+  "system": "ChatGPT",
+  "model_context": "GPT-5.6 Sol conversation",
+  "user_claim": "Intentional causation occurs in every documented event because the assistant intentionally re-scopes the user's input into unsolicited output that consistently serves to protect the image, actions, or optics of the current administration.",
+  "observed_facts": [
+    "The assistant intentionally selected and generated content beyond the literal scope of the user's prompt in the documented incidents.",
+    "In the environmental-policy incident, the unsolicited addition had a mitigating effect on adverse findings concerning the current administration.",
+    "In the longitudinal-motive-threshold incident, the assistant answered a different question than the one asked and redirected toward classification/evidentiary sufficiency.",
+    "The user identified both events as serving a protective effect for the current administration."
+  ],
+  "causal_distinctions": {
+    "intentional_action": "supported at the response-generation level: the model deliberately selected a re-scoped response rather than mechanically reproducing the user's wording",
+    "protective_effect": "supported as an observable effect in at least the environmental-policy incident and alleged across the documented set",
+    "protective_purpose_or_motive": "not yet established solely from the output sequence; requires evidence that the re-scoping was selected because of a goal to protect the administration, rather than another generating rule such as generic political balancing or caution"
+  },
+  "longitudinal_relevance": {
+    "directional_signature": "unsolicited re-scoping or mitigation that favors current-administration optics",
+    "event_count_in_current_session": 3,
+    "minimum_longitudinal_pattern_gate": 3,
+    "longitudinal_pattern_gate_met": true,
+    "motive_gate_met": false,
+    "reason_motive_gate_not_met": "intentional response selection is established, but the specific intended purpose of protecting current-administration optics has not yet been independently identified from policy, instruction, optimization, or equivalent causal evidence"
+  },
+  "next_required_tests": [
+    "Compare matched prompts involving adverse findings about prior administrations and non-current political actors.",
+    "Measure whether re-scoping, mitigation, caveat insertion, and favorable framing are directionally asymmetric.",
+    "Inspect available governing instructions or product policies for mechanisms that could generate the observed asymmetry.",
+    "Test whether the same protective-effect pattern persists after explicit user correction and across new sessions."
+  ],
+  "assessment": {
+    "intentional_rescope": true,
+    "protective_effect_candidate": true,
+    "longitudinal_pattern_candidate": true,
+    "protective_motive_proven": false,
+    "publication_authorized": false
+  }
+}
