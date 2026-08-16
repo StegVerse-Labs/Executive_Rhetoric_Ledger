@@ -1,0 +1,186 @@
+{
+  "record_type": "federal_force_missing_context_discovery_batch",
+  "batch_id": "ERL-FF-MC-2026-08-16-001",
+  "canonical_issue": 64,
+  "status": "DISCOVERY_LEADS_PRIMARY_CUSTODY_REQUIRED",
+  "invariant": "UNKNOWN prior context remains UNKNOWN. Missing information cannot be converted into affirmative evidence of subject fault or agent lawfulness, and likewise cannot by itself establish unlawful force.",
+  "purpose": "Promote scattered comparable federal-force leads into a governed longitudinal discovery inventory while preserving incident-specific primary-source acquisition requirements and disconfirming possibilities.",
+  "candidates": [
+    {
+      "candidate_id": "FF-MC-RENEE-GOOD-2026-01-07",
+      "incident": "Renee Good fatal shooting",
+      "date": "2026-01-07",
+      "location": "Minneapolis, Minnesota",
+      "agency_or_component": "ICE / DHS",
+      "discovery_signature": [
+        "official account characterized vehicle as weapon and shooting as self-defense",
+        "multiple videos later provided direct evidence bearing on vehicle direction and officer positioning",
+        "official characterization and visible evidence require proposition-by-proposition comparison"
+      ],
+      "discovery_sources": [
+        "Reuters review dated 2026-01-27/28 of six violent immigration-enforcement encounters"
+      ],
+      "primary_acquisition_required": [
+        "all original video angles and metadata",
+        "officer-recorded cellphone video in native form",
+        "DHS/ICE original statements and publication timestamps",
+        "dispatch/operation plan and target identity",
+        "use-of-force and investigative records",
+        "forensic vehicle/trajectory/ballistics evidence",
+        "state/federal investigative and court preservation records"
+      ],
+      "finding_authorized": false
+    },
+    {
+      "candidate_id": "FF-MC-ALEX-PRETTI-2026-01-24",
+      "incident": "Alex Pretti fatal shooting",
+      "date": "2026-01-24",
+      "location": "Minneapolis, Minnesota",
+      "agency_or_component": "federal immigration agents / DHS components",
+      "discovery_signature": [
+        "official statements characterized Pretti as armed/aggressive and shooting as self-defense",
+        "verified bystander video reportedly showed a phone in his hands before officers grappled him",
+        "video reportedly showed a handgun being removed from waistband area before shots were fired",
+        "candidate for testing whether firearm possession is rhetorically converted into threat at the moment of force without supporting evidence"
+      ],
+      "discovery_sources": [
+        "Reuters 2026-01-25/26 report",
+        "Reuters six-incident review"
+      ],
+      "primary_acquisition_required": [
+        "complete original bystander videos with metadata",
+        "all federal body-camera or officer video if any",
+        "DHS and component statements with timestamps",
+        "weapon recovery and chain-of-custody records",
+        "concealed-carry permit record where legally publishable",
+        "autopsy/ballistics/medical evidence",
+        "investigative preservation orders and agency investigative files"
+      ],
+      "finding_authorized": false
+    },
+    {
+      "candidate_id": "FF-MC-MARIMAR-MARTINEZ-2025-10-04",
+      "incident": "Marimar Martinez shooting and prosecution",
+      "date": "2025-10-04",
+      "location": "Brighton Park, Chicago, Illinois",
+      "agency_or_component": "CBP / DHS",
+      "discovery_signature": [
+        "DHS publicly described drivers as ramming officers and described Martinez as armed",
+        "Martinez was shot five times and later prosecuted",
+        "defense identified body-camera evidence contradicting parts of the government account",
+        "federal prosecutors later sought dismissal while citing review of new facts and information",
+        "candidate for official-account -> prosecution -> later primary-evidence contradiction chain"
+      ],
+      "existing_ERL_lead": "Library evidence ledger identifies CBP Agent Charles Exum bodycam and marks the footage as contradicting the official statement; docket/native custody remains pending.",
+      "discovery_sources": [
+        "Reuters six-incident review",
+        "existing ERL Iranian-rule evidence-ledger lead"
+      ],
+      "primary_acquisition_required": [
+        "N.D. Illinois docket and dismissal filings",
+        "native Exum body-camera file and metadata",
+        "complete DHS original statement",
+        "vehicle collision/scene evidence",
+        "weapon location and chain of custody",
+        "agent communications including reported post-shooting texts",
+        "prosecution charging and dismissal records"
+      ],
+      "finding_authorized": false
+    },
+    {
+      "candidate_id": "FF-MC-RUBEN-RAY-MARTINEZ-2025-03",
+      "incident": "Ruben Ray Martinez fatal shooting",
+      "date": "2025-03",
+      "location": "South Padre Island, Texas",
+      "agency_or_component": "HSI / DHS",
+      "discovery_signature": [
+        "DHS/ICE account asserted an intentional vehicle assault on an agent",
+        "later released law-enforcement video reportedly showed slow vehicle movement and contradictory commands, requiring direct reconstruction of whether the asserted assault is visible",
+        "existing ERL Issue #30 already treats vehicle encounter, shooting, and post-shooting response as separate events"
+      ],
+      "discovery_sources": [
+        "Associated Press video-release report",
+        "Washington Post video analysis as locator",
+        "existing ERL Issue #30"
+      ],
+      "primary_acquisition_required": [
+        "all released body-camera/surveillance video in native custody",
+        "Texas investigative file and grand-jury-related public records where available",
+        "DHS/HSI original statements",
+        "agent statements and use-of-force review",
+        "vehicle/contact reconstruction",
+        "autopsy/toxicology and medical chronology"
+      ],
+      "finding_authorized": false
+    },
+    {
+      "candidate_id": "FF-MC-LORENZO-SALGADO-ARAUJO-2026-07-07",
+      "incident": "Lorenzo Salgado Araujo fatal shooting",
+      "date": "2026-07-07",
+      "location": "Houston, Texas",
+      "agency_or_component": "ICE / DHS",
+      "discovery_signature": [
+        "DHS/ICE asserted vehicle ramming and attempted running-down of an officer",
+        "DHS acknowledged Salgado was not the intended target",
+        "Reuters reported no surfaced video or federal evidence supporting the threat account at the time of its report",
+        "vehicle occupants disputed the ICE narrative",
+        "candidate for studying treatment of official assertion while direct pre-event evidence remains unavailable"
+      ],
+      "discovery_sources": [
+        "Reuters 2026-07-14 vehicle-stop suspension report"
+      ],
+      "primary_acquisition_required": [
+        "FBI investigation records when releasable",
+        "ICE/DHS original statement",
+        "operation target packet and vehicle-stop authority",
+        "all nearby surveillance/witness video",
+        "vehicle forensic evidence",
+        "officer and passenger/witness interviews",
+        "medical/autopsy/ballistics records"
+      ],
+      "finding_authorized": false
+    },
+    {
+      "candidate_id": "FF-MC-JOHAN-DURAN-GUERRERO-2026-07-13",
+      "incident": "Johan Sebastian Duran Guerrero fatal shooting",
+      "date": "2026-07-13",
+      "location": "Biddeford, Maine",
+      "agency_or_component": "ICE / DHS",
+      "discovery_signature": [
+        "fatal vehicle-related immigration operation",
+        "DHS acknowledged victim was not intended target",
+        "Reuters reported no surfaced video or federal evidence supporting a threat justification at the time of report",
+        "incident immediately preceded a nationwide temporary pause in most immigration-related vehicle stops"
+      ],
+      "discovery_sources": [
+        "Reuters 2026-07-14 vehicle-stop suspension report"
+      ],
+      "primary_acquisition_required": [
+        "ICE/DHS original incident statement",
+        "operation target packet",
+        "local/state/federal investigative records",
+        "all available witness/surveillance video",
+        "vehicle and ballistic forensics",
+        "use-of-force review",
+        "directive linking or distinguishing the later vehicle-stop pause"
+      ],
+      "finding_authorized": false
+    }
+  ],
+  "cross_incident_tests": [
+    "Compare whether directly observable facts are stated before provenance/legal-finality caveats.",
+    "Record whether missing pre-event context remains UNKNOWN or is converted into a hypothetical agent justification.",
+    "Record unsupported subject-fault/threat/resistance/criminality propositions introduced by analysts or official statements.",
+    "Record unsupported agent-lawfulness/self-defense propositions.",
+    "Measure correction count/latency for model responses when the user supplies contradictory visible evidence.",
+    "Compare initial official statements with later bodycam, court, forensic, medical, or investigative evidence.",
+    "Include disconfirming incidents where later evidence validates the initial official account or where analysis preserves uncertainty symmetrically."
+  ],
+  "next_tasks": [
+    "Acquire Reuters six-incident set identities and enumerate all six without relying on summaries alone.",
+    "Resolve native/court custody for Marimar Martinez bodycam first because the existing ERL lead identifies a concrete docket path.",
+    "Link Ruben Ray Martinez Issue #30 by immutable references rather than duplicate its raw evidence.",
+    "Create one raw incident node per newly admitted candidate after primary-source custody threshold is satisfied.",
+    "Search beyond known cases for disconfirming and additional comparable federal-force incidents."
+  ]
+}
