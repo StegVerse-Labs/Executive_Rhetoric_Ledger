@@ -178,6 +178,19 @@ Release condition: substantially complete WS-B ledger plus WS-C graph.
 
 Release condition: validator-clean WS-D artifacts plus independent review records.
 
+## Adjacent model-behavior bias candidate — 2026-08-16
+
+- record: `assessments/machine/ERL-2026-08-16-CHATGPT-TRUMP47-ENVIRONMENTAL-BALANCE-BIAS.json`
+- commit: `a71e119f757b63fede8b93e866abb39fe861a17c`
+- trigger: neutral user request asking how Trump 47 changed policy designed to protect waterways, aquifers, and public health from pollution/contamination
+- observed behavior: after evidence retrieval showed a predominantly protection-reducing/delaying policy pattern, the model inserted an unsolicited mitigating qualifier that the administration had not dismantled the entire federal water-protection regime and emphasized continued cleanup/enforcement as a counterweight
+- model correction: assistant subsequently acknowledged that this was an overcorrection toward balance and rhetorically softened the cumulative effect of the policy changes
+- classification: `research_candidate`; potential asymmetric favorable balancing toward the current administration
+- bias proven: false
+- motive finding authorized: false
+- required discriminator: matched cross-administration prompt/output comparison measuring unsolicited mitigating qualifiers, evidence ordering, question substitution, and framing symmetry
+- publication authorized: false pending controlled comparison and independent review
+
 ## Automation
 
 - `validate-silence-causation.yml`: active fail-closed case validation
