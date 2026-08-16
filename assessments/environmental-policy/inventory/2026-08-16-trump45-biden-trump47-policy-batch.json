@@ -1,0 +1,243 @@
+{
+  "record_type": "environmental_policy_inventory_batch",
+  "batch_id": "ERL-ENV-2026-08-16-LATEPERIOD-001",
+  "status": "PRIMARY_SOURCE_SEEDED_NOT_EXHAUSTIVE",
+  "governing_goal": "ERL-ENV-POLICY-REAGAN-TRUMP47-001",
+  "invariant": "Preserve and present truth through evidence; proposed, final, judicially vacated, delayed, and superseded states remain distinct.",
+  "nodes": [
+    {
+      "node_id": "ENV-TRUMP45-WOTUS-REPEAL-2019",
+      "administration": "Donald Trump (45)",
+      "date": "2019-10-22",
+      "instrument_type": "EPA_Army_final_rule",
+      "exact_title": "Definition of Waters of the United States - Recodification of Pre-Existing Rules (2019 Repeal Rule)",
+      "environmental_domains": ["surface_water", "wetlands", "Clean_Water_Act_jurisdiction", "permitting"],
+      "operative_mechanisms": [
+        "repealed the 2015 Clean Water Rule",
+        "recodified pre-2015 regulatory text pending a replacement definition"
+      ],
+      "primary_sources": ["https://www.epa.gov/wotus/2019-repeal-rule"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["REPEALS:2015_CLEAN_WATER_RULE", "PRECEDES:2020_NWPR"]
+    },
+    {
+      "node_id": "ENV-TRUMP45-NWPR-2020",
+      "administration": "Donald Trump (45)",
+      "date": "2020-04-21",
+      "effective_date": "2020-06-22",
+      "instrument_type": "EPA_Army_final_rule",
+      "exact_title": "Navigable Waters Protection Rule: Definition of Waters of the United States",
+      "environmental_domains": ["surface_water", "wetlands", "Clean_Water_Act_jurisdiction", "agriculture", "land_development", "infrastructure"],
+      "operative_mechanisms": [
+        "redefined waters subject to federal Clean Water Act jurisdiction",
+        "changed the jurisdictional boundary used by multiple Clean Water Act programs"
+      ],
+      "lifecycle": [
+        "effective 2020-06-22",
+        "vacated by federal district courts in 2021",
+        "replaced in CFR by 2023 rule as amended"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/wotus/final-rule-navigable-waters-protection-rule",
+        "https://www.epa.gov/wotus/navigable-waters-protection-rule-supporting-documents"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges": ["REPLACES:2019_REPEAL_RULE", "VACATED_BY_COURT:2021", "SUPERSEDED_BY:2023_WOTUS"]
+    },
+    {
+      "node_id": "ENV-TRUMP45-ACE-2019",
+      "administration": "Donald Trump (45)",
+      "date": "2019-06-19",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Affordable Clean Energy Rule",
+      "environmental_domains": ["power_generation", "carbon_dioxide", "air_quality", "state_implementation"],
+      "operative_mechanisms": [
+        "repealed the Clean Power Plan",
+        "established emission guidelines for states to use for covered coal-fired electric generating units",
+        "issued new implementation regulations under Clean Air Act section 111(d)"
+      ],
+      "lifecycle": ["D.C. Circuit vacated ACE on 2021-01-19"],
+      "primary_sources": [
+        "https://www.epa.gov/newsreleases/epa-finalizes-affordable-clean-energy-rule-ensuring-reliable-diversified-energy",
+        "https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges": ["REPEALS:OBAMA_CLEAN_POWER_PLAN", "VACATED_BY_COURT:2021"]
+    },
+    {
+      "node_id": "ENV-BIDEN-PFAS-NPDWR-2024",
+      "administration": "Joe Biden",
+      "date": "2024-04-10",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Final PFAS National Primary Drinking Water Regulation",
+      "environmental_domains": ["public_drinking_water", "PFAS", "PFOA", "PFOS", "PFHxS", "PFNA", "HFPO_DA", "PFBS_hazard_index"],
+      "operative_mechanisms": [
+        "established legally enforceable national drinking-water standards for six PFAS regulatory components",
+        "established monitoring and compliance obligations for public water systems"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/newsreleases/biden-harris-administration-finalizes-first-ever-national-drinking-water-standard",
+        "https://www.epa.gov/sdwa/additional-supporting-materials-final-pfas-npdwr"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges": ["SUBJECT_TO_TRUMP47_PFOA_PFOS_EXTENSION_PROPOSAL", "SUBJECT_TO_TRUMP47_OTHER_PFAS_RESCISSION_PROPOSAL"]
+    },
+    {
+      "node_id": "ENV-BIDEN-PFOA-PFOS-CERCLA-2024",
+      "administration": "Joe Biden",
+      "date": "2024-04-19",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Designation of PFOA and PFOS as CERCLA Hazardous Substances",
+      "environmental_domains": ["PFAS", "contaminated_sites", "release_reporting", "cleanup", "liability"],
+      "operative_mechanisms": [
+        "designated PFOA and PFOS as hazardous substances under CERCLA",
+        "made release/cleanup/liability mechanisms under Superfund applicable according to CERCLA's terms"
+      ],
+      "primary_sources": ["https://www.epa.gov/newsreleases/biden-harris-administration-finalizes-critical-rule-clean-pfas-contamination-protect"],
+      "source_status": "official_EPA"
+    },
+    {
+      "node_id": "ENV-BIDEN-STEAM-ELECTRIC-ELG-2024",
+      "administration": "Joe Biden",
+      "date": "2024-05-09",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Supplemental Effluent Limitations Guidelines and Standards for the Steam Electric Power Generating Point Source Category",
+      "environmental_domains": ["wastewater", "coal_power", "toxic_metals", "surface_water", "industrial_discharge"],
+      "regulated_or_affected_activity": ["coal_fired_power_generation", "wastewater_discharge"],
+      "operative_mechanisms": ["strengthened discharge limitations for specified wastewater streams from coal-fired power plants"],
+      "primary_sources": ["https://www.epa.gov/eg/steam-electric-power-generating-effluent-guidelines-2024-final-rule"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["SUBJECT_TO_TRUMP47_RECONSIDERATION"]
+    },
+    {
+      "node_id": "ENV-BIDEN-CCR-LEGACY-2024",
+      "administration": "Joe Biden",
+      "date": "2024-05-08",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Legacy Coal Combustion Residuals Surface Impoundments and CCR Management Units Final Rule",
+      "environmental_domains": ["coal_ash", "groundwater", "surface_water", "air_dust", "solid_waste", "corrective_action"],
+      "operative_mechanisms": [
+        "extended federal CCR requirements to specified legacy surface impoundments",
+        "established groundwater monitoring, corrective action, closure, and post-closure requirements for CCR management units at regulated facilities"
+      ],
+      "primary_sources": ["https://www.epa.gov/coal-combustion-residuals/final-rule-legacy-coal-combustion-residuals-surface-impoundments-and-ccr"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["RESPONDS_TO_COURT_DECISION:2018_D_C_CIRCUIT", "SUBJECT_TO_TRUMP47_DEADLINE_EXTENSIONS_AND_AMENDMENTS"]
+    },
+    {
+      "node_id": "ENV-BIDEN-LCRI-2024",
+      "administration": "Joe Biden",
+      "date": "2024-10-08",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "Lead and Copper Rule Improvements",
+      "environmental_domains": ["drinking_water", "lead", "service_lines", "testing", "public_communication"],
+      "operative_mechanisms": [
+        "requires drinking-water systems to identify and replace lead pipes within the rule's ten-year framework",
+        "requires more rigorous testing",
+        "lowers the action threshold described by EPA",
+        "expands public communication about lead-pipe locations and replacement plans"
+      ],
+      "primary_sources": ["https://www.epa.gov/newsreleases/biden-harris-administration-issues-final-rule-requiring-replacement-lead-pipes-within"],
+      "source_status": "official_EPA"
+    },
+    {
+      "node_id": "ENV-TRUMP47-EO14154-2025",
+      "administration": "Donald Trump (47)",
+      "date": "2025-01-20",
+      "instrument_type": "executive_order",
+      "exact_title": "Executive Order 14154 — Unleashing American Energy",
+      "environmental_domains": ["energy_development", "federal_lands", "oil_gas", "coal", "minerals", "NEPA", "vehicle_policy", "climate_analysis", "infrastructure_funding", "permitting", "LNG_exports"],
+      "operative_mechanisms": [
+        "directed review and suspension/revision/rescission of agency actions judged to burden domestic energy development",
+        "encouraged energy exploration and production on federal lands and waters",
+        "directed review of vehicle and appliance policies",
+        "revoked multiple Biden environmental/climate executive orders",
+        "directed CEQ to propose rescission of CEQ NEPA regulations and agencies to expedite permitting",
+        "disbanded the interagency social-cost-of-greenhouse-gases structure and withdrew associated guidance",
+        "paused/reviewed specified IRA and IIJA disbursements for consistency with the order",
+        "directed expedited LNG export application reviews",
+        "directed review of restrictions affecting mining and mineral processing"
+      ],
+      "primary_sources": ["https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/"],
+      "source_status": "White_House_primary",
+      "scope_significance": "This is a direct example of economic, extraction, infrastructure, vehicle, procurement/funding, and permitting policy belonging in the environmental inventory because the federal policy changes environmentally consequential activity."
+    },
+    {
+      "node_id": "ENV-TRUMP47-STEAM-ELECTRIC-RECONSIDERATION-2025",
+      "administration": "Donald Trump (47)",
+      "date": "2025-03-12",
+      "instrument_type": "EPA_reconsideration_announcement",
+      "exact_title": "Reconsideration of 2024 Steam Electric Effluent Limitations Guidelines",
+      "environmental_domains": ["coal_power", "wastewater", "toxic_metals", "surface_water"],
+      "status_at_issuance": "reconsideration / intended revision; not itself a replacement final rule",
+      "operative_mechanisms": ["announced EPA would revise the 2024 wastewater regulations for coal-burning power plants"],
+      "primary_sources": ["https://www.epa.gov/newsreleases/epa-announces-it-will-reconsider-2024-water-pollution-limits-coal-power-plants-help"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["RECONSIDERS:ENV-BIDEN-STEAM-ELECTRIC-ELG-2024"]
+    },
+    {
+      "node_id": "ENV-TRUMP47-PFAS-PFOA-PFOS-EXTENSION-PROPOSED-2026",
+      "administration": "Donald Trump (47)",
+      "date": "2026-05-18",
+      "instrument_type": "EPA_proposed_rule",
+      "exact_title": "Proposed PFOA and PFOS Compliance Extension Rule",
+      "environmental_domains": ["drinking_water", "PFOA", "PFOS", "PFAS"],
+      "status_at_issuance": "proposed_not_final",
+      "operative_mechanisms": [
+        "retains federal PFOA and PFOS maximum contaminant levels",
+        "proposes opt-in extensions allowing eligible systems up to two additional years, to 2031, to comply"
+      ],
+      "primary_sources": ["https://www.epa.gov/sdwa/proposed-pfoa-and-pfos-compliance-extension-rule"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["PROPOSES_DEADLINE_EXTENSION_TO:ENV-BIDEN-PFAS-NPDWR-2024"]
+    },
+    {
+      "node_id": "ENV-TRUMP47-PFAS-OTHER-RESCISSION-PROPOSED-2026",
+      "administration": "Donald Trump (47)",
+      "date": "2026-05-18",
+      "instrument_type": "EPA_proposed_rule",
+      "exact_title": "Proposed PFAS Rescission Rule",
+      "environmental_domains": ["drinking_water", "PFHxS", "PFNA", "HFPO_DA", "PFBS_hazard_index"],
+      "status_at_issuance": "proposed_not_final",
+      "operative_mechanisms": ["proposes rescission of regulatory determinations and related drinking-water regulatory provisions for four PFAS regulatory components identified by EPA"],
+      "primary_sources": ["https://www.epa.gov/sdwa/proposed-pfas-rescission-rule"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["PROPOSES_RESCISSION_OF_COMPONENTS_OF:ENV-BIDEN-PFAS-NPDWR-2024"]
+    },
+    {
+      "node_id": "ENV-TRUMP47-CCR-DEADLINE-EXTENSION-2026",
+      "administration": "Donald Trump (47)",
+      "date": "2026-02-10",
+      "instrument_type": "EPA_final_rule",
+      "exact_title": "CCR Management Unit Deadline Extension Final Rule",
+      "environmental_domains": ["coal_ash", "groundwater", "monitoring", "closure", "corrective_action"],
+      "operative_mechanisms": [
+        "extends facility-evaluation deadlines",
+        "extends groundwater-monitoring and associated compliance deadlines for CCR management units",
+        "makes conforming deadline changes to the 2024 legacy/CCRMU framework"
+      ],
+      "primary_sources": ["https://www.epa.gov/coal-combustion-residuals/final-rule-legacy-coal-combustion-residuals-surface-impoundments-and-ccr"],
+      "source_status": "official_EPA",
+      "relationship_edges": ["EXTENDS_DEADLINES_UNDER:ENV-BIDEN-CCR-LEGACY-2024"]
+    },
+    {
+      "node_id": "ENV-TRUMP47-CWA401-PROPOSED-2026",
+      "administration": "Donald Trump (47)",
+      "date": "2026-01-13",
+      "instrument_type": "EPA_proposed_rule",
+      "exact_title": "Proposed Clean Water Act Section 401 Water Quality Certification Rule",
+      "environmental_domains": ["water_quality", "state_tribal_certification", "infrastructure_permitting"],
+      "status_at_issuance": "proposed_not_final",
+      "operative_mechanisms": ["proposes changes to the scope and process of state/authorized-tribal water-quality certification for federally licensed or permitted projects"],
+      "primary_sources": ["https://www.epa.gov/newsreleases/epa-proposes-cwa-section-401-rule-streamline-permitting-unleash-economic-growth-and"],
+      "source_status": "official_EPA"
+    }
+  ],
+  "explicit_gaps": [
+    "Trump 45 methane-rule revisions, NEPA rule revisions, vehicle/fuel rules, public-land/extraction changes, pesticide/chemical actions, enforcement and funding changes",
+    "Biden 2023 WOTUS and Sackett conforming amendment, 2023/2024 oil-and-gas methane standards, fossil-power rule suite, environmental-justice orders, infrastructure/IRA policies, public lands and extraction",
+    "Trump 47 2025/2026 WOTUS proposal, CEQ NEPA regulatory removal, agency-specific NEPA replacements, coal-ash 2026 proposed amendments, vehicle/emissions actions, federal land/oil/gas/mineral actions, grant/funding terminations and reallocations, enforcement changes",
+    "commercial bottled-water PFAS and company-claim nodes across Biden and Trump 47",
+    "all cross-administration predecessor/successor relationship edges still require complete legal-state graph"
+  ]
+}
