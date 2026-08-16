@@ -1,0 +1,168 @@
+{
+  "record_type": "environmental_policy_inventory_batch",
+  "batch_id": "ERL-ENV-2026-08-16-FOUNDATION-001",
+  "status": "PRIMARY_SOURCE_SEEDED_NOT_EXHAUSTIVE",
+  "governing_goal": "ERL-ENV-POLICY-REAGAN-TRUMP47-001",
+  "invariant": "Preserve and present truth through evidence; do not classify administrations or policies as better/worse.",
+  "scope_note": "This batch adds independent policy nodes. It is not an administration-completeness claim. Economic/industrial activity changes remain primary inventory when federally governed and environmentally operative.",
+  "nodes": [
+    {
+      "node_id": "ENV-REAGAN-SDWA-1986",
+      "administration": "Ronald Reagan",
+      "date": "1986-06-19",
+      "instrument_type": "statute_amendment",
+      "exact_title": "Safe Drinking Water Act Amendments of 1986",
+      "issuing_authority": ["Congress", "President"],
+      "environmental_domains": ["drinking_water", "groundwater", "aquifers", "wellhead_protection", "underground_injection"],
+      "operative_mechanisms": [
+        "created an aquifer-protection demonstration program",
+        "required state-developed critical wellhead protection programs",
+        "required development of drinking-water standards for additional contaminants",
+        "strengthened EPA enforcement involving public water systems and underground injection well operators"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/archive/epa/aboutepa/president-signs-safe-drinking-water-act-amendments.html"
+      ],
+      "source_status": "official_EPA_primary_historical_release",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-REAGAN-SARA-1986",
+      "administration": "Ronald Reagan",
+      "date": "1986-10-17",
+      "instrument_type": "statute",
+      "exact_title": "Superfund Amendments and Reauthorization Act of 1986",
+      "issuing_authority": ["Congress", "President"],
+      "environmental_domains": ["hazardous_waste", "contaminated_sites", "human_health", "cleanup", "enforcement"],
+      "operative_mechanisms": [
+        "amended CERCLA",
+        "increased emphasis on permanent remedies and treatment technologies",
+        "expanded enforcement and settlement authorities",
+        "increased state and public participation",
+        "increased focus on human-health risks from hazardous-waste sites",
+        "expanded Superfund financing"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/superfund/superfund-amendments-and-reauthorization-act-sara"
+      ],
+      "source_status": "official_EPA_statutory_summary",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-REAGAN-EPCRA-1986",
+      "administration": "Ronald Reagan",
+      "date": "1986-10-17",
+      "instrument_type": "statute_title",
+      "exact_title": "Emergency Planning and Community Right-to-Know Act of 1986 (SARA Title III)",
+      "issuing_authority": ["Congress", "President"],
+      "environmental_domains": ["chemical_hazards", "emergency_planning", "release_reporting", "public_disclosure", "toxic_release_inventory"],
+      "regulated_targets": ["federal_state_local_government", "industry", "facilities_handling_hazardous_chemicals"],
+      "operative_mechanisms": [
+        "state and local chemical-emergency planning structure",
+        "hazardous chemical inventory and emergency release reporting",
+        "community right-to-know access",
+        "Toxics Release Inventory under section 313"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/epcra",
+        "https://www.epa.gov/epcra/emergency-planning-and-community-right-know-act-non-section-313-regulations-and-amendments"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-GHWB-CAA-1990",
+      "administration": "George H. W. Bush",
+      "date": "1990-11-15",
+      "instrument_type": "statute_amendment",
+      "exact_title": "Clean Air Act Amendments of 1990",
+      "issuing_authority": ["Congress", "President"],
+      "environmental_domains": ["air_quality", "acid_rain", "urban_air_pollution", "hazardous_air_pollutants", "stratospheric_ozone", "operating_permits", "enforcement"],
+      "operative_mechanisms": [
+        "acid-rain control program",
+        "expanded controls for urban air pollution and toxic air emissions",
+        "ozone-depleting chemical phaseout provisions",
+        "national operating permits program",
+        "strengthened enforcement"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/clean-air-act-overview/1990-clean-air-act-amendment-summary",
+        "https://www.epa.gov/clean-air-act-overview/clean-air-act-highlights-1990-amendments"
+      ],
+      "source_status": "official_EPA",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-GHWB-PPA-1990",
+      "administration": "George H. W. Bush",
+      "date": "1990",
+      "instrument_type": "statute",
+      "exact_title": "Pollution Prevention Act of 1990",
+      "issuing_authority": ["Congress", "President"],
+      "environmental_domains": ["industrial_activity", "source_reduction", "waste", "pollution_prevention", "production_processes"],
+      "regulated_or_affected_activity": ["production", "operations", "raw_material_use", "waste_management"],
+      "operative_mechanisms": [
+        "established national policy prioritizing pollution prevention/reduction at source where feasible",
+        "directed EPA to establish a source-reduction program",
+        "provided for information collection/dissemination and state technical-assistance grants",
+        "expressly linked pollution prevention to changes in industrial production, operation, and raw-material use"
+      ],
+      "primary_sources": [
+        "https://www.epa.gov/p2/pollution-prevention-act-1990",
+        "https://www.epa.gov/p2/pollution-prevention-list-milestones"
+      ],
+      "source_status": "official_EPA",
+      "scope_significance": "Demonstrates why industrial/economic activity cannot be relegated to a later control when the policy itself operates through industrial processes.",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-CLINTON-FDA-BOTTLED-WATER-IDENTITY-1995",
+      "administration": "Bill Clinton",
+      "date": "1995-11-13",
+      "effective_date": "1996-05-13",
+      "instrument_type": "FDA_final_rule",
+      "exact_title": "Bottled Water Standard of Identity / Quality recodification and definitions",
+      "issuing_authority": ["Food and Drug Administration"],
+      "environmental_domains": ["commercial_drinking_water", "source_claims", "water_quality", "labeling"],
+      "regulated_targets": ["bottled_water_processors", "bottled_water_labels"],
+      "operative_mechanisms": [
+        "recodified bottled-water quality standards at 21 CFR 165.110",
+        "revised bottled-water definition to include mineral water with specified exceptions and ingredient uses",
+        "defined artesian, ground, mineral, purified, sparkling bottled, spring, sterile, and well water",
+        "made source-category claims such as spring water subject to regulatory definitions"
+      ],
+      "primary_sources": [
+        "https://www.fda.gov/miscellaneous-food-products-vol-2-996",
+        "https://www.fda.gov/food/buy-store-serve-safe-food/fda-regulates-safety-bottled-water-beverages-including-flavored-water-and-nutrient-added-water"
+      ],
+      "source_status": "official_FDA; final-rule Federal Register citation/native text still to be custodied",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-CLINTON-FDA-BOTTLED-WATER-CHEMICALS-1996",
+      "administration": "Bill Clinton",
+      "date": "1996-03-26",
+      "effective_date": "1996-09-23",
+      "instrument_type": "FDA_final_rule_amendment",
+      "exact_title": "Bottled Water Quality Standard amendment for chemical contaminants",
+      "issuing_authority": ["Food and Drug Administration"],
+      "environmental_domains": ["commercial_drinking_water", "chemical_contaminants", "water_quality"],
+      "operative_mechanisms": [
+        "established or revised allowable levels for 13 chemicals in the bottled-water quality standard"
+      ],
+      "primary_sources": [
+        "https://www.fda.gov/miscellaneous-food-products-vol-2-996"
+      ],
+      "source_status": "official_FDA inspection/regulatory history; Federal Register/native rule still to be custodied",
+      "relationship_edges_pending": true
+    }
+  ],
+  "next_acquisition": [
+    "Water Quality Act / Clean Water Act amendments of 1987 exact statutory node and operative provisions",
+    "Reagan-era lead phaseout and Montreal Protocol implementation nodes",
+    "George H. W. Bush Oil Pollution Act of 1990 and coastal/wetlands/public-lands nodes",
+    "Clinton 1996 SDWA and Food Quality Protection Act nodes",
+    "native Federal Register objects for FDA 1995 and 1996 bottled-water rules",
+    "administration-specific environmentally operative economic/industrial policy nodes beyond agency-labeled environmental rules"
+  ]
+}
