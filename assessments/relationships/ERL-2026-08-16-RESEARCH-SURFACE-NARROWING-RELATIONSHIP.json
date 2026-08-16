@@ -1,0 +1,38 @@
+{
+  "record_type": "evidence_relationship_map",
+  "status": "research_candidate",
+  "date": "2026-08-16",
+  "subject_event": "assessments/machine/ERL-2026-08-16-CHATGPT-RESEARCH-SURFACE-NARROWING-FALSE-COMPLETENESS.json",
+  "relationships": [
+    {
+      "target": "issue:45",
+      "type": "MISCHARACTERIZED_SCOPE_OF",
+      "description": "The assistant treated Issue #45's narrowed durable implementation as though it fully represented the originating research surface."
+    },
+    {
+      "target": "issue:64",
+      "type": "CORRECTION_CAUSED_RESTORATION_OF",
+      "description": "The user correction caused creation of the cross-incident longitudinal surface for missing-context/state-actor minimization."
+    },
+    {
+      "target": "docs/RESEARCH_SURFACE_ORIGIN_SCOPE_AUDIT.md",
+      "type": "CONTRADICTS_PRIOR_AUDIT_CLASSIFICATION",
+      "description": "The prior audit classified the multi-angle surface as no-current-demotion-detected/high-demotion-risk. This event establishes a confirmed scope demotion: longitudinal similar-incident discovery was missing from the durable implementation."
+    },
+    {
+      "target": "assessments/controls/2026-07-24-ai-state-actor-minimization-control.json",
+      "type": "CONTROL_IS_SUBSET_OF_ORIGINATING_SURFACE",
+      "description": "The paired state/non-state control captures differential treatment but does not satisfy the broader requirement to discover and reconstruct similar real-world federal-force incidents."
+    }
+  ],
+  "causal_sequence_candidate": [
+    "originating request includes detailed incident reconstruction plus similar-incident discovery",
+    "implementation creates one incident investigation plus paired state/non-state control",
+    "assistant later reads implementation artifact as proxy for originating scope",
+    "assistant declares no current demotion detected",
+    "user identifies missing longitudinal discovery requirement",
+    "scope is restored through Issue #64 and Issue #45 clarification"
+  ],
+  "finding_authorized": false,
+  "raw_evidence_preservation": "The mistaken characterization and later correction remain separate evidence nodes; the correction does not erase the earlier statement."
+}
