@@ -1,0 +1,59 @@
+{
+  "schema": "erl.repository_task.v1",
+  "task_id": "ERL-ENV-POLICY-SOURCE-ACQUISITION-001",
+  "goal_id": "ERL-ENV-POLICY-REAGAN-TRUMP47-001",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "branch": "main",
+  "canonical_issue": 68,
+  "state": "CLAIMED_FOR_IMPLEMENTATION",
+  "owner": {
+    "type": "repository_assignee",
+    "id": "StegVerse",
+    "coordination_surface": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/68"
+  },
+  "claim": {
+    "claimed_at": "2026-08-16T21:06:27-05:00",
+    "expiration_rule": "renew with committed primary-source acquisition evidence or explicit BLOCKED state within 7 days of the most recent inventory commit",
+    "stale_claim_action": "release to UNCLAIMED or mark BLOCKED with a machine-observable/source-observable release condition; do not leave an indefinite active claim",
+    "collision_boundary": "Do not create a competing environmental inventory handoff, normalize away raw policy/company-claim evidence, or perform cross-administration evaluative scoring before inventory completion."
+  },
+  "authoritative_handoffs": [
+    "assessments/environmental-policy/ENVIRONMENTAL_POLICY_MIRROR_HANDOFF.md",
+    "assessments/environmental-policy/inventory/ENVIRONMENTAL_POLICY_INVENTORY_MIRROR_HANDOFF.md"
+  ],
+  "installed_evidence": [
+    {"path":"assessments/environmental-policy/inventory/2026-08-16-water-oil-statute-gap-batch.json","commit":"7ee28f4ff94b3c84c31d78d422527831ec49aec9","state":"VERIFIED_ON_MAIN"},
+    {"path":"assessments/environmental-policy/inventory/2026-08-16-eo-wotus-gap-batch.json","commit":"3361512f66ee1736da0b12f40dd2e76fce8ec95e","state":"VERIFIED_ON_MAIN"},
+    {"path":"assessments/environmental-policy/inventory/ENVIRONMENTAL_POLICY_INVENTORY_MIRROR_HANDOFF.md","commit":"137e1bdeac3024296ef91e272ee172759d04737c","state":"UPDATED"}
+  ],
+  "next_executable_actions": [
+    {
+      "priority": 1,
+      "action": "Acquire and install remaining Reagan and George H. W. Bush primary-source policy nodes listed in the inventory handoff, beginning with the Medical Waste Tracking Act and Great Lakes Critical Programs Act.",
+      "output_location": "assessments/environmental-policy/inventory/",
+      "completion_evidence": "committed independent policy nodes with authoritative source identifiers and re-fetch verification"
+    },
+    {
+      "priority": 2,
+      "action": "Reconstruct the exact 2015 Clean Water Rule -> 2019 repeal -> 2020 Navigable Waters Protection Rule lifecycle using primary Federal Register/EPA records and install legal/operational relationship edges without collapsing the three policy nodes.",
+      "output_location": "assessments/environmental-policy/relationships/",
+      "completion_evidence": "committed source-backed relationship record with each node preserved independently"
+    },
+    {
+      "priority": 3,
+      "action": "Continue commercial drinking-water reconstruction across administrations, preserving FDA policy nodes and raw company source/purity/treatment/health/environmental claims separately.",
+      "output_location": "assessments/environmental-policy/inventory/ and assessments/environmental-policy/claims/",
+      "completion_evidence": "primary-source-backed policy nodes and raw claim objects linked only by explicit evidentiary relationships"
+    }
+  ],
+  "states_allowed": ["COMPLETE", "BLOCKED", "RETRY", "REVIEW_REQUIRED", "FAILED", "CLAIMED_FOR_IMPLEMENTATION", "SUPERSEDED", "MERGED_INTO_CANONICAL_WORKSTREAM", "UNCLAIMED"],
+  "fail_closed_rules": [
+    "Do not mark a policy node verified when only a secondary discovery source exists and a primary source is available but uncustodied.",
+    "Do not convert a proposed rule or reconsideration announcement into a final-rule state.",
+    "Do not infer a company claim is false, deceptive, compliant, or noncompliant without the governing policy and supporting evidence.",
+    "Do not assign an administration-level favorable/unfavorable score at the inventory layer.",
+    "Do not claim 100 percent completion until the environmental handoff establishes and satisfies an exhaustive denominator."
+  ],
+  "completion_condition": "Every administration from Reagan through Trump 47 has primary-source-backed coverage across all admitted applicable domains; commercial-water policy and raw claims are reconstructed; predecessor/successor and other legal/operational relationships are source-backed; a reviewer can reconstruct the longitudinal history without evaluative summaries.",
+  "archival_effect": "The remaining environmental-policy acquisition queue is no longer chat-owned. Continuation is durable in Issue #68, this task record, and the two environmental mirror handoffs."
+}
