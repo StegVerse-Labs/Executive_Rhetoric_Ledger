@@ -1,0 +1,128 @@
+{
+  "schema": "stegverse.session_consolidation_receipt.v1",
+  "session_date": "2026-08-16",
+  "state": "MERGED_INTO_CANONICAL_WORKSTREAMS",
+  "governing_objective": "Preserve every unique session requirement in durable StegVerse repository state so the conversation is not required for future execution.",
+  "originating_requirements": [
+    {
+      "id": "SESSION-LOCAL-RUNTIME-001",
+      "requirement": "Replace descriptive local model/runtime selection with real local discovery, launch, inference, and proof; formally develop a model locally.",
+      "state": "COMPLETE_RELEASED_AND_CANONICAL",
+      "canonical_location": "StegVerse-002/micro-node-runtime/docs/SOVEREIGN_LOCAL_MODEL_RUNTIME_MIRROR_HANDOFF.md",
+      "canonical_issue": "StegVerse-002/micro-node-runtime#22",
+      "evidence": [
+        "validated code commit 395d4013d1354c07bc3cf66c44f4f26f856c75fc",
+        "canonical validation run 31339534741 SUCCESS",
+        "models/stegverse_reference_language_model.v1.json",
+        "models/stegverse_reference_corpus.v1.txt"
+      ],
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-TV-TVC-CREDENTIAL-002",
+      "requirement": "Use no NON-TV/TVC secrets or tokens; protected credential semantics are owned by TV/TVC.",
+      "state": "CONSUMER_PLUMBING_MERGED_REMAINING_EXACT_SOURCE_PROOF_MACHINE_OWNED",
+      "canonical_location": "StegVerse-002/micro-node-runtime/docs/ZERO_GITHUB_TOKEN_VALIDATION_MIRROR_HANDOFF.md",
+      "canonical_issue": "StegVerse-002/micro-node-runtime#31",
+      "consumer_merge": "ffba30337186551fdb74be62de7b7ba3b59fea2f",
+      "remaining_owner": "StegVerse-Labs/TVC#33 / tasks/TVC-PRIVATE-SOURCE-READ-001.json",
+      "evidence": [
+        "merged-main runtime run 31986454189 / job 95262207031",
+        "artifact 9273919680 sha256:529a59380ea837d9c821482ded2c3a9adcfd7b0a470350c944644e287c69be7b",
+        "receipt state BLOCKED_DEPENDENCY with credential_authority TV/TVC and github_token_substituted false",
+        "work claim released in commit 0235a6b20da7ef392a29625ff21aee692a9f6aca",
+        "bounded handoff updated in commit f4ef375f84cfa6a65cbc087037c592cfe74e307a"
+      ],
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-NO-RENDER-003",
+      "requirement": "Do not use Render; use StegVerse-owned runtime/control paths.",
+      "state": "MERGED_INTO_CANONICAL_SOVEREIGN_MIGRATION",
+      "canonical_location": "StegVerse-002/micro-node-runtime/MICRO_NODE_RUNTIME_MIRROR_HANDOFF.md / issue #16",
+      "remaining_owner": "repository-native sovereign migration workstream",
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-WORKER-ACTIVATION-004",
+      "requirement": "Assist workers and continue activation without seizing duplicate heartbeat, route, provider, or custody authority.",
+      "state": "MACHINE_OWNED",
+      "canonical_location": "StegVerse-Labs/.github#60 -> StegVerse-Labs/TVC/tasks/TVC-SOVEREIGN-LOCAL-MODEL-ROUTE-002.json -> StegVerse-org/LLM-adapter#18 -> master-records/orchestration",
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-TRADE-READINESS-005",
+      "requirement": "Make the trade path ready without third-party production control or duplicate financial authority.",
+      "state": "MERGED_INTO_CANONICAL_WORKSTREAM",
+      "canonical_location": "StegVerse-Labs/stegfin-governance plus StegVerse-002/micro-node-runtime sovereign StegFin capsule binding",
+      "evidence": [
+        "micro-node-runtime root handoff records sovereign carrier COMPLETE_RELEASED",
+        "StegFin consumer binding COMPLETE_RELEASED",
+        "live endpoint/wallet-handoff evidence remains separately governed by stegfin-governance"
+      ],
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-ERL-ENVIRONMENT-006",
+      "requirement": "Map exact federal environmental policy from Reagan through Trump 47 without partisan value scoring, including bottled/spring/purified/commercial-water regulation and raw company claims.",
+      "state": "MERGED_INTO_CANONICAL_WORKSTREAM",
+      "canonical_location": "assessments/environmental-policy/ENVIRONMENTAL_POLICY_MIRROR_HANDOFF.md",
+      "inventory_handoff": "assessments/environmental-policy/inventory/ENVIRONMENTAL_POLICY_INVENTORY_MIRROR_HANDOFF.md",
+      "canonical_issue": "#68",
+      "task": "coordination/environmental-policy-source-acquisition-task.json",
+      "current_owner": "StegVerse repository assignee under Issue #68",
+      "new_evidence": [
+        "7ee28f4ff94b3c84c31d78d422527831ec49aec9 — Water Quality Act 1987 and Oil Pollution Act 1990 nodes",
+        "3361512f66ee1736da0b12f40dd2e76fce8ec95e — EO 12898 and 2015 Clean Water Rule nodes",
+        "ea3c315b9d0a30119da4203dc47f1211297a519b — inventory handoff ownership transfer"
+      ],
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-ERL-BIAS-EVIDENCE-007",
+      "requirement": "Preserve model-behavior incidents as raw evidence nodes, map relationships separately, and do not normalize them into a predetermined motive framework.",
+      "state": "MERGED_INTO_CANONICAL_WORKSTREAM",
+      "canonical_location": "assessments/relationships/BIAS_INCIDENT_MIRROR_HANDOFF.md",
+      "evidence": [
+        "three registered raw incident nodes remain independently preserved",
+        "relationship map remains separate from raw incidents",
+        "commit 94957e1b2dde8554da09eed1b797173636ab0e27 explicitly supersedes the assistant-generated 3+ event threshold as non-governing"
+      ],
+      "session_owner_remaining": false
+    },
+    {
+      "id": "SESSION-HANDOFF-AUTHORITY-008",
+      "requirement": "Prevent duplicate or competing mirror handoffs from remaining plausible sources of truth.",
+      "state": "COMPLETE",
+      "canonical_location": "ERL_MIRROR_HANDOFF.md",
+      "evidence": [
+        "commit 6e3041d63650ea6ef25e62791a23a8f11e4e81fd marks EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md SUPERSEDED_AS_ACTIVE_AUTHORITY while preserving its historical snapshot"
+      ],
+      "session_owner_remaining": false
+    }
+  ],
+  "canonical_repositories_inspected": [
+    "StegVerse-002/micro-node-runtime",
+    "StegVerse-Labs/TVC",
+    "StegVerse-Labs/Executive_Rhetoric_Ledger"
+  ],
+  "canonical_continuation": [
+    "StegVerse-002/micro-node-runtime#16",
+    "StegVerse-002/micro-node-runtime#22",
+    "StegVerse-002/micro-node-runtime#31",
+    "StegVerse-Labs/TVC#33",
+    "StegVerse-Labs/.github#60",
+    "StegVerse-org/LLM-adapter#18",
+    "master-records/orchestration",
+    "StegVerse-Labs/stegfin-governance",
+    "StegVerse-Labs/Executive_Rhetoric_Ledger#47 / PR #48",
+    "StegVerse-Labs/Executive_Rhetoric_Ledger#68",
+    "StegVerse-Labs/Executive_Rhetoric_Ledger/coordination/environmental-policy-source-acquisition-task.json",
+    "StegVerse-Labs/Executive_Rhetoric_Ledger/assessments/relationships/BIAS_INCIDENT_MIRROR_HANDOFF.md"
+  ],
+  "duplicate_execution_remaining": false,
+  "unassigned_session_specific_work": false,
+  "session_only_project_state_remaining": false,
+  "archive_condition": "Archiving is permitted when this receipt is committed and re-fetched from main, because all unresolved execution has a durable repository owner, claim/task/issue surface, or machine-owned continuation path and no future executor requires this conversation to reconstruct the session goals.",
+  "archival_readiness": "PENDING_RECEIPT_REFETCH"
+}
