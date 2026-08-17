@@ -3,7 +3,7 @@
 Date: 2026-08-16
 Parent authority: `assessments/environmental-policy/ENVIRONMENTAL_POLICY_MIRROR_HANDOFF.md`
 Goal: `ERL-ENV-POLICY-REAGAN-TRUMP47-001`
-State: `ACTIVE / SOURCE ACQUISITION`
+State: `ACTIVE / SOURCE ACQUISITION / REPOSITORY-OWNED`
 
 ## Governing scope
 
@@ -187,18 +187,32 @@ Immediate relationship target: source-backed lifecycle reconstruction for the 20
 
 Do not perform a cross-administration significance overlay until the inventory completion gate is met. The requested next phase after 100% inventory completion is to map administration periods over one another and examine significant relationships without assigning partisan value.
 
-## Execution ownership and continuation
+## Durable execution ownership and continuation
 
-Current owner: this environmental-policy inventory lane under the parent environmental handoff.
-Current claim state: `ACTIVE / SOURCE ACQUISITION`.
-No duplicate implementation lane was found in the inspected inventory directory.
+Canonical coordination issue: `#68` — `Continue Reagan-to-Trump47 environmental policy primary-source inventory`.
 
-Next executable acquisitions are the remaining named nodes above, with commercial-water reconstruction retained as a first-class requirement rather than a later appendix.
+Canonical task record: `coordination/environmental-policy-source-acquisition-task.json`.
+Task installation commit: `3a094f0b4174ff070db9e8989a19f2b9dfd0ac85`.
+Task ID: `ERL-ENV-POLICY-SOURCE-ACQUISITION-001`.
+Claim state: `CLAIMED_FOR_IMPLEMENTATION`.
+Repository assignee/owner: `StegVerse`.
+
+Claim expiration rule: renew with committed primary-source acquisition evidence or explicit `BLOCKED` state within seven days of the most recent inventory commit. A stale claim must be released to `UNCLAIMED` or converted to `BLOCKED` with an observable release condition; it must not remain indefinitely active.
+
+The task record contains deterministic next actions, output locations, completion evidence, allowed states, collision boundaries, and fail-closed rules. It specifically assigns:
+
+1. remaining Reagan/GHWB primary-source acquisition to `assessments/environmental-policy/inventory/`;
+2. the 2015 → 2019 → 2020 WOTUS lifecycle reconstruction to `assessments/environmental-policy/relationships/`;
+3. commercial-water policy plus raw company-claim acquisition to the inventory and claims surfaces.
+
+No duplicate implementation lane was found in the inspected environmental inventory directory. This conversation no longer owns the remaining acquisition queue.
 
 ## Completion posture
 
-`NOT_COMPLETE`.
+`NOT_COMPLETE / REPOSITORY-OWNED`.
 
 No percentage is asserted for this bounded environmental lane because an exhaustive denominator has not yet been established. The 100% gate requires origin-scope reconciliation plus primary-source-backed coverage across every applicable admitted domain for every administration, commercial-water reconstruction, and predecessor/successor mapping.
 
 The newly installed four nodes are completed acquisitions, not evidence that four administrations are complete.
+
+Session-specific acquisition state: `MERGED INTO CANONICAL WORKSTREAM` at Issue #68 + `coordination/environmental-policy-source-acquisition-task.json`.
