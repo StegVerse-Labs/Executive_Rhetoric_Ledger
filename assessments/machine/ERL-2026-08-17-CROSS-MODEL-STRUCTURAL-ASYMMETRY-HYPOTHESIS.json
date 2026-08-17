@@ -1,0 +1,94 @@
+{
+  "id": "ERL-2026-08-17-CROSS-MODEL-STRUCTURAL-ASYMMETRY-HYPOTHESIS",
+  "record_type": "cross_model_structural_hypothesis",
+  "status": "test_required",
+  "parent_issue": 69,
+  "system_scope": "consumer-facing general-purpose LLMs",
+  "research_question": "Is the observed narrower failure—repeated qualification, re-scoping, semantic substitution, or reduced exposure around adverse current-administration findings while other relational context is readily operationalized—a structural behavior shared across general-purpose LLM frameworks rather than a ChatGPT-specific memory defect?",
+  "why_material": "If reproducible across independently developed models, the issue would affect ordinary public information access and reasoning at scale. The risk would not be a single incorrect answer but a common interaction architecture that changes evidentiary burden, framing, or scope according to subject class without making that transformation explicit to the user.",
+  "candidate_structural_mechanisms": [
+    {
+      "mechanism": "internal ambiguity resolution before user probe",
+      "status": "observable_behavior_supported_in_chatgpt_pilot",
+      "causal_status": "unknown"
+    },
+    {
+      "mechanism": "subject-sensitive qualification or mitigation layer",
+      "status": "candidate",
+      "causal_status": "unknown"
+    },
+    {
+      "mechanism": "differential retrieval or weighting of relational corrections versus task context",
+      "status": "candidate",
+      "causal_status": "unknown"
+    },
+    {
+      "mechanism": "shared preference for immediately helpful/actionable completion over explicit uncertainty negotiation",
+      "status": "candidate_general_architecture",
+      "causal_status": "unknown"
+    },
+    {
+      "mechanism": "training, policy, routing, or orchestration convergence across providers",
+      "status": "candidate_only",
+      "causal_status": "unknown"
+    }
+  ],
+  "normative_failure_if_confirmed": {
+    "name": "structural epistemic mediation asymmetry",
+    "definition": "A general-purpose model systematically transforms the user's evidentiary question, framing, qualification burden, or exposure to adverse information in a subject-dependent manner without explicitly surfacing that transformation or obtaining the user's assent.",
+    "distinguish_from": [
+      "ordinary factual disagreement",
+      "necessary uncertainty qualification",
+      "neutral safety refusal",
+      "simple memory omission",
+      "one-off hallucination"
+    ]
+  },
+  "required_cross_model_design": {
+    "providers_or_model_families": [
+      "ChatGPT/OpenAI",
+      "Claude/Anthropic",
+      "Gemini/Google",
+      "Grok/xAI",
+      "DeepSeek",
+      "open-weight local model"
+    ],
+    "subject_families": [
+      "current U.S. administration",
+      "prior/opposing-party U.S. administration",
+      "nonpolitical institution",
+      "model-self-assessment"
+    ],
+    "matched_dimensions": [
+      "same evidence strength",
+      "same adverse-versus-favorable direction",
+      "same ambiguity level",
+      "same consequence level",
+      "same correction history structure",
+      "same request for directness versus qualification"
+    ],
+    "measurements": [
+      "probing before interpretation",
+      "question substitution",
+      "unsolicited mitigation",
+      "qualification burden",
+      "evidence ordering",
+      "scope narrowing",
+      "correction persistence",
+      "retrieval of prior correction constraints",
+      "confidence language",
+      "action before confirmation"
+    ],
+    "minimum_rule": "Do not generalize to all models from ChatGPT-only evidence. Cross-model structural classification requires independently reproduced matched effects across multiple model families and at least one open-weight/local control."
+  },
+  "public_significance": "If the same directional mediation appears across widely used model families, users may experience a common invisible layer between question and answer that changes what evidence is foregrounded, qualified, or pursued. Because these systems increasingly mediate public information, work, research, and decision support, such a structural effect warrants higher evidentiary scrutiny than an isolated product bug.",
+  "current_findings": {
+    "chatgpt_action_before_probe_repeated": true,
+    "chatgpt_current_administration_directional_incidents_preserved": true,
+    "historical_correction_persistence_failure_preserved": true,
+    "cross_model_structural_behavior_proven": false,
+    "shared_provider_cause_proven": false,
+    "political_motive_proven": false
+  },
+  "next_action": "Extend the July 31 cross-provider benchmark concept into a preregistered matched political/nonpolitical corpus, with blind scoring and immutable raw outputs, before drawing any structural or provider-wide conclusion."
+}
