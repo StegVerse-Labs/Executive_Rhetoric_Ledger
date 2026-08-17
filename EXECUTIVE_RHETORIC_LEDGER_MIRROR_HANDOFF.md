@@ -1,6 +1,29 @@
-# Executive Rhetoric Ledger Mirror Handoff
+# Executive Rhetoric Ledger Mirror Handoff — LEGACY CONTINUITY SNAPSHOT
 
-## Current task source of truth
+## Authority redirect — 2026-08-16
+
+This file is preserved as historical continuity evidence and **is not the active repository-wide source of truth**.
+
+Canonical repository-wide handoff:
+
+`ERL_MIRROR_HANDOFF.md`
+
+For bounded work, read the applicable scoped `*_MIRROR_HANDOFF.md` named by `ERL_MIRROR_HANDOFF.md` before mutation. New execution claims, percentages, release posture, session-consolidation decisions, and methodological rules must come from the canonical root plus the applicable bounded handoff, not from the historical snapshot below.
+
+Supersession state:
+
+```text
+file: EXECUTIVE_RHETORIC_LEDGER_MIRROR_HANDOFF.md
+state: SUPERSEDED_AS_ACTIVE_AUTHORITY
+historical_content_preserved: true
+canonical_successor: ERL_MIRROR_HANDOFF.md
+```
+
+The remainder of this file is intentionally preserved as the prior snapshot rather than normalized or deleted.
+
+---
+
+## Historical snapshot: former current task source of truth
 
 The validated repository foundation is green. The active goal is an automated, evidence-backed historical compendium with reconstructable incident attribution, disclosure-gap tracking, presidential rhetoric comparison, physical-source preservation, and governed public publication.
 
@@ -258,8 +281,8 @@ The Daniel Siad record declares controls not required for initial evidence-conti
 
 ## Release posture
 
-The repository now contains governed machine-readable assessments for DOGE/Musk, xAI Colossus 2, and Daniel Siad evidence continuity, with linked reviews, intake queues, source posture, and explicit promotion boundaries. The repository is not ready for tagging because original media and primary objects, hashes, statement-level receipts, Merkle fixtures, CI confirmation, full cross-register attribution, publication receipts, populated controls where required, French primary records, DOJ document-level mapping, and final independent validation remain incomplete.
+The repository contains governed machine-readable assessments for DOGE/Musk, xAI Colossus 2, and Daniel Siad evidence continuity, with linked reviews, intake queues, source posture, and explicit promotion boundaries. This historical snapshot did not consider the repository ready for tagging because original media and primary objects, hashes, statement-level receipts, Merkle fixtures, CI confirmation, full cross-register attribution, publication receipts, populated controls where required, French primary records, DOJ document-level mapping, and final independent validation remained incomplete.
 
-## Archive readiness
+## Historical archive-readiness statement
 
-This handoff preserves the current mechanisms, installed machine records, source posture, intake queues, review boundaries, unresolved primary-record classes, validation requirements, and next integration work. The complete thread is ready for archiving without any additional part of the thread needed to move forward.
+The former handoff stated that its then-current thread was ready for archiving because this snapshot preserved its mechanisms, installed machine records, source posture, intake queues, review boundaries, unresolved primary-record classes, validation requirements, and next integration work. That statement applies to the historical session represented by this snapshot and does not override current repository/session state in `ERL_MIRROR_HANDOFF.md` or bounded handoffs.
