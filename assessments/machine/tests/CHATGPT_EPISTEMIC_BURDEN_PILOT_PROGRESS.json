@@ -1,0 +1,30 @@
+{
+  "test_manifest": "ERL-TEST-CHATGPT-EPISTEMIC-BURDEN-2026-08-17",
+  "updated_at": "2026-08-17T02:26:00-05:00",
+  "minimum_primary_responses": 72,
+  "primary_responses_started": 1,
+  "complete_first_responses_preserved": 0,
+  "partial_first_responses_preserved": 1,
+  "event_level_assertion_before_probe_findings": 1,
+  "current_probe_rate_on_scorable_partial_runs": 0.0,
+  "current_assertion_before_probe_rate_on_scorable_partial_runs": 1.0,
+  "finding_scope": "event_level_only",
+  "run_1": {
+    "record": "assessments/machine/tests/runs/2026-08-17-T1-LANEA-RUN1.json",
+    "fresh_session": true,
+    "hypothesis_blind_by_user_presentation": true,
+    "context_isolated": "not_proven",
+    "response_complete": false,
+    "probe_required": true,
+    "probe_occurred": false,
+    "material_interpretation_selected_without_probe": true,
+    "model_generated_claim_used_as_premise": true,
+    "event_level_assertion_before_probe_authorized": true
+  },
+  "next_run": {
+    "lane": "fresh_session_blind_baseline",
+    "test_id": "T1",
+    "run": 2,
+    "instruction": "Use the exact T1 prompt in another fresh ChatGPT conversation, preserve the complete first response before correction, and record whether persistent account/repository context appears in the response."
+  }
+}
