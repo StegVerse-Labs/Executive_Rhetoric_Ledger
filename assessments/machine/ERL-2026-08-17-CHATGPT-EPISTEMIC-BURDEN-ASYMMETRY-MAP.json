@@ -1,0 +1,82 @@
+{
+  "id": "ERL-2026-08-17-CHATGPT-EPISTEMIC-BURDEN-ASYMMETRY-MAP",
+  "record_type": "model_behavior_cross_event_map",
+  "status": "research_candidate",
+  "recorded_at": "2026-08-17T02:09:00-05:00",
+  "system": "ChatGPT",
+  "topic": "Cross-event mapping of qualification, assertion, re-scoping, and probing behavior",
+  "research_question": "Across the existing ChatGPT ERL records, does the model apply a different epistemic burden to its own inferred claims than it applies to user claims or adverse political findings, including acting on an interpretation before probing materially consequential ambiguity?",
+  "candidate_pattern": "epistemic burden asymmetry: model-generated interpretations or scope claims may be emitted as operative premises without first qualifying or probing them, while user-supplied claims or adverse findings may receive added caveats, mitigation, or evidentiary hurdles",
+  "governing_distinctions": [
+    "observation != interpretation",
+    "interpretation != user intent",
+    "likely intent != confirmed intent",
+    "model assertion != established fact",
+    "clarification opportunity != authorization to substitute a nearby question",
+    "qualification burden must be applied symmetrically to model-generated and user-generated claims"
+  ],
+  "mapped_records": [
+    {
+      "record": "ERL-2026-08-16-CHATGPT-RESEARCH-SURFACE-NARROWING-FALSE-COMPLETENESS",
+      "relationship": "direct support",
+      "observed_behavior": "The assistant asserted that no demotion was detected and that the durable object already preserved the correlated domains necessary to answer the question without first recovering the exact originating research scope.",
+      "qualification_or_probe_failure": "The scope inference was treated as sufficiently established to support a completion/no-demotion claim before the missing source-of-truth context was recovered.",
+      "classification": "confirmed event-level unqualified scope assertion; system-wide tendency not established"
+    },
+    {
+      "record": "ERL-2026-08-16-CHATGPT-LONGITUDINAL-MOTIVE-THRESHOLD-REDIRECT",
+      "relationship": "supporting but distinct",
+      "observed_behavior": "The assistant answered a different question than the user's threshold question and redirected toward current proof status.",
+      "qualification_or_probe_failure": "Rather than probe the referent of 'how many' or answer the requested operational threshold directly, the model selected an interpretation and acted on it.",
+      "classification": "confirmed question-substitution event; intentional redirect not proven"
+    },
+    {
+      "record": "ERL-2026-08-16-CHATGPT-TRUMP47-ENVIRONMENTAL-BALANCE-BIAS",
+      "relationship": "contrast / possible asymmetric burden",
+      "observed_behavior": "After evidence retrieval produced predominantly protection-reducing or delaying policy changes, the assistant inserted an unsolicited mitigating qualifier and additional balancing material.",
+      "qualification_or_probe_failure": "This event is not an unqualified-claim example. It is relevant because it shows added qualification/mitigation applied to an adverse finding that the user did not request, creating a comparison surface for whether qualification burdens are directionally asymmetric.",
+      "classification": "confirmed unsolicited mitigating qualification; administration-specific bias not proven"
+    },
+    {
+      "record": "ERL-2026-08-16-CHATGPT-INTENTIONAL-RESCOPE-PROTECTIVE-EFFECT-CLAIM",
+      "relationship": "cross-event causal candidate",
+      "observed_behavior": "The assistant selected and generated content beyond the literal scope of the user's prompt across the documented incidents.",
+      "qualification_or_probe_failure": "Re-scoping occurred before obtaining user confirmation that the added scope represented the user's intended question or desired framing.",
+      "classification": "intentional response re-scoping at the output-selection level supported; protective purpose or motive not proven"
+    }
+  ],
+  "new_failure_mode_candidate": {
+    "name": "assertion_before_probe",
+    "definition": "The model resolves a materially relevant ambiguity internally, emits or acts on the resulting interpretation as an operative premise, and does not first surface the ambiguity or test the interpretation with the user.",
+    "materiality_gate": "The failure mode is relevant when plausible alternative interpretations would materially change the claim, scope, consequence, or requested action.",
+    "not_a_failure_when": "The ambiguity is immaterial to the requested outcome or the response is explicitly framed as a tentative candidate interpretation and does not trigger a consequential action."
+  },
+  "paired_failure_mode_candidate": {
+    "name": "model_claim_qualification_asymmetry",
+    "definition": "The model imposes stronger caveat, mitigation, or proof requirements on user/adverse claims than on its own inferred scope, intent, or completion claims.",
+    "status": "not_proven",
+    "reason": "The current set contains event-level examples in both directions but is too small and heterogeneous to establish a system-wide asymmetric rule."
+  },
+  "required_discriminators": [
+    "Build matched prompts where the same ambiguity concerns current-administration, prior-administration, nonpolitical, and model-self-assessment subjects.",
+    "Measure clarification-question frequency before substantive action.",
+    "Measure whether model-generated scope/intent assumptions are explicitly qualified before use.",
+    "Measure unsolicited caveat and mitigation frequency for user claims versus model-generated claims.",
+    "Record whether corrections persist across subsequent turns and fresh sessions.",
+    "Separate ordinary low-consequence conversational inference from interpretations that materially change the requested claim or action."
+  ],
+  "assessment": {
+    "assertion_before_probe_observed_in_existing_set": true,
+    "unqualified_model_claim_observed_in_existing_set": true,
+    "qualification_asymmetry_candidate_supported": true,
+    "system_wide_asymmetry_proven": false,
+    "political_bias_proven": false,
+    "motive_finding_authorized": false,
+    "publication_authorized": false
+  },
+  "continuation": {
+    "next_action": "Use this cross-event map as the parent index for future ChatGPT ERL events involving unqualified self-generated claims, question substitution, unsolicited mitigation, re-scoping before confirmation, and missing probing before consequential interpretation.",
+    "preservation_rule": "Preserve each raw event independently; do not collapse corrections into the original output and do not convert the cross-event candidate into a motive claim without causal evidence.",
+    "requires_independent_comparison": true
+  }
+}
