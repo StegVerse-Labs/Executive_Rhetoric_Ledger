@@ -4,13 +4,31 @@
 
 Bounded source of truth for model-behavior bias incident preservation and relationship mapping in `StegVerse-Labs/Executive_Rhetoric_Ledger`.
 
-This handoff is subordinate to repository-wide `ERL_MIRROR_HANDOFF.md` and authoritative for this incident-tracking lane.
+This handoff is subordinate to repository-wide `ERL_MIRROR_HANDOFF.md` and authoritative for this incident-tracking lane. Where an older repository-root summary conflicts with this bounded handoff on bias-incident methodology, this bounded handoff controls the lane until the root summary is reconciled.
 
 ## Invariant
 
 Preserve and present truth through evidence.
 
 Raw incidents remain separately preserved evidence objects. Relationship maps, classifications, and longitudinal findings may reference them but must not replace, normalize, summarize-away, or rewrite the underlying event record.
+
+## Root-handoff methodology reconciliation — 2026-08-16
+
+The repository-root handoff contains a historical statement under the earlier `ERL-2026-08-16-CHATGPT-LONGITUDINAL-MOTIVE-THRESHOLD-REDIRECT` summary that described `3+ independent, temporally separated, directionally consistent events` as a minimum ERL threshold for a longitudinal pattern.
+
+That numeric threshold was introduced ad hoc by the assistant during the originating conversation. It was **not** recovered from a previously adopted ERL standard and was not independently validated or adopted as repository methodology.
+
+Accordingly:
+
+```text
+historical_statement_preserved: true
+3_plus_threshold_governing: false
+3_plus_threshold_status: SUPERSEDED_AD_HOC_ASSISTANT_FRAMEWORK
+replacement_rule: no arbitrary event-count threshold is required unless separately proposed, adopted, and validated as an ERL standard
+motive_inference_from_event_count_alone: prohibited
+```
+
+The historical candidate record and root summary are not deleted or rewritten out of existence; they remain evidence of what the assistant proposed at that point in the interaction. They must not be cited as current ERL methodological authority.
 
 ## Installed incidents
 
@@ -62,6 +80,7 @@ Current mapped relationships include:
 - preserve contradictions, corrections, and assistant acknowledgements as evidence rather than overwriting prior statements;
 - derive longitudinal findings from the graph while retaining every contributing raw node;
 - no arbitrary event-count threshold is required unless separately adopted and validated as an ERL standard;
+- event count alone cannot establish motive;
 - do not allow a child research surface, legal/tactical question, or evaluation schema to silently replace a broader originating evidence surface.
 
 ## Next tasks
@@ -71,13 +90,15 @@ Current mapped relationships include:
 - distinguish direct-sequence, semantic-effect, governing-cause, correction, contradiction, and candidate-causal edges;
 - preserve source screenshots or equivalent immutable source artifacts when a repository-safe custody path is available;
 - validate that downstream ERL summaries always retain pointers to contributing raw evidence nodes;
-- continue origin-scope recovery so broader research questions remain authoritative over narrower implementations.
+- continue origin-scope recovery so broader research questions remain authoritative over narrower implementations;
+- when the repository root is next materially edited, replace its obsolete numeric-threshold summary with a pointer to this reconciliation while preserving the historical candidate record itself.
 
 ## Completion posture
 
 - raw incidents preserved in this bounded lane: 3/3 currently registered
 - relationship map installed and extended: 1/1
 - bounded handoff installed and current: 1/1
+- ad hoc event-count threshold authority conflict: resolved for this lane
 - scaffolding/stubs counted as complete: 0
 - longitudinal interpretation: active/open-ended by design
 
