@@ -1,0 +1,73 @@
+{
+  "record_type": "environmental_policy_inventory_batch",
+  "batch_id": "ERL-ENV-2026-08-16-EXEC-RULE-GAP-003",
+  "status": "PRIMARY_SOURCE_SEEDED_NOT_EXHAUSTIVE",
+  "governing_goal": "ERL-ENV-POLICY-REAGAN-TRUMP47-001",
+  "invariant": "Preserve and present truth through evidence; do not classify administrations or policies as better or worse.",
+  "nodes": [
+    {
+      "node_id": "ENV-CLINTON-EO12898-1994",
+      "administration": "Bill Clinton",
+      "date": "1994-02-11",
+      "publication_date": "1994-02-16",
+      "instrument_type": "executive_order",
+      "exact_title": "Federal Actions To Address Environmental Justice in Minority Populations and Low-Income Populations",
+      "executive_order": "12898",
+      "federal_register": "59 FR 7629",
+      "issuing_authority": ["President"],
+      "environmental_domains": ["environmental_justice", "human_health", "federal_programs", "federal_policy", "public_information"],
+      "regulated_or_affected_activity": ["federal_agency_programs", "federal_agency_policies", "federal_agency_activities"],
+      "operative_mechanisms": [
+        "directed covered federal agencies, to the greatest extent practicable and permitted by law, to make environmental justice part of their missions",
+        "directed identification and appropriate addressing of disproportionately high and adverse human-health or environmental effects on minority populations and low-income populations",
+        "established interagency coordination and agency strategy obligations for the order's environmental-justice framework"
+      ],
+      "primary_sources": [
+        "https://www.govinfo.gov/app/details/FR-1994-02-16/94-3685",
+        "https://clintonwhitehouse4.archives.gov/CEQ/earthday/ch13.html"
+      ],
+      "source_status": "official Federal Register/GovInfo presidential document plus archived White House chronology",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-OBAMA-CLEAN-WATER-RULE-2015",
+      "administration": "Barack Obama",
+      "date": "2015-06-29",
+      "effective_date": "2015-08-28",
+      "instrument_type": "joint_final_rule",
+      "exact_title": "Clean Water Rule: Definition of Waters of the United States",
+      "federal_register": "80 FR 37054",
+      "federal_register_document": "2015-13435",
+      "issuing_authority": ["Environmental Protection Agency", "U.S. Army Corps of Engineers"],
+      "statutory_authority": ["Federal Water Pollution Control Act / Clean Water Act sections 301, 304, 311, 401, 402, 404, and 501"],
+      "environmental_domains": ["surface_water", "wetlands", "tributaries", "clean_water_act_jurisdiction", "permitting", "water_quality"],
+      "regulated_or_affected_activity": ["pollutant_discharges", "dredged_or_fill_discharges", "oil_spill_programs", "water_quality_certification"],
+      "operative_mechanisms": [
+        "defined the scope of waters treated as waters of the United States under the Clean Water Act",
+        "specified jurisdictional categories and exclusions used by Clean Water Act programs",
+        "applied the definition across programs including sections 311, 401, 402, and 404",
+        "used categorical rules and significant-nexus analysis for specified waters and wetlands"
+      ],
+      "primary_sources": [
+        "https://www.federalregister.gov/documents/2015/06/29/2015-13435/clean-water-rule-definition-of-waters-of-the-united-states",
+        "https://archive.epa.gov/epa/cleanwaterrule/definition-waters-united-states-under-clean-water-act.html"
+      ],
+      "source_status": "Federal Register final-rule record plus official EPA historical rule page",
+      "relationship_edges_pending": true
+    }
+  ],
+  "relationship_candidates": [
+    {
+      "from": "ENV-OBAMA-CLEAN-WATER-RULE-2015",
+      "to_description": "existing Trump 45 2019 WOTUS repeal node",
+      "relationship": "REPEALED_OR_REPLACED_BY",
+      "state": "PENDING_EXACT_NODE_ID_AND_EDGE_VALIDATION"
+    }
+  ],
+  "next_acquisition": [
+    "exact predecessor/successor edge validation for 2015, 2019 and 2020 WOTUS nodes",
+    "Clinton 1998 microbial and disinfectant/byproduct drinking-water rules",
+    "George W. Bush Brownfields and utility-air-rule nodes",
+    "commercial-water policy and company-claim nodes across administrations"
+  ]
+}
