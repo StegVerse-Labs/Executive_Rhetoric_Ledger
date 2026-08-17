@@ -1,0 +1,65 @@
+{
+  "record_type": "environmental_policy_inventory_batch",
+  "batch_id": "ERL-ENV-2026-08-16-STATUTE-GAP-002",
+  "status": "PRIMARY_SOURCE_SEEDED_NOT_EXHAUSTIVE",
+  "governing_goal": "ERL-ENV-POLICY-REAGAN-TRUMP47-001",
+  "invariant": "Preserve and present truth through evidence; do not classify administrations or policies as better or worse.",
+  "nodes": [
+    {
+      "node_id": "ENV-REAGAN-WQA-1987",
+      "administration": "Ronald Reagan",
+      "date": "1987-02-04",
+      "instrument_type": "statute_amendment",
+      "exact_title": "Water Quality Act of 1987",
+      "public_law": "Public Law 100-4",
+      "statutes_at_large": "101 Stat. 7",
+      "issuing_authority": ["Congress", "President"],
+      "statutory_authority": ["Clean Water Act / Federal Water Pollution Control Act"],
+      "environmental_domains": ["surface_water", "wastewater", "stormwater", "nonpoint_source_pollution", "estuaries", "water_infrastructure_funding"],
+      "operative_mechanisms": [
+        "amended the Clean Water Act and added the municipal and industrial stormwater framework reflected in section 402(p)",
+        "established section 319 direction and federal financial assistance for state nonpoint-source assessment and management programs",
+        "added Title VI authorizing capitalization grants for State Water Pollution Control Revolving Funds",
+        "formally established the National Estuary Program and authorized management conferences and comprehensive conservation and management planning"
+      ],
+      "primary_sources": [
+        "https://www.govinfo.gov/features/earth-day-milestones",
+        "https://www.epa.gov/cwa-404/clean-water-act-section-402-national-pollutant-discharge-elimination-system",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=910217GL.TXT",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100UAGH.TXT",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=940090BU.TXT"
+      ],
+      "source_status": "GovInfo authentic-statute locator plus official EPA statutory and implementation records",
+      "relationship_edges_pending": true
+    },
+    {
+      "node_id": "ENV-GHWB-OPA-1990",
+      "administration": "George H. W. Bush",
+      "date": "1990-08-18",
+      "instrument_type": "statute",
+      "exact_title": "Oil Pollution Act of 1990",
+      "public_law": "Public Law 101-380",
+      "issuing_authority": ["Congress", "President"],
+      "environmental_domains": ["oil_pollution", "surface_water", "coastal_water", "spill_prevention", "spill_response", "natural_resource_damages"],
+      "operative_mechanisms": [
+        "established liability and compensation rules for oil-pollution removal costs and damages",
+        "strengthened federal oil-spill prevention and response authority",
+        "required response planning for vessels and certain facilities and supported Area Contingency Plans",
+        "provided the Oil Spill Liability Trust Fund for qualifying removal costs and damages"
+      ],
+      "primary_sources": [
+        "https://www.govinfo.gov/app/details/COMPS-2991/",
+        "https://www.epa.gov/laws-regulations/summary-oil-pollution-act",
+        "https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/oil-spill-liability-trust-fund"
+      ],
+      "source_status": "GovInfo statute metadata plus official EPA statutory and fund summaries",
+      "relationship_edges_pending": true
+    }
+  ],
+  "next_acquisition": [
+    "Clinton Executive Order 12898 exact Federal Register node",
+    "Obama 2015 Clean Water Rule exact Federal Register node",
+    "Reagan Medical Waste Tracking Act",
+    "George H. W. Bush Great Lakes Critical Programs Act"
+  ]
+}
