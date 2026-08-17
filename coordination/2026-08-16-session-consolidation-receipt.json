@@ -123,6 +123,12 @@
   "duplicate_execution_remaining": false,
   "unassigned_session_specific_work": false,
   "session_only_project_state_remaining": false,
-  "archive_condition": "Archiving is permitted when this receipt is committed and re-fetched from main, because all unresolved execution has a durable repository owner, claim/task/issue surface, or machine-owned continuation path and no future executor requires this conversation to reconstruct the session goals.",
-  "archival_readiness": "PENDING_RECEIPT_REFETCH"
+  "archive_condition": "Archiving is permitted because this receipt was committed and re-fetched from main and all unresolved execution has a durable repository owner, claim/task/issue surface, or machine-owned continuation path; no future executor requires this conversation to reconstruct the session goals.",
+  "archival_readiness": "READY",
+  "archival_readiness_observation": {
+    "initial_receipt_commit": "d377788245907a98d2c7723c342dc9c125a89e26",
+    "initial_receipt_blob": "210d0e7283eabb7494b726f1a332bd20704e6bf8",
+    "refetch_branch": "main",
+    "refetch_result": "VERIFIED_PRESENT"
+  }
 }
