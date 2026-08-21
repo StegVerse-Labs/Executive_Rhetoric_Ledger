@@ -34,6 +34,36 @@ def cluster_id(members: list[dict]) -> str:
     return "CLUSTER-" + hashlib.sha256(basis.encode()).hexdigest()[:20].upper()
 
 
+def deduplicate_candidates(paths: list[Path]) -> list[dict]:
+    """Collapse byte-equivalent repeated candidate IDs and reject conflicts.
+
+    Recurring capture may retain the same governed candidate under more than one
+    archive/cycle path. A cluster may reference a candidate ID only once. If two
+    files reuse an ID while disagreeing on content identity, fail closed rather
+    than choosing one representation and silently changing evidence semantics.
+    """
+    by_id: dict[str, dict] = {}
+    identity_by_id: dict[str, tuple[str, str]] = {}
+    for path in paths:
+        candidate = load(path)
+        candidate_id = candidate["candidate_id"]
+        identity = (
+            candidate.get("content_sha256", ""),
+            json.dumps(candidate, sort_keys=True, separators=(",", ":")),
+        )
+        existing_identity = identity_by_id.get(candidate_id)
+        if existing_identity is None:
+            by_id[candidate_id] = candidate
+            identity_by_id[candidate_id] = identity
+            continue
+        if existing_identity != identity:
+            raise SystemExit(
+                "DISCOVERY_CANDIDATE_ID_COLLISION:"
+                f"{candidate_id}: conflicting candidate records detected"
+            )
+    return [by_id[candidate_id] for candidate_id in sorted(by_id)]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--candidate-root", default="discovery_candidates")
@@ -41,7 +71,8 @@ def main() -> None:
     parser.add_argument("--threshold", type=float, default=0.72)
     args = parser.parse_args()
 
-    candidates = [load(path) for path in sorted((ROOT / args.candidate_root).glob("**/CAND-*.json"))]
+    candidate_paths = sorted((ROOT / args.candidate_root).glob("**/CAND-*.json"))
+    candidates = deduplicate_candidates(candidate_paths)
     by_hash: dict[str, list[dict]] = defaultdict(list)
     for candidate in candidates:
         by_hash[candidate["content_sha256"]].append(candidate)
