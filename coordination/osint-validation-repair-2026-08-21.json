@@ -1,0 +1,32 @@
+{
+  "schema_version": "stegverse.erl.osint_validation_repair.v1",
+  "observed_at": "2026-08-21T14:03:00Z",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "source_commit": "51f52940b4f6487e51338cae68ed4d8081e9d0e8",
+  "failures": [
+    {
+      "workflow": "Validate OSINT Session Tasks",
+      "run_id": 32490153769,
+      "failure": "blocked claims omitted required claim_expires_at field",
+      "repair_commit": "cdde95c87544a388660113153d1f5bf185d62a1b",
+      "repair": "retain claim_expires_at as null for BLOCKED claims without renewing implementation ownership"
+    },
+    {
+      "workflow": "Validate Ledger Schemas",
+      "run_id": 32490153764,
+      "failure": "primary-record intake validator applied intake schema to a federal_force_missing_context_discovery_batch record",
+      "repair_commit": "89a489b3ac30a3f679021686d5996d12ab312bc4",
+      "repair": "route non-primary record types out of the primary-record intake validator while preserving all intake checks"
+    }
+  ],
+  "hosted_reverification": "PENDING",
+  "claim_state_after_repair": {
+    "ERL-OSINT-API-001": "BLOCKED",
+    "ERL-OSINT-HISTORY-001": "BLOCKED"
+  },
+  "authority_effect": false,
+  "publication_effect": false,
+  "activation_effect": false,
+  "release_effect": false,
+  "next_action": "consume fresh hosted validation before renewing any Issue #51 implementation claim"
+}
