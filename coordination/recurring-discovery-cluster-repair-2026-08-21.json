@@ -1,0 +1,38 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.recurring_discovery_cluster_repair.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "branch": "main",
+  "workflow": ".github/workflows/run-recurring-discovery.yml",
+  "workflow_run_id": 32485440460,
+  "failing_head_sha": "d533b3d1b3fa2b90e28becfa780ffdbad62ac354",
+  "failed_job": "capture-and-propose",
+  "failed_step": "Validate generated state",
+  "failure_class": "DUPLICATE_CANDIDATE_ID_IN_CLUSTER",
+  "failure_detail": "Incident cluster schema rejected duplicate member candidate ID CAND-1152B6EFF359820A2394.",
+  "upstream_steps_completed": [
+    "generate governed discovery cycle",
+    "discover governed source-family links",
+    "capture configured and discovered sources",
+    "deduplicate and cluster candidates generation",
+    "generate adjacency and historical-link candidates",
+    "generate historical backfill and variance candidates",
+    "route governed reviews and prepare promotion candidates",
+    "generate reviewed compendium and delivery manifests"
+  ],
+  "repair_commit": "8a84d9fd27c3a9b2268c509467ff833dde60ad5e",
+  "repair_surface": "scripts/cluster_discovery_candidates.py",
+  "repair_contract": {
+    "identical_duplicate_candidate_ids": "collapse before clustering",
+    "conflicting_duplicate_candidate_ids": "fail closed",
+    "automatic_promotion": false,
+    "adjudication_authority": false,
+    "publication_authority": false,
+    "dpoi_state_mutation_authority": false
+  },
+  "canonical_handoff": "docs/OSINT_SESSION_CONSOLIDATION_MIRROR_HANDOFF.md",
+  "canonical_coordination_issue": 51,
+  "fauci_pr48_collision": false,
+  "hosted_reverification": "PENDING",
+  "completion_state": "REPAIR_COMMITTED_HOSTED_PROOF_PENDING",
+  "authority_effect": "NONE"
+}
