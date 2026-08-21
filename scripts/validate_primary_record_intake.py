@@ -26,6 +26,15 @@ def load_json(path: Path) -> object:
         raise ValueError(f"Unable to load {path.relative_to(ROOT)}: {exc}") from exc
 
 
+def is_primary_record_intake(document: object) -> bool:
+    if not isinstance(document, dict):
+        return True
+    record_type = str(document.get("record_type", "")).strip()
+    if record_type and record_type != "primary_record_intake":
+        return False
+    return "queue_id" in document or not record_type
+
+
 def collect_source_ids(value: object) -> set[str]:
     """Collect explicitly named source receipt identifiers from nested packets."""
     found: set[str] = set()
@@ -139,6 +148,7 @@ def main() -> int:
     topic_ids, receipt_ids_by_topic, aliases, failures = assessment_index()
     standalone_receipts, standalone_failures = standalone_receipt_index()
     failures.extend(standalone_failures)
+    validated_count = 0
 
     for path in files:
         try:
@@ -147,6 +157,12 @@ def main() -> int:
             failures.append(str(exc))
             continue
 
+        if not is_primary_record_intake(document):
+            record_type = document.get("record_type") if isinstance(document, dict) else None
+            print(f"SKIPPED {path.relative_to(ROOT)} (record_type={record_type}; not a primary-record intake queue)")
+            continue
+
+        validated_count += 1
         errors = sorted(validator.iter_errors(document), key=lambda error: list(error.path))
         for error in errors:
             location = ".".join(str(part) for part in error.path) or "<root>"
@@ -192,7 +208,7 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print(f"Validated {len(files)} primary-record intake queue(s), governed assessment/source-packet receipts, {len(aliases)} task alias(es), and {len(standalone_receipts)} standalone receipt id(s).")
+    print(f"Validated {validated_count} primary-record intake queue(s), governed assessment/source-packet receipts, {len(aliases)} task alias(es), and {len(standalone_receipts)} standalone receipt id(s).")
     return 0
 
 
