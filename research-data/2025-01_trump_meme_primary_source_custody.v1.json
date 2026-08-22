@@ -1,0 +1,76 @@
+{
+  "schema": "stegverse.erl.trump_meme_primary_source_custody.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "primary_source_custody_partial",
+  "finding_authorized": false,
+  "purpose": "Establish the source-custody baseline for the dedicated $TRUMP empirical reconstruction without yet asserting manipulation, motive, insider activity, or quid pro quo.",
+  "retrieved_on": "2026-08-21",
+  "official_product_source": {
+    "url": "https://gettrumpmemes.com/",
+    "observations": {
+      "official_product_claim": "The site identifies the product as the only official Trump meme and as a product associated with President Donald J. Trump.",
+      "solana_contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+      "tron_contract": "TXZQuyCasxN42bjAcYpP2xwYVMCF6gHBnv",
+      "original_mint_network": "Solana",
+      "day_one_supply": 200000000,
+      "maximum_total_supply_over_three_years": 1000000000,
+      "affiliate_ownership_statement": "CIC Digital LLC, an affiliate of The Trump Organization, and Fight Fight Fight LLC collectively own 80% of the Trump Cards, subject to a 3-year unlocking schedule.",
+      "trading_revenue_statement": "The site states that CIC Digital LLC and Celebration Cards LLC, the owner of Fight Fight Fight LLC, receive trading revenue derived from trading activities of Trump Meme Cards.",
+      "purchase_path_statement": "The official site directs buyers to acquire SOL and use Raydium to swap for $TRUMP; it also references Moonshot and Solana/USDC purchase paths.",
+      "investment_disclaimer": "The site states that Trump Memes are expressions of support/engagement and are not intended as an investment opportunity, investment contract, or security."
+    }
+  },
+  "launch_promotion_source": {
+    "source_type": "archived Truth Social post",
+    "archive_url": "https://trumpstruth.org/statuses/29235",
+    "truth_social_status_id": "113868898660221095",
+    "observed_post_timestamp": "2025-01-17T21:00:00-05:00",
+    "observed_content_summary": "Donald Trump announced his new official Trump meme, told readers to join his Trump community, directed them to get $TRUMP, and linked gettrumpmemes.com.",
+    "custody_note": "This archive is not the platform-of-origin primary source. The Truth Social status ID and original URL must still be captured directly or through a platform-preserving archival source before the event timestamp is promoted to authoritative custody."
+  },
+  "independent_reporting_leads": [
+    {
+      "publisher": "Reuters",
+      "date": "2025-01-20",
+      "url": "https://www.reuters.com/world/us/trumps-new-crypto-coin-sparks-ethics-concerns-2025-01-20/",
+      "use": "independent reporting on launch, ownership concentration, ethical/conflict questions, and early valuation; not a substitute for on-chain reconstruction"
+    },
+    {
+      "publisher": "Reuters",
+      "date": "2025-01-21",
+      "url": "https://www.reuters.com/technology/us-issuers-rex-advisers-osprey-seek-approval-launch-trump-meme-coin-etf-2025-01-21/",
+      "use": "independent evidence of immediate financial-market product interest after launch"
+    }
+  ],
+  "current_custody_results": {
+    "verified_contract_address": true,
+    "verified_initial_and_total_supply_statement": true,
+    "verified_affiliate_80pct_ownership_statement": true,
+    "verified_trading_revenue_entitlement_statement": true,
+    "verified_original_mint_network": true,
+    "verified_official_purchase_path_including_SOL": true,
+    "platform_origin_launch_post_custodied": false,
+    "contract_deployment_transaction_custodied": false,
+    "initial_pool_creation_transaction_custodied": false,
+    "initial_pool_funding_transaction_custodied": false,
+    "full_allocation_chart_values_custodied": false,
+    "vesting_schedule_transactions_custodied": false,
+    "unlock_change_transactions_custodied": false,
+    "creator_affiliate_wallet_map_custodied": false,
+    "fee_flow_reconstruction_complete": false
+  },
+  "hypothesis_relevant_observations_without_promotion": [
+    "The official structure directly links trading activity to revenue for identified affiliated entities, so trading volume is an economically relevant dependent variable even if token price later falls.",
+    "The official launch path required or encouraged acquisition/use of SOL for Raydium swaps, creating a testable spillover channel into Solana demand around launch.",
+    "The concentrated affiliate allocation and three-year unlock schedule make inventory value, unlock timing, and liquidity management necessary components of any beneficiary analysis.",
+    "None of these structural facts establishes manipulation, improper intent, or any unlawful conduct."
+  ],
+  "next_required_actions": [
+    "fetch the Solana mint account and creation transaction for the verified contract",
+    "identify and preserve the first Raydium pool and pool-funding transactions",
+    "capture the complete official allocation chart and group-specific unlock schedule",
+    "capture the original Truth Social launch object with platform-origin timestamp if accessible",
+    "identify wallets attributable to CIC Digital LLC, Fight Fight Fight LLC, Celebration Cards LLC, launch vendors, and liquidity providers with explicit confidence levels",
+    "acquire minute-level price, volume, liquidity, and SOL/TRUMP pair data around the launch post"
+  ]
+}
