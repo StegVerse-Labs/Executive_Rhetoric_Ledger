@@ -168,6 +168,32 @@
       "terminal_condition": "Issue #47/PR #48 WS-A through WS-E release conditions are satisfied or explicitly superseded with evidence.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-TRUMP-CENSUS-ELECTION-2026",
+      "title": "Trump Census noncitizen-voting election-win claim",
+      "candidate_paths": ["research-candidates/2026-08-20-trump-census-noncitizen-voting-election-win-claim.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire the exact primary statement, underlying Census and election-law records, competing explanations, and disconfirming evidence before any finding promotion.",
+      "terminal_condition": "The statement, legal mechanism, empirical premise, and counterevidence are independently reconstructed and a governed terminal transition is recorded.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-TRUMP-CRYPTO-MARKET-2026",
+      "title": "Trump family crypto rhetoric and market impact",
+      "candidate_paths": ["research-candidates/2026-08-21-trump-family-crypto-rhetoric-market-impact.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63+handoff:docs/TRUMP_CRYPTO_MARKET_IMPACT_MIRROR_HANDOFF.md",
+      "artifact_paths": ["docs/TRUMP_CRYPTO_MARKET_IMPACT_MIRROR_HANDOFF.md"],
+      "next_executable_task": "Execute the scoped handoff's primary-source custody, transaction reconstruction, cross-market event study, matched controls, and independent-review queue without promoting candidate claims.",
+      "terminal_condition": "Source custody, reproducible event/transaction analysis, matched controls, disconfirming evidence, and independent review support an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
