@@ -1,0 +1,138 @@
+{
+  "topic_id": "ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST",
+  "packet_status": "source-posture-active",
+  "created_date": "2026-08-22",
+  "last_reviewed": "2026-08-22",
+  "final_legal_conclusion": false,
+  "motive_finding_authorized": false,
+  "notes": "Source-posture packet for the claim that the White House ballroom and other White House construction cost taxpayers $0. The packet preserves the difference between privately funded ballroom components, government-funded security work, the integrated East Wing/military-security complex, and the broader White House construction program.",
+  "sources": [
+    {
+      "source_id": "SRC-WH-2025-07-31-BALLROOM-ANNOUNCEMENT",
+      "title": "The White House Announces White House Ballroom Construction to Begin",
+      "url": "https://www.whitehouse.gov/briefings-statements/2025/07/the-white-house-announces-white-house-ballroom-construction-to-begin/",
+      "access_date": "2026-08-22",
+      "publication_date": "2025-07-31",
+      "source_type": "official-government-statement",
+      "institutional_proximity": "primary-official",
+      "evidence_role": "administration-funding-claim-and-security-scope",
+      "verification_status": "verified-primary",
+      "confidence": "high",
+      "supported_record": [
+        "The White House stated that President Trump and other donors committed funds necessary to build an approximately $200 million ballroom structure.",
+        "The same announcement separately stated that the United States Secret Service would provide necessary security enhancements and modifications."
+      ],
+      "limitations": [
+        "The statement establishes the administration's announced funding posture, not final audited project expenditures.",
+        "It does not establish that all integrated security, underground, demolition, infrastructure, maintenance-account, or related White House construction costs are privately funded."
+      ]
+    },
+    {
+      "source_id": "SRC-SCOTUS-26A203-2026-08-13-STAY-APPLICATION",
+      "title": "National Park Service, et al. v. National Trust for Historic Preservation — Application for Stay",
+      "url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260813211858520_August%20Ballroom%20Application%20-%20FINAL.pdf",
+      "access_date": "2026-08-22",
+      "publication_date": "2026-08-13",
+      "source_type": "court-filing",
+      "institutional_proximity": "primary-official",
+      "evidence_role": "integrated-project-scope",
+      "verification_status": "verified-primary",
+      "confidence": "high",
+      "supported_record": [
+        "The federal government's Supreme Court filing characterizes the East Wing undertaking as an integrated military complex that includes a secure ballroom space.",
+        "This official characterization supports treating the ballroom and security construction as physically and operationally integrated for scope analysis."
+      ],
+      "limitations": [
+        "The filing advocates the government's legal position and is not an independent accounting audit.",
+        "It does not by itself resolve the exact allocation of public versus private funds."
+      ]
+    },
+    {
+      "source_id": "SRC-SCOTUS-26A203-2026-08-14-APPENDIX-FONSI",
+      "title": "National Park Service East Wing modernization and State Ballroom FONSI appendix",
+      "url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260814105130205_26A203%20Appendix.pdf",
+      "access_date": "2026-08-22",
+      "publication_date": "2026-08-14",
+      "source_type": "official-agency-record-in-court-docket",
+      "institutional_proximity": "primary-official",
+      "evidence_role": "project-scope-and-modernization-record",
+      "verification_status": "verified-primary",
+      "confidence": "high",
+      "supported_record": [
+        "The NPS environmental record describes a selected action for East Wing modernization and State Ballroom construction, including replacement of the existing East Wing with a new building housing the ballroom.",
+        "The official record treats the work as a modernization action on the White House grounds rather than only a detached event-space purchase."
+      ],
+      "limitations": [
+        "Environmental review records do not provide a complete expenditure ledger.",
+        "Funding-source attribution still requires appropriations, transfer, obligation, contract, and donor records."
+      ]
+    },
+    {
+      "source_id": "SRC-REUTERS-2026-08-12-WHITE-HOUSE-CONSTRUCTION-900M",
+      "title": "Trump administration set to spend at least $900 million on White House construction, Washington Post reports",
+      "url": "https://www.reuters.com/world/us/trump-administration-set-spend-least-900-million-white-house-construction-wapo-2026-08-12/",
+      "access_date": "2026-08-22",
+      "publication_date": "2026-08-12",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "broader-program-funding-report",
+      "verification_status": "verified-secondary",
+      "confidence": "high",
+      "supported_record": [
+        "Reuters reported at least $900 million in planned White House construction projects.",
+        "Reuters reported financing that included funds collected from government agencies as well as private donors and routed through a White House maintenance account."
+      ],
+      "limitations": [
+        "Reuters is secondary to the underlying planning and financial records.",
+        "The underlying agency transfer, maintenance-account, obligation, and contract records remain required for primary-source reconstruction."
+      ]
+    },
+    {
+      "source_id": "SRC-AXIOS-2026-08-12-BALLROOM-BUNKER-600M",
+      "title": "Trump's ballroom costs are rising. What we know about the secret underground bunker",
+      "url": "https://www.axios.com/2026/08/12/trumps-ballroom-costs-are-rising-what-we-know-about-the-secret-underground-bunker",
+      "access_date": "2026-08-22",
+      "publication_date": "2026-08-12",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "integrated-project-cost-allocation-report",
+      "verification_status": "verified-secondary",
+      "confidence": "medium-high",
+      "supported_record": [
+        "Axios reported an approximately $600 million integrated East Wing ballroom and underground security project.",
+        "Axios reported that roughly half of that broader project cost was expected to be taxpayer funded."
+      ],
+      "limitations": [
+        "The reported allocation must be reconciled against primary government accounting and contractor records.",
+        "The figure may reflect a different project scope than earlier $200 million, $250 million, or $400 million public estimates."
+      ]
+    },
+    {
+      "source_id": "SRC-REUTERS-2026-08-21-SCOTUS-BALLROOM-STAY",
+      "title": "Supreme Court lets Trump continue work on White House ballroom for now",
+      "url": "https://www.reuters.com/world/supreme-court-lets-trump-continue-work-white-house-ballroom-now-2026-08-21/",
+      "access_date": "2026-08-22",
+      "publication_date": "2026-08-21",
+      "source_type": "news-report",
+      "institutional_proximity": "media-intermediary",
+      "evidence_role": "current-litigation-and-project-scope-context",
+      "verification_status": "verified-secondary",
+      "confidence": "high",
+      "supported_record": [
+        "Reuters reported that the Supreme Court issued an administrative stay allowing construction to continue temporarily.",
+        "Reuters described the ballroom as part of a larger military and security complex."
+      ],
+      "limitations": [
+        "The administrative stay is procedural and does not finally resolve legal authority or funding questions.",
+        "The article's $400 million characterization must be scope-reconciled against other estimates."
+      ]
+    }
+  ],
+  "current_assessment": {
+    "private_ballroom_component_funding": "supported-as-administration-claim",
+    "zero_taxpayer_cost_for_integrated_project": "not-supported",
+    "zero_taxpayer_cost_for-broader-white-house-construction": "contradicted-by-available-evidence",
+    "scope_substitution_risk": "high",
+    "primary_accounting_reconstruction": "required"
+  }
+}
