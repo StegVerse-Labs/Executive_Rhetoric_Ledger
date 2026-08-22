@@ -1,0 +1,77 @@
+{
+  "schema": "stegverse.erl.wlf_positive_adoption_matrix.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "primary_source_matrix",
+  "finding_authorized": false,
+  "purpose": "Track positive evidence for any WLF/USD1 asset, network, bridge, custody, conversion, settlement, or payment integration without privileging XRP or any other candidate in advance.",
+  "retrieved_on": "2026-08-21",
+  "primary_sources": [
+    "https://worldlibertyfinancial.com/usd1",
+    "https://worldlibertyfinancial.com/multichain",
+    "https://worldlibertyfinancial.com/bridge",
+    "https://por.worldlibertyfinancial.com/",
+    "https://docs.worldlibertyfinancial.com/usd1-token/proof-of-reserves",
+    "https://worldlibertyfinancial.com/usd1/attestation-reports",
+    "https://worldlibertyfinancial.com/",
+    "https://worldlibertyfinancial.com/trade"
+  ],
+  "supported_networks_from_live_proof_of_reserves": [
+    {"network":"Ethereum","native_asset":"ETH","evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"BNB Chain","native_asset":"BNB","evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Tron","native_asset":"TRX","evidence":"USD1 token/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Solana","native_asset":"SOL","evidence":"USD1 token/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Aptos","native_asset":"APT","evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Plume","native_asset":null,"evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"AB Core","native_asset":null,"evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Monad","native_asset":"MON","evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Mantle","native_asset":"MNT","evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"},
+    {"network":"Morph","native_asset":null,"evidence":"USD1 contract/supply tracked by WLF proof-of-reserves dashboard","strength":"direct_verified_network_presence"}
+  ],
+  "explicit_product_capabilities": [
+    {"capability":"multichain deployment","evidence":"WLF states USD1 is supported on multiple blockchain networks and that more integrations are on the way","state":"active_and_expanding"},
+    {"capability":"bridge","evidence":"WLF offers a bridge for transferring USD1 or WLFI between integrated networks; public interface shows Ethereum to BNB Smart Chain as an example route","state":"active"},
+    {"capability":"convert","evidence":"WLF states holders will be able to convert other cryptocurrencies into USD1 or WLFI and vice versa","state":"coming_soon"},
+    {"capability":"cross_border_payments","evidence":"WLF explicitly markets USD1 for faster, lower-cost cross-border payments with near-instant settlement","state":"stated_use_case"},
+    {"capability":"global_dollar_access","evidence":"WLF explicitly markets global digital-dollar access","state":"stated_use_case"},
+    {"capability":"defi_and_capital_markets","evidence":"WLF explicitly markets USD1 for lending, borrowing, and digital-asset trading","state":"stated_use_case"},
+    {"capability":"agentic_payments","evidence":"WLF AgentPay SDK describes payments, fund holding, and cross-chain movement with policy enforcement; public example includes USD1 and BNB spending policies","state":"active_product_surface"}
+  ],
+  "economic_interest_primary_source": {
+    "source": "https://worldlibertyfinancial.com/usd1/attestation-reports",
+    "facts": [
+      "BitGo Trust Company and/or BitGo Technologies hold or maintain USD1 reserve assets and BitGo processes initial purchases and redemptions.",
+      "World Liberty Financial LLC and affiliated entities own the USD1 brand and provide certain services.",
+      "BitGo and WLF-affiliated entities are entitled to interest earned on reserve assets pursuant to agreements.",
+      "DT Marks SC LLC, described by WLF as affiliated with Donald J. Trump and certain family members, has an indirect economic interest through approximately 38% beneficial ownership of an affiliate of World Liberty Financial LLC that is entitled to reserve interest."
+    ]
+  },
+  "candidate_asset_network_radar": [
+    {"candidate":"SOL / Solana","positive_evidence":"USD1 direct network presence; WLF homepage/integration surfaces show Solana","classification":"verified_existing_integration"},
+    {"candidate":"ETH / Ethereum","positive_evidence":"USD1 direct network presence; WLF bridge interface shows Ethereum; WLFI trade interface is available on Ethereum","classification":"verified_existing_integration"},
+    {"candidate":"BNB / BNB Chain","positive_evidence":"USD1 direct network presence; WLF bridge route includes BNB Smart Chain; AgentPay example includes BNB spending policy","classification":"verified_existing_integration"},
+    {"candidate":"TRX / Tron","positive_evidence":"USD1 direct network presence on proof-of-reserves dashboard","classification":"verified_existing_integration"},
+    {"candidate":"APT / Aptos","positive_evidence":"USD1 direct network presence on proof-of-reserves dashboard","classification":"verified_existing_integration"},
+    {"candidate":"MON / Monad","positive_evidence":"USD1 direct network presence on proof-of-reserves dashboard","classification":"verified_existing_integration"},
+    {"candidate":"MNT / Mantle","positive_evidence":"USD1 direct network presence on proof-of-reserves dashboard","classification":"verified_existing_integration"},
+    {"candidate":"XRP / XRPL","positive_evidence":null,"classification":"no_positive_primary_source_evidence_located_in_current_matrix"},
+    {"candidate":"XLM / Stellar","positive_evidence":null,"classification":"no_positive_primary_source_evidence_located_in_current_matrix"},
+    {"candidate":"HBAR / Hedera","positive_evidence":null,"classification":"no_positive_primary_source_evidence_located_in_current_matrix"},
+    {"candidate":"XDC / XDC Network","positive_evidence":null,"classification":"no_positive_primary_source_evidence_located_in_current_matrix"},
+    {"candidate":"ALGO / Algorand","positive_evidence":null,"classification":"no_positive_primary_source_evidence_located_in_current_matrix"}
+  ],
+  "important_distinctions": [
+    "Network integration is not equivalent to native-token adoption or demand.",
+    "USD1 existing on Solana does not by itself establish demand for SOL beyond network execution requirements.",
+    "A future conversion listing for a token is weaker evidence than native issuance or settlement integration but stronger than market rumor.",
+    "A bridge asset such as XRP or XLM is functionally different from a general-purpose execution network such as Solana or Ethereum.",
+    "The neutral discovery rule is to add any positive evidence for any candidate as it appears, including evidence that cuts against an XRP-specific explanation."
+  ],
+  "next_evidence_targets": [
+    "capture per-network USD1 contract addresses and deployment timestamps",
+    "capture first-public-announcement timestamp for each network integration",
+    "capture supported bridge route pairs rather than only currently displayed default route",
+    "capture custody/provider support by network",
+    "capture first asset list when WLF Convert becomes available",
+    "capture any XRP/XLM/HBAR/XDC/ALGO support only if a primary source, contract, provider, or integration surface appears"
+  ]
+}
