@@ -1,0 +1,58 @@
+{
+  "schema": "stegverse.erl.crypto_market_panel.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "canonical_daily_source_reproduction",
+  "finding_authorized": false,
+  "source": {
+    "provider": "CoinGecko",
+    "time_basis": "UTC",
+    "field": "Close",
+    "retrieved_on": "2026-08-21",
+    "note": "CoinGecko historical-data pages state that selected dates are applied in UTC time. Values below reproduce the daily Close field for a single provider across all eight assets.",
+    "urls": {
+      "BTC": "https://www.coingecko.com/en/coins/bitcoin/historical_data",
+      "ETH": "https://www.coingecko.com/en/coins/ethereum/historical_data",
+      "XRP": "https://www.coingecko.com/en/coins/xrp/historical_data",
+      "XLM": "https://www.coingecko.com/en/coins/stellar/historical_data",
+      "SOL": "https://www.coingecko.com/en/coins/solana/historical_data",
+      "HBAR": "https://www.coingecko.com/en/coins/hedera/historical_data",
+      "XDC": "https://www.coingecko.com/en/coins/xdc-network/historical_data",
+      "ALGO": "https://www.coingecko.com/en/coins/algorand/historical_data"
+    }
+  },
+  "dates": ["2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21"],
+  "close_usd": {
+    "BTC": [63417,62996,63017,62853,64455,64664,69418,73098,78318],
+    "ETH": [1884.71,1880.56,1880.99,1874.41,1911.38,1914.81,2253.56,2326.71,2514.97],
+    "XRP": [1.009,0.998803,1.002,0.992809,1.002,1.000,1.11,1.27,1.45],
+    "XLM": [0.159360,0.158046,0.157952,0.156287,0.158039,0.154708,0.170504,0.181459,0.201813],
+    "SOL": [76.22,75.34,75.28,74.55,75.93,77.00,85.47,87.64,93.69],
+    "HBAR": [0.065439,0.065852,0.065358,0.064652,0.065938,0.067110,0.070683,0.073485,0.079781],
+    "XDC": [0.02683323,0.02683473,0.02681414,0.02699180,0.02699226,0.02666629,0.02783083,0.02863018,0.02981757],
+    "ALGO": [0.078734,0.079440,0.079425,0.078372,0.078479,0.077850,0.082095,0.088321,0.097381]
+  },
+  "derived": {
+    "return_2026_08_13_to_2026_08_21_pct": {
+      "BTC": 23.50,
+      "ETH": 33.44,
+      "XRP": 43.71,
+      "XLM": 26.64,
+      "SOL": 22.92,
+      "HBAR": 21.92,
+      "XDC": 11.12,
+      "ALGO": 23.68
+    },
+    "xrp_xlm_ratio": [6.3316,6.3197,6.3437,6.3525,6.3402,6.4638,6.5101,6.9988,7.1849],
+    "xrp_xlm_ratio_change_pct": 13.48
+  },
+  "interpretation_boundary": {
+    "canonicalized_claim": "The single-source UTC daily-close panel confirms that XRP outperformed BTC, ETH, XLM, SOL, HBAR, XDC, and ALGO from the Aug. 13 close through the Aug. 21 close, and that XRP appreciated relative to XLM over the same daily-close interval.",
+    "not_established": [
+      "the intraday onset time of XRP/XLM divergence",
+      "causation by the Aug. 14 WLF/OCC event",
+      "causation by any political, regulatory, liquidity, whale, derivatives, or adoption event",
+      "market manipulation, insider positioning, motive, quid pro quo, or preferential treatment"
+    ],
+    "next_required_test": "Build a 5-minute-or-finer XRP/XLM relative-value series and align authoritative event timestamps before attributing the divergence to any candidate event."
+  }
+}
