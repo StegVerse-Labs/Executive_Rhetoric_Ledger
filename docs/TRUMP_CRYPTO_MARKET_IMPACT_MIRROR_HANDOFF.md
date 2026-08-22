@@ -17,44 +17,23 @@ Scoped continuity source for the Trump-family crypto, executive-rhetoric, and ma
 
 - primary candidate: `research-candidates/2026-08-21-trump-family-crypto-rhetoric-market-impact.md`
 - pre-`$TRUMP` checkpoint: `research-candidates/2026-08-21-pre-trump-crypto-market-architecture-checkpoint.md`
-- checkpoint commit: `f7933de401641c88d41c1f1152efdceea1a2a885`
 - canonical daily crypto panel: `research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json`
-- canonical daily crypto panel commit: `adc19ea8e113fef0b6f76b25b8d5034d07dfc9f0`
 - WLF/USD1 positive-adoption matrix: `research-data/2026-08-21_wlf_usd1_positive_adoption_matrix.json`
-- WLF/USD1 positive-adoption matrix commit: `cae3a281c9cded3dd837e077557e098de4005e9d`
 - `$TRUMP` primary-source custody baseline: `research-data/2025-01_trump_meme_primary_source_custody.v1.json`
-- `$TRUMP` custody baseline commit: `bb28922decce6438abe8f36bcdda125981c09a7c`
 - `$TRUMP` launch event baseline: `research-data/2025-01_trump_meme_event_baseline.v1.json`
 - `$TRUMP` Meteora disclosure-pathway record: `research-data/2025-01_trump_meme_liquidity_pathway_public_disclosure.v1.json`
-- Meteora disclosure-pathway commit: `b0a7901d1fc5e27f1c1d2cc80647d95a89375c01`
+- RLUSD institutional-credit transition: `research-data/2026-08-20_2026-08-21_rlusd_institutional_credit_transition.v1.json`
+- RLUSD institutional-credit transition commit: `7fbc3f8b8cbf05622cdcc3cbe47ca248cd553acb`
 
 ## Pre-`$TRUMP` checkpoint coverage
 
-The checkpoint durably preserves the accumulated analysis before dedicated `$TRUMP` reconstruction:
-
-- 2026-08-14 OCC conditional preliminary approval for World Liberty Trust Company;
-- `Regulatory Boundary Value Accretion` as distinct from favoritism/preferential-treatment testing;
-- neutral `Positive Adoption Radar` for **any** WLF/USD1 asset or network integration;
-- corrected functional taxonomy separating XRP/XLM bridge/interoperability roles from general-purpose chains;
-- XRP/XLM native-token value-capture asymmetry;
-- bilateral-liquidity fragmentation, prefunding, correspondent, convertibility, volatility, and settlement constraints;
-- large-market/small-market liquidity asymmetry;
-- neutral XRP bridge versus USD1/USDC/RLUSD dollar-stablecoin bridge architectures;
-- Glassnode historical BTC -> ETH -> altcoin rotation lag baseline;
-- compressed-rotation / XRP excess-return anomaly candidate;
-- XRP/XLM ratio as primary bridge-asset relative-value discriminator;
-- political-financial relationship variables with campaign/PAC/inaugural/lobbying/access categories separated;
-- prior Trump official-adoption signaling as a demonstrated crypto-market sensitivity variable;
-- Treasury/CLARITY and other broad-market controls;
-- Iran/regional-stress -> FX/liquidity -> stablecoin/payment-rail demand hypothesis;
-- directional-profit versus infrastructure-profit distinction;
-- `$TRUMP` as the next empirical test basis rather than a pre-assumed causal template.
+The checkpoint durably preserves the accumulated analysis before dedicated `$TRUMP` reconstruction, including the 2026-08-14 WLF/OCC regulatory transition, Regulatory Boundary Value Accretion, neutral positive-adoption discovery, XRP/XLM bridge-asset comparison, large/small-market liquidity asymmetry, stablecoin-versus-neutral-bridge architecture, historical crypto rotation baselines, the Aug. 13-21 XRP excess-return candidate, political/access variables, geopolitical-liquidity hypotheses, and directional-profit versus infrastructure-profit distinctions.
 
 ## Evidence hardened in current continuation
 
 ### Canonical Aug. 13-21 daily market panel
 
-A single-provider, UTC-aligned CoinGecko daily-close panel now covers BTC, ETH, XRP, XLM, SOL, HBAR, XDC, and ALGO from 2026-08-13 through 2026-08-21.
+A single-provider, UTC-aligned CoinGecko daily-close panel covers BTC, ETH, XRP, XLM, SOL, HBAR, XDC, and ALGO from 2026-08-13 through 2026-08-21.
 
 Reproduced Aug. 13 -> Aug. 21 close-to-close returns:
 
@@ -67,78 +46,42 @@ Reproduced Aug. 13 -> Aug. 21 close-to-close returns:
 - XDC: +11.12%
 - ALGO: +23.68%
 
-The XRP/XLM daily-close ratio increased from 6.3316 to 7.1849, or +13.48%, over the same interval.
-
-This confirms daily-close relative outperformance but does **not** establish intraday onset or causation. A 5m-or-finer XRP/XLM series remains required before event attribution.
+The XRP/XLM daily-close ratio increased from 6.3316 to 7.1849, or +13.48%. This establishes relative daily-close outperformance but not intraday onset or causation.
 
 ### WLF/USD1 positive-adoption radar
 
-The primary-source matrix records direct USD1 network presence on Ethereum, BNB Chain, Tron, Solana, Aptos, Plume, AB Core, Monad, Mantle, and Morph, together with active/announced WLF bridge, convert, cross-border-payment, global-dollar-access, DeFi/capital-markets, and agentic-payment surfaces.
+The primary-source matrix records direct USD1 network presence on Ethereum, BNB Chain, Tron, Solana, Aptos, Plume, AB Core, Monad, Mantle, and Morph, plus WLF bridge, convert, cross-border-payment, global-dollar-access, DeFi/capital-markets, and agentic-payment surfaces.
 
-The matrix preserves the distinction `network integration != native-token demand` and gives every candidate equal discovery treatment. No XRP/XRPL, XLM/Stellar, HBAR/Hedera, XDC, or ALGO/Algorand positive primary-source integration was located in the current matrix; that is a current-evidence state, not a prediction.
+`network integration != native-token demand` remains a governing distinction. The matrix gives every candidate equal discovery treatment.
 
-The same primary-source custody records that WLF-affiliated entities are entitled to reserve interest under agreements with BitGo and that DT Marks SC LLC, described by WLF as affiliated with Donald J. Trump and certain family members, has an indirect economic interest through approximately 38% beneficial ownership of an affiliate entitled to such interest.
+### RLUSD institutional-credit transition — NEW
 
-### `$TRUMP` primary-source custody baseline
+A new Aug. 20-21, 2026 event record captures the Ripple/Clearpool/Cicada institutional-credit initiative.
 
-The dedicated `$TRUMP` empirical stage has now begun.
+Reported structure:
 
-Verified/custodied facts include:
+- RLUSD is the proposed loan denomination, disbursement asset, and repayment asset;
+- XRPL is the execution/ledger infrastructure;
+- Ripple participates as a limited partner/capital participant;
+- Clearpool provides lending/vault infrastructure;
+- Cicada Partners sources borrowers, establishes loan terms, and manages credit risk;
+- XRP is not the loan principal asset in the reported structure; its direct protocol role remains transaction fees and account reserve requirements.
 
-- Solana contract: `6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN`;
-- original mint network: Solana;
-- 200 million tokens available on day one;
-- total supply scheduled to grow to 1 billion over three years;
-- CIC Digital LLC and Fight Fight Fight LLC collectively described as owning 80% subject to a three-year unlocking schedule;
-- CIC Digital LLC and Celebration Cards LLC described as receiving trading revenue derived from Trump Meme Card trading activity;
-- corrected original Truth Social launch status ID: `113846888132979151`, with archived timestamp 2025-01-17 21:00 EST;
-- token first-mint lead at 2025-01-17 14:01:48 UTC;
-- Reuters early-fee estimates from multiple analytics firms in the approximately $86M-$100M range for Jan. 17-30;
-- Reuters reports the initial 200M public tranche moved into three creator-associated wallets;
-- Reuters later methodology estimates substantial 2025 token-sale and fee revenue, with attribution assumptions explicitly separated from disclosed legal entitlement.
+XRPL primary technical sources confirm that XLS-65 defines single-asset vaults and XLS-66 defines fixed-term, underwritten, uncollateralized credit using pooled vault funds with off-chain underwriting and on-ledger execution. The product was not represented as proven live mainnet production at the announcement state; activation remains amendment-dependent.
 
-### `$TRUMP` Meteora versus Raydium public-disclosure pathway
+Investigative significance:
 
-The current official product site directs users to Raydium, but current instructions cannot be projected backward into the launch architecture.
+1. Ripple is extending RLUSD from payments/settlement into institutional credit and collateral-adjacent infrastructure.
+2. This strengthens the distinction between **XRPL adoption** and **XRP-native-asset demand**: the ledger can gain institutional utility while RLUSD is the principal economic asset for a particular product.
+3. It broadens the Ripple ecosystem value-capture topology across payments, stablecoin issuance, settlement, tokenization, collateral mobility, and proposed credit.
+4. Because this announcement lands inside the Aug. 13-21 XRP rally window, it is now a required XRP-specific event in the intraday XRP/XLM/BTC/ETH event study.
+5. Any XRP response must be tested as an ecosystem-expectations effect versus direct XRP transactional demand; the lending structure itself does not mechanically require XRP as principal.
 
-The public record now shows that Meteora was **not** merely a hidden on-chain venue discovered retrospectively:
+### `$TRUMP` primary-source / liquidity-pathway state
 
-- the original Trump launch post named only gettrumpmemes.com and did not name Meteora, Jupiter, or Raydium;
-- by 2025-01-18, Jupiter publicly stated that it worked closely with the Meteora team on the `$TRUMP` launch and that the launch used the same LFG stack as JUP, including a DLMM pool, ILM design, and tight Jupiter integration;
-- contemporaneous ecosystem posts publicly described `$TRUMP` as launched on Meteora;
-- contemporaneous reporting documented a trader using the Meteora market within minutes of the Trump launch announcement.
+Verified/custodied facts include the Solana contract, original Solana mint, 200M day-one supply, 1B scheduled total supply, 80% affiliate ownership statement, affiliate trading-revenue rights, corrected original Truth Social launch status, first-mint lead, early fee estimates, creator-wallet leads, and public Meteora/Jupiter pathway evidence.
 
-Therefore `Raydium` was not the only publicly disclosed pathway. The unresolved question is narrower and more important: **when did Meteora first become publicly discoverable, through which actor/channel, relative to mint, pool creation/funding, Trump promotion, and first large trades?**
-
-Dedicated record: `research-data/2025-01_trump_meme_liquidity_pathway_public_disclosure.v1.json`.
-
-Historical `gettrumpmemes.com` launch-state custody remains required to determine whether the official product page itself named Meteora, Jupiter, Moonshot, Raydium, or another pathway on Jan. 17-18.
-
-## Installed investigative lanes
-
-1. executive rhetoric -> oil-price event study
-2. dollar/Treasury action -> crypto/gold substitution
-3. `$TRUMP` launch/promotion/access/supply management
-4. `$MELANIA` launch and pre-announcement wallets
-5. family-token rotation and aggregate fee/value capture
-6. access-for-holdings and foreign/counterparty exposure
-7. crypto policy / private-interest overlap
-8. cross-market rhetoric sequencing
-9. disconfirming evidence and matched controls
-10. Trumpality trajectory mapping
-
-## Installed Trumpality trajectories
-
-Original eight ACTIVE trajectories remain installed. Four checkpoint-derived trajectories are also installed in `StegVerse-Labs/Trumpality/research/frontier.json`:
-
-- `regulatory-boundary-value-accretion`
-- `wlf-positive-adoption-radar`
-- `institutional-bridge-asset-repricing`
-- `geopolitical-financial-rail-demand`
-
-Trumpality checkpoint mapping commit: `9ee5c32d99ad916842e65eb16105a9f55eb7f7d0`
-
-Trumpality remains a lead-only consumer. ERL alone may promote evaluated conclusions.
+The unresolved liquidity-pathway question remains: when did Meteora become publicly discoverable, through which actor/channel, relative to mint, pool creation/funding, Trump promotion, and first large trades? Historical `gettrumpmemes.com` launch-state custody is still required.
 
 ## Governing boundaries
 
@@ -147,6 +90,9 @@ Trumpality remains a lead-only consumer. ERL alone may promote evaluated conclus
 - private financial interest != quid pro quo
 - regulatory approval != preferential treatment
 - network adoption != native-token demand
+- XRPL institutional adoption != XRP principal-asset usage
+- RLUSD credit demand != XRP credit demand
+- ecosystem repricing != direct transactional demand
 - public Meteora disclosure != proof of launch-time retail awareness
 - ecosystem disclosure != Trump-origin disclosure
 - pre-announcement wallet activity != insider attribution
@@ -160,30 +106,31 @@ Any promotion beyond `research_candidate` requires source custody, explicit comp
 
 ## Immediate research queue
 
-### Evidence hardening before or alongside `$TRUMP` baseline work
+### XRP/WLF/RLUSD event hardening
 
-1. **COMPLETE (daily granularity):** reproduce Aug. 13-21 BTC/ETH/XRP/XLM/SOL/HBAR/XDC/ALGO returns from one timestamp-consistent source.
+1. **COMPLETE (daily granularity):** Aug. 13-21 BTC/ETH/XRP/XLM/SOL/HBAR/XDC/ALGO timestamp-consistent daily panel.
 2. Build 5m-or-finer XRP/XLM ratio series from Aug. 13 through the first material post-rally correction.
-3. Timestamp OCC/WLF, Treasury, White House, SEC, Ripple, Stellar, and geopolitical events against that series.
-4. **COMPLETE (current primary-source snapshot):** WLF/USD1 positive-adoption evidence matrix.
-5. Preserve authoritative political-contribution/access records with exact category labels.
-6. Construct corridor-level liquidity variables.
-7. Compare USD1/USDC/RLUSD usage during geopolitical/FX stress with XRP/XLM and broad-market controls.
+3. Build authoritative timestamp alignment for OCC/WLF, Treasury, White House, SEC, Ripple, Stellar, and geopolitical events.
+4. **COMPLETE (current snapshot):** WLF/USD1 positive-adoption evidence matrix.
+5. **NEW / ACTIVE:** capture authoritative original Ripple/Clearpool/Cicada announcement objects and exact timestamps; establish XLS-65/XLS-66 amendment state at announcement time.
+6. Add the RLUSD institutional-credit event to the intraday panel and measure XRP/XLM, XRP/BTC, XRP/ETH, and CPOOL responses at 5m/30m/1h/6h/24h/72h.
+7. Track RLUSD supply, transfer volume, and RLUSD/XRP trading activity around the event.
+8. Preserve authoritative political-contribution/access records with exact category labels.
+9. Construct corridor-level liquidity variables and geopolitical/stablecoin-demand controls.
 
 ### `$TRUMP` baseline reconstruction — ACTIVE
 
-8. **PARTIAL:** verified contract, original mint network, supply/allocation headline, affiliate ownership/revenue-right statements, corrected launch object lead, first-mint lead, public Meteora pathway evidence, and fee/revenue reconstruction targets are now preserved.
-9. Recover original Jupiter X object and any original Meteora launch acknowledgement with authoritative timestamps.
-10. Recover archived Jan. 17-18 `gettrumpmemes.com` states to identify launch-period named purchase/trading pathways.
-11. Recover the Solana mint/deployment transaction and initial 200M distribution transactions.
-12. Identify first Meteora pool creation and funding transactions; compare those timestamps with public disclosure timestamps.
-13. Acquire minute-level price/volume/liquidity series around launch and later promotion/access events.
-14. Reconstruct creator/affiliate wallets with confidence labels.
-15. Reproduce fee, token-sale, and affiliated-value calculations from on-chain data.
-16. Reconstruct dinner/leaderboard holdings and counterparty attribution limits.
-17. Add matched celebrity/political meme-coin controls.
-18. Preserve null, contradictory, mixed, and result-changing evidence.
-19. Produce independent review before any finding promotion or public projection.
+10. Recover original Jupiter/Meteora launch acknowledgement objects and authoritative timestamps.
+11. Recover archived Jan. 17-18 `gettrumpmemes.com` states.
+12. Recover Solana mint/deployment transaction and initial 200M distribution transactions.
+13. Identify first Meteora pool creation/funding transactions and compare with public-disclosure timestamps.
+14. Acquire minute-level `$TRUMP`/SOL/BTC price-volume-liquidity series.
+15. Reconstruct creator/affiliate wallets with confidence labels.
+16. Reproduce fee, token-sale, and affiliated-value calculations from chain data.
+17. Reconstruct dinner/leaderboard holdings and counterparty attribution limits.
+18. Add matched celebrity/political meme-coin controls.
+19. Preserve null, contradictory, mixed, and result-changing evidence.
+20. Produce independent review before any finding promotion or public projection.
 
 ## Current completion accounting
 
@@ -197,7 +144,8 @@ Research structure and empirical activation remain separate:
 - checkpoint-derived Trumpality trajectories: 4/4 = 100%
 - canonical daily market-data reproduction: 1/1 = 100%
 - WLF positive-adoption evidence matrix: 1/1 current snapshot = 100%
-- `$TRUMP` public liquidity-pathway disclosure record: 1/1 = 100% as current evidence snapshot
+- RLUSD institutional-credit transition record: 1/1 = 100% current evidence snapshot
+- `$TRUMP` public liquidity-pathway disclosure record: 1/1 = 100% current evidence snapshot
 - `$TRUMP` primary-source/on-chain custody: PARTIAL
 - XRP/XLM intraday relative-value reconstruction: 0/1 complete
 - event-timestamp alignment dataset: 0/1 complete
@@ -209,7 +157,7 @@ Research structure and empirical activation remain separate:
 - independent review: 0/1 complete
 - finding promotion: 0/1 authorized
 
-The last aggregate activation estimate was 38%. It is intentionally not recomputed from unlike deliverables. Component accounting above is authoritative until a weighted denominator is explicitly defined.
+The last aggregate activation estimate remains 38%. It is not recomputed from unlike deliverables until a weighted denominator is explicitly defined. Component accounting is authoritative.
 
 ## Known remaining files/modules and destinations
 
@@ -218,6 +166,7 @@ The last aggregate activation estimate was 38%. It is intentionally not recomput
 - XRP/XLM 5m-or-finer relative-value event study — pending
 - authoritative event-timestamp alignment dataset — pending
 - WLF positive-adoption evidence matrix — INSTALLED / living surface
+- RLUSD institutional-credit transition record — INSTALLED / living event surface
 - political contribution/access custody dataset — pending
 - liquidity-corridor / large-small-market dataset — pending
 - geopolitical-stress / stablecoin-rail demand dataset — pending
@@ -248,4 +197,4 @@ No tag, release, Site, Publisher, admissibility-wiki, stegguardian-wiki, or publ
 
 ## Archive readiness
 
-The pre-`$TRUMP` analytical state, canonical daily comparison, WLF positive-adoption matrix, initial `$TRUMP` custody baseline, and the Meteora public-disclosure distinction are durably preserved. The substantive investigation remains ACTIVE and must not be represented as complete.
+The pre-`$TRUMP` analytical state, canonical daily comparison, WLF positive-adoption matrix, RLUSD institutional-credit transition, initial `$TRUMP` custody baseline, and Meteora public-disclosure distinction are durably preserved. The substantive investigation remains ACTIVE and must not be represented as complete.
