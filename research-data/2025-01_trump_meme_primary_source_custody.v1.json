@@ -1,9 +1,9 @@
 {
   "schema": "stegverse.erl.trump_meme_primary_source_custody.v1",
   "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
-  "status": "primary_source_custody_partial",
+  "status": "primary_source_custody_partial_hardened",
   "finding_authorized": false,
-  "purpose": "Establish the source-custody baseline for the dedicated $TRUMP empirical reconstruction without yet asserting manipulation, motive, insider activity, or quid pro quo.",
+  "purpose": "Establish and harden the source-custody baseline for the dedicated $TRUMP empirical reconstruction without yet asserting manipulation, motive, insider activity, or quid pro quo.",
   "retrieved_on": "2026-08-21",
   "official_product_source": {
     "url": "https://gettrumpmemes.com/",
@@ -20,26 +20,118 @@
       "investment_disclaimer": "The site states that Trump Memes are expressions of support/engagement and are not intended as an investment opportunity, investment contract, or security."
     }
   },
+  "solana_token_source": {
+    "source": "Solscan token record",
+    "url": "https://solscan.io/token/6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+    "observations": {
+      "first_mint_utc": "2025-01-17T14:01:48Z",
+      "decimals": 6,
+      "authority_and_creator_display": "5e2qRc1DNEXmyxP8qwPwJhRWjef7usLyi7v5xjqLr5G7",
+      "custody_limit": "The token summary identifies creator/authority metadata and first-mint time, but this record does not yet preserve the underlying mint-creation transaction signature or full transaction instruction trace."
+    }
+  },
   "launch_promotion_source": {
-    "source_type": "archived Truth Social post",
-    "archive_url": "https://trumpstruth.org/statuses/29235",
-    "truth_social_status_id": "113868898660221095",
+    "source_type": "archived Truth Social original-post record with original platform URL preserved",
+    "archive_url": "https://trumpstruth.org/statuses/29140",
+    "truth_social_status_id": "113846888132979151",
+    "original_url": "https://truthsocial.com/@realDonaldTrump/113846888132979151",
     "observed_post_timestamp": "2025-01-17T21:00:00-05:00",
     "observed_content_summary": "Donald Trump announced his new official Trump meme, told readers to join his Trump community, directed them to get $TRUMP, and linked gettrumpmemes.com.",
-    "custody_note": "This archive is not the platform-of-origin primary source. The Truth Social status ID and original URL must still be captured directly or through a platform-preserving archival source before the event timestamp is promoted to authoritative custody."
+    "cross_source_confirmation": [
+      "Trump's Truth archive preserves the original status ID and 9:00 PM EST display time.",
+      "The American Presidency Project separately preserves the same original status ID and text in its January 17, 2025 Truth Social record; its displayed clock convention differs, so the exact machine timestamp still requires platform/API or signed archive custody."
+    ],
+    "correction_note": "The prior custody draft used status ID 113868898660221095, which is a later re-Truth of the original launch post. This revision corrects the launch object to original status ID 113846888132979151.",
+    "custody_note": "The original Truth Social URL resolves but requires JavaScript in the current retrieval environment. The original status ID, URL, and independent archival corroboration are preserved; exact platform-origin machine timestamp remains not fully custodied."
+  },
+  "initial_liquidity_leads": {
+    "current_verified_market_leads": [
+      {
+        "venue": "Meteora",
+        "pair": "TRUMP/SOL",
+        "pool_address": "4CTUHtiHrPHFT4Zc1qNScrposmM7xfupU7EVDWCR7PZw",
+        "source": "GeckoTerminal market record",
+        "developer_display": "GH7uS...EoDE",
+        "status": "candidate_pool_custodied_not_yet_proven_first_pool"
+      },
+      {
+        "venue": "Meteora",
+        "pair": "TRUMP/USDC",
+        "pool_address": "A8nPhpCJqtqHdqUk35Uj9Hy2YsGXFkCZGuNwvkD3k7VC",
+        "source": "GeckoTerminal market record",
+        "developer_display": "GH7uS...EoDE",
+        "status": "candidate_pool_custodied_not_yet_proven_first_pool"
+      }
+    ],
+    "independent_timing_lead": {
+      "source": "The Block Research, 2025-01-20",
+      "claim": "The earliest TRUMP liquidity pool was deployed on January 17, 2025 at approximately 10:15 PM Eastern Time, with initial fully diluted valuation slightly above $700,000.",
+      "status": "secondary_source_lead_requires_on_chain_transaction_reproduction"
+    },
+    "important_discrepancy": "The official product purchase instructions currently emphasize Raydium, while Reuters' blockchain-analysis reporting states the creators' initial trading and major early fee generation occurred on Meteora. The empirical reconstruction must not infer initial venue from current purchase instructions."
+  },
+  "fee_and_creator_wallet_reporting": {
+    "reuters_2025_02_03": {
+      "url": "https://www.reuters.com/markets/currencies/trumps-meme-coin-made-nearly-100-million-trading-fees-small-traders-lost-money-2025-02-03/",
+      "observations": {
+        "fee_window": "2025-01-17 through 2025-01-30",
+        "merkle_science_fee_estimate_usd": 86000000,
+        "chainalysis_fee_estimate_usd": 94000000,
+        "third_firm_approximate_fee_estimate_usd": 100000000,
+        "creator_wallet_count_reported": 3,
+        "creator_wallet_origin_description": "Reuters reports Merkle Science found the three earliest holder wallets received tokens directly from creators without purchasing them, and Chainalysis assessed the three addresses belong to creators of $TRUMP.",
+        "initial_released_tokens_to_creator_wallets": 200000000,
+        "remaining_affiliate_allocation_reported": 800000000,
+        "venue_description": "Reuters reports the wallets began trading on Meteora and creators received a share of trading fees for liquidity provision.",
+        "retail_loss_observation": "Chainalysis reported about 200,000 wallets, mostly with small holdings, lost money on $TRUMP on the exchange while at least fifty of the largest investors made profits above $10 million each.",
+        "custody_limit": "These are independently reported blockchain-analysis estimates. ERL has not yet reproduced the three wallet addresses, fee calculations, or profit/loss population from raw chain data."
+      }
+    },
+    "reuters_2025_10_28_methodology": {
+      "url": "https://www.reuters.com/investigations/how-reuters-tallied-trump-organizations-crypto-income-2025-10-28/",
+      "observations": {
+        "meme_project_first_half_2025_total_earnings_estimate_usd": 672000000,
+        "trump_organization_entitlement_estimate_usd": 336000000,
+        "assumed_trump_share_pct": 50,
+        "estimated_coin_sales_first_half_usd": 322000000,
+        "traceable_liquidity_pool_coin_sales_over_usd": 350000000,
+        "method_limit": "Reuters explicitly used assumptions where ownership/revenue percentages were not public; these values are methodology leads, not ERL-reproduced findings."
+      }
+    }
+  },
+  "network_spillover_leads": {
+    "source": "The Block Data & Insights / Research, January 2025",
+    "observations": {
+      "main_meteora_pool_volume_first_36h_approx_usd": 4000000000,
+      "sol_peak_same_day_move_pct_approx": 23,
+      "solana_dex_single_day_volume_record_approx_usd": 35900000000,
+      "interpretation_boundary": "These figures establish a candidate network-spillover response to the launch, not proof that every observed SOL or Solana-volume move was caused solely by $TRUMP."
+    }
   },
   "independent_reporting_leads": [
     {
       "publisher": "Reuters",
-      "date": "2025-01-20",
-      "url": "https://www.reuters.com/world/us/trumps-new-crypto-coin-sparks-ethics-concerns-2025-01-20/",
-      "use": "independent reporting on launch, ownership concentration, ethical/conflict questions, and early valuation; not a substitute for on-chain reconstruction"
+      "date": "2025-02-03",
+      "url": "https://www.reuters.com/markets/currencies/trumps-meme-coin-made-nearly-100-million-trading-fees-small-traders-lost-money-2025-02-03/",
+      "use": "creator-wallet, Meteora-liquidity, fee-estimate and participant-profit/loss leads for on-chain reproduction"
     },
     {
       "publisher": "Reuters",
+      "date": "2025-10-28",
+      "url": "https://www.reuters.com/investigations/how-reuters-tallied-trump-organizations-crypto-income-2025-10-28/",
+      "use": "transparent methodology lead for first-half token sales and estimated Trump Organization economic entitlement"
+    },
+    {
+      "publisher": "The Block Research",
+      "date": "2025-01-20",
+      "url": "https://www.theblock.co/research/blockchains/rapid-insights-trump-and-melania-memecoins-impact-onchain-335781",
+      "use": "earliest-liquidity-pool timing and launch valuation lead requiring transaction-level confirmation"
+    },
+    {
+      "publisher": "The Block",
       "date": "2025-01-21",
-      "url": "https://www.reuters.com/technology/us-issuers-rex-advisers-osprey-seek-approval-launch-trump-meme-coin-etf-2025-01-21/",
-      "use": "independent evidence of immediate financial-market product interest after launch"
+      "url": "https://www.theblock.co/news/markets/2025-01-21-crypto-apps-boom-as-trump-memecoin-drives-mass-adoption-336180",
+      "use": "Solana-network spillover, main-pool volume and crypto-app adoption leads"
     }
   ],
   "current_custody_results": {
@@ -49,28 +141,37 @@
     "verified_trading_revenue_entitlement_statement": true,
     "verified_original_mint_network": true,
     "verified_official_purchase_path_including_SOL": true,
-    "platform_origin_launch_post_custodied": false,
+    "first_mint_timestamp_custodied_from_explorer_summary": true,
+    "original_launch_status_id_corrected_and_archivally_corroborated": true,
+    "platform_origin_launch_post_machine_timestamp_custodied": false,
     "contract_deployment_transaction_custodied": false,
+    "candidate_meteora_pool_addresses_custodied": true,
     "initial_pool_creation_transaction_custodied": false,
     "initial_pool_funding_transaction_custodied": false,
     "full_allocation_chart_values_custodied": false,
     "vesting_schedule_transactions_custodied": false,
     "unlock_change_transactions_custodied": false,
     "creator_affiliate_wallet_map_custodied": false,
+    "fee_flow_independent_estimates_custodied": true,
     "fee_flow_reconstruction_complete": false
   },
   "hypothesis_relevant_observations_without_promotion": [
     "The official structure directly links trading activity to revenue for identified affiliated entities, so trading volume is an economically relevant dependent variable even if token price later falls.",
-    "The official launch path required or encouraged acquisition/use of SOL for Raydium swaps, creating a testable spillover channel into Solana demand around launch.",
-    "The concentrated affiliate allocation and three-year unlock schedule make inventory value, unlock timing, and liquidity management necessary components of any beneficiary analysis.",
-    "None of these structural facts establishes manipulation, improper intent, or any unlawful conduct."
+    "Independent blockchain analyses reported very large fee generation within the first two weeks, making turnover/fee capture empirically more important than price-only analysis.",
+    "The reported three creator wallets create a bounded wallet-attribution target that can be reproduced from the initial 200 million-token distribution rather than beginning with an unconstrained wallet search.",
+    "The current official purchase path includes SOL/Raydium, but secondary on-chain reporting places initial trading and the dominant early fee mechanism on Meteora; venue chronology must therefore be reconstructed rather than assumed.",
+    "The launch coincided with large SOL and Solana-DEX activity changes, creating a measurable network-spillover control for later WLF/asset-adoption analyses.",
+    "The concentrated affiliate allocation and three-year unlock schedule make inventory value, unlock timing, liquidity management, token sales, and fees separate beneficiary channels.",
+    "None of these structural facts or reported estimates establishes manipulation, improper intent, insider activity, or unlawful conduct."
   ],
   "next_required_actions": [
-    "fetch the Solana mint account and creation transaction for the verified contract",
-    "identify and preserve the first Raydium pool and pool-funding transactions",
+    "fetch and preserve the Solana mint-creation transaction signature and instructions for the verified contract",
+    "identify which Meteora pool was first and preserve its creation and initial-funding transaction signatures",
+    "derive the three reported creator wallets directly from the initial 200 million-token distribution and label attribution confidence",
+    "reproduce Jan. 17-Jan. 30 fee generation from Meteora pool history and raw transactions",
     "capture the complete official allocation chart and group-specific unlock schedule",
-    "capture the original Truth Social launch object with platform-origin timestamp if accessible",
-    "identify wallets attributable to CIC Digital LLC, Fight Fight Fight LLC, Celebration Cards LLC, launch vendors, and liquidity providers with explicit confidence levels",
-    "acquire minute-level price, volume, liquidity, and SOL/TRUMP pair data around the launch post"
+    "capture exact platform-origin launch timestamp through an authoritative API/archive if accessible",
+    "acquire minute-level TRUMP price, volume, liquidity and SOL control data around the launch post and first-liquidity activation",
+    "separate price appreciation, token-sale proceeds, liquidity fees, inventory revaluation, and network spillover as distinct measured outputs"
   ]
 }
