@@ -38,6 +38,32 @@ Because the relevant site is already USDA/APHIS-controlled federal property, the
 
 This clarification does **not** establish waste, overpayment, improper profit, or procurement misconduct. It narrows the accounting question and removes an unsupported land-acquisition explanation from the default hypothesis set.
 
+## Mortenson award-level reconciliation advancement
+The prime construction award can now be bounded more precisely.
+
+- Award/contract: `W9126G-26-C-A011` / `W9126G26CA011`.
+- Related solicitation: `W9126G26RA033`.
+- Award date: 2026-03-06.
+- Awardee: M. A. Mortenson Company.
+- Contract structure: firm-fixed-price.
+- Award value: $610,000,000.
+- Funding at award: official contract-announcement reporting states that the full $610,000,000 in FY2026 USDA funds was obligated at the time of award.
+- Competition: bids were solicited online and two bids were received.
+- Acquisition path: public award records characterize the procurement as full and open competition after exclusion of sources under an unusual-and-compelling-urgency justification; the supporting J&A describes prequalification/market research that narrowed the eligible field before the final competition.
+- USACE role: Fort Worth District is the contracting/design-construction agent for USDA.
+
+### Accounting consequence
+The arithmetic difference between the CRS construction-category obligation and the fully obligated Mortenson award is:
+
+`$726,405,969 - $610,000,000 = $116,405,969`
+
+Because the entire $610M Mortenson amount was obligated at award, the remaining $116,405,969 in CRS's broader `Moore Air Base Production Facility Construction` category cannot be characterized as an unfunded remainder of the same $610M prime award. On the current public record, it necessarily represents obligations outside that $610M award amount, a broader program-accounting scope, or both.
+
+That is a materially stronger reconciliation boundary than the prior headline comparison. It does **not** yet identify the recipient or purpose of the $116,405,969. The next documentary targets are the USDA-to-USACE funding/interagency agreement, USACE project-accounting ledger, architect-engineer/design/support actions, directed or government-furnished equipment obligations, commissioning/validation actions, site/enabling work, contingency/reserve accounting, and any separate contract/task-order/modification charged to the same APHIS construction category.
+
+### Competition nuance
+The award was not a one-bid sole-source construction contract. Public award reporting says two bids were received. Separately, the urgency J&A indicates USACE used market research and a narrowed pool of technically/bonding-qualified firms before the final procurement. ERL should therefore describe the construction competition as `competitive final award within an urgency-constrained/prequalified acquisition path`, pending custody of the full solicitation/evaluation record. This is distinct from the Dynamic Aviation sole-source lane.
+
 ## Standing annual NWS baseline
 CRS reports APHIS used approximately $20M per fiscal year since FY2012 for production of about 20M sterile insects per week and field activity in the Panama barrier zone. Before FY2012, the annual amount was approximately $28M while two production facilities were supported for part of that period.
 
@@ -58,18 +84,23 @@ Therefore, the barrier failure cannot be attributed to 2025 policy changes. The 
 CRS reports Mexico supplied more than 60% of U.S. cattle imports in 2023 and 2024, approximately 1.25M head annually, while the domestic herd was near historical lows. This supports a measurable supply-channel effect from prolonged import restriction, while preserving the countervailing biosecurity rationale.
 
 ## New unresolved questions
-1. Reconcile the CRS $726.406M Moore Air Base production-facility obligation with the $610M Mortenson/project value, excluding unsupported assumptions that the difference represents acquisition of the already USDA/APHIS-controlled Moore site.
-2. Obtain award-level components for the Moore construction category, including prime award/modifications, USACE agent costs, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, and separate contracts.
-3. Determine whether June 2026 Grand Challenge agreements and Dynamic Aviation obligations are included in, additional to, or funded from the already obligated emergency-transfer totals.
-4. Obtain award-level components underlying `International Outreach, Surveillance, and Control` ($47.363M) and compare their functions/geography with foreign-assistance animal-health capacity that was separately reduced or terminated.
-5. Quantify Canadian trade restriction impact and any additional state/interstate movement costs caused by U.S. detections.
-6. Track actual Mexican cattle entries after the scheduled Douglas reopening and any suspension/reversal tied to surveillance results.
+1. Identify the recipient, instrument, and purpose for the $116,405,969 of CRS Moore production-facility construction obligations outside the fully obligated $610M Mortenson prime award.
+2. Obtain the USDA-to-USACE interagency/funding agreement and USACE project-accounting ledger for the Moore production facility.
+3. Obtain the complete solicitation, urgency J&A, source-selection/evaluation record, bid count support, and award/modification history for `W9126G26RA033` / `W9126G26CA011`.
+4. Identify any architect-engineer/design/support, enabling/site, government-furnished or directed-equipment, commissioning/validation, contingency/reserve, program-management, and separate construction actions charged to the CRS construction category.
+5. Determine whether June 2026 Grand Challenge agreements and Dynamic Aviation obligations are included in, additional to, or funded from the already obligated emergency-transfer totals.
+6. Obtain award-level components underlying `International Outreach, Surveillance, and Control` ($47.363M) and compare their functions/geography with foreign-assistance animal-health capacity that was separately reduced or terminated.
+7. Quantify Canadian trade restriction impact and any additional state/interstate movement costs caused by U.S. detections.
+8. Track actual Mexican cattle entries after the scheduled Douglas reopening and any suspension/reversal tied to surveillance results.
 
 ## Sources
 - Congressional Research Service, R49124, `New World Screwworm: Background and Issues for Congress`, 2026-08-11.
 - USDA Agricultural Research Service, `Cattle Fever Tick Research Laboratory - Moore Air Base`, project records identifying the laboratory as located on APHIS-VS property and 222.943 acres of APHIS property at Moore Air Base, Edinburg, Texas.
 - USDA APHIS, `USDA and U.S. Army Corps of Engineers Advance New World Screwworm Preparedness with New Texas Sterile Fly Facility Contract`, 2026-03-09.
 - U.S. Army Corps of Engineers, Fort Worth District, `Groundbreaking Ceremony Marks New Era in Agricultural Biosecurity at Moore Air Base`, 2026-04-21; identifies Fort Worth District as design/construction agent and describes the Mortenson facility at a $610M total project cost.
+- Public federal award notice for `W9126G26RA033`, award `W9126G26CA011`, 2026-03-06.
+- Department of Defense contract announcement, 2026-03-06, reporting $610M firm-fixed-price, two bids received, and $610M FY2026 USDA funds obligated at award; subsequent correction changed only the completion date.
+- Public redacted urgency J&A associated with `W9126G26RA033`, describing unusual-and-compelling urgency and the market-research/prequalification path.
 - USDA APHIS, `Sterile Fly Production and Dispersal Facilities`, current 2026 status page.
 - USDA APHIS, `Importing Live Cattle and Bison From Mexico to the United States`, modified 2026-08-18.
 - USDA APHIS, `Export Live Animals to Canada`, August 2026 NWS trade notice.
