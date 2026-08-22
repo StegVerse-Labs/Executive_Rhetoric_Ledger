@@ -1,0 +1,141 @@
+{
+  "schema": "stegverse.erl.trump_meme_event_baseline.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "research_baseline_partial",
+  "finding_authorized": false,
+  "purpose": "Create a bounded event/revenue baseline for the $TRUMP launch so later rhetoric, access, unlock, and policy events can be compared against the first monetization episode without presuming motive or manipulation.",
+  "events": [
+    {
+      "id": "mint-first-observed",
+      "timestamp_utc": "2025-01-17T14:01:48Z",
+      "event": "First mint time displayed for the verified $TRUMP Solana token by Solscan.",
+      "source": "https://solscan.io/token/6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+      "confidence": "medium_high",
+      "limit": "Underlying mint-creation transaction signature/instructions not yet custodied."
+    },
+    {
+      "id": "truth-social-launch",
+      "timestamp_local_display": "2025-01-17T21:00:00-05:00",
+      "event": "Donald Trump publicly announced the official $TRUMP meme, directed readers to obtain it, and linked the official product site.",
+      "truth_social_status_id": "113846888132979151",
+      "original_url": "https://truthsocial.com/@realDonaldTrump/113846888132979151",
+      "archive_source": "https://trumpstruth.org/statuses/29140",
+      "confidence": "high_for_status_identity_and_display_time_medium_for_machine_timestamp",
+      "limit": "Exact platform-origin machine timestamp remains to be independently custodied."
+    },
+    {
+      "id": "earliest-pool-secondary-lead",
+      "timestamp_local_approx": "2025-01-17T22:15:00-05:00",
+      "event": "The Block Research reports the earliest $TRUMP liquidity pool was deployed at approximately this time, with FDV slightly above $700,000.",
+      "source": "https://www.theblock.co/research/blockchains/rapid-insights-trump-and-melania-memecoins-impact-onchain-335781",
+      "confidence": "secondary_lead",
+      "limit": "Must be reproduced from the on-chain pool-creation transaction before being treated as authoritative."
+    },
+    {
+      "id": "jan19-peak",
+      "date": "2025-01-19",
+      "event": "$TRUMP reached a reported peak overall market value above $14.5 billion before subsequently falling materially.",
+      "source": "https://www.reuters.com/markets/currencies/trumps-meme-coin-made-nearly-100-million-trading-fees-small-traders-lost-money-2025-02-03/",
+      "confidence": "reported",
+      "limit": "ERL minute-level price reconstruction pending."
+    },
+    {
+      "id": "melania-launch-control",
+      "timestamp_local_display": "2025-01-19T16:10:00-05:00",
+      "event": "Melania Trump publicly announced $MELANIA; Donald Trump re-Truthed the announcement shortly afterward.",
+      "source": "https://trumpstruth.org/",
+      "confidence": "archival",
+      "observed_market_lead": "The Block Research reports $TRUMP fell more than 48% following the $MELANIA launch alongside a broader market pullback.",
+      "limit": "Requires minute-level TRUMP/MELANIA/BTC/SOL control reconstruction."
+    },
+    {
+      "id": "fee-window-end",
+      "date": "2025-01-30",
+      "event": "End of the first Reuters/Merkle Science/Chainalysis fee-estimation window.",
+      "confidence": "reported"
+    }
+  ],
+  "economic_outputs": {
+    "price_and_inventory": {
+      "reported_peak_market_value_usd_gt": 14500000000,
+      "affiliate_share_of_total_supply_pct": 80,
+      "interpretation": "Price appreciation can increase the marked value of retained affiliate inventory, but unrealized inventory value must remain separate from realized sales/fees."
+    },
+    "trading_fees": {
+      "window": "2025-01-17/2025-01-30",
+      "merkle_science_estimate_usd": 86000000,
+      "chainalysis_estimate_usd": 94000000,
+      "third_firm_estimate_approx_usd": 100000000,
+      "source": "Reuters 2025-02-03",
+      "interpretation": "The project generated a large fee surface within two weeks. Official materials state affiliated entities receive trading revenue; precise beneficiary split remains unresolved."
+    },
+    "token_sales_first_half_2025": {
+      "reuters_estimated_project_coin_sales_usd": 322000000,
+      "reuters_traceable_liquidity_pool_coin_sales_over_usd": 350000000,
+      "source": "Reuters methodology 2025-10-28",
+      "interpretation": "Token-sale proceeds are a distinct monetization channel from fees and inventory revaluation; ERL has not independently reproduced the sales estimate."
+    },
+    "reuters_first_half_project_total": {
+      "estimated_project_earnings_usd": 672000000,
+      "estimated_trump_organization_entitlement_usd": 336000000,
+      "assumed_entitlement_pct": 50,
+      "source": "Reuters methodology 2025-10-28",
+      "interpretation": "The 50% allocation is an analytical assumption used by Reuters because the public project terms did not specify the Trump Organization percentage. It must not be represented as a disclosed contract term."
+    },
+    "network_spillover": {
+      "main_meteora_pool_volume_first_36h_approx_usd": 4000000000,
+      "sol_peak_same_day_move_pct_approx": 23,
+      "solana_dex_single_day_volume_record_approx_usd": 35900000000,
+      "source": "The Block January 2025 research/data reporting",
+      "interpretation": "The launch created an observable candidate spillover into Solana usage, SOL demand/price, DEX volume, wallets and crypto-app adoption. Causal share requires controls."
+    }
+  },
+  "bounded_creator_wallet_target": {
+    "reported_initial_creator_wallet_count": 3,
+    "reported_initial_tokens_received": 200000000,
+    "reporting_basis": "Reuters reports Merkle Science identified the three earliest holder wallets as receiving the initial tranche directly from creators without purchase; Chainalysis assessed the addresses belong to creators.",
+    "research_value": "This converts wallet discovery from an open-ended attribution exercise into a reproducible graph problem starting with the mint and first 200 million-token distribution.",
+    "status": "addresses_not_yet_reproduced_by_ERL"
+  },
+  "candidate_response_function": {
+    "input_classes": [
+      "direct Trump promotion",
+      "family-member promotion/re-Truth",
+      "access incentives",
+      "unlock/supply changes",
+      "crypto-policy advocacy",
+      "cross-venture WLF events"
+    ],
+    "outputs_to_measure_separately": [
+      "TRUMP price return",
+      "TRUMP trading volume",
+      "TRUMP liquidity depth",
+      "creator/affiliate trading fees",
+      "creator/affiliate token sales",
+      "retained-inventory mark-to-market change",
+      "SOL price/volume spillover",
+      "Solana DEX volume",
+      "wallet/app adoption"
+    ],
+    "event_windows": ["5m", "30m", "1h", "close", "24h", "72h"],
+    "core_reason": "A price-only event study would miss monetization through turnover, fees and token sales. The launch baseline shows why beneficiary analysis must decompose each channel."
+  },
+  "controls_and_falsifiers": [
+    "Compare $TRUMP with matched meme coins experiencing similar market-wide risk-on conditions but no Trump promotion.",
+    "Control for BTC, SOL and broad memecoin-sector returns in each event window.",
+    "Separate launch/promotion effects from exchange listings, liquidity additions, unlocks and platform outages.",
+    "Include Trump posts about unrelated subjects and crypto-related remarks with no measurable $TRUMP response.",
+    "Include adverse or null policy events affecting Trump-linked crypto interests.",
+    "Do not infer manipulation from fee generation, concentrated ownership, price appreciation or retail losses alone.",
+    "Do not infer personal realization of project revenue where beneficiary percentages are undisclosed."
+  ],
+  "next_required_reconstruction": [
+    "mint-creation transaction signature and instruction trace",
+    "first 200 million-token distribution transaction graph and the three creator-wallet addresses",
+    "first Meteora pool identity, creation transaction and initial funding",
+    "5-minute or finer TRUMP/SOL/BTC price-volume-liquidity panel beginning before the launch announcement",
+    "Meteora fee-history reproduction for Jan. 17-Jan. 30",
+    "allocation/unlock schedule and subsequent unlock transaction chronology",
+    "event panel for March promotion, April dinner/leaderboard announcement, dinner date and later policy events"
+  ]
+}
