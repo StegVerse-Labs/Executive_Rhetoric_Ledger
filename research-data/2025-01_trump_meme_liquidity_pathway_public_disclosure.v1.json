@@ -1,0 +1,76 @@
+{
+  "schema": "stegverse.erl.trump_meme_liquidity_pathway_public_disclosure.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "research_evidence_partial",
+  "finding_authorized": false,
+  "purpose": "Determine whether the $TRUMP launch's Meteora/Jupiter liquidity pathway was publicly disclosed contemporaneously, and distinguish launch-period disclosures from later/current purchase instructions such as Raydium.",
+  "captured_on": "2026-08-21",
+  "question": "Was Meteora publicly identified as a $TRUMP launch/trading pathway, or is Raydium the only publicly mentioned pathway on the official product site?",
+  "results": {
+    "meteora_publicly_disclosed": true,
+    "raydium_not_only_public_pathway": true,
+    "trump_origin_announcement_named_meteora": false,
+    "current_official_product_site_names_raydium": true,
+    "historical_official_product_site_meteora_reference_not_yet_custodied": true,
+    "launch_period_ecosystem_disclosure_strength": "strong",
+    "summary": "The original Trump launch post linked gettrumpmemes.com but did not name Meteora. However, by January 18, 2025, Jupiter publicly stated that it worked closely with the Meteora team on the $TRUMP launch and that the launch used a Meteora DLMM/ILM/Jupiter stack. Other contemporaneous ecosystem posts likewise described $TRUMP as launched on Meteora. Therefore Meteora was publicly disclosed shortly after launch; today's Raydium instructions cannot be treated as the sole historical public pathway. Whether gettrumpmemes.com itself named Meteora at launch remains unresolved pending archived-site custody."
+  },
+  "source_tiers": [
+    {
+      "tier": 1,
+      "source": "Trump Truth Social original launch post",
+      "date": "2025-01-17",
+      "url": "https://truthsocial.com/@realDonaldTrump/113846888132979151",
+      "observation": "Post told users to get $TRUMP and linked gettrumpmemes.com; it did not identify Meteora, Jupiter, Raydium, or another DEX in the post text.",
+      "custody_status": "archival corroboration preserved; platform-origin retrieval still desired"
+    },
+    {
+      "tier": 1,
+      "source": "Current official GetTrumpMemes product site",
+      "url": "https://gettrumpmemes.com/",
+      "observation": "Current instructions direct users to acquire SOL and use Raydium; current instructions are not evidence of the launch-period liquidity architecture.",
+      "custody_status": "current primary product source"
+    },
+    {
+      "tier": 2,
+      "source": "Jupiter public launch statement",
+      "date": "2025-01-18",
+      "observation": "Jupiter publicly stated that it worked closely with the Meteora team to ensure an S-tier $TRUMP launch, and described the launch as using the same LFG stack as JUP, including a DLMM pool, ILM design, and tight Jupiter integration; Moonshot was named as an app using Jupiter APIs during launch.",
+      "source_leads": [
+        "https://www.theblock.co/news/ecosystems/2025-01-18-trader-who-spotted-trump-memecoin-early-turned-1-million-into-90-million-335537",
+        "https://coinengineer.net/blog/jupiter-jup-is-collaborating-with-the-meteora-team-for-the-launch-of-the-trump-token/"
+      ],
+      "custody_status": "public contemporaneous ecosystem disclosure; original Jupiter X post URL still should be separately custodied"
+    },
+    {
+      "tier": 2,
+      "source": "M3M3 / Meteora-ecosystem public posts",
+      "date": "2025-01-18",
+      "observation": "Public posts described the official Trump meme as launched on Meteora and welcomed $TRUMP to the Meteora ecosystem.",
+      "source_lead": "https://mobile.twstalker.com/WEAREM3M3_",
+      "custody_status": "secondary archive of social posts; original social objects should be recovered before promotion"
+    },
+    {
+      "tier": 2,
+      "source": "The Block launch reporting",
+      "date": "2025-01-18",
+      "url": "https://www.theblock.co/news/ecosystems/2025-01-18-trader-who-spotted-trump-memecoin-early-turned-1-million-into-90-million-335537",
+      "observation": "Reported that a trader swapped USDC for TRUMP on the Meteora market within minutes of the Trump Truth Social post, demonstrating public tradability on Meteora immediately after the announcement.",
+      "custody_status": "independent contemporaneous reporting"
+    }
+  ],
+  "interpretive_boundaries": [
+    "Public disclosure after launch does not establish that ordinary retail purchasers saw or understood the pathway before trading.",
+    "Jupiter/Meteora ecosystem disclosure is not the same as a Trump-origin or GetTrumpMemes-origin disclosure.",
+    "A current Raydium instruction cannot be projected backward into the January 17 launch architecture.",
+    "A Meteora launch pathway does not by itself establish impropriety, preferential access, or undisclosed insider knowledge.",
+    "The remaining key question is not whether Meteora was ever public; it was. The remaining question is when, by whom, and through which channel it first became discoverable to the public relative to the token mint, liquidity provisioning, Trump announcement, and first large trades."
+  ],
+  "next_required_actions": [
+    "Recover the original Jupiter X post and authoritative timestamp.",
+    "Recover any original Meteora X/Discord/Telegram announcement or launch acknowledgement and timestamp.",
+    "Use Wayback/archived product pages to determine whether gettrumpmemes.com named Meteora, Moonshot, Jupiter, Raydium, or another route on January 17-18, 2025.",
+    "Timestamp first Meteora pool creation/funding and compare against first public mention of Meteora.",
+    "Build a disclosure ladder: mint -> pool creation -> liquidity funding -> Trump post -> first public Meteora/Jupiter disclosure -> first major trades -> later Raydium instructions."
+  ]
+}
