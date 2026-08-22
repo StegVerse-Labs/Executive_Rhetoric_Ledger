@@ -1,0 +1,94 @@
+{
+  "schema": "stegverse.erl.rlusd_institutional_credit_transition.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "research_evidence_record",
+  "finding_authorized": false,
+  "captured_on": "2026-08-22",
+  "event_window": {
+    "announcement_date_lead": "2026-08-20",
+    "major_reporting_date": "2026-08-21"
+  },
+  "event": {
+    "summary": "Ripple, Clearpool, and Cicada Partners announced an institutional credit initiative intended to originate working-capital loans denominated in RLUSD on the XRP Ledger.",
+    "roles": {
+      "ripple": "limited partner / capital participant on pari passu terms; reported not to guarantee losses",
+      "clearpool": "on-ledger lending infrastructure and pooled-vault implementation",
+      "cicada_partners": "borrower sourcing, underwriting, loan terms, and credit-risk monitoring"
+    },
+    "asset_roles": {
+      "RLUSD": "loan denomination, disbursement asset, and repayment asset",
+      "XRP": "ledger transaction fees and account reserve requirements; not the principal lending asset in the reported structure",
+      "XRPL": "execution and ledger infrastructure for the proposed lending product"
+    },
+    "activation_state": "not yet proven live on XRPL mainnet in the announcement window; reported as devnet/testing and dependent on lending/vault amendment activation"
+  },
+  "primary_protocol_sources": [
+    {
+      "url": "https://xls.xrpl.org/xls/XLS-0065-single-asset-vault.html",
+      "type": "XRPL standard",
+      "observation": "XLS-65 defines a Single Asset Vault that aggregates one asset from depositors for use by protocols such as lending and represents ownership through vault shares."
+    },
+    {
+      "url": "https://xls.xrpl.org/xls/XLS-0066-lending-protocol.html",
+      "type": "XRPL standard",
+      "observation": "XLS-66 defines fixed-term, underwritten, uncollateralized lending using pooled vault funds, with off-chain underwriting and on-ledger loan execution."
+    },
+    {
+      "url": "https://xrpl.org/docs/use-cases/defi/institutional-credit-facilities",
+      "type": "XRPL documentation",
+      "observation": "XRPL documentation describes institutional credit facilities using permissioned access, single-asset vaults, loan brokers, first-loss capital, and on-ledger disbursement/repayment."
+    },
+    {
+      "url": "https://xrpl.org/blog/2026/rippled-3.1.0",
+      "type": "XRPL software release documentation",
+      "observation": "rippled 3.1.0 includes implementations for SingleAssetVault and LendingProtocol amendments, while ledger activation remains amendment-dependent."
+    }
+  ],
+  "reporting_sources": [
+    {
+      "url": "https://finance.yahoo.com/markets/crypto/articles/ripple-turning-rlusd-payment-token-093338770.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-08-21",
+      "observation": "Reports the first institutional lending product using RLUSD on XRPL, with Ripple, Clearpool, and Cicada Partners participating."
+    }
+  ],
+  "related_ripple_primary_sources": [
+    {
+      "url": "https://ripple.com/ripple-press/ripple-integrates-rlusd-into-ripple-payments-driving-enterprise-demand-and-utility/",
+      "date": "2025-04-02",
+      "observation": "Ripple previously integrated RLUSD into Ripple Payments for enterprise cross-border payments."
+    },
+    {
+      "url": "https://ripple.com/ripple-press/ripple-strengthens-digital-capital-markets-infrastructure-with-investments-in-zilo-and-licuido/",
+      "date": "2026-08-03",
+      "observation": "Ripple described expansion into regulated transfer agency, issuance, and collateral mobility on XRPL before the credit-fund announcement."
+    },
+    {
+      "url": "https://ripple.com/ripple-press/ripple-and-bitso-expand-partnership/",
+      "date": "2026-06-11",
+      "observation": "Ripple described RLUSD and MXNB as settlement/liquidity assets for enterprise cross-border payments on XRPL."
+    }
+  ],
+  "investigative_significance": [
+    "This is positive evidence that Ripple is broadening RLUSD from payments and settlement into institutional credit and collateral-adjacent financial infrastructure.",
+    "The development strengthens the distinction between XRPL adoption and XRP-native-asset demand: the ledger can gain institutional utility while RLUSD, rather than XRP, is the principal financial asset for a given product.",
+    "It also broadens the value-capture topology around Ripple: payments, stablecoin issuance, settlement, tokenization, collateral mobility, and now proposed institutional credit can coexist on XRPL.",
+    "For the Aug. 13-21 XRP repricing investigation, the announcement belongs in the event-timestamp panel because it is XRP-ecosystem-specific institutional news during the rally window.",
+    "The correct event-study question is whether XRP/XLM relative value changed around the announcement beyond broad-market controls, not whether RLUSD lending itself mechanically requires XRP demand."
+  ],
+  "competing_explanations_and_limits": [
+    "A positive XRP price response could reflect ecosystem-level expectations rather than direct transactional demand for XRP.",
+    "Because RLUSD is the lending and repayment asset, the product may increase XRPL usage without proportionate XRP working-capital demand beyond fees/reserves.",
+    "The initiative was not yet established as live mainnet production in the captured announcement state.",
+    "The broader crypto rally and contemporaneous Treasury/White House/SEC events remain required controls.",
+    "No causal price finding is authorized until a timestamp-consistent intraday XRP/XLM/BTC/ETH event panel is reconstructed."
+  ],
+  "next_actions": [
+    "obtain the authoritative original Ripple/Clearpool/Cicada announcement object and timestamp",
+    "determine exact XLS-65/XLS-66 amendment voting and activation state at the announcement timestamp",
+    "add this event to the Aug. 13+ XRP/XLM intraday event panel",
+    "measure XRP/XLM, XRP/BTC, XRP/ETH, and CPOOL returns in 5m, 30m, 1h, 6h, 24h, and 72h windows",
+    "track RLUSD supply, XRPL RLUSD transfer volume, and RLUSD/XRP trading activity before and after the event",
+    "separate network-value, stablecoin-value, and native-token-value channels in any later interpretation"
+  ]
+}
