@@ -38,6 +38,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 23. Moore Air Base is not an active Air Force installation for this project. USDA ARS records identify the relevant site as `APHIS-VS property known as Moore Air Base` and describe 222.943 acres of APHIS property there. USACE Fort Worth District is serving as USDA's design/construction agent, and Mortenson is the construction contractor for the public $610M project. This narrows the $726.406M-vs-$610M reconciliation: acquisition of the Moore site should not be presumed to explain the difference, and the remaining accounting should be decomposed across the prime award/modifications, USACE agent costs, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, and any separate obligations booked to the construction category. No waste, overpayment, profit, or misconduct finding follows from the difference alone.
 24. Initial Mortenson political-finance reconstruction does not support a direct Trump-campaign-donor explanation for the Moore award. Mortenson identifies David Mortenson as Chairman and parent-company President/CEO. FEC filings identify him as `M.A. Mortenson Company`/`Mortenson Construction` Chairman and verify $3,500 contributions through ActBlue to Angie Craig for Congress (2025-03-28), Matt Klein for Congress (2025-10-28), and Morrison for Congress (2026-03-11). FEC filings also identify Alice D. Mortenson, President of the Mortenson Family Foundation, giving $7,000 to McBride for Delaware Inc. on 2025-11-11. No verified contribution by M. A. Mortenson Company, David Mortenson, or Alice D. Mortenson to a Trump-authorized committee was located in this pass. This is a negative-search result rather than proof of absence; a transaction-level alias/joint-fundraising/PAC sweep remains required, and political giving does not establish procurement influence.
 25. Moore award-level reconciliation has advanced materially. Public federal award reporting identifies Mortenson contract `W9126G-26-C-A011` / `W9126G26CA011`, related solicitation `W9126G26RA033`, as a $610,000,000 firm-fixed-price award made on 2026-03-06. Contract-announcement reporting states the entire $610M in FY2026 USDA funds was obligated at award and two bids were received. Therefore the arithmetic difference between CRS's $726,405,969 construction-category obligation and the fully obligated Mortenson prime award is exactly $116,405,969. That remainder cannot be characterized as an unfunded portion of the $610M Mortenson contract; it must reflect obligations outside that award amount, broader project-accounting scope, or both. The final award was competitive at the bid stage, while the urgency J&A and market-research path constrained/prequalified the eligible field before final competition. This is distinct from the Dynamic Aviation sole-source lane and does not itself establish inadequate competition or misconduct.
+26. The $116.406M residual is now bounded by two additional controls. CRS assigns the Moore dispersal-center project to a separate obligation line ($9.053M), while public Texas animal-health material describes that completed facility at roughly $8.5M; the dispersal center therefore should not be folded into the production-facility residual absent contrary accounting evidence. Separately, USDA's FY2019 APHIS explanatory notes document historical use of an interagency agreement with the Army Corps of Engineers to manage Moore Air Base construction and report FY2017 spending on that agreement plus a program-of-requirements contract. That precedent makes a current USDA-to-USACE reimbursable/interagency funding layer a concrete hypothesis for part of the residual, but no current agreement amount, USACE fee, contingency, reserve, design cost, or other component has yet been established.
 
 ## Installed bounded evidence surfaces
 - `research-candidates/2026-08-beef-biosecurity-policy-risk.md`
@@ -47,6 +48,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 - `assessments/source-posture/2026-08-nws-crs-emergency-obligations-and-trade-state.md`
 - `assessments/source-posture/2026-08-grand-challenge-beneficiary-ownership.md`
 - `assessments/source-posture/2026-08-mortenson-political-finance-and-ownership.md`
+- `assessments/source-posture/2026-08-moore-116m-residual-obligation-reconciliation.md`
 
 ## Open questions / acquisition queue
 - Obtain per-recipient dollar amounts and actual notices of award/cooperative agreements for all Grand Challenge projects.
@@ -59,8 +61,9 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 - Obtain the Independent Government Cost Estimate and historical-pricing comparison for the Dynamic Aviation contract where lawfully releasable.
 - Reconstruct alternative aerial-dispersal vendors and NWS-specific capability as of June 2026.
 - Track whether USDA actually competes follow-on NWS aerial-dispersal work within the 6-12 month period promised in the sole-source justification.
-- Identify the recipient, instrument, and purpose of the $116,405,969 in CRS Moore production-facility construction obligations outside the fully obligated $610M Mortenson prime award; obtain the USDA-to-USACE interagency/funding agreement, USACE project-accounting ledger, architect-engineer/design/support actions, enabling/site work, government-furnished or directed equipment, commissioning/validation actions, contingency/reserve treatment, program-management costs, and other separate obligations charged to the same category.
-- Obtain the complete solicitation, urgency J&A, source-selection/evaluation record, bid-count support, individual subcontracting plan, and award/modification history for `W9126G26RA033` / `W9126G26CA011`.
+- Obtain the current USDA-APHIS to USACE interagency/reimbursable agreement, funding authorization, amendments, and USACE project-accounting/work-breakdown ledger for the production facility; use these records to allocate the $116,405,969 residual across supported components rather than hypotheses.
+- Obtain the complete CLIN schedule/statement of work for `W9126G-26-C-A011` and all separate architect-engineer, construction-management, enabling/site, utility, equipment, commissioning, validation, and support awards charged to the production-facility category.
+- Obtain the complete solicitation, urgency J&A, source-selection/evaluation record, qualification-stage pool, final-bid support, individual subcontracting plan, and award/modification history for `W9126G26RA033` / `W9126G26CA011`.
 - Determine whether June Grand Challenge agreements and Dynamic Aviation obligations are already represented within the ~$999.234M emergency-transfer obligation total or should be added only at an award-level reconciliation layer.
 - Obtain the actual terminated-award list sent to Congress and isolate FAO/ECTAD award numbers, values, countries, periods, and scopes.
 - Map specific overseas animal-health/global-health-security program losses across Central America and Mexico, including dates work stopped and successor work became operational.
@@ -85,12 +88,12 @@ Research is active and future-changing. Periodic source acquisition and ERL upda
 
 ## Completion accounting
 - handoff: 1/1 = 100%
-- developed bounded research files: 8/8 substantive, 0 scaffolding/stubs
-- research-candidate evidence package: 64%
-- procurement reconstruction: 66%
+- developed bounded research files: 9/9 substantive, 0 scaffolding/stubs
+- research-candidate evidence package: 67%
+- procurement reconstruction: 71%
 - foreign-capacity-loss reconstruction: 43%
 - causal comparison/control work: 48%
 - independent review: pending
 - publication authorization: false
 - release/tagging: not authorized
-- bounded goal activation: 53%
+- bounded goal activation: 55%
