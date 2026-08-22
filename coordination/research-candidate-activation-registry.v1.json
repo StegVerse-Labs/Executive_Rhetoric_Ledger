@@ -168,6 +168,26 @@
       "terminal_condition": "Issue #47/PR #48 WS-A through WS-E release conditions are satisfied or explicitly superseded with evidence.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-BEEF-BIOSECURITY-2026",
+      "title": "U.S. beef supply, animal-health biosecurity capacity, and emergency procurement",
+      "candidate_paths": ["research-candidates/2026-08-beef-biosecurity-policy-risk.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "pr:72+issue:63",
+      "artifact_paths": [
+        "docs/BEEF_BIOSECURITY_POLICY_MIRROR_HANDOFF.md",
+        "assessments/economic-policy/2026-08-beef-biosecurity-capacity-cost-comparison.md",
+        "assessments/source-posture/2026-08-beef-biosecurity-procurement-trace.md",
+        "assessments/source-posture/2026-08-foreign-animal-health-capacity-cuts.md",
+        "assessments/source-posture/2026-08-nws-crs-emergency-obligations-and-trade-state.md",
+        "assessments/source-posture/2026-08-grand-challenge-beneficiary-ownership.md"
+      ],
+      "next_executable_task": "Continue the scoped acquisition queue: reconcile preventive-capacity losses with later emergency-funded functions, obtain award-level recipient and ownership records, reconstruct procurement competition and role-governance evidence, and update trade/supply chronology without promoting unsupported causal or corruption findings.",
+      "terminal_condition": "The candidate receives independent review and an explicit governed PROMOTED, SUPERSEDED, MERGED, or CLOSED_WITH_REASON transition after its primary-source, control, procurement, and causal-comparison release conditions are satisfied.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
