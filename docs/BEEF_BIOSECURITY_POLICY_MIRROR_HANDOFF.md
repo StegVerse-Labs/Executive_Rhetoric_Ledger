@@ -37,6 +37,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 22. AcceleRAD Technologies, selected for Grand Challenge project `APP-113469`, was acquired by Reveam, Inc. on 2026-03-19, before USDA announced selections in June. This does not undermine AcceleRAD's technical legitimacy, but it changes the economic-beneficiary/ownership path and requires the actual notice of award, parent disclosure, and ownership/financing review.
 23. Moore Air Base is not an active Air Force installation for this project. USDA ARS records identify the relevant site as `APHIS-VS property known as Moore Air Base` and describe 222.943 acres of APHIS property there. USACE Fort Worth District is serving as USDA's design/construction agent, and Mortenson is the construction contractor for the public $610M project. This narrows the $726.406M-vs-$610M reconciliation: acquisition of the Moore site should not be presumed to explain the difference, and the remaining accounting should be decomposed across the prime award/modifications, USACE agent costs, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, and any separate obligations booked to the construction category. No waste, overpayment, profit, or misconduct finding follows from the difference alone.
 24. Initial Mortenson political-finance reconstruction does not support a direct Trump-campaign-donor explanation for the Moore award. Mortenson identifies David Mortenson as Chairman and parent-company President/CEO. FEC filings identify him as `M.A. Mortenson Company`/`Mortenson Construction` Chairman and verify $3,500 contributions through ActBlue to Angie Craig for Congress (2025-03-28), Matt Klein for Congress (2025-10-28), and Morrison for Congress (2026-03-11). FEC filings also identify Alice D. Mortenson, President of the Mortenson Family Foundation, giving $7,000 to McBride for Delaware Inc. on 2025-11-11. No verified contribution by M. A. Mortenson Company, David Mortenson, or Alice D. Mortenson to a Trump-authorized committee was located in this pass. This is a negative-search result rather than proof of absence; a transaction-level alias/joint-fundraising/PAC sweep remains required, and political giving does not establish procurement influence.
+25. Moore award-level reconciliation has advanced materially. Public federal award reporting identifies Mortenson contract `W9126G-26-C-A011` / `W9126G26CA011`, related solicitation `W9126G26RA033`, as a $610,000,000 firm-fixed-price award made on 2026-03-06. Contract-announcement reporting states the entire $610M in FY2026 USDA funds was obligated at award and two bids were received. Therefore the arithmetic difference between CRS's $726,405,969 construction-category obligation and the fully obligated Mortenson prime award is exactly $116,405,969. That remainder cannot be characterized as an unfunded portion of the $610M Mortenson contract; it must reflect obligations outside that award amount, broader project-accounting scope, or both. The final award was competitive at the bid stage, while the urgency J&A and market-research path constrained/prequalified the eligible field before final competition. This is distinct from the Dynamic Aviation sole-source lane and does not itself establish inadequate competition or misconduct.
 
 ## Installed bounded evidence surfaces
 - `research-candidates/2026-08-beef-biosecurity-policy-risk.md`
@@ -58,7 +59,8 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 - Obtain the Independent Government Cost Estimate and historical-pricing comparison for the Dynamic Aviation contract where lawfully releasable.
 - Reconstruct alternative aerial-dispersal vendors and NWS-specific capability as of June 2026.
 - Track whether USDA actually competes follow-on NWS aerial-dispersal work within the 6-12 month period promised in the sole-source justification.
-- Reconcile the CRS $726.406M Moore Air Base production-facility construction obligation with the $610M Mortenson/project value, explicitly excluding unsupported assumptions that land acquisition explains the difference because the relevant site is already USDA/APHIS-controlled federal property; obtain complete bid count, evaluation criteria, award/modification record, USACE agent-cost accounting, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, subcontracting plan, and other project obligations.
+- Identify the recipient, instrument, and purpose of the $116,405,969 in CRS Moore production-facility construction obligations outside the fully obligated $610M Mortenson prime award; obtain the USDA-to-USACE interagency/funding agreement, USACE project-accounting ledger, architect-engineer/design/support actions, enabling/site work, government-furnished or directed equipment, commissioning/validation actions, contingency/reserve treatment, program-management costs, and other separate obligations charged to the same category.
+- Obtain the complete solicitation, urgency J&A, source-selection/evaluation record, bid-count support, individual subcontracting plan, and award/modification history for `W9126G26RA033` / `W9126G26CA011`.
 - Determine whether June Grand Challenge agreements and Dynamic Aviation obligations are already represented within the ~$999.234M emergency-transfer obligation total or should be added only at an award-level reconciliation layer.
 - Obtain the actual terminated-award list sent to Congress and isolate FAO/ECTAD award numbers, values, countries, periods, and scopes.
 - Map specific overseas animal-health/global-health-security program losses across Central America and Mexico, including dates work stopped and successor work became operational.
@@ -70,10 +72,10 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 
 ## Promotion boundaries
 - No claim that the administration caused screwworm or another pathogen/parasite outbreak without direct causal evidence.
-- No corruption, favoritism, profiteering, waste, overpayment, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, sole-source status, or an unreconciled obligation/contract-value difference alone.
+- No corruption, favoritism, profiteering, waste, overpayment, inadequate competition, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, sole-source status, urgency-constrained competition, or an unreconciled obligation/contract-value difference alone.
 - No Trump-affiliation finding from surname, employer, family relationship, ordinary employee political activity, or incomplete negative-search results; require transaction-level source support.
 - No company is classified as illegitimate solely because it is small, privately held, specialized, federally funded, politically active, represented by lobbyists, or acquired by another company.
-- Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, political-finance evidence, and causal inference must remain separately labeled.
+- Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, political-finance evidence, competition structure, and causal inference must remain separately labeled.
 - Restoration of headline funding does not equal restoration of prior personnel, institutional relationships, geographic coverage, or operating capability.
 - Federal obligations do not equal completed expenditures or contractor profit.
 - A total program obligation does not equal a single prime-contractor award value.
@@ -84,11 +86,11 @@ Research is active and future-changing. Periodic source acquisition and ERL upda
 ## Completion accounting
 - handoff: 1/1 = 100%
 - developed bounded research files: 8/8 substantive, 0 scaffolding/stubs
-- research-candidate evidence package: 62%
-- procurement reconstruction: 60%
+- research-candidate evidence package: 64%
+- procurement reconstruction: 66%
 - foreign-capacity-loss reconstruction: 43%
 - causal comparison/control work: 48%
 - independent review: pending
 - publication authorization: false
 - release/tagging: not authorized
-- bounded goal activation: 51%
+- bounded goal activation: 53%
