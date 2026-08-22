@@ -36,6 +36,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 21. APHIS lists Douglas, Arizona for phased reopening to Mexican cattle imports on 2026-08-24; Santa Teresa and Columbus, New Mexico remain to be determined. This creates a live test of how USDA balances cattle-supply constraints against biosecurity risk.
 22. AcceleRAD Technologies, selected for Grand Challenge project `APP-113469`, was acquired by Reveam, Inc. on 2026-03-19, before USDA announced selections in June. This does not undermine AcceleRAD's technical legitimacy, but it changes the economic-beneficiary/ownership path and requires the actual notice of award, parent disclosure, and ownership/financing review.
 23. Moore Air Base is not an active Air Force installation for this project. USDA ARS records identify the relevant site as `APHIS-VS property known as Moore Air Base` and describe 222.943 acres of APHIS property there. USACE Fort Worth District is serving as USDA's design/construction agent, and Mortenson is the construction contractor for the public $610M project. This narrows the $726.406M-vs-$610M reconciliation: acquisition of the Moore site should not be presumed to explain the difference, and the remaining accounting should be decomposed across the prime award/modifications, USACE agent costs, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, and any separate obligations booked to the construction category. No waste, overpayment, profit, or misconduct finding follows from the difference alone.
+24. Initial Mortenson political-finance reconstruction does not support a direct Trump-campaign-donor explanation for the Moore award. Mortenson identifies David Mortenson as Chairman and parent-company President/CEO. FEC filings identify him as `M.A. Mortenson Company`/`Mortenson Construction` Chairman and verify $3,500 contributions through ActBlue to Angie Craig for Congress (2025-03-28), Matt Klein for Congress (2025-10-28), and Morrison for Congress (2026-03-11). FEC filings also identify Alice D. Mortenson, President of the Mortenson Family Foundation, giving $7,000 to McBride for Delaware Inc. on 2025-11-11. No verified contribution by M. A. Mortenson Company, David Mortenson, or Alice D. Mortenson to a Trump-authorized committee was located in this pass. This is a negative-search result rather than proof of absence; a transaction-level alias/joint-fundraising/PAC sweep remains required, and political giving does not establish procurement influence.
 
 ## Installed bounded evidence surfaces
 - `research-candidates/2026-08-beef-biosecurity-policy-risk.md`
@@ -44,11 +45,13 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 - `assessments/source-posture/2026-08-foreign-animal-health-capacity-cuts.md`
 - `assessments/source-posture/2026-08-nws-crs-emergency-obligations-and-trade-state.md`
 - `assessments/source-posture/2026-08-grand-challenge-beneficiary-ownership.md`
+- `assessments/source-posture/2026-08-mortenson-political-finance-and-ownership.md`
 
 ## Open questions / acquisition queue
 - Obtain per-recipient dollar amounts and actual notices of award/cooperative agreements for all Grand Challenge projects.
 - Identify the Grand Challenge selecting official and review-panel governance/recusal records.
 - Reconstruct cumulative prior federal funding for private recipients and materially related technology.
+- Complete direct FEC transaction-level sweeps across Mortenson controlling-family owners, current/former senior executives, employer/address aliases, Trump-authorized committees, Trump joint-fundraising committees, leadership/support PACs, and material trade-association PACs; keep ordinary employee contributions separate from ownership/control evidence.
 - Identify beneficial ownership, principals, lobbying, campaign contributions, and material administration/agency relationships for private recipients, Mortenson, Dynamic Aviation, Reveam/AcceleRAD, and major subcontractors.
 - Determine whether AcceleRAD's March 2026 acquisition by Reveam was reflected in the application/award records and identify the legal recipient/UEI/parent disclosure for `APP-113469`.
 - Obtain USDA delegation/designation records governing Craig Harper's multiple roles on the Dynamic Aviation J&A.
@@ -68,23 +71,24 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 ## Promotion boundaries
 - No claim that the administration caused screwworm or another pathogen/parasite outbreak without direct causal evidence.
 - No corruption, favoritism, profiteering, waste, overpayment, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, sole-source status, or an unreconciled obligation/contract-value difference alone.
+- No Trump-affiliation finding from surname, employer, family relationship, ordinary employee political activity, or incomplete negative-search results; require transaction-level source support.
 - No company is classified as illegitimate solely because it is small, privately held, specialized, federally funded, politically active, represented by lobbyists, or acquired by another company.
-- Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, and causal inference must remain separately labeled.
+- Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, political-finance evidence, and causal inference must remain separately labeled.
 - Restoration of headline funding does not equal restoration of prior personnel, institutional relationships, geographic coverage, or operating capability.
 - Federal obligations do not equal completed expenditures or contractor profit.
 - A total program obligation does not equal a single prime-contractor award value.
 
 ## Recurrence
-Research is active and future-changing. Periodic source acquisition and ERL updates are required when materially new evidence changes chronology, funding totals, recipient ownership/status, procurement competition, trade restrictions/reopenings, restoration status, causal confidence, or policy interpretation.
+Research is active and future-changing. Periodic source acquisition and ERL updates are required when materially new evidence changes chronology, funding totals, recipient ownership/status, procurement competition, political-finance relationships, trade restrictions/reopenings, restoration status, causal confidence, or policy interpretation.
 
 ## Completion accounting
 - handoff: 1/1 = 100%
-- developed bounded research files: 7/7 substantive, 0 scaffolding/stubs
-- research-candidate evidence package: 59%
-- procurement reconstruction: 57%
+- developed bounded research files: 8/8 substantive, 0 scaffolding/stubs
+- research-candidate evidence package: 62%
+- procurement reconstruction: 60%
 - foreign-capacity-loss reconstruction: 43%
 - causal comparison/control work: 48%
 - independent review: pending
 - publication authorization: false
 - release/tagging: not authorized
-- bounded goal activation: 49%
+- bounded goal activation: 51%
