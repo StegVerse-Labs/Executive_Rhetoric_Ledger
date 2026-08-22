@@ -35,6 +35,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 20. The current outbreak reached the United States on 2026-06-03. CRS reports 45 confirmed U.S. detections by 2026-08-10 (44 Texas, 1 New Mexico). Canada has since imposed NWS-related restrictions on susceptible animals from Texas and additional certification requirements for other U.S. exports, creating a new measurable trade-impact surface.
 21. APHIS lists Douglas, Arizona for phased reopening to Mexican cattle imports on 2026-08-24; Santa Teresa and Columbus, New Mexico remain to be determined. This creates a live test of how USDA balances cattle-supply constraints against biosecurity risk.
 22. AcceleRAD Technologies, selected for Grand Challenge project `APP-113469`, was acquired by Reveam, Inc. on 2026-03-19, before USDA announced selections in June. This does not undermine AcceleRAD's technical legitimacy, but it changes the economic-beneficiary/ownership path and requires the actual notice of award, parent disclosure, and ownership/financing review.
+23. Moore Air Base is not an active Air Force installation for this project. USDA ARS records identify the relevant site as `APHIS-VS property known as Moore Air Base` and describe 222.943 acres of APHIS property there. USACE Fort Worth District is serving as USDA's design/construction agent, and Mortenson is the construction contractor for the public $610M project. This narrows the $726.406M-vs-$610M reconciliation: acquisition of the Moore site should not be presumed to explain the difference, and the remaining accounting should be decomposed across the prime award/modifications, USACE agent costs, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, and any separate obligations booked to the construction category. No waste, overpayment, profit, or misconduct finding follows from the difference alone.
 
 ## Installed bounded evidence surfaces
 - `research-candidates/2026-08-beef-biosecurity-policy-risk.md`
@@ -54,7 +55,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 - Obtain the Independent Government Cost Estimate and historical-pricing comparison for the Dynamic Aviation contract where lawfully releasable.
 - Reconstruct alternative aerial-dispersal vendors and NWS-specific capability as of June 2026.
 - Track whether USDA actually competes follow-on NWS aerial-dispersal work within the 6-12 month period promised in the sole-source justification.
-- Reconcile the CRS $726.406M Moore Air Base production-facility construction obligation with the $610M Mortenson contract; obtain complete bid count, evaluation criteria, award record, subcontracting plan, and other project obligations.
+- Reconcile the CRS $726.406M Moore Air Base production-facility construction obligation with the $610M Mortenson/project value, explicitly excluding unsupported assumptions that land acquisition explains the difference because the relevant site is already USDA/APHIS-controlled federal property; obtain complete bid count, evaluation criteria, award/modification record, USACE agent-cost accounting, enabling/site work, government-furnished equipment, engineering/support, commissioning, contingency/reserve treatment, subcontracting plan, and other project obligations.
 - Determine whether June Grand Challenge agreements and Dynamic Aviation obligations are already represented within the ~$999.234M emergency-transfer obligation total or should be added only at an award-level reconciliation layer.
 - Obtain the actual terminated-award list sent to Congress and isolate FAO/ECTAD award numbers, values, countries, periods, and scopes.
 - Map specific overseas animal-health/global-health-security program losses across Central America and Mexico, including dates work stopped and successor work became operational.
@@ -66,7 +67,7 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 
 ## Promotion boundaries
 - No claim that the administration caused screwworm or another pathogen/parasite outbreak without direct causal evidence.
-- No corruption, favoritism, profiteering, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, or sole-source status alone.
+- No corruption, favoritism, profiteering, waste, overpayment, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, sole-source status, or an unreconciled obligation/contract-value difference alone.
 - No company is classified as illegitimate solely because it is small, privately held, specialized, federally funded, politically active, represented by lobbyists, or acquired by another company.
 - Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, and causal inference must remain separately labeled.
 - Restoration of headline funding does not equal restoration of prior personnel, institutional relationships, geographic coverage, or operating capability.
@@ -79,11 +80,11 @@ Research is active and future-changing. Periodic source acquisition and ERL upda
 ## Completion accounting
 - handoff: 1/1 = 100%
 - developed bounded research files: 7/7 substantive, 0 scaffolding/stubs
-- research-candidate evidence package: 58%
-- procurement reconstruction: 55%
+- research-candidate evidence package: 59%
+- procurement reconstruction: 57%
 - foreign-capacity-loss reconstruction: 43%
 - causal comparison/control work: 48%
 - independent review: pending
 - publication authorization: false
 - release/tagging: not authorized
-- bounded goal activation: 48%
+- bounded goal activation: 49%
