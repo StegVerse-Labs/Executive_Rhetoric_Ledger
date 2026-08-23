@@ -39,6 +39,8 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 24. Initial Mortenson political-finance reconstruction does not support a direct Trump-campaign-donor explanation for the Moore award. Mortenson identifies David Mortenson as Chairman and parent-company President/CEO. FEC filings identify him as `M.A. Mortenson Company`/`Mortenson Construction` Chairman and verify $3,500 contributions through ActBlue to Angie Craig for Congress (2025-03-28), Matt Klein for Congress (2025-10-28), and Morrison for Congress (2026-03-11). FEC filings also identify Alice D. Mortenson, President of the Mortenson Family Foundation, giving $7,000 to McBride for Delaware Inc. on 2025-11-11. No verified contribution by M. A. Mortenson Company, David Mortenson, or Alice D. Mortenson to a Trump-authorized committee was located in this pass. This is a negative-search result rather than proof of absence; a transaction-level alias/joint-fundraising/PAC sweep remains required, and political giving does not establish procurement influence.
 25. Moore award-level reconciliation has advanced materially. Public federal award reporting identifies Mortenson contract `W9126G-26-C-A011` / `W9126G26CA011`, related solicitation `W9126G26RA033`, as a $610,000,000 firm-fixed-price award made on 2026-03-06. Contract-announcement reporting states the entire $610M in FY2026 USDA funds was obligated at award and two bids were received. Therefore the arithmetic difference between CRS's $726,405,969 construction-category obligation and the fully obligated Mortenson prime award is exactly $116,405,969. That remainder cannot be characterized as an unfunded portion of the $610M Mortenson contract; it must reflect obligations outside that award amount, broader project-accounting scope, or both. The final award was competitive at the bid stage, while the urgency J&A and market-research path constrained/prequalified the eligible field before final competition. This is distinct from the Dynamic Aviation sole-source lane and does not itself establish inadequate competition or misconduct.
 26. The $116.406M residual is now bounded by two additional controls. CRS assigns the Moore dispersal-center project to a separate obligation line ($9.053M), while public Texas animal-health material describes that completed facility at roughly $8.5M; the dispersal center therefore should not be folded into the production-facility residual absent contrary accounting evidence. Separately, USDA's FY2019 APHIS explanatory notes document historical use of an interagency agreement with the Army Corps of Engineers to manage Moore Air Base construction and report FY2017 spending on that agreement plus a program-of-requirements contract. That precedent makes a current USDA-to-USACE reimbursable/interagency funding layer a concrete hypothesis for part of the residual, but no current agreement amount, USACE fee, contingency, reserve, design cost, or other component has yet been established.
+27. A downstream Grand Challenge beneficiary layer is now documented. Los Angeles County Department of Public Health records show two selected Grand Challenge preparedness projects and authorize a sole-source contract with Hartman Veterinary & Public Health Consultants, Inc. for up to $686,400, stated to be 100% funded with USDA-APHIS money. County materials justify the sole source through access to Emily Pieracci, DVM, an experienced former CDC animal-import/zoonoses specialist. Public vendor indexing shows Hartman's SAM registration beginning April 5, 2026 and does not establish a multi-year corporate operating history. This does not make Hartman illegitimate: Pieracci's relevant professional record is independently longstanding, and a recent SAM registration does not prove recent incorporation. It does establish that a complete beneficiary audit must follow downstream contracts/subawards rather than stopping at USDA's 40 direct project selections.
+28. Moore competition provenance is more specific than the final two-bid count alone suggests. The published urgency J&A reports outreach to more than 400 vendors, 11 responses to Sources Sought `W9126G26R1AS7`, and five firms meeting the specialized BSL experience, bonding, and integrated design-build criteria for the limited Phase I pool. The Senior Procurement Executive approved the urgency path on 2025-11-05. Two bids were ultimately received for the $610M award. This supports a characterization of urgency-constrained/prequalified competition, not a sole-source award.
 
 ## Installed bounded evidence surfaces
 - `research-candidates/2026-08-beef-biosecurity-policy-risk.md`
@@ -49,13 +51,16 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 - `assessments/source-posture/2026-08-grand-challenge-beneficiary-ownership.md`
 - `assessments/source-posture/2026-08-mortenson-political-finance-and-ownership.md`
 - `assessments/source-posture/2026-08-moore-116m-residual-obligation-reconciliation.md`
+- `assessments/source-posture/2026-08-grand-challenge-la-county-hartman-downstream-beneficiary.md`
 
 ## Open questions / acquisition queue
 - Obtain per-recipient dollar amounts and actual notices of award/cooperative agreements for all Grand Challenge projects.
 - Identify the Grand Challenge selecting official and review-panel governance/recusal records.
 - Reconstruct cumulative prior federal funding for private recipients and materially related technology.
+- Expand the beneficiary audit through downstream contracts/subawards for public, university, nonprofit, and other direct Grand Challenge recipients; capture legal entity, amount, scope, principals, and corporate age separately from direct recipient status.
+- Obtain Hartman Veterinary & Public Health Consultants, Inc. state formation records, officers/directors, executed Los Angeles County contract, pricing, invoices/performance records, and the exact USDA award that funds the $686,400 ceiling.
 - Complete direct FEC transaction-level sweeps across Mortenson controlling-family owners, current/former senior executives, employer/address aliases, Trump-authorized committees, Trump joint-fundraising committees, leadership/support PACs, and material trade-association PACs; keep ordinary employee contributions separate from ownership/control evidence.
-- Identify beneficial ownership, principals, lobbying, campaign contributions, and material administration/agency relationships for private recipients, Mortenson, Dynamic Aviation, Reveam/AcceleRAD, and major subcontractors.
+- Identify beneficial ownership, principals, lobbying, campaign contributions, and material administration/agency relationships for private recipients, Mortenson, Dynamic Aviation, Reveam/AcceleRAD, Hartman, and major subcontractors.
 - Determine whether AcceleRAD's March 2026 acquisition by Reveam was reflected in the application/award records and identify the legal recipient/UEI/parent disclosure for `APP-113469`.
 - Obtain USDA delegation/designation records governing Craig Harper's multiple roles on the Dynamic Aviation J&A.
 - Obtain the Independent Government Cost Estimate and historical-pricing comparison for the Dynamic Aviation contract where lawfully releasable.
@@ -75,25 +80,25 @@ Determine, with sourced chronology and explicit causal boundaries, how current-a
 
 ## Promotion boundaries
 - No claim that the administration caused screwworm or another pathogen/parasite outbreak without direct causal evidence.
-- No corruption, favoritism, profiteering, waste, overpayment, inadequate competition, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, sole-source status, urgency-constrained competition, or an unreconciled obligation/contract-value difference alone.
+- No corruption, favoritism, profiteering, waste, overpayment, inadequate competition, or improper-steering finding from award receipt, lobbying, political contributions, role concentration, acquisition/ownership change, sole-source status, urgency-constrained competition, recent federal registration, downstream contracting, or an unreconciled obligation/contract-value difference alone.
 - No Trump-affiliation finding from surname, employer, family relationship, ordinary employee political activity, or incomplete negative-search results; require transaction-level source support.
-- No company is classified as illegitimate solely because it is small, privately held, specialized, federally funded, politically active, represented by lobbyists, or acquired by another company.
-- Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, political-finance evidence, competition structure, and causal inference must remain separately labeled.
+- No company is classified as illegitimate solely because it is small, privately held, specialized, federally funded, politically active, represented by lobbyists, recently registered in SAM, newly formed, or acquired by another company.
+- Chronology, risk amplification, functional-capacity loss, procurement beneficiary analysis, political-finance evidence, competition structure, corporate age, expert qualifications, and causal inference must remain separately labeled.
 - Restoration of headline funding does not equal restoration of prior personnel, institutional relationships, geographic coverage, or operating capability.
 - Federal obligations do not equal completed expenditures or contractor profit.
 - A total program obligation does not equal a single prime-contractor award value.
 
 ## Recurrence
-Research is active and future-changing. Periodic source acquisition and ERL updates are required when materially new evidence changes chronology, funding totals, recipient ownership/status, procurement competition, political-finance relationships, trade restrictions/reopenings, restoration status, causal confidence, or policy interpretation.
+Research is active and future-changing. Periodic source acquisition and ERL updates are required when materially new evidence changes chronology, funding totals, recipient ownership/status, downstream beneficiaries, procurement competition, political-finance relationships, trade restrictions/reopenings, restoration status, causal confidence, or policy interpretation.
 
 ## Completion accounting
 - handoff: 1/1 = 100%
-- developed bounded research files: 9/9 substantive, 0 scaffolding/stubs
-- research-candidate evidence package: 67%
-- procurement reconstruction: 71%
+- developed bounded research files: 10/10 substantive, 0 scaffolding/stubs
+- research-candidate evidence package: 70%
+- procurement reconstruction: 74%
 - foreign-capacity-loss reconstruction: 43%
-- causal comparison/control work: 48%
+- causal comparison/control work: 49%
 - independent review: pending
 - publication authorization: false
 - release/tagging: not authorized
-- bounded goal activation: 55%
+- bounded goal activation: 58%
