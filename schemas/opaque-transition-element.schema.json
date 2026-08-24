@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse-labs.github.io/Executive_Rhetoric_Ledger/schemas/opaque-transition-element.schema.json",
+  "title": "ERL Opaque Transition Element",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "opaque_id",
+    "slot",
+    "expected_role",
+    "observed_constraints",
+    "evidence_ids",
+    "provenance_posture",
+    "resolution_state"
+  ],
+  "properties": {
+    "opaque_id": {"type": "string", "minLength": 1},
+    "slot": {"type": "string", "minLength": 1},
+    "expected_role": {"type": "string", "minLength": 1},
+    "observed_constraints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "evidence_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "provenance_posture": {
+      "enum": ["known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence", "single_lineage"]
+    },
+    "resolution_state": {
+      "enum": ["OPAQUE", "PARTIALLY_BOUNDED", "RESOLVED", "SUSPENDED"]
+    },
+    "resolved_element_id": {"type": ["string", "null"]},
+    "resolved_at": {"type": ["string", "null"], "format": "date-time"},
+    "resolution_evidence_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "notes": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"resolution_state": {"const": "RESOLVED"}}},
+      "then": {
+        "required": ["resolved_element_id", "resolved_at", "resolution_evidence_ids"],
+        "properties": {
+          "resolved_element_id": {"type": "string", "minLength": 1},
+          "resolved_at": {"type": "string", "format": "date-time"},
+          "resolution_evidence_ids": {"minItems": 1}
+        }
+      }
+    }
+  ]
+}
