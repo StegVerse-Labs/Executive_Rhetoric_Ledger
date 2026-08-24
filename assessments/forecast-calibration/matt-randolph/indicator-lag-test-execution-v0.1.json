@@ -1,0 +1,116 @@
+{
+  "record_type": "governed_indicator_lag_test_execution",
+  "record_id": "ERL-FC-MR-2026-INDICATOR-LAG-EXEC-001",
+  "scope": "First execution of predeclared diesel-versus-WTI/Brent comparison lanes for July-August 2026",
+  "source_records": [
+    "diesel-vs-crude-benchmark-2026-06-01-through-08-14.json",
+    "official-economic-series-2026-06-08-through-08-17.json",
+    "multimonth-transmission-history-2026-03-through-07.json",
+    "prospective-outcome-gating-2026-07.json"
+  ],
+  "predeclared_targets": [
+    "CPI energy",
+    "CPI food",
+    "CPI food at home",
+    "PPI final demand",
+    "PPI transportation and warehousing",
+    "truck transportation of freight",
+    "physical freight volume"
+  ],
+  "predeclared_lag_lanes_days": ["0-7", "8-21", "22-42", "43-84"],
+  "execution_rules": [
+    "Do not change a target or lag after seeing results.",
+    "Do not treat later publication as later occurrence; reference period must be prospectively clean.",
+    "Do not score an indicator against itself; diesel and crude price paths are signal inputs, not terminal economic outcomes.",
+    "Do not infer causation from directional agreement.",
+    "When a clean target is not yet released, emit NOT_YET_SCORABLE rather than substituting a contaminated target."
+  ],
+  "signal_path_diagnostic": {
+    "alignment_note": "Retail diesel observation dates are Mondays while EIA crude means are week-ending Friday values; this diagnostic compares adjacent reported weekly movements only and does not claim exact synchronous windows.",
+    "weekly_percent_changes": [
+      {
+        "interval": "mid-July step 1",
+        "wti_percent": 11.78,
+        "brent_percent": 13.09,
+        "diesel_percent": 7.05,
+        "direction": "ALL_UP"
+      },
+      {
+        "interval": "mid-July step 2",
+        "wti_percent": 9.67,
+        "brent_percent": 15.90,
+        "diesel_percent": 3.49,
+        "direction": "ALL_UP"
+      },
+      {
+        "interval": "late-July step",
+        "wti_percent": -4.59,
+        "brent_percent": -4.67,
+        "diesel_percent": 0.66,
+        "direction": "CRUDE_DOWN_DIESEL_NEAR_FLAT_UP"
+      },
+      {
+        "interval": "early-August step",
+        "wti_percent": -6.59,
+        "brent_percent": -4.11,
+        "diesel_percent": -1.70,
+        "direction": "ALL_DOWN_DIFFERENT_AMPLITUDE"
+      },
+      {
+        "interval": "mid-August step",
+        "wti_percent": 6.47,
+        "brent_percent": 5.29,
+        "diesel_percent": 3.75,
+        "direction": "ALL_UP"
+      }
+    ],
+    "bounded_interpretation": [
+      "Most observed weekly steps moved diesel and crude in the same direction, so this interval does not by itself establish a strong directional decoupling or predictive-superiority result.",
+      "Late July shows one meaningful divergence candidate: crude weekly means fell while retail diesel remained approximately flat-to-higher.",
+      "Different amplitudes and one divergence interval justify continued testing but do not resolve the July 13 'watch gas and diesel, not oil' proposition."
+    ]
+  },
+  "target_lane_results": [
+    {
+      "target": "CPI July 2026",
+      "result": "CONTEXT_ONLY_REFERENCE_PERIOD_OVERLAP",
+      "score_authorized": false
+    },
+    {
+      "target": "PPI July 2026",
+      "result": "CONTEXT_ONLY_REFERENCE_PERIOD_NOT_CLEAN_ENOUGH_FOR_PROSPECTIVE_SCORE",
+      "score_authorized": false
+    },
+    {
+      "target": "Freight TSI July 2026",
+      "result": "NOT_RELEASED_AND_REFERENCE_PERIOD_OVERLAPS_FORECAST",
+      "score_authorized": false
+    },
+    {
+      "target": "PPI August 2026",
+      "result": "NOT_YET_RELEASED",
+      "scheduled_release": "2026-09-10",
+      "score_authorized": "WHEN_RELEASED"
+    },
+    {
+      "target": "CPI August 2026",
+      "result": "NOT_YET_RELEASED",
+      "scheduled_release": "2026-09-11",
+      "score_authorized": "WHEN_RELEASED"
+    },
+    {
+      "target": "Freight TSI August 2026",
+      "result": "NOT_YET_RELEASED",
+      "scheduled_release": "2026-10-14",
+      "score_authorized": "WHEN_RELEASED"
+    }
+  ],
+  "current_test_conclusion": "NO_PREDICTIVE_SUPERIORITY_SCORE_AUTHORIZED_YET",
+  "current_component_posture": {
+    "diesel_crude_signal_divergence": "LIMITED_SUPPORT",
+    "prospective_inflation_prediction": "UNRESOLVED",
+    "prospective_freight_prediction": "UNRESOLVED"
+  },
+  "finding_authorized": false,
+  "publication_authorized": false
+}
