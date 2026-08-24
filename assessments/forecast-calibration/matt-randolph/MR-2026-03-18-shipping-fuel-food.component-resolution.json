@@ -1,0 +1,54 @@
+{
+  "record_type": "forecast_component_resolution",
+  "record_id": "ERL-FC-MR-2026-03-18-COMPONENTS-001",
+  "forecast_id": "MR-FC-2026-03-18-SHIPPING-FUEL-FOOD-FIRST",
+  "overall_forecast_state": "UNRESOLVED",
+  "component_postures": [
+    {
+      "component": "marine_bunker_fuel_shock",
+      "posture": "SUPPORTED",
+      "basis": "USDA Grain Transportation Report documented VLSFO near $960/metric ton on March 11, up 79% in two weeks, and IFO 380 reaching an all-time high March 9.",
+      "independence": "independent_official_source"
+    },
+    {
+      "component": "grain_ocean_freight_cost_increase",
+      "posture": "SUPPORTED",
+      "basis": "USDA documented higher U.S. Gulf-to-Japan and Pacific Northwest-to-Japan grain ocean freight rates during the same shock interval.",
+      "independence": "independent_official_source"
+    },
+    {
+      "component": "domestic_diesel_cost_pressure",
+      "posture": "SUPPORTED",
+      "basis": "BLS March PPI documented a 42.0% monthly increase in No. 2 diesel fuel within processed intermediate demand.",
+      "independence": "independent_official_source"
+    },
+    {
+      "component": "transportation_cost_pass_through",
+      "posture": "SUPPORTED",
+      "basis": "BLS recorded March transportation/warehousing price pressure and USDA later documented materially higher rail fuel surcharges tied to diesel cost conditions.",
+      "independence": "multiple_independent_official_sources"
+    },
+    {
+      "component": "consumer_food_price_increase",
+      "posture": "PARTIAL_MIXED",
+      "basis": "Food CPI was flat in March, then rose 0.5% in April, 0.2% in May, 0.2% in June, and 0.1% in July. This supports later consumer-food movement but not sole attribution to shipping fuel.",
+      "independence": "independent_official_source"
+    },
+    {
+      "component": "food_prices_first_terminal_ordering",
+      "posture": "UNRESOLVED",
+      "basis": "The source says food prices are hit first, but a fixed comparator set and ordering clock are required before that claim can be tested fairly.",
+      "independence": "not_applicable"
+    },
+    {
+      "component": "shipping_fuel_as_dominant_or_sole_cause",
+      "posture": "NOT_CLAIMED_OR_NOT_AUTHORIZED",
+      "basis": "Current preserved first-party text does not authorize an exclusivity claim, and observed food prices have multiple contemporaneous causal inputs.",
+      "independence": "not_applicable"
+    }
+  ],
+  "component_resolution_rule": "Supported intermediate transition links may receive component support without converting the terminal forecast into RESOLVED_CORRECT.",
+  "next_gate": "Define and freeze a comparator set for 'first' before evaluating terminal ordering.",
+  "aggregate_credibility_effect_authorized": false,
+  "publication_authorized": false
+}
