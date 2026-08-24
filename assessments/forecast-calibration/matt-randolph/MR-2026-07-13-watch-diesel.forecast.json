@@ -1,0 +1,100 @@
+{
+  "calibration_id": "ERL-FC-MR-2026-07-13-WATCH-DIESEL",
+  "analyst": {
+    "analyst_id": "MATT-RANDOLPH-MR-GLOBAL",
+    "display_name": "Matt Randolph / Mr Global",
+    "credential_claim_refs": []
+  },
+  "evaluation_window": {
+    "start": "2026-07-13",
+    "end": "2026-08-23"
+  },
+  "forecasts": [
+    {
+      "forecast_id": "MR-FC-2026-07-13-WATCH-GAS-DIESEL-NOT-OIL",
+      "issued_at": "2026-07-13",
+      "claim": "Watch gas and diesel prices, not oil.",
+      "source_ids": ["MR-2026-07-13-WATCH-DIESEL"],
+      "base_window": {
+        "earliest": null,
+        "latest": null
+      },
+      "contingencies": [],
+      "world_event_links": [
+        "MR-WORLD-2026-07-13-EIA-DIESEL-4-796",
+        "MR-WORLD-2026-07-17-EIA-DISTILLATE-STOCKS",
+        "MR-WORLD-2026-07-20-EIA-DIESEL-5-134",
+        "MR-WORLD-2026-07-27-EIA-DIESEL-5-313",
+        "MR-WORLD-2026-08-03-EIA-DIESEL-5-348",
+        "MR-WORLD-2026-08-12-BLS-CPI-JULY",
+        "MR-WORLD-2026-08-13-BLS-PPI-JULY",
+        "MR-WORLD-2026-08-17-EIA-DIESEL-5-454"
+      ],
+      "state": "UNRESOLVED",
+      "state_history": [
+        {
+          "recorded_at": "2026-07-13",
+          "state": "ACTIVE",
+          "reason": "The first-party Substack note title establishes a bounded comparative attention claim: watch gas and diesel prices rather than crude oil. The embedded video has not yet been transcribed, so the purpose and prediction horizon remain unresolved.",
+          "source_ids": ["MR-2026-07-13-WATCH-DIESEL"]
+        },
+        {
+          "recorded_at": "2026-08-23",
+          "state": "UNRESOLVED",
+          "reason": "Official EIA data show diesel accelerated after July 13 while distillate inventories remained below their five-year average; BLS July data show substantial year-over-year energy inflation but mixed monthly CPI/PPI/freight direction. This supports testing refined products as an informational signal but does not by itself establish that they outperformed crude oil as a predictor for the specific outcome Randolph intended.",
+          "source_ids": [
+            "EIA-2026-DIESEL-WEEKLY",
+            "EIA-2026-07-17-WPSR",
+            "BLS-2026-07-CPI",
+            "BLS-2026-07-PPI"
+          ]
+        }
+      ],
+      "calibration_notes": "This is currently an indicator-selection claim, not yet a fully specified quantitative forecast. Resolution requires the embedded video/transcript plus a predeclared comparison target: consumer inflation, freight costs, product shortages, refinery margins, or another stated outcome."
+    }
+  ],
+  "source_receipts": [
+    {
+      "source_id": "MR-2026-07-13-WATCH-DIESEL",
+      "source_type": "first_party_substack_note_title",
+      "source_reference": "https://substack.com/@mrglobal/note/c-293975586",
+      "published_or_observed_at": "2026-07-13",
+      "provenance_posture": "primary"
+    },
+    {
+      "source_id": "EIA-2026-DIESEL-WEEKLY",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=pet&s=EMD_EPD2D_PTE_NUS_DPG",
+      "published_or_observed_at": "2026-08-17",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "EIA-2026-07-17-WPSR",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.eia.gov/about/new/",
+      "published_or_observed_at": "2026-07-22",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "BLS-2026-07-CPI",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.bls.gov/news.release/cpi.htm",
+      "published_or_observed_at": "2026-08-12",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "BLS-2026-07-PPI",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.bls.gov/news.release/ppi.htm",
+      "published_or_observed_at": "2026-08-13",
+      "provenance_posture": "evidenced_independence"
+    }
+  ],
+  "limitations": [
+    "The embedded July 13 video has not yet been transcribed or independently preserved.",
+    "The title alone does not specify which downstream variable gas/diesel should predict or how predictive superiority over crude should be measured.",
+    "A rising diesel series does not itself prove causal transmission to inflation or freight prices.",
+    "Comparative predictive performance against crude oil requires a fixed target, lag structure, and scoring rule defined before resolution.",
+    "No aggregate credibility finding is authorized from this record."
+  ]
+}
