@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse-labs.github.io/Executive_Rhetoric_Ledger/schemas/forecast-calibration.schema.json",
+  "title": "ERL Forecast Calibration Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["calibration_id", "analyst", "evaluation_window", "forecasts", "source_receipts", "limitations"],
+  "properties": {
+    "calibration_id": {"type": "string", "minLength": 1},
+    "analyst": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["analyst_id", "display_name"],
+      "properties": {
+        "analyst_id": {"type": "string", "minLength": 1},
+        "display_name": {"type": "string", "minLength": 1},
+        "credential_claim_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "evaluation_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": {"type": "string", "format": "date"},
+        "end": {"type": "string", "format": "date"}
+      }
+    },
+    "forecasts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/forecast"}
+    },
+    "source_receipts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source_receipt"}
+    },
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "forecast": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["forecast_id", "issued_at", "claim", "source_ids", "base_window", "contingencies", "world_event_links", "state", "state_history"],
+      "properties": {
+        "forecast_id": {"type": "string", "minLength": 1},
+        "issued_at": {"type": "string", "format": "date-time"},
+        "claim": {"type": "string", "minLength": 1},
+        "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "base_window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["earliest", "latest"],
+          "properties": {
+            "earliest": {"type": ["string", "null"], "format": "date"},
+            "latest": {"type": ["string", "null"], "format": "date"}
+          }
+        },
+        "contingencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["contingency_id", "description", "effect", "status", "source_ids"],
+            "properties": {
+              "contingency_id": {"type": "string", "minLength": 1},
+              "description": {"type": "string", "minLength": 1},
+              "effect": {"enum": ["delay", "accelerate", "invalidate", "no_change", "unknown"]},
+              "status": {"enum": ["occurred", "did_not_occur", "partial", "unresolved"]},
+              "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+            }
+          }
+        },
+        "world_event_links": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "state": {"enum": ["ACTIVE", "DELAYED_BY_STATED_CONTINGENCY", "ACCELERATED_BY_STATED_CONTINGENCY", "REVISED_WITHIN_MODEL", "INVALIDATED", "SUPERSEDED", "RESOLVED_CORRECT", "RESOLVED_INCORRECT", "UNRESOLVED"]},
+        "state_history": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["recorded_at", "state", "reason", "source_ids"],
+            "properties": {
+              "recorded_at": {"type": "string", "format": "date-time"},
+              "state": {"enum": ["ACTIVE", "DELAYED_BY_STATED_CONTINGENCY", "ACCELERATED_BY_STATED_CONTINGENCY", "REVISED_WITHIN_MODEL", "INVALIDATED", "SUPERSEDED", "RESOLVED_CORRECT", "RESOLVED_INCORRECT", "UNRESOLVED"]},
+              "reason": {"type": "string", "minLength": 1},
+              "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+            }
+          }
+        },
+        "calibration_notes": {"type": ["string", "null"]}
+      }
+    },
+    "source_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_type", "source_reference", "published_or_observed_at", "provenance_posture"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "source_type": {"type": "string", "minLength": 1},
+        "source_reference": {"type": "string", "minLength": 1},
+        "published_or_observed_at": {"type": "string", "format": "date-time"},
+        "provenance_posture": {"enum": ["primary", "known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence"]}
+      }
+    }
+  }
+}
