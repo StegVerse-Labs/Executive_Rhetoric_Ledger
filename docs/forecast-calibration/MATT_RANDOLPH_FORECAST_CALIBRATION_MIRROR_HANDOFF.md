@@ -52,11 +52,13 @@ Previously hosted evidence:
 - run `32688098190`: transition calculus and forecast adapter PASS;
 - run `32688562968`: transition calculus, forecast adapter, and negative fail-closed tests PASS;
 - run `32688912551`: transition calculus, live forecast-calibration records, and negative fail-closed tests PASS on head `50a8d705ef2ebbbd951411d8010570e99267d4aa`;
-- research-candidate activation runs `32688912585` and later exact-head runs: PASS.
+- research-candidate activation runs `32688912585` and subsequent validated heads: PASS.
 
 The live validation pass followed a fail-closed detection and repair: date-only first-party publication evidence initially exposed a schema precision defect. The schema now accepts bounded date or date-time evidence rather than fabricating an exact clock time.
 
-The current branch adds two additional live Randolph forecast records and an official-series bundle. This handoff update intentionally triggers the transition-calculus workflow so those live records are validated on the new head.
+The current branch adds two additional live Randolph forecast records and an official-series bundle. Changes below `assessments/forecast-calibration/**` are included in the transition-calculus workflow trigger paths, so these records remain inside the hosted validation boundary.
+
+At this handoff update the connector has not yet surfaced a completed hosted workflow run specifically for the newest head. Therefore no exact-head PASS is claimed for the newest commit until such a run is observable.
 
 The repository-wide `Validate Ledger Schemas` workflow remains separately blocked by the pre-existing August 22 White House ballroom primary-record-intake record. That failure is outside this bounded lane and is not masked here.
 
