@@ -1,0 +1,158 @@
+{
+  "record_type": "forecast_source_manifest",
+  "manifest_id": "ERL-FC-MR-2026-SOURCES-001",
+  "subject": {
+    "name": "Matt Randolph",
+    "public_name": "Mr Global",
+    "evaluation_scope": "energy and Iran-conflict forecasts"
+  },
+  "window": {
+    "requested_end": "2026-08-23",
+    "requested_start_approx": "2026-04-23",
+    "antecedent_extension_start": "2026-03-07",
+    "antecedent_reason": "Explicit threshold and contingency forecasts issued before the nominal four-month window may remain active and materially govern later forecast-state transitions."
+  },
+  "source_policy": {
+    "first_party_required_for_forecast_text": true,
+    "search_snippet_is_custody": false,
+    "later_self_commentary_is_independent_verification": false,
+    "credentials_substitute_for_outcome_evidence": false
+  },
+  "sources": [
+    {
+      "source_id": "MR-2026-03-07-THIRD-WEEK",
+      "published_date": "2026-03-07",
+      "title": "The 3rd Week Is Critical",
+      "url": "https://mattrandolph.substack.com/p/the-3rd-week-is-critical",
+      "source_family": "first_party_substack",
+      "status": "LOCATED",
+      "forecast_relevance": "explicit three-week Hormuz/global-recession threshold",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-03-13-RAMP-UP",
+      "published_date": "2026-03-13",
+      "title": "Why The U.S. Can't Just Ramp Up Oil Production",
+      "url": "https://mattrandolph.substack.com/p/why-the-us-cant-just-ramp-up-oil",
+      "source_family": "first_party_substack",
+      "status": "LOCATED",
+      "forecast_relevance": "domestic production-response constraints",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-03-15-SPR",
+      "published_date": "2026-03-15",
+      "title": "The Worst Possible Way",
+      "url": "https://mattrandolph.substack.com/p/the-worst-possible-way",
+      "source_family": "first_party_substack",
+      "status": "LOCATED",
+      "forecast_relevance": "SPR exchange efficacy and economic consequences",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-03-18-SHIPPING-FUEL",
+      "published_date": "2026-03-18",
+      "title": "Pay Attention to Shipping Fuel, It's at All Time Record Highs. That's Bad.",
+      "url": "https://mattrandolph.substack.com/p/pay-attention-to-shipping-fuel-its",
+      "source_family": "first_party_substack",
+      "status": "LOCATED",
+      "forecast_relevance": "marine-fuel to food-price transmission",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-03-31-BAB-EL-MANDEB",
+      "published_date": "2026-03-31",
+      "title": "The Closure of Bab-El-Mandeb Strait",
+      "url": "https://mattrandolph.substack.com/archive",
+      "source_family": "first_party_archive_index",
+      "status": "LOCATED_INDEX_ONLY",
+      "forecast_relevance": "secondary chokepoint and shipping disruption",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-04-06-INFRASTRUCTURE-WAR",
+      "published_date": "2026-04-06",
+      "title": "The Infrastructure War Has Started",
+      "url": "https://mattrandolph.substack.com/archive",
+      "source_family": "first_party_archive_index",
+      "status": "LOCATED_INDEX_ONLY",
+      "forecast_relevance": "infrastructure escalation framing",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-04-08-DIESEL-EVERYTHING",
+      "published_date": "2026-04-08",
+      "title": "Diesel Is Everything",
+      "url": "https://mattrandolph.substack.com/p/diesel-is-everything",
+      "source_family": "first_party_substack",
+      "status": "LOCATED",
+      "forecast_relevance": "diesel as economy-wide transmission mechanism",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-04-10-HORMUZ-WEAPON",
+      "published_date": "2026-04-10",
+      "title": "The Greatest Weapon of All. The Strait of Hormuz",
+      "url": "https://mattrandolph.substack.com/archive",
+      "source_family": "first_party_archive_index",
+      "status": "LOCATED_INDEX_ONLY",
+      "forecast_relevance": "Hormuz leverage and energy-system consequence",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-04-21-DPA-OIL",
+      "published_date": "2026-04-21",
+      "title": "They Sold Your Oil But Sent You The Bill",
+      "url": "https://mattrandolph.substack.com/archive",
+      "source_family": "first_party_archive_index",
+      "status": "LOCATED_INDEX_ONLY",
+      "forecast_relevance": "Defense Production Act and oil-policy consequence claims",
+      "antecedent": true
+    },
+    {
+      "source_id": "MR-2026-05-01-WORDS-PRESIDENT",
+      "published_date": "2026-05-01",
+      "title": "Words Matter, But None More Than The Words Of The President",
+      "url": "https://mattrandolph.substack.com/p/words-matter-but-none-more-than-the",
+      "source_family": "first_party_substack",
+      "status": "LOCATED",
+      "forecast_relevance": "presidential rhetoric as market/geopolitical signal"
+    },
+    {
+      "source_id": "MR-2026-07-08-DIESEL-INFLATION",
+      "published_date": "2026-07-08",
+      "title": "Higher Diesel Means Higher Inflation",
+      "url": "https://substack.com/@mrglobal/note/c-290789385",
+      "source_family": "first_party_substack_note",
+      "status": "LOCATED",
+      "forecast_relevance": "diesel-price to inflation transmission"
+    },
+    {
+      "source_id": "MR-2026-07-13-WATCH-DIESEL",
+      "published_date": "2026-07-13",
+      "title": "Watch Gas and Diesel Prices Not Oil",
+      "url": "https://substack.com/@mrglobal/note/c-293975586",
+      "source_family": "first_party_substack_note",
+      "status": "LOCATED",
+      "forecast_relevance": "refined products as leading indicators"
+    },
+    {
+      "source_id": "MR-2026-07-16-ABOUT-DIESEL",
+      "published_date": "2026-07-16",
+      "title": "It's About The Diesel",
+      "url": "https://substack.com/@mrglobal/note/c-295859281",
+      "source_family": "first_party_substack_note",
+      "status": "LOCATED",
+      "forecast_relevance": "renewed diesel constraint emphasis"
+    }
+  ],
+  "next_acquisition": [
+    "Resolve exact first-party URLs and transcripts for archive-index-only sources.",
+    "Discover missing June-August first-party forecast objects across Substack, YouTube, TikTok, and other Randolph-owned surfaces.",
+    "Preserve exact publication timestamps where only dates are currently known.",
+    "Separate original forecasts from later updates and retrospectives.",
+    "Create independent outcome receipts before assigning resolved forecast states."
+  ],
+  "aggregate_finding_authorized": false,
+  "publication_authorized": false
+}
