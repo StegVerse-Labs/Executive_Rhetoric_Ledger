@@ -12,6 +12,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "schemas" / "forecast-calibration.schema.json"
 FIXTURES = ROOT / "tests" / "transition-calculus"
+CALIBRATIONS = ROOT / "assessments" / "forecast-calibration"
 
 
 def load(path: Path):
@@ -51,11 +52,18 @@ def governance_errors(data: dict) -> list[str]:
     return errors
 
 
+def calibration_files() -> list[Path]:
+    files = list(FIXTURES.glob("*.forecast.json"))
+    if CALIBRATIONS.exists():
+        files.extend(CALIBRATIONS.rglob("*.forecast.json"))
+    return sorted(set(files))
+
+
 def main() -> int:
     schema = load(SCHEMA)
-    files = sorted(FIXTURES.glob("*.forecast.json"))
+    files = calibration_files()
     if not files:
-        print("No forecast calibration fixtures found.", file=sys.stderr)
+        print("No forecast calibration fixtures or live records found.", file=sys.stderr)
         return 1
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
     failures = 0
