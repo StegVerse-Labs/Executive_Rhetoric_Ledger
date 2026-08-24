@@ -16,142 +16,50 @@
     "first_party_required_for_forecast_text": true,
     "search_snippet_is_custody": false,
     "later_self_commentary_is_independent_verification": false,
-    "credentials_substitute_for_outcome_evidence": false
+    "credentials_substitute_for_outcome_evidence": false,
+    "title_only_source_may_define_only_title_bounded_proposition": true,
+    "displayed_clock_time_without_timezone_is_not_promoted_to_absolute_timestamp": true
   },
   "sources": [
-    {
-      "source_id": "MR-2026-03-07-THIRD-WEEK",
-      "published_date": "2026-03-07",
-      "title": "The 3rd Week Is Critical",
-      "url": "https://mattrandolph.substack.com/p/the-3rd-week-is-critical",
-      "source_family": "first_party_substack",
-      "status": "LOCATED",
-      "forecast_relevance": "explicit three-week Hormuz/global-recession threshold",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-03-13-RAMP-UP",
-      "published_date": "2026-03-13",
-      "title": "Why The U.S. Can't Just Ramp Up Oil Production",
-      "url": "https://mattrandolph.substack.com/p/why-the-us-cant-just-ramp-up-oil",
-      "source_family": "first_party_substack",
-      "status": "LOCATED",
-      "forecast_relevance": "domestic production-response constraints",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-03-15-SPR",
-      "published_date": "2026-03-15",
-      "title": "The Worst Possible Way",
-      "url": "https://mattrandolph.substack.com/p/the-worst-possible-way",
-      "source_family": "first_party_substack",
-      "status": "LOCATED",
-      "forecast_relevance": "SPR exchange efficacy and economic consequences",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-03-18-SHIPPING-FUEL",
-      "published_date": "2026-03-18",
-      "title": "Pay Attention to Shipping Fuel, It's at All Time Record Highs. That's Bad.",
-      "url": "https://mattrandolph.substack.com/p/pay-attention-to-shipping-fuel-its",
-      "source_family": "first_party_substack",
-      "status": "LOCATED",
-      "forecast_relevance": "marine-fuel to food-price transmission",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-03-31-BAB-EL-MANDEB",
-      "published_date": "2026-03-31",
-      "title": "The Closure of Bab-El-Mandeb Strait",
-      "url": "https://mattrandolph.substack.com/archive",
-      "source_family": "first_party_archive_index",
-      "status": "LOCATED_INDEX_ONLY",
-      "forecast_relevance": "secondary chokepoint and shipping disruption",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-04-06-INFRASTRUCTURE-WAR",
-      "published_date": "2026-04-06",
-      "title": "The Infrastructure War Has Started",
-      "url": "https://mattrandolph.substack.com/archive",
-      "source_family": "first_party_archive_index",
-      "status": "LOCATED_INDEX_ONLY",
-      "forecast_relevance": "infrastructure escalation framing",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-04-08-DIESEL-EVERYTHING",
-      "published_date": "2026-04-08",
-      "title": "Diesel Is Everything",
-      "url": "https://mattrandolph.substack.com/p/diesel-is-everything",
-      "source_family": "first_party_substack",
-      "status": "LOCATED",
-      "forecast_relevance": "diesel as economy-wide transmission mechanism",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-04-10-HORMUZ-WEAPON",
-      "published_date": "2026-04-10",
-      "title": "The Greatest Weapon of All. The Strait of Hormuz",
-      "url": "https://mattrandolph.substack.com/archive",
-      "source_family": "first_party_archive_index",
-      "status": "LOCATED_INDEX_ONLY",
-      "forecast_relevance": "Hormuz leverage and energy-system consequence",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-04-21-DPA-OIL",
-      "published_date": "2026-04-21",
-      "title": "They Sold Your Oil But Sent You The Bill",
-      "url": "https://mattrandolph.substack.com/archive",
-      "source_family": "first_party_archive_index",
-      "status": "LOCATED_INDEX_ONLY",
-      "forecast_relevance": "Defense Production Act and oil-policy consequence claims",
-      "antecedent": true
-    },
-    {
-      "source_id": "MR-2026-05-01-WORDS-PRESIDENT",
-      "published_date": "2026-05-01",
-      "title": "Words Matter, But None More Than The Words Of The President",
-      "url": "https://mattrandolph.substack.com/p/words-matter-but-none-more-than-the",
-      "source_family": "first_party_substack",
-      "status": "LOCATED",
-      "forecast_relevance": "presidential rhetoric as market/geopolitical signal"
-    },
-    {
-      "source_id": "MR-2026-07-08-DIESEL-INFLATION",
-      "published_date": "2026-07-08",
-      "title": "Higher Diesel Means Higher Inflation",
-      "url": "https://substack.com/@mrglobal/note/c-290789385",
-      "source_family": "first_party_substack_note",
-      "status": "LOCATED",
-      "forecast_relevance": "diesel-price to inflation transmission"
-    },
-    {
-      "source_id": "MR-2026-07-13-WATCH-DIESEL",
-      "published_date": "2026-07-13",
-      "title": "Watch Gas and Diesel Prices Not Oil",
-      "url": "https://substack.com/@mrglobal/note/c-293975586",
-      "source_family": "first_party_substack_note",
-      "status": "LOCATED",
-      "forecast_relevance": "refined products as leading indicators"
-    },
-    {
-      "source_id": "MR-2026-07-16-ABOUT-DIESEL",
-      "published_date": "2026-07-16",
-      "title": "It's About The Diesel",
-      "url": "https://substack.com/@mrglobal/note/c-295859281",
-      "source_family": "first_party_substack_note",
-      "status": "LOCATED",
-      "forecast_relevance": "renewed diesel constraint emphasis"
-    }
+    {"source_id":"MR-2026-03-07-THIRD-WEEK","published_date":"2026-03-07","title":"The 3rd Week Is Critical","url":"https://mattrandolph.substack.com/p/the-3rd-week-is-critical","source_family":"first_party_substack","status":"LOCATED","forecast_relevance":"explicit three-week Hormuz/global-recession threshold","antecedent":true},
+    {"source_id":"MR-2026-03-13-RAMP-UP","published_date":"2026-03-13","title":"Why The U.S. Can't Just Ramp Up Oil Production","url":"https://mattrandolph.substack.com/p/why-the-us-cant-just-ramp-up-oil","source_family":"first_party_substack","status":"LOCATED","forecast_relevance":"domestic production-response constraints","antecedent":true},
+    {"source_id":"MR-2026-03-15-SPR","published_date":"2026-03-15","title":"The Worst Possible Way","url":"https://mattrandolph.substack.com/p/the-worst-possible-way","source_family":"first_party_substack","status":"LOCATED","forecast_relevance":"SPR exchange efficacy and economic consequences","antecedent":true},
+    {"source_id":"MR-2026-03-18-SHIPPING-FUEL","published_date":"2026-03-18","title":"Pay Attention to Shipping Fuel, It's at All Time Record Highs. That's Bad.","url":"https://mattrandolph.substack.com/p/pay-attention-to-shipping-fuel-its","source_family":"first_party_substack","status":"LOCATED","forecast_relevance":"marine-fuel to food-price transmission","antecedent":true},
+    {"source_id":"MR-2026-03-31-BAB-EL-MANDEB","published_date":"2026-03-31","title":"The Closure of Bab-El-Mandeb Strait","url":"https://mattrandolph.substack.com/archive","source_family":"first_party_archive_index","status":"LOCATED_INDEX_ONLY","forecast_relevance":"secondary chokepoint and shipping disruption","antecedent":true},
+    {"source_id":"MR-2026-04-06-INFRASTRUCTURE-WAR","published_date":"2026-04-06","title":"The Infrastructure War Has Started","url":"https://mattrandolph.substack.com/archive","source_family":"first_party_archive_index","status":"LOCATED_INDEX_ONLY","forecast_relevance":"infrastructure escalation framing","antecedent":true},
+    {"source_id":"MR-2026-04-08-DIESEL-EVERYTHING","published_date":"2026-04-08","title":"Diesel Is Everything","url":"https://mattrandolph.substack.com/p/diesel-is-everything","source_family":"first_party_substack","status":"LOCATED","forecast_relevance":"diesel as economy-wide transmission mechanism","antecedent":true},
+    {"source_id":"MR-2026-04-10-HORMUZ-WEAPON","published_date":"2026-04-10","title":"The Greatest Weapon of All. The Strait of Hormuz","url":"https://mattrandolph.substack.com/archive","source_family":"first_party_archive_index","status":"LOCATED_INDEX_ONLY","forecast_relevance":"Hormuz leverage and energy-system consequence","antecedent":true},
+    {"source_id":"MR-2026-04-21-DPA-OIL","published_date":"2026-04-21","title":"They Sold Your Oil But Sent You The Bill","url":"https://mattrandolph.substack.com/archive","source_family":"first_party_archive_index","status":"LOCATED_INDEX_ONLY","forecast_relevance":"Defense Production Act and oil-policy consequence claims","antecedent":true},
+    {"source_id":"MR-2026-05-01-WORDS-PRESIDENT","published_date":"2026-05-01","title":"Words Matter, But None More Than The Words Of The President","url":"https://mattrandolph.substack.com/p/words-matter-but-none-more-than-the","source_family":"first_party_substack","status":"LOCATED","forecast_relevance":"presidential rhetoric as market/geopolitical signal"},
+    {"source_id":"MR-2026-05-29-SURVIVAL-SERVICES","published_date":"2026-05-29","title":"The U.S. Treats Services Necessary For Survival No Different Than A Netflix Subscription. This Has To Change.","url":"https://mattrandolph.substack.com/","source_family":"first_party_substack_index","status":"LOCATED_INDEX_ONLY","forecast_relevance":"infrastructure/service resilience context"},
+    {"source_id":"MR-2026-06-17-SENATE-OPENING","published_date":"2026-06-17","title":"My Opening Statement To The Senate Energy and Natural Resources Committee","url":"https://substack.com/@mrglobal/note/c-278101228","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"energy-system policy and supply constraints; transcript acquisition target"},
+    {"source_id":"MR-2026-06-19-IRAN-SUSPENDS","published_date":"2026-06-19","title":"Iran Suspends Negotiations","url":"https://substack.com/@mrglobal/note/c-278889634","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"Iran negotiation state change"},
+    {"source_id":"MR-2026-06-24-OIL-COMPANIES-GAS","published_date":"2026-06-24","title":"Trump Blames Oil Companies For High Gas Prices","url":"https://substack.com/profile/205902330-mr-global-matt-randolph/note/c-281950515","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"gas-price mechanism and executive attribution"},
+    {"source_id":"MR-2026-06-25-GAS-PRICES","published_date":"2026-06-25","title":"How Gas Prices Work","url":"https://substack.com/@mrglobal/note/c-282558841","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"refined-product pricing mechanism"},
+    {"source_id":"MR-2026-07-01-CHEAP-OIL-GAS","published_date":"2026-07-01","title":"When Cheap Oil Doesn’t Mean Cheap Gas","url":"https://substack.com/@mrglobal/note/c-286379948","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"crude/refined-product decoupling"},
+    {"source_id":"MR-2026-07-06-CANADIAN-PIPELINES","published_date":"2026-07-06","title":"Impact Of Two New Canadian Oil Pipelines","url":"https://substack.com/@mrglobal/note/c-289410255","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"pipeline capacity and supply response"},
+    {"source_id":"MR-2026-07-08-DIESEL-INFLATION","published_date":"2026-07-08","title":"Higher Diesel Means Higher Inflation","url":"https://substack.com/@mrglobal/note/c-290789385","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"diesel-price to inflation transmission"},
+    {"source_id":"MR-2026-07-13-WATCH-DIESEL","published_date":"2026-07-13","title":"Watch Gas and Diesel Prices Not Oil","url":"https://substack.com/@mrglobal/note/c-293975586","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"refined products as leading indicators"},
+    {"source_id":"MR-2026-07-16-ABOUT-DIESEL","published_date":"2026-07-16","title":"It's About The Diesel","url":"https://substack.com/@mrglobal/note/c-295859281","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"renewed diesel constraint emphasis"},
+    {"source_id":"MR-2026-07-17-NEW-OIL","published_date":"2026-07-17","title":"The New Oil","url":"https://substack.com/@mrglobal/note/c-296428008","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"energy-substitution or reclassification claim; transcript needed before proposition extraction"},
+    {"source_id":"MR-2026-07-17-MAJOR-ESCALATION","published_date":"2026-07-17","title":"MAJOR Escalation In Middle East","url":"https://substack.com/@mrglobal/note/c-296568416","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"geopolitical escalation signal"},
+    {"source_id":"MR-2026-07-20-OIL-HIGHER","published_date":"2026-07-20","title":"Why Isn’t Oil Higher?","url":"https://substack.com/@mrglobal/note/c-298493520","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"oil-price response mechanism"},
+    {"source_id":"MR-2026-07-25-IRAN-OPTIONS","published_date":"2026-07-25","title":"Iran Isn’t Out of Options We Are","url":"https://substack.com/@mrglobal/note/c-301787543","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"Iran/U.S. strategic-option asymmetry; transcript required"},
+    {"source_id":"MR-2026-08-03-PROFITS","published_date":"2026-08-03","title":"Trump Demands Oil Companies Return Profits To The People","url":"https://substack.com/@mrglobal/note/c-307567557","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"oil-company policy intervention"},
+    {"source_id":"MR-2026-08-04-IRAQI-DISCOUNT","published_date":"2026-08-04","title":"Thirty Dollar Discount On Iraqi Oil","url":"https://substack.com/@mrglobal/note/c-307682302","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"Iraqi oil discount and regional flow stress"},
+    {"source_id":"MR-2026-08-06-OIL-REALITY","published_date":"2026-08-06","title":"Oil Up Big As Markets Start To See Reality","url":"https://substack.com/@mrglobal/note/c-309530645","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"market repricing claim"},
+    {"source_id":"MR-2026-08-07-WORDS-MATTER","published_date":"2026-08-07","title":"Words Matter","url":"https://substack.com/@mrglobal/note/c-310331348","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"rhetoric/market signal update; full context needed"},
+    {"source_id":"MR-2026-08-10-OIL-UP","published_date":"2026-08-10","title":"Oil Up Big Today","url":"https://substack.com/@mrglobal/note/c-312115256","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"market-state update rather than automatically a forecast"},
+    {"source_id":"MR-2026-08-11-US-OPEC","published_date":"2026-08-11","title":"Our own version of OPEC","url":"https://substack.com/@mrglobal/note/c-312613774","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"domestic coordination/market structure claim; context required"},
+    {"source_id":"MR-2026-08-14-I-REPORT-NEWS","published_date":"2026-08-14","title":"I Report The News","url":"https://substack.com/@mrglobal/note/c-314840936","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"retrospective/self-characterization; excluded from independent verification"},
+    {"source_id":"MR-2026-08-15-GLOBAL-OIL-MACHINE","published_date":"2026-08-15","title":"Is The Global Oil Machine Robbing You?","url":"https://substack.com/@mrglobal/note/c-315513926","source_family":"first_party_substack_note","status":"LOCATED","forecast_relevance":"oil-market mechanism and consumer-price transmission; transcript needed"}
   ],
   "next_acquisition": [
     "Resolve exact first-party URLs and transcripts for archive-index-only sources.",
-    "Discover missing June-August first-party forecast objects across Substack, YouTube, TikTok, and other Randolph-owned surfaces.",
-    "Preserve exact publication timestamps where only dates are currently known.",
-    "Separate original forecasts from later updates and retrospectives.",
-    "Create independent outcome receipts before assigning resolved forecast states."
+    "Acquire the embedded video/transcript content behind June-August Substack notes before extracting claims beyond their displayed titles.",
+    "Preserve exact publication timestamps only where timezone is established; otherwise retain date-level precision plus displayed local clock text separately.",
+    "Separate original forecasts from contemporaneous observations, explanatory posts, later updates, and retrospectives.",
+    "Create independent EIA/BLS/freight/outcome receipts before assigning resolved forecast states."
   ],
   "aggregate_finding_authorized": false,
   "publication_authorized": false
