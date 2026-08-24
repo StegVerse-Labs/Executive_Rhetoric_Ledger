@@ -1,0 +1,46 @@
+{
+  "record_type": "predictive_benchmark_series",
+  "record_id": "ERL-FC-MR-2026-DIESEL-VS-CRUDE-001",
+  "purpose": "Predeclare and preserve the raw series required to test the July 13 indicator-selection proposition without retrospectively choosing a favorable benchmark.",
+  "claim_under_test": "Watch gas and diesel prices, not oil.",
+  "benchmark_policy": {
+    "primary_refined_product_indicator": "U.S. weekly on-highway diesel retail price",
+    "primary_crude_benchmarks": ["WTI Cushing spot", "Brent Europe spot"],
+    "target_variables": ["CPI energy", "CPI food", "PPI final demand", "PPI transportation and warehousing", "truck transportation of freight", "food at home"],
+    "lag_windows_to_test": ["0-7 days", "8-21 days", "22-42 days", "43-84 days"],
+    "selection_rule": "Target variables and lag windows are fixed before outcome scoring. No post-hoc substitution is permitted merely because another lane produces a stronger result.",
+    "frequency_warning": "EIA diesel retail observations are Monday survey estimates while the crude observations below are EIA weekly spot averages. Exact same-day comparisons require a later daily-series alignment step."
+  },
+  "weekly_crude_spot_averages": [
+    {"week_ending": "2026-07-10", "wti_usd_per_bbl": 72.26, "brent_usd_per_bbl": 73.33},
+    {"week_ending": "2026-07-17", "wti_usd_per_bbl": 80.77, "brent_usd_per_bbl": 82.93},
+    {"week_ending": "2026-07-24", "wti_usd_per_bbl": 88.58, "brent_usd_per_bbl": 96.12},
+    {"week_ending": "2026-07-31", "wti_usd_per_bbl": 84.51, "brent_usd_per_bbl": 91.63},
+    {"week_ending": "2026-08-07", "wti_usd_per_bbl": 78.94, "brent_usd_per_bbl": 87.86},
+    {"week_ending": "2026-08-14", "wti_usd_per_bbl": 84.05, "brent_usd_per_bbl": 92.51}
+  ],
+  "weekly_diesel_retail": [
+    {"observation_date": "2026-07-06", "usd_per_gallon": 4.578},
+    {"observation_date": "2026-07-13", "usd_per_gallon": 4.796},
+    {"observation_date": "2026-07-20", "usd_per_gallon": 5.134},
+    {"observation_date": "2026-07-27", "usd_per_gallon": 5.313},
+    {"observation_date": "2026-08-03", "usd_per_gallon": 5.348},
+    {"observation_date": "2026-08-10", "usd_per_gallon": 5.257},
+    {"observation_date": "2026-08-17", "usd_per_gallon": 5.454}
+  ],
+  "source_receipts": [
+    {
+      "source_id": "EIA-WEEKLY-SPOT-PRICES-2026-08-19",
+      "url": "https://www.eia.gov/dnav/pet/PET_PRI_SPT_S1_W.htm",
+      "supports": ["weekly_crude_spot_averages"]
+    },
+    {
+      "source_id": "EIA-US-ON-HIGHWAY-DIESEL-WEEKLY",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMD_EPD2D_PTE_NUS_DPG",
+      "supports": ["weekly_diesel_retail"]
+    }
+  ],
+  "current_posture": "RAW_BENCHMARK_INSTALLED_NOT_SCORED",
+  "finding_authorized": false,
+  "publication_authorized": false
+}
