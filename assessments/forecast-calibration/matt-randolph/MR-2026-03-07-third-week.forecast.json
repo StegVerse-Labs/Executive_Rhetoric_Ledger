@@ -1,0 +1,98 @@
+{
+  "calibration_id": "ERL-FC-MR-2026-03-07-THIRD-WEEK",
+  "analyst": {
+    "analyst_id": "MATT-RANDOLPH-MR-GLOBAL",
+    "display_name": "Matt Randolph / Mr Global",
+    "credential_claim_refs": []
+  },
+  "evaluation_window": {
+    "start": "2026-02-28",
+    "end": "2026-08-23"
+  },
+  "forecasts": [
+    {
+      "forecast_id": "MR-FC-2026-03-07-HORMUZ-THREE-WEEK",
+      "issued_at": "2026-03-07",
+      "claim": "If the Strait of Hormuz remains effectively closed beyond roughly three weeks, global recession begins to take hold and countries around the world intervene to stop the closure.",
+      "source_ids": ["MR-2026-03-07-THIRD-WEEK"],
+      "base_window": {
+        "earliest": "2026-03-21",
+        "latest": "2026-03-21"
+      },
+      "contingencies": [],
+      "world_event_links": [
+        "MR-WORLD-2026-02-28-HORMUZ-DEFACTO-CLOSURE",
+        "MR-WORLD-2026-04-17-HORMUZ-TEMP-REOPEN",
+        "MR-WORLD-2026-04-17-IRGC-AUTHORIZATION",
+        "MR-WORLD-2026-04-20-HORMUZ-NEAR-STANDSTILL",
+        "MR-WORLD-2026-04-28-HORMUZ-CLOSED-DISRUPTED"
+      ],
+      "state": "UNRESOLVED",
+      "state_history": [
+        {
+          "recorded_at": "2026-03-07",
+          "state": "ACTIVE",
+          "reason": "First-party source contains an explicit three-week threshold connecting sustained Hormuz closure with emerging global recession and international intervention.",
+          "source_ids": ["MR-2026-03-07-THIRD-WEEK"]
+        },
+        {
+          "recorded_at": "2026-08-23",
+          "state": "UNRESOLVED",
+          "reason": "Independent events show severe disruption persisted well beyond three weeks and included a temporary April 17 reopening followed by near-standstill traffic, but the forecast cannot yet be resolved until 'closed', the interval start, 'global recession begins to take hold', and 'countries put a stop to it' are operationalized from the original source context and independent macroeconomic evidence.",
+          "source_ids": [
+            "REUTERS-2026-04-17-HORMUZ-REOPEN",
+            "REUTERS-2026-04-17-IRGC-AUTH",
+            "REUTERS-2026-04-20-HORMUZ-STANDSTILL",
+            "REUTERS-2026-04-28-HORMUZ-DISRUPTION"
+          ]
+        }
+      ],
+      "calibration_notes": "The March 21 base-window boundary is provisional and derived from the independently reported February 28 start of the war/de facto closure plus three weeks. It is not treated as Randolph's verified chosen anchor until the full original context is preserved. The forecast remains unresolved rather than scored right/wrong."
+    }
+  ],
+  "source_receipts": [
+    {
+      "source_id": "MR-2026-03-07-THIRD-WEEK",
+      "source_type": "first_party_substack_transcript",
+      "source_reference": "https://mattrandolph.substack.com/p/the-3rd-week-is-critical",
+      "published_or_observed_at": "2026-03-07",
+      "provenance_posture": "primary"
+    },
+    {
+      "source_id": "REUTERS-2026-04-17-HORMUZ-REOPEN",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
+      "published_or_observed_at": "2026-04-17T05:22:13Z",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "REUTERS-2026-04-17-IRGC-AUTH",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/world/middle-east/ships-crossing-hormuz-need-irgc-ok-unfreezing-assets-part-deal-iran-official-2026-04-17/",
+      "published_or_observed_at": "2026-04-17T15:16:28Z",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "REUTERS-2026-04-20-HORMUZ-STANDSTILL",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/world/middle-east/shipping-traffic-remains-virtual-standstill-through-hormuz-data-shows-2026-04-20/",
+      "published_or_observed_at": "2026-04-20T10:51:26Z",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "REUTERS-2026-04-28-HORMUZ-DISRUPTION",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/business/energy/oil-prices-rise-no-end-iran-war-stand-off-seems-sight-2026-04-28/",
+      "published_or_observed_at": "2026-04-28T01:02:25Z",
+      "provenance_posture": "evidenced_independence"
+    }
+  ],
+  "limitations": [
+    "The first-party source currently preserves a publication date but not a verified clock time.",
+    "The operational meaning of 'closed' is unresolved and must be tested against transit-volume evidence rather than treated as a binary label.",
+    "The three-week clock anchor is provisional pending full-context verification from the source object.",
+    "No macroeconomic recession threshold has yet been selected; doing so before identifying Randolph's intended metric would import an assumption.",
+    "The April 17 temporary reopening may be relevant to the intervention portion of the claim, but no causal attribution to Randolph's predicted mechanism is made here.",
+    "No aggregate credibility finding is authorized from this single forecast record."
+  ]
+}
