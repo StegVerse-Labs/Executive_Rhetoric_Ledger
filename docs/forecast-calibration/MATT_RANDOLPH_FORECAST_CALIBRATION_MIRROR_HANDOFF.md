@@ -6,217 +6,208 @@ Bounded continuation source for the Matt Randolph / Mr Global forecast-calibrati
 
 Canonical owner: Issue #76 — `Calibrate Matt Randolph four-month energy and Iran forecasts`.
 
-This work consumes the transition-first forecast adapter under Issue #74 / PR #75. It does not redefine the transition calculus and does not authorize aggregate credibility findings before source acquisition and independent outcome reconstruction are materially complete.
+This lane consumes the transition-first forecast adapter under Issue #74 / PR #75. It does not redefine the transition calculus and does not authorize aggregate credibility findings before source acquisition, independent outcome reconstruction, and governed scoring are materially complete.
 
 ## Goal
 
-Reconstruct approximately four months of Matt Randolph's substantive energy/Iran-conflict forecasting and evaluate the forecasts against what actually occurred, including whether pre-stated contingencies caused the delays, accelerations, invalidations, or revisions he said they would cause.
+Reconstruct approximately four months of Matt Randolph's substantive energy/Iran-conflict forecasting and evaluate forecasts against observed events while preserving stated assumptions, contingencies, timing, provenance, and the difference between delay, acceleration, revision, invalidation, and unresolved status.
 
-## Core evaluation rule
+## Core evidence rule
 
 Evaluate the forecast as issued, not a simplified paraphrase.
 
 For every forecast preserve separately:
 
-- issue timestamp at the resolution actually evidenced; never invent clock precision;
+- issue time at the resolution actually evidenced;
 - exact or bounded proposition;
 - forecast horizon;
-- stated assumptions;
-- stated contingencies;
+- assumptions and contingencies actually stated;
 - predicted effect of each contingency;
 - later forecast-state changes;
 - independently reconstructed world-state transitions;
 - provenance/dependency posture;
 - endpoint, timing, mechanism, and contingency calibration.
 
-A title-only source may support only the proposition literally bounded by the title until the embedded video/transcript is acquired. A displayed clock time without a verified timezone is not promoted to an absolute timestamp.
+A title-only source supports only the proposition literally bounded by that title until video/transcript custody exists. Displayed clock times without verified timezone are not promoted to absolute timestamps. Later Randolph retrospectives are new source objects, not independent verification of earlier forecasts.
 
-## Current durable surfaces
+## Durable surfaces
 
 - `research-candidates/matt-randolph-four-month-forecast-calibration.md`
 - `assessments/forecast-calibration/matt-randolph/source-manifest.json`
 - `assessments/forecast-calibration/matt-randolph/world-event-chronology.json`
 - `assessments/forecast-calibration/matt-randolph/official-economic-series-2026-06-08-through-08-17.json`
+- `assessments/forecast-calibration/matt-randolph/refinery-distillate-series-2026-07-10-through-08-14.json`
+- `assessments/forecast-calibration/matt-randolph/diesel-vs-crude-benchmark-2026-07-10-through-08-14.json`
+- `assessments/forecast-calibration/matt-randolph/freight-food-transmission-2026-07.json`
+- `assessments/forecast-calibration/matt-randolph/july-video-transcript-acquisition.json`
 - `assessments/forecast-calibration/matt-randolph/MR-2026-03-07-third-week.forecast.json`
 - `assessments/forecast-calibration/matt-randolph/MR-2026-07-08-diesel-inflation.forecast.json`
 - `assessments/forecast-calibration/matt-randolph/MR-2026-07-13-watch-diesel.forecast.json`
-- `docs/forecast-calibration/MATT_RANDOLPH_FORECAST_CALIBRATION_MIRROR_HANDOFF.md`
-- transition-calculus schemas/validators/fixtures under Issue #74 / PR #75
+- transition-calculus schemas, validators, fixtures, and live-record workflow under Issue #74 / PR #75.
 
-## Validation state
+## First-party corpus state
 
-Transition-calculus validation is a live-record gate rather than a fixture-only gate.
+The manifest contains March/April antecedents plus a materially expanded June-August source set. June-August candidate objects include June 17, 19, 24, 25; July 1, 6, 8, 13, 16, 17, 20, 25; and August 3, 4, 6, 7, 10, 11, 14, 15 objects.
 
-Previously hosted evidence:
+Corpus state remains `PARTIAL / ACTIVE`: many objects are located but not fully transcript-custodied.
 
-- run `32688098190`: transition calculus and forecast adapter PASS;
-- run `32688562968`: transition calculus, forecast adapter, and negative fail-closed tests PASS;
-- run `32688912551`: transition calculus, live forecast-calibration records, and negative fail-closed tests PASS on head `50a8d705ef2ebbbd951411d8010570e99267d4aa`;
-- research-candidate activation runs `32688912585` and subsequent validated heads: PASS.
+### July video bindings
 
-The live validation pass followed a fail-closed detection and repair: date-only first-party publication evidence initially exposed a schema precision defect. The schema now accepts bounded date or date-time evidence rather than fabricating an exact clock time.
+The July transcript-acquisition record now preserves:
 
-The current branch adds two additional live Randolph forecast records and an official-series bundle. Changes below `assessments/forecast-calibration/**` are included in the transition-calculus workflow trigger paths, so these records remain inside the hosted validation boundary.
+- July 8 `Higher Diesel Means Higher Inflation` -> Substack note `c-290789385` -> embedded YouTube `XqiDEUHs9nY`;
+- July 13 `Watch Gas and Diesel Prices Not Oil` -> Substack note `c-293975586` -> embedded YouTube `C1twq1liA_4`;
+- July 16 `It's About The Diesel` remains discovery-required for a richer source object.
 
-At this handoff update the connector has not yet surfaced a completed hosted workflow run specifically for the newest head. Therefore no exact-head PASS is claimed for the newest commit until such a run is observable.
+Search snippets are discovery aids, not transcript custody. Until captions/transcripts or directly inspectable video content are preserved, July 8 and July 13 remain title-bounded propositions.
 
-The repository-wide `Validate Ledger Schemas` workflow remains separately blocked by the pre-existing August 22 White House ballroom primary-record-intake record. That failure is outside this bounded lane and is not masked here.
+## Independent official evidence
 
-## First-party corpus acquisition
+### EIA diesel retail
 
-Source manifest now contains March/April antecedents plus materially expanded June-August first-party candidates.
+Weekly U.S. on-highway diesel preserved from June 8 through August 17:
 
-Newly located June-August objects include:
+- 06-08: 5.210 USD/gal
+- 06-15: 5.059
+- 06-22: 4.832
+- 06-29: 4.668
+- 07-06: 4.578
+- 07-13: 4.796
+- 07-20: 5.134
+- 07-27: 5.313
+- 08-03: 5.348
+- 08-10: 5.257
+- 08-17: 5.454
 
-- 2026-06-17 — `My Opening Statement To The Senate Energy and Natural Resources Committee`
-- 2026-06-19 — `Iran Suspends Negotiations`
-- 2026-06-24 — `Trump Blames Oil Companies For High Gas Prices`
-- 2026-06-25 — `How Gas Prices Work`
-- 2026-07-01 — `When Cheap Oil Doesn’t Mean Cheap Gas`
-- 2026-07-06 — `Impact Of Two New Canadian Oil Pipelines`
-- 2026-07-08 — `Higher Diesel Means Higher Inflation`
-- 2026-07-13 — `Watch Gas and Diesel Prices Not Oil`
-- 2026-07-16 — `It's About The Diesel`
-- 2026-07-17 — `The New Oil`
-- 2026-07-17 — `MAJOR Escalation In Middle East`
-- 2026-07-20 — `Why Isn’t Oil Higher?`
-- 2026-07-25 — `Iran Isn’t Out of Options We Are`
-- 2026-08-03 — `Trump Demands Oil Companies Return Profits To The People`
-- 2026-08-04 — `Thirty Dollar Discount On Iraqi Oil`
-- 2026-08-06 — `Oil Up Big As Markets Start To See Reality`
-- 2026-08-07 — `Words Matter`
-- 2026-08-10 — `Oil Up Big Today`
-- 2026-08-11 — `Our own version of OPEC`
-- 2026-08-14 — `I Report The News`
-- 2026-08-15 — `Is The Global Oil Machine Robbing You?`
+The temporal record shows a trough into July 6 followed by substantial reversal upward. Temporal ordering alone is not a forecast-resolution verdict.
 
-These are `LOCATED`, not automatically fully custodied. Embedded video/transcript acquisition remains required before extracting propositions stronger than displayed titles.
+### EIA refinery and distillate flows
 
-Retrospective/self-characterization objects such as `I Report The News` are explicitly excluded from independent outcome verification.
+For weeks ending July 10 through August 14:
 
-## Independent official-series evidence installed
+- refinery utilization stayed roughly 96.1%-97.2%;
+- distillate net production remained roughly 5.23-5.36 million b/d;
+- distillate imports remained small, roughly 0.093-0.173 million b/d;
+- distillate exports ranged roughly 1.546-1.935 million b/d, peaking August 7 before falling to 1.601 million b/d on August 14.
 
-The official-series bundle now preserves:
+This materially narrows the mechanism question. The observed interval does not support a simple `refineries stopped running -> diesel rose` model. High utilization, substantial domestic production, low imports, large exports, inventory tightness, and global market conditions must be tested as separate transition elements. Export correlation is not treated as export causation.
 
-### EIA weekly U.S. on-highway diesel
+### Crude benchmarks
 
-- 2026-06-08 — $5.210/gal
-- 2026-06-15 — $5.059
-- 2026-06-22 — $4.832
-- 2026-06-29 — $4.668
-- 2026-07-06 — $4.578
-- 2026-07-13 — $4.796
-- 2026-07-20 — $5.134
-- 2026-07-27 — $5.313
-- 2026-08-03 — $5.348
-- 2026-08-10 — $5.257
-- 2026-08-17 — $5.454
+The direct indicator-comparison record now preserves EIA weekly WTI and Brent averages for July 10-August 14 alongside the retail diesel series.
 
-This establishes a decline into July 6 followed by a sharp reversal upward after the July 8 and July 13 diesel-focused notes. Temporal ordering is preserved without promoting it to causation or predictive superiority.
+Predeclared target lanes:
 
-### EIA distillate inventory posture
+- CPI energy;
+- CPI food;
+- PPI final demand;
+- PPI transportation/warehousing;
+- truck transportation of freight;
+- food at home.
 
-For the week ending July 17, distillate inventories increased 1.4 million barrels but remained 10% below the previous five-year average. This distinguishes short-term replenishment from persistent inventory tightness.
+Predeclared lag lanes:
 
-### BLS July CPI
+- 0-7 days;
+- 8-21 days;
+- 22-42 days;
+- 43-84 days.
 
-- all items: +0.1% month over month, +3.4% year over year;
-- food: +0.1% month over month, +3.0% year over year;
-- energy: -1.5% month over month, +14.7% year over year;
-- gasoline: -2.9% month over month, +24.6% year over year;
-- fuel oil: -1.7% month over month, +39.1% year over year.
+No target or lag may be swapped after observing results merely because a different lane makes diesel or crude look more predictive.
 
-### BLS July PPI/freight
+### July freight and food evidence
 
-- final demand: unchanged month over month, +4.7% year over year;
-- final-demand energy: -3.1% month over month;
-- truck transportation of freight: -1.8% month over month;
-- processed-goods intermediate-demand diesel: -6.7% month over month.
+BLS July observations now preserve both short-run and annual posture:
 
-The resulting calibration rule is important: elevated annual energy stress and rising later-July/August retail diesel do not imply every monthly inflation/freight measure must rise simultaneously. Lead/lag structure must come from the original forecast, not be invented after observing the data.
+- CPI all items +0.1% m/m, +3.4% y/y;
+- food +0.1% m/m, +3.0% y/y;
+- food at home -0.1% m/m, +2.7% y/y;
+- cereals/bakery +0.2% m/m, +2.7% y/y;
+- meats/poultry/fish/eggs -0.7% m/m, +1.9% y/y;
+- fruits/vegetables -0.1% m/m, +5.1% y/y;
+- food away from home +0.3% m/m, +3.4% y/y;
+- CPI energy -1.5% m/m, +14.7% y/y;
+- gasoline -2.9% m/m, +24.6% y/y;
+- fuel oil -1.7% m/m, +39.1% y/y;
+- PPI final demand 0.0% m/m, +4.7% y/y;
+- transportation/warehousing services -1.8% m/m;
+- truck transportation of freight -1.8% m/m;
+- final-demand energy -3.1% m/m;
+- final-demand foods -0.9% m/m.
+
+This creates a genuine lag test rather than a same-month binary test. Persistent annual energy pressure and short-run monthly easing are both preserved.
 
 ## Machine forecast records
 
 ### March 7 — three-week Hormuz threshold
 
-File: `MR-2026-03-07-third-week.forecast.json`
-
 State: `UNRESOLVED`.
 
-Resolution still requires explicit operational definitions for `closed`, the three-week start boundary, `global recession begins to take hold`, and what counts as international intervention stopping the closure.
+Needs fixed meanings for `closed`, clock start, `global recession begins to take hold`, and what counts as countries acting to stop the closure.
 
 ### July 8 — higher diesel / higher inflation
 
-File: `MR-2026-07-08-diesel-inflation.forecast.json`
-
 State: `UNRESOLVED`.
 
-Current evidence supports a real test but not a verdict. Diesel accelerated materially after the note; year-over-year consumer energy inflation remained high. At the same time, July monthly CPI energy, PPI energy, freight, and intermediate diesel measures declined. The embedded video must establish whether Randolph predicted immediate movement, lagged pass-through, level persistence, or directional acceleration.
+The title-level proposition is preserved. The richer lag/mechanism question remains blocked on transcript custody. Official data make the forecast testable but do not yet produce a fair resolved state.
 
 ### July 13 — watch gas/diesel, not oil
 
-File: `MR-2026-07-13-watch-diesel.forecast.json`
-
 State: `UNRESOLVED`.
 
-The title defines an indicator-selection proposition. Official data show diesel rose sharply after July 13 and distillate inventories remained below normal, but predictive superiority over crude cannot be scored until a fixed target variable, lag structure, and comparison rule are defined from the source rather than retrospectively selected.
+A raw diesel-vs-WTI/Brent benchmark and predeclared outcome/lag lanes are now installed. The remaining gating issue is source meaning: what target and time horizon did Randolph actually intend by `watch`?
 
-## Next acquisition/build queue
+## Resolution methodology now active
 
-1. Acquire embedded videos/transcripts behind the June-August source candidates and hash/preserve stable source objects where possible.
-2. Add EIA weekly refinery utilization/capacity utilization.
-3. Add EIA distillate refinery production, imports, and exports.
-4. Add crude benchmark series for direct gas/diesel-versus-crude predictive comparison.
-5. Add BLS detailed trucking/freight service series over March-August, not only release-summary values.
-6. Add food-price and agriculture/freight series sufficient to test the March 18 shipping-fuel-to-food mechanism.
-7. Encode the April 8 `Diesel Is Everything`, June 25 `How Gas Prices Work`, July 1 `When Cheap Oil Doesn’t Mean Cheap Gas`, and July 16 `It's About The Diesel` records once their proposition text is adequately preserved.
-8. Define predeclared lag and scoring lanes before resolving the July indicator/inflation records.
-9. Keep open six-to-nine-month forecasts separate from resolved historical calibration until earlier forecast scoring is materially complete.
+Individual forecast resolution may begin only when:
 
-## Provenance rule
+1. the original proposition is sufficiently bounded;
+2. target variable is fixed;
+3. lag lane is fixed or genuinely absent from the original claim;
+4. world-state evidence is independently sourced;
+5. source dependency is accounted for;
+6. contrary observations remain visible;
+7. no later retrospective statement rewrites the original forecast.
 
-Randolph's later statement that an earlier forecast occurred is not independent confirmation.
+A forecast may receive partial component scores before final state resolution for endpoint, timing, mechanism, contingency anticipation, and leading-indicator usefulness. Component scoring does not equal aggregate person-level credibility.
 
-Two outside sources that share the same upstream dataset or reporting lineage must not be double-counted as independent confirmation.
+## Validation posture
 
-Unknown provenance receives bounded weight until independence or dependency is evidenced.
+Transition-calculus CI validates live forecast-calibration records plus fail-closed negative fixtures. Previously observed hosted green runs include `32688912551` and earlier transition-calculus passes. The newest data files are inside the workflow trigger boundary, but no exact-head hosted PASS is claimed until an observable completed run exists for the newest head.
 
-## Credentials rule
+The repository-wide `Validate Ledger Schemas` failure remains a separate pre-existing August 22 White House ballroom primary-record-intake problem and is not masked here.
 
-Expertise and credentials may inform source context and the prior reason to examine a forecast closely, but they do not substitute for outcome evidence.
+## Next executable build
 
-Credentials themselves should be source-postured rather than inferred from biography repetition.
+1. acquire July 8 and July 13 video/caption transcripts;
+2. resolve July 16 first-party video identity and transcript;
+3. extend WTI/Brent/diesel benchmark backward into June and forward as new official data arrives;
+4. add detailed historical BLS freight/food observations across multiple months rather than July-only snapshots;
+5. add physical freight-volume/index evidence separately from freight prices;
+6. encode April 8, June 25, July 1, and July 16 forecasts after proposition custody;
+7. begin component scoring on July 8 and July 13 only after transcript-defined targets/lags are known;
+8. keep six-to-nine-month open forecasts outside the historical score until earlier calibration is materially complete.
 
-## Current calibration questions
+## Quantified posture
 
-- Did the explicit three-week Hormuz threshold predict the observed timing/mechanism, and what events altered that path?
-- Did ceasefires, partial reopening, rerouting, policy interventions, sanctions changes, refinery responses, or other pre-stated contingencies delay rather than falsify later shortage forecasts?
-- Were diesel/refined-product indicators more predictive than crude oil price for U.S. and global goods-price stress?
-- What lag did Randolph actually specify between diesel/refined-product shocks and CPI/PPI/freight/food transmission?
-- Which predicted transmission mechanisms materialized first: marine fuel, diesel, freight, food, utilities, industrial inputs, or broader CPI/PPI?
-- How should still-open six-to-nine-month claims be weighted after calibration of earlier conditional forecasts?
-
-## Current quantitative posture
-
-For the Randolph calibration lane, denominator = 10 bounded work groups:
+Denominator = 10 bounded work groups.
 
 1. durable owner/handoff — complete;
-2. source policy/manifest — materially developed, still acquiring full objects;
-3. first-party corpus acquisition — materially expanded, transcript custody incomplete;
-4. independent world-event chronology — materially developed, more shipping/policy events remain;
-5. machine forecast encoding — 3 live records installed;
-6. EIA/refined-product data integration — started with weekly diesel and distillate inventory; refinery/import/export lanes remain;
-7. BLS/freight/food inflation integration — started with July CPI/PPI; detailed freight/food history remains;
-8. conditional state resolution across corpus — methodology active, no premature final resolutions;
-9. aggregate calibration and open-forecast confidence posture — not started;
-10. independent review/promotion decision — not started.
+2. source policy/manifest — materially developed;
+3. first-party corpus acquisition — materially developed, transcripts incomplete;
+4. independent world-event chronology — materially developed;
+5. machine forecast encoding — 3 live records;
+6. EIA/refined-product integration — materially developed: diesel, inventory, refinery utilization, production, imports, exports, crude benchmarks installed;
+7. BLS/freight/food integration — materially developed: July detail installed, multi-month history incomplete;
+8. conditional resolution — started through predeclared targets/lags, no premature final state;
+9. aggregate calibration/open-forecast confidence — not started;
+10. independent review/promotion — not started.
 
-Goal activation estimate: 40%.
+Goal activation estimate: 55%.
 
 ## Release boundary
 
-No publication, person-level credibility finding, downstream propagation, tag, or release is authorized from this lane yet.
+No publication, aggregate person-level credibility finding, downstream propagation, tag, or release is authorized from this lane yet.
 
 ## Archive posture
 
-The research methodology, expanded source corpus, independent Hormuz/economic chronology, official EIA/BLS series, three encoded forecast records, validation posture, and next acquisition tasks are durable here. Continued acquisition does not require the full originating conversation.
+The methodology, expanded source corpus, independent chronology, EIA refinery/distillate/crude benchmark data, BLS freight/food data, transcript acquisition boundaries, machine forecasts, and next executable tasks are durable here. Continued work does not require retention of the originating conversation thread.
