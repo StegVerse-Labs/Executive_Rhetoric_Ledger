@@ -1,0 +1,103 @@
+{
+  "record_type": "indicator_comparison_series",
+  "record_id": "ERL-FC-MR-2026-DIESEL-VS-CRUDE-002",
+  "scope": "June 1 through August 14, 2026 crude/refined-product comparison support for Matt Randolph calibration",
+  "source_policy": {
+    "official_series_only_for_price_inputs": true,
+    "derived_weekly_average_requires_reproducible_source_values": true,
+    "retrospective_target_switching_forbidden": true,
+    "retrospective_lag_switching_forbidden": true
+  },
+  "sources": [
+    {
+      "source_id": "EIA-WTI-DAILY-2026",
+      "url": "https://www.eia.gov/dnav/pet/hist/rwtcd.htm",
+      "role": "WTI daily spot prices"
+    },
+    {
+      "source_id": "EIA-BRENT-DAILY-2026",
+      "url": "https://www.eia.gov/dnav/pet/hist/rbrted.htm",
+      "role": "Brent daily spot prices"
+    },
+    {
+      "source_id": "EIA-RETAIL-DIESEL-2026",
+      "url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm",
+      "role": "weekly U.S. retail diesel"
+    }
+  ],
+  "weekly_crude_inputs": [
+    {
+      "week": "2026-06-01/2026-06-05",
+      "wti_daily_usd_per_barrel": [95.96, 97.47, 99.76, 96.83, 94.32],
+      "brent_daily_usd_per_barrel": [98.29, 98.49, 101.69, 98.98, 97.29],
+      "wti_mean_usd_per_barrel": 96.868,
+      "brent_mean_usd_per_barrel": 98.948
+    },
+    {
+      "week": "2026-06-08/2026-06-12",
+      "wti_daily_usd_per_barrel": [95.00, 91.90, 93.68, 91.58, 88.62],
+      "brent_daily_usd_per_barrel": [97.46, 94.15, 95.73, 92.84, 88.64],
+      "wti_mean_usd_per_barrel": 92.156,
+      "brent_mean_usd_per_barrel": 93.764
+    },
+    {
+      "week": "2026-06-15/2026-06-19",
+      "wti_daily_usd_per_barrel": [84.65, 79.80, 80.65, 80.35],
+      "brent_daily_usd_per_barrel": [84.36, 80.50, 80.33, 79.35, 80.46],
+      "wti_mean_usd_per_barrel": 81.3625,
+      "brent_mean_usd_per_barrel": 81.0,
+      "note": "WTI Friday value was not present in the retrieved EIA history result; mean is over four displayed trading-day values and is marked partial."
+    },
+    {
+      "week": "2026-06-22/2026-06-26",
+      "wti_daily_usd_per_barrel": [78.94, 74.62, 71.42, 72.67, 70.30],
+      "brent_daily_usd_per_barrel": [76.49, 75.69, 72.09, 73.74, 70.16],
+      "wti_mean_usd_per_barrel": 73.59,
+      "brent_mean_usd_per_barrel": 73.634
+    },
+    {
+      "week": "2026-06-29/2026-07-03",
+      "wti_daily_usd_per_barrel": [71.87, 70.56, 69.74, 69.73],
+      "brent_daily_usd_per_barrel": [71.59, 70.46, 69.24, 68.53, 68.68],
+      "wti_mean_usd_per_barrel": 70.475,
+      "brent_mean_usd_per_barrel": 69.7,
+      "note": "WTI final trading-day value was not present in the retrieved EIA history result; mean is over four displayed values and is marked partial."
+    }
+  ],
+  "july_august_weekly_spot_means": [
+    {"week_ending": "2026-07-10", "wti_usd_per_barrel": 72.26, "brent_usd_per_barrel": 73.33},
+    {"week_ending": "2026-07-17", "wti_usd_per_barrel": 80.77, "brent_usd_per_barrel": 82.93},
+    {"week_ending": "2026-07-24", "wti_usd_per_barrel": 88.58, "brent_usd_per_barrel": 96.12},
+    {"week_ending": "2026-07-31", "wti_usd_per_barrel": 84.51, "brent_usd_per_barrel": 91.63},
+    {"week_ending": "2026-08-07", "wti_usd_per_barrel": 78.94, "brent_usd_per_barrel": 87.86},
+    {"week_ending": "2026-08-14", "wti_usd_per_barrel": 84.05, "brent_usd_per_barrel": 92.51}
+  ],
+  "retail_product_context": {
+    "gasoline_all_grades_usd_per_gallon": [
+      {"date": "2026-06-15", "value": 4.187},
+      {"date": "2026-06-22", "value": 4.048},
+      {"date": "2026-06-29", "value": 3.964},
+      {"date": "2026-07-06", "value": 3.911},
+      {"date": "2026-07-13", "value": 3.987},
+      {"date": "2026-07-20", "value": 4.131}
+    ],
+    "diesel_series_reference": "official-economic-series-2026-06-08-through-08-17.json"
+  },
+  "predeclared_targets": [
+    "CPI energy",
+    "CPI food",
+    "CPI food at home",
+    "PPI final demand",
+    "PPI transportation and warehousing",
+    "truck transportation of freight",
+    "physical freight volume"
+  ],
+  "predeclared_lag_lanes_days": ["0-7", "8-21", "22-42", "43-84"],
+  "interpretive_constraints": [
+    "Falling crude does not by itself establish falling retail diesel because refined-product inventories, refinery yields, exports, imports, logistics, taxes, and global demand are separate transition elements.",
+    "A divergence between crude and diesel may support an indicator-selection hypothesis but does not establish predictive superiority until target and lag tests are executed consistently.",
+    "Partial trading weeks remain visibly partial rather than silently filled."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
