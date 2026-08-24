@@ -39,13 +39,19 @@
     "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
   },
   "$defs": {
+    "bounded_timestamp": {
+      "oneOf": [
+        {"type": "string", "format": "date"},
+        {"type": "string", "format": "date-time"}
+      ]
+    },
     "forecast": {
       "type": "object",
       "additionalProperties": false,
       "required": ["forecast_id", "issued_at", "claim", "source_ids", "base_window", "contingencies", "world_event_links", "state", "state_history"],
       "properties": {
         "forecast_id": {"type": "string", "minLength": 1},
-        "issued_at": {"type": "string", "format": "date-time"},
+        "issued_at": {"$ref": "#/$defs/bounded_timestamp"},
         "claim": {"type": "string", "minLength": 1},
         "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
         "base_window": {
@@ -82,7 +88,7 @@
             "additionalProperties": false,
             "required": ["recorded_at", "state", "reason", "source_ids"],
             "properties": {
-              "recorded_at": {"type": "string", "format": "date-time"},
+              "recorded_at": {"$ref": "#/$defs/bounded_timestamp"},
               "state": {"enum": ["ACTIVE", "DELAYED_BY_STATED_CONTINGENCY", "ACCELERATED_BY_STATED_CONTINGENCY", "REVISED_WITHIN_MODEL", "INVALIDATED", "SUPERSEDED", "RESOLVED_CORRECT", "RESOLVED_INCORRECT", "UNRESOLVED"]},
               "reason": {"type": "string", "minLength": 1},
               "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}
@@ -100,7 +106,7 @@
         "source_id": {"type": "string", "minLength": 1},
         "source_type": {"type": "string", "minLength": 1},
         "source_reference": {"type": "string", "minLength": 1},
-        "published_or_observed_at": {"type": "string", "format": "date-time"},
+        "published_or_observed_at": {"$ref": "#/$defs/bounded_timestamp"},
         "provenance_posture": {"enum": ["primary", "known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence"]}
       }
     }
