@@ -1,0 +1,61 @@
+{
+  "calibration_id": "ERL-FC-FIXTURE-001",
+  "analyst": {
+    "analyst_id": "ANALYST-FIXTURE",
+    "display_name": "Fixture Analyst",
+    "credential_claim_refs": []
+  },
+  "evaluation_window": {"start": "2026-07-01", "end": "2026-08-31"},
+  "forecasts": [
+    {
+      "forecast_id": "FORECAST-001",
+      "issued_at": "2026-07-15T12:00:00Z",
+      "claim": "Condition X will likely occur within three weeks if trajectory Y persists.",
+      "source_ids": ["SRC-FORECAST"],
+      "base_window": {"earliest": "2026-07-29", "latest": "2026-08-05"},
+      "contingencies": [
+        {
+          "contingency_id": "CONT-DELAY-1",
+          "description": "Temporary settlement or supply-restoration event would delay the projected threshold without removing the underlying mechanism.",
+          "effect": "delay",
+          "status": "occurred",
+          "source_ids": ["SRC-FORECAST", "SRC-CONTINGENCY"]
+        }
+      ],
+      "world_event_links": ["WORLD-EVENT-CONTINGENCY-1"],
+      "state": "DELAYED_BY_STATED_CONTINGENCY",
+      "state_history": [
+        {
+          "recorded_at": "2026-07-15T12:00:00Z",
+          "state": "ACTIVE",
+          "reason": "Forecast issued with explicit delay contingency.",
+          "source_ids": ["SRC-FORECAST"]
+        },
+        {
+          "recorded_at": "2026-08-01T12:00:00Z",
+          "state": "DELAYED_BY_STATED_CONTINGENCY",
+          "reason": "The analyst's stated delay contingency occurred; forecast remains unresolved rather than scored incorrect.",
+          "source_ids": ["SRC-FORECAST", "SRC-CONTINGENCY"]
+        }
+      ],
+      "calibration_notes": "Fixture demonstrates mechanism-aware scoring of a conditional forecast."
+    }
+  ],
+  "source_receipts": [
+    {
+      "source_id": "SRC-FORECAST",
+      "source_type": "fixture-primary-post",
+      "source_reference": "fixture://forecast",
+      "published_or_observed_at": "2026-07-15T12:00:00Z",
+      "provenance_posture": "primary"
+    },
+    {
+      "source_id": "SRC-CONTINGENCY",
+      "source_type": "fixture-world-event",
+      "source_reference": "fixture://contingency",
+      "published_or_observed_at": "2026-08-01T12:00:00Z",
+      "provenance_posture": "evidenced_independence"
+    }
+  ],
+  "limitations": ["This is a structural fixture and contains no claim about a real analyst or event."]
+}
