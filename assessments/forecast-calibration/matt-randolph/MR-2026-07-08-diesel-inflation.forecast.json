@@ -1,0 +1,92 @@
+{
+  "calibration_id": "ERL-FC-MR-2026-07-08-DIESEL-INFLATION",
+  "analyst": {
+    "analyst_id": "MATT-RANDOLPH-MR-GLOBAL",
+    "display_name": "Matt Randolph / Mr Global",
+    "credential_claim_refs": []
+  },
+  "evaluation_window": {
+    "start": "2026-07-08",
+    "end": "2026-08-23"
+  },
+  "forecasts": [
+    {
+      "forecast_id": "MR-FC-2026-07-08-HIGHER-DIESEL-HIGHER-INFLATION",
+      "issued_at": "2026-07-08",
+      "claim": "Higher diesel means higher inflation.",
+      "source_ids": ["MR-2026-07-08-DIESEL-INFLATION"],
+      "base_window": {
+        "earliest": null,
+        "latest": null
+      },
+      "contingencies": [],
+      "world_event_links": [
+        "MR-WORLD-2026-07-06-EIA-DIESEL-4-578",
+        "MR-WORLD-2026-07-13-EIA-DIESEL-4-796",
+        "MR-WORLD-2026-07-20-EIA-DIESEL-5-134",
+        "MR-WORLD-2026-07-27-EIA-DIESEL-5-313",
+        "MR-WORLD-2026-08-03-EIA-DIESEL-5-348",
+        "MR-WORLD-2026-08-12-BLS-CPI-JULY",
+        "MR-WORLD-2026-08-13-BLS-PPI-JULY",
+        "MR-WORLD-2026-08-17-EIA-DIESEL-5-454"
+      ],
+      "state": "UNRESOLVED",
+      "state_history": [
+        {
+          "recorded_at": "2026-07-08",
+          "state": "ACTIVE",
+          "reason": "The first-party Substack note title explicitly states the bounded proposition 'Higher Diesel Means Higher Inflation'. The embedded video has not yet been transcribed, so no stronger mechanism or timing claim is imported.",
+          "source_ids": ["MR-2026-07-08-DIESEL-INFLATION"]
+        },
+        {
+          "recorded_at": "2026-08-23",
+          "state": "UNRESOLVED",
+          "reason": "Official data show diesel rose materially after July 8 and energy inflation remained high year over year, but July monthly CPI energy and PPI energy/freight measures declined. The claim cannot be resolved until the source video establishes the intended lag, inflation measure, causal mechanism, and whether the proposition concerns level, direction, or pass-through over time.",
+          "source_ids": [
+            "EIA-2026-DIESEL-WEEKLY",
+            "BLS-2026-07-CPI",
+            "BLS-2026-07-PPI"
+          ]
+        }
+      ],
+      "calibration_notes": "This record intentionally treats the displayed title as the maximum currently preserved proposition. It does not assume immediate same-month pass-through or claim that diesel is the sole cause of inflation. A later resolution must distinguish predictive usefulness from causal exclusivity."
+    }
+  ],
+  "source_receipts": [
+    {
+      "source_id": "MR-2026-07-08-DIESEL-INFLATION",
+      "source_type": "first_party_substack_note_title",
+      "source_reference": "https://substack.com/@mrglobal/note/c-290789385",
+      "published_or_observed_at": "2026-07-08",
+      "provenance_posture": "primary"
+    },
+    {
+      "source_id": "EIA-2026-DIESEL-WEEKLY",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=pet&s=EMD_EPD2D_PTE_NUS_DPG",
+      "published_or_observed_at": "2026-08-17",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "BLS-2026-07-CPI",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.bls.gov/news.release/cpi.htm",
+      "published_or_observed_at": "2026-08-12",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "BLS-2026-07-PPI",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.bls.gov/news.release/ppi.htm",
+      "published_or_observed_at": "2026-08-13",
+      "provenance_posture": "evidenced_independence"
+    }
+  ],
+  "limitations": [
+    "The embedded video behind the July 8 Substack note has not yet been transcribed or independently preserved.",
+    "The title does not establish a quantitative inflation measure, lag, magnitude, exclusivity, or disconfirming threshold.",
+    "July monthly inflation data move differently from year-over-year energy measures, so direction must be evaluated at the horizon actually stated by Randolph.",
+    "No causal attribution from diesel to observed CPI/PPI components is authorized from temporal ordering alone.",
+    "No aggregate credibility finding is authorized from this record."
+  ]
+}
