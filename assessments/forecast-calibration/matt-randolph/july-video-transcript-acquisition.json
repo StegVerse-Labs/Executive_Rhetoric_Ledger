@@ -4,6 +4,32 @@
   "purpose": "Preserve exact first-party video bindings and prevent title-only notes from being promoted into richer forecast propositions before transcript custody.",
   "items": [
     {
+      "source_id": "MR-2026-06-25-HOW-GAS-PRICES-WORK",
+      "date": "2026-06-25",
+      "substack_url": "https://substack.com/@mrglobal/note/c-282558841",
+      "displayed_title": "How Gas Prices Work",
+      "embedded_video_url": "https://youtu.be/0VE3LOxm4eY",
+      "transcript_status": "NOT_ACQUIRED",
+      "current_authorized_proposition": "The source is an explanatory object about how gas prices work.",
+      "proposition_ceiling": "Title only; do not import a specific refinery, crude, tax, logistics, or margin mechanism without transcript custody.",
+      "displayed_time": "3:06 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    },
+    {
+      "source_id": "MR-2026-07-01-CHEAP-OIL-CHEAP-GAS",
+      "date": "2026-07-01",
+      "substack_url": "https://substack.com/@mrglobal/note/c-286379948",
+      "displayed_title": "When Cheap Oil Doesn’t Mean Cheap Gas",
+      "embedded_video_url": "https://youtu.be/BwTtIlOBL40",
+      "transcript_status": "NOT_ACQUIRED",
+      "current_authorized_proposition": "Cheap oil does not necessarily imply cheap gasoline.",
+      "proposition_ceiling": "Title-level conditional divergence only; do not infer mechanism, magnitude, region, or timing without transcript custody.",
+      "displayed_time": "8:59 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    },
+    {
       "source_id": "MR-2026-07-08-DIESEL-INFLATION",
       "date": "2026-07-08",
       "substack_url": "https://substack.com/@mrglobal/note/c-290789385",
@@ -47,6 +73,7 @@
     "A later Randolph statement describing what an earlier video meant is a new source object, not retroactive replacement of the earlier forecast."
   ],
   "next_actions": [
+    "Acquire or directly inspect June 25 and July 1 embedded videos to establish the exact gas-price/refinery mechanism asserted before using them as context for July 13.",
     "Acquire or directly inspect the July 8 embedded video and preserve transcript/caption text with source timestamps where available.",
     "Acquire or directly inspect the July 13 embedded video and preserve transcript/caption text with source timestamps where available.",
     "Resolve the July 16 first-party object and embedded-video identifier before encoding a richer forecast record.",
