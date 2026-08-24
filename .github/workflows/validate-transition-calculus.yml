@@ -41,3 +41,5 @@ jobs:
         run: python scripts/validate_transition_calculus.py
       - name: Validate forecast calibration adapter
         run: python scripts/validate_forecast_calibration.py
+      - name: Prove fail-closed governance with negative fixtures
+        run: python tests/transition-calculus/test_fail_closed.py
