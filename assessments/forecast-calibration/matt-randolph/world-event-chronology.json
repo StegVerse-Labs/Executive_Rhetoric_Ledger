@@ -1,0 +1,63 @@
+{
+  "record_type": "independent_world_event_chronology",
+  "chronology_id": "ERL-FC-MR-2026-WORLD-001",
+  "subject_scope": "Hormuz, energy, refined products, inflation, shipping and policy events relevant to Randolph forecast calibration",
+  "independence_rule": "Randolph's later commentary is excluded as outcome verification. Events are reconstructed from independent or official sources.",
+  "events": [
+    {
+      "event_id": "MR-WORLD-2026-02-28-HORMUZ-DEFACTO-CLOSURE",
+      "date": "2026-02-28",
+      "event": "U.S. and Israeli attacks on Iran began; Reuters later described the war as leading to the Strait of Hormuz's de facto closure.",
+      "source_url": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "candidate start boundary for any forecast measured from onset of de facto closure",
+      "boundary_status": "PROVISIONAL",
+      "boundary_note": "The phrase 'de facto closure' requires operationalization against actual transit counts; it is not assumed to mean zero vessel movement."
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-17-HORMUZ-TEMP-REOPEN",
+      "date": "2026-04-17",
+      "event": "Iran announced temporary reopening of Hormuz for commercial vessels during a 10-day truce, subject to restrictions and continuing mine/security uncertainty.",
+      "source_url": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "possible interruption or partial reversal of closure state",
+      "boundary_status": "ESTABLISHED_EVENT_UNRESOLVED_EFFECT",
+      "boundary_note": "Announcement of reopening did not itself establish normalized traffic."
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-17-IRGC-AUTHORIZATION",
+      "date": "2026-04-17",
+      "event": "A senior Iranian official said commercial transit would require coordination/authorization with the IRGC and safe lanes; hundreds of ships remained stranded.",
+      "source_url": "https://www.reuters.com/world/middle-east/ships-crossing-hormuz-need-irgc-ok-unfreezing-assets-part-deal-iran-official-2026-04-17/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "distinguishes formal reopening language from unrestricted/normalized transit",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-20-HORMUZ-NEAR-STANDSTILL",
+      "date": "2026-04-20",
+      "event": "Reuters reported Hormuz shipping again near standstill after warning shots and a U.S. seizure; only three ships were observed entering/exiting over 12 hours versus roughly 130 daily in normal conditions.",
+      "source_url": "https://www.reuters.com/world/middle-east/shipping-traffic-remains-virtual-standstill-through-hormuz-data-shows-2026-04-20/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "evidence that the April 17 reopening did not establish durable normalization",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-28-HORMUZ-CLOSED-DISRUPTED",
+      "date": "2026-04-28",
+      "event": "Reuters described the Strait as closed/disrupted while isolated tankers still crossed; pre-war traffic had been roughly 125-140 vessels per day.",
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-rise-no-end-iran-war-stand-off-seems-sight-2026-04-28/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "supports a non-binary closure model and continuing severe disruption beyond the initial three-week period",
+      "boundary_status": "ESTABLISHED"
+    }
+  ],
+  "unresolved_questions": [
+    "What exact operational definition of 'closed' did Randolph use on March 7: zero transit, severe disruption, or inability to sustain normal commercial flow?",
+    "Was the three-week interval intended to run from February 28, from an earlier/later shipping-state transition, or from the date of the March 7 post?",
+    "What observable criterion counts as countries 'putting a stop to it': diplomatic intervention, temporary reopening, military action, sanctions relief, or normalized transit?",
+    "What macroeconomic metric and geography operationalize 'global recession begins to take hold'?"
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
