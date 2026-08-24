@@ -1,0 +1,61 @@
+{
+  "record_type": "official_freight_food_transmission_series",
+  "record_id": "ERL-FC-MR-2026-FREIGHT-FOOD-001",
+  "scope": "July 2026 U.S. freight and food price observations relevant to Randolph diesel/shipping-fuel transmission claims",
+  "source_authority": "U.S. Bureau of Labor Statistics",
+  "observations": {
+    "consumer_prices": {
+      "all_items_mom_pct": 0.1,
+      "all_items_yoy_pct": 3.4,
+      "food_mom_pct": 0.1,
+      "food_yoy_pct": 3.0,
+      "food_at_home_mom_pct": -0.1,
+      "food_at_home_yoy_pct": 2.7,
+      "cereals_bakery_mom_pct": 0.2,
+      "cereals_bakery_yoy_pct": 2.7,
+      "meat_poultry_fish_eggs_mom_pct": -0.7,
+      "meat_poultry_fish_eggs_yoy_pct": 1.9,
+      "fruits_vegetables_mom_pct": -0.1,
+      "fruits_vegetables_yoy_pct": 5.1,
+      "food_away_from_home_mom_pct": 0.3,
+      "food_away_from_home_yoy_pct": 3.4,
+      "energy_mom_pct": -1.5,
+      "energy_yoy_pct": 14.7,
+      "gasoline_mom_pct": -2.9,
+      "gasoline_yoy_pct": 24.6,
+      "fuel_oil_mom_pct": -1.7,
+      "fuel_oil_yoy_pct": 39.1
+    },
+    "producer_prices": {
+      "final_demand_mom_pct": 0.0,
+      "final_demand_yoy_pct": 4.7,
+      "final_demand_services_mom_pct": 0.2,
+      "transportation_warehousing_services_mom_pct": -1.8,
+      "truck_transportation_freight_mom_pct": -1.8,
+      "final_demand_goods_mom_pct": -0.7,
+      "final_demand_energy_mom_pct": -3.1,
+      "final_demand_foods_mom_pct": -0.9
+    }
+  },
+  "source_receipts": [
+    {
+      "source_id": "BLS-CPI-2026-07",
+      "url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+      "published_date": "2026-08-12"
+    },
+    {
+      "source_id": "BLS-PPI-2026-07",
+      "url": "https://www.bls.gov/news.release/ppi.htm",
+      "published_date": "2026-08"
+    }
+  ],
+  "calibration_rules": [
+    "Monthly and year-over-year changes are non-equivalent and must be scored separately.",
+    "A diesel or shipping-fuel forecast is not confirmed merely because one food category rises while another falls.",
+    "Food transmission should be tested at multiple lags because fuel cost changes may enter transportation, processing, storage, and retail pricing at different times.",
+    "Truck-freight PPI is a price measure, not a physical freight-volume measure; later volume/index evidence should remain a separate lane.",
+    "The July data are compatible with persistent annual energy stress and simultaneous short-run monthly easing; neither posture may be erased to simplify scoring."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
