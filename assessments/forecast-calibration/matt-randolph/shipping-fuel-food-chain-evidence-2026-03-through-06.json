@@ -1,0 +1,73 @@
+{
+  "record_type": "mechanism_evidence_bundle",
+  "record_id": "ERL-FC-MR-2026-SHIPPING-FUEL-FOOD-001",
+  "scope": "Independent evidence relevant to the March 18 shipping-fuel -> freight -> food-cost transmission hypothesis",
+  "sources": [
+    {
+      "source_id": "USDA-GTR-2026-03-12",
+      "url": "https://www.ams.usda.gov/sites/default/files/media/GTR03122026.pdf",
+      "posture": "official",
+      "observations": [
+        "As of March 11, Global 20 Ports VLSFO averaged $960 per metric ton, up 79% from two weeks earlier.",
+        "IFO 380 reached an all-time high of $886 per metric ton on March 9 and was $794 on March 11.",
+        "U.S. Gulf-to-Japan grain ocean freight was $58 per metric ton as of March 5, up 6% week over week and 16% from the first available rate of the year.",
+        "Pacific Northwest-to-Japan grain ocean freight was $33 per metric ton, up 6% week over week and 25% from the first available rate of the year."
+      ]
+    },
+    {
+      "source_id": "BLS-PPI-2026-03",
+      "url": "https://www.bls.gov/ppi/detailed-report/ppi-detailed-report-march-2026.pdf",
+      "posture": "official",
+      "observations": [
+        "March final-demand energy rose 8.5% month over month.",
+        "No. 2 diesel fuel in processed intermediate demand rose 42.0% month over month.",
+        "Final-demand transportation and warehousing services rose 1.3% month over month.",
+        "Truck transportation of freight moved higher in March.",
+        "Processed foods and feeds rose 0.9% month over month even while final-demand foods fell 0.3%."
+      ]
+    },
+    {
+      "source_id": "USDA-GTOR-2026-Q1",
+      "url": "https://www.ams.usda.gov/sites/default/files/media/GTOR1stQtr2026.pdf",
+      "posture": "official",
+      "observations": [
+        "USDA states diesel fuel price is a proxy for trends in U.S. truck rates because diesel is a significant expense for grain movements.",
+        "U.S. average diesel price in Q1 2026 was $4.12 per gallon, up 11% from the previous quarter and 14% from the same quarter a year earlier."
+      ]
+    },
+    {
+      "source_id": "USDA-GTR-2026-05-14",
+      "url": "https://www.ams.usda.gov/sites/default/files/media/GTR05142026.pdf",
+      "posture": "official",
+      "observations": [
+        "June BNSF fuel surcharge was scheduled to rise to $0.46 per mile from $0.08 in June 2025.",
+        "June Union Pacific fuel surcharge was scheduled to rise to $0.69 per mile from $0.30 in June 2025.",
+        "For Wichita-to-Houston shipments, the June 2025 to June 2026 fuel-surcharge rise translated to about $387 more per BNSF car and $251 more per UP car."
+      ]
+    }
+  ],
+  "mechanism_graph": [
+    "marine bunker fuel shock",
+    "ocean freight-rate increase",
+    "domestic diesel/fuel-surcharge increase",
+    "transportation and warehousing price pressure",
+    "food-chain intermediate-cost pressure",
+    "consumer food-price transmission subject to lag, margins, inventories, commodity prices, and substitution"
+  ],
+  "observed_support": {
+    "marine_fuel_shock": "ESTABLISHED",
+    "ocean_grain_freight_increase": "ESTABLISHED",
+    "domestic_diesel_cost_pressure": "ESTABLISHED",
+    "rail_fuel_surcharge_pass_through": "ESTABLISHED",
+    "transportation_price_pressure_in_march": "ESTABLISHED",
+    "terminal_consumer_food_price_effect_attributed_to_shipping_fuel": "UNRESOLVED"
+  },
+  "anti_overclaim_rules": [
+    "The evidence establishes several intermediate links in the proposed mechanism but does not establish that shipping fuel was the sole or dominant cause of later consumer food inflation.",
+    "Food commodity prices, weather, inventories, labor, exchange rates, tariffs, margins, and demand remain independent transition elements.",
+    "A lagged food-price effect must be tested against predeclared windows rather than selected after observing CPI outcomes.",
+    "The March 18 Randolph source itself must be fully preserved before its exact mechanism strength and timing can be scored."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
