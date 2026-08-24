@@ -1,0 +1,43 @@
+{
+  "record_type": "forecast_component_resolution",
+  "record_id": "ERL-FC-MR-2026-07-13-COMPONENTS-001",
+  "forecast_id": "MR-FC-2026-07-13-WATCH-DIESEL-NOT-OIL",
+  "overall_forecast_state": "UNRESOLVED",
+  "component_postures": [
+    {
+      "component": "refined_product_and_crude_can_diverge",
+      "posture": "SUPPORTED_AS_STRUCTURAL_POSSIBILITY",
+      "basis": "The preserved June-August series includes at least one late-July interval where crude weekly means fell while retail diesel remained approximately flat-to-higher, and broader refinery/inventory/trade evidence establishes separate refined-product state variables.",
+      "independence": "official_EIA_series"
+    },
+    {
+      "component": "diesel_directionally_outperforms_crude_as_signal_over_observed_weekly_steps",
+      "posture": "LIMITED_SUPPORT",
+      "basis": "Most July-August adjacent weekly movements had diesel and crude moving in the same direction; only limited divergence appears in the current window.",
+      "independence": "official_EIA_series"
+    },
+    {
+      "component": "diesel_predicts_inflation_better_than_crude",
+      "posture": "UNRESOLVED",
+      "basis": "Clean post-forecast CPI/PPI outcome periods are not yet released. July reference periods overlap the July 13 forecast and are context-only under the prospective-outcome guard.",
+      "independence": "not_yet_testable"
+    },
+    {
+      "component": "diesel_predicts_freight_better_than_crude",
+      "posture": "UNRESOLVED",
+      "basis": "July Freight TSI reference period overlaps the forecast and August Freight TSI is not yet released.",
+      "independence": "not_yet_testable"
+    },
+    {
+      "component": "intended_target_and_horizon_of_watch",
+      "posture": "UNRESOLVED_SOURCE_MEANING",
+      "basis": "The first-party title is preserved but the embedded video transcript has not been acquired, so ERL cannot select which economic outcome or horizon Randolph intended.",
+      "independence": "first_party_transcript_required"
+    }
+  ],
+  "test_execution_reference": "indicator-lag-test-execution-v0.1.json",
+  "prospective_gate_reference": "prospective-outcome-gating-2026-07.json",
+  "current_component_conclusion": "STRUCTURAL_DIVERGENCE_PLAUSIBLE_BUT_PREDICTIVE_SUPERIORITY_NOT_ESTABLISHED",
+  "aggregate_credibility_effect_authorized": false,
+  "publication_authorized": false
+}
