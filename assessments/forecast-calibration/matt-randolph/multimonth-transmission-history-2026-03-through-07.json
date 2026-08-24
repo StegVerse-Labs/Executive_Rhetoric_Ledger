@@ -1,0 +1,55 @@
+{
+  "record_type": "multimonth_transmission_history",
+  "record_id": "ERL-FC-MR-2026-TRANSMISSION-HISTORY-001",
+  "purpose": "Provide a non-single-month history for testing energy-to-inflation and freight transmission with predeclared lag lanes.",
+  "cpi_monthly_percent_changes": [
+    {"month": "2026-03", "all_items": 0.9, "food": 0.0, "food_at_home": -0.2, "energy": 10.9, "gasoline": 21.2, "fuel_oil": 30.7},
+    {"month": "2026-04", "all_items": 0.6, "food": 0.5, "food_at_home": 0.7, "energy": 3.8, "gasoline": 5.4, "fuel_oil": 5.8},
+    {"month": "2026-05", "all_items": 0.5, "food": 0.2, "food_at_home": 0.1, "energy": 3.9, "gasoline": 7.0, "fuel_oil": 3.8},
+    {"month": "2026-06", "all_items": -0.4, "food": 0.2, "food_at_home": 0.2, "energy": -5.7, "gasoline": -9.7, "fuel_oil": -9.2},
+    {"month": "2026-07", "all_items": 0.1, "food": 0.1, "food_at_home": -0.1, "energy": -1.5, "gasoline": -2.9, "fuel_oil": -1.7}
+  ],
+  "ppi_monthly_percent_changes": [
+    {"month": "2026-05", "final_demand": 1.1},
+    {"month": "2026-06", "final_demand": -0.3, "transportation_warehousing_services": -0.1},
+    {"month": "2026-07", "final_demand": 0.0, "transportation_warehousing_services": -1.8, "truck_transportation_freight": -1.8, "final_demand_energy": -3.1, "final_demand_foods": -0.9}
+  ],
+  "freight_volume_index": [
+    {"month": "2026-03", "freight_tsi": 139.3},
+    {"month": "2026-04", "freight_tsi": 138.1, "mom_pct": -0.9},
+    {"month": "2026-05", "freight_tsi": 135.3, "mom_pct": -2.0},
+    {"month": "2026-06", "freight_tsi": 134.9, "mom_pct": -0.3, "yoy_pct": -1.7}
+  ],
+  "source_receipts": [
+    {
+      "source_id": "BLS-CPI-JULY-2026-TABLE-A",
+      "url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+      "note": "July release table preserves seasonally adjusted monthly CPI changes for March through July 2026."
+    },
+    {
+      "source_id": "BLS-PPI-MAY-2026",
+      "url": "https://www.bls.gov/news.release/archives/ppi_06112026.htm"
+    },
+    {
+      "source_id": "BLS-PPI-JUNE-2026",
+      "url": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"
+    },
+    {
+      "source_id": "BLS-PPI-JULY-2026",
+      "url": "https://www.bls.gov/news.release/ppi.htm"
+    },
+    {
+      "source_id": "BTS-FREIGHT-TSI-JUNE-2026",
+      "url": "https://www.bts.gov/newsroom/june-2026-freight-transportation-services-index-tsi-fell-03-may-2026-and-fell-17-june-2025"
+    }
+  ],
+  "bounded_interpretation": [
+    "Energy CPI surged in March-May before reversing sharply in June and declining again in July.",
+    "Food CPI moved much less than energy CPI over the same months, supporting a lagged or attenuated transmission test rather than same-month equivalence.",
+    "The physical Freight TSI declined from March through June even while some freight-price measures could move differently; volume and price are separate state dimensions.",
+    "June Freight TSI declines were driven by decreases in air freight, rail carloads, pipeline, and water, while rail intermodal and trucking volumes increased, so the aggregate index cannot be treated as a truck-only measure.",
+    "July Freight TSI is not yet available at the time of this record; BTS scheduled its release for September 9, 2026."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
