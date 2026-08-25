@@ -1,0 +1,73 @@
+{
+  "record_type": "producer_cost_margin_state",
+  "record_id": "ERL-PE-PRODUCER-FOOD-MARGIN-2026-03-07",
+  "scope": "United States food producer-price and food trade-margin divergence, March-July 2026",
+  "purpose": "Populate the Producer Cost-Margin Transmission lane with direct BLS evidence that food producer-price movement and food wholesale/retail trade margins can diverge materially across months. This record does not infer product-level manufacturer profit or profiteering from trade-margin movement alone.",
+  "source_authority": "U.S. Bureau of Labor Statistics Producer Price Index",
+  "measurement_boundary": {
+    "final_demand_foods": "PPI final-demand food producer selling-price index",
+    "food_alcohol_wholesaling": "PPI trade-service margin index for food and alcohol wholesaling",
+    "food_alcohol_retailing": "PPI trade-service margin index for food and alcohol retailing",
+    "important_distinction": "BLS trade PPIs measure changes in margins received by wholesalers and retailers, generally selling price less acquisition price. They are not equivalent to manufacturer accounting profit, net income, or company-wide operating margin."
+  },
+  "monthly_changes_pct": [
+    {
+      "transition": "2026-02_to_2026-03",
+      "final_demand_foods": -0.6,
+      "food_alcohol_wholesaling_margin": -4.2,
+      "food_alcohol_retailing_margin": 1.4
+    },
+    {
+      "transition": "2026-03_to_2026-04",
+      "final_demand_foods": 0.2,
+      "food_alcohol_wholesaling_margin": 0.4,
+      "food_alcohol_retailing_margin": -0.8
+    },
+    {
+      "transition": "2026-04_to_2026-05",
+      "final_demand_foods": 0.6,
+      "food_alcohol_wholesaling_margin": -1.5,
+      "food_alcohol_retailing_margin": 1.1
+    },
+    {
+      "transition": "2026-05_to_2026-06",
+      "final_demand_foods": -0.5,
+      "food_alcohol_wholesaling_margin": -3.4,
+      "food_alcohol_retailing_margin": 0.4
+    },
+    {
+      "transition": "2026-06_to_2026-07",
+      "final_demand_foods": -0.9,
+      "food_alcohol_wholesaling_margin": 2.9,
+      "food_alcohol_retailing_margin": 2.1
+    }
+  ],
+  "july_year_over_year_pct": {
+    "final_demand_foods": -0.1,
+    "food_alcohol_wholesaling_margin": -1.0,
+    "food_alcohol_retailing_margin": 5.5
+  },
+  "bounded_findings": [
+    "Food producer-price movement and food retail/wholesale trade-margin movement were not state-equivalent across March-July 2026.",
+    "The June-to-July 2026 transition is a clear divergence example: final-demand food producer prices fell 0.9 percent while food-and-alcohol wholesale margins rose 2.9 percent and retail margins rose 2.1 percent.",
+    "The July year-over-year state also diverged: final-demand foods were down 0.1 percent while food-and-alcohol retail trade margins were up 5.5 percent.",
+    "This establishes the need for a separately observed margin state in Physical Economics. It does not, by itself, establish excess profit, manufacturer margin expansion, consumer exploitation, or causal pass-through."
+  ],
+  "required_join_evidence": [
+    "manufacturer/processor cost and profit evidence where available",
+    "retailer and wholesaler accounting ratios where available",
+    "physical quantity/package-size state",
+    "consumer effective price per physical unit",
+    "mix and substitution evidence",
+    "tax/fee/regulatory flows",
+    "population burden state"
+  ],
+  "sources": [
+    "https://www.bls.gov/news.release/ppi.htm",
+    "https://www.bls.gov/news.release/ppi.t02.htm",
+    "https://www.bls.gov/ppi/"
+  ],
+  "finding_authorized": true,
+  "profit_motive_finding_authorized": false,
+  "publication_authorized": false
+}
