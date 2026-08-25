@@ -14,6 +14,7 @@ Reconstruct roughly four months of Matt Randolph / Mr Global energy and Iran-con
 - Later publication does not make an outcome prospectively clean if its reference period overlaps forecast issuance.
 - Intermediate mechanism support may be recorded without promoting the terminal forecast to `RESOLVED_CORRECT`.
 - A failed terminal component does not erase independently supported intermediate mechanism components.
+- A month-to-month CPI decline must not be translated into improved household affordability or purchasing power without separate price-level, wage/income, geography, and household-basket evidence.
 - Later Randolph retrospectives are new source objects, not independent confirmation of earlier forecasts.
 - Title/subtitle-only sources impose a hard proposition ceiling until transcript or directly inspectable first-party video content is preserved.
 - Explanatory context objects do not increment forecast count without a preserved forward-looking proposition.
@@ -54,9 +55,7 @@ Exact bindings include:
 - July 13 `Watch Gas and Diesel Prices Not Oil` -> Substack `c-293975586` -> YouTube `C1twq1liA_4`;
 - July 16 `It's About The Diesel` -> Substack `c-295859281`, displayed 5:38 PM with timezone unverified; no embedded-video binding was observed in the retrievable source.
 
-The July 16 source identity is therefore resolved without inventing an adjacent July 17 video identity. Current retrievable first-party pages still do not expose substantive transcripts, so titles remain proposition ceilings.
-
-June 25 and July 1 are explicitly preserved as explanatory/mechanism context unless transcript custody reveals an actual forward-looking proposition. They do not currently increment forecast count.
+Current retrievable first-party pages still do not expose substantive transcripts, so titles remain proposition ceilings. June 25 and July 1 are preserved as explanatory/mechanism context unless transcript custody reveals an actual forward-looking proposition; they do not currently increment forecast count.
 
 ## March 18 mechanism and ordering posture
 First-party subtitle: `High Shipping Fuel Costs Hit Food Prices First.`
@@ -69,9 +68,19 @@ Independent USDA/BLS evidence supports:
 - later consumer food-price movement — `PARTIAL_MIXED`;
 - shipping fuel as sole/dominant cause — not authorized.
 
-The terminal-order comparator is now frozen and executed rather than left undefined.
+### National CPI scope correction
+The March `food at home -0.2%` observation is a **nationwide CPI-U U.S. city average**, seasonally adjusted month-to-month statistic. It is not a statement that every household, state, locality, retailer, or grocery basket became cheaper.
 
-Primary clock: the USDA-documented March 9-11 marine bunker-fuel shock. Sensitivity clock: March 18 source publication.
+The same March national release shows:
+- food at home: `+1.9%` year over year;
+- total food: `+2.7%` year over year;
+- food away from home: `+3.8%` year over year.
+
+Therefore the monthly `-0.2%` observation is authorized only for the narrow monthly ordering test. It is explicitly **not evidence that grocery affordability or household purchasing power improved**.
+
+The terminal-order comparator remains frozen and executed for that narrow interpretation.
+
+Primary clock: USDA-documented March 9-11 marine bunker-fuel shock. Sensitivity clock: March 18 source publication.
 
 Frozen CPI comparator lanes:
 - food at home;
@@ -81,39 +90,16 @@ Frozen CPI comparator lanes:
 - transportation services;
 - commodities less food and energy.
 
-March observations under the primary clock:
-- food at home: -0.2%;
-- food away from home: +0.2%;
-- apparel: +1.0%;
-- household furnishings and operations: +0.2%;
-- transportation services: +0.6%;
-- commodities less food and energy: +0.1%.
-
-April observations:
-- food at home: +0.7%;
-- food away from home: +0.2%;
-- apparel: +0.6%;
-- household furnishings and operations: +0.7%;
-- transportation services: +0.3%;
-- commodities less food and energy: 0.0%.
-
 Result for the currently authorized consumer-price interpretation:
 
-`food_prices_first_terminal_ordering = NOT_SUPPORTED`
+`food_prices_first_terminal_ordering = NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING`
 
-Reason: food at home declined in March while apparel and transportation services rose materially; food away from home rose but was not uniquely first. In April food at home rose strongly, but household furnishings rose by the same amount and apparel also increased.
+Reason: under the national monthly CPI ordering test, food was not uniquely the first category to register movement. This result says nothing by itself about whether households experienced improved buying power, and it does not erase the independently supported shipping/freight/diesel mechanism chain.
 
-This is a bounded terminal-component miss, not a rejection of the broader shipping-cost mechanism. The overall March 18 forecast remains `UNRESOLVED` because a missing video transcript could narrow, broaden, or qualify what `food prices first` meant beyond the preserved subtitle.
+The overall March 18 forecast remains `UNRESOLVED` because an unavailable video transcript could narrow, broaden, or qualify what `food prices first` meant beyond the preserved subtitle.
 
 ## Governed component scoring protocol
-A reusable component protocol is installed for:
-- endpoint;
-- timing;
-- mechanism;
-- ordering;
-- contingency anticipation;
-- indicator usefulness;
-- source specificity.
+A reusable component protocol is installed for endpoint, timing, mechanism, ordering, contingency anticipation, indicator usefulness, and source specificity.
 
 Allowed postures remain categorical rather than numerically aggregated. Person-level numeric scoring is deliberately disabled because corpus completeness, weighting, and clean prospective outcomes are not yet sufficient to avoid false precision.
 
@@ -127,50 +113,32 @@ The first governed indicator-lag execution uses the previously fixed target and 
 Current test conclusion:
 `NO_PREDICTIVE_SUPERIORITY_SCORE_AUTHORIZED_YET`
 
-July 13 component posture:
-- refined-product/crude structural divergence possibility — `SUPPORTED_AS_STRUCTURAL_POSSIBILITY`;
-- directional diesel superiority in current weekly steps — `LIMITED_SUPPORT`;
-- diesel predicts inflation better than crude — `UNRESOLVED`;
-- diesel predicts freight better than crude — `UNRESOLVED`;
-- intended target/horizon behind `watch` — `UNRESOLVED_SOURCE_MEANING`.
-
 ## Prospective-outcome guard
-For the July 8 and July 13 forecasts:
-- July CPI is context-only because CPI prices are collected throughout July and the reference period overlaps forecast issuance.
-- July PPI is context-only for prospective scoring because BLS treats the monthly PPI as representative of the reference month even though many prices are requested around the week containing the 13th.
-- July Freight TSI is context-only and its reference month overlaps the forecasts.
-- August PPI is the first clean post-forecast PPI reference period and is scheduled for September 10, 2026.
-- August CPI is the first clean post-forecast CPI reference period and is scheduled for September 11, 2026.
-- August Freight TSI is a clean post-forecast freight period and is scheduled for October 14, 2026.
-
-This prevents release-date leakage: `published after` is not treated as equivalent to `measured after`.
+For the July 8 and July 13 forecasts, July CPI/PPI and July Freight TSI remain context-only because their reference periods overlap forecast issuance. August PPI, August CPI, and August Freight TSI remain the first clean prospective reference periods when released.
 
 ## Forecast states
 - March 7 three-week Hormuz threshold — `UNRESOLVED`.
-- March 18 shipping fuel / food first — `UNRESOLVED`, with multiple supported intermediate mechanisms and a `NOT_SUPPORTED` terminal consumer-price ordering component under the frozen comparator.
+- March 18 shipping fuel / food first — `UNRESOLVED`, with multiple supported intermediate mechanisms and a `NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING` terminal component under the bounded national CPI test.
 - July 8 higher diesel / higher inflation — `UNRESOLVED`; transcript-defined lag/measure remains unknown and clean August targets are pending.
 - July 13 watch gas/diesel, not oil — `UNRESOLVED`; structural divergence is plausible but predictive superiority is not established.
 
 ## Validation posture
-Last observed substantive exact-head validation before this handoff refresh:
-- transition-calculus workflow run `32787292031` — `SUCCESS`;
-- live forecast-calibration validation — `PASS`;
-- fail-closed negative fixtures — `PASS`;
-- research-candidate activation run `32787292036` — `SUCCESS`.
+Last observed substantive exact-head validation before the affordability-scope correction:
+- transition-calculus workflow run `32807558572` — `SUCCESS`;
+- research-candidate activation run `32807558608` — `SUCCESS`.
 
-The new comparator protocol/execution, component-scoring protocol, July 16 custody refinement, and March 18 component update require their own exact-head hosted result before a new PASS is claimed for this latest state.
+The affordability-scope correction now requires its own exact-head hosted result before a new PASS is claimed for the latest head.
 
 The separate repository-wide `Validate Ledger Schemas` workflow remains red because of the pre-existing August 22 White House ballroom primary-record-intake problem. That blocker is outside this lane and remains visible.
 
 ## Next executable work
 1. continue July 8 and July 13 transcript/caption acquisition;
-2. inspect the July 16 source for richer text/media without assigning a guessed video;
+2. inspect July 16 for richer source text/media without assigning guessed video content;
 3. acquire June 25 and July 1 transcripts to reconstruct the gas-price/refining mechanism preceding July 13;
-4. preserve and score August PPI on September 10 and August CPI on September 11 against every applicable predeclared lag lane;
-5. preserve July Freight TSI on September 9 as context-only and August Freight TSI October 14 as the clean freight outcome period;
-6. add component-resolution records for additional sufficiently bounded forecasts or explanatory transitions;
-7. keep six-to-nine-month open forecasts outside the historical aggregate until earlier calibration is materially complete;
-8. perform independent review before any aggregate credibility or publication decision.
+4. keep the V1 national CPI ordering result semantically bounded and add no household-affordability conclusion without dedicated affordability evidence;
+5. preserve and score August PPI/CPI and later August Freight TSI against every applicable predeclared lag lane;
+6. expand component-resolution records across additional sufficiently bounded forecasts;
+7. perform independent review before any aggregate credibility or publication decision.
 
 ## Quantified posture
 Denominator = 10 bounded work groups.
@@ -182,7 +150,7 @@ Denominator = 10 bounded work groups.
 5. machine forecast encoding — 4 live forecast records;
 6. EIA/refined-product integration — materially developed;
 7. BLS/BTS/USDA freight-food integration — materially developed;
-8. governed conditional/component resolution — substantially developed; prospective leakage guard, first lag execution, frozen ordering comparator, and first supported/missed mixed-component result installed;
+8. governed conditional/component resolution — substantially developed, with affordability semantics now explicitly protected;
 9. aggregate calibration/open-forecast confidence — not started;
 10. independent review/promotion — not started.
 
