@@ -1,0 +1,56 @@
+{
+  "record_type": "terminal_order_comparator_execution",
+  "record_id": "ERL-FC-MR-2026-03-18-FOOD-FIRST-EXEC-V1",
+  "protocol_ref": "march-18-food-first-comparator-protocol.v1.json",
+  "forecast_id": "MR-FC-2026-03-18-SHIPPING-FUEL-FOOD-FIRST",
+  "execution_scope": "Initial CPI consumer-category ordering test using March and April 2026 BLS observations.",
+  "primary_clock": {
+    "start": "2026-03-09/2026-03-11",
+    "basis": "USDA-documented marine bunker-fuel shock"
+  },
+  "observations": [
+    {
+      "reference_month": "2026-03",
+      "food_at_home_pct": -0.2,
+      "food_away_from_home_pct": 0.2,
+      "apparel_pct": 1.0,
+      "household_furnishings_and_operations_pct": 0.2,
+      "transportation_services_pct": 0.6,
+      "commodities_less_food_and_energy_pct": 0.1,
+      "source": "BLS CPI March 2026"
+    },
+    {
+      "reference_month": "2026-04",
+      "food_at_home_pct": 0.7,
+      "food_away_from_home_pct": 0.2,
+      "apparel_pct": 0.6,
+      "household_furnishings_and_operations_pct": 0.7,
+      "transportation_services_pct": 0.3,
+      "commodities_less_food_and_energy_pct": 0.0,
+      "source": "BLS CPI April 2026"
+    }
+  ],
+  "ordering_assessment": {
+    "food_at_home": "NOT_FIRST",
+    "food_away_from_home": "NOT_UNIQUELY_FIRST",
+    "basis": [
+      "In March, food at home fell 0.2% while apparel rose 1.0% and transportation services rose 0.6%.",
+      "Food away from home rose 0.2% in March, but larger comparator increases occurred in apparel and transportation services in the same reference month.",
+      "In April, food at home rose 0.7%, but household furnishings and operations also rose 0.7% and apparel rose 0.6%, so April does not establish unique first ordering either."
+    ]
+  },
+  "terminal_component_posture": "NOT_SUPPORTED",
+  "bounded_meaning": "Under the frozen CPI consumer-category comparator protocol and the primary marine-fuel-shock clock, the proposition that food prices were the first downstream consumer category affected is not supported by March-April observations.",
+  "nonimplications": [
+    "This does not reject the independently supported marine-fuel -> grain-freight -> diesel/transport-cost mechanism.",
+    "This does not establish that shipping costs had no effect on food prices.",
+    "This does not resolve any stronger or different meaning that might appear in an unavailable March 18 video transcript.",
+    "This does not authorize an aggregate person-level credibility score."
+  ],
+  "source_receipts": [
+    "https://www.bls.gov/news.release/archives/cpi_04102026.htm",
+    "https://www.bls.gov/news.release/archives/cpi_05122026.htm"
+  ],
+  "finding_authorized": true,
+  "publication_authorized": false
+}
