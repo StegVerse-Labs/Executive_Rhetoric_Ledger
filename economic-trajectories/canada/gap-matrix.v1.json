@@ -1,0 +1,53 @@
+{
+  "matrix_id": "ERL-ECON-CA-GAPS-V1",
+  "jurisdiction": "Canada",
+  "as_of": "2026-08-25",
+  "rows": [
+    {
+      "gap_id": "ERL-ECON-CA-GAP-LONG-RUN-HOUSEHOLD",
+      "claim_family": "aggregate-to-household transmission",
+      "supporting_evidence": [],
+      "confidence": 0,
+      "contradictions": [],
+      "missing_evidence": [
+        "Consistent real median disposable-income series",
+        "Household expenditure and unmet-need distribution",
+        "Debt-service and housing-cost burden by income and age"
+      ],
+      "next_targeted_query": "Acquire revision-consistent household income, expenditure, housing-cost, debt-service, and wealth-distribution series from 1980 to present.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-CA-GAP-DIVERSIFICATION-EFFECTS",
+      "claim_family": "trade diversification effects",
+      "supporting_evidence": [],
+      "confidence": 0,
+      "contradictions": [],
+      "missing_evidence": [
+        "Product-level destination changes",
+        "Price and margin changes after rerouting",
+        "Transport and compliance costs",
+        "Employment and tax effects",
+        "Domestic processing and capital formation"
+      ],
+      "next_targeted_query": "Trace major product lanes from U.S. concentration through alternative-market transactions and measure realized Canadian effects.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-CA-GAP-AUTOMATION",
+      "claim_family": "AI automation and robotics effects",
+      "supporting_evidence": [],
+      "confidence": 0,
+      "contradictions": [],
+      "missing_evidence": [
+        "Adoption by industry",
+        "Task and hiring displacement",
+        "Wage and bargaining effects",
+        "Augmentation and new-demand controls"
+      ],
+      "next_targeted_query": "Acquire Canadian industry-level automation adoption and matched labor outcomes with alternative explanations.",
+      "status": "open"
+    }
+  ],
+  "stop_rule": "Stop a query wave when consequential claims have primary support or explicit limits and another targeted search is unlikely to change classification."
+}
