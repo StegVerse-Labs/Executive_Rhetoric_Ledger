@@ -1,0 +1,106 @@
+{
+  "record_type": "forecast_threshold_execution",
+  "record_id": "ERL-FC-MR-2026-03-07-HORMUZ-EXEC-V1",
+  "protocol_ref": "march-07-hormuz-threshold-protocol.v1.json",
+  "forecast_id": "MR-FC-2026-03-07-THIRD-WEEK",
+  "execution_scope": "Evaluate operational closure persistence, global recession deterioration, and collective intervention using first-party forecast text plus independent Reuters/OECD/IMF evidence available through August 25, 2026.",
+  "first_party_custody": {
+    "status": "FIRST_PARTY_TRANSCRIPT_TEXT_RETRIEVABLE",
+    "authorized_text": "We know that the Strait of Hormuz simply cannot be closed beyond three weeks, thats when global recession begins to take hold and countries around the world put a stop to it."
+  },
+  "operational_chronology": [
+    {
+      "date": "2026-02-28",
+      "event": "War onset and effective closure/near-halt boundary used as primary clock start.",
+      "posture": "CLOCK_START"
+    },
+    {
+      "date": "2026-03-21",
+      "event": "Primary three-week threshold from February 28 closure onset.",
+      "posture": "THRESHOLD"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "OECD reported that a halt in Hormuz shipments and energy disruption had materially weakened the global outlook, while still projecting positive global growth of 2.9% for 2026.",
+      "posture": "GLOBAL_DOWNSIDE_VISIBLE_NOT_RECESSION"
+    },
+    {
+      "date": "2026-03-28",
+      "event": "Sensitivity three-week threshold from March 7 publication date.",
+      "posture": "SENSITIVITY_THRESHOLD"
+    },
+    {
+      "date": "2026-04-09",
+      "event": "Reuters reported Hormuz traffic well below 10% of normal, with seven ships in 24 hours versus roughly 140 normally.",
+      "posture": "CLOSURE_LIKE_PERSISTS"
+    },
+    {
+      "date": "2026-04-14",
+      "event": "IMF stated the Middle East war had halted global growth momentum. Baseline global growth remained positive; adverse and severe scenarios showed substantially deeper deterioration, with the severe scenario approaching global recession conditions.",
+      "posture": "MACRO_DETERIORATION_PARTIAL_RECESSION_SUPPORT"
+    },
+    {
+      "date": "2026-04-17",
+      "event": "Iran announced conditional passage subject to IRGC coordination and safe lanes as part of a wider deal; mine risk and navigation uncertainty remained and broad normal transit was not established.",
+      "posture": "INTERVENTION_OR_NEGOTIATION_SIGNAL_NOT_FULL_REOPENING"
+    },
+    {
+      "date": "2026-04-21",
+      "event": "Reuters reported only three ships in 24 hours versus about 140 normally after a brief reopening attempt, showing closure-like conditions persisted materially beyond three weeks.",
+      "posture": "CLOSURE_LIKE_PERSISTS"
+    },
+    {
+      "date": "2026-04-30",
+      "event": "Reuters reported the strait remained closed two months into the conflict despite ceasefire and international efforts to reopen it.",
+      "posture": "CLOSURE_LIKE_PERSISTS_AND_INTERVENTION_NOT_YET_SUCCESSFUL"
+    }
+  ],
+  "component_results": [
+    {
+      "component": "effective_closure_persists_to_three_week_threshold",
+      "posture": "SUPPORTED",
+      "basis": "Independent chronology shows closure-like disruption persisted through both the March 21 primary threshold and March 28 publication-date sensitivity threshold."
+    },
+    {
+      "component": "closure_cannot_persist_materially_beyond_three_weeks",
+      "posture": "NOT_SUPPORTED",
+      "basis": "Closure-like conditions remained well below 10% of normal traffic on April 9 and April 21, and Reuters still described the strait as closed on April 30."
+    },
+    {
+      "component": "global_recession_begins_to_take_hold_near_threshold",
+      "posture": "PARTIAL_MIXED",
+      "basis": "The direction was strongly supported: OECD and IMF documented a conflict-linked global negative supply shock, weaker growth, higher inflation, and halted growth momentum. But baseline global growth forecasts remained clearly positive. IMF's severe scenario approached recession-like global growth only under a longer and more intense disruption. Therefore broad global deterioration and recession risk were visible, but a contemporaneous realized global recession was not established."
+    },
+    {
+      "component": "countries_intervene_to_stop_closure",
+      "posture": "PARTIAL_MIXED",
+      "basis": "International diplomatic, maritime, and economic intervention clearly occurred, including ceasefire/reopening negotiations and pressure to restore transit. However, these actions did not materially end closure-like conditions by the three-week threshold or even by April 30. The intervention premise is supported; the successful 'put a stop to it' outcome is not."
+    },
+    {
+      "component": "three_week_threshold_as_inflection_point",
+      "posture": "LIMITED_SUPPORT",
+      "basis": "By late March, independent global institutions were already materially revising growth and inflation expectations because of the Hormuz/energy shock, consistent with the forecast identifying a meaningful duration threshold. The evidence does not isolate exactly three weeks as a uniquely causal breakpoint rather than an approximate duration marker."
+    }
+  ],
+  "overall_forecast_state": "PARTIAL_MIXED",
+  "overall_bounded_finding": "The March 7 forecast correctly identified that prolonged Hormuz disruption would rapidly become a major global macroeconomic problem and provoke international intervention. The literal claim that the strait could not remain effectively closed materially beyond three weeks is contradicted by the operational chronology, and a realized global recession near the threshold is not established. The strongest supported reading is an approximate early-warning threshold for escalating global macro risk, not a successful three-week closure-duration cap.",
+  "anti_overclaim": [
+    "Do not convert OECD/IMF growth downgrades into a realized global recession.",
+    "Do not treat intervention attempts as successful reopening when shipping remained closure-like.",
+    "Do not infer that exactly 21 days was independently validated as the unique causal breakpoint.",
+    "Do not erase the failed duration-cap component because the macro-risk direction was supported.",
+    "Do not erase the supported macro-risk/intervention components because the closure persisted beyond three weeks."
+  ],
+  "source_receipts": [
+    "https://mattrandolph.substack.com/p/the-3rd-week-is-critical",
+    "https://www.reuters.com/world/middle-east/shipping-traffic-through-hormuz-virtual-standstill-despite-ceasefire-data-shows-2026-04-09/",
+    "https://www.reuters.com/world/middle-east/ships-crossing-hormuz-need-irgc-ok-unfreezing-assets-part-deal-iran-official-2026-04-17/",
+    "https://www.reuters.com/world/middle-east/shipping-traffic-through-hormuz-still-largely-halted-2026-04-21/",
+    "https://www.reuters.com/business/energy/us-seeks-international-help-reopen-strait-hormuz-crude-prices-surge-2026-04-30/",
+    "https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2026_d4623013-en/full-report.html",
+    "https://www.imf.org/en/blogs/articles/2026/04/14/war-darkens-global-economic-outlook-and-reshapes-policy-priorities"
+  ],
+  "finding_authorized": true,
+  "aggregate_credibility_effect_authorized": false,
+  "publication_authorized": false
+}
