@@ -55,6 +55,10 @@ def build_states(panel: dict[str, Any], source_ref: str) -> dict[str, Any]:
                 features["xrp_xlm_ratio"] = round(float(close["XRP"][index]) / float(close["XLM"][index]), 8)
                 features["xrp_xlm_ratio_change_1d_pct"] = None
 
+        # This legacy panel is authoritative for one source family: daily spot
+        # closes/derived relative returns. It does NOT justify claiming broad
+        # longitudinal coverage across derivatives, flows, macro, liquidity,
+        # on-chain or event context. Preserve that deficit explicitly.
         state = {
             "schema": "stegverse.erl.market_state_vector.v1",
             "state_id": f"coingecko-daily-{date}",
@@ -63,7 +67,7 @@ def build_states(panel: dict[str, Any], source_ref: str) -> dict[str, Any]:
             "universe": [f"{instrument}-USD" for instrument in instruments],
             "features": features,
             "source_coverage": {
-                "coverage_score": 1.0,
+                "coverage_score": 0.25,
                 "missing_families": [
                     "derivatives",
                     "order_book_liquidity",
