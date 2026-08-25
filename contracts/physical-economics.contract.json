@@ -1,0 +1,121 @@
+{
+  "contract_id": "ERL-PHYSICAL-ECONOMICS-CONTRACT-V1",
+  "status": "PROMOTED_REUSABLE_LANE_NOT_FULLY_ACTIVATED",
+  "purpose": "Machine-readable contract for ERL Physical Economics observations, transitions, state vectors, and sub-index inputs.",
+  "core_rule": "No economic unit is assumed state-equivalent across time; continuity requires evidence across economically relevant attributes.",
+  "erl_transition_mapping": {
+    "S_pre": "prior economic-unit, producer, household, or population state",
+    "S_post": "subsequent economic-unit, producer, household, or population state",
+    "C": "evidenced continuity relation for the compared unit or system",
+    "E": "price, quantity, quality, income, cost, margin, burden, need, tax/fee and administrative evidence",
+    "P": "provenance and independence posture",
+    "U": "typed unknowns including missing quantity, margin, need, or pass-through",
+    "Q": "transition qualification/state"
+  },
+  "state_vector": [
+    "physical_purchasing_power",
+    "nominal_resource_capacity",
+    "required_debt_service_burden",
+    "essential_cost_burden",
+    "essential_need_satisfaction",
+    "substitution_and_quality_compression",
+    "population_burden_distribution",
+    "producer_cost_pressure",
+    "producer_margin_state",
+    "tax_fee_regulatory_flow"
+  ],
+  "required_record_types": [
+    "economic_unit_state",
+    "essential_need_state",
+    "population_burden_state",
+    "producer_cost_margin_state",
+    "tax_fee_flow"
+  ],
+  "economic_unit_continuity_attributes": [
+    "nominal_price",
+    "physical_mass",
+    "physical_volume",
+    "count",
+    "usable_quantity",
+    "nutrition_or_domain_content",
+    "quality",
+    "durability",
+    "coverage",
+    "service_level",
+    "mandatory_access_or_delivery_charge",
+    "tax_or_fee",
+    "origin",
+    "substitution_class"
+  ],
+  "native_subindexes": {
+    "essential_need_satisfaction": {
+      "required": true,
+      "must_separate": [
+        "underlying_need",
+        "observed_quantity_or_access",
+        "substitution",
+        "deferment",
+        "arrears",
+        "unmet_need"
+      ]
+    },
+    "population_burden_distribution": {
+      "required": true,
+      "minimum_outputs": [
+        "median_burden",
+        "lower_quintile_burden",
+        "upper_quintile_burden",
+        "burden_gap",
+        "share_above_frozen_threshold"
+      ]
+    },
+    "producer_cost_margin_transmission": {
+      "required": true,
+      "direct_inputs_preferred": true,
+      "inference_policy": "Residual or inferred margins are allowed only when direct financial inputs are unavailable and must be explicitly lower-confidence."
+    }
+  },
+  "adjacent_index_policy": {
+    "income": "Use nominal income/resources as primary. CPI-deflated real earnings are comparator evidence, not the sole purchasing-power denominator.",
+    "debt_service": "Federal Reserve DSR may be imported after coverage validation; supplement distribution and non-debt compulsory obligations.",
+    "price_indexes": "CPI/PPI are evidence surfaces, not full economic-condition state representations."
+  },
+  "tax_fee_regulatory_policy": {
+    "treatment": "cross_cutting_flow_layer",
+    "required_fields": [
+      "initial_or_legal_payer",
+      "amount_rate_or_base_when_observable",
+      "entry_point",
+      "observed_pass_through",
+      "provenance_confidence",
+      "subsidy_or_credit_offset"
+    ],
+    "double_counting_forbidden": true
+  },
+  "substitution_policy": {
+    "substitution_is_transition": true,
+    "domestic_origin_does_not_cancel_quality_or_quantity_compression": true,
+    "dimensions": [
+      "price",
+      "mass_or_volume",
+      "nutrition",
+      "quality",
+      "durability",
+      "service_level",
+      "coverage",
+      "origin"
+    ]
+  },
+  "anti_failure_rules": [
+    "Do not infer lower need from lower acquisition.",
+    "Do not infer producer profiteering from consumer price change without direct margin evidence.",
+    "Do not infer producer distress from falling margin without controlling for output, mix, accounting scope, and one-time items.",
+    "Do not import CPI-deflated real income as independent validation of a CPI-alternative purchasing-power leg.",
+    "Do not aggregate away distribution before reporting population burden surfaces.",
+    "Do not double count taxes, fees, margins, subsidies, transfers, or delivery charges as they propagate through the value-flow graph.",
+    "Do not treat same sticker price as continuity when physical quantity, quality, coverage, service level, or mandatory fees changed.",
+    "Do not publish a scalar composite without the underlying state vector and provenance."
+  ],
+  "composite_index_authorized": false,
+  "release_authorized": false
+}
