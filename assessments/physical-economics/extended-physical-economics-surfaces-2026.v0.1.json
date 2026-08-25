@@ -1,0 +1,199 @@
+{
+  "record_type": "physical_economics_extended_surface_bundle",
+  "record_id": "ERL-PE-EXTENDED-SURFACES-2026-V0.1",
+  "status": "FORMALIZED_WITH_CURRENT_EVIDENCE_SEEDS",
+  "as_of": "2026-08-25",
+  "purpose": "Close five previously identified Physical Economics blind spots by defining native state surfaces, source hierarchies, current evidence seeds, prospective evidence gates, and fail-closed interpretation rules.",
+  "surfaces": {
+    "household_balance_sheet_resilience": {
+      "native_surface": true,
+      "question": "Can households maintain essential acquisition without eroding liquid buffers or materially worsening debt stress?",
+      "state_variables": [
+        "nominal_disposable_income",
+        "personal_saving",
+        "personal_saving_rate",
+        "liquid_asset_buffer_where_available",
+        "required_debt_service",
+        "credit_card_delinquency",
+        "auto_loan_delinquency",
+        "mortgage_delinquency",
+        "asset_drawdown_or_credit_substitution_where observable"
+      ],
+      "current_evidence_seed": {
+        "bea_june_2026_personal_saving_rate_percent": 2.7,
+        "bea_may_2026_personal_saving_rate_percent": 2.8,
+        "bea_april_2026_personal_saving_rate_percent": 3.0,
+        "bea_march_2026_personal_saving_rate_percent": 3.5,
+        "federal_reserve_may_2026_posture": "HOUSEHOLD_BALANCE_SHEETS_STRONG_OVERALL_WITH_ELEVATED_CREDIT_CARD_AND_AUTO_DELINQUENCIES_RELATIVE_TO_PAST_DECADE"
+      },
+      "bounded_interpretation": "A declining aggregate saving rate may indicate reduced aggregate buffer formation, but it does not prove household depletion for every stratum. Elevated credit-card/auto delinquencies are direct stress signals but must remain distributionally separated from low aggregate mortgage delinquency.",
+      "authoritative_sources": [
+        "https://www.bea.gov/data/income-saving/personal-saving-rate",
+        "https://www.bea.gov/news/2026/personal-income-and-outlays-june-2026",
+        "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-overview.htm"
+      ]
+    },
+    "arrears_and_deferred_obligation_state": {
+      "native_surface": true,
+      "question": "Is current consumption or continued service being maintained by nonpayment, delinquency, arrears, or deferred obligations?",
+      "state_variables": [
+        "housing_payment_current_or_behind",
+        "utility_payment_difficulty",
+        "expense_payment_difficulty",
+        "credit_card_delinquency",
+        "auto_loan_delinquency",
+        "mortgage_delinquency",
+        "service_disconnection_or_eviction_risk_where available",
+        "deferred_required_expense"
+      ],
+      "source_hierarchy": [
+        "direct official payment-status or delinquency administrative/survey data",
+        "official household difficulty/sufficiency surveys",
+        "secondary reconstruction only as triangulation"
+      ],
+      "current_evidence_seed": {
+        "census_htops_2026_available_topics": [
+          "owner_renter_housing_payment_status",
+          "risk_of_losing_current_housing",
+          "household_energy_use_and_spending",
+          "difficulty_paying_usual_household_expenses",
+          "transportation_sufficiency"
+        ],
+        "federal_reserve_may_2026_credit_signal": "CREDIT_CARD_AND_AUTO_DELINQUENCIES_ELEVATED_RELATIVE_TO_PAST_DECADE"
+      },
+      "semantic_rule": "Continued possession, housing occupancy, utility service, or nominal spending does not establish affordability if payment is deferred or delinquent.",
+      "authoritative_sources": [
+        "https://www.census.gov/newsroom/press-releases/2026/household-trends-outlook-pulse-survey.html",
+        "https://www.census.gov/programs-surveys/household-pulse-survey/data/datasets.html",
+        "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-accessibility-tables.htm"
+      ]
+    },
+    "capacity_inventory_constraint_state": {
+      "native_surface": true,
+      "question": "Are price/margin/output transitions occurring under scarce capacity, abundant capacity, inventory accumulation, or inventory depletion?",
+      "state_variables": [
+        "industrial_production",
+        "capacity_utilization",
+        "capacity_growth",
+        "business_inventories",
+        "inventory_to_sales_where available",
+        "shipments",
+        "new_orders",
+        "unfilled_orders"
+      ],
+      "current_evidence_seed": {
+        "federal_reserve_release_date": "2026-08-18",
+        "total_industry_capacity_utilization_july_2026_percent": 76.3,
+        "manufacturing_capacity_utilization_july_2026_percent": 76.0,
+        "total_industry_long_run_average_1972_2025_percent": 79.4,
+        "manufacturing_long_run_average_1972_2025_percent": 78.2,
+        "census_business_inventories_june_2026_billion_dollars": 2740.2,
+        "census_business_inventories_change_from_may_2026_percent": 0.0
+      },
+      "bounded_interpretation": "July 2026 aggregate utilization was below long-run averages, which weighs against a blanket economy-wide capacity-shortage explanation. Sector-specific scarcity may still exist and must be established at the relevant commodity/industry level. Flat aggregate business inventories do not establish abundance or shortage for a particular essential good.",
+      "prospective_gates": [
+        {
+          "series": "Census M3 July 2026 advance",
+          "release_date": "2026-08-26",
+          "state": "PENDING_FUTURE_RELEASE"
+        },
+        {
+          "series": "Census M3 July 2026 full report",
+          "release_date": "2026-09-02",
+          "state": "PENDING_FUTURE_RELEASE"
+        }
+      ],
+      "authoritative_sources": [
+        "https://www.federalreserve.gov/releases/g17/current/",
+        "https://www.census.gov/economic-indicators/inventory.html",
+        "https://www.census.gov/manufacturing/m3/release_schedule.html"
+      ]
+    },
+    "regional_burden_surface": {
+      "native_surface": true,
+      "question": "How much does essential-cost composition differ across places before national aggregation?",
+      "state_variables": [
+        "geography",
+        "housing_share",
+        "transportation_share",
+        "food_share",
+        "utilities_where separately available",
+        "income_or_resource denominator",
+        "tenure",
+        "household_size",
+        "local_tax_fee_regulatory_structure"
+      ],
+      "current_evidence_seed": {
+        "bls_ce_2023_2024_published_metro_count": 22,
+        "united_states_shares_percent": {
+          "housing": 33.2,
+          "transportation": 17.0,
+          "food": 12.9
+        },
+        "selected_metro_shares_percent": {
+          "miami": {"housing": 40.0, "transportation": 18.0, "food": 11.5},
+          "honolulu": {"housing": 36.9, "transportation": 13.7, "food": 16.4},
+          "houston": {"housing": 33.9, "transportation": 19.8, "food": 12.3},
+          "new_york": {"housing": 38.2, "transportation": 13.6, "food": 12.8},
+          "st_louis": {"housing": 29.1, "transportation": 17.3, "food": 13.8}
+        }
+      },
+      "bounded_interpretation": "Regional expenditure shares differ materially enough that a national essential-burden scalar can conceal local structure. CE metro estimates are multiyear expenditure baselines and are not 2026 real-time burden measures; they define the regional weighting surface to be joined with current local delivered costs and resources.",
+      "authoritative_sources": [
+        "https://www.bls.gov/regions/southwest/news-release/consumerexpenditures_dallasfortworth.htm",
+        "https://www.bls.gov/regions/southwest/news-release/2026/consumerexpenditures_houston_20260105.htm",
+        "https://www.bls.gov/cex/tables.htm"
+      ]
+    },
+    "net_public_transfer_offset_flow": {
+      "native_surface": true,
+      "question": "How much compulsory or market burden is offset by public transfers, subsidies, credits, or in-kind support, and for whom?",
+      "state_variables": [
+        "cash_transfer_income",
+        "in_kind_food_support",
+        "energy_assistance",
+        "housing_assistance",
+        "tax_credits",
+        "rebates",
+        "insurance_subsidies",
+        "eligibility_and_take_up",
+        "geographic_and_income_distribution"
+      ],
+      "flow_rule": "Transfers and subsidies are explicit offset flows, not negative prices. They must retain payer/funder, recipient, eligibility, amount, timing, and whether the benefit is cash or in-kind. A benefit cannot be double-counted both as higher household resources and as a separate reduction in delivered cost unless the accounting identity explicitly nets the same flow once.",
+      "current_evidence_seed": {
+        "snap_authoritative_dataset_status": "USDA_FNS_PROVIDES_NATIONAL_AND_STATE_MONTHLY_PERSONS_HOUSEHOLDS_BENEFITS_AND_AVERAGE_BENEFITS",
+        "snap_latest_public_month_observed_in_current_source": "2025-11",
+        "2026_current_numeric_snap_promotion": "NOT_AUTHORIZED_FROM_CURRENT_SOURCE_LAG"
+      },
+      "bounded_interpretation": "The surface is formally closed even where a program's current public data lag. Missing current values remain opaque rather than silently treated as zero assistance.",
+      "authoritative_sources": [
+        "https://www.fns.usda.gov/pd/supplemental-nutrition-assistance-program-snap"
+      ]
+    }
+  },
+  "cross_surface_rules": [
+    "Household resilience cannot be inferred from income alone when saving, debt service, delinquency, or asset drawdown changes.",
+    "Current consumption cannot be treated as satisfied affordability when arrears or deferred obligations are increasing.",
+    "Margin expansion under low aggregate utilization is not automatically excess profit; sector capacity, inventories, output, market structure, and accounting evidence must be joined.",
+    "National averages cannot supersede regional burden states when geography materially changes essential expenditure composition.",
+    "Transfers and subsidies must be included as observed offset flows and never assumed absent because a current monthly value is not yet published.",
+    "All prospective releases remain lane-native evidence gates and do not require separate monitored tasks."
+  ],
+  "new_state_vector_extensions": [
+    "household_balance_sheet_resilience",
+    "arrears_and_deferred_obligation_state",
+    "capacity_inventory_constraint_state",
+    "regional_burden_surface",
+    "net_public_transfer_offset_flow"
+  ],
+  "remaining_open_data_gaps": [
+    "Direct March 2026 HTOPS official workbook numeric custody and standard errors",
+    "Current 2026 physical food grams/calories/nutrition",
+    "Household-level liquid-asset drawdown by income/geography at a cadence compatible with burden data",
+    "Current program-specific transfer data where federal publication lags",
+    "Sector-specific capacity/inventory joins for food, electricity, fuel, housing inputs, and insurance service capacity",
+    "Executable semantic validators and fixtures for all state surfaces"
+  ],
+  "composite_index_authorized": false,
+  "release_authorized": false
+}
