@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +15,8 @@ def load_module(name, relative_path):
 
 analogue = load_module("analogue", "scripts/find_historical_market_analogues.py")
 validator = load_module("validator", "scripts/validate_longitudinal_market_evidence.py")
+labeler = load_module("labeler", "scripts/label_market_forward_outcomes.py")
+preference = load_module("preference", "scripts/build_trade_preference_evidence.py")
 
 
 def state(state_id, ts, **features):
@@ -46,6 +49,7 @@ def test_nearest_analogue_is_ranked_first_and_deterministic():
     second = analogue.find_analogues(current, history, top_k=3)
     assert first == second
     assert first["historical_analogues"][0]["analogue_id"] == "near"
+    assert first["as_of_utc"] == current["as_of_utc"]
     assert first["execution_authority"] == "NONE"
     assert first["may_authorize_order"] is False
 
@@ -58,6 +62,53 @@ def test_missing_feature_is_penalized_and_exposed():
     rows = {row["analogue_id"]: row for row in result["historical_analogues"]}
     assert "breadth" in rows["incomplete"]["missing_dimensions"]
     assert rows["complete"]["similarity_score"] > rows["incomplete"]["similarity_score"]
+
+
+def test_forward_outcomes_are_observed_without_lookahead_in_state_features():
+    panel = [
+        {"state_id": "s0", "as_of_utc": "2026-08-25T00:00:00Z", "prices": {"BTC-USD": 100.0, "ETH-USD": 50.0}},
+        {"state_id": "s1", "as_of_utc": "2026-08-25T01:00:00Z", "prices": {"BTC-USD": 102.0, "ETH-USD": 49.0}},
+        {"state_id": "s2", "as_of_utc": "2026-08-25T02:00:00Z", "prices": {"BTC-USD": 103.0, "ETH-USD": 51.0}},
+    ]
+    result = labeler.label_forward_outcomes(panel, [1, 2])
+    first = result["records"][0]
+    assert first["horizons"]["step_1"]["returns_pct"]["BTC-USD"] == 2.0
+    assert first["horizons"]["step_2"]["returns_pct"]["ETH-USD"] == 2.0
+    assert result["execution_authority"] == "NONE"
+
+
+def test_trade_preference_builder_can_choose_candidate_or_forego_from_analogue_outcomes():
+    current = state("current", "2026-08-25T18:00:00Z", btc_return=0.05)
+    history = [state(f"s{i}", f"2026-08-{10+i:02d}T18:00:00Z", btc_return=0.05 + i * 0.0001) for i in range(12)]
+    analogue_set = analogue.find_analogues(current, history, top_k=12)
+    records = []
+    for i, historical in enumerate(history):
+        records.append({
+            "state_id": historical["state_id"],
+            "as_of_utc": historical["as_of_utc"],
+            "horizons": {
+                "step_1": {
+                    "status": "OBSERVED",
+                    "returns_pct": {"BTC-USD": 1.0 + i * 0.01, "ETH-USD": 0.2},
+                }
+            },
+        })
+    outcome_panel = {"records": records, "execution_authority": "NONE", "may_authorize_order": False}
+    packet = preference.build_trade_preference_evidence(
+        analogue_set=analogue_set,
+        outcome_panel=outcome_panel,
+        candidate_instrument="BTC-USD",
+        candidate_side="BUY",
+        comparison_instruments=["ETH-USD"],
+        horizon="step_1",
+        source_coverage={"coverage_score": 1.0, "missing_families": [], "stale_families": []},
+        minimum_observations=10,
+    )
+    assert packet["preference"] == "PREFER"
+    assert packet["execution_authority"] == "NONE"
+    assert packet["may_authorize_order"] is False
+    schema = json.loads((ROOT / "schemas/trade-preference-evidence.schema.json").read_text())
+    assert validator.validate_document(packet, schema) == []
 
 
 def test_trade_preference_validator_rejects_execution_authority():
@@ -81,11 +132,7 @@ def test_trade_preference_validator_rejects_execution_authority():
 
 
 def test_low_coverage_cannot_emit_prefer():
-    schema = {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "type": "object",
-        "additionalProperties": True,
-    }
+    schema = {"$schema": "https://json-schema.org/draft/2020-12/schema", "type": "object", "additionalProperties": True}
     doc = {
         "schema": "stegverse.erl.trade_preference_evidence.v1",
         "research_authority": "ERL",
@@ -101,11 +148,7 @@ def test_low_coverage_cannot_emit_prefer():
 
 
 def test_zero_analogues_forces_nonpositive_preference():
-    schema = {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "type": "object",
-        "additionalProperties": True,
-    }
+    schema = {"$schema": "https://json-schema.org/draft/2020-12/schema", "type": "object", "additionalProperties": True}
     doc = {
         "schema": "stegverse.erl.trade_preference_evidence.v1",
         "research_authority": "ERL",
