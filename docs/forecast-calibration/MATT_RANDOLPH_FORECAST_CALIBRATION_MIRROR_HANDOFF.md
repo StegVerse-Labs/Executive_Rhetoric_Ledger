@@ -23,6 +23,8 @@ Reconstruct roughly four months of Matt Randolph / Mr Global energy and Iran-con
 - Title/subtitle-only sources impose a hard proposition ceiling until transcript or directly inspectable first-party video content is preserved.
 - Explanatory context objects do not increment forecast count without a preserved forward-looking proposition.
 - A national essential-cost price index is supporting context only; it is not a household burden, delivered-bill, unmet-need, or purchasing-power measure.
+- Survey redesigns, recall-window changes, and sample-design changes must remain visible; incompatible HTOPS/HPS waves may not be treated as one continuous burden series.
+- Historical methodology may establish how a quantity should be measured without supplying a contemporary value; no 2026 physical-mass claim may be inferred from older F-MAP files.
 
 ## Durable research surfaces
 Core evidence/execution records include:
@@ -35,8 +37,10 @@ Core evidence/execution records include:
 - `multimonth-transmission-history-2026-03-through-07.json`
 - `shipping-fuel-food-chain-evidence-2026-03-through-06.json`
 - `food-purchase-volume-vs-dollar-2026-02-through-04.json`
+- `physical-food-quantity-method-and-gap-2026.v1.json`
 - `essential-burden-transmission-map-2026-03-through-04.v1.json`
 - `essential-purchasing-power-protocol.v1.json`
+- `household-direct-burden-htops-2026-03.v1.json`
 - `delivered-electricity-cost-structure-oncor-2026.json`
 - `national-essential-cost-context-2026-01-through-07.json`
 - `essential-services-theme-source-2026-05-29.json`
@@ -62,7 +66,7 @@ Component-resolution records:
 
 ## First-party source custody
 ### March 7
-`The 3rd Week Is Critical` now exposes first-party transcript text:
+`The 3rd Week Is Critical` exposes first-party transcript text:
 `We know that the Strait of Hormuz simply cannot be closed beyond three weeks, thats when global recession begins to take hold and countries around the world put a stop to it.`
 This source is no longer title-only.
 
@@ -104,7 +108,7 @@ Component postures:
 - countries intervene to stop closure — `PARTIAL_MIXED` because intervention occurred but did not end closure-like conditions near the threshold;
 - exact three-week inflection point — `LIMITED_SUPPORT`.
 
-Overall March 7 forecast state is now `PARTIAL_MIXED`.
+Overall March 7 forecast state is `PARTIAL_MIXED`.
 Strongest supported interpretation: Randolph identified an early-duration threshold for rapidly escalating global macro risk and intervention pressure, but the literal three-week closure-duration cap failed and a realized global recession at that threshold is not established.
 
 ## March 18 food / shipping / diesel posture
@@ -121,7 +125,7 @@ Supported:
 March observations already preserved include processed-intermediate diesel `+42.0%` MoM, consumer gasoline `+21.2%` MoM, transportation/warehousing `+1.3%`, food-at-home `-0.2%` MoM but `+1.9%` YoY, and March food/beverage dollars `+1.7%` YoY while units were only `+0.1%`.
 April continues the transmission: processed-intermediate diesel `+12.6%`, final-demand transportation/warehousing `+5.0%`, truck freight `+8.1%`, and food-at-home `+0.7%` MoM.
 
-Food quantity evidence now extends through July:
+Food quantity evidence extends through July:
 - Feb dollars `+1.4%`, units `-0.6%` YoY;
 - Mar dollars `+1.7%`, units `+0.1%`;
 - Apr dollars `-1.7%`, units `-4.0%`, calendar confounder retained;
@@ -129,7 +133,13 @@ Food quantity evidence now extends through July:
 - latest four weeks through Jul 12 volume `-0.6%`, price/mix `+2.6%`.
 Do not call this `demand destruction`; underlying food need is distinct from observed quantity.
 
-USDA F-MAP supplies a methodological bridge toward package-adjusted mass because scanner package weights are normalized to grams. A current 2026 national mass/calorie series remains uncustodied.
+### Physical food quantity boundary
+USDA F-MAP provides the strongest public method found for package-adjusted mass:
+- scanner sales and quantities are aggregated by month/category/geography;
+- package weights are converted to grams;
+- weighted fields include `Purchase_grams_wtd`;
+- unit values are dollars per 100 grams.
+However, the public F-MAP files currently cover 2012-2018, not 2026. Therefore the method is established, but a current national 2026 gram/calorie series remains uncustodied. Retail units/volume remain proxies rather than full physical-mass or nutritional-quantity measures.
 
 Frozen narrow CPI result remains:
 `food_prices_first_terminal_ordering = NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING`.
@@ -145,6 +155,17 @@ BEA macro anchor:
 - Apr: nominal DPI `-0.1%`, real DPI `-0.5%`, current-dollar PCE `+0.5%`, real PCE `+0.1%`, saving rate `2.6%`.
 Gasoline/other energy goods accounted for `$81.3B` SAAR of the March PCE increase; food/beverages `$6.9B` SAAR.
 Bounded result: aggregate real purchasing power contracted while nominal spending rose. This is not a universal household finding.
+
+### Direct household burden layer
+March 2026 Census HTOPS is now a declared direct-burden source rather than merely a future lead. Census reports March 13-30 data and publishes detailed tables for:
+- household food sufficiency in the prior seven days;
+- household energy use/spending in the prior two months;
+- difficulty paying usual household expenses in the prior two months;
+- stress caused by price increases;
+- transportation sufficiency in the prior four weeks.
+This survey structure is materially closer to lived burden than CPI because it measures reported inability/difficulty/access rather than only average price movement.
+
+The corresponding workbook values are not yet directly custodied through the current retrieval path, so canonical numerical promotion is disabled. A secondary analysis reports 22.8% of adults experiencing difficulty paying usual household expenses as of Mar 30, but this remains a discovery/triangulation value until the official Census workbook figure is directly preserved. March 2026 also changed to a cross-sectional design and a two-month expense-difficulty recall window, so older waves are not casually comparable.
 
 ## Delivered electricity structure
 Oncor record establishes `fixed supply contract != fixed delivered total cost`.
@@ -186,30 +207,31 @@ Last known hosted successes remain older exact-head runs:
 - transition-calculus `32807558572` — `SUCCESS` on `585ebbad...`;
 - research-candidate activation `32807558608` — `SUCCESS` on `585ebbad...`.
 `Validate Ledger Schemas` `32807558576` completed `FAILURE` on that older head and remains separately associated with the pre-existing White House ballroom intake/schema blocker unless fresh logs prove another cause.
-Newest purchasing-power, utility, March 7, and essential-context commits require fresh hosted checks before any new PASS is claimed.
+Newest direct-burden and physical-quantity commits require fresh hosted checks before any new PASS is claimed.
 
 ## Next executable work
-1. obtain current package-size-adjusted physical food mass/weight or calorie/nutritional quantity where authoritative data permit;
-2. seek distributional household burden for water/sewer, housing, required transport, electricity, and food rather than national price-only context;
-3. continue richer first-party custody for May 29 and June/July video sources;
-4. preserve and score clean August PPI/CPI and later August Freight TSI;
-5. begin governed aggregate calibration only after materially complete source/outcome corpus and independent review design;
-6. perform independent review before any person-level credibility or publication decision.
+1. directly custody the March 2026 HTOPS workbook values for food sufficiency, expense difficulty, energy spending, price stress, and transportation sufficiency, preserving survey redesign/recall-window metadata;
+2. seek contemporary package-level scanner or nutrition-linked data capable of producing 2026 grams/calories rather than unit-only proxies;
+3. seek distributional household burden for water/sewer, housing, required transport, electricity, and food with income-relative burden or unmet-need measures;
+4. continue richer first-party custody for May 29 and June/July video sources;
+5. preserve and score clean August PPI/CPI and later August Freight TSI;
+6. design governed aggregate calibration only after materially complete source/outcome corpus and independent review design;
+7. perform independent review before any person-level credibility or publication decision.
 
 ## Quantified posture
 Denominator = 10 bounded work groups.
 1. durable owner/handoff — complete;
 2. source policy/manifest — materially developed;
-3. first-party corpus acquisition — advanced; March 7 transcript now custodied, several later videos still title-bounded;
+3. first-party corpus acquisition — advanced; March 7 transcript custodied, several later videos still title-bounded;
 4. independent world-event chronology — advanced;
-5. machine forecast encoding — 4 live forecast records; March 7 now component-resolved;
+5. machine forecast encoding — 4 live forecast records; March 7 component-resolved;
 6. EIA/refined-product integration — materially developed;
-7. freight-food/essential-burden integration — advanced; quantity, real-DPI, electricity-delivery, water/sewer/housing context now present;
+7. freight-food/essential-burden integration — advanced; quantity, real-DPI, electricity-delivery, water/sewer/housing context, direct HTOPS burden structure, and physical-quantity method boundary are present;
 8. governed conditional/component resolution — advanced; Essential Purchasing Power V1 and March 7 threshold execution active;
 9. aggregate calibration/open-forecast confidence — not started;
 10. independent review/promotion — not started.
 
-Goal activation estimate: 88%.
+Goal activation estimate: 89%.
 
 ## Archive posture
-Continuation state is durable, but the project is not complete. Physical food mass/nutrition, distributional essential-burden evidence, richer transcript custody, clean August prospective outcomes, aggregate calibration, and independent review remain outstanding.
+Continuation state is durable, but the project is not complete. Direct HTOPS numeric custody, contemporary physical food mass/nutrition, distributional essential-burden evidence, richer transcript custody, clean August prospective outcomes, aggregate calibration, and independent review remain outstanding.
