@@ -1,4 +1,12 @@
-from scripts.calibrate_longitudinal_analogue_oos import build_calibration
+import importlib.util
+from pathlib import Path
+
+MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "calibrate_longitudinal_analogue_oos.py"
+SPEC = importlib.util.spec_from_file_location("calibrate_longitudinal_analogue_oos", MODULE_PATH)
+MODULE = importlib.util.module_from_spec(SPEC)
+assert SPEC and SPEC.loader
+SPEC.loader.exec_module(MODULE)
+build_calibration = MODULE.build_calibration
 
 
 def _state(idx: int, a: float, b: float, a_ret: float, b_ret: float) -> dict:
