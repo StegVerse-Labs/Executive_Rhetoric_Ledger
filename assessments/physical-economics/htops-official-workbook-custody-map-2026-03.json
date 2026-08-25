@@ -1,0 +1,60 @@
+{
+  "record_type": "essential_need_state",
+  "record_id": "ERL-PE-HTOPS-OFFICIAL-CUSTODY-MAP-2026-03",
+  "scope": "U.S. Census March 2026 HTOPS official direct-burden workbook map",
+  "purpose": "Resolve the remaining official-source discovery gap for household burden. The official Census table locations are now known for food sufficiency, energy spending, expense difficulty, price stress, and transportation sufficiency, with corresponding standard-error tables. Numeric values are not promoted until the official workbooks are directly extracted and preserved.",
+  "survey_period": "2026-03-13/2026-03-30",
+  "release_date": "2026-07-23",
+  "survey_design": "cross-sectional",
+  "sample_context": "Census reports about 136,000 households for the March 2026 table release.",
+  "official_tables": [
+    {
+      "lane": "food_sufficiency",
+      "title": "Food Sufficiency for Households in the Last Seven Days, by Select Characteristics",
+      "workbook_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/food1.xlsx",
+      "standard_error_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/se_food1.xlsx",
+      "custody_state": "OFFICIAL_FILE_LOCATION_RESOLVED_NUMERIC_EXTRACTION_PENDING"
+    },
+    {
+      "lane": "household_energy_use_and_spending",
+      "title": "Household Energy Use and Spending in the Last Two Months, by Select Characteristics",
+      "workbook_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/housing1.xlsx",
+      "standard_error_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/se_housing1.xlsx",
+      "custody_state": "OFFICIAL_FILE_LOCATION_RESOLVED_NUMERIC_EXTRACTION_PENDING"
+    },
+    {
+      "lane": "difficulty_paying_usual_household_expenses",
+      "title": "Difficulty Paying Usual Household Expenses in the Last Two Months, by Select Characteristics",
+      "workbook_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/spending1.xlsx",
+      "standard_error_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/se_spending1.xlsx",
+      "custody_state": "OFFICIAL_FILE_LOCATION_RESOLVED_NUMERIC_EXTRACTION_PENDING"
+    },
+    {
+      "lane": "price_stress",
+      "title": "Stress Caused by Price Increases, by Select Characteristics",
+      "workbook_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/spending3.xlsx",
+      "standard_error_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/se_spending3.xlsx",
+      "custody_state": "OFFICIAL_FILE_LOCATION_RESOLVED_NUMERIC_EXTRACTION_PENDING"
+    },
+    {
+      "lane": "transportation_sufficiency",
+      "title": "Sufficiency of Access to Transportation During the Last Four Weeks, by Select Characteristics",
+      "workbook_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/transportation2.xlsx",
+      "standard_error_url": "https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2603/se_transportation2.xlsx",
+      "custody_state": "OFFICIAL_FILE_LOCATION_RESOLVED_NUMERIC_EXTRACTION_PENDING"
+    }
+  ],
+  "governing_rules": [
+    "Official workbook discovery is not equivalent to numeric custody.",
+    "Secondary reconstructions remain triangulation only until official workbook values are extracted and reconciled with the matching standard errors and table specifications.",
+    "Food insufficiency must remain distinct from enough food but not always the kinds wanted.",
+    "Expense difficulty must preserve denominator, population, and response-category construction.",
+    "Transportation insufficiency cannot be attributed to price without reason-specific evidence.",
+    "Energy spending must not be collapsed into electricity commodity price because usage, delivery, fuel choice, geography, and contract structure differ."
+  ],
+  "source_page": "https://www.census.gov/data/tables/2026/demo/hhp/2603.html",
+  "methodology_page": "https://www.census.gov/programs-surveys/household-pulse-survey/technical-documentation/methodology.html",
+  "finding_authorized": true,
+  "canonical_numeric_promotion_authorized": false,
+  "publication_authorized": false
+}
