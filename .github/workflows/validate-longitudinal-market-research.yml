@@ -5,8 +5,10 @@ on:
     paths:
       - 'schemas/market-state-vector.schema.json'
       - 'schemas/trade-preference-evidence.schema.json'
+      - 'research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json'
       - 'scripts/validate_longitudinal_market_evidence.py'
       - 'scripts/find_historical_market_analogues.py'
+      - 'scripts/index_existing_crypto_market_panel.py'
       - 'scripts/label_market_forward_outcomes.py'
       - 'scripts/build_trade_preference_evidence.py'
       - 'tests/test_longitudinal_market_research.py'
@@ -36,8 +38,87 @@ jobs:
           python -m py_compile
           scripts/validate_longitudinal_market_evidence.py
           scripts/find_historical_market_analogues.py
+          scripts/index_existing_crypto_market_panel.py
           scripts/label_market_forward_outcomes.py
           scripts/build_trade_preference_evidence.py
 
       - name: Run deterministic longitudinal research tests
         run: pytest -q tests/test_longitudinal_market_research.py
+
+      - name: Index canonical ERL crypto panel
+        run: |
+          mkdir -p reports/longitudinal-market
+          python scripts/index_existing_crypto_market_panel.py \
+            research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json \
+            --out reports/longitudinal-market/indexed-panel.json
+
+      - name: Split current state from historical corpus
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reports/longitudinal-market')
+          panel=json.loads((p/'indexed-panel.json').read_text())
+          states=panel['states']
+          current={k:v for k,v in states[-1].items() if k != 'prices'}
+          history=[{k:v for k,v in row.items() if k != 'prices'} for row in states[:-1]]
+          (p/'current-state.json').write_text(json.dumps(current,indent=2,sort_keys=True)+'\n')
+          (p/'history-states.json').write_text(json.dumps({'states':history},indent=2,sort_keys=True)+'\n')
+          PY
+
+      - name: Find historical analogues
+        run: >-
+          python scripts/find_historical_market_analogues.py
+          reports/longitudinal-market/current-state.json
+          reports/longitudinal-market/history-states.json
+          --top-k 8
+          --out reports/longitudinal-market/analogue-set.json
+
+      - name: Label realized forward outcomes
+        run: >-
+          python scripts/label_market_forward_outcomes.py
+          reports/longitudinal-market/indexed-panel.json
+          --horizons 1,2,3
+          --out reports/longitudinal-market/forward-outcomes.json
+
+      - name: Build evidence-only XRP preference packet
+        run: >-
+          python scripts/build_trade_preference_evidence.py
+          reports/longitudinal-market/analogue-set.json
+          reports/longitudinal-market/forward-outcomes.json
+          --candidate XRP-USD
+          --side BUY
+          --compare BTC-USD,ETH-USD,SOL-USD
+          --horizon step_1
+          --coverage-score 0.45
+          --minimum-observations 10
+          --out reports/longitudinal-market/xrp-trade-preference.json
+
+      - name: Validate fail-closed observed packet
+        run: |
+          python scripts/validate_longitudinal_market_evidence.py state reports/longitudinal-market/current-state.json
+          python scripts/validate_longitudinal_market_evidence.py preference reports/longitudinal-market/xrp-trade-preference.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reports/longitudinal-market')
+          packet=json.loads((p/'xrp-trade-preference.json').read_text())
+          assert packet['preference'] == 'INSUFFICIENT_EVIDENCE'
+          assert packet['execution_authority'] == 'NONE'
+          assert packet['may_authorize_order'] is False
+          assert packet['source_coverage']['coverage_score'] == 0.45
+          print(json.dumps({
+            'status':'PASS',
+            'preference':packet['preference'],
+            'confidence':packet['confidence'],
+            'execution_authority':'NONE'
+          },sort_keys=True))
+          PY
+
+      - name: Upload retained longitudinal market evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: erl-longitudinal-market-evidence
+          path: reports/longitudinal-market/*.json
+          if-no-files-found: error
+          retention-days: 90
