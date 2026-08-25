@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/erl/schemas/trade-preference-evidence.schema.json",
+  "title": "ERL Trade Preference Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "evidence_id",
+    "as_of_utc",
+    "candidate",
+    "comparison_set",
+    "current_state_vector_digest",
+    "historical_analogues",
+    "outcomes",
+    "favorable_evidence",
+    "disconfirming_evidence",
+    "source_coverage",
+    "confidence",
+    "preference",
+    "research_authority",
+    "execution_authority",
+    "may_authorize_order"
+  ],
+  "properties": {
+    "schema": {"const": "stegverse.erl.trade_preference_evidence.v1"},
+    "evidence_id": {"type": "string", "minLength": 1},
+    "as_of_utc": {"type": "string", "format": "date-time"},
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instrument", "side"],
+      "properties": {
+        "instrument": {"type": "string", "minLength": 1},
+        "side": {"enum": ["BUY", "SELL", "HOLD", "FOREGO"]}
+      }
+    },
+    "comparison_set": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["instrument", "side"],
+        "properties": {
+          "instrument": {"type": "string", "minLength": 1},
+          "side": {"enum": ["BUY", "SELL", "HOLD", "FOREGO"]}
+        }
+      }
+    },
+    "current_state_vector_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "historical_analogues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["analogue_id", "similarity_score", "matched_dimensions", "material_differences"],
+        "properties": {
+          "analogue_id": {"type": "string", "minLength": 1},
+          "similarity_score": {"type": "number", "minimum": 0, "maximum": 1},
+          "matched_dimensions": {"type": "array", "items": {"type": "string"}},
+          "material_differences": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "outcomes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["observations"],
+        "properties": {
+          "observations": {"type": "integer", "minimum": 0},
+          "median_return_pct": {"type": ["number", "null"]},
+          "mean_return_pct": {"type": ["number", "null"]},
+          "positive_outcome_rate": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+          "median_adverse_excursion_pct": {"type": ["number", "null"]}
+        }
+      }
+    },
+    "favorable_evidence": {"type": "array", "items": {"type": "string"}},
+    "disconfirming_evidence": {"type": "array", "items": {"type": "string"}},
+    "source_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coverage_score", "missing_families", "stale_families"],
+      "properties": {
+        "coverage_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "missing_families": {"type": "array", "items": {"type": "string"}},
+        "stale_families": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "preference": {"enum": ["PREFER", "NEUTRAL", "DEFER", "FOREGO", "INSUFFICIENT_EVIDENCE"]},
+    "research_authority": {"const": "ERL"},
+    "execution_authority": {"const": "NONE"},
+    "may_authorize_order": {"const": false}
+  }
+}
