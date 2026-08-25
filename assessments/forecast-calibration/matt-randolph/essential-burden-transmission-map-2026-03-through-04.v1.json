@@ -1,0 +1,161 @@
+{
+  "record_type": "essential_burden_transmission_map",
+  "record_id": "ERL-FC-MR-2026-ESSENTIAL-BURDEN-MAP-V1",
+  "forecast_ref": "MR-FC-2026-03-18-SHIPPING-FUEL-FOOD-FIRST",
+  "purpose": "Reconstruct which essential household burdens showed the earliest measurable post-shock pressure after the March 2026 shipping/diesel shock without treating CPI as the governing household-welfare metric and without equating lower purchased quantity with lower underlying need.",
+  "governing_distinctions": [
+    "underlying_need_or_demand is distinct from observed_quantity_purchased",
+    "price_index is distinct from dollars_spent",
+    "dollars_spent is distinct from units_or_physical_volume_acquired",
+    "contracted_commodity_rate is distinct from delivered_total_cost",
+    "higher mandatory essential costs can compress purchasing power in another essential category without reducing underlying need",
+    "ordering of observable burden is distinct from causal attribution"
+  ],
+  "shock_clock": {
+    "primary_start": "2026-03-09/2026-03-11",
+    "basis": "USDA-documented marine bunker-fuel shock already preserved in the calibration lane",
+    "sensitivity_start": "2026-03-18",
+    "rule": "Both clocks remain visible; no result may be promoted by selecting the more favorable clock after observing outcomes."
+  },
+  "observed_lanes": [
+    {
+      "lane": "motor_fuel_consumer_cost",
+      "essential_role": "mobility/access-to-work-and-services",
+      "march_2026_observation": {
+        "cpi_mom_sa_pct": 21.5,
+        "gasoline_cpi_mom_sa_pct": 21.2,
+        "gasoline_cpi_yoy_pct": 18.9,
+        "source": "BLS CPI March 2026"
+      },
+      "posture": "EARLY_DIRECT_CONSUMER_BURDEN_SIGNAL",
+      "causal_note": "Observed rapid consumer motor-fuel price pressure contemporaneous with the broader energy shock; this alone does not isolate shipping or diesel as sole cause."
+    },
+    {
+      "lane": "home_energy_services",
+      "essential_role": "electricity_and_household_energy",
+      "march_2026_observation": {
+        "electricity_cpi_mom_sa_pct": 0.8,
+        "electricity_cpi_yoy_pct": 4.6,
+        "utility_gas_cpi_mom_sa_pct": -0.9,
+        "utility_gas_cpi_yoy_pct": 6.4,
+        "source": "BLS CPI March 2026"
+      },
+      "posture": "PREEXISTING_ESSENTIAL_COST_PRESSURE_NOT_FIRST_SHOCK_SIGNAL",
+      "causal_note": "National electricity and utility-gas indexes show continuing essential-cost burden but do not establish the first downstream manifestation of the March shipping/diesel shock. Local delivery/transmission fees can diverge materially from national averages and are not captured here at household-contract granularity."
+    },
+    {
+      "lane": "food_price_level",
+      "essential_role": "food",
+      "march_2026_observation": {
+        "food_at_home_cpi_mom_sa_pct": -0.2,
+        "food_at_home_cpi_yoy_pct": 1.9,
+        "total_food_cpi_yoy_pct": 2.7,
+        "source": "BLS CPI March 2026"
+      },
+      "april_2026_observation": {
+        "food_at_home_cpi_mom_sa_pct": 0.7,
+        "food_at_home_cpi_yoy_pct": 2.9,
+        "source": "BLS CPI April 2026"
+      },
+      "posture": "PRICE_LEVEL_ELEVATED_MONTHLY_PASS_THROUGH_LATER_VISIBLE",
+      "causal_note": "March monthly CPI did not show food first, while the year-over-year price level remained elevated; April showed renewed monthly grocery-price increase."
+    },
+    {
+      "lane": "food_quantity_and_budget_compression",
+      "essential_role": "food",
+      "observations": [
+        {
+          "period": "2026-02",
+          "retail_food_beverage_dollar_sales_yoy_pct": 1.4,
+          "retail_food_beverage_unit_sales_yoy_pct": -0.6,
+          "source": "Circana February 2026 retail scanner measurement"
+        },
+        {
+          "period": "2026-03",
+          "retail_food_beverage_dollar_sales_yoy_pct": 1.7,
+          "retail_food_beverage_unit_sales_yoy_pct": 0.1,
+          "source": "Circana March 2026 food/beverage scanner measurement"
+        },
+        {
+          "period": "2026-04",
+          "retail_food_beverage_dollar_sales_yoy_pct": -1.7,
+          "retail_food_beverage_unit_sales_yoy_pct": -4.0,
+          "source": "Circana April 2026 retail scanner measurement",
+          "confounder": "Easter/calendar shift materially affects year-over-year comparison"
+        }
+      ],
+      "posture": "PURCHASING_POWER_OR_QUANTITY_COMPRESSION_SIGNAL",
+      "causal_note": "Spending growth with flat/falling units is consistent with constrained real food acquisition. It does not establish reduced underlying food demand and does not by itself isolate diesel/shipping as the cause."
+    },
+    {
+      "lane": "producer_diesel_cost",
+      "essential_role": "upstream_transport_and_distribution_input",
+      "march_2026_observation": {
+        "processed_intermediate_diesel_price_mom_pct": 42.0,
+        "source": "BLS PPI March 2026"
+      },
+      "april_2026_observation": {
+        "processed_intermediate_diesel_price_mom_pct": 12.6,
+        "source": "BLS PPI April 2026"
+      },
+      "posture": "STRONG_UPSTREAM_COST_SHOCK"
+    },
+    {
+      "lane": "transport_distribution_cost",
+      "essential_role": "distribution_input_across_food_and_other_goods",
+      "march_2026_observation": {
+        "final_demand_transportation_warehousing_mom_pct": 1.3,
+        "intermediate_transportation_warehousing_mom_pct": 0.5,
+        "warehousing_storage_related_services_mom_pct": 4.8,
+        "source": "BLS PPI March 2026"
+      },
+      "april_2026_observation": {
+        "final_demand_transportation_warehousing_mom_pct": 5.0,
+        "intermediate_transportation_warehousing_mom_pct": 3.7,
+        "truck_freight_price_mom_pct": 8.1,
+        "source": "BLS PPI April 2026"
+      },
+      "posture": "SUPPORTED_COST_TRANSMISSION"
+    },
+    {
+      "lane": "processed_food_input_cost",
+      "essential_role": "upstream_food_production_input",
+      "march_2026_observation": {
+        "processed_foods_feeds_mom_pct": 0.9,
+        "source": "BLS PPI March 2026"
+      },
+      "april_2026_observation": {
+        "processed_foods_feeds_mom_pct": 0.4,
+        "source": "BLS PPI April 2026"
+      },
+      "posture": "SUPPORTED_UPSTREAM_FOOD_COST_PRESSURE"
+    }
+  ],
+  "cross_lane_ordering_assessment": {
+    "earliest_clear_consumer_price_signal": "motor_fuel",
+    "earliest_clear_upstream_distribution_signal": "diesel_and_transport_distribution",
+    "food_consumer_price_signal": "not_first_under_monthly_national_CPI; renewed increase visible in April",
+    "food_real_acquisition_signal": "already constrained/flat before and during March, so it cannot be cleanly dated as a new post-shock effect from aggregate year-over-year scanner data alone",
+    "utilities": "national essential-cost pressure present, but current evidence does not establish them as the first downstream March-shock manifestation",
+    "winner_authorized": false,
+    "reason": "The available lanes use different measurement systems, temporal grains, and baselines. A single ordinal winner would overstate comparability."
+  },
+  "bounded_finding": "The March-April evidence supports a coherent sequence in which a large diesel/energy shock and transportation/distribution cost increases were visible before a clean national monthly food-price acceleration. At the household level, food affordability was already strained: national grocery prices remained above year-earlier levels while food-and-beverage units were flat or falling relative to dollars spent. The evidence therefore strengthens the broader essential-cost and food-system transmission mechanism but does not establish that food consumer prices were the first downstream burden observed, nor that lower food-unit purchases reflect lower underlying food demand.",
+  "nonimplications": [
+    "Do not infer that household need for food, electricity, fuel, or water declined because observed quantity consumed or purchased declined.",
+    "Do not infer that CPI is a household purchasing-power measure.",
+    "Do not infer that national utility indexes capture local regulated delivery/transmission fees or individual contracted bill structures.",
+    "Do not infer sole or dominant diesel causation from temporal alignment alone.",
+    "Do not promote this record to a person-level credibility score."
+  ],
+  "source_receipts": [
+    "https://www.bls.gov/news.release/archives/cpi_04102026.htm",
+    "https://www.bls.gov/news.release/archives/cpi_05122026.htm",
+    "https://www.bls.gov/news.release/archives/ppi_04142026.htm",
+    "https://www.bls.gov/news.release/archives/ppi_05132026.htm",
+    "https://www.circana.com/post/february-spending-rebounds-as-consumer-resilience-drives-market-stability-reports-circana",
+    "https://www.circana.com/post/retail-sales-slip-in-april-as-calendar-shifts-economic-pressures-weigh-on-consumer-demand-reports"
+  ],
+  "finding_authorized": true,
+  "publication_authorized": false
+}
