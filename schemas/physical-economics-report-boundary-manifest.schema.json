@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.example/schemas/physical-economics-report-boundary-manifest.schema.json",
+  "title": "Physical Economics Report Boundary Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "boundary_manifest_id",
+    "report_request_id",
+    "report_as_of_time",
+    "evidence_snapshot_id",
+    "attribute_boundaries",
+    "report_boundaries",
+    "completeness_state",
+    "boundary_statement"
+  ],
+  "properties": {
+    "boundary_manifest_id": {"type": "string", "minLength": 1},
+    "report_request_id": {"type": "string", "minLength": 1},
+    "report_as_of_time": {"type": "string", "format": "date-time"},
+    "evidence_snapshot_id": {"type": "string", "minLength": 1},
+    "attribute_boundaries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "attribute_id",
+          "required_for_claim_class",
+          "earliest_admissible_date",
+          "latest_observed_date",
+          "latest_complete_date",
+          "current_period_state",
+          "methodology_regime_id",
+          "comparability_with_prior_regime",
+          "revision_vintage",
+          "geography_scope",
+          "population_scope",
+          "unit_scope",
+          "source_authority",
+          "provenance_posture",
+          "missingness_posture"
+        ],
+        "properties": {
+          "attribute_id": {"type": "string", "minLength": 1},
+          "required_for_claim_class": {"type": "boolean"},
+          "earliest_admissible_date": {"type": ["string", "null"], "format": "date"},
+          "latest_observed_date": {"type": ["string", "null"], "format": "date"},
+          "latest_complete_date": {"type": ["string", "null"], "format": "date"},
+          "current_period_state": {
+            "enum": [
+              "COMPLETE",
+              "PARTIAL_CURRENT_PERIOD",
+              "PENDING_RELEASE",
+              "REVISED_AFTER_INITIAL_RELEASE",
+              "METHODOLOGY_BREAK",
+              "UNAVAILABLE",
+              "OPAQUE"
+            ]
+          },
+          "release_or_observation_lag_days": {"type": ["integer", "null"], "minimum": 0},
+          "methodology_regime_id": {"type": "string", "minLength": 1},
+          "comparability_with_prior_regime": {
+            "enum": ["COMPARABLE", "BRIDGED", "NOT_COMPARABLE", "NO_PRIOR_REGIME", "UNRESOLVED"]
+          },
+          "revision_vintage": {"type": "string", "minLength": 1},
+          "source_release_date": {"type": ["string", "null"], "format": "date"},
+          "observation_reference_period": {"type": ["string", "null"]},
+          "geography_scope": {"type": "string", "minLength": 1},
+          "population_scope": {"type": "string", "minLength": 1},
+          "unit_scope": {"type": "string", "minLength": 1},
+          "source_authority": {"type": "string", "minLength": 1},
+          "provenance_posture": {
+            "enum": ["DIRECT_PRIMARY", "DIRECT_OFFICIAL", "RECONSTRUCTED", "SECONDARY_TRIANGULATION", "PROXY", "UNKNOWN"]
+          },
+          "missingness_posture": {
+            "enum": ["OBSERVED", "PARTIAL", "MISSING", "OPAQUE", "NOT_APPLICABLE"]
+          },
+          "uncertainty": {
+            "type": ["object", "null"],
+            "additionalProperties": true
+          },
+          "opaque_elements": {
+            "type": "array",
+            "items": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "report_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "earliest_common_comparable_date",
+        "latest_common_complete_date",
+        "historical_depth_by_attribute",
+        "partial_current_period_components",
+        "methodology_breaks",
+        "unsupported_requested_dimensions"
+      ],
+      "properties": {
+        "earliest_common_comparable_date": {"type": ["string", "null"], "format": "date"},
+        "latest_common_complete_date": {"type": ["string", "null"], "format": "date"},
+        "historical_depth_by_attribute": {
+          "type": "object",
+          "additionalProperties": {"type": ["integer", "null"], "minimum": 0}
+        },
+        "partial_current_period_components": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "methodology_breaks": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "revision_vintages": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "unsupported_requested_dimensions": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "completeness_state": {
+      "enum": ["COMPLETE_WITHIN_BOUNDARY", "PARTIAL_WITH_DISCLOSED_GAPS", "MATERIAL_ATTRIBUTES_OPAQUE", "NOT_GENERATABLE_FAIL_CLOSED"]
+    },
+    "boundary_statement": {"type": "string", "minLength": 1},
+    "receipts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["report_request_hash", "boundary_manifest_hash", "contract_version"],
+      "properties": {
+        "report_request_hash": {"type": "string", "minLength": 1},
+        "boundary_manifest_hash": {"type": "string", "minLength": 1},
+        "source_receipt_set": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "renderer_version": {"type": ["string", "null"]},
+        "contract_version": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
