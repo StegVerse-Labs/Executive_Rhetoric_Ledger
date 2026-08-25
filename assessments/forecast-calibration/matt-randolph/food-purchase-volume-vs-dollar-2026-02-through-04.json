@@ -2,7 +2,7 @@
   "record_type": "food_purchase_volume_vs_dollar",
   "record_id": "ERL-FC-MR-2026-FOOD-VOLUME-DOLLAR-001",
   "purpose": "Separate food-price indexes and dollar sales from the physical/unit quantity of food purchased when evaluating affordability and downstream transmission claims.",
-  "scope": "United States retail food and beverage, February-April 2026",
+  "scope": "United States retail food and beverage, February-July 2026 evidence",
   "sources": [
     {
       "source_id": "CIRCANA-2026-02-RETAIL",
@@ -18,6 +18,21 @@
       "source_id": "CIRCANA-2026-04-RETAIL",
       "source_type": "retail_scanner_market_measurement",
       "url": "https://www.circana.com/post/retail-sales-slip-in-april-as-calendar-shifts-economic-pressures-weigh-on-consumer-demand-reports"
+    },
+    {
+      "source_id": "CIRCANA-2026-H1-OUTLOOK",
+      "source_type": "retail_food_beverage_market_measurement",
+      "url": "https://www.circana.com/post/circana-s-2026-2027-global-food-and-beverage-outlook-predicts-slow-to-moderate-growth-as-market-ente"
+    },
+    {
+      "source_id": "CIRCANA-2026-07-12-DEMAND-SIGNALS",
+      "source_type": "cpg_retail_market_measurement",
+      "url": "https://www.circana.com/post/cpg-demand-signals-report"
+    },
+    {
+      "source_id": "USDA-ERS-FMAP-DOCUMENTATION",
+      "source_type": "official_quantity_normalization_methodology",
+      "url": "https://www-tx.ers.usda.gov/data-products/food-at-home-monthly-area-prices/documentation"
     },
     {
       "source_id": "BLS-CPI-2026-03",
@@ -43,7 +58,22 @@
       "period": "2026-04",
       "retail_food_beverage_dollar_sales_yoy_pct": -1.7,
       "retail_food_beverage_unit_sales_yoy_pct": -4.0,
-      "interpretation": "Physical/unit demand fell substantially faster than dollar sales. Calendar effects, including Easter timing, remain a material confounder."
+      "interpretation": "Unit purchasing fell substantially faster than dollar sales. Calendar effects, including Easter timing, remain a material confounder."
+    },
+    {
+      "period": "2026-H1",
+      "retail_food_beverage_dollar_growth_pct": 2.2,
+      "retail_food_beverage_volume_growth": "flat",
+      "retail_food_beverage_price_mix_growth_pct": 2.3,
+      "interpretation": "First-half market growth came from price/mix rather than greater food volume."
+    },
+    {
+      "period": "latest_four_weeks_ending_2026-07-12",
+      "retail_food_beverage_volume_yoy_pct": -0.6,
+      "retail_food_beverage_price_mix_yoy_pct": 2.6,
+      "underlying_item_price_inflation_contribution_pct_points": 1.5,
+      "positive_product_mix_contribution_pct_points": 1.1,
+      "interpretation": "Later-2026 food-and-beverage volume was contracting while price/mix remained positive, reinforcing the distinction between money spent and quantity acquired."
     }
   ],
   "march_department_unit_sales_yoy_pct": [
@@ -54,6 +84,12 @@
     {"department": "bakery", "value": -4.2},
     {"department": "seafood", "value": -4.6}
   ],
+  "physical_quantity_methodology": {
+    "status": "METHOD_AVAILABLE_CURRENT_2026_PHYSICAL_MASS_SERIES_NOT_YET_CUSTODIED",
+    "USDA_ERS_method": "USDA ERS Food-at-Home Monthly Area Prices uses retail scanner quantities and converts package weights to grams, including ounce, pound, and fluid-ounce conversions, to compute per-quantity unit values.",
+    "importance": "This establishes a reproducible path for package-size-adjusted quantity analysis rather than relying only on retail units.",
+    "remaining_gap": "A current 2026 package-size-adjusted national mass, calorie, or nutritional-quantity series has not yet been preserved in this lane."
+  },
   "price_index_context": {
     "march_food_at_home_cpi_mom_sa_pct": -0.2,
     "march_food_at_home_cpi_yoy_pct": 1.9,
@@ -63,11 +99,12 @@
     "Dollar sales, price indexes, units purchased, weight/volume, package size, household basket quality, and purchasing power are distinct state variables.",
     "Unit sales are a closer proxy for physical purchasing than dollar sales but are not identical to pounds, kilograms, calories, or nutritional quantity because package sizes and product mix differ.",
     "A decline in CPI cannot be interpreted as increased food consumption volume without quantity evidence.",
-    "Dollar growth accompanied by flat or falling units is evidence consistent with consumers paying more per unit/mix while not receiving proportionally more physical food.",
+    "Dollar or price/mix growth accompanied by flat or falling volume is consistent with consumers paying more per acquired amount or changing product mix while not receiving proportionally more food.",
+    "Observed quantity contraction must not be labeled lower underlying food demand or need without separate evidence.",
     "Department-level divergence must remain visible; aggregate food volume can mask substitution across categories.",
     "No household-level or state-level conclusion is authorized from national aggregate scanner data alone."
   ],
-  "bounded_finding": "The February-March national retail evidence is more consistent with constrained food purchasing than with improved grocery affordability: February food/beverage units fell despite higher dollar sales, and March unit sales were essentially flat while dollar sales rose. April unit sales then fell sharply, though calendar effects complicate the comparison.",
+  "bounded_finding": "Across multiple 2026 windows, national retail food-and-beverage dollar or price/mix growth exceeded physical/unit-volume growth. February units fell while dollars rose; March units were essentially flat while dollars rose; first-half volume was flat while price/mix rose 2.3%; and volume was down 0.6% in the latest four weeks through July 12 while price/mix was up 2.6%. This supports persistent real-acquisition pressure but does not establish reduced underlying food need or isolate diesel/shipping as the sole cause.",
   "finding_authorized": true,
   "publication_authorized": false
 }
