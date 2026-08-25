@@ -1,0 +1,92 @@
+{
+  "record_type": "forecast_threshold_protocol",
+  "record_id": "ERL-FC-MR-2026-03-07-HORMUZ-THRESHOLD-V1",
+  "forecast_id": "MR-FC-2026-03-07-THIRD-WEEK",
+  "purpose": "Freeze a bounded, reproducible evaluation of the March 7 first-party statement that the Strait of Hormuz cannot remain closed beyond three weeks because global recession begins to take hold and countries around the world put a stop to it.",
+  "first_party_source": {
+    "date": "2026-03-07",
+    "title": "The 3rd Week Is Critical",
+    "url": "https://mattrandolph.substack.com/p/the-3rd-week-is-critical",
+    "custody_status": "FIRST_PARTY_TRANSCRIPT_TEXT_RETRIEVABLE",
+    "authorized_text": "We know that the Strait of Hormuz simply cannot be closed beyond three weeks, thats when global recession begins to take hold and countries around the world put a stop to it."
+  },
+  "claim_decomposition": [
+    {
+      "component": "effective_closure_persists_to_three_week_threshold",
+      "meaning": "Operational shipping disruption remains at closure-like severity through approximately three weeks from the observed closure onset."
+    },
+    {
+      "component": "closure_cannot_persist_materially_beyond_three_weeks",
+      "meaning": "Operational closure-like conditions cease soon after the three-week threshold."
+    },
+    {
+      "component": "global_recession_begins_to_take_hold_near_threshold",
+      "meaning": "Independent global macro evidence near or after the threshold shows a material deterioration toward recession, not merely higher prices or a single-country slowdown."
+    },
+    {
+      "component": "countries_intervene_to_stop_closure",
+      "meaning": "Multilateral or multi-country action materially ends or reverses closure-like conditions rather than merely discussing, pressuring, negotiating, or allowing isolated transits."
+    }
+  ],
+  "clock_policy": {
+    "primary_clock": {
+      "start": "2026-02-28",
+      "basis": "Independent chronology identifies the onset of the war and near-halt/closure-like Hormuz shipping disruption beginning February 28.",
+      "three_week_threshold": "2026-03-21"
+    },
+    "sensitivity_clock": {
+      "start": "2026-03-07",
+      "basis": "Forecast publication date; retained because the source sentence does not explicitly name its closure-start anchor.",
+      "three_week_threshold": "2026-03-28"
+    },
+    "rule": "The primary operational clock and publication-date sensitivity clock must both remain visible. No favorable result may be obtained by silently switching clocks after observing outcomes."
+  },
+  "effective_closure_operationalization": {
+    "state": "CLOSURE_LIKE",
+    "criteria": [
+      "commercial transits at or below 10 percent of normal traffic, or",
+      "authoritative reporting describes the strait as closed, near standstill, near halt, or effectively blocked with only isolated/authorized crossings"
+    ],
+    "reopening_requirement": "Sustained, broadly available commercial transit materially above closure-like levels. Announcements, conditional safe lanes, isolated permissions, or a few crossings do not by themselves satisfy reopening.",
+    "anti_hindsight_rule": "Do not redefine closure after observing the chronology."
+  },
+  "macro_recession_operationalization": {
+    "reason_for_bounded_definition": "The source says global recession begins to take hold, which is softer than a completed global recession and does not name a metric.",
+    "required_evidence": [
+      "independent global growth forecasts or nowcasts showing material conflict-linked deterioration",
+      "evidence that deterioration approaches a recognized global-recession range rather than only slower positive growth",
+      "global or broad multi-economy scope rather than a single-country recession"
+    ],
+    "classification_rule": {
+      "SUPPORTED": "Independent contemporaneous evidence indicates the global economy has entered or is very near a recessionary regime attributable materially to the disruption.",
+      "PARTIAL_MIXED": "Independent evidence shows substantial global growth deterioration and recession risk, but baseline global growth remains clearly positive or recession is confined to an adverse/severe scenario.",
+      "NOT_SUPPORTED": "Independent evidence shows no material global growth deterioration or recession risk near the threshold.",
+      "UNRESOLVED_SOURCE_MEANING": "The phrase begins to take hold cannot be mapped reproducibly to the available evidence without inventing a threshold."
+    }
+  },
+  "intervention_operationalization": {
+    "qualifying": [
+      "multi-country diplomatic agreement that materially restores broadly available transit",
+      "coordinated maritime/security action that materially restores broadly available transit",
+      "other independently verified collective action that ends closure-like conditions"
+    ],
+    "nonqualifying_alone": [
+      "public pressure or statements",
+      "negotiations without restored transit",
+      "isolated ship permissions",
+      "temporary or conditional lanes while traffic remains closure-like",
+      "single-country action without evidence it materially ended the closure"
+    ]
+  },
+  "source_receipts": [
+    "https://mattrandolph.substack.com/p/the-3rd-week-is-critical",
+    "https://www.reuters.com/world/middle-east/shipping-traffic-through-hormuz-virtual-standstill-despite-ceasefire-data-shows-2026-04-09/",
+    "https://www.reuters.com/world/middle-east/ships-crossing-hormuz-need-irgc-ok-unfreezing-assets-part-deal-iran-official-2026-04-17/",
+    "https://www.reuters.com/world/middle-east/shipping-traffic-through-hormuz-still-largely-halted-2026-04-21/",
+    "https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2026_d4623013-en/full-report.html",
+    "https://www.imf.org/en/blogs/articles/2026/04/14/war-darkens-global-economic-outlook-and-reshapes-policy-priorities"
+  ],
+  "status": "PREDECLARED_READY_FOR_EXECUTION",
+  "finding_authorized": false,
+  "publication_authorized": false
+}
