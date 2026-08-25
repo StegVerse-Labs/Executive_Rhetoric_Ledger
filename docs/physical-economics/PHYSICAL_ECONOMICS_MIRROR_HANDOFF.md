@@ -27,9 +27,9 @@ If any economically relevant attribute changes, continuity of the unit must be e
 ## Relationship to ERL transition calculus
 The lane consumes the canonical ERL transition tuple and observation/reconstruction/hypothesis ordering. It does not replace or redefine the core calculus.
 
-Physical-economics transition observations should map into:
+Physical-economics transition observations map into:
 - `S_pre`: prior economic-unit / producer / household / population state;
-- `S_post`: subsequent state;
+- `S_post`: subsequent economic-unit / producer / household / population state;
 - `C`: evidenced continuity relation for the compared unit/system;
 - `E`: price, quantity, quality, income, cost, margin, burden, need, and administrative evidence;
 - `P`: provenance and independence posture;
@@ -37,6 +37,13 @@ Physical-economics transition observations should map into:
 - `Q`: transition qualification/state.
 
 Observation first, model second, explanation last remains binding.
+
+## Canonical machine surfaces
+- reusable lane contract: `contracts/physical-economics.contract.json`
+- canonical state schema: `schemas/physical-economics-state.schema.json`
+- consumer seed retained for provenance: `assessments/forecast-calibration/matt-randolph/physical-economic-condition-index-target.v0.1.json`
+
+The reusable contract is authoritative for lane-level machine semantics. The Randolph PECI target remains a consumer-specific seed and must not silently supersede the reusable contract.
 
 ## Lane architecture
 The reusable lane owns the following component surfaces:
@@ -92,6 +99,16 @@ Direct evidence is preferred. Candidate inputs include:
 
 Margin may be inferred only when direct inputs are unavailable, and inferred margin must remain explicitly lower-confidence.
 
+## Canonical record types
+`schemas/physical-economics-state.schema.json` currently recognizes:
+- `economic_unit_state`
+- `essential_need_state`
+- `population_burden_state`
+- `producer_cost_margin_state`
+- `tax_fee_flow`
+
+The schema is structural and does not yet constitute validator activation. Semantic fail-closed validators remain required.
+
 ## Adjacent indexes and anti-circularity
 Existing indexes may be imported only after validating construction and determining whether they introduce circular assumptions.
 
@@ -146,33 +163,48 @@ Research already available to this lane includes:
 These evidence records remain in the Randolph calibration directory until generalized equivalents are created or linked. Their provenance must not be lost during promotion.
 
 ## Promotion boundary
-The Physical Economics lane is now a reusable ERL lane. The existing Randolph `physical-economic-condition-index-target.v0.1.json` remains a consumer-specific seed/legacy research artifact and must not be deleted or rewritten merely to hide its origin.
+The Physical Economics lane is now a reusable ERL lane with:
+- its own canonical mirror handoff;
+- a reusable machine contract outside the Randolph assessment directory;
+- a canonical JSON Schema for the five core physical-economics record families.
 
-The reusable lane should create canonical general-purpose schemas/protocols and then link consumer assessments to them.
+The existing Randolph `physical-economic-condition-index-target.v0.1.json` remains a consumer-specific seed/legacy research artifact and must not be deleted or rewritten merely to hide its origin.
 
-## Validation and activation
-Promotion means the lane is architecturally recognized and has a canonical handoff. It does NOT yet mean:
-- all sub-indexes are calculated;
-- a composite PECI is authorized;
-- validators are complete;
+Promotion does NOT yet mean:
+- all native sub-indexes are calculated;
+- semantic validators are complete;
+- a scalar PECI is authorized;
+- hosted exact-head validation has passed;
 - production activation/release has occurred;
 - independent review has occurred.
 
+## Validation requirements
+Required fail-closed validators remain:
+1. economic-unit continuity: same sticker price cannot establish continuity if quantity/quality/service attributes changed or are materially unknown;
+2. unmet-need semantics: lower observed acquisition cannot be mapped to lower essential need without evidence;
+3. distribution preservation: aggregate output cannot erase required population strata when source data support them;
+4. producer-margin posture: direct/reconstructed/inferred margin evidence modes must remain distinguishable, with inferred residual explicitly lower-confidence;
+5. tax/fee flow uniqueness: a charge with the same flow identity cannot be counted twice across propagation nodes.
+
 ## Next executable work
-1. create a reusable machine-readable Physical Economics lane specification outside the Randolph directory;
-2. create schemas for economic-unit state, essential-need state, burden-distribution state, producer cost-margin state, and tax/fee flow;
-3. create fail-closed validators for unit continuity, unmet-need semantics, distribution-preservation, margin evidence posture, and tax/fee double counting;
-4. link Randolph calibration to the reusable lane without moving or deleting historical research records;
-5. prototype the reusable state vector on food, electricity, motor fuel, and housing;
-6. validate with exact-head hosted checks before claiming activation.
+1. create semantic fail-closed validators for unit continuity, unmet-need semantics, distribution preservation, margin evidence posture, and tax/fee double counting;
+2. create positive and negative fixtures for food shrinkflation, electricity delivery charges, insurance coverage/deductible transitions, and rent-plus-fee transitions;
+3. link Randolph calibration explicitly to `contracts/physical-economics.contract.json` without deleting historical research records;
+4. prototype the reusable state vector on food, electricity, motor fuel, and housing;
+5. add hosted CI for the reusable physical-economics lane;
+6. independently review the contract/schema/validator semantics before any composite index or release claim.
 
 ## Current posture
-- lane promotion: `CANONICAL_HANDOFF_CREATED`;
-- reusable machine specification: not yet created;
-- schemas: not yet created;
-- validators: not yet created;
+- lane promotion: `FORMAL_REUSABLE_ERL_LANE`;
+- canonical handoff: complete;
+- reusable machine specification: complete;
+- canonical state schema: complete for five core record families;
+- semantic validators: not yet created;
+- hosted exact-head validation: not yet observed;
+- native sub-index calculations: not complete;
 - composite index: not authorized;
+- independent review: not complete;
 - release: not authorized.
 
 ## Archive posture
-This handoff is the source of truth for continuation of ERL Physical Economics work. The lane is promoted architecturally but not yet fully implemented or activated.
+This handoff is the source of truth for continuation of ERL Physical Economics work. The lane is formally promoted and machine-addressable, but not yet fully validated, activated, or released.
