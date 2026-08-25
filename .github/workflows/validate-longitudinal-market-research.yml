@@ -6,11 +6,13 @@ on:
       - 'schemas/market-observation.schema.json'
       - 'schemas/market-state-vector.schema.json'
       - 'schemas/trade-preference-evidence.schema.json'
+      - 'schemas/market-source-timeseries.schema.json'
       - 'research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json'
       - 'research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json'
       - 'research-data/longitudinal-market-source-registry.v1.json'
       - 'research-data/longitudinal-market-source-health-policy.v1.json'
       - 'scripts/validate_longitudinal_market_evidence.py'
+      - 'scripts/validate_market_source_timeseries.py'
       - 'scripts/find_historical_market_analogues.py'
       - 'scripts/index_existing_crypto_market_panel.py'
       - 'scripts/index_crypto_system_shock_event.py'
@@ -24,6 +26,7 @@ on:
       - 'tests/test_generic_market_event_normalizer.py'
       - 'tests/test_longitudinal_source_health.py'
       - 'tests/test_longitudinal_analogue_oos.py'
+      - 'tests/test_market_source_timeseries.py'
       - '.github/workflows/validate-longitudinal-market-research.yml'
   workflow_dispatch:
 
@@ -49,6 +52,7 @@ jobs:
         run: >-
           python -m py_compile
           scripts/validate_longitudinal_market_evidence.py
+          scripts/validate_market_source_timeseries.py
           scripts/find_historical_market_analogues.py
           scripts/index_existing_crypto_market_panel.py
           scripts/index_crypto_system_shock_event.py
@@ -59,7 +63,7 @@ jobs:
           scripts/calibrate_longitudinal_analogue_oos.py
 
       - name: Run deterministic longitudinal research tests
-        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py tests/test_longitudinal_source_health.py tests/test_longitudinal_analogue_oos.py
+        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py tests/test_longitudinal_source_health.py tests/test_longitudinal_analogue_oos.py tests/test_market_source_timeseries.py
 
       - name: Index canonical ERL crypto panel
         run: |
