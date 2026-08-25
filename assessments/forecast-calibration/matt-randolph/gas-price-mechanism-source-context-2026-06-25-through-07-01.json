@@ -1,0 +1,41 @@
+{
+  "record_type": "source_context_bundle",
+  "record_id": "ERL-FC-MR-2026-GAS-MECHANISM-CONTEXT-001",
+  "purpose": "Preserve first-party explanatory source objects that may define Randolph's gas/refining mechanism before the July 13 indicator-selection claim without inflating the forecast count.",
+  "items": [
+    {
+      "source_id": "MR-2026-06-25-HOW-GAS-PRICES-WORK",
+      "date": "2026-06-25",
+      "title": "How Gas Prices Work",
+      "substack_url": "https://substack.com/@mrglobal/note/c-282558841",
+      "embedded_video_url": "https://youtu.be/0VE3LOxm4eY",
+      "displayed_time": "3:06 PM",
+      "timezone_status": "UNVERIFIED",
+      "transcript_status": "NOT_ACQUIRED",
+      "classification": "EXPLANATORY_CONTEXT_UNLESS_FORWARD_PROPOSITION_IS_CUSTODIED",
+      "authorized_use": "May inform source-defined mechanism only after directly inspectable transcript/caption content is preserved.",
+      "forecast_count_increment": false
+    },
+    {
+      "source_id": "MR-2026-07-01-CHEAP-OIL-CHEAP-GAS",
+      "date": "2026-07-01",
+      "title": "When Cheap Oil Doesn’t Mean Cheap Gas",
+      "substack_url": "https://substack.com/@mrglobal/note/c-286379948",
+      "embedded_video_url": "https://youtu.be/BwTtIlOBL40",
+      "displayed_time": "8:59 PM",
+      "timezone_status": "UNVERIFIED",
+      "transcript_status": "NOT_ACQUIRED",
+      "classification": "EXPLANATORY_CONTEXT_UNLESS_FORWARD_PROPOSITION_IS_CUSTODIED",
+      "authorized_use": "The title supports only the descriptive possibility that cheap crude and cheap gasoline can diverge; it does not establish a forecast horizon or downstream target.",
+      "forecast_count_increment": false
+    }
+  ],
+  "anti_inflation_rules": [
+    "A descriptive or explanatory source is not a forecast merely because later events resemble its mechanism.",
+    "A forward-looking proposition may be promoted only from preserved first-party text or directly inspectable video/caption content.",
+    "Later July 13 indicator language does not retroactively convert June 25 or July 1 into forecasts.",
+    "Mechanism continuity across multiple Randolph objects may be represented as source lineage without duplicate forecast credit."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
