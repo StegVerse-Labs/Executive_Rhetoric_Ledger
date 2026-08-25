@@ -1,0 +1,24 @@
+{
+  "schema": "stegverse.erl.longitudinal_market_source_health_policy.v1",
+  "policy_id": "ERL-LONGITUDINAL-MARKET-SOURCE-HEALTH-V1",
+  "freshness_hours": {
+    "spot_market": 48,
+    "event_context": 168,
+    "derivatives": 24,
+    "order_book_liquidity": 6,
+    "stablecoin_flows": 48,
+    "etf_fund_flows": 72,
+    "on_chain_flows": 48,
+    "macro_cross_market": 72
+  },
+  "scoring": {
+    "FRESH": 1.0,
+    "STALE": 0.25,
+    "UNKNOWN_FRESHNESS": 0.0,
+    "MISSING": 0.0
+  },
+  "rule": "Freshness is evaluated against an explicit as_of_utc. Missing timestamps never inherit freshness from another source family.",
+  "research_authority": "ERL",
+  "execution_authority": "NONE",
+  "may_authorize_order": false
+}
