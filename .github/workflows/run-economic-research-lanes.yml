@@ -1,0 +1,105 @@
+name: Run Economic Research Lanes
+
+on:
+  schedule:
+    - cron: "31 13 * * 2"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "economic-trajectories/research-lanes.v1.json"
+      - "economic-trajectories/*/gap-matrix.v1.json"
+      - "schemas/economic-research-lanes.schema.json"
+      - "scripts/run_economic_research_lanes.py"
+      - "tests/test_economic_research_lanes.py"
+      - ".github/workflows/run-economic-research-lanes.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: economic-research-lanes
+  cancel-in-progress: false
+
+jobs:
+  capture-and-route:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validation dependencies
+        run: python -m pip install --upgrade jsonschema pytest
+      - name: Validate lane contracts and deterministic boundaries
+        run: |
+          python scripts/validate_economic_trajectories.py
+          pytest -q tests/test_economic_research_lanes.py
+      - name: Recover previous governed source state
+        run: |
+          git fetch origin automation/economic-research-lanes:refs/remotes/origin/automation/economic-research-lanes || true
+          git show origin/automation/economic-research-lanes:economic-trajectories/automation/source-state.v1.json > /tmp/economic-source-state.previous.json || true
+      - name: Capture official national sources and route review tasks
+        id: capture
+        run: |
+          CAPTURED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          PREVIOUS=()
+          if test -s /tmp/economic-source-state.previous.json; then
+            PREVIOUS=(--previous /tmp/economic-source-state.previous.json)
+          fi
+          python scripts/run_economic_research_lanes.py \
+            --captured-at "$CAPTURED_AT" \
+            --out economic-trajectories/automation/latest-run.v1.json \
+            --state-out economic-trajectories/automation/source-state.v1.json \
+            "${PREVIOUS[@]}"
+      - name: Validate generated state remains non-promotional
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          run=json.loads(Path("economic-trajectories/automation/latest-run.v1.json").read_text())
+          assert run["summary"]["findings_created"] == 0
+          assert run["summary"]["comparisons_created"] == 0
+          assert run["authority"] == {
+              "finding_authorized": False,
+              "comparison_authorized": False,
+              "publication_authorized": False,
+          }
+          assert all(row["evidence_use"] == "DISCOVERY_ONLY_UNTIL_REVIEW" for row in run["receipts"])
+          print(json.dumps(run["summary"], sort_keys=True))
+          PY
+      - name: Upload research receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: erl-economic-research-lanes
+          path: economic-trajectories/automation/*.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Maintain governed research-candidate PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH="automation/economic-research-lanes"
+          git config user.name "stegverse-economic-research-bot"
+          git config user.email "stegverse-economic-research-bot@users.noreply.github.com"
+          git checkout -B "$BRANCH" main
+          git add economic-trajectories/automation/latest-run.v1.json economic-trajectories/automation/source-state.v1.json
+          if git diff --cached --quiet; then
+            echo "No economic source-state changes."
+            exit 0
+          fi
+          git commit -m "chore: refresh governed economic research candidates"
+          git push --force-with-lease origin "$BRANCH"
+          BODY="Automated official-source fingerprints and gap-routed review tasks for the independent Canada and U.S. lanes. No findings, comparisons, or publication are authorized."
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            gh pr edit "$BRANCH" --title "Refresh governed economic research candidates" --body "$BODY"
+          else
+            gh pr create --base main --head "$BRANCH" --title "Refresh governed economic research candidates" --body "$BODY"
+          fi

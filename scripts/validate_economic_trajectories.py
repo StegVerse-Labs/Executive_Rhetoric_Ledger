@@ -8,11 +8,14 @@ from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker
 
+from run_economic_research_lanes import validate_registry
+
 ROOT = Path(__file__).resolve().parents[1]
 DICT_PATH = ROOT / "economic-trajectories/measurement-dictionary.v1.json"
 CA_PATH = ROOT / "economic-trajectories/canada/trajectory.v1.json"
 US_PATH = ROOT / "economic-trajectories/united-states/trajectory.v1.json"
 OVERLAY_PATH = ROOT / "economic-trajectories/comparison/overlay.v1.json"
+RESEARCH_LANES_PATH = ROOT / "economic-trajectories/research-lanes.v1.json"
 GAP_PATHS = [
     ROOT / "economic-trajectories/canada/gap-matrix.v1.json",
     ROOT / "economic-trajectories/united-states/gap-matrix.v1.json",
@@ -21,6 +24,7 @@ SCHEMAS = {
     "dictionary": ROOT / "schemas/economic-measurement-dictionary.schema.json",
     "national": ROOT / "schemas/national-economic-trajectory.schema.json",
     "overlay": ROOT / "schemas/economic-comparison-overlay.schema.json",
+    "research_lanes": ROOT / "schemas/economic-research-lanes.schema.json",
 }
 
 
@@ -277,6 +281,7 @@ def main() -> int:
     canada = load(CA_PATH)
     united_states = load(US_PATH)
     overlay = load(OVERLAY_PATH)
+    research_lanes = load(RESEARCH_LANES_PATH)
     indicator_ids = {item["indicator_id"] for item in dictionary.get("indicators", [])}
 
     errors: list[str] = []
@@ -284,8 +289,14 @@ def main() -> int:
     errors.extend(f"Canada: {error}" for error in validate_national(canada, schemas["national"], indicator_ids))
     errors.extend(f"United States: {error}" for error in validate_national(united_states, schemas["national"], indicator_ids))
     errors.extend(f"overlay: {error}" for error in validate_overlay(overlay, schemas["overlay"], canada, united_states))
+    errors.extend(f"research lanes: {error}" for error in schema_errors(schemas["research_lanes"], research_lanes))
     for path in GAP_PATHS:
         errors.extend(f"{path.relative_to(ROOT)}: {error}" for error in validate_gap_matrix(load(path)))
+    gap_ids = {
+        "ERL-ECON-CA": {row["gap_id"] for row in load(GAP_PATHS[0])["rows"]},
+        "ERL-ECON-US": {row["gap_id"] for row in load(GAP_PATHS[1])["rows"]},
+    }
+    errors.extend(f"research lanes: {error}" for error in validate_registry(research_lanes, indicator_ids, gap_ids))
     errors.extend(f"self-test: {error}" for error in run_self_tests(
         schemas["national"], schemas["overlay"], indicator_ids, canada, united_states, overlay
     ))
@@ -303,7 +314,9 @@ def main() -> int:
         "us_findings": len(united_states["findings"]),
         "comparison_hypotheses": len(overlay["hypotheses"]),
         "comparisons": len(overlay["comparisons"]),
-        "negative_tests": 4,
+        "automated_sources": sum(len(lane["sources"]) for lane in research_lanes["lanes"]),
+        "automated_national_lanes": sum(lane["mode"] == "national-source-monitor" for lane in research_lanes["lanes"]),
+        "negative_tests": 7,
         "publication_authorized": False,
     }, sort_keys=True))
     return 0

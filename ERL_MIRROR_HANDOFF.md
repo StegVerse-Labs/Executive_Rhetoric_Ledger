@@ -191,6 +191,15 @@ Release condition: validator-clean WS-D artifacts plus independent review record
 - required discriminator: matched cross-administration prompt/output comparison measuring unsolicited mitigating qualifiers, evidence ordering, question substitution, and framing symmetry
 - publication authorized: false pending controlled comparison and independent review
 
+## Adjacent paired national economic trajectories — 2026-08-25
+
+- canonical coordination: Issue #78 / draft PR #79 / `feature/paired-national-economic-trajectories`
+- bounded handoffs: `CANADA_ECONOMIC_TRAJECTORY_MIRROR_HANDOFF.md`, `US_ECONOMIC_TRAJECTORY_MIRROR_HANDOFF.md`, and `COMPARATIVE_ECONOMIC_TRAJECTORIES_MIRROR_HANDOFF.md`
+- installed automation increment: independent weekly official-source monitors, source revision/staleness receipts, national gap routing, deterministic boundary tests, and a governed candidate-PR workflow
+- comparison source adapters: prohibited
+- automated finding, comparison, causal inference, publication, and propagation authority: false
+- activation condition: automation workflow is merged to `main` and completes a live scheduled or manually dispatched run; evidence findings remain separately review-gated
+
 ## Adjacent model-behavior redirect candidate — 2026-08-16
 
 - record: `assessments/machine/ERL-2026-08-16-CHATGPT-LONGITUDINAL-MOTIVE-THRESHOLD-REDIRECT.json`

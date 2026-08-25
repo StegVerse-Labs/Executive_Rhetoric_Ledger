@@ -30,7 +30,7 @@ Comparison may identify gaps; it may not fill them by inference.
 
 ```yaml
 lane_id: ERL-ECON-CA-US-OVERLAY
-status: FRAMEWORK_IMPLEMENTATION
+status: REVIEWED_INPUT_GATE_IMPLEMENTATION
 comparison_findings_authorized: false
 lag_finding_authorized: false
 causal_finding_authorized: false
@@ -61,6 +61,8 @@ The proposition that Canada is approximately six years ahead of the United State
 - deterministic positive and negative fixtures;
 - validator and CI integration;
 - explicit failure when raw observations or unreviewed national findings are compared.
+- explicit prohibition on external-source adapters in the comparison lane;
+- manual-only comparison cadence pending reviewed national inputs.
 
 ## Release conditions
 
@@ -68,4 +70,10 @@ No comparative conclusion may advance until both referenced national findings ar
 
 ## Remaining work
 
-All real comparison results remain pending national evidence population and review.
+All real comparison results remain pending national evidence population and review. Automated national acquisition may create comparison-relevant gaps, but it cannot populate or promote this lane.
+
+Known missing durable modules and destinations:
+
+- definition-reconciliation packets → `economic-trajectories/comparison/reconciliation/`;
+- structural-break and lag-analysis code → `scripts/economic_comparison/`;
+- independent comparison-review receipts → `economic-trajectories/comparison/reviews/`.

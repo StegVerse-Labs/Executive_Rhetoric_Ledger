@@ -69,3 +69,21 @@ Lead or lag is measured per aligned indicator or reviewed finding. A single glob
 ## Authority
 
 Automation may retrieve, normalize, validate, identify gaps, and propose hypotheses. It may not publish a finding, infer missing effects, or convert temporal sequence into causation.
+
+## Automated research lanes
+
+National automation must use an allowlisted source registry whose source jurisdiction matches the lane. Each captured revision is discovery-only until a reviewer admits its content as an observation and records definition, period, revision, limitations, and effect posture.
+
+Automation may:
+
+- fingerprint declared official sources;
+- detect changed, stale, unavailable, or unexpected source responses;
+- route a source event only to its declared national gap;
+- retain a provenance receipt and create a review-required candidate.
+
+Automation may not:
+
+- attach a Canadian source to a U.S. national gap or the reverse;
+- install an external-source adapter in the comparison overlay;
+- convert a source revision into a national finding;
+- close a gap, infer an effect, compare countries, or publish without governed review.

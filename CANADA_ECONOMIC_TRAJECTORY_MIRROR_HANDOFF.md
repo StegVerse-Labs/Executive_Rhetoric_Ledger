@@ -39,7 +39,7 @@ Every material finding must identify the measure, unit, price basis, population 
 
 ```yaml
 lane_id: ERL-ECON-CA
-status: FRAMEWORK_IMPLEMENTATION
+status: AUTOMATED_EVIDENCE_ACQUISITION_IMPLEMENTATION
 national_findings_authorized: false
 comparison_promotion_authorized: false
 publication_authorized: false
@@ -54,6 +54,10 @@ canonical_issue: 78
 - source and gap matrix;
 - validator and deterministic fixtures;
 - CI integration.
+- weekly official-source monitoring manifest;
+- deterministic source fingerprinting and revision detection;
+- gap-routed review-task generation;
+- governed automation candidate branch with no finding or publication authority.
 
 ## Evidence acquisition order
 
@@ -71,4 +75,11 @@ A Canadian trajectory finding may advance only when its national evidence chain 
 
 ## Remaining work
 
-All evidence population, review, and findings remain pending after the initial framework build.
+The automated lane now monitors declared Statistics Canada household, trade, and labor/automation surfaces and routes changes to Canadian gaps. Historical series extraction, source-specific normalization, evidentiary admission, mechanism analysis, independent review, and findings remain pending.
+
+Known missing durable modules and destinations:
+
+- source-specific historical-series adapters → `scripts/economic_adapters/canada/`;
+- normalized revision-vintaged series → `economic-trajectories/canada/series/`;
+- evidentiary admission queue → `economic-trajectories/canada/admission-queue.v1.json`;
+- independent review receipts → `economic-trajectories/canada/reviews/`.

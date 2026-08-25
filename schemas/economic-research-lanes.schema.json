@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/economic-research-lanes.schema.json",
+  "title": "Automated Economic Research Lanes",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "registry_id", "lanes", "authority"],
+  "properties": {
+    "schema_version": {"const": "stegverse.erl.economic-research-lanes.v1"},
+    "registry_id": {"const": "ERL-ECON-RESEARCH-LANES-V1"},
+    "lanes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/lane"}
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["may_capture", "may_route_gaps", "may_create_findings", "may_compare", "may_publish"],
+      "properties": {
+        "may_capture": {"const": true},
+        "may_route_gaps": {"const": true},
+        "may_create_findings": {"const": false},
+        "may_compare": {"const": false},
+        "may_publish": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lane_id", "jurisdiction", "mode", "cadence", "sources"],
+      "properties": {
+        "lane_id": {"enum": ["ERL-ECON-CA", "ERL-ECON-US", "ERL-ECON-CA-US-OVERLAY"]},
+        "jurisdiction": {"enum": ["Canada", "United States", "Canada-United States comparison"]},
+        "mode": {"enum": ["national-source-monitor", "reviewed-findings-only"]},
+        "cadence": {"enum": ["weekly", "manual-only"]},
+        "sources": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/source"}
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "publisher", "jurisdiction", "source_class", "url", "method", "gap_ids", "indicator_ids", "expected_media_types", "stale_after_days", "evidence_use"],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^ERL-ECON-(CA|US)-SRC-[A-Z0-9-]+$"},
+        "publisher": {"type": "string", "minLength": 1},
+        "jurisdiction": {"enum": ["Canada", "United States"]},
+        "source_class": {"enum": ["official-government", "central-bank", "legislative", "international-organization"]},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "method": {"const": "GET"},
+        "gap_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "indicator_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^ECON-[A-Z0-9-]+$"}},
+        "expected_media_types": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "stale_after_days": {"type": "integer", "minimum": 1, "maximum": 400},
+        "evidence_use": {"const": "DISCOVERY_ONLY_UNTIL_REVIEW"}
+      }
+    }
+  }
+}
