@@ -1,0 +1,77 @@
+{
+  "schema": "stegverse.erl.longitudinal_market_source_registry.v1",
+  "registry_id": "ERL-LONGITUDINAL-MARKET-SOURCES-V1",
+  "purpose": "Track admitted and required market-research source families without treating absence as evidence or silently imputing missing context.",
+  "families": [
+    {
+      "family": "spot_market",
+      "state": "PARTIAL",
+      "admitted_sources": [
+        "research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json"
+      ],
+      "current_granularity": "daily",
+      "target_granularity": ["1m", "5m", "1h", "1d"],
+      "required_expansion": ["volume", "higher_frequency_price", "additional_venues"]
+    },
+    {
+      "family": "event_context",
+      "state": "PARTIAL",
+      "admitted_sources": [
+        "research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json",
+        "research-data/2026-08-20_2026-08-21_rlusd_institutional_credit_transition.v1.json",
+        "research-data/2026-08-21_wlf_usd1_positive_adoption_matrix.json",
+        "research-data/2025-01_trump_meme_event_baseline.v1.json"
+      ],
+      "current_granularity": "event",
+      "target_granularity": ["exact_timestamp", "event_window", "decay_state"],
+      "required_expansion": ["systematic event normalization", "source-age decay", "event-type controls"]
+    },
+    {
+      "family": "derivatives",
+      "state": "MISSING",
+      "admitted_sources": [],
+      "required_expansion": ["funding", "basis", "open_interest", "liquidations", "options_iv_skew"]
+    },
+    {
+      "family": "order_book_liquidity",
+      "state": "MISSING",
+      "admitted_sources": [],
+      "required_expansion": ["spread", "depth", "imbalance", "depth_withdrawal"]
+    },
+    {
+      "family": "stablecoin_flows",
+      "state": "MISSING",
+      "admitted_sources": [],
+      "required_expansion": ["supply", "exchange_flows", "cross_chain_flows"]
+    },
+    {
+      "family": "etf_fund_flows",
+      "state": "MISSING",
+      "admitted_sources": [],
+      "required_expansion": ["spot_crypto_etf_flows", "fund_flow_proxies"]
+    },
+    {
+      "family": "on_chain_flows",
+      "state": "PARTIAL_RESEARCH_ONLY",
+      "admitted_sources": [
+        "research-data/2025-01_trump_meme_primary_source_custody.v1.json"
+      ],
+      "required_expansion": ["exchange_inflows", "large_transfers", "bridge_flows", "network_activity"]
+    },
+    {
+      "family": "macro_cross_market",
+      "state": "MISSING",
+      "admitted_sources": [],
+      "required_expansion": ["rates", "treasury_yields", "DXY", "equities", "volatility", "gold", "oil", "financial_conditions"]
+    }
+  ],
+  "coverage_policy": {
+    "rule": "Coverage is scored from admitted source families and freshness; a valid source in one family never implies coverage of another family.",
+    "missing_family_effect": "LOWER_CONFIDENCE",
+    "stale_family_effect": "LOWER_CONFIDENCE_OR_DEFER",
+    "silent_imputation": false
+  },
+  "research_authority": "ERL",
+  "execution_authority": "NONE",
+  "may_authorize_order": false
+}
