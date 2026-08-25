@@ -3,15 +3,19 @@ name: Validate Longitudinal Market Research
 on:
   push:
     paths:
+      - 'schemas/market-observation.schema.json'
       - 'schemas/market-state-vector.schema.json'
       - 'schemas/trade-preference-evidence.schema.json'
       - 'research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json'
+      - 'research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json'
       - 'scripts/validate_longitudinal_market_evidence.py'
       - 'scripts/find_historical_market_analogues.py'
       - 'scripts/index_existing_crypto_market_panel.py'
+      - 'scripts/index_crypto_system_shock_event.py'
       - 'scripts/label_market_forward_outcomes.py'
       - 'scripts/build_trade_preference_evidence.py'
       - 'tests/test_longitudinal_market_research.py'
+      - 'tests/test_market_observation_ingestion.py'
       - '.github/workflows/validate-longitudinal-market-research.yml'
   workflow_dispatch:
 
@@ -39,11 +43,12 @@ jobs:
           scripts/validate_longitudinal_market_evidence.py
           scripts/find_historical_market_analogues.py
           scripts/index_existing_crypto_market_panel.py
+          scripts/index_crypto_system_shock_event.py
           scripts/label_market_forward_outcomes.py
           scripts/build_trade_preference_evidence.py
 
       - name: Run deterministic longitudinal research tests
-        run: pytest -q tests/test_longitudinal_market_research.py
+        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py
 
       - name: Index canonical ERL crypto panel
         run: |
@@ -51,6 +56,30 @@ jobs:
           python scripts/index_existing_crypto_market_panel.py \
             research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json \
             --out reports/longitudinal-market/indexed-panel.json
+
+      - name: Normalize system shock into event observation
+        run: >-
+          python scripts/index_crypto_system_shock_event.py
+          research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json
+          --out reports/longitudinal-market/system-shock-observation.json
+
+      - name: Validate event observation
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+          p=Path('reports/longitudinal-market')
+          observation=json.loads((p/'system-shock-observation.json').read_text())
+          schema=json.loads(Path('schemas/market-observation.schema.json').read_text())
+          errors=list(Draft202012Validator(schema,format_checker=FormatChecker()).iter_errors(observation))
+          assert not errors, [error.message for error in errors]
+          assert observation['status'] == 'UNRESOLVED'
+          assert observation['facts']['finding_authorized'] is False
+          assert observation['execution_authority'] == 'NONE'
+          assert observation['may_authorize_order'] is False
+          print(json.dumps({'status':'PASS','observation_id':observation['observation_id'],'execution_authority':'NONE'},sort_keys=True))
+          PY
 
       - name: Split current state from historical corpus
         run: |
