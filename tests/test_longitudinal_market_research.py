@@ -17,6 +17,7 @@ analogue = load_module("analogue", "scripts/find_historical_market_analogues.py"
 validator = load_module("validator", "scripts/validate_longitudinal_market_evidence.py")
 labeler = load_module("labeler", "scripts/label_market_forward_outcomes.py")
 preference = load_module("preference", "scripts/build_trade_preference_evidence.py")
+indexer = load_module("indexer", "scripts/index_existing_crypto_market_panel.py")
 
 
 def state(state_id, ts, **features):
@@ -36,6 +37,22 @@ def state(state_id, ts, **features):
         "execution_authority": "NONE",
         "may_authorize_order": False,
     }
+
+
+def test_canonical_panel_indexes_without_fabricating_missing_families():
+    source = ROOT / "research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json"
+    panel = json.loads(source.read_text())
+    indexed = indexer.build_states(panel, str(source))
+    assert len(indexed["states"]) == 9
+    final = indexed["states"][-1]
+    assert final["prices"]["XRP-USD"] == 1.45
+    assert final["features"]["xrp_xlm_ratio"] > 7.18
+    assert "derivatives" in final["source_coverage"]["missing_families"]
+    assert final["source_coverage"]["coverage_score"] == 1.0
+    assert final["execution_authority"] == "NONE"
+    schema = json.loads((ROOT / "schemas/market-state-vector.schema.json").read_text())
+    state_without_prices = {key: value for key, value in final.items() if key != "prices"}
+    assert validator.validate_document(state_without_prices, schema) == []
 
 
 def test_nearest_analogue_is_ranked_first_and_deterministic():
@@ -86,12 +103,7 @@ def test_trade_preference_builder_can_choose_candidate_or_forego_from_analogue_o
         records.append({
             "state_id": historical["state_id"],
             "as_of_utc": historical["as_of_utc"],
-            "horizons": {
-                "step_1": {
-                    "status": "OBSERVED",
-                    "returns_pct": {"BTC-USD": 1.0 + i * 0.01, "ETH-USD": 0.2},
-                }
-            },
+            "horizons": {"step_1": {"status": "OBSERVED", "returns_pct": {"BTC-USD": 1.0 + i * 0.01, "ETH-USD": 0.2}}},
         })
     outcome_panel = {"records": records, "execution_authority": "NONE", "may_authorize_order": False}
     packet = preference.build_trade_preference_evidence(
@@ -121,11 +133,7 @@ def test_trade_preference_validator_rejects_execution_authority():
             "may_authorize_order": {"const": False},
         },
     }
-    doc = {
-        "research_authority": "ERL",
-        "execution_authority": "TVC",
-        "may_authorize_order": True,
-    }
+    doc = {"research_authority": "ERL", "execution_authority": "TVC", "may_authorize_order": True}
     errors = validator.validate_document(doc, schema)
     assert any("execution_authority" in error for error in errors)
     assert any("may_authorize_order" in error for error in errors)
