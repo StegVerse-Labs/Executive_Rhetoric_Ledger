@@ -31,26 +31,40 @@
     {
       "component": "consumer_food_price_increase",
       "posture": "PARTIAL_MIXED",
-      "basis": "Nationwide CPI food was flat month over month in March, then rose in subsequent months; this supports later consumer-food movement but not sole attribution to shipping fuel. Importantly, the March nationwide food-at-home index remained 1.9% above its year-earlier level despite a -0.2% seasonally adjusted monthly move, so no household-affordability improvement is inferred.",
+      "basis": "Nationwide CPI food was flat month over month in March, then rose in subsequent months; this supports later consumer-food movement but not sole attribution to shipping fuel. The March nationwide food-at-home index remained 1.9% above its year-earlier level despite a -0.2% seasonally adjusted monthly move, so no affordability improvement is inferred.",
       "independence": "independent_official_source"
+    },
+    {
+      "component": "food_purchase_quantity_pressure",
+      "posture": "SUPPORTED_AT_NATIONAL_RETAIL_UNIT_LEVEL",
+      "basis": "National retail scanner evidence shows February 2026 food-and-beverage dollar sales rose 1.4% year over year while unit sales fell 0.6%; in March dollar sales rose 1.7% while unit sales were only 0.1% higher, effectively flat physical purchasing by unit despite higher spending. April unit sales then fell 4.0% while dollar sales fell only 1.7%, though calendar effects complicate that month.",
+      "independence": "independent_market_measurement_source",
+      "evidence_ref": "food-purchase-volume-vs-dollar-2026-02-through-04.json"
+    },
+    {
+      "component": "household_food_affordability_pressure",
+      "posture": "SUPPORTED_AS_AGGREGATE_PRESSURE_NOT_HOUSEHOLD_UNIVERSAL",
+      "basis": "Higher or persistent food price levels combined with dollar spending growth and flat/falling unit purchases are consistent with constrained purchasing power at the national retail aggregate level. This does not establish the experience of every household or state and does not measure weight, calories, nutrition quality, or wages directly.",
+      "independence": "multiple_independent_sources"
     },
     {
       "component": "food_prices_first_terminal_ordering",
       "posture": "NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING",
-      "basis": "Under the frozen nationwide CPI-U monthly consumer-category comparator and primary March 9-11 marine-fuel-shock clock, food was not uniquely the first category to show monthly movement. This is a narrow ordering result only: the national food-at-home index was still 1.9% above March 2025 and the result does not imply grocery bills or household purchasing power improved.",
+      "basis": "Under the frozen nationwide CPI-U monthly consumer-category comparator and primary March 9-11 marine-fuel-shock clock, food was not uniquely the first category to show monthly movement. This is a narrow ordering result only; it does not address quantity contraction, substitution, shrinkflation, or household purchasing power.",
       "independence": "independent_official_source",
       "execution_ref": "march-18-food-first-comparator-execution.v1.json"
     },
     {
       "component": "shipping_fuel_as_dominant_or_sole_cause",
       "posture": "NOT_CLAIMED_OR_NOT_AUTHORIZED",
-      "basis": "Current preserved first-party text does not authorize an exclusivity claim, and observed food prices have multiple contemporaneous causal inputs.",
+      "basis": "Current preserved first-party text does not authorize an exclusivity claim, and observed food prices and purchasing behavior have multiple contemporaneous causal inputs.",
       "independence": "not_applicable"
     }
   ],
-  "affordability_guard": "A monthly CPI decrease cannot be translated into improved household grocery affordability or purchasing power without separate price-level, wage/income, geography, and household-basket evidence.",
-  "component_resolution_rule": "Supported intermediate transition links may receive component support without converting the terminal forecast into RESOLVED_CORRECT; a failed terminal ordering component likewise does not erase supported intermediate mechanism links.",
-  "next_gate": "Preserve any retrievable March 18 transcript to determine whether the video narrows, broadens, or qualifies the subtitle-level ordering claim. Until then, the V1 CPI ordering result is binding only for the explicitly bounded nationwide monthly CPI interpretation.",
+  "affordability_guard": "Monthly CPI, year-over-year CPI, dollars spent, units purchased, physical weight/volume, calories/nutrition, package size, wages/income, geography, and household basket composition are distinct state variables. No one of them may be used as a substitute for another without explicit evidence.",
+  "component_resolution_rule": "Supported intermediate transition links and quantity/affordability pressure may receive component support without converting the terminal forecast into RESOLVED_CORRECT; a failed terminal ordering component likewise does not erase supported mechanism or real-economy effects.",
+  "overall_interpretive_shift": "The March 18 lane now shows stronger evidence of real-economy transmission than the monthly CPI ordering test alone conveyed: the shipping/freight/diesel chain is supported, national retail food quantity was constrained relative to dollars spent, and aggregate food affordability pressure is supported. The narrower claim that food was uniquely first in monthly national CPI ordering remains not supported under V1.",
+  "next_gate": "Preserve any retrievable March 18 transcript to determine whether the video narrows, broadens, or qualifies the subtitle-level ordering claim. Extend quantity evidence toward package-size-adjusted physical volume, weight, calories/nutrition, and income-adjusted affordability before any household-welfare conclusion.",
   "aggregate_credibility_effect_authorized": false,
   "publication_authorized": false
 }
