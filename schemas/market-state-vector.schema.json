@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/erl/schemas/market-state-vector.schema.json",
+  "title": "ERL Longitudinal Market State Vector",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "state_id",
+    "as_of_utc",
+    "feature_version",
+    "features",
+    "source_coverage",
+    "research_authority",
+    "execution_authority",
+    "may_authorize_order"
+  ],
+  "properties": {
+    "schema": {"const": "stegverse.erl.market_state_vector.v1"},
+    "state_id": {"type": "string", "minLength": 1},
+    "as_of_utc": {"type": "string", "format": "date-time"},
+    "feature_version": {"type": "string", "minLength": 1},
+    "universe": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "features": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "number"},
+          {"type": "string"},
+          {"type": "boolean"},
+          {"type": "null"}
+        ]
+      }
+    },
+    "event_context": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["event_id", "event_type", "observed_at_utc", "age_seconds", "source_refs"],
+        "properties": {
+          "event_id": {"type": "string", "minLength": 1},
+          "event_type": {"type": "string", "minLength": 1},
+          "observed_at_utc": {"type": "string", "format": "date-time"},
+          "age_seconds": {"type": "number", "minimum": 0},
+          "source_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1}
+        }
+      }
+    },
+    "source_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coverage_score", "missing_families", "stale_families", "source_refs"],
+      "properties": {
+        "coverage_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "missing_families": {"type": "array", "items": {"type": "string"}},
+        "stale_families": {"type": "array", "items": {"type": "string"}},
+        "source_refs": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "vector_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "research_authority": {"const": "ERL"},
+    "execution_authority": {"const": "NONE"},
+    "may_authorize_order": {"const": false}
+  }
+}
