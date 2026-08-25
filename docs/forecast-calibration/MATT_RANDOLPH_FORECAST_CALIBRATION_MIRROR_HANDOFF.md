@@ -22,9 +22,10 @@ Reconstruct roughly four months of Matt Randolph / Mr Global energy and Iran-con
 - Later Randolph retrospectives are new source objects, not independent confirmation of earlier forecasts.
 - Title/subtitle-only sources impose a hard proposition ceiling until transcript or directly inspectable first-party video content is preserved.
 - Explanatory context objects do not increment forecast count without a preserved forward-looking proposition.
+- A national essential-cost price index is supporting context only; it is not a household burden, delivered-bill, unmet-need, or purchasing-power measure.
 
 ## Durable research surfaces
-Core evidence and execution records include:
+Core evidence/execution records include:
 - `source-manifest.json`
 - `world-event-chronology.json`
 - `official-economic-series-2026-06-08-through-08-17.json`
@@ -37,6 +38,10 @@ Core evidence and execution records include:
 - `essential-burden-transmission-map-2026-03-through-04.v1.json`
 - `essential-purchasing-power-protocol.v1.json`
 - `delivered-electricity-cost-structure-oncor-2026.json`
+- `national-essential-cost-context-2026-01-through-07.json`
+- `essential-services-theme-source-2026-05-29.json`
+- `march-07-hormuz-threshold-protocol.v1.json`
+- `march-07-hormuz-threshold-execution.v1.json`
 - `july-video-transcript-acquisition.json`
 - `prospective-outcome-gating-2026-07.json`
 - `indicator-lag-test-execution-v0.1.json`
@@ -55,170 +60,156 @@ Component-resolution records:
 - `MR-2026-03-18-shipping-fuel-food.component-resolution.json`
 - `MR-2026-07-13-watch-diesel.component-resolution.json`
 
-## First-party source and transcript custody
-Exact June-July bindings remain:
-- June 25 `How Gas Prices Work` -> Substack `c-282558841` -> YouTube `0VE3LOxm4eY`;
-- July 1 `When Cheap Oil Doesn’t Mean Cheap Gas` -> Substack `c-286379948` -> YouTube `BwTtIlOBL40`;
-- July 8 `Higher Diesel Means Higher Inflation` -> Substack `c-290789385` -> YouTube `XqiDEUHs9nY`;
-- July 13 `Watch Gas and Diesel Prices Not Oil` -> Substack `c-293975586` -> YouTube `C1twq1liA_4`;
-- July 16 `It's About The Diesel` -> Substack `c-295859281`; no embedded-video binding observed.
+## First-party source custody
+### March 7
+`The 3rd Week Is Critical` now exposes first-party transcript text:
+`We know that the Strait of Hormuz simply cannot be closed beyond three weeks, thats when global recession begins to take hold and countries around the world put a stop to it.`
+This source is no longer title-only.
 
-A fresh 2026-08-25 retrieval pass did not produce substantive first-party transcript text for the four embedded June/July video IDs. These remain title-bounded.
+### March 18 / April 8
+The March 18 page exposes a `Generate transcript` interface but no substantive transcript; current ceiling remains `High Shipping Fuel Costs Hit Food Prices First.`
+The April 8 `Diesel Is Everything` page likewise exposes no substantive transcript; current ceiling remains title + subtitle `A wake-up call about the diesel-driven economy in the United States.`
 
-The March 18 first-party Substack page visibly presents a `Generate transcript` interface but exposes no substantive transcript text. The preserved proposition ceiling remains the subtitle `High Shipping Fuel Costs Hit Food Prices First.`
+### June-July video bindings
+- Jun 25 `How Gas Prices Work` -> Substack `c-282558841` -> YouTube `0VE3LOxm4eY`.
+- Jul 1 `When Cheap Oil Doesn’t Mean Cheap Gas` -> `c-286379948` -> `BwTtIlOBL40`.
+- Jul 8 `Higher Diesel Means Higher Inflation` -> `c-290789385` -> `XqiDEUHs9nY`.
+- Jul 13 `Watch Gas and Diesel Prices Not Oil` -> `c-293975586` -> `C1twq1liA_4`.
+- Jul 16 `It's About The Diesel` -> `c-295859281`; no embedded-video binding observed.
+Fresh 2026-08-25 retrieval did not yield substantive first-party transcript text for these embedded video IDs; title ceilings remain.
 
-The April 8 `Diesel Is Everything` first-party page likewise presents a `Generate transcript` interface but exposes no substantive transcript text. Current authorized content is limited to the title and subtitle `A wake-up call about the diesel-driven economy in the United States.`
+### May 29 essential-services theme
+The first-party archive preserves `The U.S. Treats Services Necessary For Survival No Different Than A Netflix Subscription. This Has To Change.` with an 18:33 media object.
+`essential-services-theme-source-2026-05-29.json` preserves this as `THEMATIC_ALIGNMENT_ONLY`.
+No exact list of services, policy mechanism, CPI claim, or purchasing-power model may be attributed to Randolph without richer custody.
 
-The May 29 first-party archive preserves the title `The U.S. Treats Services Necessary For Survival No Different Than A Netflix Subscription. This Has To Change.` with an 18:33 media object. This is evidence of an explicit essential-services theme, but without richer custody it must not be expanded into an exact list of services, policy prescription, mechanism, or forecast.
+## March 7 Hormuz threshold — executed
+V1 protocol freezes both clocks:
+- primary operational-closure clock: Feb 28 -> Mar 21 three-week threshold;
+- publication sensitivity: Mar 7 -> Mar 28.
+Closure-like state is frozen as <=10% of normal commercial traffic or authoritative closed/near-standstill/near-halt reporting; isolated permissions or conditional lanes do not equal reopening.
 
-## March 18 mechanism and essential-burden posture
-First-party subtitle: `High Shipping Fuel Costs Hit Food Prices First.`
+Independent execution:
+- Apr 9: seven ships/24h vs ~140 normal; closure-like conditions persisted.
+- Apr 17: conditional IRGC-authorized passage/safe lanes and negotiations, but broad normal transit not established.
+- Apr 21: three ships/24h vs ~140 normal; closure-like conditions persisted.
+- Apr 30: Reuters still described the strait as closed two months into the conflict.
+- Mar 26 OECD: Hormuz/energy shock materially weakened global growth outlook while baseline 2026 global growth remained positive at 2.9%.
+- Apr 14 IMF: war halted prior growth momentum; adverse/severe scenarios showed deeper deterioration, with severe conditions approaching global recession, while the baseline remained positive.
 
-Independent evidence supports:
-- marine bunker-fuel shock — `SUPPORTED`;
-- grain ocean-freight increase — `SUPPORTED`;
-- domestic diesel cost pressure — `SUPPORTED`;
-- transportation/distribution cost pass-through — `SUPPORTED`;
-- national retail food-unit purchasing pressure — `SUPPORTED_AT_NATIONAL_RETAIL_UNIT_LEVEL`;
-- aggregate household-food affordability pressure — `SUPPORTED_AS_AGGREGATE_PRESSURE_NOT_HOUSEHOLD_UNIVERSAL`;
-- later consumer food-price movement — `PARTIAL_MIXED`;
-- shipping fuel as sole/dominant cause — not authorized.
+Component postures:
+- closure persisted to three-week threshold — `SUPPORTED`;
+- closure could not persist materially beyond three weeks — `NOT_SUPPORTED`;
+- global recession begins to take hold near threshold — `PARTIAL_MIXED`;
+- countries intervene to stop closure — `PARTIAL_MIXED` because intervention occurred but did not end closure-like conditions near the threshold;
+- exact three-week inflection point — `LIMITED_SUPPORT`.
 
-### Cross-category essential-burden reconstruction
-The V1 map does not treat the question as a CPI-only race.
+Overall March 7 forecast state is now `PARTIAL_MIXED`.
+Strongest supported interpretation: Randolph identified an early-duration threshold for rapidly escalating global macro risk and intervention pressure, but the literal three-week closure-duration cap failed and a realized global recession at that threshold is not established.
 
-March observations already preserved:
-- processed-intermediate diesel: `+42.0%` month over month;
-- final-demand transportation/warehousing: `+1.3%`;
-- warehousing/storage/related services: `+4.8%`;
-- consumer motor fuel: `+21.5%` seasonally adjusted;
-- gasoline: `+21.2%` month over month and `+18.9%` year over year;
-- electricity: `+0.8%` month over month and `+4.6%` year over year;
-- food at home: `-0.2%` month over month but `+1.9%` year over year;
-- food/beverage dollar sales: `+1.7%` year over year while units were only `+0.1%`;
-- February food/beverage dollars: `+1.4%` while units were `-0.6%`.
+## March 18 food / shipping / diesel posture
+First-party ceiling: `High Shipping Fuel Costs Hit Food Prices First.`
 
-April observations include:
-- processed-intermediate diesel: `+12.6%`;
-- final-demand transportation/warehousing: `+5.0%`;
-- intermediate transportation/warehousing: `+3.7%`;
-- truck freight: `+8.1%`;
-- food at home: `+0.7%` month over month and `+2.9%` year over year;
-- food/beverage units: `-4.0%` year over year versus dollar sales `-1.7%`, with Easter/calendar effects retained as a confounder.
+Supported:
+- marine bunker-fuel shock;
+- grain ocean-freight increase;
+- domestic diesel cost pressure;
+- transport/distribution cost pass-through;
+- national retail food-unit purchasing pressure;
+- aggregate food-affordability pressure, not universal household experience.
 
-Current bounded ordering:
-- earliest clear upstream distribution signal: `diesel_and_transport_distribution`;
-- earliest clear direct national consumer-price burden: `motor_fuel`;
-- food consumer-price acceleration: not first under monthly national CPI; renewed increase is clearer in April;
-- food real-acquisition pressure: already visible before/during March and therefore cannot be cleanly dated as newly caused by the March shock from year-over-year scanner data alone;
-- utilities: essential-cost pressure present, but not established as the first downstream March-shock manifestation;
-- no single cross-lane winner authorized because the measurements have different temporal grains and baselines.
+March observations already preserved include processed-intermediate diesel `+42.0%` MoM, consumer gasoline `+21.2%` MoM, transportation/warehousing `+1.3%`, food-at-home `-0.2%` MoM but `+1.9%` YoY, and March food/beverage dollars `+1.7%` YoY while units were only `+0.1%`.
+April continues the transmission: processed-intermediate diesel `+12.6%`, final-demand transportation/warehousing `+5.0%`, truck freight `+8.1%`, and food-at-home `+0.7%` MoM.
 
-### Food quantity evidence now extends beyond April
-The food quantity record now preserves:
-- February: dollars `+1.4%`, units `-0.6%` year over year;
-- March: dollars `+1.7%`, units `+0.1%`;
-- April: dollars `-1.7%`, units `-4.0%` with calendar confounding;
-- first half 2026: U.S. retail food/beverage dollar growth `+2.2%`, volume growth flat, price/mix `+2.3%`;
-- latest four weeks through 2026-07-12: retail food/beverage volume `-0.6%`, price/mix `+2.6%`, with Circana attributing 1.5 percentage points to underlying item-price inflation and 1.1 points to positive product mix.
+Food quantity evidence now extends through July:
+- Feb dollars `+1.4%`, units `-0.6%` YoY;
+- Mar dollars `+1.7%`, units `+0.1%`;
+- Apr dollars `-1.7%`, units `-4.0%`, calendar confounder retained;
+- first half 2026 food/beverage dollars `+2.2%`, volume flat, price/mix `+2.3%`;
+- latest four weeks through Jul 12 volume `-0.6%`, price/mix `+2.6%`.
+Do not call this `demand destruction`; underlying food need is distinct from observed quantity.
 
-This strengthens the conclusion that dollar or price/mix growth exceeded quantity growth across multiple 2026 windows. It does not authorize the phrase `demand destruction`; observed food quantity contraction remains distinct from underlying food need.
+USDA F-MAP supplies a methodological bridge toward package-adjusted mass because scanner package weights are normalized to grams. A current 2026 national mass/calorie series remains uncustodied.
 
-USDA ERS F-MAP documentation now supplies the methodological bridge toward package-size-adjusted physical quantity: scanner package weights are normalized to grams, including ounce, pound, and fluid-ounce conversion. A current 2026 national mass/calorie series still has not been custodied, so physical-volume completion remains open.
+Frozen narrow CPI result remains:
+`food_prices_first_terminal_ordering = NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING`.
+This does not adjudicate purchasing power, take-home quantity, shrinkflation, or broader transmission. Overall March 18 remains `UNRESOLVED` because missing transcript context may narrow or qualify the subtitle.
 
 ## Essential Purchasing Power V1
-`essential-purchasing-power-protocol.v1.json` is now active.
-
-It reconstructs each essential lane as:
+Active model:
 `resources -> mandatory delivered cost -> dollars spent -> quantity/service acquired -> substitution/compression`.
+Essential lanes include food, required motor fuel/transport, delivered electricity, household energy, water/sewer, housing-required cost, and required insurance where applicable.
 
-Declared essential lanes include food, required motor fuel/transport, delivered electricity, household energy, water/sewer, housing-required cost, and required insurance where applicable.
+BEA macro anchor:
+- Mar: nominal DPI `+0.6%`, real DPI `-0.1%`, current-dollar PCE `+0.9%`, real PCE `+0.2%`, saving rate `3.6%`;
+- Apr: nominal DPI `-0.1%`, real DPI `-0.5%`, current-dollar PCE `+0.5%`, real PCE `+0.1%`, saving rate `2.6%`.
+Gasoline/other energy goods accounted for `$81.3B` SAAR of the March PCE increase; food/beverages `$6.9B` SAAR.
+Bounded result: aggregate real purchasing power contracted while nominal spending rose. This is not a universal household finding.
 
-National macro anchor from BEA:
-- March 2026: nominal DPI `+0.6%` month over month, real DPI `-0.1%`, current-dollar PCE `+0.9%`, real PCE `+0.2%`, saving rate `3.6%`;
-- April 2026: nominal DPI `-0.1%`, real DPI `-0.5%`, current-dollar PCE `+0.5%`, real PCE `+0.1%`, saving rate `2.6%`.
+## Delivered electricity structure
+Oncor record establishes `fixed supply contract != fixed delivered total cost`.
+Supply is sold by the REP while Oncor bills delivery through the REP; residential delivery can include DSC, TCRF, DCRF, EECRF, NDC, riders and surcharges. Whether/how passed through depends on the REP contract.
+2026 Oncor base-rate materials estimated about a 3% total monthly bill effect for a 1,000-kWh example at a $0.15/kWh retail price; a separate April UTM filing estimated an additional ~$3.85/month if approved. These examples do not establish any specific household's increase.
 
-BEA also shows gasoline and other energy goods accounted for `$81.3B` SAAR of the March monthly PCE increase, while food and beverages accounted for `$6.9B` SAAR.
-
-Bounded interpretation: national real disposable purchasing power contracted in both March and April while current-dollar spending continued to rise. Combined with flat/falling food quantity relative to dollars or price/mix, this supports an aggregate purchasing-power-compression lane. It is not a universal household finding.
-
-## Delivered electricity-cost structure
-`delivered-electricity-cost-structure-oncor-2026.json` now preserves an authoritative local structural example.
-
-Oncor's own materials establish:
-- customers buy supply from a Retail Electric Provider while Oncor separately charges the REP for delivery;
-- residential delivery can include fixed charges plus Distribution System Charge, TCRF, DCRF, EECRF, NDC, and other approved riders/surcharges;
-- whether and how these charges pass through to the customer depends on the REP contract;
-- 2026 base-rate changes took effect June 1; Oncor estimated roughly a 3% total monthly bill increase for a 1,000-kWh residential example at a $0.15/kWh average retail price and stated that a separate surcharge could recover the January-to-effective-date difference;
-- a separate April UTM filing estimated an additional roughly `$3.85/month` or `2.5%` for the same example if approved; this is preserved as a filing/request, not an approved realized increase.
-
-This record establishes the structural rule `fixed supply contract != fixed delivered total cost`. It does not establish any specific household's percentage increase without that household's contract, bills, usage, and pass-through treatment.
-
-## National CPI scope
-The frozen V1 consumer-price result remains:
-
-`food_prices_first_terminal_ordering = NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING`
-
-That is binding only for the narrow nationwide monthly CPI ordering test. It does not adjudicate quantity compression, purchasing power, shrinkflation, unmet need, or the broader food-system transmission mechanism.
-
-Overall March 18 forecast state remains `UNRESOLVED` because the missing video transcript could narrow, broaden, or qualify the preserved subtitle meaning.
+## National essential-cost context
+`national-essential-cost-context-2026-01-through-07.json` adds supporting national cost context without promoting CPI to household burden:
+- Mar rent of primary residence `+2.6%` YoY;
+- Mar tenants/household insurance `+7.4%` YoY;
+- Mar water/sewerage maintenance `+5.1%` YoY;
+- Mar water/sewer/trash `+4.7%` YoY;
+- Jul shelter `+3.2%` YoY;
+- Jul rent `+2.9%` YoY;
+- Jul household insurance `+4.8%` YoY;
+- Jul water/sewerage maintenance `+5.0%` YoY.
+These are cost-pressure context only, not delivered bills, income shares, arrears, or unmet-need measures.
 
 ## Refined products versus crude
-EIA evidence continues to reject a simplistic `refineries stopped -> diesel rose` explanation. High utilization, substantial distillate production, inventory tightness, imports/exports, and crude/refined-product divergence remain separately preserved.
-
-Current July 13 conclusion remains:
-`NO_PREDICTIVE_SUPERIORITY_SCORE_AUTHORIZED_YET`.
-
-Structural refined-product/crude divergence is plausible and partly observed, but predictive superiority for inflation/freight remains unresolved pending clean prospective outcomes and source-defined target/horizon.
+EIA evidence still rejects a simplistic `refineries stopped -> diesel rose` explanation. High refinery utilization, substantial distillate production, tight inventories, imports/exports, and crude/refined-product divergence remain separately preserved.
+Current Jul 13 result remains `NO_PREDICTIVE_SUPERIORITY_SCORE_AUTHORIZED_YET` pending clean prospective outcomes and source-defined target/horizon.
 
 ## Prospective outcome guard
-For July 8 and July 13:
-- July CPI/PPI/Freight TSI remain context-only because reference periods overlap issuance;
-- August PPI is the first clean PPI period, scheduled 2026-09-10;
-- August CPI is the first clean CPI period, scheduled 2026-09-11;
-- August Freight TSI is clean for freight, scheduled 2026-10-14.
-
-No release-date leakage is authorized.
+For Jul 8 and Jul 13:
+- July CPI/PPI/Freight TSI remain context-only due overlapping reference periods;
+- August PPI is first clean PPI period, scheduled 2026-09-10;
+- August CPI first clean CPI period, scheduled 2026-09-11;
+- August Freight TSI clean freight period, scheduled 2026-10-14.
+No release-date leakage.
 
 ## Forecast states
-- March 7 three-week Hormuz threshold — `UNRESOLVED`.
-- March 18 shipping fuel / food first — `UNRESOLVED`, with supported shipping/freight/diesel transmission, supported aggregate food quantity/affordability pressure, a partial essential-burden ordering, and a narrow `NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING` component.
-- July 8 higher diesel / higher inflation — `UNRESOLVED`; transcript-defined lag/measure remains unknown and clean August targets are pending.
-- July 13 watch gas/diesel, not oil — `UNRESOLVED`; structural divergence plausible, predictive superiority not established.
+- Mar 7 Hormuz three-week threshold — `PARTIAL_MIXED`.
+- Mar 18 shipping fuel / food first — `UNRESOLVED`, with strong supported mechanism/quantity-affordability components and narrow CPI-ordering miss.
+- Jul 8 higher diesel / higher inflation — `UNRESOLVED`; transcript-defined lag/measure unknown; clean August targets pending.
+- Jul 13 watch gas/diesel, not oil — `UNRESOLVED`; structural divergence plausible; predictive superiority not established.
 
 ## Validation posture
-Last known exact-head hosted success before the newest purchasing-power changes:
-- transition-calculus run `32807558572` — `SUCCESS` on older head `585ebbad...`;
-- research-candidate activation run `32807558608` — `SUCCESS` on older head `585ebbad...`.
-
-`Validate Ledger Schemas` run `32807558576` completed `FAILURE` on older head `585ebbad...`. Its failure remains separately associated with the pre-existing White House ballroom intake/schema problem unless fresh logs prove a new cause.
-
-The newest purchasing-power, utility-cost, transcript-retrieval, and extended food-volume commits require fresh exact-head hosted checks before any new PASS is claimed.
+Last known hosted successes remain older exact-head runs:
+- transition-calculus `32807558572` — `SUCCESS` on `585ebbad...`;
+- research-candidate activation `32807558608` — `SUCCESS` on `585ebbad...`.
+`Validate Ledger Schemas` `32807558576` completed `FAILURE` on that older head and remains separately associated with the pre-existing White House ballroom intake/schema blocker unless fresh logs prove another cause.
+Newest purchasing-power, utility, March 7, and essential-context commits require fresh hosted checks before any new PASS is claimed.
 
 ## Next executable work
 1. obtain current package-size-adjusted physical food mass/weight or calorie/nutritional quantity where authoritative data permit;
-2. extend Essential Purchasing Power V1 with water/sewer, housing, required transport, and other delivered essential costs using comparable burden rather than price-only measures;
-3. preserve the May 29 essential-services source as a bounded thematic source and seek richer first-party media/text custody without extrapolating beyond the title;
-4. continue first-party/direct video-caption acquisition for June 25, July 1, July 8, and July 13;
-5. freeze and execute the March 7 Hormuz threshold protocol against authoritative operational and macro chronology;
-6. preserve and score clean August PPI/CPI and later August Freight TSI against every applicable predeclared lag lane;
-7. perform independent review before any aggregate credibility or publication decision.
+2. seek distributional household burden for water/sewer, housing, required transport, electricity, and food rather than national price-only context;
+3. continue richer first-party custody for May 29 and June/July video sources;
+4. preserve and score clean August PPI/CPI and later August Freight TSI;
+5. begin governed aggregate calibration only after materially complete source/outcome corpus and independent review design;
+6. perform independent review before any person-level credibility or publication decision.
 
 ## Quantified posture
 Denominator = 10 bounded work groups.
-
 1. durable owner/handoff — complete;
 2. source policy/manifest — materially developed;
-3. first-party corpus acquisition — materially developed; negative transcript retrieval state now explicit, transcript content still incomplete;
-4. independent world-event chronology — materially developed;
-5. machine forecast encoding — 4 live forecast records;
+3. first-party corpus acquisition — advanced; March 7 transcript now custodied, several later videos still title-bounded;
+4. independent world-event chronology — advanced;
+5. machine forecast encoding — 4 live forecast records; March 7 now component-resolved;
 6. EIA/refined-product integration — materially developed;
-7. freight-food/essential-burden integration — advanced; now includes February-July quantity evidence, BEA real-DPI anchor, and delivered-utility-cost structure;
-8. governed conditional/component resolution — advanced; Essential Purchasing Power V1 now active;
+7. freight-food/essential-burden integration — advanced; quantity, real-DPI, electricity-delivery, water/sewer/housing context now present;
+8. governed conditional/component resolution — advanced; Essential Purchasing Power V1 and March 7 threshold execution active;
 9. aggregate calibration/open-forecast confidence — not started;
 10. independent review/promotion — not started.
 
-Goal activation estimate: 84%.
+Goal activation estimate: 88%.
 
 ## Archive posture
-Current continuation state is durable, but the project is not complete. Physical-mass/nutritional quantity, richer first-party transcript custody, clean August prospective outcomes, March 7 threshold execution, aggregate calibration, and independent review remain outstanding.
+Continuation state is durable, but the project is not complete. Physical food mass/nutrition, distributional essential-burden evidence, richer transcript custody, clean August prospective outcomes, aggregate calibration, and independent review remain outstanding.
