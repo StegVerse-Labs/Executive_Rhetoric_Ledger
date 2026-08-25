@@ -1,0 +1,56 @@
+{
+  "record_type": "physical_food_quantity_method_and_gap",
+  "record_id": "ERL-FC-MR-2026-PHYSICAL-FOOD-QUANTITY-001",
+  "purpose": "Define the strongest defensible path from retail units toward package-size-adjusted physical food quantity while preserving the current absence of a public 2026 national gram/calorie series.",
+  "authoritative_method_source": "USDA Economic Research Service Food-at-Home Monthly Area Prices (F-MAP)",
+  "method": {
+    "underlying_data": "Circana retail scanner sales and quantity data",
+    "quantity_field": "purchase quantity in grams",
+    "weighted_quantity_field": "Purchase_grams_wtd",
+    "unit_value": "weighted purchase dollars divided by weighted purchase grams, reported per 100 grams",
+    "package_weight_normalization": [
+      "ounces -> grams using 28.35 grams per ounce",
+      "pounds -> grams using 28.35 x 16 grams per pound",
+      "fluid ounces -> grams using 29.57 grams per fluid ounce"
+    ],
+    "coverage": "90 food-at-home groups across 15 U.S. geographic areas"
+  },
+  "critical_availability_limit": {
+    "public_FMAP_years_currently_available": "2012-2018",
+    "2026_public_national_purchase_grams_series_found": false,
+    "2026_public_national_calorie_or_nutrition_quantity_series_found": false,
+    "interpretation": "USDA establishes that package-adjusted physical quantity can be measured in grams from scanner data, but the currently public F-MAP files do not provide a 2026 national gram series. Therefore no 2026 mass trend may be invented from the historical methodology."
+  },
+  "current_2026_quantity_evidence": {
+    "level": "RETAIL_VOLUME_OR_UNIT_PROXY_NOT_FULL_PHYSICAL_MASS",
+    "evidence_ref": "food-purchase-volume-vs-dollar-2026-02-through-04.json",
+    "known_windows": [
+      "February 2026 dollars +1.4% YoY while units -0.6%",
+      "March 2026 dollars +1.7% YoY while units +0.1%",
+      "first half 2026 food/beverage dollars +2.2% while reported volume was flat and price/mix +2.3%",
+      "latest four weeks through 2026-07-12 reported volume -0.6% while price/mix +2.6%"
+    ]
+  },
+  "interpretive_rules": [
+    "Retail units are not identical to grams, calories, nutrition, or household food adequacy.",
+    "Reported scanner volume is stronger than dollar sales for quantity direction but must retain the vendor's definition unless package-level mass fields are directly custodied.",
+    "Shrinkflation can cause unit counts to overstate physical quantity if package size falls.",
+    "Product-mix changes can change calories, nutrition quality, or mass even when retail unit counts are stable.",
+    "Historical USDA methodology validates a future gram-normalized analysis method; it does not itself provide contemporary 2026 quantities.",
+    "No causal attribution from reduced physical acquisition to diesel or shipping may be made solely from temporal co-movement."
+  ],
+  "next_evidence_targets": [
+    "contemporary package-level scanner data containing units and package weight",
+    "a 2026 USDA or other authoritative national gram/weight series if released",
+    "Purchase-to-Plate or nutrition-linked scanner outputs capable of mapping purchases to calories/nutrients",
+    "household-level acquisition data permitting income and essential-cost stratification"
+  ],
+  "source_receipts": [
+    "https://www.ers.usda.gov/data-products/food-at-home-monthly-area-prices",
+    "https://www.ers.usda.gov/data-products/food-at-home-monthly-area-prices/documentation",
+    "https://ers.usda.gov/topics/food-markets-prices/food-prices-expenditures-and-establishments"
+  ],
+  "status": "METHOD_ESTABLISHED_2026_PHYSICAL_MASS_DATA_GAP_OPEN",
+  "finding_authorized": true,
+  "publication_authorized": false
+}
