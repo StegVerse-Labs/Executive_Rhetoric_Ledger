@@ -90,7 +90,7 @@ jobs:
           --side BUY
           --compare BTC-USD,ETH-USD,SOL-USD
           --horizon step_1
-          --coverage-score 0.45
+          --coverage-score 0.25
           --minimum-observations 10
           --out reports/longitudinal-market/xrp-trade-preference.json
 
@@ -103,14 +103,17 @@ jobs:
           from pathlib import Path
           p=Path('reports/longitudinal-market')
           packet=json.loads((p/'xrp-trade-preference.json').read_text())
+          state=json.loads((p/'current-state.json').read_text())
           assert packet['preference'] == 'INSUFFICIENT_EVIDENCE'
           assert packet['execution_authority'] == 'NONE'
           assert packet['may_authorize_order'] is False
-          assert packet['source_coverage']['coverage_score'] == 0.45
+          assert state['source_coverage']['coverage_score'] == 0.25
+          assert packet['source_coverage']['coverage_score'] == state['source_coverage']['coverage_score']
           print(json.dumps({
             'status':'PASS',
             'preference':packet['preference'],
             'confidence':packet['confidence'],
+            'coverage_score':packet['source_coverage']['coverage_score'],
             'execution_authority':'NONE'
           },sort_keys=True))
           PY
