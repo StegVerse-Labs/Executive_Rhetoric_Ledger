@@ -1,0 +1,96 @@
+{
+  "record_type": "essential_purchasing_power_protocol",
+  "record_id": "ERL-FC-MR-2026-ESSENTIAL-PURCHASING-POWER-V1",
+  "purpose": "Measure household economic pressure by separating persistent essential need from delivered cost, disposable income, observed quantity acquired, and substitution/compression behavior. CPI is supporting evidence only and is not the governing welfare metric.",
+  "governing_principles": [
+    "Underlying essential need or demand must not be inferred downward merely because observed quantity purchased or consumed declines.",
+    "Contracted commodity price and delivered total cost are distinct variables; mandatory delivery, transmission, distribution, taxes, riders, and surcharges remain visible.",
+    "Price index, dollar expenditure, units purchased, physical volume or weight, package size, calories or nutritional quantity, and household income are distinct state variables.",
+    "A household can spend the same or more dollars while acquiring less physical quantity; this is consistent with purchasing-power compression and must not be labeled demand destruction without separate evidence.",
+    "Higher cost in one essential category can reduce the ability to satisfy another essential need even when the second category's own price is unchanged.",
+    "National aggregates cannot be promoted to universal household or state-level findings without distributional evidence."
+  ],
+  "essential_lanes": [
+    "food_at_home",
+    "motor_fuel_and_required_transport",
+    "electricity_delivered_total_cost",
+    "natural_gas_or_household_energy",
+    "water_and_sewer",
+    "housing_required_cost",
+    "insurance_required_cost_where_applicable"
+  ],
+  "state_variables": {
+    "resources": [
+      "nominal_disposable_personal_income",
+      "real_disposable_personal_income",
+      "household_or_distributional_income_where_available"
+    ],
+    "cost": [
+      "commodity_or_supply_rate",
+      "mandatory_delivery_transmission_distribution_charges",
+      "taxes_riders_and_surcharges",
+      "total_delivered_bill",
+      "price_level"
+    ],
+    "acquisition": [
+      "dollar_expenditure",
+      "units_purchased",
+      "package_size_adjusted_quantity",
+      "weight_or_volume",
+      "calories_or_nutritional_quantity",
+      "quality_or_product_mix_substitution"
+    ],
+    "constraint_outputs": [
+      "essential_budget_share",
+      "remaining_discretionary_capacity",
+      "quantity_compression",
+      "quality_substitution",
+      "arrears_or_unmet_need_when_observable"
+    ]
+  },
+  "national_macro_anchor": {
+    "source_family": "BEA personal income and outlays",
+    "observations": [
+      {
+        "period": "2026-03",
+        "current_dollar_DPI_mom_pct": 0.6,
+        "real_DPI_mom_pct": -0.1,
+        "current_dollar_PCE_mom_pct": 0.9,
+        "real_PCE_mom_pct": 0.2,
+        "personal_saving_rate_pct": 3.6,
+        "notable_current_dollar_PCE_change": "Gasoline and other energy goods accounted for $81.3 billion SAAR of the $195.4 billion monthly PCE increase; food and beverages accounted for $6.9 billion SAAR.",
+        "interpretation": "Nominal after-tax income rose while real after-tax purchasing power declined slightly; spending increased faster than real purchasing capacity."
+      },
+      {
+        "period": "2026-04",
+        "current_dollar_DPI_mom_pct": -0.1,
+        "real_DPI_mom_pct": -0.5,
+        "current_dollar_PCE_mom_pct": 0.5,
+        "real_PCE_mom_pct": 0.1,
+        "personal_saving_rate_pct": 2.6,
+        "interpretation": "Real disposable purchasing power contracted while current-dollar spending still increased and the saving rate fell."
+      }
+    ],
+    "source_receipts": [
+      "https://www.bea.gov/index.php/news/2026/personal-income-and-outlays-march-2026",
+      "https://www.bea.gov/news/2026/personal-income-and-outlays-april-2026",
+      "https://www.bea.gov/data/income-saving/disposable-personal-income"
+    ]
+  },
+  "food_quantity_anchor": {
+    "evidence_ref": "food-purchase-volume-vs-dollar-2026-02-through-04.json",
+    "interpretive_role": "Observed retail unit acquisition is a closer quantity signal than dollars spent but remains incomplete without package-size-adjusted weight, volume, calories, and quality mix."
+  },
+  "evaluation_rule": "For each essential lane, reconstruct resources -> mandatory delivered cost -> dollars spent -> quantity or service acquired -> substitution/compression. Do not infer welfare improvement from a price-index decline alone, and do not infer lower underlying need from lower observed quantity alone.",
+  "cross_lane_rule": "If one essential's delivered cost rises and another essential's quantity acquired falls, record the temporal relationship but do not infer cross-category causation unless income/budget or other independent evidence establishes the constraint path.",
+  "anti_hindsight_rules": [
+    "Do not select a household burden metric after observing which one gives the strongest result; preserve every predeclared lane and its null or contradictory evidence.",
+    "Do not substitute annual, monthly, household, national, price, expenditure, or quantity measures for one another after observing outcomes.",
+    "Do not convert a national average into a universal household finding.",
+    "Do not treat correlation between diesel, freight, utility, or food costs as sole or dominant causation."
+  ],
+  "current_bounded_finding": "March-April 2026 national macro evidence shows real disposable personal income declined in both months while current-dollar consumer outlays increased. Combined with independently preserved food unit-versus-dollar evidence, this supports an aggregate purchasing-power-compression lane and justifies evaluating essential delivered costs directly rather than using CPI as a household-welfare proxy.",
+  "status": "PROTOCOL_ACTIVE_EVIDENCE_PARTIAL",
+  "finding_authorized": true,
+  "publication_authorized": false
+}
