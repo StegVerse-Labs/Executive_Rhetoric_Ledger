@@ -1,0 +1,105 @@
+{
+  "record_type": "national_essential_cost_context",
+  "record_id": "ERL-FC-MR-2026-ESSENTIAL-COST-CONTEXT-001",
+  "purpose": "Preserve national cost-pressure context for essential household lanes without treating CPI as a complete household purchasing-power measure.",
+  "scope": "United States national CPI context, January-July 2026",
+  "governing_rule": "These observations describe national price-index movement only. They may support essential-cost context, but cannot by themselves establish delivered household bill changes, household burden, unmet need, or cross-category causation.",
+  "observations": [
+    {
+      "period": "2026-03",
+      "lane": "housing_required_cost",
+      "measure": "rent_of_primary_residence",
+      "mom_pct": 0.2,
+      "yoy_pct": 2.6,
+      "source": "BLS CPI March 2026"
+    },
+    {
+      "period": "2026-03",
+      "lane": "housing_required_cost",
+      "measure": "shelter",
+      "mom_pct": 0.3,
+      "source": "BLS CPI March 2026"
+    },
+    {
+      "period": "2026-03",
+      "lane": "required_insurance_context",
+      "measure": "tenants_and_household_insurance",
+      "mom_pct": 0.9,
+      "yoy_pct": 7.4,
+      "source": "BLS CPI March 2026"
+    },
+    {
+      "period": "2026-03",
+      "lane": "water_sewer_required_service",
+      "measure": "water_and_sewerage_maintenance",
+      "mom_pct": 0.6,
+      "yoy_pct": 5.1,
+      "source": "BLS CPI March 2026"
+    },
+    {
+      "period": "2026-03",
+      "lane": "water_sewer_required_service",
+      "measure": "water_sewer_and_trash_collection_services",
+      "mom_pct": 0.5,
+      "yoy_pct": 4.7,
+      "source": "BLS CPI March 2026"
+    },
+    {
+      "period": "2026-07",
+      "lane": "housing_required_cost",
+      "measure": "rent_of_primary_residence",
+      "yoy_pct": 2.9,
+      "source": "BLS CPI July 2026"
+    },
+    {
+      "period": "2026-07",
+      "lane": "housing_required_cost",
+      "measure": "shelter",
+      "yoy_pct": 3.2,
+      "source": "BLS CPI July 2026"
+    },
+    {
+      "period": "2026-07",
+      "lane": "required_insurance_context",
+      "measure": "tenants_and_household_insurance",
+      "yoy_pct": 4.8,
+      "source": "BLS CPI July 2026"
+    },
+    {
+      "period": "2026-07",
+      "lane": "water_sewer_required_service",
+      "measure": "water_and_sewerage_maintenance",
+      "mom_pct": 0.2,
+      "yoy_pct": 5.0,
+      "source": "BLS CPI July 2026"
+    },
+    {
+      "period": "2026-07",
+      "lane": "water_sewer_required_service",
+      "measure": "water_sewer_and_trash_collection_services",
+      "mom_pct": 0.4,
+      "yoy_pct": 4.6,
+      "source": "BLS CPI July 2026"
+    }
+  ],
+  "bounded_findings": [
+    "Water/sewer, shelter/rent, and household-insurance price indexes were all above their year-earlier levels in March 2026, so these essential or quasi-required household costs were not neutral background categories during the shipping/energy shock.",
+    "Water/sewer maintenance remained about 5 percent above year-earlier levels by July, while shelter and rent remained above year-earlier levels as well.",
+    "These national price indexes do not measure local regulated charges, contracted rates, household usage, income share, arrears, or actual delivered bills."
+  ],
+  "relationship_to_essential_purchasing_power": {
+    "role": "SUPPORTING_COST_CONTEXT_ONLY",
+    "next_required_evidence": [
+      "household or distributional expenditure burden",
+      "delivered bill or tariff data where regulated charges matter",
+      "income-relative burden",
+      "service quantity or unmet-need indicators where available"
+    ]
+  },
+  "source_receipts": [
+    "https://www.bls.gov/news.release/archives/cpi_04102026.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "finding_authorized": true,
+  "publication_authorized": false
+}
