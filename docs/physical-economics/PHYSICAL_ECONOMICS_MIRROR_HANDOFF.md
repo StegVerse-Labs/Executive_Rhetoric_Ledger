@@ -1,52 +1,33 @@
 # ERL Physical Economics Mirror Handoff
 
 ## Authority
-Canonical continuation source for the reusable ERL Physical Economics lane.
-
-This lane is promoted from research developed inside Issue #76 / the Matt Randolph forecast-calibration work, but it is not owned by that calibration. Randolph calibration is one consumer. The lane is intended to support any ERL assessment involving economic units, physical quantity/quality, essential-need satisfaction, distributional burden, producer cost/margin transmission, debt/financing burden, or taxes/fees/regulatory pass-through.
+Canonical continuation source for the reusable ERL Physical Economics lane. The lane was promoted from Issue #76 / Matt Randolph calibration but is not owned by that assessment; Randolph is one consumer.
 
 ## Goal
-Build a transition-first physical-economics layer that reconstructs the state of economic value and burden across producers, intermediaries, households, and population strata without assuming that a headline price index is sufficient to describe economic condition.
+Reconstruct physical economic value and burden across producers, intermediaries, households, and population strata without treating a headline price index as a sufficient description of economic condition.
 
-## Governing state rule
-No economic unit is assumed state-equivalent across time.
+## Governing rules
+- No economic unit is assumed state-equivalent across time.
+- Sticker-price continuity cannot establish unit continuity when mass, volume, count, nutrition, quality, durability, coverage, service level, mandatory fees, or other economically relevant attributes change.
+- Underlying essential need is distinct from observed acquisition; constrained quantity does not establish reduced need.
+- Existing indexes may be imported only after construction/circularity audit.
+- Nominal income/resources are primary; CPI-deflated real income is comparator evidence, not the sole purchasing-power denominator.
+- Taxes/fees/regulatory charges are cross-cutting flow objects attached to their initial payer and propagated only where pass-through is evidenced; no double counting.
+- Producer input cost, wholesale margin, retail margin, manufacturer accounting profit, corporate profit, and consumer price are distinct states.
+- Population averages cannot erase supported distributional strata.
+- Observation first, model second, explanation last.
 
-A unit transition may include changes in:
-- nominal price;
-- package mass, volume, count, or usable quantity;
-- calories/nutrition or other domain-specific physical content;
-- quality, durability, coverage, or service level;
-- mandatory taxes, fees, riders, delivery/access charges, tariffs, or surcharges;
-- substitution path;
-- quantity acquired;
-- producer cost structure and margin;
-- household resources, debt service, and unmet essential need.
-
-If any economically relevant attribute changes, continuity of the unit must be evidenced rather than presumed.
-
-## Relationship to ERL transition calculus
-The lane consumes the canonical ERL transition tuple and observation/reconstruction/hypothesis ordering. It does not replace or redefine the core calculus.
-
-Physical-economics transition observations map into:
-- `S_pre`: prior economic-unit / producer / household / population state;
-- `S_post`: subsequent economic-unit / producer / household / population state;
-- `C`: evidenced continuity relation for the compared unit/system;
-- `E`: price, quantity, quality, income, cost, margin, burden, need, and administrative evidence;
-- `P`: provenance and independence posture;
-- `U`: opaque/unknown elements, including missing physical quantity or causal pass-through;
-- `Q`: transition qualification/state.
-
-Observation first, model second, explanation last remains binding.
+## ERL binding
+Physical Economics consumes the canonical transition tuple `T=<S_pre,S_post,C,E,P,U,Q>` and does not replace the core calculus.
 
 ## Canonical machine surfaces
-- reusable lane contract: `contracts/physical-economics.contract.json`
-- canonical state schema: `schemas/physical-economics-state.schema.json`
-- consumer seed retained for provenance: `assessments/forecast-calibration/matt-randolph/physical-economic-condition-index-target.v0.1.json`
+- `contracts/physical-economics.contract.json`
+- `schemas/physical-economics-state.schema.json`
+- Randolph consumer seed retained for provenance: `assessments/forecast-calibration/matt-randolph/physical-economic-condition-index-target.v0.1.json`
 
-The reusable contract is authoritative for lane-level machine semantics. The Randolph PECI target remains a consumer-specific seed and must not silently supersede the reusable contract.
+Canonical record families: `economic_unit_state`, `essential_need_state`, `population_burden_state`, `producer_cost_margin_state`, `tax_fee_flow`.
 
-## Lane architecture
-The reusable lane owns the following component surfaces:
+## State vector
 1. Physical Purchasing Power
 2. Nominal Resource Capacity
 3. Required Debt-Service Burden
@@ -58,153 +39,77 @@ The reusable lane owns the following component surfaces:
 9. Producer Margin State
 10. Tax/Fee/Regulatory Flow
 
-A scalar composite is not required and is not currently authorized. The state vector is primary.
+State vector is primary; scalar composite is not authorized.
 
-## Required native sub-indexes
-### Essential Need Satisfaction Index
-Purpose: measure how much essential need is satisfied, compressed, substituted, deferred, or unmet.
+## Native sub-indexes
+- Essential Need Satisfaction Index: food sufficiency, energy/service-payment stress, transportation sufficiency, housing instability/payment stress, water/utility arrears where available, essential quantity/quality compression.
+- Population Burden Distribution Index: median, lower/upper quintile, burden gap, threshold exceedance, geography/tenure/household-size slices where justified.
+- Producer Cost-Margin Transmission Index: intermediate inputs, compensation, taxes less subsidies, output/sales, gross operating surplus, profits, trade margins, physical output. Inferred residual margin remains lower-confidence.
 
-Must preserve:
-- underlying need versus observed quantity;
-- food sufficiency;
-- energy/service-payment stress and disconnection risk where available;
-- transportation sufficiency;
-- housing payment difficulty/instability;
-- water/utility arrears where available;
-- essential quantity/quality compression.
+## Generalized evidence installed
+### Producer food trade-margin divergence
+`assessments/physical-economics/producer-food-trade-margin-divergence-2026-03-through-07.json`
 
-### Population Burden Distribution Index
-Purpose: measure who bears physical-economic burden and how unevenly.
+BLS PPI directly shows non-equivalence between food producer prices and trade margins. June->July 2026: final-demand foods `-0.9%`, food/alcohol wholesale margins `+2.9%`, retail margins `+2.1%`. July YoY: final-demand foods `-0.1%`, wholesale margins `-1.0%`, retail margins `+5.5%`.
 
-Minimum outputs should include where data permit:
-- median burden;
-- lower-income-quintile burden;
-- upper-income-quintile burden;
-- burden gap;
-- share above frozen essential-burden thresholds;
-- geography/tenure/household-size slices where justified.
+Bounded result: margin state must be separately observed. These values do not establish manufacturer profit expansion, excess profit, motive, or causal consumer pass-through without joined accounting and physical evidence.
 
-### Producer Cost-Margin Transmission Index
-Purpose: distinguish producer cost compression from margin expansion/contraction and locate where value moves through the chain.
+### Population distribution baseline
+`assessments/physical-economics/population-burden-distribution-baseline-ce-2024.json`
 
-Direct evidence is preferred. Candidate inputs include:
-- intermediate input costs;
-- labor compensation;
-- taxes on production/imports less subsidies;
-- gross output/sales;
-- gross operating surplus;
-- corporate profits from current production;
-- wholesale/retail trade margins;
-- physical output quantity.
+BLS CE 2024 weighted income ranges: lowest `$0-$29,932`; second `$29,933-$57,452`; third `$57,453-$94,511`; fourth `$94,512-$155,925`; highest `>$155,925`.
 
-Margin may be inferred only when direct inputs are unavailable, and inferred margin must remain explicitly lower-confidence.
+Average annual expenditures: `$35,046`, `$50,054`, `$66,900`, `$89,972`, `$150,342` respectively. Highest/lowest expenditure-capacity ratio ~`4.29x`. Food + housing + transportation represented `63.3%` of all-consumer-unit expenditures in 2024. This is a distribution baseline, not a 2026 burden claim.
 
-## Canonical record types
-`schemas/physical-economics-state.schema.json` currently recognizes:
-- `economic_unit_state`
-- `essential_need_state`
-- `population_burden_state`
-- `producer_cost_margin_state`
-- `tax_fee_flow`
+### Official March 2026 HTOPS custody map
+`assessments/physical-economics/htops-official-workbook-custody-map-2026-03.json`
 
-The schema is structural and does not yet constitute validator activation. Semantic fail-closed validators remain required.
+Official Census workbooks are resolved for food sufficiency, household energy spending, difficulty paying usual expenses, price stress, and transportation sufficiency, with matching standard-error tables. Census reports roughly 136,000 households for March 13-30. Source discovery is complete; direct workbook numeric extraction/custody remains pending. Secondary reconstructions remain triangulation only.
 
-## Adjacent indexes and anti-circularity
-Existing indexes may be imported only after validating construction and determining whether they introduce circular assumptions.
+## Physical food quantity boundary
+USDA ERS F-MAP establishes package-weight normalization to grams, but public files currently cover 2012-2018. Method established; current national 2026 grams/calories remain uncustodied. Retail units/volume are proxies, not physical-mass/nutrition equivalents.
 
-### Income
-Nominal income/resources are primary.
+## Adjacent-index posture
+- Federal Reserve DSR: valid aggregate scheduled mortgage + consumer debt-service input; not distribution-complete.
+- BEA Q1 2026 corporate profits from current production: `$4,426.5B` annualized aggregate; not product-level margin. Q2 corporate profits are not admitted before the scheduled `2026-08-26` release.
+- Census QFR: direct corporate income-statement/operating-ratio source. Q2 2026 values are not admitted before the scheduled `2026-09-08` release.
 
-BLS real earnings may be retained as an adjacent comparator, but CPI-deflated real earnings cannot be the sole purchasing-power denominator for a lane designed partly to test CPI incompleteness.
+## Required validators
+1. unit continuity fail-closed;
+2. unmet-need semantics;
+3. distribution preservation;
+4. producer-margin evidence posture;
+5. tax/fee flow uniqueness.
 
-BEA real DPI is a useful macro comparator, but the lane should preserve nominal DPI and independently reconstruct purchasing power against the physical/essential cost surface.
-
-### Debt and financing
-Federal Reserve DSR is a valid aggregate input for scheduled mortgage + consumer debt-service burden relative to DPI, but it does not replace distributional debt burden or non-debt compulsory obligations.
-
-## Taxes, fees, and regulated charges
-These are a cross-cutting flow layer, not one undifferentiated scalar.
-
-Each charge must preserve:
-- initial/legal payer;
-- amount/rate and base where observable;
-- producer-side or consumer-side entry point;
-- observed downstream pass-through, if any;
-- confidence/provenance;
-- subsidy/credit offsets where applicable.
-
-No double counting as a charge propagates through the value-flow graph.
-
-## Substitution rule
-Substitution is itself a state transition.
-
-Domestic substitution does not erase a decline in mass, nutrition, quality, durability, coverage, service level, or household welfare. Origin and quality/physical state are separate dimensions.
-
-## Physical-unit continuity rule
-A product/service compared across time must preserve economically relevant unit attributes. Sticker-price continuity alone is insufficient.
-
-Examples:
-- same package price + smaller mass = changed economic unit;
-- fixed electricity supply rate + higher mandatory delivery charge = changed delivered-cost state;
-- same insurance premium + higher deductible/lower coverage = changed service unit;
-- same nominal rent + added mandatory fees = changed housing delivered-cost state.
-
-## Current seed evidence inherited from Randolph research
-Research already available to this lane includes:
-- USDA ERS F-MAP methodology for package-weight normalization to grams (historical public files, not a 2026 mass series);
-- Circana 2026 food dollars/unit/volume/price-mix evidence;
-- BEA nominal DPI/PCE and real-DPI comparator evidence;
-- Census March 2026 HTOPS direct-burden table structure and secondary-derived burden leads pending direct official-table custody;
-- Oncor delivered-electricity charge structure;
-- BLS national water/sewer, housing/rent, household-insurance context;
-- Federal Reserve DSR methodology;
-- BEA industry accounts/corporate profits, BLS trade-margin PPIs, and Census QFR as producer margin/cost sources.
-
-These evidence records remain in the Randolph calibration directory until generalized equivalents are created or linked. Their provenance must not be lost during promotion.
-
-## Promotion boundary
-The Physical Economics lane is now a reusable ERL lane with:
-- its own canonical mirror handoff;
-- a reusable machine contract outside the Randolph assessment directory;
-- a canonical JSON Schema for the five core physical-economics record families.
-
-The existing Randolph `physical-economic-condition-index-target.v0.1.json` remains a consumer-specific seed/legacy research artifact and must not be deleted or rewritten merely to hide its origin.
-
-Promotion does NOT yet mean:
-- all native sub-indexes are calculated;
-- semantic validators are complete;
-- a scalar PECI is authorized;
-- hosted exact-head validation has passed;
-- production activation/release has occurred;
-- independent review has occurred.
-
-## Validation requirements
-Required fail-closed validators remain:
-1. economic-unit continuity: same sticker price cannot establish continuity if quantity/quality/service attributes changed or are materially unknown;
-2. unmet-need semantics: lower observed acquisition cannot be mapped to lower essential need without evidence;
-3. distribution preservation: aggregate output cannot erase required population strata when source data support them;
-4. producer-margin posture: direct/reconstructed/inferred margin evidence modes must remain distinguishable, with inferred residual explicitly lower-confidence;
-5. tax/fee flow uniqueness: a charge with the same flow identity cannot be counted twice across propagation nodes.
+Required fixtures: food shrinkflation, electricity delivery charges, insurance deductible/coverage changes, rent-plus-fee transitions.
 
 ## Next executable work
-1. create semantic fail-closed validators for unit continuity, unmet-need semantics, distribution preservation, margin evidence posture, and tax/fee double counting;
-2. create positive and negative fixtures for food shrinkflation, electricity delivery charges, insurance coverage/deductible transitions, and rent-plus-fee transitions;
-3. link Randolph calibration explicitly to `contracts/physical-economics.contract.json` without deleting historical research records;
-4. prototype the reusable state vector on food, electricity, motor fuel, and housing;
-5. add hosted CI for the reusable physical-economics lane;
-6. independently review the contract/schema/validator semantics before any composite index or release claim.
+1. Directly custody official March 2026 HTOPS values and standard errors.
+2. Obtain detailed CE essential-category levels/shares by income quintile and calculate income-relative burden surfaces.
+3. Join food producer prices/trade margins with manufacturer/retailer financial evidence plus physical quantity/package state without assuming causality.
+4. Admit BEA Q2 corporate profits only after Aug 26 and QFR Q2 only after Sep 8.
+5. Continue contemporary 2026 gram/calorie data search.
+6. Build semantic validators/fixtures.
+7. Prototype food, electricity, motor-fuel, and housing state vectors.
+8. Add hosted CI and independent review before any composite/release claim.
 
 ## Current posture
-- lane promotion: `FORMAL_REUSABLE_ERL_LANE`;
-- canonical handoff: complete;
-- reusable machine specification: complete;
-- canonical state schema: complete for five core record families;
-- semantic validators: not yet created;
-- hosted exact-head validation: not yet observed;
-- native sub-index calculations: not complete;
-- composite index: not authorized;
-- independent review: not complete;
-- release: not authorized.
+- lane: `FORMAL_REUSABLE_ERL_LANE`
+- canonical handoff: complete
+- reusable machine contract: complete
+- five-family state schema: structurally complete
+- generalized producer-margin evidence: installed
+- generalized population-distribution baseline: installed
+- official HTOPS workbook discovery: complete
+- official HTOPS numeric custody: pending
+- semantic validators: pending
+- native sub-index calculations: partial
+- hosted exact-head validation: not yet observed
+- composite: not authorized
+- independent review: incomplete
+- release: not authorized
+
+Physical Economics bounded lane implementation/research activation estimate: `58%`. This percentage was reset for the newly promoted lane and is not the Randolph calibration percentage.
 
 ## Archive posture
-This handoff is the source of truth for continuation of ERL Physical Economics work. The lane is formally promoted and machine-addressable, but not yet fully validated, activated, or released.
+The lane is formally promoted and has meaningful generalized evidence, but direct burden custody, semantic validation, native sub-index execution, independent review, and release remain incomplete.
