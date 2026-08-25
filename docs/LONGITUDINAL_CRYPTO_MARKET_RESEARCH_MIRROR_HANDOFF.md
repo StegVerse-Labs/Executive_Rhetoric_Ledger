@@ -10,161 +10,109 @@ Build a longitudinal, provenance-preserving research layer that continuously cur
 
 ## Non-authority boundary
 
-ERL is research/evidence authority only.
-
-- historical resemblance != deterministic forecast
-- correlation != causation
-- stronger evidence != guaranteed outcome
-- trade preference != order authorization
-- ERL evidence must not bypass strategy, risk, capital, or TV/TVC execution gates
-
-Every downstream packet must preserve `research_authority=ERL`, `execution_authority=NONE`, and `may_authorize_order=false`.
+ERL is research/evidence authority only. Historical resemblance is not deterministic forecast, correlation is not causation, stronger evidence is not guaranteed outcome, and trade preference is not order authorization. Every downstream packet preserves `research_authority=ERL`, `execution_authority=NONE`, and `may_authorize_order=false`.
 
 ## Implemented core object model
 
-1. `market_observation` — source-grounded event/data-family observation: `schemas/market-observation.schema.json`.
-2. `market_state_vector` — normalized point-in-time cross-domain condition vector: `schemas/market-state-vector.schema.json`.
-3. `historical_analogue` set — deterministic similarity link from current state to prior states: `scripts/find_historical_market_analogues.py`.
-4. `forward_outcome` panel — realized post-state results at fixed horizons: `scripts/label_market_forward_outcomes.py`.
-5. `trade_preference_evidence` — comparison of candidate trades or trade vs `FOREGO`, retaining favorable and disconfirming evidence separately: `schemas/trade-preference-evidence.schema.json` + `scripts/build_trade_preference_evidence.py`.
-6. `source_coverage` — source freshness/completeness/missingness is mandatory inside state and preference evidence.
-7. Source-family registry: `research-data/longitudinal-market-source-registry.v1.json`.
-8. Deterministic validation: `scripts/validate_longitudinal_market_evidence.py` plus dedicated tests/workflow.
+1. `market_observation`: `schemas/market-observation.schema.json`.
+2. `market_state_vector`: `schemas/market-state-vector.schema.json`.
+3. Deterministic historical analogue retrieval: `scripts/find_historical_market_analogues.py`.
+4. Realized forward outcomes: `scripts/label_market_forward_outcomes.py`.
+5. `trade_preference_evidence`: `schemas/trade-preference-evidence.schema.json` and `scripts/build_trade_preference_evidence.py`.
+6. Source-family registry: `research-data/longitudinal-market-source-registry.v1.json`.
+7. Source-health policy: `research-data/longitudinal-market-source-health-policy.v1.json`.
+8. Deterministic source-health receipts: `scripts/build_longitudinal_source_health.py`.
+9. Deterministic validators/tests and hosted workflow: `.github/workflows/validate-longitudinal-market-research.yml`.
 
 ## Current source adapters
 
-### Canonical ERL daily crypto panel — INSTALLED / OBSERVED
+### Daily crypto panel — INSTALLED / OBSERVED
 
-`scripts/index_existing_crypto_market_panel.py` converts `research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json` into nine UTC-aligned longitudinal state rows without changing source provenance.
+`scripts/index_existing_crypto_market_panel.py` converts `research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json` into nine UTC-aligned states. Derived features remain intentionally narrow: per-asset 1-day returns, positive breadth, XRP/XLM ratio and ratio change. State-local source coverage remains `0.25` because these vectors are built from one daily spot/relative-price family.
 
-Derived features are deliberately narrow: per-asset 1-day returns, cross-asset positive breadth, XRP/XLM relative-price ratio, XRP/XLM ratio change, and retained spot prices for later forward-outcome labeling.
+### Crypto system-shock event — INSTALLED / OBSERVED
 
-The legacy panel is assigned `source_coverage.coverage_score=0.25`, because it covers only a daily spot/relative-price family. It explicitly marks derivatives, order-book liquidity, stablecoin flows, ETF/fund flows, on-chain flows, macro cross-market context, and event context as missing.
+`scripts/index_crypto_system_shock_event.py` normalizes `research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json` into `stegverse.erl.market_observation.v1` while preserving the event center near `2026-08-22T05:11:20Z`, synchronized-cliff observation, amplitude ratios, source limitations, six competing hypotheses and unresolved state. The adapter does not promote spot-led, derivatives-led, whale attribution, or XRP-specific amplification into fact.
 
-### Crypto system-shock event context — INSTALLED / OBSERVED
+### Generic event normalization — BASELINE INSTALLED
 
-`scripts/index_crypto_system_shock_event.py` normalizes `research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json` into `stegverse.erl.market_observation.v1` while preserving the event center near `2026-08-22T05:11:20Z`, synchronized-cliff observation, displayed XRP-vs-control amplitude ratios, source limitations, all six competing causal hypotheses, and unresolved status.
+`scripts/normalize_existing_market_events.py` and deterministic tests provide a generalized boundary for normalizing additional admitted ERL event objects without granting execution authority or inventing findings.
 
-The adapter explicitly does not promote `spot_led`, `derivatives_led`, whale attribution, or an XRP-specific amplifier into facts. `finding_authorized=false` remains preserved.
+### Source-family registry and dynamic health — INSTALLED / OBSERVED
 
-Hosted run `32893864586` completed SUCCESS with 11 deterministic tests. Event normalization and schema validation passed, and the full existing daily-panel -> analogue -> outcome -> preference pipeline remained green. Artifact `9580447450` retained seven JSON evidence files with digest `sha256:ae18bef654deb35396b1bd28700d1f5d934d09a4dec01f3e32213b7fe3bfed56`.
+The registry independently tracks spot, event, derivatives, order-book liquidity, stablecoin flows, ETF/fund flows, on-chain flows and macro cross-market families. A source valid in one family never implies coverage of another.
 
-### Source-family registry — INSTALLED
+`research-data/longitudinal-market-source-health-policy.v1.json` defines family-specific freshness limits. `scripts/build_longitudinal_source_health.py` produces a deterministic receipt at an explicit `as_of_utc`, extracts only source observation/as-of timestamps rather than arbitrary dates in prose or future windows, and marks each family `FRESH`, `STALE`, `UNKNOWN_FRESHNESS`, or `MISSING`.
 
-`research-data/longitudinal-market-source-registry.v1.json` now records admitted sources and missing source families independently. Current posture:
+Run `32896713367` completed SUCCESS through all 33 steps and retained artifact `9581481513`, digest `sha256:d0a12966e5a42a4e462c09b30e982e4fc6c8ead0661611a05b6bbdcedb5cba97`. This run built the source-health receipt, fed its measured coverage into the XRP preference packet, retained the packet fail-closed, and uploaded the resulting evidence bundle.
 
-- spot market: PARTIAL;
-- event context: PARTIAL;
-- on-chain flows: PARTIAL_RESEARCH_ONLY;
-- derivatives: MISSING;
-- order-book liquidity: MISSING;
-- stablecoin flows: MISSING;
-- ETF/fund flows: MISSING;
-- macro cross-market: MISSING.
-
-A valid source in one family never implies coverage of another. Missing or stale families lower confidence; silent imputation is forbidden.
+The important behavioral change is that preference confidence is no longer driven by a static optimistic coverage placeholder. Source freshness/missingness is now an executable input to the preference evidence path.
 
 ## Analogue method — BASELINE V1 COMPLETE
 
-`weighted_normalized_l1_with_missingness_penalty.v1` operates only on retained numeric state features, penalizes missing dimensions instead of silently imputing them, exposes matched/materially-different/missing dimensions, uses deterministic corpus-local scales and optional explicit weights, preserves digests, and sorts deterministically.
-
-This is a reproducible baseline distance function, not a claim that current weighting is economically optimal. Later calibration must compare alternative similarity methods out of sample.
+`weighted_normalized_l1_with_missingness_penalty.v1` operates only on retained numeric features, penalizes missing dimensions instead of silently imputing them, exposes matched/materially-different/missing dimensions, uses deterministic corpus-local scales and optional explicit weights, preserves digests and sorts deterministically. This is a reproducible baseline, not an economically optimal weighting claim.
 
 ## Trade-preference interface — BASELINE V1 COMPLETE
 
-ERL can emit a bounded comparison against alternatives, including `FOREGO`, containing candidate instrument/side, current-state digest, analogue similarity evidence, candidate/comparison forward-return distributions, favorable evidence, disconfirming evidence, source coverage/staleness, confidence, and a research-only classification: `PREFER`, `NEUTRAL`, `DEFER`, `FOREGO`, or `INSUFFICIENT_EVIDENCE`.
+ERL emits research-only comparisons against alternatives including `FOREGO`, retaining candidate/side, state digest, analogue similarity evidence, outcome distributions, favorable evidence, disconfirming evidence, source coverage/staleness, confidence and one of `PREFER`, `NEUTRAL`, `DEFER`, `FOREGO`, or `INSUFFICIENT_EVIDENCE`.
 
-The baseline builder fails closed when source coverage or analogue sample size is insufficient. This class cannot authorize capital or execution.
+The builder fails closed when source coverage or analogue sample size is insufficient and cannot authorize capital or execution.
 
 ## Observed validation evidence
 
-Dedicated workflow: `.github/workflows/validate-longitudinal-market-research.yml`.
+- Run `32893379964`: first retained full pipeline, artifact `9580268876`, digest `sha256:f5bb9ff4f7318b0f838e71fdb210e48cbec2b2e0d851fec78474d873024bf08b`.
+- Run `32893544680`: measured state coverage pipeline, artifact `9580330248`, digest `sha256:48e313bf0c718a0d61de6d59d396b388dd0266d9b5178098d72fb7fccd935a58`.
+- Run `32893864586`: system-shock event ingestion, artifact `9580447450`, digest `sha256:ae18bef654deb35396b1bd28700d1f5d934d09a4dec01f3e32213b7fe3bfed56`.
+- Run `32894115550`: generalized event-normalization validation, artifact `9580539457`, digest `sha256:d0446ec738eb3292b4c27b462dec9ed614231df13ca50f2821d40a2e691fffd8`.
+- Run `32896713367`: dynamic source-health/freshness and preference binding, artifact `9581481513`, digest `sha256:d0a12966e5a42a4e462c09b30e982e4fc6c8ead0661611a05b6bbdcedb5cba97`.
 
-Run `32893379964` first demonstrated the retained full pipeline. Artifact `9580268876`, digest `sha256:f5bb9ff4f7318b0f838e71fdb210e48cbec2b2e0d851fec78474d873024bf08b`.
-
-Run `32893544680` replaced interim optimistic coverage with measured `0.25` source coverage and completed SUCCESS. Artifact `9580330248`, digest `sha256:48e313bf0c718a0d61de6d59d396b388dd0266d9b5178098d72fb7fccd935a58`.
-
-Run `32893864586` added governed system-shock event observation ingestion and completed SUCCESS. Artifact `9580447450`, digest `sha256:ae18bef654deb35396b1bd28700d1f5d934d09a4dec01f3e32213b7fe3bfed56`.
-
-The observed XRP comparison packet remains `INSUFFICIENT_EVIDENCE`, confidence `0.10`: the corpus contains only nine daily states, at most eight historical analogues versus the configured minimum of ten, and broad source coverage remains only `0.25`. This is the intended fail-closed result.
-
-## Initial feature families still to ingest
-
-### Crypto market structure
-Higher-frequency spot returns/acceleration, volume/volume expansion, broader breadth/dispersion/synchronization, pair-relative strength/leadership, and spread/depth/liquidity.
-
-### Derivatives
-Funding, futures basis, open interest, liquidation direction/intensity, and options IV/skew/term structure where available.
-
-### Capital/flow
-Spot ETF/fund flows, stablecoin supply/exchange flows, large exchange inflow/outflow observations, and on-chain large transfers/bridge/network activity when meaningful.
-
-### Cross-market/macro
-Treasury yields/rates, DXY, equities/volatility, gold, commodities, oil/energy, and broad liquidity/financial-conditions measures.
-
-### Events
-Regulation/policy/legal actions, central-bank/Treasury announcements, geopolitical/energy/shipping events, protocol upgrades/outages/exploits, token unlocks/governance/treasury actions, institutional adoption/de-adoption events, and timestamped news with source quality and age/decay.
-
-## Longitudinal comparison requirements
-
-Current conditions must never be represented by a single regime label alone. Analogue search must preserve dimensions used, weights/version, similarity score, unavailable dimensions, materially different dimensions, event-context match/mismatch, sample count, horizon-specific realized outcomes, and uncertainty/result sensitivity. No best analogue may be presented without its largest material differences.
+The observed XRP comparison remains `INSUFFICIENT_EVIDENCE`; the corpus still contains only nine daily states and at most eight historical analogues, while major source families remain missing or stale. This is the intended fail-closed result.
 
 ## Crypto-bot integration boundary
 
 Downstream issue: `StegVerse-Labs/crypto-bot#15`.
 
-crypto-bot may eventually consume a versioned ERL evidence packet only after validating schema, freshness, digest, source coverage and non-authority fields. It must remain fail-closed for missing, stale, malformed, contradictory, or authority-bearing ERL evidence.
+Crypto-bot now has a baseline consumer in `erl_evidence.py` with hosted passing tests. It validates ERL authority fields, freshness, source coverage, state-vector digest binding, analogue sample size, favorable/disconfirming evidence and preserves `FOREGO`. CI run `32896880997` completed SUCCESS. Scoped downstream handoff: `StegVerse-Labs/crypto-bot/docs/ERL_LONGITUDINAL_EVIDENCE_CONSUMER_MIRROR_HANDOFF.md`.
 
-No crypto-bot consumer source is claimed complete yet. ERL corpus breadth and out-of-sample evidence should improve before research preference is permitted to influence live candidate ranking.
+This is not yet the full retained ERL -> crypto-bot replay. The consumer currently has deterministic/synthetic packet tests; the next integration step is binding an actual retained ERL artifact and measuring historical candidate-selection behavior with and without ERL influence.
+
+## Remaining feature/data gaps
+
+- expand historical market ingestion beyond nine daily states and below daily resolution;
+- derivatives: funding, basis, open interest, liquidations, options IV/skew;
+- order-book spread/depth/imbalance/depth withdrawal;
+- stablecoin supply and exchange/cross-chain flows;
+- ETF/fund flows;
+- broader on-chain exchange inflows, large transfers, bridge/network activity;
+- macro rates/yields, DXY, equities/volatility, gold/oil/financial conditions;
+- systematic event normalization and source-age decay across additional ERL event records;
+- out-of-sample analogue/preference calibration;
+- actual retained ERL -> crypto-bot replay and candidate-ranking integration.
 
 ## Current build sequence
 
-Completed:
+Completed: architecture, issue #77, scoped handoff, core schemas, deterministic validator, analogue engine, forward-outcome labeler, trade-preference builder, daily-panel indexer, system-shock adapter, generic event-normalization baseline, source registry, dynamic source-health receipt, observed retained fail-closed pipeline, and baseline crypto-bot consumer validation.
 
-1. Architecture/goal definition and Issue `#77`.
-2. Scoped handoff.
-3. Market-observation, state-vector, and trade-preference schemas.
-4. Deterministic validator.
-5. Baseline historical analogue engine.
-6. Forward-outcome labeler.
-7. Baseline trade-vs-trade / trade-vs-FOREGO evidence builder.
-8. Existing ERL daily crypto panel indexer.
-9. Existing system-shock event observation adapter.
-10. Source-family registry.
-11. Observed retained end-to-end fail-closed pipeline.
-
-Next:
-
-12. Expand historical market ingestion beyond nine daily states and below daily resolution.
-13. Normalize additional existing ERL event records into the event-context family.
-14. Add source-family adapters for derivatives/liquidity/flows/macro/on-chain evidence.
-15. Add dynamic source-health/freshness calculations.
-16. Calibrate analogue weighting/similarity and preference rules out of sample.
-17. Add crypto-bot #15 consumer validation and evidence-only ranking hook.
-18. Demonstrate retained ERL -> crypto-bot historical replay before any strategy influence.
+Next: expand historical and cross-family data, replay actual retained ERL artifacts through crypto-bot, calibrate out of sample, then determine whether research evidence may influence candidate ranking. Strategy influence and execution authority remain unclaimed.
 
 ## Completion state
 
 - architecture/goal definition: COMPLETE
-- canonical issue: COMPLETE (`#77`)
-- scoped handoff: COMPLETE
-- core schemas: BASELINE V1 COMPLETE
-- validators: BASELINE V1 COMPLETE / HOSTED PASS
-- canonical daily-panel indexer: COMPLETE / HOSTED PASS
-- market-observation/event adapter: BASELINE V1 COMPLETE / HOSTED PASS
-- source-family registry: COMPLETE V1
-- analogue engine: BASELINE V1 COMPLETE / HOSTED PASS
-- forward-outcome labeling: BASELINE V1 COMPLETE / HOSTED PASS
-- trade-preference evidence builder: BASELINE V1 COMPLETE / HOSTED PASS
-- first retained real-data ERL pipeline: COMPLETE / FAIL-CLOSED AS DESIGNED
-- broad longitudinal panel ingestion: PARTIAL
-- event-context ingestion breadth: PARTIAL
-- derivatives/liquidity/flow/macro/on-chain ingestion: PENDING/PARTIAL AS REGISTRY STATES
-- crypto-bot consumer: PENDING
+- core schemas/validators: BASELINE V1 COMPLETE / HOSTED PASS
+- daily-panel indexer: COMPLETE / HOSTED PASS
+- market-event adapters: BASELINE V1 COMPLETE / HOSTED PASS
+- source registry: COMPLETE V1
+- dynamic source-health/freshness: BASELINE V1 COMPLETE / HOSTED PASS
+- analogue/outcome/preference engine: BASELINE V1 COMPLETE / HOSTED PASS
+- retained real-data ERL pipeline: COMPLETE / FAIL-CLOSED AS DESIGNED
+- crypto-bot consumer boundary: BASELINE V1 COMPLETE / HOSTED PASS
+- broad longitudinal corpus: PARTIAL
+- derivatives/liquidity/flow/macro/on-chain breadth: PENDING/PARTIAL
+- actual ERL -> crypto-bot retained replay: PENDING
 - out-of-sample calibration: PENDING
 - strategy influence authorization: NOT CLAIMED
 - execution authority: NONE
 
 ## Archive note
 
-This handoff is sufficient to continue the bounded market-research lane without reconstructing this conversation. The lane remains active: data breadth, event/context enrichment, out-of-sample calibration and crypto-bot consumption are not complete, and no strategy or execution activation is authorized.
+This handoff is sufficient to continue the bounded research lane without reconstructing the conversation. The lane remains active until data breadth, retained ERL -> crypto-bot replay and out-of-sample calibration are complete; no strategy or execution activation is authorized.
