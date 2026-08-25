@@ -25,6 +25,7 @@ Reconstruct roughly four months of Matt Randolph / Mr Global energy and Iran-con
 - A national essential-cost price index is supporting context only; it is not a household burden, delivered-bill, unmet-need, or purchasing-power measure.
 - Survey redesigns, recall-window changes, and sample-design changes must remain visible; incompatible HTOPS/HPS waves may not be treated as one continuous burden series.
 - Historical methodology may establish how a quantity should be measured without supplying a contemporary value; no 2026 physical-mass claim may be inferred from older F-MAP files.
+- Secondary weighted reconstructions may identify burden gradients, but conflicting derived values may not be reconciled by guess; direct official-table custody controls canonical numerical promotion.
 
 ## Durable research surfaces
 Core evidence/execution records include:
@@ -157,15 +158,16 @@ Gasoline/other energy goods accounted for `$81.3B` SAAR of the March PCE increas
 Bounded result: aggregate real purchasing power contracted while nominal spending rose. This is not a universal household finding.
 
 ### Direct household burden layer
-March 2026 Census HTOPS is now a declared direct-burden source rather than merely a future lead. Census reports March 13-30 data and publishes detailed tables for:
-- household food sufficiency in the prior seven days;
-- household energy use/spending in the prior two months;
-- difficulty paying usual household expenses in the prior two months;
-- stress caused by price increases;
-- transportation sufficiency in the prior four weeks.
-This survey structure is materially closer to lived burden than CPI because it measures reported inability/difficulty/access rather than only average price movement.
+March 2026 Census HTOPS is a declared direct-burden source. Census reports March 13-30 data and publishes detailed tables for food sufficiency, household energy use/spending, difficulty paying usual expenses, price stress, and transportation sufficiency. This is materially closer to lived burden than CPI because it measures reported inability, difficulty, or access rather than only average price movement.
 
-The corresponding workbook values are not yet directly custodied through the current retrieval path, so canonical numerical promotion is disabled. A secondary analysis reports 22.8% of adults experiencing difficulty paying usual household expenses as of Mar 30, but this remains a discovery/triangulation value until the official Census workbook figure is directly preserved. March 2026 also changed to a cross-sectional design and a two-month expense-difficulty recall window, so older waves are not casually comparable.
+Official workbook values are still not directly custodied through the current retrieval path, so canonical numerical promotion remains disabled. Weighted secondary reconstructions of the public-use file currently provide these triangulation leads:
+- `7.03%` sometimes/often not enough food, decomposed as `5.29%` sometimes and `1.74%` often;
+- a separate `22.48%` reported enough food but not always the kinds wanted; this is constrained food access/substitution context and must not be labeled outright insufficiency;
+- `19.77%` in a secondary reconstruction's significant expense-difficulty grouping, including `7.54%` very difficult;
+- `75.28%` reported prices had increased;
+- among those perceiving increases, `27.5%` reported very high price stress, with a steep income gradient: `43.7%` under $25K versus `11.9%` at $150K+.
+
+A separate secondary source reports `22.8%` expense difficulty. The difference from `19.77%` is preserved as an unresolved denominator/category/population conflict; no reconciliation by guess is authorized. March 2026 uses a cross-sectional design and a two-month expense-difficulty recall window, so older waves are not casually comparable.
 
 ## Delivered electricity structure
 Oncor record establishes `fixed supply contract != fixed delivered total cost`.
@@ -210,7 +212,7 @@ Last known hosted successes remain older exact-head runs:
 Newest direct-burden and physical-quantity commits require fresh hosted checks before any new PASS is claimed.
 
 ## Next executable work
-1. directly custody the March 2026 HTOPS workbook values for food sufficiency, expense difficulty, energy spending, price stress, and transportation sufficiency, preserving survey redesign/recall-window metadata;
+1. directly custody the March 2026 HTOPS workbook values for food sufficiency, expense difficulty, energy spending, price stress, and transportation sufficiency, preserving survey redesign/recall-window metadata and resolving secondary conflicts;
 2. seek contemporary package-level scanner or nutrition-linked data capable of producing 2026 grams/calories rather than unit-only proxies;
 3. seek distributional household burden for water/sewer, housing, required transport, electricity, and food with income-relative burden or unmet-need measures;
 4. continue richer first-party custody for May 29 and June/July video sources;
@@ -226,7 +228,7 @@ Denominator = 10 bounded work groups.
 4. independent world-event chronology — advanced;
 5. machine forecast encoding — 4 live forecast records; March 7 component-resolved;
 6. EIA/refined-product integration — materially developed;
-7. freight-food/essential-burden integration — advanced; quantity, real-DPI, electricity-delivery, water/sewer/housing context, direct HTOPS burden structure, and physical-quantity method boundary are present;
+7. freight-food/essential-burden integration — advanced; quantity, real-DPI, electricity-delivery, water/sewer/housing context, direct HTOPS burden structure, weighted burden triangulation, and physical-quantity method boundary are present;
 8. governed conditional/component resolution — advanced; Essential Purchasing Power V1 and March 7 threshold execution active;
 9. aggregate calibration/open-forecast confidence — not started;
 10. independent review/promotion — not started.
@@ -234,4 +236,4 @@ Denominator = 10 bounded work groups.
 Goal activation estimate: 89%.
 
 ## Archive posture
-Continuation state is durable, but the project is not complete. Direct HTOPS numeric custody, contemporary physical food mass/nutrition, distributional essential-burden evidence, richer transcript custody, clean August prospective outcomes, aggregate calibration, and independent review remain outstanding.
+Continuation state is durable, but the project is not complete. Direct HTOPS official numeric custody, contemporary physical food mass/nutrition, distributional essential-burden evidence, richer transcript custody, clean August prospective outcomes, aggregate calibration, and independent review remain outstanding.
