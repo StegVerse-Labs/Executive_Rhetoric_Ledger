@@ -34,9 +34,6 @@ def feature_scales(states: list[dict[str, Any]], keys: set[str]) -> dict[str, fl
             continue
         lo, hi = min(values), max(values)
         absolute_reference = max(abs(value) for value in values)
-        # Avoid making a tiny observed range define a 100% distance. The scale
-        # must preserve both variation across the corpus and the magnitude of
-        # the feature itself, while remaining deterministic and unit-local.
         scales[key] = max(hi - lo, absolute_reference, 1e-12)
     return scales
 
@@ -94,6 +91,7 @@ def find_analogues(current: dict[str, Any], history: list[dict[str, Any]], *, to
     result = {
         "schema": "stegverse.erl.historical_analogue_set.v1",
         "current_state_id": current["state_id"],
+        "as_of_utc": current["as_of_utc"],
         "current_state_vector_digest": current.get("vector_digest") or canonical_digest(current),
         "feature_version": current["feature_version"],
         "similarity_method": "weighted_normalized_l1_with_missingness_penalty.v1",
