@@ -1,0 +1,194 @@
+{
+  "contract_id": "ERL-PHYSICAL-ECONOMICS-REPORT-GENERATION-V0.1",
+  "status": "RESEARCH_CONTRACT_ACTIVE_NOT_RUNTIME_ACTIVATED",
+  "purpose": "Define a public report-generation process in which report boundaries are derived from the attributes, provenance, historical coverage, comparability, freshness, and unresolved state of the evidence available at request time.",
+  "core_rule": "The report must not begin with a fixed historical window or completeness assumption. It must derive the admissible report boundary from the intersection of the relevant attributes that can be established for the requested subject at generation time.",
+  "button_semantics": {
+    "public_action": "GENERATE_REPORT",
+    "effect": "Instantiate a deterministic report request, resolve the relevant state-vector attributes, compute admissible evidence boundaries, disclose unresolved or unavailable components, and render only claims supported inside those boundaries.",
+    "must_not_imply": [
+      "that all historical periods are equally observable",
+      "that all component series share the same start date",
+      "that current-period data are complete",
+      "that revised data are identical to what was known at earlier dates",
+      "that survey or methodology changes preserve comparability",
+      "that missing attributes equal zero",
+      "that an incomplete current period can be extrapolated to a completed period without an explicit model"
+    ]
+  },
+  "report_request_attributes": [
+    "subject",
+    "economic_domain",
+    "geography",
+    "population_scope",
+    "essential_or_discretionary_class",
+    "unit_definition",
+    "physical_quantity_dimension",
+    "quality_or_service_dimension",
+    "income_resource_dimension",
+    "debt_financing_dimension",
+    "producer_cost_margin_dimension",
+    "tax_fee_regulatory_dimension",
+    "distribution_dimension",
+    "regional_dimension",
+    "public_transfer_offset_dimension",
+    "requested_as_of_time"
+  ],
+  "boundary_derivation": {
+    "principle": "For each required attribute, determine the earliest admissible observation, latest admissible observation, latest complete observation, methodology regime, geography/population coverage, evidence posture, revision vintage, and unresolved gaps. The report boundary is then derived from the intersection and union of those attribute-specific boundaries rather than from a single arbitrary date range.",
+    "per_attribute_boundary_fields": [
+      "attribute_id",
+      "required_for_claim_class",
+      "earliest_admissible_date",
+      "latest_observed_date",
+      "latest_complete_date",
+      "current_period_partial",
+      "release_or_observation_lag",
+      "methodology_regime_id",
+      "comparability_with_prior_regime",
+      "revision_vintage",
+      "geography_scope",
+      "population_scope",
+      "unit_scope",
+      "source_authority",
+      "provenance_posture",
+      "missingness_posture",
+      "opaque_elements"
+    ],
+    "derived_report_fields": [
+      "requested_as_of_time",
+      "report_as_of_time",
+      "earliest_common_comparable_date",
+      "latest_common_complete_date",
+      "latest_attribute_specific_observations",
+      "historical_depth_by_attribute",
+      "partial_current_period_components",
+      "methodology_breaks",
+      "revision_vintages",
+      "unsupported_requested_dimensions",
+      "report_completeness_state"
+    ]
+  },
+  "historical_coverage_rule": {
+    "rule": "Historical depth is attribute-specific. A report may include a long series for one attribute and only a few years for another, provided the asymmetry is explicitly shown and no false common history is created.",
+    "example": "If a price series reaches back decades but package-level physical mass is only available for three years, the report may show the longer price context separately while restricting physical purchasing-power conclusions to the period in which the physical-unit attributes are observed or defensibly reconstructed."
+  },
+  "current_period_rule": {
+    "rule": "The current period may remain open at generation time. Partial observations must be marked as partial and must not be silently annualized, completed, or compared with full prior periods as though equivalent.",
+    "states": [
+      "COMPLETE",
+      "PARTIAL_CURRENT_PERIOD",
+      "PENDING_RELEASE",
+      "REVISED_AFTER_INITIAL_RELEASE",
+      "METHODOLOGY_BREAK",
+      "UNAVAILABLE",
+      "OPAQUE"
+    ]
+  },
+  "comparability_rule": {
+    "rule": "Methodology, survey design, classification, geographic, population, unit, or weighting changes create explicit regime boundaries. Cross-regime comparison requires a documented bridge; absent a bridge, the report displays adjacent regimes but does not claim a continuous series.",
+    "examples": [
+      "HTOPS longitudinal versus 2026 cross-sectional design",
+      "CPI series rebasing or title/classification changes",
+      "scanner package-size methodology versus unit-count retail volume",
+      "local delivered utility cost versus national commodity-price series"
+    ]
+  },
+  "revision_and_vintage_rule": {
+    "rule": "Every report must distinguish current-vintage data from release-vintage evidence when the question depends on what was knowable at an earlier time. Later revisions may refine the record but may not silently overwrite historical epistemic state.",
+    "required_fields": [
+      "source_release_date",
+      "observation_reference_period",
+      "vintage_used",
+      "revision_status",
+      "prior_vintage_reference_if_material"
+    ]
+  },
+  "completeness_model": {
+    "primary_output": "STATE_VECTOR_WITH_BOUNDARIES",
+    "scalar_completeness_score_authorized": false,
+    "required_disclosures": [
+      "which requested attributes were resolved",
+      "which were partially resolved",
+      "which remain opaque",
+      "which rely on proxies",
+      "which rely on historical methodology but lack contemporary values",
+      "which current-period components remain incomplete",
+      "which comparability breaks limit trend interpretation"
+    ]
+  },
+  "report_claim_classes": {
+    "OBSERVED": "Directly supported within the disclosed boundary.",
+    "RECONSTRUCTED": "Derived from multiple observed states under a declared transformation with recoverable inputs.",
+    "COMPARATOR_ONLY": "Useful contextual series that does not directly establish the target state.",
+    "PROXY": "Measures an adjacent but non-equivalent attribute.",
+    "PARTIAL": "Current or historical evidence is incomplete for the target claim.",
+    "UNRESOLVED": "Evidence does not establish the claim.",
+    "NOT_COMPARABLE": "A methodology/regime break prevents a continuous comparison without a bridge."
+  },
+  "public_report_required_sections": [
+    "Report question and generated-as-of timestamp",
+    "Scope attributes",
+    "Boundary statement",
+    "Data coverage matrix",
+    "Methodology and comparability regimes",
+    "Current-period completeness",
+    "Physical Economics state vector",
+    "Distribution and regional surfaces",
+    "Producer cost/margin surface",
+    "Household burden and unmet-need surface",
+    "Tax/fee/transfer flows",
+    "Observed findings",
+    "Reconstructed findings",
+    "Unresolved/opaque elements",
+    "Prospective evidence gates",
+    "Source and vintage receipts"
+  ],
+  "boundary_statement_template": {
+    "required": true,
+    "content_rule": "The rendered report must state, in plain language, why its historical start, latest complete date, geography, population, and claim strength differ across attributes.",
+    "example": "This report was generated on [as_of]. Price observations extend to [date], physical-quantity evidence begins in [date], direct household-burden evidence is available for [period], and [current period] remains incomplete. Trend conclusions are restricted to periods with comparable attributes; older contextual series are shown separately."
+  },
+  "determinism_and_receipts": {
+    "rule": "Identical report request attributes against the same evidence/vintage snapshot must produce the same boundary manifest and materially equivalent report findings.",
+    "required_receipts": [
+      "report_request_hash",
+      "evidence_snapshot_id",
+      "boundary_manifest_hash",
+      "source_receipt_set",
+      "renderer_version",
+      "contract_version"
+    ]
+  },
+  "fail_closed_conditions": [
+    "A requested claim requires an attribute whose evidence state is opaque and the report fails to disclose the opacity.",
+    "The renderer creates a common historical window longer than one or more required attributes support.",
+    "A partial current period is treated as complete.",
+    "A methodology break is crossed without a documented bridge.",
+    "A revised series silently replaces an earlier release-vintage state in a retrospective forecast or decision assessment.",
+    "A proxy is rendered as though it directly measures the target attribute.",
+    "Missing data are converted to zero or neutral state.",
+    "A national aggregate is rendered as a population-wide condition when supported distributional evidence materially differs."
+  ],
+  "research_gaps_closed_by_this_contract": [
+    "attribute-specific historical depth",
+    "incomplete current period",
+    "methodology-regime breaks",
+    "data-vintage and revision integrity",
+    "public-facing completeness disclosure",
+    "deterministic report reproducibility",
+    "prospective evidence gates inside the lane"
+  ],
+  "remaining_runtime_work": [
+    "machine schema for report request and boundary manifest",
+    "boundary resolver implementation",
+    "source/vintage snapshot service",
+    "semantic validators and negative fixtures",
+    "public UI button and report renderer",
+    "portable verification receipt",
+    "independent review of boundary-selection semantics"
+  ],
+  "runtime_activated": false,
+  "public_ui_activated": false,
+  "release_authorized": false
+}
