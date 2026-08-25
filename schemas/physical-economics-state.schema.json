@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse-labs.github.io/Executive_Rhetoric_Ledger/schemas/physical-economics-state.schema.json",
+  "title": "ERL Physical Economics State",
+  "type": "object",
+  "required": ["record_type", "record_id", "observed_at", "provenance", "state"],
+  "properties": {
+    "record_type": {
+      "enum": [
+        "economic_unit_state",
+        "essential_need_state",
+        "population_burden_state",
+        "producer_cost_margin_state",
+        "tax_fee_flow"
+      ]
+    },
+    "record_id": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "minLength": 4},
+    "provenance": {
+      "type": "object",
+      "required": ["source_refs", "posture"],
+      "properties": {
+        "source_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "posture": {
+          "enum": ["PRIMARY", "INDEPENDENT", "DERIVED", "SECONDARY_TRIANGULATION", "UNKNOWN_BOUNDED"]
+        },
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "state": {
+      "oneOf": [
+        {"$ref": "#/$defs/economic_unit_state"},
+        {"$ref": "#/$defs/essential_need_state"},
+        {"$ref": "#/$defs/population_burden_state"},
+        {"$ref": "#/$defs/producer_cost_margin_state"},
+        {"$ref": "#/$defs/tax_fee_flow"}
+      ]
+    },
+    "opaque_slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slot", "expected_role", "resolution_state"],
+        "properties": {
+          "slot": {"type": "string"},
+          "expected_role": {"type": "string"},
+          "observed_constraints": {"type": "array", "items": {"type": "string"}},
+          "resolution_state": {"enum": ["OPEN", "PARTIAL", "RESOLVED", "DISPUTED"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "nullable_number": {"type": ["number", "null"]},
+    "economic_unit_state": {
+      "type": "object",
+      "required": ["unit_id", "continuity_posture", "attributes"],
+      "properties": {
+        "unit_id": {"type": "string"},
+        "continuity_posture": {"enum": ["ESTABLISHED", "PARTIAL", "DISPUTED", "UNRESOLVED", "REJECTED"]},
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "nominal_price": {"$ref": "#/$defs/nullable_number"},
+            "physical_mass": {"$ref": "#/$defs/nullable_number"},
+            "physical_volume": {"$ref": "#/$defs/nullable_number"},
+            "count": {"$ref": "#/$defs/nullable_number"},
+            "usable_quantity": {"$ref": "#/$defs/nullable_number"},
+            "nutrition_or_domain_content": {"$ref": "#/$defs/nullable_number"},
+            "quality_or_service_level": {"type": ["string", "number", "null"]},
+            "durability": {"type": ["string", "number", "null"]},
+            "coverage": {"type": ["string", "number", "null"]},
+            "mandatory_access_or_delivery_charge": {"$ref": "#/$defs/nullable_number"},
+            "tax_or_fee": {"$ref": "#/$defs/nullable_number"},
+            "origin": {"type": ["string", "null"]},
+            "substitution_class": {"type": ["string", "null"]}
+          },
+          "minProperties": 1,
+          "additionalProperties": false
+        },
+        "continuity_evidence_refs": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "essential_need_state": {
+      "type": "object",
+      "required": ["need_class", "need_posture", "observed_access_posture"],
+      "properties": {
+        "need_class": {"type": "string"},
+        "need_posture": {"enum": ["PERSISTENT", "VARIABLE_EVIDENCED", "UNKNOWN_BOUNDED"]},
+        "observed_access_posture": {"enum": ["SATISFIED", "SUBSTITUTED", "COMPRESSED", "DEFERRED", "ARREARS", "UNMET", "UNKNOWN_BOUNDED"]},
+        "quantity_acquired": {"$ref": "#/$defs/nullable_number"},
+        "quality_or_service_change": {"type": ["string", "null"]},
+        "unmet_need_measure": {"$ref": "#/$defs/nullable_number"},
+        "constraint_evidence_refs": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "population_burden_state": {
+      "type": "object",
+      "required": ["population_scope", "burden_metric", "distribution_outputs"],
+      "properties": {
+        "population_scope": {"type": "string"},
+        "burden_metric": {"type": "string"},
+        "distribution_outputs": {
+          "type": "object",
+          "properties": {
+            "median_burden": {"$ref": "#/$defs/nullable_number"},
+            "lower_quintile_burden": {"$ref": "#/$defs/nullable_number"},
+            "upper_quintile_burden": {"$ref": "#/$defs/nullable_number"},
+            "burden_gap": {"$ref": "#/$defs/nullable_number"},
+            "share_above_threshold": {"$ref": "#/$defs/nullable_number"}
+          },
+          "minProperties": 1,
+          "additionalProperties": false
+        },
+        "threshold_definition": {"type": ["string", "null"]},
+        "strata": {"type": "array", "items": {"type": "object"}}
+      },
+      "additionalProperties": false
+    },
+    "producer_cost_margin_state": {
+      "type": "object",
+      "required": ["scope", "margin_posture", "evidence_mode"],
+      "properties": {
+        "scope": {"type": "string"},
+        "intermediate_input_cost": {"$ref": "#/$defs/nullable_number"},
+        "labor_compensation": {"$ref": "#/$defs/nullable_number"},
+        "taxes_on_production_imports_less_subsidies": {"$ref": "#/$defs/nullable_number"},
+        "gross_output_or_sales": {"$ref": "#/$defs/nullable_number"},
+        "gross_operating_surplus": {"$ref": "#/$defs/nullable_number"},
+        "corporate_profit": {"$ref": "#/$defs/nullable_number"},
+        "trade_margin": {"$ref": "#/$defs/nullable_number"},
+        "physical_output_quantity": {"$ref": "#/$defs/nullable_number"},
+        "margin_posture": {"enum": ["EXPANDING", "COMPRESSING", "STABLE", "MIXED", "UNRESOLVED"]},
+        "evidence_mode": {"enum": ["DIRECT", "RECONSTRUCTED_DIRECT_INPUTS", "INFERRED_RESIDUAL"]},
+        "confidence": {"enum": ["HIGH", "MEDIUM", "LOW"]}
+      },
+      "additionalProperties": false
+    },
+    "tax_fee_flow": {
+      "type": "object",
+      "required": ["flow_id", "charge_class", "initial_or_legal_payer", "entry_point", "pass_through_posture"],
+      "properties": {
+        "flow_id": {"type": "string"},
+        "charge_class": {"type": "string"},
+        "initial_or_legal_payer": {"type": "string"},
+        "amount_rate_or_base": {"type": ["number", "string", "null"]},
+        "entry_point": {"enum": ["PRODUCER", "INTERMEDIARY", "CONSUMER", "CROSS_LAYER"]},
+        "pass_through_posture": {"enum": ["OBSERVED", "PARTIAL", "NOT_OBSERVED", "UNKNOWN_BOUNDED"]},
+        "downstream_nodes": {"type": "array", "items": {"type": "string"}},
+        "subsidy_or_credit_offset": {"type": ["number", "string", "null"]},
+        "flow_identity_key": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
