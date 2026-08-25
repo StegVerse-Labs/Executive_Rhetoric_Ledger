@@ -1,0 +1,71 @@
+{
+  "record_type": "population_burden_state",
+  "record_id": "ERL-PE-DISTRIBUTION-CE-2024-BASELINE",
+  "scope": "United States Consumer Expenditure Survey 2024 distribution baseline",
+  "purpose": "Establish an official BLS population-distribution baseline for Physical Economics so national aggregates are not treated as sufficient when expenditure capacity and burden differ materially by income quintile.",
+  "source_authority": "U.S. Bureau of Labor Statistics Consumer Expenditure Surveys",
+  "construction": {
+    "quintile_method": "BLS sorts consumer units from lowest to highest income before taxes, applies population weights, and divides the weighted population into five equal parts.",
+    "income_ranges_2024_usd": {
+      "lowest": "0-29932",
+      "second": "29933-57452",
+      "third": "57453-94511",
+      "fourth": "94512-155925",
+      "highest": "155926_and_above"
+    }
+  },
+  "average_annual_expenditures_usd": {
+    "all_consumer_units": 78535,
+    "lowest_quintile": 35046,
+    "second_quintile": 50054,
+    "third_quintile": 66900,
+    "fourth_quintile": 89972,
+    "highest_quintile": 150342
+  },
+  "derived_distribution_metrics": {
+    "highest_to_lowest_total_expenditure_ratio": 4.29,
+    "highest_minus_lowest_total_expenditure_usd": 115296,
+    "interpretation": "The national average cannot represent a typical burden state for every income stratum because expenditure capacity differs by more than fourfold between the highest and lowest weighted income quintiles."
+  },
+  "all_consumer_unit_2024_context": {
+    "food_share_pct": 12.9,
+    "housing_share_pct": 33.4,
+    "transportation_share_pct": 17.0,
+    "healthcare_share_pct": 7.9,
+    "personal_insurance_and_pensions_share_pct": 12.5,
+    "food_at_home_annual_usd": 6224,
+    "housing_annual_usd": 26266,
+    "utilities_fuels_public_services_annual_usd": 4736,
+    "transportation_annual_usd": 13318,
+    "gasoline_other_fuels_annual_usd": 2645
+  },
+  "2023_to_2024_income_and_spending_change_pct": {
+    "all_consumer_units": {"expenditures": 1.8, "income_before_taxes": 2.4},
+    "lowest_quintile": {"expenditures": 3.8, "income_before_taxes": 6.8},
+    "second_quintile": {"expenditures": 2.3, "income_before_taxes": 5.3},
+    "third_quintile": {"expenditures": 2.3, "income_before_taxes": 4.8},
+    "fourth_quintile": {"expenditures": 2.4, "income_before_taxes": 4.1},
+    "highest_quintile": {"expenditures": 0.4, "income_before_taxes": 0.0}
+  },
+  "bounded_findings": [
+    "A national expenditure average materially compresses the population distribution: 2024 average annual expenditures were $35,046 in the lowest income quintile and $150,342 in the highest.",
+    "Food, housing, and transportation together represented 63.3 percent of average 2024 expenditures across all consumer units, making essential or near-essential categories structurally dominant in the household expenditure surface.",
+    "This baseline establishes why Physical Economics must calculate burden by population strata before national aggregation.",
+    "These 2024 levels are a distributional baseline, not a claim that 2026 household burdens are identical; current HTOPS and later CE data must update the state."
+  ],
+  "next_required_evidence": [
+    "2024 detailed essential-category levels and shares by income quintile",
+    "2026 HTOPS food/energy/expense/transport burden by income strata",
+    "geographic and renter-owner burden slices",
+    "income-relative essential expenditure ratios",
+    "share above frozen essential-burden and unmet-need thresholds"
+  ],
+  "sources": [
+    "https://www.bls.gov/opub/reports/consumer-expenditures/2024/home.htm",
+    "https://www.bls.gov/news.release/cesan.nr0.htm",
+    "https://www.bls.gov/cex/tables.htm"
+  ],
+  "finding_authorized": true,
+  "current_2026_state_authorized": false,
+  "publication_authorized": false
+}
