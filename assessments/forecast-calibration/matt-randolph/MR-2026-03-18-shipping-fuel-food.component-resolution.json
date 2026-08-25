@@ -36,9 +36,10 @@
     },
     {
       "component": "food_prices_first_terminal_ordering",
-      "posture": "UNRESOLVED",
-      "basis": "The source says food prices are hit first, but a fixed comparator set and ordering clock are required before that claim can be tested fairly.",
-      "independence": "not_applicable"
+      "posture": "NOT_SUPPORTED",
+      "basis": "Under the frozen CPI consumer-category comparator and the primary March 9-11 marine-fuel-shock clock, food was not the first downstream consumer category to show material movement. In March food at home fell 0.2% while apparel rose 1.0% and transportation services rose 0.6%; in April food at home rose 0.7%, but household furnishings also rose 0.7% and apparel rose 0.6%.",
+      "independence": "independent_official_source",
+      "execution_ref": "march-18-food-first-comparator-execution.v1.json"
     },
     {
       "component": "shipping_fuel_as_dominant_or_sole_cause",
@@ -47,8 +48,8 @@
       "independence": "not_applicable"
     }
   ],
-  "component_resolution_rule": "Supported intermediate transition links may receive component support without converting the terminal forecast into RESOLVED_CORRECT.",
-  "next_gate": "Define and freeze a comparator set for 'first' before evaluating terminal ordering.",
+  "component_resolution_rule": "Supported intermediate transition links may receive component support without converting the terminal forecast into RESOLVED_CORRECT; a failed terminal ordering component likewise does not erase supported intermediate mechanism links.",
+  "next_gate": "Preserve any retrievable March 18 transcript to determine whether the video narrows, broadens, or qualifies the subtitle-level ordering claim. Until then, the CPI comparator result is binding for the currently authorized consumer-price interpretation.",
   "aggregate_credibility_effect_authorized": false,
   "publication_authorized": false
 }
