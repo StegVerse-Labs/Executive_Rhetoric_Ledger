@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.example/schemas/physical-economics-report-request.schema.json",
+  "title": "Physical Economics Report Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["report_request_id", "question", "requested_as_of_time", "scope", "claim_classes", "pertinence_policy"],
+  "properties": {
+    "report_request_id": {"type": "string", "minLength": 1},
+    "question": {"type": "string", "minLength": 1},
+    "requested_as_of_time": {"type": "string", "format": "date-time"},
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subject", "economic_domain", "geography", "population_scope"],
+      "properties": {
+        "subject": {"type": "string", "minLength": 1},
+        "economic_domain": {"type": "string", "minLength": 1},
+        "geography": {"type": "string", "minLength": 1},
+        "population_scope": {"type": "string", "minLength": 1},
+        "essential_or_discretionary_class": {"enum": ["ESSENTIAL", "DISCRETIONARY", "MIXED", "UNRESOLVED"]},
+        "unit_definition": {"type": ["string", "null"]},
+        "requested_start_date": {"type": ["string", "null"], "format": "date"},
+        "requested_end_date": {"type": ["string", "null"], "format": "date"}
+      }
+    },
+    "claim_classes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "PRICE_CHANGE",
+          "PHYSICAL_PURCHASING_POWER",
+          "ESSENTIAL_COST_BURDEN",
+          "ESSENTIAL_NEED_SATISFACTION",
+          "SUBSTITUTION_OR_QUALITY_COMPRESSION",
+          "POPULATION_DISTRIBUTION",
+          "PRODUCER_COST_PRESSURE",
+          "PRODUCER_MARGIN_STATE",
+          "TAX_FEE_REGULATORY_FLOW",
+          "BALANCE_SHEET_RESILIENCE",
+          "ARREARS_DEFERRED_OBLIGATION",
+          "CAPACITY_INVENTORY_CONSTRAINT",
+          "REGIONAL_BURDEN",
+          "PUBLIC_TRANSFER_OFFSET",
+          "COMPOSITE_CONTEXT"
+        ]
+      }
+    },
+    "pertinence_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "required_attribute_sets_version", "allow_optional_context_attributes"],
+      "properties": {
+        "mode": {"const": "DETERMINISTIC_CLAIM_CLASS_MAPPING"},
+        "required_attribute_sets_version": {"type": "string", "minLength": 1},
+        "allow_optional_context_attributes": {"type": "boolean"},
+        "user_requested_attributes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "excluded_attributes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "vintage_policy": {
+      "enum": ["CURRENT_VINTAGE", "AS_KNOWN_AT_REQUESTED_TIME", "BOTH_CURRENT_AND_HISTORICAL_VINTAGE"]
+    },
+    "output_preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "include_state_vector": {"type": "boolean"},
+        "include_data_coverage_matrix": {"type": "boolean"},
+        "include_prospective_evidence_gates": {"type": "boolean"},
+        "include_source_receipts": {"type": "boolean"},
+        "include_uncertainty_surface": {"type": "boolean"}
+      }
+    }
+  }
+}
