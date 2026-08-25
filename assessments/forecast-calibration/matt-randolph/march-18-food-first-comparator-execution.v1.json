@@ -3,7 +3,18 @@
   "record_id": "ERL-FC-MR-2026-03-18-FOOD-FIRST-EXEC-V1",
   "protocol_ref": "march-18-food-first-comparator-protocol.v1.json",
   "forecast_id": "MR-FC-2026-03-18-SHIPPING-FUEL-FOOD-FIRST",
-  "execution_scope": "Initial CPI consumer-category ordering test using March and April 2026 BLS observations.",
+  "execution_scope": "Initial nationwide U.S. CPI-U consumer-category ordering test using March and April 2026 BLS observations.",
+  "geographic_scope": {
+    "statistical_scope": "United States, CPI-U U.S. city average",
+    "population_scope": "urban consumers represented by CPI-U",
+    "not_a_claim_about": [
+      "every U.S. household",
+      "every state or locality",
+      "every grocery basket",
+      "household purchasing power",
+      "year-over-year affordability improvement"
+    ]
+  },
   "primary_clock": {
     "start": "2026-03-09/2026-03-11",
     "basis": "USDA-documented marine bunker-fuel shock"
@@ -11,39 +22,49 @@
   "observations": [
     {
       "reference_month": "2026-03",
-      "food_at_home_pct": -0.2,
-      "food_away_from_home_pct": 0.2,
-      "apparel_pct": 1.0,
-      "household_furnishings_and_operations_pct": 0.2,
-      "transportation_services_pct": 0.6,
-      "commodities_less_food_and_energy_pct": 0.1,
+      "food_at_home_monthly_sa_pct": -0.2,
+      "food_at_home_yoy_pct": 1.9,
+      "total_food_yoy_pct": 2.7,
+      "food_away_from_home_monthly_pct": 0.2,
+      "food_away_from_home_yoy_pct": 3.8,
+      "apparel_monthly_pct": 1.0,
+      "household_furnishings_and_operations_monthly_pct": 0.2,
+      "transportation_services_monthly_pct": 0.6,
+      "commodities_less_food_and_energy_monthly_pct": 0.1,
       "source": "BLS CPI March 2026"
     },
     {
       "reference_month": "2026-04",
-      "food_at_home_pct": 0.7,
-      "food_away_from_home_pct": 0.2,
-      "apparel_pct": 0.6,
-      "household_furnishings_and_operations_pct": 0.7,
-      "transportation_services_pct": 0.3,
-      "commodities_less_food_and_energy_pct": 0.0,
+      "food_at_home_monthly_sa_pct": 0.7,
+      "food_away_from_home_monthly_pct": 0.2,
+      "apparel_monthly_pct": 0.6,
+      "household_furnishings_and_operations_monthly_pct": 0.7,
+      "transportation_services_monthly_pct": 0.3,
+      "commodities_less_food_and_energy_monthly_pct": 0.0,
       "source": "BLS CPI April 2026"
     }
   ],
   "ordering_assessment": {
-    "food_at_home": "NOT_FIRST",
-    "food_away_from_home": "NOT_UNIQUELY_FIRST",
+    "food_at_home": "NOT_FIRST_UNDER_MONTHLY_NATIONAL_CPI_ORDERING",
+    "food_away_from_home": "NOT_UNIQUELY_FIRST_UNDER_MONTHLY_NATIONAL_CPI_ORDERING",
     "basis": [
-      "In March, food at home fell 0.2% while apparel rose 1.0% and transportation services rose 0.6%.",
+      "In the nationwide CPI-U monthly ordering test, seasonally adjusted food at home declined 0.2% from February to March while apparel rose 1.0% and transportation services rose 0.6%.",
+      "That -0.2% monthly movement does not mean grocery affordability improved: the nationwide food-at-home index was still 1.9% above March 2025, total food was 2.7% higher year over year, and food away from home was 3.8% higher year over year.",
       "Food away from home rose 0.2% in March, but larger comparator increases occurred in apparel and transportation services in the same reference month.",
       "In April, food at home rose 0.7%, but household furnishings and operations also rose 0.7% and apparel rose 0.6%, so April does not establish unique first ordering either."
     ]
   },
-  "terminal_component_posture": "NOT_SUPPORTED",
-  "bounded_meaning": "Under the frozen CPI consumer-category comparator protocol and the primary marine-fuel-shock clock, the proposition that food prices were the first downstream consumer category affected is not supported by March-April observations.",
+  "terminal_component_posture": "NOT_SUPPORTED_UNDER_V1_MONTHLY_NATIONAL_CPI_ORDERING",
+  "bounded_meaning": "Under the frozen nationwide CPI-U monthly consumer-category comparator and primary marine-fuel-shock clock, food was not the uniquely first category to register monthly price movement. This is a narrow ordering result only; it is not evidence that grocery bills, food-price levels, or household purchasing power improved.",
+  "affordability_guard": {
+    "rule": "Monthly CPI direction must never be translated into a household-affordability or purchasing-power claim without separate price-level, income/wage, geography, and household-basket evidence.",
+    "march_context": "Food at home remained 1.9% above its March 2025 level nationally even though the seasonally adjusted month-to-month index declined 0.2%."
+  },
   "nonimplications": [
     "This does not reject the independently supported marine-fuel -> grain-freight -> diesel/transport-cost mechanism.",
     "This does not establish that shipping costs had no effect on food prices.",
+    "This does not establish that grocery bills or purchasing power improved for U.S. households.",
+    "This does not claim uniform experience across states, regions, retailers, or household baskets.",
     "This does not resolve any stronger or different meaning that might appear in an unavailable March 18 video transcript.",
     "This does not authorize an aggregate person-level credibility score."
   ],
