@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/erl/schemas/market-observation.schema.json",
+  "title": "ERL Market Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "observation_id",
+    "observed_at_utc",
+    "family",
+    "observation_type",
+    "status",
+    "facts",
+    "uncertainties",
+    "source_refs",
+    "research_authority",
+    "execution_authority",
+    "may_authorize_order"
+  ],
+  "properties": {
+    "schema": {"const": "stegverse.erl.market_observation.v1"},
+    "observation_id": {"type": "string", "minLength": 1},
+    "observed_at_utc": {"type": "string", "format": "date-time"},
+    "family": {"type": "string", "minLength": 1},
+    "observation_type": {"type": "string", "minLength": 1},
+    "status": {"enum": ["OBSERVED", "PARTIAL", "UNRESOLVED", "NULL_RESULT"]},
+    "instruments": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "number"},
+          {"type": "string"},
+          {"type": "boolean"},
+          {"type": "null"},
+          {"type": "array"}
+        ]
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "test"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "test": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "uncertainties": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "source_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "source_quality": {"type": "number", "minimum": 0, "maximum": 1},
+    "observation_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "research_authority": {"const": "ERL"},
+    "execution_authority": {"const": "NONE"},
+    "may_authorize_order": {"const": false}
+  }
+}
