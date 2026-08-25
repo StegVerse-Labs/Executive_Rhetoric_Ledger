@@ -1,0 +1,52 @@
+{
+  "matrix_id": "ERL-ECON-US-GAPS-V1",
+  "jurisdiction": "United States",
+  "as_of": "2026-08-25",
+  "rows": [
+    {
+      "gap_id": "ERL-ECON-US-GAP-AGGREGATE-HOUSEHOLD",
+      "claim_family": "aggregate-to-household transmission",
+      "supporting_evidence": [],
+      "confidence": 0,
+      "contradictions": [],
+      "missing_evidence": [
+        "Revision-consistent median after-tax income and consumption",
+        "Cost burdens for housing healthcare insurance food and financing",
+        "Distribution by wealth ownership age region and income"
+      ],
+      "next_targeted_query": "Acquire harmonized aggregate, median, distributional, cost-burden, debt, and wealth series from 1980 to present.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-US-GAP-TARIFF-REALIZED",
+      "claim_family": "realized tariff incidence and productive capacity",
+      "supporting_evidence": [],
+      "confidence": 0,
+      "contradictions": [],
+      "missing_evidence": [
+        "Product-level legal and final incidence",
+        "Downstream margin wage employment and price effects",
+        "Retaliatory foreign market loss",
+        "Competitive domestic capacity versus protected pricing power"
+      ],
+      "next_targeted_query": "Trace tariffed product lanes through importer payment, downstream production, household prices, employment, investment, retaliation, and capacity outcomes.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-US-GAP-AUTOMATION",
+      "claim_family": "AI automation and robotics effects",
+      "supporting_evidence": [],
+      "confidence": 0,
+      "contradictions": [],
+      "missing_evidence": [
+        "Firm and sector adoption",
+        "Hiring and task substitution",
+        "Wage and bargaining effects",
+        "Augmentation new-demand and macro controls"
+      ],
+      "next_targeted_query": "Acquire U.S. sector-level automation adoption and matched labor outcomes with augmentation and business-cycle controls.",
+      "status": "open"
+    }
+  ],
+  "stop_rule": "Stop a query wave when consequential claims have primary support or explicit limits and another targeted search is unlikely to change classification."
+}
