@@ -1,0 +1,78 @@
+{
+  "schema_version": "stegverse.erl.economic-comparison-overlay.v1",
+  "overlay_id": "ERL-ECON-CA-US-OVERLAY",
+  "national_inputs": {
+    "canada": "economic-trajectories/canada/trajectory.v1.json",
+    "united_states": "economic-trajectories/united-states/trajectory.v1.json"
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "ERL-ECON-HYP-SIX-YEAR-LAG",
+      "proposition": "Selected Canadian household-security and per-capita trajectory changes preceded directionally comparable U.S. changes by approximately six years.",
+      "status": "unassessed",
+      "required_evidence": [
+        "Reviewed national structural-break findings by aligned indicator",
+        "Lag estimates with baseline sensitivity",
+        "Definition and revision reconciliation",
+        "Alternative explanations and non-comparable indicators"
+      ],
+      "disconfirming_conditions": [
+        "No stable lead across indicators",
+        "Lead changes materially with baseline",
+        "U.S. precedes Canada on material indicators",
+        "Mechanisms or populations are non-comparable"
+      ]
+    },
+    {
+      "hypothesis_id": "ERL-ECON-HYP-AGGREGATE-HOUSEHOLD-DIVERGENCE",
+      "proposition": "Both countries can display aggregate economic strength while economic security deteriorates for material household groups.",
+      "status": "unassessed",
+      "required_evidence": [
+        "Reviewed aggregate-output findings",
+        "Reviewed median and distributional household findings",
+        "Population-specific effects and controls"
+      ],
+      "disconfirming_conditions": [
+        "Household security broadly improves with aggregate measures",
+        "Apparent divergence is caused by incompatible definitions or temporary revisions"
+      ]
+    },
+    {
+      "hypothesis_id": "ERL-ECON-HYP-TARIFF-SYMMETRY",
+      "proposition": "The tariff-target and tariff-imposing countries experience overlapping losses in efficiency, investment, employment, or household purchasing power through different domestic mechanisms.",
+      "status": "unassessed",
+      "required_evidence": [
+        "Reviewed Canadian export-shock and diversification effects",
+        "Reviewed U.S. importer downstream and household incidence",
+        "Retaliation and alternative-market outcomes",
+        "Counterfactual and sector controls"
+      ],
+      "disconfirming_conditions": [
+        "Measured benefits dominate costs in one country across the declared horizon",
+        "Effects are confined to non-comparable sectors or periods"
+      ]
+    },
+    {
+      "hypothesis_id": "ERL-ECON-HYP-DIVERGENT-STRATEGIC-OUTPUTS",
+      "proposition": "Canada may exchange short-run efficiency for diversified resilience while the United States may exchange efficiency for domestic productive capacity, with neither strategic result guaranteed.",
+      "status": "unassessed",
+      "required_evidence": [
+        "Canadian product-level diversification durability and margins",
+        "U.S. competitive capacity investment and productivity",
+        "Long-run consumer producer worker and fiscal effects"
+      ],
+      "disconfirming_conditions": [
+        "Diversification is temporary rerouting without durable buyers",
+        "Protected U.S. output does not create competitive capacity",
+        "Efficiency costs are not measurable"
+      ]
+    }
+  ],
+  "comparisons": [],
+  "authority": {
+    "research_authority": "ERL",
+    "may_rewrite_national_findings": false,
+    "may_infer_missing_effects": false,
+    "may_publish": false
+  }
+}
