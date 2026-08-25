@@ -1,0 +1,49 @@
+{
+  "record_type": "delivered_essential_cost_structure",
+  "record_id": "ERL-FC-MR-2026-DELIVERED-ELECTRICITY-ONCOR-001",
+  "purpose": "Preserve an authoritative example showing why a household's contracted electricity supply rate is not equivalent to the total delivered electricity cost and why national electricity price averages cannot substitute for local bill structure.",
+  "scope": "Oncor Electric Delivery Company residential service structure, Texas, 2026",
+  "source_type": "regulated_utility_and_tariff_material",
+  "observations": [
+    {
+      "observation": "Oncor does not generate electricity or bill retail customers directly; retail electric providers bill customers for both electricity supply and Oncor delivery charges.",
+      "source": "Oncor rate review / delivery charge materials"
+    },
+    {
+      "observation": "Residential delivery charges include fixed monthly charges and variable charges that may include Distribution System Charge, Transmission Cost Recovery Factor, Distribution Cost Recovery Factor, Energy Efficiency Cost Recovery Factor, and Nuclear Decommissioning Charge.",
+      "source": "Oncor Delivery Charges 101"
+    },
+    {
+      "observation": "Oncor states that whether and how its delivery-system charges are passed through to the retail customer depends on the customer's retail electric provider contract.",
+      "source": "Oncor FAQ"
+    },
+    {
+      "observation": "PUCT-approved 2026 Oncor base-rate changes took effect June 1, 2026; Oncor estimated approximately a 3% total monthly bill increase for a residential customer using 1,000 kWh at a $0.15/kWh average retail electric price, with a separate surcharge permitted for the January-through-effective-date difference between interim and new rates.",
+      "source": "Oncor first-quarter 2026 results / rate case materials"
+    },
+    {
+      "observation": "A separate April 2026 Unified Tracker Mechanism filing sought recovery of transmission and distribution investments and was estimated by Oncor at approximately $3.85 per month, or roughly 2.5%, for a residential customer using 1,000 kWh at a $0.15/kWh average retail price if approved.",
+      "source": "Oncor April 23, 2026 UTM filing announcement",
+      "status_note": "filing/request, not treated here as an approved realized household increase"
+    }
+  ],
+  "governing_distinctions": [
+    "contracted_supply_rate != delivered_total_cost",
+    "retail_electric_provider_charge != transmission_distribution_utility_charge",
+    "national_electricity_price_index != local household bill",
+    "approved tariff/rider != identical bill impact for every household",
+    "filing/request != approved rate",
+    "rate factor change != household purchasing-power effect until usage and total bill are reconstructed"
+  ],
+  "essential_purchasing_power_role": "A mandatory delivery or transmission increase can reduce disposable capacity available for food, fuel, water, or other essentials even if the household's contracted commodity/supply rate is fixed.",
+  "source_receipts": [
+    "https://www.oncor.com/content/oncorwww/us/en/home/about-us/regulatory/delivery-charges-101.html",
+    "https://www.oncor.com/content/oncorwww/us/en/home/faqs/faqs-details.html",
+    "https://www.oncor.com/content/oncorwww/us/en/home/rate-case.html",
+    "https://www.oncor.com/content/oncorwww/wire/en/home/newsroom/oncor-reports-first-quarter-2026-results.html",
+    "https://www.oncor.com/content/oncorwww/wire/en/home/newsroom/oncor-files-unified-tracker-mechanism-request-to-support-reliabi.html"
+  ],
+  "bounded_finding": "The Oncor 2026 record independently establishes the structural proposition that a fixed retail electricity supply contract does not necessarily fix the household's total delivered electricity cost because regulated transmission/distribution charges and surcharges are separate bill components. This record does not establish any specific household's percentage increase without that household's bills, usage, and contract.",
+  "finding_authorized": true,
+  "publication_authorized": false
+}
