@@ -7,17 +7,19 @@
   },
   "evaluation_window": {
     "start": "2026-02-28",
-    "end": "2026-08-23"
+    "end": "2026-08-25"
   },
   "forecasts": [
     {
       "forecast_id": "MR-FC-2026-03-07-HORMUZ-THREE-WEEK",
       "issued_at": "2026-03-07",
-      "claim": "If the Strait of Hormuz remains effectively closed beyond roughly three weeks, global recession begins to take hold and countries around the world intervene to stop the closure.",
+      "claim": "We know that the Strait of Hormuz simply cannot be closed beyond three weeks, thats when global recession begins to take hold and countries around the world put a stop to it.",
       "source_ids": ["MR-2026-03-07-THIRD-WEEK"],
+      "source_custody": "FIRST_PARTY_TRANSCRIPT_TEXT_RETRIEVABLE",
       "base_window": {
-        "earliest": "2026-03-21",
-        "latest": "2026-03-21"
+        "primary_closure_start": "2026-02-28",
+        "primary_three_week_threshold": "2026-03-21",
+        "publication_date_sensitivity_threshold": "2026-03-28"
       },
       "contingencies": [],
       "world_event_links": [
@@ -27,7 +29,31 @@
         "MR-WORLD-2026-04-20-HORMUZ-NEAR-STANDSTILL",
         "MR-WORLD-2026-04-28-HORMUZ-CLOSED-DISRUPTED"
       ],
-      "state": "UNRESOLVED",
+      "protocol_ref": "march-07-hormuz-threshold-protocol.v1.json",
+      "execution_ref": "march-07-hormuz-threshold-execution.v1.json",
+      "state": "PARTIAL_MIXED",
+      "component_postures": [
+        {
+          "component": "effective_closure_persists_to_three_week_threshold",
+          "posture": "SUPPORTED"
+        },
+        {
+          "component": "closure_cannot_persist_materially_beyond_three_weeks",
+          "posture": "NOT_SUPPORTED"
+        },
+        {
+          "component": "global_recession_begins_to_take_hold_near_threshold",
+          "posture": "PARTIAL_MIXED"
+        },
+        {
+          "component": "countries_intervene_to_stop_closure",
+          "posture": "PARTIAL_MIXED"
+        },
+        {
+          "component": "three_week_threshold_as_inflection_point",
+          "posture": "LIMITED_SUPPORT"
+        }
+      ],
       "state_history": [
         {
           "recorded_at": "2026-03-07",
@@ -38,16 +64,30 @@
         {
           "recorded_at": "2026-08-23",
           "state": "UNRESOLVED",
-          "reason": "Independent events show severe disruption persisted well beyond three weeks and included a temporary April 17 reopening followed by near-standstill traffic, but the forecast cannot yet be resolved until 'closed', the interval start, 'global recession begins to take hold', and 'countries put a stop to it' are operationalized from the original source context and independent macroeconomic evidence.",
+          "reason": "Independent events showed severe disruption persisted well beyond three weeks, but operational closure, recession, intervention, and clock-anchor semantics had not yet been frozen.",
           "source_ids": [
             "REUTERS-2026-04-17-HORMUZ-REOPEN",
             "REUTERS-2026-04-17-IRGC-AUTH",
             "REUTERS-2026-04-20-HORMUZ-STANDSTILL",
             "REUTERS-2026-04-28-HORMUZ-DISRUPTION"
           ]
+        },
+        {
+          "recorded_at": "2026-08-25",
+          "state": "PARTIAL_MIXED",
+          "reason": "The V1 threshold protocol and execution establish that closure-like conditions persisted through and materially beyond the three-week threshold, contradicting a literal duration cap. OECD/IMF evidence independently supports substantial conflict-linked global macro deterioration and recession risk, while baseline global growth remained positive. International intervention occurred but did not end closure-like conditions near the threshold.",
+          "source_ids": [
+            "MR-2026-03-07-THIRD-WEEK",
+            "REUTERS-2026-04-09-HORMUZ-STANDSTILL",
+            "REUTERS-2026-04-17-IRGC-AUTH",
+            "REUTERS-2026-04-21-HORMUZ-STANDSTILL",
+            "REUTERS-2026-04-30-HORMUZ-CLOSED",
+            "OECD-2026-03-INTERIM-OUTLOOK",
+            "IMF-2026-04-WEO-BLOG"
+          ]
         }
       ],
-      "calibration_notes": "The March 21 base-window boundary is provisional and derived from the independently reported February 28 start of the war/de facto closure plus three weeks. It is not treated as Randolph's verified chosen anchor until the full original context is preserved. The forecast remains unresolved rather than scored right/wrong."
+      "calibration_notes": "The strongest supported reading is an approximate early-warning threshold for escalating global macro risk, not a validated 21-day closure-duration cap. The primary clock begins with the independently observed February 28 closure-like disruption; the March 7 publication-date sensitivity clock remains visible because the first-party sentence does not explicitly identify its closure-start anchor."
     }
   ],
   "source_receipts": [
@@ -59,10 +99,10 @@
       "provenance_posture": "primary"
     },
     {
-      "source_id": "REUTERS-2026-04-17-HORMUZ-REOPEN",
+      "source_id": "REUTERS-2026-04-09-HORMUZ-STANDSTILL",
       "source_type": "independent_wire_report",
-      "source_reference": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
-      "published_or_observed_at": "2026-04-17T05:22:13Z",
+      "source_reference": "https://www.reuters.com/world/middle-east/shipping-traffic-through-hormuz-virtual-standstill-despite-ceasefire-data-shows-2026-04-09/",
+      "published_or_observed_at": "2026-04-09",
       "provenance_posture": "evidenced_independence"
     },
     {
@@ -73,26 +113,39 @@
       "provenance_posture": "evidenced_independence"
     },
     {
-      "source_id": "REUTERS-2026-04-20-HORMUZ-STANDSTILL",
+      "source_id": "REUTERS-2026-04-21-HORMUZ-STANDSTILL",
       "source_type": "independent_wire_report",
-      "source_reference": "https://www.reuters.com/world/middle-east/shipping-traffic-remains-virtual-standstill-through-hormuz-data-shows-2026-04-20/",
-      "published_or_observed_at": "2026-04-20T10:51:26Z",
+      "source_reference": "https://www.reuters.com/world/middle-east/shipping-traffic-through-hormuz-still-largely-halted-2026-04-21/",
+      "published_or_observed_at": "2026-04-21",
       "provenance_posture": "evidenced_independence"
     },
     {
-      "source_id": "REUTERS-2026-04-28-HORMUZ-DISRUPTION",
+      "source_id": "REUTERS-2026-04-30-HORMUZ-CLOSED",
       "source_type": "independent_wire_report",
-      "source_reference": "https://www.reuters.com/business/energy/oil-prices-rise-no-end-iran-war-stand-off-seems-sight-2026-04-28/",
-      "published_or_observed_at": "2026-04-28T01:02:25Z",
+      "source_reference": "https://www.reuters.com/business/energy/us-seeks-international-help-reopen-strait-hormuz-crude-prices-surge-2026-04-30/",
+      "published_or_observed_at": "2026-04-30",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "OECD-2026-03-INTERIM-OUTLOOK",
+      "source_type": "independent_multilateral_macro_assessment",
+      "source_reference": "https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2026_d4623013-en/full-report.html",
+      "published_or_observed_at": "2026-03-26",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "IMF-2026-04-WEO-BLOG",
+      "source_type": "independent_multilateral_macro_assessment",
+      "source_reference": "https://www.imf.org/en/blogs/articles/2026/04/14/war-darkens-global-economic-outlook-and-reshapes-policy-priorities",
+      "published_or_observed_at": "2026-04-14",
       "provenance_posture": "evidenced_independence"
     }
   ],
   "limitations": [
-    "The first-party source currently preserves a publication date but not a verified clock time.",
-    "The operational meaning of 'closed' is unresolved and must be tested against transit-volume evidence rather than treated as a binary label.",
-    "The three-week clock anchor is provisional pending full-context verification from the source object.",
-    "No macroeconomic recession threshold has yet been selected; doing so before identifying Randolph's intended metric would import an assumption.",
-    "The April 17 temporary reopening may be relevant to the intervention portion of the claim, but no causal attribution to Randolph's predicted mechanism is made here.",
+    "The first-party source preserves a publication date but not a verified clock time.",
+    "The source does not explicitly specify the start anchor for the three-week clock, so both operational-closure and publication-date clocks remain visible.",
+    "Global recession begins to take hold is softer than a completed recession and does not name a metric; the V1 protocol therefore separates realized baseline growth from adverse/severe recession-risk scenarios.",
+    "International intervention is distinguishable from successful reopening; the execution records both separately.",
     "No aggregate credibility finding is authorized from this single forecast record."
   ]
 }
