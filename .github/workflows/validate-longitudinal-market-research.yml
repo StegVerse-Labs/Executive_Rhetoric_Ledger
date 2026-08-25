@@ -8,16 +8,20 @@ on:
       - 'schemas/trade-preference-evidence.schema.json'
       - 'research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json'
       - 'research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json'
+      - 'research-data/longitudinal-market-source-registry.v1.json'
+      - 'research-data/longitudinal-market-source-health-policy.v1.json'
       - 'scripts/validate_longitudinal_market_evidence.py'
       - 'scripts/find_historical_market_analogues.py'
       - 'scripts/index_existing_crypto_market_panel.py'
       - 'scripts/index_crypto_system_shock_event.py'
       - 'scripts/normalize_existing_market_events.py'
+      - 'scripts/build_longitudinal_source_health.py'
       - 'scripts/label_market_forward_outcomes.py'
       - 'scripts/build_trade_preference_evidence.py'
       - 'tests/test_longitudinal_market_research.py'
       - 'tests/test_market_observation_ingestion.py'
       - 'tests/test_generic_market_event_normalizer.py'
+      - 'tests/test_longitudinal_source_health.py'
       - '.github/workflows/validate-longitudinal-market-research.yml'
   workflow_dispatch:
 
@@ -47,11 +51,12 @@ jobs:
           scripts/index_existing_crypto_market_panel.py
           scripts/index_crypto_system_shock_event.py
           scripts/normalize_existing_market_events.py
+          scripts/build_longitudinal_source_health.py
           scripts/label_market_forward_outcomes.py
           scripts/build_trade_preference_evidence.py
 
       - name: Run deterministic longitudinal research tests
-        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py
+        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py tests/test_longitudinal_source_health.py
 
       - name: Index canonical ERL crypto panel
         run: |
@@ -84,6 +89,14 @@ jobs:
           print(json.dumps({'status':'PASS','observation_id':observation['observation_id'],'execution_authority':'NONE'},sort_keys=True))
           PY
 
+      - name: Build deterministic source-health receipt
+        run: >-
+          python scripts/build_longitudinal_source_health.py
+          research-data/longitudinal-market-source-registry.v1.json
+          research-data/longitudinal-market-source-health-policy.v1.json
+          --as-of 2026-08-25T20:00:00Z
+          --out reports/longitudinal-market/source-health.json
+
       - name: Split current state from historical corpus
         run: |
           python - <<'PY'
@@ -113,18 +126,19 @@ jobs:
           --horizons 1,2,3
           --out reports/longitudinal-market/forward-outcomes.json
 
-      - name: Build evidence-only XRP preference packet
-        run: >-
-          python scripts/build_trade_preference_evidence.py
-          reports/longitudinal-market/analogue-set.json
-          reports/longitudinal-market/forward-outcomes.json
-          --candidate XRP-USD
-          --side BUY
-          --compare BTC-USD,ETH-USD,SOL-USD
-          --horizon step_1
-          --coverage-score 0.25
-          --minimum-observations 10
-          --out reports/longitudinal-market/xrp-trade-preference.json
+      - name: Build evidence-only XRP preference packet from measured source health
+        run: |
+          COVERAGE=$(python -c "import json; print(json.load(open('reports/longitudinal-market/source-health.json'))['coverage_score'])")
+          python scripts/build_trade_preference_evidence.py \
+            reports/longitudinal-market/analogue-set.json \
+            reports/longitudinal-market/forward-outcomes.json \
+            --candidate XRP-USD \
+            --side BUY \
+            --compare BTC-USD,ETH-USD,SOL-USD \
+            --horizon step_1 \
+            --coverage-score "$COVERAGE" \
+            --minimum-observations 10 \
+            --out reports/longitudinal-market/xrp-trade-preference.json
 
       - name: Validate fail-closed observed packet
         run: |
@@ -136,16 +150,19 @@ jobs:
           p=Path('reports/longitudinal-market')
           packet=json.loads((p/'xrp-trade-preference.json').read_text())
           state=json.loads((p/'current-state.json').read_text())
+          health=json.loads((p/'source-health.json').read_text())
           assert packet['preference'] == 'INSUFFICIENT_EVIDENCE'
           assert packet['execution_authority'] == 'NONE'
           assert packet['may_authorize_order'] is False
           assert state['source_coverage']['coverage_score'] == 0.25
-          assert packet['source_coverage']['coverage_score'] == state['source_coverage']['coverage_score']
+          assert packet['source_coverage']['coverage_score'] == health['coverage_score']
+          assert health['coverage_score'] < state['source_coverage']['coverage_score']
           print(json.dumps({
             'status':'PASS',
             'preference':packet['preference'],
             'confidence':packet['confidence'],
-            'coverage_score':packet['source_coverage']['coverage_score'],
+            'state_coverage_score':state['source_coverage']['coverage_score'],
+            'source_health_coverage_score':health['coverage_score'],
             'execution_authority':'NONE'
           },sort_keys=True))
           PY
