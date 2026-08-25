@@ -1,0 +1,37 @@
+{
+  "record_type": "bounded_first_party_theme_source",
+  "record_id": "ERL-FC-MR-2026-05-29-ESSENTIAL-SERVICES-THEME",
+  "date": "2026-05-29",
+  "author": "Matt Randolph / Mr Global",
+  "first_party_archive_url": "https://mattrandolph.substack.com/archive",
+  "displayed_title": "The U.S. Treats Services Necessary For Survival No Different Than A Netflix Subscription. This Has To Change.",
+  "media_duration": "18:33",
+  "custody_status": "FIRST_PARTY_TITLE_AND_MEDIA_OBJECT_ONLY",
+  "authorized_theme": "The source explicitly distinguishes services necessary for survival from an ordinary discretionary subscription and argues that the treatment should change.",
+  "not_authorized_without_richer_custody": [
+    "an exact list of services Randolph intended",
+    "food, electricity, water, fuel, housing, insurance, or health care as individually named categories",
+    "a specific policy mechanism",
+    "a regulatory or pricing prescription",
+    "a forecast horizon",
+    "a causal chain",
+    "a claim about CPI or purchasing power",
+    "a claim that the source independently validates ERL's Essential Purchasing Power model"
+  ],
+  "relationship_to_erl": {
+    "posture": "THEMATIC_ALIGNMENT_ONLY",
+    "meaning": "The title is consistent with treating survival-critical services differently from discretionary consumption, but the formal ERL essential-needs and purchasing-power framework remains an independent reconstruction unless richer first-party custody shows matching details."
+  },
+  "search_state_2026_08_25": {
+    "richer_first_party_text_found": false,
+    "direct_transcript_found": false,
+    "standalone_first_party_post_url_resolved": false,
+    "available_first_party_evidence": "Substack archive/homepage title plus 18:33 media duration"
+  },
+  "source_receipts": [
+    "https://mattrandolph.substack.com/archive",
+    "https://mattrandolph.substack.com/"
+  ],
+  "finding_authorized": true,
+  "publication_authorized": false
+}
