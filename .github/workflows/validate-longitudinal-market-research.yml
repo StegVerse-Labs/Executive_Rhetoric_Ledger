@@ -7,6 +7,8 @@ on:
       - 'schemas/trade-preference-evidence.schema.json'
       - 'scripts/validate_longitudinal_market_evidence.py'
       - 'scripts/find_historical_market_analogues.py'
+      - 'scripts/label_market_forward_outcomes.py'
+      - 'scripts/build_trade_preference_evidence.py'
       - 'tests/test_longitudinal_market_research.py'
       - '.github/workflows/validate-longitudinal-market-research.yml'
   workflow_dispatch:
@@ -30,7 +32,12 @@ jobs:
         run: python -m pip install pytest jsonschema
 
       - name: Compile longitudinal research code
-        run: python -m py_compile scripts/validate_longitudinal_market_evidence.py scripts/find_historical_market_analogues.py
+        run: >-
+          python -m py_compile
+          scripts/validate_longitudinal_market_evidence.py
+          scripts/find_historical_market_analogues.py
+          scripts/label_market_forward_outcomes.py
+          scripts/build_trade_preference_evidence.py
 
       - name: Run deterministic longitudinal research tests
         run: pytest -q tests/test_longitudinal_market_research.py
