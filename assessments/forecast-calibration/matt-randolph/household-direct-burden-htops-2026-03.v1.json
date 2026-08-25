@@ -1,10 +1,10 @@
 {
   "record_type": "household_direct_burden_research_state",
   "record_id": "ERL-FC-MR-2026-HTOPS-DIRECT-BURDEN-001",
-  "purpose": "Move the essential-purchasing-power lane from national price context toward directly reported household conditions using March 2026 Census HTOPS measures of food sufficiency, household energy spending, expense difficulty, and transportation sufficiency.",
+  "purpose": "Move the essential-purchasing-power lane from national price context toward directly reported household conditions using March 2026 Census HTOPS measures of food sufficiency, household energy spending, expense difficulty, price stress, and transportation sufficiency.",
   "source_period": "2026-03-13/2026-03-30",
   "source_authority": "U.S. Census Bureau Household Trends and Outlook Pulse Survey (HTOPS)",
-  "official_sample_context": "Census reports that the March 2026 tables cover data collected from approximately 136,000 households and include national and smaller-area estimates.",
+  "official_sample_context": "Census reports that the March 2026 detailed tables cover data collected from approximately 136,000 households and include national and smaller-area estimates.",
   "official_direct_burden_lanes": [
     {
       "lane": "food_sufficiency",
@@ -32,33 +32,91 @@
       "status": "OFFICIAL_TABLE_IDENTIFIED_VALUES_NOT_YET_DIRECTLY_CUSTODIED"
     }
   ],
-  "secondary_derived_lead": {
+  "secondary_weighted_reconstruction_leads": [
+    {
+      "measure": "food_insufficiency_sometimes_or_often_not_enough",
+      "reported_value_pct": 7.03,
+      "components_pct": {
+        "sometimes_not_enough": 5.29,
+        "often_not_enough": 1.74
+      },
+      "additional_food_access_signal_pct": {
+        "enough_but_not_always_kinds_wanted": 22.48
+      },
+      "provenance": "independent weighted reconstruction of March 2026 HTOPS public-use file using PWEIGHT",
+      "use_rule": "Triangulation only until official Census workbook values are directly preserved. Do not label the 22.48% category food insufficiency; it reflects enough quantity but constrained preferred food access."
+    },
+    {
+      "measure": "significant_expense_difficulty_somewhat_or_very",
+      "reported_value_pct": 19.77,
+      "reported_very_difficult_pct": 7.54,
+      "provenance": "independent weighted reconstruction of March 2026 HTOPS public-use file using PWEIGHT",
+      "use_rule": "Triangulation only. Secondary presentation contains inconsistent headline wording for broader 'any difficulty' aggregates, so only explicitly defined category combinations may be retained."
+    },
+    {
+      "measure": "prices_perceived_increased",
+      "reported_value_pct": 75.28,
+      "provenance": "independent weighted reconstruction of March 2026 HTOPS public-use file using PWEIGHT",
+      "use_rule": "Self-reported price perception, not an objective price index and not a causal attribution."
+    },
+    {
+      "measure": "very_stressed_among_those_perceiving_price_increases",
+      "reported_value_pct": 27.5,
+      "income_gradient_pct": {
+        "under_25000": 43.7,
+        "25000_35000": 40.6,
+        "35000_50000": 34.0,
+        "50000_75000": 29.6,
+        "75000_100000": 22.6,
+        "100000_150000": 16.3,
+        "150000_plus": 11.9
+      },
+      "provenance": "independent weighted reconstruction of March 2026 HTOPS public-use file using PWEIGHT",
+      "use_rule": "Strong distributional lead showing materially greater reported stress at lower incomes; official-table custody remains required before canonical numeric promotion."
+    }
+  ],
+  "conflicting_secondary_lead": {
     "measure": "difficulty_paying_usual_household_expenses",
     "reported_value_pct": 22.8,
     "as_of": "2026-03-30",
-    "provenance": "secondary analysis reporting U.S. Census HTOPS source",
-    "use_rule": "Discovery/triangulation only until the corresponding official Census table value is directly custodied; do not promote to canonical quantitative evidence solely from this secondary source.",
-    "comparability_warning": "March 2026 uses a last-two-months recall window and a cross-sectional design. It is not directly comparable to prior seven-day or longitudinal-panel readings without explicit adjustment."
+    "provenance": "separate secondary analysis citing U.S. Census HTOPS",
+    "disposition": "DO_NOT_RECONCILE_BY_GUESS",
+    "reason": "The value differs from another PUF-derived presentation's 19.77% significant-difficulty measure and may reflect a different population, category aggregation, denominator, or survey interpretation. Preserve the conflict until the official Census workbook is directly read."
+  },
+  "survey_design_guard": {
+    "march_2026_design": "cross-sectional",
+    "expense_recall_window": "last two months",
+    "food_recall_window": "last seven days",
+    "transportation_recall_window": "last four weeks",
+    "comparability_rule": "Do not directly compare March 2026 expense-difficulty levels with prior waves that used different recall windows or longitudinal designs without an explicit bridge."
   },
   "governing_interpretation": [
     "These lanes measure directly reported household constraint or service sufficiency and are closer to lived economic burden than CPI alone.",
     "Food insufficiency is not equivalent to lower underlying food demand; it is evidence of unmet or incompletely satisfied need.",
+    "Having enough food but not always the kinds wanted may reflect substitution, affordability, availability, preference, or other constraints and must not be collapsed into outright insufficiency.",
     "Difficulty paying usual expenses is not a causal attribution to diesel, freight, utilities, or food by itself.",
     "Household energy spending must remain distinct from electricity commodity rate because delivery charges, usage, geography, fuel choice, and contract structure can differ.",
     "Transportation insufficiency may reflect price, availability, safety, disability, or other reasons; cause-specific fields must be preserved if directly custodied.",
-    "Survey redesign and recall-window changes prohibit casual time-series comparisons across incompatible HTOPS/HPS waves."
+    "Survey redesign and recall-window changes prohibit casual time-series comparisons across incompatible HTOPS/HPS waves.",
+    "Secondary weighted reconstructions are useful for locating likely burden gradients but cannot substitute for direct official-table custody when conflicting derived values exist."
   ],
   "relationship_to_essential_purchasing_power": {
     "role": "DIRECT_HOUSEHOLD_BURDEN_LAYER",
     "transition": "resources_and_mandatory_costs -> reported_payment_difficulty_or_service_insufficiency -> quantity_or_access_compression",
-    "status": "SOURCE_STRUCTURE_CUSTODIED_NUMERIC_TABLE_VALUES_PARTIAL"
+    "status": "SOURCE_STRUCTURE_CUSTODIED_SECONDARY_NUMERIC_TRIANGULATION_PRESENT_OFFICIAL_NUMERIC_CUSTODY_OPEN"
   },
   "source_receipts": [
     "https://www.census.gov/data/tables/2026/demo/hhp/2603.html",
     "https://www.census.gov/newsroom/press-releases/2026/htops-data-tables.html",
     "https://www.census.gov/programs-surveys/household-pulse-survey/data/datasets.html"
   ],
-  "secondary_lead_receipt": "https://americandefault.org/indicators/the-pinch/",
+  "secondary_lead_receipts": [
+    "https://www.howisamerica.com/food",
+    "https://www.howisamerica.com/spending",
+    "https://www.howisamerica.com/prices",
+    "https://www.howisamerica.com/methodology",
+    "https://americandefault.org/indicators/the-pinch/"
+  ],
   "finding_authorized": true,
   "canonical_numeric_promotion_authorized": false,
   "publication_authorized": false
