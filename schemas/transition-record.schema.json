@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse-labs.github.io/Executive_Rhetoric_Ledger/schemas/transition-record.schema.json",
+  "title": "ERL Transition Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "transition_id",
+    "record_version",
+    "canonical_status",
+    "pre_state",
+    "post_state",
+    "continuity",
+    "observed_elements",
+    "opaque_elements",
+    "evidence_receipts",
+    "provenance_relations",
+    "resolution_history",
+    "hypothesis_refs"
+  ],
+  "properties": {
+    "transition_id": {"type": "string", "minLength": 1},
+    "record_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "canonical_status": {"enum": ["canonical", "candidate", "superseded"]},
+    "pre_state": {"$ref": "#/$defs/state"},
+    "post_state": {"$ref": "#/$defs/state"},
+    "continuity": {"$ref": "#/$defs/continuity"},
+    "observed_elements": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/observed_element"}
+    },
+    "opaque_elements": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/opaque_element"}
+    },
+    "evidence_receipts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/evidence_receipt"}
+    },
+    "provenance_relations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/provenance_relation"}
+    },
+    "resolution_history": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/resolution_event"}
+    },
+    "hypothesis_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state_id", "boundary_posture", "evidence_ids"],
+      "properties": {
+        "state_id": {"type": "string", "minLength": 1},
+        "observed_at": {"type": ["string", "null"], "format": "date-time"},
+        "boundary_posture": {"enum": ["exact", "bounded", "partial", "unresolved"]},
+        "description": {"type": ["string", "null"]},
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "continuity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["posture", "basis", "evidence_ids"],
+      "properties": {
+        "posture": {"enum": ["ESTABLISHED", "PARTIAL", "DISPUTED", "UNRESOLVED", "REJECTED"]},
+        "basis": {"type": "string", "minLength": 1},
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "observed_element": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["element_id", "role", "description", "evidence_ids", "provenance_posture"],
+      "properties": {
+        "element_id": {"type": "string", "minLength": 1},
+        "role": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1},
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "provenance_posture": {"enum": ["known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence", "single_lineage"]},
+        "parent_element_id": {"type": ["string", "null"]}
+      }
+    },
+    "opaque_element": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["opaque_id", "slot", "expected_role", "observed_constraints", "evidence_ids", "provenance_posture", "resolution_state"],
+      "properties": {
+        "opaque_id": {"type": "string", "minLength": 1},
+        "slot": {"type": "string", "minLength": 1},
+        "expected_role": {"type": "string", "minLength": 1},
+        "observed_constraints": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "provenance_posture": {"enum": ["known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence", "single_lineage"]},
+        "resolution_state": {"enum": ["OPAQUE", "PARTIALLY_BOUNDED", "RESOLVED", "SUSPENDED"]},
+        "resolved_element_id": {"type": ["string", "null"]},
+        "resolved_at": {"type": ["string", "null"], "format": "date-time"},
+        "resolution_evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "evidence_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "source_type", "source_reference", "captured_at", "custody_status"],
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "source_type": {"type": "string", "minLength": 1},
+        "source_reference": {"type": "string", "minLength": 1},
+        "captured_at": {"type": "string", "format": "date-time"},
+        "custody_status": {"enum": ["located", "captured", "hashed", "verified", "unavailable"]},
+        "sha256": {"type": ["string", "null"]},
+        "lineage_id": {"type": ["string", "null"]}
+      }
+    },
+    "provenance_relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation_id", "source_ids", "posture", "independent_confirmation_weight", "evidence_ids"],
+      "properties": {
+        "relation_id": {"type": "string", "minLength": 1},
+        "source_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "posture": {"enum": ["known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence"]},
+        "independent_confirmation_weight": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "resolution_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_id", "event_type", "recorded_at", "evidence_ids"],
+      "properties": {
+        "event_id": {"type": "string", "minLength": 1},
+        "event_type": {"enum": ["DECLARE_OPAQUE", "BOUND", "RESOLVE_OPAQUE", "REFINE", "COARSEN", "SUSPEND_RESOLUTION", "SUPERSEDE"]},
+        "recorded_at": {"type": "string", "format": "date-time"},
+        "opaque_id": {"type": ["string", "null"]},
+        "resolved_element_id": {"type": ["string", "null"]},
+        "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "reason": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

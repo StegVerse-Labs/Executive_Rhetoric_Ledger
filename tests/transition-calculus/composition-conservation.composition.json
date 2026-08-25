@@ -1,0 +1,58 @@
+{
+  "fixture_id": "ERL-TC-COMPOSITION-001",
+  "transitions": [
+    {
+      "transition_id": "T-A-B",
+      "record_version": "0.1.0",
+      "canonical_status": "canonical",
+      "pre_state": {"state_id": "A", "observed_at": "2026-08-01T00:00:00Z", "boundary_posture": "exact", "description": "A", "evidence_ids": ["EA"]},
+      "post_state": {"state_id": "B", "observed_at": "2026-08-01T00:05:00Z", "boundary_posture": "exact", "description": "B", "evidence_ids": ["EB"]},
+      "continuity": {"posture": "ESTABLISHED", "basis": "Fixture continuity A-B", "evidence_ids": ["EAB"]},
+      "observed_elements": [],
+      "opaque_elements": [],
+      "evidence_receipts": [
+        {"evidence_id": "EA", "source_type": "fixture", "source_reference": "fixture://A", "captured_at": "2026-08-01T00:00:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LA"},
+        {"evidence_id": "EB", "source_type": "fixture", "source_reference": "fixture://B", "captured_at": "2026-08-01T00:05:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LB"},
+        {"evidence_id": "EAB", "source_type": "fixture", "source_reference": "fixture://AB", "captured_at": "2026-08-01T00:05:01Z", "custody_status": "verified", "sha256": null, "lineage_id": "LAB"}
+      ],
+      "provenance_relations": [], "resolution_history": [], "hypothesis_refs": [], "limitations": []
+    },
+    {
+      "transition_id": "T-B-C",
+      "record_version": "0.1.0",
+      "canonical_status": "canonical",
+      "pre_state": {"state_id": "B", "observed_at": "2026-08-01T00:05:00Z", "boundary_posture": "exact", "description": "B", "evidence_ids": ["EB"]},
+      "post_state": {"state_id": "C", "observed_at": "2026-08-01T00:10:00Z", "boundary_posture": "exact", "description": "C", "evidence_ids": ["EC"]},
+      "continuity": {"posture": "ESTABLISHED", "basis": "Fixture continuity B-C", "evidence_ids": ["EBC"]},
+      "observed_elements": [],
+      "opaque_elements": [],
+      "evidence_receipts": [
+        {"evidence_id": "EB", "source_type": "fixture", "source_reference": "fixture://B", "captured_at": "2026-08-01T00:05:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LB"},
+        {"evidence_id": "EC", "source_type": "fixture", "source_reference": "fixture://C", "captured_at": "2026-08-01T00:10:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LC"},
+        {"evidence_id": "EBC", "source_type": "fixture", "source_reference": "fixture://BC", "captured_at": "2026-08-01T00:10:01Z", "custody_status": "verified", "sha256": null, "lineage_id": "LBC"}
+      ],
+      "provenance_relations": [], "resolution_history": [], "hypothesis_refs": [], "limitations": []
+    },
+    {
+      "transition_id": "T-A-C",
+      "record_version": "0.1.0",
+      "canonical_status": "canonical",
+      "pre_state": {"state_id": "A", "observed_at": "2026-08-01T00:00:00Z", "boundary_posture": "exact", "description": "A", "evidence_ids": ["EA"]},
+      "post_state": {"state_id": "C", "observed_at": "2026-08-01T00:10:00Z", "boundary_posture": "exact", "description": "C", "evidence_ids": ["EC"]},
+      "continuity": {"posture": "ESTABLISHED", "basis": "Composition of established A-B and B-C transitions", "evidence_ids": ["EAB", "EBC"]},
+      "observed_elements": [],
+      "opaque_elements": [],
+      "evidence_receipts": [
+        {"evidence_id": "EA", "source_type": "fixture", "source_reference": "fixture://A", "captured_at": "2026-08-01T00:00:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LA"},
+        {"evidence_id": "EB", "source_type": "fixture", "source_reference": "fixture://B", "captured_at": "2026-08-01T00:05:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LB"},
+        {"evidence_id": "EC", "source_type": "fixture", "source_reference": "fixture://C", "captured_at": "2026-08-01T00:10:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LC"},
+        {"evidence_id": "EAB", "source_type": "fixture", "source_reference": "fixture://AB", "captured_at": "2026-08-01T00:05:01Z", "custody_status": "verified", "sha256": null, "lineage_id": "LAB"},
+        {"evidence_id": "EBC", "source_type": "fixture", "source_reference": "fixture://BC", "captured_at": "2026-08-01T00:10:01Z", "custody_status": "verified", "sha256": null, "lineage_id": "LBC"}
+      ],
+      "provenance_relations": [], "resolution_history": [], "hypothesis_refs": [], "limitations": []
+    }
+  ],
+  "composition_assertions": [
+    {"left_transition_id": "T-A-B", "right_transition_id": "T-B-C", "composed_transition_id": "T-A-C"}
+  ]
+}

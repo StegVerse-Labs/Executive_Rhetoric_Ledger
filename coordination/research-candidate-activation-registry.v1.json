@@ -168,6 +168,45 @@
       "terminal_condition": "Issue #47/PR #48 WS-A through WS-E release conditions are satisfied or explicitly superseded with evidence.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-CENSUS-ELECTION-2026",
+      "title": "Trump Census noncitizen-voting election-win claim",
+      "candidate_paths": ["research-candidates/2026-08-20-trump-census-noncitizen-voting-election-win-claim.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire the primary Census report and presidential statement, then reconstruct each evidentiary transition through state margins and Electoral College consequence.",
+      "terminal_condition": "Primary-source custody and reproducible state-by-state transition reconstruction support an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-TRUMP-CRYPTO-2026",
+      "title": "Trump-family crypto market architecture and market-impact research",
+      "candidate_paths": ["research-candidates/2026-08-21-pre-trump-crypto-market-architecture-checkpoint.md", "research-candidates/2026-08-21-trump-family-crypto-rhetoric-market-impact.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Continue primary-source custody, event-study construction, beneficiary mapping, control selection, and disconfirming tests without promoting correlation to causation or motive.",
+      "terminal_condition": "Source custody, event-study controls, beneficiary attribution, and independent review support an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-MATT-RANDOLPH-FORECAST-2026",
+      "title": "Matt Randolph four-month energy and Iran forecast calibration",
+      "candidate_paths": ["research-candidates/matt-randolph-four-month-forecast-calibration.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:76",
+      "artifact_paths": ["docs/forecast-calibration/MATT_RANDOLPH_FORECAST_CALIBRATION_MIRROR_HANDOFF.md"],
+      "next_executable_task": "Capture original forecast objects and independently reconstruct world-state outcomes before encoding validator-clean calibration records.",
+      "terminal_condition": "A materially complete source corpus and independent event chronology support calibrated forecast states, independent review, and an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }

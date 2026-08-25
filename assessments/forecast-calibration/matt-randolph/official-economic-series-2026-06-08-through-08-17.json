@@ -1,0 +1,85 @@
+{
+  "record_type": "official_economic_series_bundle",
+  "bundle_id": "ERL-FC-MR-2026-OFFICIAL-SERIES-001",
+  "as_of": "2026-08-23",
+  "purpose": "Independent official-series evidence for testing Randolph diesel, refined-product, freight, food, and inflation claims without using Randolph's own retrospective commentary as verification.",
+  "series": [
+    {
+      "series_id": "EIA-US-ONHIGHWAY-DIESEL-WEEKLY",
+      "agency": "U.S. Energy Information Administration",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=pet&s=EMD_EPD2D_PTE_NUS_DPG",
+      "unit": "USD per gallon including taxes",
+      "frequency": "weekly",
+      "observations": [
+        {"date":"2026-06-08","value":5.210},
+        {"date":"2026-06-15","value":5.059},
+        {"date":"2026-06-22","value":4.832},
+        {"date":"2026-06-29","value":4.668},
+        {"date":"2026-07-06","value":4.578},
+        {"date":"2026-07-13","value":4.796},
+        {"date":"2026-07-20","value":5.134},
+        {"date":"2026-07-27","value":5.313},
+        {"date":"2026-08-03","value":5.348},
+        {"date":"2026-08-10","value":5.257},
+        {"date":"2026-08-17","value":5.454}
+      ],
+      "calibration_note": "The series declined into July 6, then reversed sharply upward after Randolph's July 8 and July 13 diesel-focused notes. Temporal sequence alone does not establish causation or predictive superiority over crude."
+    },
+    {
+      "series_id": "EIA-WPSR-DISTILLATE-STOCKS-2026-07-17",
+      "agency": "U.S. Energy Information Administration",
+      "source_url": "https://www.eia.gov/about/new/",
+      "unit": "reported weekly stock change and comparison with prior five-year average",
+      "frequency": "weekly",
+      "observations": [
+        {"week_ending":"2026-07-17","stock_change_million_barrels":1.4,"relative_to_five_year_average_percent":-10}
+      ],
+      "calibration_note": "Distillate inventories rose during the week but remained materially below the five-year average, supporting a distinction between week-to-week replenishment and underlying inventory tightness."
+    },
+    {
+      "series_id": "BLS-CPI-U-2026-07",
+      "agency": "U.S. Bureau of Labor Statistics",
+      "source_url": "https://www.bls.gov/news.release/cpi.htm",
+      "frequency": "monthly",
+      "observations": [
+        {"measure":"all_items_monthly_sa_percent","period":"2026-07","value":0.1},
+        {"measure":"all_items_yoy_percent","period":"2026-07","value":3.4},
+        {"measure":"food_monthly_sa_percent","period":"2026-07","value":0.1},
+        {"measure":"food_yoy_percent","period":"2026-07","value":3.0},
+        {"measure":"energy_monthly_sa_percent","period":"2026-07","value":-1.5},
+        {"measure":"energy_yoy_percent","period":"2026-07","value":14.7},
+        {"measure":"gasoline_monthly_sa_percent","period":"2026-07","value":-2.9},
+        {"measure":"gasoline_yoy_percent","period":"2026-07","value":24.6},
+        {"measure":"fuel_oil_monthly_sa_percent","period":"2026-07","value":-1.7},
+        {"measure":"fuel_oil_yoy_percent","period":"2026-07","value":39.1}
+      ],
+      "calibration_note": "Year-over-year energy inflation remained elevated while the July monthly energy impulse declined. Any Randolph calibration must therefore predeclare whether the forecast concerns level, year-over-year rate, month-to-month direction, or lagged pass-through."
+    },
+    {
+      "series_id": "BLS-PPI-2026-07",
+      "agency": "U.S. Bureau of Labor Statistics",
+      "source_url": "https://www.bls.gov/news.release/ppi.htm",
+      "frequency": "monthly",
+      "observations": [
+        {"measure":"final_demand_monthly_sa_percent","period":"2026-07","value":0.0},
+        {"measure":"final_demand_yoy_percent","period":"2026-07","value":4.7},
+        {"measure":"final_demand_energy_monthly_percent","period":"2026-07","value":-3.1},
+        {"measure":"truck_transportation_of_freight_monthly_percent","period":"2026-07","value":-1.8},
+        {"measure":"processed_goods_intermediate_diesel_monthly_percent","period":"2026-07","value":-6.7}
+      ],
+      "calibration_note": "Producer and freight measures did not move monotonically with retail diesel during July, making lag structure and transmission channel essential to any causal or predictive score."
+    }
+  ],
+  "pending_series": [
+    "EIA weekly refinery utilization/capacity utilization",
+    "EIA distillate imports",
+    "EIA distillate exports",
+    "EIA refinery net production of distillate fuel oil",
+    "BLS detailed trucking/freight service series over March-August rather than July-only release summaries",
+    "BLS/USDA food-category series sufficient to test marine-fuel/freight-to-food pass-through",
+    "crude oil benchmark series for a predeclared comparison against gas/diesel indicator performance"
+  ],
+  "interpretation_rule": "This bundle contains observations, not conclusions. It cannot by itself establish that Randolph's mechanism caused an outcome, that refined products outperform crude as predictors, or that a forecast is resolved correct/incorrect.",
+  "finding_authorized": false,
+  "publication_authorized": false
+}

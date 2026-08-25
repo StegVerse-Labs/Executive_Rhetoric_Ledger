@@ -1,0 +1,49 @@
+name: Validate Transition Calculus
+
+on:
+  pull_request:
+    paths:
+      - "schemas/transition-record.schema.json"
+      - "schemas/opaque-transition-element.schema.json"
+      - "schemas/forecast-calibration.schema.json"
+      - "scripts/validate_transition_calculus.py"
+      - "scripts/validate_forecast_calibration.py"
+      - "tests/transition-calculus/**"
+      - "assessments/forecast-calibration/**"
+      - "docs/transition-calculus/**"
+      - "docs/forecast-calibration/**"
+      - ".github/workflows/validate-transition-calculus.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "schemas/transition-record.schema.json"
+      - "schemas/opaque-transition-element.schema.json"
+      - "schemas/forecast-calibration.schema.json"
+      - "scripts/validate_transition_calculus.py"
+      - "scripts/validate_forecast_calibration.py"
+      - "tests/transition-calculus/**"
+      - "assessments/forecast-calibration/**"
+      - "docs/transition-calculus/**"
+      - "docs/forecast-calibration/**"
+      - ".github/workflows/validate-transition-calculus.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Validate transition calculus
+        run: python scripts/validate_transition_calculus.py
+      - name: Validate forecast calibration adapter and live records
+        run: python scripts/validate_forecast_calibration.py
+      - name: Prove fail-closed governance with negative fixtures
+        run: python tests/transition-calculus/test_fail_closed.py

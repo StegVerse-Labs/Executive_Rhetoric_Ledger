@@ -1,0 +1,83 @@
+{
+  "transition_id": "ERL-TC-FIXTURE-OPAQUE-001",
+  "record_version": "0.1.0",
+  "canonical_status": "canonical",
+  "pre_state": {
+    "state_id": "STATE-A",
+    "observed_at": "2026-08-01T00:00:00Z",
+    "boundary_posture": "exact",
+    "description": "Observed system state before change",
+    "evidence_ids": ["EV-A"]
+  },
+  "post_state": {
+    "state_id": "STATE-B",
+    "observed_at": "2026-08-01T00:10:00Z",
+    "boundary_posture": "exact",
+    "description": "Observed system state after change",
+    "evidence_ids": ["EV-B"]
+  },
+  "continuity": {
+    "posture": "ESTABLISHED",
+    "basis": "Continuous timestamped event record connects the state boundaries.",
+    "evidence_ids": ["EV-CONT"]
+  },
+  "observed_elements": [
+    {
+      "element_id": "EL-TRIGGER",
+      "role": "trigger",
+      "description": "Observed triggering action",
+      "evidence_ids": ["EV-TRIGGER"],
+      "provenance_posture": "single_lineage",
+      "parent_element_id": null
+    },
+    {
+      "element_id": "EL-MECHANISM",
+      "role": "mechanism",
+      "description": "Later-resolved mechanism occupying the previously opaque transition slot",
+      "evidence_ids": ["EV-RESOLVE"],
+      "provenance_posture": "evidenced_independence",
+      "parent_element_id": null
+    }
+  ],
+  "opaque_elements": [
+    {
+      "opaque_id": "OPAQUE-MECHANISM-1",
+      "slot": "between-trigger-and-post-state",
+      "expected_role": "mechanism",
+      "observed_constraints": [
+        "must occur after EL-TRIGGER",
+        "must be compatible with STATE-B",
+        "identity was unresolved in the initial observation"
+      ],
+      "evidence_ids": ["EV-CONT"],
+      "provenance_posture": "unknown_provenance",
+      "resolution_state": "RESOLVED",
+      "resolved_element_id": "EL-MECHANISM",
+      "resolved_at": "2026-08-02T12:00:00Z",
+      "resolution_evidence_ids": ["EV-RESOLVE"],
+      "notes": "Historical opacity is retained after resolution."
+    }
+  ],
+  "evidence_receipts": [
+    {"evidence_id": "EV-A", "source_type": "fixture", "source_reference": "fixture://state-a", "captured_at": "2026-08-01T00:00:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LINE-A"},
+    {"evidence_id": "EV-B", "source_type": "fixture", "source_reference": "fixture://state-b", "captured_at": "2026-08-01T00:10:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LINE-B"},
+    {"evidence_id": "EV-CONT", "source_type": "fixture", "source_reference": "fixture://continuity", "captured_at": "2026-08-01T00:10:01Z", "custody_status": "verified", "sha256": null, "lineage_id": "LINE-C"},
+    {"evidence_id": "EV-TRIGGER", "source_type": "fixture", "source_reference": "fixture://trigger", "captured_at": "2026-08-01T00:02:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LINE-C"},
+    {"evidence_id": "EV-RESOLVE", "source_type": "fixture", "source_reference": "fixture://resolution", "captured_at": "2026-08-02T12:00:00Z", "custody_status": "verified", "sha256": null, "lineage_id": "LINE-D"}
+  ],
+  "provenance_relations": [
+    {
+      "relation_id": "PROV-1",
+      "source_ids": ["EV-CONT", "EV-RESOLVE"],
+      "posture": "evidenced_independence",
+      "independent_confirmation_weight": 1,
+      "evidence_ids": ["EV-CONT", "EV-RESOLVE"]
+    }
+  ],
+  "resolution_history": [
+    {"event_id": "RH-1", "event_type": "DECLARE_OPAQUE", "recorded_at": "2026-08-01T00:10:02Z", "opaque_id": "OPAQUE-MECHANISM-1", "resolved_element_id": null, "evidence_ids": ["EV-CONT"], "reason": "Continuity established while mechanism identity remained unresolved."},
+    {"event_id": "RH-2", "event_type": "RESOLVE_OPAQUE", "recorded_at": "2026-08-02T12:00:00Z", "opaque_id": "OPAQUE-MECHANISM-1", "resolved_element_id": "EL-MECHANISM", "evidence_ids": ["EV-RESOLVE"], "reason": "Independent evidence resolved the mechanism identity."}
+  ],
+  "hypothesis_refs": [],
+  "limitations": ["Fixture demonstrates preservation of historical opacity, not real-world causation."]
+}

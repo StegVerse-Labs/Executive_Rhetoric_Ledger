@@ -1,0 +1,89 @@
+{
+  "record_type": "forecast_component_scoring_protocol",
+  "record_id": "ERL-FC-MR-2026-COMPONENT-SCORING-V1",
+  "purpose": "Standardize partial forecast evaluation across Randolph records without collapsing supported mechanism links into an aggregate credibility score.",
+  "dimensions": [
+    {
+      "dimension": "endpoint",
+      "question": "Did the forecasted terminal condition occur as bounded by the original source?"
+    },
+    {
+      "dimension": "timing",
+      "question": "Did the condition occur within the source-defined horizon or a valid contingency-adjusted horizon?"
+    },
+    {
+      "dimension": "mechanism",
+      "question": "Did the intermediate transition links named or necessarily bounded by the source occur?"
+    },
+    {
+      "dimension": "ordering",
+      "question": "If the source made an explicit first/before/after claim, did the predeclared comparator protocol support that ordering?"
+    },
+    {
+      "dimension": "contingency_anticipation",
+      "question": "Did a contingency stated before the outcome occur and alter the path in the direction the source said it would?"
+    },
+    {
+      "dimension": "indicator_usefulness",
+      "question": "If the source selected an indicator, did it provide prospective information about a predeclared target beyond the comparator indicator?"
+    },
+    {
+      "dimension": "source_specificity",
+      "question": "Was the proposition sufficiently specific in the original source to support the score assigned?"
+    }
+  ],
+  "allowed_postures": [
+    "SUPPORTED",
+    "PARTIAL_MIXED",
+    "LIMITED_SUPPORT",
+    "TIED_OR_UNRESOLVED",
+    "UNRESOLVED",
+    "NOT_SUPPORTED",
+    "NOT_APPLICABLE",
+    "NOT_CLAIMED_OR_NOT_AUTHORIZED",
+    "INSUFFICIENT_DATA",
+    "UNRESOLVED_SOURCE_MEANING"
+  ],
+  "numeric_mapping": {
+    "status": "DISABLED_FOR_PERSON_LEVEL_SCORING",
+    "reason": "The current lane is still building source custody and clean outcome periods. Numeric person-level aggregation would create false precision and invite hidden weighting choices.",
+    "future_rule": "If numeric aggregation is later authorized, weights must be predeclared, versioned, independently reviewed, and applied to the full eligible corpus including negative and unresolved records."
+  },
+  "evidence_requirements": {
+    "SUPPORTED": [
+      "original proposition or component is sufficiently bounded",
+      "independent outcome evidence exists",
+      "contrary evidence remains visible",
+      "reference period is appropriate for the component being scored"
+    ],
+    "NOT_SUPPORTED": [
+      "original proposition is sufficiently bounded",
+      "disconfirming evidence is independently sourced",
+      "the relevant observation window has materially closed"
+    ],
+    "PARTIAL_MIXED": [
+      "both supporting and contrary or attenuating evidence exist",
+      "neither side is discarded to force a binary result"
+    ]
+  },
+  "prospective_guard": [
+    "Publication after a forecast does not make a dataset prospectively clean if its reference period overlaps forecast issuance.",
+    "Later analyst retrospectives cannot resolve an earlier forecast independently.",
+    "A component may only use evidence observable for the period being evaluated; later revisions must remain versioned."
+  ],
+  "anti_double_counting": [
+    "Mechanism links that are nested parts of one causal chain are scored as components, not independent forecasts.",
+    "Multiple reports derived from the same upstream official dataset constitute one evidentiary lineage unless independent generation is evidenced.",
+    "A source-context object does not increment forecast count without a preserved forward-looking proposition."
+  ],
+  "aggregate_boundary": {
+    "aggregate_person_level_credibility_authorized": false,
+    "minimum_before_review": [
+      "material corpus completeness",
+      "clean prospective outcome periods for July forecasts",
+      "component scoring across positive, negative, mixed, and unresolved cases",
+      "independent review of source custody and weights"
+    ]
+  },
+  "publication_authorized": false
+}

@@ -1,0 +1,89 @@
+{
+  "record_type": "first_party_transcript_acquisition_state",
+  "record_id": "ERL-FC-MR-2026-JULY-TRANSCRIPTS-001",
+  "purpose": "Preserve exact first-party source/video bindings and prevent title-only notes from being promoted into richer forecast propositions before transcript custody.",
+  "items": [
+    {
+      "source_id": "MR-2026-06-25-HOW-GAS-PRICES-WORK",
+      "date": "2026-06-25",
+      "substack_url": "https://substack.com/@mrglobal/note/c-282558841",
+      "displayed_title": "How Gas Prices Work",
+      "embedded_video_url": "https://youtu.be/0VE3LOxm4eY",
+      "transcript_status": "NOT_ACQUIRED",
+      "current_authorized_proposition": "The source is an explanatory object about how gas prices work.",
+      "proposition_ceiling": "Title only; do not import a specific refinery, crude, tax, logistics, or margin mechanism without transcript custody.",
+      "displayed_time": "3:06 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    },
+    {
+      "source_id": "MR-2026-07-01-CHEAP-OIL-CHEAP-GAS",
+      "date": "2026-07-01",
+      "substack_url": "https://substack.com/@mrglobal/note/c-286379948",
+      "displayed_title": "When Cheap Oil Doesn’t Mean Cheap Gas",
+      "embedded_video_url": "https://youtu.be/BwTtIlOBL40",
+      "transcript_status": "NOT_ACQUIRED",
+      "current_authorized_proposition": "Cheap oil does not necessarily imply cheap gasoline.",
+      "proposition_ceiling": "Title-level conditional divergence only; do not infer mechanism, magnitude, region, or timing without transcript custody.",
+      "displayed_time": "8:59 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    },
+    {
+      "source_id": "MR-2026-07-08-DIESEL-INFLATION",
+      "date": "2026-07-08",
+      "substack_url": "https://substack.com/@mrglobal/note/c-290789385",
+      "displayed_title": "Higher Diesel Means Higher Inflation",
+      "embedded_video_url": "https://youtu.be/XqiDEUHs9nY",
+      "transcript_status": "NOT_ACQUIRED",
+      "current_authorized_proposition": "Higher diesel means higher inflation.",
+      "proposition_ceiling": "Title only until transcript or directly inspectable first-party video content is preserved.",
+      "displayed_time": "8:47 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    },
+    {
+      "source_id": "MR-2026-07-13-WATCH-DIESEL",
+      "date": "2026-07-13",
+      "substack_url": "https://substack.com/@mrglobal/note/c-293975586",
+      "displayed_title": "Watch Gas and Diesel Prices Not Oil",
+      "embedded_video_url": "https://youtu.be/C1twq1liA_4",
+      "transcript_status": "NOT_ACQUIRED",
+      "current_authorized_proposition": "Watch gas and diesel prices, not oil.",
+      "proposition_ceiling": "Title only until transcript or directly inspectable first-party video content is preserved.",
+      "displayed_time": "10:21 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    },
+    {
+      "source_id": "MR-2026-07-16-ABOUT-DIESEL",
+      "date": "2026-07-16",
+      "substack_url": "https://substack.com/@mrglobal/note/c-295859281",
+      "displayed_title": "It's About The Diesel",
+      "embedded_video_url": null,
+      "transcript_status": "SOURCE_OBJECT_LOCATED_NO_VIDEO_BINDING_OBSERVED",
+      "current_authorized_proposition": "The source emphasizes diesel.",
+      "proposition_ceiling": "Do not infer mechanism, timing, target variable, causal direction, or an adjacent video's identity from the title alone.",
+      "displayed_time": "5:38 PM",
+      "timezone_status": "UNVERIFIED",
+      "absolute_timestamp_authorized": false
+    }
+  ],
+  "acquisition_policy": [
+    "Substack title and any observed embedded YouTube identifier are preserved as first-party source bindings.",
+    "Absence of an observed iframe/video binding is preserved as absence rather than replaced by a guessed adjacent video.",
+    "Search-engine snippets are discovery aids and are not transcript custody.",
+    "No generated, third-party, or later retrospective transcript may silently replace the original first-party object.",
+    "If only partial transcript text becomes available, each extracted proposition must be bounded to the preserved segment and surrounding context status must remain explicit.",
+    "A later Randolph statement describing what an earlier video meant is a new source object, not retroactive replacement of the earlier forecast."
+  ],
+  "next_actions": [
+    "Acquire or directly inspect June 25 and July 1 embedded videos to establish the exact gas-price/refinery mechanism asserted before using them as context for July 13.",
+    "Acquire or directly inspect the July 8 embedded video and preserve transcript/caption text with source timestamps where available.",
+    "Acquire or directly inspect the July 13 embedded video and preserve transcript/caption text with source timestamps where available.",
+    "Inspect the July 16 first-party source for additional media or richer text without assuming the July 17 videos belong to it.",
+    "Only after transcript custody, map explicit lag, mechanism, outcome variable, and contingency language into the machine forecast records."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}

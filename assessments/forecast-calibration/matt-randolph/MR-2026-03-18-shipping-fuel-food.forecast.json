@@ -1,0 +1,97 @@
+{
+  "calibration_id": "ERL-FC-MR-2026-03-18-SHIPPING-FUEL-FOOD",
+  "analyst": {
+    "analyst_id": "MATT-RANDOLPH-MR-GLOBAL",
+    "display_name": "Matt Randolph / Mr Global",
+    "credential_claim_refs": []
+  },
+  "evaluation_window": {
+    "start": "2026-03-18",
+    "end": "2026-08-23"
+  },
+  "forecasts": [
+    {
+      "forecast_id": "MR-FC-2026-03-18-SHIPPING-FUEL-HITS-FOOD-FIRST",
+      "issued_at": "2026-03-18",
+      "claim": "High shipping fuel costs hit food prices first.",
+      "source_ids": ["MR-2026-03-18-SHIPPING-FUEL"],
+      "base_window": {
+        "earliest": null,
+        "latest": null
+      },
+      "contingencies": [],
+      "world_event_links": [
+        "MR-WORLD-2026-03-11-USDA-BUNKER-FUEL-SHOCK",
+        "MR-WORLD-2026-03-05-USDA-GRAIN-OCEAN-FREIGHT",
+        "MR-WORLD-2026-03-BLS-PPI-DIESEL-42",
+        "MR-WORLD-2026-03-BLS-TRANSPORT-WAREHOUSE-1-3",
+        "MR-WORLD-2026-06-USDA-RAIL-FUEL-SURCHARGE"
+      ],
+      "state": "UNRESOLVED",
+      "state_history": [
+        {
+          "recorded_at": "2026-03-18",
+          "state": "ACTIVE",
+          "reason": "The first-party Substack source explicitly states the bounded proposition 'High Shipping Fuel Costs Hit Food Prices First.' No stronger timing or exclusivity claim is imported from the unavailable video transcript.",
+          "source_ids": ["MR-2026-03-18-SHIPPING-FUEL"]
+        },
+        {
+          "recorded_at": "2026-08-23",
+          "state": "UNRESOLVED",
+          "reason": "Independent USDA and BLS evidence establishes a March bunker-fuel shock, higher ocean grain freight, higher transportation/warehousing prices, a 42% monthly PPI diesel increase, and later rail fuel-surcharge pass-through. These observations support multiple intermediate links, but they do not yet establish that consumer food prices were the first terminal category affected or that shipping fuel was the dominant cause of subsequent food inflation.",
+          "source_ids": [
+            "USDA-GTR-2026-03-12",
+            "BLS-PPI-2026-03",
+            "USDA-GTOR-2026-Q1",
+            "USDA-GTR-2026-05-14"
+          ]
+        }
+      ],
+      "calibration_notes": "This record is mechanism-sensitive. Intermediate transition support may later score separately from the terminal 'food prices first' ordering proposition. Resolution requires a predeclared comparison against other downstream price categories and a fixed lag structure."
+    }
+  ],
+  "source_receipts": [
+    {
+      "source_id": "MR-2026-03-18-SHIPPING-FUEL",
+      "source_type": "first_party_substack_video_page",
+      "source_reference": "https://mattrandolph.substack.com/p/pay-attention-to-shipping-fuel-its",
+      "published_or_observed_at": "2026-03-18",
+      "provenance_posture": "primary"
+    },
+    {
+      "source_id": "USDA-GTR-2026-03-12",
+      "source_type": "official_primary_report",
+      "source_reference": "https://www.ams.usda.gov/sites/default/files/media/GTR03122026.pdf",
+      "published_or_observed_at": "2026-03-12",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "BLS-PPI-2026-03",
+      "source_type": "official_primary_statistics",
+      "source_reference": "https://www.bls.gov/ppi/detailed-report/ppi-detailed-report-march-2026.pdf",
+      "published_or_observed_at": "2026-04-09",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "USDA-GTOR-2026-Q1",
+      "source_type": "official_primary_report",
+      "source_reference": "https://www.ams.usda.gov/sites/default/files/media/GTOR1stQtr2026.pdf",
+      "published_or_observed_at": "2026-05-01",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "USDA-GTR-2026-05-14",
+      "source_type": "official_primary_report",
+      "source_reference": "https://www.ams.usda.gov/sites/default/files/media/GTR05142026.pdf",
+      "published_or_observed_at": "2026-05-14",
+      "provenance_posture": "evidenced_independence"
+    }
+  ],
+  "limitations": [
+    "The March 18 video transcript itself has not been custodied; only the explicit first-party title and subtitle are used for the proposition.",
+    "The word 'first' requires a comparator set and fixed timing rule before resolution.",
+    "Intermediate evidence does not establish that shipping fuel was the sole or dominant cause of consumer food-price movement.",
+    "Food commodity, weather, inventory, tariff, exchange-rate, labor, margin, and demand effects remain separate candidate transition elements.",
+    "No aggregate credibility finding is authorized from this record."
+  ]
+}

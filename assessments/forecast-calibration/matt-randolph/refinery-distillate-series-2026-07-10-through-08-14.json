@@ -1,0 +1,85 @@
+{
+  "record_type": "official_refinery_distillate_series",
+  "record_id": "ERL-FC-MR-2026-REFINERY-DISTILLATE-001",
+  "scope": "U.S. refinery utilization and distillate production/import/export conditions relevant to Matt Randolph diesel/refined-product forecasts",
+  "source_authority": "U.S. Energy Information Administration",
+  "units": {
+    "utilization": "percent operable utilization",
+    "volumes": "thousand barrels per day"
+  },
+  "series": [
+    {
+      "week_ending": "2026-07-10",
+      "refinery_utilization_pct": 96.2,
+      "distillate_net_production_kbd": 5259,
+      "distillate_imports_kbd": 93,
+      "distillate_exports_kbd": 1546
+    },
+    {
+      "week_ending": "2026-07-17",
+      "refinery_utilization_pct": 96.1,
+      "distillate_net_production_kbd": 5349,
+      "distillate_imports_kbd": 173,
+      "distillate_exports_kbd": 1604
+    },
+    {
+      "week_ending": "2026-07-24",
+      "refinery_utilization_pct": 97.2,
+      "distillate_net_production_kbd": 5364,
+      "distillate_imports_kbd": 98,
+      "distillate_exports_kbd": 1786
+    },
+    {
+      "week_ending": "2026-07-31",
+      "refinery_utilization_pct": 96.5,
+      "distillate_net_production_kbd": 5230,
+      "distillate_imports_kbd": 99,
+      "distillate_exports_kbd": 1884
+    },
+    {
+      "week_ending": "2026-08-07",
+      "refinery_utilization_pct": 96.2,
+      "distillate_net_production_kbd": 5280,
+      "distillate_imports_kbd": 111,
+      "distillate_exports_kbd": 1935
+    },
+    {
+      "week_ending": "2026-08-14",
+      "refinery_utilization_pct": 97.2,
+      "distillate_net_production_kbd": 5226,
+      "distillate_imports_kbd": 109,
+      "distillate_exports_kbd": 1601
+    }
+  ],
+  "source_receipts": [
+    {
+      "source_id": "EIA-WEEKLY-SUPPLY-UTILIZATION-2026-08-19",
+      "url": "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm",
+      "supports": ["refinery_utilization_pct"]
+    },
+    {
+      "source_id": "EIA-DISTILLATE-NET-PRODUCTION-2026-08-19",
+      "url": "https://www.eia.gov/dnav/pet/PET_PNP_WPRODRB_A_EPD0_YPR_MBBLPD_W.htm",
+      "supports": ["distillate_net_production_kbd"]
+    },
+    {
+      "source_id": "EIA-DISTILLATE-IMPORTS-2026-08-19",
+      "url": "https://www.eia.gov/dnav/pet/pet_move_wkly_a_epd0_im0_mbblpd_w.htm",
+      "supports": ["distillate_imports_kbd"]
+    },
+    {
+      "source_id": "EIA-DISTILLATE-EXPORTS-2026-08-19",
+      "url": "https://www.eia.gov/dnav/pet/PET_MOVE_WKLY_A_EPD0_EEX_MBBLPD_W.htm",
+      "supports": ["distillate_exports_kbd"]
+    }
+  ],
+  "bounded_observations": [
+    "U.S. refinery utilization remained high throughout the observed interval, roughly 96-97 percent.",
+    "Distillate net production remained around 5.2-5.4 million barrels per day rather than collapsing.",
+    "Weekly distillate exports materially exceeded imports throughout the interval and increased through August 7 before retreating in the August 14 week.",
+    "These observations do not by themselves establish that exports caused domestic diesel price increases; they establish that a simple refinery-shutdown explanation is insufficient for this interval.",
+    "No causal or normative conclusion is authorized from this series alone."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}

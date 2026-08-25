@@ -1,0 +1,156 @@
+{
+  "record_type": "independent_world_event_chronology",
+  "chronology_id": "ERL-FC-MR-2026-WORLD-001",
+  "subject_scope": "Hormuz, energy, refined products, inflation, shipping and policy events relevant to Randolph forecast calibration",
+  "independence_rule": "Randolph's later commentary is excluded as outcome verification. Events are reconstructed from independent or official sources.",
+  "events": [
+    {
+      "event_id": "MR-WORLD-2026-02-28-HORMUZ-DEFACTO-CLOSURE",
+      "date": "2026-02-28",
+      "event": "U.S. and Israeli attacks on Iran began; Reuters later described the war as leading to the Strait of Hormuz's de facto closure.",
+      "source_url": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "candidate start boundary for any forecast measured from onset of de facto closure",
+      "boundary_status": "PROVISIONAL",
+      "boundary_note": "The phrase 'de facto closure' requires operationalization against actual transit counts; it is not assumed to mean zero vessel movement."
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-17-HORMUZ-TEMP-REOPEN",
+      "date": "2026-04-17",
+      "event": "Iran announced temporary reopening of Hormuz for commercial vessels during a 10-day truce, subject to restrictions and continuing mine/security uncertainty.",
+      "source_url": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "possible interruption or partial reversal of closure state",
+      "boundary_status": "ESTABLISHED_EVENT_UNRESOLVED_EFFECT",
+      "boundary_note": "Announcement of reopening did not itself establish normalized traffic."
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-17-IRGC-AUTHORIZATION",
+      "date": "2026-04-17",
+      "event": "A senior Iranian official said commercial transit would require coordination/authorization with the IRGC and safe lanes; hundreds of ships remained stranded.",
+      "source_url": "https://www.reuters.com/world/middle-east/ships-crossing-hormuz-need-irgc-ok-unfreezing-assets-part-deal-iran-official-2026-04-17/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "distinguishes formal reopening language from unrestricted/normalized transit",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-20-HORMUZ-NEAR-STANDSTILL",
+      "date": "2026-04-20",
+      "event": "Reuters reported Hormuz shipping again near standstill after warning shots and a U.S. seizure; only three ships were observed entering/exiting over 12 hours versus roughly 130 daily in normal conditions.",
+      "source_url": "https://www.reuters.com/world/middle-east/shipping-traffic-remains-virtual-standstill-through-hormuz-data-shows-2026-04-20/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "evidence that the April 17 reopening did not establish durable normalization",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-04-28-HORMUZ-CLOSED-DISRUPTED",
+      "date": "2026-04-28",
+      "event": "Reuters described the Strait as closed/disrupted while isolated tankers still crossed; pre-war traffic had been roughly 125-140 vessels per day.",
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-rise-no-end-iran-war-stand-off-seems-sight-2026-04-28/",
+      "source_posture": "evidenced_independence",
+      "calibration_role": "supports a non-binary closure model and continuing severe disruption beyond the initial three-week period",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-06-08-EIA-DIESEL-5-210",
+      "date": "2026-06-08",
+      "event": "EIA reported the U.S. weekly on-highway diesel retail price at $5.210 per gallon.",
+      "source_url": "https://www.eia.gov/dnav/pet/PET_PRI_GND_A_EPD2D_PTE_DPGAL_W.htm",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "baseline refined-product price observation before the July Randolph diesel/inflation notes",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-07-06-EIA-DIESEL-4-578",
+      "date": "2026-07-06",
+      "event": "EIA reported U.S. on-highway diesel at $4.578 per gallon after a multi-week decline from the June 8 reading.",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=pet&s=EMD_EPD2D_PTE_NUS_DPG",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "pre-July-8 diesel price state",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-07-13-EIA-DIESEL-4-796",
+      "date": "2026-07-13",
+      "event": "EIA reported U.S. on-highway diesel at $4.796 per gallon, up $0.218 from July 6.",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=pet&s=EMD_EPD2D_PTE_NUS_DPG",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "same-day objective diesel state for 'Watch Gas and Diesel Prices Not Oil'",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-07-17-EIA-DISTILLATE-STOCKS",
+      "date": "2026-07-17",
+      "event": "For the week ending July 17, EIA reported U.S. distillate inventories increased 1.4 million barrels but remained 10% below the previous five-year average; crude inventories were 6% below and gasoline inventories 7% below their five-year averages.",
+      "source_url": "https://www.eia.gov/about/new/",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "supply-side context for diesel/refined-product stress distinct from crude headline price",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-07-20-EIA-DIESEL-5-134",
+      "date": "2026-07-20",
+      "event": "EIA reported U.S. on-highway diesel at $5.134 per gallon, up $0.338 in one week from July 13.",
+      "source_url": "https://www.eia.gov/petroleum/gasdiesel/",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "post-note refined-product price acceleration",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-07-27-EIA-DIESEL-5-313",
+      "date": "2026-07-27",
+      "event": "EIA reported U.S. on-highway diesel at $5.313 per gallon.",
+      "source_url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epd2d_pte_dpgal_w.htm",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "continued refined-product price escalation after July diesel indicator claims",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-08-03-EIA-DIESEL-5-348",
+      "date": "2026-08-03",
+      "event": "EIA reported U.S. on-highway diesel at $5.348 per gallon.",
+      "source_url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epd2d_pte_dpgal_w.htm",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "continuation of elevated diesel state",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-08-12-BLS-CPI-JULY",
+      "date": "2026-08-12",
+      "event": "BLS reported July CPI-U up 0.1% seasonally adjusted and 3.4% year over year. Energy was up 14.7% year over year, gasoline 24.6%, fuel oil 39.1%, and food 3.0%; monthly energy prices fell 1.5% in July.",
+      "source_url": "https://www.bls.gov/news.release/cpi.htm",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "consumer-price outcome evidence for energy/inflation transmission while preserving monthly-versus-yearly direction differences",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-08-13-BLS-PPI-JULY",
+      "date": "2026-08-13",
+      "event": "BLS reported final-demand PPI unchanged in July. Final-demand energy fell 3.1%; truck transportation of freight fell 1.8%; diesel fuel also declined, including a 6.7% drop in the processed-goods intermediate-demand diesel index.",
+      "source_url": "https://www.bls.gov/news.release/ppi.htm",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "producer/freight transmission evidence showing that elevated annual energy stress did not imply monotonic monthly inflation acceleration",
+      "boundary_status": "ESTABLISHED"
+    },
+    {
+      "event_id": "MR-WORLD-2026-08-17-EIA-DIESEL-5-454",
+      "date": "2026-08-17",
+      "event": "EIA reported U.S. on-highway diesel at $5.454 per gallon, above the July 6, July 13, and July 20 readings.",
+      "source_url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epd2d_pte_dpgal_w.htm",
+      "source_posture": "official_primary_statistics",
+      "calibration_role": "latest completed weekly diesel observation inside the requested evaluation window",
+      "boundary_status": "ESTABLISHED"
+    }
+  ],
+  "unresolved_questions": [
+    "What exact operational definition of 'closed' did Randolph use on March 7: zero transit, severe disruption, or inability to sustain normal commercial flow?",
+    "Was the three-week interval intended to run from February 28, from an earlier/later shipping-state transition, or from the date of the March 7 post?",
+    "What observable criterion counts as countries 'putting a stop to it': diplomatic intervention, temporary reopening, military action, sanctions relief, or normalized transit?",
+    "What macroeconomic metric and geography operationalize 'global recession begins to take hold'?",
+    "For the July diesel/inflation claims, what lead time did Randolph state or imply between refined-product price changes and CPI/PPI/freight/food effects?",
+    "Do the embedded July videos make a stronger claim than their Substack titles, and if so what exact causal mechanism and horizon did Randolph state?",
+    "How much of the July-August inflation pattern is attributable to energy/refining/shipping versus unrelated components and base effects?"
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false
+}
