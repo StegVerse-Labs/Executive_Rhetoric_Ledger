@@ -26,13 +26,18 @@ def numeric_features(state: dict[str, Any]) -> dict[str, float]:
 
 def feature_scales(states: list[dict[str, Any]], keys: set[str]) -> dict[str, float]:
     scales: dict[str, float] = {}
+    feature_maps = [numeric_features(state) for state in states]
     for key in keys:
-        values = [numeric_features(state)[key] for state in states if key in numeric_features(state)]
-        if len(values) < 2:
+        values = [features[key] for features in feature_maps if key in features]
+        if not values:
             scales[key] = 1.0
             continue
         lo, hi = min(values), max(values)
-        scales[key] = max(hi - lo, 1e-12)
+        absolute_reference = max(abs(value) for value in values)
+        # Avoid making a tiny observed range define a 100% distance. The scale
+        # must preserve both variation across the corpus and the magnitude of
+        # the feature itself, while remaining deterministic and unit-local.
+        scales[key] = max(hi - lo, absolute_reference, 1e-12)
     return scales
 
 
