@@ -1,0 +1,36 @@
+name: Validate Longitudinal Market Research
+
+on:
+  push:
+    paths:
+      - 'schemas/market-state-vector.schema.json'
+      - 'schemas/trade-preference-evidence.schema.json'
+      - 'scripts/validate_longitudinal_market_evidence.py'
+      - 'scripts/find_historical_market_analogues.py'
+      - 'tests/test_longitudinal_market_research.py'
+      - '.github/workflows/validate-longitudinal-market-research.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install pytest jsonschema
+
+      - name: Compile longitudinal research code
+        run: python -m py_compile scripts/validate_longitudinal_market_evidence.py scripts/find_historical_market_analogues.py
+
+      - name: Run deterministic longitudinal research tests
+        run: pytest -q tests/test_longitudinal_market_research.py
