@@ -13,6 +13,7 @@
     "current_state_vector_digest",
     "historical_analogues",
     "outcomes",
+    "comparison_outcomes",
     "favorable_evidence",
     "disconfirming_evidence",
     "source_coverage",
@@ -65,17 +66,13 @@
     },
     "outcomes": {
       "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/distribution"}
+    },
+    "comparison_outcomes": {
+      "type": "object",
       "additionalProperties": {
         "type": "object",
-        "additionalProperties": false,
-        "required": ["observations"],
-        "properties": {
-          "observations": {"type": "integer", "minimum": 0},
-          "median_return_pct": {"type": ["number", "null"]},
-          "mean_return_pct": {"type": ["number", "null"]},
-          "positive_outcome_rate": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
-          "median_adverse_excursion_pct": {"type": ["number", "null"]}
-        }
+        "additionalProperties": {"$ref": "#/$defs/distribution"}
       }
     },
     "favorable_evidence": {"type": "array", "items": {"type": "string"}},
@@ -95,5 +92,19 @@
     "research_authority": {"const": "ERL"},
     "execution_authority": {"const": "NONE"},
     "may_authorize_order": {"const": false}
+  },
+  "$defs": {
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observations", "median_return_pct", "mean_return_pct", "positive_outcome_rate", "median_adverse_excursion_pct"],
+      "properties": {
+        "observations": {"type": "integer", "minimum": 0},
+        "median_return_pct": {"type": ["number", "null"]},
+        "mean_return_pct": {"type": ["number", "null"]},
+        "positive_outcome_rate": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "median_adverse_excursion_pct": {"type": ["number", "null"]}
+      }
+    }
   }
 }
