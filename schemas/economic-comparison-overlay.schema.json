@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/economic-comparison-overlay.schema.json",
+  "title": "Economic Comparison Overlay",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "overlay_id",
+    "national_inputs",
+    "hypotheses",
+    "comparisons",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "stegverse.erl.economic-comparison-overlay.v1"
+    },
+    "overlay_id": {
+      "const": "ERL-ECON-CA-US-OVERLAY"
+    },
+    "national_inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canada",
+        "united_states"
+      ],
+      "properties": {
+        "canada": {
+          "const": "economic-trajectories/canada/trajectory.v1.json"
+        },
+        "united_states": {
+          "const": "economic-trajectories/united-states/trajectory.v1.json"
+        }
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "hypothesis_id",
+          "proposition",
+          "status",
+          "required_evidence",
+          "disconfirming_conditions"
+        ],
+        "properties": {
+          "hypothesis_id": {
+            "type": "string",
+            "pattern": "^ERL-ECON-HYP-[A-Z0-9-]+$"
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "unassessed",
+              "testing",
+              "supported-bounded",
+              "not-supported",
+              "mixed",
+              "superseded"
+            ]
+          },
+          "required_evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "disconfirming_conditions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "comparison_id",
+          "status",
+          "canada_finding_id",
+          "us_finding_id",
+          "aligned_dimensions",
+          "definition_reconciliation",
+          "mechanism_relation",
+          "lag_analysis",
+          "controls",
+          "gaps",
+          "confidence",
+          "review"
+        ],
+        "properties": {
+          "comparison_id": {
+            "type": "string",
+            "pattern": "^ERL-ECON-COMP-[A-Z0-9-]+$"
+          },
+          "status": {
+            "enum": [
+              "candidate",
+              "reviewed",
+              "rejected",
+              "superseded"
+            ]
+          },
+          "canada_finding_id": {
+            "type": "string",
+            "pattern": "^ERL-ECON-CA-FIND-[A-Z0-9-]+$"
+          },
+          "us_finding_id": {
+            "type": "string",
+            "pattern": "^ERL-ECON-US-FIND-[A-Z0-9-]+$"
+          },
+          "aligned_dimensions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "definition_reconciliation": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "mechanism_relation": {
+            "enum": [
+              "same-supported-mechanism",
+              "different-supported-mechanisms",
+              "partially-overlapping",
+              "unresolved"
+            ]
+          },
+          "lag_analysis": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "lead_jurisdiction",
+              "lag_years",
+              "baseline_sensitivity"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "not-assessed",
+                  "observed",
+                  "not-observed",
+                  "non-comparable"
+                ]
+              },
+              "lead_jurisdiction": {
+                "enum": [
+                  "Canada",
+                  "United States",
+                  "none",
+                  "unresolved"
+                ]
+              },
+              "lag_years": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "baseline_sensitivity": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "controls": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "gaps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "reviewer",
+              "reviewed_at",
+              "independent",
+              "reproducible"
+            ],
+            "properties": {
+              "reviewer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reviewed_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "independent": {
+                "type": "boolean"
+              },
+              "reproducible": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "research_authority",
+        "may_rewrite_national_findings",
+        "may_infer_missing_effects",
+        "may_publish"
+      ],
+      "properties": {
+        "research_authority": {
+          "const": "ERL"
+        },
+        "may_rewrite_national_findings": {
+          "const": false
+        },
+        "may_infer_missing_effects": {
+          "const": false
+        },
+        "may_publish": {
+          "const": false
+        }
+      }
+    }
+  }
+}
