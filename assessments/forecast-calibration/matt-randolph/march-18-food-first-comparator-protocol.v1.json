@@ -1,0 +1,89 @@
+{
+  "record_type": "terminal_order_comparator_protocol",
+  "record_id": "ERL-FC-MR-2026-03-18-FOOD-FIRST-COMPARATOR-V1",
+  "forecast_id": "MR-FC-2026-03-18-SHIPPING-FUEL-FOOD-FIRST",
+  "purpose": "Predeclare the comparator set, clock, and resolution rules for the bounded first-party proposition that high shipping fuel costs hit food prices first.",
+  "source_boundary": {
+    "authorized_text": "High Shipping Fuel Costs Hit Food Prices First.",
+    "stronger_claims_forbidden_without_transcript": [
+      "exact lag length",
+      "magnitude",
+      "sole causation",
+      "dominant causation",
+      "specific CPI subindex not named in the source",
+      "specific geography beyond the source context"
+    ]
+  },
+  "clock": {
+    "primary_start_event": "observable marine bunker-fuel shock",
+    "primary_start_boundary": "2026-03-09/2026-03-11",
+    "boundary_basis": "USDA documented IFO 380 all-time high on March 9 and Global 20 Ports VLSFO at $960/metric ton on March 11, up 79% from two weeks earlier.",
+    "sensitivity_start_event": "forecast publication",
+    "sensitivity_start_boundary": "2026-03-18",
+    "rule": "Both clocks must remain visible. A favorable result under only one clock cannot erase the other."
+  },
+  "primary_comparator_set": [
+    {
+      "lane": "food_at_home",
+      "source_family": "BLS_CPI",
+      "role": "primary food consumer-price lane"
+    },
+    {
+      "lane": "food_away_from_home",
+      "source_family": "BLS_CPI",
+      "role": "secondary food consumer-price lane"
+    },
+    {
+      "lane": "apparel",
+      "source_family": "BLS_CPI",
+      "role": "tradable consumer-goods comparator"
+    },
+    {
+      "lane": "household_furnishings_and_operations",
+      "source_family": "BLS_CPI",
+      "role": "goods/logistics-sensitive comparator"
+    },
+    {
+      "lane": "transportation_services",
+      "source_family": "BLS_CPI",
+      "role": "transport cost comparator"
+    },
+    {
+      "lane": "commodities_less_food_and_energy",
+      "source_family": "BLS_CPI",
+      "role": "broad nonfood goods comparator"
+    }
+  ],
+  "intermediate_mechanism_set": [
+    "marine_bunker_fuel",
+    "grain_ocean_freight",
+    "domestic_diesel",
+    "rail_fuel_surcharges",
+    "truck_freight_prices",
+    "processed_foods_and_feeds"
+  ],
+  "ordering_rule": {
+    "signal_definition": "first material post-shock acceleration or persistent elevation relative to the immediately preceding baseline, evaluated consistently across comparator lanes",
+    "minimum_persistence": "one monthly observation for a large discrete change or two consecutive observations for small changes",
+    "ties": "If food and one or more comparator lanes cross the materiality rule in the same reference month, terminal ordering remains TIED_OR_UNRESOLVED rather than awarding first place.",
+    "mixed_food_rule": "Food-at-home and food-away-from-home are reported separately. A rise in one cannot silently substitute for the other.",
+    "causal_rule": "Ordering score does not establish shipping fuel as sole or dominant cause."
+  },
+  "resolution_states": [
+    "SUPPORTED",
+    "PARTIAL_MIXED",
+    "TIED_OR_UNRESOLVED",
+    "NOT_SUPPORTED",
+    "INSUFFICIENT_DATA"
+  ],
+  "anti_hindsight_rules": [
+    "Do not add or remove comparator categories after observing their results unless the protocol is versioned and the original result remains reproducible.",
+    "Do not redefine first from monthly timing to annual rate after observing outcomes.",
+    "Do not use release date as event date; score by reference period.",
+    "Do not treat energy itself as a downstream comparator because it is part of the initiating shock rather than a downstream consumer category.",
+    "Do not convert intermediate mechanism support into terminal ordering support."
+  ],
+  "current_status": "PREDECLARED_NOT_EXECUTED_TO_FINALITY",
+  "finding_authorized": false,
+  "publication_authorized": false
+}
