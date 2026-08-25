@@ -26,28 +26,39 @@ def parse_timestamp(value: str) -> datetime | None:
     return None
 
 
-def collect_timestamps(value: Any) -> list[datetime]:
-    found: list[datetime] = []
-    if isinstance(value, str):
-        parsed = parse_timestamp(value)
-        if parsed is not None:
-            found.append(parsed)
-    elif isinstance(value, dict):
-        for child in value.values():
-            found.extend(collect_timestamps(child))
-    elif isinstance(value, list):
-        for child in value:
-            found.extend(collect_timestamps(child))
-    return found
-
-
 def source_latest_timestamp(path: Path) -> datetime | None:
+    """Return the source's own observation/as-of timestamp, never arbitrary dates in prose or future windows."""
     try:
         data = json.loads(path.read_text())
     except (OSError, json.JSONDecodeError):
         return None
-    timestamps = collect_timestamps(data)
-    return max(timestamps) if timestamps else None
+
+    schema = str(data.get("schema", "")) if isinstance(data, dict) else ""
+    if schema == "stegverse.erl.crypto_market_panel.coingecko.utc.v1" or "crypto_market_panel" in schema:
+        dates = data.get("dates", [])
+        if dates:
+            return parse_timestamp(str(dates[-1]))
+
+    if schema == "stegverse.erl.crypto_system_shock_transaction_reconstruction.v1":
+        center = data.get("event_center", {}).get("derived_utc_center")
+        return parse_timestamp(str(center)) if center else None
+
+    if isinstance(data, dict):
+        for key in (
+            "as_of_utc",
+            "observed_at_utc",
+            "observed_at",
+            "captured_at_utc",
+            "captured_at",
+            "captured_on",
+            "date",
+        ):
+            value = data.get(key)
+            if isinstance(value, str):
+                parsed = parse_timestamp(value)
+                if parsed is not None:
+                    return parsed
+    return None
 
 
 def build_health(registry: dict[str, Any], policy: dict[str, Any], root: Path, as_of: datetime) -> dict[str, Any]:
