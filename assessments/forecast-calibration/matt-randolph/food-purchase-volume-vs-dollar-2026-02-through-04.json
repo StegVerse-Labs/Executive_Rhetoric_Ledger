@@ -1,0 +1,73 @@
+{
+  "record_type": "food_purchase_volume_vs_dollar",
+  "record_id": "ERL-FC-MR-2026-FOOD-VOLUME-DOLLAR-001",
+  "purpose": "Separate food-price indexes and dollar sales from the physical/unit quantity of food purchased when evaluating affordability and downstream transmission claims.",
+  "scope": "United States retail food and beverage, February-April 2026",
+  "sources": [
+    {
+      "source_id": "CIRCANA-2026-02-RETAIL",
+      "source_type": "retail_scanner_market_measurement",
+      "url": "https://www.circana.com/post/february-spending-rebounds-as-consumer-resilience-drives-market-stability-reports-circana"
+    },
+    {
+      "source_id": "CIRCANA-2026-03-FOOD-BEVERAGE",
+      "source_type": "retail_scanner_market_measurement",
+      "url": "https://a.storyblok.com/f/342431/x/ea291008e9/dairy-deli-bakery-trends-recap-mar-2026.pdf"
+    },
+    {
+      "source_id": "CIRCANA-2026-04-RETAIL",
+      "source_type": "retail_scanner_market_measurement",
+      "url": "https://www.circana.com/post/retail-sales-slip-in-april-as-calendar-shifts-economic-pressures-weigh-on-consumer-demand-reports"
+    },
+    {
+      "source_id": "BLS-CPI-2026-03",
+      "source_type": "official_price_index",
+      "url": "https://www.bls.gov/news.release/archives/cpi_04102026.htm"
+    }
+  ],
+  "observations": [
+    {
+      "period": "2026-02",
+      "retail_food_beverage_dollar_sales_yoy_pct": 1.4,
+      "retail_food_beverage_unit_sales_yoy_pct": -0.6,
+      "interpretation": "Consumers spent more dollars while purchasing fewer units year over year."
+    },
+    {
+      "period": "2026-03",
+      "retail_food_beverage_dollar_sales_yoy_pct": 1.7,
+      "retail_food_beverage_unit_sales_yoy_pct": 0.1,
+      "retail_food_beverage_units": "16.8 billion units",
+      "interpretation": "Dollar sales rose while unit volume was essentially flat year over year."
+    },
+    {
+      "period": "2026-04",
+      "retail_food_beverage_dollar_sales_yoy_pct": -1.7,
+      "retail_food_beverage_unit_sales_yoy_pct": -4.0,
+      "interpretation": "Physical/unit demand fell substantially faster than dollar sales. Calendar effects, including Easter timing, remain a material confounder."
+    }
+  ],
+  "march_department_unit_sales_yoy_pct": [
+    {"department": "meat", "value": 0.7},
+    {"department": "produce", "value": -0.4},
+    {"department": "dairy", "value": 1.2},
+    {"department": "deli", "value": 1.3},
+    {"department": "bakery", "value": -4.2},
+    {"department": "seafood", "value": -4.6}
+  ],
+  "price_index_context": {
+    "march_food_at_home_cpi_mom_sa_pct": -0.2,
+    "march_food_at_home_cpi_yoy_pct": 1.9,
+    "rule": "The monthly CPI movement measures an average price-index change, not household affordability and not physical food quantity purchased."
+  },
+  "interpretive_rules": [
+    "Dollar sales, price indexes, units purchased, weight/volume, package size, household basket quality, and purchasing power are distinct state variables.",
+    "Unit sales are a closer proxy for physical purchasing than dollar sales but are not identical to pounds, kilograms, calories, or nutritional quantity because package sizes and product mix differ.",
+    "A decline in CPI cannot be interpreted as increased food consumption volume without quantity evidence.",
+    "Dollar growth accompanied by flat or falling units is evidence consistent with consumers paying more per unit/mix while not receiving proportionally more physical food.",
+    "Department-level divergence must remain visible; aggregate food volume can mask substitution across categories.",
+    "No household-level or state-level conclusion is authorized from national aggregate scanner data alone."
+  ],
+  "bounded_finding": "The February-March national retail evidence is more consistent with constrained food purchasing than with improved grocery affordability: February food/beverage units fell despite higher dollar sales, and March unit sales were essentially flat while dollar sales rose. April unit sales then fell sharply, though calendar effects complicate the comparison.",
+  "finding_authorized": true,
+  "publication_authorized": false
+}
