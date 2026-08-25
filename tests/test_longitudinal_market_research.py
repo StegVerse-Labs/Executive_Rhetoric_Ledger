@@ -48,7 +48,7 @@ def test_canonical_panel_indexes_without_fabricating_missing_families():
     assert final["prices"]["XRP-USD"] == 1.45
     assert final["features"]["xrp_xlm_ratio"] > 7.18
     assert "derivatives" in final["source_coverage"]["missing_families"]
-    assert final["source_coverage"]["coverage_score"] == 1.0
+    assert final["source_coverage"]["coverage_score"] == 0.25
     assert final["execution_authority"] == "NONE"
     schema = json.loads((ROOT / "schemas/market-state-vector.schema.json").read_text())
     state_without_prices = {key: value for key, value in final.items() if key != "prices"}
