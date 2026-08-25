@@ -1,0 +1,236 @@
+{
+  "record_type": "physical_economic_condition_index_target",
+  "record_id": "ERL-PECI-TARGET-V0.1",
+  "name": "Physical Economic Condition Index",
+  "status": "TARGET_DESIGN_ACTIVE_NOT_CALCULATED",
+  "purpose": "Define a population-aware economic condition index that measures physical purchasing power, essential-need satisfaction, cost transmission, financing burden, distributional burden, and producer margin state without assuming CPI alone adequately represents economic welfare or physical economic conditions.",
+  "core_proposition": "A conventional aggregate inflation index does not fully characterize physical economic conditions when nominal prices, effective prices per physical or service unit, quantity and quality received, nominal income, required debt service, mandatory taxes/fees/regulatory charges, substitution, unmet essential need, distributional burden, and producer margins change independently or asymmetrically.",
+  "governing_rules": [
+    "No economic unit is assumed state-equivalent across time. Changes in package mass, volume, count, durability, service level, coverage, deductible, mandatory access charge, or other economically relevant attributes must be represented as state transitions.",
+    "Nominal income is primary. CPI-deflated real earnings may be retained as an adjacent comparator but cannot serve as the sole purchasing-power denominator because doing so would recursively import CPI assumptions into an index partly designed to test CPI incompleteness.",
+    "Underlying essential need is distinct from observed quantity acquired. Lower acquisition under constraint does not establish lower need.",
+    "Substitution remains an economic state change even when the substitute is domestically produced or cheaper. Domestic production does not erase quality, quantity, nutrition, durability, or service-level substitution.",
+    "Taxes, fees, riders, regulatory charges, tariffs, and mandatory delivery/access charges must be located on the side where they are imposed and also propagated through the full value-flow graph when they alter producer cost, consumer delivered cost, or both.",
+    "Producer margin must not be inferred from consumer price change alone. It requires direct or reconstructible margin evidence.",
+    "Population averages must be accompanied by distributional slices where burden materially differs by income, geography, household type, or other observable strata.",
+    "No composite score may be published until component definitions, transformations, weights, missing-data rules, revisions policy, and validation tests are frozen and independently reviewed."
+  ],
+  "architecture": {
+    "consumer_physical_value": {
+      "question": "What quantity and quality of essential and nonessential goods/services does a dollar actually obtain?",
+      "variables": [
+        "nominal_sticker_price",
+        "effective_price_per_physical_unit",
+        "package_mass_volume_count",
+        "quality_or_service_level",
+        "mandatory_delivery_and_access_fees",
+        "taxes_and_regulatory_charges",
+        "quantity_acquired",
+        "quality_or_mix_substitution"
+      ],
+      "candidate_sources": [
+        "BLS CPI detailed item observations and quality/size treatment",
+        "USDA ERS scanner-methodology bridge for grams",
+        "Circana retail unit/volume/price-mix evidence",
+        "utility tariffs and delivered-bill structures",
+        "industry-specific administrative or scanner data"
+      ]
+    },
+    "income_and_resources": {
+      "question": "What nominal resources are available before required obligations and physical-cost conversion?",
+      "primary_variables": [
+        "nominal_disposable_personal_income",
+        "nominal_wage_and_salary_income",
+        "hours_worked",
+        "transfer_income_where_applicable"
+      ],
+      "adjacent_index_validation": {
+        "BLS_real_earnings": {
+          "posture": "VALID_ADJACENT_COMPARATOR_NOT_PRIMARY_DEFLATOR",
+          "reason": "BLS real earnings derive CES earnings and deflate them with CPI-U or CPI-W. Useful for comparison, but circular as the sole real-income leg of an index designed to test CPI blind spots."
+        },
+        "BEA_real_DPI": {
+          "posture": "VALID_MACRO_COMPARATOR_REQUIRES_DEFLATOR_AUDIT",
+          "reason": "Useful national purchasing-power comparator, but the target index should preserve nominal DPI and independently reconstruct physical essential-cost purchasing power rather than relying only on an existing aggregate deflator."
+        }
+      }
+    },
+    "debt_and_financing": {
+      "question": "How much nominal income is pre-committed to required debt service and financing?",
+      "adjacent_index_validation": {
+        "Federal_Reserve_DSR": {
+          "posture": "VALID_AGGREGATE_INPUT_WITH_LIMITS",
+          "definition": "Required mortgage plus consumer debt payments divided by disposable personal income.",
+          "strength": "Current methodology uses scheduled required payments from credit-bureau data and includes mortgage escrow payments where bundled.",
+          "limitations": [
+            "Quarterly and aggregate rather than household-distribution complete.",
+            "Does not by itself capture rent, all insurance, all taxes, utility arrears, BNPL-like obligations outside coverage, or all informal debt.",
+            "Denominator is aggregate disposable personal income and therefore does not express burden heterogeneity."
+          ]
+        }
+      },
+      "target_variables": [
+        "mortgage_required_payment",
+        "consumer_credit_required_payment",
+        "auto_loan_required_payment",
+        "student_loan_required_payment",
+        "revolving_credit_required_payment",
+        "effective_interest_and_fee_burden",
+        "arrears_and_delinquency_where_available"
+      ]
+    },
+    "essential_need_and_unmet_need": {
+      "question": "How much essential need is satisfied, compressed, substituted, deferred, or unmet?",
+      "native_subindex_required": true,
+      "provisional_name": "Essential Need Satisfaction Index",
+      "candidate_components": [
+        "food_sufficiency",
+        "energy_payment_difficulty_or_service_disconnection_risk",
+        "transportation_sufficiency",
+        "housing_payment_difficulty_or instability",
+        "water_or_utility arrears where available",
+        "quantity_or_quality compression in essential baskets"
+      ],
+      "candidate_sources": [
+        "Census HTOPS direct-burden tables",
+        "USDA food-security measures",
+        "utility arrears/disconnection administrative data where authoritative",
+        "housing burden and delinquency data",
+        "transportation access surveys"
+      ],
+      "rule": "Unmet need is an outcome variable, not a synonym for reduced demand."
+    },
+    "distribution": {
+      "question": "Who bears the burden and how unevenly is it distributed?",
+      "native_subindex_required": true,
+      "provisional_name": "Population Burden Distribution Index",
+      "candidate_dimensions": [
+        "income_quintile_or_decile",
+        "geography",
+        "household_size",
+        "tenure_renter_owner",
+        "employment_status",
+        "age_or_lifecycle_where methodologically justified"
+      ],
+      "candidate_sources": [
+        "BLS Consumer Expenditure Survey income quintiles",
+        "Census HTOPS demographic and income strata",
+        "BEA distributional income work where available",
+        "Federal Reserve household finance distribution data"
+      ],
+      "minimum_output": [
+        "median burden",
+        "lower-quintile burden",
+        "upper-quintile burden",
+        "burden gap",
+        "share above predefined essential-burden thresholds"
+      ]
+    },
+    "producer_margin_and_cost_transmission": {
+      "question": "Did consumer effective-price pressure arise alongside producer cost compression, margin expansion, or both?",
+      "native_subindex_required": true,
+      "provisional_name": "Producer Cost-Margin Transmission Index",
+      "direct_inputs": [
+        "intermediate_input_costs",
+        "labor_compensation",
+        "taxes_on_production_and_imports_less_subsidies",
+        "gross_output_or_sales",
+        "gross_operating_surplus",
+        "corporate_profits_from_current_production",
+        "retail_and_wholesale_trade_margin_indexes",
+        "physical_output_quantity_where available"
+      ],
+      "validated_sources": {
+        "BEA_industry_accounts": "Value added equals gross output less intermediate inputs; compensation, taxes less subsidies, and gross operating surplus partition value added.",
+        "BEA_corporate_profits": "Profits from current production provide an aggregate profitability measure but are quarterly and not equivalent to product-level margin.",
+        "BLS_PPI_trade_margins": "Trade PPIs directly measure changes in wholesale/retail margin prices, defined as selling price less acquisition price, but they are trade-service margins rather than manufacturer profit margins.",
+        "Census_QFR": "Provides estimated income statements, balance sheets, and operating ratios for covered corporate sectors and can support industry-level direct margin reconstruction."
+      },
+      "rule": "Producer margin is separately calculable at aggregate/industry/company levels where direct financial inputs exist. Only when those inputs are unavailable may a residual margin proxy be inferred, and the inference must remain explicitly lower-confidence."
+    },
+    "tax_fee_regulatory_flow": {
+      "question": "Where do compulsory public or regulated charges alter the economic state?",
+      "native_subindex_required": false,
+      "treatment": "CROSS_CUTTING_FLOW_LAYER",
+      "nodes": [
+        "producer taxes on production/imports",
+        "tariffs/customs duties",
+        "excise taxes",
+        "sales taxes",
+        "property taxes",
+        "regulated delivery/transmission/distribution charges",
+        "mandatory riders/surcharges",
+        "consumer usage fees",
+        "subsidies or credits"
+      ],
+      "rule": "Charges are not collapsed into one tax number. Each is attached to its initial payer and then propagated to downstream delivered cost only where evidence supports pass-through."
+    }
+  },
+  "substitution_model": {
+    "principle": "Substitution must preserve the state difference between the original and replacement good/service.",
+    "dimensions": [
+      "price",
+      "mass_or_volume",
+      "nutrition",
+      "durability",
+      "service_level",
+      "coverage",
+      "domestic_vs_imported_origin",
+      "brand_or_quality tier"
+    ],
+    "example_rule": "Switching from an imported higher-quality product to a domestically produced lower-quality substitute may improve domestic-output share while simultaneously indicating consumer quality compression; both state changes are recorded."
+  },
+  "candidate_calculation_framework": {
+    "stage_1": "Construct dimension-specific indexes independently; do not aggregate yet.",
+    "stage_2": "Normalize each dimension against a frozen reference period using economically meaningful units rather than only sticker prices.",
+    "stage_3": "Calculate population-distribution surfaces before national aggregation.",
+    "stage_4": "Calculate producer cost/margin transmission separately from household burden.",
+    "stage_5": "Join household and producer surfaces through observed commodity/service lanes without assuming causality from contemporaneous movement.",
+    "stage_6": "Only after validation, define a composite Physical Economic Condition Index and publish the underlying state vector alongside any scalar summary."
+  },
+  "proposed_state_vector": [
+    "physical_purchasing_power",
+    "nominal_resource_capacity",
+    "required_debt_service_burden",
+    "essential_cost_burden",
+    "essential_need_satisfaction",
+    "substitution_and_quality_compression",
+    "population_burden_distribution",
+    "producer_cost_pressure",
+    "producer_margin_state",
+    "tax_fee_regulatory_flow"
+  ],
+  "anti_failure_rules": [
+    "Do not import CPI-deflated real income as if it were independent validation of a CPI alternative.",
+    "Do not infer producer profiteering from rising consumer prices without direct margin evidence.",
+    "Do not infer producer distress from falling margins without controlling for output, mix, one-time items, and accounting scope.",
+    "Do not treat domestic substitution as automatically beneficial if physical quantity, quality, nutrition, durability, or household welfare declines.",
+    "Do not aggregate distribution away before reporting burden by population strata.",
+    "Do not count the same tax, fee, subsidy, margin, or transfer twice as it propagates through the value-flow graph.",
+    "Do not turn unmet need into lower preference or demand.",
+    "Do not publish a scalar score without the component state vector and provenance."
+  ],
+  "validated_adjacent_sources": [
+    "https://www.bls.gov/news.release/realer.tn.htm",
+    "https://www.federalreserve.gov/releases/DSR/about.htm",
+    "https://www.federalreserve.gov/releases/dsr/",
+    "https://www.bea.gov/data/income-saving/corporate-profits",
+    "https://www.bea.gov/resources/guide-interactive-gdp-industry-accounts-tables",
+    "https://www.bls.gov/ppi/fd-id/frequently-asked-questions-on-the-ppi-for-final-demand.htm",
+    "https://www.census.gov/econ/qfr/collection.html",
+    "https://www.bls.gov/opub/reports/consumer-expenditures/2024/home.htm",
+    "https://www.census.gov/programs-surveys/household-pulse-survey/technical-documentation/methodology.2025.html"
+  ],
+  "next_build_steps": [
+    "Design Essential Need Satisfaction Index from direct Census/USDA/administrative measures.",
+    "Design Population Burden Distribution Index using CE quintiles plus HTOPS strata and define threshold metrics.",
+    "Build Producer Cost-Margin Transmission Index with BEA industry accounts, PPI trade margins, and Census QFR; distinguish manufacturing margins from retail/wholesale margins.",
+    "Build a non-circular income/resource leg from nominal income and hours before applying the physical-cost basket.",
+    "Validate Federal Reserve DSR coverage and supplement missing non-debt compulsory obligations rather than rebuilding DSR unnecessarily.",
+    "Define tax/fee/regulatory pass-through graph with payer, legal incidence, observed economic incidence, and evidence confidence.",
+    "Prototype the state vector on food, electricity, motor fuel, and housing before expanding to the entire consumption basket."
+  ],
+  "composite_index_authorized": false,
+  "finding_authorized": true,
+  "publication_authorized": false
+}
