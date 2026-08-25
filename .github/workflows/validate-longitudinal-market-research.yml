@@ -12,10 +12,12 @@ on:
       - 'scripts/find_historical_market_analogues.py'
       - 'scripts/index_existing_crypto_market_panel.py'
       - 'scripts/index_crypto_system_shock_event.py'
+      - 'scripts/normalize_existing_market_events.py'
       - 'scripts/label_market_forward_outcomes.py'
       - 'scripts/build_trade_preference_evidence.py'
       - 'tests/test_longitudinal_market_research.py'
       - 'tests/test_market_observation_ingestion.py'
+      - 'tests/test_generic_market_event_normalizer.py'
       - '.github/workflows/validate-longitudinal-market-research.yml'
   workflow_dispatch:
 
@@ -44,11 +46,12 @@ jobs:
           scripts/find_historical_market_analogues.py
           scripts/index_existing_crypto_market_panel.py
           scripts/index_crypto_system_shock_event.py
+          scripts/normalize_existing_market_events.py
           scripts/label_market_forward_outcomes.py
           scripts/build_trade_preference_evidence.py
 
       - name: Run deterministic longitudinal research tests
-        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py
+        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py
 
       - name: Index canonical ERL crypto panel
         run: |
