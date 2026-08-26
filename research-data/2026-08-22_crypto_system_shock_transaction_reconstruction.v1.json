@@ -8,16 +8,50 @@
     "local_timezone": "America/Chicago",
     "observed_local_center": "2026-08-22T00:11:20-05:00",
     "derived_utc_center": "2026-08-22T05:11:20Z",
-    "primary_search_window_utc": ["2026-08-22T05:05:00Z", "2026-08-22T05:20:00Z"],
+    "primary_search_window_utc": [
+      "2026-08-22T05:05:00Z",
+      "2026-08-22T05:20:00Z"
+    ],
     "note": "The event center is anchored by user-captured contemporaneous Coinbase charts; XRP showed a cursor near 12:11:20 AM local at the first trough, while BTC, ETH, and ATOM showed visually synchronized cliffs in the same one-hour window."
   },
   "contemporaneous_screenshot_observations": {
-    "BTC": {"display_price_usd": 77323.86, "display_change_pct": -1.64, "capture_local": "2026-08-22T00:35:00-05:00", "shape": "abrupt cliff, partial rebound, choppy stabilization"},
-    "ETH_0035": {"display_price_usd": 2442.13, "display_change_pct": -3.08, "capture_local": "2026-08-22T00:35:00-05:00", "shape": "abrupt cliff, partial rebound, choppy stabilization"},
-    "ETH_0038": {"display_price_usd": 2434.99, "display_change_pct": -3.56, "capture_local": "2026-08-22T00:38:00-05:00", "shape": "continued post-shock bleed after partial rebound"},
-    "XRP": {"display_price_usd": 1.40, "display_change_pct": -14.04, "capture_local": "2026-08-22T00:34:00-05:00", "visible_first_trough_cursor_local": "2026-08-22T00:11:20-05:00", "shape": "synchronized cliff with much larger amplitude than controls"},
-    "ATOM": {"display_price_usd": 1.62, "display_change_pct": -2.98, "capture_local": "2026-08-22T00:37:00-05:00", "shape": "synchronized cliff, partial rebound, choppy stabilization"},
-    "IO": {"display_price_usd": 0.139, "display_change_pct_24h": 6.11, "capture_local": "2026-08-22T00:35:00-05:00", "comparison_limit": "1D chart, not directly comparable to the 1H event shape"}
+    "BTC": {
+      "display_price_usd": 77323.86,
+      "display_change_pct": -1.64,
+      "capture_local": "2026-08-22T00:35:00-05:00",
+      "shape": "abrupt cliff, partial rebound, choppy stabilization"
+    },
+    "ETH_0035": {
+      "display_price_usd": 2442.13,
+      "display_change_pct": -3.08,
+      "capture_local": "2026-08-22T00:35:00-05:00",
+      "shape": "abrupt cliff, partial rebound, choppy stabilization"
+    },
+    "ETH_0038": {
+      "display_price_usd": 2434.99,
+      "display_change_pct": -3.56,
+      "capture_local": "2026-08-22T00:38:00-05:00",
+      "shape": "continued post-shock bleed after partial rebound"
+    },
+    "XRP": {
+      "display_price_usd": 1.4,
+      "display_change_pct": -14.04,
+      "capture_local": "2026-08-22T00:34:00-05:00",
+      "visible_first_trough_cursor_local": "2026-08-22T00:11:20-05:00",
+      "shape": "synchronized cliff with much larger amplitude than controls"
+    },
+    "ATOM": {
+      "display_price_usd": 1.62,
+      "display_change_pct": -2.98,
+      "capture_local": "2026-08-22T00:37:00-05:00",
+      "shape": "synchronized cliff, partial rebound, choppy stabilization"
+    },
+    "IO": {
+      "display_price_usd": 0.139,
+      "display_change_pct_24h": 6.11,
+      "capture_local": "2026-08-22T00:35:00-05:00",
+      "comparison_limit": "1D chart, not directly comparable to the 1H event shape"
+    }
   },
   "derived_amplitude_ratios_from_displayed_changes": {
     "XRP_vs_BTC": 8.56,
@@ -41,15 +75,51 @@
     "public_tick_data_access": {
       "result": "not yet obtained from searchable public-web surfaces",
       "note": "The required evidence is exchange-native 1s/1m spot and perpetual trade data, liquidations, open-interest changes, and order-book depth. Public search confirms such data classes exist but has not exposed the required historical second-level records for the event window."
+    },
+    "venue_dispersion_update": {
+      "canonical_record": "research-data/2026-08-22_crypto_system_shock_venue_dispersion.v1.json",
+      "summary": "New cross-venue evidence shows the deepest XRP wick was Bitstamp-specific: Bitstamp XRP/USD fell from a 05:03 UTC one-minute high of $1.69739 to $1.06689 in the 05:10 candle and closed that candle at $1.44837. Other major venues printed materially higher lows. This materially strengthens a local thin-book/liquidity-vacuum amplifier for XRP while preserving the broader market-wide shock."
+    },
+    "liquidation_update": {
+      "published_utc": "2026-08-22T05:21:38Z",
+      "one_hour_total_usd": 523000000,
+      "longs_usd": 448000000,
+      "shorts_usd": 74760000,
+      "largest_single_liquidation": "Hyperliquid BTC-USD approximately $24.96M",
+      "interpretation": "A long-led deleveraging wave was active within minutes of the cliff; the rolling one-hour statistic strengthens liquidation amplification but cannot identify the initiating trade."
+    },
+    "external_event_control": {
+      "event": "US Section 338 additional 50% duties on specified Canadian goods took effect after Proclamation 11056 suspension expired",
+      "effective_utc": "2026-08-22T04:01:00Z",
+      "lag_to_common_0510_break_minutes": 69,
+      "disposition": "retain as H4 macro/policy control; timing is not sufficiently tight to promote as the crash trigger"
     }
   },
   "causal_hypotheses_to_discriminate": [
-    {"id": "H1_common_spot_sell", "test": "One or a few large spot sells on a dominant venue moved the reference market first, followed by arbitrage and liquidations."},
-    {"id": "H2_perpetual_liquidation_origin", "test": "A derivatives market broke first and forced long liquidations propagated into spot."},
-    {"id": "H3_orderbook_liquidity_withdrawal", "test": "Market makers simultaneously widened/cancelled bids, amplifying an otherwise ordinary sell impulse."},
-    {"id": "H4_external_macro_or_geopolitical_trigger", "test": "A contemporaneous external headline or cross-asset market move preceded crypto by seconds/minutes."},
-    {"id": "H5_exchange_or_stablecoin_incident", "test": "A venue, collateral, stablecoin, or infrastructure issue initiated the repricing."},
-    {"id": "H6_xrp_specific_secondary_amplifier", "test": "The common shock was market-wide but XRP experienced extra venue/positioning/liquidity/large-holder flow that multiplied its drawdown."}
+    {
+      "id": "H1_common_spot_sell",
+      "test": "One or a few large spot sells on a dominant venue moved the reference market first, followed by arbitrage and liquidations."
+    },
+    {
+      "id": "H2_perpetual_liquidation_origin",
+      "test": "A derivatives market broke first and forced long liquidations propagated into spot."
+    },
+    {
+      "id": "H3_orderbook_liquidity_withdrawal",
+      "test": "Market makers simultaneously widened/cancelled bids, amplifying an otherwise ordinary sell impulse."
+    },
+    {
+      "id": "H4_external_macro_or_geopolitical_trigger",
+      "test": "A contemporaneous external headline or cross-asset market move preceded crypto by seconds/minutes."
+    },
+    {
+      "id": "H5_exchange_or_stablecoin_incident",
+      "test": "A venue, collateral, stablecoin, or infrastructure issue initiated the repricing."
+    },
+    {
+      "id": "H6_xrp_specific_secondary_amplifier",
+      "test": "The common shock was market-wide but XRP experienced extra venue/positioning/liquidity/large-holder flow that multiplied its drawdown."
+    }
   ],
   "required_transaction_sequence": [
     "For BTCUSDT, ETHUSDT, XRPUSDT, XLMUSDT, SOLUSDT, and ATOMUSDT, acquire 1-second trades where available and 1-minute candles for 05:05-05:20 UTC.",
@@ -66,7 +136,8 @@
     "spot_led": "A spot venue must show the earliest statistically abnormal sell imbalance before derivatives liquidation acceleration on other venues.",
     "derivatives_led": "Perpetual/futures price or aggressive-sell flow must break first, with contemporaneous open-interest collapse and long liquidations preceding spot propagation.",
     "xrp_specific_secondary": "XRP-specific flow/positioning must occur after or alongside the common trigger and explain excess drawdown beyond matched controls; the size of the XRP move alone is insufficient.",
-    "whale_attribution": "A large on-chain transfer may identify a candidate seller only if exchange deposit timing and subsequent venue execution can be linked; wallet movement alone is insufficient."
+    "whale_attribution": "A large on-chain transfer may identify a candidate seller only if exchange deposit timing and subsequent venue execution can be linked; wallet movement alone is insufficient.",
+    "venue_wick": "A venue-specific wick may establish local liquidity amplification but cannot identify the system-wide initiating market unless its first break precedes matched major venues."
   },
-  "current_disposition": "The synchronized BTC/ETH/ATOM/XRP cliff is preserved as a system-wide shock candidate centered near 05:11 UTC. The initiating venue/instrument and transaction remain unresolved. The strongest current next step is exchange-native tick, liquidation, open-interest, and depth reconstruction rather than blockchain-only search."
+  "current_disposition": "The broad market shock remains real and long-liquidation amplification is materially strengthened. New evidence refines XRP's excess tail: the most extreme XRP wick was venue-specific on Bitstamp, while Binance/OKX/Coinbase lows were materially higher. Thus XRP-specific amplification now separates into broad XRP repricing plus local venue-liquidity amplification. The initiating venue/instrument/order remains unresolved."
 }
