@@ -272,3 +272,5 @@ User action required: none. No credentials, provider activation, iPhone-only ste
 Release/propagation boundary: no tag, release, deployment, public finding, or propagation to `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, or `stegguardian-wiki` is authorized. Create downstream verification tasks only when the lane reaches genuine reviewed release posture.
 
 Archive state: all state unique to the paired-national-trajectory session is now captured in repo-local handoffs, Issue `#78`, PR `#79`, CI receipts, and the global StegVerse Projects coordination document. Continuation must begin from those live sources, not this conversation.
+
+Unique trigger custody: `research-candidates/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` plus its three hashed PNG objects preserve the user-supplied LinkedIn trigger. The screenshots are discovery/rhetoric evidence only. The linked YouTube video's native content and transcript were not reviewed or custodied and remain a separately declared acquisition gap.

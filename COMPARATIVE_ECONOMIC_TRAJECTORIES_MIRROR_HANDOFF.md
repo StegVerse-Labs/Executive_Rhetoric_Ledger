@@ -87,3 +87,5 @@ PR `#79` remains open draft at head `35d2807077a5106edf52ee1a21f7241abaf521a9`; 
 Next executable boundary: reconcile PR `#79` with `main`, resolve shared definitions without weakening either evidence gate, rerun all owned validation, merge, and observe the first repository-native national automation receipt. Comparative population remains blocked until independently reviewed Canadian and U.S. findings exist. No user action or credential step is required. No comparison, lag conclusion, causal finding, publication, tag, release, deployment, or propagation is authorized.
 
 Archive state: all comparison-overlay state unique to this session is durable in this handoff, Issue `#78`, PR `#79`, and their receipts. Continuation does not require this conversation.
+
+Trigger custody: `research-candidates/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` preserves the original rhetoric screenshots and the user's bounded comparison question. It is discovery-only and cannot serve as a national or comparative finding endpoint.

@@ -100,3 +100,5 @@ The broader household-value and ownership-distribution capability on `main` is g
 Next executable boundary: reconcile PR `#79` with current `main`; resolve the shared measurement-dictionary and Canada household/distribution overlap; rerun dedicated and repository-wide CI; then merge only if all owned checks pass. After merge, obtain the first repository-native economic research workflow run and persistent governed candidate receipt. No user credential, provider action, or iPhone step is required. No finding, comparison, publication, tag, release, deployment, or downstream propagation is authorized.
 
 Archive state: all Canada-lane state unique to this session is durable in this handoff, Issue `#78`, PR `#79`, and their receipts. Continuation does not require this conversation.
+
+Trigger custody: `research-candidates/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` preserves the three user-supplied LinkedIn screenshots, hashes, session-derived research question, and the explicit limitation that the linked YouTube video was not reviewed or custodied.
