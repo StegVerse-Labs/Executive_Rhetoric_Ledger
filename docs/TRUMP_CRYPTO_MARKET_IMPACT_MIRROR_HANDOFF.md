@@ -260,3 +260,29 @@ Canonical venue-dispersion record: `research-data/2026-08-22_crypto_system_shock
 
 Interpretive correction: the deepest XRP print should not be treated as a uniform cross-venue XRP decline. XRP still experienced an outsized broad move, but the tail was materially amplified by venue-specific liquidity. The deepest wick therefore cannot be used to infer XRP initiated the system-wide shock.
 
+
+
+## Automated research continuation binding
+
+The Aug. 22 system-shock work is now bound into the existing longitudinal crypto-market research lane rather than a duplicate automation workstream.
+
+Canonical automation owner: `StegVerse-Labs/Executive_Rhetoric_Ledger#77`.
+Canonical automation handoff: `docs/LONGITUDINAL_CRYPTO_MARKET_RESEARCH_MIRROR_HANDOFF.md`.
+Task state: `task-state/ERL-CRYPTO-SHOCK-001.json`.
+Scheduled workflow: `.github/workflows/research-crypto-system-shock.yml`.
+
+Installed behavior:
+- hourly credential-free public venue refresh plus manual dispatch;
+- Coinbase/Kraken/Bitstamp/OKX/Binance spot acquisition across BTC/ETH/XRP/XLM/SOL/ATOM where supported;
+- recurring preservation of the Aug. 22 05:05-05:20 UTC forensic window and a rolling three-hour market-shock watch;
+- source failure remains explicit missing evidence;
+- emitted artifacts preserve ERL research authority only and cannot authorize trades or causal promotion.
+
+State distinction:
+- automation source/config/workflow: IMPLEMENTED;
+- scheduled runtime proof: NOT YET OBSERVED in this handoff;
+- first initiating venue/instrument/order: UNRESOLVED;
+- derivatives/OI/order-book enrichment: PENDING/REVIEW_REQUIRED;
+- independent causal review: BLOCKED pending evidence completion.
+
+No user action or credential step is required.
