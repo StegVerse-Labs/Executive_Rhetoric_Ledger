@@ -10,14 +10,18 @@ on:
       - "schemas/physical-economics-evidence-snapshot.schema.json"
       - "schemas/physical-economics-report-delta.schema.json"
       - "schemas/physical-economics-report-verification-receipt.schema.json"
+      - "schemas/physical-economics-report-document.schema.json"
       - "scripts/resolve_physical_economics_report_boundary.py"
       - "scripts/generate_physical_economics_report_delta.py"
       - "scripts/physical_economics_uncertainty.py"
       - "scripts/physical_economics_source_conflicts.py"
       - "scripts/finalize_physical_economics_evidence_snapshot.py"
       - "scripts/generate_physical_economics_report_verification_receipt.py"
+      - "scripts/render_physical_economics_report.py"
+      - "scripts/generate_physical_economics_public_report.py"
       - "scripts/validate_physical_economics_reporting.py"
       - "scripts/validate_physical_economics_reporting_integrity.py"
+      - "scripts/validate_physical_economics_report_renderer.py"
       - "tests/physical-economics-reporting/**"
       - "docs/physical-economics/reporting/**"
       - "assessments/physical-economics/reporting/**"
@@ -33,14 +37,18 @@ on:
       - "schemas/physical-economics-evidence-snapshot.schema.json"
       - "schemas/physical-economics-report-delta.schema.json"
       - "schemas/physical-economics-report-verification-receipt.schema.json"
+      - "schemas/physical-economics-report-document.schema.json"
       - "scripts/resolve_physical_economics_report_boundary.py"
       - "scripts/generate_physical_economics_report_delta.py"
       - "scripts/physical_economics_uncertainty.py"
       - "scripts/physical_economics_source_conflicts.py"
       - "scripts/finalize_physical_economics_evidence_snapshot.py"
       - "scripts/generate_physical_economics_report_verification_receipt.py"
+      - "scripts/render_physical_economics_report.py"
+      - "scripts/generate_physical_economics_public_report.py"
       - "scripts/validate_physical_economics_reporting.py"
       - "scripts/validate_physical_economics_reporting_integrity.py"
+      - "scripts/validate_physical_economics_report_renderer.py"
       - "tests/physical-economics-reporting/**"
       - "docs/physical-economics/reporting/**"
       - "assessments/physical-economics/reporting/**"
@@ -63,3 +71,5 @@ jobs:
         run: python scripts/validate_physical_economics_reporting.py
       - name: Validate reporting integrity and portable verification
         run: python scripts/validate_physical_economics_reporting_integrity.py
+      - name: Validate deterministic report rendering
+        run: python scripts/validate_physical_economics_report_renderer.py
