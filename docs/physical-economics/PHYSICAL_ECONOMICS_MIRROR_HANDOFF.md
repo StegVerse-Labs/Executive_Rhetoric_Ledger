@@ -13,11 +13,65 @@ Reconstruct physical economic value and burden across producers, intermediaries,
 - Existing indexes may be imported only after construction/circularity audit.
 - Nominal income/resources are primary; CPI-deflated real income is comparator evidence, not the sole purchasing-power denominator.
 - Taxes/fees/regulatory charges are cross-cutting flow objects attached to their initial payer and propagated only where pass-through is evidenced; no double counting.
-- Producer input cost, wholesale margin, retail margin, manufacturer accounting profit, corporate profit, and consumer price are distinct states.
+- Producer input cost, COGS, operating expense, wholesale margin, retail margin, manufacturer accounting profit, corporate profit, pre-tax income, taxable income, and consumer price are distinct states and may not be silently conflated.
 - Population averages cannot erase supported distributional or regional strata.
 - Current consumption cannot establish affordability when arrears, delinquency, balance-sheet drawdown, or deferred obligations are increasing.
 - Public transfers/subsidies are explicit offset flows, not negative prices, and cannot be counted twice.
 - Observation first, model second, explanation last.
+
+## Inflation-index / unit-state boundary
+Physical Economics does **not** claim that CPI is generically blind to shrinkflation or that CPI is incorrect at its intended constant-quality price-index task.
+
+BLS CPI methodology explicitly includes quality adjustment and can recognize identified package downsizing through effective price per standard quantity; BLS also publishes a research series for downsizing/upsizing effects. BLS PPI likewise applies quality adjustment to relevant item/physical/sale-basis changes. Therefore the ERL critique is a scope/sufficiency distinction:
+
+```text
+inflation index question:
+constant-quality price change over time
+
+Physical Economics reconstruction question:
+input/operating cost state
+-> physical quantity/quality/service state
+-> effective delivered consumer cost
+-> revenue/margin/profit state
+-> household quantity/access/need satisfaction
+```
+
+A valid CPI/PPI observation may be an important component of reconstruction while remaining insufficient by itself to establish producer cause, who absorbed a shock, margin distribution, physical-unit continuity, mandatory delivered cost, household access, or unmet essential need.
+
+Canonical public-method references preserved for future evidence receipts:
+- `https://www.bls.gov/cpi/quality-adjustment/questions-and-answers.htm`
+- `https://www.bls.gov/ppi/quality-adjustment/`
+- `https://www.bls.gov/opub/btn/volume-12/measuring-shrinkflation-and-its-impact-on-inflation.htm`
+- `https://www.bls.gov/cpi/research-series/r-cpi-sc.htm`
+- `https://www.bls.gov/opub/hom/cpi/calculation.htm`
+- `https://www.bls.gov/cpi/methods-overview.htm`
+
+Do not convert this distinction into the stronger unsupported claim `CPI ignores shrinkflation`.
+
+## Producer-consumer physical-value bridge
+The lane must preserve enough state to distinguish competing, evidence-consistent transmission paths rather than infer motive from one margin observation.
+
+Candidate reconstruction path:
+
+```text
+input costs
++ non-overlapping operating/production/distribution costs
+-> total company cost structure
+-> physical output/package/service state
+-> wholesale/retail effective price per physical/service unit
+-> revenue
+-> gross margin / operating margin / profit states
+-> household quantity or service acquired
+-> unmet essential-need/access gap where evidenced
+```
+
+Illustrative inference classes remain candidates until their required evidence is joined:
+1. cost rises + sticker price constrained + physical unit shrinks + margin flat/falls -> cost-pressure absorption/transmission candidate;
+2. cost flat/falls + physical unit shrinks + price flat/rises + margin rises -> margin-capture candidate;
+3. cost rises + sticker price rises + physical unit shrinks -> mixed burden candidate;
+4. incomplete/contradictory evidence -> unresolved.
+
+Margin movement alone does not establish causal mechanism or motive. Manufacturer, wholesaler, and retailer states must remain separate unless evidence proves the linkage.
 
 ## ERL binding
 Physical Economics consumes the canonical transition tuple `T=<S_pre,S_post,C,E,P,U,Q>` and does not replace the core calculus.
@@ -62,7 +116,9 @@ Intermediate inputs, compensation, taxes less subsidies, output/sales, gross ope
 ### Household Balance-Sheet Resilience
 Tracks nominal DPI/resources, personal saving, saving rate, liquid buffers where available, required debt service, delinquencies, and observable asset drawdown or credit substitution.
 
-Current seed: BEA saving rate declined from `3.5%` in March 2026 to `2.7%` in June 2026. Federal Reserve May 2026 stability reporting says household balance sheets were strong overall while credit-card and auto-loan delinquencies remained elevated relative to the past decade. Aggregate strength cannot erase distressed subgroups.
+Current installed seed: BEA saving rate declined from `3.5%` in March 2026 to `2.7%` in June 2026. Federal Reserve May 2026 stability reporting says household balance sheets were strong overall while credit-card and auto-loan delinquencies remained elevated relative to the past decade. Aggregate strength cannot erase distressed subgroups.
+
+On 2026-08-26 BEA released July 2026 Personal Income and Outlays, so the former July prospective gate has crossed. Those new values are publicly available but are **not yet admitted into a Physical Economics machine evidence object in this branch**; source availability is not evidence custody.
 
 ### Arrears / Deferred Obligation State
 Tracks housing payment status, utility/expense difficulty, credit delinquency, eviction/disconnection risk, and deferred required expenses. Continued housing, service, or spending does not establish affordability where payment is deferred.
@@ -74,7 +130,7 @@ Tracks industrial production, utilization, capacity growth, inventories, invento
 
 Current seed: Federal Reserve G.17 July 2026 total-industry utilization `76.3%` versus `79.4%` 1972-2025 average; manufacturing `76.0%` versus `78.2%` average. Census June 2026 business inventories were `$2,740.2B`, unchanged from May at the published one-decimal growth rate. These aggregate values weigh against a blanket economy-wide capacity-shortage claim but do not resolve sector-specific scarcity.
 
-Prospective lane gates: Census M3 July advance `2026-08-26`; full July M3 `2026-09-02`.
+The earlier session note labeled a `2026-08-26` “Census M3 July advance” gate. Fresh Census release-schedule verification on 2026-08-26 shows the July Advance Economic Indicators Report is scheduled for `2026-08-27`, while the Full Report - Manufacturers' Shipments, Inventories and Orders is scheduled for `2026-09-02`. Do not promote a July M3 value from the mistaken earlier date.
 
 ### Regional Burden Surface
 BLS CE metro data establish that essential expenditure composition varies materially across geography. 2023-24 U.S. shares: housing `33.2%`, transportation `17.0%`, food `12.9%`. Examples: Miami housing `40.0%`; Houston transportation `19.8%`; Honolulu food `16.4%`; St. Louis housing `29.1%`. These are multiyear baselines, not current 2026 burden values; they define regional weighting structure to join with current local delivered costs/resources.
@@ -102,10 +158,13 @@ Official Census workbooks are resolved for food sufficiency, household energy sp
 ## Physical food quantity boundary
 USDA ERS F-MAP establishes package-weight normalization to grams, but public files currently cover 2012-2018. Method established; current national 2026 grams/calories remain uncustodied. Retail units/volume are proxies, not physical-mass/nutrition equivalents.
 
+The physical-quantity method is economically material because a nominally identical product identity can conceal state mutation. For example, a package can retain its sticker price while its ounces/grams/count or quality changes. Physical Economics therefore requires unit-state comparison rather than assuming nominal product identity establishes continuity.
+
 ## Adjacent-index posture
 - Federal Reserve DSR: valid aggregate scheduled mortgage + consumer debt-service input; not distribution-complete.
-- BEA Q1 2026 corporate profits from current production: `$4,426.5B` annualized aggregate; not product-level margin. Q2 corporate profits are not admitted before scheduled `2026-08-26` release.
-- Census QFR: direct corporate income-statement/operating-ratio source. Q2 2026 values are not admitted before scheduled `2026-09-08` release.
+- BEA Q1 2026 corporate profits from current production: `$4,426.5B` annualized aggregate; not product-level margin.
+- BEA released Q2 2026 corporate profits on `2026-08-26`; the release reports profits from current production increased `$400.9B` in Q2 after a `$74.4B` Q1 increase. This is fresh source availability only and has **not yet been promoted into a governed Physical Economics evidence record**. Aggregate corporate profits still do not establish product-level or company-specific margin behavior.
+- Census QFR: direct corporate income-statement/operating-ratio source. Q2 2026 values remain prospective until scheduled `2026-09-08` release.
 - Future releases are lane-native prospective evidence gates; no separate user monitoring task is required.
 
 ## Required validators
@@ -122,21 +181,55 @@ USDA ERS F-MAP establishes package-weight normalization to grams, but public fil
 
 Required fixtures: food shrinkflation, electricity delivery charges, insurance deductible/coverage changes, rent-plus-fee transitions, credit-maintained consumption, arrears-maintained service, low-utilization margin expansion, metro burden divergence, and transfer-offset accounting.
 
+## Cross-repository public-report relationship
+The deterministic report-generation transaction is separately governed by `docs/physical-economics/reporting/PHYSICAL_ECONOMICS_REPORTING_MIRROR_HANDOFF.md`.
+
+Site consumer lane:
+
+```text
+repo: StegVerse-Labs/Site
+issue: #496
+PR: #499
+branch: feature/physical-economics-public-report-ui-496
+handoff: docs/physical-economics/PUBLIC_REPORT_UI_MIRROR_HANDOFF.md
+```
+
+The Site page/client/tests are implemented but not merged or publicly verified, the endpoint remains blank/fail-closed, and the exact-head hosted Site validator is currently blocked by GitHub `startup_failure` before any step execution. This does not change ERL authority and does not constitute public report activation.
+
 ## Next executable work
 1. Directly custody official March 2026 HTOPS values and standard errors.
 2. Obtain detailed CE essential-category levels/shares by income quintile and calculate income-relative burden surfaces.
 3. Join food producer prices/trade margins with manufacturer/retailer financial evidence plus physical quantity/package state without assuming causality.
-4. Add household liquid-buffer distribution and asset-drawdown evidence at the best available authoritative cadence.
-5. Add sector-specific capacity/inventory joins for food, electricity, motor fuel, housing inputs, and insurance service capacity.
-6. Expand current transfer data as authoritative 2026 program values become publicly available.
-7. Continue contemporary 2026 gram/calorie data search.
-8. Build semantic validators/fixtures for all 15 state-vector surfaces.
-9. Prototype food, electricity, motor-fuel, and housing state vectors.
-10. Add hosted CI and independent review before any composite/release claim.
+4. Admit the newly available 2026-08-26 BEA Q2 corporate-profit and July income/outlay releases through governed evidence objects before using them in calculations.
+5. Add household liquid-buffer distribution and asset-drawdown evidence at the best available authoritative cadence.
+6. Add sector-specific capacity/inventory joins for food, electricity, motor fuel, housing inputs, and insurance service capacity.
+7. Expand current transfer data as authoritative 2026 program values become publicly available.
+8. Continue contemporary 2026 gram/calorie data search.
+9. Build semantic validators/fixtures for all 15 state-vector surfaces.
+10. Prototype food, electricity, motor-fuel, and housing state vectors.
+11. Add hosted CI and independent review before any composite/release claim.
+12. Continue the governed report HTTP-adapter/Site integration only under the reporting sub-handoff; do not move evidence or finding authority into Site.
+
+## Validation / integration posture
+Fresh live PR inspection on 2026-08-26:
+
+```text
+umbrella PR: #75
+branch: feature/transition-first-calculus
+observed head before this archive reconciliation: 64a0ced3c72e3d667699bc10801cf901844d53bb
+state: open
+is_draft: true
+merged: false
+mergeable: false
+exact-head pull-request workflow runs: none observed
+combined commit statuses: none observed
+```
+
+This head will move when this handoff update commits. No hosted PASS may be inferred from workflow source presence or older heads.
 
 ## Current posture
 - lane: `FORMAL_REUSABLE_ERL_LANE`
-- canonical handoff: complete
+- canonical handoff: complete and archive-reconciled
 - reusable machine contract: complete
 - five-family state schema: structurally complete
 - extended five-surface bundle: complete at target/current-seed level
@@ -144,14 +237,18 @@ Required fixtures: food shrinkflation, electricity delivery charges, insurance d
 - generalized population-distribution baseline: installed
 - official HTOPS workbook discovery: complete
 - official HTOPS numeric custody: pending
+- BLS CPI/PPI shrinkflation-quality boundary: explicitly preserved; critique is sufficiency/scope, not generic blindness
+- producer/consumer physical-value bridge: preserved as governed reconstruction design; causal classification evidence-gated
 - balance-sheet surface: formalized with current aggregate seed
 - arrears surface: formalized with authoritative source paths
 - capacity/inventory surface: formalized with current federal seed
 - regional burden surface: formalized with BLS metro baseline
 - transfer-offset surface: formalized; current program-value lags remain explicit
+- 2026-08-26 BEA releases: publicly available, not yet machine-custodied in this lane
 - semantic validators: pending
 - native sub-index calculations: partial
-- hosted exact-head validation: not yet observed
+- hosted exact-head validation: not established
+- Site public consumer: implemented on draft PR, not merged/published/activated
 - composite: not authorized
 - independent review: incomplete
 - release: not authorized
@@ -159,4 +256,4 @@ Required fixtures: food shrinkflation, electricity delivery charges, insurance d
 Physical Economics bounded lane implementation/research activation estimate: `66%`. This percentage is for the promoted Physical Economics lane and is not the Randolph calibration percentage.
 
 ## Archive posture
-The five identified research blind spots are now formally represented in the lane with source hierarchies and evidence seeds. Remaining work is predominantly direct data custody, executable validation, sector/population joins, native sub-index execution, independent review, and release governance.
+The session-specific unit-state/shrinkflation distinction, CPI/PPI methodological boundary, producer/consumer cost-margin bridge, current release-gate corrections, Site integration relationship, and remaining evidence/validation work are durably represented here. Remaining work is direct data custody, executable validation, sector/population joins, native sub-index execution, governed public transport integration, independent review, and release governance. Continuation of this lane does not require rereading the originating conversation.
