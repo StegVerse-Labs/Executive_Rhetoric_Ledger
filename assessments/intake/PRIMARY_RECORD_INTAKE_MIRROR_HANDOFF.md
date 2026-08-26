@@ -37,12 +37,41 @@ Repair boundary:
 ## Collision boundary
 Do not mutate `assessments/silence-causation/**` or PR #48 while repairing this intake lane.
 
+## Repair result
+The White House ballroom queue was normalized to the canonical primary-record intake schema while preserving all ten evidence targets. Located official sources remain `located`; outstanding accounting records remain `requested`. No structural repair promoted custody or factual posture.
+
+A matching machine-readable Political Influence Tree assessment was created at:
+`assessments/machine/ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST.json`
+
+The assessment was added to `assessments/README.md`, establishing the required topic/index binding without changing the evidence promotion boundary.
+
+## Validation evidence
+```text
+workflow: Validate Ledger Schemas
+run: 33011563705
+validated head: c0638c0c10cbbf218b2ca178ee8dc74a9ea89d28
+event: push
+conclusion: success
+```
+
+Relevant steps:
+- Capture assessment Political Influence Tree validation: PASS
+- Enforce assessment Political Influence Tree validation: PASS
+- Validate primary-record intake queues: PASS
+- combined repository activation validation: PASS
+- complete 40-stage job: PASS
+
+This clears the pre-existing ledger-schema blocker formerly caused by this queue.
+
 ## Current state
-- handoff: established
-- queue normalization: pending
-- machine topic binding: pending
-- validator rerun: pending
+- handoff: current
+- queue normalization: complete
+- machine topic binding: complete
+- assessment index visibility: complete
+- hosted primary-record intake validation: PASS
+- hosted repository-wide ledger validation: PASS
+- primary accounting research: still active
 - release/publication impact: none authorized
 
 ## Archive posture
-Once queue normalization, machine topic binding, and validation evidence are durable, this bounded repair can be continued without conversation context.
+The structural blocker is repaired and validated. Remaining work is substantive primary-accounting evidence acquisition under this durable queue, not schema repair. This bounded repair no longer depends on conversation context.
