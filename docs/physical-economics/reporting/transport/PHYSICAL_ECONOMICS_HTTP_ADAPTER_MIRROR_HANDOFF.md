@@ -71,18 +71,58 @@ Site already independently validates those fields and rejects non-`VERIFIABLE` r
 
 Operational endpoints may expose only non-authorizing liveness/readiness state. No evidence contents or credentials may be exposed through health responses.
 
+## Implemented machine surfaces
+- `schemas/physical-economics-report-snapshot-registry.schema.json`
+- `scripts/serve_physical_economics_public_report.py`
+- `scripts/validate_physical_economics_http_adapter.py`
+- `tests/physical-economics-reporting/http-adapter.registry.fixture.json`
+- `tests/physical-economics-reporting/http-adapter.snapshot.fixture.json`
+- `.github/workflows/validate-physical-economics-http-adapter.yml`
+
+The HTTP runtime uses only Python standard-library HTTP transport plus the repository's existing validation/runtime dependencies. It accepts bounded JSON POST requests at `/v1/physical-economics/reports`, exposes non-authorizing `/healthz` and `/readyz`, enforces a bounded request size, validates request/registry/snapshot schemas, rejects unmatched or ambiguous admissions, rejects repository-path escape, preserves evidence attributes and source receipts, enforces the historical-vintage release-date boundary, and returns only Site-compatible report/verification payloads after the existing report transaction yields `GENERATED_NOT_PUBLICLY_ACTIVATED` plus `VERIFIABLE`.
+
+## Hosted validation evidence
+Feature-branch push execution was added because GitHub API commits were not emitting PR-synchronize workflow runs and the previous push trigger covered only `main`.
+
+```text
+workflow: Validate Physical Economics HTTP Adapter
+run: 33011540044
+validated head: 6c351ea0b7e89a96454865dae0ea896a1a757738
+event: push
+conclusion: success
+```
+
+That run exercised the real underlying report transaction and proved:
+- registry schema validity;
+- exact admitted snapshot selection;
+- unmatched and ambiguous admission fail-closed behavior;
+- historical-vintage release guard;
+- preservation of evidence attributes/source receipts;
+- Site-compatible `VERIFIABLE` response;
+- omission of internal runtime paths;
+- invalid-registry rejection before execution.
+
+Later repository-wide `Validate Ledger Schemas` run `33011563705` at `c0638c0c10cbbf218b2ca178ee8dc74a9ea89d28` also completed successfully. A final exact-head adapter run must still be consumed after this handoff mutation.
+
 ## Current state
 - collision search: complete
 - owner: ERL reporting lane
-- handoff: established
-- HTTP adapter implementation: pending
-- snapshot registry schema/runtime: pending
-- deterministic adapter tests: pending
-- hosted CI: pending
+- handoff: current
+- HTTP adapter source implementation: complete
+- snapshot registry schema/runtime: complete
+- deterministic adapter tests: complete
+- bounded hosted adapter validation: PASS
+- repository-wide ledger validation: PASS
 - live runtime deployment: not performed
 - live runtime proof: absent
+- real admitted production snapshot registry: not activated
 - Site endpoint population: not authorized
 - end-to-end public report activation: not authorized
 
 ## Next executable boundary
-Implement registry schema + adapter + deterministic fail-closed tests, validate them repository-natively, then update this handoff. Do not configure the Site endpoint until an independently reachable deployed adapter produces a `VERIFIABLE` response under real admitted evidence.
+Source implementation is no longer the blocker. The next transition is runtime activation: install the validated adapter in the authorized resident execution substrate, bind a real governed admitted-snapshot registry, obtain independent live HTTP/runtime proof, and only then populate the Site endpoint. If that runtime transition is owned by Interlock/InTr/TVC resident control, continue there rather than creating another transport implementation.
+
+Do not configure the Site endpoint until an independently reachable deployed adapter produces a `VERIFIABLE` response under real admitted evidence.
+
+## Archive posture
+All source implementation, ownership, fail-closed semantics, and bounded validation evidence are durable here. Continuation does not require this conversation. Remaining adapter work is activation/runtime work, not missing repository implementation.
