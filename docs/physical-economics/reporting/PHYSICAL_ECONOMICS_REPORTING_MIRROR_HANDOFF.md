@@ -57,6 +57,8 @@ Attribute selection is not free-form model discretion.
 
 Canonical claim classes currently include price change, physical purchasing power, essential affordability, unmet essential need, substitution/quality compression, producer cost pressure, producer margin state, cost-margin transmission, distributional burden, regional burden, household resilience, arrears/deferred obligations, capacity/inventory constraint, tax/fee/regulatory flow, transfer-offset effect, and the full economic-condition state vector.
 
+The canonical matrix version consumed by the public client is exactly `0.1`. Descriptive aliases are not protocol-equivalent.
+
 ## Immutable evidence snapshots
 `physical-economics-evidence-snapshot.schema.json` preserves per-attribute coverage, methodology, vintage, uncertainty, source receipts, and unresolved conflicts.
 
@@ -138,15 +140,57 @@ It does not acquire network evidence and does not invent substantive findings. E
 
 `.github/workflows/validate-physical-economics-reporting.yml` runs all three validators and covers the reporting contracts, schemas, runtimes, fixtures, evidence, renderer/backend, and handoff.
 
-**Hosted validation is not yet established.** Exact-head query on `9122190a98a294186a803c3acf499c43bcea84fb` returned no workflow runs. Earlier exact-head queries likewise returned no runs/statuses. Workflow configuration is not treated as a pass.
+Hosted validation is still **not established** for the current umbrella branch. Fresh inspection on 2026-08-26 of PR #75 at observed head `64a0ced3c72e3d667699bc10801cf901844d53bb` returned no pull-request workflow runs and no combined commit statuses. This archive reconciliation moves the branch head again, so workflow source presence or any older head must not be reported as current PASS.
 
-PR #75 remains the open draft integration PR and was non-mergeable on the last fresh PR query. A fresh query is required before any later mergeability statement.
+PR #75 is fresh-observed as open, draft, unmerged, and `mergeable: false`. Mergeability remains a live property and must be re-queried before any future merge action.
+
+## Site public-client integration
+A bounded Site consumer now exists; this supersedes the older state `external public UI/API integration: pending` with the more precise split below.
+
+Canonical Site lane:
+
+```text
+repo: StegVerse-Labs/Site
+issue: #496
+branch: feature/physical-economics-public-report-ui-496
+PR: #499
+handoff: docs/physical-economics/PUBLIC_REPORT_UI_MIRROR_HANDOFF.md
+```
+
+Implemented there:
+- `Physical-Economics.html` public request/render surface;
+- `js/physical-economics-report.js` fail-closed browser/CommonJS client;
+- deterministic Node contract tests;
+- dedicated credential-free validation workflow;
+- machine pre-work claim for the exact bounded surfaces.
+
+The Site client preserves ERL authority: required attributes cannot be excluded, matrix version is `0.1`, boundary renders before findings, unverified receipts fail closed, backend absence fails closed, and transport omits credentials.
+
+Fresh Site integration state on 2026-08-26:
+
+```text
+Site issue #496: open
+Site PR #499: open draft, unmerged, currently mergeable=false
+Site head observed before archive handoff update: c09fae59eb1304909520de0e3adb6497bd35a2a4
+local deterministic Node suite: PASS
+hosted Physical Economics run 32985301150: startup_failure
+hosted validation job 98230430068: cancelled before steps
+runner_id: 0
+steps executed: 0
+public page publication: not verified
+report endpoint: blank / unconfigured / fail-closed
+```
+
+The hosted Site failure is a runner/startup gate, not evidence that the report contract tests failed. No job log was retrievable. Root cause remains unresolved and must be diagnosed before assigning a manual provider/settings action.
 
 ## Public button semantics
-A public `GENERATE_REPORT` action is now internally represented by:
-`request -> prepared evidence snapshot -> immutable snapshot -> boundary -> governed findings/state -> deterministic report -> portable verification`.
+The end-to-end logical chain is now represented by:
 
-The ERL backend transaction is implemented. The remaining external UI/API layer must call that transaction or an equivalent portable service contract without weakening its fail-closed semantics.
+`public Site request -> governed HTTP adapter -> ERL report transaction -> prepared evidence snapshot -> immutable snapshot -> boundary -> governed findings/state -> deterministic report -> portable verification -> Site rendering`.
+
+The ERL transaction and Site client are implemented. The missing functional bridge is a **real governed HTTP adapter/runtime** that exposes the ERL transaction without moving evidence, pertinence, boundary, uncertainty, conflict, or finding authority into Site.
+
+The Site endpoint must remain blank until that adapter has repository-native validation and live runtime proof. Populating an endpoint is an activation step, not a documentation change.
 
 ## Required public report sections
 - question and generated-as-of time;
@@ -183,15 +227,34 @@ Fail closed if:
 - aggregate precision is fabricated from unknown dependence/covariance;
 - source conflicts are reconciled without an evidenced basis;
 - findings are invented by the renderer;
-- the snapshot, boundary, report, or protocol hashes do not reproduce.
+- the snapshot, boundary, report, or protocol hashes do not reproduce;
+- the public adapter returns a non-`VERIFIABLE` receipt as success;
+- the public client is configured to an adapter that has not been independently runtime-verified.
+
+## Credential / runtime boundary
+No NON-TV/TVC credential may be introduced into the reporting transaction, Site, or GitHub-token runtime authority. Render is not an authorized dependency.
+
+No manual/iPhone user action is currently proven necessary for this reporting lane. If a later public transport provider requires secrets or authorization, the provider credential must be represented through TV/TVC authority and the user action must be recorded here before activation. Do not invent a credential requirement merely because Site hosted CI currently has a provider-level `startup_failure`.
 
 ## Remaining work
 1. integrate real Physical Economics evidence/state snapshots and governed finding objects into the transaction;
 2. add broader fixtures for composed claim classes, methodology breaks, source corrections, regional/distributional divergence, and partial current periods;
-3. obtain exact-head hosted CI execution and consume any failures;
+3. obtain exact-head hosted ERL CI execution and consume any failures;
 4. independently review pertinence, boundary, uncertainty, conflict, renderer, and verification semantics;
-5. integrate the backend transaction into the actual public UI/API repository, preserving portable verification and fail-closed state;
-6. only after real-data execution, hosted validation, UI integration, and independent review consider public activation/release.
+5. diagnose and clear the Site #499 hosted-runner startup gate, then consume exact-head claim/orchestration/Node validation;
+6. resolve Site #499 mergeability/review gates, merge, and independently verify actual public page publication;
+7. create the governed HTTP adapter around `generate_physical_economics_public_report.py` under a canonical claimed lane rather than burying transport logic in Site;
+8. validate the adapter with deterministic request/response and portable-verification fixtures, then obtain live runtime proof;
+9. only after adapter runtime proof populate the Site endpoint and execute an independently verified real end-to-end `VERIFIABLE` report;
+10. only after real-data execution, hosted validation, public transport proof, Site integration, and independent review consider public activation/release.
+
+## Cross-repository propagation obligations
+When a downstream transition is actually proven:
+- Site merge/publication proof must be recorded in the Site bounded handoff and propagated here;
+- HTTP-adapter authority/runtime proof must be recorded in its owning repo handoff and referenced here;
+- ERL real-data/report receipts remain authoritative for report content;
+- Site remains a presentation/request consumer, not evidence authority;
+- no release propagation to Site/Publisher/admissibility-wiki/stegguardian-wiki is authorized until release posture is actually reached.
 
 ## Current posture
 - reporting layer: `FORMAL_IMPLEMENTATION_ACTIVE_NOT_PUBLIC`
@@ -206,13 +269,16 @@ Fail closed if:
 - one-transaction report backend: implemented
 - portable verification schema/runtime: implemented
 - semantic/integrity/renderer validators: implemented for current bounded cases
-- hosted workflow: configured; no exact-head run observed
+- ERL hosted workflow: configured; no current exact-head hosted result established
 - real-data report execution: pending
-- external public UI/API integration: pending
+- Site public UI/client: implemented on draft PR, locally validated, not merged or publicly verified
+- Site hosted validation: startup-blocked before steps
+- governed HTTP adapter/runtime: not implemented
+- Site report endpoint: intentionally unconfigured
 - independent review: pending
 - public activation/release: not authorized
 
-Public reporting bounded implementation estimate: `82%`.
+Public reporting bounded implementation estimate: `84%` for core ERL reporting + bounded Site client integration. This does not represent public activation completeness; the HTTP/runtime and release gates remain material.
 
 ## Archive posture
-The public-report backend is now materially implemented end-to-end inside ERL. Remaining work is no longer core report mechanics; it is real-data/state integration, broader adversarial fixtures, hosted validation, independent review, and connection to the actual public UI/API surface. No public activation or release is claimed.
+The ERL report transaction, Site consumer integration, exact protocol-version correction, hosted-validation states, missing HTTP bridge, credential boundary, merge/publication gates, and downstream propagation obligations are now durably represented in canonical repo handoffs. No continuation for this reporting lane depends on rereading the originating conversation.
