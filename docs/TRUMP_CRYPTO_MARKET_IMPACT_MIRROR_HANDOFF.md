@@ -20,6 +20,7 @@ Scoped continuity source for the Trump-family crypto, executive-rhetoric, and ma
 - canonical daily crypto panel: `research-data/2026-08-13_2026-08-21_crypto_market_panel.coingecko.utc.json`
 - WLF/USD1 positive-adoption matrix: `research-data/2026-08-21_wlf_usd1_positive_adoption_matrix.json`
 - `$TRUMP` primary-source custody baseline: `research-data/2025-01_trump_meme_primary_source_custody.v1.json`
+- Aug. 22 system-wide crypto shock reconstruction: `research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json`
 - `$TRUMP` launch event baseline: `research-data/2025-01_trump_meme_event_baseline.v1.json`
 - `$TRUMP` Meteora disclosure-pathway record: `research-data/2025-01_trump_meme_liquidity_pathway_public_disclosure.v1.json`
 - RLUSD institutional-credit transition: `research-data/2026-08-20_2026-08-21_rlusd_institutional_credit_transition.v1.json`
@@ -155,6 +156,9 @@ Research structure and empirical activation remain separate:
 - `$TRUMP` transaction-level/on-chain reconstruction: 0/1 complete
 - matched-control dataset: 0/1 complete
 - independent review: 0/1 complete
+- system-wide shock event anchoring/schema: 1/1 = 100%
+- exchange-native first-break reconstruction: ACTIVE / raw historical tick evidence still required
+- initiating transaction/venue: UNRESOLVED
 - finding promotion: 0/1 authorized
 
 The last aggregate activation estimate remains 38%. It is not recomputed from unlike deliverables until a weighted denominator is explicitly defined. Component accounting is authoritative.
@@ -198,3 +202,46 @@ No tag, release, Site, Publisher, admissibility-wiki, stegguardian-wiki, or publ
 ## Archive readiness
 
 The pre-`$TRUMP` analytical state, canonical daily comparison, WLF positive-adoption matrix, RLUSD institutional-credit transition, initial `$TRUMP` custody baseline, and Meteora public-disclosure distinction are durably preserved. The substantive investigation remains ACTIVE and must not be represented as complete.
+
+## Aug. 22, 2026 system-wide crypto shock reconstruction — ACTIVE
+
+Canonical record: `research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json`
+
+Event anchor:
+- user-captured Coinbase charts constrain the first visible trough to approximately 2026-08-22 00:11:20 CDT / 05:11:20 UTC;
+- primary forensic window: 05:05-05:20 UTC;
+- synchronized cliffs were observed in BTC, ETH, ATOM, and XRP;
+- XRP's displayed decline was materially larger than the control assets, but displayed-period percentages are not substitutes for exact pre-cliff-to-trough returns.
+
+Current evidence posture:
+- synchronized cross-asset timing strongly supports a system-wide propagation event rather than an XRP-only initiating event;
+- subsequent public reporting documented broad liquidations and a multi-billion-dollar open-interest contraction during the crash window, materially strengthening forced-deleveraging/liquidation-cascade amplification as a mechanism;
+- contemporaneous XRP derivatives evidence showed unusually high futures activity/open interest and did not, in the evidence located so far, show a matching surge of whale-to-exchange inflows sufficient to establish a whale-led XRP origin;
+- no credible discrete macro/geopolitical headline, exchange outage, stablecoin break, or uniquely attributable on-chain transfer has yet been established at the approximately 05:11 UTC initiating second;
+- therefore the initiating venue/instrument/order remains UNRESOLVED.
+
+Required discriminators:
+1. obtain 1-second or finest-available spot/perpetual trades for BTCUSDT, ETHUSDT, XRPUSDT, XLMUSDT, SOLUSDT, ATOMUSDT from 05:05-05:20 UTC;
+2. compare Binance, Bybit, OKX, Coinbase/International, and Deribit where applicable for first abnormal aggressive sell flow;
+3. align liquidation prints, open-interest collapse, order-book depth/spread changes, and spot/perpetual first-break timestamps;
+4. test whether BTC spot, BTC perpetuals, another major asset, or XRP moved first;
+5. for XRP, test whether excess drawdown is explained by secondary leverage/liquidity/venue effects rather than assuming the largest decline identifies the origin;
+6. treat on-chain exchange deposits as candidate seller leads only when linked to venue execution timing.
+
+Decision boundaries:
+- spot-led requires spot abnormal sell imbalance before derivatives liquidation acceleration;
+- derivatives-led requires a perpetual/futures first break plus contemporaneous OI collapse/long liquidation before spot propagation;
+- XRP-specific-secondary requires XRP-specific flow/positioning after or alongside the common trigger that explains excess drawdown;
+- whale attribution requires transaction-to-exchange-to-execution linkage, not wallet movement alone.
+
+### Session consolidation additions
+
+The following session-unique evidence is now durable and must not depend on this conversation:
+- the user-captured BTC/ETH/XRP/ATOM/IO contemporaneous screenshot observations and exact approximate event anchor;
+- the causal distinction between common initiating shock and asset-specific amplification;
+- the transaction-forensics plan above;
+- the unresolved status of the first initiating trade/venue;
+- the current evidence update strengthening liquidation/deleveraging amplification without promoting causation for the initiating impulse.
+
+No credential step, provider activation, user-only iPhone action, or external manual action is required for this research lane at present. The remaining work is machine/research execution dependent on access to historical exchange-native tick, liquidation, open-interest, and depth data.
+
