@@ -6,8 +6,10 @@ Canonical continuation source for the public, attribute-bounded report-generatio
 Parent lane authority: `docs/physical-economics/PHYSICAL_ECONOMICS_MIRROR_HANDOFF.md`.
 Canonical machine surfaces:
 - `contracts/physical-economics-report-generation.contract.json`
+- `contracts/physical-economics-report-pertinence.matrix.v0.1.json`
 - `schemas/physical-economics-report-request.schema.json`
 - `schemas/physical-economics-report-boundary-manifest.schema.json`
+- `assessments/physical-economics/reporting/uncertainty-vintage-revision-research-2026.v0.1.json`
 
 ## Goal
 Allow a public user to press `GENERATE_REPORT` and receive a reproducible Physical Economics report whose historical, temporal, geographic, population, unit, completeness, uncertainty, and evidentiary boundaries are derived from attributes pertinent to the requested claim at request time.
@@ -31,12 +33,14 @@ For every required attribute, resolve:
 
 The report boundary is derived from those states. Longer historical context may be shown separately, but conclusions requiring a shorter-history attribute remain bounded to that shorter period.
 
-## Attribute pertinence
+## Deterministic attribute pertinence
 Attribute selection is not free-form model discretion.
 
-The report request schema freezes claim classes and requires `DETERMINISTIC_CLAIM_CLASS_MAPPING` against a versioned required-attribute set. Optional contextual attributes may be added only as explicitly contextual; they cannot change the required evidence gate invisibly.
+`contracts/physical-economics-report-pertinence.matrix.v0.1.json` now defines a versioned claim-class -> required/contextual attribute mapping for price change, physical purchasing power, essential affordability, unmet need, producer cost pressure, producer margin, cost-margin transmission, distributional/regional burden, household resilience, arrears, capacity/inventory constraints, tax/fee flow, transfer offsets, and the full economic-condition state vector.
 
-This is the next major protocol to implement: a versioned claim-class -> required-attribute matrix.
+Required attributes determine admissibility. Contextual attributes may inform interpretation but cannot silently replace a missing required attribute. Claim composition inherits the union of required evidence unless a narrower protocol is independently validated.
+
+The matrix is active research architecture, not yet independently validated for public release.
 
 ## Historical-depth rule
 Historical depth is attribute-specific.
@@ -60,17 +64,38 @@ Survey design, classification, geography, population, unit, weighting, seasonal-
 
 Cross-regime trend claims require an explicit bridge. Without a bridge, adjacent regimes may be displayed but are `NOT_COMPARABLE` as a continuous series.
 
-Known examples include HTOPS design changes, CPI rebasing/corrections/method changes, scanner grams versus unit-volume proxies, and national commodity price versus local delivered utility cost.
+Research now directly confirms:
+- Census HTOPS used a longitudinal design during 2025 and moved to a cross-sectional design beginning March 2026;
+- BLS routinely recalculates CPI seasonal factors and can revise the prior five years of seasonally adjusted indexes;
+- BEA routinely revises estimates as more complete source data become available.
 
 ## Vintage/revision rule
 Current-vintage and release-vintage evidence are distinct.
 
 Retrospective forecast, decision, and accountability reports must preserve what was knowable at the historical time. Later revisions may be shown but cannot silently overwrite historical epistemic state.
 
+Research evidence is preserved in `uncertainty-vintage-revision-research-2026.v0.1.json`.
+
+Required revision/delta classes include:
+- `NEW_OBSERVATION`
+- `PRIOR_PERIOD_COMPLETED`
+- `ROUTINE_REVISION`
+- `SOURCE_CORRECTION`
+- `SEASONAL_FACTOR_REVISION`
+- `METHODOLOGY_CHANGE`
+- `CLASSIFICATION_CHANGE`
+- `OPAQUE_ATTRIBUTE_RESOLVED`
+- `SOURCE_WITHDRAWN_OR_REPLACED`
+- `RENDERER_OR_CONTRACT_CHANGE`
+
 ## Statistical uncertainty rule
 Source-provided standard errors, confidence intervals, sampling error, suppression flags, and quality measures must remain attached to the attribute state through boundary resolution and rendering.
 
-A precise scalar generated from uncertain inputs must not be rendered with greater apparent precision than the underlying evidence supports. Uncertainty propagation semantics remain to be implemented and independently reviewed.
+Census directly publishes separate standard-error tables and source/accuracy/data-quality materials for March 2026 HTOPS. These are now treated as required uncertainty evidence when an HTOPS estimate enters a report.
+
+Unknown covariance/dependence structure is not permission to fabricate a composite standard error. Component uncertainty must remain visible and aggregate uncertainty remains unresolved/bounded until a valid propagation model exists.
+
+Rendered precision may not exceed source-supported precision.
 
 ## Source conflict / disappearance rule
 The runtime must freeze an evidence/vintage snapshot before generation. A later source correction, disappearance, replacement, or contradictory official release creates a new evidence snapshot rather than silently mutating an already generated report.
@@ -80,7 +105,7 @@ Source precedence must preserve direct authoritative evidence, release vintage, 
 ## Public button semantics
 `GENERATE_REPORT` must:
 1. freeze request attributes and requested-as-of time;
-2. resolve claim class -> required attributes deterministically;
+2. resolve claim class -> required attributes using the versioned pertinence matrix;
 3. freeze an evidence/vintage snapshot;
 4. derive per-attribute boundaries;
 5. derive common-comparable/common-complete boundaries where they actually exist;
@@ -114,16 +139,9 @@ Source precedence must preserve direct authoritative evidence, release vintage, 
 ## Determinism and report evolution
 Identical request attributes against the same evidence/vintage snapshot must produce the same boundary manifest and materially equivalent findings.
 
-Required receipts include request hash, evidence snapshot ID, boundary manifest hash, source receipt set, renderer version, contract version, and required-attribute-set version.
+Required receipts include request hash, evidence snapshot ID, boundary manifest hash, source receipt set, renderer version, contract version, and pertinence-matrix version.
 
-When a later report differs, the system should generate a machine-readable delta identifying whether the change came from:
-- new observations;
-- prior-period completion;
-- source revision/correction;
-- methodology change;
-- newly resolved opaque attribute;
-- changed required-attribute protocol;
-- renderer/contract version change.
+When a later report differs, the system must identify whether the change came from new evidence, period completion, revision/correction, methodology change, opacity resolution, protocol change, or renderer/contract change.
 
 ## Fail-closed conditions
 Fail closed if:
@@ -136,13 +154,15 @@ Fail closed if:
 - missing values become zero/neutral;
 - aggregate results erase materially supported distributional/regional divergence;
 - source uncertainty is dropped where material;
-- attribute pertinence is changed ad hoc without a versioned protocol.
+- aggregate precision is fabricated from unknown dependence/covariance;
+- attribute pertinence is changed ad hoc without a versioned protocol;
+- contextual evidence is used to promote a claim missing required evidence.
 
-## Remaining runtime work
-1. build the versioned claim-class -> required-attribute matrix;
+## Remaining runtime/research work
+1. validate and extend the pertinence matrix with positive/negative fixtures and independent review;
 2. implement the boundary resolver;
 3. implement frozen evidence/vintage snapshots;
-4. implement uncertainty propagation;
+4. implement uncertainty propagation for supported dependence structures and fail-closed bounded uncertainty otherwise;
 5. implement source-conflict/correction handling;
 6. implement report-version delta receipts;
 7. create semantic validators and negative fixtures;
@@ -156,17 +176,18 @@ Fail closed if:
 - reporting handoff: complete
 - report-request schema: complete v0.1
 - boundary-manifest schema: complete v0.1
-- deterministic pertinence matrix: pending
+- deterministic pertinence matrix: complete v0.1 at research-contract level; validation pending
+- uncertainty/vintage/revision research: installed
 - boundary resolver: pending
 - evidence/vintage snapshot runtime: pending
-- uncertainty propagation: pending
+- uncertainty propagation runtime: pending
 - report delta receipts: pending
 - public UI: not activated
 - portable verification: pending
 - independent review: pending
 - release: not authorized
 
-Public reporting bounded implementation estimate: `42%`.
+Public reporting bounded implementation estimate: `50%`.
 
 ## Archive posture
-The public-report architecture is formally specified and machine-addressable. Runtime boundary resolution, snapshotting, uncertainty propagation, public rendering, verification, and independent review remain incomplete.
+The public-report architecture now includes deterministic claim-to-attribute pertinence and grounded uncertainty/revision semantics. Remaining work is runtime boundary resolution, immutable evidence/vintage snapshotting, validated uncertainty propagation, source-conflict handling, report deltas, public rendering, portable verification, and independent review.
