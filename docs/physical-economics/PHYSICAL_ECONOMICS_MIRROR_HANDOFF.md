@@ -194,7 +194,7 @@ branch: feature/physical-economics-public-report-ui-496
 handoff: docs/physical-economics/PUBLIC_REPORT_UI_MIRROR_HANDOFF.md
 ```
 
-The Site page/client/tests are implemented but not merged or publicly verified, the endpoint remains blank/fail-closed, and the exact-head hosted Site validator is currently blocked by GitHub `startup_failure` before any step execution. This does not change ERL authority and does not constitute public report activation.
+The Site page/client/tests are implemented and the dedicated Physical Economics UI validator plus Site handoff/bootstrap/heartbeat companion workflows have passed on exact Site heads after the earlier provider startup failure self-cleared. PR #499 remains open, draft, unmerged, and was fresh-observed mergeable on current documentation head `0d8688d05064e6bf63f160ec3c7eaf556d002cfc`; public publication is still unverified and the endpoint remains blank/fail-closed. Hosted Site validation is no longer the blocker. This does not change ERL authority and does not constitute functional report activation.
 
 ## Next executable work
 1. Directly custody official March 2026 HTOPS values and standard errors.
@@ -207,29 +207,28 @@ The Site page/client/tests are implemented but not merged or publicly verified, 
 8. Continue contemporary 2026 gram/calorie data search.
 9. Build semantic validators/fixtures for all 15 state-vector surfaces.
 10. Prototype food, electricity, motor-fuel, and housing state vectors.
-11. Add hosted CI and independent review before any composite/release claim.
+11. Add hosted ERL CI and independent review before any composite/release claim.
 12. Continue the governed report HTTP-adapter/Site integration only under the reporting sub-handoff; do not move evidence or finding authority into Site.
 
 ## Validation / integration posture
-Fresh live PR inspection on 2026-08-26:
+Fresh live PR inspection on 2026-08-26 before this parent reconciliation:
 
 ```text
 umbrella PR: #75
 branch: feature/transition-first-calculus
-observed head before this archive reconciliation: 64a0ced3c72e3d667699bc10801cf901844d53bb
+observed head: 81295b09976ed4f58497af527b26444da27e11da
 state: open
 is_draft: true
 merged: false
 mergeable: false
 exact-head pull-request workflow runs: none observed
-combined commit statuses: none observed
 ```
 
-This head will move when this handoff update commits. No hosted PASS may be inferred from workflow source presence or older heads.
+This handoff update moves the branch head again. No hosted PASS may be inferred from workflow source presence or older heads.
 
 ## Current posture
 - lane: `FORMAL_REUSABLE_ERL_LANE`
-- canonical handoff: complete and archive-reconciled
+- canonical handoff: archive-reconciled
 - reusable machine contract: complete
 - five-family state schema: structurally complete
 - extended five-surface bundle: complete at target/current-seed level
@@ -247,8 +246,9 @@ This head will move when this handoff update commits. No hosted PASS may be infe
 - 2026-08-26 BEA releases: publicly available, not yet machine-custodied in this lane
 - semantic validators: pending
 - native sub-index calculations: partial
-- hosted exact-head validation: not established
-- Site public consumer: implemented on draft PR, not merged/published/activated
+- ERL hosted exact-current-head validation: not established
+- Site public consumer: implemented and hosted-validated; not merged/published/activated
+- governed public HTTP adapter: not implemented
 - composite: not authorized
 - independent review: incomplete
 - release: not authorized
@@ -256,4 +256,4 @@ This head will move when this handoff update commits. No hosted PASS may be infe
 Physical Economics bounded lane implementation/research activation estimate: `66%`. This percentage is for the promoted Physical Economics lane and is not the Randolph calibration percentage.
 
 ## Archive posture
-The session-specific unit-state/shrinkflation distinction, CPI/PPI methodological boundary, producer/consumer cost-margin bridge, current release-gate corrections, Site integration relationship, and remaining evidence/validation work are durably represented here. Remaining work is direct data custody, executable validation, sector/population joins, native sub-index execution, governed public transport integration, independent review, and release governance. Continuation of this lane does not require rereading the originating conversation.
+The session-specific unit-state/shrinkflation distinction, CPI/PPI methodological boundary, producer/consumer cost-margin bridge, current release-gate corrections, Site hosted-validation success, integration relationship, and remaining evidence/validation work are durably represented here. Remaining work is direct data custody, executable ERL validation, sector/population joins, native sub-index execution, governed public transport integration, independent review, and release governance. Continuation of this lane does not require rereading the originating conversation.
