@@ -1,0 +1,128 @@
+{
+  "schema": "stegverse.erl.crypto_system_shock_research_lane.v1",
+  "lane_id": "ERL-CRYPTO-SHOCK-001",
+  "canonical_issue": 77,
+  "canonical_handoff": "docs/LONGITUDINAL_CRYPTO_MARKET_RESEARCH_MIRROR_HANDOFF.md",
+  "linked_investigation_handoff": "docs/TRUMP_CRYPTO_MARKET_IMPACT_MIRROR_HANDOFF.md",
+  "status": "ACTIVE_AUTOMATED_RESEARCH",
+  "research_authority": "ERL",
+  "execution_authority": "NONE",
+  "may_authorize_order": false,
+  "cadence": {
+    "github_actions_cron": "17 * * * *",
+    "purpose": "hourly public-market evidence refresh; cadence confers no evidentiary standing"
+  },
+  "scopes": {
+    "historical_forensic_windows": [
+      {
+        "id": "2026-08-22-system-shock",
+        "start_utc": "2026-08-22T05:05:00Z",
+        "end_utc": "2026-08-22T05:20:00Z",
+        "event_center_utc": "2026-08-22T05:11:20Z"
+      }
+    ],
+    "rolling_watch": {
+      "lookback_minutes": 180,
+      "shock_thresholds": {
+        "btc_5m_abs_return_pct": 2,
+        "eth_5m_abs_return_pct": 3,
+        "xrp_5m_abs_return_pct": 5,
+        "cross_asset_min_count": 3
+      }
+    }
+  },
+  "assets": [
+    "BTC",
+    "ETH",
+    "XRP",
+    "XLM",
+    "SOL",
+    "ATOM"
+  ],
+  "venue_sources": [
+    {
+      "id": "coinbase",
+      "kind": "spot_1m",
+      "pairs": [
+        "BTC-USD",
+        "ETH-USD",
+        "XRP-USD",
+        "XLM-USD",
+        "SOL-USD",
+        "ATOM-USD"
+      ],
+      "authority": "public_exchange_api"
+    },
+    {
+      "id": "kraken",
+      "kind": "spot_1m",
+      "pairs": [
+        "XBTUSD",
+        "ETHUSD",
+        "XRPUSD",
+        "XLMUSD",
+        "SOLUSD",
+        "ATOMUSD"
+      ],
+      "authority": "public_exchange_api"
+    },
+    {
+      "id": "bitstamp",
+      "kind": "spot_1m",
+      "pairs": [
+        "btcusd",
+        "ethusd",
+        "xrpusd",
+        "xlmusd",
+        "solusd"
+      ],
+      "authority": "public_exchange_api"
+    },
+    {
+      "id": "okx",
+      "kind": "spot_1m",
+      "pairs": [
+        "BTC-USDT",
+        "ETH-USDT",
+        "XRP-USDT",
+        "XLM-USDT",
+        "SOL-USDT",
+        "ATOM-USDT"
+      ],
+      "authority": "public_exchange_api"
+    },
+    {
+      "id": "binance",
+      "kind": "spot_1m",
+      "pairs": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "XRPUSDT",
+        "XLMUSDT",
+        "SOLUSDT",
+        "ATOMUSDT"
+      ],
+      "authority": "public_exchange_api"
+    }
+  ],
+  "required_evidence_families": [
+    "spot_price_volume",
+    "venue_dispersion",
+    "derivatives_liquidations",
+    "open_interest",
+    "order_book_depth",
+    "external_event_controls"
+  ],
+  "automation_boundaries": [
+    "automation may discover, fetch, normalize, hash, compare and emit research receipts",
+    "automation may not promote causation, manipulation, whale attribution, motive or execution authority",
+    "source failure must be preserved as missing evidence rather than imputed",
+    "deepest venue wick must not be treated as system-wide origin without first-break evidence",
+    "market evidence must remain separate from any downstream trading authorization"
+  ],
+  "outputs": {
+    "report_dir": "reports/crypto-system-shock",
+    "latest_receipt": "reports/crypto-system-shock/latest-research-receipt.json",
+    "historical_window": "reports/crypto-system-shock/2026-08-22-venue-window.json"
+  }
+}
