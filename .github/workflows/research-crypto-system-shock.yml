@@ -1,0 +1,59 @@
+name: Research Crypto System Shock
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'config/crypto-system-shock-research-lane.v1.json'
+      - 'task-state/ERL-CRYPTO-SHOCK-001.json'
+      - 'scripts/run_crypto_system_shock_research_lane.py'
+      - 'tests/test_crypto_system_shock_research_lane.py'
+      - '.github/workflows/research-crypto-system-shock.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ''
+      GH_TOKEN: ''
+    steps:
+      - name: Checkout without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run deterministic lane tests
+        run: python -m pytest -q tests/test_crypto_system_shock_research_lane.py
+
+      - name: Collect credential-free public market evidence
+        run: python scripts/run_crypto_system_shock_research_lane.py
+
+      - name: Enforce non-authority receipt
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('reports/crypto-system-shock/latest-research-receipt.json'))
+          assert p['research_authority']=='ERL'
+          assert p['execution_authority']=='NONE'
+          assert p['may_authorize_order'] is False
+          assert p['causal_finding_authorized'] is False
+          print({'status':'PASS','lane_id':p['lane_id'],'execution_authority':'NONE'})
+          PY
+
+      - name: Upload research receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: erl-crypto-system-shock-research
+          path: reports/crypto-system-shock/*.json
+          if-no-files-found: error
+          retention-days: 90
