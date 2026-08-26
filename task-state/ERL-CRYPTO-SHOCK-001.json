@@ -48,5 +48,16 @@
     "research_authority": "ERL",
     "execution_authority": "NONE",
     "may_authorize_order": false
-  }
+  },
+  "updated_at": "2026-08-26T18:18:00-05:00",
+  "implementation_evidence": [
+    "config:a4182ff9f09cadcb1fd4e2f346a0c34c8b66e7b8",
+    "task-state:b67cd152ad3190db41052b3772c5056fb3e2211b",
+    "collector:83b47820c3a87e105b359d88bc4d81291df88fb4",
+    "tests:5b72820b38b7e48114f081af2e75095c21b16cf2",
+    "workflow:5ca83e44706217ac6e9df9aef2c2462a89c97c53",
+    "longitudinal-handoff:2bdc623ee6bbb983530e763ee3394788bb556337",
+    "trump-crypto-handoff:e21a38841fb2a52ecb10293a8e1f150a6004ec46"
+  ],
+  "validation_state": "SOURCE_INSTALLED_RUNTIME_PROOF_PENDING"
 }
