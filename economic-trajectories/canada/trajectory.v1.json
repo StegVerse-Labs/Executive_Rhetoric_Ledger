@@ -23,27 +23,9 @@
       "population_scope": "national resident population",
       "revision_status": "source-language",
       "seasonal_adjustment": "not-applicable",
-      "sources": [
-        {
-          "source_id": "SRC-OECD-CA-PRODUCTIVITY-2026",
-          "publisher": "OECD",
-          "title": "Reviving Productivity Growth in Canada",
-          "url": "https://www.oecd.org/en/publications/reviving-productivity-growth-in-canada_773dcd00-en/full-report/overview_8455370f.html",
-          "source_class": "international-organization",
-          "release_date": "2026-06-29",
-          "accessed_date": "2026-08-25",
-          "supports": [
-            "OECD describes annual GDP per capita growth as close to zero during 2019-2023."
-          ],
-          "limitations": [
-            "Period average does not identify household distribution or a single structural-break date."
-          ]
-        }
-      ],
+      "sources": [{"source_id":"SRC-OECD-CA-PRODUCTIVITY-2026","publisher":"OECD","title":"Reviving Productivity Growth in Canada","url":"https://www.oecd.org/en/publications/reviving-productivity-growth-in-canada_773dcd00-en/full-report/overview_8455370f.html","source_class":"international-organization","release_date":"2026-06-29","accessed_date":"2026-08-25","supports":["OECD describes annual GDP per capita growth as close to zero during 2019-2023."],"limitations":["Period average does not identify household distribution or a single structural-break date."]}],
       "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
-      "notes": [
-        "No household or causal finding is created from this observation."
-      ]
+      "notes": ["No household or causal finding is created from this observation."]
     },
     {
       "observation_id": "ERL-ECON-CA-OBS-GDPPC-PREPANDEMIC-GAP",
@@ -58,23 +40,7 @@
       "population_scope": "national resident population",
       "revision_status": "historical-series",
       "seasonal_adjustment": "adjusted",
-      "sources": [
-        {
-          "source_id": "SRC-STATCAN-GDPPC-2024",
-          "publisher": "Statistics Canada",
-          "title": "Canada's gross domestic product per capita: Perspectives on the return to trend",
-          "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2024004/article/00001-eng.htm",
-          "source_class": "official-government",
-          "release_date": "2024-04-24",
-          "accessed_date": "2026-08-25",
-          "supports": [
-            "Real GDP per capita was reported 2.5% below its pre-pandemic level."
-          ],
-          "limitations": [
-            "GDP per capita is not median income and does not establish distributional effect."
-          ]
-        }
-      ],
+      "sources": [{"source_id":"SRC-STATCAN-GDPPC-2024","publisher":"Statistics Canada","title":"Canada's gross domestic product per capita: Perspectives on the return to trend","url":"https://www150.statcan.gc.ca/n1/pub/36-28-0001/2024004/article/00001-eng.htm","source_class":"official-government","release_date":"2024-04-24","accessed_date":"2026-08-25","supports":["Real GDP per capita was reported 2.5% below its pre-pandemic level."],"limitations":["GDP per capita is not median income and does not establish distributional effect."]}],
       "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
       "notes": []
     },
@@ -91,28 +57,9 @@
       "population_scope": "Canadian goods and services exports",
       "revision_status": "historical-series",
       "seasonal_adjustment": "not-applicable",
-      "sources": [
-        {
-          "source_id": "SRC-GAC-TRADE-CONCENTRATION-2025",
-          "publisher": "Global Affairs Canada",
-          "title": "Minister of International Trade appearance briefing: export diversification",
-          "url": "https://international.canada.ca/en/global-affairs/corporate/transparency/briefing-documents/parliamentary-committee/2025-02-10-ciit",
-          "source_class": "official-government",
-          "release_date": "2025-11-28",
-          "accessed_date": "2026-08-25",
-          "supports": [
-            "The briefing states that 70% of Canada's goods and services exports went to the United States in 2024.",
-            "It states that non-U.S. exports increased by more than 50% between 2017 and 2024."
-          ],
-          "limitations": [
-            "Gross export shares do not measure domestic value added, sector concentration, profitability, or substitution cost."
-          ]
-        }
-      ],
+      "sources": [{"source_id":"SRC-GAC-TRADE-CONCENTRATION-2025","publisher":"Global Affairs Canada","title":"Minister of International Trade appearance briefing: export diversification","url":"https://international.canada.ca/en/global-affairs/corporate/transparency/briefing-documents/parliamentary-committee/2025-02-10-ciit","source_class":"official-government","release_date":"2025-11-28","accessed_date":"2026-08-25","supports":["The briefing states that 70% of Canada's goods and services exports went to the United States in 2024.","It states that non-U.S. exports increased by more than 50% between 2017 and 2024."],"limitations":["Gross export shares do not measure domestic value added, sector concentration, profitability, or substitution cost."]}],
       "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
-      "notes": [
-        "This records continuing concentration alongside diversification; it does not establish completed independence."
-      ]
+      "notes": ["This records continuing concentration alongside diversification; it does not establish completed independence."]
     },
     {
       "observation_id": "ERL-ECON-CA-OBS-US-GOODS-SHARE-MAY-2025",
@@ -127,23 +74,7 @@
       "population_scope": "Canadian merchandise exports",
       "revision_status": "initial",
       "seasonal_adjustment": "unspecified",
-      "sources": [
-        {
-          "source_id": "SRC-STATCAN-TRADE-MAY-2025",
-          "publisher": "Statistics Canada",
-          "title": "Canadian international merchandise trade, May 2025",
-          "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250703/dq250703a-eng.htm",
-          "source_class": "official-government",
-          "release_date": "2025-07-03",
-          "accessed_date": "2026-08-25",
-          "supports": [
-            "The U.S. destination share was 68.3% in May 2025 compared with a 75.9% monthly average in 2024."
-          ],
-          "limitations": [
-            "One month may reflect front-loading reversal, tariffs, prices, product mix, or timing and cannot alone establish structural diversification."
-          ]
-        }
-      ],
+      "sources": [{"source_id":"SRC-STATCAN-TRADE-MAY-2025","publisher":"Statistics Canada","title":"Canadian international merchandise trade, May 2025","url":"https://www150.statcan.gc.ca/n1/daily-quotidien/250703/dq250703a-eng.htm","source_class":"official-government","release_date":"2025-07-03","accessed_date":"2026-08-25","supports":["The U.S. destination share was 68.3% in May 2025 compared with a 75.9% monthly average in 2024."],"limitations":["One month may reflect front-loading reversal, tariffs, prices, product mix, or timing and cannot alone establish structural diversification."]}],
       "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
       "notes": []
     },
@@ -160,27 +91,9 @@
       "population_scope": "national economy",
       "revision_status": "source-language",
       "seasonal_adjustment": "not-applicable",
-      "sources": [
-        {
-          "source_id": "SRC-BOC-MPR-JAN-2026",
-          "publisher": "Bank of Canada",
-          "title": "Monetary Policy Report—January 2026: Canadian outlook",
-          "url": "https://www.bankofcanada.ca/publications/mpr/mpr-2026-01-28/canadian-outlook/",
-          "source_class": "central-bank",
-          "release_date": "2026-01-28",
-          "accessed_date": "2026-08-25",
-          "supports": [
-            "Bank of Canada projected GDP about 1.5% below its January 2025 projection by end-2026, with U.S. tariffs having a persistent negative impact."
-          ],
-          "limitations": [
-            "This is a model-based projection relative to a prior forecast, not an observed realized GDP loss or household distribution."
-          ]
-        }
-      ],
+      "sources": [{"source_id":"SRC-BOC-MPR-JAN-2026","publisher":"Bank of Canada","title":"Monetary Policy Report—January 2026: Canadian outlook","url":"https://www.bankofcanada.ca/publications/mpr/mpr-2026-01-28/canadian-outlook/","source_class":"central-bank","release_date":"2026-01-28","accessed_date":"2026-08-25","supports":["Bank of Canada projected GDP about 1.5% below its January 2025 projection by end-2026, with U.S. tariffs having a persistent negative impact."],"limitations":["This is a model-based projection relative to a prior forecast, not an observed realized GDP loss or household distribution."]}],
       "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
-      "notes": [
-        "Projection remains distinct from realized outcome."
-      ]
+      "notes": ["Projection remains distinct from realized outcome."]
     }
   ],
   "findings": [],
@@ -188,52 +101,41 @@
     {
       "gap_id": "ERL-ECON-CA-GAP-LONG-RUN-HOUSEHOLD",
       "dimension": "aggregate-to-household transmission",
-      "missing_evidence": [
-        "Consistent real median disposable-income series",
-        "Household expenditure and unmet-need distribution",
-        "Debt-service and housing-cost burden by income and age"
-      ],
-      "target_source_classes": [
-        "Statistics Canada household accounts",
-        "Bank of Canada household finance",
-        "provincial and municipal housing records"
-      ],
+      "missing_evidence": ["Consistent real median disposable-income series","Household expenditure and unmet-need distribution","Debt-service and housing-cost burden by income and age"],
+      "target_source_classes": ["Statistics Canada household accounts","Bank of Canada household finance","provincial and municipal housing records"],
       "next_query": "Acquire revision-consistent household income, expenditure, housing-cost, debt-service, and wealth-distribution series from 1980 to present.",
       "status": "open"
     },
     {
       "gap_id": "ERL-ECON-CA-GAP-DIVERSIFICATION-EFFECTS",
       "dimension": "trade diversification effects",
-      "missing_evidence": [
-        "Product-level destination changes",
-        "Price and margin changes after rerouting",
-        "Transport and compliance costs",
-        "Employment and tax effects",
-        "Domestic processing and capital formation"
-      ],
-      "target_source_classes": [
-        "Statistics Canada customs microdata",
-        "Global Affairs Canada",
-        "ports pipelines railways and sector regulators"
-      ],
+      "missing_evidence": ["Product-level destination changes","Price and margin changes after rerouting","Transport and compliance costs","Employment and tax effects","Domestic processing and capital formation"],
+      "target_source_classes": ["Statistics Canada customs microdata","Global Affairs Canada","ports pipelines railways and sector regulators"],
       "next_query": "Trace major product lanes from U.S. concentration through alternative-market transactions and measure realized Canadian effects.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-CA-GAP-MARGINAL-US-DEPENDENCY",
+      "dimension": "marginal U.S. market dependency and durable substitution",
+      "indicator_ids": ["ECON-MARGINAL-EXTERNAL-DEPENDENCY","ECON-TRADE-CONCENTRATION"],
+      "missing_evidence": ["Product-by-product U.S. customer dependence over time","Time and cost required to replace the next unit of lost U.S. demand","Alternative-market price and margin retention","Port rail pipeline shipping and compliance capacity constraints","Durability of new buyer relationships after tariff pressure recedes","Domestic value-added and employment retained after rerouting","Manufacturing and processing capacity needed to exploit non-U.S. demand rather than merely redirect surplus output"],
+      "target_source_classes": ["Statistics Canada trade and input-output data","Global Affairs Canada market-access and agreement records","Export Development Canada","ports pipelines railways and sector regulators","industry and firm disclosures","academic and independent mechanism studies"],
+      "next_query": "Estimate the expected Canadian loss from losing the next unit of U.S. market access by major product and service lane, then repeat historically to test whether marginal U.S. dependency is declining rather than inferring independence from aggregate export shares.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-CA-GAP-PRODUCTIVE-CAPACITY-FOR-DIVERSIFICATION",
+      "dimension": "productive and organizational capacity to realize non-U.S. trade opportunity",
+      "missing_evidence": ["Manufacturing utilization and investable capacity in sectors with new non-U.S. demand","Product adaptation and certification requirements by destination market","Exporter market-intelligence and distribution capability","Canadian capital deployment into energy nuclear critical-mineral processing engineering and related technology exports","Observed conversion of trade agreements and market access into sustained orders investment employment and domestic value added"],
+      "target_source_classes": ["Statistics Canada capital and manufacturing data","Innovation Science and Economic Development Canada","Natural Resources Canada","Global Affairs Canada","Export Development Canada","provincial industrial and energy records","firm disclosures"],
+      "next_query": "Test whether diversification is constrained by Canada's ability to manufacture, adapt, finance, certify, distribute, and scale products for non-U.S. markets, with special attention to energy, nuclear, critical-mineral processing, engineering, and technology exports.",
       "status": "open"
     },
     {
       "gap_id": "ERL-ECON-CA-GAP-AUTOMATION",
       "dimension": "AI automation and robotics effects",
-      "missing_evidence": [
-        "Adoption by industry",
-        "Task and hiring displacement",
-        "Wage and bargaining effects",
-        "Augmentation and new-demand controls"
-      ],
-      "target_source_classes": [
-        "Statistics Canada",
-        "Bank of Canada",
-        "labor ministries",
-        "academic longitudinal studies"
-      ],
+      "missing_evidence": ["Adoption by industry","Task and hiring displacement","Wage and bargaining effects","Augmentation and new-demand controls"],
+      "target_source_classes": ["Statistics Canada","Bank of Canada","labor ministries","academic longitudinal studies"],
       "next_query": "Acquire Canadian industry-level automation adoption and matched labor outcomes with alternative explanations.",
       "status": "open"
     }
