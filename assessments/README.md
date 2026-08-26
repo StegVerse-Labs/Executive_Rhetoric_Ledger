@@ -152,6 +152,35 @@ The governing issue is recoverability: what evidence, devices, accounts, busines
 
 The MSN URL is retained only as a discovery and provenance carrier. Reuters and Wall Street Journal materials remain secondary; French prosecutorial records, autopsy and toxicology, DOJ document-level mapping, victim-procedure records, and custody evidence remain required.
 
+### White House ballroom and broader construction taxpayer-cost claim
+
+```yaml
+topic_id: "ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST"
+record_date: "2026-08-22"
+record_type: "bounded funding-and-project-scope reconstruction"
+review_status: "draft-primary-accounting-reconstruction"
+source_receipts: "3-primary-official-sources-embedded-plus-source-posture-packet"
+primary_record_intake: "active-10-items"
+control_status: "not-required-for-initial-accounting-and-scope-reconstruction"
+validation_status: "structural-repair-pending-ci-confirmation"
+independent_verification: "pending"
+final_legal_conclusion: false
+motive_finding: false
+```
+
+Core records:
+
+- [Bounded rhetoric assessment](rhetoric/2026-08-22-white-house-ballroom-taxpayer-cost.md)
+- [Machine-readable Political Influence Tree](machine/ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST.json)
+- [Machine assessment handoff](machine/WHITE_HOUSE_BALLROOM_TAXPAYER_COST_MIRROR_HANDOFF.md)
+- [Machine-readable primary-record intake queue](intake/2026-08-22-white-house-ballroom-taxpayer-cost-intake.json)
+- [Primary-record intake handoff](intake/PRIMARY_RECORD_INTAKE_MIRROR_HANDOFF.md)
+- [Source-posture packet](source-posture/2026-08-22-white-house-ballroom-taxpayer-cost-source-receipts.json)
+
+The machine record preserves three distinct denominators: privately funded ballroom structure, integrated East Wing/security project, and the broader White House construction program. Existing official sources establish announced private ballroom funding language, separate Secret Service security language, and integrated-project scope. They do not establish a final audited taxpayer share.
+
+Primary accounting remains required for maintenance-account transfers, Secret Service and Military Office expenditures, contractor estimates, donor receipts/disbursements, broader project ledgers, and cost-estimate scope reconciliation. No motive or final legal conclusion is authorized from the present record.
+
 ## Assessment rules
 
 1. Claim existence and claim truth remain separate.
