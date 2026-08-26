@@ -25,6 +25,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUEST_SCHEMA = ROOT / "schemas" / "physical-economics-report-request.schema.json"
+SNAPSHOT_SCHEMA = ROOT / "schemas" / "physical-economics-evidence-snapshot.schema.json"
 REGISTRY_SCHEMA = ROOT / "schemas" / "physical-economics-report-snapshot-registry.schema.json"
 REPORT_TRANSACTION = ROOT / "scripts" / "generate_physical_economics_public_report.py"
 POST_PATH = "/v1/physical-economics/reports"
@@ -149,7 +150,9 @@ def generate_response(request: dict[str, Any], registry_path: Path) -> dict[str,
     validate_schema(registry, REGISTRY_SCHEMA, "registry")
     entry = select_registry_entry(registry, request)
     template = load_json(resolve_snapshot_path(entry))
+    validate_schema(template, SNAPSHOT_SCHEMA, "snapshot_template")
     snapshot = bind_snapshot(template, request)
+    validate_schema(snapshot, SNAPSHOT_SCHEMA, "snapshot")
 
     if snapshot.get("pertinence_matrix_version") != request["pertinence_policy"]["required_attribute_sets_version"]:
         raise AdapterError(
