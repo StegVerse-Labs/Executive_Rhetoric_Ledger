@@ -1,0 +1,106 @@
+{
+  "contract_type": "physical_economics_report_pertinence_matrix",
+  "contract_version": "0.1",
+  "status": "RESEARCH_MATRIX_ACTIVE_NOT_VALIDATED",
+  "purpose": "Deterministically map public Physical Economics report claim classes to required and contextual attributes so report boundaries are evidence-derived rather than model-chosen.",
+  "governing_rules": [
+    "Required attributes determine admissibility and boundary selection.",
+    "Contextual attributes may inform interpretation but cannot silently relax or replace required evidence.",
+    "A required attribute that is unavailable or opaque must remain visible and may narrow, qualify, or fail-close the claim.",
+    "Attribute mappings are versioned. A mapping change must generate a report-protocol delta.",
+    "Claim classes may compose; composed claims inherit the union of required attributes unless an explicit narrower protocol is independently validated.",
+    "No scalar composite is required for report generation."
+  ],
+  "claim_classes": {
+    "PRICE_CHANGE": {
+      "required": ["nominal_price", "unit_identity", "time_basis", "geography_scope"],
+      "contextual": ["seasonal_adjustment_regime", "quality_adjustment_regime", "revision_vintage"]
+    },
+    "PHYSICAL_PURCHASING_POWER": {
+      "required": ["nominal_income_or_resources", "effective_price_per_physical_or_service_unit", "unit_identity", "quantity_or_service_content", "mandatory_delivered_costs", "time_basis", "population_scope"],
+      "contextual": ["debt_service", "transfer_offsets", "regional_weights", "quality_state", "substitution_state"]
+    },
+    "ESSENTIAL_AFFORDABILITY": {
+      "required": ["nominal_income_or_resources", "essential_delivered_cost", "essential_need_definition", "quantity_or_service_acquired", "population_scope", "geography_scope"],
+      "contextual": ["debt_service", "arrears", "transfer_offsets", "balance_sheet_resilience", "substitution_state"]
+    },
+    "UNMET_ESSENTIAL_NEED": {
+      "required": ["essential_need_definition", "observed_sufficiency_or_access_measure", "population_scope", "methodology_regime"],
+      "contextual": ["income", "delivered_cost", "arrears", "substitution_state", "transfer_offsets"]
+    },
+    "PRODUCER_COST_PRESSURE": {
+      "required": ["intermediate_input_costs", "labor_or_compensation_cost", "output_or_sales_basis", "industry_scope", "time_basis"],
+      "contextual": ["capacity_utilization", "inventories", "financing_costs", "tax_fee_regulatory_flow", "physical_output"]
+    },
+    "PRODUCER_MARGIN_STATE": {
+      "required": ["margin_measure_or_direct_financial_inputs", "scope_identity", "time_basis", "evidence_mode"],
+      "contextual": ["input_costs", "output_volume", "capacity_utilization", "inventories", "consumer_price", "trade_margin_series"]
+    },
+    "COST_MARGIN_TRANSMISSION": {
+      "required": ["producer_cost_pressure", "producer_margin_state", "consumer_effective_price", "physical_unit_state", "time_alignment", "supply_chain_node_identity"],
+      "contextual": ["capacity_inventory_state", "tax_fee_regulatory_flow", "regional_distribution", "substitution_state"]
+    },
+    "DISTRIBUTIONAL_BURDEN": {
+      "required": ["burden_measure", "population_strata", "income_or_resource_strata", "weighting_method", "time_basis"],
+      "contextual": ["geography", "household_size", "tenure", "employment_status", "transfer_offsets"]
+    },
+    "REGIONAL_BURDEN": {
+      "required": ["regional_delivered_cost", "regional_population_or_household_weight", "geography_identity", "time_basis"],
+      "contextual": ["income_distribution", "utility_territory", "housing_tenure", "transport_requirements", "tax_fee_regulatory_flow"]
+    },
+    "HOUSEHOLD_RESILIENCE": {
+      "required": ["income_or_resources", "required_debt_service", "saving_or_liquid_buffer_measure", "population_scope", "time_basis"],
+      "contextual": ["delinquency", "asset_drawdown", "credit_substitution", "arrears", "essential_cost_burden"]
+    },
+    "ARREARS_DEFERRED_OBLIGATION": {
+      "required": ["obligation_type", "required_payment_or_service_state", "arrears_or_delinquency_measure", "population_scope", "time_basis"],
+      "contextual": ["income", "balance_sheet_resilience", "transfer_offsets", "service_disconnection_or_eviction_risk"]
+    },
+    "CAPACITY_INVENTORY_CONSTRAINT": {
+      "required": ["sector_identity", "capacity_or_utilization_measure", "inventory_or_backlog_measure", "time_basis"],
+      "contextual": ["orders", "shipments", "imports_exports", "physical_output", "prices", "margins"]
+    },
+    "TAX_FEE_REGULATORY_FLOW": {
+      "required": ["charge_identity", "legal_payer", "amount_rate_or_base", "entry_node", "time_basis"],
+      "contextual": ["observed_pass_through", "subsidy_offset", "downstream_delivered_cost", "producer_margin", "consumer_burden"]
+    },
+    "TRANSFER_OFFSET_EFFECT": {
+      "required": ["program_or_transfer_identity", "benefit_amount_or_value", "eligible_or_receiving_population", "time_basis"],
+      "contextual": ["take_up_rate", "essential_cost_burden", "income", "regional_scope"]
+    },
+    "ECONOMIC_CONDITION_STATE_VECTOR": {
+      "required": [
+        "physical_purchasing_power",
+        "nominal_resource_capacity",
+        "required_debt_service_burden",
+        "essential_cost_burden",
+        "essential_need_satisfaction",
+        "substitution_and_quality_compression",
+        "population_burden_distribution",
+        "producer_cost_pressure",
+        "producer_margin_state",
+        "tax_fee_regulatory_flow",
+        "household_balance_sheet_resilience",
+        "arrears_deferred_obligation_state",
+        "capacity_inventory_constraint_state",
+        "regional_burden_surface",
+        "net_public_transfer_offset_flow"
+      ],
+      "contextual": ["headline_cpi", "headline_ppi", "aggregate_real_income_comparators"]
+    }
+  },
+  "boundary_resolution": {
+    "required_attribute_history": "Each claim inherits the shortest necessary admissible history among required attributes for conclusions requiring all of them, while preserving longer attribute-specific context separately.",
+    "current_period": "A claim cannot be COMPLETE if any material required attribute is PARTIAL_CURRENT_PERIOD, PENDING_RELEASE, UNAVAILABLE, OPAQUE, or NOT_COMPARABLE unless the claim protocol explicitly permits a qualified partial posture.",
+    "methodology": "A required attribute methodology break narrows the comparable window unless a validated bridge exists.",
+    "uncertainty": "Required source-native uncertainty must be retained; unknown covariance prevents fabrication of aggregate precision."
+  },
+  "next_validation": [
+    "Create positive and negative claim-to-attribute fixtures.",
+    "Test composed claim inheritance.",
+    "Test unavailable required attributes narrow or fail-close conclusions.",
+    "Test contextual evidence cannot promote a missing required attribute.",
+    "Independently review claim-class coverage before public UI activation."
+  ],
+  "public_activation_authorized": false
+}
