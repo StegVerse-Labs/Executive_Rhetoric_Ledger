@@ -1,0 +1,49 @@
+name: Validate Physical Economics Reporting
+
+on:
+  pull_request:
+    paths:
+      - "contracts/physical-economics-report-generation.contract.json"
+      - "contracts/physical-economics-report-pertinence.matrix.v0.1.json"
+      - "schemas/physical-economics-report-request.schema.json"
+      - "schemas/physical-economics-report-boundary-manifest.schema.json"
+      - "schemas/physical-economics-evidence-snapshot.schema.json"
+      - "schemas/physical-economics-report-delta.schema.json"
+      - "scripts/resolve_physical_economics_report_boundary.py"
+      - "scripts/validate_physical_economics_reporting.py"
+      - "tests/physical-economics-reporting/**"
+      - "docs/physical-economics/reporting/**"
+      - "assessments/physical-economics/reporting/**"
+      - ".github/workflows/validate-physical-economics-reporting.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "contracts/physical-economics-report-generation.contract.json"
+      - "contracts/physical-economics-report-pertinence.matrix.v0.1.json"
+      - "schemas/physical-economics-report-request.schema.json"
+      - "schemas/physical-economics-report-boundary-manifest.schema.json"
+      - "schemas/physical-economics-evidence-snapshot.schema.json"
+      - "schemas/physical-economics-report-delta.schema.json"
+      - "scripts/resolve_physical_economics_report_boundary.py"
+      - "scripts/validate_physical_economics_reporting.py"
+      - "tests/physical-economics-reporting/**"
+      - "docs/physical-economics/reporting/**"
+      - "assessments/physical-economics/reporting/**"
+      - ".github/workflows/validate-physical-economics-reporting.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator dependencies
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Validate reporting contracts and fail-closed behavior
+        run: python scripts/validate_physical_economics_reporting.py
