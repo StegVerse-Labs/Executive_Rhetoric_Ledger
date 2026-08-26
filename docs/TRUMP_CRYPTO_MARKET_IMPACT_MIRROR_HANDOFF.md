@@ -157,7 +157,7 @@ Research structure and empirical activation remain separate:
 - matched-control dataset: 0/1 complete
 - independent review: 0/1 complete
 - system-wide shock event anchoring/schema: 1/1 = 100%
-- exchange-native first-break reconstruction: ACTIVE / raw historical tick evidence still required
+- exchange-native first-break reconstruction: ACTIVE / venue-dispersion evidence added; first-break raw historical tick evidence still required
 - initiating transaction/venue: UNRESOLVED
 - finding promotion: 0/1 authorized
 
@@ -244,4 +244,19 @@ The following session-unique evidence is now durable and must not depend on this
 - the current evidence update strengthening liquidation/deleveraging amplification without promoting causation for the initiating impulse.
 
 No credential step, provider activation, user-only iPhone action, or external manual action is required for this research lane at present. The remaining work is machine/research execution dependent on access to historical exchange-native tick, liquidation, open-interest, and depth data.
+
+
+### Aug. 22 shock — venue-dispersion refinement
+
+New cross-venue evidence materially changes the interpretation of XRP's extreme tail without changing the system-wide classification.
+
+- CryptoSlate reports Bitstamp XRP/USD reached a one-minute high of $1.69739 at 05:03 UTC, fell to $1.06689 in the 05:10 candle, then closed that candle at $1.44837.
+- Other major venues printed materially higher lows. A secondary four-venue reconstruction for 05:05-05:14 UTC reports Bitstamp $1.06689, Coinbase $1.34000, OKX $1.37570, Binance $1.37800.
+- Over that same ten-minute interval, the secondary reconstruction reports Bitstamp trading about 4.60M XRP versus Binance about 51.10M XRP, supporting a local thin-book/liquidity-vacuum amplifier on Bitstamp.
+- A CoinGlass relay published at 05:21:38 UTC reported $523M liquidated over the preceding hour, including $448M longs and $74.76M shorts; the largest single liquidation reported was approximately $24.96M on Hyperliquid BTC-USD. This materially strengthens long-led forced-deleveraging as an amplification mechanism but does not identify the initiating trade.
+- Proclamation 11056 / CBP implementation establishes that additional 50% duties on specified Canadian goods took effect at 04:01 UTC, about 69 minutes before the 05:10 common break. This is now retained as an external-policy control, not a causal finding, because the timing is not tight enough and no 05:10-specific news impulse has been established.
+
+Canonical venue-dispersion record: `research-data/2026-08-22_crypto_system_shock_venue_dispersion.v1.json`.
+
+Interpretive correction: the deepest XRP print should not be treated as a uniform cross-venue XRP decline. XRP still experienced an outsized broad move, but the tail was materially amplified by venue-specific liquidity. The deepest wick therefore cannot be used to infer XRP initiated the system-wide shock.
 
