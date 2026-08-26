@@ -114,9 +114,9 @@ Logical chain:
 
 `public Site request -> governed HTTP adapter -> ERL report transaction -> prepared evidence snapshot -> immutable snapshot -> boundary -> governed findings/state -> deterministic report -> portable verification -> Site rendering`.
 
-Site request/presentation is now merged and Pages-deployed. ERL report transaction is implemented. The missing functional bridge remains a **real governed HTTP adapter/runtime** exposing the ERL transaction without moving evidence, pertinence, boundary, uncertainty, conflict, or finding authority into Site.
+Site request/presentation is merged and Pages-deployed. ERL report transaction is implemented. The canonical ERL-owned HTTP adapter source is now implemented and bounded-hosted-validated under `docs/physical-economics/reporting/transport/PHYSICAL_ECONOMICS_HTTP_ADAPTER_MIRROR_HANDOFF.md`. The remaining functional bridge is **resident deployment/runtime activation** of that validated adapter with a real governed admitted-snapshot registry; evidence, pertinence, boundary, uncertainty, conflict, and finding authority remain in ERL.
 
-The Site endpoint must remain blank until that adapter has repository-native validation and live runtime proof. Populating the endpoint is an activation step.
+The Site endpoint must remain blank until the adapter has independent live runtime proof. Populating the endpoint is an activation step.
 
 ## Fail-closed conditions
 Fail closed if required opacity is hidden, required evidence excluded/replaced by context, coverage exceeds support, partial periods become complete, methodology breaks are crossed without bridge, revisions rewrite historical vintage, proxies become direct measures, missing values become neutral/zero, aggregation erases supported divergence, uncertainty is dropped/fabricated, source conflicts are guessed away, renderer invents findings, hashes/protocols do not reproduce, adapter returns non-`VERIFIABLE` as success, or Site points to an adapter without independent runtime proof.
@@ -127,15 +127,15 @@ No NON-TV/TVC credential may be introduced into the reporting transaction, Site,
 No manual/iPhone user action is currently proven necessary. If a future public transport provider requires authorization, it must be represented through TV/TVC authority and recorded before activation.
 
 ## Remaining work
-1. obtain exact-current-head hosted ERL reporting validation and consume any failures;
+1. consume current hosted ERL reporting/ledger validation after each final handoff-only head and any failures;
 2. integrate real Physical Economics evidence/state snapshots and governed findings into report execution;
 3. add broader composed-claim/methodology-break/revision/distribution/partial-period fixtures;
 4. independently review pertinence, boundary, uncertainty, conflict, renderer, and verification semantics;
 5. independently observe the deployed Site Physical Economics page response/content and then close Site Issue #496 if its publication gate is satisfied;
-6. establish exactly one canonical claimed lane for the governed HTTP adapter rather than burying transport in Site;
-7. implement deterministic request/response + portable-verification adapter tests and obtain live runtime proof;
-8. only after adapter proof populate the Site endpoint and independently execute a real end-to-end `VERIFIABLE` report;
-9. only after real-data execution, ERL hosted validation, public transport proof, Site integration, and independent review consider public activation/release.
+6. retain the single canonical ERL transport lane; do not create a duplicate Site or communications transport owner;
+7. install the validated adapter in the authorized resident execution substrate, bind a real governed admitted-snapshot registry, and obtain independent live runtime proof;
+8. only after live adapter proof populate the Site endpoint and independently execute a real end-to-end `VERIFIABLE` report;
+9. only after real-data execution, current ERL hosted validation, public transport proof, Site integration, and independent review consider public activation/release.
 
 ## Cross-repository propagation obligations
 - Site publication-observation proof must be recorded in the Site handoff and propagated here.
@@ -149,17 +149,17 @@ No manual/iPhone user action is currently proven necessary. If a future public t
 - machine contract/pertinence matrix: implemented v0.1
 - snapshot/boundary/uncertainty/conflict/delta/renderer/backend/verification runtimes: implemented
 - bounded ERL validators: implemented
-- ERL exact-current-head hosted validation: not established
+- repository-wide ERL hosted validation: PASS at `c0638c0c10cbbf218b2ca178ee8dc74a9ea89d28` via `Validate Ledger Schemas` run `33011563705`; final handoff-only heads require normal exact-head recheck
 - real-data report execution: pending
 - Site public UI/client: implemented, hosted-validated, merged, and Pages-deployed
 - independent HTTP observation of Site page: pending
 - Site Issue #496: open pending separate public observation
-- governed HTTP adapter/runtime: not implemented
+- governed HTTP adapter source/runtime wrapper: implemented; `Validate Physical Economics HTTP Adapter` run `33011540044` PASS at `6c351ea0b7e89a96454865dae0ea896a1a757738`; resident deployment/runtime proof pending
 - Site report endpoint: intentionally blank
 - independent review: pending
 - public end-to-end activation/release: not authorized
 
-Public reporting bounded implementation estimate: `88%` for core ERL reporting plus merged/Pages-deployed Site consumer. This percentage is not activation completeness; runtime transport, real-data execution, ERL hosted validation, independent page observation, and review remain material.
+Public reporting bounded **source implementation** estimate: `94%` for core ERL reporting, validated ERL HTTP transport source, and merged/Pages-deployed Site consumer. This is not activation completeness; resident runtime deployment, real admitted evidence, independent runtime/page observation, Site endpoint binding, end-to-end execution, and review remain material.
 
 ## Archive posture
 All current ERL reporting and downstream Site merge/deployment state is durably represented here. Continued reporting work does not require rereading the originating conversation.
