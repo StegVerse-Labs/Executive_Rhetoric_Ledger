@@ -176,7 +176,7 @@ Thus Site merge and Pages deployment are proven. Functional report activation is
 10. Prototype food, electricity, motor-fuel, and housing state vectors.
 11. Obtain exact-current-head hosted ERL CI and independent review before composite/release claims.
 12. Independently observe the deployed Site Physical Economics page and propagate that proof.
-13. Establish one canonical claimed governed HTTP-adapter lane, validate it, obtain live runtime proof, and only then configure the Site endpoint.
+13. Continue the single canonical ERL HTTP-adapter lane: source implementation/validation are complete; obtain authorized resident deployment and live runtime proof, then and only then configure the Site endpoint.
 
 ## Validation / integration posture
 Umbrella PR #75 remains the active integration lane on `feature/transition-first-calculus`. It is open/draft/unmerged and was last observed non-mergeable. This handoff mutation moves the branch head. Exact-current-head hosted validation must be queried anew; no older PASS is current proof.
@@ -196,9 +196,9 @@ Umbrella PR #75 remains the active integration lane on `feature/transition-first
 - 2026-08-26 BEA releases: available, not yet machine-custodied
 - semantic validators: pending
 - native sub-index calculations: partial
-- ERL exact-current-head hosted validation: not established
+- ERL repository-wide hosted validation: PASS at `c0638c0c10cbbf218b2ca178ee8dc74a9ea89d28` via run `33011563705`; subsequent handoff-only heads require normal exact-head recheck
 - Site consumer: implemented, validated, merged, Pages-deployed; separate HTTP page observation pending
-- governed report HTTP adapter: not implemented
+- governed report HTTP adapter source: implemented and bounded-hosted-validated; resident deployment/live runtime proof pending
 - composite: not authorized
 - independent review: incomplete
 - release: not authorized
