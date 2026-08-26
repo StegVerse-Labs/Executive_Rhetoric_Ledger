@@ -131,13 +131,21 @@
     "receipts": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["report_request_hash", "boundary_manifest_hash", "contract_version"],
+      "required": [
+        "report_request_hash",
+        "evidence_snapshot_hash",
+        "boundary_manifest_hash",
+        "contract_version",
+        "pertinence_matrix_version"
+      ],
       "properties": {
         "report_request_hash": {"type": "string", "minLength": 1},
+        "evidence_snapshot_hash": {"type": "string", "minLength": 1},
         "boundary_manifest_hash": {"type": "string", "minLength": 1},
         "source_receipt_set": {"type": "array", "items": {"type": "string", "minLength": 1}},
         "renderer_version": {"type": ["string", "null"]},
-        "contract_version": {"type": "string", "minLength": 1}
+        "contract_version": {"type": "string", "minLength": 1},
+        "pertinence_matrix_version": {"type": "string", "minLength": 1}
       }
     }
   }
