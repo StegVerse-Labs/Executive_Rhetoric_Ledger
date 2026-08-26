@@ -19,6 +19,7 @@ on:
   push:
     branches:
       - main
+      - feature/transition-first-calculus
     paths:
       - "schemas/physical-economics-report-snapshot-registry.schema.json"
       - "schemas/physical-economics-report-request.schema.json"
