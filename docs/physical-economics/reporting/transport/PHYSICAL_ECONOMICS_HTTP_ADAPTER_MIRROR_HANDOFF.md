@@ -126,3 +126,19 @@ Do not configure the Site endpoint until an independently reachable deployed ada
 
 ## Archive posture
 All source implementation, ownership, fail-closed semantics, and bounded validation evidence are durable here. Continuation does not require this conversation. Remaining adapter work is activation/runtime work, not missing repository implementation.
+
+
+## Final source-continuity checkpoint — 2026-08-26
+
+Parent reporting and Physical Economics handoffs have been reconciled to the same ownership/state boundary. The former White House ballroom ledger-schema blocker was separately repaired and the full repository ledger validation passed at `c0638c0c10cbbf218b2ca178ee8dc74a9ea89d28` in run `33011563705`.
+
+This handoff mutation is intentionally the final ERL source-continuity checkpoint for the session so both branch-enabled validators can execute on one exact final head.
+
+No new runtime claim is created by this checkpoint:
+- resident HTTP deployment: absent;
+- real production admitted-snapshot registry: absent;
+- Site endpoint: blank;
+- live end-to-end public report: absent;
+- release: not authorized.
+
+If exact-head validation passes, the remaining adapter/public-report transition is runtime/evidence activation and can continue entirely from repository handoffs without conversation context.
