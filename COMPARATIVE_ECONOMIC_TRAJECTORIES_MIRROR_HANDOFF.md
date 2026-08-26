@@ -77,3 +77,13 @@ Known missing durable modules and destinations:
 - definition-reconciliation packets → `economic-trajectories/comparison/reconciliation/`;
 - structural-break and lag-analysis code → `scripts/economic_comparison/`;
 - independent comparison-review receipts → `economic-trajectories/comparison/reviews/`.
+
+## Session consolidation — 2026-08-26
+
+PR `#79` remains open draft at head `35d2807077a5106edf52ee1a21f7241abaf521a9`; GitHub currently reports it mergeable, but current `main` is `9001265b6c690c077d3da70edd9a9992d5dfaf25` and the histories have materially diverged by 20 commits on each side from merge base `2ca582ffe9297ddd452a54f90a96718660d5a033`. The session automation increment at `5f0f0cc14a4fde6f1cfaeb4838287ce9b96b3543` passed dedicated run `32900604098`; current-head run `32984047962` was queued when inspected and is not yet a passed receipt.
+
+`docs/ECONOMIC_DISTRIBUTION_MIRROR_HANDOFF.md` now governs a complementary cross-cutting household/distribution capability on `main`. It explicitly requires Canada and U.S. national trajectories to be independently reconstructed before comparison, matching this overlay's contract. Integration may share reconciled indicator definitions, but the distribution lane may not populate a national effect and this overlay may not consume raw distribution observations or unreviewed national findings.
+
+Next executable boundary: reconcile PR `#79` with `main`, resolve shared definitions without weakening either evidence gate, rerun all owned validation, merge, and observe the first repository-native national automation receipt. Comparative population remains blocked until independently reviewed Canadian and U.S. findings exist. No user action or credential step is required. No comparison, lag conclusion, causal finding, publication, tag, release, deployment, or propagation is authorized.
+
+Archive state: all comparison-overlay state unique to this session is durable in this handoff, Issue `#78`, PR `#79`, and their receipts. Continuation does not require this conversation.

@@ -249,3 +249,26 @@ Denominator: 10 active capability/evidence groups: structural standard/schema; v
 Canonical continuation: `StegVerse-Labs/Executive_Rhetoric_Ledger` → Issue `#47` → PR `#48` → `feature/fauci-hsgac-source-custody` → `assessments/silence-causation/2026-07-29-fauci-hsgac-workstream.json`.
 
 Session state: `MERGED INTO CANONICAL WORKSTREAM`.
+
+## Session consolidation overlay — paired national economic trajectories — 2026-08-26
+
+Authoritative bounded sources:
+
+- `CANADA_ECONOMIC_TRAJECTORY_MIRROR_HANDOFF.md`;
+- `US_ECONOMIC_TRAJECTORY_MIRROR_HANDOFF.md`;
+- `COMPARATIVE_ECONOMIC_TRAJECTORIES_MIRROR_HANDOFF.md`;
+- Issue `#78` and draft PR `#79`.
+
+Live state: PR `#79` is implemented in part but not merged, deployed, activated, released, or complete. Its head is `35d2807077a5106edf52ee1a21f7241abaf521a9`; GitHub currently reports it mergeable, but it is materially diverged from `main` at `9001265b6c690c077d3da70edd9a9992d5dfaf25`. The histories diverge by 20 commits on each side from merge base `2ca582ffe9297ddd452a54f90a96718660d5a033`. Commit `5f0f0cc14a4fde6f1cfaeb4838287ce9b96b3543` contains the session's automated-lane increment and passed dedicated run `32900604098`. The later current-head run `32984047962` was queued when inspected; do not represent it as passed.
+
+Collision reconciliation: `docs/ECONOMIC_DISTRIBUTION_MIRROR_HANDOFF.md` on `main` owns the complementary cross-cutting household-value, ownership-distribution, mobility, and substitution model. PR `#79` owns independent national trajectory reconstruction, country-specific effects, automated official-source monitoring, and the reviewed-findings-only comparison overlay. Shared measurement definitions must be reconciled during integration; neither lane supersedes the other and no duplicate lane should be created.
+
+Unrelated repository-wide blockers remain owned separately: Issue `#73` for the White House ballroom primary-record intake and Issue `#80` for three orphaned research-candidate registrations. They must not be silently repaired or attributed to PR `#79`.
+
+Next executable boundary: integrate current `main` into PR `#79`, resolve conflicts and shared definitions, obtain green dedicated and repository-wide checks, merge, execute the first repository-native economic research workflow, and preserve its governed candidate receipt. Evidence population, source-specific historical adapters, normalized series, admission queues, national review, definition reconciliation, lag analysis, and independent comparison review remain after activation of the acquisition workflow.
+
+User action required: none. No credentials, provider activation, iPhone-only step, or external manual proof is required for the current integration and evidence-population work. The workflow uses only GitHub's ephemeral repository-provided credential; no personal token or stored user secret is required.
+
+Release/propagation boundary: no tag, release, deployment, public finding, or propagation to `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, or `stegguardian-wiki` is authorized. Create downstream verification tasks only when the lane reaches genuine reviewed release posture.
+
+Archive state: all state unique to the paired-national-trajectory session is now captured in repo-local handoffs, Issue `#78`, PR `#79`, CI receipts, and the global StegVerse Projects coordination document. Continuation must begin from those live sources, not this conversation.

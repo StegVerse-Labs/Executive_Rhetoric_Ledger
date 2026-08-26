@@ -86,3 +86,20 @@ Known missing durable modules and destinations:
 - normalized revision-vintaged series → `economic-trajectories/united-states/series/`;
 - evidentiary admission queue → `economic-trajectories/united-states/admission-queue.v1.json`;
 - independent review receipts → `economic-trajectories/united-states/reviews/`.
+
+## Session consolidation — 2026-08-26
+
+Live repository state at consolidation:
+
+- Issue `#78`: open canonical coordination owner;
+- PR `#79`: open draft, head `35d2807077a5106edf52ee1a21f7241abaf521a9`, currently reported mergeable by GitHub but materially diverged from `main`;
+- session automation commit `5f0f0cc14a4fde6f1cfaeb4838287ce9b96b3543`: dedicated run `32900604098` passed;
+- current-head dedicated run `32984047962`: queued when inspected and therefore not yet validation evidence;
+- live `main` head: `9001265b6c690c077d3da70edd9a9992d5dfaf25`;
+- branch/main relation: diverged, 20 commits ahead and 20 behind from merge base `2ca582ffe9297ddd452a54f90a96718660d5a033`.
+
+The broader household-value and ownership-distribution capability on `main` is governed by `docs/ECONOMIC_DISTRIBUTION_MIRROR_HANDOFF.md`. It is complementary to this national lane, not a replacement: the distribution lane owns the cross-cutting household/distribution model, while this lane owns United States-specific observations, mechanisms, affected populations, controls, and review. Integration must reconcile shared indicator definitions and preserve the stricter boundary rather than duplicating or overwriting either lane.
+
+Next executable boundary: reconcile PR `#79` with current `main`; resolve the shared measurement-dictionary and U.S. household/distribution overlap; rerun dedicated and repository-wide CI; then merge only if all owned checks pass. After merge, obtain the first repository-native economic research workflow run and persistent governed candidate receipt. No user credential, provider action, or iPhone step is required. No finding, comparison, publication, tag, release, deployment, or downstream propagation is authorized.
+
+Archive state: all U.S.-lane state unique to this session is durable in this handoff, Issue `#78`, PR `#79`, and their receipts. Continuation does not require this conversation.
