@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.example/schemas/physical-economics-report-delta.schema.json",
+  "title": "Physical Economics Report Delta Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report_delta_id",
+    "prior_report_id",
+    "current_report_id",
+    "prior_snapshot_id",
+    "current_snapshot_id",
+    "changes",
+    "material_change_state",
+    "delta_hash"
+  ],
+  "properties": {
+    "report_delta_id": {"type": "string", "minLength": 1},
+    "prior_report_id": {"type": "string", "minLength": 1},
+    "current_report_id": {"type": "string", "minLength": 1},
+    "prior_snapshot_id": {"type": "string", "minLength": 1},
+    "current_snapshot_id": {"type": "string", "minLength": 1},
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["change_id", "change_class", "scope", "description", "finding_impact"],
+        "properties": {
+          "change_id": {"type": "string", "minLength": 1},
+          "change_class": {
+            "enum": [
+              "NEW_OBSERVATION",
+              "PRIOR_PERIOD_COMPLETED",
+              "ROUTINE_REVISION",
+              "SOURCE_CORRECTION",
+              "SEASONAL_FACTOR_REVISION",
+              "METHODOLOGY_CHANGE",
+              "CLASSIFICATION_CHANGE",
+              "OPAQUE_ATTRIBUTE_RESOLVED",
+              "SOURCE_WITHDRAWN_OR_REPLACED",
+              "REQUIRED_ATTRIBUTE_PROTOCOL_CHANGE",
+              "RENDERER_OR_CONTRACT_CHANGE",
+              "SOURCE_CONFLICT_RESOLVED",
+              "UNCERTAINTY_POSTURE_CHANGED"
+            ]
+          },
+          "scope": {"type": "string", "minLength": 1},
+          "attribute_id": {"type": ["string", "null"]},
+          "prior_value_or_state": {},
+          "current_value_or_state": {},
+          "description": {"type": "string", "minLength": 1},
+          "finding_impact": {"enum": ["NONE", "CONTEXT_ONLY", "BOUNDARY_CHANGED", "CONFIDENCE_CHANGED", "FINDING_REFINED", "FINDING_REVERSED", "CLAIM_NO_LONGER_GENERATABLE"]},
+          "source_receipt_ids": {"type": "array", "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    },
+    "material_change_state": {"enum": ["NO_MATERIAL_CHANGE", "MATERIAL_BOUNDARY_CHANGE", "MATERIAL_FINDING_CHANGE", "MATERIAL_PROTOCOL_CHANGE"]},
+    "plain_language_summary": {"type": ["string", "null"]},
+    "delta_hash": {"type": "string", "minLength": 1}
+  }
+}
