@@ -1,0 +1,215 @@
+{
+  "topic_id": "ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST",
+  "topic_name": "White House ballroom and broader construction taxpayer-cost claim",
+  "entry_status": "draft",
+  "jurisdiction": "United States federal government",
+  "time_window": "2025-2026",
+  "created_date": "2026-08-22",
+  "last_reviewed": "2026-08-26",
+  "related_standard": "standards/political-influence-tree-standard.md",
+  "related_annotation": "assessments/rhetoric/2026-08-22-white-house-ballroom-taxpayer-cost.md",
+  "surface_claim": {
+    "claim_text": "The White House ballroom and other White House construction cost taxpayers $0.",
+    "exact_quote_available": false,
+    "speaker_or_institution": "Public claim under ERL examination",
+    "office_or_role": "Claim attribution remains bounded by the linked rhetoric record",
+    "date": "2026-08-22",
+    "venue": "Executive Rhetoric Ledger research intake",
+    "jurisdiction": "United States",
+    "source_url": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/rhetoric/2026-08-22-white-house-ballroom-taxpayer-cost.md",
+    "source_type": "secondary-analysis",
+    "transcript_available": false,
+    "archive_url": ""
+  },
+  "claimed_justification": {
+    "category": "private-funding-zero-taxpayer-cost",
+    "stated_basis": "The 2025 White House announcement stated that President Trump and other donors committed funds necessary to build the ballroom structure.",
+    "quoted_basis": "Exact source wording is preserved through the governed White House source receipt; this machine record does not reproduce a long quotation.",
+    "implied_basis": "Private funding of a ballroom component is used as the asserted basis for a broader zero-taxpayer-cost proposition."
+  },
+  "factual_basis": {
+    "evidence_posture": "primary-project-scope-and-announced-funding-sources-installed-final-accounting-incomplete",
+    "primary_records": [
+      "2025-07-31 White House ballroom construction announcement",
+      "2026-08-13 Supreme Court stay application in 26A203",
+      "2026-08-14 NPS East Wing modernization / State Ballroom FONSI appendix"
+    ],
+    "administrative_data": [],
+    "court_records": [
+      "Government Supreme Court filing characterizes the East Wing undertaking as an integrated military complex including secure ballroom space."
+    ],
+    "budget_records": [],
+    "enforcement_records": [],
+    "independent_analysis": [
+      "Bounded rhetoric assessment separates ballroom structure, integrated security project, and broader White House construction program."
+    ],
+    "expert_testimony": [],
+    "official_investigations": [],
+    "unsupported_assertions": [
+      "Final audited zero-taxpayer cost for the integrated project",
+      "Final public/private allocation for the broader White House construction program",
+      "Motive or intent inferred from any funding discrepancy"
+    ],
+    "contradictions": [
+      "The White House announcement pairs private ballroom funding language with separate Secret Service security enhancements and modifications.",
+      "Official project records describe an integrated East Wing modernization, ballroom, and security undertaking rather than only a detached ballroom purchase."
+    ],
+    "missing_records": [
+      "White House maintenance-account transfer ledger",
+      "Secret Service project expenditures and obligations",
+      "White House Military Office project expenditures and transfers",
+      "Contractor cost summaries and revision history",
+      "Private donor receipt and disbursement accounting",
+      "Broader White House modernization project ledger",
+      "Primary records reconciling the $200M, $250M, $400M, $600M, and $900M+ scope figures"
+    ]
+  },
+  "influence_lineage": {
+    "influence_posture": "funding-and-project-scope-lineage-partially-reconstructed",
+    "known_origin_points": [
+      "White House announced private funding for an approximately $200 million ballroom structure.",
+      "White House assigned necessary security enhancements and modifications to the United States Secret Service.",
+      "Later official records characterize the undertaking as an integrated East Wing modernization and security project."
+    ],
+    "institutional_amplifiers": ["White House", "National Park Service", "United States Secret Service"],
+    "media_amplifiers": ["Reuters", "Axios"],
+    "legal_networks": ["Supreme Court docket 26A203"],
+    "funding_or_donor_links": ["Private donor accounting remains incomplete", "Federal transfer and obligation records remain incomplete"],
+    "policy_documents": [],
+    "academic_or_expert_sources": [],
+    "lobbying_channels": [],
+    "party_or_campaign_documents": [],
+    "religious_or_cultural_institutions": [],
+    "activist_organizations": [],
+    "foreign_influence_indicators": [],
+    "unknown_nodes": [
+      "Exact source and destination of government transfers",
+      "Exact public/private allocation by project component",
+      "Final obligation and expenditure totals"
+    ]
+  },
+  "action_conversion": {
+    "authority_posture": "project-and-funding-authority-partially-observed-final-accounting-unresolved",
+    "action_type": "White House construction, modernization, security modification, and associated funding",
+    "instrument": "Announcements, agency project records, transfers, contracts, obligations, and donor accounting",
+    "instrument_url": "",
+    "date": "2025-2026",
+    "actor": "White House and participating federal/project entities",
+    "enforcing_entity": "Not applicable as an enforcement action",
+    "implementation_status": "Construction and project activity observed; final funding allocation remains under primary-record reconstruction",
+    "affected_population_or_program": "White House facilities, security infrastructure, and public/private project funding"
+  },
+  "control_comparison": {
+    "required": false,
+    "status": "not-required-for-initial-funding-scope-reconstruction",
+    "comparable_red_jurisdictions": [],
+    "comparable_blue_jurisdictions": [],
+    "comparable_prior_administrations": [],
+    "comparable_policy_instruments": [],
+    "comparable_fraud_or_harm_magnitude": [],
+    "comparable_enforcement_tools": [],
+    "comparable_judicial_posture": [],
+    "missing_controls": [],
+    "comparison_notes": "The immediate question is accounting and project-scope reconstruction. Comparative controls would be required only for later claims of unusual treatment or historical uniqueness."
+  },
+  "institutional_response": {
+    "judicial_status": "Supreme Court docket materials provide project-scope evidence; procedural litigation posture does not decide funding allocation.",
+    "administrative_status": "NPS project records and White House statements are installed; financial ledgers and obligation records remain outstanding.",
+    "legislative_status": "No final legislative funding conclusion is encoded here.",
+    "oversight_status": "Primary accounting reconstruction remains required.",
+    "injunctions": [],
+    "stays": ["Procedural stay context exists in docket 26A203 and is not treated as a funding finding."],
+    "dismissals": [],
+    "remands": [],
+    "settlements": [],
+    "reversals": [],
+    "pending_reviews": ["Primary accounting reconstruction", "Independent review after primary financial records are acquired"],
+    "no_challenge_found": false
+  },
+  "outcome_evidence": {
+    "measured_outcomes": [],
+    "claimed_outcomes": [
+      "Private donors were announced as funding the ballroom structure.",
+      "A categorical zero-taxpayer-cost proposition is under examination."
+    ],
+    "projected_outcomes": [],
+    "contradicted_outcomes": [
+      "Current official scope evidence prevents treating private funding of one component as proof of zero public cost for every integrated project component."
+    ],
+    "no_measurable_effect_yet": true,
+    "harm_documented": [],
+    "benefit_documented": [],
+    "insufficient_evidence": true
+  },
+  "ledger_classification": {
+    "evidence_posture": "primary-announcement-and-project-scope-records-installed-final-accounting-required",
+    "influence_posture": "scope-substitution-risk-observed-funding-lineage-incomplete",
+    "authority_posture": "project-authority-partially-observed-financial-authority-incomplete",
+    "admissibility_status": "accepted-for-bounded-funding-and-scope-reconstruction-not-final-accounting-or-motive-finding",
+    "confidence": "medium",
+    "classification_notes": "The record supports separating private ballroom-component funding from the integrated project and broader program. Exact taxpayer share remains subject to primary transfer, obligation, contract, security-expenditure, and donor records."
+  },
+  "receipts": {
+    "sources": [
+      {
+        "source_id": "SRC-WH-2025-07-31-BALLROOM-ANNOUNCEMENT",
+        "title": "The White House Announces White House Ballroom Construction to Begin",
+        "url": "https://www.whitehouse.gov/briefings-statements/2025/07/the-white-house-announces-white-house-ballroom-construction-to-begin/",
+        "archive_url": "",
+        "access_date": "2026-08-22",
+        "publication_date": "2025-07-31",
+        "source_type": "press-release",
+        "institutional_proximity": "direct-origin",
+        "evidence_role": "claimed-justification-source",
+        "verification_status": "verified-primary",
+        "admissibility_use": "admissible-for-claim-text",
+        "confidence": "high",
+        "red_flags": ["archive-needed"],
+        "notes": "Establishes announced private ballroom funding language and separate Secret Service security language; not a final expenditure audit."
+      },
+      {
+        "source_id": "SRC-SCOTUS-26A203-2026-08-13-STAY-APPLICATION",
+        "title": "National Park Service, et al. v. National Trust for Historic Preservation — Application for Stay",
+        "url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260813211858520_August%20Ballroom%20Application%20-%20FINAL.pdf",
+        "archive_url": "",
+        "access_date": "2026-08-22",
+        "publication_date": "2026-08-13",
+        "source_type": "court-filing",
+        "institutional_proximity": "direct-origin",
+        "evidence_role": "factual-basis-source",
+        "verification_status": "verified-primary",
+        "admissibility_use": "admissible-for-administrative-record",
+        "confidence": "high",
+        "red_flags": ["archive-needed"],
+        "notes": "Admissible for the government's project characterization; not an independent accounting audit."
+      },
+      {
+        "source_id": "SRC-SCOTUS-26A203-2026-08-14-APPENDIX-FONSI",
+        "title": "National Park Service East Wing modernization and State Ballroom FONSI appendix",
+        "url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260814105130205_26A203%20Appendix.pdf",
+        "archive_url": "",
+        "access_date": "2026-08-22",
+        "publication_date": "2026-08-14",
+        "source_type": "primary-record",
+        "institutional_proximity": "official-implementer",
+        "evidence_role": "factual-basis-source",
+        "verification_status": "verified-primary",
+        "admissibility_use": "admissible-for-administrative-record",
+        "confidence": "high",
+        "red_flags": ["archive-needed"],
+        "notes": "Admissible for selected-action and modernization scope; does not provide complete expenditure accounting."
+      }
+    ],
+    "archive_sources": [],
+    "review_notes": [
+      "Related source posture packet: assessments/source-posture/2026-08-22-white-house-ballroom-taxpayer-cost-source-receipts.json",
+      "Primary-record queue: assessments/intake/2026-08-22-white-house-ballroom-taxpayer-cost-intake.json"
+    ],
+    "unresolved_questions": [
+      "What federal transfers, obligations, and expenditures are attributable to the integrated project?",
+      "What private contributions were pledged, received, and disbursed?",
+      "How do each of the public cost figures differ by project scope and date?"
+    ],
+    "last_reviewed": "2026-08-26"
+  }
+}
