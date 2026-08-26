@@ -28,6 +28,10 @@
       "required": ["essential_need_definition", "observed_sufficiency_or_access_measure", "population_scope", "methodology_regime"],
       "contextual": ["income", "delivered_cost", "arrears", "substitution_state", "transfer_offsets"]
     },
+    "SUBSTITUTION_OR_QUALITY_COMPRESSION": {
+      "required": ["baseline_unit_identity", "replacement_unit_identity", "price_state", "quantity_or_service_content", "quality_state", "time_basis", "population_scope"],
+      "contextual": ["domestic_import_origin", "nutrition_state", "durability_state", "coverage_state", "service_level", "essential_need_satisfaction"]
+    },
     "PRODUCER_COST_PRESSURE": {
       "required": ["intermediate_input_costs", "labor_or_compensation_cost", "output_or_sales_basis", "industry_scope", "time_basis"],
       "contextual": ["capacity_utilization", "inventories", "financing_costs", "tax_fee_regulatory_flow", "physical_output"]
