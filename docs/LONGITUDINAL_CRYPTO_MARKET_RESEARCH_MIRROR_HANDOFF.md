@@ -138,3 +138,48 @@ Next: expand historical/cross-family data, increase OOS evaluation depth, measur
 ## Archive note
 
 This handoff is sufficient to continue the bounded research lane without reconstructing the conversation. The lane remains active until data breadth and meaningful out-of-sample calibration/improvement evidence are complete; no strategy or execution activation is authorized.
+
+
+## Automated crypto system-shock research lane — INSTALLED / RUNTIME PROOF PENDING
+
+Canonical owner remains Issue #77; this is not a duplicate workstream.
+
+Installed surfaces:
+- `config/crypto-system-shock-research-lane.v1.json`
+- `task-state/ERL-CRYPTO-SHOCK-001.json`
+- `scripts/run_crypto_system_shock_research_lane.py`
+- `tests/test_crypto_system_shock_research_lane.py`
+- `.github/workflows/research-crypto-system-shock.yml`
+- linked forensic records: `research-data/2026-08-22_crypto_system_shock_transaction_reconstruction.v1.json` and `research-data/2026-08-22_crypto_system_shock_venue_dispersion.v1.json`
+
+Current implementation state:
+- repo-native automation is INSTALLED on an hourly schedule at minute 17 plus manual dispatch;
+- the workflow uses read-only repository permissions, checkout with `persist-credentials:false`, and clears `GITHUB_TOKEN` / `GH_TOKEN` for the collector process;
+- public-source acquisition requires no provider or wallet credentials;
+- configured spot venues are Coinbase, Kraken, Bitstamp, OKX, and Binance across BTC, ETH, XRP, XLM, SOL and ATOM where the venue exposes the pair;
+- each run attempts the historical Aug. 22 05:05-05:20 UTC forensic window and a rolling three-hour watch;
+- source failures are retained as missing evidence rather than imputed;
+- the collector emits research receipts and venue-window artifacts only; it has `research_authority=ERL`, `execution_authority=NONE`, `may_authorize_order=false`, and `causal_finding_authorized=false`;
+- rolling watch logic may flag a cross-asset shock candidate but cannot promote cause, manipulation, whale attribution, motive or trading authority.
+
+Automation purpose:
+1. keep the Aug. 22 venue-dispersion reconstruction reproducible from public exchange APIs where historical access remains available;
+2. collect recurring multi-venue spot evidence for future synchronized market shocks;
+3. preserve source-by-source success/failure and normalized price/volume evidence;
+4. provide machine-readable candidates for later derivatives, open-interest, liquidation and order-book enrichment;
+5. support longitudinal analogue/OOS research without bypassing the fail-closed trade-preference boundary.
+
+Current limitation:
+- workflow/runtime execution evidence for this newly installed scheduled lane has not yet been observed in the canonical handoff;
+- the current collector is spot-first. Derivatives liquidation/open-interest and order-book depth acquisition remain open evidence-family tasks;
+- GitHub Actions is the current scheduling substrate for this lane, not a claim that GitHub is a permanent sovereign runtime dependency.
+
+Task state:
+- ERL-CRYPTO-SHOCK-001-A public venue spot refresh — ACTIVE / IMPLEMENTED
+- ERL-CRYPTO-SHOCK-001-B Aug. 22 first-break reconstruction — ACTIVE
+- ERL-CRYPTO-SHOCK-001-C derivatives liquidation/open-interest — REVIEW_REQUIRED
+- ERL-CRYPTO-SHOCK-001-D order-book depth — REVIEW_REQUIRED
+- ERL-CRYPTO-SHOCK-001-E external-event control timeline — ACTIVE
+- ERL-CRYPTO-SHOCK-001-F independent review before causal promotion — BLOCKED on evidence completion
+
+No user action is required for the automated public-research lane.
