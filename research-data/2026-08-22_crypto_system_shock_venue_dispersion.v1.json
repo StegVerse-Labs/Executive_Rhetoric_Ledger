@@ -1,0 +1,76 @@
+{
+  "schema": "stegverse.erl.crypto_system_shock_venue_dispersion.v1",
+  "goal_id": "ERL-TRUMP-CRYPTO-MARKET-2026-08-21",
+  "status": "research_evidence_active",
+  "finding_authorized": false,
+  "event_date": "2026-08-22",
+  "event_center_utc": "2026-08-22T05:11:20Z",
+  "primary_window_utc": ["2026-08-22T05:05:00Z", "2026-08-22T05:20:00Z"],
+  "new_evidence": {
+    "xrp_cross_venue_dispersion": {
+      "primary_report": "https://cryptoslate.com/xrp-crashes-37-in-one-bitstamp-wick-while-the-wider-market-told-a-different-story/",
+      "bitstamp": {
+        "pair": "XRP/USD",
+        "one_minute_high_utc": "2026-08-22T05:03:00Z",
+        "high_usd": 1.69739,
+        "low_candle_utc": "2026-08-22T05:10:00Z",
+        "low_usd": 1.06689,
+        "same_candle_close_usd": 1.44837,
+        "reported_high_to_low_pct": -37.15
+      },
+      "other_venue_reference_ranges": {
+        "Kraken_XRPUSD_24h_low_usd": 1.3359,
+        "OKX_XRPUSDT_24h_low_usd": 1.3757
+      },
+      "secondary_four_venue_reconstruction": {
+        "source": "https://themarketcontext.com/article/xrp-flash-crash-was-37-on-bitstamp-and-19-on-binance/",
+        "window": "05:05-05:14 UTC",
+        "Bitstamp": {"low_usd": 1.06689, "xrp_volume": 4602966},
+        "Coinbase": {"low_usd": 1.34, "xrp_volume": 31642423},
+        "OKX": {"low_usd": 1.3757, "xrp_volume": 20504772},
+        "Binance": {"low_usd": 1.378, "xrp_volume": 51100140},
+        "interpretation": "The deepest XRP print was venue-specific. Bitstamp traded substantially less XRP than Binance over the same ten-minute interval and printed a much deeper wick. This supports a local thin-book/liquidity-vacuum amplifier layered on top of the broader market shock."
+      }
+    },
+    "market_wide_liquidations": {
+      "source": "https://www.gate.com/en-us/news/detail/crypto-market-sees-523m-liquidation-in-1-hour-longs-hit-hardest-on-august-17848413",
+      "published_utc": "2026-08-22T05:21:38Z",
+      "one_hour_total_usd": 523000000,
+      "one_hour_longs_usd": 448000000,
+      "one_hour_shorts_usd": 74760000,
+      "largest_single_liquidation": {
+        "venue": "Hyperliquid",
+        "pair": "BTC-USD",
+        "usd": 24960000
+      },
+      "interpretation": "A real long-led market-wide deleveraging wave was underway within minutes of the observed cliff. This materially strengthens liquidation amplification, but the rolling one-hour statistic cannot identify the first initiating trade."
+    },
+    "canada_tariff_external_event_control": {
+      "white_house_source": "https://www.whitehouse.gov/presidential-actions/2026/08/temporary-suspension-of-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united-states-with-respect-to-alcoholic-beverages-dairy-and-motor-vehicles/",
+      "cbp_source": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/4261d04",
+      "proclamation": "11056",
+      "tariff_effective_time_local": "2026-08-22T00:01:00-04:00",
+      "tariff_effective_time_utc": "2026-08-22T04:01:00Z",
+      "lag_to_0510_utc_minutes": 69,
+      "description": "The temporary suspension expired and additional 50% duties on specified Canadian goods took effect at 12:01 a.m. Eastern on Aug. 22.",
+      "disposition": "RETAIN_AS_EXTERNAL_EVENT_CONTROL_NOT_CAUSAL_FINDING",
+      "reason": "The policy transition is authoritative and economically material, but it preceded the 05:10-05:11 crypto cliff by about 69-70 minutes. Current evidence does not show a tightly timestamped 05:10 news release or cross-asset response proving this tariff event initiated the crypto shock."
+    }
+  },
+  "likelihood_updates": {
+    "H1_common_spot_sell": "still_possible_unresolved",
+    "H2_perpetual_liquidation_origin": "strengthened_as_amplification_mechanism_but_origin_not_proven",
+    "H3_orderbook_liquidity_withdrawal": "strengthened_for_XRP_Bitstamp_local_amplification",
+    "H4_external_macro_or_geopolitical_trigger": "Canada_tariff_event_added_as_control_but_not_time_tight_enough_for_causal_promotion",
+    "H5_exchange_or_stablecoin_incident": "no_verified_system_wide_incident",
+    "H6_xrp_specific_secondary_amplifier": "strengthened_and_refined_to_include_cross_venue_liquidity_dispersion"
+  },
+  "important_correction": "The previously discussed approximately 14% XRP app decline should not be interpreted as a uniform cross-venue XRP crash magnitude. New venue-level evidence shows the most extreme 37% wick was Bitstamp-specific, while major venues printed materially higher lows. XRP still experienced an outsized broad decline relative to BTC/ETH controls, but venue liquidity materially amplified the visible tail.",
+  "next_executable_boundary": [
+    "Acquire exchange-native 1-minute and preferably 1-second price/volume for all four XRP venues in the 05:05-05:14 UTC interval from first-party APIs/archives.",
+    "Acquire BTC/ETH/SOL equivalent first-break minute data to determine whether their worst minute was also 05:10 UTC and which instrument broke first.",
+    "Acquire perpetual liquidation and open-interest time series at minute resolution.",
+    "Acquire order-book snapshots/depth if available, especially Bitstamp XRP/USD immediately before 05:10 UTC.",
+    "Test whether the first common break predates the Bitstamp XRP wick; do not confuse the deepest local wick with the initiating market."
+  ]
+}
