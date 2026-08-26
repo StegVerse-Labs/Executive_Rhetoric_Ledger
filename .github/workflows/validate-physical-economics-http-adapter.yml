@@ -1,0 +1,51 @@
+name: Validate Physical Economics HTTP Adapter
+
+on:
+  pull_request:
+    paths:
+      - "schemas/physical-economics-report-snapshot-registry.schema.json"
+      - "schemas/physical-economics-report-request.schema.json"
+      - "schemas/physical-economics-evidence-snapshot.schema.json"
+      - "scripts/serve_physical_economics_public_report.py"
+      - "scripts/validate_physical_economics_http_adapter.py"
+      - "scripts/generate_physical_economics_public_report.py"
+      - "scripts/finalize_physical_economics_evidence_snapshot.py"
+      - "scripts/resolve_physical_economics_report_boundary.py"
+      - "scripts/render_physical_economics_report.py"
+      - "scripts/generate_physical_economics_report_verification_receipt.py"
+      - "tests/physical-economics-reporting/http-adapter.*.json"
+      - "docs/physical-economics/reporting/transport/**"
+      - ".github/workflows/validate-physical-economics-http-adapter.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "schemas/physical-economics-report-snapshot-registry.schema.json"
+      - "schemas/physical-economics-report-request.schema.json"
+      - "schemas/physical-economics-evidence-snapshot.schema.json"
+      - "scripts/serve_physical_economics_public_report.py"
+      - "scripts/validate_physical_economics_http_adapter.py"
+      - "scripts/generate_physical_economics_public_report.py"
+      - "scripts/finalize_physical_economics_evidence_snapshot.py"
+      - "scripts/resolve_physical_economics_report_boundary.py"
+      - "scripts/render_physical_economics_report.py"
+      - "scripts/generate_physical_economics_report_verification_receipt.py"
+      - "tests/physical-economics-reporting/http-adapter.*.json"
+      - "docs/physical-economics/reporting/transport/**"
+      - ".github/workflows/validate-physical-economics-http-adapter.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator dependencies
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Validate HTTP adapter
+        run: python scripts/validate_physical_economics_http_adapter.py
