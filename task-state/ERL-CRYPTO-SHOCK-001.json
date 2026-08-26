@@ -1,0 +1,52 @@
+{
+  "registry_version": "1.0",
+  "goal_id": "ERL-CRYPTO-SHOCK-001",
+  "canonical_issue": 77,
+  "canonical_handoff": "docs/LONGITUDINAL_CRYPTO_MARKET_RESEARCH_MIRROR_HANDOFF.md",
+  "linked_handoff": "docs/TRUMP_CRYPTO_MARKET_IMPACT_MIRROR_HANDOFF.md",
+  "state": "ACTIVE",
+  "execution_class": "MACHINE_SUPPORTED_PUBLIC_RESEARCH",
+  "owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#77",
+  "workflow": ".github/workflows/research-crypto-system-shock.yml",
+  "config": "config/crypto-system-shock-research-lane.v1.json",
+  "user_action_required": false,
+  "credential_requirement": "NONE_FOR_PUBLIC_MARKET_SOURCES",
+  "release_condition": "Automated runs preserve source-by-source success/failure, normalize admitted public market evidence, retain hashes and timestamps, and never promote an unresolved initiating cause without first-break evidence.",
+  "tasks": [
+    {
+      "task_id": "ERL-CRYPTO-SHOCK-001-A",
+      "title": "Refresh public venue spot evidence",
+      "state": "ACTIVE"
+    },
+    {
+      "task_id": "ERL-CRYPTO-SHOCK-001-B",
+      "title": "Reconstruct Aug 22 first-break ordering",
+      "state": "ACTIVE"
+    },
+    {
+      "task_id": "ERL-CRYPTO-SHOCK-001-C",
+      "title": "Add derivatives liquidation/open-interest evidence",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "task_id": "ERL-CRYPTO-SHOCK-001-D",
+      "title": "Add order-book depth evidence",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "task_id": "ERL-CRYPTO-SHOCK-001-E",
+      "title": "Maintain external-event control timeline",
+      "state": "ACTIVE"
+    },
+    {
+      "task_id": "ERL-CRYPTO-SHOCK-001-F",
+      "title": "Independent review before any causal promotion",
+      "state": "BLOCKED"
+    }
+  ],
+  "non_authority": {
+    "research_authority": "ERL",
+    "execution_authority": "NONE",
+    "may_authorize_order": false
+  }
+}
