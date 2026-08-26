@@ -104,4 +104,6 @@ Next executable boundary: reconcile PR `#79` with current `main`; resolve the sh
 
 Archive state: all U.S.-lane state unique to this session is durable in this handoff, Issue `#78`, PR `#79`, and their receipts. Continuation does not require this conversation.
 
-Trigger custody: `research-candidates/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` preserves the three user-supplied LinkedIn screenshots, hashes, session-derived research question, and the explicit limitation that the linked YouTube video was not reviewed or custodied.
+Trigger custody: `research-notes/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` preserves the three user-supplied LinkedIn screenshots, hashes, session-derived research question, and the explicit limitation that the linked YouTube video was not reviewed or custodied.
+
+Latest validation receipt: PR-head runs `33008364606` and `33008364850` failed because the marginal-dependency/substitution additions exceed the current measurement and gap-matrix schemas. This is implemented-but-not-validated work, not activation evidence. Run `33008364605` failed on the three pre-existing unregistered candidates owned by Issue `#80`; the screenshot trigger manifest was moved out of the candidate root so it does not create a fourth registration blocker.

@@ -88,4 +88,6 @@ Next executable boundary: reconcile PR `#79` with `main`, resolve shared definit
 
 Archive state: all comparison-overlay state unique to this session is durable in this handoff, Issue `#78`, PR `#79`, and their receipts. Continuation does not require this conversation.
 
-Trigger custody: `research-candidates/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` preserves the original rhetoric screenshots and the user's bounded comparison question. It is discovery-only and cannot serve as a national or comparative finding endpoint.
+Trigger custody: `research-notes/2026-08-25-canada-us-economic-trajectory-linkedin-trigger.md` preserves the original rhetoric screenshots and the user's bounded comparison question. It is discovery-only and cannot serve as a national or comparative finding endpoint.
+
+Latest validation receipt: PR-head runs `33008364606` and `33008364850` failed before the comparison overlay could be validated because the shared dictionary and Canada gap-matrix additions exceed their current schemas. No comparison has therefore been validated. Run `33008364605` failed on the three pre-existing unregistered candidates owned by Issue `#80`; the screenshot trigger manifest was moved out of the candidate root so it does not create a fourth registration blocker.
