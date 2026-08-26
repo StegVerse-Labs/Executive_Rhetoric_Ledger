@@ -122,7 +122,7 @@ def opaque_boundary(attribute_id: str) -> dict[str, Any]:
 
 
 def snapshot_to_boundary(attribute: dict[str, Any], required: bool) -> dict[str, Any]:
-    fields = {
+    return {
         "attribute_id": attribute["attribute_id"],
         "required_for_claim_class": required,
         "earliest_admissible_date": attribute["earliest_admissible_date"],
@@ -144,7 +144,6 @@ def snapshot_to_boundary(attribute: dict[str, Any], required: bool) -> dict[str,
         "uncertainty": copy.deepcopy(attribute.get("uncertainty")),
         "opaque_elements": copy.deepcopy(attribute.get("opaque_elements", [])),
     }
-    return fields
 
 
 def parse_date(value: str | None) -> date | None:
@@ -162,11 +161,18 @@ def date_min(values: list[str]) -> str | None:
 def classify_completeness(required_boundaries: list[dict[str, Any]]) -> str:
     if not required_boundaries:
         return "NOT_GENERATABLE_FAIL_CLOSED"
-    opaque = [b for b in required_boundaries if b["current_period_state"] in BLOCKING_STATES or b["missingness_posture"] in {"MISSING", "OPAQUE"}]
+    opaque = [
+        b for b in required_boundaries
+        if b["current_period_state"] in BLOCKING_STATES
+        or b["missingness_posture"] in {"MISSING", "OPAQUE"}
+    ]
     observed_count = sum(b["missingness_posture"] in {"OBSERVED", "PARTIAL"} for b in required_boundaries)
     if opaque:
         return "MATERIAL_ATTRIBUTES_OPAQUE" if observed_count else "NOT_GENERATABLE_FAIL_CLOSED"
-    if any(b["current_period_state"] in PARTIAL_STATES or b["missingness_posture"] == "PARTIAL" for b in required_boundaries):
+    if any(
+        b["current_period_state"] in PARTIAL_STATES or b["missingness_posture"] == "PARTIAL"
+        for b in required_boundaries
+    ):
         return "PARTIAL_WITH_DISCLOSED_GAPS"
     if any(b["comparability_with_prior_regime"] not in COMPARABLE_STATES for b in required_boundaries):
         return "PARTIAL_WITH_DISCLOSED_GAPS"
@@ -183,7 +189,9 @@ def build_boundary_statement(
 ) -> str:
     pieces = [f"Report completeness: {completeness}."]
     if earliest_common and latest_complete:
-        pieces.append(f"Common required-attribute comparable/complete window: {earliest_common} through {latest_complete}.")
+        pieces.append(
+            f"Common required-attribute comparable/complete window: {earliest_common} through {latest_complete}."
+        )
     else:
         pieces.append("No single common comparable and complete window is established across all required attributes.")
     if missing_required:
@@ -192,11 +200,15 @@ def build_boundary_statement(
         pieces.append("Required attributes with incomplete current-period evidence: " + ", ".join(partial_required) + ".")
     if methodology_breaks:
         pieces.append("Methodology/comparability boundaries remain visible for: " + ", ".join(methodology_breaks) + ".")
-    pieces.append("Longer attribute-specific history may be shown as context but does not extend the admissible conclusion window.")
+    pieces.append(
+        "Longer attribute-specific history may be shown as context but does not extend the admissible conclusion window."
+    )
     return " ".join(pieces)
 
 
-def resolve(request: dict[str, Any], snapshot: dict[str, Any], matrix: dict[str, Any]) -> tuple[dict[str, Any] | None, list[str]]:
+def resolve(
+    request: dict[str, Any], snapshot: dict[str, Any], matrix: dict[str, Any]
+) -> tuple[dict[str, Any] | None, list[str]]:
     required, contextual, errors = resolve_pertinence(request, matrix)
     if errors:
         return None, errors
@@ -223,7 +235,8 @@ def resolve(request: dict[str, Any], snapshot: dict[str, Any], matrix: dict[str,
     missing_required = [
         b["attribute_id"]
         for b in required_boundaries
-        if b["current_period_state"] in BLOCKING_STATES or b["missingness_posture"] in {"MISSING", "OPAQUE"}
+        if b["current_period_state"] in BLOCKING_STATES
+        or b["missingness_posture"] in {"MISSING", "OPAQUE"}
     ]
     partial_required = [
         b["attribute_id"]
@@ -244,20 +257,37 @@ def resolve(request: dict[str, Any], snapshot: dict[str, Any], matrix: dict[str,
         and b["current_period_state"] not in BLOCKING_STATES
     ]
     all_required_comparable = len(comparable_required) == len(required_boundaries)
-    earliest_values = [b["earliest_admissible_date"] for b in comparable_required if b["earliest_admissible_date"]]
+    earliest_values = [
+        b["earliest_admissible_date"] for b in comparable_required if b["earliest_admissible_date"]
+    ]
     complete_values = [b["latest_complete_date"] for b in comparable_required if b["latest_complete_date"]]
-    earliest_common = date_max(earliest_values) if all_required_comparable and len(earliest_values) == len(required_boundaries) else None
-    latest_complete = date_min(complete_values) if all_required_comparable and len(complete_values) == len(required_boundaries) else None
+    earliest_common = (
+        date_max(earliest_values)
+        if all_required_comparable and len(earliest_values) == len(required_boundaries)
+        else None
+    )
+    latest_complete = (
+        date_min(complete_values)
+        if all_required_comparable and len(complete_values) == len(required_boundaries)
+        else None
+    )
 
     report_as_of_date = request["requested_as_of_time"][:10]
     historical_depth: dict[str, int | None] = {}
     for boundary in boundaries:
         start = parse_date(boundary["earliest_admissible_date"])
-        historical_depth[boundary["attribute_id"]] = (date.fromisoformat(report_as_of_date) - start).days if start else None
+        historical_depth[boundary["attribute_id"]] = (
+            (date.fromisoformat(report_as_of_date) - start).days if start else None
+        )
 
     completeness = classify_completeness(required_boundaries)
     statement = build_boundary_statement(
-        completeness, earliest_common, latest_complete, missing_required, partial_required, methodology_breaks
+        completeness,
+        earliest_common,
+        latest_complete,
+        missing_required,
+        partial_required,
+        methodology_breaks,
     )
 
     request_hash = digest(request)
@@ -280,10 +310,12 @@ def resolve(request: dict[str, Any], snapshot: dict[str, Any], matrix: dict[str,
         "boundary_statement": statement,
         "receipts": {
             "report_request_hash": request_hash,
+            "evidence_snapshot_hash": snapshot["snapshot_hash"],
             "boundary_manifest_hash": "PENDING",
             "source_receipt_set": [item["source_receipt_id"] for item in snapshot["source_receipts"]],
             "renderer_version": None,
             "contract_version": CONTRACT_VERSION,
+            "pertinence_matrix_version": matrix["contract_version"],
         },
     }
     hashable = copy.deepcopy(manifest)
