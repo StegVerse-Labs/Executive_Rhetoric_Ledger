@@ -35,6 +35,10 @@ The user rejected India/Mexico parity rhetoric as a fear-inducing metric switch 
 
 The linked YouTube video's native URL, content, transcript, uploader provenance, and claims were not reviewed or custodied in this session. The screenshot establishes only the displayed title/domain and surrounding LinkedIn rhetoric. Any use of the video's contents requires separate acquisition, source receipt, transcript/reconstruction, and review.
 
+## External response status
+
+The user reported that the neutral response developed from this trigger was posted externally as four separate replies to fit the platform. This is `USER_REPORTED_EXTERNAL_ACTION`, not an independently verified publication receipt: no reply URL, exact posted text, timestamp, or screenshot of those four replies was supplied or custodied. No additional user action is required unless durable proof of the posted replies is later desired.
+
 ## Relationship to canonical implementation
 
 This trigger record explains why the independent national lanes and reviewed-findings-only comparison overlay exist. It does not populate an observation, establish an effect, close a gap, validate a lag, or authorize a public conclusion.
