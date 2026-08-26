@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Validate Physical Economics public-reporting contracts and boundary behavior."""
+"""Validate Physical Economics public-reporting contracts and runtime behavior."""
 
 from __future__ import annotations
 
 import importlib.util
 import json
-import sys
 from pathlib import Path
 from typing import Any
 
@@ -19,16 +18,18 @@ DELTA_SCHEMA = ROOT / "schemas" / "physical-economics-report-delta.schema.json"
 MATRIX_PATH = ROOT / "contracts" / "physical-economics-report-pertinence.matrix.v0.1.json"
 CASES_PATH = ROOT / "tests" / "physical-economics-reporting" / "boundary-resolver.cases.json"
 RESOLVER_PATH = ROOT / "scripts" / "resolve_physical_economics_report_boundary.py"
+DELTA_RUNTIME_PATH = ROOT / "scripts" / "generate_physical_economics_report_delta.py"
+UNCERTAINTY_PATH = ROOT / "scripts" / "physical_economics_uncertainty.py"
 
 
 def load(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_resolver_module():
-    spec = importlib.util.spec_from_file_location("physical_economics_boundary_resolver", RESOLVER_PATH)
+def load_module(path: Path, name: str):
+    spec = importlib.util.spec_from_file_location(name, path)
     if spec is None or spec.loader is None:
-        raise RuntimeError("unable to load boundary resolver")
+        raise RuntimeError(f"unable to load {path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
@@ -43,13 +44,13 @@ def validate_matrix_alignment(request_schema: dict[str, Any], matrix: dict[str, 
     errors: list[str] = []
     request_claims = set(request_schema["properties"]["claim_classes"]["items"]["enum"])
     matrix_claims = set(matrix["claim_classes"])
-    missing_in_matrix = sorted(request_claims - matrix_claims)
-    missing_in_schema = sorted(matrix_claims - request_claims)
-    if missing_in_matrix:
-        errors.append("claim classes allowed by request schema but absent from matrix: " + ", ".join(missing_in_matrix))
-    if missing_in_schema:
-        errors.append("claim classes defined by matrix but absent from request schema: " + ", ".join(missing_in_schema))
-
+    if request_claims != matrix_claims:
+        errors.append(
+            "claim-class mismatch: request-only="
+            + ",".join(sorted(request_claims - matrix_claims))
+            + " matrix-only="
+            + ",".join(sorted(matrix_claims - request_claims))
+        )
     for claim, mapping in matrix["claim_classes"].items():
         required = mapping.get("required", [])
         contextual = mapping.get("contextual", [])
@@ -68,36 +69,24 @@ def validate_matrix_alignment(request_schema: dict[str, Any], matrix: dict[str, 
 def validate_snapshot_semantics(snapshot: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     receipt_ids = {receipt["source_receipt_id"] for receipt in snapshot["source_receipts"]}
-    attribute_ids: set[str] = set()
+    seen: set[str] = set()
     for attribute in snapshot["attributes"]:
         attribute_id = attribute["attribute_id"]
-        if attribute_id in attribute_ids:
+        if attribute_id in seen:
             errors.append(f"{snapshot['evidence_snapshot_id']}: duplicate attribute {attribute_id}")
-        attribute_ids.add(attribute_id)
-        missing_receipts = sorted(set(attribute["source_receipt_ids"]) - receipt_ids)
-        if missing_receipts:
-            errors.append(
-                f"{snapshot['evidence_snapshot_id']}: {attribute_id} references absent receipts: "
-                + ", ".join(missing_receipts)
-            )
-        uncertainty = attribute.get("uncertainty")
-        if uncertainty:
-            dependence = uncertainty.get("dependence_posture")
-            propagation = uncertainty.get("propagation_authorized", False)
-            if dependence == "UNKNOWN_DEPENDENCE" and propagation:
-                errors.append(
-                    f"{snapshot['evidence_snapshot_id']}: {attribute_id} authorizes uncertainty propagation with unknown dependence"
-                )
-            if uncertainty.get("measure_type") == "STANDARD_ERROR" and uncertainty.get("standard_error") is None:
-                errors.append(f"{snapshot['evidence_snapshot_id']}: {attribute_id} standard-error posture lacks value")
-
+        seen.add(attribute_id)
+        missing = sorted(set(attribute["source_receipt_ids"]) - receipt_ids)
+        if missing:
+            errors.append(f"{snapshot['evidence_snapshot_id']}: {attribute_id} missing receipts {missing}")
+        uncertainty = attribute.get("uncertainty") or {}
+        if uncertainty.get("dependence_posture") == "UNKNOWN_DEPENDENCE" and uncertainty.get("propagation_authorized"):
+            errors.append(f"{snapshot['evidence_snapshot_id']}: {attribute_id} propagates unknown dependence")
+        if uncertainty.get("measure_type") == "STANDARD_ERROR" and uncertainty.get("standard_error") is None:
+            errors.append(f"{snapshot['evidence_snapshot_id']}: {attribute_id} lacks standard-error value")
     for conflict in snapshot.get("conflicts", []):
         missing = sorted(set(conflict["source_receipt_ids"]) - receipt_ids)
         if missing:
-            errors.append(
-                f"{snapshot['evidence_snapshot_id']}: conflict {conflict['conflict_id']} references absent receipts: "
-                + ", ".join(missing)
-            )
+            errors.append(f"{snapshot['evidence_snapshot_id']}: conflict {conflict['conflict_id']} missing receipts {missing}")
     return errors
 
 
@@ -106,86 +95,88 @@ def validate_case(case: dict[str, Any], resolver, schemas: dict[str, dict[str, A
     case_id = case["case_id"]
     request = case["request"]
     snapshot = case["snapshot"]
-    expectation = case["expect"]
-
-    errors.extend(schema_errors(request, schemas["request"], f"{case_id}: request schema"))
-    errors.extend(schema_errors(snapshot, schemas["snapshot"], f"{case_id}: snapshot schema"))
+    expect = case["expect"]
+    errors.extend(schema_errors(request, schemas["request"], f"{case_id}: request"))
+    errors.extend(schema_errors(snapshot, schemas["snapshot"], f"{case_id}: snapshot"))
     errors.extend(validate_snapshot_semantics(snapshot))
     if errors:
         return errors
 
     manifest, resolve_errors = resolver.resolve(request, snapshot, matrix)
-    expected_success = expectation["resolver_success"]
-    if expected_success and resolve_errors:
-        errors.append(f"{case_id}: expected success but resolver failed: {'; '.join(resolve_errors)}")
-        return errors
-    if not expected_success:
+    if expect["resolver_success"]:
+        if resolve_errors or manifest is None:
+            return [f"{case_id}: expected success, got {resolve_errors}"]
+        errors.extend(schema_errors(manifest, schemas["boundary"], f"{case_id}: boundary"))
+        if manifest["completeness_state"] != expect.get("completeness_state"):
+            errors.append(f"{case_id}: completeness mismatch")
+        bounds = manifest["report_boundaries"]
+        if bounds["earliest_common_comparable_date"] != expect.get("earliest_common_comparable_date"):
+            errors.append(f"{case_id}: earliest common boundary mismatch")
+        if bounds["latest_common_complete_date"] != expect.get("latest_common_complete_date"):
+            errors.append(f"{case_id}: latest common boundary mismatch")
+        unsupported = expect.get("unsupported_contains")
+        if unsupported and unsupported not in bounds["unsupported_requested_dimensions"]:
+            errors.append(f"{case_id}: expected unsupported attribute {unsupported}")
+        if manifest["receipts"]["evidence_snapshot_hash"] != snapshot["snapshot_hash"]:
+            errors.append(f"{case_id}: boundary receipt does not bind snapshot hash")
+        if manifest["receipts"]["pertinence_matrix_version"] != matrix["contract_version"]:
+            errors.append(f"{case_id}: boundary receipt does not bind pertinence version")
+        replay, replay_errors = resolver.resolve(request, snapshot, matrix)
+        if replay_errors or replay is None or replay["receipts"]["boundary_manifest_hash"] != manifest["receipts"]["boundary_manifest_hash"]:
+            errors.append(f"{case_id}: deterministic replay changed boundary hash")
+    else:
         if not resolve_errors:
-            errors.append(f"{case_id}: expected fail-closed resolver error but resolution succeeded")
-            return errors
-        needle = expectation.get("error_contains")
+            errors.append(f"{case_id}: expected fail-closed resolution")
+        needle = expect.get("error_contains")
         if needle and not any(needle in item for item in resolve_errors):
             errors.append(f"{case_id}: expected error containing {needle!r}; got {resolve_errors}")
-        return errors
-
-    if manifest is None:
-        errors.append(f"{case_id}: resolver returned no manifest")
-        return errors
-    errors.extend(schema_errors(manifest, schemas["boundary"], f"{case_id}: boundary schema"))
-    if errors:
-        return errors
-
-    if manifest["completeness_state"] != expectation.get("completeness_state"):
-        errors.append(
-            f"{case_id}: completeness expected {expectation.get('completeness_state')} got {manifest['completeness_state']}"
-        )
-    boundaries = manifest["report_boundaries"]
-    if boundaries["earliest_common_comparable_date"] != expectation.get("earliest_common_comparable_date"):
-        errors.append(
-            f"{case_id}: earliest common expected {expectation.get('earliest_common_comparable_date')} got {boundaries['earliest_common_comparable_date']}"
-        )
-    if boundaries["latest_common_complete_date"] != expectation.get("latest_common_complete_date"):
-        errors.append(
-            f"{case_id}: latest complete expected {expectation.get('latest_common_complete_date')} got {boundaries['latest_common_complete_date']}"
-        )
-    unsupported = expectation.get("unsupported_contains")
-    if unsupported and unsupported not in boundaries["unsupported_requested_dimensions"]:
-        errors.append(f"{case_id}: missing expected unsupported required attribute {unsupported}")
-
-    # Determinism check: same request + same snapshot must hash identically.
-    second, second_errors = resolver.resolve(request, snapshot, matrix)
-    if second_errors or second is None:
-        errors.append(f"{case_id}: deterministic replay failed")
-    elif second["receipts"]["boundary_manifest_hash"] != manifest["receipts"]["boundary_manifest_hash"]:
-        errors.append(f"{case_id}: deterministic replay changed manifest hash")
     return errors
 
 
-def validate_delta_schema(schema: dict[str, Any]) -> list[str]:
-    fixture = {
-        "report_delta_id": "DELTA-TEST",
-        "prior_report_id": "REPORT-A",
-        "current_report_id": "REPORT-B",
-        "prior_snapshot_id": "SNAP-A",
-        "current_snapshot_id": "SNAP-B",
-        "changes": [
-            {
-                "change_id": "CHANGE-1",
-                "change_class": "NEW_OBSERVATION",
-                "scope": "nominal_price",
-                "attribute_id": "nominal_price",
-                "prior_value_or_state": {"latest_observed_date": "2026-06-30"},
-                "current_value_or_state": {"latest_observed_date": "2026-07-31"},
-                "description": "July observation became available.",
-                "finding_impact": "BOUNDARY_CHANGED",
-                "source_receipt_ids": ["SRC-JULY"]
-            }
-        ],
-        "material_change_state": "MATERIAL_BOUNDARY_CHANGE",
-        "plain_language_summary": "The admissible report window advanced by one completed observation.",
-        "delta_hash": "testhash"
+def validate_uncertainty_runtime(uncertainty) -> list[str]:
+    errors: list[str] = []
+    independent = [
+        {"uncertainty": {"measure_type": "STANDARD_ERROR", "standard_error": 2.0, "dependence_posture": "KNOWN_INDEPENDENT"}},
+        {"uncertainty": {"measure_type": "STANDARD_ERROR", "standard_error": 3.0, "dependence_posture": "KNOWN_INDEPENDENT"}},
+    ]
+    result = uncertainty.propagate_linear_standard_error(independent, [1.0, 1.0])
+    if result.get("status") != "PROPAGATED" or abs(result.get("standard_error", 0) - (13 ** 0.5)) > 1e-12:
+        errors.append("uncertainty: independent propagation failed")
+    unknown = [dict(independent[0]), dict(independent[1])]
+    unknown[1] = {"uncertainty": {"measure_type": "STANDARD_ERROR", "standard_error": 3.0, "dependence_posture": "UNKNOWN_DEPENDENCE"}}
+    result = uncertainty.propagate_linear_standard_error(unknown, [1.0, 1.0])
+    if result.get("status") != "UNRESOLVED":
+        errors.append("uncertainty: unknown dependence did not fail closed")
+    bounded = uncertainty.combine_interval_bounds(
+        [{"uncertainty": {"lower_bound": 1, "upper_bound": 2}}, {"uncertainty": {"lower_bound": 3, "upper_bound": 5}}],
+        [1.0, -1.0],
+    )
+    if bounded.get("status") != "BOUNDED" or bounded.get("lower_bound") != -4.0 or bounded.get("upper_bound") != -1.0:
+        errors.append("uncertainty: interval arithmetic failed")
+    return errors
+
+
+def validate_delta_runtime(delta_runtime, delta_schema: dict[str, Any]) -> list[str]:
+    prior_snapshot = {
+        "evidence_snapshot_id": "SNAP-A",
+        "attributes": [{"attribute_id": "nominal_price", "latest_observed_date": "2026-06-30", "latest_complete_date": "2026-06-30", "methodology_regime_id": "V1", "revision_vintage": "R1", "missingness_posture": "OBSERVED", "uncertainty": None, "source_receipt_ids": ["SRC-A"]}],
+        "source_receipts": [{"source_receipt_id": "SRC-A", "revision_status": "CURRENT_VINTAGE"}],
+        "conflicts": [],
     }
-    return schema_errors(fixture, schema, "delta schema smoke test")
+    current_snapshot = {
+        "evidence_snapshot_id": "SNAP-B",
+        "attributes": [{"attribute_id": "nominal_price", "latest_observed_date": "2026-07-31", "latest_complete_date": "2026-07-31", "methodology_regime_id": "V1", "revision_vintage": "R2", "missingness_posture": "OBSERVED", "uncertainty": None, "source_receipt_ids": ["SRC-B"]}],
+        "source_receipts": [{"source_receipt_id": "SRC-B", "revision_status": "CURRENT_VINTAGE"}],
+        "conflicts": [],
+    }
+    prior_manifest = {"receipts": {"pertinence_matrix_version": "0.1", "contract_version": "v1", "renderer_version": None}}
+    current_manifest = {"receipts": {"pertinence_matrix_version": "0.1", "contract_version": "v1", "renderer_version": None}}
+    delta = delta_runtime.generate("REPORT-A", "REPORT-B", prior_snapshot, current_snapshot, prior_manifest, current_manifest)
+    errors = schema_errors(delta, delta_schema, "delta runtime")
+    classes = {item["change_class"] for item in delta["changes"]}
+    if "NEW_OBSERVATION" not in classes or "PRIOR_PERIOD_COMPLETED" not in classes or "ROUTINE_REVISION" not in classes:
+        errors.append("delta runtime: expected observation/completion/revision changes not emitted")
+    return errors
 
 
 def main() -> int:
@@ -195,14 +186,17 @@ def main() -> int:
     delta_schema = load(DELTA_SCHEMA)
     matrix = load(MATRIX_PATH)
     cases = load(CASES_PATH)["cases"]
-    resolver = load_resolver_module()
+    resolver = load_module(RESOLVER_PATH, "physical_economics_boundary_resolver")
+    delta_runtime = load_module(DELTA_RUNTIME_PATH, "physical_economics_report_delta")
+    uncertainty = load_module(UNCERTAINTY_PATH, "physical_economics_uncertainty")
 
     failures: list[str] = []
     failures.extend(validate_matrix_alignment(request_schema, matrix))
-    failures.extend(validate_delta_schema(delta_schema))
     schemas = {"request": request_schema, "snapshot": snapshot_schema, "boundary": boundary_schema}
     for case in cases:
         failures.extend(validate_case(case, resolver, schemas, matrix))
+    failures.extend(validate_uncertainty_runtime(uncertainty))
+    failures.extend(validate_delta_runtime(delta_runtime, delta_schema))
 
     if failures:
         for failure in failures:
@@ -212,7 +206,8 @@ def main() -> int:
     print(f"PASS claim-class alignment ({len(matrix['claim_classes'])} classes)")
     print(f"PASS boundary resolver fixtures ({len(cases)} cases)")
     print("PASS evidence snapshot semantics")
-    print("PASS report delta schema smoke test")
+    print("PASS uncertainty fail-closed runtime")
+    print("PASS report delta runtime")
     return 0
 
 
