@@ -4,51 +4,78 @@
 Canonical continuation source for the public, attribute-bounded report-generation layer of the ERL Physical Economics lane.
 
 Parent lane authority: `docs/physical-economics/PHYSICAL_ECONOMICS_MIRROR_HANDOFF.md`.
-Canonical machine surfaces:
-- `contracts/physical-economics-report-generation.contract.json`
-- `contracts/physical-economics-report-pertinence.matrix.v0.1.json`
-- `schemas/physical-economics-report-request.schema.json`
-- `schemas/physical-economics-report-boundary-manifest.schema.json`
-- `assessments/physical-economics/reporting/uncertainty-vintage-revision-research-2026.v0.1.json`
 
 ## Goal
 Allow a public user to press `GENERATE_REPORT` and receive a reproducible Physical Economics report whose historical, temporal, geographic, population, unit, completeness, uncertainty, and evidentiary boundaries are derived from attributes pertinent to the requested claim at request time.
 
-A report must never manufacture a uniform historical window merely because the UI prefers one.
+The report boundary is an output of evidence, not a cosmetic date selector.
+
+## Canonical machine surfaces
+- `contracts/physical-economics-report-generation.contract.json`
+- `contracts/physical-economics-report-pertinence.matrix.v0.1.json`
+- `schemas/physical-economics-report-request.schema.json`
+- `schemas/physical-economics-evidence-snapshot.schema.json`
+- `schemas/physical-economics-report-boundary-manifest.schema.json`
+- `schemas/physical-economics-report-delta.schema.json`
+- `schemas/physical-economics-report-verification-receipt.schema.json`
+- `scripts/finalize_physical_economics_evidence_snapshot.py`
+- `scripts/resolve_physical_economics_report_boundary.py`
+- `scripts/physical_economics_uncertainty.py`
+- `scripts/physical_economics_source_conflicts.py`
+- `scripts/generate_physical_economics_report_delta.py`
+- `scripts/generate_physical_economics_report_verification_receipt.py`
+- `scripts/validate_physical_economics_reporting.py`
+- `scripts/validate_physical_economics_reporting_integrity.py`
+- `tests/physical-economics-reporting/boundary-resolver.cases.json`
+- `.github/workflows/validate-physical-economics-reporting.yml`
+- `assessments/physical-economics/reporting/uncertainty-vintage-revision-research-2026.v0.1.json`
 
 ## Governing boundary rule
-For every required attribute, resolve:
+For every required attribute, preserve and resolve:
 - earliest admissible observation;
 - latest observed date;
 - latest complete date;
 - current-period completeness state;
 - release/observation lag;
-- methodology regime;
-- cross-regime comparability;
+- methodology regime and cross-regime comparability;
 - revision vintage;
 - geography/population/unit scope;
 - source authority and provenance posture;
-- uncertainty where supplied by the source;
+- source-native uncertainty and quality flags;
 - missingness/opacity state.
 
-The report boundary is derived from those states. Longer historical context may be shown separately, but conclusions requiring a shorter-history attribute remain bounded to that shorter period.
+Longer attribute-specific history may remain visible as context, but it cannot extend conclusions beyond the shortest required admissible history.
 
-## Deterministic attribute pertinence
+## Deterministic pertinence
 Attribute selection is not free-form model discretion.
 
-`contracts/physical-economics-report-pertinence.matrix.v0.1.json` now defines a versioned claim-class -> required/contextual attribute mapping for price change, physical purchasing power, essential affordability, unmet need, producer cost pressure, producer margin, cost-margin transmission, distributional/regional burden, household resilience, arrears, capacity/inventory constraints, tax/fee flow, transfer offsets, and the full economic-condition state vector.
+`physical-economics-report-pertinence.matrix.v0.1.json` is the versioned claim-class -> required/contextual attribute protocol. Public request claim-class vocabulary has been normalized to the matrix. Required evidence cannot be excluded by the user request or silently replaced by contextual evidence. Composed claims inherit the union of required evidence unless a narrower protocol is independently validated.
 
-Required attributes determine admissibility. Contextual attributes may inform interpretation but cannot silently replace a missing required attribute. Claim composition inherits the union of required evidence unless a narrower protocol is independently validated.
+Canonical claim classes currently include price change, physical purchasing power, essential affordability, unmet essential need, substitution/quality compression, producer cost pressure, producer margin state, cost-margin transmission, distributional burden, regional burden, household resilience, arrears/deferred obligations, capacity/inventory constraint, tax/fee/regulatory flow, transfer-offset effect, and the full economic-condition state vector.
 
-The matrix is active research architecture, not yet independently validated for public release.
+## Immutable evidence snapshots
+`physical-economics-evidence-snapshot.schema.json` preserves per-attribute coverage, methodology, vintage, uncertainty, source receipts, and unresolved conflicts.
 
-## Historical-depth rule
-Historical depth is attribute-specific.
+`finalize_physical_economics_evidence_snapshot.py` defines canonical SHA-256 snapshot finalization and self-verification. Hashing is performed with the snapshot hash field blanked, then persisted as `sha256:<digest>`. Tampering must therefore change verification state rather than silently mutating a prior report basis.
 
-Example: a price series may reach back decades while package-level mass exists for three years and direct household-burden evidence for a shorter survey regime. The report may show all three, but physical purchasing-power conclusions cannot be projected backward beyond the physical-unit evidence without a declared reconstruction method.
+## Boundary resolver
+`resolve_physical_economics_report_boundary.py` is implemented.
 
-## Current-period rule
-Current observations may be incomplete when the button is pressed. Allowed states:
+It:
+1. validates request/snapshot structures;
+2. resolves required/contextual attributes only from the versioned pertinence matrix;
+3. fails closed when a request attempts to exclude required evidence;
+4. materializes absent required attributes as explicit opaque boundaries;
+5. computes per-attribute historical depth;
+6. emits a common comparable/complete window only when every required attribute supports one;
+7. preserves partial periods and methodology breaks;
+8. carries uncertainty posture without manufacturing precision;
+9. emits deterministic hashes and receipts binding the request, evidence snapshot, boundary manifest, source receipt set, contract version, and pertinence-matrix version.
+
+Current resolver fixtures include a complete price report, a physical-purchasing-power report missing required physical-content evidence, and a required-attribute exclusion fail-closed case.
+
+## Current-period and methodology rules
+Allowed current-period states remain:
 - `COMPLETE`
 - `PARTIAL_CURRENT_PERIOD`
 - `PENDING_RELEASE`
@@ -57,26 +84,12 @@ Current observations may be incomplete when the button is pressed. Allowed state
 - `UNAVAILABLE`
 - `OPAQUE`
 
-Partial periods cannot be silently annualized or treated as equivalent to completed periods.
+Partial periods cannot be silently annualized. Survey design, classification, geography, population, unit, weighting, seasonal-adjustment, rebasing, or other source-method changes create explicit methodology regimes. Cross-regime trend claims require a validated bridge.
 
-## Methodology/comparability rule
-Survey design, classification, geography, population, unit, weighting, seasonal-adjustment, rebasing, or source-method changes create explicit methodology regimes.
+## Vintage/revision integrity
+Release-vintage and current-vintage evidence remain distinct. A retrospective report cannot silently replace what was knowable at the historical time with a later revision.
 
-Cross-regime trend claims require an explicit bridge. Without a bridge, adjacent regimes may be displayed but are `NOT_COMPARABLE` as a continuous series.
-
-Research now directly confirms:
-- Census HTOPS used a longitudinal design during 2025 and moved to a cross-sectional design beginning March 2026;
-- BLS routinely recalculates CPI seasonal factors and can revise the prior five years of seasonally adjusted indexes;
-- BEA routinely revises estimates as more complete source data become available.
-
-## Vintage/revision rule
-Current-vintage and release-vintage evidence are distinct.
-
-Retrospective forecast, decision, and accountability reports must preserve what was knowable at the historical time. Later revisions may be shown but cannot silently overwrite historical epistemic state.
-
-Research evidence is preserved in `uncertainty-vintage-revision-research-2026.v0.1.json`.
-
-Required revision/delta classes include:
+Report delta classes include:
 - `NEW_OBSERVATION`
 - `PRIOR_PERIOD_COMPLETED`
 - `ROUTINE_REVISION`
@@ -86,108 +99,133 @@ Required revision/delta classes include:
 - `CLASSIFICATION_CHANGE`
 - `OPAQUE_ATTRIBUTE_RESOLVED`
 - `SOURCE_WITHDRAWN_OR_REPLACED`
+- `REQUIRED_ATTRIBUTE_PROTOCOL_CHANGE`
 - `RENDERER_OR_CONTRACT_CHANGE`
+- `SOURCE_CONFLICT_RESOLVED`
+- `UNCERTAINTY_POSTURE_CHANGED`
 
-## Statistical uncertainty rule
-Source-provided standard errors, confidence intervals, sampling error, suppression flags, and quality measures must remain attached to the attribute state through boundary resolution and rendering.
+`generate_physical_economics_report_delta.py` now emits machine-readable report-version change receipts across these states.
 
-Census directly publishes separate standard-error tables and source/accuracy/data-quality materials for March 2026 HTOPS. These are now treated as required uncertainty evidence when an HTOPS estimate enters a report.
+## Statistical uncertainty
+Source-provided standard errors, confidence intervals, sampling error, suppression flags, and quality measures remain attached through resolution and rendering.
 
-Unknown covariance/dependence structure is not permission to fabricate a composite standard error. Component uncertainty must remain visible and aggregate uncertainty remains unresolved/bounded until a valid propagation model exists.
+`physical_economics_uncertainty.py` implements deliberately narrow fail-closed propagation:
+- linear standard-error propagation is allowed for explicitly declared independent components;
+- an explicit covariance matrix may authorize dependent propagation;
+- unknown dependence/covariance returns `UNRESOLVED` rather than a fabricated aggregate standard error;
+- deterministic interval arithmetic may produce bounds but is explicitly non-probabilistic;
+- rendered precision cannot exceed source-supported precision.
 
-Rendered precision may not exceed source-supported precision.
+## Source conflicts
+`physical_economics_source_conflicts.py` is implemented conservatively.
 
-## Source conflict / disappearance rule
-The runtime must freeze an evidence/vintage snapshot before generation. A later source correction, disappearance, replacement, or contradictory official release creates a new evidence snapshot rather than silently mutating an already generated report.
+No conflicting values are reconciled by guess. Automatic resolution is limited to explicit correction/replacement chains; declared scope/vintage distinctions may be preserved. Otherwise the conflict remains `UNRESOLVED`.
 
-Source precedence must preserve direct authoritative evidence, release vintage, corrections, and unresolved conflicts; conflicting official values may not be reconciled by guess.
+## Portable verification
+`physical-economics-report-verification-receipt.schema.json` and `generate_physical_economics_report_verification_receipt.py` are implemented.
+
+A portable report receipt binds:
+- report content hash;
+- report request hash;
+- evidence snapshot ID/hash;
+- boundary manifest ID/hash;
+- pertinence-matrix version;
+- report contract version;
+- renderer version;
+- source receipt IDs.
+
+Hash/protocol/source-receipt mismatches fail closed rather than producing a `VERIFIABLE` state.
+
+## Validation
+`validate_physical_economics_reporting.py` validates claim-class alignment, pertinence semantics, evidence references, resolver fixtures, deterministic replay, uncertainty runtime, and report-delta runtime.
+
+`validate_physical_economics_reporting_integrity.py` validates snapshot self-verification/tamper detection, conservative source-conflict handling, and portable verification receipts.
+
+`.github/workflows/validate-physical-economics-reporting.yml` runs both validators and is wired to the reporting contracts, schemas, runtimes, fixtures, evidence, and handoff.
+
+**Hosted validation is not yet established.** Exact-head queries on `217b0a5afbbb7df43465cb636d689031ff94a5a4` returned no workflow runs and no combined statuses. Presence of the workflow therefore does not equal CI activation/pass.
+
+PR #75 remains open, draft, unmerged, and currently reports `mergeable: false`; exact PR head at the last query was `217b0a5afbbb7df43465cb636d689031ff94a5a4` before this handoff update.
 
 ## Public button semantics
-`GENERATE_REPORT` must:
-1. freeze request attributes and requested-as-of time;
-2. resolve claim class -> required attributes using the versioned pertinence matrix;
-3. freeze an evidence/vintage snapshot;
-4. derive per-attribute boundaries;
-5. derive common-comparable/common-complete boundaries where they actually exist;
-6. retain asymmetric historical coverage explicitly;
-7. preserve source uncertainty and methodology regimes;
-8. classify findings as observed, reconstructed, comparator-only, proxy, partial, unresolved, or not-comparable;
-9. render a plain-language boundary statement before substantive conclusions;
-10. expose opaque elements and prospective evidence gates;
-11. emit deterministic reproduction receipts.
+A public `GENERATE_REPORT` action must execute the following chain:
+1. freeze question/scope/requested-as-of time;
+2. map claim class -> required attributes deterministically;
+3. acquire/finalize an immutable evidence snapshot;
+4. resolve report boundaries;
+5. preserve asymmetric historical coverage;
+6. preserve methodology/vintage/uncertainty/source-conflict state;
+7. classify findings as observed, reconstructed, comparator-only, proxy, partial, unresolved, or not-comparable;
+8. render the boundary/completeness statement before substantive conclusions;
+9. expose opaque elements and prospective lane-native evidence gates;
+10. emit source, boundary, report-delta, and portable verification receipts.
 
 ## Required public report sections
-- question and generated-as-of timestamp
-- scope attributes and claim classes
-- boundary statement
-- data coverage matrix
-- methodology/comparability regimes
-- uncertainty/quality surface
-- current-period completeness
-- Physical Economics state vector
-- distribution/regional surfaces
-- producer cost/margin surface
-- household burden/unmet-need surface
-- tax/fee/transfer flows
-- observed findings
-- reconstructed findings
-- unresolved/opaque elements
-- prospective evidence gates
-- source/vintage receipts
-- report-version change summary when prior report exists
-
-## Determinism and report evolution
-Identical request attributes against the same evidence/vintage snapshot must produce the same boundary manifest and materially equivalent findings.
-
-Required receipts include request hash, evidence snapshot ID, boundary manifest hash, source receipt set, renderer version, contract version, and pertinence-matrix version.
-
-When a later report differs, the system must identify whether the change came from new evidence, period completion, revision/correction, methodology change, opacity resolution, protocol change, or renderer/contract change.
+- question and generated-as-of time;
+- claim classes and scope;
+- plain-language boundary statement;
+- data coverage matrix;
+- methodology/comparability regimes;
+- uncertainty/quality surface;
+- current-period completeness;
+- Physical Economics state vector;
+- distribution/regional surfaces;
+- producer cost/margin surface;
+- household burden/unmet-need surface;
+- tax/fee/transfer flows;
+- observed and reconstructed findings separated;
+- unresolved/opaque elements;
+- prospective evidence gates;
+- source/vintage receipts;
+- report-version change summary when a prior report exists;
+- portable verification receipt.
 
 ## Fail-closed conditions
 Fail closed if:
 - required opaque attributes are hidden;
+- required evidence is excluded or replaced by context;
 - historical coverage exceeds required-attribute support;
 - partial periods are treated as complete;
 - methodology breaks are crossed without a bridge;
-- later revisions silently rewrite release-vintage state;
+- revisions silently rewrite release-vintage state;
 - proxies are rendered as direct measures;
 - missing values become zero/neutral;
-- aggregate results erase materially supported distributional/regional divergence;
-- source uncertainty is dropped where material;
+- aggregate results erase supported distributional/regional divergence;
+- source uncertainty is dropped;
 - aggregate precision is fabricated from unknown dependence/covariance;
-- attribute pertinence is changed ad hoc without a versioned protocol;
-- contextual evidence is used to promote a claim missing required evidence.
+- source conflicts are reconciled without an evidenced basis;
+- the snapshot, boundary, report, or protocol hashes do not reproduce.
 
-## Remaining runtime/research work
-1. validate and extend the pertinence matrix with positive/negative fixtures and independent review;
-2. implement the boundary resolver;
-3. implement frozen evidence/vintage snapshots;
-4. implement uncertainty propagation for supported dependence structures and fail-closed bounded uncertainty otherwise;
-5. implement source-conflict/correction handling;
-6. implement report-version delta receipts;
-7. create semantic validators and negative fixtures;
-8. build the public UI action and renderer;
-9. generate portable verification receipts;
-10. independently review boundary-selection and uncertainty semantics before public activation.
+## Remaining work
+1. build the public report renderer/output contract and deterministic report document model;
+2. build the public UI/API action that executes the request -> snapshot -> boundary -> report -> verification chain;
+3. add broader positive/negative fixtures across composed claim classes, methodology breaks, source corrections, and regional/distributional divergence;
+4. integrate real Physical Economics data snapshots rather than only synthetic resolver fixtures;
+5. obtain exact-head hosted CI execution and consume any failures;
+6. independently review pertinence, boundary, uncertainty, conflict, and verification semantics;
+7. only after validation/review consider public activation or release.
 
 ## Current posture
-- reporting layer: `FORMAL_RESEARCH_CONTRACT`
+- reporting layer: `FORMAL_IMPLEMENTATION_ACTIVE_NOT_PUBLIC`
 - machine contract: complete v0.1
-- reporting handoff: complete
-- report-request schema: complete v0.1
-- boundary-manifest schema: complete v0.1
-- deterministic pertinence matrix: complete v0.1 at research-contract level; validation pending
-- uncertainty/vintage/revision research: installed
-- boundary resolver: pending
-- evidence/vintage snapshot runtime: pending
-- uncertainty propagation runtime: pending
-- report delta receipts: pending
-- public UI: not activated
-- portable verification: pending
+- request schema: complete v0.1
+- pertinence matrix: complete v0.1 at research-contract level; independent validation pending
+- evidence snapshot schema: complete v0.1
+- immutable snapshot hash runtime: implemented
+- boundary manifest schema: complete v0.1
+- boundary resolver: implemented
+- uncertainty runtime: implemented, deliberately bounded
+- source-conflict runtime: implemented, fail closed
+- report delta schema/runtime: implemented
+- portable verification schema/runtime: implemented
+- semantic validators: implemented for current bounded cases
+- hosted workflow: configured but no exact-head run observed
+- real-data report execution: pending
+- public renderer/UI: pending
 - independent review: pending
-- release: not authorized
+- public activation/release: not authorized
 
-Public reporting bounded implementation estimate: `50%`.
+Public reporting bounded implementation estimate: `72%`.
 
 ## Archive posture
-The public-report architecture now includes deterministic claim-to-attribute pertinence and grounded uncertainty/revision semantics. Remaining work is runtime boundary resolution, immutable evidence/vintage snapshotting, validated uncertainty propagation, source-conflict handling, report deltas, public rendering, portable verification, and independent review.
+The report-generation sub-lane is no longer only architectural research: the deterministic boundary, snapshot, uncertainty, conflict, delta, validation, and portable-verification runtimes are implemented. The remaining critical gap is converting those machine states into a real public report renderer/UI backed by real snapshots and hosted validation, followed by independent review. No public activation or release is claimed.
