@@ -92,9 +92,9 @@ Known missing durable modules and destinations:
 Live repository state at consolidation:
 
 - Issue `#78`: open canonical coordination owner;
-- PR `#79`: open draft, head `35d2807077a5106edf52ee1a21f7241abaf521a9`, currently reported mergeable by GitHub but materially diverged from `main`;
+- PR `#79`: open draft; latest research-implementation head before consolidation `35d2807077a5106edf52ee1a21f7241abaf521a9`; consolidation/evidence custody then advanced through `66585b1b3fa8806ac8fc7dc5a09400a5cad822e6` and the commit containing this handoff;
 - session automation commit `5f0f0cc14a4fde6f1cfaeb4838287ce9b96b3543`: dedicated run `32900604098` passed;
-- current-head dedicated run `32984047962`: queued when inspected and therefore not yet validation evidence;
+- research-implementation-head dedicated run `32984047962`: queued when inspected and therefore not yet validation evidence;
 - live `main` head: `9001265b6c690c077d3da70edd9a9992d5dfaf25`;
 - branch/main relation: diverged, 20 commits ahead and 20 behind from merge base `2ca582ffe9297ddd452a54f90a96718660d5a033`.
 
