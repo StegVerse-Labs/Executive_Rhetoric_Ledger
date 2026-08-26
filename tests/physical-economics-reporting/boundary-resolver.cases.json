@@ -1,0 +1,187 @@
+{
+  "cases": [
+    {
+      "case_id": "price-change-complete",
+      "request": {
+        "report_request_id": "REQ-PRICE-001",
+        "question": "How did the effective nominal price change?",
+        "requested_as_of_time": "2026-08-26T00:00:00-05:00",
+        "scope": {
+          "subject": "test basket",
+          "economic_domain": "food",
+          "geography": "US",
+          "population_scope": "all consumer units",
+          "essential_or_discretionary_class": "ESSENTIAL",
+          "unit_definition": "standardized unit",
+          "requested_start_date": "2024-01-01",
+          "requested_end_date": "2026-07-31"
+        },
+        "claim_classes": ["PRICE_CHANGE"],
+        "pertinence_policy": {
+          "mode": "DETERMINISTIC_CLAIM_CLASS_MAPPING",
+          "required_attribute_sets_version": "0.1",
+          "allow_optional_context_attributes": true
+        },
+        "vintage_policy": "CURRENT_VINTAGE"
+      },
+      "snapshot": {
+        "evidence_snapshot_id": "SNAP-PRICE-001",
+        "created_at": "2026-08-26T00:01:00-05:00",
+        "report_request_id": "REQ-PRICE-001",
+        "requested_as_of_time": "2026-08-26T00:00:00-05:00",
+        "pertinence_matrix_version": "0.1",
+        "attributes": [
+          {
+            "attribute_id": "nominal_price",
+            "claim_role": "REQUIRED",
+            "source_receipt_ids": ["SRC-PRICE"],
+            "earliest_admissible_date": "2020-01-01",
+            "latest_observed_date": "2026-07-31",
+            "latest_complete_date": "2026-07-31",
+            "current_period_state": "COMPLETE",
+            "release_or_observation_lag_days": 12,
+            "methodology_regime_id": "PRICE-V1",
+            "comparability_with_prior_regime": "NO_PRIOR_REGIME",
+            "revision_vintage": "2026-08-12",
+            "source_release_date": "2026-08-12",
+            "observation_reference_period": "2026-07",
+            "geography_scope": "US",
+            "population_scope": "all consumer units",
+            "unit_scope": "standardized unit",
+            "source_authority": "OFFICIAL_TEST_SOURCE",
+            "provenance_posture": "DIRECT_OFFICIAL",
+            "missingness_posture": "OBSERVED",
+            "uncertainty": {"measure_type": "NONE", "dependence_posture": "NOT_APPLICABLE", "propagation_authorized": false}
+          },
+          {
+            "attribute_id": "unit_identity",
+            "claim_role": "REQUIRED",
+            "source_receipt_ids": ["SRC-UNIT"],
+            "earliest_admissible_date": "2024-01-01",
+            "latest_observed_date": "2026-07-31",
+            "latest_complete_date": "2026-07-31",
+            "current_period_state": "COMPLETE",
+            "methodology_regime_id": "UNIT-V1",
+            "comparability_with_prior_regime": "NO_PRIOR_REGIME",
+            "revision_vintage": "2026-08-12",
+            "geography_scope": "US",
+            "population_scope": "all consumer units",
+            "unit_scope": "standardized unit",
+            "source_authority": "OFFICIAL_TEST_SOURCE",
+            "provenance_posture": "DIRECT_OFFICIAL",
+            "missingness_posture": "OBSERVED"
+          },
+          {
+            "attribute_id": "time_basis",
+            "claim_role": "REQUIRED",
+            "source_receipt_ids": ["SRC-TIME"],
+            "earliest_admissible_date": "2024-01-01",
+            "latest_observed_date": "2026-07-31",
+            "latest_complete_date": "2026-07-31",
+            "current_period_state": "COMPLETE",
+            "methodology_regime_id": "MONTHLY-V1",
+            "comparability_with_prior_regime": "NO_PRIOR_REGIME",
+            "revision_vintage": "2026-08-12",
+            "geography_scope": "US",
+            "population_scope": "all consumer units",
+            "unit_scope": "month",
+            "source_authority": "OFFICIAL_TEST_SOURCE",
+            "provenance_posture": "DIRECT_OFFICIAL",
+            "missingness_posture": "OBSERVED"
+          },
+          {
+            "attribute_id": "geography_scope",
+            "claim_role": "REQUIRED",
+            "source_receipt_ids": ["SRC-GEO"],
+            "earliest_admissible_date": "2024-01-01",
+            "latest_observed_date": "2026-07-31",
+            "latest_complete_date": "2026-07-31",
+            "current_period_state": "COMPLETE",
+            "methodology_regime_id": "US-V1",
+            "comparability_with_prior_regime": "NO_PRIOR_REGIME",
+            "revision_vintage": "2026-08-12",
+            "geography_scope": "US",
+            "population_scope": "all consumer units",
+            "unit_scope": "national",
+            "source_authority": "OFFICIAL_TEST_SOURCE",
+            "provenance_posture": "DIRECT_OFFICIAL",
+            "missingness_posture": "OBSERVED"
+          }
+        ],
+        "source_receipts": [
+          {"source_receipt_id":"SRC-PRICE","source_locator":"test://price","source_authority":"OFFICIAL_TEST_SOURCE","captured_at":"2026-08-26T00:01:00-05:00","release_date":"2026-08-12","reference_period":"2026-07","revision_status":"CURRENT_VINTAGE","content_hash":"pricehash"},
+          {"source_receipt_id":"SRC-UNIT","source_locator":"test://unit","source_authority":"OFFICIAL_TEST_SOURCE","captured_at":"2026-08-26T00:01:00-05:00","release_date":"2026-08-12","reference_period":"2026-07","revision_status":"CURRENT_VINTAGE","content_hash":"unithash"},
+          {"source_receipt_id":"SRC-TIME","source_locator":"test://time","source_authority":"OFFICIAL_TEST_SOURCE","captured_at":"2026-08-26T00:01:00-05:00","release_date":"2026-08-12","reference_period":"2026-07","revision_status":"CURRENT_VINTAGE","content_hash":"timehash"},
+          {"source_receipt_id":"SRC-GEO","source_locator":"test://geo","source_authority":"OFFICIAL_TEST_SOURCE","captured_at":"2026-08-26T00:01:00-05:00","release_date":"2026-08-12","reference_period":"2026-07","revision_status":"CURRENT_VINTAGE","content_hash":"geohash"}
+        ],
+        "snapshot_hash": "snappricehash"
+      },
+      "expect": {
+        "resolver_success": true,
+        "completeness_state": "COMPLETE_WITHIN_BOUNDARY",
+        "earliest_common_comparable_date": "2024-01-01",
+        "latest_common_complete_date": "2026-07-31"
+      }
+    },
+    {
+      "case_id": "physical-purchasing-power-missing-required",
+      "request": {
+        "report_request_id": "REQ-PPP-001",
+        "question": "How did physical purchasing power change?",
+        "requested_as_of_time": "2026-08-26T00:00:00-05:00",
+        "scope": {"subject":"test basket","economic_domain":"food","geography":"US","population_scope":"all consumer units","essential_or_discretionary_class":"ESSENTIAL"},
+        "claim_classes": ["PHYSICAL_PURCHASING_POWER"],
+        "pertinence_policy": {"mode":"DETERMINISTIC_CLAIM_CLASS_MAPPING","required_attribute_sets_version":"0.1","allow_optional_context_attributes":false}
+      },
+      "snapshot": {
+        "evidence_snapshot_id": "SNAP-PPP-001",
+        "created_at": "2026-08-26T00:01:00-05:00",
+        "report_request_id": "REQ-PPP-001",
+        "requested_as_of_time": "2026-08-26T00:00:00-05:00",
+        "pertinence_matrix_version": "0.1",
+        "attributes": [
+          {"attribute_id":"nominal_income_or_resources","claim_role":"REQUIRED","source_receipt_ids":["SRC-PPP"],"earliest_admissible_date":"2022-01-01","latest_observed_date":"2026-06-30","latest_complete_date":"2026-06-30","current_period_state":"COMPLETE","methodology_regime_id":"INC-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-07","geography_scope":"US","population_scope":"all consumer units","unit_scope":"nominal dollars","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"},
+          {"attribute_id":"effective_price_per_physical_or_service_unit","claim_role":"REQUIRED","source_receipt_ids":["SRC-PPP"],"earliest_admissible_date":"2024-01-01","latest_observed_date":"2026-07-31","latest_complete_date":"2026-07-31","current_period_state":"COMPLETE","methodology_regime_id":"EPPU-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-08","geography_scope":"US","population_scope":"all consumer units","unit_scope":"dollars per gram","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"},
+          {"attribute_id":"unit_identity","claim_role":"REQUIRED","source_receipt_ids":["SRC-PPP"],"earliest_admissible_date":"2024-01-01","latest_observed_date":"2026-07-31","latest_complete_date":"2026-07-31","current_period_state":"COMPLETE","methodology_regime_id":"UNIT-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-08","geography_scope":"US","population_scope":"all consumer units","unit_scope":"food item","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"},
+          {"attribute_id":"mandatory_delivered_costs","claim_role":"REQUIRED","source_receipt_ids":["SRC-PPP"],"earliest_admissible_date":"2024-01-01","latest_observed_date":"2026-07-31","latest_complete_date":"2026-07-31","current_period_state":"COMPLETE","methodology_regime_id":"COST-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-08","geography_scope":"US","population_scope":"all consumer units","unit_scope":"delivered cost","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"},
+          {"attribute_id":"time_basis","claim_role":"REQUIRED","source_receipt_ids":["SRC-PPP"],"earliest_admissible_date":"2024-01-01","latest_observed_date":"2026-07-31","latest_complete_date":"2026-07-31","current_period_state":"COMPLETE","methodology_regime_id":"MONTHLY-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-08","geography_scope":"US","population_scope":"all consumer units","unit_scope":"month","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"},
+          {"attribute_id":"population_scope","claim_role":"REQUIRED","source_receipt_ids":["SRC-PPP"],"earliest_admissible_date":"2024-01-01","latest_observed_date":"2026-07-31","latest_complete_date":"2026-07-31","current_period_state":"COMPLETE","methodology_regime_id":"POP-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-08","geography_scope":"US","population_scope":"all consumer units","unit_scope":"population","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"}
+        ],
+        "source_receipts": [{"source_receipt_id":"SRC-PPP","source_locator":"test://ppp","source_authority":"OFFICIAL_TEST_SOURCE","captured_at":"2026-08-26T00:01:00-05:00","release_date":"2026-08-12","reference_period":"2026-07","revision_status":"CURRENT_VINTAGE","content_hash":"ppphash"}],
+        "snapshot_hash": "snapppphash"
+      },
+      "expect": {
+        "resolver_success": true,
+        "completeness_state": "MATERIAL_ATTRIBUTES_OPAQUE",
+        "earliest_common_comparable_date": null,
+        "latest_common_complete_date": null,
+        "unsupported_contains": "quantity_or_service_content"
+      }
+    },
+    {
+      "case_id": "required-attribute-exclusion-fails-closed",
+      "request": {
+        "report_request_id": "REQ-FAIL-001",
+        "question": "How did price change without using price?",
+        "requested_as_of_time": "2026-08-26T00:00:00-05:00",
+        "scope": {"subject":"test basket","economic_domain":"food","geography":"US","population_scope":"all consumer units"},
+        "claim_classes": ["PRICE_CHANGE"],
+        "pertinence_policy": {"mode":"DETERMINISTIC_CLAIM_CLASS_MAPPING","required_attribute_sets_version":"0.1","allow_optional_context_attributes":false,"excluded_attributes":["nominal_price"]}
+      },
+      "snapshot": {
+        "evidence_snapshot_id": "SNAP-FAIL-001",
+        "created_at": "2026-08-26T00:01:00-05:00",
+        "report_request_id": "REQ-FAIL-001",
+        "requested_as_of_time": "2026-08-26T00:00:00-05:00",
+        "pertinence_matrix_version": "0.1",
+        "attributes": [{"attribute_id":"nominal_price","claim_role":"REQUIRED","source_receipt_ids":["SRC-FAIL"],"earliest_admissible_date":"2024-01-01","latest_observed_date":"2026-07-31","latest_complete_date":"2026-07-31","current_period_state":"COMPLETE","methodology_regime_id":"P-V1","comparability_with_prior_regime":"NO_PRIOR_REGIME","revision_vintage":"2026-08","geography_scope":"US","population_scope":"all consumer units","unit_scope":"price","source_authority":"OFFICIAL_TEST_SOURCE","provenance_posture":"DIRECT_OFFICIAL","missingness_posture":"OBSERVED"}],
+        "source_receipts": [{"source_receipt_id":"SRC-FAIL","source_locator":"test://fail","source_authority":"OFFICIAL_TEST_SOURCE","captured_at":"2026-08-26T00:01:00-05:00","release_date":"2026-08-12","reference_period":"2026-07","revision_status":"CURRENT_VINTAGE","content_hash":"failhash"}],
+        "snapshot_hash": "snapfailhash"
+      },
+      "expect": {
+        "resolver_success": false,
+        "error_contains": "excludes required attributes"
+      }
+    }
+  ]
+}
