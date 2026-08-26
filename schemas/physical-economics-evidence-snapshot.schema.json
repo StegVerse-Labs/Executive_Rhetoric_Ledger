@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.example/schemas/physical-economics-evidence-snapshot.schema.json",
+  "title": "Physical Economics Evidence Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_snapshot_id",
+    "created_at",
+    "report_request_id",
+    "requested_as_of_time",
+    "pertinence_matrix_version",
+    "attributes",
+    "source_receipts",
+    "snapshot_hash"
+  ],
+  "properties": {
+    "evidence_snapshot_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "report_request_id": {"type": "string", "minLength": 1},
+    "requested_as_of_time": {"type": "string", "format": "date-time"},
+    "pertinence_matrix_version": {"type": "string", "minLength": 1},
+    "attributes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "attribute_id",
+          "claim_role",
+          "source_receipt_ids",
+          "earliest_admissible_date",
+          "latest_observed_date",
+          "latest_complete_date",
+          "current_period_state",
+          "methodology_regime_id",
+          "comparability_with_prior_regime",
+          "revision_vintage",
+          "geography_scope",
+          "population_scope",
+          "unit_scope",
+          "source_authority",
+          "provenance_posture",
+          "missingness_posture"
+        ],
+        "properties": {
+          "attribute_id": {"type": "string", "minLength": 1},
+          "claim_role": {"enum": ["REQUIRED", "CONTEXTUAL", "USER_REQUESTED_CONTEXT"]},
+          "source_receipt_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "earliest_admissible_date": {"type": ["string", "null"], "format": "date"},
+          "latest_observed_date": {"type": ["string", "null"], "format": "date"},
+          "latest_complete_date": {"type": ["string", "null"], "format": "date"},
+          "current_period_state": {
+            "enum": [
+              "COMPLETE",
+              "PARTIAL_CURRENT_PERIOD",
+              "PENDING_RELEASE",
+              "REVISED_AFTER_INITIAL_RELEASE",
+              "METHODOLOGY_BREAK",
+              "UNAVAILABLE",
+              "OPAQUE"
+            ]
+          },
+          "release_or_observation_lag_days": {"type": ["integer", "null"], "minimum": 0},
+          "methodology_regime_id": {"type": "string", "minLength": 1},
+          "comparability_with_prior_regime": {
+            "enum": ["COMPARABLE", "BRIDGED", "NOT_COMPARABLE", "NO_PRIOR_REGIME", "UNRESOLVED"]
+          },
+          "revision_vintage": {"type": "string", "minLength": 1},
+          "source_release_date": {"type": ["string", "null"], "format": "date"},
+          "observation_reference_period": {"type": ["string", "null"]},
+          "geography_scope": {"type": "string", "minLength": 1},
+          "population_scope": {"type": "string", "minLength": 1},
+          "unit_scope": {"type": "string", "minLength": 1},
+          "source_authority": {"type": "string", "minLength": 1},
+          "provenance_posture": {
+            "enum": ["DIRECT_PRIMARY", "DIRECT_OFFICIAL", "RECONSTRUCTED", "SECONDARY_TRIANGULATION", "PROXY", "UNKNOWN"]
+          },
+          "missingness_posture": {
+            "enum": ["OBSERVED", "PARTIAL", "MISSING", "OPAQUE", "NOT_APPLICABLE"]
+          },
+          "uncertainty": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "properties": {
+              "measure_type": {"enum": ["STANDARD_ERROR", "CONFIDENCE_INTERVAL", "SAMPLING_ERROR", "SUPPRESSION_FLAG", "QUALITY_FLAG", "BOUNDED_UNKNOWN", "NONE"]},
+              "standard_error": {"type": ["number", "null"], "minimum": 0},
+              "confidence_level": {"type": ["number", "null"], "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+              "lower_bound": {"type": ["number", "null"]},
+              "upper_bound": {"type": ["number", "null"]},
+              "quality_flags": {"type": "array", "items": {"type": "string", "minLength": 1}},
+              "dependence_posture": {"enum": ["KNOWN_INDEPENDENT", "KNOWN_DEPENDENT", "COVARIANCE_AVAILABLE", "UNKNOWN_DEPENDENCE", "NOT_APPLICABLE"]},
+              "propagation_authorized": {"type": "boolean"},
+              "notes": {"type": ["string", "null"]}
+            }
+          },
+          "opaque_elements": {"type": "array", "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    },
+    "source_receipts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_receipt_id",
+          "source_locator",
+          "source_authority",
+          "captured_at",
+          "release_date",
+          "reference_period",
+          "revision_status",
+          "content_hash"
+        ],
+        "properties": {
+          "source_receipt_id": {"type": "string", "minLength": 1},
+          "source_locator": {"type": "string", "minLength": 1},
+          "source_authority": {"type": "string", "minLength": 1},
+          "captured_at": {"type": "string", "format": "date-time"},
+          "release_date": {"type": ["string", "null"], "format": "date"},
+          "reference_period": {"type": ["string", "null"]},
+          "revision_status": {"enum": ["INITIAL_RELEASE", "CURRENT_VINTAGE", "REVISED", "CORRECTED", "WITHDRAWN", "REPLACED", "UNKNOWN"]},
+          "supersedes_source_receipt_id": {"type": ["string", "null"]},
+          "content_hash": {"type": "string", "minLength": 1},
+          "notes": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["conflict_id", "source_receipt_ids", "status"],
+        "properties": {
+          "conflict_id": {"type": "string", "minLength": 1},
+          "source_receipt_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+          "status": {"enum": ["UNRESOLVED", "RESOLVED_BY_OFFICIAL_CORRECTION", "RESOLVED_BY_SCOPE_DIFFERENCE", "RESOLVED_BY_VINTAGE", "REJECTED_SOURCE"]},
+          "resolution_basis": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "snapshot_hash": {"type": "string", "minLength": 1}
+  }
+}
