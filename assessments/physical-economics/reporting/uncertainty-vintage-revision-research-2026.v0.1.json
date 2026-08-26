@@ -1,0 +1,71 @@
+{
+  "record_type": "physical_economics_reporting_research",
+  "record_id": "ERL-PE-REPORT-UNCERTAINTY-VINTAGE-2026-V0.1",
+  "status": "RESEARCH_EVIDENCE_INSTALLED",
+  "purpose": "Ground public Physical Economics report generation in source-native uncertainty, revision, methodology-regime, and release-vintage semantics.",
+  "findings": {
+    "census_htops_uncertainty": {
+      "posture": "DIRECT_SOURCE_NATIVE_UNCERTAINTY_AVAILABLE",
+      "evidence": [
+        "Census publishes separate standard-error tables for March 2026 HTOPS detailed estimates, including food sufficiency, household energy spending, difficulty paying usual expenses, price changes/stress, and transportation sufficiency.",
+        "Census also publishes source-and-accuracy statements and data-quality measures for March 2026 HTOPS."
+      ],
+      "reporting_rule": "HTOPS-derived estimates must preserve source-provided standard errors, suppression/quality flags, and source-and-accuracy regime metadata. A report may simplify uncertainty for readability only if the underlying receipt retains the exact source uncertainty state."
+    },
+    "htops_methodology_regime": {
+      "posture": "EXPLICIT_BREAK_REQUIRED",
+      "evidence": "Census states that HTOPS used a longitudinal design during 2025 and transitioned to a cross-sectional design beginning in March 2026.",
+      "reporting_rule": "2025 longitudinal HTOPS and March 2026+ cross-sectional HTOPS are distinct methodology regimes. A continuous trend requires an explicit validated bridge; otherwise reports must present adjacent regimes as not directly comparable."
+    },
+    "bls_cpi_revision_vintage": {
+      "posture": "REVISION_WINDOW_ESTABLISHED",
+      "evidence": "BLS recalculates CPI seasonal factors annually; seasonally adjusted CPI indexes may be revised for the previous five years. The February 13, 2026 update recalculated January 2021 through December 2025.",
+      "reporting_rule": "For seasonally adjusted CPI, each report receipt must identify the vintage/factor regime used. Retrospective reports must preserve release-vintage values when evaluating what was knowable at the historical time; current-vintage revised values may be displayed separately."
+    },
+    "bea_progressive_revision": {
+      "posture": "PROGRESSIVE_ESTIMATE_MODEL_ESTABLISHED",
+      "evidence": "BEA states that estimates are routinely updated as more complete and accurate source data become available, including advance, second, third, annual, and comprehensive updates depending on program.",
+      "reporting_rule": "BEA-based attributes must carry release status and revision vintage. A revised current estimate cannot silently replace an earlier release in forecast/decision accountability analysis."
+    },
+    "source_snapshot_requirement": {
+      "posture": "REQUIRED_FOR_REPRODUCIBILITY",
+      "reason": "Official statistical values, seasonal factors, methodology, and public files can change over time. Reproducible reports therefore require a frozen evidence snapshot or immutable receipt set identifying the exact source content/vintage used.",
+      "reporting_rule": "Every generated report must bind to evidence_snapshot_id and source_receipt_set. Later corrections or source disappearance create a new report state rather than mutating the prior report."
+    }
+  },
+  "uncertainty_semantics": {
+    "required_fields_per_attribute_where_available": [
+      "point_estimate",
+      "standard_error",
+      "confidence_interval",
+      "suppression_or_quality_flag",
+      "sampling_or_nonsampling_note",
+      "source_quality_measure_reference"
+    ],
+    "aggregation_rule": "Do not fabricate a composite standard error when component covariance/dependence structure is unknown. Preserve component uncertainty and classify aggregate uncertainty as unresolved or bounded unless a valid propagation model exists.",
+    "precision_rule": "Rendered numeric precision must not exceed source-supported precision."
+  },
+  "revision_delta_classes": [
+    "NEW_OBSERVATION",
+    "PRIOR_PERIOD_COMPLETED",
+    "ROUTINE_REVISION",
+    "SOURCE_CORRECTION",
+    "SEASONAL_FACTOR_REVISION",
+    "METHODOLOGY_CHANGE",
+    "CLASSIFICATION_CHANGE",
+    "OPAQUE_ATTRIBUTE_RESOLVED",
+    "SOURCE_WITHDRAWN_OR_REPLACED",
+    "RENDERER_OR_CONTRACT_CHANGE"
+  ],
+  "authoritative_sources": [
+    "https://www.census.gov/data/tables/2026/demo/hhp/2603.html",
+    "https://www.census.gov/programs-surveys/household-pulse-survey/technical-documentation/source-accuracy/2026.html",
+    "https://www.census.gov/programs-surveys/household-pulse-survey/data/tables.html",
+    "https://www.bls.gov/cpi/seasonal-adjustment/",
+    "https://www.bls.gov/cpi/seasonal-adjustment/methodology.htm",
+    "https://www.bea.gov/about/policies-and-information/information-quality",
+    "https://www.bea.gov/help/faq/1000"
+  ],
+  "finding_boundary": "This research establishes reporting semantics and authoritative revision/uncertainty behavior. It does not yet implement covariance-aware uncertainty propagation, immutable source storage, or report delta execution.",
+  "publication_authorized": false
+}
