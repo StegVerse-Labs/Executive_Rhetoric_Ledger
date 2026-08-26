@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - feature/transition-first-calculus
   workflow_dispatch:
 
 jobs:
