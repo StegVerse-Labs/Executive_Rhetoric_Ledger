@@ -37,11 +37,38 @@ These establish announced private ballroom funding language, separate Secret Ser
 - final legal conclusion: not authorized;
 - primary accounting reconstruction: active.
 
+## Implemented repair
+The machine Political Influence Tree record now exists at:
+`assessments/machine/ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST.json`
+
+It is indexed in `assessments/README.md` and binds the existing rhetoric assessment, three primary official source receipts, and the canonical primary-record intake queue without promoting final accounting, motive, or legal conclusions.
+
+The intake queue was normalized to the repository's canonical schema while preserving all ten evidence targets.
+
+## Validation evidence
+```text
+workflow: Validate Ledger Schemas
+run: 33011563705
+validated head: c0638c0c10cbbf218b2ca178ee8dc74a9ea89d28
+conclusion: success
+```
+
+Machine-assessment enforcement and primary-record intake validation both passed inside the full 40-stage successful job.
+
 ## Next executable work
-Create and validate the machine PIT record, index it, then consume primary-record intake validation. Primary accounting acquisition remains an evidence task after structural repair.
+Structural repair is complete. Continue primary accounting acquisition: maintenance-account transfers, Secret Service and Military Office obligations, contractor estimate records, donor receipts/disbursements, broader project ledgers, and scope-normalized cost chronology. Do not infer missing values.
 
 ## Collision boundary
 Do not mutate `assessments/silence-causation/**` or PR #48.
 
+## Current state
+- machine assessment: installed
+- assessment index binding: installed
+- canonical intake queue: repaired
+- hosted structural validation: PASS
+- final public/private accounting: unresolved
+- motive finding: not authorized
+- final legal conclusion: not authorized
+
 ## Archive posture
-Once the machine record, intake queue, assessment index, and validation state are durable, this structural repair requires no conversation context.
+The machine record, intake queue, assessment index, source boundaries, and successful validation state are durable. This structural repair is complete and requires no conversation context; remaining work is evidence acquisition.
