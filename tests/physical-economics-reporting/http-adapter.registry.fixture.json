@@ -1,0 +1,26 @@
+{
+  "registry_version": "physical-economics-report-snapshot-registry.v0.1",
+  "entries": [
+    {
+      "registry_entry_id": "PE-HTTP-FIXTURE-PRICE-US",
+      "state": "ADMITTED",
+      "scope": {
+        "subject": "test basket",
+        "economic_domain": "food",
+        "geography": "US",
+        "population_scope": "all consumer units",
+        "essential_or_discretionary_class": "ESSENTIAL",
+        "unit_definition": "standardized unit"
+      },
+      "claim_classes": ["PRICE_CHANGE"],
+      "pertinence_matrix_version": "0.1",
+      "allowed_vintage_policies": [
+        "CURRENT_VINTAGE",
+        "AS_KNOWN_AT_REQUESTED_TIME"
+      ],
+      "snapshot_template_path": "tests/physical-economics-reporting/http-adapter.snapshot.fixture.json",
+      "admitted_at": "2026-08-26T20:31:00Z",
+      "notes": "Deterministic test-only admission. Not public evidence."
+    }
+  ]
+}
