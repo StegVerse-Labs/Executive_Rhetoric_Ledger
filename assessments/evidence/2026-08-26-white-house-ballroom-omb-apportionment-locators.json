@@ -1,0 +1,81 @@
+{
+  "record_id": "ERL-2026-08-26-WH-BALLROOM-OMB-APPORTIONMENT-LOCATORS",
+  "topic_id": "ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST",
+  "record_date": "2026-08-26",
+  "status": "primary-source-locators-established",
+  "source_posture": "OpenOMB is a public mirror/index that points to OMB primary apportionment files at apportionment-public.max.gov. Treat mirror values as verified locator evidence until native OMB JSON/XLS custody is acquired.",
+  "locators": [
+    {
+      "mirror_url": "https://openomb.org/file/11524925",
+      "primary_system": "apportionment-public.max.gov",
+      "file_id": "11524925",
+      "approved": "2026-06-12",
+      "agency": "Department of Homeland Security",
+      "bureau": "United States Secret Service",
+      "account": "Procurement, Construction, and Improvements",
+      "tafs": "070-0401 2025/2029",
+      "funding_law": "Public Law 119-21",
+      "change": {
+        "line": "6017",
+        "category": "White House Security Measures",
+        "amount": 340800000,
+        "prior_state": "line absent",
+        "current_state": "line added"
+      },
+      "offset": {
+        "line": "6170",
+        "category": "Apportioned in FY 2027",
+        "change": -340800000
+      },
+      "custody_state": "primary-native-object-pending"
+    },
+    {
+      "mirror_url": "https://openomb.org/file/11524924",
+      "primary_system": "apportionment-public.max.gov",
+      "file_id": "11524924",
+      "approved": "2026-06-12",
+      "agency": "Department of Homeland Security",
+      "bureau": "United States Secret Service",
+      "account": "Operations and Support",
+      "tafs": "070-0400 2025/2029",
+      "funding_law": "Public Law 119-21",
+      "change": {
+        "line": "6016",
+        "category": "White House Security Measures",
+        "amount": 10750000,
+        "prior_state": "line absent",
+        "current_state": "line added"
+      },
+      "offset": {
+        "line": "6170",
+        "category": "Apportioned in FY 2027",
+        "change": -10750000
+      },
+      "custody_state": "primary-native-object-pending"
+    }
+  ],
+  "aggregate": {
+    "white_house_security_measures_added": 351550000,
+    "interpretation": "The two June 12 apportionment changes establish a $351.55M Secret Service budget category labeled White House Security Measures in the OMB apportionment trail. Exact East Wing/ballroom project obligation requires spend-plan, transfer, contract, and invoice records."
+  },
+  "oversight_context": {
+    "gao_audit_request_date": "2026-08-13",
+    "requesters": "eight U.S. senators with relevant committee jurisdictions",
+    "requested_update_deadline": "2026-12-01",
+    "status": "audit-requested; GAO acceptance/plan not yet located",
+    "use": "future independent reconstruction target; Senate assertions are not treated as proof of disputed allocation"
+  },
+  "next_actions": [
+    "Acquire native JSON/XLS versions of OMB apportionment files 11524925 and 11524924 from apportionment-public.max.gov.",
+    "Acquire June 15 follow-on iteration for TAFS 070-0401 to detect whether the $340.8M category persisted or changed.",
+    "Acquire DHS/USSS spend plan referenced in the apportionment footnote.",
+    "Link the $351.55M apportionment trail to White House Repair and Restoration transfer receipts without assuming equivalence.",
+    "Monitor GAO for acceptance, work-plan, engagement code, or audit product."
+  ],
+  "governance": {
+    "taxpayer_funding_for_white_house_security_measures": "strongly_supported",
+    "ballroom_specific_allocation": "not_yet_reproducible",
+    "legal_misuse_finding": "not_made",
+    "motive_finding": false
+  }
+}
