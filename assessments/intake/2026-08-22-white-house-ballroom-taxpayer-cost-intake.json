@@ -1,174 +1,210 @@
 {
+  "queue_id": "QUEUE-ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST",
   "topic_id": "ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST",
   "queue_status": "active",
   "created_date": "2026-08-22",
   "last_reviewed": "2026-08-26",
-  "canonical_assessment": "assessments/rhetoric/2026-08-22-white-house-ballroom-taxpayer-cost.md",
-  "source_posture_packet": "assessments/source-posture/2026-08-22-white-house-ballroom-taxpayer-cost-source-receipts.json",
-  "goal": "Reconstruct the public/private funding allocation for the White House ballroom, integrated East Wing/military-security project, and broader White House construction program using primary accounting, transfer, obligation, contract, and donor records.",
-  "promotion_boundary": "Do not promote a zero-taxpayer or taxpayer-share finding beyond the scope directly supported by primary records. Do not infer motive from a funding discrepancy alone.",
-  "tasks": [
+  "notes": "Canonical primary-record intake queue for White House ballroom / integrated East Wing / broader White House construction funding reconstruction. Preserve private-ballroom-funding != zero-taxpayer-project-cost and do not infer motive from funding discrepancies alone. Current next unblocked evidence task remains native OMB custody and spend-plan acquisition.",
+  "items": [
     {
-      "task_id": "WH-BALLROOM-FUND-001",
-      "priority": 1,
-      "state": "primary-text-verified-custody-partial",
-      "object": "2025-07-31 White House ballroom funding announcement",
-      "source_url": "https://www.whitehouse.gov/briefings-statements/2025/07/the-white-house-announces-white-house-ballroom-construction-to-begin/",
-      "required_capture": [
-        "immutable text snapshot",
-        "publication metadata",
-        "content hash"
+      "intake_id": "WH-BALLROOM-INTAKE-001",
+      "record_class": "2025-07-31 White House ballroom funding announcement",
+      "likely_custodians": [
+        "The White House",
+        "National Archives and Records Administration"
       ],
-      "release_condition": "Primary statement preserved with exact private-funding and Secret Service security language.",
-      "progress_note": "Official White House text verified; immutable byte/hash capture remains outstanding."
+      "affected_branches": [
+        "claim_scope",
+        "funding_source",
+        "cost_chronology"
+      ],
+      "state": "located",
+      "activation_effect": "Anchors the original private-funding claim and Secret Service security-modification language.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Official White House text located; immutable native custody/hash remains outstanding."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-002",
-      "priority": 1,
-      "state": "primary-filing-verified-custody-partial",
-      "object": "Supreme Court stay application in 26A203",
-      "source_url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260813211858520_August%20Ballroom%20Application%20-%20FINAL.pdf",
-      "required_capture": [
-        "native PDF",
-        "SHA-256",
-        "project-scope excerpts",
-        "docket metadata"
+      "intake_id": "WH-BALLROOM-INTAKE-002",
+      "record_class": "Supreme Court 26A203 stay application",
+      "likely_custodians": [
+        "Supreme Court of the United States",
+        "Department of Justice"
       ],
-      "release_condition": "Government characterization of the integrated military complex and secure ballroom is independently reproducible from the preserved filing.",
-      "progress_note": "Official Supreme Court filing verified for integrated-project scope and ballroom funding claim; native SHA-256 custody remains outstanding."
+      "affected_branches": [
+        "project_scope",
+        "funding_source",
+        "cost_chronology"
+      ],
+      "state": "located",
+      "activation_effect": "Separates the secured ballroom component from the integrated military/security project scope.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Official filing located and reviewed; native PDF hash custody remains outstanding."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-003",
-      "priority": 1,
-      "state": "located-primary-source",
-      "object": "NPS East Wing modernization / State Ballroom FONSI and associated environmental record",
-      "source_url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260814105130205_26A203%20Appendix.pdf",
-      "required_capture": [
-        "native PDF",
-        "SHA-256",
-        "selected-action scope",
-        "agency decision metadata"
+      "intake_id": "WH-BALLROOM-INTAKE-003",
+      "record_class": "NPS East Wing modernization / State Ballroom FONSI and environmental record",
+      "likely_custodians": [
+        "National Park Service",
+        "Supreme Court of the United States"
       ],
-      "release_condition": "Official project-scope chronology is preserved and separates modernization, demolition, ballroom, security, and related actions."
+      "affected_branches": [
+        "project_scope",
+        "cost_chronology"
+      ],
+      "state": "located",
+      "activation_effect": "Anchors official modernization, demolition, ballroom, security, and related action scope.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Official appendix located; native PDF/hash and selected-action custody remain outstanding."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-004",
-      "priority": 1,
-      "state": "primary-budget-partially-reconstructed",
-      "object": "White House maintenance-account transfer ledger",
-      "required_capture": [
-        "account identifier",
-        "source agencies",
-        "transfer dates",
-        "amounts",
-        "legal authority",
-        "obligation destinations"
+      "intake_id": "WH-BALLROOM-INTAKE-004",
+      "record_class": "White House Repair and Restoration transfer ledger",
+      "likely_custodians": [
+        "Executive Office of the President",
+        "Office of Management and Budget",
+        "Department of the Treasury"
       ],
-      "release_condition": "Every reported government-agency transfer into the White House maintenance account is independently traceable to an authoritative record.",
-      "progress_note": "FY2027 EOP budget appendix independently shows White House Repair and Restoration account with $377M 2026 reimbursable obligations and $350M mandatory/federal-source offsetting collections. Originating agency/project allocation still required. Secret Service apportionment locators now establish a $351.55M White House Security Measures category, but transfer into White House Repair and Restoration is not yet linked by native transfer records."
+      "affected_branches": [
+        "federal_funding",
+        "transfer_lineage",
+        "obligations"
+      ],
+      "state": "located",
+      "activation_effect": "Resolves source agencies, transfer authority, amounts, dates, and obligation destinations for federal-source funds.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Budget appendix activity is partially reconstructed; originating-agency/project allocation remains unresolved."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-005",
-      "priority": 1,
-      "state": "omb-apportionment-locator-established",
-      "object": "Secret Service project expenditures and obligations",
-      "required_capture": [
-        "security modification contracts",
-        "obligations",
-        "interagency agreements",
-        "project coding",
-        "date and amount"
+      "intake_id": "WH-BALLROOM-INTAKE-005",
+      "record_class": "United States Secret Service White House Security Measures apportionments and spend plan",
+      "likely_custodians": [
+        "United States Secret Service",
+        "Department of Homeland Security",
+        "Office of Management and Budget"
       ],
-      "release_condition": "Taxpayer-funded Secret Service work associated with the ballroom/East Wing project can be summed without conflating unrelated protective operations.",
-      "progress_note": "Located OMB apportionment trail via OpenOMB mirror: $340.8M Procurement/Construction/Improvements + $10.75M Operations/Support added 2026-06-12 as White House Security Measures. Native max.gov JSON/XLS, spend plan, obligations, and project coding still required."
+      "affected_branches": [
+        "federal_funding",
+        "security_modifications",
+        "obligations"
+      ],
+      "state": "located",
+      "activation_effect": "Permits bounded taxpayer-funded security work to be summed without conflating unrelated protective operations.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "OMB locator trail for $351.55M located; native max.gov JSON/XLS, June 15 follow-on iteration, spend plan, obligations, and project coding remain required."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-006",
-      "priority": 1,
-      "state": "primary-record-needed",
-      "object": "White House Military Office project expenditures and transfers",
-      "required_capture": [
-        "transfer authority",
-        "obligations",
-        "contracts",
-        "project coding",
-        "date and amount"
+      "intake_id": "WH-BALLROOM-INTAKE-006",
+      "record_class": "White House Military Office project expenditures and transfers",
+      "likely_custodians": [
+        "White House Military Office",
+        "Department of Defense",
+        "Executive Office of the President"
       ],
-      "release_condition": "Military Office funding associated with the integrated project is reconstructable and distinguishable from unrelated White House operations."
+      "affected_branches": [
+        "federal_funding",
+        "transfer_lineage",
+        "obligations"
+      ],
+      "state": "requested",
+      "activation_effect": "Separates Military Office funding tied to the integrated project from unrelated White House operations.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "Authoritative transfer, obligation, contract, project-code, date, and amount records remain required."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-007",
-      "priority": 2,
-      "state": "primary-record-needed",
-      "object": "Contractor cost summary underlying reported approximately $600 million East Wing project estimate",
-      "required_capture": [
-        "contractor identity",
-        "estimate date",
-        "scope categories",
-        "public/private allocation",
-        "revision history"
+      "intake_id": "WH-BALLROOM-INTAKE-007",
+      "record_class": "Contractor cost summary underlying approximately $600M integrated East Wing estimate",
+      "likely_custodians": [
+        "Executive Office of the President",
+        "project contractor",
+        "contracting office"
       ],
-      "release_condition": "The reported $600 million figure is attributable to an identified document with bounded scope and revision date."
+      "affected_branches": [
+        "cost_chronology",
+        "project_scope",
+        "public_private_allocation"
+      ],
+      "state": "requested",
+      "activation_effect": "Binds the reported approximately $600M figure to an identified document, date, scope, and revision history.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Underlying contractor estimate has not yet been preserved."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-008",
-      "priority": 2,
-      "state": "primary-record-needed",
-      "object": "Private donor receipt and pledge accounting",
-      "required_capture": [
-        "donor or donor-class record where legally public",
-        "pledged amount",
-        "received amount",
-        "restricted purpose",
-        "disbursement mapping"
+      "intake_id": "WH-BALLROOM-INTAKE-008",
+      "record_class": "Private donor pledge, receipt, restriction, and disbursement accounting",
+      "likely_custodians": [
+        "The White House",
+        "donor fund custodian",
+        "project finance administrator"
       ],
-      "release_condition": "Private contributions can be compared to actual project obligations without treating pledges as expenditures."
+      "affected_branches": [
+        "private_funding",
+        "disbursements",
+        "cost_reconciliation"
+      ],
+      "state": "requested",
+      "activation_effect": "Separates private pledges and receipts from actual project expenditures and restricted-use disbursements.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Only legally public donor/accounting records may be used; pledges must not be treated as expenditures."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-009",
-      "priority": 2,
-      "state": "primary-budget-partially-reconstructed",
-      "object": "Broader White House modernization project ledger",
-      "required_capture": [
-        "project list",
-        "project cost",
-        "funding source",
-        "obligation status",
-        "scope boundaries"
+      "intake_id": "WH-BALLROOM-INTAKE-009",
+      "record_class": "Broader White House modernization project ledger",
+      "likely_custodians": [
+        "Executive Office of the President",
+        "Office of Management and Budget",
+        "General Services Administration",
+        "United States Secret Service",
+        "White House Military Office"
       ],
-      "release_condition": "The reported $900M-$927M broader construction total is reproducible from project-level records.",
-      "progress_note": "Official budget appendix establishes large federal-source account activity but not full $900M-$927M project ledger."
+      "affected_branches": [
+        "program_scope",
+        "federal_funding",
+        "cost_chronology"
+      ],
+      "state": "requested",
+      "activation_effect": "Tests and reconstructs the reported $900M-$927M broader construction-program total at project level.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Federal-source account activity is known, but the full project ledger remains unresolved."
     },
     {
-      "task_id": "WH-BALLROOM-FUND-010",
-      "priority": 2,
-      "state": "reconciliation-in-progress",
-      "object": "Cost-estimate chronology",
-      "required_capture": [
-        "$200M estimate",
-        "$250M estimate",
-        "$400M estimate",
-        "$600M estimate",
-        "$900M+ program total",
-        "date",
-        "scope",
-        "funding allocation"
+      "intake_id": "WH-BALLROOM-INTAKE-010",
+      "record_class": "Dated cost-estimate and scope reconciliation for $200M, $250M, $400M, ~$600M, and $900M+ figures",
+      "likely_custodians": [
+        "The White House",
+        "Supreme Court of the United States",
+        "Executive Office of the President",
+        "project contractor",
+        "Office of Management and Budget"
       ],
-      "release_condition": "Each public cost figure is mapped to its contemporaneous project scope so incompatible denominators are never compared as if they were the same estimate.",
-      "progress_note": "$200M/$250M/$400M scopes now anchored to official White House/court records; $600M and $900M+ remain dependent on underlying contractor/project ledgers."
+      "affected_branches": [
+        "cost_chronology",
+        "project_scope",
+        "funding_allocation"
+      ],
+      "state": "located",
+      "activation_effect": "Prevents unlike project scopes and funding denominators from being compared as if they were the same estimate.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "$200M/$250M/$400M official scopes are bounded; ~$600M and $900M+ still require underlying project ledgers."
     }
-  ],
-  "next_unblocked_task": "WH-BALLROOM-FUND-005-native-omb-custody-and-spend-plan",
-  "duplicate_execution_rule": "Before acquiring an object, check the source-posture packet, evidence receipts, and this queue for an existing preserved object or verified hash. Reuse existing custody rather than recapturing the same source.",
-  "completion_condition": "Primary records support a reproducible project-by-project and funding-source-by-funding-source accounting sufficient to classify the zero-taxpayer claim without relying on secondary reporting for the decisive allocation.",
-  "primary_budget_reconciliation": "assessments/evidence/2026-08-26-white-house-ballroom-primary-budget-reconciliation.json",
-  "progress_summary": {
-    "primary_official_sources_verified": 3,
-    "primary_budget_account_reconstruction": "partial",
-    "ballroom_specific_taxpayer_allocation": "not_yet_reproducible",
-    "new_evidence_commit": "e2a02431605f0fd1bc668d2145ae5b9974ccd5c3",
-    "omb_apportionment_locator_total": 351550000,
-    "omb_native_custody": "pending"
-  },
-  "omb_apportionment_locators": "assessments/evidence/2026-08-26-white-house-ballroom-omb-apportionment-locators.json"
+  ]
 }
