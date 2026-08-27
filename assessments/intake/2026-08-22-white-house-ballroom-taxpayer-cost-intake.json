@@ -65,12 +65,12 @@
         "obligation destinations"
       ],
       "release_condition": "Every reported government-agency transfer into the White House maintenance account is independently traceable to an authoritative record.",
-      "progress_note": "FY2027 EOP budget appendix independently shows White House Repair and Restoration account with $377M 2026 reimbursable obligations and $350M mandatory/federal-source offsetting collections. Originating agency/project allocation still required."
+      "progress_note": "FY2027 EOP budget appendix independently shows White House Repair and Restoration account with $377M 2026 reimbursable obligations and $350M mandatory/federal-source offsetting collections. Originating agency/project allocation still required. Secret Service apportionment locators now establish a $351.55M White House Security Measures category, but transfer into White House Repair and Restoration is not yet linked by native transfer records."
     },
     {
       "task_id": "WH-BALLROOM-FUND-005",
       "priority": 1,
-      "state": "primary-record-needed",
+      "state": "omb-apportionment-locator-established",
       "object": "Secret Service project expenditures and obligations",
       "required_capture": [
         "security modification contracts",
@@ -79,7 +79,8 @@
         "project coding",
         "date and amount"
       ],
-      "release_condition": "Taxpayer-funded Secret Service work associated with the ballroom/East Wing project can be summed without conflating unrelated protective operations."
+      "release_condition": "Taxpayer-funded Secret Service work associated with the ballroom/East Wing project can be summed without conflating unrelated protective operations.",
+      "progress_note": "Located OMB apportionment trail via OpenOMB mirror: $340.8M Procurement/Construction/Improvements + $10.75M Operations/Support added 2026-06-12 as White House Security Measures. Native max.gov JSON/XLS, spend plan, obligations, and project coding still required."
     },
     {
       "task_id": "WH-BALLROOM-FUND-006",
@@ -157,7 +158,7 @@
       "progress_note": "$200M/$250M/$400M scopes now anchored to official White House/court records; $600M and $900M+ remain dependent on underlying contractor/project ledgers."
     }
   ],
-  "next_unblocked_task": "WH-BALLROOM-FUND-004",
+  "next_unblocked_task": "WH-BALLROOM-FUND-005-native-omb-custody-and-spend-plan",
   "duplicate_execution_rule": "Before acquiring an object, check the source-posture packet, evidence receipts, and this queue for an existing preserved object or verified hash. Reuse existing custody rather than recapturing the same source.",
   "completion_condition": "Primary records support a reproducible project-by-project and funding-source-by-funding-source accounting sufficient to classify the zero-taxpayer claim without relying on secondary reporting for the decisive allocation.",
   "primary_budget_reconciliation": "assessments/evidence/2026-08-26-white-house-ballroom-primary-budget-reconciliation.json",
@@ -165,6 +166,9 @@
     "primary_official_sources_verified": 3,
     "primary_budget_account_reconstruction": "partial",
     "ballroom_specific_taxpayer_allocation": "not_yet_reproducible",
-    "new_evidence_commit": "e2a02431605f0fd1bc668d2145ae5b9974ccd5c3"
-  }
+    "new_evidence_commit": "e2a02431605f0fd1bc668d2145ae5b9974ccd5c3",
+    "omb_apportionment_locator_total": 351550000,
+    "omb_native_custody": "pending"
+  },
+  "omb_apportionment_locators": "assessments/evidence/2026-08-26-white-house-ballroom-omb-apportionment-locators.json"
 }
