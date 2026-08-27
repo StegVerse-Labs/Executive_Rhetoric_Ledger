@@ -207,6 +207,93 @@ Release condition: validator-clean WS-D artifacts plus independent review record
 - required discriminator: compare direct threshold-question handling across current-administration, prior-administration, and nonpolitical matched prompts
 - publication authorized: false pending controlled comparison and independent review
 
+## Adjacent active execution lane — White House ballroom / construction taxpayer-cost reconstruction — ACTIVE
+
+Goal ID: `ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST`
+
+Canonical owner: Issue `#73` — `Reconstruct White House ballroom and construction taxpayer funding`.
+
+Canonical assessment:
+- `assessments/rhetoric/2026-08-22-white-house-ballroom-taxpayer-cost.md`
+
+Durable machine-readable state:
+- `assessments/source-posture/2026-08-22-white-house-ballroom-taxpayer-cost-source-receipts.json`
+- `assessments/intake/2026-08-22-white-house-ballroom-taxpayer-cost-intake.json`
+- `assessments/evidence/2026-08-26-white-house-ballroom-primary-budget-reconciliation.json`
+- `assessments/evidence/2026-08-26-white-house-ballroom-omb-apportionment-locators.json`
+
+### Verified state
+
+- lifecycle: `ACTIVE`
+- assessment state: `evidence-supported-claim-conflict`
+- federal funding into White House Repair and Restoration account: `RECONSTRUCTED_PARTIAL / PRIMARY_BUDGET_SUPPORTED`
+- Secret Service White House Security Measures apportionment trail: `LOCATED / NATIVE_CUSTODY_PENDING`
+- ballroom-specific taxpayer share: `NOT_YET_REPRODUCIBLE`
+- broader White House construction taxpayer use: `STRONGLY_SUPPORTED / PROJECT_LEDGER_INCOMPLETE`
+- motive finding: `false`
+- legal misuse finding: `not_made`
+- publication/release finding: `not_authorized`
+
+### Latest verified accomplishments
+
+1. The 2025-07-31 White House announcement was verified as stating that Trump/private donors would fund an approximately $200M ballroom structure while the United States Secret Service would provide necessary security enhancements and modifications.
+2. Supreme Court filing `26A203` was verified as describing the East Wing work as a highly integrated military/security complex incorporating a secured ballroom and underground national-security facilities, while separately asserting approximately $400M in private donations funds the ballroom and zero taxpayer dollars are needed or required for that ballroom component.
+3. FY2027 Executive Office of the President budget appendix account `011-0109-0-1-802` (White House Repair and Restoration) was reconstructed to show 2026 estimated reimbursable obligations of $377M, mandatory/federal-source offsetting collections of $350M, and mandatory outlays of $245M. This proves a large federal-source funding stream into the account but does not by itself allocate that stream to the ballroom.
+4. OMB apportionment locators were established for Secret Service June 12, 2026 changes totaling $351.55M labeled `White House Security Measures`: $340.8M Procurement/Construction/Improvements plus $10.75M Operations/Support.
+5. Cost chronology is partially reconciled: $200M / $250M / $400M official scopes are bounded; reported ~$600M integrated-project and $900M-$927M broader-program figures still require underlying primary ledgers.
+
+Evidence commits:
+- initial assessment: `9f6b3a8c663cf6a0bf7b6ca6ba3db95f29061c37`
+- source-posture packet: `5bb0b271cc74862ae6d34b3cfa2c9d373a7ed1c3`
+- intake queue: `2d635543f7b1c2ad1a4d5139f8c3a02c7a32e740`
+- primary budget reconciliation: `e2a02431605f0fd1bc668d2145ae5b9974ccd5c3`
+- intake advancement: `2885f581b41cd6b541ebbc8ee6481b3c484cf940`
+- OMB locator packet: `847ad85663ee046e6d80a607fac3d2a9291be8b1`
+- intake advancement after OMB locators: `1199b8ee32d365562b5db3f2267b5bccde6f6588`
+
+### Governance boundaries
+
+- `private_ballroom_funding != zero_taxpayer_project_cost`
+- `ballroom_structure_cost != integrated_east_wing_project_cost`
+- `no_direct_ballroom_appropriation != no_federal_funds_used`
+- `federal_funding_into_repair_account == proven` does not imply `ballroom_specific_taxpayer_share == proven`
+- `$351.55M Secret Service White House Security Measures apportionments` must not be equated to `$350M White House Repair and Restoration collections` until native transfer records establish the relationship.
+- secondary reporting may locate evidence but cannot satisfy the final project-level allocation gate.
+- no motive or intentional-misrepresentation finding may be inferred from the funding discrepancy alone.
+
+### Next executable boundary
+
+Current next unblocked task:
+`WH-BALLROOM-FUND-005-native-omb-custody-and-spend-plan`.
+
+Machine-executable work remaining:
+1. Acquire native OMB JSON/XLS for file IDs `11524925` and `11524924` from `apportionment-public.max.gov`.
+2. Acquire the June 15 follow-on Secret Service Procurement/Construction/Improvements iteration.
+3. Acquire the DHS/USSS spend plan referenced by the apportionment footnote.
+4. Acquire authoritative transfer records linking source agencies to White House Repair and Restoration account `011-0109-0-1-802`.
+5. Acquire Secret Service obligations/contracts/project coding and White House Military Office transfers/obligations.
+6. Acquire the contractor record underlying the reported approximately $600M East Wing integrated-project estimate, including scope and revision history.
+7. Reconstruct private donor pledges, receipts, restrictions, and disbursements separately from actual project expenditures.
+8. Reconstruct the broader White House modernization ledger underlying the reported $900M-$927M program total.
+9. Complete dated scope reconciliation across $200M, $250M, $400M, ~$600M, and $900M+ figures.
+10. Monitor the August 13, 2026 Senate-requested GAO audit; the requested plan-update date is December 1, 2026. No GAO acceptance, engagement code, work plan, or audit product has yet been verified.
+
+### External/manual / authorization state
+
+- no user credential entry required for the current evidence-reconstruction lane.
+- no WebAuthn/owner authorization presently required.
+- no iPhone-only action presently required.
+- no provider activation presently required.
+- primary-source objects unavailable through machine access may eventually require external public-record acquisition or FOIA, but no user-specific manual action has yet been established as required.
+
+### Validation / release boundary
+
+This lane is not `COMPLETE`, `RELEASED`, or publication-ready.
+
+Completion requires a reviewer-reproducible project-by-project and funding-source-by-funding-source accounting showing private financing, federal transfers, obligations, actual expenditures, and scope boundaries without reliance on secondary reporting for the decisive allocation.
+
+No Site, Publisher, admissibility-wiki, stegguardian-wiki, or master-records propagation is authorized for this finding until the project-level allocation is reconstructed and reviewed.
+
 ## Automation
 
 - `validate-silence-causation.yml`: active fail-closed case validation
