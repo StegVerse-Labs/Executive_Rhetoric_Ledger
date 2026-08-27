@@ -1,0 +1,141 @@
+{
+  "record_id": "ERL-2026-08-26-WH-BALLROOM-PRIMARY-BUDGET-RECONCILIATION",
+  "topic_id": "ERL-2026-08-22-WHITE-HOUSE-BALLROOM-TAXPAYER-COST",
+  "record_date": "2026-08-26",
+  "status": "primary-budget-evidence-installed",
+  "governance": {
+    "motive_finding": false,
+    "ballroom_specific_allocation_proven": false,
+    "federal_funding_into_white_house_repair_account_proven": true,
+    "rule": "Do not attribute the full repair/restoration account to the ballroom without project-level accounting."
+  },
+  "primary_sources": [
+    {
+      "source_id": "SRC-WH-FY2027-EOP-BUDGET-APPENDIX-001",
+      "title": "Budget of the U.S. Government FY 2027 — Executive Office of the President appendix",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/eop_fy2027.pdf",
+      "source_type": "official-budget-document",
+      "account": "White House Repair and Restoration",
+      "identification_code": "011-0109-0-1-802",
+      "observations": {
+        "direct_obligations_millions": {
+          "2025_actual": 2,
+          "2026_estimate": 2,
+          "2027_estimate": 6
+        },
+        "reimbursable_obligations_millions": {
+          "2025_actual": 39,
+          "2026_estimate": 377,
+          "2027_estimate": 174
+        },
+        "total_new_obligations_millions": {
+          "2025_actual": 41,
+          "2026_estimate": 379,
+          "2027_estimate": 180
+        },
+        "mandatory_offsetting_collections_millions": {
+          "2025_actual": 0,
+          "2026_estimate": 350,
+          "2027_estimate": 174
+        },
+        "federal_source_offsetting_collections_millions": {
+          "2025_actual": 66,
+          "2026_estimate": 350,
+          "2027_estimate": 174
+        },
+        "mandatory_outlays_millions": {
+          "2025_actual": 0,
+          "2026_estimate": 245,
+          "2027_estimate": 209
+        }
+      },
+      "supported_findings": [
+        "The White House Repair and Restoration account received a very large 2026 federal-source funding stream compared with its ordinary direct appropriation.",
+        "The 2026 budget table records $350 million in mandatory spending authority from offsetting collections and $377 million in reimbursable obligations.",
+        "The official table independently supports the existence of substantial taxpayer-backed activity in the White House repair/restoration account."
+      ],
+      "limitations": [
+        "The table does not identify the originating federal agency for each dollar.",
+        "The table does not by itself allocate the full $350 million or $377 million to the ballroom/East Wing project.",
+        "Project-level transfer, obligation, invoice, and contract records remain required."
+      ]
+    },
+    {
+      "source_id": "SRC-SCOTUS-26A203-STAY-001",
+      "title": "Application for Stay, National Park Service v. National Trust for Historic Preservation, No. 26A203",
+      "url": "https://www.supremecourt.gov/DocketPDF/26/26A203/419029/20260813211858520_August%20Ballroom%20Application%20-%20FINAL.pdf",
+      "source_type": "official-court-filing",
+      "supported_findings": [
+        "The government characterizes the East Wing project as a highly integrated military complex incorporating a secured ballroom and national-security facilities.",
+        "The filing describes five below-ground stories and multiple military/security features.",
+        "The filing simultaneously states that approximately $400 million in private donations funds the ballroom and that zero taxpayer dollars are needed or required for the ballroom."
+      ],
+      "analytical_significance": "The government's own filing makes the scope boundary explicit: one integrated physical project, while its funding claim is phrased specifically around the ballroom component. That makes project/component accounting essential.",
+      "limitations": [
+        "The filing is advocacy by a litigating party and does not independently audit project finances.",
+        "Native-byte SHA-256 custody remains pending."
+      ]
+    },
+    {
+      "source_id": "SRC-WH-BALLROOM-ANNOUNCEMENT-2025-07-31",
+      "title": "The White House Announces White House Ballroom Construction to Begin",
+      "url": "https://www.whitehouse.gov/briefings-statements/2025/07/the-white-house-announces-white-house-ballroom-construction-to-begin/",
+      "source_type": "official-executive-statement",
+      "supported_findings": [
+        "The original announcement described an approximately $200 million structure funded by President Trump and other donors.",
+        "The same announcement separately assigned necessary security enhancements and modifications to the United States Secret Service."
+      ],
+      "limitations": [
+        "This is a public funding assertion, not audited expenditure evidence.",
+        "It does not quantify Secret Service costs."
+      ]
+    }
+  ],
+  "reconciliation": {
+    "estimates": [
+      {
+        "amount_millions": 200,
+        "date": "2025-07-31",
+        "scope": "ballroom structure",
+        "source": "White House announcement",
+        "funding_claim": "private donors; Secret Service security separately stated"
+      },
+      {
+        "amount_millions": 250,
+        "date": "2026-current-whitehouse-page",
+        "scope": "ballroom project wording on White House site",
+        "source": "White House website",
+        "funding_claim": "private donations; Secret Service security separately stated"
+      },
+      {
+        "amount_millions": 400,
+        "date": "2026-08-13",
+        "scope": "ballroom component within integrated military complex",
+        "source": "Supreme Court stay application",
+        "funding_claim": "approximately $400M private donations for ballroom; zero taxpayer dollars needed or required for ballroom"
+      },
+      {
+        "amount_millions": 600,
+        "date": "2026-03-05-reported",
+        "scope": "integrated East Wing project contractor estimate",
+        "source": "secondary reporting locating contractor record",
+        "funding_claim": "primary contractor document still required"
+      },
+      {
+        "amount_millions": 900,
+        "date": "2026-08-reported",
+        "scope": "broader White House construction/modernization program",
+        "source": "secondary reporting plus partial official-budget corroboration",
+        "funding_claim": "project-level primary ledger still required"
+      }
+    ],
+    "current_conclusion": "Official records now independently prove substantial federal-source funding in the White House Repair and Restoration account and an integrated East Wing/security/ballroom project scope. They do not yet permit exact allocation of that federal funding to the ballroom component."
+  },
+  "next_primary_targets": [
+    "OMB apportionment records for $340.8M Procurement, Construction, and Improvements and $10.75M Operations and Support labeled White House Security Measures",
+    "source-agency transfer records into White House Repair and Restoration account",
+    "White House Military Office transfer and obligation records",
+    "Clark Construction project summaries, invoices, and March 5 2026 cost estimate",
+    "private donor receipt/disbursement ledger"
+  ]
+}
