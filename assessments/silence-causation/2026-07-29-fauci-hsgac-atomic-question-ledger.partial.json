@@ -321,14 +321,76 @@
       "response_speaker": "Anthony Fauci",
       "response_state": "FIFTH_AMENDMENT_INVOCATION",
       "response_lines": "2589-2591"
+    },
+    {
+      "atomic_id": "AQ-036",
+      "speaker": "Senator James Lankford",
+      "turn_lines": "1284-1288",
+      "question_summary": "Did Fauci raise with the White House task force the risk that measles vaccination disruption from shutdowns could cause excess child deaths?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1289-1291",
+      "control_class": "SUBSTANTIVE_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-037",
+      "speaker": "Senator James Lankford",
+      "turn_lines": "1349-1361",
+      "question_summary": "Did Fauci have access, based on his position, to the unredacted Lawrence Livermore laboratory-origin assessment referenced by Lankford?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1366-1368",
+      "control_class": "DOCUMENT_ACCESS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-038",
+      "speaker": "Senator James Lankford",
+      "turn_lines": "1403-1406",
+      "question_summary": "What lessons or safeguards would Fauci recommend so future international research cooperation guarantees access to relevant information when an outbreak or laboratory incident occurs?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1407-1409",
+      "control_class": "FORWARD_LOOKING_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-039",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1851-1853",
+      "question_summary": "What day of the week was it?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1854-1856",
+      "control_class": "HARMLESS_BASELINE"
+    },
+    {
+      "atomic_id": "AQ-040",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1857-1857",
+      "question_summary": "What color tie was Fauci wearing?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1858-1860",
+      "control_class": "HARMLESS_BASELINE"
+    },
+    {
+      "atomic_id": "AQ-041",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1861-1861",
+      "question_summary": "What color was the carpet in front of Fauci?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1862-1864",
+      "control_class": "HARMLESS_BASELINE"
     }
   ],
   "coverage": {
-    "atomics": 35,
+    "atomics": 41,
     "senators_partially_covered": [
       "Rand Paul",
       "Ron Johnson",
+      "James Lankford",
       "Rick Scott",
+      "Josh Hawley",
       "Bernie Moreno",
       "Joni Ernst",
       "Ashley Moody"
@@ -349,5 +411,17 @@
     ]
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:06:00Z"
+  "last_updated_utc": "2026-08-28T12:11:00Z",
+  "control_analysis": {
+    "harmless_baseline_ids": [
+      "AQ-039",
+      "AQ-040",
+      "AQ-041"
+    ],
+    "harmless_baseline_response_distribution": {
+      "FIFTH_AMENDMENT_INVOCATION": 3
+    },
+    "interpretation": "The witness invoked the Fifth Amendment on three facially harmless baseline questions. Invocation on a substantive question therefore cannot, standing alone, discriminate among guilt, knowledge, motive, or exposure hypotheses.",
+    "inference_boundary": "Harmless-question refusal does not prove that all refusals had the same subjective basis; it establishes only that refusal was not limited to exposure-bearing questions."
+  }
 }
