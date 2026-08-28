@@ -1,0 +1,120 @@
+{
+  "dictionary_id": "ERL-ECON-MEASUREMENT-DICTIONARY",
+  "version": "1.1.0",
+  "indicators": [
+    {
+      "indicator_id": "ECON-GDP-TOTAL-REAL",
+      "label": "Real gross domestic product",
+      "concept": "Inflation-adjusted aggregate output",
+      "unit_class": "percentage",
+      "allowed_denominators": ["total"],
+      "required_context": ["price-basis","currency","geography","time-window","revision-vintage","seasonal-adjustment","source-methodology"],
+      "comparison_guardrails": ["Aggregate output does not establish per-person or household improvement.","Reconcile annualized quarterly rates with year-over-year and level measures."]
+    },
+    {
+      "indicator_id": "ECON-GDP-PER-CAPITA-REAL",
+      "label": "Real GDP per capita",
+      "concept": "Inflation-adjusted output per resident",
+      "unit_class": "percentage",
+      "allowed_denominators": ["per-capita"],
+      "required_context": ["price-basis","population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Reconcile population estimates and price bases.","Do not equate output per person with median household income."]
+    },
+    {
+      "indicator_id": "ECON-HOUSEHOLD-INCOME-REAL-MEDIAN",
+      "label": "Real median household income",
+      "concept": "Inflation-adjusted income at the household median",
+      "unit_class": "currency",
+      "allowed_denominators": ["median-household"],
+      "required_context": ["price-basis","currency","population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Reconcile household definition, taxes, transfers, and equivalence scales."]
+    },
+    {
+      "indicator_id": "ECON-WEALTH-DISTRIBUTION",
+      "label": "Household wealth distribution",
+      "concept": "Share or level of wealth held by population groups",
+      "unit_class": "percentage",
+      "allowed_denominators": ["percentile-share"],
+      "required_context": ["currency","population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Aggregate wealth cannot represent the median household.","Reconcile pension and housing treatment."]
+    },
+    {
+      "indicator_id": "ECON-HOUSING-AFFORDABILITY",
+      "label": "Housing affordability",
+      "concept": "Housing cost relative to income or purchasing capacity",
+      "unit_class": "index",
+      "allowed_denominators": ["per-household","median-household","other"],
+      "required_context": ["price-basis","currency","population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Reconcile owner, renter, mortgage, tax, insurance, and regional coverage."]
+    },
+    {
+      "indicator_id": "ECON-HOUSEHOLD-DEBT",
+      "label": "Household debt burden",
+      "concept": "Debt level or service burden relative to income or assets",
+      "unit_class": "percentage",
+      "allowed_denominators": ["per-household","median-household","other"],
+      "required_context": ["currency","population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Reconcile mortgage terms, interest resets, consumer credit, and income denominator."]
+    },
+    {
+      "indicator_id": "ECON-TRADE-CONCENTRATION",
+      "label": "Trade concentration",
+      "concept": "Share of exports or imports associated with a trading partner",
+      "unit_class": "percentage",
+      "allowed_denominators": ["total","sector"],
+      "required_context": ["currency","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Separate goods, services, sectors, value added, and gross flows."]
+    },
+    {
+      "indicator_id": "ECON-TARIFF-INCIDENCE",
+      "label": "Tariff incidence",
+      "concept": "Distribution of tariff cost among importers, producers, workers, consumers, and government",
+      "unit_class": "percentage",
+      "allowed_denominators": ["total","per-household","sector","other"],
+      "required_context": ["currency","population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Legal payer does not by itself establish final economic incidence.","Separate revenue transfer from efficiency loss."]
+    },
+    {
+      "indicator_id": "ECON-LABOR-MARKET-SECURITY",
+      "label": "Labor market security",
+      "concept": "Employment quantity, quality, stability, wages, hours, and bargaining position",
+      "unit_class": "rate",
+      "allowed_denominators": ["per-worker","sector","other"],
+      "required_context": ["price-basis","population","geography","time-window","revision-vintage","seasonal-adjustment","source-methodology"],
+      "comparison_guardrails": ["Unemployment alone does not capture underemployment, displacement, job quality, or labor-force exit."]
+    },
+    {
+      "indicator_id": "ECON-AUTOMATION-LABOR-EFFECT",
+      "label": "AI, automation, and robotics labor effect",
+      "concept": "Observed task, hiring, employment, wage, or bargaining effects attributable to automation with bounded controls",
+      "unit_class": "qualitative",
+      "allowed_denominators": ["per-worker","sector","other"],
+      "required_context": ["population","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Technology adoption timing does not establish displacement causation.","Separate augmentation, substitution, reclassification, and demand effects."]
+    },
+    {
+      "indicator_id": "ECON-MARGINAL-EXTERNAL-DEPENDENCY",
+      "label": "Marginal external-market dependency",
+      "concept": "Expected domestic loss from losing the next unit of access to a specific external customer, supplier, financing source, technology source, or logistics route",
+      "unit_class": "index",
+      "allowed_denominators": ["total","sector","product","other"],
+      "required_context": ["counterparty","substitution-window","product-or-service-scope","domestic-value-added","margin","capacity-constraint","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Falling gross trade share does not by itself prove falling dependency.","Measure switching cost, time to substitute, margin loss, capacity constraints, and domestic value added.","Separate temporary rerouting from durable replacement relationships."]
+    },
+    {
+      "indicator_id": "ECON-MARGINAL-COUNTERPART-REPLACEABILITY",
+      "label": "Marginal counterpart replaceability",
+      "concept": "Difficulty faced by foreign counterparties in replacing the next unit of a country's supply, demand, finance, technology, or logistics function",
+      "unit_class": "index",
+      "allowed_denominators": ["total","sector","product","other"],
+      "required_context": ["counterparty-set","substitution-window","product-or-service-scope","switching-cost","capacity-constraint","quality-difference","geography","time-window","revision-vintage","source-methodology"],
+      "comparison_guardrails": ["Market share loss does not by itself establish replaceability.","Reconcile price, quality, finance, logistics, regulatory, and capacity constraints.","A country can remain large while becoming more replaceable at the margin."]
+    }
+  ],
+  "guardrails": [
+    "Every comparison reconciles definitions before values.",
+    "Observations do not authorize effects.",
+    "National findings remain independently governed.",
+    "Missing evidence creates a search task, not a provisional conclusion."
+  ]
+}

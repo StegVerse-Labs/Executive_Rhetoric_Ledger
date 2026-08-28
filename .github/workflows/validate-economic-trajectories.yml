@@ -1,0 +1,42 @@
+name: Validate Economic Trajectories
+
+on:
+  pull_request:
+    paths:
+      - "CANADA_ECONOMIC_TRAJECTORY_MIRROR_HANDOFF.md"
+      - "US_ECONOMIC_TRAJECTORY_MIRROR_HANDOFF.md"
+      - "COMPARATIVE_ECONOMIC_TRAJECTORIES_MIRROR_HANDOFF.md"
+      - "economic-trajectories/**"
+      - "schemas/economic-*.schema.json"
+      - "standards/economic-trajectory-comparison-standard.md"
+      - "scripts/validate_economic_trajectories.py"
+      - "scripts/run_economic_research_lanes.py"
+      - "tests/test_economic_research_lanes.py"
+      - "schemas/economic-research-lanes.schema.json"
+      - ".github/workflows/run-economic-research-lanes.yml"
+      - ".github/workflows/validate-economic-trajectories.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "economic-trajectories/**"
+      - "schemas/economic-*.schema.json"
+      - "scripts/validate_economic_trajectories.py"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing pytest
+      - name: Validate independent national lanes and comparison overlay
+        run: python scripts/validate_economic_trajectories.py
+      - name: Validate automated national research lanes
+        run: pytest -q tests/test_economic_research_lanes.py

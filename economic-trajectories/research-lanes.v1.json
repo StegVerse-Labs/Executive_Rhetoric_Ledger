@@ -1,0 +1,114 @@
+{
+  "schema_version": "stegverse.erl.economic-research-lanes.v1",
+  "registry_id": "ERL-ECON-RESEARCH-LANES-V1",
+  "lanes": [
+    {
+      "lane_id": "ERL-ECON-CA",
+      "jurisdiction": "Canada",
+      "mode": "national-source-monitor",
+      "cadence": "weekly",
+      "sources": [
+        {
+          "source_id": "ERL-ECON-CA-SRC-STATCAN-HOUSEHOLD-INCOME",
+          "publisher": "Statistics Canada",
+          "jurisdiction": "Canada",
+          "source_class": "official-government",
+          "url": "https://www150.statcan.gc.ca/n1/en/subjects/income_pensions_spending_and_wealth/household_income",
+          "method": "GET",
+          "gap_ids": ["ERL-ECON-CA-GAP-LONG-RUN-HOUSEHOLD"],
+          "indicator_ids": ["ECON-HOUSEHOLD-INCOME-REAL-MEDIAN", "ECON-WEALTH-DISTRIBUTION"],
+          "expected_media_types": ["text/html"],
+          "stale_after_days": 35,
+          "evidence_use": "DISCOVERY_ONLY_UNTIL_REVIEW"
+        },
+        {
+          "source_id": "ERL-ECON-CA-SRC-STATCAN-TRADE",
+          "publisher": "Statistics Canada",
+          "jurisdiction": "Canada",
+          "source_class": "official-government",
+          "url": "https://www.statcan.gc.ca/en/subjects-start/international_trade",
+          "method": "GET",
+          "gap_ids": ["ERL-ECON-CA-GAP-DIVERSIFICATION-EFFECTS"],
+          "indicator_ids": ["ECON-TRADE-CONCENTRATION"],
+          "expected_media_types": ["text/html"],
+          "stale_after_days": 35,
+          "evidence_use": "DISCOVERY_ONLY_UNTIL_REVIEW"
+        },
+        {
+          "source_id": "ERL-ECON-CA-SRC-STATCAN-AI-LABOUR",
+          "publisher": "Statistics Canada",
+          "jurisdiction": "Canada",
+          "source_class": "official-government",
+          "url": "https://www.statcan.gc.ca/en/subjects-start/labour_",
+          "method": "GET",
+          "gap_ids": ["ERL-ECON-CA-GAP-AUTOMATION"],
+          "indicator_ids": ["ECON-AUTOMATION-LABOR-EFFECT", "ECON-LABOR-MARKET-SECURITY"],
+          "expected_media_types": ["text/html"],
+          "stale_after_days": 35,
+          "evidence_use": "DISCOVERY_ONLY_UNTIL_REVIEW"
+        }
+      ]
+    },
+    {
+      "lane_id": "ERL-ECON-US",
+      "jurisdiction": "United States",
+      "mode": "national-source-monitor",
+      "cadence": "weekly",
+      "sources": [
+        {
+          "source_id": "ERL-ECON-US-SRC-CENSUS-HOUSEHOLD-INCOME",
+          "publisher": "U.S. Census Bureau",
+          "jurisdiction": "United States",
+          "source_class": "official-government",
+          "url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html",
+          "method": "GET",
+          "gap_ids": ["ERL-ECON-US-GAP-AGGREGATE-HOUSEHOLD"],
+          "indicator_ids": ["ECON-HOUSEHOLD-INCOME-REAL-MEDIAN", "ECON-WEALTH-DISTRIBUTION"],
+          "expected_media_types": ["text/html"],
+          "stale_after_days": 100,
+          "evidence_use": "DISCOVERY_ONLY_UNTIL_REVIEW"
+        },
+        {
+          "source_id": "ERL-ECON-US-SRC-USITC-TARIFF-INVESTIGATIONS",
+          "publisher": "U.S. International Trade Commission",
+          "jurisdiction": "United States",
+          "source_class": "official-government",
+          "url": "https://www.usitc.gov/keywords/factfinding",
+          "method": "GET",
+          "gap_ids": ["ERL-ECON-US-GAP-TARIFF-REALIZED"],
+          "indicator_ids": ["ECON-TARIFF-INCIDENCE"],
+          "expected_media_types": ["text/html"],
+          "stale_after_days": 35,
+          "evidence_use": "DISCOVERY_ONLY_UNTIL_REVIEW"
+        },
+        {
+          "source_id": "ERL-ECON-US-SRC-BLS-AI-LABOUR",
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "jurisdiction": "United States",
+          "source_class": "official-government",
+          "url": "https://www.bls.gov/emp/",
+          "method": "GET",
+          "gap_ids": ["ERL-ECON-US-GAP-AUTOMATION"],
+          "indicator_ids": ["ECON-AUTOMATION-LABOR-EFFECT", "ECON-LABOR-MARKET-SECURITY"],
+          "expected_media_types": ["text/html"],
+          "stale_after_days": 100,
+          "evidence_use": "DISCOVERY_ONLY_UNTIL_REVIEW"
+        }
+      ]
+    },
+    {
+      "lane_id": "ERL-ECON-CA-US-OVERLAY",
+      "jurisdiction": "Canada-United States comparison",
+      "mode": "reviewed-findings-only",
+      "cadence": "manual-only",
+      "sources": []
+    }
+  ],
+  "authority": {
+    "may_capture": true,
+    "may_route_gaps": true,
+    "may_create_findings": false,
+    "may_compare": false,
+    "may_publish": false
+  }
+}

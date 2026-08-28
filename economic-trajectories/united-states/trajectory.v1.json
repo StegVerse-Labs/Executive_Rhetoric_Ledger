@@ -1,0 +1,248 @@
+{
+  "schema_version": "stegverse.erl.national-economic-trajectory.v1",
+  "lane_id": "ERL-ECON-US",
+  "jurisdiction": "United States",
+  "evidence_period": {
+    "start": "1980-01-01",
+    "end": "present",
+    "baseline_policy": "Build consistent series from 1980 forward; retain earlier institutional anchors and record source-series breaks rather than forcing continuity."
+  },
+  "status": "evidence-population",
+  "measurement_dictionary": "economic-trajectories/measurement-dictionary.v1.json",
+  "observations": [
+    {
+      "observation_id": "ERL-ECON-US-OBS-GDP-Q1-2026",
+      "indicator_id": "ECON-GDP-TOTAL-REAL",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "reported_value": 2.1,
+      "unit": "percent annualized quarterly growth",
+      "price_basis": "real",
+      "denominator": "total",
+      "geography": "United States",
+      "population_scope": "national economy",
+      "revision_status": "revised",
+      "seasonal_adjustment": "adjusted",
+      "sources": [
+        {
+          "source_id": "SRC-BEA-GDP-Q2-ADV-2026",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "title": "GDP (Advance Estimate), 2nd Quarter 2026",
+          "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+          "source_class": "official-government",
+          "release_date": "2026-07-30",
+          "accessed_date": "2026-08-25",
+          "supports": [
+            "BEA reported first-quarter 2026 real GDP growth of 2.1% at an annual rate in the Q2 advance release."
+          ],
+          "limitations": [
+            "Aggregate annualized quarterly growth does not establish per-capita, median, or distributional improvement."
+          ]
+        }
+      ],
+      "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
+      "notes": []
+    },
+    {
+      "observation_id": "ERL-ECON-US-OBS-GDP-Q2-2026",
+      "indicator_id": "ECON-GDP-TOTAL-REAL",
+      "period_start": "2026-04-01",
+      "period_end": "2026-06-30",
+      "reported_value": 1.5,
+      "unit": "percent annualized quarterly growth",
+      "price_basis": "real",
+      "denominator": "total",
+      "geography": "United States",
+      "population_scope": "national economy",
+      "revision_status": "provisional",
+      "seasonal_adjustment": "adjusted",
+      "sources": [
+        {
+          "source_id": "SRC-BEA-GDP-Q2-ADV-2026",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "title": "GDP (Advance Estimate), 2nd Quarter 2026",
+          "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+          "source_class": "official-government",
+          "release_date": "2026-07-30",
+          "accessed_date": "2026-08-25",
+          "supports": [
+            "BEA reported second-quarter 2026 real GDP growth of 1.5% at an annual rate."
+          ],
+          "limitations": [
+            "Advance estimate is revisable and aggregate growth does not establish household security."
+          ]
+        }
+      ],
+      "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
+      "notes": []
+    },
+    {
+      "observation_id": "ERL-ECON-US-OBS-PAYROLL-JULY-2026",
+      "indicator_id": "ECON-LABOR-MARKET-SECURITY",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-31",
+      "reported_value": -23000,
+      "unit": "preliminary payroll employment change",
+      "price_basis": "not-applicable",
+      "denominator": "total",
+      "geography": "United States",
+      "population_scope": "nonfarm payroll employment",
+      "revision_status": "provisional",
+      "seasonal_adjustment": "adjusted",
+      "sources": [
+        {
+          "source_id": "SRC-BLS-LATEST-AUG-2026",
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "title": "Latest Numbers",
+          "url": "https://www.bls.gov/",
+          "source_class": "official-government",
+          "release_date": "2026-08-01",
+          "accessed_date": "2026-08-25",
+          "supports": [
+            "BLS displayed a preliminary July 2026 payroll employment change of -23,000 and unemployment rate of 4.1%."
+          ],
+          "limitations": [
+            "One monthly estimate is revisable and does not establish a structural trend or automation causation."
+          ]
+        }
+      ],
+      "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
+      "notes": []
+    },
+    {
+      "observation_id": "ERL-ECON-US-OBS-TARIFF-INCIDENCE-2018-2021",
+      "indicator_id": "ECON-TARIFF-INCIDENCE",
+      "period_start": "2018-01-01",
+      "period_end": "2021-12-31",
+      "reported_value": "U.S. importers bore nearly the full tariff cost; import prices rose approximately one-for-one with the tariffs studied",
+      "unit": "source-language",
+      "price_basis": "not-applicable",
+      "denominator": "sector",
+      "geography": "United States",
+      "population_scope": "imports subject to selected Section 232 and Section 301 tariffs",
+      "revision_status": "historical-series",
+      "seasonal_adjustment": "not-applicable",
+      "sources": [
+        {
+          "source_id": "SRC-USITC-232-301-2023",
+          "publisher": "U.S. International Trade Commission",
+          "title": "Certain Effects of Section 232 and 301 Tariffs Reduced U.S. Imports and Increased Prices and Production in Most Affected Industries",
+          "url": "https://www.usitc.gov/press_room/news_release/2023/er0315_63679.htm",
+          "source_class": "official-government",
+          "release_date": "2023-03-15",
+          "accessed_date": "2026-08-25",
+          "supports": [
+            "USITC reported that U.S. importers bore nearly the full cost of the studied tariffs and import prices increased at approximately the tariff rate."
+          ],
+          "limitations": [
+            "Results cover selected 2018-2021 tariffs and affected industries, not every tariff or all downstream and long-run incidence."
+          ]
+        }
+      ],
+      "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
+      "notes": []
+    },
+    {
+      "observation_id": "ERL-ECON-US-OBS-TARIFF-MACRO-PROJECTION-2026",
+      "indicator_id": "ECON-TARIFF-INCIDENCE",
+      "period_start": "2025-01-01",
+      "period_end": "2028-12-31",
+      "reported_value": "temporarily higher inflation with lower real investment, real GDP, and employment relative to the no-change baseline",
+      "unit": "model-projection source-language",
+      "price_basis": "real",
+      "denominator": "total",
+      "geography": "United States",
+      "population_scope": "national economy",
+      "revision_status": "source-language",
+      "seasonal_adjustment": "not-applicable",
+      "sources": [
+        {
+          "source_id": "SRC-CBO-TARIFF-UPDATE-2026",
+          "publisher": "Congressional Budget Office",
+          "title": "An Update About CBO's Projections of the Budgetary Effects of Tariffs",
+          "url": "https://www.cbo.gov/publication/62210",
+          "source_class": "official-government",
+          "release_date": "2026-03-05",
+          "accessed_date": "2026-08-25",
+          "supports": [
+            "CBO stated that trade-policy changes since January 2025 were projected to temporarily raise inflation and reduce real investment, real GDP, and employment."
+          ],
+          "limitations": [
+            "Projection depends on the tariff set and modeling assumptions and does not alone establish realized household incidence."
+          ]
+        }
+      ],
+      "effect_status": "NOT_INFERRED_FROM_OBSERVATION",
+      "notes": [
+        "Projection remains distinct from realized outcome."
+      ]
+    }
+  ],
+  "findings": [],
+  "gaps": [
+    {
+      "gap_id": "ERL-ECON-US-GAP-AGGREGATE-HOUSEHOLD",
+      "dimension": "aggregate-to-household transmission",
+      "missing_evidence": [
+        "Revision-consistent median after-tax income and consumption",
+        "Cost burdens for housing healthcare insurance food and financing",
+        "Distribution by wealth ownership age region and income"
+      ],
+      "target_source_classes": [
+        "Census",
+        "BEA",
+        "BLS",
+        "Federal Reserve",
+        "state records"
+      ],
+      "next_query": "Acquire harmonized aggregate, median, distributional, cost-burden, debt, and wealth series from 1980 to present.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-US-GAP-TARIFF-REALIZED",
+      "dimension": "realized tariff incidence and productive capacity",
+      "missing_evidence": [
+        "Product-level legal and final incidence",
+        "Downstream margin wage employment and price effects",
+        "Retaliatory foreign market loss",
+        "Competitive domestic capacity versus protected pricing power"
+      ],
+      "target_source_classes": [
+        "USITC",
+        "BEA",
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "USTR",
+        "Census trade"
+      ],
+      "next_query": "Trace tariffed product lanes through importer payment, downstream production, household prices, employment, investment, retaliation, and capacity outcomes.",
+      "status": "open"
+    },
+    {
+      "gap_id": "ERL-ECON-US-GAP-AUTOMATION",
+      "dimension": "AI automation and robotics effects",
+      "missing_evidence": [
+        "Firm and sector adoption",
+        "Hiring and task substitution",
+        "Wage and bargaining effects",
+        "Augmentation new-demand and macro controls"
+      ],
+      "target_source_classes": [
+        "BLS",
+        "Census",
+        "Federal Reserve",
+        "SEC filings",
+        "academic longitudinal studies"
+      ],
+      "next_query": "Acquire U.S. sector-level automation adoption and matched labor outcomes with augmentation and business-cycle controls.",
+      "status": "open"
+    }
+  ],
+  "authority": {
+    "research_authority": "ERL",
+    "may_publish": false,
+    "may_infer_missing_effects": false,
+    "reviewed_findings_may_be_compared": true
+  }
+}

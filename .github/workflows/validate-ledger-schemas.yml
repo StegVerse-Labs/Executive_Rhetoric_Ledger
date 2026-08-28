@@ -30,6 +30,8 @@ jobs:
           if list(Draft202012Validator(schema).iter_errors(sample)):
               raise SystemExit("Political influence tree sample failed validation")
           PY
+      - name: Validate economic trajectory lanes and comparison boundaries
+        run: python scripts/validate_economic_trajectories.py
       - name: Validate embedded source receipts
         run: python scripts/validate_source_receipts.py
       - name: Validate producer export examples

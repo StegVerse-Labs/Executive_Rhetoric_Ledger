@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/schemas/economic-measurement-dictionary.schema.json",
+  "title": "Economic Measurement Dictionary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "dictionary_id",
+    "version",
+    "indicators",
+    "guardrails"
+  ],
+  "properties": {
+    "dictionary_id": {
+      "const": "ERL-ECON-MEASUREMENT-DICTIONARY"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "indicators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "indicator_id",
+          "label",
+          "concept",
+          "unit_class",
+          "allowed_denominators",
+          "required_context",
+          "comparison_guardrails"
+        ],
+        "properties": {
+          "indicator_id": {
+            "type": "string",
+            "pattern": "^ECON-[A-Z0-9-]+$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "concept": {
+            "type": "string",
+            "minLength": 1
+          },
+          "unit_class": {
+            "enum": [
+              "currency",
+              "percentage",
+              "index",
+              "count",
+              "rate",
+              "qualitative"
+            ]
+          },
+          "allowed_denominators": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "total",
+                "per-capita",
+                "per-household",
+                "median-household",
+                "per-worker",
+                "per-hour",
+                "percentile-share",
+                "sector",
+                "none",
+                "other"
+              ]
+            }
+          },
+          "required_context": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "price-basis",
+                "currency",
+                "population",
+                "geography",
+                "time-window",
+                "revision-vintage",
+                "seasonal-adjustment",
+                "source-methodology"
+              ]
+            }
+          },
+          "comparison_guardrails": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "guardrails": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
