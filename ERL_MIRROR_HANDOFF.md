@@ -443,3 +443,37 @@ PR #48 is materially diverged from current `main`. At the latest explicit compar
 7. Reconcile PR #48 against current main by path before any merge decision.
 
 No downstream Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this advancement alone.
+
+
+### 2026-08-28 WS-B denominator completion update
+
+Issue #47 / PR #48 has now advanced beyond the earlier addendum's denominator-pending state.
+
+At bounded implementation head `cff288b6b48ca40572af096556136dfa51567271`:
+
+```text
+atomic question ledger state: COMPLETE_NON_PROMOTIONAL
+complete atomic question denominator: 114
+question coverage audit: COMPLETE
+denominator complete: true
+per-question authority assignment: PENDING
+motive finding authorized: false
+publication finding authorized: false
+```
+
+Durable coverage audit:
+`assessments/silence-causation/2026-07-29-fauci-hsgac-question-coverage-audit.json` on PR #48.
+
+Denominator rule: distinct atomic propositions presented to the witness during questioning are included when a witness response opportunity is explicit or a witness response follows. Rhetorical/self-answered interrogatives without a witness response opportunity are excluded. Repeated Chair directions to answer do not create a new atomic question unless they introduce a distinct proposition.
+
+All 114 reconstructed atomics currently carry a Fifth Amendment invocation response state. AQ-047 additionally preserves the preceding procedural response before invocation. The three harmless-baseline questions remain part of the denominator/control set and prevent treating refusal alone as question-specific incriminating evidence.
+
+Latest hosted proof:
+
+```text
+Validate silence-causation assessments: 33173294598 SUCCESS
+Validate durable task state: 33173294635 SUCCESS
+Validate Ledger Schemas: 33173294600 SUCCESS
+```
+
+The next executable boundary is no longer denominator construction. It is per-question formal/documented-de-facto authority assignment, authority-misassignment flags, and WS-C primary-source authority/lifecycle reconstruction. PR #48 remains materially diverged from main and must still receive path-level reconciliation before any merge decision.
