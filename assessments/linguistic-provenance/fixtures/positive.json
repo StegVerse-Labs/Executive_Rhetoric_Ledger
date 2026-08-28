@@ -1,0 +1,15 @@
+{
+  "id":"ERL-LP-2026-08-27-ENREGISTERMENT-DEMO",
+  "status":"research_candidate",
+  "observed_features":[
+    {"feature":"em dash","observation_basis":"direct_text_observation","value":true},
+    {"feature":"three-part list","observation_basis":"direct_text_observation","value":true},
+    {"feature":"not X but Y construction","observation_basis":"direct_text_observation","value":true}
+  ],
+  "enregisterment_claims":[
+    {"signal":"cluster perceived as AI voice","population_or_context":"LinkedIn discussion supplied by user","time_window":"2026-08","evidence_level":"anecdotal"}
+  ],
+  "provenance_evidence":[],
+  "authorship_finding":{"state":"not_assessed","source_class":"unknown"},
+  "notes":["Perceived AI register is recorded without source attribution."]
+}
