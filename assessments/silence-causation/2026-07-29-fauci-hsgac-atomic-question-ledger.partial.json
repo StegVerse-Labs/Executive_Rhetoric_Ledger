@@ -3,7 +3,7 @@
   "topic_id": "2026-07-29-fauci-hsgac",
   "source_id": "SRC-GOVINFO-CHRG-119shrg64382",
   "source_url": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-  "state": "PARTIAL_NON_PROMOTIONAL",
+  "state": "COMPLETE_NON_PROMOTIONAL",
   "reconstruction_method": "Atomic propositions are separated from multi-question turns and anchored to official GovInfo transcript line ranges. Summaries are normalized and do not substitute for the preserved official wording.",
   "response_semantics": "Fifth Amendment invocation is recorded as a response state only and is never treated as admission, truth, falsity, motive, or corroboration.",
   "records": [
@@ -440,7 +440,12 @@
       "response_speaker": "Anthony Fauci",
       "response_state": "FIFTH_AMENDMENT_INVOCATION",
       "response_lines": "1956-1958",
-      "control_class": "LEGAL_CHARACTERIZATION_QUESTION"
+      "control_class": "LEGAL_CHARACTERIZATION_QUESTION",
+      "response_sequence": [
+        "PROCEDURAL_RESPONSE",
+        "FIFTH_AMENDMENT_INVOCATION"
+      ],
+      "response_sequence_note": "The witness first asked whether the senator's statement was a question, then invoked the Fifth after the senator confirmed it was a question."
     },
     {
       "atomic_id": "AQ-048",
@@ -1126,12 +1131,11 @@
       "Joni Ernst",
       "Ashley Moody"
     ],
-    "proceeding_complete": false,
+    "proceeding_complete": true,
     "next_required_sections": [
-      "audit any remaining first-round and later-round question/response pairs for omissions",
-      "classify any non-Fifth response states",
-      "authority assignment per atomic question",
-      "establish complete-question denominator"
+      "per-question formal/documented-de-facto authority assignment",
+      "authority-misassignment flags",
+      "independent document/witness reconstruction for substantive claims"
     ],
     "senator_turns_without_witness_questions": [
       "Gary Peters",
@@ -1140,10 +1144,13 @@
       "Andy Kim",
       "John Fetterman"
     ],
-    "later_round_started": true
+    "later_round_started": true,
+    "complete_question_denominator": 114,
+    "denominator_definition": "Distinct atomic propositions presented to the witness during the questioning rounds are included when a witness response opportunity is explicit or a witness response follows. Rhetorical/self-answered interrogatives without a witness response opportunity are excluded. Repeated Chair directions to answer do not create a new atomic question unless they introduce a distinct proposition.",
+    "omission_audit_state": "COMPLETE"
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:37:00Z",
+  "last_updated_utc": "2026-08-28T13:05:00Z",
   "control_analysis": {
     "harmless_baseline_ids": [
       "AQ-039",
@@ -1182,5 +1189,17 @@
       "turn_lines": "883-977",
       "classification": "STATEMENT_NO_WITNESS_QUESTION_OBSERVED"
     }
-  ]
+  ],
+  "completeness_receipt": {
+    "observed_at_utc": "2026-08-28T13:05:00Z",
+    "official_source": "CHRG-119shrg64382",
+    "atomic_question_denominator": 114,
+    "response_state_distribution": {
+      "FIFTH_AMENDMENT_INVOCATION": 114
+    },
+    "member_turns_audited": true,
+    "no_question_turns_recorded": true,
+    "repeated_direction_rule": "procedural repeat excluded unless a distinct proposition is introduced",
+    "non_promotional": true
+  }
 }
