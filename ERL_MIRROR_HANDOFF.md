@@ -369,3 +369,77 @@ PR #82 also repaired two repository-wide validation blockers discovered by hoste
 
 ### 2026-08-28 linguistic-provenance closeout
 Issue #81 goal tasks LP-001 through LP-008 are complete after merge and downstream authority review. The correct downstream disposition is fail-closed/no-copy rather than forced propagation. Source goal activation: 100%. Downstream publication/release authority remains false. Scoped authority: `assessments/linguistic-provenance/LINGUISTIC_PROVENANCE_MIRROR_HANDOFF.md`.
+
+
+## 2026-08-28 canonical Fauci/HSGAC live advancement — superseding execution addendum
+
+This addendum supersedes the older WS-A/WS-B status statements above where they conflict with the current canonical implementation branch. Issue #47 / PR #48 remains the stronger bounded authority for `assessments/silence-causation/**`.
+
+Current implementation branch head observed during this reconciliation: `bb0fececef01464d3d1c6694fa445238cc2d6f64` on `feature/fauci-hsgac-source-custody`.
+
+### New authoritative source state
+
+U.S. Government Publishing Office has published the official July 29, 2026 hearing record as:
+
+```text
+S. Hrg. 119-504
+GovInfo package: CHRG-119shrg64382
+official transcript pointer: https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm
+```
+
+Repository receipt on PR #48:
+`assessments/silence-causation/custody/2026-07-29-fauci-hsgac-govinfo-transcript-receipt.json`.
+
+`SRCQ-003` is now `COMPLETE` through the immutable official GovInfo transcript pointer. Native transcript bytes were not stored by the connected repository-writing runtime, so no SHA-256 or byte-length claim is made.
+
+`SRCQ-004` and `SRCQ-005` (Paul/Peters native statement PDFs) remain `REVIEW_REQUIRED`; URL availability and visual inspection do not equal native byte custody.
+
+### WS-A / WS-B current state
+
+```text
+WS-A primary-source custody: PARTIAL / OFFICIAL TRANSCRIPT VERIFIED
+WS-B atomic question reconstruction: ACTIVE_PARTIAL / MACHINE_ENFORCED
+atomic records reconstructed: 114
+coverage complete: false
+question-causation finding: NOT_ASSESSABLE
+motive finding authorized: false
+publication finding authorized: false
+```
+
+Current partial ledger:
+`assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json`.
+
+Machine validator:
+`scripts/validate_fauci_atomic_question_ledger.py`.
+
+The validator enforces continuous unique atomic IDs, official GovInfo source binding, source-line anchors, bounded response states, non-promotional classification, harmless-control integrity, and the rule that Fifth Amendment invocation is a response state rather than an admission or motive/culpability finding.
+
+### Blanket-refusal control
+
+Three facially harmless Hawley questions are retained as explicit controls: day of week, tie color, and carpet color. All three received the same Fifth Amendment invocation response state. Therefore invocation on a substantive question cannot, standing alone, be treated as question-specific incriminating evidence. This does not establish that every invocation had the same subjective basis.
+
+### Latest hosted proof
+
+At PR #48 head `bb0fececef01464d3d1c6694fa445238cc2d6f64`:
+
+```text
+Validate silence-causation assessments: run 33172809832 — SUCCESS
+Validate durable task state: run 33172810054 — SUCCESS
+Validate Ledger Schemas: run 33172809833 — SUCCESS
+```
+
+### Branch-integration warning
+
+PR #48 is materially diverged from current `main`. At the latest explicit comparison it was 66 commits ahead and 267 commits behind with merge base `98fe4c41e066fb8412b16749edb32d10ac71b5d9`. Do not force-merge, rebase, or overwrite current mainline research/candidate/validation surfaces without a path-level reconciliation first.
+
+### Next executable boundary
+
+1. Audit the complete GovInfo transcript for omitted question/response pairs.
+2. Classify any non-Fifth response states.
+3. Establish a complete-question denominator and ledger completeness receipt.
+4. Attach formal/documented-de-facto authority assignments and authority-misassignment flags per atomic question.
+5. Continue WS-C authority/lifecycle edges using primary evidence only.
+6. Keep WS-D and WS-E blocked until their declared dependencies are satisfied.
+7. Reconcile PR #48 against current main by path before any merge decision.
+
+No downstream Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this advancement alone.
