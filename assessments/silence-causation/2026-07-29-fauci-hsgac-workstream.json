@@ -105,7 +105,7 @@
     {
       "id": "WS-B",
       "name": "atomic-question-reconstruction",
-      "status": "question_ledger_complete_authority_assignment_pending",
+      "status": "question_ledger_complete_authority_assignment_partial_machine_enforced",
       "dependencies": [
         "WS-A:official-transcript-satisfied-for-question-reconstruction"
       ],
@@ -116,7 +116,7 @@
         "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
       ],
       "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-      "next_task": "Attach per-question formal/documented-de-facto authority assignments and authority-misassignment flags using primary authority records; keep substantive claim reconstruction separate from refusal evidence.",
+      "next_task": "Expand primary-source-backed authority assignments from 39/114 to full coverage, prioritizing Federal records/FOIA, NIAID programmatic versus GMO obligation authority, state/local public-health implementation authority, and intelligence/classified-program authority.",
       "completed_or_installed": [
         "partial machine-readable atomic question ledger seeded with 17 atomics from official GovInfo transcript",
         "response-state semantics preserve Fifth Amendment invocation as non-admission",
@@ -151,22 +151,34 @@
       "denominator_complete": true,
       "complete_question_denominator": 114,
       "remaining": [
-        "per-question formal/documented-de-facto authority assignment",
-        "authority-misassignment flags",
+        "remaining per-question formal/documented-de-facto authority assignments",
+        "remaining authority-misassignment flags",
+        "award-specific Notices of Award for NIH grant obligation questions",
+        "policy/jurisdiction-specific public-health authority records",
+        "IC/DHS/security-clearance authority records",
         "human-readable question ledger review"
-      ]
+      ],
+      "authority_assignment_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-assignment.partial.json",
+      "authority_source_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
+      "authority_assignments_completed": 39,
+      "authority_assignments_total": 114,
+      "authority_assignment_coverage_complete": false,
+      "authority_validator": "scripts/validate_fauci_authority_assignments.py"
     },
     {
       "id": "WS-C",
       "name": "chronology-and-authority-graph",
-      "status": "partial_verified_metadata_seed_installed",
+      "status": "partial_authority_source_registry_installed",
       "dependencies": [
         "WS-A"
       ],
       "completed_or_installed": [
         "verified hearing metadata chronology seed",
         "member-statement claim candidates separated from observed facts",
-        "explicit rule prohibiting conversion of member allegations into authority/causation edges without independent primary evidence"
+        "explicit rule prohibiting conversion of member allegations into authority/causation edges without independent primary evidence",
+        "primary authority source registry installed for NIH grant obligation, policy-version boundary, and presidential pardon authority",
+        "partial proposition-specific authority assignments installed for 39 atomic questions",
+        "machine-enforced authority-misassignment boundaries for NIH grants and pardon questions"
       ],
       "remaining": [
         "participant authority graph",
@@ -275,14 +287,13 @@
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
   "latest_machine_execution": {
-    "observed_at_utc": "2026-08-28T13:08:00Z",
-    "event": "WS_B_QUESTION_DENOMINATOR_FROZEN",
-    "atomic_records_total": 114,
-    "complete_question_denominator": 114,
-    "denominator_complete": true,
-    "coverage_complete": true,
-    "ledger_state": "COMPLETE_NON_PROMOTIONAL",
-    "effect": "ATOMIC_QUESTION_LEDGER_COMPLETENESS_GATE_SATISFIED",
+    "observed_at_utc": "2026-08-28T13:22:00Z",
+    "event": "AUTHORITY_ASSIGNMENT_PARTIAL_MACHINE_ENFORCEMENT_INSTALLED",
+    "atomic_question_denominator": 114,
+    "authority_assignments_completed": 39,
+    "authority_assignment_coverage_complete": false,
+    "primary_authority_sources_installed": 3,
+    "effect": "WS_B_AUTHORITY_ASSIGNMENT_ACTIVE_AND_WS_C_ADVANCED",
     "motive_finding_effect": false,
     "publication_effect": false
   }
