@@ -4,7 +4,7 @@
   "state": "ACTIVE_PARTIAL_NON_PROMOTIONAL",
   "ledger_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json",
   "authority_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
-  "observed_at_utc": "2026-08-28T13:36:00Z",
+  "observed_at_utc": "2026-08-28T13:46:00Z",
   "assignments": [
     {
       "atomic_ids": [
@@ -130,10 +130,32 @@
         "AUTH-NARA-FEDERAL-EMPLOYEE-RECORDS-GUIDANCE"
       ],
       "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-007",
+        "AQ-009",
+        "AQ-010",
+        "AQ-011",
+        "AQ-012",
+        "AQ-058"
+      ],
+      "authority_domain": "NIH_PROGRAMMATIC_SCIENTIFIC_GRANT_ROLE",
+      "formal_authority_holder_class": "Award/program-specific NIH Program Official for programmatic, scientific, and/or technical grant aspects",
+      "exact_holder_state": "PENDING_AWARD_OR_PROGRAM_SPECIFIC_PRIMARY_RECORD",
+      "question_target_role": "Anthony Fauci / NIAID Director; Institute leadership does not establish that he was the designated Program Official for a specific award or experiment.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "Questions can collapse Institute leadership, programmatic scientific oversight, recipient/PI conduct, laboratory conduct, and Grants Management Officer obligation authority into Fauci personally. Award/program-specific records are required.",
+      "source_ids": [
+        "AUTH-NIH-PO-FY2020",
+        "AUTH-NIH-GMO-FY2020",
+        "AUTH-NIH-GPS-2015-APPLICABILITY"
+      ],
+      "factual_event_established": false
     }
   ],
   "coverage": {
-    "atomic_ids_assigned": 45,
+    "atomic_ids_assigned": 51,
     "atomic_total": 114,
     "coverage_complete": false,
     "next_domains": [
@@ -143,7 +165,7 @@
       "intelligence/classified-program authority records",
       "remaining relationship/knowledge questions with no formal-authority issue"
     ],
-    "coverage_fraction": "45/114"
+    "coverage_fraction": "51/114"
   },
   "promotion_boundary": "Authority assignment is proposition-specific and does not prove the questioned event, witness knowledge, motive, concealment, culpability, legal violation, or publication finding."
 }
