@@ -37,8 +37,25 @@ def main():
     expected="supported_authorship_requires_independent_or_strong_provenance"
     if expected not in ne:
         print("negative fixture failed for wrong reason:",ne); return 1
+    review_path=ROOT/"assessments"/"linguistic-provenance"/"downstream-propagation-review.json"
+    review=json.loads(review_path.read_text())
+    if review.get("disposition")!="NO_DOWNSTREAM_PROPAGATION_AUTHORIZED":
+        print("downstream review disposition invalid"); return 1
+    if review.get("raw_research_candidate_propagation_authorized") is not False:
+        print("raw research-candidate propagation must remain false"); return 1
+    destinations=review.get("destinations",[])
+    if len(destinations)!=4:
+        print("downstream review must cover four destinations"); return 1
+    if any(d.get("authorized") is not False for d in destinations):
+        print("destination propagation unexpectedly authorized"); return 1
+    completion=review.get("completion",{})
+    if completion.get("lp_008_review_complete") is not True:
+        print("LP-008 review not complete"); return 1
+    if completion.get("propagation_performed") is not False:
+        print("LP-008 review must not claim propagation performed"); return 1
     print("PASS linguistic provenance governance")
     print("negative rejection:", expected)
+    print("downstream disposition: NO_DOWNSTREAM_PROPAGATION_AUTHORIZED")
     return 0
 
 if __name__=="__main__":
