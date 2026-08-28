@@ -381,10 +381,90 @@
       "response_state": "FIFTH_AMENDMENT_INVOCATION",
       "response_lines": "1862-1864",
       "control_class": "HARMLESS_BASELINE"
+    },
+    {
+      "atomic_id": "AQ-042",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1875-1884",
+      "question_summary": "Did Fauci become wealthier during the pandemic while Federal employees were allegedly used to solicit cash prizes for him?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1885-1887",
+      "control_class": "EXPOSURE_BEARING_ALLEGATION"
+    },
+    {
+      "atomic_id": "AQ-043",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1888-1888",
+      "question_summary": "Did Fauci remember Greg Folkers and who he was?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1889-1891",
+      "control_class": "IDENTITY_RELATIONSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-044",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1892-1893",
+      "question_summary": "Did Fauci remember Patricia Conrad and who she was?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1894-1896",
+      "control_class": "IDENTITY_RELATIONSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-045",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1913-1913",
+      "question_summary": "What was the Dan David Award, and did Fauci remember it?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1914-1916",
+      "control_class": "AWARD_CONTEXT_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-046",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1917-1932",
+      "question_summary": "Did Fauci use multiple Federal employees, Federal time, and Federal resources to solicit cash awards for himself?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1933-1935",
+      "control_class": "EXPOSURE_BEARING_ALLEGATION"
+    },
+    {
+      "atomic_id": "AQ-047",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1944-1955",
+      "question_summary": "Did the described use of Federal employees and email to pursue personal cash awards violate law or ethics rules?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1956-1958",
+      "control_class": "LEGAL_CHARACTERIZATION_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-048",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1959-1970",
+      "question_summary": "Was it true that Fauci used Federal resources, dollars, employees, offices, email, and time to solicit cash awards?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1971-1973",
+      "control_class": "EXPOSURE_BEARING_ALLEGATION"
+    },
+    {
+      "atomic_id": "AQ-049",
+      "speaker": "Senator Josh Hawley",
+      "turn_lines": "1974-1988",
+      "question_summary": "Was Fauci's pandemic-era conduct a multi-month or multi-year course of self-dealing, as alleged by Hawley?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1989-1991",
+      "control_class": "EXPOSURE_BEARING_ALLEGATION"
     }
   ],
   "coverage": {
-    "atomics": 41,
+    "atomics": 49,
     "senators_partially_covered": [
       "Rand Paul",
       "Ron Johnson",
@@ -398,20 +478,22 @@
     "proceeding_complete": false,
     "next_required_sections": [
       "remaining Paul/Johnson turns not yet atomized",
-      "Hassan",
-      "Lankford",
-      "Blumenthal",
-      "Kim",
-      "Hawley",
-      "Fetterman",
-      "remaining Moreno/Ernst/Moody turns",
-      "all later rounds",
+      "remaining Hawley/Scott/Moreno/Ernst/Moody turns",
+      "later questioning rounds",
+      "any remaining member questions",
       "non-refusal answer states",
-      "authority assignment per atomic question"
+      "authority assignment per atomic question",
+      "completeness denominator"
+    ],
+    "senator_turns_without_witness_questions": [
+      "Maggie Hassan",
+      "Richard Blumenthal",
+      "Andy Kim",
+      "John Fetterman"
     ]
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:11:00Z",
+  "last_updated_utc": "2026-08-28T12:13:00Z",
   "control_analysis": {
     "harmless_baseline_ids": [
       "AQ-039",
@@ -423,5 +505,27 @@
     },
     "interpretation": "The witness invoked the Fifth Amendment on three facially harmless baseline questions. Invocation on a substantive question therefore cannot, standing alone, discriminate among guilt, knowledge, motive, or exposure hypotheses.",
     "inference_boundary": "Harmless-question refusal does not prove that all refusals had the same subjective basis; it establishes only that refusal was not limited to exposure-bearing questions."
-  }
+  },
+  "senator_turns_without_witness_questions": [
+    {
+      "speaker": "Senator Maggie Hassan",
+      "turn_lines": "1145-1227",
+      "classification": "STATEMENT_NO_WITNESS_QUESTION_OBSERVED"
+    },
+    {
+      "speaker": "Senator Richard Blumenthal",
+      "turn_lines": "1413-1530",
+      "classification": "STATEMENT_AND_PROCEDURAL_ARGUMENT_NO_SUBSTANTIVE_WITNESS_QUESTION_RECONSTRUCTED"
+    },
+    {
+      "speaker": "Senator Andy Kim",
+      "turn_lines": "1756-1847",
+      "classification": "STATEMENT_NO_WITNESS_QUESTION_OBSERVED"
+    },
+    {
+      "speaker": "Senator John Fetterman",
+      "turn_lines": "2023-2050",
+      "classification": "STATEMENT_NO_WITNESS_QUESTION_OBSERVED"
+    }
+  ]
 }
