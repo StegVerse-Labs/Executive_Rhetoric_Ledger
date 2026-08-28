@@ -41,7 +41,9 @@
       "claim_id": "ERL-SC-FAUCI-PR48-IMPLEMENTATION",
       "role": "canonical implementation",
       "owner": "Issue #47 / PR #48",
-      "surfaces": ["assessments/silence-causation/**"],
+      "surfaces": [
+        "assessments/silence-causation/**"
+      ],
       "state": "CLAIMED_FOR_IMPLEMENTATION",
       "release_condition": "All WS-A through WS-E gates complete or explicitly superseded with evidence."
     },
@@ -54,7 +56,10 @@
         "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-acquisition-queue.json"
       ],
       "state": "COMPLETE",
-      "evidence": ["commit:eaea5aed9c4f76e9cbbf33bb7affb33a3a996c7b", "commit:a13d5a1a2a67837cfd301ea3ade721a1129a7cda"],
+      "evidence": [
+        "commit:eaea5aed9c4f76e9cbbf33bb7affb33a3a996c7b",
+        "commit:a13d5a1a2a67837cfd301ea3ade721a1129a7cda"
+      ],
       "release_condition": "Files committed, linked from canonical workstream, and branch validation inspected green after integration."
     }
   ],
@@ -62,19 +67,19 @@
     {
       "id": "WS-A",
       "name": "primary-source-custody",
-      "status": "partial_with_deterministic_acquisition_queue",
+      "status": "partial_official_transcript_verified",
       "dependencies": [],
       "completed_or_installed": [
         "official hearing-page transformed metadata snapshot",
         "case source-custody manifest",
         "deterministic source-acquisition queue with explicit states and release conditions",
         "official Chairman Rand Paul opening-statement PDF located and visually verified",
-        "official Ranking Member Gary Peters opening-statement PDF located and visually verified"
+        "official Ranking Member Gary Peters opening-statement PDF located and visually verified",
+        "official GovInfo S. Hrg. 119-504 transcript immutable pointer verified and receipt-linked"
       ],
       "remaining": [
         "native byte-for-byte hearing page object or immutable archive",
         "native official hearing video or immutable official media target",
-        "official transcript when available",
         "native PDF bytes and hashes for located member statements",
         "committee exhibits and process records",
         "witness and counsel correspondence",
@@ -94,19 +99,25 @@
     {
       "id": "WS-B",
       "name": "atomic-question-reconstruction",
-      "status": "blocked_on_preserved_official_record",
-      "dependencies": ["WS-A"],
+      "status": "unblocked_active_from_official_govinfo_transcript",
+      "dependencies": [
+        "WS-A:official-transcript-satisfied-for-question-reconstruction"
+      ],
       "outputs": [
         "machine-readable-atomic-question-ledger",
         "human-readable-question-ledger-review",
         "authority-assignment-per-question"
-      ]
+      ],
+      "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+      "next_task": "Build machine-readable atomic question ledger from the complete GovInfo transcript, preserving speaker order, question boundaries, response states, and source line anchors without treating refusal as admission."
     },
     {
       "id": "WS-C",
       "name": "chronology-and-authority-graph",
       "status": "partial_verified_metadata_seed_installed",
-      "dependencies": ["WS-A"],
+      "dependencies": [
+        "WS-A"
+      ],
       "completed_or_installed": [
         "verified hearing metadata chronology seed",
         "member-statement claim candidates separated from observed facts",
@@ -130,7 +141,10 @@
       "id": "WS-D",
       "name": "controls-and-hypothesis-testing",
       "status": "blocked_on_substantially-complete-question-ledger",
-      "dependencies": ["WS-B", "WS-C"],
+      "dependencies": [
+        "WS-B",
+        "WS-C"
+      ],
       "outputs": [
         "control-comparison-report",
         "documentary-conflict-map",
@@ -144,7 +158,9 @@
       "id": "WS-E",
       "name": "contradiction-independent-review-and-validation",
       "status": "blocked_on_validator-clean-assessment-artifacts",
-      "dependencies": ["WS-D"],
+      "dependencies": [
+        "WS-D"
+      ],
       "outputs": [
         "contradiction-review",
         "independent-review",
@@ -212,5 +228,15 @@
     "Located official primary objects without native byte custody and hashes do not count as complete capture.",
     "The case remains research_candidate and not_assessable until promotion gates are satisfied."
   ],
-  "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator."
+  "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
+  "latest_machine_execution": {
+    "observed_at_utc": "2026-08-28T11:59:00Z",
+    "event": "OFFICIAL_GOVINFO_TRANSCRIPT_DISCOVERED_AND_ADMITTED",
+    "source_package": "CHRG-119shrg64382",
+    "hearing_number": "S. Hrg. 119-504",
+    "effect": "WS-B_UNBLOCKED",
+    "motive_finding_effect": false,
+    "publication_effect": false,
+    "native_pdf_custody_effect": false
+  }
 }
