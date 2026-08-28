@@ -932,10 +932,190 @@
       "response_lines": "1054-1056",
       "control_class": "SAFETY_SURVEILLANCE_QUESTION",
       "response_anchor_note": "Johnson combined this with the subsequent Peter Marks algorithm/safety-signal question before Fauci responded."
+    },
+    {
+      "atomic_id": "AQ-097",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1581-1582",
+      "question_summary": "Did David Morens' relationship with Peter Daszak concern Fauci?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1583-1585",
+      "control_class": "RELATIONSHIP_AND_OVERSIGHT_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-098",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1586-1587",
+      "question_summary": "Did David Morens ever bring documents to Fauci's house?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1588-1590",
+      "control_class": "RECORDS_CHANNEL_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-099",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1591-1592",
+      "question_summary": "Did Fauci receive work-related texts on his personal cellphone?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1593-1595",
+      "control_class": "RECORDS_CHANNEL_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-100",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1596-1598",
+      "question_summary": "Did work-related texts received on Fauci's personal cellphone become Federal records?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1599-1601",
+      "control_class": "FEDERAL_RECORDS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-101",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1602-1603",
+      "question_summary": "Did Fauci maintain a personal email account while serving as NIAID Director?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1604-1606",
+      "control_class": "RECORDS_CHANNEL_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-102",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1607-1608",
+      "question_summary": "Did Fauci receive work-related communications from David Morens on a personal Gmail account?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1609-1611",
+      "control_class": "RECORDS_CHANNEL_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-103",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1612-1613",
+      "question_summary": "Did Fauci preserve work-related communications from David Morens on the personal Gmail account?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1614-1616",
+      "control_class": "FEDERAL_RECORDS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-104",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1617-1619",
+      "question_summary": "Did David Morens provide Fauci documents through any other channel that would violate NIH FOIA-compliance policy?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1620-1622",
+      "control_class": "FOIA_AND_RECORDS_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-105",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1630-1630",
+      "question_summary": "Was the origin of COVID-19 a substantive issue?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1631-1633",
+      "control_class": "SUBSTANTIVE_ISSUE_CLASSIFICATION"
+    },
+    {
+      "atomic_id": "AQ-106",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1634-1635",
+      "question_summary": "Did Fauci discuss COVID-19 origins with David Morens on the referenced January 2020 phone call?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1636-1638",
+      "control_class": "COMMUNICATION_CONTENT_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-107",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1692-1694",
+      "question_summary": "Was it fair to distance Fauci from Morens while Morens faced charges related to records destruction?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1695-1697",
+      "control_class": "RELATIONSHIP_CHARACTERIZATION"
+    },
+    {
+      "atomic_id": "AQ-108",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1698-1698",
+      "question_summary": "When did Fauci last speak with David Morens?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1699-1701",
+      "control_class": "COMMUNICATION_TIMELINE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-109",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1702-1703",
+      "question_summary": "In hindsight, was Fauci disappointed in how he handled COVID, and did he have any regrets?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1704-1706",
+      "control_class": "RETROSPECTIVE_JUDGMENT_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-110",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "1734-1735",
+      "question_summary": "What would Fauci do differently knowing what he knew at the time of the hearing?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1736-1738",
+      "control_class": "FORWARD_LOOKING_LESSONS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-111",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2066-2066",
+      "question_summary": "What does the Fifth Amendment say, repeated as a direct question?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2067-2069",
+      "control_class": "HARMLESS_OR_LOW_EXPOSURE_BASELINE"
+    },
+    {
+      "atomic_id": "AQ-112",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2110-2116",
+      "question_summary": "Was Fauci able or willing to look at the people seated behind him whom Moreno described as having been shamed during the pandemic?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2118-2120",
+      "control_class": "LOW_EXPOSURE_BEHAVIORAL_REQUEST"
+    },
+    {
+      "atomic_id": "AQ-113",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2133-2134",
+      "question_summary": "Did Fauci know what happened to the Ohio mother and family described by Moreno at a high-school football game?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2135-2137",
+      "control_class": "FACTUAL_KNOWLEDGE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-114",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2162-2165",
+      "question_summary": "Would Fauci apologize to people Moreno said were harmed through Fauci's actions?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2166-2168",
+      "control_class": "APOLOGY_RESPONSIBILITY_QUESTION"
     }
   ],
   "coverage": {
-    "atomics": 96,
+    "atomics": 114,
     "senators_partially_covered": [
       "Rand Paul",
       "Ron Johnson",
@@ -948,7 +1128,7 @@
     ],
     "proceeding_complete": false,
     "next_required_sections": [
-      "audit remaining first-round and later-round question/response pairs for omissions",
+      "audit any remaining first-round and later-round question/response pairs for omissions",
       "classify any non-Fifth response states",
       "authority assignment per atomic question",
       "establish complete-question denominator"
@@ -963,7 +1143,7 @@
     "later_round_started": true
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:27:00Z",
+  "last_updated_utc": "2026-08-28T12:37:00Z",
   "control_analysis": {
     "harmless_baseline_ids": [
       "AQ-039",
