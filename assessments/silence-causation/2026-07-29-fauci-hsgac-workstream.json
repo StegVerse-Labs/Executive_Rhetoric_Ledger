@@ -99,17 +99,22 @@
     {
       "id": "WS-B",
       "name": "atomic-question-reconstruction",
-      "status": "unblocked_active_from_official_govinfo_transcript",
+      "status": "active_partial_atomic_ledger_seeded",
       "dependencies": [
         "WS-A:official-transcript-satisfied-for-question-reconstruction"
       ],
       "outputs": [
         "machine-readable-atomic-question-ledger",
         "human-readable-question-ledger-review",
-        "authority-assignment-per-question"
+        "authority-assignment-per-question",
+        "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
       ],
       "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-      "next_task": "Build machine-readable atomic question ledger from the complete GovInfo transcript, preserving speaker order, question boundaries, response states, and source line anchors without treating refusal as admission."
+      "next_task": "Expand the atomic ledger across every member turn and later questioning round from S. Hrg. 119-504, then add per-question authority assignments and completeness checks.",
+      "completed_or_installed": [
+        "partial machine-readable atomic question ledger seeded with 17 atomics from official GovInfo transcript",
+        "response-state semantics preserve Fifth Amendment invocation as non-admission"
+      ]
     },
     {
       "id": "WS-C",
@@ -230,13 +235,13 @@
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
   "latest_machine_execution": {
-    "observed_at_utc": "2026-08-28T11:59:00Z",
-    "event": "OFFICIAL_GOVINFO_TRANSCRIPT_DISCOVERED_AND_ADMITTED",
+    "observed_at_utc": "2026-08-28T12:02:00Z",
+    "event": "WS_B_ATOMIC_LEDGER_SEEDED",
     "source_package": "CHRG-119shrg64382",
-    "hearing_number": "S. Hrg. 119-504",
-    "effect": "WS-B_UNBLOCKED",
+    "atomic_records_added": 17,
+    "coverage_complete": false,
+    "effect": "WS_B_ACTIVE_PARTIAL",
     "motive_finding_effect": false,
-    "publication_effect": false,
-    "native_pdf_custody_effect": false
+    "publication_effect": false
   }
 }
