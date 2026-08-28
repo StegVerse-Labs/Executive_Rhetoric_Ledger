@@ -329,7 +329,7 @@ Canonical continuation: `StegVerse-Labs/Executive_Rhetoric_Ledger` → Issue `#4
 Session state: `MERGED INTO CANONICAL WORKSTREAM`.
 
 
-## Adjacent active execution lane — linguistic enregisterment / AI provenance — ACTIVE
+## Adjacent completed execution lane — linguistic enregisterment / AI provenance — COMPLETE
 
 Goal ID: `ERL-2026-08-27-LINGUISTIC-PROVENANCE`
 
@@ -349,16 +349,23 @@ Installed on PR #82:
 - dedicated hosted CI workflow.
 
 Current state:
-- lifecycle: ACTIVE
-- source implementation: 6 durable files installed
-- hosted validation: PASS — linguistic provenance run 33144746223; repository-wide schema run 33144746184; research-candidate activation run 33144746162
-- merge: READY_AFTER_FINAL_SYNC
-- release/propagation: NOT_AUTHORIZED
+- lifecycle: COMPLETE
+- source implementation: merged at `324341c80527204537f4f384a9d6e74f20730887`
+- hosted validation: PASS — final pre-merge runs `33144796017`, `33144796026`, `33144795994`
+- merge: MERGED
+- downstream review: COMPLETE
+- release/propagation: NOT_AUTHORIZED / NO PROPAGATION REQUIRED
 
 Release gate: an AI/human/mixed authorship finding may not be `supported` unless independent or strong provenance evidence exists. Stylistic association and enregisterment evidence can support perceived-register analysis only.
 
-Next executable boundary: obtain hosted CI result, repair any failure, merge only when validator and repository-wide schema checks are green, then reassess propagation to Site, Publisher, admissibility-wiki, and stegguardian-wiki.
+Downstream review result: `NO_DOWNSTREAM_PROPAGATION_AUTHORIZED`. The reviewed compendium does not contain this lane; Site and Publisher retain destination-owned reviewed-compendium sync contracts; admissibility-wiki retains reviewed-compendium acknowledgment only; stegguardian-wiki has no ERL linguistic-provenance import authority. Durable review: `assessments/linguistic-provenance/downstream-propagation-review.json`.
+
+No raw research-candidate or source-only governance artifact was copied downstream. This bounded goal is complete; any future publication requires a separately reviewed ERL publication object and destination-owned ingestion.
 
 
 ### 2026-08-28 execution reconciliation
 PR #82 also repaired two repository-wide validation blockers discovered by hosted CI without changing substantive findings: the White House ballroom intake artifact was explicitly classified as a non-primary evidence-reconstruction task registry (Issue #73 receipt comment 5448792701), and six unregistered research-candidate files were admitted to the activation registry under existing umbrella Issue #63 (receipt comment 5448800876). All three relevant hosted validations are green at commit `20a223496bd56aeaf7a95ba386c0b3c809053691`.
+
+
+### 2026-08-28 linguistic-provenance closeout
+Issue #81 goal tasks LP-001 through LP-008 are complete after merge and downstream authority review. The correct downstream disposition is fail-closed/no-copy rather than forced propagation. Source goal activation: 100%. Downstream publication/release authority remains false. Scoped authority: `assessments/linguistic-provenance/LINGUISTIC_PROVENANCE_MIRROR_HANDOFF.md`.
