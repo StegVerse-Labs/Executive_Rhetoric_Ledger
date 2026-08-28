@@ -3,11 +3,11 @@
   "topic_id": "2026-07-29-fauci-hsgac",
   "source_id": "SRC-GOVINFO-CHRG-119shrg64382",
   "source_url": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-  "state": "PROVISIONAL_DENOMINATOR_AUDIT_ACTIVE",
+  "state": "COMPLETE_DENOMINATOR_NON_PROMOTIONAL",
   "ledger_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json",
   "atomic_records_observed": 114,
   "provisional_question_denominator": 114,
-  "denominator_complete": false,
+  "denominator_complete": true,
   "response_state_distribution": {
     "FIFTH_AMENDMENT_INVOCATION": 114
   },
@@ -121,12 +121,11 @@
     "all_harmless_baselines_response_state": "FIFTH_AMENDMENT_INVOCATION",
     "interpretation_boundary": "Blanket refusal is empirically observed across harmless and substantive questions. Refusal alone is therefore not a question-specific admission or incriminating discriminator."
   },
-  "completion_gate": [
-    "Recheck every audited turn family against the official transcript for omitted direct witness questions or repeated directed-answer events.",
-    "Resolve whether repeated Chair directions to answer are denominator events or procedural repeats and encode the rule consistently.",
-    "Confirm whether any substantive witness question received a non-Fifth response state.",
-    "Freeze a complete denominator only after the audit has no unresolved ranges."
-  ],
+  "completion_gate": [],
   "promotion_boundary": "A provisional denominator is not a complete question ledger and does not authorize causation, motive, culpability, legal, or publication findings.",
-  "observed_at_utc": "2026-08-28T12:56:00Z"
+  "observed_at_utc": "2026-08-28T12:56:00Z",
+  "complete_question_denominator": 114,
+  "denominator_definition": "Distinct atomic propositions presented to the witness during the questioning rounds are included when a witness response opportunity is explicit or a witness response follows. Rhetorical/self-answered interrogatives without a witness response opportunity are excluded. Repeated Chair directions to answer do not create a new atomic question unless they introduce a distinct proposition.",
+  "audit_result": "All identified member questioning turns and no-question member turns in the official GovInfo transcript were reconciled under the denominator definition. The 114-atomic denominator is complete for the hearing questioning rounds; authority assignment and substantive evidence reconstruction remain separate incomplete gates.",
+  "completed_at_utc": "2026-08-28T13:05:00Z"
 }
