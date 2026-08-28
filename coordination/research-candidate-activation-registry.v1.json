@@ -262,6 +262,96 @@
       "terminal_condition": "The original statement and context are custodied, the relevant Republican population and evidentiary basis are bounded, competing interpretations are independently reviewed, and a governed terminal transition is recorded.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-TRUMP-CENSUS-NONCITIZEN-VOTING-2026",
+      "title": "Trump census noncitizen voting election-win claim",
+      "candidate_paths": [
+        "research-candidates/2026-08-20-trump-census-noncitizen-voting-election-win-claim.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire the exact primary statement and authoritative census/election-law records, bound the causal proposition, and test competing explanations without promoting the candidate claim.",
+      "terminal_condition": "Primary statement, legal/administrative authority, relevant population evidence, and independent review support an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-PRETRUMP-CRYPTO-ARCHITECTURE-2026",
+      "title": "Pre-Trump crypto market architecture checkpoint",
+      "candidate_paths": [
+        "research-candidates/2026-08-21-pre-trump-crypto-market-architecture-checkpoint.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Preserve pre-event market structure, liquidity, regulatory, and adoption baselines needed to discriminate later Trump-linked market-impact claims.",
+      "terminal_condition": "Baseline architecture is independently reconstructed and either merged into a governed assessment or explicitly closed/superseded with reason.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
+      "title": "Trump family crypto rhetoric and market impact",
+      "candidate_paths": [
+        "research-candidates/2026-08-21-trump-family-crypto-rhetoric-market-impact.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire exact primary rhetoric, ownership/revenue records, market timing data, controls, and counterfactual baselines before any causal or motive finding.",
+      "terminal_condition": "Primary-source custody, market/control reconstruction, conflicts review, and independent assessment yield an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-CANADA-HOUSEHOLD-MOBILITY-CPI-2026",
+      "title": "Canada household mobility and CPI trajectory",
+      "candidate_paths": [
+        "research-candidates/2026-08-26-canada-household-mobility-cpi-trajectory.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire authoritative Canadian mobility, household-cost, CPI, income, and policy series and preserve denominator/method changes before trend conclusions.",
+      "terminal_condition": "Comparable time-series custody and methodology review support an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-MARK-CUBAN-EMPLOYEE-EQUITY-2026",
+      "title": "Mark Cuban employee equity distribution",
+      "candidate_paths": [
+        "research-candidates/2026-08-26-mark-cuban-employee-equity-distribution.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire primary transaction, employee-equity, eligibility, distribution, and denominator records and distinguish public claims from reproducible allocation facts.",
+      "terminal_condition": "Primary records and independent review make the employee-equity distribution reproducible or explicitly close/supersede the candidate.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-TESLA-TEXAS-CATHODE-2026",
+      "title": "Tesla Texas cathode domestic substitution",
+      "candidate_paths": [
+        "research-candidates/2026-08-26-tesla-texas-cathode-domestic-substitution.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire primary plant, production, sourcing, capacity, import-substitution, and timeline records and test whether claimed domestic substitution is realized at material scale.",
+      "terminal_condition": "Capacity, sourcing, production, and substitution evidence are independently reconstructed and an explicit governed terminal transition is recorded.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
