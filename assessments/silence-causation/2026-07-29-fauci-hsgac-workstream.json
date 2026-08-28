@@ -105,7 +105,7 @@
     {
       "id": "WS-B",
       "name": "atomic-question-reconstruction",
-      "status": "active_partial_atomic_ledger_114_records_with_provisional_denominator_audit",
+      "status": "question_ledger_complete_authority_assignment_pending",
       "dependencies": [
         "WS-A:official-transcript-satisfied-for-question-reconstruction"
       ],
@@ -116,13 +116,17 @@
         "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
       ],
       "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-      "next_task": "Complete transcript omission recheck, settle treatment of repeated Chair direction-to-answer events, verify any non-Fifth substantive responses, then freeze the complete denominator and begin per-question authority assignment.",
+      "next_task": "Attach per-question formal/documented-de-facto authority assignments and authority-misassignment flags using primary authority records; keep substantive claim reconstruction separate from refusal evidence.",
       "completed_or_installed": [
         "partial machine-readable atomic question ledger seeded with 17 atomics from official GovInfo transcript",
-        "response-state semantics preserve Fifth Amendment invocation as non-admission"
+        "response-state semantics preserve Fifth Amendment invocation as non-admission",
+        "complete non-promotional 114-atomic question ledger from official GovInfo transcript",
+        "complete question-coverage audit with explicit denominator definition",
+        "harmless baseline control showing blanket Fifth invocation across facially harmless questions",
+        "machine validator bound to hosted silence-causation workflow"
       ],
       "atomic_records_reconstructed": 114,
-      "coverage_complete": false,
+      "coverage_complete": true,
       "harmless_refusal_control": {
         "status": "ESTABLISHED",
         "atomic_ids": [
@@ -144,7 +148,13 @@
       "validation_run": 33172556549,
       "coverage_audit": "assessments/silence-causation/2026-07-29-fauci-hsgac-question-coverage-audit.json",
       "provisional_question_denominator": 114,
-      "denominator_complete": false
+      "denominator_complete": true,
+      "complete_question_denominator": 114,
+      "remaining": [
+        "per-question formal/documented-de-facto authority assignment",
+        "authority-misassignment flags",
+        "human-readable question ledger review"
+      ]
     },
     {
       "id": "WS-C",
@@ -265,13 +275,14 @@
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
   "latest_machine_execution": {
-    "observed_at_utc": "2026-08-28T12:58:00Z",
-    "event": "WS_B_PROVISIONAL_DENOMINATOR_AUDIT_INSTALLED",
+    "observed_at_utc": "2026-08-28T13:08:00Z",
+    "event": "WS_B_QUESTION_DENOMINATOR_FROZEN",
     "atomic_records_total": 114,
-    "provisional_question_denominator": 114,
-    "denominator_complete": false,
-    "coverage_audit": "assessments/silence-causation/2026-07-29-fauci-hsgac-question-coverage-audit.json",
-    "effect": "WS_B_COMPLETENESS_AUDIT_ACTIVE",
+    "complete_question_denominator": 114,
+    "denominator_complete": true,
+    "coverage_complete": true,
+    "ledger_state": "COMPLETE_NON_PROMOTIONAL",
+    "effect": "ATOMIC_QUESTION_LEDGER_COMPLETENESS_GATE_SATISFIED",
     "motive_finding_effect": false,
     "publication_effect": false
   }
