@@ -11,9 +11,9 @@ Prevent stylistic or socially recognized "AI voice" signals from being promoted 
 
 ## Status
 - lifecycle: ACTIVE
-- implementation: IN_PROGRESS
-- validation: PENDING
-- merge: PENDING
+- implementation: SOURCE_COMPLETE
+- validation: HOSTED_PASS
+- merge: READY_AFTER_FINAL_SYNC
 - release/publication: NOT_AUTHORIZED
 
 ## Canonical owner
@@ -48,5 +48,26 @@ No release or propagation until validator-clean fixtures prove:
 - an unsupported authorship claim is rejected;
 - an independently supported provenance claim can pass.
 
+## Hosted validation evidence
+- dedicated workflow run 33144746223: SUCCESS
+- repository-wide schema run 33144746184: SUCCESS
+- research-candidate activation run 33144746162: SUCCESS
+- cross-lane ballroom intake classification repair: validated by repository-wide schema success
+- six stale research-candidate registry omissions reconciled under Issue #63
+
 ## Archive readiness
 This scoped handoff is the durable continuation source for this lane.
+
+## Completion accounting — 2026-08-28
+- LP-001 schema: complete
+- LP-002 validator: complete
+- LP-003 positive/negative fixtures: complete
+- LP-004 hosted CI: complete and green
+- LP-005 root handoff pointer: complete
+- LP-006 hosted validation receipts: complete
+- LP-007 merge: next executable boundary
+- LP-008 downstream propagation review: blocked until merge/review
+
+Source implementation: 6/6 core lane artifacts = 100%.
+Hosted validation: 3/3 relevant runs green = 100%.
+Goal activation before merge: 7/8 task groups = 87.5%.
