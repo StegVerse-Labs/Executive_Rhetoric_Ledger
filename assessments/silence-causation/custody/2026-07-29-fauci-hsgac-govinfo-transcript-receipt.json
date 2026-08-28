@@ -1,0 +1,34 @@
+{
+  "receipt_id": "ERL-SC-FAUCI-HSGAC-GOVINFO-TRANSCRIPT-2026-08-28",
+  "source_id": "SRC-GOVINFO-CHRG-119shrg64382",
+  "source_class": "official_congressional_hearing_transcript",
+  "issuing_authority": "U.S. Government Publishing Office",
+  "congressional_body": "United States Senate",
+  "committee": "Committee on Homeland Security and Governmental Affairs",
+  "hearing_title": "Testimony of Anthony Fauci",
+  "hearing_number": "S. Hrg. 119-504",
+  "held_date": "2026-07-29",
+  "package_id": "CHRG-119shrg64382",
+  "content_details_url": "https://www.govinfo.gov/app/details/CHRG-119shrg64382/CHRG-119shrg64382",
+  "immutable_transcript_pointer": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+  "observed_downloads": {
+    "pdf": "260.5 MB",
+    "text": "174.0 KB",
+    "mods": true,
+    "premis": true,
+    "zip": true
+  },
+  "retrieval_observed_utc": "2026-08-28T11:57:00Z",
+  "custody_state": "OFFICIAL_IMMUTABLE_POINTER_VERIFIED",
+  "native_bytes_stored": false,
+  "sha256": null,
+  "byte_length": null,
+  "exact_question_reconstruction_supported": true,
+  "authority_effect": false,
+  "motive_finding_authorized": false,
+  "publication_finding_authorized": false,
+  "notes": [
+    "The official GovInfo transcript is sufficient to unblock atomic question reconstruction from a preserved authoritative transcript target.",
+    "No native-byte or SHA-256 claim is made because the current repository-writing runtime did not receive the downloadable object bytes."
+  ]
+}
