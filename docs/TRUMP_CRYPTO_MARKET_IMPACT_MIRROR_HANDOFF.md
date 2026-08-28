@@ -286,3 +286,23 @@ State distinction:
 - independent causal review: BLOCKED pending evidence completion.
 
 No user action or credential step is required.
+
+## Aug. 27, 2026 framing addition — transaction-derived affiliate revenue vs holder outcome
+
+Canonical candidate update commit: `1eff7321ce0c835ea1d05395d797c3cd72a46720`.
+
+The active Trump-crypto lane now explicitly distinguishes passive asset appreciation from a structure in which Trump-affiliated entities may capture trading fees, token-sale proceeds, LP economics, or other transaction-derived revenue while presidential communications/access can increase demand or turnover.
+
+New required distinction:
+
+`retail_holder_return != issuer_or_affiliate_revenue`
+
+Required follow-on work:
+1. Reconcile 2025/2026 presidential disclosure crypto-income categories to legal entities.
+2. Reproduce creator/affiliate fee totals and beneficiary shares from primary/on-chain evidence where possible.
+3. Separate realized fees, token sales, LP revenue, and retained-inventory mark-to-market.
+4. Measure holder outcomes and affiliate monetization around presidential promotion, reassurance, access, and policy events.
+5. Test whether promotion-driven trading surges generated affiliate revenue even where subsequent holder returns were negative.
+6. Build a bounded modern-president structural comparator for presidentially amplified consumer-financial-instrument demand and affiliated transaction-derived revenue.
+
+This addition does not authorize a manipulation, corruption, self-dealing, illegality, or motive finding. Those remain separately gated. It does make the presidential-value contribution and transaction-derived beneficiary mechanism an explicit ERL research target rather than treating the matter as ordinary portfolio appreciation.
