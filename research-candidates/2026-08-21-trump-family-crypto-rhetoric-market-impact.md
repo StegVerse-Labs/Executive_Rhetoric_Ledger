@@ -271,3 +271,54 @@ A manipulation, corruption, quid-pro-quo, insider-trading, or motive finding req
 `RESEARCH_REQUIRED`
 
 The current record supports formal investigation because multiple independently observable event classes exist and blockchain data may permit unusually precise timing and beneficiary reconstruction. It does not establish deliberate market manipulation or illegal conduct.
+
+## Aug. 27, 2026 — presidential promotion + transaction-fee beneficiary mechanism
+
+### User-raised proposition to test
+
+The relevant concern is not merely that a sitting President owned an asset that appreciated. The stronger proposition is that Trump-affiliated entities could benefit from **public trading activity itself** through creator/affiliate fee and token-sale pathways while Donald Trump, as President, could generate additional demand, attention, access value, or reassurance through presidential communications and events.
+
+This creates a materially different analytical structure from ordinary passive portfolio appreciation:
+
+1. Trump-affiliated entities create/control a branded token and retain concentrated economic rights.
+2. Outside purchasers supply liquidity, turnover, and trading volume.
+3. Affiliated entities may receive fee revenue, token-sale proceeds, liquidity-pool economics, or retained-inventory value from that activity.
+4. The token can subsequently fall sharply for outside holders while affiliated entities may already have captured realized revenue from fees/sales.
+5. Presidential statements, promotions, access incentives, or reassurance can create new demand or renewed trading activity.
+6. If affiliated entities benefit from turnover, a renewed trading surge may have economic value even when long-run token price performance is poor for retail holders.
+
+### Required distinction
+
+`retail_holder_return != issuer_or_affiliate_revenue`
+
+A falling token price does not negate creator/affiliate monetization if fees, sales, liquidity-pool income, or other transaction-derived revenue were captured before or during the decline. Conversely, fee generation alone does not establish illegality, manipulation, corrupt intent, or presidential causation.
+
+### Presidential-power discriminator
+
+The investigation must separately test whether use of presidential status supplied measurable economic value unavailable to an ordinary private issuer. Candidate mechanisms include:
+
+- direct presidential promotion or reassurance;
+- top-holder access incentives involving the sitting President;
+- White House or presidential-event association;
+- presidential crypto-policy advocacy while affiliated crypto interests remained material;
+- statements capable of increasing trading volume, price, holding duration, or perceived political protection.
+
+For each event, measure both **holder outcome** and **affiliate monetization outcome**. Do not use price alone as the beneficiary metric.
+
+### Historical-comparator question
+
+Add a bounded comparator lane: determine whether another modern U.S. President operated or materially promoted a consumer financial instrument while in office where presidential actions could increase public demand or transaction volume and an affiliated business could capture transaction-derived revenue. This is a structural comparator, not a moral or legal conclusion.
+
+### Required evidence additions
+
+- reconcile 2025 and 2026 presidential financial disclosures to entity-level crypto-income categories;
+- independently reproduce creator/affiliate trading-fee totals and beneficiary shares where possible;
+- separate token-sale proceeds, LP revenue, trading fees, and retained inventory mark-to-market;
+- reconstruct token price/volume before and after major presidential promotion/reassurance/access events;
+- reconstruct aggregate retail-holder outcomes over the same windows where defensible;
+- test whether promotion-related volume increases generated affiliate revenue even when subsequent holder returns were negative;
+- build the modern-president structural comparator described above.
+
+### Governance boundary
+
+The evidence may support findings of economic conflict, beneficiary mechanism, transaction-derived extraction, or presidential-value contribution if each proposition is independently reconstructed. Terms such as fraud, manipulation, corruption, self-dealing, or unlawful conduct require their own factual/legal elements and must not be inferred solely from concentrated ownership, retail losses, fee generation, or presidential promotion.
