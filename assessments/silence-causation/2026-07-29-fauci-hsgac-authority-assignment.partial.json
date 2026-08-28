@@ -107,7 +107,7 @@
     }
   ],
   "coverage": {
-    "atomic_ids_assigned": 39,
+    "atomic_ids_assigned": 35,
     "atomic_total": 114,
     "coverage_complete": false,
     "next_domains": [
@@ -116,7 +116,8 @@
       "research program governance and gain-of-function/ePPP authority",
       "award-specific Notices of Award",
       "remaining relationship/knowledge questions with no formal-authority issue"
-    ]
+    ],
+    "coverage_fraction": "35/114"
   },
   "promotion_boundary": "Authority assignment is proposition-specific and does not prove the questioned event, witness knowledge, motive, concealment, culpability, legal violation, or publication finding."
 }
