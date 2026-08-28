@@ -1,0 +1,78 @@
+{
+  "registry_id": "ERL-SC-FAUCI-HSGAC-AUTHORITY-SOURCES-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "state": "ACTIVE_PARTIAL_PRIMARY_AUTHORITY_REGISTRY",
+  "observed_at_utc": "2026-08-28T13:16:00Z",
+  "sources": [
+    {
+      "source_id": "AUTH-NIH-GMO-FY2020",
+      "authority_domain": "NIH_GRANT_OBLIGATION",
+      "issuing_authority": "National Institutes of Health",
+      "title": "NIH Grants Policy Statement, FY 2020",
+      "canonical_url": "https://grants.nih.gov/grants/policy/nihgps/nihgps_2020.pdf",
+      "applicability": "NIH grants and cooperative agreements with budget periods beginning on or after 2019-10-01; prior NIHGPS versions remain applicable to earlier budget periods.",
+      "bounded_rule": "The Grants Management Officer named in the Notice of Award is responsible for business/non-programmatic award management and is the only NIH official authorized to obligate NIH to Federal fund expenditure or change award funding, duration, or terms.",
+      "exact_holder_resolution_rule": "Identify the award-specific GMO from the relevant Notice of Award before naming an individual formal obligation authority holder.",
+      "authority_effect": "FORMAL_GRANT_OBLIGATION_AUTHORITY_ONLY",
+      "does_not_establish": [
+        "programmatic scientific recommendation",
+        "personal motive",
+        "award-specific decision chain without Notice of Award"
+      ]
+    },
+    {
+      "source_id": "AUTH-NIH-GPS-2015-APPLICABILITY",
+      "authority_domain": "NIH_GRANT_POLICY_VERSIONING",
+      "issuing_authority": "National Institutes of Health",
+      "title": "NOT-OD-15-087: Publication of the Revised NIH Grants Policy Statement (Rev. 3/31/2015)",
+      "canonical_url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-15-087.html",
+      "applicability": "The March 31, 2015 NIHGPS applies to grants/cooperative agreements with budget periods beginning on or after 2014-12-26 and supersedes the October 2013 statement for those periods; October 2013 remains standard for budget periods 2013-10-01 through 2014-12-25.",
+      "bounded_rule": "Authority mapping for 2014-era awards must use the policy version applicable to the award budget period and cannot silently apply a later policy version.",
+      "authority_effect": "POLICY_VERSION_BOUNDARY",
+      "does_not_establish": [
+        "award-specific GMO identity",
+        "award-specific obligation",
+        "Fauci's programmatic role"
+      ]
+    },
+    {
+      "source_id": "AUTH-US-CONST-ARTII-PARDON",
+      "authority_domain": "PRESIDENTIAL_PARDON",
+      "issuing_authority": "United States Constitution",
+      "title": "U.S. Constitution, Article II, Section 2, Clause 1",
+      "canonical_url": "https://constitution.congress.gov/constitution/article-2/",
+      "applicability": "Federal reprieves and pardons, except impeachment.",
+      "bounded_rule": "The constitutional power to grant reprieves and pardons for offenses against the United States is vested in the President.",
+      "authority_effect": "FORMAL_PARDON_GRANT_AUTHORITY",
+      "does_not_establish": [
+        "who requested a pardon",
+        "who advised the President",
+        "why a pardon was granted",
+        "scope of a specific pardon instrument"
+      ]
+    }
+  ],
+  "missing_primary_authority_sources": [
+    {
+      "source_family": "AWARD_SPECIFIC_NOTICES_OF_AWARD",
+      "purpose": "Resolve exact Grants Management Officer and award terms for EcoHealth/Wuhan and other named grant questions.",
+      "state": "REQUIRED"
+    },
+    {
+      "source_family": "SPECIFIC_PARDON_INSTRUMENT_AND_PROCESS_RECORDS",
+      "purpose": "Resolve scope/date language and any request/advice chain without inferring it from questioning.",
+      "state": "REQUIRED"
+    },
+    {
+      "source_family": "STATE_LOCAL_PUBLIC_HEALTH_AUTHORITIES",
+      "purpose": "Separate advisory influence from formal school/business/lockdown authority for policy questions.",
+      "state": "REQUIRED"
+    },
+    {
+      "source_family": "IC_DHS_CLASSIFIED_PROGRAM_AND_CLEARANCE_AUTHORITIES",
+      "purpose": "Resolve formal authority for CIA/ODNI/DHS special-access, clearance, and classified-program questions.",
+      "state": "REQUIRED"
+    }
+  ],
+  "promotion_boundary": "This registry maps formal authority sources only. It does not establish that any questioned event occurred, that any named actor exercised the authority, or that any motive/culpability/legal/publication finding is supported."
+}
