@@ -1,0 +1,23 @@
+name: Validate linguistic provenance governance
+on:
+  pull_request:
+    paths:
+      - "assessments/linguistic-provenance/**"
+      - "schemas/linguistic-provenance-assessment.schema.json"
+      - "scripts/validate_linguistic_provenance_assessments.py"
+      - ".github/workflows/validate-linguistic-provenance.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assessments/linguistic-provenance/**"
+      - "schemas/linguistic-provenance-assessment.schema.json"
+      - "scripts/validate_linguistic_provenance_assessments.py"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/validate_linguistic_provenance_assessments.py

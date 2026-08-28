@@ -1,0 +1,9 @@
+{
+  "id":"ERL-LP-2026-08-27-NEGATIVE",
+  "status":"research_candidate",
+  "observed_features":[{"feature":"em dash","observation_basis":"direct_text_observation","value":true}],
+  "enregisterment_claims":[{"signal":"perceived as AI voice","population_or_context":"example","time_window":"2026-08","evidence_level":"anecdotal"}],
+  "provenance_evidence":[],
+  "authorship_finding":{"state":"supported","source_class":"ai"},
+  "notes":["This fixture MUST fail because style/enregisterment is not provenance."]
+}

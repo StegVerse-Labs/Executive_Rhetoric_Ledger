@@ -327,3 +327,38 @@ Denominator: 10 active capability/evidence groups: structural standard/schema; v
 Canonical continuation: `StegVerse-Labs/Executive_Rhetoric_Ledger` → Issue `#47` → PR `#48` → `feature/fauci-hsgac-source-custody` → `assessments/silence-causation/2026-07-29-fauci-hsgac-workstream.json`.
 
 Session state: `MERGED INTO CANONICAL WORKSTREAM`.
+
+
+## Adjacent active execution lane — linguistic enregisterment / AI provenance — ACTIVE
+
+Goal ID: `ERL-2026-08-27-LINGUISTIC-PROVENANCE`
+
+Canonical owner: Issue `#81` / PR `#82`.
+Scoped handoff: `assessments/linguistic-provenance/LINGUISTIC_PROVENANCE_MIRROR_HANDOFF.md`.
+Branch: `feature/linguistic-enregisterment-provenance`.
+
+Core invariant:
+`observed_feature != socially_enregistered_signal != provenance_evidence != authorship_finding`.
+
+Installed on PR #82:
+- bounded MIRROR_HANDOFF;
+- machine-readable schema;
+- fail-closed validator;
+- positive perceived-register/no-provenance fixture;
+- negative unsupported-AI-authorship fixture;
+- dedicated hosted CI workflow.
+
+Current state:
+- lifecycle: ACTIVE
+- source implementation: 6 durable files installed
+- hosted validation: PASS — linguistic provenance run 33144746223; repository-wide schema run 33144746184; research-candidate activation run 33144746162
+- merge: READY_AFTER_FINAL_SYNC
+- release/propagation: NOT_AUTHORIZED
+
+Release gate: an AI/human/mixed authorship finding may not be `supported` unless independent or strong provenance evidence exists. Stylistic association and enregisterment evidence can support perceived-register analysis only.
+
+Next executable boundary: obtain hosted CI result, repair any failure, merge only when validator and repository-wide schema checks are green, then reassess propagation to Site, Publisher, admissibility-wiki, and stegguardian-wiki.
+
+
+### 2026-08-28 execution reconciliation
+PR #82 also repaired two repository-wide validation blockers discovered by hosted CI without changing substantive findings: the White House ballroom intake artifact was explicitly classified as a non-primary evidence-reconstruction task registry (Issue #73 receipt comment 5448792701), and six unregistered research-candidate files were admitted to the activation registry under existing umbrella Issue #63 (receipt comment 5448800876). All three relevant hosted validations are green at commit `20a223496bd56aeaf7a95ba386c0b3c809053691`.

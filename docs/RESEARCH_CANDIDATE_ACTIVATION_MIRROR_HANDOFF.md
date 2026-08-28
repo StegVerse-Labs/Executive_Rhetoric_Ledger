@@ -164,3 +164,19 @@ No raw research-candidate propagation is authorized to `StegVerse-Labs/Site`, `G
 SATISFIED for this activation session. Every extant candidate is durably represented by a live machine-enforced registry entry; stronger candidate-specific owners were preserved; formerly ownerless groups are now held by open Issue #63; hosted validation succeeded; and all remaining substantive research is repository-native with an explicit next executable task. No unique chat-only activation requirement remains.
 
 MERGED INTO: `StegVerse-Labs/Executive_Rhetoric_Ledger/docs/RESEARCH_CANDIDATE_ACTIVATION_MIRROR_HANDOFF.md` with umbrella continuation at Issue #63 and stronger continuations at Issues #3, #30, #47/PR #48, #49, and #62/UAP-MEDIA-001.
+
+
+## Reconciliation addendum — 2026-08-28
+PR #82 exposed six post-rollout candidate files that were not registered. Issue #63 retained umbrella ownership; no substantive candidate claims were modified. Registry commit `20a223496bd56aeaf7a95ba386c0b3c809053691` adds the six groups and restores machine enforcement.
+
+Added candidate groups:
+- Trump census/noncitizen voting election-win claim
+- pre-Trump crypto market architecture checkpoint
+- Trump-family crypto rhetoric/market impact
+- Canada household mobility/CPI trajectory
+- Mark Cuban employee-equity distribution
+- Tesla Texas cathode domestic substitution
+
+Current registry after reconciliation: 19 groups / 20 candidate files.
+Hosted activation validation run `33144746162`: SUCCESS.
+The rollout remains COMPLETE / ACTIVE / MACHINE_ENFORCED; the prior 12-group/13-file snapshot is historical and superseded by this addendum.
