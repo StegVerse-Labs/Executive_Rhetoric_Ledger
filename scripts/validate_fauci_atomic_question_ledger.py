@@ -115,9 +115,19 @@ def main() -> int:
         errors.append("coverage audit atomic_records_observed must equal ledger record count")
     if audit.get("provisional_question_denominator") != len(records):
         errors.append("provisional denominator must equal current reconstructed atomic count")
-    if audit.get("denominator_complete") is not False:
+    if audit.get("denominator_complete") is True:
         if coverage.get("proceeding_complete") is not True:
             errors.append("denominator_complete cannot precede proceeding_complete")
+        if audit.get("complete_question_denominator") != len(records):
+            errors.append("complete_question_denominator must equal ledger record count")
+        if coverage.get("complete_question_denominator") != len(records):
+            errors.append("ledger complete_question_denominator must equal record count")
+        if data.get("state") != "COMPLETE_NON_PROMOTIONAL":
+            errors.append("complete denominator requires COMPLETE_NON_PROMOTIONAL ledger state")
+        if not audit.get("audit_result"):
+            errors.append("complete denominator requires a durable audit_result")
+    elif audit.get("denominator_complete") is not False:
+        errors.append("denominator_complete must be boolean")
     dist = {}
     for record in records:
         state = record.get("response_state")
@@ -130,8 +140,8 @@ def main() -> int:
         q_counts[speaker] = q_counts.get(speaker, 0) + 1
     if audit.get("reconstructed_questioners") != q_counts:
         errors.append("coverage audit questioner counts do not match ledger")
-    if not audit.get("completion_gate"):
-        errors.append("coverage audit must preserve explicit completion gates")
+    if audit.get("denominator_complete") is False and not audit.get("completion_gate"):
+        errors.append("incomplete coverage audit must preserve explicit completion gates")
 
     if errors:
         return fail(errors)
