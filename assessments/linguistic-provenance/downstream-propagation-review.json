@@ -1,0 +1,62 @@
+{
+  "schema": "stegverse.erl.linguistic_provenance_downstream_review.v1",
+  "goal_id": "ERL-2026-08-27-LINGUISTIC-PROVENANCE",
+  "source_merge_commit": "324341c80527204537f4f384a9d6e74f20730887",
+  "reviewed_publication_path": "publication/compendium.json",
+  "reviewed_publication_contains_linguistic_provenance_lane": false,
+  "raw_research_candidate_propagation_authorized": false,
+  "disposition": "NO_DOWNSTREAM_PROPAGATION_AUTHORIZED",
+  "rationale": "The merged lane is a source-repository governance capability and research-candidate boundary. Existing downstream ERL sync contracts ingest only the reviewed compendium. The current reviewed compendium does not contain this lane, and no destination handoff grants authority to bypass that publication gate.",
+  "destinations": [
+    {
+      "repository": "StegVerse-Labs/Site",
+      "canonical_handoff": "docs/SITE_MIRROR_HANDOFF.md",
+      "handoff_blob_sha": "4c639f6efc527f9e22076b7a2b9bc36e90092cf0",
+      "orchestration_state": "data/site-orchestration-state.json",
+      "orchestration_blob_sha": "6f5dc028573c556ddcbbd9a82adb636cfdd5d2e6",
+      "existing_erl_sync": ".github/workflows/sync-executive-rhetoric-ledger.yml",
+      "existing_erl_sync_blob_sha": "80c1bff3615bfef02f6a304ac2a127ffd5c581ec",
+      "existing_acknowledgment": "receipts/executive-rhetoric-ledger-ack.json",
+      "existing_acknowledgment_blob_sha": "54914744d4d52dc545157f7fb771738f75a7eafc",
+      "state": "NOT_ADMITTED_FOR_EXTERNAL_MUTATION",
+      "authorized": false,
+      "reason": "Site orchestration currently declares external_tasks_allowed=false and its ERL sync is destination-owned and reviewed-compendium-only."
+    },
+    {
+      "repository": "GCAT-BCAT-Engine/Publisher",
+      "canonical_handoff": "PUBLISHER_MIRROR_HANDOFF.md",
+      "handoff_blob_sha": "b42fa1962fee508a34d61e8292be9efce2382b43",
+      "existing_erl_sync": ".github/workflows/sync-executive-rhetoric-ledger.yml",
+      "existing_erl_sync_blob_sha": "21ec4cfc4757370210f50621ec401c11d11f0be1",
+      "existing_acknowledgment": "receipts/executive-rhetoric-ledger-ack.json",
+      "existing_acknowledgment_blob_sha": "3ddb9a0b07e28f04ef5a0b8023c58350c27217b3",
+      "state": "REVIEWED_COMPENDIUM_GATE_RETAINED",
+      "authorized": false,
+      "reason": "Publisher already has destination-owned ERL synchronization limited to publication/compendium.json; this lane is not in that reviewed publication."
+    },
+    {
+      "repository": "StegVerse-Labs/admissibility-wiki",
+      "canonical_handoff": "ADMISSIBILITY_WIKI_MIRROR_HANDOFF.md",
+      "handoff_blob_sha": "f5dac73c103b4bcdb28aca756e18970d1a246c5b",
+      "existing_acknowledgment": "receipts/executive-rhetoric-ledger-ack.json",
+      "existing_acknowledgment_blob_sha": "4817be35083824130e9d04f611cb530192e8c764",
+      "state": "REVIEWED_COMPENDIUM_GATE_RETAINED",
+      "authorized": false,
+      "reason": "Admissibility already acknowledges the reviewed ERL compendium. Publication availability is not proof or admissibility authority, and no reviewed publication currently carries this lane."
+    },
+    {
+      "repository": "StegVerse-002/stegguardian-wiki",
+      "canonical_handoff": "STEGGUARDIAN_MIRROR_HANDOFF.md",
+      "handoff_blob_sha": "fd1cecdf1419f888a092697d2603a4e37cebfe1d",
+      "state": "NO_ERL_PROPAGATION_CONTRACT_AUTHORIZED",
+      "authorized": false,
+      "reason": "The current Guardian handoff owns unrelated generated-Ste gPay projection work and grants no ERL linguistic-provenance import or enforcement authority."
+    }
+  ],
+  "completion": {
+    "lp_008_review_complete": true,
+    "propagation_performed": false,
+    "propagation_required_for_goal_completion": false,
+    "source_goal_complete_after_record_merge": true
+  }
+}
