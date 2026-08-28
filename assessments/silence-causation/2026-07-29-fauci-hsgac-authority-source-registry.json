@@ -2,7 +2,7 @@
   "registry_id": "ERL-SC-FAUCI-HSGAC-AUTHORITY-SOURCES-001",
   "topic_id": "2026-07-29-fauci-hsgac",
   "state": "ACTIVE_PARTIAL_PRIMARY_AUTHORITY_REGISTRY",
-  "observed_at_utc": "2026-08-28T13:16:00Z",
+  "observed_at_utc": "2026-08-28T13:34:00Z",
   "sources": [
     {
       "source_id": "AUTH-NIH-GMO-FY2020",
@@ -49,6 +49,53 @@
         "who advised the President",
         "why a pardon was granted",
         "scope of a specific pardon instrument"
+      ]
+    },
+    {
+      "source_id": "AUTH-FRA-44USC2911-NONOFFICIAL-MESSAGING",
+      "authority_domain": "FEDERAL_RECORDS_NONOFFICIAL_MESSAGING",
+      "issuing_authority": "United States Code / National Archives statutory framework",
+      "title": "44 U.S.C. § 2911 — Disclosure requirement for official business conducted using non-official electronic messaging accounts",
+      "canonical_url": "https://uscode.house.gov/view.xhtml?req=%28title%3A44+section%3A2911+edition%3Aprelim%29",
+      "applicability": "Executive-agency officers and employees creating or sending Federal records through non-official electronic messaging accounts.",
+      "bounded_rule": "A covered officer or employee must copy an official account when creating/sending the record or forward a complete copy to an official account within 20 days.",
+      "authority_effect": "RECORDS_PRESERVATION_DUTY_BOUNDARY",
+      "does_not_establish": [
+        "that a questioned communication was a Federal record",
+        "that a personal account was used",
+        "intentional violation",
+        "destruction or concealment"
+      ]
+    },
+    {
+      "source_id": "AUTH-FRA-44USC3106-UNLAWFUL-DESTRUCTION",
+      "authority_domain": "FEDERAL_RECORDS_UNLAWFUL_DESTRUCTION_RESPONSE",
+      "issuing_authority": "United States Code",
+      "title": "44 U.S.C. § 3106 — Unlawful removal, destruction of records",
+      "canonical_url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title44-section3106",
+      "applicability": "Federal agency response to actual, impending, or threatened unlawful removal, deletion, erasure, or destruction of agency records.",
+      "bounded_rule": "The head of the Federal agency must notify the Archivist and, with the Archivist, initiate action through the Attorney General for recovery/redress when the statutory conditions are met.",
+      "authority_effect": "AGENCY_HEAD_AND_ARCHIVIST_RESPONSE_AUTHORITY",
+      "does_not_establish": [
+        "that records were destroyed",
+        "that destruction was unlawful",
+        "who destroyed a record",
+        "criminal liability"
+      ]
+    },
+    {
+      "source_id": "AUTH-NARA-FEDERAL-EMPLOYEE-RECORDS-GUIDANCE",
+      "authority_domain": "FEDERAL_RECORDS_IMPLEMENTATION_GUIDANCE",
+      "issuing_authority": "National Archives and Records Administration",
+      "title": "Records Management Guidance for Federal Employees",
+      "canonical_url": "https://www.archives.gov/records-mgmt/transition/records-management-guidance-federal-employees",
+      "applicability": "Federal employees conducting agency business, including use of personal/nonofficial messaging accounts.",
+      "bounded_rule": "Federal records created or received on personal/nonofficial messaging systems must be copied to or forwarded to an official account consistent with 44 U.S.C. § 2911.",
+      "authority_effect": "IMPLEMENTATION_GUIDANCE",
+      "does_not_establish": [
+        "record status of a specific message",
+        "compliance or noncompliance in a specific case",
+        "intent"
       ]
     }
   ],
