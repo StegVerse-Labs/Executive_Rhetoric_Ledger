@@ -170,5 +170,6 @@
     "omb_apportionment_locator_total": 351550000,
     "omb_native_custody": "pending"
   },
-  "omb_apportionment_locators": "assessments/evidence/2026-08-26-white-house-ballroom-omb-apportionment-locators.json"
+  "omb_apportionment_locators": "assessments/evidence/2026-08-26-white-house-ballroom-omb-apportionment-locators.json",
+  "record_type": "evidence_reconstruction_task_registry"
 }
