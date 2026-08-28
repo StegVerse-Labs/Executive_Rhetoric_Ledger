@@ -4,55 +4,150 @@
   "title": "Linguistic Enregisterment and Provenance Assessment",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id","status","observed_features","enregisterment_claims","provenance_evidence","authorship_finding"],
+  "required": [
+    "id",
+    "status",
+    "observed_features",
+    "enregisterment_claims",
+    "provenance_evidence",
+    "authorship_finding"
+  ],
   "properties": {
-    "id": {"type":"string","pattern":"^ERL-LP-[A-Z0-9-]+$"},
-    "status": {"enum":["research_candidate","review_required","validated"]},
+    "id": {
+      "type": "string",
+      "pattern": "^ERL-LP-[A-Z0-9-]+$"
+    },
+    "status": {
+      "enum": [
+        "research_candidate",
+        "review_required",
+        "validated"
+      ]
+    },
     "observed_features": {
-      "type":"array",
-      "items":{
-        "type":"object","additionalProperties":false,
-        "required":["feature","observation_basis"],
-        "properties":{
-          "feature":{"type":"string","minLength":1},
-          "observation_basis":{"enum":["direct_text_observation","computed_measurement"]},
-          "value":{}
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "feature",
+          "observation_basis"
+        ],
+        "properties": {
+          "feature": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observation_basis": {
+            "enum": [
+              "direct_text_observation",
+              "computed_measurement"
+            ]
+          },
+          "value": {}
         }
       }
     },
-    "enregisterment_claims":{
-      "type":"array",
-      "items":{
-        "type":"object","additionalProperties":false,
-        "required":["signal","population_or_context","time_window","evidence_level"],
-        "properties":{
-          "signal":{"type":"string","minLength":1},
-          "population_or_context":{"type":"string","minLength":1},
-          "time_window":{"type":"string","minLength":1},
-          "evidence_level":{"enum":["anecdotal","corpus_supported","replicated"]}
+    "enregisterment_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "signal",
+          "population_or_context",
+          "time_window",
+          "evidence_level"
+        ],
+        "properties": {
+          "signal": {
+            "type": "string",
+            "minLength": 1
+          },
+          "population_or_context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "time_window": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_level": {
+            "enum": [
+              "anecdotal",
+              "corpus_supported",
+              "replicated"
+            ]
+          }
         }
       }
     },
-    "provenance_evidence":{
-      "type":"array",
-      "items":{
-        "type":"object","additionalProperties":false,
-        "required":["type","strength","description"],
-        "properties":{
-          "type":{"enum":["platform_metadata","cryptographic_attestation","author_admission","generation_log","forensic_chain","other"]},
-          "strength":{"enum":["weak","independent","strong"]},
-          "description":{"type":"string","minLength":1}
+    "provenance_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "strength",
+          "description"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "platform_metadata",
+              "cryptographic_attestation",
+              "author_admission",
+              "generation_log",
+              "forensic_chain",
+              "other"
+            ]
+          },
+          "strength": {
+            "enum": [
+              "weak",
+              "independent",
+              "strong"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          }
         }
       }
     },
-    "authorship_finding":{
-      "type":"object","additionalProperties":false,
-      "required":["state","source_class"],
-      "properties":{
-        "state":{"enum":["not_assessed","unsupported","supported"]},
-        "source_class":{"enum":["unknown","human","ai","mixed"]}
+    "authorship_finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "source_class"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "not_assessed",
+            "unsupported",
+            "supported"
+          ]
+        },
+        "source_class": {
+          "enum": [
+            "unknown",
+            "human",
+            "ai",
+            "mixed"
+          ]
+        }
       }
     },
-    "notes":{"type":"array","items":{"type":"string"}}
-  }
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "description": "Separates observed language, socially enregistered AI-associated signals, and independent provenance so style cannot be promoted into authorship."
 }
