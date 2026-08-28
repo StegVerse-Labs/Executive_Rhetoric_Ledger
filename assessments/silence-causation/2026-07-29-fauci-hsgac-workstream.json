@@ -99,7 +99,7 @@
     {
       "id": "WS-B",
       "name": "atomic-question-reconstruction",
-      "status": "active_partial_atomic_ledger_seeded",
+      "status": "active_partial_atomic_ledger_35_records",
       "dependencies": [
         "WS-A:official-transcript-satisfied-for-question-reconstruction"
       ],
@@ -110,11 +110,13 @@
         "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
       ],
       "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-      "next_task": "Expand the atomic ledger across every member turn and later questioning round from S. Hrg. 119-504, then add per-question authority assignments and completeness checks.",
+      "next_task": "Continue atomization through the remaining member turns and later rounds in S. Hrg. 119-504, then add per-question formal/de-facto authority assignments and a completeness denominator.",
       "completed_or_installed": [
         "partial machine-readable atomic question ledger seeded with 17 atomics from official GovInfo transcript",
         "response-state semantics preserve Fifth Amendment invocation as non-admission"
-      ]
+      ],
+      "atomic_records_reconstructed": 35,
+      "coverage_complete": false
     },
     {
       "id": "WS-C",
@@ -235,10 +237,11 @@
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
   "latest_machine_execution": {
-    "observed_at_utc": "2026-08-28T12:02:00Z",
-    "event": "WS_B_ATOMIC_LEDGER_SEEDED",
+    "observed_at_utc": "2026-08-28T12:07:00Z",
+    "event": "WS_B_ATOMIC_LEDGER_EXPANDED",
     "source_package": "CHRG-119shrg64382",
-    "atomic_records_added": 17,
+    "atomic_records_total": 35,
+    "senators_partially_covered": 6,
     "coverage_complete": false,
     "effect": "WS_B_ACTIVE_PARTIAL",
     "motive_finding_effect": false,
