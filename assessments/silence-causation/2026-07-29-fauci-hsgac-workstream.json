@@ -116,7 +116,7 @@
         "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
       ],
       "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
-      "next_task": "Expand primary-source-backed authority assignments from 45/114 to full coverage, prioritizing NIAID programmatic/scientific-review authority, state/local public-health implementation authority, and intelligence/classified-program authority.",
+      "next_task": "Expand primary-source-backed authority assignments from 51/114 to full coverage, prioritizing state/local public-health implementation authority, intelligence/classified-program authority, research-policy governance, and remaining no-formal-authority knowledge/opinion questions.",
       "completed_or_installed": [
         "partial machine-readable atomic question ledger seeded with 17 atomics from official GovInfo transcript",
         "response-state semantics preserve Fifth Amendment invocation as non-admission",
@@ -160,7 +160,7 @@
       ],
       "authority_assignment_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-assignment.partial.json",
       "authority_source_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
-      "authority_assignments_completed": 45,
+      "authority_assignments_completed": 51,
       "authority_assignments_total": 114,
       "authority_assignment_coverage_complete": false,
       "authority_validator": "scripts/validate_fauci_authority_assignments.py"
@@ -168,7 +168,7 @@
     {
       "id": "WS-C",
       "name": "chronology-and-authority-graph",
-      "status": "partial_authority_registry_and_records_authority_installed",
+      "status": "partial_authority_registry_programmatic_records_and_pardon_boundaries_installed",
       "dependencies": [
         "WS-A"
       ],
@@ -180,7 +180,8 @@
         "partial proposition-specific authority assignments installed for 39 atomic questions",
         "machine-enforced authority-misassignment boundaries for NIH grants and pardon questions",
         "Federal Records Act/nonofficial messaging and unlawful-destruction response authority sources installed",
-        "Federal records authority assignments installed for recordkeeping/destruction questions"
+        "Federal records authority assignments installed for recordkeeping/destruction questions",
+        "NIH Program Official programmatic/scientific role boundary installed and separated from GMO fund-obligation authority"
       ],
       "remaining": [
         "participant authority graph",
@@ -289,12 +290,12 @@
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
   "latest_machine_execution": {
-    "observed_at_utc": "2026-08-28T13:38:00Z",
-    "event": "FEDERAL_RECORDS_AUTHORITY_MAPPING_ADVANCED",
+    "observed_at_utc": "2026-08-28T13:48:00Z",
+    "event": "NIH_PROGRAMMATIC_AUTHORITY_MAPPING_ADVANCED",
     "atomic_question_denominator": 114,
-    "authority_assignments_completed": 45,
+    "authority_assignments_completed": 51,
     "authority_assignment_coverage_complete": false,
-    "primary_authority_sources_installed": 6,
+    "primary_authority_sources_installed": 7,
     "effect": "WS_B_AND_WS_C_AUTHORITY_MAPPING_ADVANCED",
     "motive_finding_effect": false,
     "publication_effect": false
