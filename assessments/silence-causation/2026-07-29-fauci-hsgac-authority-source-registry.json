@@ -2,7 +2,7 @@
   "registry_id": "ERL-SC-FAUCI-HSGAC-AUTHORITY-SOURCES-001",
   "topic_id": "2026-07-29-fauci-hsgac",
   "state": "ACTIVE_PARTIAL_PRIMARY_AUTHORITY_REGISTRY",
-  "observed_at_utc": "2026-08-28T13:34:00Z",
+  "observed_at_utc": "2026-08-28T13:44:00Z",
   "sources": [
     {
       "source_id": "AUTH-NIH-GMO-FY2020",
@@ -96,6 +96,23 @@
         "record status of a specific message",
         "compliance or noncompliance in a specific case",
         "intent"
+      ]
+    },
+    {
+      "source_id": "AUTH-NIH-PO-FY2020",
+      "authority_domain": "NIH_PROGRAMMATIC_SCIENTIFIC_GRANT_ROLE",
+      "issuing_authority": "National Institutes of Health",
+      "title": "NIH Grants Policy Statement, FY 2020 — Program Official role",
+      "canonical_url": "https://grants.nih.gov/grants/policy/nihgps/nihgps_2020.pdf",
+      "applicability": "NIH grants and cooperative agreements governed by the FY2020 NIHGPS, with prior versions controlling earlier budget periods as applicable.",
+      "bounded_rule": "The NIH Program Official is responsible for programmatic, scientific, and/or technical aspects of assigned applications and grants; the Program Official and Grants Management Officer have distinct but complementary roles.",
+      "exact_holder_resolution_rule": "Use award/program-specific records to identify the designated Program Official and do not infer that an Institute Director personally held the assigned Program Official role.",
+      "authority_effect": "PROGRAMMATIC_SCIENTIFIC_ROLE_BOUNDARY",
+      "does_not_establish": [
+        "award-specific Program Official identity",
+        "binding Federal fund obligation authority",
+        "Fauci personal involvement",
+        "scientific correctness or causation"
       ]
     }
   ],
