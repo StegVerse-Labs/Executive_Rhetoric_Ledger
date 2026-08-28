@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "assessments" / "silence-causation" / "2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
+AUDIT = ROOT / "assessments" / "silence-causation" / "2026-07-29-fauci-hsgac-question-coverage-audit.json"
 EXPECTED_SOURCE = "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm"
 LINE_RANGE = re.compile(r"^[0-9]+(?:-[0-9]+)?$")
 ALLOWED_RESPONSES = {
@@ -107,12 +108,38 @@ def main() -> int:
         if concept not in boundary:
             errors.append(f"promotion_boundary must mention {concept}")
 
+    audit = json.loads(AUDIT.read_text(encoding="utf-8"))
+    if audit.get("source_url") != EXPECTED_SOURCE:
+        errors.append("coverage audit must remain bound to the official GovInfo transcript")
+    if audit.get("atomic_records_observed") != len(records):
+        errors.append("coverage audit atomic_records_observed must equal ledger record count")
+    if audit.get("provisional_question_denominator") != len(records):
+        errors.append("provisional denominator must equal current reconstructed atomic count")
+    if audit.get("denominator_complete") is not False:
+        if coverage.get("proceeding_complete") is not True:
+            errors.append("denominator_complete cannot precede proceeding_complete")
+    dist = {}
+    for record in records:
+        state = record.get("response_state")
+        dist[state] = dist.get(state, 0) + 1
+    if audit.get("response_state_distribution") != dist:
+        errors.append("coverage audit response distribution does not match ledger")
+    q_counts = {}
+    for record in records:
+        speaker = record.get("speaker")
+        q_counts[speaker] = q_counts.get(speaker, 0) + 1
+    if audit.get("reconstructed_questioners") != q_counts:
+        errors.append("coverage audit questioner counts do not match ledger")
+    if not audit.get("completion_gate"):
+        errors.append("coverage audit must preserve explicit completion gates")
+
     if errors:
         return fail(errors)
 
     print(f"PASS atomic-question-ledger: {len(records)} atomics")
     print(f"PASS harmless-baseline: {len(harmless)} questions")
     print("PASS refusal semantics: invocation != admission")
+    print(f"PASS provisional denominator audit: {audit.get('provisional_question_denominator')} / complete={audit.get('denominator_complete')}")
     return 0
 
 
