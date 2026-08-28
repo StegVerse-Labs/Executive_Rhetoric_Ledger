@@ -1,0 +1,132 @@
+{
+  "audit_id": "ERL-SC-FAUCI-HSGAC-QUESTION-COVERAGE-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "source_id": "SRC-GOVINFO-CHRG-119shrg64382",
+  "source_url": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+  "state": "PROVISIONAL_DENOMINATOR_AUDIT_ACTIVE",
+  "ledger_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json",
+  "atomic_records_observed": 114,
+  "provisional_question_denominator": 114,
+  "denominator_complete": false,
+  "response_state_distribution": {
+    "FIFTH_AMENDMENT_INVOCATION": 114
+  },
+  "reconstructed_questioners": {
+    "Chairman Rand Paul": 19,
+    "Senator Ron Johnson": 6,
+    "Senator James Lankford": 3,
+    "Senator Rick Scott": 45,
+    "Senator Josh Hawley": 11,
+    "Senator Bernie Moreno": 14,
+    "Senator Joni Ernst": 5,
+    "Senator Ashley Moody": 11
+  },
+  "witness_turns_without_reconstructed_questions": [
+    {
+      "speaker": "Senator Gary Peters",
+      "turn_lines": "883-977",
+      "state": "AUDITED_NO_WITNESS_QUESTION"
+    },
+    {
+      "speaker": "Senator Maggie Hassan",
+      "turn_lines": "1145-1227",
+      "state": "AUDITED_NO_WITNESS_QUESTION"
+    },
+    {
+      "speaker": "Senator Richard Blumenthal",
+      "turn_lines": "1413-1530",
+      "state": "AUDITED_NO_SUBSTANTIVE_WITNESS_QUESTION"
+    },
+    {
+      "speaker": "Senator Andy Kim",
+      "turn_lines": "1756-1847",
+      "state": "AUDITED_NO_WITNESS_QUESTION"
+    },
+    {
+      "speaker": "Senator John Fetterman",
+      "turn_lines": "2023-2050",
+      "state": "AUDITED_NO_WITNESS_QUESTION"
+    }
+  ],
+  "audited_turn_families": [
+    {
+      "speaker": "Chairman Rand Paul",
+      "ranges": [
+        "552-835",
+        "2614-2769",
+        "3041-3155"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator Ron Johnson",
+      "ranges": [
+        "978-1142",
+        "2769-2906"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator James Lankford",
+      "ranges": [
+        "1228-1410",
+        "3091-3140"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator Rick Scott",
+      "ranges": [
+        "1543-1752",
+        "2907-3040"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator Josh Hawley",
+      "ranges": [
+        "1848-1991"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator Bernie Moreno",
+      "ranges": [
+        "2051-2209"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator Joni Ernst",
+      "ranges": [
+        "2210-2366"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    },
+    {
+      "speaker": "Senator Ashley Moody",
+      "ranges": [
+        "2367-2613"
+      ],
+      "state": "AUDIT_SUBSTANTIALLY_COMPLETE_RECHECK_REQUIRED"
+    }
+  ],
+  "control_findings": {
+    "harmless_baseline_questions": 3,
+    "harmless_baseline_ids": [
+      "AQ-039",
+      "AQ-040",
+      "AQ-041"
+    ],
+    "all_harmless_baselines_response_state": "FIFTH_AMENDMENT_INVOCATION",
+    "interpretation_boundary": "Blanket refusal is empirically observed across harmless and substantive questions. Refusal alone is therefore not a question-specific admission or incriminating discriminator."
+  },
+  "completion_gate": [
+    "Recheck every audited turn family against the official transcript for omitted direct witness questions or repeated directed-answer events.",
+    "Resolve whether repeated Chair directions to answer are denominator events or procedural repeats and encode the rule consistently.",
+    "Confirm whether any substantive witness question received a non-Fifth response state.",
+    "Freeze a complete denominator only after the audit has no unresolved ranges."
+  ],
+  "promotion_boundary": "A provisional denominator is not a complete question ledger and does not authorize causation, motive, culpability, legal, or publication findings.",
+  "observed_at_utc": "2026-08-28T12:56:00Z"
+}
