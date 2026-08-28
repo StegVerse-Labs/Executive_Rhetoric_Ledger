@@ -461,10 +461,290 @@
       "response_state": "FIFTH_AMENDMENT_INVOCATION",
       "response_lines": "1989-1991",
       "control_class": "EXPOSURE_BEARING_ALLEGATION"
+    },
+    {
+      "atomic_id": "AQ-050",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2057-2057",
+      "question_summary": "Did Fauci know who David Schertler was?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2058-2060",
+      "control_class": "IDENTITY_RELATIONSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-051",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2061-2062",
+      "question_summary": "What does the Fifth Amendment say?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2063-2065",
+      "control_class": "HARMLESS_OR_LOW_EXPOSURE_BASELINE"
+    },
+    {
+      "atomic_id": "AQ-052",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2169-2171",
+      "question_summary": "Would Fauci apologize to military members dismissed for refusing a COVID vaccine?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2172-2174",
+      "control_class": "APOLOGY_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-053",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2175-2177",
+      "question_summary": "Would Fauci apologize to business owners who lost businesses during pandemic restrictions?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2178-2180",
+      "control_class": "APOLOGY_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-054",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2181-2184",
+      "question_summary": "Would Fauci apologize to parents of young children who were masked during the pandemic?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2185-2187",
+      "control_class": "APOLOGY_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-055",
+      "speaker": "Senator Bernie Moreno",
+      "turn_lines": "2195-2197",
+      "question_summary": "Would Fauci apologize to the Ohio mother described by Moreno who was arrested at a football game?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2198-2200",
+      "control_class": "APOLOGY_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-056",
+      "speaker": "Senator Joni Ernst",
+      "turn_lines": "2267-2268",
+      "question_summary": "Were NIAID grant or contract programs funding gain-of-function researchers in China, the United States, and the Netherlands?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2269-2271",
+      "control_class": "FUNDING_SCOPE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-057",
+      "speaker": "Senator Joni Ernst",
+      "turn_lines": "2310-2312",
+      "question_summary": "Did Fauci intentionally use sub-award funding to obscure NIH funding of Chinese biolabs and coronavirus research?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2313-2315",
+      "control_class": "EXPOSURE_BEARING_ALLEGATION"
+    },
+    {
+      "atomic_id": "AQ-058",
+      "speaker": "Senator Joni Ernst",
+      "turn_lines": "2355-2356",
+      "question_summary": "Did Fauci think human fetal tissue should be placed into mice for coronavirus research?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2357-2359",
+      "control_class": "RESEARCH_ETHICS_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-059",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2412-2417",
+      "question_summary": "Did Fauci agree that public-health trust depends on candor from officials?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2418-2420",
+      "control_class": "GENERAL_PRINCIPLE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-060",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2456-2462",
+      "question_summary": "Was Fauci's principal objective in early mask guidance to give an honest medical assessment or to discourage consumption of scarce masks?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2463-2465",
+      "control_class": "POLICY_RATIONALE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-061",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2484-2485",
+      "question_summary": "Did Fauci have evidence supporting the six-foot distancing rule when he advised Americans to use it?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2486-2488",
+      "control_class": "EVIDENCE_BASIS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-062",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2506-2510",
+      "question_summary": "How did Fauci reconcile public statements that he did not recommend lockdowns with diary entries describing recommendations to close schools, bars, restaurants, or the country?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2511-2513",
+      "control_class": "DOCUMENTARY_CONFLICT_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-063",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2556-2561",
+      "question_summary": "Did Fauci talk to President Biden and ask for the pardon covering conduct back to 2014?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2566-2568",
+      "control_class": "PARDON_PROCESS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-064",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2600-2603",
+      "question_summary": "Could Chairman Paul's mission have been to determine why Americans died and where the pandemic started, rather than merely to target Fauci?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2604-2606",
+      "control_class": "HEARING_PURPOSE_CHARACTERIZATION"
+    },
+    {
+      "atomic_id": "AQ-065",
+      "speaker": "Senator Ashley Moody",
+      "turn_lines": "2607-2610",
+      "question_summary": "Did Fauci bear any responsibility for the collapse in public trust in government described by Moody?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2611-2613",
+      "control_class": "RESPONSIBILITY_CHARACTERIZATION"
+    },
+    {
+      "atomic_id": "AQ-066",
+      "speaker": "Senator Ron Johnson",
+      "turn_lines": "2895-2902",
+      "question_summary": "Would Fauci voluntarily comply with a requested transcribed interview, or would a subpoena be necessary?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2903-2905",
+      "control_class": "PROCEDURAL_COOPERATION_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-067",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2908-2910",
+      "question_summary": "Did Fauci personally receive royalty payments connected to COVID-related intellectual property?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2911-2913",
+      "control_class": "FINANCIAL_INTEREST_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-068",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2914-2917",
+      "question_summary": "Why should Americans believe NIH royalty ties did not affect which treatments were promoted or restricted?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2918-2920",
+      "control_class": "CONFLICT_OF_INTEREST_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-069",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2921-2922",
+      "question_summary": "Why does NIAID not publicly disclose the referenced royalty payments?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2923-2925",
+      "control_class": "DISCLOSURE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-070",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2926-2927",
+      "question_summary": "Did Fauci partner with Bill Gates on global health initiatives or vaccines?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2928-2930",
+      "control_class": "RELATIONSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-071",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2931-2932",
+      "question_summary": "How much funding did Bill Gates-related entities provide to NIAID collectively since 2005?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2933-2935",
+      "control_class": "FUNDING_SCOPE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-072",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2936-2937",
+      "question_summary": "To Fauci's knowledge, did Bill Gates partner with China on sensitive research?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2938-2940",
+      "control_class": "FOREIGN_RESEARCH_RELATIONSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-073",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2941-2942",
+      "question_summary": "Did such partnerships include dual-use research or gain-of-function countermeasures?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2943-2945",
+      "control_class": "DUAL_USE_SCOPE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-074",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2946-2947",
+      "question_summary": "Did Fauci know whether Bill Gates partnered with U.S. Government classified programs?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2948-2950",
+      "control_class": "CLASSIFIED_PROGRAM_RELATIONSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-075",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2951-2952",
+      "question_summary": "Did Fauci know whether Bill Gates maintained an active national-security clearance?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2953-2955",
+      "control_class": "SECURITY_CLEARANCE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-076",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2956-2957",
+      "question_summary": "Did Fauci advocate or request that Bill Gates receive a security clearance?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2958-2960",
+      "control_class": "SECURITY_CLEARANCE_PROCESS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-077",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2961-2963",
+      "question_summary": "Did Fauci know whether NIAID, NIH, or HHS sponsored or requested a security clearance for Bill Gates?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2964-2966",
+      "control_class": "SECURITY_CLEARANCE_PROCESS_QUESTION"
     }
   ],
   "coverage": {
-    "atomics": 49,
+    "atomics": 77,
     "senators_partially_covered": [
       "Rand Paul",
       "Ron Johnson",
@@ -477,23 +757,22 @@
     ],
     "proceeding_complete": false,
     "next_required_sections": [
-      "remaining Paul/Johnson turns not yet atomized",
-      "remaining Hawley/Scott/Moreno/Ernst/Moody turns",
-      "later questioning rounds",
-      "any remaining member questions",
-      "non-refusal answer states",
+      "remaining late Scott biodefense questions",
+      "Paul final record-destruction and privilege questions",
+      "any earlier first-round questions not yet atomized",
       "authority assignment per atomic question",
-      "completeness denominator"
+      "complete-question denominator"
     ],
     "senator_turns_without_witness_questions": [
       "Maggie Hassan",
       "Richard Blumenthal",
       "Andy Kim",
       "John Fetterman"
-    ]
+    ],
+    "later_round_started": true
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:13:00Z",
+  "last_updated_utc": "2026-08-28T12:20:00Z",
   "control_analysis": {
     "harmless_baseline_ids": [
       "AQ-039",
