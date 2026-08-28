@@ -160,7 +160,7 @@
       ],
       "authority_assignment_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-assignment.partial.json",
       "authority_source_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
-      "authority_assignments_completed": 39,
+      "authority_assignments_completed": 35,
       "authority_assignments_total": 114,
       "authority_assignment_coverage_complete": false,
       "authority_validator": "scripts/validate_fauci_authority_assignments.py"
@@ -287,13 +287,13 @@
   ],
   "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
   "latest_machine_execution": {
-    "observed_at_utc": "2026-08-28T13:22:00Z",
-    "event": "AUTHORITY_ASSIGNMENT_PARTIAL_MACHINE_ENFORCEMENT_INSTALLED",
+    "observed_at_utc": "2026-08-28T13:27:00Z",
+    "event": "AUTHORITY_ASSIGNMENT_COVERAGE_COUNT_REPAIRED",
     "atomic_question_denominator": 114,
-    "authority_assignments_completed": 39,
+    "authority_assignments_completed": 35,
     "authority_assignment_coverage_complete": false,
-    "primary_authority_sources_installed": 3,
-    "effect": "WS_B_AUTHORITY_ASSIGNMENT_ACTIVE_AND_WS_C_ADVANCED",
+    "prior_failure": "coverage.atomic_ids_assigned mismatch",
+    "correction_effect": "COUNT_ONLY_NO_SEMANTIC_PROMOTION",
     "motive_finding_effect": false,
     "publication_effect": false
   }
