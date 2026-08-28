@@ -881,10 +881,61 @@
       "response_state": "FIFTH_AMENDMENT_INVOCATION",
       "response_lines": "3077-3079",
       "control_class": "PRIVILEGE_BASIS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-092",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "634-637",
+      "question_summary": "Did NIH conduct research for or in coordination with the CIA, ODNI, or another intelligence-community element?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "638-640",
+      "control_class": "INTELLIGENCE_COORDINATION_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-093",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "650-652",
+      "question_summary": "Was Fauci read into any classified Department of Homeland Security program or prospective special-access program concerning gain-of-function research?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "653-655",
+      "control_class": "CLASSIFIED_PROGRAM_ACCESS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-094",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "783-792",
+      "question_summary": "Did Fauci still believe the benefits of gain-of-function research outweighed the risks after the pandemic experience described by Paul?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "793-795",
+      "control_class": "RISK_BENEFIT_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-095",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "820-823",
+      "question_summary": "Had Fauci changed his mind on whether the benefits of gain-of-function research outweigh its risks?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "824-826",
+      "control_class": "RISK_BENEFIT_POLICY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-096",
+      "speaker": "Senator Ron Johnson",
+      "turn_lines": "1000-1007",
+      "question_summary": "Was Fauci carefully monitoring vaccine-safety surveillance systems such as VAERS and V-Safe during the pandemic?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1054-1056",
+      "control_class": "SAFETY_SURVEILLANCE_QUESTION",
+      "response_anchor_note": "Johnson combined this with the subsequent Peter Marks algorithm/safety-signal question before Fauci responded."
     }
   ],
   "coverage": {
-    "atomics": 91,
+    "atomics": 96,
     "senators_partially_covered": [
       "Rand Paul",
       "Ron Johnson",
@@ -897,12 +948,13 @@
     ],
     "proceeding_complete": false,
     "next_required_sections": [
-      "audit earlier first-round transcript for omitted atomics",
+      "audit remaining first-round and later-round question/response pairs for omissions",
       "classify any non-Fifth response states",
       "authority assignment per atomic question",
       "establish complete-question denominator"
     ],
     "senator_turns_without_witness_questions": [
+      "Gary Peters",
       "Maggie Hassan",
       "Richard Blumenthal",
       "Andy Kim",
@@ -911,7 +963,7 @@
     "later_round_started": true
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:23:00Z",
+  "last_updated_utc": "2026-08-28T12:27:00Z",
   "control_analysis": {
     "harmless_baseline_ids": [
       "AQ-039",
@@ -943,6 +995,11 @@
     {
       "speaker": "Senator John Fetterman",
       "turn_lines": "2023-2050",
+      "classification": "STATEMENT_NO_WITNESS_QUESTION_OBSERVED"
+    },
+    {
+      "speaker": "Senator Gary Peters",
+      "turn_lines": "883-977",
       "classification": "STATEMENT_NO_WITNESS_QUESTION_OBSERVED"
     }
   ]
