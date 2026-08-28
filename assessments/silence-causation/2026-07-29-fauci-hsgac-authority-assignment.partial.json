@@ -4,7 +4,7 @@
   "state": "ACTIVE_PARTIAL_NON_PROMOTIONAL",
   "ledger_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json",
   "authority_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
-  "observed_at_utc": "2026-08-28T13:18:00Z",
+  "observed_at_utc": "2026-08-28T13:36:00Z",
   "assignments": [
     {
       "atomic_ids": [
@@ -104,20 +104,46 @@
       "misassignment_reason": "Questions may rhetorically attribute school/business/lockdown outcomes to one adviser even when implementation authority was distributed across Federal, state, and local actors.",
       "source_ids": [],
       "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-024",
+        "AQ-025",
+        "AQ-090",
+        "AQ-098",
+        "AQ-099",
+        "AQ-100",
+        "AQ-101",
+        "AQ-102",
+        "AQ-103",
+        "AQ-104"
+      ],
+      "authority_domain": "FEDERAL_RECORDS_AND_NONOFFICIAL_MESSAGING",
+      "formal_authority_holder_class": "Individual Federal employee preservation duty plus agency-head/NARA recovery and oversight roles",
+      "exact_holder_state": "STATUTORY_DUTY_CLASS_RESOLVED_EVENT_SPECIFIC_RECORD_STATUS_PENDING",
+      "question_target_role": "Potential creator/recipient/custodian or supervisor; whether a specific communication is a Federal record and whether any preservation or destruction violation occurred requires record-specific evidence.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "Questions about personal devices, Gmail, preservation, or destruction can collapse individual recordkeeping duties, agency records-management responsibility, agency-head response authority, and ultimate legal characterization into a single actor.",
+      "source_ids": [
+        "AUTH-FRA-44USC2911-NONOFFICIAL-MESSAGING",
+        "AUTH-FRA-44USC3106-UNLAWFUL-DESTRUCTION",
+        "AUTH-NARA-FEDERAL-EMPLOYEE-RECORDS-GUIDANCE"
+      ],
+      "factual_event_established": false
     }
   ],
   "coverage": {
-    "atomic_ids_assigned": 35,
+    "atomic_ids_assigned": 45,
     "atomic_total": 114,
     "coverage_complete": false,
     "next_domains": [
-      "NIH/NIAID records and communications authority",
-      "Federal records and FOIA duties",
+      "remaining NIH/NIAID programmatic and scientific-review authority",
       "research program governance and gain-of-function/ePPP authority",
-      "award-specific Notices of Award",
+      "state/local public-health implementation authority records",
+      "intelligence/classified-program authority records",
       "remaining relationship/knowledge questions with no formal-authority issue"
     ],
-    "coverage_fraction": "35/114"
+    "coverage_fraction": "45/114"
   },
   "promotion_boundary": "Authority assignment is proposition-specific and does not prove the questioned event, witness knowledge, motive, concealment, culpability, legal violation, or publication finding."
 }
