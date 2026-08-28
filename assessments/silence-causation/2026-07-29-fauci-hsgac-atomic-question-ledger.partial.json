@@ -1,0 +1,179 @@
+{
+  "ledger_id": "ERL-SC-FAUCI-HSGAC-ATOMIC-QUESTIONS-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "source_id": "SRC-GOVINFO-CHRG-119shrg64382",
+  "source_url": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+  "state": "PARTIAL_NON_PROMOTIONAL",
+  "reconstruction_method": "Atomic propositions are separated from multi-question turns and anchored to official GovInfo transcript line ranges. Summaries are normalized and do not substitute for the preserved official wording.",
+  "response_semantics": "Fifth Amendment invocation is recorded as a response state only and is never treated as admission, truth, falsity, motive, or corroboration.",
+  "records": [
+    {
+      "atomic_id": "AQ-001",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "557-573",
+      "question_summary": "What was the rationale for funding the Wuhan research?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "574-576"
+    },
+    {
+      "atomic_id": "AQ-002",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "564-573",
+      "question_summary": "Why was research funded in a totalitarian country at a laboratory characterized by the questioner as lacking adequate security?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "574-576"
+    },
+    {
+      "atomic_id": "AQ-003",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "569-573",
+      "question_summary": "Given another chance, would Fauci consider the funding decision unwise or express regret?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "574-576"
+    },
+    {
+      "atomic_id": "AQ-004",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "581-582",
+      "question_summary": "Was the referenced red folder in front of the witness?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "587-589"
+    },
+    {
+      "atomic_id": "AQ-005",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "606-609",
+      "question_summary": "Had Fauci refused the pardon, or did he believe the pardon failed to remove the basis for Fifth Amendment invocation?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "610-612"
+    },
+    {
+      "atomic_id": "AQ-006",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "613-618",
+      "question_summary": "After the Chair directed an answer, did Fauci still refuse to answer?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "619-621"
+    },
+    {
+      "atomic_id": "AQ-007",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "622-625",
+      "question_summary": "Was Fauci aware of gain-of-function research on monkeypox at NBACC at Fort Detrick?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "626-628"
+    },
+    {
+      "atomic_id": "AQ-008",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "629-630",
+      "question_summary": "Did the CIA ever transfer funds to NIH under an interagency agreement?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "631-633"
+    },
+    {
+      "atomic_id": "AQ-009",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "669-671",
+      "question_summary": "Were Wuhan Institute of Virology scientists capable of inserting a furin cleavage site into a coronavirus?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "672-674"
+    },
+    {
+      "atomic_id": "AQ-010",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "689-693",
+      "question_summary": "Could the described combination and passage experiments create viruses with increased function capable of contributing to a pandemic?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "694-696"
+    },
+    {
+      "atomic_id": "AQ-011",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "731-738",
+      "question_summary": "Did American laboratory oversight personnel inspect the Chinese laboratories where the research occurred?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "739-741"
+    },
+    {
+      "atomic_id": "AQ-012",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "742-749",
+      "question_summary": "Was Fauci aware of claims that Shi Zhengli held more than 100 unpublished viruses potentially relevant to the origin inquiry?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "750-752"
+    },
+    {
+      "atomic_id": "AQ-013",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "753-758",
+      "question_summary": "Did Fauci fund gain-of-function research at other laboratories around the world?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "759-761"
+    },
+    {
+      "atomic_id": "AQ-014",
+      "speaker": "Senator Ron Johnson",
+      "turn_lines": "1048-1053",
+      "question_summary": "Was Fauci told that an FDA safety-data algorithm could hide signals and that officials were later shown multiple safety signals?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1054-1056"
+    },
+    {
+      "atomic_id": "AQ-015",
+      "speaker": "Senator Ron Johnson",
+      "turn_lines": "1096-1115",
+      "question_summary": "Was Fauci involved in FDA criticism or opposition to ivermectin?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1116-1118"
+    },
+    {
+      "atomic_id": "AQ-016",
+      "speaker": "Senator Ron Johnson",
+      "turn_lines": "1107-1115",
+      "question_summary": "Was Fauci involved in efforts against hydroxychloroquine or ivermectin in order to preserve Emergency Use Authorization eligibility?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1116-1118"
+    },
+    {
+      "atomic_id": "AQ-017",
+      "speaker": "Senator Ron Johnson",
+      "turn_lines": "1133-1138",
+      "question_summary": "Did Fauci know of the Governor reopening letter and was the related diary entry inconsistent with that knowledge?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "1139-1141"
+    }
+  ],
+  "coverage": {
+    "atomics": 17,
+    "senators_partially_covered": [
+      "Rand Paul",
+      "Ron Johnson"
+    ],
+    "proceeding_complete": false,
+    "next_required_sections": [
+      "remaining first-round member turns",
+      "later rounds",
+      "all non-refusal answer states",
+      "authority assignment per atomic question"
+    ]
+  },
+  "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings."
+}
