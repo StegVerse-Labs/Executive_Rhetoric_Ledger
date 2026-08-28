@@ -741,10 +741,150 @@
       "response_state": "FIFTH_AMENDMENT_INVOCATION",
       "response_lines": "2964-2966",
       "control_class": "SECURITY_CLEARANCE_PROCESS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-078",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2967-2971",
+      "question_summary": "Did Fauci's office partner with the Obama White House or other U.S. Government classified entities on sensitive biodefense countermeasures or research?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2972-2974",
+      "control_class": "GOVERNMENT_PARTNERSHIP_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-079",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2975-2976",
+      "question_summary": "Did Fauci's office take steps to drive biological research investments?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2977-2979",
+      "control_class": "PROGRAM_STRATEGY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-080",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2980-2981",
+      "question_summary": "What was private industry's view of this type of research in the 2010 timeframe and earlier?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2982-2984",
+      "control_class": "INDUSTRY_POSTURE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-081",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2985-2986",
+      "question_summary": "Was the research considered too dangerous for industry to conduct or invest in?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2987-2989",
+      "control_class": "INDUSTRY_RISK_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-082",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2990-2991",
+      "question_summary": "Why did Fauci take steps to mature the government's approach to biodefense?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2992-2994",
+      "control_class": "PROGRAM_STRATEGY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-083",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "2995-2997",
+      "question_summary": "Were specific lines of effort needed to improve the biodefense research, development, and fielding model?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "2998-3000",
+      "control_class": "PROGRAM_STRATEGY_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-084",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "3001-3003",
+      "question_summary": "How were dual-use and gain-of-function risks incorporated into maturing biodefense countermeasures?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3004-3006",
+      "control_class": "DUAL_USE_GOVERNANCE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-085",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "3007-3009",
+      "question_summary": "Did Fauci discuss moving gain-of-function countermeasure research from government facilities to private industry?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3010-3012",
+      "control_class": "PROGRAM_LOCATION_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-086",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "3013-3016",
+      "question_summary": "How were private organizations regulated through government oversight while conducting risky research such as gain-of-function and gene editing?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3017-3019",
+      "control_class": "REGULATORY_OVERSIGHT_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-087",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "3020-3021",
+      "question_summary": "Did the Obama White House or other government entities take steps to inject funding into private industry?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3022-3024",
+      "control_class": "FUNDING_PROCESS_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-088",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "3025-3029",
+      "question_summary": "How should national-security public health be protected when private organizations work with foreign countries of concern without adequate government oversight?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3030-3032",
+      "control_class": "FORWARD_LOOKING_GOVERNANCE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-089",
+      "speaker": "Senator Rick Scott",
+      "turn_lines": "3033-3036",
+      "question_summary": "Did Fauci or anyone acting for him make a payment or arrangement to secure or influence the pardon received from President Biden?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3037-3039",
+      "control_class": "PARDON_PROCESS_EXPOSURE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-090",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "3067-3070",
+      "question_summary": "Between January 1, 2014 and January 19, 2025, did Fauci destroy any Federal record or tell anyone else to destroy one?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3071-3073",
+      "control_class": "FEDERAL_RECORDS_EXPOSURE_QUESTION"
+    },
+    {
+      "atomic_id": "AQ-091",
+      "speaker": "Chairman Rand Paul",
+      "turn_lines": "3074-3076",
+      "question_summary": "Given the pardon, what specific objection was Fauci asserting as the basis for declining to answer?",
+      "response_speaker": "Anthony Fauci",
+      "response_state": "FIFTH_AMENDMENT_INVOCATION",
+      "response_lines": "3077-3079",
+      "control_class": "PRIVILEGE_BASIS_QUESTION"
     }
   ],
   "coverage": {
-    "atomics": 77,
+    "atomics": 91,
     "senators_partially_covered": [
       "Rand Paul",
       "Ron Johnson",
@@ -757,11 +897,10 @@
     ],
     "proceeding_complete": false,
     "next_required_sections": [
-      "remaining late Scott biodefense questions",
-      "Paul final record-destruction and privilege questions",
-      "any earlier first-round questions not yet atomized",
+      "audit earlier first-round transcript for omitted atomics",
+      "classify any non-Fifth response states",
       "authority assignment per atomic question",
-      "complete-question denominator"
+      "establish complete-question denominator"
     ],
     "senator_turns_without_witness_questions": [
       "Maggie Hassan",
@@ -772,7 +911,7 @@
     "later_round_started": true
   },
   "promotion_boundary": "This partial ledger is reconstruction infrastructure only. It does not support motive, culpability, truthfulness, legal, causation, or publication findings.",
-  "last_updated_utc": "2026-08-28T12:20:00Z",
+  "last_updated_utc": "2026-08-28T12:23:00Z",
   "control_analysis": {
     "harmless_baseline_ids": [
       "AQ-039",
