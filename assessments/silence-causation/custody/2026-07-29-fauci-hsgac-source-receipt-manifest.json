@@ -2,9 +2,9 @@
   "manifest_id": "ERL-SC-2026-FAUCI-HSGAC-SOURCE-CUSTODY-001",
   "assessment_id": "ERL-SCA-2026-07-29-FAUCI-HSGAC",
   "created_at_utc": "2026-08-07T07:23:00Z",
-  "updated_at_utc": "2026-08-07T07:26:00Z",
+  "updated_at_utc": "2026-08-28T11:58:00Z",
   "capture_agent": "ChatGPT connected-repository integration lane",
-  "status": "partial",
+  "status": "partial_transcript_available",
   "objects": [
     {
       "source_id": "SRC-HSGAC-HEARING-PAGE-2026-07-29",
@@ -43,8 +43,14 @@
       "sha256": null,
       "capture_state": "official-primary-object-located-native-bytes-not-captured",
       "completeness_state": "located-not-custodied",
-      "known_omissions": ["native PDF byte object", "byte length", "SHA-256 digest"],
-      "transformation_history": ["Official PDF target was followed from the HSGAC hearing page and page 1 was visually verified through the PDF rendering path."],
+      "known_omissions": [
+        "native PDF byte object",
+        "byte length",
+        "SHA-256 digest"
+      ],
+      "transformation_history": [
+        "Official PDF target was followed from the HSGAC hearing page and page 1 was visually verified through the PDF rendering path."
+      ],
       "verification_state": "official-primary-object-located"
     },
     {
@@ -59,10 +65,39 @@
       "sha256": null,
       "capture_state": "official-primary-object-located-native-bytes-not-captured",
       "completeness_state": "located-not-custodied",
-      "known_omissions": ["native PDF byte object", "byte length", "SHA-256 digest"],
-      "transformation_history": ["Official PDF target was followed from the HSGAC hearing page and page 1 was visually verified through the PDF rendering path."],
+      "known_omissions": [
+        "native PDF byte object",
+        "byte length",
+        "SHA-256 digest"
+      ],
+      "transformation_history": [
+        "Official PDF target was followed from the HSGAC hearing page and page 1 was visually verified through the PDF rendering path."
+      ],
       "verification_state": "official-primary-object-located"
+    },
+    {
+      "source_id": "SRC-GOVINFO-CHRG-119shrg64382",
+      "issuing_authority": "U.S. Government Publishing Office",
+      "canonical_url": "https://www.govinfo.gov/app/details/CHRG-119shrg64382/CHRG-119shrg64382",
+      "immutable_transcript_pointer": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+      "retrieval_timestamp_utc": "2026-08-28T11:57:00Z",
+      "repository_path": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-govinfo-transcript-receipt.json",
+      "media_type": "text/html; official congressional hearing transcript pointer",
+      "package_id": "CHRG-119shrg64382",
+      "hearing_number": "S. Hrg. 119-504",
+      "byte_length": null,
+      "sha256": null,
+      "capture_state": "official-immutable-pointer-verified",
+      "completeness_state": "sufficient-for-question-reconstruction",
+      "known_omissions": [
+        "native transcript byte object",
+        "SHA-256 digest"
+      ],
+      "transformation_history": [
+        "No transcript transformation is represented by this receipt. The repository stores an official immutable GovInfo pointer and package metadata only."
+      ],
+      "verification_state": "official-transcript-verified"
     }
   ],
-  "promotion_boundary": "This manifest records custody posture only. Located objects with null byte length or SHA-256 are not counted as native-captured evidence. Atomic question reconstruction, motive inference, legal conclusion, and publication promotion remain blocked until the native proceeding record is preserved sufficiently to reconstruct the hearing."
+  "promotion_boundary": "The GovInfo transcript unblocks atomic question reconstruction but does not by itself establish any allegation, motive, legal conclusion, or publication finding. Native HSGAC source bytes and remaining exhibits/process records remain separately governed."
 }
