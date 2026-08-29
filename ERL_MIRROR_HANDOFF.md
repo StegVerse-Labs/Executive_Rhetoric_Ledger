@@ -477,3 +477,62 @@ Validate Ledger Schemas: 33173294600 SUCCESS
 ```
 
 The next executable boundary is no longer denominator construction. It is per-question formal/documented-de-facto authority assignment, authority-misassignment flags, and WS-C primary-source authority/lifecycle reconstruction. PR #48 remains materially diverged from main and must still receive path-level reconciliation before any merge decision.
+
+
+### 2026-08-28 authority-assignment advancement / archive-reconciliation update
+
+Issue #47 / PR #48 remains the canonical active Fauci/HSGAC implementation lane. The bounded branch has advanced beyond denominator completion to primary-authority mapping.
+
+Current bounded head: `f635564c39237e41f01012624792787d6bcd0cee`.
+
+```text
+atomic question denominator: 114 / COMPLETE_NON_PROMOTIONAL
+authority assignments: 51/114
+authority assignment coverage complete: false
+primary authority sources installed: 7
+WS-B: question ledger complete; authority assignment partial / machine-enforced
+WS-C: partial authority registry + records/programmatic/pardon boundaries installed
+case status: research_candidate
+question causation: not_assessable
+motive finding authorized: false
+publication finding authorized: false
+```
+
+Current authority artifacts on PR #48:
+- `assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json`
+- `assessments/silence-causation/2026-07-29-fauci-hsgac-authority-assignment.partial.json`
+- `scripts/validate_fauci_authority_assignments.py`
+
+Installed authority distinctions include:
+- NIH award-specific Grants Management Officer binding-fund obligation authority vs NIH Program Official programmatic/scientific role;
+- applicable NIH Grants Policy Statement versioning boundary for 2014-era and later award periods;
+- Presidential Article II federal pardon-grant authority without inferring request, advice, motive, or specific instrument scope;
+- 44 U.S.C. § 2911 nonofficial-messaging preservation duty and 44 U.S.C. § 3106 agency-head/Archivist recovery-response authority without inferring that a questioned message was a Federal record or that unlawful destruction occurred;
+- NARA implementation guidance for personal/nonofficial messaging records;
+- fail-closed unresolved authority classes for intelligence/classified/security-clearance and mixed Federal/state/local public-health implementation questions.
+
+Latest hosted proof at bounded head `f635564c39237e41f01012624792787d6bcd0cee`:
+
+```text
+Validate silence-causation assessments: 33174011370 SUCCESS
+Validate durable task state: 33174011310 SUCCESS
+Validate Ledger Schemas: 33174011357 SUCCESS
+```
+
+A prior authority-assignment CI failure was caused only by a stale coverage counter (declared 39 vs actual 35 at that point). It was corrected without semantic promotion; subsequent hosted validation passed, and coverage later advanced to 51/114.
+
+Remaining bounded machine work:
+1. Expand authority assignments from 51/114 to 114/114.
+2. Acquire award-specific Notices of Award where exact Grants Management Officer / Program Official identity matters.
+3. Acquire policy/jurisdiction-specific state/local public-health authority records.
+4. Acquire IC/DHS/security-clearance/program authority records for classified/interagency questions.
+5. Complete participant authority graph, verified decision/funding/records/scientific-review edges, personnel lifecycle chronology, administration-continuity edges, and independent document/witness paths.
+6. Complete human-readable question-ledger review.
+7. Only then advance WS-D controls/documentary conflicts and WS-E contradiction/independent review.
+8. Reconcile PR #48 against current main at path level before any merge decision; do not force merge or overwrite newer mainline research/validation surfaces.
+
+Remaining source-custody boundaries are unchanged: native HSGAC hearing-page/video objects, native Paul/Peters PDF bytes+hashes, exhibits/process records, witness/counsel correspondence, exact pardon instrument/scope record, and prior testimony/documents remain separately incomplete. No user credential, owner authorization, iPhone action, provider activation, or external service configuration is presently required for this ERL evidence lane.
+
+No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, publication, or runtime activation is authorized from this state.
+
+Archive continuity: the active bounded workstream JSON, Issue #47, PR #48, this root handoff, source queue/custody receipts, question ledger, coverage audit, authority registry/assignments, validators, and hosted run receipts contain the continuation state; no continuation fact is intentionally dependent on this ChatGPT session.
