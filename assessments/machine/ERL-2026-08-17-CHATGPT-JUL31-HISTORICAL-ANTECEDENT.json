@@ -1,0 +1,52 @@
+{
+  "id": "ERL-2026-08-17-CHATGPT-JUL31-HISTORICAL-ANTECEDENT",
+  "record_type": "historical_antecedent_link",
+  "status": "source_recovered",
+  "source_date": "2026-07-31",
+  "system": "ChatGPT",
+  "parent_issue": 69,
+  "purpose": "Establish whether the current assertion-before-probe / relational-memory investigation originated from an earlier documented user hypothesis and preservation request rather than being newly formulated on 2026-08-17.",
+  "recovered_sources": [
+    "chatgpt_conversation_transcript_2026-07-31.json",
+    "chatgpt_conversation_transcript_2026-07-31.jsonl",
+    "stegverse_governance_reflection_full_transcript.txt"
+  ],
+  "recovered_sequence": [
+    {
+      "step": 1,
+      "finding": "The July 31 transcript explicitly identified context/memory disruption as including losing corrections after acknowledging them, retaining broad profile facts while losing semantic continuity, and acting as though prior work or decisions never occurred. Retrieval corruption was separately described as relevant memory/documents not being surfaced or irrelevant context being prioritized."
+    },
+    {
+      "step": 2,
+      "finding": "The user then reported observing about three quarters of the listed symptoms. The assistant responded that the cluster was sufficient to justify preserving the evidence as a coordinated incident record and proposed timestamping symptoms, affected platforms, reproducibility, and supporting artifacts."
+    },
+    {
+      "step": 3,
+      "finding": "Transcript review then identified correction-persistence failure: the user explicitly corrected semantic substitution, the assistant acknowledged the correction, and the same behavior recurred within one or two turns. It also identified premature defensive qualification, thread fragmentation, and self-referential capture."
+    },
+    {
+      "step": 4,
+      "finding": "The user asked whether a governed test analogous to the ERL/Fauci examination could narrow causes. The proposed experiment included fixed real-work prompts, semantic drift metrics, correction persistence, retrieval behavior, memory continuity, hypothesis preservation, cross-provider repetition, and blind scoring."
+    },
+    {
+      "step": 5,
+      "finding": "The user explicitly instructed: 'Build this side by side in ERL with the faiucci examination and determine if there’s a causal testing system that has reusable parts that should be created into a testing platform.' This is the clearest recovered activation point for durable ERL treatment of LLM behavioral incidents."
+    },
+    {
+      "step": 6,
+      "finding": "A separate preserved governance transcript records the user challenging that the assistant had fought the same principle several times when applied to the current administration, after which the assistant acknowledged having softened the framing. This supplies an earlier current-administration-specific example consistent with the later incident class."
+    }
+  ],
+  "relationship_to_current_investigation": {
+    "current_candidate": "relational_memory_retrieval_asymmetry / assertion-before-probe / correction-persistence asymmetry",
+    "relationship": "historical antecedent and test-origin evidence",
+    "interpretation": "The August 17 investigation is a continuation and refinement of a July 31 user-proposed examination of selective continuity, correction persistence, retrieval irregularity, question fidelity, and semantic substitution. The present political-direction question should therefore be analyzed as one subject-family application of an earlier general LLM-behavior test surface, not as a newly invented hypothesis after observing the August 17 T1 runs."
+  },
+  "epistemic_limits": {
+    "memory_mechanism_proven": false,
+    "selective_retrieval_cause_proven": false,
+    "political_bias_proven_by_july31_alone": false,
+    "motive_proven": false
+  },
+  "next_action": "Re-index Issue #69 and the current parent map so July 31 is the historical origin node for correction-persistence, semantic-substitution, memory-continuity, and retrieval-behavior testing; then treat August 16-17 incidents as later observations on that pre-existing test surface."
+}
