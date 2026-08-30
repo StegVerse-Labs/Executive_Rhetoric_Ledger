@@ -7,6 +7,8 @@ on:
       - "schemas/silence-causation-assessment.schema.json"
       - "assessments/silence-causation/**"
       - "scripts/validate_silence_causation_assessment.py"
+      - "scripts/validate_fauci_atomic_question_ledger.py"
+      - "scripts/validate_fauci_authority_assignments.py"
       - ".github/workflows/validate-silence-causation.yml"
   pull_request:
     paths:
@@ -30,3 +32,5 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install --disable-pip-version-check jsonschema
       - run: python scripts/validate_silence_causation_assessment.py
+      - run: python scripts/validate_fauci_atomic_question_ledger.py
+      - run: python scripts/validate_fauci_authority_assignments.py

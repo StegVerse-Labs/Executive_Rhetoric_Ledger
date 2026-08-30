@@ -1,0 +1,131 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.research_surface_registry.v1",
+  "standard": "standards/multi-trajectory-research-surface.v1.md",
+  "generated_at": "2026-08-11T18:22:00Z",
+  "canonical_task": "Issue #60",
+  "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "states": ["CONFORMING", "PENDING_VALIDATION", "PENDING_ADMISSION", "EXEMPT_REVIEWED", "SUPERSEDED"],
+  "entries": [
+    {
+      "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+      "domain": "cross-repository research frontier, evidence movement, and governed evaluation",
+      "state": "CONFORMING",
+      "role": "research-frontier-and-evaluation-authority",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "research",
+      "native_monitor": "config/ruben-ray-martinez-evidence-monitor.json",
+      "evidence": ["StegVerse-Labs/Executive_Rhetoric_Ledger@d3a17f656cdc537e54c31fbd59eb08673605e1a8", "research/receipts/2026-08-11-all-trajectory-queue-local-validation.json", "research/receipts/2026-08-11-research-candidate-intake-local-validation.json", "research/receipts/2026-08-11-evidence-movement-engine-local-validation.json", "research/receipts/2026-08-11-candidate-collision-local-validation.json"],
+      "next_action": "continue active trajectory research under frontier/Issue #47; Issue #60 implementation-validation claim may release"
+    },
+    {
+      "repository": "StegVerse-Labs/Trumpality",
+      "domain": "person-subject public-life and executive-rhetoric evidence",
+      "state": "CONFORMING",
+      "existing_search_surface": "scripts/search_agent.py",
+      "trajectory_adapter": "scripts/erl_research_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "mixed",
+      "candidate_export": "core/exports/export_ledger_candidates.py",
+      "reviewed_projection_handoff": "docs/OSINT_PROJECTION_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/Trumpality@bb33dd3ff241152fcbde9f7ec30f365e1c0513b6", "StegVerse-Labs/Trumpality@5dab9a519355a61cfee2ceeb1af52687f2a790fc", "StegVerse-Labs/Trumpality@b4d13f8044df39a1d8a6091acf15b4844a8a40a1", "StegVerse-Labs/Trumpality@9f21ddf034ef1c424128a76697e9ddd4e7db576a"],
+      "next_action": "continue REQUIRED subject-specific acquisition; only reviewed ERL projections may alter evaluation state"
+    },
+    {
+      "repository": "StegVerse-Labs/Administrations",
+      "domain": "institutional executive behavior by presidential term",
+      "state": "CONFORMING",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "transport",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/Administrations@06c29f41dcfdc984888fd7b1694fd8239a70aa36", "StegVerse-Labs/Administrations@404a2f29badfbb9e7fe91e28cc14b2d6380f4a31", "StegVerse-Labs/Administrations@76550f45ec11281227c812f6c15d4aeeaaf08102", "StegVerse-Labs/Administrations@ab89983015807d5cf2ad07077c663c335eee0f94"],
+      "next_action": "continue REQUIRED trajectory-aware acquisition; scheduled ingest remains transport unless explicitly reclassified"
+    },
+    {
+      "repository": "StegVerse-Labs/StegBiography",
+      "domain": "evidence-linked biographical reconstruction umbrella",
+      "state": "CONFORMING",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "DELEGATED",
+      "scheduled_ingest_classification": "none",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/StegBiography@6fe2ec4af4f26806fdbb39606d996e1c39821f76", "StegVerse-Labs/StegBiography@cc6c25733f7f3a69f88366e48258f6bd9d9e8ef9", "StegVerse-Labs/StegBiography@36f65d27f7dcf93332e917f6fdb37b385387fc86", "StegVerse-Labs/StegBiography@2a6a316e8d6947937a7ff927e708dd3799f95e64"],
+      "next_action": "remain delegated to registered subject surfaces; explicit ERL acquisition requests remain admissible without autonomous umbrella recurrence"
+    },
+    {
+      "repository": "StegVerse-Labs/Epsteinality",
+      "domain": "person-specific biography and associated people/events",
+      "state": "CONFORMING",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "transport",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/Epsteinality@93ba7272a94e0b46aa83a94c516689cee89e6978", "StegVerse-Labs/Epsteinality@3dc8a8aacb46d73e861b7529f7f4ba00e7dff4e9", "StegVerse-Labs/Epsteinality@5c299dfdeac0ea0491b6ba513d0f15403722db8a", "StegVerse-Labs/Epsteinality@f5a44d8ded551587dc609210c856cdc8fde5f163"],
+      "next_action": "continue REQUIRED trajectory-aware acquisition; scheduled ingest remains transport unless explicitly reclassified"
+    },
+    {
+      "repository": "StegVerse-Labs/Maxwellality",
+      "domain": "person-specific biography, events, people, locations",
+      "state": "CONFORMING",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "transport",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/Maxwellality@fec5cf7375dcb73b732a8758d1fa4bd6e1e3176c", "StegVerse-Labs/Maxwellality@e04dd32d99b69f150a31d5db818c65945c48aac2", "StegVerse-Labs/Maxwellality@5af2d906002209952818ad604ecbe3697881ffe9", "StegVerse-Labs/Maxwellality@0ad6c8a57e3b1a5439e0b64be53a4362f9656846"],
+      "next_action": "continue REQUIRED trajectory-aware acquisition; scheduled ingest remains transport unless explicitly reclassified"
+    },
+    {
+      "repository": "StegVerse-Labs/Giuffre-ality",
+      "domain": "person-specific biography, events, locations, stories and memoir records",
+      "state": "CONFORMING",
+      "trajectory_adapter": "scripts/search_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "transport",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/Giuffre-ality@4afa3f21518f84907eb8f7acd163328ad70908d2", "StegVerse-Labs/Giuffre-ality@69a7b4909d687305071ba2c660c58a110cd62f8b", "StegVerse-Labs/Giuffre-ality@a19752116e14459e448c371f3d36598e84572122", "StegVerse-Labs/Giuffre-ality@2f1fc3d8618071ce32e93a36438a57cb83aeda6a"],
+      "next_action": "continue REQUIRED trajectory-aware acquisition; scheduled ingest remains transport unless explicitly reclassified"
+    },
+    {
+      "repository": "StegVerse-Labs/FREE-DOM",
+      "domain": "evidence-first Epstein-era event/court/source research",
+      "state": "CONFORMING",
+      "existing_search_surface": "scripts/search_agent.py",
+      "trajectory_adapter": "scripts/erl_research_agent.py",
+      "frontier": "research/frontier.json",
+      "conformance": "research/conformance.json",
+      "recurrence": "REQUIRED",
+      "scheduled_ingest_classification": "mixed",
+      "handoff": "RESEARCH_MIRROR_HANDOFF.md",
+      "evidence": ["StegVerse-Labs/FREE-DOM@4b48a1eb629cac726926e1e9237abad5d558cc59", "StegVerse-Labs/FREE-DOM@c4d998f7de407029338361c032a110b5db482ba0", "StegVerse-Labs/FREE-DOM@63e36e8a1fc018abf0600f671fb09bc7b1d0fcc0", "StegVerse-Labs/FREE-DOM@073bad6b018066739d3c6a94026dc8a4f98a53ae"],
+      "next_action": "continue REQUIRED native/ERL-sidecar acquisition while preserving privacy and native master semantics"
+    },
+    {
+      "repository": "StegVerse-Labs/Site",
+      "domain": "publication/presentation consumer",
+      "state": "EXEMPT_REVIEWED",
+      "recurrence": "NOT_REQUIRED",
+      "reason": "Site consumes reviewed ERL material; it is not a primary research-acquisition surface"
+    },
+    {
+      "repository": "StegVerse-Labs/3I-Atlas",
+      "domain": "astronomical/scientific object research",
+      "state": "EXEMPT_REVIEWED",
+      "recurrence": "NOT_REQUIRED_UNDER_ERL",
+      "reason": "scientific subject domain is outside ERL executive/person-event evaluation authority unless a later explicit ERL-linked trajectory is admitted"
+    }
+  ],
+  "default_rule": "A StegVerse-Labs repository whose primary purpose is evidence-first preservation or research about people, administrations/institutions, public acts, incidents, decisions, or linked event histories must register here before operating an independent evaluation structure. Domain acquisition is local; governed evaluation remains ERL authority. Recurrence is trajectory-specific and scheduled ingest is not presumed to be research."
+}

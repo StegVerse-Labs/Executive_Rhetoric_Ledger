@@ -1,0 +1,24 @@
+Source: U.S. Senate Committee on Homeland Security & Governmental Affairs
+Canonical URL: https://www.hsgac.senate.gov/hearings/testimony-of-anthony-fauci/
+Retrieval date: 2026-08-07
+Transformation: Official-page metadata extracted from the committee HTML representation available through the retrieval tool; this is not a native byte-for-byte page archive.
+
+Proceeding type: Full Committee Hearing
+Title: Testimony of Anthony Fauci
+Date: July 29, 2026
+Time: 8:30am
+Location: Senate Dirksen Building, SD-342
+
+Member Statements:
+- Chairman Rand Paul (R-KY): official page exposes a DOWNLOAD STATEMENT link.
+- Ranking Member Gary Peters (D-MI): official page exposes a DOWNLOAD STATEMENT link.
+
+Witness:
+Anthony Fauci, M.D.
+Former Director (1984-2022)
+National Institute of Allergy and Infectious Diseases, National Institutes of Health,
+U.S. Department of Health and Human Services
+
+Official page also exposes an “Open in New Window” control associated with the hearing media embed. The native media target was not captured in this snapshot.
+
+Completeness: metadata-only transformed snapshot; native HTML bytes, native video object, exact media target, transcript, exhibits, and correspondence remain uncaptured.

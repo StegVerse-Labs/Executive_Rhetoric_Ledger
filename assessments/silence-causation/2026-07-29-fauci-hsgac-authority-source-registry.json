@@ -1,0 +1,142 @@
+{
+  "registry_id": "ERL-SC-FAUCI-HSGAC-AUTHORITY-SOURCES-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "state": "ACTIVE_PARTIAL_PRIMARY_AUTHORITY_REGISTRY",
+  "observed_at_utc": "2026-08-28T13:44:00Z",
+  "sources": [
+    {
+      "source_id": "AUTH-NIH-GMO-FY2020",
+      "authority_domain": "NIH_GRANT_OBLIGATION",
+      "issuing_authority": "National Institutes of Health",
+      "title": "NIH Grants Policy Statement, FY 2020",
+      "canonical_url": "https://grants.nih.gov/grants/policy/nihgps/nihgps_2020.pdf",
+      "applicability": "NIH grants and cooperative agreements with budget periods beginning on or after 2019-10-01; prior NIHGPS versions remain applicable to earlier budget periods.",
+      "bounded_rule": "The Grants Management Officer named in the Notice of Award is responsible for business/non-programmatic award management and is the only NIH official authorized to obligate NIH to Federal fund expenditure or change award funding, duration, or terms.",
+      "exact_holder_resolution_rule": "Identify the award-specific GMO from the relevant Notice of Award before naming an individual formal obligation authority holder.",
+      "authority_effect": "FORMAL_GRANT_OBLIGATION_AUTHORITY_ONLY",
+      "does_not_establish": [
+        "programmatic scientific recommendation",
+        "personal motive",
+        "award-specific decision chain without Notice of Award"
+      ]
+    },
+    {
+      "source_id": "AUTH-NIH-GPS-2015-APPLICABILITY",
+      "authority_domain": "NIH_GRANT_POLICY_VERSIONING",
+      "issuing_authority": "National Institutes of Health",
+      "title": "NOT-OD-15-087: Publication of the Revised NIH Grants Policy Statement (Rev. 3/31/2015)",
+      "canonical_url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-15-087.html",
+      "applicability": "The March 31, 2015 NIHGPS applies to grants/cooperative agreements with budget periods beginning on or after 2014-12-26 and supersedes the October 2013 statement for those periods; October 2013 remains standard for budget periods 2013-10-01 through 2014-12-25.",
+      "bounded_rule": "Authority mapping for 2014-era awards must use the policy version applicable to the award budget period and cannot silently apply a later policy version.",
+      "authority_effect": "POLICY_VERSION_BOUNDARY",
+      "does_not_establish": [
+        "award-specific GMO identity",
+        "award-specific obligation",
+        "Fauci's programmatic role"
+      ]
+    },
+    {
+      "source_id": "AUTH-US-CONST-ARTII-PARDON",
+      "authority_domain": "PRESIDENTIAL_PARDON",
+      "issuing_authority": "United States Constitution",
+      "title": "U.S. Constitution, Article II, Section 2, Clause 1",
+      "canonical_url": "https://constitution.congress.gov/constitution/article-2/",
+      "applicability": "Federal reprieves and pardons, except impeachment.",
+      "bounded_rule": "The constitutional power to grant reprieves and pardons for offenses against the United States is vested in the President.",
+      "authority_effect": "FORMAL_PARDON_GRANT_AUTHORITY",
+      "does_not_establish": [
+        "who requested a pardon",
+        "who advised the President",
+        "why a pardon was granted",
+        "scope of a specific pardon instrument"
+      ]
+    },
+    {
+      "source_id": "AUTH-FRA-44USC2911-NONOFFICIAL-MESSAGING",
+      "authority_domain": "FEDERAL_RECORDS_NONOFFICIAL_MESSAGING",
+      "issuing_authority": "United States Code / National Archives statutory framework",
+      "title": "44 U.S.C. § 2911 — Disclosure requirement for official business conducted using non-official electronic messaging accounts",
+      "canonical_url": "https://uscode.house.gov/view.xhtml?req=%28title%3A44+section%3A2911+edition%3Aprelim%29",
+      "applicability": "Executive-agency officers and employees creating or sending Federal records through non-official electronic messaging accounts.",
+      "bounded_rule": "A covered officer or employee must copy an official account when creating/sending the record or forward a complete copy to an official account within 20 days.",
+      "authority_effect": "RECORDS_PRESERVATION_DUTY_BOUNDARY",
+      "does_not_establish": [
+        "that a questioned communication was a Federal record",
+        "that a personal account was used",
+        "intentional violation",
+        "destruction or concealment"
+      ]
+    },
+    {
+      "source_id": "AUTH-FRA-44USC3106-UNLAWFUL-DESTRUCTION",
+      "authority_domain": "FEDERAL_RECORDS_UNLAWFUL_DESTRUCTION_RESPONSE",
+      "issuing_authority": "United States Code",
+      "title": "44 U.S.C. § 3106 — Unlawful removal, destruction of records",
+      "canonical_url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title44-section3106",
+      "applicability": "Federal agency response to actual, impending, or threatened unlawful removal, deletion, erasure, or destruction of agency records.",
+      "bounded_rule": "The head of the Federal agency must notify the Archivist and, with the Archivist, initiate action through the Attorney General for recovery/redress when the statutory conditions are met.",
+      "authority_effect": "AGENCY_HEAD_AND_ARCHIVIST_RESPONSE_AUTHORITY",
+      "does_not_establish": [
+        "that records were destroyed",
+        "that destruction was unlawful",
+        "who destroyed a record",
+        "criminal liability"
+      ]
+    },
+    {
+      "source_id": "AUTH-NARA-FEDERAL-EMPLOYEE-RECORDS-GUIDANCE",
+      "authority_domain": "FEDERAL_RECORDS_IMPLEMENTATION_GUIDANCE",
+      "issuing_authority": "National Archives and Records Administration",
+      "title": "Records Management Guidance for Federal Employees",
+      "canonical_url": "https://www.archives.gov/records-mgmt/transition/records-management-guidance-federal-employees",
+      "applicability": "Federal employees conducting agency business, including use of personal/nonofficial messaging accounts.",
+      "bounded_rule": "Federal records created or received on personal/nonofficial messaging systems must be copied to or forwarded to an official account consistent with 44 U.S.C. § 2911.",
+      "authority_effect": "IMPLEMENTATION_GUIDANCE",
+      "does_not_establish": [
+        "record status of a specific message",
+        "compliance or noncompliance in a specific case",
+        "intent"
+      ]
+    },
+    {
+      "source_id": "AUTH-NIH-PO-FY2020",
+      "authority_domain": "NIH_PROGRAMMATIC_SCIENTIFIC_GRANT_ROLE",
+      "issuing_authority": "National Institutes of Health",
+      "title": "NIH Grants Policy Statement, FY 2020 — Program Official role",
+      "canonical_url": "https://grants.nih.gov/grants/policy/nihgps/nihgps_2020.pdf",
+      "applicability": "NIH grants and cooperative agreements governed by the FY2020 NIHGPS, with prior versions controlling earlier budget periods as applicable.",
+      "bounded_rule": "The NIH Program Official is responsible for programmatic, scientific, and/or technical aspects of assigned applications and grants; the Program Official and Grants Management Officer have distinct but complementary roles.",
+      "exact_holder_resolution_rule": "Use award/program-specific records to identify the designated Program Official and do not infer that an Institute Director personally held the assigned Program Official role.",
+      "authority_effect": "PROGRAMMATIC_SCIENTIFIC_ROLE_BOUNDARY",
+      "does_not_establish": [
+        "award-specific Program Official identity",
+        "binding Federal fund obligation authority",
+        "Fauci personal involvement",
+        "scientific correctness or causation"
+      ]
+    }
+  ],
+  "missing_primary_authority_sources": [
+    {
+      "source_family": "AWARD_SPECIFIC_NOTICES_OF_AWARD",
+      "purpose": "Resolve exact Grants Management Officer and award terms for EcoHealth/Wuhan and other named grant questions.",
+      "state": "REQUIRED"
+    },
+    {
+      "source_family": "SPECIFIC_PARDON_INSTRUMENT_AND_PROCESS_RECORDS",
+      "purpose": "Resolve scope/date language and any request/advice chain without inferring it from questioning.",
+      "state": "REQUIRED"
+    },
+    {
+      "source_family": "STATE_LOCAL_PUBLIC_HEALTH_AUTHORITIES",
+      "purpose": "Separate advisory influence from formal school/business/lockdown authority for policy questions.",
+      "state": "REQUIRED"
+    },
+    {
+      "source_family": "IC_DHS_CLASSIFIED_PROGRAM_AND_CLEARANCE_AUTHORITIES",
+      "purpose": "Resolve formal authority for CIA/ODNI/DHS special-access, clearance, and classified-program questions.",
+      "state": "REQUIRED"
+    }
+  ],
+  "promotion_boundary": "This registry maps formal authority sources only. It does not establish that any questioned event occurred, that any named actor exercised the authority, or that any motive/culpability/legal/publication finding is supported."
+}

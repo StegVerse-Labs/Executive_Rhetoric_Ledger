@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl/research-source-candidate-intake.v1.json",
+  "title": "ERL Research Source Candidate Intake v1",
+  "type": "object",
+  "required": [
+    "schema", "candidate_id", "repository", "trajectory_ids", "acquisition_request_id",
+    "source_url", "retrieved_at", "source_class", "verification_state", "evidence_role",
+    "native_records_mutated", "evaluation_changed", "transport"
+  ],
+  "properties": {
+    "schema": {"const": "stegverse.erl.research_source_candidate.v1"},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "repository": {"type": "string", "pattern": "^[^/]+/[^/]+$"},
+    "trajectory_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "acquisition_request_id": {"type": "string", "minLength": 1},
+    "query": {"type": "string"},
+    "source_url": {"type": "string", "pattern": "^https?://"},
+    "source_title": {"type": "string"},
+    "retrieved_at": {"type": "string", "minLength": 1},
+    "source_class": {"type": "string", "minLength": 1},
+    "authority_proximity": {"type": "string"},
+    "content_sha256": {"type": ["string", "null"], "pattern": "^[a-fA-F0-9]{64}$"},
+    "custody_pointer": {"type": ["string", "null"]},
+    "verification_state": {"enum": ["UNVERIFIED", "PROVENANCE_CAPTURED", "HASH_CAPTURED", "CUSTODY_CAPTURED", "REVIEW_REQUIRED"]},
+    "evidence_role": {"enum": ["lead-only", "context-only"]},
+    "discovered_by": {"type": "string"},
+    "native_records_mutated": {"const": false},
+    "evaluation_changed": {"const": false},
+    "transport": {
+      "type": "object",
+      "required": ["source_repository", "destination_repository", "authority_effect", "credential_authority", "github_token_authority"],
+      "properties": {
+        "source_repository": {"type": "string", "pattern": "^[^/]+/[^/]+$"},
+        "destination_repository": {"const": "StegVerse-Labs/Executive_Rhetoric_Ledger"},
+        "authority_effect": {"const": "NONE"},
+        "credential_authority": {"const": "TV/TVC"},
+        "github_token_authority": {"const": "NONE"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

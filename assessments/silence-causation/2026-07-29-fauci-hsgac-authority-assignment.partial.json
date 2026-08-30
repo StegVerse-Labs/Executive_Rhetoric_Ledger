@@ -1,0 +1,171 @@
+{
+  "assignment_id": "ERL-SC-FAUCI-HSGAC-AUTHORITY-ASSIGNMENTS-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "state": "ACTIVE_PARTIAL_NON_PROMOTIONAL",
+  "ledger_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json",
+  "authority_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
+  "observed_at_utc": "2026-08-28T13:46:00Z",
+  "assignments": [
+    {
+      "atomic_ids": [
+        "AQ-001",
+        "AQ-002",
+        "AQ-013",
+        "AQ-031",
+        "AQ-056",
+        "AQ-057"
+      ],
+      "authority_domain": "NIH_GRANT_OBLIGATION",
+      "formal_authority_holder_class": "Award-specific NIH Grants Management Officer named in the Notice of Award",
+      "exact_holder_state": "PENDING_AWARD_SPECIFIC_NOTICE_OF_AWARD",
+      "question_target_role": "Anthony Fauci / NIAID Director; potential programmatic or supervisory role requires separate evidence.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "Question wording can collapse 'funded/gave grants' into personal legal obligation authority. NIH grants policy separates programmatic roles from the GMO's binding authority to obligate Federal funds.",
+      "source_ids": [
+        "AUTH-NIH-GMO-FY2020",
+        "AUTH-NIH-GPS-2015-APPLICABILITY"
+      ],
+      "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-032",
+        "AQ-033",
+        "AQ-034",
+        "AQ-035",
+        "AQ-063",
+        "AQ-089",
+        "AQ-091"
+      ],
+      "authority_domain": "PRESIDENTIAL_PARDON",
+      "formal_authority_holder_class": "President of the United States",
+      "exact_holder_state": "FORMAL_AUTHORITY_CLASS_RESOLVED_SPECIFIC_INSTRUMENT_PENDING",
+      "question_target_role": "Potential recipient/requester/knowledge-holder; the questions concern Fauci's conduct or knowledge, not constitutional grant authority.",
+      "authority_misassignment_risk": false,
+      "source_ids": [
+        "AUTH-US-CONST-ARTII-PARDON"
+      ],
+      "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-039",
+        "AQ-040",
+        "AQ-041"
+      ],
+      "authority_domain": "NOT_APPLICABLE",
+      "formal_authority_holder_class": "None",
+      "exact_holder_state": "NOT_APPLICABLE",
+      "question_target_role": "Witness asked facially harmless factual questions.",
+      "authority_misassignment_risk": false,
+      "source_ids": [],
+      "factual_event_established": true,
+      "event_scope": "Only that the questions were asked and received the recorded response state."
+    },
+    {
+      "atomic_ids": [
+        "AQ-008",
+        "AQ-092",
+        "AQ-093",
+        "AQ-074",
+        "AQ-075",
+        "AQ-076",
+        "AQ-077",
+        "AQ-078"
+      ],
+      "authority_domain": "INTELLIGENCE_CLASSIFIED_PROGRAM_OR_CLEARANCE",
+      "formal_authority_holder_class": "External agency/program authority unresolved",
+      "exact_holder_state": "PENDING_PRIMARY_AGENCY_AUTHORITY_RECORDS",
+      "question_target_role": "Witness knowledge/participation may be relevant but does not itself establish formal CIA/ODNI/DHS/security-clearance authority.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "The questions concern interagency/classified/security-clearance powers that cannot be assigned to NIAID or Fauci without the governing agency/program authority record.",
+      "source_ids": [],
+      "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-030",
+        "AQ-052",
+        "AQ-053",
+        "AQ-054",
+        "AQ-055",
+        "AQ-059",
+        "AQ-060",
+        "AQ-061",
+        "AQ-062",
+        "AQ-064",
+        "AQ-065"
+      ],
+      "authority_domain": "PUBLIC_HEALTH_POLICY_ADVICE_VS_FORMAL_STATE_LOCAL_AUTHORITY",
+      "formal_authority_holder_class": "Mixed Federal advisory and state/local implementation authorities",
+      "exact_holder_state": "PENDING_POLICY_SPECIFIC_PRIMARY_AUTHORITY_RECORDS",
+      "question_target_role": "Fauci may have held advisory/programmatic influence; formal closure/order authority must be reconstructed separately by jurisdiction and instrument.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "Questions may rhetorically attribute school/business/lockdown outcomes to one adviser even when implementation authority was distributed across Federal, state, and local actors.",
+      "source_ids": [],
+      "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-024",
+        "AQ-025",
+        "AQ-090",
+        "AQ-098",
+        "AQ-099",
+        "AQ-100",
+        "AQ-101",
+        "AQ-102",
+        "AQ-103",
+        "AQ-104"
+      ],
+      "authority_domain": "FEDERAL_RECORDS_AND_NONOFFICIAL_MESSAGING",
+      "formal_authority_holder_class": "Individual Federal employee preservation duty plus agency-head/NARA recovery and oversight roles",
+      "exact_holder_state": "STATUTORY_DUTY_CLASS_RESOLVED_EVENT_SPECIFIC_RECORD_STATUS_PENDING",
+      "question_target_role": "Potential creator/recipient/custodian or supervisor; whether a specific communication is a Federal record and whether any preservation or destruction violation occurred requires record-specific evidence.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "Questions about personal devices, Gmail, preservation, or destruction can collapse individual recordkeeping duties, agency records-management responsibility, agency-head response authority, and ultimate legal characterization into a single actor.",
+      "source_ids": [
+        "AUTH-FRA-44USC2911-NONOFFICIAL-MESSAGING",
+        "AUTH-FRA-44USC3106-UNLAWFUL-DESTRUCTION",
+        "AUTH-NARA-FEDERAL-EMPLOYEE-RECORDS-GUIDANCE"
+      ],
+      "factual_event_established": false
+    },
+    {
+      "atomic_ids": [
+        "AQ-007",
+        "AQ-009",
+        "AQ-010",
+        "AQ-011",
+        "AQ-012",
+        "AQ-058"
+      ],
+      "authority_domain": "NIH_PROGRAMMATIC_SCIENTIFIC_GRANT_ROLE",
+      "formal_authority_holder_class": "Award/program-specific NIH Program Official for programmatic, scientific, and/or technical grant aspects",
+      "exact_holder_state": "PENDING_AWARD_OR_PROGRAM_SPECIFIC_PRIMARY_RECORD",
+      "question_target_role": "Anthony Fauci / NIAID Director; Institute leadership does not establish that he was the designated Program Official for a specific award or experiment.",
+      "authority_misassignment_risk": true,
+      "misassignment_reason": "Questions can collapse Institute leadership, programmatic scientific oversight, recipient/PI conduct, laboratory conduct, and Grants Management Officer obligation authority into Fauci personally. Award/program-specific records are required.",
+      "source_ids": [
+        "AUTH-NIH-PO-FY2020",
+        "AUTH-NIH-GMO-FY2020",
+        "AUTH-NIH-GPS-2015-APPLICABILITY"
+      ],
+      "factual_event_established": false
+    }
+  ],
+  "coverage": {
+    "atomic_ids_assigned": 51,
+    "atomic_total": 114,
+    "coverage_complete": false,
+    "next_domains": [
+      "remaining NIH/NIAID programmatic and scientific-review authority",
+      "research program governance and gain-of-function/ePPP authority",
+      "state/local public-health implementation authority records",
+      "intelligence/classified-program authority records",
+      "remaining relationship/knowledge questions with no formal-authority issue"
+    ],
+    "coverage_fraction": "51/114"
+  },
+  "promotion_boundary": "Authority assignment is proposition-specific and does not prove the questioned event, witness knowledge, motive, concealment, culpability, legal violation, or publication finding."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "stegverse.erl.local_validation_receipt.v1",
+  "goal": "ERL-RESEARCH-EVIDENCE-MOVEMENT-001",
+  "validated_at": "2026-08-11T17:42:00Z",
+  "engine": "scripts/apply_research_evidence_movements.py",
+  "fixtures": {
+    "frontier": "tests/fixtures/research-evidence-movement.frontier.json",
+    "valid_movements": "tests/fixtures/research-evidence-movements.valid.jsonl",
+    "invalid_unreviewed": "tests/fixtures/research-evidence-movements.invalid-unreviewed.jsonl"
+  },
+  "results": [
+    {
+      "fixture": "valid_movements",
+      "exit_code": 0,
+      "result": "PASS",
+      "observed": {
+        "movements_applied": 2,
+        "trajectory_count": 3,
+        "T1": "weaken +1",
+        "T2": "strengthen +1",
+        "new_trajectory": "T3 created from reviewed MOVE-2",
+        "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger"
+      }
+    },
+    {
+      "fixture": "invalid_unreviewed",
+      "exit_code": 1,
+      "result": "EXPECTED_FAIL",
+      "observed_error": "FAIL: BAD-1: movement not REVIEWED"
+    }
+  ],
+  "authority_statement": "Search hits cannot directly change governed state. Only REVIEWED evidence movement records are accepted, and movement remains trajectory-relative without final-conclusion authority.",
+  "validation_level": "local deterministic execution",
+  "hosted_validation": "NOT_RUN",
+  "activation_effect": "graph/frontier movement implementation locally validated; live multi-repository candidate-to-review-to-frontier execution remains pending"
+}

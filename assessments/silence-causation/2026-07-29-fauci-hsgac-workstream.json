@@ -1,0 +1,303 @@
+{
+  "workstream_id": "ERL-SC-2026-FAUCI-HSGAC-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "status": "active_build",
+  "branch": "feature/fauci-hsgac-source-custody",
+  "coordination_issue": 47,
+  "governing_standard": "standards/silence-causation-assessment-standard.md",
+  "base_assessment": "assessments/silence-causation/2026-07-29-fauci-hsgac.research-candidate.json",
+  "source_capture_plan": "assessments/silence-causation/2026-07-29-fauci-hsgac-source-capture-plan.md",
+  "session_requirement_source": "assessments/silence-causation/2026-08-07-fauci-hsgac-session-execution-inventory.md",
+  "source_custody_manifest": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-receipt-manifest.json",
+  "source_acquisition_queue": "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-acquisition-queue.json",
+  "verified_metadata_chronology": "assessments/silence-causation/2026-07-29-fauci-hsgac-verified-metadata-chronology.json",
+  "integration_validation": {
+    "repository_wide_dependency": "Issue #45 primary-record intake schema reconciliation",
+    "dependency_state": "resolved_and_validated",
+    "resolution_commits": [
+      "8b863244d5bf6a4a91d01315b3022eb6e7d6bb6c",
+      "d0b63c9f2dba2d8206932b8a777e2ae18ce4d5f4"
+    ],
+    "main_validation_run": 31157270600,
+    "main_validation_result": "success",
+    "pr_merge_head_schema_run": 31157383308,
+    "pr_merge_head_schema_result": "success",
+    "pr_silence_causation_run": 31157383528,
+    "pr_silence_causation_result": "success",
+    "source_custody_schema_run": 31157692281,
+    "source_custody_schema_result": "success",
+    "source_custody_silence_run": 31157692294,
+    "source_custody_silence_result": "success",
+    "note": "Issue #45 was normalized without promoting evidence states. The Fauci lane then passed repository-wide and silence-causation validation before chronology/acquisition-queue advancement.",
+    "atomic_ledger_run": 33172556549,
+    "atomic_ledger_result": "success",
+    "latest_schema_run": 33172556563,
+    "latest_schema_result": "success",
+    "latest_task_state_run": 33172556556,
+    "latest_task_state_result": "success"
+  },
+  "current_classification": {
+    "case_status": "research_candidate",
+    "question_causation_status": "not_assessable",
+    "motive_finding_authorized": false,
+    "publication_finding_authorized": false
+  },
+  "active_claims": [
+    {
+      "claim_id": "ERL-SC-FAUCI-PR48-IMPLEMENTATION",
+      "role": "canonical implementation",
+      "owner": "Issue #47 / PR #48",
+      "surfaces": [
+        "assessments/silence-causation/**"
+      ],
+      "state": "CLAIMED_FOR_IMPLEMENTATION",
+      "release_condition": "All WS-A through WS-E gates complete or explicitly superseded with evidence."
+    },
+    {
+      "claim_id": "ERL-SC-FAUCI-WS-C-METADATA-SEED-2026-08-07",
+      "role": "distinct verified-metadata integration",
+      "owner": "PR #48 workstream",
+      "surfaces": [
+        "assessments/silence-causation/2026-07-29-fauci-hsgac-verified-metadata-chronology.json",
+        "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-acquisition-queue.json"
+      ],
+      "state": "COMPLETE",
+      "evidence": [
+        "commit:eaea5aed9c4f76e9cbbf33bb7affb33a3a996c7b",
+        "commit:a13d5a1a2a67837cfd301ea3ade721a1129a7cda"
+      ],
+      "release_condition": "Files committed, linked from canonical workstream, and branch validation inspected green after integration."
+    }
+  ],
+  "workstreams": [
+    {
+      "id": "WS-A",
+      "name": "primary-source-custody",
+      "status": "partial_official_transcript_verified",
+      "dependencies": [],
+      "completed_or_installed": [
+        "official hearing-page transformed metadata snapshot",
+        "case source-custody manifest",
+        "deterministic source-acquisition queue with explicit states and release conditions",
+        "official Chairman Rand Paul opening-statement PDF located and visually verified",
+        "official Ranking Member Gary Peters opening-statement PDF located and visually verified",
+        "official GovInfo S. Hrg. 119-504 transcript immutable pointer verified and receipt-linked"
+      ],
+      "remaining": [
+        "native byte-for-byte hearing page object or immutable archive",
+        "native official hearing video or immutable official media target",
+        "native PDF bytes and hashes for located member statements",
+        "committee exhibits and process records",
+        "witness and counsel correspondence",
+        "applicable pardon instrument and authoritative scope record",
+        "prior sworn testimony and documentary records expressly referenced in questions"
+      ],
+      "outputs": [
+        "source-receipt-manifest",
+        "source-acquisition-queue",
+        "official-hearing-page-capture",
+        "official-video-custody-record",
+        "official-transcript-custody-record",
+        "exhibit-and-process-record-receipts",
+        "prior-testimony-and-official-communication-receipts"
+      ]
+    },
+    {
+      "id": "WS-B",
+      "name": "atomic-question-reconstruction",
+      "status": "question_ledger_complete_authority_assignment_partial_machine_enforced",
+      "dependencies": [
+        "WS-A:official-transcript-satisfied-for-question-reconstruction"
+      ],
+      "outputs": [
+        "machine-readable-atomic-question-ledger",
+        "human-readable-question-ledger-review",
+        "authority-assignment-per-question",
+        "assessments/silence-causation/2026-07-29-fauci-hsgac-atomic-question-ledger.partial.json"
+      ],
+      "current_source": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+      "next_task": "Expand primary-source-backed authority assignments from 51/114 to full coverage, prioritizing state/local public-health implementation authority, intelligence/classified-program authority, research-policy governance, and remaining no-formal-authority knowledge/opinion questions.",
+      "completed_or_installed": [
+        "partial machine-readable atomic question ledger seeded with 17 atomics from official GovInfo transcript",
+        "response-state semantics preserve Fifth Amendment invocation as non-admission",
+        "complete non-promotional 114-atomic question ledger from official GovInfo transcript",
+        "complete question-coverage audit with explicit denominator definition",
+        "harmless baseline control showing blanket Fifth invocation across facially harmless questions",
+        "machine validator bound to hosted silence-causation workflow"
+      ],
+      "atomic_records_reconstructed": 114,
+      "coverage_complete": true,
+      "harmless_refusal_control": {
+        "status": "ESTABLISHED",
+        "atomic_ids": [
+          "AQ-039",
+          "AQ-040",
+          "AQ-041"
+        ],
+        "result": "Fifth Amendment invocation observed on three facially harmless questions; refusal cannot be treated as question-specific incriminating evidence without independent support."
+      },
+      "senator_turns_without_witness_questions": [
+        "Maggie Hassan",
+        "Richard Blumenthal",
+        "Andy Kim",
+        "John Fetterman"
+      ],
+      "validator": "scripts/validate_fauci_atomic_question_ledger.py",
+      "validation_workflow": ".github/workflows/validate-silence-causation.yml",
+      "validation_state": "HOSTED_PASS",
+      "validation_run": 33172556549,
+      "coverage_audit": "assessments/silence-causation/2026-07-29-fauci-hsgac-question-coverage-audit.json",
+      "provisional_question_denominator": 114,
+      "denominator_complete": true,
+      "complete_question_denominator": 114,
+      "remaining": [
+        "remaining per-question formal/documented-de-facto authority assignments",
+        "remaining authority-misassignment flags",
+        "award-specific Notices of Award for NIH grant obligation questions",
+        "policy/jurisdiction-specific public-health authority records",
+        "IC/DHS/security-clearance authority records",
+        "human-readable question ledger review"
+      ],
+      "authority_assignment_path": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-assignment.partial.json",
+      "authority_source_registry": "assessments/silence-causation/2026-07-29-fauci-hsgac-authority-source-registry.json",
+      "authority_assignments_completed": 51,
+      "authority_assignments_total": 114,
+      "authority_assignment_coverage_complete": false,
+      "authority_validator": "scripts/validate_fauci_authority_assignments.py"
+    },
+    {
+      "id": "WS-C",
+      "name": "chronology-and-authority-graph",
+      "status": "partial_authority_registry_programmatic_records_and_pardon_boundaries_installed",
+      "dependencies": [
+        "WS-A"
+      ],
+      "completed_or_installed": [
+        "verified hearing metadata chronology seed",
+        "member-statement claim candidates separated from observed facts",
+        "explicit rule prohibiting conversion of member allegations into authority/causation edges without independent primary evidence",
+        "primary authority source registry installed for NIH grant obligation, policy-version boundary, and presidential pardon authority",
+        "partial proposition-specific authority assignments installed for 39 atomic questions",
+        "machine-enforced authority-misassignment boundaries for NIH grants and pardon questions",
+        "Federal Records Act/nonofficial messaging and unlawful-destruction response authority sources installed",
+        "Federal records authority assignments installed for recordkeeping/destruction questions",
+        "NIH Program Official programmatic/scientific role boundary installed and separated from GMO fund-obligation authority"
+      ],
+      "remaining": [
+        "participant authority graph",
+        "verified decision/funding/records/scientific-review edges",
+        "personnel lifecycle chronology",
+        "administration continuity edges",
+        "independent document/witness paths for candidate claims"
+      ],
+      "outputs": [
+        "normalized-chronology",
+        "participant-authority-graph",
+        "personnel-lifecycle-chronology",
+        "administration-continuity-edges"
+      ]
+    },
+    {
+      "id": "WS-D",
+      "name": "controls-and-hypothesis-testing",
+      "status": "blocked_on_substantially-complete-question-ledger",
+      "dependencies": [
+        "WS-B",
+        "WS-C"
+      ],
+      "outputs": [
+        "control-comparison-report",
+        "documentary-conflict-map",
+        "records-chronology-control",
+        "channel-purpose-control",
+        "gain-of-function-semantic-normalization",
+        "updated-bounded-assessment"
+      ]
+    },
+    {
+      "id": "WS-E",
+      "name": "contradiction-independent-review-and-validation",
+      "status": "blocked_on_validator-clean-assessment-artifacts",
+      "dependencies": [
+        "WS-D"
+      ],
+      "outputs": [
+        "contradiction-review",
+        "independent-review",
+        "positive-negative-indeterminate-validator-fixtures",
+        "validation-receipt"
+      ]
+    }
+  ],
+  "required_discriminators": [
+    {
+      "id": "D-BLANKET-REFUSAL-BASELINE",
+      "requirement": "Compute refusal distribution across harmless and exposure-bearing questions before assigning discriminatory value to any individual Fifth Amendment invocation."
+    },
+    {
+      "id": "D-AUTHORITY-ASSIGNMENT",
+      "requirement": "For each atomic question, identify the formal or documented de facto authority holder at the relevant timestamp and flag possible authority misassignment."
+    },
+    {
+      "id": "D-PERSONNEL-LIFECYCLE",
+      "requirement": "Classify transition, retirement, reassignment, sanction, indictment or other legal process, later appointment, and continued domain participation as separate lifecycle events; clustered departures require broad restructuring as a competing explanation unless direct evidence narrows causation."
+    },
+    {
+      "id": "D-AUCHINCLOSS-RETIREMENT",
+      "requirement": "Preserve Hugh Auchincloss retirement motive as unresolved among age, health, ordinary career timing, or anticipated administration transition unless direct evidence discriminates."
+    },
+    {
+      "id": "D-ADMINISTRATION-CONTINUITY",
+      "requirement": "Map first/second Trump administration continuity only where a sourced edge connects an actor to NIH, NIAID, HHS, OMB, White House, grantee, funding, records, scientific-review, or testimony authority relevant to the case."
+    },
+    {
+      "id": "D-RECORDS-CHRONOLOGY",
+      "requirement": "Distinguish deletion language, actual deletion, destruction of a federal record, private-channel use, pending FOIA or preservation duty, and intent to defeat disclosure."
+    },
+    {
+      "id": "D-CHANNEL-PURPOSE",
+      "requirement": "Do not infer that a recipient knew why a private channel was selected merely because information reached the recipient; require acknowledgement, metadata, testimony, or equivalent evidence for knowledge of concealment purpose."
+    },
+    {
+      "id": "D-MORENS-ROLE-CHARACTERIZATION",
+      "requirement": "Compare sworn descriptions of David Morens's functional role with primary records of actual tasking, briefing, grantee contact, policy contribution, and information routing."
+    },
+    {
+      "id": "D-FOLKERS-OFFICE-PRACTICE",
+      "requirement": "Reconstruct Greg Folkers and Office-of-the-Director communication and records behavior to test Morens-specific conduct against a broader office-practice hypothesis without presuming either conclusion."
+    },
+    {
+      "id": "D-GOF-SEMANTICS",
+      "requirement": "Keep generic biological gain of function, regulated P3CO/ePPP research, and pandemic causation as separate propositions tied to contemporaneous definitions and experiment records."
+    },
+    {
+      "id": "D-INDEPENDENT-ANSWER-RECONSTRUCTION",
+      "requirement": "Prioritize question clusters that can be answered independently from documents or third parties over inference from refusal alone."
+    }
+  ],
+  "coordination_rules": [
+    "Primary-source capture may proceed in parallel by source family.",
+    "Atomic question reconstruction must derive from preserved official video or transcript objects.",
+    "Chronology and authority graph may begin from verified metadata while unresolved edges remain explicit.",
+    "Member-statement allegations remain candidate claims until independently reconstructed from primary records.",
+    "Controls must not begin from an incomplete question set unless marked partial and non-promotional.",
+    "Political-pressure or coercion scoring requires sourced actor, channel, timing, and nature evidence.",
+    "Silence, refusal, privilege, memory limitation, and constitutional invocation are response states, not admissions.",
+    "Question specificity does not prove that the committee possessed the implied evidentiary predicate.",
+    "Personnel timing or political proximity may preserve a hypothesis but does not establish motive or coordination.",
+    "Located official primary objects without native byte custody and hashes do not count as complete capture.",
+    "The case remains research_candidate and not_assessable until promotion gates are satisfied."
+  ],
+  "completion_condition": "An independent reviewer can reconstruct every atomic question and response from preserved primary records, reproduce chronology, authority edges, personnel lifecycle distinctions, controls, and hypothesis scores, distinguish observed silence from inferred motive, identify evidence that would change the result, and obtain the same bounded classification from the validator.",
+  "latest_machine_execution": {
+    "observed_at_utc": "2026-08-28T13:48:00Z",
+    "event": "NIH_PROGRAMMATIC_AUTHORITY_MAPPING_ADVANCED",
+    "atomic_question_denominator": 114,
+    "authority_assignments_completed": 51,
+    "authority_assignment_coverage_complete": false,
+    "primary_authority_sources_installed": 7,
+    "effect": "WS_B_AND_WS_C_AUTHORITY_MAPPING_ADVANCED",
+    "motive_finding_effect": false,
+    "publication_effect": false
+  }
+}

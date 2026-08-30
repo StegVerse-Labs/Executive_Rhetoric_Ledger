@@ -1,0 +1,104 @@
+{
+  "queue_id": "ERL-SC-2026-FAUCI-HSGAC-SOURCE-QUEUE-001",
+  "topic_id": "2026-07-29-fauci-hsgac",
+  "owner": "Issue #47 / PR #48",
+  "trigger": "repository-native or authorized operator source acquisition",
+  "allowed_states": [
+    "COMPLETE",
+    "BLOCKED",
+    "RETRY",
+    "REVIEW_REQUIRED",
+    "FAILED",
+    "CLAIMED",
+    "SUPERSEDED",
+    "MERGED"
+  ],
+  "items": [
+    {
+      "task_id": "SRCQ-001",
+      "object": "official HSGAC hearing page",
+      "state": "REVIEW_REQUIRED",
+      "current_evidence": [
+        "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-hearing-page.snapshot.txt",
+        "assessments/silence-causation/custody/2026-07-29-fauci-hsgac-source-receipt-manifest.json"
+      ],
+      "release_condition": "Native byte-for-byte HTML or immutable official archive object is stored or receipt-linked with retrieval time, byte length, SHA-256, and transformation history.",
+      "next_task": "SRCQ-002"
+    },
+    {
+      "task_id": "SRCQ-002",
+      "object": "native official hearing video or immutable official media target",
+      "state": "BLOCKED",
+      "release_condition": "The HSGAC media control resolves to an authoritative stable media object or an immutable official-media receipt sufficient to reconstruct complete turns and timestamps.",
+      "next_task": "SRCQ-003"
+    },
+    {
+      "task_id": "SRCQ-003",
+      "object": "official hearing transcript",
+      "state": "COMPLETE",
+      "release_condition": "An official transcript is published and receipt-linked with issuing authority, retrieval timestamp, byte length or immutable pointer, and SHA-256 when bytes are stored.",
+      "next_task": "SRCQ-004",
+      "current_evidence": [
+        "U.S. Government Publishing Office GovInfo S. Hrg. 119-504 content-details record",
+        "immutable official transcript HTML: https://www.govinfo.gov/content/pkg/CHRG-119shrg64382/html/CHRG-119shrg64382.htm",
+        "GovInfo package identifier: CHRG-119shrg64382",
+        "held date verified: 2026-07-29",
+        "committee verified: Senate Committee on Homeland Security and Governmental Affairs",
+        "official transcript exposes complete proceeding text and appendix index"
+      ],
+      "completion_note": "Release condition satisfied through an immutable official GovInfo transcript pointer. Native bytes are not stored in this branch, so no SHA-256 claim is made."
+    },
+    {
+      "task_id": "SRCQ-004",
+      "object": "Chairman Rand Paul opening statement PDF",
+      "state": "REVIEW_REQUIRED",
+      "current_evidence": [
+        "official HSGAC PDF located",
+        "five pages verified",
+        "official PDF remains accessible through HSGAC on 2026-08-28",
+        "native byte retrieval is unavailable to the current repository-writing runtime"
+      ],
+      "release_condition": "Native PDF bytes are stored or immutable official custody is established with byte length and SHA-256.",
+      "next_task": "SRCQ-005"
+    },
+    {
+      "task_id": "SRCQ-005",
+      "object": "Ranking Member Gary Peters opening statement PDF",
+      "state": "REVIEW_REQUIRED",
+      "current_evidence": [
+        "official HSGAC PDF located",
+        "three pages verified",
+        "official PDF remains accessible through HSGAC on 2026-08-28",
+        "native byte retrieval is unavailable to the current repository-writing runtime"
+      ],
+      "release_condition": "Native PDF bytes are stored or immutable official custody is established with byte length and SHA-256.",
+      "next_task": "SRCQ-006"
+    },
+    {
+      "task_id": "SRCQ-006",
+      "object": "committee exhibits, subpoena/process records, witness and counsel correspondence",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Every object expressly used or referenced in the hearing is individually receipt-linked, or its unavailability is documented with custodian and search posture.",
+      "next_task": "SRCQ-007"
+    },
+    {
+      "task_id": "SRCQ-007",
+      "object": "applicable pardon instrument and authoritative scope record",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "The official pardon instrument and authoritative scope record are preserved with source receipts and linked to the legal-exposure chronology without interpreting the Fifth invocation as an admission.",
+      "next_task": "SRCQ-008"
+    },
+    {
+      "task_id": "SRCQ-008",
+      "object": "prior sworn testimony and documentary records expressly referenced in hearing questions or opening statements",
+      "state": "REVIEW_REQUIRED",
+      "release_condition": "Each referenced prior statement/document is preserved from an official or primary source and mapped to the exact proposition it can support or contradict.",
+      "next_task": null
+    }
+  ],
+  "duplicate_execution_rule": "Before acquiring or mutating an object, check Issue #47 and PR #48 for an active claim on the same source family. A second lane may validate or independently review but must not overwrite another lane's custody object.",
+  "fail_closed_rule": "Missing, inaccessible, or transformed sources remain BLOCKED or REVIEW_REQUIRED and cannot be silently treated as complete.",
+  "completion_condition": "All objects required for exact question-level reconstruction are COMPLETE or explicitly SUPERSEDED by an equal-or-higher-authority preserved source with a durable receipt.",
+  "last_machine_review_utc": "2026-08-28T11:58:00Z",
+  "progress_note": "SRCQ-003 is now COMPLETE from newly published GovInfo S. Hrg. 119-504. This removes the official-transcript dependency for WS-B. Native HSGAC PDF byte custody remains REVIEW_REQUIRED; no hash or byte-length claim is fabricated."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "stegverse.erl.local_validation_receipt.v1",
+  "goal": "ERL-RESEARCH-CANDIDATE-COLLISION-001",
+  "validated_at": "2026-08-11T17:50:00Z",
+  "validator": "scripts/reconcile_research_candidate_collisions.py",
+  "fixtures": [
+    "tests/fixtures/research-candidate-collisions.a.jsonl",
+    "tests/fixtures/research-candidate-collisions.b.jsonl"
+  ],
+  "result": "PASS",
+  "observed": {
+    "candidates": 3,
+    "identity_groups": 2,
+    "collisions": 1,
+    "provenance_preserved": true,
+    "duplicate_source_repositories": ["StegVerse-Labs/Administrations", "StegVerse-Labs/Trumpality"],
+    "deduplication_effect": "identity-linked-not-deleted",
+    "authority_effect": "NONE"
+  },
+  "validation_level": "local deterministic execution",
+  "hosted_validation": "NOT_RUN",
+  "activation_effect": "cross-repository duplicate identity reconciliation locally validated; real emitted packets remain pending"
+}

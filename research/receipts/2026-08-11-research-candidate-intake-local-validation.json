@@ -1,0 +1,28 @@
+{
+  "schema": "stegverse.erl.local_validation_receipt.v1",
+  "goal": "ERL-RESEARCH-CANDIDATE-INTAKE-001",
+  "validated_at": "2026-08-11T17:35:00Z",
+  "validator": "scripts/validate_research_candidate_intake.py",
+  "fixtures": {
+    "valid": "tests/fixtures/research-candidate-intake.valid.jsonl",
+    "invalid_github_authority": "tests/fixtures/research-candidate-intake.invalid-github-authority.jsonl"
+  },
+  "results": [
+    {
+      "fixture": "valid",
+      "exit_code": 0,
+      "result": "PASS",
+      "observed": {"packets": 1, "authority_effect": "NONE", "credential_authority": "TV/TVC", "github_token_authority": "NONE"}
+    },
+    {
+      "fixture": "invalid_github_authority",
+      "exit_code": 1,
+      "result": "EXPECTED_FAIL",
+      "observed_error": "FAIL: GitHub token authority"
+    }
+  ],
+  "authority_statement": "Candidate transport confers no evidentiary or evaluation authority. GitHub token authority is forbidden; applicable credential authority remains TV/TVC.",
+  "validation_level": "local deterministic execution",
+  "hosted_validation": "NOT_RUN",
+  "activation_effect": "intake gate locally validated; cross-repository live transport remains pending"
+}
