@@ -17,9 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Run case evidence monitor
-        run: python scripts/run_case_evidence_monitor.py
-      - name: Create or update governed discovery PR
+      - name: Select governed discovery branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -32,6 +30,15 @@ jobs:
           fi
           git config user.name "stegverse-discovery-bot"
           git config user.email "actions@users.noreply.github.com"
+
+      - name: Run case evidence monitor
+        run: python scripts/run_case_evidence_monitor.py
+
+      - name: Create or update governed discovery PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="discovery/ruben-ray-martinez-evidence"
           git add discovery_candidates/ruben-ray-martinez/latest.json
           if git diff --cached --quiet; then
             exit 0
