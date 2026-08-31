@@ -4,110 +4,374 @@
   "title": "ERL Forecast Calibration Record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["calibration_id", "analyst", "evaluation_window", "forecasts", "source_receipts", "limitations"],
+  "required": [
+    "calibration_id",
+    "analyst",
+    "evaluation_window",
+    "forecasts",
+    "source_receipts",
+    "limitations"
+  ],
   "properties": {
-    "calibration_id": {"type": "string", "minLength": 1},
+    "calibration_id": {
+      "type": "string",
+      "minLength": 1
+    },
     "analyst": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["analyst_id", "display_name"],
+      "required": [
+        "analyst_id",
+        "display_name"
+      ],
       "properties": {
-        "analyst_id": {"type": "string", "minLength": 1},
-        "display_name": {"type": "string", "minLength": 1},
-        "credential_claim_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+        "analyst_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "display_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "credential_claim_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
       }
     },
     "evaluation_window": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["start", "end"],
+      "required": [
+        "start",
+        "end"
+      ],
       "properties": {
-        "start": {"type": "string", "format": "date"},
-        "end": {"type": "string", "format": "date"}
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
       }
     },
     "forecasts": {
       "type": "array",
       "minItems": 1,
-      "items": {"$ref": "#/$defs/forecast"}
+      "items": {
+        "$ref": "#/$defs/forecast"
+      }
     },
     "source_receipts": {
       "type": "array",
       "minItems": 1,
-      "items": {"$ref": "#/$defs/source_receipt"}
+      "items": {
+        "$ref": "#/$defs/source_receipt"
+      }
     },
-    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
   },
   "$defs": {
     "bounded_timestamp": {
       "anyOf": [
-        {"type": "string", "format": "date"},
-        {"type": "string", "format": "date-time"}
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        }
       ]
     },
     "forecast": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["forecast_id", "issued_at", "claim", "source_ids", "base_window", "contingencies", "world_event_links", "state", "state_history"],
+      "required": [
+        "forecast_id",
+        "issued_at",
+        "claim",
+        "source_ids",
+        "base_window",
+        "contingencies",
+        "world_event_links",
+        "state",
+        "state_history"
+      ],
       "properties": {
-        "forecast_id": {"type": "string", "minLength": 1},
-        "issued_at": {"$ref": "#/$defs/bounded_timestamp"},
-        "claim": {"type": "string", "minLength": 1},
-        "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "forecast_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issued_at": {
+          "$ref": "#/$defs/bounded_timestamp"
+        },
+        "claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
         "base_window": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["earliest", "latest"],
           "properties": {
-            "earliest": {"type": ["string", "null"], "format": "date"},
-            "latest": {"type": ["string", "null"], "format": "date"}
-          }
+            "earliest": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            },
+            "latest": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            },
+            "primary_closure_start": {
+              "type": "string",
+              "format": "date"
+            },
+            "primary_three_week_threshold": {
+              "type": "string",
+              "format": "date"
+            },
+            "publication_date_sensitivity_threshold": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "oneOf": [
+            {
+              "required": [
+                "earliest",
+                "latest"
+              ]
+            },
+            {
+              "required": [
+                "primary_closure_start",
+                "primary_three_week_threshold",
+                "publication_date_sensitivity_threshold"
+              ]
+            }
+          ]
         },
         "contingencies": {
           "type": "array",
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["contingency_id", "description", "effect", "status", "source_ids"],
+            "required": [
+              "contingency_id",
+              "description",
+              "effect",
+              "status",
+              "source_ids"
+            ],
             "properties": {
-              "contingency_id": {"type": "string", "minLength": 1},
-              "description": {"type": "string", "minLength": 1},
-              "effect": {"enum": ["delay", "accelerate", "invalidate", "no_change", "unknown"]},
-              "status": {"enum": ["occurred", "did_not_occur", "partial", "unresolved"]},
-              "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+              "contingency_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "effect": {
+                "enum": [
+                  "delay",
+                  "accelerate",
+                  "invalidate",
+                  "no_change",
+                  "unknown"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "occurred",
+                  "did_not_occur",
+                  "partial",
+                  "unresolved"
+                ]
+              },
+              "source_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              }
             }
           }
         },
-        "world_event_links": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-        "state": {"enum": ["ACTIVE", "DELAYED_BY_STATED_CONTINGENCY", "ACCELERATED_BY_STATED_CONTINGENCY", "REVISED_WITHIN_MODEL", "INVALIDATED", "SUPERSEDED", "RESOLVED_CORRECT", "RESOLVED_INCORRECT", "UNRESOLVED"]},
+        "world_event_links": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "state": {
+          "enum": [
+            "ACTIVE",
+            "DELAYED_BY_STATED_CONTINGENCY",
+            "ACCELERATED_BY_STATED_CONTINGENCY",
+            "REVISED_WITHIN_MODEL",
+            "INVALIDATED",
+            "SUPERSEDED",
+            "RESOLVED_CORRECT",
+            "RESOLVED_INCORRECT",
+            "UNRESOLVED",
+            "PARTIAL_MIXED"
+          ]
+        },
         "state_history": {
           "type": "array",
           "minItems": 1,
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["recorded_at", "state", "reason", "source_ids"],
+            "required": [
+              "recorded_at",
+              "state",
+              "reason",
+              "source_ids"
+            ],
             "properties": {
-              "recorded_at": {"$ref": "#/$defs/bounded_timestamp"},
-              "state": {"enum": ["ACTIVE", "DELAYED_BY_STATED_CONTINGENCY", "ACCELERATED_BY_STATED_CONTINGENCY", "REVISED_WITHIN_MODEL", "INVALIDATED", "SUPERSEDED", "RESOLVED_CORRECT", "RESOLVED_INCORRECT", "UNRESOLVED"]},
-              "reason": {"type": "string", "minLength": 1},
-              "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+              "recorded_at": {
+                "$ref": "#/$defs/bounded_timestamp"
+              },
+              "state": {
+                "enum": [
+                  "ACTIVE",
+                  "DELAYED_BY_STATED_CONTINGENCY",
+                  "ACCELERATED_BY_STATED_CONTINGENCY",
+                  "REVISED_WITHIN_MODEL",
+                  "INVALIDATED",
+                  "SUPERSEDED",
+                  "RESOLVED_CORRECT",
+                  "RESOLVED_INCORRECT",
+                  "UNRESOLVED",
+                  "PARTIAL_MIXED"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              }
             }
           }
         },
-        "calibration_notes": {"type": ["string", "null"]}
+        "calibration_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_custody": {
+          "type": "string",
+          "minLength": 1
+        },
+        "protocol_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "execution_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "component_postures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "component",
+              "posture"
+            ],
+            "properties": {
+              "component": {
+                "type": "string",
+                "minLength": 1
+              },
+              "posture": {
+                "enum": [
+                  "SUPPORTED",
+                  "NOT_SUPPORTED",
+                  "PARTIAL_MIXED",
+                  "LIMITED_SUPPORT",
+                  "UNRESOLVED",
+                  "CONTEXT_ONLY"
+                ]
+              }
+            }
+          }
+        }
       }
     },
     "source_receipt": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["source_id", "source_type", "source_reference", "published_or_observed_at", "provenance_posture"],
+      "required": [
+        "source_id",
+        "source_type",
+        "source_reference",
+        "published_or_observed_at",
+        "provenance_posture"
+      ],
       "properties": {
-        "source_id": {"type": "string", "minLength": 1},
-        "source_type": {"type": "string", "minLength": 1},
-        "source_reference": {"type": "string", "minLength": 1},
-        "published_or_observed_at": {"$ref": "#/$defs/bounded_timestamp"},
-        "provenance_posture": {"enum": ["primary", "known_dependency", "common_upstream", "unknown_provenance", "evidenced_independence"]}
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "published_or_observed_at": {
+          "$ref": "#/$defs/bounded_timestamp"
+        },
+        "provenance_posture": {
+          "enum": [
+            "primary",
+            "known_dependency",
+            "common_upstream",
+            "unknown_provenance",
+            "evidenced_independence"
+          ]
+        }
       }
     }
   }
