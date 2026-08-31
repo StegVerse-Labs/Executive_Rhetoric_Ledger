@@ -243,6 +243,16 @@ No release-date leakage.
 - Jul 13 watch gas/diesel, not oil — `UNRESOLVED`; structural divergence plausible; predictive superiority not established.
 
 ## Validation posture
+Local exact-source validation at commit `b8c629bed80b20f52e89db11066a133dc7f6b398` passed the complete dedicated transition-calculus path:
+- transition record/schema validation;
+- all live forecast-calibration records;
+- the diesel outlook research-lane schema and semantic validator;
+- negative fail-closed tests for continuity, provenance, opacity history, forecast contingency/world evidence, PARTIAL_MIXED component resolution, diesel lane identity, net-export arithmetic, and materiality/alert binding.
+
+That execution also repaired a pre-existing same-lane defect: the March 7 component-resolved record used protocol-bound clocks and `PARTIAL_MIXED` while the forecast schema still admitted only the earlier simple window/state vocabulary, and three preserved intermediate-state Reuters references lacked matching source receipts. The schema now admits the governed component-resolved form, the validator requires mixed supportive/adverse components plus protocol/execution/world evidence, and the missing receipts are installed.
+
+Hosted exact-current-head validation remains pending; local PASS is not represented as hosted PASS.
+
 Last known hosted successes remain older exact-head runs:
 - transition-calculus `32807558572` — `SUCCESS` on `585ebbad...`;
 - research-candidate activation `32807558608` — `SUCCESS` on `585ebbad...`.
