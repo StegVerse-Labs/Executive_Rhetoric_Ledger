@@ -6,8 +6,10 @@ on:
       - "schemas/transition-record.schema.json"
       - "schemas/opaque-transition-element.schema.json"
       - "schemas/forecast-calibration.schema.json"
+      - "schemas/diesel-outlook-research-lanes.schema.json"
       - "scripts/validate_transition_calculus.py"
       - "scripts/validate_forecast_calibration.py"
+      - "scripts/validate_diesel_outlook_research_lanes.py"
       - "tests/transition-calculus/**"
       - "assessments/forecast-calibration/**"
       - "docs/transition-calculus/**"
@@ -20,8 +22,10 @@ on:
       - "schemas/transition-record.schema.json"
       - "schemas/opaque-transition-element.schema.json"
       - "schemas/forecast-calibration.schema.json"
+      - "schemas/diesel-outlook-research-lanes.schema.json"
       - "scripts/validate_transition_calculus.py"
       - "scripts/validate_forecast_calibration.py"
+      - "scripts/validate_diesel_outlook_research_lanes.py"
       - "tests/transition-calculus/**"
       - "assessments/forecast-calibration/**"
       - "docs/transition-calculus/**"
@@ -45,5 +49,7 @@ jobs:
         run: python scripts/validate_transition_calculus.py
       - name: Validate forecast calibration adapter and live records
         run: python scripts/validate_forecast_calibration.py
+      - name: Validate diesel outlook research lanes
+        run: python scripts/validate_diesel_outlook_research_lanes.py
       - name: Prove fail-closed governance with negative fixtures
         run: python tests/transition-calculus/test_fail_closed.py
