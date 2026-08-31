@@ -34,6 +34,7 @@ def require_error(errors: list[str], needle: str, case: str) -> None:
 def main() -> int:
     transition = load_module("transition_validator", ROOT / "scripts" / "validate_transition_calculus.py")
     forecast = load_module("forecast_validator", ROOT / "scripts" / "validate_forecast_calibration.py")
+    diesel = load_module("diesel_outlook_validator", ROOT / "scripts" / "validate_diesel_outlook_research_lanes.py")
 
     base_transition = load_json("opaque-resolution.transition.json")
 
@@ -88,6 +89,31 @@ def main() -> int:
     f["state_history"][-1]["state"] = "RESOLVED_CORRECT"
     f["world_event_links"] = []
     require_error(forecast.governance_errors(case), "resolved forecast requires linked world-state evidence", "forecast-world-evidence")
+
+    base_diesel = json.loads(
+        (
+            ROOT
+            / "assessments"
+            / "forecast-calibration"
+            / "matt-randolph"
+            / "diesel-outlook-three-to-six-week-monitor.v1.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    # Research-lane identity must remain unique.
+    case = copy.deepcopy(base_diesel)
+    case["research_lanes"][1]["lane_id"] = case["research_lanes"][0]["lane_id"]
+    require_error(diesel.governance_errors(case), "duplicate research lane ids", "diesel-lane-identity")
+
+    # Derived trade balance may not drift from observed imports and exports.
+    case = copy.deepcopy(base_diesel)
+    case["latest_baseline"]["derived"]["net_exports_kbd"] += 1
+    require_error(diesel.governance_errors(case), "net_exports_kbd must equal", "diesel-net-export-arithmetic")
+
+    # A material state must not be silently suppressed.
+    case = copy.deepcopy(base_diesel)
+    case["materiality_evaluation"]["alert_authorized"] = False
+    require_error(diesel.governance_errors(case), "alert_authorized must match", "diesel-materiality-alert-binding")
 
     return 0
 
