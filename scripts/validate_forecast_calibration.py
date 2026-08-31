@@ -49,6 +49,20 @@ def governance_errors(data: dict) -> list[str]:
         if forecast["state"] in {"RESOLVED_CORRECT", "RESOLVED_INCORRECT"} and not forecast["world_event_links"]:
             errors.append(f"{fid}: resolved forecast requires linked world-state evidence")
 
+        if forecast["state"] == "PARTIAL_MIXED":
+            components = forecast.get("component_postures", [])
+            postures = {component.get("posture") for component in components}
+            if not components:
+                errors.append(f"{fid}: PARTIAL_MIXED requires component_postures")
+            if not ({"SUPPORTED", "LIMITED_SUPPORT"} & postures):
+                errors.append(f"{fid}: PARTIAL_MIXED requires at least one supported component")
+            if not ({"NOT_SUPPORTED", "PARTIAL_MIXED", "UNRESOLVED"} & postures):
+                errors.append(f"{fid}: PARTIAL_MIXED requires at least one adverse or unresolved component")
+            if not forecast.get("protocol_ref") or not forecast.get("execution_ref"):
+                errors.append(f"{fid}: PARTIAL_MIXED requires protocol_ref and execution_ref")
+            if not forecast["world_event_links"]:
+                errors.append(f"{fid}: PARTIAL_MIXED requires linked world-state evidence")
+
     return errors
 
 
