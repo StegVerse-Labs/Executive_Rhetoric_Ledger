@@ -352,6 +352,25 @@
       "terminal_condition": "Capacity, sourcing, production, and substitution evidence are independently reconstructed and an explicit governed terminal transition is recorded.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-FLAVORED-ENDS-POLICY-BENEFIT-2026",
+      "title": "Flavored ENDS youth-risk, FDA transition, and political-benefit timing",
+      "candidate_paths": [
+        "research-candidates/2026-08-31-flavored-ends-youth-risk-fda-political-benefit.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:90",
+      "artifact_paths": [
+        "docs/FLAVORED_ENDS_POLICY_BENEFIT_MIRROR_HANDOFF.md",
+        "assessments/machine/ERL-2026-08-31-CHATGPT-UNASKED-ACCUSATION-DEFLECTION-CHILD-HEALTH.json",
+        "assessments/machine/ERL-2026-08-17-CHATGPT-EPISTEMIC-BURDEN-ASYMMETRY-MAP.json"
+      ],
+      "next_executable_task": "Custody FEC contribution records, FDA product/guidance evidence, pre-2026 comparator decisions, youth-use baselines, lobbying/access chronology, and execute counterfactual decision-boundary tests.",
+      "terminal_condition": "Primary-source custody, longitudinal child-health analysis, regulatory-boundary reconstruction, political/commercial benefit chronology, counterfactual testing, and independent review support an explicit governed terminal transition.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }

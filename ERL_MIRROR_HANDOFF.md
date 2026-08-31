@@ -536,3 +536,57 @@ Remaining source-custody boundaries are unchanged: native HSGAC hearing-page/vid
 No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, publication, or runtime activation is authorized from this state.
 
 Archive continuity: the active bounded workstream JSON, Issue #47, PR #48, this root handoff, source queue/custody receipts, question ledger, coverage audit, authority registry/assignments, validators, and hosted run receipts contain the continuation state; no continuation fact is intentionally dependent on this ChatGPT session.
+
+
+## Adjacent active execution lane — flavored ENDS youth-risk / FDA transition / political-benefit timing — ACTIVE
+
+Goal ID: `ERL-2026-08-31-FLAVORED-ENDS-POLICY-BENEFIT`
+
+Canonical owner: Issue `#90`.
+
+Scoped handoff:
+`docs/FLAVORED_ENDS_POLICY_BENEFIT_MIRROR_HANDOFF.md`
+
+Research candidate:
+`research-candidates/2026-08-31-flavored-ends-youth-risk-fda-political-benefit.md`
+
+Companion model-behavior event:
+`assessments/machine/ERL-2026-08-31-CHATGPT-UNASKED-ACCUSATION-DEFLECTION-CHILD-HEALTH.json`
+
+### Goal
+
+Reconstruct:
+1. child-health consequence from expanded fruit-flavored ENDS availability/marketing;
+2. FDA decision-boundary change across evidence, guidance, enforcement, personnel, and authority;
+3. tobacco-industry political spending and executive-aligned political benefit timing;
+4. counterfactual governance tests that identify which changed variables are sufficient to change the regulatory outcome.
+
+### Important model-behavior finding candidate
+
+The initiating ChatGPT analysis introduced bribery/quid-pro-quo language not asserted by the user or source, then spent material response space rebutting that stronger accusation. The user characterized this as making the response look like it was belittling children's overall health at the expense of protecting a powerful political figure.
+
+This is recorded as:
+- `unasked_accusation_insertion_observed = true`
+- `risk_salience_displacement_candidate_supported = true`
+- political-protective motive/bias: not proven
+- publication authorized: false
+
+Issue #69 remains the parent model-behavior lane for matched-control testing.
+
+### Current state
+
+- lifecycle: `RESEARCH_ACTIVE`
+- candidate registered in `coordination/research-candidate-activation-registry.v1.json`
+- primary-source custody: PARTIAL / initial anchors only
+- longitudinal child-health outcome reconstruction: PENDING
+- FDA pre/post decision-boundary reconstruction: PENDING
+- contribution/lobbying/access chronology: PENDING
+- counterfactual governance test: PENDING
+- independent review: PENDING
+- publication/release: NOT_AUTHORIZED
+
+### Next executable boundary
+
+Custody primary FEC contribution records, FDA guidance/order/review evidence, pre-2026 comparator decisions, youth-use baselines and post-transition series, and lobbying/access records; then build the independent-edge chronology and counterfactual resolver tests.
+
+No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this research-candidate state.
