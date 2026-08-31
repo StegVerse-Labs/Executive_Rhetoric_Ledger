@@ -1,0 +1,344 @@
+{
+  "schema": "erl.diesel_outlook_research_lanes.v1",
+  "record_id": "ERL-FC-DIESEL-OUTLOOK-3TO6W-001",
+  "as_of": "2026-08-31",
+  "owner": {
+    "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+    "issue": 76,
+    "pull_request": 75,
+    "branch": "feature/transition-first-calculus",
+    "handoff": "docs/forecast-calibration/MATT_RANDOLPH_FORECAST_CALIBRATION_MIRROR_HANDOFF.md"
+  },
+  "purpose": "Bind the existing refinery/distillate calibration evidence to a prospective three-to-six-week diesel outlook and enumerate the additional independent research lanes required to distinguish domestic supply pressure, demand pull, global trade pull, regional imbalance, and price transmission.",
+  "forecast_window_days": {
+    "minimum": 21,
+    "maximum": 42
+  },
+  "trigger": {
+    "method": "COMBINED_FORECAST_IMPACT",
+    "notify_only_if": [
+      "DIRECTION_CHANGE",
+      "TIMING_CHANGE",
+      "CONFIDENCE_CHANGE",
+      "ASSUMPTION_INVALIDATED"
+    ],
+    "single_week_rule": "A single weekly move may change confidence only when the combined balance is coherent across multiple independent series; it cannot by itself establish persistence, cause, or a price endpoint."
+  },
+  "existing_lane_validation": {
+    "source_record": "assessments/forecast-calibration/matt-randolph/refinery-distillate-series-2026-07-10-through-08-14.json",
+    "status": "ALIGNED_WITH_GAPS",
+    "aligned_series": [
+      "refinery_utilization_pct",
+      "distillate_net_production_kbd",
+      "distillate_imports_kbd",
+      "distillate_exports_kbd"
+    ],
+    "gaps": [
+      "The prior record stops at the week ending 2026-08-14.",
+      "It is retrospective calibration evidence rather than an explicit prospective 21-to-42-day outlook transaction.",
+      "It does not yet bind stocks, days of supply, product supplied, regional/PADD balance, refinery yield/outages, wholesale product spreads, or logistics/weather confirmation.",
+      "Its bounded observations reject a simple refinery-shutdown explanation but do not state which forecast assumptions should be recalibrated when the combined balance changes."
+    ]
+  },
+  "latest_baseline": {
+    "week_ending": "2026-08-21",
+    "release_date": "2026-08-26",
+    "source_url": "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm",
+    "units": {
+      "refinery_utilization_pct": "percent operable utilization",
+      "flow_series": "thousand barrels per day",
+      "stocks": "thousand barrels",
+      "days_of_supply": "days"
+    },
+    "observations": {
+      "refinery_utilization_pct": 97.4,
+      "distillate_net_production_kbd": 5135,
+      "distillate_imports_kbd": 176,
+      "distillate_exports_kbd": 1790,
+      "distillate_stocks_thousand_barrels": 103391,
+      "distillate_days_of_supply": 27.2,
+      "distillate_product_supplied_kbd": 3839
+    },
+    "derived": {
+      "net_exports_kbd": 1614,
+      "stock_change_thousand_barrels": -2228,
+      "days_of_supply_change": -1.2,
+      "production_change_kbd": -91,
+      "imports_change_kbd": 67,
+      "exports_change_kbd": 189,
+      "product_supplied_change_kbd": -114
+    },
+    "observed_summary": [
+      "Refinery utilization increased from 97.2% to 97.4% while distillate net production fell from 5,226 to 5,135 thousand barrels per day.",
+      "Imports increased from 109 to 176 thousand barrels per day, but exports increased from 1,601 to 1,790, widening net exports from 1,492 to 1,614 thousand barrels per day.",
+      "Distillate stocks fell from 105,619 to 103,391 thousand barrels and days of supply fell from 28.4 to 27.2.",
+      "Distillate product supplied fell from 3,953 to 3,839 thousand barrels per day."
+    ],
+    "inference_summary": [
+      "The combined balance strengthens near-term domestic tightness pressure because lower production, higher net exports, lower stocks, and lower days of supply moved coherently despite higher utilization and imports.",
+      "The signal raises confidence in tightness pressure but does not independently establish a retail-price increase, a causal export mechanism, or persistence through the full three-to-six-week window."
+    ],
+    "limitations": [
+      "Weekly EIA estimates are volatile and subject to revision.",
+      "Product supplied is an implied-demand proxy, not a direct end-use consumption measurement.",
+      "National totals may hide regional/PADD shortages or surpluses.",
+      "Utilization does not identify distillate yield, product slate, refinery outages, or distribution constraints."
+    ]
+  },
+  "research_lanes": [
+    {
+      "lane_id": "DIESEL-SUPPLY-BALANCE",
+      "state": "EXISTING_EXPANDED",
+      "priority": "P0",
+      "question": "Does domestic refinery throughput translate into sufficient distillate production after imports and exports?",
+      "primary_sources": [
+        "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm",
+        "https://www.eia.gov/dnav/pet/PET_PNP_WPRODRB_A_EPD0_YPR_MBBLPD_W.htm",
+        "https://www.eia.gov/dnav/pet/pet_move_wkly_a_epd0_im0_mbblpd_w.htm",
+        "https://www.eia.gov/dnav/pet/PET_MOVE_WKLY_A_EPD0_EEX_MBBLPD_W.htm"
+      ],
+      "measures": [
+        "refinery utilization",
+        "distillate net production",
+        "imports",
+        "exports",
+        "net exports",
+        "four-week averages"
+      ],
+      "assumptions_affected": [
+        "refinery run-rate persistence",
+        "domestic net-supply balance",
+        "export-pressure persistence"
+      ],
+      "promotion_gate": "Require consistent weekly definitions, vintage retention, and observed rather than inferred values."
+    },
+    {
+      "lane_id": "DIESEL-INVENTORY-COVERAGE",
+      "state": "ADDED",
+      "priority": "P0",
+      "question": "Are stocks and days of supply building or drawing relative to recent history and seasonal norms?",
+      "primary_sources": [
+        "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm",
+        "EIA Weekly Petroleum Status Report tables and five-year seasonal comparisons"
+      ],
+      "measures": [
+        "distillate stocks",
+        "days of supply",
+        "weekly stock change",
+        "four-week change",
+        "five-year seasonal deviation"
+      ],
+      "assumptions_affected": [
+        "inventory buffer adequacy",
+        "time-to-shortage pressure",
+        "forecast confidence"
+      ],
+      "promotion_gate": "Do not promote a single stock draw without seasonal, revision-vintage, and multiweek context."
+    },
+    {
+      "lane_id": "DIESEL-REGIONAL-PADD",
+      "state": "ADDED",
+      "priority": "P0",
+      "question": "Do national balances conceal materially different PADD inventory, production, import, export, or demand conditions?",
+      "primary_sources": [
+        "EIA weekly PADD refinery, stocks, product supplied, imports, and movement tables"
+      ],
+      "measures": [
+        "PADD stocks",
+        "PADD production",
+        "PADD days of supply",
+        "regional imports",
+        "inter-PADD movements",
+        "regional wholesale basis"
+      ],
+      "assumptions_affected": [
+        "national-to-regional transferability",
+        "Gulf Coast export effect",
+        "Northeast and Midwest vulnerability"
+      ],
+      "promotion_gate": "Preserve PADD definitions and do not aggregate away supported regional divergence."
+    },
+    {
+      "lane_id": "DIESEL-REFINERY-YIELD-OUTAGES",
+      "state": "ADDED",
+      "priority": "P0",
+      "question": "Is high utilization masking a lower distillate yield, product-slate shift, planned maintenance, unplanned outage, or crude-quality constraint?",
+      "primary_sources": [
+        "EIA refinery yield and capacity data",
+        "EIA refinery outage and capacity notices where available",
+        "operator and regulator primary outage notices"
+      ],
+      "measures": [
+        "distillate yield",
+        "operable capacity",
+        "gross inputs",
+        "planned maintenance",
+        "unplanned outages",
+        "crude slate constraints"
+      ],
+      "assumptions_affected": [
+        "utilization-to-production conversion",
+        "available distillate capacity",
+        "persistence beyond one week"
+      ],
+      "promotion_gate": "Operator or official outage evidence is required; utilization alone cannot establish yield or outage cause."
+    },
+    {
+      "lane_id": "DIESEL-DOMESTIC-PULL",
+      "state": "ADDED",
+      "priority": "P0",
+      "question": "Is the domestic balance tightening because of end-use pull, stock management, reporting noise, or other implied-demand changes?",
+      "primary_sources": [
+        "EIA weekly product supplied",
+        "BTS Freight Transportation Services Index",
+        "Federal Reserve industrial production",
+        "USDA seasonal agricultural activity data"
+      ],
+      "measures": [
+        "distillate product supplied",
+        "four-week implied demand",
+        "freight volume",
+        "industrial activity",
+        "harvest and planting demand"
+      ],
+      "assumptions_affected": [
+        "domestic demand persistence",
+        "seasonal pull",
+        "inventory-draw interpretation"
+      ],
+      "promotion_gate": "Product supplied remains a proxy and must be cross-validated with physical freight, industrial, and seasonal activity."
+    },
+    {
+      "lane_id": "DIESEL-TRADE-GLOBAL-PULL",
+      "state": "ADDED",
+      "priority": "P1",
+      "question": "Are export changes driven by persistent destination demand, arbitrage, sanctions, shipping disruption, or one-week timing?",
+      "primary_sources": [
+        "EIA weekly and monthly petroleum exports",
+        "U.S. Census trade data",
+        "official port and vessel-movement records",
+        "authoritative sanctions and shipping notices"
+      ],
+      "measures": [
+        "gross exports",
+        "net exports",
+        "destinations",
+        "export unit values",
+        "vessel departures",
+        "sanction or route constraints"
+      ],
+      "assumptions_affected": [
+        "export persistence",
+        "global pull",
+        "domestic availability"
+      ],
+      "promotion_gate": "Weekly gross exports require monthly destination confirmation before a persistent mechanism is promoted."
+    },
+    {
+      "lane_id": "DIESEL-PRICE-TRANSMISSION",
+      "state": "EXISTING_EXPANDED",
+      "priority": "P1",
+      "question": "Does physical tightness transmit through wholesale refined-product prices, cracks, basis, and retail diesel rather than merely co-move with crude?",
+      "primary_sources": [
+        "EIA spot and retail price series",
+        "CME ULSD settlement data when publicly inspectable",
+        "BLS PPI transportation and warehousing",
+        "state and federal fuel-tax schedules"
+      ],
+      "measures": [
+        "ULSD or heating-oil crack spread",
+        "Gulf Coast and New York Harbor product basis",
+        "retail diesel",
+        "crude benchmarks",
+        "tax-adjusted retail spread",
+        "lag lanes"
+      ],
+      "assumptions_affected": [
+        "crude-versus-diesel indicator value",
+        "wholesale-to-retail lag",
+        "price-pressure timing"
+      ],
+      "promotion_gate": "Predeclare target and lag; do not switch benchmarks or endpoints after observing results."
+    },
+    {
+      "lane_id": "DIESEL-LOGISTICS-WEATHER",
+      "state": "ADDED",
+      "priority": "P1",
+      "question": "Could pipelines, ports, river levels, storms, power loss, or other transport constraints create regional pressure independent of national supply?",
+      "primary_sources": [
+        "NOAA and National Hurricane Center",
+        "EIA disruption reports",
+        "PHMSA and pipeline operator notices",
+        "USACE river and port status",
+        "Coast Guard port-condition notices"
+      ],
+      "measures": [
+        "refinery storm exposure",
+        "pipeline outages",
+        "port closures",
+        "river restrictions",
+        "power interruptions",
+        "restart timing"
+      ],
+      "assumptions_affected": [
+        "distribution continuity",
+        "regional timing",
+        "outage recovery"
+      ],
+      "promotion_gate": "Require primary operational notices and separate facility outage from distribution outage."
+    },
+    {
+      "lane_id": "DIESEL-INFLATION-FREIGHT-LAG",
+      "state": "EXISTING",
+      "priority": "P2",
+      "question": "Does a clean prospective diesel signal lead freight, producer-price, consumer-price, or essential-cost outcomes within predeclared lag windows?",
+      "primary_sources": [
+        "BLS CPI and PPI",
+        "BTS Freight TSI",
+        "EIA retail diesel",
+        "ERL prospective outcome gate"
+      ],
+      "measures": [
+        "CPI energy and food",
+        "PPI final demand",
+        "PPI transportation and warehousing",
+        "truck freight",
+        "physical freight volume",
+        "0-7, 8-21, 22-42, and 43-84 day lanes"
+      ],
+      "assumptions_affected": [
+        "economic pass-through mechanism",
+        "three-to-six-week forecast horizon",
+        "predictive confidence"
+      ],
+      "promotion_gate": "Reference periods must be prospectively clean; release date alone cannot establish post-forecast occurrence."
+    }
+  ],
+  "materiality_evaluation": {
+    "current_state": "MATERIAL_CONFIDENCE_CHANGE",
+    "direction": "TIGHTENING_PRESSURE",
+    "confidence_effect": "INCREASE",
+    "timing_effect": "UNRESOLVED",
+    "assumptions_for_recalibration": [
+      "Inventory buffer should be revised downward from the August 14 baseline.",
+      "Net export pressure should be revised upward until destination and multiweek persistence checks contradict it.",
+      "High utilization should not be treated as sufficient evidence that distillate supply is expanding.",
+      "Three-to-six-week price timing remains conditional on wholesale spread, regional balance, and logistics confirmation."
+    ],
+    "countervailing_signals": [
+      "Imports rose materially.",
+      "Utilization remained exceptionally high.",
+      "Product supplied declined in the latest week.",
+      "One weekly observation cannot establish persistence."
+    ],
+    "alert_authorized": true,
+    "reason": "Four balance components moved coherently toward tighter domestic availability: production fell, net exports widened, stocks fell, and days of supply fell. Higher imports, high utilization, and lower product supplied limit confidence and prevent a direction or timing conclusion."
+  },
+  "governance": {
+    "observations_are_not_causation": true,
+    "product_supplied_is_proxy": true,
+    "one_week_is_not_trend": true,
+    "finding_authorized": false,
+    "publication_authorized": false
+  }
+}
