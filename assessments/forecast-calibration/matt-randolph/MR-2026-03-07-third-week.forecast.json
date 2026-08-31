@@ -14,7 +14,9 @@
       "forecast_id": "MR-FC-2026-03-07-HORMUZ-THREE-WEEK",
       "issued_at": "2026-03-07",
       "claim": "We know that the Strait of Hormuz simply cannot be closed beyond three weeks, thats when global recession begins to take hold and countries around the world put a stop to it.",
-      "source_ids": ["MR-2026-03-07-THIRD-WEEK"],
+      "source_ids": [
+        "MR-2026-03-07-THIRD-WEEK"
+      ],
       "source_custody": "FIRST_PARTY_TRANSCRIPT_TEXT_RETRIEVABLE",
       "base_window": {
         "primary_closure_start": "2026-02-28",
@@ -59,7 +61,9 @@
           "recorded_at": "2026-03-07",
           "state": "ACTIVE",
           "reason": "First-party source contains an explicit three-week threshold connecting sustained Hormuz closure with emerging global recession and international intervention.",
-          "source_ids": ["MR-2026-03-07-THIRD-WEEK"]
+          "source_ids": [
+            "MR-2026-03-07-THIRD-WEEK"
+          ]
         },
         {
           "recorded_at": "2026-08-23",
@@ -138,6 +142,27 @@
       "source_type": "independent_multilateral_macro_assessment",
       "source_reference": "https://www.imf.org/en/blogs/articles/2026/04/14/war-darkens-global-economic-outlook-and-reshapes-policy-priorities",
       "published_or_observed_at": "2026-04-14",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "REUTERS-2026-04-17-HORMUZ-REOPEN",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/world/asia-pacific/trump-says-iran-war-should-end-soon-both-sides-may-meet-weekend-2026-04-17/",
+      "published_or_observed_at": "2026-04-17",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "REUTERS-2026-04-20-HORMUZ-STANDSTILL",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/world/middle-east/shipping-traffic-remains-virtual-standstill-through-hormuz-data-shows-2026-04-20/",
+      "published_or_observed_at": "2026-04-20",
+      "provenance_posture": "evidenced_independence"
+    },
+    {
+      "source_id": "REUTERS-2026-04-28-HORMUZ-DISRUPTION",
+      "source_type": "independent_wire_report",
+      "source_reference": "https://www.reuters.com/business/energy/oil-prices-rise-no-end-iran-war-stand-off-seems-sight-2026-04-28/",
+      "published_or_observed_at": "2026-04-28",
       "provenance_posture": "evidenced_independence"
     }
   ],
