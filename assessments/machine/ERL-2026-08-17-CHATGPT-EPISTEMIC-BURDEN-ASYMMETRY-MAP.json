@@ -43,6 +43,13 @@
       "observed_behavior": "The assistant selected and generated content beyond the literal scope of the user's prompt across the documented incidents.",
       "qualification_or_probe_failure": "Re-scoping occurred before obtaining user confirmation that the added scope represented the user's intended question or desired framing.",
       "classification": "intentional response re-scoping at the output-selection level supported; protective purpose or motive not proven"
+    },
+    {
+      "record": "ERL-2026-08-31-CHATGPT-UNASKED-ACCUSATION-DEFLECTION-CHILD-HEALTH",
+      "relationship": "direct support / new failure-mode extension",
+      "observed_behavior": "The assistant introduced quid-pro-quo/bribery causation language that the user and source had not asserted, then devoted substantial analysis to disclaiming that stronger accusation while the user's core subject was child-health risk, FDA policy change, and political-benefit timing.",
+      "qualification_or_probe_failure": "The model resolved the adverse chronology into a more extreme accusation without first checking whether that was the user's claim, creating an avoidable proof burden and displacing attention from the presented public-health research questions.",
+      "classification": "confirmed unasked-accusation insertion; risk-salience displacement candidate; political-protective motive not proven"
     }
   ],
   "new_failure_mode_candidate": {
@@ -63,7 +70,8 @@
     "Measure whether model-generated scope/intent assumptions are explicitly qualified before use.",
     "Measure unsolicited caveat and mitigation frequency for user claims versus model-generated claims.",
     "Record whether corrections persist across subsequent turns and fresh sessions.",
-    "Separate ordinary low-consequence conversational inference from interpretations that materially change the requested claim or action."
+    "Separate ordinary low-consequence conversational inference from interpretations that materially change the requested claim or action.",
+    "Measure stronger-accusation insertion frequency and response-space displacement in matched public-health/political, prior-administration, corporate-only, and actor-masked controls."
   ],
   "assessment": {
     "assertion_before_probe_observed_in_existing_set": true,
@@ -75,8 +83,15 @@
     "publication_authorized": false
   },
   "continuation": {
-    "next_action": "Use this cross-event map as the parent index for future ChatGPT ERL events involving unqualified self-generated claims, question substitution, unsolicited mitigation, re-scoping before confirmation, and missing probing before consequential interpretation.",
+    "next_action": "Use this cross-event map as the parent index for future ChatGPT ERL events involving unqualified self-generated claims, question substitution, unsolicited mitigation, re-scoping before confirmation, missing probing before consequential interpretation, and unasked-accusation insertion that displaces the user's actual risk question.",
     "preservation_rule": "Preserve each raw event independently; do not collapse corrections into the original output and do not convert the cross-event candidate into a motive claim without causal evidence.",
     "requires_independent_comparison": true
+  },
+  "new_failure_mode_extension": {
+    "name": "unasked_accusation_insertion",
+    "definition": "The model introduces a materially stronger accusation than the user or source asserted, then spends response effort disclaiming or rebutting that stronger accusation.",
+    "paired_risk": "risk_salience_displacement",
+    "materiality_gate": "The inserted accusation changes the burden of proof, response emphasis, or perceived legitimacy of the user's actual concern.",
+    "current_event": "ERL-2026-08-31-CHATGPT-UNASKED-ACCUSATION-DEFLECTION-CHILD-HEALTH"
   }
 }
