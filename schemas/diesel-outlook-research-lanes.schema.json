@@ -1,0 +1,458 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse-labs.github.io/Executive_Rhetoric_Ledger/schemas/diesel-outlook-research-lanes.schema.json",
+  "title": "ERL Three-to-Six-Week Diesel Outlook Research Lane Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "record_id",
+    "as_of",
+    "owner",
+    "purpose",
+    "forecast_window_days",
+    "trigger",
+    "existing_lane_validation",
+    "latest_baseline",
+    "research_lanes",
+    "materiality_evaluation",
+    "governance"
+  ],
+  "properties": {
+    "schema": {
+      "const": "erl.diesel_outlook_research_lanes.v1"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "issue",
+        "pull_request",
+        "branch",
+        "handoff"
+      ],
+      "properties": {
+        "repository": {
+          "const": "StegVerse-Labs/Executive_Rhetoric_Ledger"
+        },
+        "issue": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pull_request": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "handoff": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "forecast_window_days": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimum",
+        "maximum"
+      ],
+      "properties": {
+        "minimum": {
+          "const": 21
+        },
+        "maximum": {
+          "const": 42
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "notify_only_if",
+        "single_week_rule"
+      ],
+      "properties": {
+        "method": {
+          "const": "COMBINED_FORECAST_IMPACT"
+        },
+        "notify_only_if": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "DIRECTION_CHANGE",
+              "TIMING_CHANGE",
+              "CONFIDENCE_CHANGE",
+              "ASSUMPTION_INVALIDATED"
+            ]
+          }
+        },
+        "single_week_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "existing_lane_validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_record",
+        "status",
+        "aligned_series",
+        "gaps"
+      ],
+      "properties": {
+        "source_record": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "ALIGNED",
+            "ALIGNED_WITH_GAPS",
+            "NOT_ALIGNED"
+          ]
+        },
+        "aligned_series": {
+          "type": "array",
+          "minItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "latest_baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week_ending",
+        "release_date",
+        "source_url",
+        "units",
+        "observations",
+        "derived",
+        "observed_summary",
+        "inference_summary",
+        "limitations"
+      ],
+      "properties": {
+        "week_ending": {
+          "type": "string",
+          "format": "date"
+        },
+        "release_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "units": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "observations": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "refinery_utilization_pct",
+            "distillate_net_production_kbd",
+            "distillate_imports_kbd",
+            "distillate_exports_kbd",
+            "distillate_stocks_thousand_barrels",
+            "distillate_days_of_supply",
+            "distillate_product_supplied_kbd"
+          ],
+          "properties": {
+            "refinery_utilization_pct": {
+              "type": "number"
+            },
+            "distillate_net_production_kbd": {
+              "type": "number"
+            },
+            "distillate_imports_kbd": {
+              "type": "number"
+            },
+            "distillate_exports_kbd": {
+              "type": "number"
+            },
+            "distillate_stocks_thousand_barrels": {
+              "type": "number"
+            },
+            "distillate_days_of_supply": {
+              "type": "number"
+            },
+            "distillate_product_supplied_kbd": {
+              "type": "number"
+            }
+          }
+        },
+        "derived": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "net_exports_kbd",
+            "stock_change_thousand_barrels",
+            "days_of_supply_change",
+            "production_change_kbd",
+            "imports_change_kbd",
+            "exports_change_kbd",
+            "product_supplied_change_kbd"
+          ],
+          "properties": {
+            "net_exports_kbd": {
+              "type": "number"
+            },
+            "stock_change_thousand_barrels": {
+              "type": "number"
+            },
+            "days_of_supply_change": {
+              "type": "number"
+            },
+            "production_change_kbd": {
+              "type": "number"
+            },
+            "imports_change_kbd": {
+              "type": "number"
+            },
+            "exports_change_kbd": {
+              "type": "number"
+            },
+            "product_supplied_change_kbd": {
+              "type": "number"
+            }
+          }
+        },
+        "observed_summary": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "inference_summary": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "research_lanes": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "lane_id",
+          "state",
+          "priority",
+          "question",
+          "primary_sources",
+          "measures",
+          "assumptions_affected",
+          "promotion_gate"
+        ],
+        "properties": {
+          "lane_id": {
+            "type": "string",
+            "pattern": "^DIESEL-[A-Z0-9-]+$"
+          },
+          "state": {
+            "enum": [
+              "EXISTING",
+              "EXISTING_EXPANDED",
+              "ADDED"
+            ]
+          },
+          "priority": {
+            "enum": [
+              "P0",
+              "P1",
+              "P2"
+            ]
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "primary_sources": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "measures": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "assumptions_affected": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "promotion_gate": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "materiality_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current_state",
+        "direction",
+        "confidence_effect",
+        "timing_effect",
+        "assumptions_for_recalibration",
+        "countervailing_signals",
+        "alert_authorized",
+        "reason"
+      ],
+      "properties": {
+        "current_state": {
+          "enum": [
+            "NO_MATERIAL_CHANGE",
+            "MATERIAL_CONFIDENCE_CHANGE",
+            "MATERIAL_DIRECTION_CHANGE",
+            "MATERIAL_TIMING_CHANGE",
+            "ASSUMPTION_INVALIDATED"
+          ]
+        },
+        "direction": {
+          "enum": [
+            "TIGHTENING_PRESSURE",
+            "EASING_PRESSURE",
+            "MIXED",
+            "UNCHANGED"
+          ]
+        },
+        "confidence_effect": {
+          "enum": [
+            "INCREASE",
+            "DECREASE",
+            "UNCHANGED"
+          ]
+        },
+        "timing_effect": {
+          "enum": [
+            "EARLIER",
+            "LATER",
+            "UNCHANGED",
+            "UNRESOLVED"
+          ]
+        },
+        "assumptions_for_recalibration": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "countervailing_signals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "alert_authorized": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observations_are_not_causation",
+        "product_supplied_is_proxy",
+        "one_week_is_not_trend",
+        "finding_authorized",
+        "publication_authorized"
+      ],
+      "properties": {
+        "observations_are_not_causation": {
+          "const": true
+        },
+        "product_supplied_is_proxy": {
+          "const": true
+        },
+        "one_week_is_not_trend": {
+          "const": true
+        },
+        "finding_authorized": {
+          "const": false
+        },
+        "publication_authorized": {
+          "const": false
+        }
+      }
+    }
+  }
+}
