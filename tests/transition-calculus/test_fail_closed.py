@@ -90,6 +90,23 @@ def main() -> int:
     f["world_event_links"] = []
     require_error(forecast.governance_errors(case), "resolved forecast requires linked world-state evidence", "forecast-world-evidence")
 
+    partial_mixed = json.loads(
+        (
+            ROOT
+            / "assessments"
+            / "forecast-calibration"
+            / "matt-randolph"
+            / "MR-2026-03-07-third-week.forecast.json"
+        ).read_text(encoding="utf-8")
+    )
+    case = copy.deepcopy(partial_mixed)
+    case["forecasts"][0]["component_postures"] = []
+    require_error(
+        forecast.governance_errors(case),
+        "PARTIAL_MIXED requires component_postures",
+        "forecast-partial-mixed-components",
+    )
+
     base_diesel = json.loads(
         (
             ROOT
