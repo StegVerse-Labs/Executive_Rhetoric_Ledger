@@ -33,6 +33,7 @@ Core evidence/execution records include:
 - `world-event-chronology.json`
 - `official-economic-series-2026-06-08-through-08-17.json`
 - `refinery-distillate-series-2026-07-10-through-08-14.json`
+- `diesel-outlook-three-to-six-week-monitor.v1.json`
 - `diesel-vs-crude-benchmark-2026-06-01-through-08-14.json`
 - `freight-food-transmission-2026-07.json`
 - `multimonth-transmission-history-2026-03-through-07.json`
@@ -190,6 +191,43 @@ These are cost-pressure context only, not delivered bills, income shares, arrear
 EIA evidence still rejects a simplistic `refineries stopped -> diesel rose` explanation. High refinery utilization, substantial distillate production, tight inventories, imports/exports, and crude/refined-product divergence remain separately preserved.
 Current Jul 13 result remains `NO_PREDICTIVE_SUPERIORITY_SCORE_AUTHORIZED_YET` pending clean prospective outcomes and source-defined target/horizon.
 
+## Three-to-six-week diesel outlook research lanes
+`diesel-outlook-three-to-six-week-monitor.v1.json` binds the existing four-series EIA record to a prospective 21-to-42-day forecast-impact test. It validates the current lane as `ALIGNED_WITH_GAPS`: refinery utilization, distillate production, imports, and exports are already present, but the prior record stops at August 14 and does not by itself reconstruct inventory coverage, regional balance, refinery yield/outages, implied domestic pull, trade destinations, price transmission, or logistics/weather constraints.
+
+The governed registry preserves these existing/expanded lanes:
+- domestic supply balance;
+- crude-versus-refined-product price transmission;
+- clean prospective inflation/freight lag testing.
+
+It adds these independent research lanes:
+- stocks, days of supply, four-week change, and seasonal inventory coverage;
+- PADD/regional production, stocks, movements, and vulnerability;
+- distillate yield, operable capacity, maintenance, unplanned outages, and crude/product-slate constraints;
+- product supplied cross-validated against freight, industrial, and agricultural activity;
+- export destinations/global pull and vessel/sanctions/route evidence;
+- wholesale product spreads/cracks, regional basis, and wholesale-to-retail lag;
+- pipeline, port, river, power, storm, and restart constraints.
+
+Latest admitted official baseline is the EIA week ending 2026-08-21:
+- refinery utilization: 97.4%;
+- distillate production: 5,135 thousand barrels/day;
+- imports: 176 thousand barrels/day;
+- exports: 1,790 thousand barrels/day;
+- net exports: 1,614 thousand barrels/day;
+- stocks: 103.391 million barrels;
+- days of supply: 27.2;
+- product supplied: 3,839 thousand barrels/day.
+
+Relative to August 14, production fell 91 thousand barrels/day, net exports widened 122 thousand barrels/day, stocks fell 2.228 million barrels, and days of supply fell 1.2 days. Imports increased, utilization remained very high, and product supplied fell. The governed posture is therefore `MATERIAL_CONFIDENCE_CHANGE / TIGHTENING_PRESSURE`, not a proven price direction, causal export finding, or full-window persistence finding. Forecast assumptions requiring recalibration are inventory buffer, net-export pressure, utilization-to-production conversion, and conditional price timing.
+
+Validation surfaces:
+- `schemas/diesel-outlook-research-lanes.schema.json`;
+- `scripts/validate_diesel_outlook_research_lanes.py`;
+- dedicated workflow step in `.github/workflows/validate-transition-calculus.yml`;
+- fail-closed negative tests for lane identity, net-export arithmetic, and materiality/alert binding.
+
+Exact-current-head hosted validation is pending and no PASS may be claimed until the workflow observes this branch head.
+
 ## Prospective outcome guard
 For Jul 8 and Jul 13:
 - July CPI/PPI/Freight TSI remain context-only due overlapping reference periods;
@@ -216,9 +254,10 @@ Newest direct-burden and physical-quantity commits require fresh hosted checks b
 2. seek contemporary package-level scanner or nutrition-linked data capable of producing 2026 grams/calories rather than unit-only proxies;
 3. seek distributional household burden for water/sewer, housing, required transport, electricity, and food with income-relative burden or unmet-need measures;
 4. continue richer first-party custody for May 29 and June/July video sources;
-5. preserve and score clean August PPI/CPI and later August Freight TSI;
-6. design governed aggregate calibration only after materially complete source/outcome corpus and independent review design;
-7. perform independent review before any person-level credibility or publication decision.
+5. continue the governed diesel outlook lanes, including inventory coverage, PADD balance, refinery yield/outages, implied demand, trade destinations, price transmission, and logistics/weather confirmation;
+6. preserve and score clean August PPI/CPI and later August Freight TSI;
+7. design governed aggregate calibration only after materially complete source/outcome corpus and independent review design;
+8. perform independent review before any person-level credibility or publication decision.
 
 ## Quantified posture
 Denominator = 10 bounded work groups.
@@ -227,7 +266,7 @@ Denominator = 10 bounded work groups.
 3. first-party corpus acquisition — advanced; March 7 transcript custodied, several later videos still title-bounded;
 4. independent world-event chronology — advanced;
 5. machine forecast encoding — 4 live forecast records; March 7 component-resolved;
-6. EIA/refined-product integration — materially developed;
+6. EIA/refined-product integration — materially developed; prospective 21-to-42-day lane registry and current baseline installed, exact-head validation pending;
 7. freight-food/essential-burden integration — advanced; quantity, real-DPI, electricity-delivery, water/sewer/housing context, direct HTOPS burden structure, weighted burden triangulation, and physical-quantity method boundary are present;
 8. governed conditional/component resolution — advanced; Essential Purchasing Power V1 and March 7 threshold execution active;
 9. aggregate calibration/open-forecast confidence — not started;
