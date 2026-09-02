@@ -1,0 +1,67 @@
+{
+  "schema": "stegverse.erl.nato_russia_readiness_source_queue.v1",
+  "record_id": "ERL-NATO-RUSSIA-READINESS-2026-09-02",
+  "status": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+  "initiating_leads": [
+    {
+      "id": "LEAD-001",
+      "source_class": "media_discovery_lead",
+      "url": "https://www.msn.com/en-us/news/news/content/ar-AA2boUmC?ocid=sapphireappshare",
+      "custody_state": "URL_ONLY",
+      "use_ceiling": "discovery_only",
+      "note": "User-supplied initiating report. Identify and custody underlying named primary sources before factual promotion."
+    }
+  ],
+  "acquisition_targets": [
+    {
+      "id": "SRC-US-001",
+      "class": "primary_official",
+      "target": "Exact U.S. Ambassador to NATO remarks/transcript underlying readiness warning",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-NATO-001",
+      "class": "primary_official",
+      "target": "Current NATO official threat assessment, including any explicit imminent/non-imminent language",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-DOD-001",
+      "class": "primary_official",
+      "target": "U.S. Defense Department statements on European defense burden and U.S. force posture",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-MEMBER-001",
+      "class": "primary_official",
+      "target": "Relevant NATO member-state intelligence/defense assessments",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-RU-001",
+      "class": "primary_official",
+      "target": "Russian official statements and relevant force-posture evidence",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-INCIDENT-001",
+      "class": "incident_primary",
+      "target": "Primary records for any sabotage, drone, cyber, logistics, or infrastructure incidents cited as NATO-territory examples",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-NATO-LAW-001",
+      "class": "authority_primary",
+      "target": "NATO Article 4 and Article 5 governing texts and current official interpretation/decision records",
+      "state": "PENDING"
+    }
+  ],
+  "invariants": {
+    "prepare_for_attack_is_not_imminent_attack_finding": true,
+    "media_reporting_is_not_primary_source_custody": true,
+    "incident_attribution_is_proposition_relative": true,
+    "article5_applicability_not_presumed": true,
+    "candidate_layer_finding_authorized": false,
+    "candidate_layer_publication_authorized": false
+  }
+}
