@@ -243,7 +243,7 @@ No release-date leakage.
 - Jul 13 watch gas/diesel, not oil — `UNRESOLVED`; structural divergence plausible; predictive superiority not established.
 
 ## Validation posture
-Local exact-source validation at commit `b8c629bed80b20f52e89db11066a133dc7f6b398` passed the complete dedicated transition-calculus path:
+Local exact-source validation of the 2026-09-02 diesel-outlook update passed the complete dedicated transition-calculus path before remote commit:
 - transition record/schema validation;
 - all live forecast-calibration records;
 - the diesel outlook research-lane schema and semantic validator;
@@ -257,7 +257,7 @@ Last known hosted successes remain older exact-head runs:
 - transition-calculus `32807558572` — `SUCCESS` on `585ebbad...`;
 - research-candidate activation `32807558608` — `SUCCESS` on `585ebbad...`.
 `Validate Ledger Schemas` `32807558576` completed `FAILURE` on that older head and remains separately associated with the pre-existing White House ballroom intake/schema blocker unless fresh logs prove another cause.
-Newest direct-burden and physical-quantity commits require fresh hosted checks before any new PASS is claimed.
+The current diesel-outlook commits, newest direct-burden commits, and physical-quantity commits require fresh hosted checks before any new PASS is claimed.
 
 ## Next executable work
 1. directly custody the March 2026 HTOPS workbook values for food sufficiency, expense difficulty, energy spending, price stress, and transportation sufficiency, preserving survey redesign/recall-window metadata and resolving secondary conflicts;
