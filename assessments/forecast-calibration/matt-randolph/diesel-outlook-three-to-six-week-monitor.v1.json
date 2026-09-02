@@ -1,7 +1,7 @@
 {
   "schema": "erl.diesel_outlook_research_lanes.v1",
   "record_id": "ERL-FC-DIESEL-OUTLOOK-3TO6W-001",
-  "as_of": "2026-08-31",
+  "as_of": "2026-09-02",
   "owner": {
     "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
     "issue": 76,
@@ -41,9 +41,9 @@
     ]
   },
   "latest_baseline": {
-    "week_ending": "2026-08-21",
-    "release_date": "2026-08-26",
-    "source_url": "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm",
+    "week_ending": "2026-08-28",
+    "release_date": "2026-09-02",
+    "source_url": "https://www.eia.gov/petroleum/supply/weekly/",
     "units": {
       "refinery_utilization_pct": "percent operable utilization",
       "flow_series": "thousand barrels per day",
@@ -51,32 +51,35 @@
       "days_of_supply": "days"
     },
     "observations": {
-      "refinery_utilization_pct": 97.4,
-      "distillate_net_production_kbd": 5135,
-      "distillate_imports_kbd": 176,
-      "distillate_exports_kbd": 1790,
-      "distillate_stocks_thousand_barrels": 103391,
-      "distillate_days_of_supply": 27.2,
-      "distillate_product_supplied_kbd": 3839
+      "refinery_utilization_pct": 98.0,
+      "distillate_net_production_kbd": 5126,
+      "distillate_imports_kbd": 113,
+      "distillate_exports_kbd": 1735,
+      "distillate_stocks_thousand_barrels": 104187,
+      "distillate_days_of_supply": 28.5,
+      "distillate_product_supplied_kbd": 3390
     },
     "derived": {
-      "net_exports_kbd": 1614,
-      "stock_change_thousand_barrels": -2228,
-      "days_of_supply_change": -1.2,
-      "production_change_kbd": -91,
-      "imports_change_kbd": 67,
-      "exports_change_kbd": 189,
-      "product_supplied_change_kbd": -114
+      "net_exports_kbd": 1622,
+      "stock_change_thousand_barrels": 796,
+      "days_of_supply_change": 1.3,
+      "production_change_kbd": -9,
+      "imports_change_kbd": -63,
+      "exports_change_kbd": -55,
+      "product_supplied_change_kbd": -449
     },
     "observed_summary": [
-      "Refinery utilization increased from 97.2% to 97.4% while distillate net production fell from 5,226 to 5,135 thousand barrels per day.",
-      "Imports increased from 109 to 176 thousand barrels per day, but exports increased from 1,601 to 1,790, widening net exports from 1,492 to 1,614 thousand barrels per day.",
-      "Distillate stocks fell from 105,619 to 103,391 thousand barrels and days of supply fell from 28.4 to 27.2.",
-      "Distillate product supplied fell from 3,953 to 3,839 thousand barrels per day."
+      "Refinery utilization increased from 97.4% to 98.0% while distillate net production edged down from 5,135 to 5,126 thousand barrels per day; the four-week averages were 97.2% and 5,192 thousand barrels per day, respectively.",
+      "Imports fell from 176 to 113 thousand barrels per day and exports fell from 1,790 to 1,735, leaving net exports nearly unchanged at 1,622 versus 1,614 thousand barrels per day; four-week imports and exports averaged 127 and 1,765 thousand barrels per day.",
+      "Distillate stocks increased from 103,391 to 104,187 thousand barrels and calculated days of supply increased from 27.2 to 28.5, but EIA still reported stocks 14% below the five-year seasonal average and 10.1% below the year-ago level.",
+      "Distillate product supplied fell from 3,839 to 3,390 thousand barrels per day; its four-week average fell to 3,660 thousand barrels per day, 6.0% below the comparable year-ago average.",
+      "The national stock build was regionally uneven: Gulf Coast stocks rose from 39.6 to 42.7 million barrels while East Coast stocks fell from 21.0 to 19.3 million barrels, 32.8% below the year-ago level.",
+      "The current report reproduces the prior-week tracked values used here; no tracked-series revision versus the August 26 release was detected in this vintage."
     ],
     "inference_summary": [
-      "The combined balance strengthens near-term domestic tightness pressure because lower production, higher net exports, lower stocks, and lower days of supply moved coherently despite higher utilization and imports.",
-      "The signal raises confidence in tightness pressure but does not independently establish a retail-price increase, a causal export mechanism, or persistence through the full three-to-six-week window."
+      "The combined balance materially reduces confidence in the prior national tightening call: a stock build, higher days of supply, and weaker four-week implied demand offset still-high net exports and seasonally low inventories.",
+      "The revised three-to-six-week outlook is mixed rather than directionally tightening at the national level, with pressure more likely to be delayed or regionally concentrated unless demand, exports, or outages re-tighten the balance.",
+      "The Gulf Coast build and East Coast draw argue against promoting the national build to a broad easing conclusion, and current price evidence is not sufficient to establish the timing or size of wholesale-to-retail relief."
     ],
     "limitations": [
       "Weekly EIA estimates are volatile and subject to revision.",
@@ -316,23 +319,25 @@
   ],
   "materiality_evaluation": {
     "current_state": "MATERIAL_CONFIDENCE_CHANGE",
-    "direction": "TIGHTENING_PRESSURE",
-    "confidence_effect": "INCREASE",
+    "direction": "MIXED",
+    "confidence_effect": "DECREASE",
     "timing_effect": "UNRESOLVED",
     "assumptions_for_recalibration": [
-      "Inventory buffer should be revised downward from the August 14 baseline.",
-      "Net export pressure should be revised upward until destination and multiweek persistence checks contradict it.",
-      "High utilization should not be treated as sufficient evidence that distillate supply is expanding.",
-      "Three-to-six-week price timing remains conditional on wholesale spread, regional balance, and logistics confirmation."
+      "Revise the national inventory-buffer assumption modestly upward from the August 21 reading, while retaining a seasonally tight and regionally divergent buffer assumption.",
+      "Revise domestic-demand persistence downward because the four-week product-supplied average is 6.0% below a year ago, but retain proxy and holiday-timing limitations.",
+      "Treat net-export pressure as high but approximately stable rather than newly widening; destination evidence is still required before promoting persistence or cause.",
+      "Retain the weak utilization-to-distillate conversion assumption because utilization rose to 98.0% while production slipped and remained below its four-week average.",
+      "Delay or lower confidence in a broad three-to-six-week price-tightening call until wholesale spreads, another weekly balance, and East Coast logistics either confirm or reverse the split signal."
     ],
     "countervailing_signals": [
-      "Imports rose materially.",
-      "Utilization remained exceptionally high.",
-      "Product supplied declined in the latest week.",
-      "One weekly observation cannot establish persistence."
+      "Stocks remain 14% below the five-year seasonal average and 10.1% below a year ago.",
+      "Net exports remained high at 1,622 thousand barrels per day despite lower gross exports.",
+      "East Coast stocks fell 1.7 million barrels while the national build was concentrated on the Gulf Coast.",
+      "Distillate production remained below its four-week average despite 98.0% utilization.",
+      "One weekly product-supplied observation cannot establish demand persistence."
     ],
     "alert_authorized": true,
-    "reason": "Four balance components moved coherently toward tighter domestic availability: production fell, net exports widened, stocks fell, and days of supply fell. Higher imports, high utilization, and lower product supplied limit confidence and prevent a direction or timing conclusion."
+    "reason": "The August 28 vintage reverses enough of the prior week's tightening configuration to lower forecast confidence: national stocks and days of supply rose while current and four-week implied demand weakened, even as net exports stayed high and East Coast inventories drew. The combined evidence changes the national outlook from tightening pressure to mixed without proving durable easing."
   },
   "governance": {
     "observations_are_not_causation": true,
