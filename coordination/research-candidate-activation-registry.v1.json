@@ -388,6 +388,24 @@
       "terminal_condition": "Historical seeds and continuing current-attack intake are independently reconstructed and reviewed, or the candidate receives an explicit governed supersession, merge, or closure decision.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-NATO-RUSSIA-READINESS-2026",
+      "title": "NATO-Russia escalation readiness signal",
+      "candidate_paths": [
+        "research-candidates/2026-09-02-nato-russia-escalation-readiness-signal.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [
+        "docs/NATO_RUSSIA_READINESS_MIRROR_HANDOFF.md",
+        "config/nato-russia-readiness-source-queue.v1.json"
+      ],
+      "next_executable_task": "Custody exact U.S. and NATO primary statements, reconstruct the threat-assessment/readiness chronology, admit linked incidents proposition-by-proposition, and map Article 4/5 authority without presuming an imminent attack or automatic collective-defense trigger.",
+      "terminal_condition": "Primary-source custody, chronology reconstruction, contradiction review, proposition-relative attribution, authority mapping, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
