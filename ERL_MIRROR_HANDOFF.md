@@ -294,6 +294,22 @@ Completion requires a reviewer-reproducible project-by-project and funding-sourc
 
 No Site, Publisher, admissibility-wiki, stegguardian-wiki, or master-records propagation is authorized for this finding until the project-level allocation is reconstructed and reviewed.
 
+## Adjacent network and cyber-physical sabotage lineage — 2026-09-02
+
+- candidate: `research-candidates/2026-network-cyberphysical-sabotage-lineage.md`
+- record ID: `ERL-CYBER-SABOTAGE-LINEAGE-001`
+- acquisition queue: `config/network-cyberphysical-sabotage-source-queue.v1.json`
+- activation registry group: `ERL-RC-CYBER-SABOTAGE-LINEAGE-2026`
+- durable coordination owner: Issue `#63`
+- status: `research_candidate` / `RESEARCH_ACTIVE_NOT_ASSESSABLE`
+- installed scope: historical and continuing current-attack reconstruction across espionage, disruption, sabotage, cyber-physical sabotage, accidental spillover, coercion, internal/external boundary crossing, telemetry deception, physical effect, and proposition-relative attribution
+- initial historical seeds: disputed 1982 Soviet pipeline account; 1986 Hanover Hacker control; 1988 Morris worm; 2000 Maroochy Shire; 2003 Davis-Besse; 2007 Estonia; 2007–2010 Stuxnet
+- current source posture: official CISA advisory indexes are discovery inputs only; incident classification and attribution require incident-specific custody and independent review
+- finding, attribution, prevention-effectiveness, and publication authority: false
+- next executable task: acquire/hash seed sources and build proposition-level incident packets before comparison or publication
+
+This adjacent lane does not modify the Fauci/HSGAC active-goal denominator or authorize Site, Publisher, admissibility-wiki, or stegguardian-wiki propagation.
+
 ## Automation
 
 - `validate-silence-causation.yml`: active fail-closed case validation

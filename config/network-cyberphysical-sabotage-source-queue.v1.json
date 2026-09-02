@@ -1,0 +1,93 @@
+{
+  "queue_version": "stegverse.erl.network-cyberphysical-sabotage-source-queue/v1",
+  "goal_id": "ERL-CYBER-SABOTAGE-LINEAGE-001",
+  "created_at": "2026-09-02T00:00:00Z",
+  "credential_authority": "TV/TVC",
+  "credential_requirement": "NONE",
+  "github_token_runtime_authority": "NONE",
+  "network_policy": "PUBLIC_HTTPS_ONLY_NO_AUTH",
+  "finding_authority": "NONE",
+  "items": [
+    {
+      "source_id": "ERL-CYBER-WEB-HISTORY-CERN",
+      "evidence_class": "official-historical-record",
+      "url": "https://web30.web.cern.ch/web-history.html",
+      "allowed_hosts": ["web30.web.cern.ch", "home.cern"],
+      "destination": "assessments/network-sabotage/evidence/official-records/ERL-CYBER-WEB-HISTORY-CERN.native",
+      "state": "READY",
+      "purpose": "Bound the invention and public availability of the World Wide Web separately from pre-Web Internet incidents"
+    },
+    {
+      "source_id": "ERL-CYBER-CUCKOOS-EGG-LBNL",
+      "evidence_class": "institutional-historical-record",
+      "url": "https://csafellows.lbl.gov/movies-with-a-connection-to-lbnl",
+      "allowed_hosts": ["csafellows.lbl.gov", "lbl.gov"],
+      "destination": "assessments/network-sabotage/evidence/official-records/ERL-CYBER-CUCKOOS-EGG-LBNL.native",
+      "state": "READY",
+      "purpose": "Seed the 1986 cross-border network-espionage control case without classifying it as sabotage"
+    },
+    {
+      "source_id": "ERL-CYBER-MORRIS-GAO-06-672",
+      "evidence_class": "official-government-report",
+      "url": "https://www.gao.gov/assets/gao-06-672.pdf",
+      "allowed_hosts": ["www.gao.gov", "gao.gov"],
+      "destination": "assessments/network-sabotage/evidence/official-records/ERL-CYBER-MORRIS-GAO-06-672.native.pdf",
+      "state": "READY",
+      "purpose": "Establish the documented scale and disruption class of the 1988 Morris worm"
+    },
+    {
+      "source_id": "ERL-CYBER-ICS-HISTORY-NIST-SP800-82R1",
+      "evidence_class": "official-technical-guidance",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r1.pdf",
+      "allowed_hosts": ["nvlpubs.nist.gov", "nist.gov"],
+      "destination": "assessments/network-sabotage/evidence/official-records/ERL-CYBER-ICS-HISTORY-NIST-SP800-82R1.native.pdf",
+      "state": "READY",
+      "purpose": "Seed authoritative reconstruction of Maroochy Shire and pre-Stuxnet industrial-control incidents"
+    },
+    {
+      "source_id": "ERL-CYBER-ICS-CURRENT-NIST-SP800-82R3",
+      "evidence_class": "official-technical-guidance",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf",
+      "allowed_hosts": ["nvlpubs.nist.gov", "nist.gov"],
+      "destination": "assessments/network-sabotage/evidence/official-records/ERL-CYBER-ICS-CURRENT-NIST-SP800-82R3.native.pdf",
+      "state": "READY",
+      "purpose": "Provide the current operational-technology security vocabulary and control context"
+    },
+    {
+      "source_id": "ERL-CYBER-ESTONIA-NATO",
+      "evidence_class": "official-intergovernmental-record",
+      "url": "https://www.nato.int/en/what-we-do/deterrence-and-defence/cyber-defence",
+      "allowed_hosts": ["www.nato.int", "nato.int"],
+      "destination": "assessments/network-sabotage/evidence/official-records/ERL-CYBER-ESTONIA-NATO.native",
+      "state": "READY",
+      "purpose": "Seed the 2007 Estonia disruption chronology and NATO response while preserving attribution limits"
+    },
+    {
+      "source_id": "ERL-CYBER-STUXNET-2007-REUTERS",
+      "evidence_class": "authoritative-secondary-reporting",
+      "url": "https://www.reuters.com/article/technology/researchers-say-stuxnet-was-deployed-against-iran-in-2007-idUSBRE91P0PP/",
+      "allowed_hosts": ["www.reuters.com", "reuters.com"],
+      "destination": "assessments/network-sabotage/evidence/contemporaneous-reporting/ERL-CYBER-STUXNET-2007-REUTERS.native",
+      "state": "READY",
+      "purpose": "Locate the Symantec Stuxnet 0.5 evidence and bound earliest-known deployment claims"
+    },
+    {
+      "source_id": "ERL-CYBER-CISA-ICS-ADVISORIES",
+      "evidence_class": "official-current-advisory-index",
+      "url": "https://www.cisa.gov/news-events/ics-advisories",
+      "allowed_hosts": ["www.cisa.gov", "cisa.gov"],
+      "destination": "assessments/network-sabotage/evidence/current-advisories/ERL-CYBER-CISA-ICS-ADVISORIES.native",
+      "state": "READY",
+      "purpose": "Discover current industrial-control vulnerabilities and incident leads without converting advisories into incident findings"
+    },
+    {
+      "source_id": "ERL-CYBER-CISA-CYBER-ADVISORIES",
+      "evidence_class": "official-current-advisory-index",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "allowed_hosts": ["www.cisa.gov", "cisa.gov"],
+      "destination": "assessments/network-sabotage/evidence/current-advisories/ERL-CYBER-CISA-CYBER-ADVISORIES.native",
+      "state": "READY",
+      "purpose": "Discover current state and non-state destructive-operation leads with later incident-specific source acquisition required"
+    }
+  ]
+}
