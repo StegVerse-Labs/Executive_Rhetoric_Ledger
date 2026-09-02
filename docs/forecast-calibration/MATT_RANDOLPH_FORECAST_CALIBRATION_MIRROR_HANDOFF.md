@@ -208,17 +208,17 @@ It adds these independent research lanes:
 - wholesale product spreads/cracks, regional basis, and wholesale-to-retail lag;
 - pipeline, port, river, power, storm, and restart constraints.
 
-Latest admitted official baseline is the EIA week ending 2026-08-21:
-- refinery utilization: 97.4%;
-- distillate production: 5,135 thousand barrels/day;
-- imports: 176 thousand barrels/day;
-- exports: 1,790 thousand barrels/day;
-- net exports: 1,614 thousand barrels/day;
-- stocks: 103.391 million barrels;
-- days of supply: 27.2;
-- product supplied: 3,839 thousand barrels/day.
+Latest admitted official baseline is the EIA week ending 2026-08-28, released 2026-09-02:
+- refinery utilization: 98.0%;
+- distillate production: 5,126 thousand barrels/day;
+- imports: 113 thousand barrels/day;
+- exports: 1,735 thousand barrels/day;
+- net exports: 1,622 thousand barrels/day;
+- stocks: 104.187 million barrels;
+- calculated days of supply: 28.5;
+- product supplied: 3,390 thousand barrels/day.
 
-Relative to August 14, production fell 91 thousand barrels/day, net exports widened 122 thousand barrels/day, stocks fell 2.228 million barrels, and days of supply fell 1.2 days. Imports increased, utilization remained very high, and product supplied fell. The governed posture is therefore `MATERIAL_CONFIDENCE_CHANGE / TIGHTENING_PRESSURE`, not a proven price direction, causal export finding, or full-window persistence finding. Forecast assumptions requiring recalibration are inventory buffer, net-export pressure, utilization-to-production conversion, and conditional price timing.
+Relative to August 21, production fell 9 thousand barrels/day, net exports widened only 8 thousand barrels/day, stocks rose 0.796 million barrels, calculated days of supply rose 1.3 days, and product supplied fell 449 thousand barrels/day. Four-week product supplied fell to 3,660 thousand barrels/day, 6.0% below a year ago, while stocks remained 14% below the five-year seasonal average. The national build was regionally split: Gulf Coast stocks rose 3.1 million barrels while East Coast stocks fell 1.7 million barrels and remained 32.8% below a year ago. The governed posture is therefore `MATERIAL_CONFIDENCE_CHANGE / MIXED` with lower confidence in the prior national tightening call, not a durable easing finding, a proven price direction, a causal export finding, or full-window persistence finding. Forecast assumptions requiring recalibration are the national inventory buffer, domestic-demand persistence, the distinction between high-but-stable and widening net-export pressure, utilization-to-production conversion, regional transferability, and conditional price timing.
 
 Validation surfaces:
 - `schemas/diesel-outlook-research-lanes.schema.json`;
