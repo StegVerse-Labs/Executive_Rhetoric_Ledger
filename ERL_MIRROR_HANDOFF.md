@@ -606,3 +606,30 @@ Issue #69 remains the parent model-behavior lane for matched-control testing.
 Custody primary FEC contribution records, FDA guidance/order/review evidence, pre-2026 comparator decisions, youth-use baselines and post-transition series, and lobbying/access records; then build the independent-edge chronology and counterfactual resolver tests.
 
 No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this research-candidate state.
+
+
+## Adjacent active execution lane — NATO/Russia escalation readiness — ACTIVE
+
+Goal ID: `ERL-NATO-RUSSIA-READINESS-2026-09-02`
+
+Canonical candidate:
+`research-candidates/2026-09-02-nato-russia-escalation-readiness-signal.md`
+
+Scoped handoff:
+`docs/NATO_RUSSIA_READINESS_MIRROR_HANDOFF.md`
+
+Source queue:
+`config/nato-russia-readiness-source-queue.v1.json`
+
+Current state:
+- lifecycle: `RESEARCH_ACTIVE_NOT_ASSESSABLE`
+- primary-source custody: PENDING
+- imminent-attack finding authorized: false
+- Article 5 trigger finding authorized: false
+- publication authorized: false
+
+Governing distinction: readiness/preparation language must not be promoted into a claim that Russia has decided to attack NATO or that an attack is imminent. This lane is linked to, but distinct from, the network/cyber-physical sabotage lineage: incident-level transition reconstruction remains there; NATO/Russia threat-assessment, deterrence, readiness, and collective-defense decision boundaries remain here.
+
+Next executable boundary: custody exact U.S./NATO primary statements, reconstruct the dated threat-assessment chronology, admit linked incidents proposition-by-proposition, map Article 4/5 authority and response thresholds, and perform contradiction/independent review.
+
+No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this research-candidate state.
