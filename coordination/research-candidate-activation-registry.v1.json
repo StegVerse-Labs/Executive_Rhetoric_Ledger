@@ -371,6 +371,23 @@
       "terminal_condition": "Primary-source custody, longitudinal child-health analysis, regulatory-boundary reconstruction, political/commercial benefit chronology, counterfactual testing, and independent review support an explicit governed terminal transition.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+      "title": "Historical and current network and cyber-physical sabotage lineage",
+      "candidate_paths": [
+        "research-candidates/2026-network-cyberphysical-sabotage-lineage.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [
+        "config/network-cyberphysical-sabotage-source-queue.v1.json"
+      ],
+      "next_executable_task": "Acquire and hash the seed sources, create proposition-level incident packets, and normalize external entry, internal execution, commanded state, observed state, physical effects, and attribution ceilings.",
+      "terminal_condition": "Historical seeds and continuing current-attack intake are independently reconstructed and reviewed, or the candidate receives an explicit governed supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
