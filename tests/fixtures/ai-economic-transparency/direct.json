@@ -51,5 +51,7 @@
   ],
   "contradiction_refs": [],
   "independent_review_state": "PENDING",
-  "activation_authorized": false
+  "activation_authorized": false,
+  "surface_class": "API_ENTERPRISE",
+  "rating_scope": "SURFACE_SPECIFIC"
 }

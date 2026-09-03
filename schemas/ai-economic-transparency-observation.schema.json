@@ -8,6 +8,8 @@
     "schema",
     "task_id",
     "provider",
+    "surface_class",
+    "rating_scope",
     "protocol_complete",
     "actual_request_cost_directly_exposed",
     "request_usage_directly_exposed",
@@ -199,6 +201,19 @@
     },
     "activation_authorized": {
       "const": false
+    },
+    "surface_class": {
+      "enum": [
+        "CONSUMER_NON_ACCOUNT_ATTRIBUTED",
+        "API_ENTERPRISE",
+        "OTHER"
+      ]
+    },
+    "rating_scope": {
+      "enum": [
+        "SURFACE_SPECIFIC",
+        "PROVIDER_WIDE"
+      ]
     }
   }
 }

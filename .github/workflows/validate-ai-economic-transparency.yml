@@ -32,6 +32,15 @@ on:
       - "config/ai-economic-transparency-source-queue.v1.json"
       - "scripts/validate_ai_economic_transparency.py"
       - "tests/test_ai_economic_transparency.py"
+      - "scripts/calculate_ai_cost_scale_sensitivity.py"
+      - "tests/test_ai_cost_scale_sensitivity.py"
+      - "schemas/ai-economic-transparency-research-log.schema.json"
+      - "research-data/ai-economic-transparency/**"
+      - "schemas/ai-economic-transparency-contradiction-review.schema.json"
+      - "schemas/ai-economic-transparency-independent-review.schema.json"
+      - "assessments/reviews/ai-economic-transparency-*.json"
+      - "papers/ai-economic-transparency-elevated-usage.md"
+      - "task-state/ERL-AI-ECON-TRANSPARENCY-001.review-state.json"
       - "tests/fixtures/ai-economic-transparency/**"
       - ".github/workflows/validate-ai-economic-transparency.yml"
 
@@ -49,3 +58,6 @@ jobs:
         run: |
           python scripts/validate_ai_economic_transparency.py tests/fixtures/ai-economic-transparency/direct.json
           python scripts/validate_ai_economic_transparency.py tests/fixtures/ai-economic-transparency/incomplete-unknown.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/openai-consumer-surface-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/anthropic-consumer-surface-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/deepseek-consumer-surface-observation.2026-09-03.json

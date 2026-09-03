@@ -39,5 +39,7 @@
   ],
   "contradiction_refs": [],
   "independent_review_state": "PENDING",
-  "activation_authorized": false
+  "activation_authorized": false,
+  "surface_class": "CONSUMER_NON_ACCOUNT_ATTRIBUTED",
+  "rating_scope": "SURFACE_SPECIFIC"
 }

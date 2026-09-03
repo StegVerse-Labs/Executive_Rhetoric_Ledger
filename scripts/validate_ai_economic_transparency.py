@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 REQUIRED = {
-    "schema","task_id","provider","protocol_complete",
+    "schema","task_id","provider","surface_class","rating_scope","protocol_complete",
     "actual_request_cost_directly_exposed","request_usage_directly_exposed",
     "research_steps_required","provider_surfaces_consulted",
     "account_or_privilege_required","support_required","external_research_required",
@@ -25,6 +25,10 @@ def validate(obj):
         errors.append("task_id")
     if obj["activation_authorized"] is not False:
         errors.append("activation_authorized_must_be_false")
+    if obj["rating_scope"] != "SURFACE_SPECIFIC":
+        errors.append("provider_wide_rating_forbidden")
+    if obj["surface_class"] not in {"CONSUMER_NON_ACCOUNT_ATTRIBUTED","API_ENTERPRISE","OTHER"}:
+        errors.append("surface_class")
     if not isinstance(obj["research_steps_required"], int) or obj["research_steps_required"] < 0:
         errors.append("research_steps_required")
     rating = obj["disclosure_burden_rating"]

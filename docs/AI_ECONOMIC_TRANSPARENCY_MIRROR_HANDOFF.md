@@ -200,9 +200,9 @@ Publication remains separately gated.
 - research queue: INSTALLED
 - validator: INSTALLED
 - fixtures: INSTALLED
-- provider protocol execution: IN PROGRESS — public-source logs installed for all five initial providers
-- scale-sensitivity calculation engine: INSTALLED; empirical provider calculations pending exact/bounded request-cost evidence
-- contradiction review execution: PENDING; schema/template installed
+- provider protocol execution: PARTIAL COMPLETE — exhausted consumer surfaces finalized for OpenAI, Anthropic, and DeepSeek; API/enterprise and remaining provider surfaces continue separately
+- scale-sensitivity calculation engine: INSTALLED; OpenAI/Anthropic/DeepSeek consumer surfaces now carry reproducible UNBOUNDED_UNKNOWN 1K/100K/1M scenarios; exact/bounded API/enterprise calculations remain evidence-dependent
+- contradiction review execution: PARTIAL COMPLETE — exhausted OpenAI/Anthropic/DeepSeek consumer-surface findings reviewed with no material cross-surface contradiction; broader comparison review remains pending
 - independent review execution: PENDING; schema/template installed
 - activation: NOT CLAIMED
 - publication: NOT AUTHORIZED
@@ -235,9 +235,9 @@ Initial activation denominator: 10 capability groups.
 9. contradiction/independent review
 10. activation receipt
 
-Current completion: 6/10 = 60%.
+Current completion: 8/10 = 80%.
 
-Developed files: 27.
+Developed files: 31.
 Scaffolding/stubs counted as complete: 0.
 
 Archive readiness: this handoff durably preserves the research goal, independence rule, two-axis methodology, elevated-usage scope, evidence boundaries, activation criteria, and remaining implementation. No chat-only definition is required to continue.
@@ -341,3 +341,29 @@ No repeat provider UI capture is required from the user for the already-exhauste
 - a materially different provider surface is intentionally added to the study.
 
 This supersedes any current task wording that implied the user should repeat the same consumer-surface process.
+
+
+## 2026-09-03 exhausted consumer-surface finalization
+
+Issue: #102
+
+ERL now emits surface-specific final observations for the historically exhausted consumer/non-account-attributed surfaces of OpenAI, Anthropic, and DeepSeek.
+
+Each observation:
+- is explicitly scoped `SURFACE_SPECIFIC`, never provider-wide;
+- records the governed discovery protocol as complete for that consumer surface;
+- assigns `ACTUAL_COST_DISCLOSURE_BURDEN = 5 / NON_RECONSTRUCTABLE` only for that exhausted surface;
+- preserves literal request cost as unknown;
+- emits 1K, 100K, and 1M `UNBOUNDED_UNKNOWN` scale scenarios rather than numerical estimates;
+- keeps independent review pending;
+- authorizes no activation or publication.
+
+The observation schema and validator now require `surface_class` and `rating_scope`, and the validator rejects `PROVIDER_WIDE` ratings.
+
+A contradiction review was executed for these three finalized surface findings. Official API documentation showing request usage or pricing on distinct API/enterprise surfaces was tested as counterevidence and classified as `NONE` because it concerns a different research surface. No provider-wide conclusion is promoted.
+
+Activation capability groups now satisfied:
+- group 7 provider protocol evidence: satisfied by multiple completed consumer-surface protocols;
+- group 8 reproducible elevated-usage scale calculation: satisfied for those surfaces through deterministic `UNBOUNDED_UNKNOWN` propagation.
+
+Group 9 remains incomplete because independent review is still pending. Group 10 activation receipt remains blocked on group 9 and final validation.
