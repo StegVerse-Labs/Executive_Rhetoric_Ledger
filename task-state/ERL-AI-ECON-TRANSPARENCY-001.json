@@ -18,7 +18,7 @@
   },
   "activation_authorized": false,
   "publication_authorized": false,
-  "next_executable_task": "Canonical resident worker `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` executes the fixed independent-review package from locally materialized ERL source and emits its bounded review receipt. Do not infer review completion from source merge, CI, handoff readiness, or heartbeat progression. No user action or consumer recapture is required.",
+  "next_executable_task": "Canonical resident worker `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` executes the fixed independent-review package from locally materialized ERL source and emits its bounded review receipt. Repository/source/control reconciliation is complete enough for execution ownership; do not infer review completion from source, CI, HB, registry, or COSV state. No user action is required.",
   "implementation_completion_percent": 80,
   "validator_state": "INSTALLED",
   "fixture_state": "INSTALLED",
@@ -118,6 +118,16 @@
     "research_promotion_authority": false,
     "activation_authority": false,
     "publication_authority": false,
-    "repository_writeback_authority": false
+    "repository_writeback_authority": false,
+    "control_plane_reconciliation": {
+      "initial_worker_release": "66b5d942f7ba7f1e9c4fe3b6a3f4616b15c72ee5",
+      "ae_repair_merge": "0f4214b13373741124ef79dd37774b0585f0721b",
+      "cosv_repair_merge": "ddebfc0aa31a58c4b41e02fc871d254af1813133",
+      "reconciliation_documentation_merge": "365c983d3c276f204a5d9ef3c3df4dac9c00d0da",
+      "ae_phase": "ADMISSIBLE",
+      "cosv_vector": "50000000101000",
+      "runtime_receipt_observed": false,
+      "independent_review_complete": false
+    }
   }
 }
