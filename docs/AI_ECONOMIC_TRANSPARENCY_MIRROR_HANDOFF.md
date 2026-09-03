@@ -367,3 +367,16 @@ Activation capability groups now satisfied:
 - group 8 reproducible elevated-usage scale calculation: satisfied for those surfaces through deterministic `UNBOUNDED_UNKNOWN` propagation.
 
 Group 9 remains incomplete because independent review is still pending. Group 10 activation receipt remains blocked on group 9 and final validation.
+
+
+## 2026-09-03 independent-review package
+
+Issue: #104
+
+A bounded independent-review package is now installed for the finalized OpenAI, Anthropic, and DeepSeek consumer/non-account-attributed findings:
+
+`assessments/reviews/ai-economic-transparency-consumer-surface-independent-review-package.2026-09-03.json`
+
+The package fixes the review scope, required inputs, review questions, forbidden promotions, and required terminal output schema/path. It prevents the independent-review step from expanding into provider-wide ranking, intent claims, Z.ai/Perplexity findings, activation, or publication.
+
+This package makes the remaining review gate machine-addressable, but it is not itself an independent review and does not satisfy capability group 9.
