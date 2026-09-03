@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stegverse.erl.ai-economic-transparency-independent-review.v1",
+  "title": "ERL AI Economic Transparency Independent Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "task_id",
+    "state",
+    "review_scope",
+    "reviewer_independence",
+    "findings",
+    "activation_recommendation",
+    "publication_recommendation"
+  ],
+  "properties": {
+    "schema": {
+      "const": "stegverse.erl.ai-economic-transparency-independent-review/v1"
+    },
+    "task_id": {
+      "const": "ERL-AI-ECON-TRANSPARENCY-001"
+    },
+    "state": {
+      "enum": [
+        "PENDING",
+        "IN_PROGRESS",
+        "COMPLETE"
+      ]
+    },
+    "review_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewer_independence": {
+      "type": "string"
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_revisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "activation_recommendation": {
+      "enum": [
+        "PENDING",
+        "APPROVE",
+        "REVISE",
+        "REJECT"
+      ]
+    },
+    "publication_recommendation": {
+      "enum": [
+        "PENDING",
+        "APPROVE",
+        "REVISE",
+        "REJECT"
+      ]
+    }
+  }
+}
