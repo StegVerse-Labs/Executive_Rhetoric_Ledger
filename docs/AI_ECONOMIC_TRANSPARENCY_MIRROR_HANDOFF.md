@@ -551,3 +551,21 @@ The authentic review receipt remains unobserved:
 `receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
 
 Therefore independent review, activation, and publication remain unclaimed.
+
+
+## 2026-09-03 final resident-dispatch validation receipts
+
+Issue: #118
+
+PR #117 / head `39a74b7227ca8d9478324d85b3989a3cfe0d73c2` completed all observed ERL validation surfaces successfully:
+
+- Validate AI economic transparency: run `33784383315` — SUCCESS
+- Validate durable task state: run `33784383397` — SUCCESS
+- Validate Ledger Schemas: run `33784383350` — SUCCESS
+
+These receipts establish source/schema/task-state consistency for the resident-review dispatch integration only. They do not establish that the resident reviewer executed.
+
+The authentic runtime receipt remains absent:
+`receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
+
+No independent-review completion, activation, or publication is inferred.
