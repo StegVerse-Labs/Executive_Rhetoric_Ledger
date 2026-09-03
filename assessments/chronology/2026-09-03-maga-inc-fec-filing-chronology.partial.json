@@ -1,0 +1,67 @@
+{
+  "schema": "stegverse.erl.maga_inc_fec_filing_chronology.v1",
+  "record_id": "ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001",
+  "committee_id": "C00892471",
+  "state": "PARTIAL_PRIMARY_FILINGS_LOCATED",
+  "coverage_complete": false,
+  "filings": [
+    {
+      "image_number": "202507319789366210",
+      "form": "FEC FORM 3X",
+      "report_type": "July 31 Mid-Year Report",
+      "version": "NEW",
+      "coverage_start": "2025-01-01",
+      "coverage_end": "2025-06-30",
+      "filed_date": "2025-07-31",
+      "treasurer": "GANTT, CHARLES",
+      "official_pdf": "https://docquery.fec.gov/pdf/210/202507319789366210/202507319789366210.pdf",
+      "custody_state": "OFFICIAL_PDF_LOCATED_METADATA_VERIFIED_NATIVE_HASH_PENDING"
+    },
+    {
+      "image_number": "202601029793901842",
+      "form": "FEC FORM 3X",
+      "report_type": "30-Day Post-Special Election Report - Tennessee",
+      "version": "AMENDED",
+      "coverage_start": "2025-07-01",
+      "coverage_end": "2025-12-22",
+      "filed_date": "2026-01-02",
+      "treasurer": "GANTT, CHARLES",
+      "official_pdf": "https://docquery.fec.gov/pdf/842/202601029793901842/202601029793901842.pdf",
+      "custody_state": "OFFICIAL_PDF_LOCATED_METADATA_VERIFIED_NATIVE_HASH_PENDING"
+    },
+    {
+      "image_number": "202602209837825060",
+      "form": "FEC FORM 3X",
+      "report_type": "February 20 Monthly Report",
+      "version": "UNKNOWN_FROM_CURRENT_CAPTURE",
+      "coverage_start": "2026-01-01",
+      "coverage_end": "2026-01-31",
+      "filed_date": "2026-02-20",
+      "treasurer": "UNKNOWN_FROM_CURRENT_CAPTURE",
+      "official_pdf": "https://docquery.fec.gov/pdf/060/202602209837825060/202602209837825060.pdf",
+      "summary_observations": {
+        "cash_on_hand_2026_01_01_usd": 304395525.76,
+        "period_receipts_usd": 6576796.16,
+        "period_disbursements_usd": 78060.75,
+        "closing_cash_on_hand_usd": 310894261.17,
+        "debts_owed_to_committee_usd": 0.0,
+        "debts_owed_by_committee_usd": 0.0
+      },
+      "custody_state": "OFFICIAL_PDF_LOCATED_SUMMARY_PAGE_VERIFIED_NATIVE_HASH_PENDING"
+    }
+  ],
+  "gaps": [
+    "Initial Statement of Organization and all amendments not yet enumerated.",
+    "All 2025-2026 regular reports and amendments not yet enumerated.",
+    "24-hour and 48-hour independent-expenditure reports not yet enumerated.",
+    "Raw electronic filing supersession/amendment relationships not yet reconstructed.",
+    "Transaction schedules not yet normalized into receipt/disbursement/vendor chronology."
+  ],
+  "invariants": {
+    "filing_presence_is_not_misuse": true,
+    "amendment_is_not_evidence_of_wrongdoing_without_content_reconciliation": true,
+    "summary_values_do_not_replace_transaction_level_reconstruction": true,
+    "candidate_layer_finding_authorized": false,
+    "candidate_layer_publication_authorized": false
+  }
+}
