@@ -302,3 +302,42 @@ Review/paper branch head `aabd1899d6521dc8c0d63ba0408b3378fea0d644`:
 - Validate Ledger Schemas: run `33766432976` — observed IN_PROGRESS at receipt capture; no success claim is made from that run.
 
 These hosted validations prove the checked source/validation surfaces only. They do not satisfy provider empirical protocols, contradiction review, independent review, activation, or publication.
+
+
+## 2026-09-03 prior-process reconciliation — exhausted consumer surfaces
+
+Issue: #100
+
+The earlier canonical SV-COST cost-evidence process was re-read before continuing this lane.
+
+Prior authority:
+`GCAT-BCAT-Engine/workflows/experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json`
+
+That record already established:
+- OpenAI consumer/plan and aggregate-usage searches did not expose request-attributable SV-RECON-001 cost or exact request usage;
+- Anthropic consumer plan/session/credit observations did not provide a request-attributable delta;
+- DeepSeek remained blocked on admissible request-bound cost evidence;
+- the explicit next-action rule was: **do not repeat already-exhausted plan/aggregate searches unless the UI gains request-level identity, per-message cost, exact tokens, or before/after usage deltas.**
+
+The user has confirmed the same provider surfaces have not materially changed. ERL therefore treats the consumer/non-account-attributed discovery phase as historical completed evidence for OpenAI, Anthropic, and DeepSeek rather than pending user work.
+
+The 2026-09-03 Z.ai/GLM observation likewise exposes no numeric request-attributable usage or cost on the observed hosted consumer surface. The supplemental Perplexity consumer result likewise exposes neither model/version identity nor request-attributable cost/usage. These current observations do not justify repeat consumer capture absent a material surface change.
+
+### Surface-separation rule
+
+Consumer/non-account-attributed product surfaces and API/enterprise billing surfaces are separate research objects.
+
+An API that exposes exact usage or direct cost does **not** erase an opaque consumer surface. Conversely, consumer-surface opacity does not prove the API surface is opaque.
+
+Final reporting must therefore preserve surface-specific findings rather than collapse them into one provider-wide transparency score.
+
+### User-action rule
+
+No repeat provider UI capture is required from the user for the already-exhausted surfaces. Re-opening capture is authorized only when:
+- a provider visibly changes the relevant UI;
+- a new request-attributable cost/usage field appears;
+- exact per-message tokens become exposed;
+- a before/after usage delta becomes attributable to one request; or
+- a materially different provider surface is intentionally added to the study.
+
+This supersedes any current task wording that implied the user should repeat the same consumer-surface process.
