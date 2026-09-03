@@ -202,8 +202,8 @@ Publication remains separately gated.
 - fixtures: INSTALLED
 - provider protocol execution: IN PROGRESS — public-source logs installed for all five initial providers
 - scale-sensitivity calculation engine: INSTALLED; empirical provider calculations pending exact/bounded request-cost evidence
-- contradiction review: PENDING
-- independent review: PENDING
+- contradiction review execution: PENDING; schema/template installed
+- independent review execution: PENDING; schema/template installed
 - activation: NOT CLAIMED
 - publication: NOT AUTHORIZED
 
@@ -211,9 +211,6 @@ Publication remains separately gated.
 
 Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
-- contradiction-review record
-- independent-review record
-- companion paper manuscript
 
 When this research reaches release/tag posture, verify whether pertinent results or methodology should propagate to:
 - `StegVerse-Labs/Site`
@@ -240,7 +237,7 @@ Initial activation denominator: 10 capability groups.
 
 Current completion: 6/10 = 60%.
 
-Developed files: 21.
+Developed files: 27.
 Scaffolding/stubs counted as complete: 0.
 
 Archive readiness: this handoff durably preserves the research goal, independence rule, two-axis methodology, elevated-usage scope, evidence boundaries, activation criteria, and remaining implementation. No chat-only definition is required to continue.
@@ -270,3 +267,23 @@ Research-progress posture:
 - Perplexity: official Agent API documentation defines a per-response cost object including total cost and component costs. Authentic SV-RECON Agent API execution remains unobserved.
 
 These are research-progress observations, not provider rankings or final transparency findings.
+
+
+## 2026-09-03 review/paper execution surfaces
+
+Issue: #97
+
+Evidence-independent review and publication-preparation machinery is now installed:
+- contradiction-review schema and pending template;
+- independent-review schema and pending template;
+- machine-readable review state;
+- companion paper manuscript with complete scope, independence boundary, methodology, evidence hierarchy, claims discipline, scale equations, limitations, and publication gate.
+
+The paper deliberately leaves Results, Contradiction Review, and Independent Review pending. Installing these surfaces does not satisfy capability group 9 and does not authorize activation or publication.
+
+At this point the remaining substantive machine work is evidence-dependent:
+1. complete at least one provider disclosure protocol from authentic request-level evidence or a governed exhausted-surface determination;
+2. generate exact or bounded elevated-usage calculations from that evidence;
+3. execute contradiction review;
+4. execute independent review;
+5. emit activation receipt only if all gates pass.
