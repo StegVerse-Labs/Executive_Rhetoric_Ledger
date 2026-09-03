@@ -670,3 +670,22 @@ Current implementation:
 - activation/publication: not authorized
 
 No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this research-candidate state.
+
+
+## Adjacent research candidate — MAGA Inc. midterm funds / potential misuse — 2026-09-03
+
+- record: `research-candidates/2026-09-03-maga-inc-midterm-funds-potential-misuse.md`
+- record ID: `ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001`
+- source intake commit: `e629df4440ed8bf4e701b0ae940b83b0a7d48c49`
+- status: `research_candidate / NOT_YET_ASSESSABLE`
+- potential misuse risk: recorded for investigation
+- actual misuse finding: not made
+- legal violation finding: not made
+- donor-intent violation finding: not made
+- motive finding: not authorized
+- publication finding: not authorized
+- trigger: September 2026 public reporting concerning a large MAGA Inc. cash balance and limited 2026 midterm deployment relative to donor/candidate expectations
+- governance boundary: retained or delayed spending is not itself misuse; the candidate requires primary FEC, solicitation, transfer, expenditure, vendor, amendment, and legal-authority reconstruction
+- next executable task: create a primary-source acquisition packet for the 2025-2026 cycle and reconstruct cash-on-hand, receipts, transfers, independent expenditures, vendor payments, debts, refunds, and amendments before assessing misuse
+
+This adjacent candidate does not alter the Fauci/HSGAC active-goal denominator and authorizes no Site, Publisher, admissibility-wiki, stegguardian-wiki, or master-records propagation.
