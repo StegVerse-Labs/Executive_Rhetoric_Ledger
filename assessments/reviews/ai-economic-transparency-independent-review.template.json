@@ -1,0 +1,11 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-independent-review/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "state": "PENDING",
+  "review_scope": [],
+  "reviewer_independence": "PENDING",
+  "findings": [],
+  "required_revisions": [],
+  "activation_recommendation": "PENDING",
+  "publication_recommendation": "PENDING"
+}
