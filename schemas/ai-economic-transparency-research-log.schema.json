@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stegverse.erl.ai-economic-transparency-research-log.v1",
+  "title": "ERL AI Economic Transparency Research Log",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "task_id",
+    "provider",
+    "protocol_state",
+    "steps",
+    "elapsed_research_minutes",
+    "final_observation_ref"
+  ],
+  "properties": {
+    "schema": {
+      "const": "stegverse.erl.ai-economic-transparency-research-log/v1"
+    },
+    "task_id": {
+      "const": "ERL-AI-ECON-TRANSPARENCY-001"
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "protocol_state": {
+      "enum": [
+        "NOT_STARTED",
+        "IN_PROGRESS",
+        "COMPLETE_RECONSTRUCTABLE",
+        "COMPLETE_NON_RECONSTRUCTABLE"
+      ]
+    },
+    "started_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "completed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "elapsed_research_minutes": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "step_id",
+          "surface_class",
+          "action",
+          "finding",
+          "source_ref",
+          "minutes"
+        ],
+        "properties": {
+          "step_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "surface_class": {
+            "enum": [
+              "REQUEST_RESULT",
+              "PRICING_DOC",
+              "USAGE_BILLING",
+              "ACCOUNT_ADMIN",
+              "SUPPORT",
+              "EXTERNAL_RESEARCH",
+              "OTHER"
+            ]
+          },
+          "action": {
+            "type": "string"
+          },
+          "finding": {
+            "type": "string"
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "account_or_privilege_required": {
+            "type": "boolean"
+          },
+          "material_cost_components_found": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "minutes": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "final_observation_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
