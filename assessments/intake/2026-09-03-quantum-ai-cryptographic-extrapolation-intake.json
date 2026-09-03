@@ -1,0 +1,87 @@
+{
+  "topic_id": "ERL-2026-09-03-QUANTUM-AI-CRYPTO-EXTRAPOLATION",
+  "record_type": "evidence_reconstruction_task_registry",
+  "queue_status": "active",
+  "created_date": "2026-09-03",
+  "last_reviewed": "2026-09-03",
+  "canonical_assessment": "assessments/rhetoric/2026-09-03-quantum-ai-cryptographic-extrapolation.md",
+  "goal": "Reconstruct the evidentiary chain from reported Jiuzhang/DeepSeek technical developments to claims about present cryptographic compromise, preserving observation, inference, hypothesis, prediction, and engineering consequence as distinct governed states.",
+  "promotion_boundary": "Do not promote Gaussian-boson-sampling advantage, general Chinese quantum capability, classified-capability speculation, or harvest-now/decrypt-later risk into a finding that RSA-2048/ECC is presently broken or that Western encrypted traffic is currently being quantum-decrypted without direct authoritative evidence.",
+  "source_trigger": {
+    "type": "user_submitted_public_article",
+    "title": "They’re Coming? They’re Already Here — 4 Trillion Times Faster",
+    "surface": "LinkedIn",
+    "author": "Zoli Bill Apró",
+    "url": "https://www.linkedin.com/pulse/theyre-coming-already-here-4-trillion-times-faster-zoli-bill-apr%C3%B3-ni18f",
+    "intake_date": "2026-09-03"
+  },
+  "tasks": [
+    {
+      "task_id": "QAC-001",
+      "priority": 1,
+      "state": "primary-source-needed",
+      "object": "Jiuzhang 4.0 peer-reviewed primary paper",
+      "required_capture": ["canonical publication metadata", "native or immutable article record", "exact task definition", "reported benchmark conditions", "limitations"],
+      "release_condition": "Jiuzhang performance claims are reconstructed with the workload boundary preserved and no conversion into arbitrary-compute or cryptanalytic performance."
+    },
+    {
+      "task_id": "QAC-002",
+      "priority": 1,
+      "state": "primary-source-needed",
+      "object": "Evidence for cryptographically relevant quantum attack capability",
+      "required_capture": ["algorithm used", "logical/physical qubit requirements", "fault-tolerance state", "key sizes actually attacked", "runtime/error assumptions"],
+      "release_condition": "Any claim of current RSA-2048/ECC compromise is traceable to direct technical evidence rather than extrapolation from unrelated quantum advantage experiments."
+    },
+    {
+      "task_id": "QAC-003",
+      "priority": 1,
+      "state": "primary-source-needed",
+      "object": "NIST post-quantum cryptography standards and migration guidance",
+      "required_capture": ["finalized standards", "publication dates", "migration recommendations", "algorithm identifiers", "transition guidance"],
+      "release_condition": "Claims about whether quantum-resistant encryption is available are tested against authoritative current standards."
+    },
+    {
+      "task_id": "QAC-004",
+      "priority": 2,
+      "state": "primary-source-needed",
+      "object": "DeepSeek-V4 technical release claims",
+      "required_capture": ["official release metadata", "architecture/model claims relevant to article", "deployment/compute claims", "source dates"],
+      "release_condition": "DeepSeek references are separated from unrelated quantum-computing capability claims and admitted only within their supported scope."
+    },
+    {
+      "task_id": "QAC-005",
+      "priority": 1,
+      "state": "claim-decomposition-required",
+      "object": "LinkedIn article numerical and causal claim ledger",
+      "required_capture": ["exact claim text", "source cited by article", "claim type", "comparison denominator", "supported inference boundary", "unsupported transition flags"],
+      "release_condition": "Every material numerical/security claim is classified as observed fact, sourced statement, inference, hypothesis, prediction, unsupported extrapolation, or engineering consequence."
+    },
+    {
+      "task_id": "QAC-006",
+      "priority": 2,
+      "state": "authoritative-evidence-needed",
+      "object": "Claims of classified Chinese operational quantum cryptanalytic capability",
+      "required_capture": ["authoritative public evidence", "official attribution if any", "technical capability description", "independent corroboration", "confidence limits"],
+      "release_condition": "Classified-capability speculation is either supported by independently reproducible authoritative evidence or retained explicitly as unresolved hypothesis."
+    },
+    {
+      "task_id": "QAC-007",
+      "priority": 2,
+      "state": "governance-integration-candidate",
+      "object": "StegVerse cryptographic transition-governance requirements",
+      "required_capture": ["algorithm admissibility", "migration", "coexistence", "downgrade resistance", "retirement", "provenance", "compatibility", "reconstruction evidence"],
+      "release_condition": "ERL findings are translated into bounded architectural requirements without treating the source article’s strongest security claims as established fact."
+    }
+  ],
+  "next_unblocked_task": "QAC-001-and-QAC-003-primary-source-reconstruction",
+  "duplicate_execution_rule": "Before acquiring or creating a record, search the ERL source-posture, evidence, intake, and rhetoric surfaces for an existing Jiuzhang, DeepSeek, post-quantum, RSA/ECC, or harvest-now/decrypt-later object. Reuse preserved custody where available.",
+  "completion_condition": "The article’s technical and security propositions are independently reconstructable with explicit evidence-state transitions, and no operational cryptographic-compromise finding exceeds the strongest authoritative evidence.",
+  "findings_state": {
+    "present_rsa2048_ecc_break": "not_established",
+    "present_quantum_decryption_of_western_traffic": "not_established",
+    "harvest_now_decrypt_later": "legitimate_security_risk",
+    "pqc_and_crypto_agility": "prudent_engineering_consequence",
+    "publication_authorized": false,
+    "motive_finding_authorized": false
+  }
+}
