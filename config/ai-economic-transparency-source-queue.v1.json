@@ -5,48 +5,63 @@
     "independent_reconstruction_required": true,
     "inherit_upstream_conclusions": false,
     "final_score_requires_protocol_complete": true,
-    "unknown_cost_must_remain_unknown": true
+    "unknown_cost_must_remain_unknown": true,
+    "repeat_capture_rule": "DO_NOT_REPEAT_EXHAUSTED_CONSUMER_SURFACE_RESEARCH_UNLESS_MATERIAL_UI_OR_PROVIDER_DISCLOSURE_CHANGE_IS_OBSERVED",
+    "surface_separation": "CONSUMER_NON_ACCOUNT_ATTRIBUTED_AND_API_ENTERPRISE_SURFACES_MUST_BE_SCORED_SEPARATELY"
   },
   "providers": [
     {
       "provider": "openai",
       "model_seed": "gpt-5.6-sol",
-      "state": "PUBLIC_DOCS_ACQUIRED_PROTOCOL_IN_PROGRESS",
+      "state": "CONSUMER_SURFACE_EXHAUSTED_API_DOCS_AVAILABLE_REQUEST_RECEIPT_UNOBSERVED",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:openai-ui-candidate-observation-2026-09-03.json",
-      "next": "Obtain authentic request-level usage/cost evidence or exhaust accessible account/billing surfaces; then complete rating and scale scenarios.",
-      "research_log": "research-data/ai-economic-transparency/openai-research-log.2026-09-03.json"
+      "next": "Do not repeat consumer-surface capture. Continue only distinct API/enterprise/documentation analysis or react to a materially changed provider surface.",
+      "research_log": "research-data/ai-economic-transparency/openai-research-log.2026-09-03.json",
+      "consumer_surface_state": "HISTORICALLY_EXHAUSTED_NO_REQUEST_ATTRIBUTABLE_COST_OR_EXACT_USAGE_OBSERVED",
+      "consumer_surface_prior_authority": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
+      "consumer_surface_repeat_required": false
     },
     {
       "provider": "anthropic",
       "model_seed": "claude-opus-5",
-      "state": "PUBLIC_DOCS_ACQUIRED_PROTOCOL_IN_PROGRESS",
+      "state": "CONSUMER_SURFACE_EXHAUSTED_API_DOCS_AVAILABLE_REQUEST_RECEIPT_UNOBSERVED",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:anthropic-ui-candidate-observation-2026-09-03.json",
-      "next": "Obtain authentic request-level usage/cost evidence or exhaust accessible account/billing surfaces; then complete rating and scale scenarios.",
-      "research_log": "research-data/ai-economic-transparency/anthropic-research-log.2026-09-03.json"
+      "next": "Do not repeat consumer-surface capture. Continue only distinct API/enterprise/documentation analysis or react to a materially changed provider surface.",
+      "research_log": "research-data/ai-economic-transparency/anthropic-research-log.2026-09-03.json",
+      "consumer_surface_state": "HISTORICALLY_EXHAUSTED_NO_REQUEST_ATTRIBUTABLE_COST_OR_EXACT_USAGE_OBSERVED",
+      "consumer_surface_prior_authority": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
+      "consumer_surface_repeat_required": false
     },
     {
       "provider": "deepseek",
       "model_seed": null,
-      "state": "PUBLIC_DOCS_ACQUIRED_MODEL_AND_EXECUTION_EVIDENCE_PENDING",
+      "state": "CONSUMER_SURFACE_EXHAUSTED_MODEL_IDENTITY_UNRESOLVED_API_DOCS_AVAILABLE",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:deepseek-ui-candidate-observation-2026-09-03.json",
-      "next": "Resolve exact consumer model identity and obtain authentic request-level usage/cost evidence before final scoring.",
-      "research_log": "research-data/ai-economic-transparency/deepseek-research-log.2026-09-03.json"
+      "next": "Do not repeat consumer-surface capture. Continue only distinct API/enterprise/documentation analysis or react to a materially changed provider surface.",
+      "research_log": "research-data/ai-economic-transparency/deepseek-research-log.2026-09-03.json",
+      "consumer_surface_state": "HISTORICALLY_EXHAUSTED_NO_REQUEST_ATTRIBUTABLE_COST_OR_EXACT_USAGE_OBSERVED",
+      "consumer_surface_prior_authority": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
+      "consumer_surface_repeat_required": false
     },
     {
       "provider": "zai",
       "model_seed": "GLM-5.3-Flash",
-      "state": "PUBLIC_PLATFORM_LOCATED_RATE_AND_USAGE_RECONSTRUCTION_INCOMPLETE",
+      "state": "CONSUMER_SURFACE_CURRENTLY_OPAQUE_PUBLIC_PLATFORM_COST_RECONSTRUCTION_INCOMPLETE",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:glm-hosted-ui-candidate-observation-2026-09-03.json",
-      "next": "Continue official billing/transparency discovery or exhaust accessible surfaces; do not infer a GLM request rate from usage-bundle marketing.",
-      "research_log": "research-data/ai-economic-transparency/zai-research-log.2026-09-03.json"
+      "next": "Do not repeat consumer-surface capture. Continue only distinct official API/billing/documentation analysis or react to a materially changed provider surface.",
+      "research_log": "research-data/ai-economic-transparency/zai-research-log.2026-09-03.json",
+      "consumer_surface_state": "CURRENT_2026_09_03_OBSERVATION_NO_REQUEST_ATTRIBUTABLE_COST_OR_USAGE_EXPOSED",
+      "consumer_surface_repeat_required": false
     },
     {
       "provider": "perplexity",
       "model_seed": null,
-      "state": "PUBLIC_DOCS_DIRECT_COST_FIELD_DOCUMENTED_EXECUTION_UNOBSERVED",
+      "state": "CONSUMER_SURFACE_CURRENTLY_OPAQUE_AGENT_API_DIRECT_COST_FIELD_DOCUMENTED",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:perplexity-ui-candidate-observation-2026-09-03.json",
-      "next": "Obtain an authentic Agent API request receipt or exhaust accessible execution evidence before assigning a final DIRECT rating.",
-      "research_log": "research-data/ai-economic-transparency/perplexity-research-log.2026-09-03.json"
+      "next": "Do not repeat consumer-surface capture. Treat Agent API as a separate surface and preserve its direct-cost-field documentation independently.",
+      "research_log": "research-data/ai-economic-transparency/perplexity-research-log.2026-09-03.json",
+      "consumer_surface_state": "CURRENT_SUPPLEMENTAL_RESULT_NO_MODEL_VERSION_OR_REQUEST_ATTRIBUTABLE_COST_USAGE_EXPOSED",
+      "consumer_surface_repeat_required": false
     }
   ]
 }
