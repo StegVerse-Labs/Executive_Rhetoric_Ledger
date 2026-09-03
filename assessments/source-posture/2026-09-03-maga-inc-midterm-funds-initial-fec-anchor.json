@@ -1,0 +1,45 @@
+{
+  "schema": "stegverse.erl.maga_inc_midterm_funds_source_posture.v1",
+  "record_id": "ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001",
+  "observed_at": "2026-09-03",
+  "status": "PRIMARY_SUMMARY_ANCHOR_VERIFIED_TRANSACTION_RECONSTRUCTION_PENDING",
+  "committee": {
+    "name": "MAGA INC.",
+    "fec_committee_id": "C00892471",
+    "fec_status": "Active",
+    "filing_frequency": "Monthly",
+    "committee_type_display": "Hybrid PAC (with Non-Contribution Account)",
+    "qualified_status": "Nonqualified",
+    "authorization_status": "Unauthorized",
+    "registration_date": "2024-11-07",
+    "official_url": "https://www.fec.gov/data/committee/C00892471/"
+  },
+  "current_fec_summary": {
+    "coverage_start": "2025-01-01",
+    "coverage_end": "2026-07-31",
+    "total_receipts_usd": 400684172.17,
+    "total_disbursements_usd": 21034141.27,
+    "independent_expenditures_usd": 1708261.87,
+    "other_disbursements_usd": 19325879.40,
+    "beginning_cash_on_hand_usd": 23799995.95,
+    "ending_cash_on_hand_usd": 403450026.85,
+    "debts_loans_owed_to_committee_usd": 0.0,
+    "debts_loans_owed_by_committee_usd": 0.0,
+    "source": "Official FEC committee overview; summary values may lag newly filed data and do not replace filing-level reconstruction."
+  },
+  "bounded_observations": [
+    "The official FEC summary verifies a large ending cash-on-hand balance through 2026-07-31.",
+    "The official FEC summary separately reports independent expenditures and other disbursements; these categories require transaction-level reconstruction before purpose or recipient conclusions.",
+    "The summary alone does not establish misuse, donor deception, personal use, prohibited coordination, self-dealing, or any legal violation."
+  ],
+  "release_gates": {
+    "transaction_level_reconstruction_complete": false,
+    "solicitation_representation_reconstruction_complete": false,
+    "legal_authority_mapping_complete": false,
+    "related_party_vendor_review_complete": false,
+    "contradiction_review_complete": false,
+    "independent_review_complete": false,
+    "actual_misuse_finding_authorized": false,
+    "publication_authorized": false
+  }
+}
