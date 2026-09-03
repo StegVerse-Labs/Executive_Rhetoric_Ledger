@@ -380,3 +380,28 @@ A bounded independent-review package is now installed for the finalized OpenAI, 
 The package fixes the review scope, required inputs, review questions, forbidden promotions, and required terminal output schema/path. It prevents the independent-review step from expanding into provider-wide ranking, intent claims, Z.ai/Perplexity findings, activation, or publication.
 
 This package makes the remaining review gate machine-addressable, but it is not itself an independent review and does not satisfy capability group 9.
+
+
+## 2026-09-03 candidate-results integration
+
+Issue: #106
+
+The finalized OpenAI, Anthropic, and DeepSeek consumer-surface observations are now integrated into a machine-readable candidate-results summary:
+
+`research-data/ai-economic-transparency/candidate-results.consumer-surfaces.2026-09-03.json`
+
+The companion manuscript now includes these candidate results while preserving:
+- surface-specific scope;
+- rating 5 / NON_RECONSTRUCTABLE only for the exhausted consumer surface;
+- unresolved literal request cost;
+- `UNBOUNDED_UNKNOWN` at 1K / 100K / 1M;
+- separate API/enterprise surfaces;
+- no provider-wide ranking;
+- independent-review pending status.
+
+The previously observed PR #105 validation state is now fully resolved:
+- Validate AI economic transparency run `33772683787` — SUCCESS
+- Validate durable task state run `33772683638` — SUCCESS
+- Validate Ledger Schemas run `33772683540` — SUCCESS
+
+These validation receipts prove source/schema/task consistency only. They do not satisfy independent review or activation.
