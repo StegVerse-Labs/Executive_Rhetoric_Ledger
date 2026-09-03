@@ -1,0 +1,42 @@
+name: Validate AI economic transparency
+
+on:
+  push:
+    paths:
+      - "docs/AI_ECONOMIC_TRANSPARENCY_MIRROR_HANDOFF.md"
+      - "research-candidates/2026-09-03-ai-economic-transparency-elevated-usage.md"
+      - "task-state/ERL-AI-ECON-TRANSPARENCY-001.json"
+      - "standards/ai-economic-transparency.v1.md"
+      - "schemas/ai-economic-transparency-observation.schema.json"
+      - "config/ai-economic-transparency-source-queue.v1.json"
+      - "scripts/validate_ai_economic_transparency.py"
+      - "tests/test_ai_economic_transparency.py"
+      - "tests/fixtures/ai-economic-transparency/**"
+      - ".github/workflows/validate-ai-economic-transparency.yml"
+  pull_request:
+    paths:
+      - "docs/AI_ECONOMIC_TRANSPARENCY_MIRROR_HANDOFF.md"
+      - "research-candidates/2026-09-03-ai-economic-transparency-elevated-usage.md"
+      - "task-state/ERL-AI-ECON-TRANSPARENCY-001.json"
+      - "standards/ai-economic-transparency.v1.md"
+      - "schemas/ai-economic-transparency-observation.schema.json"
+      - "config/ai-economic-transparency-source-queue.v1.json"
+      - "scripts/validate_ai_economic_transparency.py"
+      - "tests/test_ai_economic_transparency.py"
+      - "tests/fixtures/ai-economic-transparency/**"
+      - ".github/workflows/validate-ai-economic-transparency.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python -m unittest tests/test_ai_economic_transparency.py
+      - name: Validate fixtures
+        run: |
+          python scripts/validate_ai_economic_transparency.py tests/fixtures/ai-economic-transparency/direct.json
+          python scripts/validate_ai_economic_transparency.py tests/fixtures/ai-economic-transparency/incomplete-unknown.json
