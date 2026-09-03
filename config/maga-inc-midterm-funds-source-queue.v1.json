@@ -32,7 +32,14 @@
       "id": "SRC-FEC-REPORTS-001",
       "class": "primary_official",
       "target": "All 2025-2026 regular reports and amendments for C00892471 with coverage periods, cash-on-hand, receipts, disbursements, debts/obligations, refunds, and other receipts/disbursements",
-      "state": "PENDING"
+      "state": "PARTIAL",
+      "artifact": "assessments/chronology/2026-09-03-maga-inc-fec-filing-chronology.partial.json",
+      "located_image_numbers": [
+        "202507319789366210",
+        "202601029793901842",
+        "202602209837825060"
+      ],
+      "remaining": "Enumerate all regular reports/amendments and reconstruct supersession chronology."
     },
     {
       "id": "SRC-FEC-IE-001",
