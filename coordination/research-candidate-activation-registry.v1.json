@@ -406,6 +406,29 @@
       "terminal_condition": "Primary-source custody, chronology reconstruction, contradiction review, proposition-relative attribution, authority mapping, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-AI-ECON-TRANSPARENCY-2026",
+      "title": "AI literal-cost transparency and elevated-usage sensitivity",
+      "candidate_paths": [
+        "research-candidates/2026-09-03-ai-economic-transparency-elevated-usage.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:93",
+      "artifact_paths": [
+        "docs/AI_ECONOMIC_TRANSPARENCY_MIRROR_HANDOFF.md",
+        "task-state/ERL-AI-ECON-TRANSPARENCY-001.json",
+        "standards/ai-economic-transparency.v1.md",
+        "schemas/ai-economic-transparency-observation.schema.json",
+        "config/ai-economic-transparency-source-queue.v1.json",
+        "scripts/validate_ai_economic_transparency.py",
+        "tests/test_ai_economic_transparency.py"
+      ],
+      "next_executable_task": "Execute the independent disclosure-burden protocol for the initial provider set, preserve research steps and barriers, then calculate elevated-usage sensitivity only from exact or bounded evidence.",
+      "terminal_condition": "Machine-valid provider protocols, scale-sensitivity calculations, contradiction review, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
