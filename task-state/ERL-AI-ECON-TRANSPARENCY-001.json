@@ -24,9 +24,37 @@
   "fixture_state": "INSTALLED",
   "activation_registry_group": "ERL-RC-AI-ECON-TRANSPARENCY-2026",
   "scale_sensitivity_engine": "scripts/calculate_ai_cost_scale_sensitivity.py",
-  "scale_sensitivity_engine_state": "INSTALLED_TESTED_SOURCE_PENDING_HOSTED_VALIDATION",
+  "scale_sensitivity_engine_state": "INSTALLED_HOSTED_VALIDATED",
   "provider_research_log_state": "5_OF_5_INITIAL_PUBLIC_SOURCE_LOGS_INSTALLED_PROTOCOLS_INCOMPLETE",
   "review_execution_surfaces_state": "INSTALLED_PENDING_EMPIRICAL_EXECUTION",
   "paper_manuscript": "papers/ai-economic-transparency-elevated-usage.md",
-  "paper_state": "METHODS_COMPLETE_RESULTS_PENDING"
+  "paper_state": "METHODS_COMPLETE_RESULTS_PENDING",
+  "hosted_validation_receipts": {
+    "scale_provider_head": "1a93b885255da9f94d4eeb388785538aa86e61c6",
+    "scale_provider_ai_transparency_run": {
+      "id": 33766240838,
+      "conclusion": "success"
+    },
+    "scale_provider_task_state_run": {
+      "id": 33766240840,
+      "conclusion": "success"
+    },
+    "scale_provider_ledger_schemas_run": {
+      "id": 33766240914,
+      "conclusion": "success"
+    },
+    "review_paper_head": "aabd1899d6521dc8c0d63ba0408b3378fea0d644",
+    "review_paper_ai_transparency_run": {
+      "id": 33766432985,
+      "conclusion": "success"
+    },
+    "review_paper_task_state_run": {
+      "id": 33766432923,
+      "conclusion": "success"
+    },
+    "review_paper_ledger_schemas_run": {
+      "id": 33766432976,
+      "conclusion": "in_progress_at_observation"
+    }
+  }
 }
