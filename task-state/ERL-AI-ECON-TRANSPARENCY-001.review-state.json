@@ -1,0 +1,9 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-review-state/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "contradiction_review_state": "PENDING_PROVIDER_PROTOCOL_COMPLETION",
+  "independent_review_state": "PENDING_CONTRADICTION_REVIEW",
+  "paper_state": "METHODS_COMPLETE_RESULTS_PENDING",
+  "activation_authorized": false,
+  "publication_authorized": false
+}

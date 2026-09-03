@@ -18,12 +18,15 @@
   },
   "activation_authorized": false,
   "publication_authorized": false,
-  "next_executable_task": "Continue each provider disclosure protocol to an authentic request-level cost/usage receipt or a governed exhausted-surface terminal state. Then generate exact/bounded scale scenarios and begin contradiction review.",
+  "next_executable_task": "Complete provider disclosure protocols from authentic request-level evidence or governed exhausted-surface determinations; then run scale calculations, contradiction review, independent review, and only then consider activation.",
   "implementation_completion_percent": 60,
   "validator_state": "INSTALLED",
   "fixture_state": "INSTALLED",
   "activation_registry_group": "ERL-RC-AI-ECON-TRANSPARENCY-2026",
   "scale_sensitivity_engine": "scripts/calculate_ai_cost_scale_sensitivity.py",
   "scale_sensitivity_engine_state": "INSTALLED_TESTED_SOURCE_PENDING_HOSTED_VALIDATION",
-  "provider_research_log_state": "5_OF_5_INITIAL_PUBLIC_SOURCE_LOGS_INSTALLED_PROTOCOLS_INCOMPLETE"
+  "provider_research_log_state": "5_OF_5_INITIAL_PUBLIC_SOURCE_LOGS_INSTALLED_PROTOCOLS_INCOMPLETE",
+  "review_execution_surfaces_state": "INSTALLED_PENDING_EMPIRICAL_EXECUTION",
+  "paper_manuscript": "papers/ai-economic-transparency-elevated-usage.md",
+  "paper_state": "METHODS_COMPLETE_RESULTS_PENDING"
 }
