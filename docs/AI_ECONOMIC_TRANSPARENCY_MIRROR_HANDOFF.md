@@ -465,3 +465,28 @@ The independent-review gate is satisfied only when an authentic fenced resident 
 and that receipt is admitted into ERL's review record without widening the worker's authority.
 
 No user/device action is required.
+
+
+## 2026-09-03 independent-review worker control-plane reconciliation
+
+Issue: #112
+
+The machine-owned independent reviewer remains the canonical execution owner for capability group 9. Its organization-plane integration has now been reconciled beyond the initial implementation merge:
+
+- initial worker release: `66b5d942f7ba7f1e9c4fe3b6a3f4616b15c72ee5`
+- Admissible-Existence repair: `0f4214b13373741124ef79dd37774b0585f0721b`
+- COSV denominator/index repair: `ddebfc0aa31a58c4b41e02fc871d254af1813133`
+- reconciliation documentation merge: `365c983d3c276f204a5d9ef3c3df4dac9c00d0da`
+
+Current organization-plane source/control state:
+- worker task: `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001`
+- AE phase: `ADMISSIBLE`
+- COSV vector: `50000000101000`
+- runtime receipt observed: false
+- independent review complete: false
+- research-promotion authority: false
+- activation authority: false
+- publication authority: false
+- repository-writeback authority: false
+
+No runtime conclusion is inferred from these repository mutations. Capability group 9 remains pending an authentic fenced resident review receipt.
