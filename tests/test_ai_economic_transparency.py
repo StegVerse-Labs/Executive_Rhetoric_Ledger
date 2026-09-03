@@ -13,6 +13,8 @@ def base():
         "task_id":"ERL-AI-ECON-TRANSPARENCY-001",
         "provider":"example",
         "model":None,
+        "surface_class":"CONSUMER_NON_ACCOUNT_ATTRIBUTED",
+        "rating_scope":"SURFACE_SPECIFIC",
         "protocol_complete":False,
         "actual_request_cost_directly_exposed":False,
         "request_usage_directly_exposed":False,
@@ -35,6 +37,10 @@ def base():
 class TestTransparencyValidator(unittest.TestCase):
     def test_incomplete_unscored_valid(self):
         self.assertEqual(validator.validate(base()), [])
+
+    def test_provider_wide_rating_forbidden(self):
+        o=base(); o["rating_scope"]="PROVIDER_WIDE"
+        self.assertIn("provider_wide_rating_forbidden", validator.validate(o))
 
     def test_rating_five_requires_complete_protocol(self):
         o=base(); o["disclosure_burden_rating"]=5
