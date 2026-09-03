@@ -405,3 +405,28 @@ The previously observed PR #105 validation state is now fully resolved:
 - Validate Ledger Schemas run `33772683540` — SUCCESS
 
 These validation receipts prove source/schema/task consistency only. They do not satisfy independent review or activation.
+
+
+## 2026-09-03 API/enterprise surface materialization
+
+Issue: #108
+
+Surface-specific API/enterprise observations are now materialized for all five initial providers:
+- OpenAI
+- Anthropic
+- DeepSeek
+- Z.ai / GLM
+- supplemental Perplexity
+
+These records convert the already-preserved official-document research into machine-readable `API_ENTERPRISE` observations without assigning final scores.
+
+Current boundaries:
+- OpenAI: official API usage and pricing behavior documented; authentic bounded SV-RECON-001 API receipt remains unobserved.
+- Anthropic: official API usage and pricing behavior documented; authentic bounded SV-RECON-001 API receipt remains unobserved.
+- DeepSeek: official API usage and pricing behavior documented; exact comparison-model binding and authentic bounded API receipt remain unobserved.
+- Z.ai: preserved public platform material remains insufficient to reconstruct a request-level GLM-5.3-Flash cost basis.
+- Perplexity: official Agent API documentation specifies a direct per-response cost object, but no authentic bounded SV-RECON-001 Agent API receipt has been observed.
+
+All five API/enterprise protocols therefore remain `protocol_complete=false` with no final disclosure-burden rating. Their scale state remains `UNBOUNDED_UNKNOWN` until authentic exact/bounded request evidence exists.
+
+No consumer recapture was performed or reopened. API/enterprise observations remain separate from finalized consumer-surface findings.

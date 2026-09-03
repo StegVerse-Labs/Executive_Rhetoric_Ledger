@@ -19,7 +19,10 @@
       "research_log": "research-data/ai-economic-transparency/openai-research-log.2026-09-03.json",
       "consumer_surface_state": "HISTORICALLY_EXHAUSTED_NO_REQUEST_ATTRIBUTABLE_COST_OR_EXACT_USAGE_OBSERVED",
       "consumer_surface_prior_authority": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
-      "consumer_surface_repeat_required": false
+      "consumer_surface_repeat_required": false,
+      "api_enterprise_observation": "research-data/ai-economic-transparency/openai-api-enterprise-observation.2026-09-03.json",
+      "api_enterprise_protocol_complete": false,
+      "api_enterprise_state": "DOCUMENTED_USAGE_AND_PRICING_REQUEST_RECEIPT_UNOBSERVED"
     },
     {
       "provider": "anthropic",
@@ -30,7 +33,10 @@
       "research_log": "research-data/ai-economic-transparency/anthropic-research-log.2026-09-03.json",
       "consumer_surface_state": "HISTORICALLY_EXHAUSTED_NO_REQUEST_ATTRIBUTABLE_COST_OR_EXACT_USAGE_OBSERVED",
       "consumer_surface_prior_authority": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
-      "consumer_surface_repeat_required": false
+      "consumer_surface_repeat_required": false,
+      "api_enterprise_observation": "research-data/ai-economic-transparency/anthropic-api-enterprise-observation.2026-09-03.json",
+      "api_enterprise_protocol_complete": false,
+      "api_enterprise_state": "DOCUMENTED_USAGE_AND_PRICING_REQUEST_RECEIPT_UNOBSERVED"
     },
     {
       "provider": "deepseek",
@@ -41,7 +47,10 @@
       "research_log": "research-data/ai-economic-transparency/deepseek-research-log.2026-09-03.json",
       "consumer_surface_state": "HISTORICALLY_EXHAUSTED_NO_REQUEST_ATTRIBUTABLE_COST_OR_EXACT_USAGE_OBSERVED",
       "consumer_surface_prior_authority": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
-      "consumer_surface_repeat_required": false
+      "consumer_surface_repeat_required": false,
+      "api_enterprise_observation": "research-data/ai-economic-transparency/deepseek-api-enterprise-observation.2026-09-03.json",
+      "api_enterprise_protocol_complete": false,
+      "api_enterprise_state": "DOCUMENTED_USAGE_AND_PRICING_MODEL_BINDING_AND_REQUEST_RECEIPT_UNOBSERVED"
     },
     {
       "provider": "zai",
@@ -51,7 +60,10 @@
       "next": "Do not repeat consumer-surface capture. Continue only distinct official API/billing/documentation analysis or react to a materially changed provider surface.",
       "research_log": "research-data/ai-economic-transparency/zai-research-log.2026-09-03.json",
       "consumer_surface_state": "CURRENT_2026_09_03_OBSERVATION_NO_REQUEST_ATTRIBUTABLE_COST_OR_USAGE_EXPOSED",
-      "consumer_surface_repeat_required": false
+      "consumer_surface_repeat_required": false,
+      "api_enterprise_observation": "research-data/ai-economic-transparency/zai-api-enterprise-observation.2026-09-03.json",
+      "api_enterprise_protocol_complete": false,
+      "api_enterprise_state": "PUBLIC_PLATFORM_INSUFFICIENT_FOR_REQUEST_COST_RECONSTRUCTION"
     },
     {
       "provider": "perplexity",
@@ -61,7 +73,10 @@
       "next": "Do not repeat consumer-surface capture. Treat Agent API as a separate surface and preserve its direct-cost-field documentation independently.",
       "research_log": "research-data/ai-economic-transparency/perplexity-research-log.2026-09-03.json",
       "consumer_surface_state": "CURRENT_SUPPLEMENTAL_RESULT_NO_MODEL_VERSION_OR_REQUEST_ATTRIBUTABLE_COST_USAGE_EXPOSED",
-      "consumer_surface_repeat_required": false
+      "consumer_surface_repeat_required": false,
+      "api_enterprise_observation": "research-data/ai-economic-transparency/perplexity-api-enterprise-observation.2026-09-03.json",
+      "api_enterprise_protocol_complete": false,
+      "api_enterprise_state": "DOCUMENTED_DIRECT_COST_OBJECT_AUTHENTIC_REQUEST_RECEIPT_UNOBSERVED"
     }
   ]
 }

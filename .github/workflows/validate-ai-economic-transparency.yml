@@ -61,3 +61,8 @@ jobs:
           python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/openai-consumer-surface-observation.2026-09-03.json
           python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/anthropic-consumer-surface-observation.2026-09-03.json
           python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/deepseek-consumer-surface-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/openai-api-enterprise-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/anthropic-api-enterprise-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/deepseek-api-enterprise-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/zai-api-enterprise-observation.2026-09-03.json
+          python scripts/validate_ai_economic_transparency.py research-data/ai-economic-transparency/perplexity-api-enterprise-observation.2026-09-03.json
