@@ -287,3 +287,18 @@ At this point the remaining substantive machine work is evidence-dependent:
 3. execute contradiction review;
 4. execute independent review;
 5. emit activation receipt only if all gates pass.
+
+
+## Hosted validation receipts — 2026-09-03
+
+Provider-research / scale-engine branch head `1a93b885255da9f94d4eeb388785538aa86e61c6`:
+- Validate AI economic transparency: run `33766240838` — SUCCESS
+- Validate durable task state: run `33766240840` — SUCCESS
+- Validate Ledger Schemas: run `33766240914` — SUCCESS
+
+Review/paper branch head `aabd1899d6521dc8c0d63ba0408b3378fea0d644`:
+- Validate AI economic transparency: run `33766432985` — SUCCESS
+- Validate durable task state: run `33766432923` — SUCCESS
+- Validate Ledger Schemas: run `33766432976` — observed IN_PROGRESS at receipt capture; no success claim is made from that run.
+
+These hosted validations prove the checked source/validation surfaces only. They do not satisfy provider empirical protocols, contradiction review, independent review, activation, or publication.
