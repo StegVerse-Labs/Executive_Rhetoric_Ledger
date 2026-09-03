@@ -1,0 +1,58 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-research-log/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "provider": "anthropic",
+  "model": "claude-opus-5",
+  "protocol_state": "IN_PROGRESS",
+  "started_at": "2026-09-03",
+  "completed_at": null,
+  "elapsed_research_minutes": null,
+  "steps": [
+    {
+      "step_id": 1,
+      "surface_class": "REQUEST_RESULT",
+      "action": "Preserve prior observed Claude consumer request/result surface from SV-COST as upstream evidence input.",
+      "finding": "Consumer surface exposed a qualitative usage-limit warning but no numeric request-level usage or cost in the preserved observation.",
+      "source_ref": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/eleven-lane-results/evidence/anthropic-ui-candidate-observation-2026-09-03.json",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [],
+      "minutes": 0
+    },
+    {
+      "step_id": 2,
+      "surface_class": "PRICING_DOC",
+      "action": "Inspect official Claude Platform pricing documentation.",
+      "finding": "Official pricing documentation publishes base input/output pricing plus prompt-cache, tool, web-search, code-execution, and fast-mode cost rules that can materially affect request cost.",
+      "source_ref": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [
+        "base input tokens",
+        "output tokens",
+        "cache writes",
+        "cache reads",
+        "web-search invocations",
+        "code-execution runtime",
+        "tool-definition overhead",
+        "fast-mode multiplier"
+      ],
+      "minutes": 0
+    },
+    {
+      "step_id": 3,
+      "surface_class": "REQUEST_RESULT",
+      "action": "Inspect official API usage example.",
+      "finding": "Official API primer shows response usage with exact input_tokens and output_tokens fields for a request.",
+      "source_ref": "https://platform.claude.com/docs/en/claude_api_primer",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [
+        "request input tokens",
+        "request output tokens"
+      ],
+      "minutes": 0
+    }
+  ],
+  "final_observation_ref": null,
+  "notes": [
+    "No authenticated Claude API execution was performed. Exact SV-RECON-001 API usage/cost remains unobserved; final disclosure-burden rating is not assigned."
+  ]
+}
