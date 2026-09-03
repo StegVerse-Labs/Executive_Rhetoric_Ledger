@@ -6,12 +6,20 @@ Record ID: `ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001`
 
 - lifecycle: `research_candidate`
 - assessability: `NOT_YET_ASSESSABLE`
+- durable owner: Issue `#120`
 - potential misuse risk: `RECORDED_FOR_INVESTIGATION`
 - actual misuse finding: `NOT_MADE`
 - legal violation finding: `NOT_MADE`
 - donor-intent violation finding: `NOT_MADE`
 - motive finding: `NOT_AUTHORIZED`
 - publication finding: `NOT_AUTHORIZED`
+
+## Installed execution surfaces
+
+- source queue: `config/maga-inc-midterm-funds-source-queue.v1.json`
+- initial FEC source posture: `assessments/source-posture/2026-09-03-maga-inc-midterm-funds-initial-fec-anchor.json`
+- scoped handoff: `docs/MAGA_INC_MIDTERM_FUNDS_MIRROR_HANDOFF.md`
+- durable coordination: Issue `#120`
 
 ## Trigger
 
@@ -22,6 +30,21 @@ Initial source lead supplied for intake:
 - MSN: https://www.msn.com/en-us/news/news/content/ar-AA2bvvkJ?ocid=sapphireappshare
 
 This source is a discovery lead only. It does not establish misuse, illegality, donor deception, conversion, self-dealing, or breach of any enforceable restriction.
+
+## Initial official anchor
+
+The Federal Election Commission identifies `MAGA INC.` as committee `C00892471`, active, monthly filing, a hybrid PAC with non-contribution account, unauthorized, registered November 7, 2024.
+
+The current FEC summary for January 1, 2025 through July 31, 2026 reports:
+
+- total receipts: `$400,684,172.17`
+- total disbursements: `$21,034,141.27`
+- independent expenditures: `$1,708,261.87`
+- other disbursements: `$19,325,879.40`
+- ending cash on hand: `$403,450,026.85`
+- debts/loans owed by committee: `$0.00`
+
+These are official summary-level values only. Newly filed data may lag, and summary data does not substitute for filing- and transaction-level reconstruction.
 
 ## Research question
 
@@ -85,4 +108,4 @@ The candidate weakens if primary records show:
 
 ## Next executable task
 
-Create a primary-source acquisition packet covering MAGA Inc. FEC filings and related committee relationships for the 2025-2026 cycle, then reconstruct cash-on-hand, receipts, transfers, independent expenditures, vendor payments, debts, and amendments before assessing misuse.
+Acquire and normalize the FEC Statement of Organization/amendments plus 2025-2026 monthly reports for `C00892471`, then build filing-level cash, receipt, disbursement, independent-expenditure, and amendment chronology before assessing any misuse proposition.
