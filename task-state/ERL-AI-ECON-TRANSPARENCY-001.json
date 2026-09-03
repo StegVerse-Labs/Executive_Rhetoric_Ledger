@@ -68,6 +68,19 @@
     "independent_review_package_ledger_schemas_run": {
       "id": 33772683540,
       "conclusion": "success"
+    },
+    "resident_review_dispatch_head": "39a74b7227ca8d9478324d85b3989a3cfe0d73c2",
+    "resident_review_dispatch_ai_transparency_run": {
+      "id": 33784383315,
+      "conclusion": "success"
+    },
+    "resident_review_dispatch_task_state_run": {
+      "id": 33784383397,
+      "conclusion": "success"
+    },
+    "resident_review_dispatch_ledger_schemas_run": {
+      "id": 33784383350,
+      "conclusion": "success"
     }
   },
   "prior_consumer_surface_reconciliation": {
@@ -172,7 +185,8 @@
           "id": 33784113903,
           "conclusion": "success"
         }
-      }
+      },
+      "source_control_validation_complete": true
     }
   }
 }
