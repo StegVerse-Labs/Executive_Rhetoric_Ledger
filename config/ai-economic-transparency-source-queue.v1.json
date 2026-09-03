@@ -11,37 +11,42 @@
     {
       "provider": "openai",
       "model_seed": "gpt-5.6-sol",
-      "state": "QUEUED",
+      "state": "PUBLIC_DOCS_ACQUIRED_PROTOCOL_IN_PROGRESS",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:openai-ui-candidate-observation-2026-09-03.json",
-      "next": "Reconstruct immediate request surface, official pricing, available usage/billing surfaces, material pricing rules, and elevated-usage sensitivity."
+      "next": "Obtain authentic request-level usage/cost evidence or exhaust accessible account/billing surfaces; then complete rating and scale scenarios.",
+      "research_log": "research-data/ai-economic-transparency/openai-research-log.2026-09-03.json"
     },
     {
       "provider": "anthropic",
       "model_seed": "claude-opus-5",
-      "state": "QUEUED",
+      "state": "PUBLIC_DOCS_ACQUIRED_PROTOCOL_IN_PROGRESS",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:anthropic-ui-candidate-observation-2026-09-03.json",
-      "next": "Reconstruct immediate request surface, official pricing, available usage/billing surfaces, material pricing rules, and elevated-usage sensitivity."
+      "next": "Obtain authentic request-level usage/cost evidence or exhaust accessible account/billing surfaces; then complete rating and scale scenarios.",
+      "research_log": "research-data/ai-economic-transparency/anthropic-research-log.2026-09-03.json"
     },
     {
       "provider": "deepseek",
       "model_seed": null,
-      "state": "QUEUED_MODEL_IDENTITY_UNRESOLVED",
+      "state": "PUBLIC_DOCS_ACQUIRED_MODEL_AND_EXECUTION_EVIDENCE_PENDING",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:deepseek-ui-candidate-observation-2026-09-03.json",
-      "next": "Resolve model identity where possible, then reconstruct pricing/usage surfaces and elevated-usage sensitivity."
+      "next": "Resolve exact consumer model identity and obtain authentic request-level usage/cost evidence before final scoring.",
+      "research_log": "research-data/ai-economic-transparency/deepseek-research-log.2026-09-03.json"
     },
     {
       "provider": "zai",
       "model_seed": "GLM-5.3-Flash",
-      "state": "QUEUED",
+      "state": "PUBLIC_PLATFORM_LOCATED_RATE_AND_USAGE_RECONSTRUCTION_INCOMPLETE",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:glm-hosted-ui-candidate-observation-2026-09-03.json",
-      "next": "Reconstruct immediate request surface, official pricing, available usage/billing surfaces, material pricing rules, and elevated-usage sensitivity."
+      "next": "Continue official billing/transparency discovery or exhaust accessible surfaces; do not infer a GLM request rate from usage-bundle marketing.",
+      "research_log": "research-data/ai-economic-transparency/zai-research-log.2026-09-03.json"
     },
     {
       "provider": "perplexity",
       "model_seed": null,
-      "state": "QUEUED_SUPPLEMENTAL",
+      "state": "PUBLIC_DOCS_DIRECT_COST_FIELD_DOCUMENTED_EXECUTION_UNOBSERVED",
       "upstream_evidence": "GCAT-BCAT-Engine/workflows:perplexity-ui-candidate-observation-2026-09-03.json",
-      "next": "Resolve model/version where possible and apply the same protocol as a supplemental comparator."
+      "next": "Obtain an authentic Agent API request receipt or exhaust accessible execution evidence before assigning a final DIRECT rating.",
+      "research_log": "research-data/ai-economic-transparency/perplexity-research-log.2026-09-03.json"
     }
   ]
 }
