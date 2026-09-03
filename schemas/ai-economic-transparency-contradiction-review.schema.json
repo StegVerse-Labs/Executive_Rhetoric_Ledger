@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stegverse.erl.ai-economic-transparency-contradiction-review.v1",
+  "title": "ERL AI Economic Transparency Contradiction Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "task_id",
+    "state",
+    "provider_reviews",
+    "promotion_authorized"
+  ],
+  "properties": {
+    "schema": {
+      "const": "stegverse.erl.ai-economic-transparency-contradiction-review/v1"
+    },
+    "task_id": {
+      "const": "ERL-AI-ECON-TRANSPARENCY-001"
+    },
+    "state": {
+      "enum": [
+        "PENDING",
+        "IN_PROGRESS",
+        "COMPLETE"
+      ]
+    },
+    "provider_reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "provider",
+          "observation_ref",
+          "contradictions",
+          "result"
+        ],
+        "properties": {
+          "provider": {
+            "type": "string"
+          },
+          "observation_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contradictions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "claim",
+                "counterevidence_ref",
+                "effect"
+              ],
+              "properties": {
+                "claim": {
+                  "type": "string"
+                },
+                "counterevidence_ref": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "effect": {
+                  "enum": [
+                    "NONE",
+                    "NARROWS",
+                    "REQUIRES_REVISION",
+                    "INVALIDATES"
+                  ]
+                }
+              }
+            }
+          },
+          "result": {
+            "enum": [
+              "PENDING",
+              "NO_MATERIAL_CONTRADICTION",
+              "REVISE",
+              "REJECT"
+            ]
+          }
+        }
+      }
+    },
+    "promotion_authorized": {
+      "const": false
+    }
+  }
+}
