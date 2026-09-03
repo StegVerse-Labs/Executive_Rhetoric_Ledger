@@ -195,11 +195,11 @@ Publication remains separately gated.
 - research objective: ESTABLISHED
 - bounded handoff: COMPLETE
 - durable owner: Issue #93
-- methodology: PENDING INSTALLATION
-- schema: PENDING INSTALLATION
-- research queue: PENDING INSTALLATION
-- validator: PENDING
-- fixtures: PENDING
+- methodology: INSTALLED
+- schema: INSTALLED
+- research queue: INSTALLED
+- validator: INSTALLED
+- fixtures: INSTALLED
 - provider protocol execution: NOT STARTED
 - scale-sensitivity calculations: NOT STARTED
 - contradiction review: PENDING
@@ -211,13 +211,6 @@ Publication remains separately gated.
 
 Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
-- `research-candidates/2026-09-03-ai-economic-transparency-elevated-usage.md`
-- `task-state/ERL-AI-ECON-TRANSPARENCY-001.json`
-- `standards/ai-economic-transparency.v1.md`
-- `schemas/ai-economic-transparency-observation.schema.json`
-- `config/ai-economic-transparency-source-queue.v1.json`
-- `scripts/validate_ai_economic_transparency.py`
-- `tests/test_ai_economic_transparency.py`
 - provider research logs under `research-data/ai-economic-transparency/`
 - workload/sensitivity calculation module
 - contradiction-review record
@@ -247,9 +240,9 @@ Initial activation denominator: 10 capability groups.
 9. contradiction/independent review
 10. activation receipt
 
-Current completion: 1/10 = 10%.
+Current completion: 6/10 = 60%.
 
-Developed files: 1.
+Developed files: 12.
 Scaffolding/stubs counted as complete: 0.
 
 Archive readiness: this handoff durably preserves the research goal, independence rule, two-axis methodology, elevated-usage scope, evidence boundaries, activation criteria, and remaining implementation. No chat-only definition is required to continue.
