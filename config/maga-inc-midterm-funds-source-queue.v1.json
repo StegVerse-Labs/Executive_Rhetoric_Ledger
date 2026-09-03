@@ -1,0 +1,90 @@
+{
+  "schema": "stegverse.erl.maga_inc_midterm_funds_source_queue.v1",
+  "record_id": "ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001",
+  "status": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+  "durable_owner": "issue:120",
+  "initiating_leads": [
+    {
+      "id": "LEAD-001",
+      "source_class": "media_discovery_lead",
+      "url": "https://www.msn.com/en-us/news/news/content/ar-AA2bvvkJ?ocid=sapphireappshare",
+      "custody_state": "URL_ONLY",
+      "use_ceiling": "discovery_only",
+      "note": "User-supplied initiating report. It does not establish misuse, illegality, donor deception, conversion, or self-dealing."
+    },
+    {
+      "id": "FEC-ANCHOR-001",
+      "source_class": "primary_official",
+      "url": "https://www.fec.gov/data/committee/C00892471/",
+      "custody_state": "OFFICIAL_URL_VERIFIED",
+      "use_ceiling": "committee_identity_and_current_summary_anchor",
+      "note": "Official FEC committee page identifies MAGA INC. as C00892471 and provides current 2025-2026 summary data. Transaction-level and filing-level reconstruction remains required."
+    }
+  ],
+  "acquisition_targets": [
+    {
+      "id": "SRC-FEC-ORG-001",
+      "class": "primary_official",
+      "target": "FEC Statement of Organization, amendments, committee type/status history, treasurer/custodian, connected/affiliated organization declarations, and hybrid-PAC account structure for C00892471",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-FEC-REPORTS-001",
+      "class": "primary_official",
+      "target": "All 2025-2026 regular reports and amendments for C00892471 with coverage periods, cash-on-hand, receipts, disbursements, debts/obligations, refunds, and other receipts/disbursements",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-FEC-IE-001",
+      "class": "primary_official",
+      "target": "All independent-expenditure filings and transaction records for C00892471, including supported/opposed candidate, race, dissemination date, amount, payee, and purpose",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-FEC-DISB-001",
+      "class": "primary_official",
+      "target": "Itemized disbursements and other-disbursement schedules sufficient to identify recipients, purposes, related-party/vendor relationships, and amendments",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-FEC-RECEIPTS-001",
+      "class": "primary_official",
+      "target": "Itemized receipts and other-receipt schedules, including transfers or receipts from related political entities and amendment history",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-AFFILIATE-001",
+      "class": "primary_official",
+      "target": "Committee relationship graph for MAGA Inc. and materially related Trump-aligned committees, including FEC registrations, transfers, shared vendors, and disclosed affiliations",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-SOLICIT-001",
+      "class": "representation_evidence",
+      "target": "Donor-facing fundraising solicitations and represented purposes for funds received during the 2025-2026 cycle, preserved with date/source provenance",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-LAW-001",
+      "class": "authority_primary",
+      "target": "Applicable FEC statutes, regulations, advisory opinions, enforcement precedents, and guidance governing hybrid PAC funds, independent expenditures, coordination, reporting/disclosure, personal use, and related-party payments",
+      "state": "PENDING"
+    },
+    {
+      "id": "SRC-COMMITTEE-STATEMENT-001",
+      "class": "primary_statement",
+      "target": "Primary statements from MAGA Inc. representatives describing intended 2026 deployment, retained-cash strategy, and relationship between fundraising representations and actual expenditures",
+      "state": "PENDING"
+    }
+  ],
+  "invariants": {
+    "large_cash_balance_is_not_misuse": true,
+    "delayed_spending_is_not_misuse": true,
+    "donor_frustration_is_not_donor_deception": true,
+    "political_strategy_is_not_personal_use": true,
+    "media_reporting_is_not_transaction_level_proof": true,
+    "candidate_layer_finding_authorized": false,
+    "candidate_layer_publication_authorized": false
+  },
+  "terminal_condition": "Primary-source transaction, representation, authority, contradiction, and independent-review evidence supports an explicit governed promotion, supersession, merge, or closure decision."
+}
