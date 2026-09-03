@@ -1,0 +1,26 @@
+{
+  "schema": "stegverse.erl.task-state/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "state": "RESEARCH_ACTIVE_IMPLEMENTATION_READY_PROTOCOL_EXECUTION_PENDING",
+  "owner": "issue:93",
+  "canonical_handoff": "docs/AI_ECONOMIC_TRANSPARENCY_MIRROR_HANDOFF.md",
+  "candidate_path": "research-candidates/2026-09-03-ai-economic-transparency-elevated-usage.md",
+  "research_axes": [
+    "ACTUAL_COST_DISCLOSURE_BURDEN",
+    "COST_SCALE_SENSITIVITY"
+  ],
+  "source_experiment_relationship": {
+    "repository": "GCAT-BCAT-Engine/workflows",
+    "experiment": "SV-COST-ELEVEN-LANE-RESULTS-001",
+    "companion_objective": "SV-COST-TRANSPARENCY-001",
+    "evidence_inputs_allowed": true,
+    "conclusions_inherited": false
+  },
+  "activation_authorized": false,
+  "publication_authorized": false,
+  "next_executable_task": "Execute the independent provider disclosure protocol for OpenAI, Anthropic, DeepSeek, Z.ai/GLM Hosted, and supplemental Perplexity; preserve provider research logs and calculate elevated-usage sensitivity only from exact or bounded evidence.",
+  "implementation_completion_percent": 60,
+  "validator_state": "INSTALLED",
+  "fixture_state": "INSTALLED",
+  "activation_registry_group": "ERL-RC-AI-ECON-TRANSPARENCY-2026"
+}

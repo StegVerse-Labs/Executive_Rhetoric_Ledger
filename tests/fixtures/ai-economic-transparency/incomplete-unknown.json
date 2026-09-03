@@ -1,0 +1,43 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-observation/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "provider": "fixture-incomplete",
+  "model": null,
+  "protocol_complete": false,
+  "advertised_rate_present": null,
+  "advertised_rate_surface": null,
+  "actual_request_cost_directly_exposed": false,
+  "request_usage_directly_exposed": false,
+  "all_material_cost_components_disclosed": null,
+  "research_steps_required": 1,
+  "research_minutes": null,
+  "provider_surfaces_consulted": [
+    "request"
+  ],
+  "account_or_privilege_required": false,
+  "support_required": false,
+  "external_research_required": false,
+  "reconstructable_actual_cost": false,
+  "literal_request_cost_usd": null,
+  "unresolved_cost_components": [
+    "literal request-attributable cost"
+  ],
+  "disclosure_burden_rating": null,
+  "workload_basis": "equivalent_request",
+  "scale_scenarios": [
+    {
+      "equivalent_requests": 1000,
+      "state": "UNBOUNDED_UNKNOWN",
+      "known_total_cost_usd": null,
+      "lower_bound_usd": null,
+      "upper_bound_usd": null
+    }
+  ],
+  "scale_sensitivity_state": "UNBOUNDED_UNKNOWN",
+  "evidence_refs": [
+    "fixture"
+  ],
+  "contradiction_refs": [],
+  "independent_review_state": "PENDING",
+  "activation_authorized": false
+}

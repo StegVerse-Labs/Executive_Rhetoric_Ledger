@@ -633,3 +633,40 @@ Governing distinction: readiness/preparation language must not be promoted into 
 Next executable boundary: custody exact U.S./NATO primary statements, reconstruct the dated threat-assessment chronology, admit linked incidents proposition-by-proposition, map Article 4/5 authority and response thresholds, and perform contradiction/independent review.
 
 No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this research-candidate state.
+
+
+## Adjacent active execution lane — AI economic transparency / elevated-usage cost sensitivity — ACTIVE
+
+Goal ID: `ERL-AI-ECON-TRANSPARENCY-001`
+
+Canonical owner: Issue `#93`.
+
+Scoped handoff:
+`docs/AI_ECONOMIC_TRANSPARENCY_MIRROR_HANDOFF.md`
+
+Research candidate:
+`research-candidates/2026-09-03-ai-economic-transparency-elevated-usage.md`
+
+Research axes:
+- `ACTUAL_COST_DISCLOSURE_BURDEN`
+- `COST_SCALE_SENSITIVITY`
+
+The lane independently evaluates how difficult it is to discover or exactly reconstruct literal request-attributable AI inference cost and how unresolved cost variance compounds at elevated usage. Its primary decision contexts are enterprise, agentic, batch, automated, public-sector procurement, and other materially scaled workloads rather than casual low-volume use.
+
+`GCAT-BCAT-Engine/workflows` SV-COST artifacts are admissible upstream evidence inputs, but ERL does not inherit SV-COST conclusions. Rate cards are not treated as literal request-cost evidence unless the actual metered quantities and all material billing rules make the request cost exactly reconstructable.
+
+Current implementation:
+- bounded handoff: installed
+- research candidate: installed and registered
+- methodology: installed
+- observation schema: installed
+- provider source/research queue: installed
+- deterministic validator/tests/fixtures: installed
+- dedicated hosted validation workflow: installed
+- provider disclosure protocols: pending execution
+- elevated-usage empirical sensitivity calculations: pending
+- contradiction review: pending
+- independent review: pending
+- activation/publication: not authorized
+
+No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publication propagation is authorized from this research-candidate state.

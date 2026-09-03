@@ -1,0 +1,47 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-source-queue/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "policy": {
+    "independent_reconstruction_required": true,
+    "inherit_upstream_conclusions": false,
+    "final_score_requires_protocol_complete": true,
+    "unknown_cost_must_remain_unknown": true
+  },
+  "providers": [
+    {
+      "provider": "openai",
+      "model_seed": "gpt-5.6-sol",
+      "state": "QUEUED",
+      "upstream_evidence": "GCAT-BCAT-Engine/workflows:openai-ui-candidate-observation-2026-09-03.json",
+      "next": "Reconstruct immediate request surface, official pricing, available usage/billing surfaces, material pricing rules, and elevated-usage sensitivity."
+    },
+    {
+      "provider": "anthropic",
+      "model_seed": "claude-opus-5",
+      "state": "QUEUED",
+      "upstream_evidence": "GCAT-BCAT-Engine/workflows:anthropic-ui-candidate-observation-2026-09-03.json",
+      "next": "Reconstruct immediate request surface, official pricing, available usage/billing surfaces, material pricing rules, and elevated-usage sensitivity."
+    },
+    {
+      "provider": "deepseek",
+      "model_seed": null,
+      "state": "QUEUED_MODEL_IDENTITY_UNRESOLVED",
+      "upstream_evidence": "GCAT-BCAT-Engine/workflows:deepseek-ui-candidate-observation-2026-09-03.json",
+      "next": "Resolve model identity where possible, then reconstruct pricing/usage surfaces and elevated-usage sensitivity."
+    },
+    {
+      "provider": "zai",
+      "model_seed": "GLM-5.3-Flash",
+      "state": "QUEUED",
+      "upstream_evidence": "GCAT-BCAT-Engine/workflows:glm-hosted-ui-candidate-observation-2026-09-03.json",
+      "next": "Reconstruct immediate request surface, official pricing, available usage/billing surfaces, material pricing rules, and elevated-usage sensitivity."
+    },
+    {
+      "provider": "perplexity",
+      "model_seed": null,
+      "state": "QUEUED_SUPPLEMENTAL",
+      "upstream_evidence": "GCAT-BCAT-Engine/workflows:perplexity-ui-candidate-observation-2026-09-03.json",
+      "next": "Resolve model/version where possible and apply the same protocol as a supplemental comparator."
+    }
+  ]
+}
