@@ -18,7 +18,7 @@
   },
   "activation_authorized": false,
   "publication_authorized": false,
-  "next_executable_task": "Independent reviewer executes Issue #104. Distinct API/enterprise protocols remain evidence-dependent on authentic request receipts or governed exhausted-surface determinations; no consumer recapture is required.",
+  "next_executable_task": "Canonical resident worker `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` executes the fixed independent-review package from locally materialized ERL source and emits its bounded review receipt. Do not infer review completion from source merge, CI, handoff readiness, or heartbeat progression. No user action or consumer recapture is required.",
   "implementation_completion_percent": 80,
   "validator_state": "INSTALLED",
   "fixture_state": "INSTALLED",
@@ -93,7 +93,7 @@
   "activation_groups_total": 10,
   "independent_review_issue": 104,
   "independent_review_package": "assessments/reviews/ai-economic-transparency-consumer-surface-independent-review-package.2026-09-03.json",
-  "independent_review_state": "READY_FOR_INDEPENDENT_REVIEW",
+  "independent_review_state": "MACHINE_OWNED_PENDING_RUNTIME_RECEIPT",
   "candidate_results": "research-data/ai-economic-transparency/candidate-results.consumer-surfaces.2026-09-03.json",
   "api_enterprise_observations": {
     "openai": "research-data/ai-economic-transparency/openai-api-enterprise-observation.2026-09-03.json",
@@ -102,5 +102,22 @@
     "zai": "research-data/ai-economic-transparency/zai-api-enterprise-observation.2026-09-03.json",
     "perplexity": "research-data/ai-economic-transparency/perplexity-api-enterprise-observation.2026-09-03.json"
   },
-  "api_enterprise_observation_state": "5_OF_5_MATERIALIZED_PROTOCOLS_INCOMPLETE_NO_FINAL_RATINGS"
+  "api_enterprise_observation_state": "5_OF_5_MATERIALIZED_PROTOCOLS_INCOMPLETE_NO_FINAL_RATINGS",
+  "independent_review_execution_owner": {
+    "repository": "StegVerse-Labs/.github",
+    "implementation_issue": 927,
+    "implementation_pr": 929,
+    "released_commit": "66b5d942f7ba7f1e9c4fe3b6a3f4616b15c72ee5",
+    "task_id": "SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001",
+    "worker": "workers/erl_ai_economic_transparency_review_worker.py",
+    "handoff": "handoffs/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json",
+    "registry": "control/worker-registry.d/erl-ai-economic-transparency-review-001.json",
+    "runtime_receipt": "receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json",
+    "runtime_receipt_observed": false,
+    "github_token_runtime_authority": "NONE",
+    "research_promotion_authority": false,
+    "activation_authority": false,
+    "publication_authority": false,
+    "repository_writeback_authority": false
+  }
 }

@@ -430,3 +430,38 @@ Current boundaries:
 All five API/enterprise protocols therefore remain `protocol_complete=false` with no final disclosure-burden rating. Their scale state remains `UNBOUNDED_UNKNOWN` until authentic exact/bounded request evidence exists.
 
 No consumer recapture was performed or reopened. API/enterprise observations remain separate from finalized consumer-surface findings.
+
+
+## 2026-09-03 machine-owned independent reviewer binding
+
+Issue: #110
+
+A separate resident reviewer executor is now released in the canonical organization worker plane:
+
+- implementation issue: `StegVerse-Labs/.github#927`
+- implementation PR: `StegVerse-Labs/.github#929`
+- released commit: `66b5d942f7ba7f1e9c4fe3b6a3f4616b15c72ee5`
+- worker task: `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001`
+- worker: `StegVerse-Labs/.github/workers/erl_ai_economic_transparency_review_worker.py`
+- handoff: `StegVerse-Labs/.github/handoffs/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
+- registry: `StegVerse-Labs/.github/control/worker-registry.d/erl-ai-economic-transparency-review-001.json`
+- adapter: `StegVerse-Labs/.github/control/process-worker-adapters.d/erl-ai-economic-transparency-review-001.json`
+- runtime authority: recommendation receipt only
+- research-promotion authority: false
+- activation authority: false
+- publication authority: false
+- repository-writeback authority: false
+- GitHub token runtime authority: NONE
+
+The worker independently reconstructs the fixed OpenAI/Anthropic/DeepSeek consumer-surface review package from already-materialized local ERL source and emits a bounded `APPROVE` or `REVISE` recommendation receipt.
+
+This transfer changes the review gate from **UNOWNED/WAITING_FOR_REVIEWER** to **MACHINE_OWNED_PENDING_RUNTIME_RECEIPT**.
+
+It does **not** satisfy independent review yet. Source merge, registry presence, worker availability, handoff readiness, CI, or heartbeat progression do not count as a completed review.
+
+The independent-review gate is satisfied only when an authentic fenced resident execution emits:
+`receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
+
+and that receipt is admitted into ERL's review record without widening the worker's authority.
+
+No user/device action is required.
