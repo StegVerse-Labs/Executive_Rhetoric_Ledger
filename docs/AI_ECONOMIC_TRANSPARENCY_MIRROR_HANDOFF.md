@@ -514,3 +514,40 @@ Required runtime evidence remains:
 `receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
 
 No review completion, activation, publication, or provider-wide finding is inferred from the bundled source package.
+
+
+## 2026-09-03 resident independent-review dispatch binding
+
+Issue: #116
+
+The canonical organization-plane reviewer is now wired into the existing resident request-dispatch path:
+
+- organization implementation issue: `StegVerse-Labs/.github#949`
+- implementation PR: `StegVerse-Labs/.github#950`
+- merge: `c9033ce3cd336646d7f7c27c80dfd580fd976153`
+- request: `control/resident-execution-request.d/erl-ai-economic-transparency-review-001.json`
+- consumer: `scripts/consume_erl_ai_economic_transparency_review_request.py`
+- generic dispatcher selector: `erl_ai_economic_transparency_review`
+- resident review package: `review-packages/erl-ai-economic-transparency-001/manifest.json`
+
+The existing local source-refresh path now copies `review-packages/` and the request consumer into resident runtime. The existing rootless source-refresh watcher also observes the review-package path. This adds no second scheduler, heartbeat, claim source, fence source, credential path, or authority plane.
+
+The dedicated request is intent-only and asks the already-admitted WorkerCoordinator to attempt:
+`SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001`
+through the existing targeted task execution path.
+
+Observed source/control validations for PR #950:
+- Heartbeat Worker Project validation run `33784116021`: SUCCESS
+- Cross-Framework Current-Basis Resident Request validation run `33784113544`: SUCCESS
+- Workspace DEVICE_KV validation run `33784113905`: SUCCESS
+- organization control-plane validation run `33784113903`: SUCCESS
+
+Those validations are non-authorizing and are not runtime evidence.
+
+Current review state:
+`MACHINE_OWNED_SELF_CONTAINED_RESIDENT_DISPATCH_READY_PENDING_RUNTIME_RECEIPT`
+
+The authentic review receipt remains unobserved:
+`receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
+
+Therefore independent review, activation, and publication remain unclaimed.
