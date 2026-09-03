@@ -490,3 +490,27 @@ Current organization-plane source/control state:
 - repository-writeback authority: false
 
 No runtime conclusion is inferred from these repository mutations. Capability group 9 remains pending an authentic fenced resident review receipt.
+
+
+## 2026-09-03 self-contained resident review package binding
+
+Issue: #114
+
+The canonical resident independent-review worker has been advanced beyond the prior cross-repository materialization dependency.
+
+Organization-plane source:
+- PR: `StegVerse-Labs/.github#947`
+- merge: `ed63987fb10cf034de0ee140234147a73f744cdf`
+- bundled review manifest: `review-packages/erl-ai-economic-transparency-001/manifest.json`
+
+The package contains byte-preserving copies of the fixed ERL review inputs and binds each file by source Git blob identity and SHA-256. The worker verifies the SHA-256 manifest before accepting the bundled package.
+
+The worker still permits an independently materialized canonical ERL source tree as fallback, but the normal path no longer requires local cross-repository materialization or network checkout.
+
+The remaining independent-review blocker is now strictly:
+`RESIDENT_EXECUTION_RECEIPT_PENDING`
+
+Required runtime evidence remains:
+`receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json`
+
+No review completion, activation, publication, or provider-wide finding is inferred from the bundled source package.
