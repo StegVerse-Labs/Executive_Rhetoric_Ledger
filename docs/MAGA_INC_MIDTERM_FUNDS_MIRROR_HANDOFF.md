@@ -16,7 +16,8 @@ Determine whether primary records support any misuse proposition concerning fund
 - committee official anchor: `MAGA INC.` / FEC `C00892471`
 - initiating media lead: discovery only
 - FEC committee identity/current summary: verified
-- filing-level reconstruction: pending
+- research-candidate activation registry: registered / hosted validation success
+- filing-level reconstruction: partial
 - transaction-level reconstruction: pending
 - solicitation/represented-purpose reconstruction: pending
 - related-party/vendor review: pending
@@ -34,6 +35,8 @@ Determine whether primary records support any misuse proposition concerning fund
 - `research-candidates/2026-09-03-maga-inc-midterm-funds-potential-misuse.md`
 - `config/maga-inc-midterm-funds-source-queue.v1.json`
 - `assessments/source-posture/2026-09-03-maga-inc-midterm-funds-initial-fec-anchor.json`
+- `assessments/chronology/2026-09-03-maga-inc-fec-filing-chronology.partial.json`
+- `coordination/research-candidate-activation-registry.v1.json`
 - Issue `#120`
 
 ## Initial official FEC anchor
@@ -51,6 +54,22 @@ Current summary coverage: 2025-01-01 through 2026-07-31.
 
 These are summary-level observations only. FEC warns newly filed summary data may lag. No transaction purpose, beneficial-recipient, donor-intent, coordination, personal-use, or misuse conclusion is authorized from the summary.
 
+## Filing chronology advancement
+
+Partial official filing chronology now preserves three FEC filing anchors:
+
+1. Image `202507319789366210` — new FEC Form 3X July 31 Mid-Year report; coverage 2025-01-01 through 2025-06-30.
+2. Image `202601029793901842` — amended FEC Form 3X 30-Day Post-Special Election report for Tennessee; coverage 2025-07-01 through 2025-12-22.
+3. Image `202602209837825060` — FEC Form 3X monthly report covering 2026-01-01 through 2026-01-31; summary page reports opening 2026 cash of `$304,395,525.76`, January receipts of `$6,576,796.16`, January disbursements of `$78,060.75`, and closing cash of `$310,894,261.17`.
+
+Native byte hashes remain pending. Amendment existence is not treated as evidence of wrongdoing without content-level reconciliation.
+
+## Activation validation evidence
+
+Research-candidate activation registration commit: `46d5339bc57f16493eaa3f50f5d31883398887d9`.
+
+Hosted workflow `Validate research candidate activation`, run `33819845470`, completed successfully on `main` for that commit. This proves the candidate is represented in the machine-enforced activation registry with durable ownership and a next executable task; it does not prove any substantive misuse proposition.
+
 ## Governing invariants
 
 - `large_cash_balance != misuse`
@@ -60,12 +79,13 @@ These are summary-level observations only. FEC warns newly filed summary data ma
 - `stated_political_objective != legally_restricted_use`
 - `secondary_reporting != transaction_level_proof`
 - `candidate_layer_exists != finding`
+- `amended_filing != wrongdoing`
 
 ## Next executable boundary
 
 1. Acquire FEC Statement of Organization and amendments for `C00892471`.
-2. Acquire all 2025-2026 monthly reports and amendments.
-3. Reconstruct monthly cash, receipts, disbursements, independent expenditures, other disbursements, debts, refunds, and amendments.
+2. Complete enumeration of all 2025-2026 regular reports and amendments.
+3. Reconstruct monthly cash, receipts, disbursements, independent expenditures, other disbursements, debts, refunds, and amendment supersession.
 4. Build committee/affiliate/shared-vendor relationship graph.
 5. Preserve donor-facing solicitations and represented purposes with provenance.
 6. Map controlling FEC legal restrictions and relevant advisory/enforcement precedent.
