@@ -1,0 +1,13 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-research-log/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "provider": "TEMPLATE",
+  "model": null,
+  "protocol_state": "NOT_STARTED",
+  "started_at": null,
+  "completed_at": null,
+  "elapsed_research_minutes": null,
+  "steps": [],
+  "final_observation_ref": null,
+  "notes": []
+}

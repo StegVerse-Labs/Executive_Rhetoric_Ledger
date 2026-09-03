@@ -200,8 +200,8 @@ Publication remains separately gated.
 - research queue: INSTALLED
 - validator: INSTALLED
 - fixtures: INSTALLED
-- provider protocol execution: NOT STARTED
-- scale-sensitivity calculations: NOT STARTED
+- provider protocol execution: IN PROGRESS — public-source logs installed for all five initial providers
+- scale-sensitivity calculation engine: INSTALLED; empirical provider calculations pending exact/bounded request-cost evidence
 - contradiction review: PENDING
 - independent review: PENDING
 - activation: NOT CLAIMED
@@ -211,8 +211,6 @@ Publication remains separately gated.
 
 Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
-- provider research logs under `research-data/ai-economic-transparency/`
-- workload/sensitivity calculation module
 - contradiction-review record
 - independent-review record
 - companion paper manuscript
@@ -242,7 +240,33 @@ Initial activation denominator: 10 capability groups.
 
 Current completion: 6/10 = 60%.
 
-Developed files: 12.
+Developed files: 21.
 Scaffolding/stubs counted as complete: 0.
 
 Archive readiness: this handoff durably preserves the research goal, independence rule, two-axis methodology, elevated-usage scope, evidence boundaries, activation criteria, and remaining implementation. No chat-only definition is required to continue.
+
+
+## 2026-09-03 machine-execution advancement — public pricing/usage discovery and scale engine
+
+Issue: #95
+
+Installed:
+- `scripts/calculate_ai_cost_scale_sensitivity.py`
+- `tests/test_ai_cost_scale_sensitivity.py`
+- `schemas/ai-economic-transparency-research-log.schema.json`
+- `research-data/ai-economic-transparency/provider-research-log.template.json`
+- provider research logs for OpenAI, Anthropic, DeepSeek, Z.ai, and Perplexity
+- dedicated validation workflow coverage for the new calculator/log surfaces
+
+The scale engine supports exact request cost, bounded request-cost intervals, and explicit `UNBOUNDED_UNKNOWN`. It projects supported evidence to 1K, 100K, and 1M equivalent requests without converting unknown cost into a numeric estimate.
+
+Independent public-source discovery has begun for all five initial providers. No final disclosure-burden score has been assigned because no provider protocol has yet satisfied its complete evidence boundary.
+
+Research-progress posture:
+- OpenAI: official API documentation exposes per-response token usage; public model documentation exposes multiple cost modifiers. Authentic SV-RECON request usage remains unobserved.
+- Anthropic: official API documentation exposes per-response token usage and multiple token/tool/cache pricing components. Authentic SV-RECON request usage remains unobserved.
+- DeepSeek: official API documentation exposes returned token usage and peak/off-peak plus cache-hit/cache-miss rates. The preserved consumer observation still lacks exact model identity.
+- Z.ai: public API platform surface exposes usage-bundle/billing entry points, but the inspected public surface has not yet yielded a request-level GLM-5.3-Flash pricing/usage basis sufficient for exact reconstruction.
+- Perplexity: official Agent API documentation defines a per-response cost object including total cost and component costs. Authentic SV-RECON Agent API execution remains unobserved.
+
+These are research-progress observations, not provider rankings or final transparency findings.

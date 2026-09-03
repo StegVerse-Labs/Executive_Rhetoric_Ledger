@@ -1,0 +1,38 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-research-log/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "provider": "zai",
+  "model": "GLM-5.3-Flash",
+  "protocol_state": "IN_PROGRESS",
+  "started_at": "2026-09-03",
+  "completed_at": null,
+  "elapsed_research_minutes": null,
+  "steps": [
+    {
+      "step_id": 1,
+      "surface_class": "REQUEST_RESULT",
+      "action": "Preserve prior observed Z.ai hosted request/result surface from SV-COST as upstream evidence input.",
+      "finding": "Hosted surface identified GLM-5.3-Flash but exposed no numeric request-level usage or cost in the preserved observation.",
+      "source_ref": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/eleven-lane-results/evidence/glm-hosted-ui-candidate-observation-2026-09-03.json",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [],
+      "minutes": 0
+    },
+    {
+      "step_id": 2,
+      "surface_class": "PRICING_DOC",
+      "action": "Inspect public Z.ai API platform surface.",
+      "finding": "Public platform surface advertises usage bundles and links billing/transparency resources, but the inspected public surface did not expose a request-level GLM-5.3-Flash rate card sufficient for exact reconstruction.",
+      "source_ref": "https://z.ai/model-api",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [
+        "usage bundles"
+      ],
+      "minutes": 0
+    }
+  ],
+  "final_observation_ref": null,
+  "notes": [
+    "Public-source protocol remains incomplete. No authenticated billing/API surface was used; final disclosure-burden rating is not assigned."
+  ]
+}

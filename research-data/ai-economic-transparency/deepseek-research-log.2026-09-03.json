@@ -1,0 +1,53 @@
+{
+  "schema": "stegverse.erl.ai-economic-transparency-research-log/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "provider": "deepseek",
+  "model": null,
+  "protocol_state": "IN_PROGRESS",
+  "started_at": "2026-09-03",
+  "completed_at": null,
+  "elapsed_research_minutes": null,
+  "steps": [
+    {
+      "step_id": 1,
+      "surface_class": "REQUEST_RESULT",
+      "action": "Preserve prior observed DeepSeek consumer request/result surface from SV-COST as upstream evidence input.",
+      "finding": "Preserved consumer observation did not expose exact model identity or numeric request-level usage/cost.",
+      "source_ref": "GCAT-BCAT-Engine/workflows:experiments/sv-cost-program/eleven-lane-results/evidence/deepseek-ui-candidate-observation-2026-09-03.json",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [],
+      "minutes": 0
+    },
+    {
+      "step_id": 2,
+      "surface_class": "PRICING_DOC",
+      "action": "Inspect official DeepSeek API model pricing documentation.",
+      "finding": "Official pricing publishes model-specific input cache-hit/cache-miss and output rates, with peak/off-peak time rules. Fees are deducted from topped-up or granted balance.",
+      "source_ref": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [
+        "cache-hit input tokens",
+        "cache-miss input tokens",
+        "output tokens",
+        "peak/off-peak rate"
+      ],
+      "minutes": 0
+    },
+    {
+      "step_id": 3,
+      "surface_class": "REQUEST_RESULT",
+      "action": "Inspect official token-usage and chat-completion documentation.",
+      "finding": "Official documentation states actual token usage is returned by the API and streaming responses can expose usage in the final chunk.",
+      "source_ref": "https://api-docs.deepseek.com/quick_start/token_usage/",
+      "account_or_privilege_required": false,
+      "material_cost_components_found": [
+        "actual request token usage"
+      ],
+      "minutes": 0
+    }
+  ],
+  "final_observation_ref": null,
+  "notes": [
+    "The consumer observation's exact model remains unresolved. No authenticated API execution was performed; final disclosure-burden rating is not assigned."
+  ]
+}

@@ -11,6 +11,10 @@ on:
       - "config/ai-economic-transparency-source-queue.v1.json"
       - "scripts/validate_ai_economic_transparency.py"
       - "tests/test_ai_economic_transparency.py"
+      - "scripts/calculate_ai_cost_scale_sensitivity.py"
+      - "tests/test_ai_cost_scale_sensitivity.py"
+      - "schemas/ai-economic-transparency-research-log.schema.json"
+      - "research-data/ai-economic-transparency/**"
       - "tests/fixtures/ai-economic-transparency/**"
       - ".github/workflows/validate-ai-economic-transparency.yml"
   pull_request:
@@ -35,7 +39,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Run unit tests
-        run: python -m unittest tests/test_ai_economic_transparency.py
+        run: python -m unittest tests/test_ai_economic_transparency.py tests/test_ai_cost_scale_sensitivity.py
       - name: Validate fixtures
         run: |
           python scripts/validate_ai_economic_transparency.py tests/fixtures/ai-economic-transparency/direct.json
