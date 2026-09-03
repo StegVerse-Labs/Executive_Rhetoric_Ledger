@@ -1,6 +1,6 @@
 # Literal AI Cost Transparency at Elevated Usage
 
-Status: research manuscript — methods complete, empirical results pending
+Status: research manuscript — methods complete, candidate consumer-surface results recorded, independent review pending
 Research program: ERL-AI-ECON-TRANSPARENCY-001
 Repository: StegVerse-Labs/Executive_Rhetoric_Ledger
 
@@ -115,17 +115,34 @@ Comparative results will distinguish:
 
 ## Results
 
-Pending provider protocol completion.
+Candidate results are available for the exhausted consumer/non-account-attributed surfaces of OpenAI, Anthropic, and DeepSeek. These results are **surface-specific and pending independent review**.
 
-No ranking is authorized at this stage.
+| Provider | Surface | Disclosure burden | Literal request cost | Elevated-usage state |
+|---|---|---:|---|---|
+| OpenAI | consumer / non-account-attributed | 5 — NON_RECONSTRUCTABLE | unresolved | UNBOUNDED_UNKNOWN at 1K / 100K / 1M equivalent requests |
+| Anthropic | consumer / non-account-attributed | 5 — NON_RECONSTRUCTABLE | unresolved | UNBOUNDED_UNKNOWN at 1K / 100K / 1M equivalent requests |
+| DeepSeek | consumer / non-account-attributed | 5 — NON_RECONSTRUCTABLE | unresolved | UNBOUNDED_UNKNOWN at 1K / 100K / 1M equivalent requests |
+
+The rating means only that the governed discovery protocol for the observed consumer surface was exhausted without exposing enough request-attributable evidence to reconstruct literal cost. It does not mean the provider's API/enterprise surface is non-reconstructable, and it is not a provider-wide rating.
+
+The unresolved cost is deliberately not converted into an estimate. Consequently, scale sensitivity remains `UNBOUNDED_UNKNOWN`: the research can establish that cost uncertainty persists at larger workloads, but cannot manufacture a dollar consequence from missing request-level evidence.
+
+Machine-readable candidate results:
+`research-data/ai-economic-transparency/candidate-results.consumer-surfaces.2026-09-03.json`
+
+No provider ranking is authorized at this stage.
 
 ## Contradiction review
 
-Pending.
+The finalized consumer-surface findings for OpenAI, Anthropic, and DeepSeek received a bounded contradiction review. Distinct API/enterprise documentation exposing usage or pricing was tested as counterevidence and did not contradict the consumer-surface findings because it concerns a different billing/research surface.
+
+Broader comparative contradiction review remains pending.
 
 ## Independent review
 
-Pending.
+Pending under Issue #104. A fixed independent-review package defines the scope, required evidence, review questions, prohibited promotions, and terminal review artifact.
+
+Until that review is complete, these results remain candidate findings and do not authorize activation or publication.
 
 ## Limitations
 
