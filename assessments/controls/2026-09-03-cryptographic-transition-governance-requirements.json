@@ -1,0 +1,108 @@
+{
+  "topic_id": "ERL-2026-09-03-QUANTUM-AI-CRYPTO-EXTRAPOLATION",
+  "record_type": "bounded_architectural_control_requirements",
+  "task_id": "QAC-007",
+  "status": "derived_candidate_requirements",
+  "derived_from": [
+    "assessments/evidence/2026-09-03-quantum-ai-cryptographic-primary-source-reconstruction.json",
+    "assessments/evidence/2026-09-03-rsa2048-quantum-resource-model-comparison.json"
+  ],
+  "scope": "StegVerse cryptographic transition governance. These are evidence-supported control requirements, not a finding that current RSA-2048/ECC traffic is already being operationally broken by quantum systems.",
+  "requirements": [
+    {
+      "requirement_id": "CTG-001",
+      "name": "algorithm_admissibility_registry",
+      "must": "Every cryptographic primitive used for key establishment, signatures, encryption, hashing, derivation, and attestation must resolve through a versioned admissibility record rather than an implicit implementation default.",
+      "minimum_fields": ["algorithm", "parameter_set", "purpose", "security_status", "admitted_from", "admitted_until_or_review_trigger", "evidence_basis", "compatibility_scope"]
+    },
+    {
+      "requirement_id": "CTG-002",
+      "name": "cryptographic_agility_without_semantic_drift",
+      "must": "A governed transition must permit replacement of a primitive without silently changing identity, authorization, receipt, custody, or evidentiary semantics.",
+      "reason": "Algorithm migration is expected; governance meaning must survive cryptographic implementation changes."
+    },
+    {
+      "requirement_id": "CTG-003",
+      "name": "dual_stack_coexistence",
+      "must": "Migration may support bounded classical/PQC coexistence when required for interoperability, but the active protection state must be explicit and reconstructable.",
+      "must_not": "A hybrid or compatibility mode must not be represented as fully PQC when a quantum-vulnerable dependency remains decisive for the protected property."
+    },
+    {
+      "requirement_id": "CTG-004",
+      "name": "downgrade_resistance",
+      "must": "Negotiation or fallback to a weaker cryptographic state must require an admissible governed transition and produce a durable reason/receipt.",
+      "must_not": "Peer preference, transient availability, legacy compatibility, or implementation convenience alone must not silently authorize downgrade."
+    },
+    {
+      "requirement_id": "CTG-005",
+      "name": "retirement_and_rejection",
+      "must": "Deprecated or disallowed algorithms and parameter sets must have deterministic retirement states and rejection behavior tied to policy version and effective time/event conditions.",
+      "must_preserve": ["historical verification path where safe", "receipt provenance", "migration reason", "prior policy version"]
+    },
+    {
+      "requirement_id": "CTG-006",
+      "name": "long_lived_data_exposure_classification",
+      "must": "Data and credentials must carry a confidentiality/authenticity lifetime classification sufficient to identify harvest-now-decrypt-later exposure and determine migration urgency.",
+      "reason": "The security consequence exists before a cryptographically relevant quantum computer is operational."
+    },
+    {
+      "requirement_id": "CTG-007",
+      "name": "evidence_bound_transition_trigger",
+      "must": "Cryptographic transition triggers must distinguish observed vulnerability, authoritative deprecation, credible risk forecast, compatibility requirement, and emergency compromise as different trigger classes.",
+      "must_not": "Speculation or headline-level extrapolation may raise review priority but must not be promoted into a compromise finding without supporting evidence."
+    },
+    {
+      "requirement_id": "CTG-008",
+      "name": "provenance_and_reconstruction",
+      "must": "For every protected object or session, the system must be able to reconstruct which cryptographic algorithms, parameter sets, policy versions, keys/credential authorities, and transition decisions governed it at the relevant time.",
+      "authority_boundary": "Reconstruction is evidentiary and does not itself grant execution, credential, transition, or publication authority."
+    },
+    {
+      "requirement_id": "CTG-009",
+      "name": "credential_authority_preservation",
+      "must": "Changing algorithms must not create a parallel credential authority path. Existing StegVerse authority rules remain controlling; cryptographic providers and implementations do not become credential authorities by supplying primitives."
+    },
+    {
+      "requirement_id": "CTG-010",
+      "name": "provider_and_runtime_independence",
+      "must": "Cryptographic policy must describe required properties and admitted implementations without binding system authority to a single external provider, hosted runtime, CI system, or second user-operated machine.",
+      "reason": "Crypto agility fails if migration depends on an unavailable provider or non-sovereign execution surface."
+    },
+    {
+      "requirement_id": "CTG-011",
+      "name": "failure_safe_transition",
+      "must": "When no admissible cryptographic configuration can satisfy the requested protected property, the transition must fail closed for that property and emit a bounded failure state rather than silently weakening protection."
+    },
+    {
+      "requirement_id": "CTG-012",
+      "name": "independent_claim_state",
+      "must": "Security posture must separately represent vulnerability-known, deprecated, migration-required, compromise-suspected, compromise-evidenced, and compromise-confirmed states.",
+      "reason": "This prevents a legitimate migration requirement from being misreported as evidence that compromise has already occurred."
+    }
+  ],
+  "minimum_transition_receipt": [
+    "transition_id",
+    "object_or_scope",
+    "prior_crypto_state",
+    "new_crypto_state",
+    "policy_version",
+    "trigger_class",
+    "evidence_references",
+    "admissibility_decision",
+    "compatibility_effect",
+    "downgrade_flag",
+    "effective_time_or_event",
+    "reconstruction_reference"
+  ],
+  "non_authorized_findings": [
+    "RSA-2048 is presently operationally broken by quantum systems",
+    "ECC is presently operationally broken by quantum systems",
+    "Western captured traffic is presently being quantum-decrypted",
+    "Jiuzhang 4.0 directly satisfies an RSA-2048 Shor attack resource model"
+  ],
+  "integration_posture": {
+    "ERL_requirement_derivation": "complete",
+    "cross_repository_installation": "not_performed",
+    "reason": "This ERL task may derive requirements but must not mutate another repository's architecture without reading that target repository's current MIRROR_HANDOFF and collision boundaries first."
+  }
+}
