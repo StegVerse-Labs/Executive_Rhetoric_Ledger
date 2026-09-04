@@ -6,6 +6,7 @@
   "last_reviewed": "2026-09-03",
   "canonical_assessment": "assessments/rhetoric/2026-09-03-quantum-ai-cryptographic-extrapolation.md",
   "primary_source_reconstruction": "assessments/evidence/2026-09-03-quantum-ai-cryptographic-primary-source-reconstruction.json",
+  "rsa2048_resource_comparison": "assessments/evidence/2026-09-03-rsa2048-quantum-resource-model-comparison.json",
   "goal": "Reconstruct the evidentiary chain from reported Jiuzhang/DeepSeek technical developments to claims about present cryptographic compromise, preserving observation, inference, hypothesis, prediction, and engineering consequence as distinct governed states.",
   "promotion_boundary": "Do not promote Gaussian-boson-sampling advantage, general Chinese quantum capability, classified-capability speculation, or harvest-now/decrypt-later risk into a finding that RSA-2048/ECC is presently broken or that Western encrypted traffic is currently being quantum-decrypted without direct authoritative evidence.",
   "source_trigger": {
@@ -29,11 +30,11 @@
     {
       "task_id": "QAC-002",
       "priority": 1,
-      "state": "authoritative-current-state-bounded-technical-comparison-pending",
+      "state": "resource-model-reconstructed-operational-break-not-established",
       "object": "Evidence for cryptographically relevant quantum attack capability",
       "required_capture": ["algorithm used", "logical/physical qubit requirements", "fault-tolerance state", "key sizes actually attacked", "runtime/error assumptions"],
       "release_condition": "Any claim of current RSA-2048/ECC compromise is traceable to direct technical evidence rather than extrapolation from unrelated quantum advantage experiments.",
-      "progress_note": "NIST current public posture states cryptographically relevant quantum computers do not yet exist. No direct RSA-2048/ECC operational break evidence has been admitted. Technical resource-estimate comparison remains."
+      "progress_note": "Peer-reviewed 2021 RSA-2048 resource estimate and 2025 updated preprint estimate captured. Both require Shor-family error-corrected architectures under explicit assumptions. Jiuzhang optical modes/squeezed states are not interchangeable with physical/logical qubits, and no architecture mapping or operational RSA-2048/ECC break is established."
     },
     {
       "task_id": "QAC-003",
@@ -56,18 +57,20 @@
     {
       "task_id": "QAC-005",
       "priority": 1,
-      "state": "claim-decomposition-required",
+      "state": "exact-source-text-custody-required",
       "object": "LinkedIn article numerical and causal claim ledger",
       "required_capture": ["exact claim text", "source cited by article", "claim type", "comparison denominator", "supported inference boundary", "unsupported transition flags"],
-      "release_condition": "Every material numerical/security claim is classified as observed fact, sourced statement, inference, hypothesis, prediction, unsupported extrapolation, or engineering consequence."
+      "release_condition": "Every material numerical/security claim is classified as observed fact, sourced statement, inference, hypothesis, prediction, unsupported extrapolation, or engineering consequence.",
+      "progress_note": "Public fetch of the LinkedIn article is not currently reproducible through the available public retrieval surface. Exact article text must not be fabricated from prior summary. Claim decomposition remains gated on reproducible source text or equivalent custody."
     },
     {
       "task_id": "QAC-006",
       "priority": 2,
-      "state": "authoritative-evidence-needed",
+      "state": "unresolved-hypothesis-no-authoritative-public-evidence-admitted",
       "object": "Claims of classified Chinese operational quantum cryptanalytic capability",
       "required_capture": ["authoritative public evidence", "official attribution if any", "technical capability description", "independent corroboration", "confidence limits"],
-      "release_condition": "Classified-capability speculation is either supported by independently reproducible authoritative evidence or retained explicitly as unresolved hypothesis."
+      "release_condition": "Classified-capability speculation is either supported by independently reproducible authoritative evidence or retained explicitly as unresolved hypothesis.",
+      "progress_note": "No authoritative public evidence has been admitted that establishes a classified Chinese system presently breaking RSA-2048/ECC. NIST's current public posture remains that cryptographically relevant quantum computers do not yet exist."
     },
     {
       "task_id": "QAC-007",
@@ -78,7 +81,7 @@
       "release_condition": "ERL findings are translated into bounded architectural requirements without treating the source article’s strongest security claims as established fact."
     }
   ],
-  "next_unblocked_task": "QAC-005-claim-decomposition-and-QAC-002-technical-resource-comparison",
+  "next_unblocked_task": "QAC-007-derive-bounded-cryptographic-transition-governance-requirements",
   "duplicate_execution_rule": "Before acquiring or creating a record, search the ERL source-posture, evidence, intake, and rhetoric surfaces for an existing Jiuzhang, DeepSeek, post-quantum, RSA/ECC, or harvest-now/decrypt-later object. Reuse preserved custody where available.",
   "completion_condition": "The article’s technical and security propositions are independently reconstructable with explicit evidence-state transitions, and no operational cryptographic-compromise finding exceeds the strongest authoritative evidence.",
   "findings_state": {
@@ -94,9 +97,9 @@
     "motive_finding_authorized": false
   },
   "progress_summary": {
-    "tasks_primary_source_reconstructed": 3,
-    "tasks_partially_bounded": 1,
-    "tasks_remaining": 3,
-    "new_evidence_commit": "24e314f71fd4023b46a153f0c5d0648b59a68129"
+    "tasks_reconstructed_or_bounded": 5,
+    "tasks_exact_source_custody_blocked": 1,
+    "tasks_governance_integration_remaining": 1,
+    "latest_evidence_commit": "4a8eac664cfdaee2c332781f026e7fcd80cc544b"
   }
 }
