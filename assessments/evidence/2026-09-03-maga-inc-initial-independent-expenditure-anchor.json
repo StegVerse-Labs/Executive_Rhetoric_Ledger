@@ -3,27 +3,38 @@
   "record_id": "ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001",
   "committee_id": "C00892471",
   "state": "PARTIAL_PRIMARY_EVIDENCE",
-  "official_filing": {
-    "report_pdf": "https://docquery.fec.gov/pdf/089/202604209866614089/202604209866614089.pdf",
-    "filing_date": "2026-04-20",
-    "source_class": "FEC_FORM_3X_SCHEDULE_E",
-    "custody_state": "OFFICIAL_PDF_LOCATED_PARSED_TEXT_OBSERVED_NATIVE_HASH_PENDING"
-  },
-  "observations": [
+  "source_filings": [
     {
-      "payee": "ELECTORAL COMMUNICATIONS GROUP, LLC",
-      "payee_city": "TAMPA",
-      "payee_state": "FL",
-      "distribution_date": "2026-03-09",
-      "purpose": "TEXT MESSAGES",
-      "amount_usd": 8950.44,
-      "candidate": "FULLER, CLAY",
-      "office": "HOUSE",
-      "state": "GA",
-      "position": "SUPPORT",
-      "election_context": "2026 SPECIAL-GENERAL"
+      "report_pdf": "https://docquery.fec.gov/pdf/842/202601029793901842/202601029793901842.pdf",
+      "filing_date": "2026-01-02",
+      "source_class": "FEC_FORM_3X_SCHEDULE_E",
+      "custody_state": "OFFICIAL_PDF_LOCATED_PARSED_TEXT_OBSERVED_NATIVE_HASH_PENDING"
     },
     {
+      "report_pdf": "https://docquery.fec.gov/pdf/089/202604209866614089/202604209866614089.pdf",
+      "filing_date": "2026-04-20",
+      "source_class": "FEC_FORM_3X_SCHEDULE_E",
+      "custody_state": "OFFICIAL_PDF_LOCATED_PARSED_TEXT_OBSERVED_NATIVE_HASH_PENDING"
+    }
+  ],
+  "observations": [
+    {
+      "transaction_id": "SE.4694",
+      "payee": "DESIGNATED MARKET MEDIA",
+      "payee_city": "ALEXANDRIA",
+      "payee_state": "VA",
+      "distribution_date": "2025-11-19",
+      "purpose": "PRODUCTION COST: DIGITAL AD",
+      "amount_usd": 2310.0,
+      "candidate": "BEHN, AFTYN",
+      "office": "HOUSE",
+      "district": "07",
+      "state": "TN",
+      "position": "OPPOSE",
+      "source_report": "202601029793901842"
+    },
+    {
+      "transaction_id": "SE.5214",
       "payee": "ELECTORAL COMMUNICATIONS GROUP, LLC",
       "payee_city": "TAMPA",
       "payee_state": "FL",
@@ -34,14 +45,20 @@
       "office": "HOUSE",
       "state": "GA",
       "position": "SUPPORT",
-      "election_context": "2026 SPECIAL-GENERAL"
+      "source_report": "202604209866614089"
     }
   ],
-  "observed_calendar_ytd_for_displayed_candidate_expenditures_usd": 17900.88,
+  "data_quality_receipt": {
+    "duplicate_removed": true,
+    "prior_duplicate": "SE.5214 appeared twice in the initial anchor",
+    "repair": "Retained one SE.5214 record and added separately verified SE.4694 from the 2025 Tennessee filing.",
+    "finding_change": "NONE"
+  },
   "governance": {
     "independent_expenditure_is_not_misuse": true,
     "filing_certifies_no_candidate_or_party_coordination_for_reported_independent_expenditure": true,
     "certification_is_evidence_not_irrebuttable_proof": true,
+    "partial_schedule_e_sample_does_not_establish_cycle_total": true,
     "candidate_layer_finding_authorized": false,
     "publication_authorized": false
   },
