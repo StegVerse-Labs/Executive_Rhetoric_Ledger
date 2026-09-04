@@ -6,6 +6,15 @@
   "authority_effect": "NONE_OBSERVATION_ONLY",
   "activation_authorized": false,
   "publication_authorized": false,
+  "resident_worker_runtime_presence": {
+    "repository": "StegVerse-Labs/.github",
+    "historical_state_path": "control/worker-runtime-state.json",
+    "current_presence_observed": false,
+    "historical_last_cycle_at": "2026-08-18T19:47:00Z",
+    "historical_runtime_tick": 2,
+    "historical_observation_mode": "CARRIER_REFERENCE_ONLY_NO_TASK_EXECUTION",
+    "claim": "Checked-in worker state is historical observation only and does not prove a presently running resident WorkerCoordinator."
+  },
   "source_request": {
     "repository": "StegVerse-Labs/.github",
     "path": "control/resident-execution-request.d/erl-ai-economic-transparency-review-001.json",
@@ -32,7 +41,7 @@
     "path": "receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json",
     "observed": false
   },
-  "earliest_unproven_runtime_boundary": "RESIDENT_REQUEST_DISPATCH",
+  "earliest_unproven_runtime_boundary": "RESIDENT_WORKER_RUNTIME_PRESENCE",
   "independent_review_complete": false,
   "activation_group_9_complete": false,
   "activation_group_10_complete": false,
@@ -41,11 +50,12 @@
   "credential_action_required": false,
   "network_checkout_required": false,
   "claim_boundaries": [
+    "Historical checked-in worker state does not prove present resident WorkerCoordinator runtime presence.",
     "Source request presence does not prove resident dispatch.",
     "Dispatch source wiring does not prove request consumption.",
     "Request consumption does not prove targeted worker execution.",
     "Targeted execution evidence does not satisfy independent review without the authentic fenced review receipt.",
     "No runtime, review, activation, publication, or repository-writeback authority is inferred from this record."
   ],
-  "next_machine_transition": "Observe authentic resident request dispatch and its downstream consumption/execution evidence. Only an authentic fenced independent-review receipt may advance activation group 9."
+  "next_machine_transition": "Observe authentic present resident WorkerCoordinator runtime presence, then authentic resident request dispatch and downstream consumption/execution evidence. Only an authentic fenced independent-review receipt may advance activation group 9."
 }
