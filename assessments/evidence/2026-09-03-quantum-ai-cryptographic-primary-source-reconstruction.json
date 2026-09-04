@@ -1,0 +1,133 @@
+{
+  "topic_id": "ERL-2026-09-03-QUANTUM-AI-CRYPTO-EXTRAPOLATION",
+  "record_type": "primary_source_reconstruction",
+  "as_of": "2026-09-03",
+  "assessment": "assessments/rhetoric/2026-09-03-quantum-ai-cryptographic-extrapolation.md",
+  "sources": [
+    {
+      "source_id": "QAC-SRC-NATURE-JIUZHANG4",
+      "authority": "peer_reviewed_primary_publication",
+      "publisher": "Nature",
+      "title": "Gaussian boson sampling with 1,024 squeezed states in 8,176 modes",
+      "publication_date": "2026-05-13",
+      "url": "https://www.nature.com/articles/s41586-026-10523-6",
+      "reconstructed_facts": [
+        "The processor is identified as Jiuzhang 4.0.",
+        "The reported workload is Gaussian boson sampling.",
+        "The processor incorporates 1,024 squeezed states into an 8,176-mode circuit.",
+        "The paper reports detection events up to 3,050 photons.",
+        "The publication frames Gaussian boson sampling as a model for demonstrating quantum computational advantage and as relevant to bosonic error-correcting-code research toward fault tolerance."
+      ],
+      "non_inferences": [
+        "This source does not by itself establish arbitrary-compute performance at the reported sampling advantage.",
+        "This source does not by itself establish execution of Shor's algorithm against RSA-2048 or ECC.",
+        "This source does not by itself establish operational decryption of captured Western communications."
+      ]
+    },
+    {
+      "source_id": "QAC-SRC-NIST-PQC-CURRENT",
+      "authority": "official_us_standardization_authority",
+      "publisher": "National Institute of Standards and Technology",
+      "title": "Post-Quantum Cryptography",
+      "url": "https://csrc.nist.gov/Projects/Post-Quantum-Cryptography",
+      "reconstructed_facts": [
+        "NIST finalized FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA) in August 2024.",
+        "NIST states organizations should begin applying these standards now and begin migrating systems to quantum-resistant cryptography.",
+        "NIST identifies ML-KEM, ML-DSA, and SLH-DSA as standards ready for use now.",
+        "NIST transition planning targets deprecation and eventual removal of quantum-vulnerable algorithms from its standards by 2035, with higher-risk systems transitioning earlier."
+      ],
+      "claim_effect": "Contradicts any unqualified claim that deployable standardized quantum-resistant cryptography is unavailable."
+    },
+    {
+      "source_id": "QAC-SRC-NIST-CRQC-STATE",
+      "authority": "official_us_standardization_authority",
+      "publisher": "National Institute of Standards and Technology",
+      "title": "What Is Post-Quantum Cryptography?",
+      "updated_date": "2026-02-27",
+      "url": "https://www.nist.gov/cybersecurity-and-privacy/what-post-quantum-cryptography",
+      "reconstructed_facts": [
+        "NIST states cryptographically relevant quantum computers do not exist yet.",
+        "NIST states timing estimates for a cryptographically relevant quantum computer vary widely.",
+        "NIST identifies harvest-now-decrypt-later as a present security reason to migrate before such a machine exists.",
+        "NIST states finalized post-quantum algorithms are ready for use and recommends transition begin immediately."
+      ],
+      "claim_effect": "Supports the risk of future quantum decryption and current HNDL exposure while not supporting a finding that RSA-2048 or ECC is presently operationally broken by a cryptographically relevant quantum computer."
+    },
+    {
+      "source_id": "QAC-SRC-NIST-IR8547",
+      "authority": "official_us_transition_guidance",
+      "publisher": "National Institute of Standards and Technology",
+      "title": "NIST IR 8547: Transition to Post-Quantum Cryptography Standards",
+      "publication_date": "2024-11-12",
+      "url": "https://csrc.nist.gov/pubs/ir/8547/ipd",
+      "reconstructed_facts": [
+        "The transition document states that existing cryptographically relevant quantum computers do not currently threaten present security levels.",
+        "It emphasizes that cryptographic migrations can take more than a decade and therefore must begin before a CRQC exists."
+      ]
+    },
+    {
+      "source_id": "QAC-SRC-DEEPSEEK-V4",
+      "authority": "vendor_primary_release",
+      "publisher": "DeepSeek",
+      "title": "DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context",
+      "publication_date": "2026-04-24",
+      "url": "https://deepseek.com/en/news/v4-preview/",
+      "reconstructed_facts": [
+        "DeepSeek announced V4 Preview with a 1-million-token context length.",
+        "DeepSeek-V4-Pro is described as 1.6T total parameters with 49B active parameters.",
+        "DeepSeek-V4-Flash is described as 284B total parameters with 13B active parameters.",
+        "The release describes model capability, API availability, and open weights."
+      ],
+      "non_inferences": [
+        "The DeepSeek release does not establish cryptographically relevant quantum-computing capability.",
+        "The DeepSeek release does not establish RSA/ECC decryption capability.",
+        "The existence of a strong AI model is not evidence that Jiuzhang's Gaussian-boson-sampling advantage transfers to cryptanalysis."
+      ]
+    }
+  ],
+  "governed_findings": {
+    "jiuzhang4_large_scale_photonic_gbs": "established_by_primary_publication",
+    "jiuzhang4_arbitrary_compute_advantage": "not_established_by_captured_source",
+    "jiuzhang4_shor_rsa2048_execution": "not_established",
+    "current_operational_rsa2048_ecc_quantum_break": "not_established",
+    "current_quantum_decryption_of_western_traffic": "not_established",
+    "cryptographically_relevant_quantum_computer_publicly_established": "no_per_nist_current_public_posture",
+    "harvest_now_decrypt_later_risk": "supported",
+    "deployable_standardized_pqc_exists": "established",
+    "pqc_migration_should_begin_now": "supported_by_nist",
+    "deepseek_v4_exists_and_has_official_1m_context_release": "established",
+    "deepseek_v4_quantum_cryptanalytic_bridge": "not_established"
+  },
+  "epistemic_transition_test": [
+    {
+      "from": "Jiuzhang demonstrates large-scale Gaussian boson sampling",
+      "to": "China has advanced photonic quantum capability",
+      "classification": "bounded_inference"
+    },
+    {
+      "from": "China has advanced photonic quantum capability",
+      "to": "cryptographically relevant quantum capability may arrive sooner than conservative forecasts",
+      "classification": "risk_hypothesis"
+    },
+    {
+      "from": "cryptographically relevant quantum capability may arrive sooner",
+      "to": "migrate long-lived sensitive systems to standardized PQC and build crypto agility",
+      "classification": "prudent_engineering_consequence"
+    },
+    {
+      "from": "Jiuzhang demonstrates Gaussian boson sampling advantage",
+      "to": "China is presently breaking RSA-2048/ECC or decrypting Western traffic",
+      "classification": "unsupported_transition_on_current_record"
+    }
+  ],
+  "remaining_evidence": [
+    "claim-by-claim capture of the source LinkedIn article's numerical comparisons and cited sources",
+    "direct authoritative evidence, if any, of present cryptographically relevant Chinese operational capability",
+    "technical resource estimates for RSA-2048/ECC attacks sufficient to compare against Jiuzhang architecture without conflating computational models",
+    "independent review of evidence-state classification",
+    "StegVerse cryptographic transition-governance requirements derived without importing unsupported source claims"
+  ],
+  "publication_authorized": false,
+  "security_compromise_finding_authorized": false,
+  "motive_finding_authorized": false
+}
