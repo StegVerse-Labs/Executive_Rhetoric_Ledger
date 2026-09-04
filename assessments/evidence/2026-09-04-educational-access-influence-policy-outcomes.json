@@ -1,0 +1,93 @@
+{
+  "schema": "stegverse.erl.educational_access_influence.policy_outcomes.v1",
+  "goal_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "owner": "issue:121",
+  "handoff": "docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md",
+  "state": "RESEARCH_ACTIVE_PARTIAL",
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "motive_finding_authorized": false,
+  "records": [
+    {
+      "id": "EAIPO-WSA-001",
+      "workstream": "WS-A",
+      "actor": "Fairplay",
+      "policy_action": "five-year pause request for student-facing generative AI in PreK-12 schools",
+      "instrument_type": "advocacy campaign / model policy request",
+      "outcome_state": "ADVOCACY_ACTIVE",
+      "evidence_state": "PRIMARY_VERIFIED",
+      "source_locator": "https://fairplayforkids.org/pause-genai-in-prek-12-schools-for-5-years-orgs-and-experts-say/",
+      "causal_attribution_authorized": false,
+      "note": "Primary campaign evidence establishes the requested policy outcome and organized advocacy, not adoption causation or common motive among coalition participants."
+    },
+    {
+      "id": "EAIPO-WSB-001",
+      "workstream": "WS-B",
+      "actor": "Food & Water Watch / Stop Data Centers Coalition",
+      "policy_action": "nationwide halt to new data centers and support for local opposition",
+      "instrument_type": "coalition campaign / local organizing support",
+      "outcome_state": "ADVOCACY_ACTIVE",
+      "evidence_state": "PRIMARY_VERIFIED",
+      "source_locator": "https://www.foodandwaterwatch.org/2026/06/12/stop-data-centers-coalition/",
+      "causal_attribution_authorized": false,
+      "note": "Primary organization material establishes the coalition objective and support role. Local project outcomes require jurisdiction-specific chronology."
+    },
+    {
+      "id": "EAIPO-WSB-002",
+      "workstream": "WS-B",
+      "actor": "Food & Water Watch and allies",
+      "policy_action": "New York large-scale data-center pause",
+      "instrument_type": "legislative/executive restriction",
+      "outcome_state": "OUTCOME_REPORTED_BY_ADVOCATE",
+      "evidence_state": "OFFICIAL_SECONDARY",
+      "source_locator": "https://www.foodandwaterwatch.org/2026/07/15/new-york-data-center-moratorium-victory/",
+      "causal_attribution_authorized": false,
+      "note": "Advocate self-report describes campaign chronology and resulting government action. Native state legislative/executive instruments remain required before promoting outcome chronology."
+    },
+    {
+      "id": "EAIPO-WSC-001",
+      "workstream": "WS-C",
+      "actor": "President of the United States / Department of Education",
+      "policy_action": "facilitate closure of the U.S. Department of Education and return authority to states/local communities to the maximum extent permitted by law",
+      "instrument_type": "Executive Order 14242",
+      "outcome_state": "ORDER_ISSUED",
+      "evidence_state": "PRIMARY_VERIFIED",
+      "source_locator": "https://www.whitehouse.gov/presidential-actions/2025/03/improving-education-outcomes-by-empowering-parents-states-and-communities/",
+      "causal_attribution_authorized": false,
+      "note": "The executive order directly states the closure/authority-transfer objective. It does not itself establish completed statutory abolition of the department."
+    },
+    {
+      "id": "EAIPO-WSC-002",
+      "workstream": "WS-C",
+      "actor": "Texas Legislature / Governor / Comptroller",
+      "policy_action": "establish and fund education savings accounts usable for approved nonpublic education expenses",
+      "instrument_type": "Texas SB 2 / Education Freedom Accounts",
+      "outcome_state": "ENACTED_AND_IMPLEMENTING",
+      "evidence_state": "PRIMARY_VERIFIED",
+      "amount_usd_biennium_cap": 1000000000,
+      "source_locators": [
+        "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB2&LegSess=89R",
+        "https://educationfreedom.texas.gov/",
+        "https://gov.texas.gov/news/post/governor-abbott-signs-landmark-school-choice-legislation-into-law"
+      ],
+      "causal_attribution_authorized": false,
+      "note": "Official Texas sources establish enactment, $1B biennial cap, and use for private-school/homeschool and other approved expenses. Donor/lobbying causation and comparative public-accountability effects remain separate evidence questions."
+    },
+    {
+      "id": "EAIPO-WSC-003",
+      "workstream": "WS-C",
+      "actor": "Texas Ethics Commission",
+      "policy_action": "AFC Victory Fund recognized in Texas campaign-finance reporting",
+      "instrument_type": "campaign-finance committee record",
+      "outcome_state": "POLITICAL_COMMITTEE_PRIMARY_ANCHOR",
+      "evidence_state": "PRIMARY_VERIFIED",
+      "source_locator": "https://www.ethics.state.tx.us/search/cf/2024/MPAC_CashOnHand_Mar24.html",
+      "committee_filer_id": "00088032",
+      "reported_cash_on_hand_usd_as_of_2024_03_06": 5810986.84,
+      "causal_attribution_authorized": false,
+      "note": "Primary commission list establishes the committee identity and cash-on-hand anchor. It does not verify the current-cycle Yass/DeVos contribution amounts, which remain pending native filing custody."
+    }
+  ],
+  "next_executable_task": "Replace advocate-reported outcome chronology with native legislative/executive records, bind campaign-finance and lobbying edges to specific policy instruments, and distinguish temporal association from demonstrated causal influence.",
+  "terminal_condition": "Material policy outcomes across all three workstreams are primary-custodied and linked to money/advocacy edges only at the level supported by independent evidence."
+}
