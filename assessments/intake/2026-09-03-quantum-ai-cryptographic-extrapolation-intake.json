@@ -5,6 +5,7 @@
   "created_date": "2026-09-03",
   "last_reviewed": "2026-09-03",
   "canonical_assessment": "assessments/rhetoric/2026-09-03-quantum-ai-cryptographic-extrapolation.md",
+  "primary_source_reconstruction": "assessments/evidence/2026-09-03-quantum-ai-cryptographic-primary-source-reconstruction.json",
   "goal": "Reconstruct the evidentiary chain from reported Jiuzhang/DeepSeek technical developments to claims about present cryptographic compromise, preserving observation, inference, hypothesis, prediction, and engineering consequence as distinct governed states.",
   "promotion_boundary": "Do not promote Gaussian-boson-sampling advantage, general Chinese quantum capability, classified-capability speculation, or harvest-now/decrypt-later risk into a finding that RSA-2048/ECC is presently broken or that Western encrypted traffic is currently being quantum-decrypted without direct authoritative evidence.",
   "source_trigger": {
@@ -19,34 +20,38 @@
     {
       "task_id": "QAC-001",
       "priority": 1,
-      "state": "primary-source-needed",
+      "state": "primary-source-reconstructed",
       "object": "Jiuzhang 4.0 peer-reviewed primary paper",
       "required_capture": ["canonical publication metadata", "native or immutable article record", "exact task definition", "reported benchmark conditions", "limitations"],
-      "release_condition": "Jiuzhang performance claims are reconstructed with the workload boundary preserved and no conversion into arbitrary-compute or cryptanalytic performance."
+      "release_condition": "Jiuzhang performance claims are reconstructed with the workload boundary preserved and no conversion into arbitrary-compute or cryptanalytic performance.",
+      "progress_note": "Nature primary publication reconstructed. Jiuzhang 4.0 is bounded to Gaussian boson sampling; 1,024 squeezed states, 8,176 modes, and detection events up to 3,050 photons are captured. No Shor/RSA/ECC result is present in the captured source."
     },
     {
       "task_id": "QAC-002",
       "priority": 1,
-      "state": "primary-source-needed",
+      "state": "authoritative-current-state-bounded-technical-comparison-pending",
       "object": "Evidence for cryptographically relevant quantum attack capability",
       "required_capture": ["algorithm used", "logical/physical qubit requirements", "fault-tolerance state", "key sizes actually attacked", "runtime/error assumptions"],
-      "release_condition": "Any claim of current RSA-2048/ECC compromise is traceable to direct technical evidence rather than extrapolation from unrelated quantum advantage experiments."
+      "release_condition": "Any claim of current RSA-2048/ECC compromise is traceable to direct technical evidence rather than extrapolation from unrelated quantum advantage experiments.",
+      "progress_note": "NIST current public posture states cryptographically relevant quantum computers do not yet exist. No direct RSA-2048/ECC operational break evidence has been admitted. Technical resource-estimate comparison remains."
     },
     {
       "task_id": "QAC-003",
       "priority": 1,
-      "state": "primary-source-needed",
+      "state": "primary-source-reconstructed",
       "object": "NIST post-quantum cryptography standards and migration guidance",
       "required_capture": ["finalized standards", "publication dates", "migration recommendations", "algorithm identifiers", "transition guidance"],
-      "release_condition": "Claims about whether quantum-resistant encryption is available are tested against authoritative current standards."
+      "release_condition": "Claims about whether quantum-resistant encryption is available are tested against authoritative current standards.",
+      "progress_note": "NIST FIPS 203 ML-KEM, FIPS 204 ML-DSA, and FIPS 205 SLH-DSA are established as finalized August 2024 standards ready for implementation. NIST recommends migration now and maintains transition guidance toward removal of quantum-vulnerable algorithms by 2035, earlier for high-risk systems."
     },
     {
       "task_id": "QAC-004",
       "priority": 2,
-      "state": "primary-source-needed",
+      "state": "primary-source-reconstructed",
       "object": "DeepSeek-V4 technical release claims",
       "required_capture": ["official release metadata", "architecture/model claims relevant to article", "deployment/compute claims", "source dates"],
-      "release_condition": "DeepSeek references are separated from unrelated quantum-computing capability claims and admitted only within their supported scope."
+      "release_condition": "DeepSeek references are separated from unrelated quantum-computing capability claims and admitted only within their supported scope.",
+      "progress_note": "Official 2026-04-24 DeepSeek V4 Preview release reconstructed: 1M context, V4-Pro 1.6T/49B active parameters, V4-Flash 284B/13B active parameters. No quantum-computing or RSA/ECC cryptanalytic bridge is established by the release."
     },
     {
       "task_id": "QAC-005",
@@ -73,15 +78,25 @@
       "release_condition": "ERL findings are translated into bounded architectural requirements without treating the source article’s strongest security claims as established fact."
     }
   ],
-  "next_unblocked_task": "QAC-001-and-QAC-003-primary-source-reconstruction",
+  "next_unblocked_task": "QAC-005-claim-decomposition-and-QAC-002-technical-resource-comparison",
   "duplicate_execution_rule": "Before acquiring or creating a record, search the ERL source-posture, evidence, intake, and rhetoric surfaces for an existing Jiuzhang, DeepSeek, post-quantum, RSA/ECC, or harvest-now/decrypt-later object. Reuse preserved custody where available.",
   "completion_condition": "The article’s technical and security propositions are independently reconstructable with explicit evidence-state transitions, and no operational cryptographic-compromise finding exceeds the strongest authoritative evidence.",
   "findings_state": {
+    "jiuzhang4_gbs_result": "established",
     "present_rsa2048_ecc_break": "not_established",
     "present_quantum_decryption_of_western_traffic": "not_established",
+    "publicly_established_crqc": "no_per_nist_current_public_posture",
     "harvest_now_decrypt_later": "legitimate_security_risk",
+    "deployable_standardized_pqc": "established",
     "pqc_and_crypto_agility": "prudent_engineering_consequence",
+    "deepseek_v4_quantum_cryptanalytic_bridge": "not_established",
     "publication_authorized": false,
     "motive_finding_authorized": false
+  },
+  "progress_summary": {
+    "tasks_primary_source_reconstructed": 3,
+    "tasks_partially_bounded": 1,
+    "tasks_remaining": 3,
+    "new_evidence_commit": "24e314f71fd4023b46a153f0c5d0648b59a68129"
   }
 }
