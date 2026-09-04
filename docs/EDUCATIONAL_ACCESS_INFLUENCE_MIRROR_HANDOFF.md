@@ -71,11 +71,33 @@ Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
 - Durable owner: Issue `#121`.
 - `docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md`.
-- `assessments/intake/2026-09-04-educational-access-influence-primary-record-intake.json` — three-lane source queue.
+- `assessments/machine/ERL-EDUCATIONAL-ACCESS-INFLUENCE-001.json` — governed non-PIT machine assessment anchor installed in commit `0d1c764fa5851dca9d160eba08141be4edf70e07`.
+- `assessments/intake/2026-09-04-educational-access-influence-primary-record-intake.json` — normalized repository-standard primary-record queue; schema repair commit `0e1e838f5714663103575bab22f47e71cae06d9f`.
 - `assessments/evidence/2026-09-04-educational-access-influence-money-graph.json` — initial commit `88f19575d6f5279612c645d9a7e591de725863e3`; primary-evidence advancement `a119ec51ea500ce33e010af3812a549c7a52e35e`.
 - `assessments/evidence/2026-09-04-educational-access-influence-claim-provenance.json` — commit `782e9677f2eda40fa839f98e31fe058828a1891a`.
 - `assessments/contradictions/2026-09-04-educational-access-influence.matrix.md` — initial commit `437894863ee264163ad91c5f9fbb6efdebaaf5d4`; evidence-posture correction `d418e910080cff39cf30cc28415f51f9ca25bc18`.
 - `assessments/evidence/2026-09-04-educational-access-influence-policy-outcomes.json` — commit `1e85a3acba2d4e2dcb29bdff74e7494692512c3f`; primary/official policy-instrument anchors across all three workstreams.
+
+## Primary-record intake schema repair — 2026-09-04
+
+Repository-wide `Validate Ledger Schemas` exposed that the original educational-access intake file was a domain-specific task packet stored under `assessments/intake/` but did not conform to the canonical `primary-record-intake.schema.json`. The repair preserved the research semantics in this handoff/evidence layer while normalizing the intake file to the repository contract.
+
+The repaired queue now has:
+
+- `queue_id`: `QUEUE-ERL-EDUCATIONAL-ACCESS-INFLUENCE-001`
+- `topic_id`: `ERL-EDUCATIONAL-ACCESS-INFLUENCE-001`
+- `queue_status`: `active`
+- four governed intake items covering youth-AI, data-center, public-education, and cross-front primary records
+- no verified-primary queue state without a governed source receipt ID
+
+A non-PIT machine assessment anchor was added so the canonical intake validator can resolve the queue's `topic_id` without falsely forcing this research lane into Political Influence Tree semantics.
+
+Validation evidence:
+
+- `Validate durable task state` run `33920070314` — SUCCESS for machine-anchor installation.
+- `Validate Ledger Schemas` run `33920105658` — SUCCESS at head `0e1e838f5714663103575bab22f47e71cae06d9f` after the intake normalization.
+
+This validation proves schema/relationship consistency only. It does not authorize any coordination, motive, dishonesty, factual, or publication finding.
 
 ## Current evidence posture
 
@@ -114,7 +136,7 @@ Substantive evidence still to acquire:
 
 ## Next executable machine task
 
-Continue replacing secondary/unresolved money and lobbying edges with native primary records. Candidate + activation-registry admission remains a coupled transition: do not create an unregistered `research-candidates/` file on `main`. The available Git data surface can create multi-file commits, but the registry still must be safely reconstructed without dropping existing candidate groups before that transition is attempted.
+Continue replacing secondary/unresolved money and lobbying edges with native primary records. Candidate + activation-registry admission remains a coupled transition: do not create an unregistered `research-candidates/` file on `main`.
 
 ## Release / propagation
 
@@ -128,18 +150,19 @@ No tag or release is warranted at the current research-candidate stage.
 
 - durable ownership: 1/1 = 100%
 - bounded handoff: 1/1 = 100%
+- machine assessment anchor: 1/1 = 100%
 - candidate + registry admission: 0/1 = 0%
-- primary-record intake: 1/1 = 100% structural installation; source replacement ongoing
+- primary-record intake: 1/1 = 100% structural installation and schema-valid; source replacement ongoing
 - money/person influence graph: 1/1 = 100% structural installation; primary evidence advancing
 - claim-provenance graph: 1/1 = 100% structural installation; evidence partial
 - contradiction matrix: 1/1 = 100% structural installation; active correction history preserved
 - policy-outcome ledger: 1/1 = 100% structural installation; primary/official anchors partial
 - independent review: 0/1 = 0%
 
-Bounded deliverable groups installed: 7/9 = 78%.
-Fully developed/terminal evidence files: 3/7 installed artifact files are complete for their current structural/custody purpose; 4/7 remain active evidence-bearing artifacts rather than terminal findings. Scaffolding/stubs: 0.
-Goal activation: 78% structural / approximately 62% substantive-evidence maturity.
+Bounded structural groups installed: 8/10 = 80%.
+Fully developed/terminal evidence files: 5/8 installed machine/durable artifact groups are complete for their current structural/custody purpose; 3/8 remain active evidence-bearing artifacts rather than terminal findings. Scaffolding/stubs: 0.
+Goal activation: approximately 80% structural / 62% substantive-evidence maturity.
 
 ## Archive condition
 
-Satisfied for this chat thread as a source of unique requirements: Issue #121, this handoff, the intake, evidence graphs, policy-outcome ledger, and contradiction matrix preserve the continuation state. The bounded research lane itself remains active and is not archive-complete as a repository goal.
+Satisfied for this chat thread as a source of unique requirements: Issue #121, this handoff, machine anchor, normalized intake, evidence graphs, policy-outcome ledger, and contradiction matrix preserve the continuation state. The bounded research lane itself remains active and is not archive-complete as a repository goal.
