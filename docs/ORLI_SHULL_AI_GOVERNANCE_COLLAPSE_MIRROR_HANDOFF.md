@@ -13,7 +13,8 @@ Evaluate the governance transition by which AI observation/classification/predic
 ## Candidate
 
 - path: `research-candidates/2026-09-03-orli-shull-ai-governance-collapse-authority.md`
-- state: `RESEARCH_ACTIVE`
+- registry group: `ERL-RC-ORLI-SHULL-AI-GOVERNANCE-COLLAPSE-2026`
+- state: `RESEARCH_ACTIVE_NOT_ASSESSABLE`
 - durable owner: `issue:63`
 - finding authorized: `false`
 - publication authorized: `false`
@@ -55,6 +56,18 @@ The research task is to determine which governance controls are needed to preven
 
 Primary source custody, comparative institutional evidence, disconfirming evidence, transition-governance analysis, and independent review support an explicit governed `PROMOTED`, `SUPERSEDED`, `MERGED`, or `CLOSED_WITH_REASON` transition.
 
+## Activation proof
+
+Candidate registration was committed to `coordination/research-candidate-activation-registry.v1.json` at commit `f32b207c83e5de46fcef9d68f792283dfa80c677`.
+
+GitHub Actions workflow `Validate research candidate activation` run `33911474219`, job `validate` (`101148654274`), completed successfully. Step `Validate active research candidates` completed with conclusion `success`.
+
+This proves the candidate path is represented by the machine-enforced activation registry and satisfies the registry validator at that commit. It does not prove the source propositions, authorize a factual finding, or authorize publication.
+
 ## Current machine state
 
-Candidate file and bounded handoff are installed on `main`. Activation-registry admission is still required because the research-candidate activation validator is fail-closed for unregistered candidate paths. Until registry admission is committed and validated, this candidate is installed but not fully activated under the machine-enforced candidate registry.
+Candidate file, bounded handoff, and activation-registry admission are installed on `main`. Machine-enforced activation validation has succeeded. The remaining work is substantive research/source custody, not activation plumbing.
+
+## Session closure posture
+
+No additional machine-execution work remains for candidate installation or activation in this session. Continuing research is durably owned by Issue #63 and the registry next-executable-task field. The native LinkedIn permalink/full source remains the first evidence-custody target.
