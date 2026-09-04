@@ -17,9 +17,9 @@ Branch: `main`.
 
 ## Current posture
 
-State: `RESEARCH_ACTIVE / SOURCE_ACQUISITION_PENDING`.
+State: `RESEARCH_ACTIVE / SOURCE_ACQUISITION_PARTIAL`.
 
-This handoff does not authorize a factual finding that the three fronts are coordinated, share a common ultimate motive, or intentionally reduce education. It does preserve the stronger, testable proposition that each front contains organized actors attempting to influence policy and that cross-front overlap in funders, people, lobbyists, consultants, political recipients, or messaging infrastructure should be reconstructed from primary records.
+This handoff does not authorize a factual finding that the three fronts are coordinated, share a common ultimate motive, or intentionally reduce education. It preserves the testable proposition that each front contains organized actors attempting to influence policy and that cross-front overlap in funders, people, lobbyists, consultants, political recipients, or messaging infrastructure should be reconstructed from primary records.
 
 Candidate-layer finding authorized: `false`.
 Publication authorized: `false`.
@@ -31,128 +31,104 @@ Required provenance path:
 
 `person -> wealth/company -> foundation/DAF/PAC -> advocacy organization -> lobbyist/consultant -> candidate/lawmaker -> bill/order/moratorium -> policy outcome`
 
-Each edge must preserve:
-
-- source URL or primary-record locator;
-- source class;
-- date;
-- amount where financial;
-- direct vs intermediary relationship;
-- stated grant/lobbying/campaign purpose;
-- disclosure status;
-- confidence/state: observed, inferred, disputed, unresolved;
-- correction/contradiction records.
+Each edge must preserve source locator/class, date, amount where financial, direct/intermediary status, stated purpose, disclosure status, evidence state, and correction/contradiction history.
 
 ## Workstreams
 
 ### WS-A — Youth AI
 
-Acquire and normalize:
+Acquire organizations advocating bans/moratoria/age restrictions/controlled-access regimes; funders, corporate participants, lobbyists, PR firms, coalition membership, political recipients, social/advertising provenance, and the scientific evidence cited for cognitive/developmental claims.
 
-- organizations advocating bans, moratoria, age restrictions, controlled-access regimes, or child-AI regulation;
-- funders, corporate participants, lobbyists, PR firms, coalition membership, and political recipients;
-- social-media and advertising provenance for child-cognition messaging;
-- cited scientific evidence for cognitive offloading, cognitive degradation, dependency, learning outcomes, and developmental claims;
-- contrary or corrective evidence and whether campaigners had access to it.
-
-Required discriminator: distinguish ordinary information/cognitive offloading from demonstrated developmental impairment.
+Required discriminator: distinguish information/cognitive offloading from demonstrated developmental impairment.
 
 ### WS-B — Data centers
 
-Acquire and normalize:
+Acquire organizations supplying towns/residents with organizing toolkits, legal aid, lobbying, candidate endorsements, model ordinances, or moratorium language; funders/DAF intermediaries; consultants/law firms/PR/polling; technical claims; and resulting ordinances, utility proceedings, litigation, and legislation.
 
-- national and local organizations supplying towns/residents with toolkits, legal aid, lobbying, candidate endorsements, model ordinances, or moratorium language;
-- funders and donor-advised/community-foundation intermediaries;
-- originating donors where publicly traceable;
-- consultant, law-firm, PR, polling, and political-campaign relationships;
-- claims about water, power, pollution, tax treatment, employment, grid cost, and public benefit;
-- resulting ordinances, utility proceedings, litigation, state bills, and federal legislation.
-
-Required discriminator: separate technically supportable impact claims from categorical, materially incomplete, or misleading claims.
+Required discriminator: separate supportable impact claims from categorical, materially incomplete, or misleading claims.
 
 ### WS-C — Public education restructuring
 
-Acquire and normalize:
+Acquire voucher/private-school funding networks; PACs/lobbyists/model-policy organizations/donors; Department of Education restructuring advocacy; curriculum/book policy; religious-display policy; staffing qualification changes; institutional-capacity reductions; and public-fund/private-institution accountability rules.
 
-- voucher/private-school funding networks;
-- PACs, lobbyists, model-legislation organizations, and political donors;
-- Department of Education restructuring/closure advocacy;
-- curriculum and book restriction campaigns;
-- religious-display/education policy;
-- teacher/staff qualification changes and institutional-capacity reductions;
-- public-fund transfers to private institutions and the accountability rules attached to those funds.
-
-Required discriminator: distinguish parental-choice arguments from actual changes in public accountability, access, staffing, curriculum, and public-system capacity.
+Required discriminator: distinguish stated parental-choice purposes from measurable changes in public accountability, access, staffing, curriculum, and public-system capacity.
 
 ## Cross-front hypotheses
 
-The research must test, not assume:
-
-1. independent convergence;
-2. narrative propagation without formal coordination;
-3. aligned but independent interests;
-4. common funders/intermediaries;
-5. common lobbyists/consultants/PR/polling firms;
-6. coordinated advocacy;
-7. deliberate youth-first sequencing;
-8. downstream organic repetition of institutionally seeded claims;
-9. coordinated educational/epistemic access restriction.
+Test, do not assume: independent convergence; narrative propagation; aligned interests; common funders/intermediaries; common lobbyists/consultants/PR/polling; coordinated advocacy; deliberate youth-first sequencing; downstream organic repetition of institutionally seeded claims; coordinated educational/epistemic access restriction.
 
 ## Evidence-integrity rules
 
-- Paid lobbying or explicit campaign activity is evidence of intent to influence the named policy outcome; it is not by itself proof of an unstated ultimate motive.
-- Deliberate omission of material facts, misrepresentation, or knowingly misleading use of facts is dishonest when knowledge/deliberateness is supported by evidence.
-- Public-money/private-education analysis must separately measure regulation, auditability, admissions, curriculum, staffing, reporting, civil-rights obligations, and public accountability.
-- Historical civil-rights comparisons may be used only as structural access-control analogies unless stronger evidence warrants more.
+- Paid lobbying or explicit campaign activity establishes intent to influence the named policy outcome, not an unstated ultimate motive.
+- Deliberate omission of material facts, misrepresentation, or knowingly misleading use of facts is dishonest when knowledge/deliberateness is evidenced.
+- Public-money/private-education analysis separately measures regulation, auditability, admissions, curriculum, staffing, reporting, civil-rights obligations, and public accountability.
+- Historical civil-rights comparisons are structural access-control analogies unless stronger evidence warrants more.
 - Secondary-source claims do not establish donor origin, coordination, or motive without primary/official corroboration.
 
-## Installed in this session
+## Installed
 
-- Durable owner: `StegVerse-Labs/Executive_Rhetoric_Ledger#121`.
-- This bounded mirror handoff: `docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md`.
+Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
+
+- Durable owner: Issue `#121`.
+- `docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md`.
+- `assessments/intake/2026-09-04-educational-access-influence-primary-record-intake.json` — three-lane source queue.
+- `assessments/evidence/2026-09-04-educational-access-influence-money-graph.json` — commit `88f19575d6f5279612c645d9a7e591de725863e3`; source-state-qualified person/funder/political edges.
+- `assessments/evidence/2026-09-04-educational-access-influence-claim-provenance.json` — commit `782e9677f2eda40fa839f98e31fe058828a1891a`; claim/evidence/correction discriminators.
+- `assessments/contradictions/2026-09-04-educational-access-influence.matrix.md` — commit `437894863ee264163ad91c5f9fbb6efdebaaf5d4`; supporting, contrary, limiting, and unresolved propositions.
+
+## Current evidence posture
+
+The installed money graph deliberately distinguishes `PRIMARY_VERIFIED`, `OFFICIAL_SECONDARY`, `SECONDARY_LEAD`, and `UNRESOLVED` edges. It does not convert donor-name overlap into coordination.
+
+The claim-provenance layer now records a primary Fairplay pause/cognitive-harm claim family, an EPA technical contradiction to any universal claim that data-center cooling requires potable water or cannot reuse water, voucher-accountability discriminators, and a cross-front comparison gate. Dishonesty findings remain unauthorized until knowledge/deliberateness is evidenced.
+
+The contradiction matrix records both supporting and limiting evidence, including the unresolved SVCF/DAF-origin problem and the absence of a primary-source-backed common command or common ultimate motive across all three fronts.
 
 ## Remaining files/modules to install
 
 Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 
 1. `research-candidates/2026-09-04-educational-access-influence-network.md`
-   - Must be created in the same repository change that adds its activation-registry entry.
 2. `coordination/research-candidate-activation-registry.v1.json`
-   - Add `ERL-RC-EDUCATIONAL-ACCESS-INFLUENCE-2026`, durable owner `issue:121`, next executable task, terminal condition, and candidate/publication authorization false.
-3. `assessments/intake/2026-09-04-educational-access-influence-primary-record-intake.json`
-   - Three-lane source queue with provenance state.
-4. `assessments/evidence/2026-09-04-educational-access-influence-money-graph.json`
-   - Person/funder/intermediary/recipient/political-recipient edges.
-5. `assessments/evidence/2026-09-04-educational-access-influence-claim-provenance.json`
-   - Claim -> source -> cited evidence -> correction/contradiction -> campaign use.
-6. `assessments/contradictions/2026-09-04-educational-access-influence.matrix.md`
-   - Supporting, contrary, null, and unresolved evidence by proposition.
-7. `assessments/reviews/2026-09-04-educational-access-influence.review.md`
-   - Independent review before any publication or coordination/motive finding.
+   - Candidate and registry entry must land together on `main`; add `ERL-RC-EDUCATIONAL-ACCESS-INFLUENCE-2026`, owner `issue:121`, next executable task, terminal condition, and candidate/publication authorization false.
+3. `assessments/reviews/2026-09-04-educational-access-influence.review.md`
+   - Independent review only after sufficient primary-source replacement of current secondary/unresolved edges.
+
+Substantive evidence still to acquire:
+- Texas Ethics Commission native AFC/Yass/DeVos filings;
+- primary foundation/grantee records for SVCF/Fairplay/Food & Water Watch and originating DAF identity where publicly traceable;
+- lobbying/expenditure records for Parents & Kids Safe AI / OpenAI and associated intermediaries;
+- exact native MediaJustice water-claim page/context and publication date;
+- original TPPF strategy/fundraising communication connecting curriculum grievance to voucher mobilization;
+- bill/order/moratorium records and named political-recipient chronology.
 
 ## Next executable machine task
 
-Create the candidate and activation-registry entry atomically, then install the three-lane primary-record intake queue. Do not create an unregistered `research-candidates/` file because repository validation fails closed on missing activation coverage.
+Complete candidate + activation-registry admission as one mainline transition. Because the available single-file GitHub contents mutation surface cannot make two paths atomic, do not create an unregistered `research-candidates/` file on `main`. Until a multi-file branch/commit path is available, continue replacing secondary/unresolved evidence edges with native primary records under Issue #121.
 
 ## Release / propagation
 
 No raw candidate propagation is authorized to `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, or `stegguardian-wiki`.
 
-If the lane later reaches reviewed publication state, create a separate verification task to ensure any pertinent released information is updated/applied to those destinations.
+If the lane later reaches reviewed publication state, create a separate verification task to ensure pertinent released information is updated/applied to those destinations.
+
+No tag or release is warranted at the current research-candidate stage.
 
 ## Completion accounting
 
 - durable ownership: 1/1 = 100%
 - bounded handoff: 1/1 = 100%
 - candidate + registry admission: 0/1 = 0%
-- primary-record intake: 0/1 = 0%
-- money/person influence graph: 0/1 = 0%
-- claim-provenance graph: 0/1 = 0%
-- contradiction matrix: 0/1 = 0%
+- primary-record intake: 1/1 = 100% structural installation; source replacement ongoing
+- money/person influence graph: 1/1 = 100% structural installation; evidence partial
+- claim-provenance graph: 1/1 = 100% structural installation; evidence partial
+- contradiction matrix: 1/1 = 100% structural installation
 - independent review: 0/1 = 0%
 
-Developed deliverables: 2/7 conceptual deliverable groups installed if counting owner + handoff; no research finding is activated or publication-authorized.
+Bounded deliverable groups installed: 6/8 = 75%.
+Fully developed/terminal evidence files: 2/6 installed artifact files are structurally complete for their current purpose; 4/6 remain active evidence-bearing artifacts rather than terminal findings. Scaffolding/stubs: 0.
+Goal activation: 75% structural / approximately 55% substantive-evidence maturity.
 
 ## Archive condition
 
-Not yet satisfied for this bounded research lane. Issue #121 and this handoff preserve all unique session requirements needed to continue without chat-history dependence, but the candidate/registry admission and evidence artifacts remain machine-execution work.
+Satisfied for this chat thread as a source of unique requirements: Issue #121, this handoff, the intake, evidence graphs, and contradiction matrix preserve the continuation state. The bounded research lane itself remains active and is not archive-complete as a repository goal.
