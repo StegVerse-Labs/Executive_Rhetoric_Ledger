@@ -9,27 +9,30 @@
     "strategic_nondeployment": "STRATEGY_NOT_RECONSTRUCTED"
   },
   "state_vector": {
-    "LEGALITY": "PENDING_CONTROLLING_AUTHORITY_AND_TRANSACTION_RECONSTRUCTION",
+    "LEGALITY": "PARTIAL_FEC_AUTHORITY_BOUNDARIES_RECONSTRUCTED_CASE_FACT_MAPPING_PENDING",
     "DONOR_REPRESENTATION": "PENDING_SOLICITATION_AND_PURPOSE_CUSTODY",
     "BENEFICIAL_RECIPIENT": "PARTIAL_SCHEDULE_E_ONLY_OTHER_DISBURSEMENTS_PENDING",
-    "ORGANIZATIONAL_PURPOSE": "PARTIAL_COMMITTEE_IDENTITY_RECONSTRUCTED_PURPOSE_RESTRICTIONS_PENDING",
-    "DEPLOYMENT_TIMING": "LARGE_RETAINED_BALANCE_AND_LIMITED_OBSERVED_DEPLOYMENT_REQUIRE_FULL_CHRONOLOGY",
+    "ORGANIZATIONAL_PURPOSE": "PARTIAL_HYBRID_PAC_ACCOUNT_PURPOSE_AUTHORITY_AND_COMMITTEE_IDENTITY_RECONSTRUCTED_CASE_RESTRICTIONS_PENDING",
+    "DEPLOYMENT_TIMING": "LARGE_RETAINED_BALANCE_AND_LIMITED_OBSERVED_DEPLOYMENT_REQUIRE_FULL_CHRONOLOGY_AND_24_48_HOUR_IE_NORMALIZATION",
     "CONTROL_CONCENTRATION": "NOT_YET_RECONSTRUCTED",
-    "DISCLOSURE_ACCURACY": "PARTIAL_FILINGS_LOCATED_AMENDMENT_SUPERSESSION_PENDING"
+    "DISCLOSURE_ACCURACY": "PARTIAL_FILINGS_LOCATED_AMENDMENT_SUPERSESSION_AND_FEC_DISPLAY_METHOD_NORMALIZATION_PENDING"
   },
   "evidence_refs": [
     "research-candidates/2026-09-03-maga-inc-midterm-funds-potential-misuse.md",
     "assessments/source-posture/2026-09-03-maga-inc-midterm-funds-initial-fec-anchor.json",
+    "assessments/source-posture/2026-09-04-maga-inc-fec-summary-method-boundary.json",
     "assessments/chronology/2026-09-03-maga-inc-fec-filing-chronology.partial.json",
     "assessments/evidence/2026-09-03-maga-inc-statement-of-organization-anchor.json",
     "assessments/evidence/2026-09-03-maga-inc-initial-independent-expenditure-anchor.json",
+    "assessments/evidence/2026-09-04-maga-inc-fec-authority-boundaries.json",
     "config/maga-inc-midterm-funds-source-queue.v1.json"
   ],
   "alternative_explanations": [
-    "Funds may be lawfully unrestricted and retained for later electoral deployment.",
+    "Funds may be lawfully unrestricted within the applicable Hybrid PAC account and retained for later electoral deployment.",
     "Delayed or selective spending may reflect ordinary political strategy rather than diversion.",
     "Donor-facing representations may not have restricted contributions specifically to the 2026 midterms.",
-    "Related-party or vendor payments, if any, may reflect documented ordinary-course services at defensible value."
+    "Related-party or vendor payments, if any, may reflect documented ordinary-course services at defensible value.",
+    "The FEC committee-page independent-expenditure summary excludes 24-hour and 48-hour reports, so apparent differences between summary totals and a reconstructed transaction population may be methodological rather than substantive."
   ],
   "finding_authorized": false,
   "publication_authorized": false
