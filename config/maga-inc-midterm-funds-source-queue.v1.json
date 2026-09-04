@@ -17,8 +17,8 @@
       "source_class": "primary_official",
       "url": "https://www.fec.gov/data/committee/C00892471/",
       "custody_state": "OFFICIAL_URL_VERIFIED",
-      "use_ceiling": "committee_identity_and_current_summary_anchor",
-      "note": "Official FEC committee page identifies MAGA INC. as C00892471 and provides current 2025-2026 summary data. Transaction-level and filing-level reconstruction remains required."
+      "use_ceiling": "committee_identity_summary_and_methodology_anchor",
+      "note": "Official FEC committee page identifies MAGA INC. as C00892471, reports registration date 2024-11-07 and current 2025-2026 summary data, and states that its displayed independent-expenditure totals exclude 24/48-hour reports. Transaction-level and filing-level reconstruction remains required."
     }
   ],
   "acquisition_targets": [
@@ -29,7 +29,7 @@
       "state": "PARTIAL",
       "artifact": "assessments/evidence/2026-09-03-maga-inc-statement-of-organization-anchor.json",
       "located_image_numbers": ["202507309764365676"],
-      "remaining": "Locate initial 2024 Form 1 and every later Form 1 amendment; reconcile field-level supersession and committee relationship/account structure."
+      "remaining": "Locate initial 2024 Form 1 and every later Form 1 amendment; reconcile field-level supersession and committee relationship/account structure. Official profile independently confirms registration date 2024-11-07, but the original Form 1 image remains unlocated."
     },
     {
       "id": "SRC-FEC-REPORTS-001",
@@ -51,8 +51,9 @@
       "target": "All independent-expenditure filings and transaction records for C00892471, including supported/opposed candidate, race, dissemination date, amount, payee, and purpose",
       "state": "PARTIAL",
       "artifact": "assessments/evidence/2026-09-03-maga-inc-initial-independent-expenditure-anchor.json",
+      "method_artifact": "assessments/source-posture/2026-09-04-maga-inc-fec-summary-method-boundary.json",
       "located_transactions": ["SE.4694", "SE.5214"],
-      "remaining": "Enumerate complete Schedule E and 24/48-hour report population and reconcile against summary independent-expenditure totals."
+      "remaining": "Enumerate complete Schedule E and 24/48-hour report population. Reconcile only after deduplication/amendment normalization because the FEC committee-page IE display explicitly excludes 24/48-hour reports."
     },
     {
       "id": "SRC-FEC-DISB-001",
@@ -81,8 +82,10 @@
     {
       "id": "SRC-LAW-001",
       "class": "authority_primary",
-      "target": "Applicable FEC statutes, regulations, advisory opinions, enforcement precedents, and guidance governing hybrid PAC funds, independent expenditures, coordination, reporting/disclosure, personal use, and related-party payments",
-      "state": "PENDING"
+      "target": "Applicable FEC statutes, regulations, advisory opinions, enforcement precedents, and guidance governing hybrid PAC funds, independent expenditures, coordination, reporting/disclosure, account segregation, source eligibility, candidate contributions, personal use, and related-party payments",
+      "state": "PARTIAL",
+      "artifact": "assessments/evidence/2026-09-04-maga-inc-fec-authority-boundaries.json",
+      "remaining": "Map case-specific facts to the initial FEC authority set; add statutes/regulations/advisory opinions/enforcement precedents only where observed conduct makes them material. Personal-use and related-party-payment authority remain separately unresolved."
     },
     {
       "id": "SRC-COMMITTEE-STATEMENT-001",
@@ -93,7 +96,9 @@
   ],
   "data_quality": {
     "independent_expenditure_duplicate_repaired": true,
-    "repair_commit": "ec5cbf3a3c5ed2f070e144cad426e92f3fbf134c"
+    "repair_commit": "ec5cbf3a3c5ed2f070e144cad426e92f3fbf134c",
+    "fec_ie_display_excludes_24_48_hour_reports": true,
+    "summary_method_artifact": "assessments/source-posture/2026-09-04-maga-inc-fec-summary-method-boundary.json"
   },
   "invariants": {
     "large_cash_balance_is_not_misuse": true,
@@ -101,6 +106,8 @@
     "donor_frustration_is_not_donor_deception": true,
     "political_strategy_is_not_personal_use": true,
     "media_reporting_is_not_transaction_level_proof": true,
+    "summary_ie_total_is_not_complete_ie_population": true,
+    "authority_rule_is_not_case_violation": true,
     "candidate_layer_finding_authorized": false,
     "candidate_layer_publication_authorized": false
   },
