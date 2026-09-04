@@ -1,0 +1,73 @@
+{
+  "topic_id": "ERL-2026-09-03-QUANTUM-AI-CRYPTO-EXTRAPOLATION",
+  "record_type": "technical_resource_model_comparison",
+  "as_of": "2026-09-03",
+  "task_id": "QAC-002",
+  "sources": [
+    {
+      "source_id": "QAC-RSA-GIDNEY-EKERA-2021",
+      "authority": "peer_reviewed_research",
+      "title": "How to factor 2048 bit RSA integers in 8 hours using 20 million noisy qubits",
+      "authors": ["Craig Gidney", "Martin Ekerå"],
+      "journal": "Quantum",
+      "publication_date": "2021-04-15",
+      "doi": "10.22331/q-2021-04-15-433",
+      "url": "https://quantum-journal.org/papers/q-2021-04-15-433/",
+      "model": "Shor-family factoring construction with explicit error-correction and layout assumptions",
+      "reported_estimate": {
+        "target": "RSA-2048 integer factorization",
+        "physical_qubits_approx": 20000000,
+        "runtime_approx_hours": 8,
+        "physical_gate_error_rate": "1e-3",
+        "surface_code_cycle_time": "1 microsecond",
+        "reaction_time": "10 microseconds"
+      },
+      "boundary": "Resource estimate under stated assumptions; not evidence that such a machine currently exists or has executed the attack."
+    },
+    {
+      "source_id": "QAC-RSA-GIDNEY-2025-PREPRINT",
+      "authority": "research_preprint",
+      "title": "How to factor 2048 bit RSA integers with less than a million noisy qubits",
+      "author": "Craig Gidney",
+      "publication_date": "2025-05-21",
+      "url": "https://arxiv.org/abs/2505.15917",
+      "model": "Updated Shor-family RSA-2048 resource estimate under large-scale error-corrected superconducting assumptions",
+      "reported_estimate": {
+        "target": "RSA-2048 integer factorization",
+        "physical_qubits": "less_than_1000000",
+        "runtime": "less_than_one_week",
+        "physical_gate_error_rate": "0.1%",
+        "surface_code_cycle_time": "1 microsecond",
+        "control_reaction_time": "10 microseconds"
+      },
+      "boundary": "Preprint estimate, not a demonstrated RSA-2048 attack and not evidence of an existing operational CRQC."
+    },
+    {
+      "source_id": "QAC-JIUZHANG4-COMPARISON",
+      "authority": "derived_comparison_from_primary_publication",
+      "source": "assessments/evidence/2026-09-03-quantum-ai-cryptographic-primary-source-reconstruction.json",
+      "jiuzhang_reported_architecture": {
+        "computational_model": "programmable photonic Gaussian boson sampling",
+        "squeezed_states": 1024,
+        "optical_modes": 8176,
+        "detection_events_up_to_photons": 3050
+      },
+      "comparison_rule": "Optical modes, squeezed states, detected photons, logical qubits, and physical error-corrected qubits are different resource measures and must not be numerically substituted for one another without an explicit architecture/algorithm mapping.",
+      "mapping_found": false
+    }
+  ],
+  "governed_conclusions": {
+    "rsa2048_quantum_attack_has_known_theoretical_resource_paths": true,
+    "resource_estimates_have_declined_over_time": true,
+    "rsa2048_operational_quantum_break_demonstrated_by_these_sources": false,
+    "jiuzhang4_resources_directly_satisfy_rsa2048_shor_resource_estimates": "not_established",
+    "jiuzhang4_gbs_benchmark_can_be_converted_directly_to_rsa2048_attack_runtime": false,
+    "present_rsa2048_quantum_compromise_finding": "not_authorized"
+  },
+  "required_discriminator_for_promotion": [
+    "A demonstrated factoring or discrete-log attack at cryptographically relevant key size, or",
+    "an independently reproducible mapping from the operational machine architecture to the required fault-tolerant logical circuit with measured error budget and runtime, plus",
+    "evidence that the mapped machine actually exists and operates at the required scale."
+  ],
+  "publication_authorized": false
+}
