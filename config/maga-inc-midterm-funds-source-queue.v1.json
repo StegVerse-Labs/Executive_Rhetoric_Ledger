@@ -26,7 +26,10 @@
       "id": "SRC-FEC-ORG-001",
       "class": "primary_official",
       "target": "FEC Statement of Organization, amendments, committee type/status history, treasurer/custodian, connected/affiliated organization declarations, and hybrid-PAC account structure for C00892471",
-      "state": "PENDING"
+      "state": "PARTIAL",
+      "artifact": "assessments/evidence/2026-09-03-maga-inc-statement-of-organization-anchor.json",
+      "located_image_numbers": ["202507309764365676"],
+      "remaining": "Locate initial 2024 Form 1 and every later Form 1 amendment; reconcile field-level supersession and committee relationship/account structure."
     },
     {
       "id": "SRC-FEC-REPORTS-001",
@@ -37,15 +40,19 @@
       "located_image_numbers": [
         "202507319789366210",
         "202601029793901842",
+        "202601319808906870",
         "202602209837825060"
       ],
-      "remaining": "Enumerate all regular reports/amendments and reconstruct supersession chronology."
+      "remaining": "Enumerate all remaining regular reports/amendments and reconstruct supersession chronology."
     },
     {
       "id": "SRC-FEC-IE-001",
       "class": "primary_official",
       "target": "All independent-expenditure filings and transaction records for C00892471, including supported/opposed candidate, race, dissemination date, amount, payee, and purpose",
-      "state": "PENDING"
+      "state": "PARTIAL",
+      "artifact": "assessments/evidence/2026-09-03-maga-inc-initial-independent-expenditure-anchor.json",
+      "located_transactions": ["SE.4694", "SE.5214"],
+      "remaining": "Enumerate complete Schedule E and 24/48-hour report population and reconcile against summary independent-expenditure totals."
     },
     {
       "id": "SRC-FEC-DISB-001",
@@ -84,6 +91,10 @@
       "state": "PENDING"
     }
   ],
+  "data_quality": {
+    "independent_expenditure_duplicate_repaired": true,
+    "repair_commit": "ec5cbf3a3c5ed2f070e144cad426e92f3fbf134c"
+  },
   "invariants": {
     "large_cash_balance_is_not_misuse": true,
     "delayed_spending_is_not_misuse": true,
