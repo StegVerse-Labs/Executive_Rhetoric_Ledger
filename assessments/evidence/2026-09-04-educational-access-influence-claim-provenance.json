@@ -1,0 +1,59 @@
+{
+  "schema": "stegverse.erl.educational_access_influence.claim_provenance.v1",
+  "goal_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "owner": "issue:121",
+  "state": "RESEARCH_ACTIVE_PARTIAL",
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "claims": [
+    {
+      "id": "EAIC-WSA-001",
+      "workstream": "WS-A",
+      "actor": "Fairplay coalition statement",
+      "claim_family": "generative AI threatens cognition / critical thinking / analytic reasoning / decision-making in children",
+      "campaign_source": "https://fairplayforkids.org/wp-content/uploads/2026/04/Coalition-of-Organizations-and-Experts-Calls-for-Pause-on-Generative-AI-in-PreK-12-schools-1.pdf",
+      "campaign_use": "supports five-year student-facing GenAI pause",
+      "evidence_state": "PRIMARY_CLAIM_VERIFIED_EVIDENCE_REVIEW_PENDING",
+      "required_discriminator": "Reconstruct every cited study, population, task, exposure duration, endpoint, peer-review status, and whether findings support developmental impairment versus task-level offloading or performance change.",
+      "dishonesty_finding_authorized": false
+    },
+    {
+      "id": "EAIC-WSB-001",
+      "workstream": "WS-B",
+      "actor": "data-center opposition messaging",
+      "claim_family": "data-center cooling requires potable/fresh drinking water and cooling water cannot be recycled",
+      "campaign_source": "MediaJustice data-center materials; exact native quote/page custody pending",
+      "campaign_use": "supports water-impact opposition",
+      "evidence_state": "CONTRARY_PRIMARY_EVIDENCE_LOCATED",
+      "contrary_source": "https://www.epa.gov/waterreuse/water-reuse-case-study-quincy-washington",
+      "contrary_evidence": "EPA documents an operational Microsoft/Quincy closed-loop system that treats and recirculates data-center cooling water, substantially reduces potable-groundwater reliance, and states data centers do not need potable water for cooling.",
+      "required_discriminator": "Custody the exact advocacy statement and its context, determine whether it was categorical or facility-specific, then determine whether correction/contrary evidence was available or known at publication time.",
+      "dishonesty_finding_authorized": false
+    },
+    {
+      "id": "EAIC-WSC-001",
+      "workstream": "WS-C",
+      "actor": "school-choice/voucher advocacy",
+      "claim_family": "publicly funded private-school choice expands parental educational options",
+      "campaign_source": "American Federation for Children / state voucher advocacy records pending native custody",
+      "campaign_use": "supports voucher / education-savings-account expansion",
+      "evidence_state": "CLAIM_AND_POLICY_EFFECT_RECONSTRUCTION_PENDING",
+      "required_discriminator": "Measure recipient prior enrollment, public accountability requirements, admissions/curriculum/staffing/reporting/civil-rights differences, and fiscal effects on public systems; separate stated parental-choice purpose from actual fund-flow and accountability outcomes.",
+      "dishonesty_finding_authorized": false
+    },
+    {
+      "id": "EAIC-XF-001",
+      "workstream": "CROSS_FRONT",
+      "actor": "multiple advocacy networks",
+      "claim_family": "protective restriction is necessary because the targeted technology/institution creates unacceptable public harm",
+      "campaign_source": "multi-source",
+      "campaign_use": "youth-AI restriction, data-center restriction, or education-system restructuring",
+      "evidence_state": "COMPARATIVE_ANALYSIS_PENDING",
+      "required_discriminator": "Compare rhetoric, cited evidence, omitted material facts, professional political intermediaries, funding provenance, and policy asks across fronts before any common-strategy or coordination finding.",
+      "dishonesty_finding_authorized": false
+    }
+  ],
+  "classification_rule": "A materially false or misleading public claim may be classified as inaccurate or misleading from evidence alone. A dishonesty finding additionally requires evidence that the actor deliberately omitted, misrepresented, or knowingly used facts to create a misleading impression.",
+  "next_executable_task": "Custody exact primary campaign statements and their cited sources, then populate citation-by-citation support, contradiction, omission, correction, and knowledge-timeline fields.",
+  "terminal_condition": "Material claims have proposition-level source reconstruction and independent review sufficient to classify support, overstatement, contradiction, and any evidenced deliberateness."
+}
