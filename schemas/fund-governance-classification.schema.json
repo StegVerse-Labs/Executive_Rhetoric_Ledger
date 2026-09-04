@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl/fund-governance-classification.v1.json",
+  "title": "ERL Fund Governance Classification v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "record_id",
+    "lifecycle",
+    "axes",
+    "state_vector",
+    "finding_authorized",
+    "publication_authorized"
+  ],
+  "properties": {
+    "schema": {
+      "const": "stegverse.erl.fund_governance_classification.v1"
+    },
+    "record_id": {"type": "string", "minLength": 1},
+    "lifecycle": {
+      "enum": ["RESEARCH_CANDIDATE", "RESEARCH_ACTIVE_NOT_ASSESSABLE", "ASSESSABLE", "REVIEWED", "TERMINAL"]
+    },
+    "axes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["legal_misuse", "represented_purpose_divergence", "governance_ethical_misuse", "strategic_nondeployment"],
+      "properties": {
+        "legal_misuse": {
+          "enum": ["NOT_ASSESSED", "INSUFFICIENT_EVIDENCE", "NO_VIOLATION_SUPPORTED", "POTENTIAL_VIOLATION", "VIOLATION_SUPPORTED"]
+        },
+        "represented_purpose_divergence": {
+          "enum": ["NOT_ASSESSED", "REPRESENTATION_NOT_RECONSTRUCTED", "ALIGNED", "PARTIAL_DIVERGENCE", "MATERIAL_DIVERGENCE_SUPPORTED"]
+        },
+        "governance_ethical_misuse": {
+          "enum": ["NOT_ASSESSED", "INSUFFICIENT_EVIDENCE", "NO_GOVERNANCE_CONCERN_SUPPORTED", "GOVERNANCE_RISK", "GOVERNANCE_MISUSE_SUPPORTED"]
+        },
+        "strategic_nondeployment": {
+          "enum": ["NOT_ASSESSED", "STRATEGY_NOT_RECONSTRUCTED", "NORMAL_DEPLOYMENT", "DELAYED_OR_SELECTIVE_DEPLOYMENT", "STRATEGIC_NONDEPLOYMENT_SUPPORTED"]
+        }
+      }
+    },
+    "state_vector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["LEGALITY", "DONOR_REPRESENTATION", "BENEFICIAL_RECIPIENT", "ORGANIZATIONAL_PURPOSE", "DEPLOYMENT_TIMING", "CONTROL_CONCENTRATION", "DISCLOSURE_ACCURACY"],
+      "properties": {
+        "LEGALITY": {"type": "string"},
+        "DONOR_REPRESENTATION": {"type": "string"},
+        "BENEFICIAL_RECIPIENT": {"type": "string"},
+        "ORGANIZATIONAL_PURPOSE": {"type": "string"},
+        "DEPLOYMENT_TIMING": {"type": "string"},
+        "CONTROL_CONCENTRATION": {"type": "string"},
+        "DISCLOSURE_ACCURACY": {"type": "string"}
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "finding_authorized": {"type": "boolean"},
+    "publication_authorized": {"type": "boolean"}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"lifecycle": {"enum": ["RESEARCH_CANDIDATE", "RESEARCH_ACTIVE_NOT_ASSESSABLE"]}}
+      },
+      "then": {
+        "properties": {
+          "finding_authorized": {"const": false},
+          "publication_authorized": {"const": false}
+        }
+      }
+    }
+  ]
+}
