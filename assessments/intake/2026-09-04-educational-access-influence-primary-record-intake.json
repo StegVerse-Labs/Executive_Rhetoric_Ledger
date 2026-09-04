@@ -1,0 +1,134 @@
+{
+  "schema": "stegverse.erl.educational_access_influence.primary_record_intake.v1",
+  "goal_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "owner": "issue:121",
+  "handoff": "docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md",
+  "state": "ACTIVE_SOURCE_ACQUISITION",
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "motive_finding_authorized": false,
+  "research_question": "Whether youth-AI restriction, data-center opposition, and public-education restructuring share people, funders, intermediaries, political machinery, messaging infrastructure, or coordinated access-restriction objectives.",
+  "workstreams": [
+    {
+      "id": "WS-A",
+      "name": "youth-ai",
+      "source_families": [
+        "lobbying-disclosures",
+        "campaign-finance-records",
+        "foundation-and-nonprofit-filings",
+        "coalition-membership-and-funding-disclosures",
+        "school-board-and-state-policy-records",
+        "scientific-literature-cited-by-advocacy",
+        "advertising-and-social-media-disclosures"
+      ],
+      "candidate_entities_for_primary_record_resolution": [
+        "Fairplay",
+        "Common Sense Media",
+        "Parents for AI Caution in Educational Spaces",
+        "Parents & Kids Safe AI Coalition",
+        "OpenAI",
+        "Omidyar Network",
+        "Silicon Valley Community Foundation"
+      ],
+      "required_outputs": [
+        "funding edges",
+        "lobbyist/consultant edges",
+        "policy targets",
+        "claim-to-science provenance",
+        "correction/contradiction history"
+      ]
+    },
+    {
+      "id": "WS-B",
+      "name": "data-centers",
+      "source_families": [
+        "foundation-and-nonprofit-filings",
+        "candidate-endorsement-and-election-spending-records",
+        "lobbying-disclosures",
+        "local-moratorium-and-zoning-records",
+        "utility-commission-dockets",
+        "litigation-records",
+        "technical-water-power-emissions-records",
+        "organizer-toolkits-and-model-language"
+      ],
+      "candidate_entities_for_primary_record_resolution": [
+        "Food & Water Watch",
+        "Food & Water Action",
+        "MediaJustice",
+        "Stop Data Centers Coalition",
+        "Data Center Resistance",
+        "Citizens Action Coalition",
+        "Silicon Valley Community Foundation",
+        "Ford Foundation",
+        "MacArthur Foundation"
+      ],
+      "required_outputs": [
+        "originating donor where publicly traceable",
+        "intermediary grant edges",
+        "local campaign support edges",
+        "electoral/political recipient edges",
+        "technical-claim provenance"
+      ]
+    },
+    {
+      "id": "WS-C",
+      "name": "public-education-restructuring",
+      "source_families": [
+        "campaign-finance-records",
+        "state-lobbying-disclosures",
+        "foundation-and-nonprofit-filings",
+        "voucher-and-education-savings-account-legislation",
+        "department-of-education-policy-and-reorganization-records",
+        "curriculum-and-book-policy-records",
+        "teacher-certification-and-staffing-rules",
+        "model-legislation-and-think-tank-materials"
+      ],
+      "candidate_entities_for_primary_record_resolution": [
+        "American Federation for Children",
+        "AFC Victory Fund",
+        "Betsy DeVos",
+        "Dick DeVos",
+        "Jeff Yass",
+        "William Oberndorf",
+        "Texas Public Policy Foundation",
+        "Heritage Foundation",
+        "Bradley Impact Fund",
+        "Alliance Defending Freedom"
+      ],
+      "required_outputs": [
+        "donor-to-PAC edges",
+        "PAC-to-candidate edges",
+        "lobbyist-to-bill edges",
+        "policy-strategy documents",
+        "public-accountability comparison for public-money/private-school flows"
+      ]
+    }
+  ],
+  "cross_front_fields": [
+    "person",
+    "company",
+    "foundation_or_daf",
+    "pac_or_527",
+    "advocacy_org",
+    "lobbyist",
+    "consultant",
+    "pr_firm",
+    "pollster",
+    "candidate_or_lawmaker",
+    "policy_instrument",
+    "policy_outcome",
+    "message_claim",
+    "scientific_or_technical_source",
+    "disclosure_status"
+  ],
+  "evidence_states": [
+    "PRIMARY_VERIFIED",
+    "OFFICIAL_SECONDARY",
+    "SECONDARY_LEAD",
+    "DISPUTED",
+    "CONTRADICTED",
+    "UNRESOLVED"
+  ],
+  "next_executable_task": "Acquire primary/official records for the named candidate entities, starting with federal/state lobbying and campaign-finance disclosures plus nonprofit grant records, then materialize person-to-money-to-policy edges without promoting a coordination or motive finding.",
+  "terminal_condition": "Primary-source-backed cross-front graph and independent review support a governed promotion, supersession, merge, or closure with reason."
+}
