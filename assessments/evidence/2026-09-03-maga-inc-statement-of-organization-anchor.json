@@ -1,0 +1,45 @@
+{
+  "schema": "stegverse.erl.maga_inc_statement_of_organization_anchor.v1",
+  "record_id": "ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001",
+  "committee_id": "C00892471",
+  "state": "PARTIAL_PRIMARY_EVIDENCE",
+  "official_source": {
+    "image_number": "202507309764365676",
+    "filed_date": "2025-07-30",
+    "form": "FEC FORM 1",
+    "version": "AMENDED",
+    "official_pdf": "https://docquery.fec.gov/pdf/676/202507309764365676/202507309764365676.pdf",
+    "custody_state": "OFFICIAL_PDF_LOCATED_PARSED_TEXT_OBSERVED_NATIVE_HASH_PENDING"
+  },
+  "observations": {
+    "committee_name": "MAGA INC.",
+    "treasurer": "GANTT, CHARLES",
+    "address": {
+      "care_of": "BULLDOG COMPLIANCE",
+      "street": "138 CONANT ST STE 401",
+      "city": "BEVERLY",
+      "state": "MA",
+      "zip": "01915"
+    },
+    "email": "CLIENT@BULLDOGCOMPLIANCE.COM",
+    "website": "www.magapac.com"
+  },
+  "separate_official_committee_profile_observation": {
+    "registration_date": "2024-11-07",
+    "current_classification": "Active - Monthly Hybrid PAC (with Non-Contribution Account) - Nonqualified - Unauthorized",
+    "source": "https://www.fec.gov/data/committee/C00892471/"
+  },
+  "gaps": [
+    "Initial 2024 Statement of Organization native filing has not yet been located in this lane.",
+    "All Form 1 amendments have not yet been enumerated.",
+    "Affiliated/connected organization declarations and depository history require page-level reconciliation across the complete Form 1 sequence.",
+    "Native byte hash remains pending."
+  ],
+  "governance": {
+    "organization_amendment_is_not_wrongdoing": true,
+    "committee_profile_classification_is_not_fund_use_finding": true,
+    "candidate_layer_finding_authorized": false,
+    "publication_authorized": false
+  },
+  "next_task": "Locate the initial 2024 Form 1 and every later Form 1 amendment, then produce a field-by-field supersession chronology for treasurer, address, depositories, committee relationships, and account structure."
+}
