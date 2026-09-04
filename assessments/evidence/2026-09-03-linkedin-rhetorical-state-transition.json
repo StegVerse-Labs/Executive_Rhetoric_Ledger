@@ -2,7 +2,7 @@
   "topic_id": "ERL-2026-09-03-QUANTUM-AI-CRYPTO-EXTRAPOLATION",
   "record_type": "rhetorical_state_transition_evidence",
   "captured_date": "2026-09-03",
-  "source_surface": "LinkedIn profile activity screenshot supplied in conversation",
+  "source_surface": "LinkedIn profile activity screenshots supplied in conversation",
   "subject_profile": "Zoli (Bill) Apró",
   "visible_activity_age": "10h",
   "observed_visible_title": "They're Not Coming. They're Already Here. And They're 4 Trillion Times Faster",
@@ -13,22 +13,36 @@
     "#ChinaQuantum",
     "#Cybercrime",
     "#PostQuantumCryptography",
-    "#IdentityHarvest"
+    "#IdentityHarvest",
+    "#HACKERSbook",
+    "#APUC",
+    "#BillApro",
+    "#TheHarvestIsReal",
+    "#CognitiveWarfare",
+    "#BlockchainNotSecure",
+    "#WesternBlindness",
+    "#WakeUpCall",
+    "#BillApró"
   ],
   "prior_trigger_title": "They’re Coming? They’re Already Here — 4 Trillion Times Faster",
   "transition_classification": {
     "question_or_uncertainty_marker_removed": true,
     "present_tense_operational_assertion_strengthened": true,
     "cybercrime_identity_harvest_association_visible": true,
+    "harvest_present_reality_assertion_visible": true,
+    "blockchain_insecurity_assertion_visible": true,
+    "western_blindness_and_wakeup_call_framing_visible": true,
+    "cognitive_warfare_association_visible": true,
     "technical_truth_value_changed_by_rhetorical_transition": false,
     "operational_quantum_cryptanalytic_capability_established": false
   },
-  "erl_interpretation": "The visible LinkedIn activity shows a rhetorical escalation from an uncertainty-framed title to a categorical present-state assertion. This is admissible evidence of changed framing, not evidence that RSA-2048/ECC compromise or present operational quantum decryption has been established.",
+  "erl_interpretation": "The visible LinkedIn activity shows a rhetorical escalation from an uncertainty-framed title to a categorical present-state assertion. The expanded hashtag set further associates the claim with present identity harvesting, blockchain insecurity, cognitive warfare, and Western blindness. These are admissible observations of framing and asserted present reality, not evidence that RSA-2048/ECC compromise or present operational quantum decryption has been established.",
   "limitations": [
-    "Screenshot does not expose the full article body.",
-    "Visible hashtag text is partially truncated after #IdentityHarvest; only the readable hashtag stem is preserved.",
-    "No inference is made about motive, intent, reach, engagement, or factual accuracy beyond the visible text."
+    "Screenshots do not expose the full article body.",
+    "Hashtags are preserved only where clearly readable in the supplied screenshot.",
+    "No inference is made about motive, intent, reach, engagement, or factual accuracy beyond the visible text.",
+    "Hashtag assertions are recorded as rhetoric/source claims and are not promoted to technical findings without independent evidence."
   ],
-  "qac005_effect": "partially_unblocked_rhetorical_state_only",
+  "qac005_effect": "partially_unblocked_rhetorical_state_and_assertion_tags",
   "full_claim_decomposition_release_condition": "Full reproducible article/post text or equivalent source custody is still required for exact numerical and causal claim decomposition."
 }
