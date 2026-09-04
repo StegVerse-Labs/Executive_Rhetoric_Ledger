@@ -72,17 +72,26 @@ Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Durable owner: Issue `#121`.
 - `docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md`.
 - `assessments/intake/2026-09-04-educational-access-influence-primary-record-intake.json` — three-lane source queue.
-- `assessments/evidence/2026-09-04-educational-access-influence-money-graph.json` — commit `88f19575d6f5279612c645d9a7e591de725863e3`; source-state-qualified person/funder/political edges.
-- `assessments/evidence/2026-09-04-educational-access-influence-claim-provenance.json` — commit `782e9677f2eda40fa839f98e31fe058828a1891a`; claim/evidence/correction discriminators.
-- `assessments/contradictions/2026-09-04-educational-access-influence.matrix.md` — commit `437894863ee264163ad91c5f9fbb6efdebaaf5d4`; supporting, contrary, limiting, and unresolved propositions.
+- `assessments/evidence/2026-09-04-educational-access-influence-money-graph.json` — initial commit `88f19575d6f5279612c645d9a7e591de725863e3`; primary-evidence advancement `a119ec51ea500ce33e010af3812a549c7a52e35e`.
+- `assessments/evidence/2026-09-04-educational-access-influence-claim-provenance.json` — commit `782e9677f2eda40fa839f98e31fe058828a1891a`.
+- `assessments/contradictions/2026-09-04-educational-access-influence.matrix.md` — initial commit `437894863ee264163ad91c5f9fbb6efdebaaf5d4`; evidence-posture correction `d418e910080cff39cf30cc28415f51f9ca25bc18`.
+- `assessments/evidence/2026-09-04-educational-access-influence-policy-outcomes.json` — commit `1e85a3acba2d4e2dcb29bdff74e7494692512c3f`; primary/official policy-instrument anchors across all three workstreams.
 
 ## Current evidence posture
 
-The installed money graph deliberately distinguishes `PRIMARY_VERIFIED`, `OFFICIAL_SECONDARY`, `SECONDARY_LEAD`, and `UNRESOLVED` edges. It does not convert donor-name overlap into coordination.
+The money graph deliberately distinguishes `PRIMARY_VERIFIED`, `OFFICIAL_SECONDARY`, `SECONDARY_LEAD`, and `UNRESOLVED` edges. It does not convert donor-name overlap into coordination.
 
-The claim-provenance layer now records a primary Fairplay pause/cognitive-harm claim family, an EPA technical contradiction to any universal claim that data-center cooling requires potable water or cannot reuse water, voucher-accountability discriminators, and a cross-front comparison gate. Dishonesty findings remain unauthorized until knowledge/deliberateness is evidenced.
+New primary-source advancement:
 
-The contradiction matrix records both supporting and limiting evidence, including the unresolved SVCF/DAF-origin problem and the absence of a primary-source-backed common command or common ultimate motive across all three fronts.
+- Food & Water Watch's filed 2021 Form 990 Schedule B directly names Silicon Valley Community Foundation and reports a `$6,500,000` contribution. This verifies the SVCF-to-FWW intermediary/recipient edge and amount, but does not identify the underlying donor-advised-fund originator or prove that the 2021 contribution funded later anti-data-center work.
+- Fairplay FY24 and FY25 public annual-report donor lists searched in this lane do not identify Silicon Valley Community Foundation. The previously asserted SVCF/Fairplay cross-front overlap is therefore downgraded to `UNRESOLVED` pending a native SVCF/Fairplay grant record; absence from those annual reports is not proof that no grant existed.
+- Official Texas sources establish SB 2 / Texas Education Freedom Accounts, a `$1 billion` 2026-27 biennial program cap, and authorized use for private-school/homeschool and other approved education expenses.
+- Executive Order 14242 directly states the federal objective of facilitating closure of the Department of Education and returning authority to states/local communities to the maximum extent permitted by law; it does not itself establish completed statutory abolition.
+- Texas Ethics Commission primary reporting identifies AFC Victory Fund filer `00088032` and a March 6, 2024 cash-on-hand anchor of `$5,810,986.84`; current-cycle Yass/DeVos contribution amounts remain pending native filing custody.
+
+The claim-provenance layer records a primary Fairplay pause/cognitive-harm claim family, an EPA technical contradiction to any universal claim that data-center cooling requires potable water or cannot reuse water, voucher-accountability discriminators, and a cross-front comparison gate. Dishonesty findings remain unauthorized until knowledge/deliberateness is evidenced.
+
+The contradiction matrix records supporting and limiting evidence and now explicitly corrects the prior overstatement of the SVCF/Fairplay overlap. No primary-source-backed common command or common ultimate motive across all three fronts is established.
 
 ## Remaining files/modules to install
 
@@ -95,16 +104,17 @@ Destination: `StegVerse-Labs/Executive_Rhetoric_Ledger`
    - Independent review only after sufficient primary-source replacement of current secondary/unresolved edges.
 
 Substantive evidence still to acquire:
-- Texas Ethics Commission native AFC/Yass/DeVos filings;
-- primary foundation/grantee records for SVCF/Fairplay/Food & Water Watch and originating DAF identity where publicly traceable;
+- Texas Ethics Commission native AFC/Yass/DeVos contribution filings and AFC lobbying records;
+- a native SVCF/Fairplay grant record or evidence sufficient to close that edge as unsupported;
+- originating DAF identity behind SVCF-to-FWW where publicly traceable and any restriction/purpose record;
 - lobbying/expenditure records for Parents & Kids Safe AI / OpenAI and associated intermediaries;
 - exact native MediaJustice water-claim page/context and publication date;
 - original TPPF strategy/fundraising communication connecting curriculum grievance to voucher mobilization;
-- bill/order/moratorium records and named political-recipient chronology.
+- native New York data-center legislative/executive instruments and named political-recipient chronology.
 
 ## Next executable machine task
 
-Complete candidate + activation-registry admission as one mainline transition. Because the available single-file GitHub contents mutation surface cannot make two paths atomic, do not create an unregistered `research-candidates/` file on `main`. Until a multi-file branch/commit path is available, continue replacing secondary/unresolved evidence edges with native primary records under Issue #121.
+Continue replacing secondary/unresolved money and lobbying edges with native primary records. Candidate + activation-registry admission remains a coupled transition: do not create an unregistered `research-candidates/` file on `main`. The available Git data surface can create multi-file commits, but the registry still must be safely reconstructed without dropping existing candidate groups before that transition is attempted.
 
 ## Release / propagation
 
@@ -120,15 +130,16 @@ No tag or release is warranted at the current research-candidate stage.
 - bounded handoff: 1/1 = 100%
 - candidate + registry admission: 0/1 = 0%
 - primary-record intake: 1/1 = 100% structural installation; source replacement ongoing
-- money/person influence graph: 1/1 = 100% structural installation; evidence partial
+- money/person influence graph: 1/1 = 100% structural installation; primary evidence advancing
 - claim-provenance graph: 1/1 = 100% structural installation; evidence partial
-- contradiction matrix: 1/1 = 100% structural installation
+- contradiction matrix: 1/1 = 100% structural installation; active correction history preserved
+- policy-outcome ledger: 1/1 = 100% structural installation; primary/official anchors partial
 - independent review: 0/1 = 0%
 
-Bounded deliverable groups installed: 6/8 = 75%.
-Fully developed/terminal evidence files: 2/6 installed artifact files are structurally complete for their current purpose; 4/6 remain active evidence-bearing artifacts rather than terminal findings. Scaffolding/stubs: 0.
-Goal activation: 75% structural / approximately 55% substantive-evidence maturity.
+Bounded deliverable groups installed: 7/9 = 78%.
+Fully developed/terminal evidence files: 3/7 installed artifact files are complete for their current structural/custody purpose; 4/7 remain active evidence-bearing artifacts rather than terminal findings. Scaffolding/stubs: 0.
+Goal activation: 78% structural / approximately 62% substantive-evidence maturity.
 
 ## Archive condition
 
-Satisfied for this chat thread as a source of unique requirements: Issue #121, this handoff, the intake, evidence graphs, and contradiction matrix preserve the continuation state. The bounded research lane itself remains active and is not archive-complete as a repository goal.
+Satisfied for this chat thread as a source of unique requirements: Issue #121, this handoff, the intake, evidence graphs, policy-outcome ledger, and contradiction matrix preserve the continuation state. The bounded research lane itself remains active and is not archive-complete as a repository goal.
