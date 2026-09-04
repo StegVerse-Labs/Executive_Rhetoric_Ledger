@@ -4,7 +4,18 @@
   "committee_id": "C00892471",
   "state": "PARTIAL_PRIMARY_FILINGS_LOCATED",
   "coverage_complete": false,
-  "filings": [
+  "organization_filings": [
+    {
+      "image_number": "202507309764365676",
+      "form": "FEC FORM 1",
+      "version": "AMENDED",
+      "filed_date": "2025-07-30",
+      "treasurer": "GANTT, CHARLES",
+      "official_pdf": "https://docquery.fec.gov/pdf/676/202507309764365676/202507309764365676.pdf",
+      "custody_state": "OFFICIAL_PDF_LOCATED_PARSED_TEXT_OBSERVED_NATIVE_HASH_PENDING"
+    }
+  ],
+  "reports": [
     {
       "image_number": "202507319789366210",
       "form": "FEC FORM 3X",
@@ -30,14 +41,26 @@
       "custody_state": "OFFICIAL_PDF_LOCATED_METADATA_VERIFIED_NATIVE_HASH_PENDING"
     },
     {
+      "image_number": "202601319808906870",
+      "form": "FEC FORM 3X",
+      "report_type": "January 31 Year-End Report",
+      "version": "NEW",
+      "coverage_start": "2025-12-23",
+      "coverage_end": "2025-12-31",
+      "filed_date": "2026-01-31",
+      "treasurer": "GANTT, CHARLES",
+      "official_pdf": "https://docquery.fec.gov/pdf/870/202601319808906870/202601319808906870.pdf",
+      "custody_state": "OFFICIAL_PDF_LOCATED_METADATA_VERIFIED_NATIVE_HASH_PENDING"
+    },
+    {
       "image_number": "202602209837825060",
       "form": "FEC FORM 3X",
       "report_type": "February 20 Monthly Report",
-      "version": "UNKNOWN_FROM_CURRENT_CAPTURE",
+      "version": "NEW",
       "coverage_start": "2026-01-01",
       "coverage_end": "2026-01-31",
       "filed_date": "2026-02-20",
-      "treasurer": "UNKNOWN_FROM_CURRENT_CAPTURE",
+      "treasurer": "GANTT, CHARLES",
       "official_pdf": "https://docquery.fec.gov/pdf/060/202602209837825060/202602209837825060.pdf",
       "summary_observations": {
         "cash_on_hand_2026_01_01_usd": 304395525.76,
@@ -51,7 +74,7 @@
     }
   ],
   "gaps": [
-    "Initial Statement of Organization and all amendments not yet enumerated.",
+    "Initial 2024 Statement of Organization and remaining amendments not yet enumerated.",
     "All 2025-2026 regular reports and amendments not yet enumerated.",
     "24-hour and 48-hour independent-expenditure reports not yet enumerated.",
     "Raw electronic filing supersession/amendment relationships not yet reconstructed.",
