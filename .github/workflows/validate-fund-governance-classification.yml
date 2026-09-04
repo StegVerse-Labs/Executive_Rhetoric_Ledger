@@ -1,0 +1,31 @@
+name: Validate fund governance classification
+
+on:
+  push:
+    paths:
+      - 'standards/fund-governance-classification.v1.md'
+      - 'schemas/fund-governance-classification.schema.json'
+      - 'assessments/fund-governance/**'
+      - 'scripts/validate_fund_governance_classification.py'
+      - '.github/workflows/validate-fund-governance-classification.yml'
+  pull_request:
+    paths:
+      - 'standards/fund-governance-classification.v1.md'
+      - 'schemas/fund-governance-classification.schema.json'
+      - 'assessments/fund-governance/**'
+      - 'scripts/validate_fund_governance_classification.py'
+      - '.github/workflows/validate-fund-governance-classification.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate ERL fund-governance classifications
+        run: python scripts/validate_fund_governance_classification.py
