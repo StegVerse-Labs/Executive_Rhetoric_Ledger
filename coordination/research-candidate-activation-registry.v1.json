@@ -329,6 +329,19 @@
       "terminal_condition": "Primary-source transaction, representation, authority, contradiction, and independent-review evidence supports an explicit governed promotion, supersession, merge, or closure decision.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-ORLI-SHULL-AI-GOVERNANCE-COLLAPSE-2026",
+      "title": "Orli Shull AI governance collapse and authoritative conclusion",
+      "candidate_paths": ["research-candidates/2026-09-03-orli-shull-ai-governance-collapse-authority.md"],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:63",
+      "artifact_paths": ["docs/ORLI_SHULL_AI_GOVERNANCE_COLLAPSE_MIRROR_HANDOFF.md"],
+      "next_executable_task": "Custody the original LinkedIn permalink/full post and build a cross-domain comparison matrix separating inference authority, consequence authority, challenge rights, temporal slack, reversibility, uncertainty preservation, and human interruption authority.",
+      "terminal_condition": "Primary source custody, comparative institutional evidence, disconfirming evidence, transition-governance analysis, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
