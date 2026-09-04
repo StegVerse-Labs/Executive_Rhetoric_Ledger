@@ -1,15 +1,16 @@
 {
   "topic_id": "ERL-2026-09-03-QUANTUM-AI-CRYPTO-EXTRAPOLATION",
   "record_type": "evidence_reconstruction_task_registry",
-  "queue_status": "blocked_on_exact_source_custody_and_new_authoritative_evidence",
+  "queue_status": "blocked_on_full_exact_source_text_and_new_authoritative_evidence",
   "created_date": "2026-09-03",
   "last_reviewed": "2026-09-03",
   "canonical_assessment": "assessments/rhetoric/2026-09-03-quantum-ai-cryptographic-extrapolation.md",
   "primary_source_reconstruction": "assessments/evidence/2026-09-03-quantum-ai-cryptographic-primary-source-reconstruction.json",
   "rsa2048_resource_comparison": "assessments/evidence/2026-09-03-rsa2048-quantum-resource-model-comparison.json",
   "cryptographic_transition_governance_requirements": "assessments/controls/2026-09-03-cryptographic-transition-governance-requirements.json",
+  "linkedin_rhetorical_state_transition": "assessments/evidence/2026-09-03-linkedin-rhetorical-state-transition.json",
   "goal": "Reconstruct the evidentiary chain from reported Jiuzhang/DeepSeek technical developments to claims about present cryptographic compromise, preserving observation, inference, hypothesis, prediction, and engineering consequence as distinct governed states.",
-  "promotion_boundary": "Do not promote Gaussian-boson-sampling advantage, general Chinese quantum capability, classified-capability speculation, or harvest-now/decrypt-later risk into a finding that RSA-2048/ECC is presently broken or that Western encrypted traffic is currently being quantum-decrypted without direct authoritative evidence.",
+  "promotion_boundary": "Do not promote Gaussian-boson-sampling advantage, general Chinese quantum capability, classified-capability speculation, harvest-now/decrypt-later risk, or stronger rhetorical framing into a finding that RSA-2048/ECC is presently broken or that Western encrypted traffic is currently being quantum-decrypted without direct authoritative evidence.",
   "source_trigger": {
     "type": "user_submitted_public_article",
     "title": "They’re Coming? They’re Already Here — 4 Trillion Times Faster",
@@ -54,10 +55,10 @@
     {
       "task_id": "QAC-005",
       "priority": 1,
-      "state": "blocked-exact-source-text-custody-required",
+      "state": "partially-unblocked-rhetorical-transition-captured-full-text-still-required",
       "object": "LinkedIn article numerical and causal claim ledger",
       "release_condition": "Every material numerical/security claim is classified as observed fact, sourced statement, inference, hypothesis, prediction, unsupported extrapolation, or engineering consequence.",
-      "progress_note": "Public fetch of the LinkedIn article is not currently reproducible through the available public retrieval surface. Exact article text must not be fabricated from prior summary. Claim decomposition remains gated on reproducible source text or equivalent custody."
+      "progress_note": "User-provided profile Activity screenshot now preserves a stronger visible title: 'They're Not Coming. They're Already Here. And They're 4 Trillion Times Faster', with visible associations to #Cybercrime, #PostQuantumCryptography, and #IdentityHarvest. This establishes a rhetorical state transition from uncertainty-framed to categorical present-tense assertion. It does not establish the underlying operational cryptanalytic claim. Full article/post text remains required for complete numerical and causal claim decomposition."
     },
     {
       "task_id": "QAC-006",
@@ -78,11 +79,11 @@
   ],
   "next_unblocked_task": null,
   "blocked_next_actions": [
-    "QAC-005 requires reproducible exact LinkedIn article text or equivalent source custody.",
+    "QAC-005 full claim decomposition requires reproducible complete LinkedIn article/post text or equivalent source custody; the rhetorical transition itself is now preserved.",
     "QAC-006 requires new authoritative public evidence before any stronger operational-capability classification is admissible.",
     "Cross-repository installation of QAC-007 requirements requires selection of the target owner repository and reading its current *_MIRROR_HANDOFF.md before mutation."
   ],
-  "duplicate_execution_rule": "Before acquiring or creating a record, search the ERL source-posture, evidence, intake, and rhetoric surfaces for an existing Jiuzhang, DeepSeek, post-quantum, RSA/ECC, or harvest-now/decrypt-later object. Reuse preserved custody where available.",
+  "duplicate_execution_rule": "Before acquiring or creating a record, search the ERL source-posture, evidence, intake, and rhetoric surfaces for an existing Jiuzhang, DeepSeek, post-quantum, RSA/ECC, harvest-now/decrypt-later, or Apró LinkedIn activity object. Reuse preserved custody where available.",
   "completion_condition": "The article’s technical and security propositions are independently reconstructable with explicit evidence-state transitions, and no operational cryptographic-compromise finding exceeds the strongest authoritative evidence.",
   "findings_state": {
     "jiuzhang4_gbs_result": "established",
@@ -93,13 +94,15 @@
     "deployable_standardized_pqc": "established",
     "pqc_and_crypto_agility": "prudent_engineering_consequence",
     "deepseek_v4_quantum_cryptanalytic_bridge": "not_established",
+    "rhetorical_certainty_escalation": "observed",
     "publication_authorized": false,
     "motive_finding_authorized": false
   },
   "progress_summary": {
     "tasks_reconstructed_or_bounded": 5,
     "tasks_bounded_requirements_derived": 1,
-    "tasks_blocked_external_evidence_or_source_custody": 2,
-    "latest_control_commit": "f50bf75e38b98675fb20b5b50990df3ed97a2408"
+    "tasks_partially_unblocked": 1,
+    "tasks_blocked_external_evidence": 1,
+    "latest_rhetorical_transition_commit": "de269e415c626055a00bcc546818e2f29dc669e7"
   }
 }
