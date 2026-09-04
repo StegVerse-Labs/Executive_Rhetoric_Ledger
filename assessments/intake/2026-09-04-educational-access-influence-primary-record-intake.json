@@ -1,134 +1,58 @@
 {
-  "schema": "stegverse.erl.educational_access_influence.primary_record_intake.v1",
-  "goal_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
-  "owner": "issue:121",
-  "handoff": "docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md",
-  "state": "ACTIVE_SOURCE_ACQUISITION",
-  "finding_authorized": false,
-  "publication_authorized": false,
-  "motive_finding_authorized": false,
-  "research_question": "Whether youth-AI restriction, data-center opposition, and public-education restructuring share people, funders, intermediaries, political machinery, messaging infrastructure, or coordinated access-restriction objectives.",
-  "workstreams": [
+  "queue_id": "QUEUE-ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "topic_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "queue_status": "active",
+  "created_date": "2026-09-04",
+  "last_reviewed": "2026-09-04",
+  "notes": "Primary-record queue for the three educational-access influence workstreams. Governance, hypotheses, cross-front fields, evidence-state semantics, and release boundaries remain in docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md and the linked evidence artifacts. This queue does not authorize coordination, motive, dishonesty, factual, or publication findings.",
+  "items": [
     {
-      "id": "WS-A",
-      "name": "youth-ai",
-      "source_families": [
-        "lobbying-disclosures",
-        "campaign-finance-records",
-        "foundation-and-nonprofit-filings",
-        "coalition-membership-and-funding-disclosures",
-        "school-board-and-state-policy-records",
-        "scientific-literature-cited-by-advocacy",
-        "advertising-and-social-media-disclosures"
-      ],
-      "candidate_entities_for_primary_record_resolution": [
-        "Fairplay",
-        "Common Sense Media",
-        "Parents for AI Caution in Educational Spaces",
-        "Parents & Kids Safe AI Coalition",
-        "OpenAI",
-        "Omidyar Network",
-        "Silicon Valley Community Foundation"
-      ],
-      "required_outputs": [
-        "funding edges",
-        "lobbyist/consultant edges",
-        "policy targets",
-        "claim-to-science provenance",
-        "correction/contradiction history"
-      ]
+      "intake_id": "EDU-ACCESS-INTAKE-001",
+      "record_class": "Youth-AI advocacy funding, lobbying, coalition, campaign-finance, advertising, and cited scientific evidence records",
+      "likely_custodians": ["Federal and state lobbying registries", "Federal Election Commission and state campaign-finance agencies", "advocacy organizations", "foundations and nonprofit organizations", "scientific publishers and institutions"],
+      "affected_branches": ["youth_ai", "funding_edges", "policy_targets", "claim_provenance", "cross_front_comparison"],
+      "state": "requested",
+      "activation_effect": "Tests funding, intermediary, lobbying, policy-target, and claim-to-science edges for the youth-AI workstream without inferring developmental harm, coordination, or ultimate motive.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Candidate entities include Fairplay, Common Sense Media, Parents for AI Caution in Educational Spaces, Parents & Kids Safe AI Coalition, OpenAI, Omidyar Network, and Silicon Valley Community Foundation. Distinguish information/cognitive offloading from demonstrated developmental impairment."
     },
     {
-      "id": "WS-B",
-      "name": "data-centers",
-      "source_families": [
-        "foundation-and-nonprofit-filings",
-        "candidate-endorsement-and-election-spending-records",
-        "lobbying-disclosures",
-        "local-moratorium-and-zoning-records",
-        "utility-commission-dockets",
-        "litigation-records",
-        "technical-water-power-emissions-records",
-        "organizer-toolkits-and-model-language"
-      ],
-      "candidate_entities_for_primary_record_resolution": [
-        "Food & Water Watch",
-        "Food & Water Action",
-        "MediaJustice",
-        "Stop Data Centers Coalition",
-        "Data Center Resistance",
-        "Citizens Action Coalition",
-        "Silicon Valley Community Foundation",
-        "Ford Foundation",
-        "MacArthur Foundation"
-      ],
-      "required_outputs": [
-        "originating donor where publicly traceable",
-        "intermediary grant edges",
-        "local campaign support edges",
-        "electoral/political recipient edges",
-        "technical-claim provenance"
-      ]
+      "intake_id": "EDU-ACCESS-INTAKE-002",
+      "record_class": "Data-center opposition funding, lobbying, electoral, local-policy, utility, litigation, technical-impact, and model-language records",
+      "likely_custodians": ["Foundation and nonprofit filers", "Federal and state campaign-finance agencies", "state and local lobbying registries", "municipal and county governments", "utility commissions", "courts", "technical and environmental agencies"],
+      "affected_branches": ["data_centers", "funding_edges", "local_campaign_support", "political_recipients", "technical_claim_provenance", "cross_front_comparison"],
+      "state": "located",
+      "activation_effect": "Tests donor/intermediary, political, local-policy, and technical-impact edges while separating supportable impact claims from categorical or materially incomplete claims.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Primary evidence already preserved elsewhere in the lane includes the SVCF-to-Food & Water Watch 2021 Form 990 Schedule B edge; further native records remain required for originating donor, restrictions/purpose, local political activity, and technical claims. State is located rather than verified-primary because this queue does not yet bind a governed source_receipt_id for those records."
     },
     {
-      "id": "WS-C",
-      "name": "public-education-restructuring",
-      "source_families": [
-        "campaign-finance-records",
-        "state-lobbying-disclosures",
-        "foundation-and-nonprofit-filings",
-        "voucher-and-education-savings-account-legislation",
-        "department-of-education-policy-and-reorganization-records",
-        "curriculum-and-book-policy-records",
-        "teacher-certification-and-staffing-rules",
-        "model-legislation-and-think-tank-materials"
-      ],
-      "candidate_entities_for_primary_record_resolution": [
-        "American Federation for Children",
-        "AFC Victory Fund",
-        "Betsy DeVos",
-        "Dick DeVos",
-        "Jeff Yass",
-        "William Oberndorf",
-        "Texas Public Policy Foundation",
-        "Heritage Foundation",
-        "Bradley Impact Fund",
-        "Alliance Defending Freedom"
-      ],
-      "required_outputs": [
-        "donor-to-PAC edges",
-        "PAC-to-candidate edges",
-        "lobbyist-to-bill edges",
-        "policy-strategy documents",
-        "public-accountability comparison for public-money/private-school flows"
-      ]
+      "intake_id": "EDU-ACCESS-INTAKE-003",
+      "record_class": "Public-education restructuring donor, PAC, lobbying, voucher/ESA, department-reorganization, curriculum, staffing, and model-policy records",
+      "likely_custodians": ["Federal Election Commission and state campaign-finance agencies", "state lobbying registries", "foundations and nonprofit organizations", "state legislatures and education agencies", "United States Department of Education", "White House", "school districts and boards"],
+      "affected_branches": ["public_education_restructuring", "donor_to_pac", "pac_to_candidate", "lobbyist_to_bill", "policy_strategy", "public_accountability", "cross_front_comparison"],
+      "state": "located",
+      "activation_effect": "Tests donor-to-political-machine and policy-output edges and measures changes in accountability, access, staffing, curriculum, and public-system capacity separately from stated parental-choice purposes.",
+      "privacy_posture": "public",
+      "priority": "high",
+      "source_receipt_ids": [],
+      "notes": "Official Texas sources already anchor SB 2/Texas Education Freedom Accounts and federal EO 14242; AFC/Yass/DeVos native contribution and lobbying records remain pending. State is located rather than verified-primary until receipt IDs are durably bound into the governed assessment/source-packet layer."
+    },
+    {
+      "intake_id": "EDU-ACCESS-INTAKE-004",
+      "record_class": "Cross-front intermediary and shared-infrastructure records",
+      "likely_custodians": ["Federal and state lobbying registries", "campaign-finance agencies", "nonprofit and foundation filings", "donor-advised fund sponsors", "advocacy organizations", "consulting, public-relations, polling, and legal firms"],
+      "affected_branches": ["cross_front_comparison", "common_funders", "common_intermediaries", "shared_lobbyists", "shared_consultants", "shared_messaging_infrastructure"],
+      "state": "requested",
+      "activation_effect": "Tests independent convergence, narrative propagation, aligned interests, shared intermediaries, or coordination without converting overlap into a coordination or motive finding.",
+      "privacy_posture": "public",
+      "priority": "critical",
+      "source_receipt_ids": [],
+      "notes": "The prior SVCF/Fairplay overlap is unresolved and must not be represented as verified absent a native grant record. Preserve direct versus intermediary status, dates, amounts, stated purposes, disclosure state, and contradiction/correction history for every edge."
     }
-  ],
-  "cross_front_fields": [
-    "person",
-    "company",
-    "foundation_or_daf",
-    "pac_or_527",
-    "advocacy_org",
-    "lobbyist",
-    "consultant",
-    "pr_firm",
-    "pollster",
-    "candidate_or_lawmaker",
-    "policy_instrument",
-    "policy_outcome",
-    "message_claim",
-    "scientific_or_technical_source",
-    "disclosure_status"
-  ],
-  "evidence_states": [
-    "PRIMARY_VERIFIED",
-    "OFFICIAL_SECONDARY",
-    "SECONDARY_LEAD",
-    "DISPUTED",
-    "CONTRADICTED",
-    "UNRESOLVED"
-  ],
-  "next_executable_task": "Acquire primary/official records for the named candidate entities, starting with federal/state lobbying and campaign-finance disclosures plus nonprofit grant records, then materialize person-to-money-to-policy edges without promoting a coordination or motive finding.",
-  "terminal_condition": "Primary-source-backed cross-front graph and independent review support a governed promotion, supersession, merge, or closure with reason."
+  ]
 }
