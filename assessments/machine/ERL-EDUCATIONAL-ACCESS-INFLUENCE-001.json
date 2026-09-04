@@ -1,0 +1,14 @@
+{
+  "schema": "stegverse.erl.educational_access_influence.assessment_anchor.v1",
+  "assessment_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "record_type": "research_assessment_anchor",
+  "owner": "issue:121",
+  "handoff": "docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md",
+  "state": "RESEARCH_ACTIVE_SOURCE_ACQUISITION_PARTIAL",
+  "research_question": "Whether youth-AI restriction, data-center opposition, and public-education restructuring share people, funders, intermediaries, political machinery, messaging infrastructure, or coordinated access-restriction objectives.",
+  "finding_authorized": false,
+  "motive_finding_authorized": false,
+  "publication_authorized": false,
+  "next_executable_task": "Continue primary-record acquisition across the three workstreams and preserve proposition-relative cross-front edges without promoting coordination or motive findings.",
+  "terminal_condition": "Primary-source-backed cross-front graph and independent review support a governed promotion, supersession, merge, or closure with reason."
+}
