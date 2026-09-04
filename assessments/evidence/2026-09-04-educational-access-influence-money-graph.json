@@ -1,0 +1,112 @@
+{
+  "schema": "stegverse.erl.educational_access_influence.money_graph.v1",
+  "goal_id": "ERL-EDUCATIONAL-ACCESS-INFLUENCE-001",
+  "owner": "issue:121",
+  "handoff": "docs/EDUCATIONAL_ACCESS_INFLUENCE_MIRROR_HANDOFF.md",
+  "state": "RESEARCH_ACTIVE_PARTIAL",
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "motive_finding_authorized": false,
+  "edge_states": ["PRIMARY_VERIFIED", "OFFICIAL_SECONDARY", "SECONDARY_LEAD", "DISPUTED", "UNRESOLVED"],
+  "edges": [
+    {
+      "id": "EAIG-WSA-001",
+      "workstream": "WS-A",
+      "from": "OpenAI OpCo",
+      "relationship": "funding / campaign sponsorship",
+      "to": "Parents & Kids Safe AI Coalition",
+      "amount": null,
+      "state": "OFFICIAL_SECONDARY",
+      "source_locator": "https://parentsandkidssafeai.com/",
+      "source_note": "Campaign materials publicly disclose OpenAI OpCo as payer/funder; exact expenditure and lobbying-disclosure reconstruction remains pending.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-WSA-002",
+      "workstream": "WS-A",
+      "from": "Fairplay",
+      "relationship": "organized advocacy",
+      "to": "five-year pause on student-facing generative AI in PreK-12 schools",
+      "amount": null,
+      "state": "PRIMARY_VERIFIED",
+      "source_locator": "https://fairplayforkids.org/pause-genai-in-prek-12-schools-for-5-years-orgs-and-experts-say/",
+      "source_note": "Fairplay publicly launched and organized the pause campaign; this edge records policy advocacy, not donor origin.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-WSB-001",
+      "workstream": "WS-B",
+      "from": "Food & Water Watch",
+      "relationship": "coalition coordination / organizing support",
+      "to": "Stop Data Centers Coalition",
+      "amount": null,
+      "state": "PRIMARY_VERIFIED",
+      "source_locator": "https://www.foodandwaterwatch.org/2026/06/12/stop-data-centers-coalition/",
+      "source_note": "Food & Water Watch states that the coalition supports local organizing, shares resources, and advances a nationwide halt to data centers.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-WSB-002",
+      "workstream": "WS-B",
+      "from": "Food & Water Watch and allies",
+      "relationship": "campaign pressure / legislative advocacy",
+      "to": "New York large-scale data-center pause",
+      "amount": null,
+      "state": "OFFICIAL_SECONDARY",
+      "source_locator": "https://www.foodandwaterwatch.org/2026/07/15/new-york-data-center-moratorium-victory/",
+      "source_note": "Organization self-reports a seven-month campaign culminating in legislation and a gubernatorial executive order; independent legislative chronology remains required.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-WSC-001",
+      "workstream": "WS-C",
+      "from": "Jeff Yass",
+      "relationship": "campaign contribution",
+      "to": "AFC Victory Fund",
+      "amount_usd": 4000000,
+      "state": "SECONDARY_LEAD",
+      "source_locator": "https://www.transparencyusa.org/tx/committee/afc-victory-fund-00088032-mpac/",
+      "source_note": "2026-cycle aggregation reports $4,000,000 from Jeff Yass; Texas Ethics Commission primary filing custody remains required.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-WSC-002",
+      "workstream": "WS-C",
+      "from": "Dick DeVos",
+      "relationship": "campaign contribution",
+      "to": "AFC Victory Fund",
+      "amount_usd": 500000,
+      "state": "SECONDARY_LEAD",
+      "source_locator": "https://www.transparencyusa.org/tx/committee/afc-victory-fund-00088032-mpac/",
+      "source_note": "2026-cycle aggregation reports $500,000 from Dick DeVos; Texas Ethics Commission primary filing custody remains required.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-WSC-003",
+      "workstream": "WS-C",
+      "from": "Dick and Betsy DeVos Family Foundation",
+      "relationship": "financial support",
+      "to": "American Federation for Children and related organizations",
+      "amount_usd_minimum": 600000,
+      "period": "2005-2015",
+      "state": "OFFICIAL_SECONDARY",
+      "source_locator": "https://www.help.senate.gov/dem/newsroom/press/murray-questions-secretary-devos-potential-conflict-of-interest-and-ethics-agreement-violation-with-speech-at-american-federation-for-children-event",
+      "source_note": "U.S. Senate HELP Committee material states at least $600,000 in support and records Betsy DeVos as an AFC founder/chair; underlying contribution records remain desirable for native custody.",
+      "coordination_finding_authorized": false
+    },
+    {
+      "id": "EAIG-XF-001",
+      "workstream": "CROSS_FRONT",
+      "from": "Silicon Valley Community Foundation",
+      "relationship": "reported grants",
+      "to": "Fairplay and Food & Water Watch",
+      "amount": null,
+      "state": "UNRESOLVED",
+      "source_locator": "primary foundation/grantee filings pending",
+      "source_note": "Cross-front donor/intermediary overlap is a research lead only. Originating donor, grant purpose, date, and whether the same donor-advised fund is involved are unresolved.",
+      "coordination_finding_authorized": false
+    }
+  ],
+  "next_executable_task": "Replace SECONDARY_LEAD and unresolved intermediary edges with native campaign-finance, lobbying, nonprofit, foundation, and donor-advised-fund records; then test recurring people, firms, and political recipients without inferring common motive from name overlap alone.",
+  "terminal_condition": "Every material cross-front financial or political edge is either primary-verified, explicitly contradicted, or closed unresolved with source history and independent review."
+}
