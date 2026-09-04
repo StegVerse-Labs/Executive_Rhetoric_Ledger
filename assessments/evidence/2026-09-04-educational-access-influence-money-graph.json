@@ -58,6 +58,19 @@
       "coordination_finding_authorized": false
     },
     {
+      "id": "EAIG-WSB-003",
+      "workstream": "WS-B",
+      "from": "Silicon Valley Community Foundation",
+      "relationship": "contribution",
+      "to": "Food & Water Watch",
+      "amount_usd": 6500000,
+      "period": "2021",
+      "state": "PRIMARY_VERIFIED",
+      "source_locator": "https://www.foodandwaterwatch.org/21-fww-form-990/",
+      "source_note": "Food & Water Watch's filed 2021 Form 990 Schedule B names Silicon Valley Community Foundation and reports a $6,500,000 contribution. The filing establishes the intermediary-to-recipient edge and amount; it does not identify an underlying donor-advised-fund originator or establish that the contribution funded later data-center work.",
+      "coordination_finding_authorized": false
+    },
+    {
       "id": "EAIG-WSC-001",
       "workstream": "WS-C",
       "from": "Jeff Yass",
@@ -98,15 +111,15 @@
       "id": "EAIG-XF-001",
       "workstream": "CROSS_FRONT",
       "from": "Silicon Valley Community Foundation",
-      "relationship": "reported grants",
+      "relationship": "reported grant/contribution overlap",
       "to": "Fairplay and Food & Water Watch",
       "amount": null,
       "state": "UNRESOLVED",
-      "source_locator": "primary foundation/grantee filings pending",
-      "source_note": "Cross-front donor/intermediary overlap is a research lead only. Originating donor, grant purpose, date, and whether the same donor-advised fund is involved are unresolved.",
+      "source_locator": "Food & Water Watch 2021 Form 990 primary edge verified; Fairplay primary grant record and underlying DAF origin pending",
+      "source_note": "The SVCF-to-Food & Water Watch edge is now primary-verified at $6.5M for 2021. The alleged SVCF-to-Fairplay edge, originating donor identity, grant purpose, and whether the same donor-advised fund is involved remain unresolved. No cross-front coordination finding is authorized from the intermediary name alone.",
       "coordination_finding_authorized": false
     }
   ],
-  "next_executable_task": "Replace SECONDARY_LEAD and unresolved intermediary edges with native campaign-finance, lobbying, nonprofit, foundation, and donor-advised-fund records; then test recurring people, firms, and political recipients without inferring common motive from name overlap alone.",
+  "next_executable_task": "Replace remaining SECONDARY_LEAD and unresolved intermediary edges with native campaign-finance, lobbying, nonprofit, foundation, and donor-advised-fund records; specifically resolve the SVCF-to-Fairplay primary grant record and underlying donor origin, then test recurring people, firms, and political recipients without inferring common motive from name overlap alone.",
   "terminal_condition": "Every material cross-front financial or political edge is either primary-verified, explicitly contradicted, or closed unresolved with source history and independent review."
 }
