@@ -8,7 +8,30 @@ Repository-wide continuity remains governed by `ERL_MIRROR_HANDOFF.md`. Research
 
 ## Goal
 
-Determine whether primary records support any misuse proposition concerning funds raised, represented, retained, transferred, or spent by MAGA Inc. or materially related committees in the 2025-2026 cycle, while preserving the distinction between political strategy, donor expectation, legal restriction, and actual misuse.
+Determine whether primary records support any legally, representationally, governance-wise, or strategically material proposition concerning funds raised, represented, retained, transferred, or spent by MAGA Inc. or materially related committees in the 2025-2026 cycle, without collapsing distinct axes into a single `misuse` label.
+
+## Reusable fund-governance model
+
+The lane now consumes the repository-wide reusable classification model:
+
+- prose standard: `standards/fund-governance-classification.v1.md`
+- machine schema: `schemas/fund-governance-classification.schema.json`
+- fail-closed validator: `scripts/validate_fund_governance_classification.py`
+- hosted validation: `.github/workflows/validate-fund-governance-classification.yml`
+- case classification: `assessments/fund-governance/2026-09-03-maga-inc-midterm-funds.classification.json`
+
+The four independent axes are:
+
+1. `legal_misuse`
+2. `represented_purpose_divergence`
+3. `governance_ethical_misuse`
+4. `strategic_nondeployment`
+
+Core invariant:
+
+`legal_permissibility != represented_purpose_alignment != governance_quality != deployment_strategy`
+
+A case may therefore be lawful while still showing represented-purpose divergence or strategic nondeployment, and strategic nondeployment is descriptive rather than inherently adverse.
 
 ## Current state
 
@@ -26,13 +49,24 @@ Determine whether primary records support any misuse proposition concerning fund
 - legal-authority mapping: pending
 - contradiction review: pending
 - independent review: pending
-- actual misuse finding: not made
-- legal violation finding: not made
-- donor-intent violation finding: not made
-- motive finding: not authorized
-- publication finding: not authorized
+- legal misuse axis: `INSUFFICIENT_EVIDENCE`
+- represented-purpose divergence axis: `REPRESENTATION_NOT_RECONSTRUCTED`
+- governance/ethical misuse axis: `INSUFFICIENT_EVIDENCE`
+- strategic nondeployment axis: `STRATEGY_NOT_RECONSTRUCTED`
+- finding authorized: false
+- publication authorized: false
 
-## Installed surfaces
+## Seven-dimension state vector
+
+- `LEGALITY`: pending controlling-authority and transaction reconstruction
+- `DONOR_REPRESENTATION`: pending solicitation/purpose custody
+- `BENEFICIAL_RECIPIENT`: partial Schedule E only; other disbursements pending
+- `ORGANIZATIONAL_PURPOSE`: partial committee identity reconstructed; restrictions/purpose evidence pending
+- `DEPLOYMENT_TIMING`: large retained balance and limited observed deployment require full chronology
+- `CONTROL_CONCENTRATION`: not yet reconstructed
+- `DISCLOSURE_ACCURACY`: partial filings located; amendment supersession pending
+
+## Installed case surfaces
 
 - `research-candidates/2026-09-03-maga-inc-midterm-funds-potential-misuse.md`
 - `config/maga-inc-midterm-funds-source-queue.v1.json`
@@ -40,6 +74,7 @@ Determine whether primary records support any misuse proposition concerning fund
 - `assessments/chronology/2026-09-03-maga-inc-fec-filing-chronology.partial.json`
 - `assessments/evidence/2026-09-03-maga-inc-initial-independent-expenditure-anchor.json`
 - `assessments/evidence/2026-09-03-maga-inc-statement-of-organization-anchor.json`
+- `assessments/fund-governance/2026-09-03-maga-inc-midterm-funds.classification.json`
 - `coordination/research-candidate-activation-registry.v1.json`
 - Issue `#120`
 
@@ -56,7 +91,7 @@ Current summary coverage: 2025-01-01 through 2026-07-31.
 - ending cash on hand: `$403,450,026.85`
 - debts/loans owed by committee: `$0.00`
 
-These are summary-level observations only. FEC warns newly filed summary data may lag. No transaction purpose, beneficial-recipient, donor-intent, coordination, personal-use, or misuse conclusion is authorized from the summary.
+These are summary-level observations only. No transaction purpose, beneficial-recipient, donor-intent, coordination, personal-use, represented-purpose divergence, governance misuse, strategic nondeployment, or legal misuse conclusion is authorized from the summary.
 
 ## Filing / organization advancement
 
@@ -74,28 +109,32 @@ Native byte hashes remain pending. Amendment existence is not treated as evidenc
 
 ## Independent-expenditure data-quality repair
 
-The initial Schedule E artifact contained a duplicated Clay Fuller transaction. That defect is repaired in commit `ec5cbf3a3c5ed2f070e144cad426e92f3fbf134c`.
+The initial Schedule E artifact contained a duplicated Clay Fuller transaction. That defect was repaired in commit `ec5cbf3a3c5ed2f070e144cad426e92f3fbf134c`.
 
 Current distinct partial Schedule E observations:
 
 - `SE.4694` — Designated Market Media; 2025-11-19; `$2,310.00`; production cost/digital ad; Aftyn Behn; TN-07; oppose.
 - `SE.5214` — Electoral Communications Group, LLC; 2026-03-09; `$8,950.44`; text messages; Clay Fuller; GA House; support.
 
-These two records are a partial sample only and must not be treated as the cycle total or as a misuse indicator.
+These two records are a partial sample only and must not be treated as the cycle total or as evidence on any adverse fund-governance axis.
 
 ## Activation validation evidence
 
 Research-candidate activation registration commit: `46d5339bc57f16493eaa3f50f5d31883398887d9`.
 
-Hosted workflow `Validate research candidate activation`, run `33819845470`, completed successfully on `main` for that commit. This proves the candidate is represented in the machine-enforced activation registry with durable ownership and a next executable task; it does not prove any substantive misuse proposition.
+Hosted workflow `Validate research candidate activation`, run `33819845470`, completed successfully on `main` for that commit. This proves the candidate is represented in the machine-enforced activation registry with durable ownership and a next executable task; it does not prove any substantive proposition.
 
 ## Governing invariants
 
 - `large_cash_balance != misuse`
 - `delayed_spending != misuse`
+- `strategic_nondeployment != misuse`
 - `donor_frustration != donor_deception`
+- `lawful != aligned_with_represented_purpose`
+- `represented_purpose_divergence != legal_violation`
 - `political_strategy != personal_use`
-- `stated_political_objective != legally_restricted_use`
+- `related_party_payment != self_dealing`
+- `private_benefit != prohibited_personal_use`
 - `secondary_reporting != transaction_level_proof`
 - `candidate_layer_exists != finding`
 - `amended_filing != wrongdoing`
@@ -107,14 +146,15 @@ Hosted workflow `Validate research candidate activation`, run `33819845470`, com
 2. Complete enumeration of all 2025-2026 regular reports and amendments.
 3. Enumerate complete Schedule E plus 24/48-hour independent-expenditure population and reconcile to summary totals.
 4. Reconstruct monthly cash, receipts, disbursements, other disbursements, debts, refunds, and amendment supersession.
-5. Build committee/affiliate/shared-vendor relationship graph.
-6. Preserve donor-facing solicitations and represented purposes with provenance.
-7. Map controlling FEC legal restrictions and relevant advisory/enforcement precedent.
-8. Reconcile primary committee statements about 2026 spending strategy.
-9. Run contradiction, alternative-explanation, and independent review before any promotion.
+5. Build committee/affiliate/shared-vendor relationship graph and beneficial-recipient map.
+6. Preserve donor-facing solicitations and represented purposes with provenance; score only the represented-purpose axis from that evidence.
+7. Map controlling FEC legal restrictions and relevant advisory/enforcement precedent; score only the legal axis from that authority plus facts.
+8. Reconstruct control concentration and committee decision authority separately from beneficial-recipient evidence.
+9. Reconcile primary committee statements about 2026 spending strategy and deployment timing.
+10. Run contradiction, alternative-explanation, and independent review before any promotion on any axis.
 
 ## Completion condition
 
-This lane may transition only when primary-source transaction, representation, authority, contradiction, and independent-review evidence supports an explicit governed promotion, supersession, merge, or closure decision.
+This lane may transition only when primary-source transaction, representation, authority, control, contradiction, and independent-review evidence supports an explicit governed promotion, supersession, merge, or closure decision. Each axis must retain its own evidentiary path.
 
 No Site, Publisher, admissibility-wiki, stegguardian-wiki, master-records, tag, release, or publication propagation is authorized from the current state.
