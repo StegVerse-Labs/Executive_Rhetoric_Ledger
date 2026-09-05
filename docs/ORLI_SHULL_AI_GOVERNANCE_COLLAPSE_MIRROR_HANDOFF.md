@@ -44,13 +44,28 @@ The research task is to determine which governance controls are needed to preven
 - consequence severity
 - human reviewer authority versus nominal presence
 
+## Completed substantive research in this lane
+
+Installed on `main`:
+
+- `assessments/evidence/2026-09-04-orli-ai-governance-cross-domain-comparison.md`
+  - commit: `9b530ad93ffae51ecc43d58412e54804e9e39963`
+  - covers four primary-source governance regimes: U.S. credit/ECOA, NYC AEDT employment decisions, EU AI Act Article 14, and U.S. federal agency AI governance under OMB M-24-10;
+  - separates inference authority from consequence authority;
+  - distinguishes nominal human presence from actual override/reversal/stop authority;
+  - distinguishes pre-consequence control, decision-time intervention, post-consequence contestability, and system-level shutdown;
+  - remains research-active/partial and authorizes no finding or publication.
+
+Initial comparative signal: the meaningful governance variable is not merely whether a human is present. The four regimes distribute authority differently across explanation, audit/notice, override/reversal/interruption, appeal/opt-out, and system shutdown. Evidence is not yet sufficient to determine a necessary/sufficient control set across domains.
+
 ## Next executable task
 
-1. Custody the original LinkedIn permalink and full source text/edit state.
-2. Build a cross-domain comparison matrix of institutional AI systems separating inference authority from consequence authority.
-3. Test human-in-the-loop systems with and without actual interruption authority.
-4. Compare source propositions with HIL and StegVerse transition-governance concepts without treating conceptual similarity as endorsement.
-5. Acquire disconfirming cases where automatic finalization is bounded, reversible, demonstrably superior, or otherwise governance-sufficient.
+1. Custody the original LinkedIn permalink and full source text/edit state when available.
+2. Extend the comparison matrix with at least one benefits/public-services case and one healthcare case using primary-source governance material.
+3. Identify a deployed system where nominal human review failed because the reviewer lacked time, information, competence, or actual transition authority.
+4. Acquire a disconfirming case where automated finalization is bounded, reversible, demonstrably superior, or otherwise governance-sufficient.
+5. Compare source propositions with HIL and StegVerse transition-governance concepts without treating conceptual similarity as endorsement.
+6. Separate operator rights/authority from affected-person rights in every added case.
 
 ## Terminal condition
 
@@ -66,8 +81,8 @@ This proves the candidate path is represented by the machine-enforced activation
 
 ## Current machine state
 
-Candidate file, bounded handoff, and activation-registry admission are installed on `main`. Machine-enforced activation validation has succeeded. The remaining work is substantive research/source custody, not activation plumbing.
+Candidate file, bounded handoff, activation-registry admission, and the first substantive cross-domain comparison artifact are installed on `main`. Machine-enforced activation validation has succeeded. Native source custody remains incomplete, but comparative research is no longer blocked on it.
 
 ## Session closure posture
 
-No additional machine-execution work remains for candidate installation or activation in this session. Continuing research is durably owned by Issue #63 and the registry next-executable-task field. The native LinkedIn permalink/full source remains the first evidence-custody target.
+No activation-plumbing work remains. Substantive research is active under Issue #63. The next machine-executable work is expansion of the comparison evidence into benefits/public-services and healthcare domains plus collection of failure/disconfirming cases. Native LinkedIn permalink/full source remains an unresolved evidence-custody target rather than a blocker to all parallel research.
