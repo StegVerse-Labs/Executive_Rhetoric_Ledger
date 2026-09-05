@@ -43,29 +43,32 @@ The research task is to determine which governance controls are needed to preven
 - identity-finalization limits
 - consequence severity
 - human reviewer authority versus nominal presence
+- operator authority versus affected-person authority
 
 ## Completed substantive research in this lane
 
 Installed on `main`:
 
 - `assessments/evidence/2026-09-04-orli-ai-governance-cross-domain-comparison.md`
-  - commit: `9b530ad93ffae51ecc43d58412e54804e9e39963`
-  - covers four primary-source governance regimes: U.S. credit/ECOA, NYC AEDT employment decisions, EU AI Act Article 14, and U.S. federal agency AI governance under OMB M-24-10;
+  - initial commit: `9b530ad93ffae51ecc43d58412e54804e9e39963`
+  - benefits/healthcare expansion commit: `bca2e6b4942e4eee3f93d4032460a4e9b539fb0d`
+  - now covers six primary-source governance regimes: U.S. credit/ECOA, NYC AEDT employment decisions, EU AI Act Article 14, U.S. federal agency AI governance under OMB M-24-10, Medicaid eligibility/adverse-action fair-hearing protections, and Medicare Advantage/Original Medicare AI-assisted coverage determination controls;
   - separates inference authority from consequence authority;
   - distinguishes nominal human presence from actual override/reversal/stop authority;
-  - distinguishes pre-consequence control, decision-time intervention, post-consequence contestability, and system-level shutdown;
+  - distinguishes operator interruption from affected-person interruption;
+  - distinguishes pre-consequence control, decision-time intervention, post-consequence contestability, continuation-of-benefits protections, and system-level shutdown;
   - remains research-active/partial and authorizes no finding or publication.
 
-Initial comparative signal: the meaningful governance variable is not merely whether a human is present. The four regimes distribute authority differently across explanation, audit/notice, override/reversal/interruption, appeal/opt-out, and system shutdown. Evidence is not yet sufficient to determine a necessary/sufficient control set across domains.
+Initial comparative signal: the meaningful governance variable is not merely whether a human is present. The six regimes distribute authority differently across explanation, audit/notice, override/reversal/interruption, appeal/opt-out, continuation of benefits, accountable clinical reassessment, and system shutdown. Medicaid adds a distinct affected-person interruption model; Medicare adds a domain-specific rule preventing population-level algorithmic prediction from becoming the sole basis for individual care termination or denial.
 
 ## Next executable task
 
 1. Custody the original LinkedIn permalink and full source text/edit state when available.
-2. Extend the comparison matrix with at least one benefits/public-services case and one healthcare case using primary-source governance material.
-3. Identify a deployed system where nominal human review failed because the reviewer lacked time, information, competence, or actual transition authority.
-4. Acquire a disconfirming case where automated finalization is bounded, reversible, demonstrably superior, or otherwise governance-sufficient.
-5. Compare source propositions with HIL and StegVerse transition-governance concepts without treating conceptual similarity as endorsement.
-6. Separate operator rights/authority from affected-person rights in every added case.
+2. Identify a deployed system where nominal human review failed because the reviewer lacked time, information, competence, or actual transition authority.
+3. Acquire a disconfirming case where automated finalization is bounded, reversible, demonstrably superior, or otherwise governance-sufficient.
+4. Compare source propositions with HIL and StegVerse transition-governance concepts without treating conceptual similarity as endorsement.
+5. Continue separating operator rights/authority from affected-person rights and map when challenge preserves the preexisting state versus only offering post-consequence remediation.
+6. Test whether continuation-of-benefits/service protections materially alter the candidate's concept of "interrupting collapse" compared with review available only after consequence.
 
 ## Terminal condition
 
@@ -81,8 +84,8 @@ This proves the candidate path is represented by the machine-enforced activation
 
 ## Current machine state
 
-Candidate file, bounded handoff, activation-registry admission, and the first substantive cross-domain comparison artifact are installed on `main`. Machine-enforced activation validation has succeeded. Native source custody remains incomplete, but comparative research is no longer blocked on it.
+Candidate file, bounded handoff, activation-registry admission, and a six-domain substantive comparison artifact are installed on `main`. Machine-enforced activation validation has succeeded. Native source custody remains incomplete, but comparative research is progressing independently.
 
 ## Session closure posture
 
-No activation-plumbing work remains. Substantive research is active under Issue #63. The next machine-executable work is expansion of the comparison evidence into benefits/public-services and healthcare domains plus collection of failure/disconfirming cases. Native LinkedIn permalink/full source remains an unresolved evidence-custody target rather than a blocker to all parallel research.
+No activation-plumbing work remains. Substantive research is active under Issue #63. The next machine-executable work is collection of a real nominal-human-review failure case, a bounded/reversible automated-finalization disconfirming case, and HIL/StegVerse transition comparison. Native LinkedIn permalink/full source remains an unresolved evidence-custody target rather than a blocker to parallel research.
