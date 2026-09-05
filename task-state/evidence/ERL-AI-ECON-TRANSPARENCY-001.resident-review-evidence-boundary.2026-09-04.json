@@ -8,12 +8,16 @@
   "publication_authorized": false,
   "resident_worker_runtime_presence": {
     "repository": "StegVerse-Labs/.github",
+    "canonical_presence_receipt_path": "receipts/sovereign-host/runtime-presence.latest.json",
+    "canonical_presence_receipt_emitter": "scripts/repair_resident_worker_presence.py#_persist_presence_projection",
+    "emitter_trigger": "existing run_heartbeat_runtime.py WorkerCoordinator supervision visit",
+    "emitter_source_merge": "5187346ce0c1c8da144c1a3743ff063c09501af4",
     "historical_state_path": "control/worker-runtime-state.json",
     "current_presence_observed": false,
     "historical_last_cycle_at": "2026-08-18T19:47:00Z",
     "historical_runtime_tick": 2,
     "historical_observation_mode": "CARRIER_REFERENCE_ONLY_NO_TASK_EXECUTION",
-    "claim": "Checked-in worker state is historical observation only and does not prove a presently running resident WorkerCoordinator."
+    "claim": "Checked-in worker state is historical observation only and does not prove a presently running resident WorkerCoordinator. The canonical carrier supervision path can now emit a durable runtime-presence receipt when authentic fresh WorkerCoordinator presence is observed."
   },
   "source_request": {
     "repository": "StegVerse-Labs/.github",
@@ -51,11 +55,12 @@
   "network_checkout_required": false,
   "claim_boundaries": [
     "Historical checked-in worker state does not prove present resident WorkerCoordinator runtime presence.",
+    "Presence-emitter source availability does not prove that a current runtime-presence receipt has been emitted.",
     "Source request presence does not prove resident dispatch.",
     "Dispatch source wiring does not prove request consumption.",
     "Request consumption does not prove targeted worker execution.",
     "Targeted execution evidence does not satisfy independent review without the authentic fenced review receipt.",
     "No runtime, review, activation, publication, or repository-writeback authority is inferred from this record."
   ],
-  "next_machine_transition": "Observe authentic present resident WorkerCoordinator runtime presence, then authentic resident request dispatch and downstream consumption/execution evidence. Only an authentic fenced independent-review receipt may advance activation group 9."
+  "next_machine_transition": "Observe receipts/sovereign-host/runtime-presence.latest.json with present_worker_runtime_observed=true from the authentic resident carrier supervision path, then authentic resident request dispatch and downstream consumption/execution evidence. Only an authentic fenced independent-review receipt may advance activation group 9."
 }
