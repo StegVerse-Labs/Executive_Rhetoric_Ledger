@@ -18,7 +18,7 @@
   },
   "activation_authorized": false,
   "publication_authorized": false,
-  "next_executable_task": "Existing sovereign resident source-refresh/dispatch path consumes `RESIDENT-EXEC-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` and asks WorkerCoordinator to execute `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` from the self-contained SHA-256-bound package. Only the authentic fenced review receipt advances group 9. No user action, provider recapture, credential action, second machine, or network checkout is required.",
+  "next_executable_task": "Observe the canonical resident presence receipt `receipts/sovereign-host/runtime-presence.latest.json` with `present_worker_runtime_observed=true` from the authentic resident carrier supervision path. Once present, the existing sovereign source-refresh/dispatch path may consume `RESIDENT-EXEC-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` and ask WorkerCoordinator to execute `SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001` from the self-contained SHA-256-bound package. Only the authentic fenced review receipt advances group 9. No user action, provider recapture, credential action, second machine, or network checkout is required.",
   "implementation_completion_percent": 80,
   "validator_state": "INSTALLED",
   "fixture_state": "INSTALLED",
@@ -31,57 +31,21 @@
   "paper_state": "CANDIDATE_CONSUMER_RESULTS_INTEGRATED_INDEPENDENT_REVIEW_PENDING",
   "hosted_validation_receipts": {
     "scale_provider_head": "1a93b885255da9f94d4eeb388785538aa86e61c6",
-    "scale_provider_ai_transparency_run": {
-      "id": 33766240838,
-      "conclusion": "success"
-    },
-    "scale_provider_task_state_run": {
-      "id": 33766240840,
-      "conclusion": "success"
-    },
-    "scale_provider_ledger_schemas_run": {
-      "id": 33766240914,
-      "conclusion": "success"
-    },
+    "scale_provider_ai_transparency_run": {"id": 33766240838, "conclusion": "success"},
+    "scale_provider_task_state_run": {"id": 33766240840, "conclusion": "success"},
+    "scale_provider_ledger_schemas_run": {"id": 33766240914, "conclusion": "success"},
     "review_paper_head": "aabd1899d6521dc8c0d63ba0408b3378fea0d644",
-    "review_paper_ai_transparency_run": {
-      "id": 33766432985,
-      "conclusion": "success"
-    },
-    "review_paper_task_state_run": {
-      "id": 33766432923,
-      "conclusion": "success"
-    },
-    "review_paper_ledger_schemas_run": {
-      "id": 33766432976,
-      "conclusion": "in_progress_at_observation"
-    },
+    "review_paper_ai_transparency_run": {"id": 33766432985, "conclusion": "success"},
+    "review_paper_task_state_run": {"id": 33766432923, "conclusion": "success"},
+    "review_paper_ledger_schemas_run": {"id": 33766432976, "conclusion": "in_progress_at_observation"},
     "independent_review_package_head": "f7f56153c4adc42363b3825f8d45de697b4f036c",
-    "independent_review_package_ai_transparency_run": {
-      "id": 33772683787,
-      "conclusion": "success"
-    },
-    "independent_review_package_task_state_run": {
-      "id": 33772683638,
-      "conclusion": "success"
-    },
-    "independent_review_package_ledger_schemas_run": {
-      "id": 33772683540,
-      "conclusion": "success"
-    },
+    "independent_review_package_ai_transparency_run": {"id": 33772683787, "conclusion": "success"},
+    "independent_review_package_task_state_run": {"id": 33772683638, "conclusion": "success"},
+    "independent_review_package_ledger_schemas_run": {"id": 33772683540, "conclusion": "success"},
     "resident_review_dispatch_head": "39a74b7227ca8d9478324d85b3989a3cfe0d73c2",
-    "resident_review_dispatch_ai_transparency_run": {
-      "id": 33784383315,
-      "conclusion": "success"
-    },
-    "resident_review_dispatch_task_state_run": {
-      "id": 33784383397,
-      "conclusion": "success"
-    },
-    "resident_review_dispatch_ledger_schemas_run": {
-      "id": 33784383350,
-      "conclusion": "success"
-    }
+    "resident_review_dispatch_ai_transparency_run": {"id": 33784383315, "conclusion": "success"},
+    "resident_review_dispatch_task_state_run": {"id": 33784383397, "conclusion": "success"},
+    "resident_review_dispatch_ledger_schemas_run": {"id": 33784383350, "conclusion": "success"}
   },
   "prior_consumer_surface_reconciliation": {
     "authority": "GCAT-BCAT-Engine/workflows/experiments/sv-cost-program/nine-lane-results/cost-evidence-request.json",
@@ -107,6 +71,15 @@
   "independent_review_issue": 104,
   "independent_review_package": "assessments/reviews/ai-economic-transparency-consumer-surface-independent-review-package.2026-09-03.json",
   "independent_review_state": "MACHINE_OWNED_SELF_CONTAINED_RESIDENT_DISPATCH_READY_PENDING_RUNTIME_RECEIPT",
+  "runtime_evidence_boundary": {
+    "record": "task-state/evidence/ERL-AI-ECON-TRANSPARENCY-001.resident-review-evidence-boundary.2026-09-04.json",
+    "earliest_unproven_runtime_boundary": "RESIDENT_WORKER_RUNTIME_PRESENCE",
+    "canonical_presence_receipt_repository": "StegVerse-Labs/.github",
+    "canonical_presence_receipt_path": "receipts/sovereign-host/runtime-presence.latest.json",
+    "present_worker_runtime_required": true,
+    "runtime_presence_observed": false,
+    "authority_effect": "NONE_OBSERVATION_ONLY"
+  },
   "candidate_results": "research-data/ai-economic-transparency/candidate-results.consumer-surfaces.2026-09-03.json",
   "api_enterprise_observations": {
     "openai": "research-data/ai-economic-transparency/openai-api-enterprise-observation.2026-09-03.json",
@@ -169,22 +142,10 @@
       "request_granted_authority": false,
       "runtime_receipt_observed": false,
       "validation_runs": {
-        "heartbeat_worker_project": {
-          "id": 33784116021,
-          "conclusion": "success"
-        },
-        "cross_framework_current_basis": {
-          "id": 33784113544,
-          "conclusion": "success"
-        },
-        "workspace_device_kv": {
-          "id": 33784113905,
-          "conclusion": "success"
-        },
-        "organization_control_plane": {
-          "id": 33784113903,
-          "conclusion": "success"
-        }
+        "heartbeat_worker_project": {"id": 33784116021, "conclusion": "success"},
+        "cross_framework_current_basis": {"id": 33784113544, "conclusion": "success"},
+        "workspace_device_kv": {"id": 33784113905, "conclusion": "success"},
+        "organization_control_plane": {"id": 33784113903, "conclusion": "success"}
       },
       "source_control_validation_complete": true
     }
