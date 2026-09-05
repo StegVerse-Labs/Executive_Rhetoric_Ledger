@@ -1,9 +1,12 @@
 {
   "schema": "stegverse.erl.ai-economic-transparency-review-state/v1",
   "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
-  "contradiction_review_state": "PENDING_PROVIDER_PROTOCOL_COMPLETION",
-  "independent_review_state": "PENDING_CONTRADICTION_REVIEW",
-  "paper_state": "METHODS_COMPLETE_RESULTS_PENDING",
+  "contradiction_review_state": "CONSUMER_SURFACES_COMPLETE_NO_MATERIAL_CONTRADICTION",
+  "independent_review_state": "PENDING_AUTHENTIC_RESIDENT_INDEPENDENT_REVIEW_RECEIPT",
+  "paper_state": "CANDIDATE_CONSUMER_RESULTS_INTEGRATED_INDEPENDENT_REVIEW_PENDING",
+  "runtime_evidence_boundary_ref": "task-state/evidence/ERL-AI-ECON-TRANSPARENCY-001.resident-review-evidence-boundary.2026-09-05.json",
+  "contradiction_review_ref": "assessments/reviews/ai-economic-transparency-consumer-surface-contradiction-review.2026-09-03.json",
+  "independent_review_receipt_ref": "StegVerse-Labs/.github:receipts/erl-ai-economic-transparency-review/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json",
   "activation_authorized": false,
   "publication_authorized": false
 }
