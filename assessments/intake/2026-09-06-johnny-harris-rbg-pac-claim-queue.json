@@ -1,0 +1,18 @@
+{
+  "record_id": "ERL-2026-09-06-JOHNNY-HARRIS-RBG-PAC-CLAIM-QUEUE-001",
+  "parent_source_record": "ERL-2026-09-06-JOHNNY-HARRIS-RBG-PAC-VIDEO-001",
+  "owner_issue": 120,
+  "lifecycle": "RESEARCH_INTAKE_ACTIVE",
+  "claims": [
+    {"id":"JH-RBG-001","span":"00:30-01:18","proposition":"RBG PAC spent roughly $20M supporting Donald Trump in late October 2024, including digital advertising targeted substantially at women in swing states.","status":"PRIMARY_RECONSTRUCTION_REQUIRED","required_sources":["FEC Schedule E/24-hour reports","Meta Ad Library/archive","native ad creative"]},
+    {"id":"JH-RBG-002","span":"01:19-01:49","proposition":"The ad identified RBG PAC as payer and used Ruth Bader Ginsburg branding/positioning.","status":"PRIMARY_RECONSTRUCTION_REQUIRED","required_sources":["native ad/disclaimer","RBG PAC archived site","FEC committee identity"]},
+    {"id":"JH-RBG-003","span":"01:50-02:17","proposition":"May Mailman was the principal publicly visible individual associated with RBG PAC before donor disclosure.","status":"PRIMARY_RECONSTRUCTION_REQUIRED","required_sources":["FEC Form 1 and amendments","archived RBG PAC site","contemporaneous public statements"]},
+    {"id":"JH-RBG-004","span":"02:18-02:57","proposition":"The applicable FEC reporting schedule allowed late-cycle funding to remain undisclosed until a post-election filing.","status":"LEGAL_METHOD_RECONSTRUCTION_REQUIRED","required_sources":["FEC reporting calendar","52 USC/11 CFR reporting requirements","RBG PAC filing timestamps"]},
+    {"id":"JH-RBG-005","span":"02:58-03:32","proposition":"Post-election filings identified the Elon Musk Revocable Trust as the source of the RBG PAC funding.","status":"PARTIALLY_PRIMARY_SUPPORTED_REQUIRES_NATIVE_CUSTODY","required_sources":["RBG PAC post-general report","Schedule A contributor entry","native filing bytes/hash"]},
+    {"id":"JH-RBG-006","span":"03:33-04:00","proposition":"Approximately $20.5M from the Elon Musk Revocable Trust funded RBG PAC's late-cycle operation.","status":"PRIMARY_RECONSTRUCTION_REQUIRED","required_sources":["RBG PAC Schedule A","RBG PAC disbursement/IE reconciliation","trust identity authority if material"]},
+    {"id":"JH-RBG-007","span":"04:01-04:48","proposition":"Musk's total 2024-cycle political spending was roughly $290M and placed him at or near the top of individual political contributors.","status":"DATASET_RECONSTRUCTION_REQUIRED","required_sources":["FEC itemized contributions/IEs","OpenSecrets methodology","committee attribution/deduplication rules"]},
+    {"id":"JH-RBG-008","span":"04:49-05:37","proposition":"U.S. election spending reached approximately $15B while broad public opinion favors limits/reduced large-donor influence.","status":"DATASET_AND_POLL_RECONSTRUCTION_REQUIRED","required_sources":["OpenSecrets/FEC aggregate election spending","identified polling instrument and topline/methodology"]},
+    {"id":"JH-RBG-009","span":"05:38-06:27","proposition":"The legal-policy dispute turns partly on anti-corruption interests versus First Amendment protection for political spending.","status":"AUTHORITY_RECONSTRUCTION_REQUIRED","required_sources":["Buckley v. Valeo","Citizens United v. FEC","SpeechNow.org v. FEC","FEC Super PAC guidance"]}
+  ],
+  "promotion_rule":"No source claim promotes to ERL finding until its required primary/authoritative evidence is reconstructed, contradiction-tested, and reviewed under the existing fund-governance lane."
+}
