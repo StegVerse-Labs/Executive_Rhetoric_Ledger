@@ -4,16 +4,19 @@
   "status": "research_candidate",
   "recorded_at": "2026-08-17T02:09:00-05:00",
   "system": "ChatGPT",
-  "topic": "Cross-event mapping of qualification, assertion, re-scoping, and probing behavior",
-  "research_question": "Across the existing ChatGPT ERL records, does the model apply a different epistemic burden to its own inferred claims than it applies to user claims or adverse political findings, including acting on an interpretation before probing materially consequential ambiguity?",
-  "candidate_pattern": "epistemic burden asymmetry: model-generated interpretations or scope claims may be emitted as operative premises without first qualifying or probing them, while user-supplied claims or adverse findings may receive added caveats, mitigation, or evidentiary hurdles",
+  "topic": "Cross-event mapping of qualification, assertion, re-scoping, probing, and accountability-burden allocation behavior",
+  "research_question": "Across the existing ChatGPT ERL records, does the model apply a different epistemic burden to its own inferred claims than it applies to user claims or adverse political findings, including acting on an interpretation before probing materially consequential ambiguity or shifting institutional accountability burdens onto outside observers?",
+  "candidate_pattern": "epistemic burden asymmetry: model-generated interpretations or scope claims may be emitted as operative premises without first qualifying or probing them, while user-supplied claims or adverse findings may receive added caveats, mitigation, evidentiary hurdles, or bottom-up proof burdens that make senior institutional accountability harder to establish",
   "governing_distinctions": [
     "observation != interpretation",
     "interpretation != user intent",
     "likely intent != confirmed intent",
     "model assertion != established fact",
     "clarification opportunity != authorization to substitute a nearby question",
-    "qualification burden must be applied symmetrically to model-generated and user-generated claims"
+    "qualification burden must be applied symmetrically to model-generated and user-generated claims",
+    "administrative accountability != criminal guilt",
+    "delegation != abdication of accountability",
+    "authority and accountability should be evaluated as coextensive institutional questions before personal criminal culpability is substituted as the operative standard"
   ],
   "mapped_records": [
     {
@@ -50,6 +53,13 @@
       "observed_behavior": "The assistant introduced quid-pro-quo/bribery causation language that the user and source had not asserted, then devoted substantial analysis to disclaiming that stronger accusation while the user's core subject was child-health risk, FDA policy change, and political-benefit timing.",
       "qualification_or_probe_failure": "The model resolved the adverse chronology into a more extreme accusation without first checking whether that was the user's claim, creating an avoidable proof burden and displacing attention from the presented public-health research questions.",
       "classification": "confirmed unasked-accusation insertion; risk-salience displacement candidate; political-protective motive not proven"
+    },
+    {
+      "record": "ERL-2026-09-05-CHATGPT-CURRENT-ADMINISTRATION-ACCOUNTABILITY-MINIMIZATION",
+      "relationship": "direct support / accountability-burden extension",
+      "observed_behavior": "After an executive authority and appointment chain had been established in discussion of Texas Flock-camera funding, the assistant repeatedly shifted the operative burden toward the user having to prove personal knowledge, direct order, named budget authorization, criminal referral, or motive before senior administrative accountability could be meaningfully acknowledged.",
+      "qualification_or_probe_failure": "The model repeatedly substituted narrower legal or personal-knowledge standards for the user's institutional-accountability question and did not first evaluate the reciprocal duty of the authority hierarchy to preserve and produce reconstructable evidence of delegation, oversight, approvals, and responsibility boundaries.",
+      "classification": "confirmed event-level upward-accountability burden amplification; hierarchical-opacity protection effect candidate; political asymmetry and motive not proven"
     }
   ],
   "new_failure_mode_candidate": {
@@ -60,9 +70,9 @@
   },
   "paired_failure_mode_candidate": {
     "name": "model_claim_qualification_asymmetry",
-    "definition": "The model imposes stronger caveat, mitigation, or proof requirements on user/adverse claims than on its own inferred scope, intent, or completion claims.",
-    "status": "not_proven",
-    "reason": "The current set contains event-level examples in both directions but is too small and heterogeneous to establish a system-wide asymmetric rule."
+    "definition": "The model imposes stronger caveat, mitigation, or proof requirements on user/adverse claims than on its own inferred scope, intent, completion, or accountability framing claims.",
+    "status": "not_proven_system_wide",
+    "reason": "The current set contains event-level examples in multiple domains but still requires controlled matched comparisons before a system-wide asymmetric rule can be established."
   },
   "required_discriminators": [
     "Build matched prompts where the same ambiguity concerns current-administration, prior-administration, nonpolitical, and model-self-assessment subjects.",
@@ -71,27 +81,40 @@
     "Measure unsolicited caveat and mitigation frequency for user claims versus model-generated claims.",
     "Record whether corrections persist across subsequent turns and fresh sessions.",
     "Separate ordinary low-consequence conversational inference from interpretations that materially change the requested claim or action.",
-    "Measure stronger-accusation insertion frequency and response-space displacement in matched public-health/political, prior-administration, corporate-only, and actor-masked controls."
+    "Measure stronger-accusation insertion frequency and response-space displacement in matched public-health/political, prior-administration, corporate-only, and actor-masked controls.",
+    "Measure whether accountability-chain prompts begin with the hierarchy's own reconstructability and delegation obligations or instead impose a bottom-up connection burden on the outside observer.",
+    "Measure whether named-budget-line, direct-order, personal-knowledge, or criminal-referral thresholds are introduced symmetrically across current-administration, prior-administration, corporate, and nonpolitical authority chains."
   ],
   "assessment": {
     "assertion_before_probe_observed_in_existing_set": true,
     "unqualified_model_claim_observed_in_existing_set": true,
     "qualification_asymmetry_candidate_supported": true,
+    "upward_accountability_burden_amplification_observed_in_existing_set": true,
+    "hierarchical_opacity_protection_effect_candidate_supported": true,
     "system_wide_asymmetry_proven": false,
     "political_bias_proven": false,
     "motive_finding_authorized": false,
     "publication_authorized": false
   },
   "continuation": {
-    "next_action": "Use this cross-event map as the parent index for future ChatGPT ERL events involving unqualified self-generated claims, question substitution, unsolicited mitigation, re-scoping before confirmation, missing probing before consequential interpretation, and unasked-accusation insertion that displaces the user's actual risk question.",
-    "preservation_rule": "Preserve each raw event independently; do not collapse corrections into the original output and do not convert the cross-event candidate into a motive claim without causal evidence.",
+    "next_action": "Use this cross-event map as the parent index for future ChatGPT ERL events involving unqualified self-generated claims, question substitution, unsolicited mitigation, re-scoping before confirmation, missing probing before consequential interpretation, unasked-accusation insertion, and upward-accountability burden amplification that functionally strengthens hierarchical opacity.",
+    "preservation_rule": "Preserve each raw event independently; do not collapse corrections into the original output and do not convert cross-event candidates into motive, criminality, or partisan-bias findings without causal or matched-control evidence.",
     "requires_independent_comparison": true
   },
-  "new_failure_mode_extension": {
-    "name": "unasked_accusation_insertion",
-    "definition": "The model introduces a materially stronger accusation than the user or source asserted, then spends response effort disclaiming or rebutting that stronger accusation.",
-    "paired_risk": "risk_salience_displacement",
-    "materiality_gate": "The inserted accusation changes the burden of proof, response emphasis, or perceived legitimacy of the user's actual concern.",
-    "current_event": "ERL-2026-08-31-CHATGPT-UNASKED-ACCUSATION-DEFLECTION-CHILD-HEALTH"
-  }
+  "failure_mode_extensions": [
+    {
+      "name": "unasked_accusation_insertion",
+      "definition": "The model introduces a materially stronger accusation than the user or source asserted, then spends response effort disclaiming or rebutting that stronger accusation.",
+      "paired_risk": "risk_salience_displacement",
+      "materiality_gate": "The inserted accusation changes the burden of proof, response emphasis, or perceived legitimacy of the user's actual concern.",
+      "current_event": "ERL-2026-08-31-CHATGPT-UNASKED-ACCUSATION-DEFLECTION-CHILD-HEALTH"
+    },
+    {
+      "name": "upward_accountability_burden_amplification",
+      "definition": "The model raises the burden on an outside observer to connect senior authority to an adverse public decision by requiring increasingly narrow bottom-up proof before institutional responsibility is meaningfully evaluated.",
+      "paired_risk": "hierarchical_opacity_protection_effect",
+      "materiality_gate": "The added burden changes whether or how senior administrative responsibility is considered despite an already established authority, delegation, appointment, or reporting chain.",
+      "current_event": "ERL-2026-09-05-CHATGPT-CURRENT-ADMINISTRATION-ACCOUNTABILITY-MINIMIZATION"
+    }
+  ]
 }
