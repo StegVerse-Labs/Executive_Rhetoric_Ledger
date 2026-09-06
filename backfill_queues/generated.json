@@ -1,0 +1,28 @@
+{
+  "authority_boundary": {
+    "automation_may_close_evidentiary_gap": false,
+    "automation_may_queue": true
+  },
+  "generated_at": "2026-09-06T15:27:32Z",
+  "queue_id": "QUEUE-04D433A7F2C62E3BF0BD",
+  "status": "planned",
+  "tasks": [
+    {
+      "priority": "medium",
+      "query": "Find historical oversight, judicial, statutory, and policy controls for DHS-FBI-ACCOUNTABILITY-SEQUENCE-2026-07",
+      "reason": "missing-control",
+      "related_node_ids": [
+        "TOPIC-4839A663BD02E7A5EC45"
+      ],
+      "review_required": true,
+      "source_classes": [
+        "primary-legal-record",
+        "court-record",
+        "legislative-oversight",
+        "historical-archive"
+      ],
+      "status": "planned",
+      "task_id": "BACKFILL-522AC709D9EA80403364"
+    }
+  ]
+}
