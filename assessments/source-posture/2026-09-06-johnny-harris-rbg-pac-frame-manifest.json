@@ -1,0 +1,22 @@
+{
+  "record_id": "ERL-2026-09-06-JOHNNY-HARRIS-RBG-PAC-FRAMES-001",
+  "parent_source_record": "ERL-2026-09-06-JOHNNY-HARRIS-RBG-PAC-VIDEO-001",
+  "selection_policy": "claim-boundary and timeline-support frames from the supplied 393.4-second screen recording",
+  "frames": [
+    {"timestamp":"00:02","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_002s.jpg","sha256":"71cbccf0914e683f7ea6fd2a75fd0f1ac270dadc387dd271f63481eb0045d444","supports":"source identity/title card and Facebook-hosted presentation"},
+    {"timestamp":"00:30","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_030s.jpg","sha256":"05258ca656dcfec44b19d2c0fd3024fa64747c2a0f5c1d8617e57c594976e386","supports":"transition into FEC/independent-expenditure reconstruction"},
+    {"timestamp":"00:47","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_047s.jpg","sha256":"76680726d2e167af474991b675cecf2c7db31af47c517a7b24ab595ee6d06926","supports":"RBG PAC expenditure/ad-distribution discussion"},
+    {"timestamp":"01:19","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_079s.jpg","sha256":"7a6320b830c1559ae127ac0f35e7c41af5dd3ce9f842d9f1737cf7b4994941bf","supports":"RBG PAC attribution/disclaimer sequence"},
+    {"timestamp":"02:05","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_125s.jpg","sha256":"1d206979158d33802b6f0ba41953968c254f402e67d400151331d5ceb5a8bc3a","supports":"May Mailman identity/role discussion"},
+    {"timestamp":"02:30","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_150s.jpg","sha256":"299fa236900b6cfa078dda9bdede90c938bbef58cf8c68de5ad73233b1c9ed58","supports":"initial disclosure/zero-value filing discussion"},
+    {"timestamp":"02:52","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_172s.jpg","sha256":"f3ddf4237102c5ac20c64c73e5de35f6a93d70e994fe6f26a353dfeb86d2f88b","supports":"reporting-calendar/disclosure-timing discussion"},
+    {"timestamp":"03:15","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_195s.jpg","sha256":"18faa69c6aaa2a73e6424744077bd88e5a75029834a7b5b01e2926d9502154dd","supports":"post-election donor disclosure reveal"},
+    {"timestamp":"03:39","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_219s.jpg","sha256":"ccb11c2983dc386c47221a285c9eecb3232ecd44b28ea9ea661bbfe444d6494b","supports":"Elon Musk revocable-trust explanation"},
+    {"timestamp":"04:27","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_267s.jpg","sha256":"0edde01d5d0c5cb2b4de84099183f53243bed588e007b720ccca89ab8a5cae99","supports":"broader 2024 Musk political-spending discussion"},
+    {"timestamp":"04:49","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_289s.jpg","sha256":"1e97507ca84e63738083992bd80fcf1262ad8a43edb6ba8bbd03dc50ab60d51f","supports":"transition to total-election-spending/public-policy context"},
+    {"timestamp":"05:38","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_338s.jpg","sha256":"fb225970ae150effe6719ae76b961bdf5f5787b34b602b723f80864ae3bf8923","supports":"competing campaign-finance/free-speech positions"},
+    {"timestamp":"06:03","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_363s.jpg","sha256":"03bf05c974547eed4d49d8c376f315da14f1f81b2d67ac2b9b7757c318ed3df2","supports":"campaign-finance significance/anti-corruption framing"},
+    {"timestamp":"06:28","path":"assessments/source-posture/frames/2026-09-06-johnny-harris-rbg-pac/frame_388s.jpg","sha256":"22f82b47c2c678d4ffdc1eaa9404240bf7fcd4c43b348d9f181386bd754451c7","supports":"end of captured excerpt/transition toward longform continuation"}
+  ],
+  "evidentiary_boundary": "Frames support what appeared on screen at the specified times. They do not independently verify narrated claims."
+}
