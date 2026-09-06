@@ -1,0 +1,256 @@
+{
+  "cycle_id": "ERL-RECURRING-DISCOVERY-BASELINE-001--20260906-152732",
+  "cycle_status": "planned",
+  "started_at": "2026-09-06T15:27:32Z",
+  "scope": {
+    "topics": [
+      "executive rhetoric",
+      "federal enforcement",
+      "constitutional and civil-rights accountability"
+    ],
+    "time_window": "rolling-14-days-with-historical-links",
+    "jurisdictions": [
+      "United States federal"
+    ],
+    "actors": [
+      "President",
+      "Attorney General",
+      "DHS Secretary",
+      "FBI Director"
+    ],
+    "agencies": [
+      "Department of Justice",
+      "Federal Bureau of Investigation",
+      "Department of Homeland Security",
+      "Immigration and Customs Enforcement"
+    ]
+  },
+  "discovery_classes": [
+    "captured-topic-refresh",
+    "contradiction-discovery",
+    "control-discovery",
+    "new-incident"
+  ],
+  "source_classes": [
+    "primary-legal-record",
+    "official-government",
+    "court-record",
+    "legislative-oversight",
+    "local-reporting",
+    "national-reporting",
+    "advocacy-record"
+  ],
+  "queries": [
+    {
+      "query_id": "captured-topic-refresh",
+      "query_text": "Refresh existing ledger topics for new official actions, corrections, litigation, oversight, measurable outcomes, and evidence that strengthens, weakens, or disambiguates unresolved DPOI state.",
+      "discovery_class": "captured-topic-refresh",
+      "status": "planned",
+      "dpoi_search_parameters": {
+        "evidence_directions": [
+          "strengthen",
+          "weaken",
+          "disambiguate"
+        ],
+        "strengthen_terms": [
+          "confirmed",
+          "corroborated",
+          "substantiated",
+          "admitted",
+          "verified",
+          "consistent with"
+        ],
+        "weaken_terms": [
+          "retracted",
+          "dismissed",
+          "contradicted",
+          "unsubstantiated",
+          "no evidence",
+          "incorrect"
+        ],
+        "disambiguation_terms": [
+          "timeline",
+          "chronology",
+          "authority",
+          "jurisdiction",
+          "scope",
+          "definition",
+          "records",
+          "testimony",
+          "metadata"
+        ],
+        "state_dimensions": [
+          "current-evidence-state",
+          "authority",
+          "timeline",
+          "identity",
+          "causation",
+          "scope"
+        ],
+        "no_result_effect": "no-update",
+        "candidate_only": true
+      }
+    },
+    {
+      "query_id": "new-federal-enforcement-incidents",
+      "query_text": "Find newly reported federal enforcement incidents involving use of force, detention, constitutional claims, changes to investigative responsibility, and evidence capable of strengthening, weakening, or clarifying related DPOIs.",
+      "discovery_class": "new-incident",
+      "status": "planned",
+      "dpoi_search_parameters": {
+        "evidence_directions": [
+          "strengthen",
+          "weaken",
+          "disambiguate"
+        ],
+        "strengthen_terms": [
+          "confirmed",
+          "charged",
+          "filed",
+          "documented",
+          "body camera",
+          "official record"
+        ],
+        "weaken_terms": [
+          "cleared",
+          "dismissed",
+          "misidentified",
+          "false report",
+          "no violation",
+          "not involved"
+        ],
+        "disambiguation_terms": [
+          "incident report",
+          "agency responsibility",
+          "jurisdiction",
+          "sequence",
+          "timestamp",
+          "identity",
+          "chain of command"
+        ],
+        "state_dimensions": [
+          "identity",
+          "authority",
+          "timeline",
+          "jurisdiction",
+          "conduct",
+          "outcome"
+        ],
+        "no_result_effect": "no-update",
+        "candidate_only": true
+      }
+    },
+    {
+      "query_id": "accountability-chain-contradictions",
+      "query_text": "Find evidence that confirms or contradicts public statements, internal guidance, agency practice, court records, congressional oversight, later implementation, and unresolved DPOI assumptions; prioritize records that disambiguate who knew, decided, directed, executed, or retained custody.",
+      "discovery_class": "contradiction-discovery",
+      "status": "planned",
+      "dpoi_search_parameters": {
+        "evidence_directions": [
+          "strengthen",
+          "weaken",
+          "disambiguate"
+        ],
+        "strengthen_terms": [
+          "corroborated",
+          "consistent",
+          "confirmed",
+          "matches",
+          "authenticated",
+          "under oath"
+        ],
+        "weaken_terms": [
+          "contradiction",
+          "inconsistent",
+          "recanted",
+          "corrected",
+          "disputed",
+          "unsupported"
+        ],
+        "disambiguation_terms": [
+          "who authorized",
+          "who directed",
+          "who executed",
+          "who knew",
+          "custodian",
+          "delegation",
+          "email metadata",
+          "records retention"
+        ],
+        "state_dimensions": [
+          "authority",
+          "knowledge",
+          "execution",
+          "records-custody",
+          "channel-purpose",
+          "timeline"
+        ],
+        "no_result_effect": "no-update",
+        "candidate_only": true
+      }
+    },
+    {
+      "query_id": "historical-accountability-controls",
+      "query_text": "Find historical controls and precedents for comparable enforcement, civil-rights investigation, agency self-investigation, executive intervention, and DPOI-relevant alternative explanations that can strengthen, weaken, or disambiguate the current interpretation.",
+      "discovery_class": "control-discovery",
+      "status": "planned",
+      "dpoi_search_parameters": {
+        "evidence_directions": [
+          "strengthen",
+          "weaken",
+          "disambiguate"
+        ],
+        "strengthen_terms": [
+          "precedent",
+          "same pattern",
+          "repeated",
+          "consistent practice",
+          "historical match"
+        ],
+        "weaken_terms": [
+          "exception",
+          "different authority",
+          "different procedure",
+          "noncomparable",
+          "changed policy"
+        ],
+        "disambiguation_terms": [
+          "historical control",
+          "baseline",
+          "standard practice",
+          "policy in force",
+          "authority at time",
+          "comparison period"
+        ],
+        "state_dimensions": [
+          "baseline",
+          "alternative-explanation",
+          "policy-context",
+          "authority",
+          "timeline",
+          "comparability"
+        ],
+        "no_result_effect": "no-update",
+        "candidate_only": true
+      }
+    }
+  ],
+  "candidate_outputs": {
+    "new_topics": [],
+    "source_receipts": [],
+    "adjacency_links": [],
+    "control_candidates": [],
+    "contradictions": [],
+    "outcome_updates": [],
+    "dpoi_evidence_candidates": []
+  },
+  "review_boundary": {
+    "automation_may_propose": true,
+    "automation_may_publish": false,
+    "required_review_states": [
+      "candidate-generated",
+      "source-posture-reviewed",
+      "ledger-review-required"
+    ]
+  },
+  "notes": "Generated from recurring-search configuration. DPOI directional parameters can identify evidence candidates that may strengthen, weaken, or disambiguate a data point of interest, but automation may not change DPOI state or treat a zero-result search as disproof."
+}

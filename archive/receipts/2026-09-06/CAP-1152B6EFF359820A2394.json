@@ -1,0 +1,14 @@
+{
+  "adapter_id": "LOCAL_DHS_FBI_SEQUENCE_FIXTURE",
+  "byte_length": 699,
+  "candidate_path": "discovery_candidates/2026-09-06/CAND-1152B6EFF359820A2394.json",
+  "capture_id": "CAP-1152B6EFF359820A2394",
+  "capture_status": "captured",
+  "captured_at": "2026-09-06T15:27:32Z",
+  "content_sha256": "1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69",
+  "content_type": "application/json",
+  "raw_archive_path": "archive/captures/2026-09-06/1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69.json",
+  "review_status": "candidate-review-required",
+  "source_class": "national-reporting",
+  "source_uri": "source_fixtures/dhs-fbi-accountability-sequence.json"
+}

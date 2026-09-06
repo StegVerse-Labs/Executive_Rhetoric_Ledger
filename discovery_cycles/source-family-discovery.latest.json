@@ -1,0 +1,58 @@
+{
+  "authority": {
+    "human_review_required": true,
+    "may_capture": true,
+    "may_discover": true,
+    "may_promote": false
+  },
+  "discovered_at": "2026-09-06T15:27:32Z",
+  "enabled_family_count": 4,
+  "execution_status": "PASS",
+  "failed_family_count": 2,
+  "families": [
+    {
+      "candidate_urls": [],
+      "discovered_count": 0,
+      "error": null,
+      "family_id": "FEDERAL_REGISTER_DHS",
+      "fetch_status": "PASS",
+      "index_sha256": "28067e3779cb35d88c60862a187acdbb479d9b4628baf21a6484c1321f1f8f8c",
+      "index_url": "https://www.federalregister.gov/agencies/homeland-security-department",
+      "promotion_authority": false
+    },
+    {
+      "candidate_urls": [],
+      "discovered_count": 0,
+      "error": null,
+      "family_id": "DOJ_PRESS_RELEASES",
+      "fetch_status": "PASS",
+      "index_sha256": "7492a4a639d17270854af699064c065f19d46b3e1220aa0ed581933feb698809",
+      "index_url": "https://www.justice.gov/news/press-releases",
+      "promotion_authority": false
+    },
+    {
+      "candidate_urls": [],
+      "discovered_count": 0,
+      "error": "HTTP 403: Forbidden",
+      "family_id": "ICE_NEWSROOM",
+      "fetch_status": "FAILED",
+      "index_sha256": null,
+      "index_url": "https://www.ice.gov/newsroom",
+      "promotion_authority": false
+    },
+    {
+      "candidate_urls": [],
+      "discovered_count": 0,
+      "error": "HTTP 403: Forbidden",
+      "family_id": "CBP_MEDIA_RELEASES",
+      "fetch_status": "FAILED",
+      "index_sha256": null,
+      "index_url": "https://www.cbp.gov/newsroom/media-releases/all",
+      "promotion_authority": false
+    }
+  ],
+  "new_adapter_count": 0,
+  "runtime_adapter_count": 4,
+  "schema": "stegverse.executive_rhetoric_ledger.source_family_discovery.v2",
+  "successful_family_count": 2
+}
