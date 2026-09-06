@@ -1,0 +1,66 @@
+{
+  "record_type": "administration_treatment_prosecution_outcome_intake",
+  "record_id": "ERL-ADMIN-TREATMENT-18USC111-NYT-2026-09-05-001",
+  "canonical_issue": 65,
+  "parent_research_surface": "potential administration maltreatment/treatment of citizens across federal enforcement activity",
+  "status": "CANDIDATE_FOR_REVIEW_PRIMARY_CUSTODY_REQUIRED",
+  "admission_rule": "Admission preserves a research lead only. It does not establish unlawful prosecution, lawful prosecution, administration maltreatment, non-maltreatment, prosecutorial misconduct, factual guilt, factual innocence, systemic intent, or a publication finding.",
+  "source_object": {
+    "source_type": "user-supplied screen recording of New York Times social-video segment",
+    "local_filename": "ScreenRecording_09-05-2026 14-58-18_1.mp4",
+    "sha256": "d9fc0c822f83457be72c0a4ed686e74ab28dd7727f08d3d81f20818cad16f576",
+    "size_bytes": 120548870,
+    "duration_seconds": 164.97,
+    "recording_date_from_filename": "2026-09-05",
+    "native_binary_custodied_in_repository": false,
+    "source_url_resolved": false
+  },
+  "observed_on_screen": [
+    "The segment presents a New York Times analysis of federal prosecutions arising from immigration-enforcement activity during President Trump's second term.",
+    "The segment states that hundreds of people were charged with assaulting or impeding federal agents during immigration-enforcement actions.",
+    "A graphic is labeled 'Immigration-related 18 U.S.C. 111 cases — From Trump’s second term.'",
+    "The graphic displays 213 in a category labeled 'DISMISSED OR ACQUITTED.'",
+    "The segment characterizes the government as having lost or abandoned nearly half of the analyzed cases.",
+    "The segment presents individual encounter/prosecution examples and reporter explanation of Justice Department case handling.",
+    "One on-screen example identifies 'Quentin Williams — Special Education Assistant.' This intake preserves only that the label appeared in the supplied recording; identity and case facts are not independently verified here."
+  ],
+  "research_relevance": [
+    "Issue #65 explicitly includes charging/prosecution decisions and later dismissal, acquittal, declination, or other disposition within the administration-treatment research surface.",
+    "The reported case universe may permit reconstruction of how federal enforcement encounters move from initial official characterization and arrest through 18 U.S.C. 111 charging, evidentiary development, prosecutorial continuation or abandonment, dismissal, acquittal, plea, or pending disposition.",
+    "The reported aggregate can be compared against incident-level primary records without presuming that dismissal or acquittal proves wrongful arrest, wrongful charging, agent misconduct, or administration-level maltreatment.",
+    "The source is potentially useful for testing whether official narratives, charging decisions, later evidence, and judicial/prosecutorial outcomes diverge in reproducible ways across a defined case population."
+  ],
+  "epistemic_boundaries": [
+    "This recording establishes what the New York Times segment visibly reports; it does not independently establish the truth of the 213 count, the denominator, the 'nearly half' characterization, or the classification methodology.",
+    "Dismissal, acquittal, prosecutorial abandonment, plea disposition, declination, and still-pending status must remain separate outcome classes.",
+    "Case outcome is not interchangeable with factual guilt/innocence, legality of arrest, legality of force, credibility of an official statement, or administration-level intent.",
+    "Secondary-source case identification may be used as a locator, but proposition-level findings require primary/official court, charging, dismissal, evidentiary, agency, and where relevant media records."
+  ],
+  "primary_acquisition_required": [
+    "Resolve the exact New York Times article/video URL, publication date, authors/reporters, and methodology note underlying the social-video segment.",
+    "Acquire the complete NYT case universe or reconstruct its denominator and inclusion/exclusion rules from published methodology.",
+    "For a reproducible sample and then, where feasible, the full universe, acquire federal docket identities, charging instruments, 18 U.S.C. 111 count language, disposition records, dismissal motions/orders, verdicts, pleas, and pending status.",
+    "Preserve agency/DOJ public statements and encounter descriptions associated with sampled prosecutions.",
+    "Acquire relevant body-camera, bystander, surveillance, forensic, witness, or other evidentiary records when they bear on discrepancies between initial characterization, charging theory, and later disposition.",
+    "Determine whether the reported 213 category combines legally distinct outcomes and, if so, reconstruct each outcome separately.",
+    "Record citizenship/status and intended-target status only where verified and relevant to Issue #65; do not infer either from immigration-enforcement context alone."
+  ],
+  "relationship_candidates": [
+    "Issue #65 — canonical parent surface for administration treatment/maltreatment of citizens across federal enforcement activity.",
+    "Issue #64 — narrower missing-context/evidentiary-handling lane may receive immutable incident references only when an individual case meets that lane's discovery signatures.",
+    "Existing ERL federal-force/prosecution incidents, including Marimar Martinez, may provide concrete comparison points without duplicating their raw evidence objects."
+  ],
+  "next_executable_tasks": [
+    "Resolve and custody the exact NYT publication and methodology.",
+    "Extract the reported denominator and outcome taxonomy behind the 213 dismissed-or-acquitted figure.",
+    "Create a case-level acquisition queue keyed by court/docket identity rather than person-name-only matching.",
+    "Select cases with independently recoverable primary records and reconstruct charging-to-disposition chronology.",
+    "Map any later relationship to Issue #64 only after incident-level evidence establishes that missing-context handling is actually implicated."
+  ],
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "readme_impact": {
+    "required": false,
+    "reason": "This change adds a bounded evidence-intake record under an existing Issue #65 research surface and does not change repository behavior, runtime semantics, interfaces, governance/authority boundaries, evidence semantics, prerequisites, dependencies, failure behavior, or capability meaning."
+  }
+}
