@@ -1,0 +1,16 @@
+{
+  "acknowledgment_id": "ERL-ACK-EE1F7DF0B1FECEC39E31",
+  "authority": {
+    "may_acknowledge_receipt": true,
+    "may_classify_final": false,
+    "may_promote": false,
+    "may_publish": false
+  },
+  "export_path": "producer_intake/incoming/StegVerse-Labs__Administrations/68bcb26723fb0371ea902c9dad0696e98c4a02133d4c87002916907916e2cdaf.json",
+  "export_sha256": "68bcb26723fb0371ea902c9dad0696e98c4a02133d4c87002916907916e2cdaf",
+  "generated_at": "2026-09-06T20:22:04.245813Z",
+  "intake_id": "ERL-INTAKE-07BDF642DF8581623D00199E",
+  "producer_repository": "StegVerse-Labs/Administrations",
+  "review_required": true,
+  "state": "received"
+}
