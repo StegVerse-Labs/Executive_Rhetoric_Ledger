@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stegverse.erl.canonical-provenance-reference.v1",
+  "title": "ERL Canonical Provenance Reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "candidate_id",
+    "canonical_lineage_schema",
+    "canonical_lineage_id",
+    "candidate_object_id",
+    "source_root_object_ids",
+    "derivation_edge_ids",
+    "transition_receipt_refs",
+    "authority_effect"
+  ],
+  "properties": {
+    "schema": {"const": "stegverse.erl.canonical-provenance-reference.v1"},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "canonical_lineage_schema": {"const": "stegos.object_provenance_lineage.v1"},
+    "canonical_lineage_id": {"type": "string", "pattern": "^svlineage:sha256:[0-9a-f]{64}$"},
+    "candidate_object_id": {"type": "string", "pattern": "^svobj:sha256:[0-9a-f]{64}$"},
+    "source_root_object_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^svobj:sha256:[0-9a-f]{64}$"}
+    },
+    "derivation_edge_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^svedge:sha256:[0-9a-f]{64}$"}
+    },
+    "transition_receipt_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "master_records_custody_receipt_ref": {"type": ["string", "null"], "minLength": 1},
+    "authority_effect": {"const": "NONE"}
+  }
+}
