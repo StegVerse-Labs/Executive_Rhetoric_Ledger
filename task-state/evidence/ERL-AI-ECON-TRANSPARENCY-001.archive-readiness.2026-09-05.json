@@ -1,0 +1,45 @@
+{
+  "schema": "stegverse.erl.archive-readiness/v1",
+  "task_id": "ERL-AI-ECON-TRANSPARENCY-001",
+  "observation_date": "2026-09-05",
+  "archive_ready": false,
+  "goal_complete": false,
+  "activation_groups_complete": 8,
+  "activation_groups_total": 10,
+  "remaining_required_tasks": [
+    "observe authentic present resident WorkerCoordinator runtime presence",
+    "observe resident request dispatch",
+    "observe ERL request consumption",
+    "observe targeted resident execution",
+    "obtain authentic fenced independent-review receipt",
+    "reconcile activation group 9",
+    "evaluate separately governed activation group 10"
+  ],
+  "remaining_tasks_durably_owned": true,
+  "durable_owner_refs": [
+    "StegVerse-Labs/.github:handoffs/SHWP-ERL-AI-ECON-TRANSPARENCY-REVIEW-001.json",
+    "StegVerse-Labs/.github:control/worker-registry.d/erl-ai-economic-transparency-review-001.json",
+    "StegVerse-Labs/.github:control/resident-execution-request.d/erl-ai-economic-transparency-review-001.json"
+  ],
+  "operating_autonomous_executor_proven": false,
+  "operating_executor_presence_evidence": {
+    "required_receipt": "StegVerse-Labs/.github:receipts/sovereign-host/runtime-presence.latest.json",
+    "required_predicate": "present_worker_runtime_observed=true",
+    "observed": false,
+    "historical_worker_state_ref": "StegVerse-Labs/.github:control/worker-runtime-state.json",
+    "historical_last_cycle_at": "2026-08-18T19:47:00Z",
+    "historical_observation_mode": "CARRIER_REFERENCE_ONLY_NO_TASK_EXECUTION"
+  },
+  "session_independent_completion_guaranteed": false,
+  "archive_gate": {
+    "rule": "archive-ready may be true only when the goal is complete OR every remaining required task is durably owned by an actually operating autonomous executor that does not depend on the session",
+    "goal_complete_satisfies_gate": false,
+    "operating_autonomous_executor_satisfies_gate": false,
+    "gate_satisfied": false
+  },
+  "user_action_required": false,
+  "second_machine_required": false,
+  "credential_action_required": false,
+  "authority_effect": "NONE_OBSERVATION_ONLY",
+  "claim": "Durable machine ownership without current operating-executor evidence is insufficient for archive readiness. This thread is not archive-ready under the fail-closed archive gate."
+}
