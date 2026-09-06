@@ -1,0 +1,154 @@
+{
+  "authority": {
+    "may_discover": true,
+    "may_promote": false,
+    "may_register": false
+  },
+  "consumer_repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "generated_at": "2026-09-06T20:21:47Z",
+  "producers": [
+    {
+      "declaration": {
+        "authority": {
+          "export_status": "candidate-only",
+          "may_claim_truth": false,
+          "may_classify_final": false,
+          "may_promote": false,
+          "requires_ledger_review": true
+        },
+        "consumer": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+        "contract_version": "1.0.0",
+        "exports": {
+          "format": "json",
+          "manifest_path": "exports/executive-rhetoric-ledger/manifest.json",
+          "receipt_path": "receipts/executive-rhetoric-ledger-export.jsonl",
+          "root_path": "exports/executive-rhetoric-ledger"
+        },
+        "lifecycle": {
+          "acknowledgment_states": [
+            "received",
+            "accepted-for-context",
+            "needs-primary-source",
+            "needs-archive",
+            "rejected-duplicate",
+            "rejected-unsupported",
+            "rejected-out-of-scope"
+          ],
+          "deprecation_requires_governed_record": true,
+          "retry_policy": {
+            "backoff_seconds": [
+              60,
+              300,
+              900,
+              3600,
+              21600
+            ],
+            "max_attempts": 5
+          }
+        },
+        "preservation": [
+          "native_record_id",
+          "producer_path",
+          "producer_commit",
+          "source_url",
+          "source_title",
+          "source_attribution",
+          "source_posture",
+          "source_confidence",
+          "archive_reference",
+          "record_created_at",
+          "record_updated_at",
+          "supersedes",
+          "corrects"
+        ],
+        "producer": {
+          "capability_id": "administrations-institutional-action-producer-v1",
+          "record_classes": [
+            "institutional",
+            "administrative",
+            "historical",
+            "action_record",
+            "source_receipt"
+          ],
+          "repository": "StegVerse-Labs/Administrations"
+        }
+      },
+      "declaration_path": ".stegverse/executive-rhetoric-ledger-producer.json",
+      "default_branch": "main",
+      "discovery_status": "declared-review-required",
+      "repository": "StegVerse-Labs/Administrations",
+      "visibility": "public"
+    },
+    {
+      "declaration": {
+        "authority": {
+          "export_status": "candidate-only",
+          "may_claim_truth": false,
+          "may_classify_final": false,
+          "may_promote": false,
+          "requires_ledger_review": true
+        },
+        "consumer": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+        "contract_version": "1.0.0",
+        "exports": {
+          "format": "json",
+          "manifest_path": "datasets/exports/executive-rhetoric-ledger/manifest.json",
+          "receipt_path": "data/receipts/export_receipts.jsonl",
+          "root_path": "datasets/exports/executive-rhetoric-ledger"
+        },
+        "lifecycle": {
+          "acknowledgment_states": [
+            "received",
+            "accepted-for-context",
+            "needs-primary-source",
+            "needs-archive",
+            "rejected-duplicate",
+            "rejected-unsupported",
+            "rejected-out-of-scope"
+          ],
+          "deprecation_requires_governed_record": true,
+          "retry_policy": {
+            "backoff_seconds": [
+              60,
+              300,
+              900,
+              3600,
+              21600
+            ],
+            "max_attempts": 5
+          }
+        },
+        "preservation": [
+          "native_record_id",
+          "producer_path",
+          "producer_commit",
+          "source_url",
+          "source_title",
+          "source_attribution",
+          "source_posture",
+          "source_confidence",
+          "archive_reference",
+          "record_created_at",
+          "record_updated_at",
+          "supersedes",
+          "corrects"
+        ],
+        "producer": {
+          "capability_id": "trumpality-political-context-producer-v1",
+          "record_classes": [
+            "political",
+            "historical",
+            "action_record",
+            "source_receipt"
+          ],
+          "repository": "StegVerse-Labs/Trumpality"
+        }
+      },
+      "declaration_path": ".stegverse/executive-rhetoric-ledger-producer.json",
+      "default_branch": "main",
+      "discovery_status": "declared-review-required",
+      "repository": "StegVerse-Labs/Trumpality",
+      "visibility": "public"
+    }
+  ]
+}

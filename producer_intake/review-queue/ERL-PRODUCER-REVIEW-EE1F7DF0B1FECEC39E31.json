@@ -1,0 +1,16 @@
+{
+  "acknowledgment": "producer_intake/acknowledgments/StegVerse-Labs__Administrations/ERL-INTAKE-07BDF642DF8581623D00199E.json",
+  "authority": {
+    "automation_may_approve": false,
+    "automation_may_assign": true,
+    "automation_may_promote": false,
+    "automation_may_publish": false
+  },
+  "export_sha256": "68bcb26723fb0371ea902c9dad0696e98c4a02133d4c87002916907916e2cdaf",
+  "generated_at": "2026-09-06T20:22:04.245813Z",
+  "intake_result": "producer_intake/results/ERL-INTAKE-07BDF642DF8581623D00199E.json",
+  "producer_repository": "StegVerse-Labs/Administrations",
+  "review_packet_id": "ERL-PRODUCER-REVIEW-EE1F7DF0B1FECEC39E31",
+  "review_status": "pending",
+  "source": "producer-intake"
+}
