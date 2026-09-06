@@ -1,0 +1,58 @@
+{
+  "record_id": "ERL-2026-09-06-JOHNNY-HARRIS-RBG-PAC-VIDEO-001",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "parent_goal": "ERL-2026-09-03-MAGA-INC-MIDTERM-FUNDS-001",
+  "owner_issue": 120,
+  "lifecycle": "RESEARCH_SOURCE_INGESTED",
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "source": {
+    "creator": "Johnny Harris",
+    "facebook_visible_title": "The Election Secret Trump Doesn't Want You To Know",
+    "visible_title_card": "WHY DID TRUMP BURY THIS?",
+    "canonical_longform_title": "How billionaires stole America's elections",
+    "youtube_video_id": "-NuXpwB2DV4",
+    "canonical_url": "https://www.youtube.com/watch?v=-NuXpwB2DV4",
+    "canonical_longform_duration": "44:18",
+    "captured_excerpt_duration_seconds": 393.4,
+    "captured_excerpt_scope": "00:00-06:33 of the longform source",
+    "capture_type": "user-supplied iOS screen recording of Facebook-hosted excerpt",
+    "capture_received_date": "2026-09-06",
+    "capture_sha256": "59e67935e4bc0d1b9f2611de215c471caaa332327f352548eabd20d561fd6cec",
+    "audio_derivative_sha256": "7ce9ef173500a666fae360479bb6029bc1cbb45314ce06afbdc2417e3807dfce",
+    "video_stream": {"codec": "h264", "width": 512, "height": 1112, "fps": 30},
+    "audio_stream": {"codec": "aac"}
+  },
+  "source_relationship": {
+    "status": "MATCHED_TO_PUBLIC_LONGFORM_SOURCE",
+    "basis": [
+      "visible Johnny Harris account attribution in capture",
+      "visible Facebook title",
+      "RBG PAC opening sequence",
+      "public longform chapter 00:00 = RBG PAC",
+      "matching public video identifier and published source description"
+    ]
+  },
+  "transcript_posture": {
+    "artifact": "assessments/transcripts/2026-09-06-johnny-harris-rbg-pac-captured-excerpt.transcript.md",
+    "method": "burned-in-caption reconstruction from supplied recording plus source-timeline cross-check",
+    "verbatim_guarantee": false,
+    "reason": "the supplied recording does not expose a machine-readable subtitle track and sections of the excerpt have no burned-in captions; uncertain or non-captioned spans are explicitly marked rather than invented",
+    "full_capture_timeline_covered": true
+  },
+  "frame_posture": {
+    "manifest": "assessments/source-posture/2026-09-06-johnny-harris-rbg-pac-frame-manifest.json",
+    "selection": "claim-boundary/key-timestamp frames from the supplied recording",
+    "binary_frames_expected_on_ingestion_branch": true
+  },
+  "governance_invariants": [
+    "source_assertion != verified fact",
+    "screen_recording != native publisher bytes",
+    "secondary-source narration != primary-record proof",
+    "late disclosure != wrongdoing",
+    "large political expenditure != corruption",
+    "supporting frame != independent corroboration"
+  ],
+  "readme_impact": "NO_CHANGE_REQUIRED",
+  "readme_impact_reason": "evidence/custody ingestion only; no behavior, runtime, interface, authority, validator, dependency, failure-mode, or capability-semantics change"
+}
