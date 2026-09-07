@@ -1,0 +1,59 @@
+name: Research UAP Active Source Acquisition
+
+on:
+  schedule:
+    - cron: '27 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-uap-active-source-acquisition
+  cancel-in-progress: false
+
+jobs:
+  acquire-validate-persist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Acquire READY allowlisted public UAP sources without credentials
+        env:
+          GITHUB_TOKEN: ''
+          GH_TOKEN: ''
+        run: |
+          mkdir -p reports/uap-media
+          python scripts/process_uap_source_queue.py --fetch --receipt reports/uap-media/latest-active-acquisition.json || status=$?
+          status=${status:-0}
+          if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then exit "$status"; fi
+      - name: Re-sort and validate the current evidence corpus
+        env:
+          GITHUB_TOKEN: ''
+          GH_TOKEN: ''
+        run: |
+          python scripts/validate_uap_evidence_classes.py
+          python scripts/validate_uap_research_contracts.py
+          python -m unittest -v tests.test_uap_source_queue
+      - name: Persist new source objects and durable acquisition receipt
+        run: |
+          git config user.name 'stegverse-research-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add assessments/uap-media reports/uap-media/latest-active-acquisition.json
+          if git diff --cached --quiet; then
+            echo 'No new source bytes or receipt change to persist.'
+          else
+            git commit -m 'research: persist active UAP source acquisition cycle'
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: erl-uap-active-research-${{ github.run_id }}
+          path: |
+            reports/uap-media/latest-active-acquisition.json
+            assessments/uap-media/evidence/**
+          retention-days: 90
