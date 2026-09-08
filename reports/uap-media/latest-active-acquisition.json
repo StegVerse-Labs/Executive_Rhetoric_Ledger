@@ -1,0 +1,51 @@
+{
+  "credential_authority": "TV/TVC",
+  "credential_requirement": "NONE",
+  "derived_class": "receipt",
+  "execution_status": "RETRY",
+  "fetch_requested": true,
+  "github_token_used": false,
+  "goal_id": "UAP-MEDIA-001",
+  "inherited_token_presence_removed_before_network": {
+    "GH_TOKEN": false,
+    "GITHUB_TOKEN": false
+  },
+  "queue_valid": true,
+  "results": [
+    {
+      "receipt": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-NASA-STUDY-2023.native.receipt.json",
+      "sha256": "acbf25e1c1a06907dbd929a3cadca350f8043e069bdcd2fa5c92ed6d5d1732ad",
+      "source_id": "UAP-OFFICIAL-NASA-STUDY-2023",
+      "status": "COMPLETE"
+    },
+    {
+      "error": "HTTP Error 404: Not Found",
+      "source_id": "UAP-OFFICIAL-ODNI-FY2024",
+      "status": "RETRY"
+    },
+    {
+      "receipt": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-HOUSE-HEARING-2023.native.receipt.json",
+      "sha256": "cca515ebaf54876361b90f4b58f2370621f92fcdd988852b93e9e272aaf3456b",
+      "source_id": "UAP-OFFICIAL-HOUSE-HEARING-2023",
+      "status": "COMPLETE"
+    },
+    {
+      "receipt": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-HOUSE-HEARING-2024.native.receipt.json",
+      "sha256": "7da9447b6bb14032710ec104beee2c4c0d757e2ebda12de792a34b1293a3c1e7",
+      "source_id": "UAP-OFFICIAL-HOUSE-HEARING-2024",
+      "status": "COMPLETE"
+    },
+    {
+      "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native.receipt.json",
+      "sha256": "47241883ceea2472adbd5b612f3239d8e56250381dae5747b7cb7d11df1eb5a8",
+      "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
+      "status": "COMPLETE"
+    },
+    {
+      "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native.receipt.json",
+      "sha256": "18c3cd4129d8f7e59d241dadee50b049ea6dddead0c8cd8c5dea7a3a3315bfc5",
+      "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
+      "status": "COMPLETE"
+    }
+  ]
+}
