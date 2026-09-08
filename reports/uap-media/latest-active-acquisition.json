@@ -14,7 +14,7 @@
   "results": [
     {
       "receipt": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-NASA-STUDY-2023.native.receipt.json",
-      "sha256": "acbf25e1c1a06907dbd929a3cadca350f8043e069bdcd2fa5c92ed6d5d1732ad",
+      "sha256": "1263a6c46dbe8ddc85ce793f19e6ed1615d959509f65f1f2a5022710143f7ec5",
       "source_id": "UAP-OFFICIAL-NASA-STUDY-2023",
       "status": "COMPLETE"
     },
@@ -37,13 +37,13 @@
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native.receipt.json",
-      "sha256": "47241883ceea2472adbd5b612f3239d8e56250381dae5747b7cb7d11df1eb5a8",
+      "sha256": "cf81c64632cf5684a0e5676cb355ffb6d183001157ac1c28464ecbfe73639eef",
       "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
       "status": "COMPLETE"
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native.receipt.json",
-      "sha256": "18c3cd4129d8f7e59d241dadee50b049ea6dddead0c8cd8c5dea7a3a3315bfc5",
+      "sha256": "8947bc64570084fa6982f9c44b4f9ea98b0d27b1e5fae2498ad3d3ce5d8adf1d",
       "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
       "status": "COMPLETE"
     }
