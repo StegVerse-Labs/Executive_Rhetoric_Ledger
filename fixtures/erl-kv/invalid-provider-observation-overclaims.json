@@ -1,0 +1,19 @@
+{
+  "schema": "stegverse.erl.kv-provider-write-observation/v1",
+  "artifact_id": "ERL-2026-09-06-OPENAI-AN-ALIEN-MIND",
+  "observed_at": "2026-09-09T04:24:09Z",
+  "result": "PROVIDER_WRITE_OBSERVED",
+  "kv_instance_id": "mykv-01-google-drive",
+  "provider": "google-drive",
+  "lane": "02_Research/ERL",
+  "relative_artifact_path": "02_Research/ERL/ERL-2026-09-06-OPENAI-AN-ALIEN-MIND",
+  "folder_id": "fixture-folder",
+  "folder_url": "https://drive.google.com/drive/folders/fixture-folder",
+  "manifest": {"file_id": "fixture-manifest", "filename": "manifest.json", "size_bytes": 1, "sha256_at_upload": "0000000000000000000000000000000000000000000000000000000000000000"},
+  "objects": [{"file_id": "fixture-object", "filename": "source.txt", "size_bytes": 1, "sha256_at_upload": "0000000000000000000000000000000000000000000000000000000000000000", "parent_verified": true, "size_readback_verified": true}],
+  "credential_material_present": false,
+  "provider_metadata_readback_verified": true,
+  "byte_for_byte_provider_readback_verified": true,
+  "adapter_execution_proven": true,
+  "remaining_proof": "This invalid fixture improperly claims completed proof."
+}
