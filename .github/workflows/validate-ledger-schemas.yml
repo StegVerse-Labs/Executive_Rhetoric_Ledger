@@ -197,5 +197,7 @@ jobs:
           if generated != expected:
               raise SystemExit("Generated discovery-cycle content does not match fixture")
           PY
+      - name: Validate ERL KnowledgeVault storage contract
+        run: python scripts/validate_erl_kv_storage.py
       - name: Run combined activation validation
         run: python scripts/run_activation_validation.py
