@@ -1,0 +1,25 @@
+{
+  "artifact_id": "ERL-2026-09-08-NSA-AI-DISTILLATION",
+  "credential_material_present": false,
+  "kv_instance_id": "mykv-01-google-drive",
+  "lane": "02_Research/ERL",
+  "manifest_sha256": "d6749599b84157ff2ca3b9ff21227f165e1a64a5098696d8873be73656708f56",
+  "objects": [
+    {
+      "filename": "2026-09-08_NSA_AI_Distillation_ERL.md",
+      "sha256": "9924ab720f7e9f8f9d8f686e3b4277ef09734143d98be2b82c3c7696f30b26ee",
+      "size_bytes": 3381,
+      "write_result": "WRITE"
+    },
+    {
+      "filename": "2026-09-08_NSA_AI_Distillation_ERL_RECORD.md",
+      "sha256": "acf3cdee69ad844ed2fad28ba0c39ea15b39706fe5ca9f8c7fe0f248476acaa2",
+      "size_bytes": 8699,
+      "write_result": "WRITE"
+    }
+  ],
+  "readback_verified": true,
+  "relative_artifact_path": "02_Research/ERL/ERL-2026-09-08-NSA-AI-DISTILLATION",
+  "result": "WRITTEN",
+  "schema": "stegverse.erl.kv-write-receipt/v1"
+}
