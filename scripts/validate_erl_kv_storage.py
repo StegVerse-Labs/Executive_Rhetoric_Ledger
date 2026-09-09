@@ -13,9 +13,11 @@ VALID_FIXTURES = [
     (ROOT / "schemas/erl-kv-artifact.schema.json", ROOT / "fixtures/erl-kv/sample-manifest.json"),
     (ROOT / "schemas/erl-kv-write-receipt.schema.json", ROOT / "fixtures/erl-kv/sample-write-receipt.json"),
     (ROOT / "schemas/erl-kv-provider-write-observation.schema.json", ROOT / "fixtures/erl-kv/sample-provider-write-observation.json"),
+    (ROOT / "schemas/erl-kv-provider-operation-receipt.schema.json", ROOT / "evidence/kv-provider-operations/2026-09-09-google-drive-nsa-distillation.provider-operation-receipt.json"),
 ]
 INVALID_FIXTURES = [
     (ROOT / "schemas/erl-kv-provider-write-observation.schema.json", ROOT / "fixtures/erl-kv/invalid-provider-observation-overclaims.json"),
+    (ROOT / "schemas/erl-kv-provider-operation-receipt.schema.json", ROOT / "fixtures/erl-kv/invalid-provider-operation-overclaims.json"),
 ]
 
 
@@ -36,6 +38,11 @@ def main() -> None:
         errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(fixture))
         if not errors:
             raise SystemExit(f"{fixture_path.name}: invalid fixture unexpectedly passed")
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts/validate_erl_kv_provider_operation.py")],
+        cwd=ROOT,
+        check=True,
+    )
     subprocess.run(
         [sys.executable, str(ROOT / "scripts/test_erl_kv_writer.py")],
         cwd=ROOT,
