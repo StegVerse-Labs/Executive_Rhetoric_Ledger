@@ -1,0 +1,43 @@
+{
+  "schema": "stegverse.erl.kv-provider-operation-receipt/v1",
+  "artifact_id": "ERL-INVALID-OVERCLAIM",
+  "kv_instance_id": "mykv-01-google-drive",
+  "lane": "02_Research/ERL",
+  "relative_artifact_path": "02_Research/ERL/ERL-INVALID-OVERCLAIM",
+  "provider": "google-drive",
+  "execution_mode": "MATERIALIZED_NATIVE_WRITER_THEN_PROVIDER_UPLOAD",
+  "observed_at": "2026-09-09T12:50:49Z",
+  "result": "WRITTEN_AND_READBACK_VERIFIED",
+  "provider_folder": {
+    "id": "folder",
+    "parent_id": "parent"
+  },
+  "native_writer_receipt": {
+    "provider_file_id": "receipt",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "size_bytes": 1,
+    "readback_verified": true
+  },
+  "manifest": {
+    "provider_file_id": "manifest",
+    "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "size_bytes": 1,
+    "write_order": "LAST",
+    "readback_verified": true
+  },
+  "objects": [
+    {
+      "filename": "source.txt",
+      "provider_file_id": "source",
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "size_bytes": 1,
+      "write_result": "WRITE",
+      "readback_verified": true
+    }
+  ],
+  "provider_write_execution_proven": true,
+  "native_writer_execution_proven": true,
+  "byte_for_byte_provider_readback_verified": false,
+  "provider_operation_receipt_retained": true,
+  "credential_material_present": false
+}
