@@ -1,0 +1,28 @@
+{
+  "schema": "stegverse.erl.kv-artifact/v1",
+  "artifact_id": "ERL-2026-09-09-FIXTURE-001",
+  "artifact_class": "SOURCE_CAPTURE",
+  "captured_at": "2026-09-09T03:30:00Z",
+  "source": {
+    "title": "ERL source fixture",
+    "publisher": "StegVerse",
+    "primary_url": "https://stegverse.org/",
+    "published_at": null,
+    "author": null
+  },
+  "storage": {
+    "kv_instance_id": "kvi_fixture_001",
+    "lane": "02_Research/ERL",
+    "credential_material_present": false
+  },
+  "objects": [
+    {
+      "filename": "source.txt",
+      "role": "SOURCE_TEXT",
+      "media_type": "text/plain",
+      "size_bytes": 19,
+      "sha256": "7e51dd5135eeda57009b22384f845f20c5fd06cf4ab29d88c562f5952c71e4bf"
+    }
+  ],
+  "relationships": []
+}
