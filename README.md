@@ -59,6 +59,14 @@ These repositories may contribute candidates, evidence pointers, context, contro
 
 Ledger outputs are normalized datasets, comparisons, evidence receipts, historical timelines, and governed assessments.
 
+## KnowledgeVault-backed ERL storage
+
+ERL uses KnowledgeVault as the durable storage medium for growing research and evidence artifacts. The canonical mounted-KV lane is `02_Research/ERL`. ERL retains its research, evidence, review, and assessment semantics while KV supplies user-custodied persistence and continuity.
+
+The native writer at `adapters/kv/erl_kv_writer.py` validates artifact manifests, object sizes, and SHA-256 values; refuses path traversal, credential material, and conflicting overwrite; permits identical idempotent re-entry; writes the canonical manifest last; and performs byte-for-byte readback. It operates only on an explicitly supplied mounted KV root and does not authenticate to a storage provider.
+
+See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).
+
 ## Status
 
 ```yaml
