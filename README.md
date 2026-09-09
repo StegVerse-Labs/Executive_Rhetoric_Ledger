@@ -69,7 +69,7 @@ Separate schemas distinguish a canonical `stegverse.erl.kv-write-receipt/v1`, a 
 
 The first live structured artifact is `ERL-2026-09-06-OPENAI-AN-ALIEN-MIND` in MyKV. Its metadata-only observation remains `PROVIDER_METADATA_ONLY` under reconstructed Master Records custody.
 
-The second live artifact, `ERL-2026-09-08-NSA-AI-DISTILLATION`, completed the full write path. The native ERL writer validated and materialized the source and structured record; Google Drive accepted both payloads, then the canonical manifest last, followed by the native receipt and retained provider-operation receipt. Independent downloads reproduced every payload, manifest, native receipt, and provider receipt byte-for-byte. The provider operation evidence is retained under `evidence/kv-provider-operations/` and validated fail-closed in hosted CI.
+The second live artifact, `ERL-2026-09-08-NSA-AI-DISTILLATION`, completed the full write path. The native ERL writer validated and materialized the source and structured record; Google Drive accepted both payloads, then the canonical manifest last, followed by the native receipt and retained provider-operation receipt. Independent downloads reproduced every payload, manifest, native receipt, and provider receipt byte-for-byte. The provider operation evidence is retained under `evidence/kv-provider-operations/` and validated fail-closed in hosted CI. Master Records pins the exact ERL schemas, custodies both authentic receipts, deterministically reproduces their import, and reconstructs them alongside the original metadata-only observation; all nine workflows passed before PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169`.
 
 See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).
 
