@@ -1,0 +1,51 @@
+{
+  "schema": "stegverse.erl.kv-provider-operation-receipt/v1",
+  "artifact_id": "ERL-2026-09-08-NSA-AI-DISTILLATION",
+  "kv_instance_id": "mykv-01-google-drive",
+  "lane": "02_Research/ERL",
+  "relative_artifact_path": "02_Research/ERL/ERL-2026-09-08-NSA-AI-DISTILLATION",
+  "provider": "google-drive",
+  "execution_mode": "MATERIALIZED_NATIVE_WRITER_THEN_PROVIDER_UPLOAD",
+  "observed_at": "2026-09-09T12:50:49Z",
+  "result": "WRITTEN_AND_READBACK_VERIFIED",
+  "provider_folder": {
+    "id": "1esoETwRd5A2YgdVTMskCSgzTOpuRyIV5",
+    "parent_id": "147zp4--w_dnf_cOJzC0nKGZrWtwB2M6n"
+  },
+  "native_writer_receipt": {
+    "provider_file_id": "1vnajCmAwpK_YlofY2MN4I7C4KrCHYoJh",
+    "sha256": "dfa7f29ba5a51b9479bdb9ab53f72151c257f8eb9c10a0909882c0fd066d573c",
+    "size_bytes": 893,
+    "readback_verified": true
+  },
+  "manifest": {
+    "provider_file_id": "1vHHpaS0CbkppbptLnC3JRMtvi_M8vbC-",
+    "sha256": "d6749599b84157ff2ca3b9ff21227f165e1a64a5098696d8873be73656708f56",
+    "size_bytes": 1294,
+    "write_order": "LAST",
+    "readback_verified": true
+  },
+  "objects": [
+    {
+      "filename": "2026-09-08_NSA_AI_Distillation_ERL.md",
+      "provider_file_id": "1c5RlkMHLuDwEFRJU31GJSzmDvLj8FMpC",
+      "sha256": "9924ab720f7e9f8f9d8f686e3b4277ef09734143d98be2b82c3c7696f30b26ee",
+      "size_bytes": 3381,
+      "write_result": "WRITE",
+      "readback_verified": true
+    },
+    {
+      "filename": "2026-09-08_NSA_AI_Distillation_ERL_RECORD.md",
+      "provider_file_id": "1cAwpxdxxZVTFV0meK8nGREGYP5b0dX3C",
+      "sha256": "acf3cdee69ad844ed2fad28ba0c39ea15b39706fe5ca9f8c7fe0f248476acaa2",
+      "size_bytes": 8699,
+      "write_result": "WRITE",
+      "readback_verified": true
+    }
+  ],
+  "provider_write_execution_proven": true,
+  "native_writer_execution_proven": true,
+  "byte_for_byte_provider_readback_verified": true,
+  "provider_operation_receipt_retained": true,
+  "credential_material_present": false
+}
