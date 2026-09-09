@@ -54,9 +54,11 @@ KV is storage, continuity, and user-custodied persistence. It does not replace E
 
 ## Current proof boundary
 
-Deterministic local and hosted tests prove the schema and mounted-filesystem writer behavior. Authentic activation additionally requires running the writer against the user's mounted KV root and preserving the returned receipt for a real ERL intake.
+Deterministic local and hosted tests prove the schema and mounted-filesystem writer behavior.
 
-The OpenAI An Alien Mind artifact currently present in MyKV demonstrates the intended storage layout, but its manual placement is not retroactively claimed as execution by this adapter.
+On 2026-09-09, the OpenAI "An Alien Mind" intake was organized in the live MyKV lane at `02_Research/ERL/ERL-2026-09-06-OPENAI-AN-ALIEN-MIND`. The folder contains the preserved PDF, plain-text capture, ERL research record, canonical `manifest.json`, and `provider-write-observation.json`.
+
+Google Drive metadata readback verified the destination folder, stable file IDs, filenames, media types, and byte sizes. The observation explicitly records `byte_for_byte_provider_readback_verified=false` and `adapter_execution_proven=false`; therefore it proves live provider storage and metadata readback without overstating execution of the mounted-filesystem adapter or completion of the canonical receipt proof.
 
 ## Remaining work
 
@@ -68,4 +70,4 @@ The OpenAI An Alien Mind artifact currently present in MyKV demonstrates the int
 
 ## Current state
 
-SOURCE_IMPLEMENTED_PENDING_AUTHENTIC_KV_WRITE_PROOF
+LIVE_PROVIDER_STORAGE_OBSERVED_PENDING_NATIVE_WRITER_RECEIPT
