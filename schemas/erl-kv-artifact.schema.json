@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl-kv-artifact.schema.json",
+  "title": "ERL KnowledgeVault Artifact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "artifact_id",
+    "artifact_class",
+    "captured_at",
+    "source",
+    "storage",
+    "objects",
+    "relationships"
+  ],
+  "properties": {
+    "schema": {"const": "stegverse.erl.kv-artifact/v1"},
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "artifact_class": {
+      "enum": [
+        "SOURCE_CAPTURE",
+        "ERL_RESEARCH_ARTIFACT",
+        "ASSESSMENT",
+        "EVIDENCE_RECEIPT",
+        "REVIEW_RECORD"
+      ]
+    },
+    "captured_at": {"type": "string", "format": "date-time"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "publisher", "primary_url"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "publisher": {"type": "string", "minLength": 1},
+        "primary_url": {"type": "string", "format": "uri"},
+        "published_at": {"type": ["string", "null"], "format": "date-time"},
+        "author": {"type": ["string", "null"]}
+      }
+    },
+    "storage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kv_instance_id", "lane", "credential_material_present"],
+      "properties": {
+        "kv_instance_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "lane": {"const": "02_Research/ERL"},
+        "credential_material_present": {"const": false}
+      }
+    },
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["filename", "role", "media_type", "size_bytes", "sha256"],
+        "properties": {
+          "filename": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "role": {"type": "string", "minLength": 1},
+          "media_type": {"type": "string", "minLength": 1},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["relationship", "target_ref"],
+        "properties": {
+          "relationship": {"type": "string", "minLength": 1},
+          "target_ref": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

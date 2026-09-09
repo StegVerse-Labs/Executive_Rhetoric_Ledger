@@ -689,3 +689,22 @@ No Site, Publisher, admissibility-wiki, stegguardian-wiki, tag, release, or publ
 - next executable task: create a primary-source acquisition packet for the 2025-2026 cycle and reconstruct cash-on-hand, receipts, transfers, independent expenditures, vendor payments, debts, refunds, and amendments before assessing misuse
 
 This adjacent candidate does not alter the Fauci/HSGAC active-goal denominator and authorizes no Site, Publisher, admissibility-wiki, stegguardian-wiki, or master-records propagation.
+
+## Adjacent integration lane - KnowledgeVault-backed ERL storage - ACTIVE
+
+Goal ID: `SS-EVIDENCE-COMPARISON-001`
+
+Scoped handoff:
+`docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md`
+
+Canonical KV lane:
+`02_Research/ERL`
+
+Current state:
+- artifact schema: installed on integration branch;
+- mounted-KV writer: installed on integration branch;
+- deterministic idempotency, conflict, hash, traversal, and credential-material tests: installed;
+- hosted validation: pending branch workflow;
+- authentic ERL-to-KV write receipt: pending;
+- release/publication propagation: not yet ready.
+
