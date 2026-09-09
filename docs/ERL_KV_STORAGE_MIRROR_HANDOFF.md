@@ -32,10 +32,15 @@ KV is storage, continuity, and user-custodied persistence. It does not replace E
 ## Installed repository surfaces
 
 - schemas/erl-kv-artifact.schema.json
+- schemas/erl-kv-write-receipt.schema.json
+- schemas/erl-kv-provider-write-observation.schema.json
 - adapters/kv/erl_kv_writer.py
 - scripts/validate_erl_kv_storage.py
 - scripts/test_erl_kv_writer.py
 - fixtures/erl-kv/sample-manifest.json
+- fixtures/erl-kv/sample-write-receipt.json
+- fixtures/erl-kv/sample-provider-write-observation.json
+- fixtures/erl-kv/invalid-provider-observation-overclaims.json
 - fixtures/erl-kv/source.txt
 - docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md
 - .github/workflows/validate-ledger-schemas.yml
@@ -59,6 +64,8 @@ Deterministic local and hosted tests prove the schema and mounted-filesystem wri
 On 2026-09-09, the OpenAI "An Alien Mind" intake was organized in the live MyKV lane at `02_Research/ERL/ERL-2026-09-06-OPENAI-AN-ALIEN-MIND`. The folder contains the preserved PDF, plain-text capture, ERL research record, canonical `manifest.json`, and `provider-write-observation.json`.
 
 Google Drive metadata readback verified the destination folder, stable file IDs, filenames, media types, and byte sizes. The observation explicitly records `byte_for_byte_provider_readback_verified=false` and `adapter_execution_proven=false`; therefore it proves live provider storage and metadata readback without overstating execution of the mounted-filesystem adapter or completion of the canonical receipt proof.
+
+The canonical writer receipt and provisional provider observation now have separate JSON Schemas. The provider-observation schema requires both byte-for-byte verification and adapter execution to remain false, preventing metadata-only evidence from being promoted into a canonical writer receipt.
 
 ## Remaining work
 

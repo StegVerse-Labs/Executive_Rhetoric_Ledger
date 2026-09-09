@@ -65,6 +65,8 @@ ERL uses KnowledgeVault as the durable storage medium for growing research and e
 
 The native writer at `adapters/kv/erl_kv_writer.py` validates artifact manifests, object sizes, and SHA-256 values; refuses path traversal, credential material, and conflicting overwrite; permits identical idempotent re-entry; writes the canonical manifest last; and performs byte-for-byte readback. It operates only on an explicitly supplied mounted KV root and does not authenticate to a storage provider.
 
+Separate schemas distinguish a canonical `stegverse.erl.kv-write-receipt/v1` from a provisional `stegverse.erl.kv-provider-write-observation/v1`. Metadata-only provider observations are structurally prohibited from claiming byte-for-byte readback or native-adapter execution.
+
 The first live structured artifact is `ERL-2026-09-06-OPENAI-AN-ALIEN-MIND` in MyKV. Its child folder preserves the source PDF, plain-text capture, ERL research record, canonical manifest, and a provider-write observation. Google Drive metadata readback is complete; execution of the native mounted-KV writer and its byte-for-byte receipt remain the next proof boundary.
 
 See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).

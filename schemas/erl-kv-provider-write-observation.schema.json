@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl-kv-provider-write-observation.schema.json",
+  "title": "ERL KnowledgeVault Provider Write Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "artifact_id", "observed_at", "result", "kv_instance_id", "provider", "lane", "relative_artifact_path", "folder_id", "folder_url", "manifest", "objects", "credential_material_present", "provider_metadata_readback_verified", "byte_for_byte_provider_readback_verified", "adapter_execution_proven", "remaining_proof"],
+  "properties": {
+    "schema": {"const": "stegverse.erl.kv-provider-write-observation/v1"},
+    "artifact_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "result": {"const": "PROVIDER_WRITE_OBSERVED"},
+    "kv_instance_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "provider": {"type": "string", "minLength": 1},
+    "lane": {"const": "02_Research/ERL"},
+    "relative_artifact_path": {"type": "string", "pattern": "^02_Research/ERL/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "folder_id": {"type": "string", "minLength": 1},
+    "folder_url": {"type": "string", "format": "uri"},
+    "manifest": {"$ref": "#/$defs/providerObject"},
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "allOf": [
+          {"$ref": "#/$defs/providerObject"},
+          {"required": ["parent_verified", "size_readback_verified"]}
+        ]
+      }
+    },
+    "credential_material_present": {"const": false},
+    "provider_metadata_readback_verified": {"const": true},
+    "byte_for_byte_provider_readback_verified": {"const": false},
+    "adapter_execution_proven": {"const": false},
+    "remaining_proof": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "providerObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file_id", "filename", "size_bytes", "sha256_at_upload"],
+      "properties": {
+        "file_id": {"type": "string", "minLength": 1},
+        "filename": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+        "size_bytes": {"type": "integer", "minimum": 0},
+        "sha256_at_upload": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "parent_verified": {"const": true},
+        "size_readback_verified": {"const": true}
+      }
+    }
+  }
+}

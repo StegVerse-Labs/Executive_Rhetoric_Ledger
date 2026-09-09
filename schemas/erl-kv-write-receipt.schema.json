@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl-kv-write-receipt.schema.json",
+  "title": "ERL KnowledgeVault Write Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "artifact_id", "result", "kv_instance_id", "lane", "relative_artifact_path", "manifest_sha256", "objects", "credential_material_present", "readback_verified"],
+  "properties": {
+    "schema": {"const": "stegverse.erl.kv-write-receipt/v1"},
+    "artifact_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "result": {"enum": ["WRITTEN", "NOOP"]},
+    "kv_instance_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "lane": {"const": "02_Research/ERL"},
+    "relative_artifact_path": {"type": "string", "pattern": "^02_Research/ERL/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["filename", "sha256", "size_bytes", "write_result"],
+        "properties": {
+          "filename": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "write_result": {"enum": ["WRITE", "NOOP"]}
+        }
+      }
+    },
+    "credential_material_present": {"const": false},
+    "readback_verified": {"const": true}
+  }
+}

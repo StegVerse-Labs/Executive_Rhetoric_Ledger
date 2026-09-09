@@ -1,0 +1,12 @@
+{
+  "schema": "stegverse.erl.kv-write-receipt/v1",
+  "artifact_id": "ERL-2026-09-09-FIXTURE-001",
+  "result": "WRITTEN",
+  "kv_instance_id": "kvi_fixture_001",
+  "lane": "02_Research/ERL",
+  "relative_artifact_path": "02_Research/ERL/ERL-2026-09-09-FIXTURE-001",
+  "manifest_sha256": "4d08c16d870f03553ca13e5bcab1af10c56990f5aa561af17cd2abec6960522b",
+  "objects": [{"filename": "source.txt", "sha256": "7e51dd5135eeda57009b22384f845f20c5fd06cf4ab29d88c562f5952c71e4bf", "size_bytes": 19, "write_result": "WRITE"}],
+  "credential_material_present": false,
+  "readback_verified": true
+}

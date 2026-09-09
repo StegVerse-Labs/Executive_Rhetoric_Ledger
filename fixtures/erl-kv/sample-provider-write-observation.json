@@ -1,0 +1,19 @@
+{
+  "schema": "stegverse.erl.kv-provider-write-observation/v1",
+  "artifact_id": "ERL-2026-09-06-OPENAI-AN-ALIEN-MIND",
+  "observed_at": "2026-09-09T04:24:09Z",
+  "result": "PROVIDER_WRITE_OBSERVED",
+  "kv_instance_id": "mykv-01-google-drive",
+  "provider": "google-drive",
+  "lane": "02_Research/ERL",
+  "relative_artifact_path": "02_Research/ERL/ERL-2026-09-06-OPENAI-AN-ALIEN-MIND",
+  "folder_id": "1E8vElivCJhsPM7AyWriMQ-WsPK6lQO9R",
+  "folder_url": "https://drive.google.com/drive/folders/1E8vElivCJhsPM7AyWriMQ-WsPK6lQO9R",
+  "manifest": {"file_id": "11E6Gpx0GtIbR37XHFDEVMa79jNl38x5H", "filename": "manifest.json", "size_bytes": 1382, "sha256_at_upload": "8cb3a11ff90e9ba2e40a916c8fcb1046da7db3881c93be0af9e3dd9287486ec0"},
+  "objects": [{"file_id": "1XRB1b9bGqPp4JG_U86kY_T-kXbqZnqUP", "filename": "2026-09-06_OpenAI_An-Alien-Mind.pdf", "size_bytes": 91264, "sha256_at_upload": "15911a771a0573a71354e2bd6efb033d6e9e3af67a41ea9b079c1c810ae872c2", "parent_verified": true, "size_readback_verified": true}],
+  "credential_material_present": false,
+  "provider_metadata_readback_verified": true,
+  "byte_for_byte_provider_readback_verified": false,
+  "adapter_execution_proven": false,
+  "remaining_proof": "Execute the native mounted-KV writer and preserve its canonical receipt."
+}
