@@ -67,14 +67,16 @@ Google Drive metadata readback verified the destination folder, stable file IDs,
 
 The canonical writer receipt and provisional provider observation now have separate JSON Schemas. The provider-observation schema requires both byte-for-byte verification and adapter execution to remain false, preventing metadata-only evidence from being promoted into a canonical writer receipt.
 
+Master Records now mirrors the two ERL KV schemas with immutable upstream commit and blob pins, imports qualifying receipts into append-only custody, and reconstructs their custody chain deterministically. `master-records/orchestration` PR #86 merged at `94fa52a61363494e248859181403c59d03b34980`; PR #87 then custodied the live OpenAI provider observation and merged at `cad9c97deb06e897a72c5fa56ba0ada28edc3e05`. All nine hosted workflows passed for both changes. The live observation remains classified `PROVIDER_METADATA_ONLY` with `native_writer_proof=false`; custody preserves the evidence without elevating its proof class.
+
 ## Remaining work
 
-1. Run one real ERL source intake through adapters/kv/erl_kv_writer.py against an authorized mounted KnowledgeVault root.
-2. Preserve the authentic write receipt and bind it to the source acquisition record.
-3. Add Master Records custody/reconstruction for the authentic ERL KV receipt if the shared custody schema does not already accept it.
-4. Update StegVerse-Labs/StegSocials to reference the stable ERL artifact ID and KV receipt where an ERL-backed publication is created.
+1. Run one real ERL source intake through `adapters/kv/erl_kv_writer.py` against an authorized mounted KnowledgeVault root.
+2. Preserve the authentic canonical write receipt, independently verify provider bytes, and bind both to the source acquisition record.
+3. Import and reconstruct the authentic native-writer receipt through the installed Master Records custody path alongside the already-custodied provider observation.
+4. Update StegVerse-Labs/StegSocials to reference the stable ERL artifact ID and applicable KV receipt or provider-observation custody references where an ERL-backed publication is created.
 5. Verify any pertinent public/index propagation in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki only when this lane reaches release readiness.
 
 ## Current state
 
-LIVE_PROVIDER_STORAGE_OBSERVED_PENDING_NATIVE_WRITER_RECEIPT
+LIVE_PROVIDER_STORAGE_AND_MASTER_RECORDS_CUSTODY_OBSERVED_PENDING_NATIVE_WRITER_RECEIPT
