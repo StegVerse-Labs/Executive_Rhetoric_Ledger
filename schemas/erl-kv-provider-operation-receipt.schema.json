@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/erl-kv-provider-operation-receipt.schema.json",
+  "title": "ERL KnowledgeVault Provider Operation Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "artifact_id",
+    "kv_instance_id",
+    "lane",
+    "relative_artifact_path",
+    "provider",
+    "execution_mode",
+    "observed_at",
+    "result",
+    "provider_folder",
+    "native_writer_receipt",
+    "manifest",
+    "objects",
+    "provider_write_execution_proven",
+    "native_writer_execution_proven",
+    "byte_for_byte_provider_readback_verified",
+    "provider_operation_receipt_retained",
+    "credential_material_present"
+  ],
+  "properties": {
+    "schema": {
+      "const": "stegverse.erl.kv-provider-operation-receipt/v1"
+    },
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "kv_instance_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "lane": {
+      "const": "02_Research/ERL"
+    },
+    "relative_artifact_path": {
+      "type": "string",
+      "pattern": "^02_Research/ERL/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution_mode": {
+      "enum": [
+        "MATERIALIZED_NATIVE_WRITER_THEN_PROVIDER_UPLOAD",
+        "MOUNTED_PROVIDER_NATIVE_WRITER"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "result": {
+      "const": "WRITTEN_AND_READBACK_VERIFIED"
+    },
+    "provider_folder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "parent_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "native_writer_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider_file_id",
+        "sha256",
+        "size_bytes",
+        "readback_verified"
+      ],
+      "properties": {
+        "provider_file_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "readback_verified": {
+          "const": true
+        }
+      }
+    },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider_file_id",
+        "sha256",
+        "size_bytes",
+        "write_order",
+        "readback_verified"
+      ],
+      "properties": {
+        "provider_file_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "write_order": {
+          "const": "LAST"
+        },
+        "readback_verified": {
+          "const": true
+        }
+      }
+    },
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "filename",
+          "provider_file_id",
+          "sha256",
+          "size_bytes",
+          "write_result",
+          "readback_verified"
+        ],
+        "properties": {
+          "filename": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "provider_file_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "write_result": {
+            "enum": [
+              "WRITE",
+              "NOOP"
+            ]
+          },
+          "readback_verified": {
+            "const": true
+          }
+        }
+      }
+    },
+    "provider_write_execution_proven": {
+      "const": true
+    },
+    "native_writer_execution_proven": {
+      "const": true
+    },
+    "byte_for_byte_provider_readback_verified": {
+      "const": true
+    },
+    "provider_operation_receipt_retained": {
+      "const": true
+    },
+    "credential_material_present": {
+      "const": false
+    }
+  }
+}
