@@ -69,14 +69,15 @@ The canonical writer receipt and provisional provider observation now have separ
 
 Master Records now mirrors the two ERL KV schemas with immutable upstream commit and blob pins, imports qualifying receipts into append-only custody, and reconstructs their custody chain deterministically. `master-records/orchestration` PR #86 merged at `94fa52a61363494e248859181403c59d03b34980`; PR #87 then custodied the live OpenAI provider observation and merged at `cad9c97deb06e897a72c5fa56ba0ada28edc3e05`. All nine hosted workflows passed for both changes. The live observation remains classified `PROVIDER_METADATA_ONLY` with `native_writer_proof=false`; custody preserves the evidence without elevating its proof class.
 
+StegSocials now references the stable artifact ID, the exact-byte Level 1 evidence, and the Master Records provider-observation custody chain in its active evidence and ERL-assisted drafting handoffs. PR #22 merged at `a0b049730d16df8febafcb85cf5190974c19f15d` after both hosted workflows passed. These consumer references preserve the same non-promotion rule.
+
 ## Remaining work
 
 1. Run one real ERL source intake through `adapters/kv/erl_kv_writer.py` against an authorized mounted KnowledgeVault root.
 2. Preserve the authentic canonical write receipt, independently verify provider bytes, and bind both to the source acquisition record.
 3. Import and reconstruct the authentic native-writer receipt through the installed Master Records custody path alongside the already-custodied provider observation.
-4. Update StegVerse-Labs/StegSocials to reference the stable ERL artifact ID and applicable KV receipt or provider-observation custody references where an ERL-backed publication is created.
-5. Verify any pertinent public/index propagation in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki only when this lane reaches release readiness.
+4. Verify any pertinent public/index propagation in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki only when this lane reaches release readiness.
 
 ## Current state
 
-LIVE_PROVIDER_STORAGE_AND_MASTER_RECORDS_CUSTODY_OBSERVED_PENDING_NATIVE_WRITER_RECEIPT
+LIVE_PROVIDER_STORAGE_MASTER_RECORDS_CUSTODY_AND_STEGSOCIALS_REFERENCES_OBSERVED_PENDING_NATIVE_WRITER_RECEIPT
