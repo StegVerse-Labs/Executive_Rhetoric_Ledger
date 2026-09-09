@@ -67,7 +67,7 @@ The native writer at `adapters/kv/erl_kv_writer.py` validates artifact manifests
 
 Separate schemas distinguish a canonical `stegverse.erl.kv-write-receipt/v1` from a provisional `stegverse.erl.kv-provider-write-observation/v1`. Metadata-only provider observations are structurally prohibited from claiming byte-for-byte readback or native-adapter execution.
 
-The first live structured artifact is `ERL-2026-09-06-OPENAI-AN-ALIEN-MIND` in MyKV. Its child folder preserves the source PDF, plain-text capture, ERL research record, canonical manifest, and a provider-write observation. Google Drive metadata readback is complete; execution of the native mounted-KV writer and its byte-for-byte receipt remain the next proof boundary.
+The first live structured artifact is `ERL-2026-09-06-OPENAI-AN-ALIEN-MIND` in MyKV. Its child folder preserves the source PDF, plain-text capture, ERL research record, canonical manifest, and a provider-write observation. Google Drive metadata readback is complete. Master Records now holds append-only custody for that exact provider observation and deterministically reconstructs its custody object and receipt. The evidence remains `PROVIDER_METADATA_ONLY`; execution of the native mounted-KV writer, independent provider-byte readback, and the resulting canonical receipt remain the next proof boundary.
 
 See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).
 
