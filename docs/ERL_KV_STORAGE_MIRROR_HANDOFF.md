@@ -81,11 +81,14 @@ StegSocials now references the stable artifact ID, the exact-byte Level 1 eviden
 
 On 2026-09-09, `ERL-2026-09-08-NSA-AI-DISTILLATION` completed the native-materialization and live Google Drive path. The provider folder is `google-drive:folder:1esoETwRd5A2YgdVTMskCSgzTOpuRyIV5`. Google Drive accepted the two validated Markdown payloads, the canonical manifest last, the native writer receipt, and the retained provider-operation receipt. Independent provider downloads matched the expected bytes and SHA-256 values for all five files. The composite receipt hash is `bb74904fcd8169829c78bdc1c0d64905b33243c2c22852565c13e614abcd1fa8`.
 
+## Master Records completion
+
+Master Records pinned the three ERL KV schemas at exact source commit/blob coordinates, custodied the native writer and provider-operation receipts, reproduced all three live imports, and reconstructed the combined chain. All nine workflows passed; PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169`.
+
 ## Remaining work
 
-1. Import and reconstruct the authentic native-writer and provider-operation receipts through Master Records alongside the already-custodied metadata-only observation.
-2. Verify applicable public/index propagation in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki through a separate propagation-verification task.
+1. Execute the separate propagation-verification task for applicable Site, Publisher, admissibility-wiki, and stegguardian-wiki surfaces.
 
 ## Current state
 
-LIVE_NATIVE_WRITER_AND_PROVIDER_OPERATION_BYTE_READBACK_VERIFIED_PENDING_MASTER_RECORDS_CUSTODY
+ERL_KV_INTEGRATION_COMPLETE_PROPAGATION_SEPARATE
