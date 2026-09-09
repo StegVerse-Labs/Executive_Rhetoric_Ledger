@@ -20,12 +20,13 @@ Make KnowledgeVault the durable storage medium for ERL research and evidence art
     ERL acquisition or analysis
     -> ERL artifact manifest
     -> object hash and size verification
-    -> mounted KV root
+    -> native writer validation/materialization
+    -> mounted KV root OR authenticated provider upload
     -> 02_Research/ERL/<artifact_id>/
     -> create-only object writes
     -> canonical manifest written last
-    -> byte-for-byte readback
-    -> idempotent write receipt
+    -> byte-for-byte local and provider readback
+    -> native receipt + retained provider-operation receipt
 
 KV is storage, continuity, and user-custodied persistence. It does not replace ERL classification, comparison, review, or assessment semantics. Provider credentials and reusable secrets are not ERL artifacts and must not be written into the KV research lane.
 
@@ -34,13 +35,17 @@ KV is storage, continuity, and user-custodied persistence. It does not replace E
 - schemas/erl-kv-artifact.schema.json
 - schemas/erl-kv-write-receipt.schema.json
 - schemas/erl-kv-provider-write-observation.schema.json
+- schemas/erl-kv-provider-operation-receipt.schema.json
 - adapters/kv/erl_kv_writer.py
 - scripts/validate_erl_kv_storage.py
+- scripts/validate_erl_kv_provider_operation.py
 - scripts/test_erl_kv_writer.py
 - fixtures/erl-kv/sample-manifest.json
 - fixtures/erl-kv/sample-write-receipt.json
 - fixtures/erl-kv/sample-provider-write-observation.json
 - fixtures/erl-kv/invalid-provider-observation-overclaims.json
+- fixtures/erl-kv/invalid-provider-operation-overclaims.json
+- evidence/kv-provider-operations/2026-09-09-google-drive-nsa-distillation.*.json
 - fixtures/erl-kv/source.txt
 - docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md
 - .github/workflows/validate-ledger-schemas.yml
@@ -55,7 +60,8 @@ KV is storage, continuity, and user-custodied persistence. It does not replace E
 - allows identical idempotent re-entry as NOOP;
 - writes a canonical manifest.json after payloads;
 - performs byte-for-byte readback;
-- returns an ERL KV write receipt without opening a provider session.
+- returns an ERL KV write receipt without opening a provider session;
+- accepts a separate retained provider-operation receipt only when provider writes, manifest-last ordering, provider resource identities, native receipt binding, and independent provider byte readback are all proven.
 
 ## Current proof boundary
 
@@ -71,13 +77,15 @@ Master Records now mirrors the two ERL KV schemas with immutable upstream commit
 
 StegSocials now references the stable artifact ID, the exact-byte Level 1 evidence, and the Master Records provider-observation custody chain in its active evidence and ERL-assisted drafting handoffs. PR #22 merged at `a0b049730d16df8febafcb85cf5190974c19f15d` after both hosted workflows passed. These consumer references preserve the same non-promotion rule.
 
+## Authentic provider-operation proof
+
+On 2026-09-09, `ERL-2026-09-08-NSA-AI-DISTILLATION` completed the native-materialization and live Google Drive path. The provider folder is `google-drive:folder:1esoETwRd5A2YgdVTMskCSgzTOpuRyIV5`. Google Drive accepted the two validated Markdown payloads, the canonical manifest last, the native writer receipt, and the retained provider-operation receipt. Independent provider downloads matched the expected bytes and SHA-256 values for all five files. The composite receipt hash is `bb74904fcd8169829c78bdc1c0d64905b33243c2c22852565c13e614abcd1fa8`.
+
 ## Remaining work
 
-1. Run one real ERL source intake through `adapters/kv/erl_kv_writer.py` against an authorized mounted KnowledgeVault root.
-2. Preserve the authentic canonical write receipt, independently verify provider bytes, and bind both to the source acquisition record.
-3. Import and reconstruct the authentic native-writer receipt through the installed Master Records custody path alongside the already-custodied provider observation.
-4. Verify any pertinent public/index propagation in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki only when this lane reaches release readiness.
+1. Import and reconstruct the authentic native-writer and provider-operation receipts through Master Records alongside the already-custodied metadata-only observation.
+2. Verify applicable public/index propagation in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki through a separate propagation-verification task.
 
 ## Current state
 
-LIVE_PROVIDER_STORAGE_MASTER_RECORDS_CUSTODY_AND_STEGSOCIALS_REFERENCES_OBSERVED_PENDING_NATIVE_WRITER_RECEIPT
+LIVE_NATIVE_WRITER_AND_PROVIDER_OPERATION_BYTE_READBACK_VERIFIED_PENDING_MASTER_RECORDS_CUSTODY
