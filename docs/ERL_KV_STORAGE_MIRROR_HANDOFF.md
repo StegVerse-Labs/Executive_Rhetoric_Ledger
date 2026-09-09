@@ -85,10 +85,18 @@ On 2026-09-09, `ERL-2026-09-08-NSA-AI-DISTILLATION` completed the native-materia
 
 Master Records pinned the three ERL KV schemas at exact source commit/blob coordinates, custodied the native writer and provider-operation receipts, reproduced all three live imports, and reconstructed the combined chain. All nine workflows passed; PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169`.
 
+## Propagation completion
+
+The separate task `SS-ERL-KV-PROPAGATION-VERIFICATION-001` completed and was canonically retired by `StegVerse-Labs/.github@2d6e477c6ebed075c1610a979ace28e53560f284`.
+
+- Site consumed the proof through `ca106480cd78a35fffa107e73a678219ca918bb1` and finalized its handoff at `3ac0a20ddf9895e724984e9b24dfa174537cc796`.
+- Publisher consumed the proof through `93a4743ceb5974689c1872c0e88dbb86de980f7e` and finalized its handoff at `0debdb0cf0e06f672a515e8b7fbf6d642521588e`.
+- Admissibility Wiki and the correctly located `StegVerse-002/stegguardian-wiki` were inspected and received evidence-backed `NOT_APPLICABLE` dispositions because neither has an ERL/KV consumer path.
+
 ## Remaining work
 
-1. Execute the separate propagation-verification task for applicable Site, Publisher, admissibility-wiki, and stegguardian-wiki surfaces.
+None for the ERL-to-MyKV storage integration or its bounded propagation verification. Authentic current-iPhone StegSocials standard-flow evidence remains under the parent task and is not part of this storage integration.
 
 ## Current state
 
-ERL_KV_INTEGRATION_COMPLETE_PROPAGATION_SEPARATE
+ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE

@@ -71,6 +71,8 @@ The first live structured artifact is `ERL-2026-09-06-OPENAI-AN-ALIEN-MIND` in M
 
 The second live artifact, `ERL-2026-09-08-NSA-AI-DISTILLATION`, completed the full write path. The native ERL writer validated and materialized the source and structured record; Google Drive accepted both payloads, then the canonical manifest last, followed by the native receipt and retained provider-operation receipt. Independent downloads reproduced every payload, manifest, native receipt, and provider receipt byte-for-byte. The provider operation evidence is retained under `evidence/kv-provider-operations/` and validated fail-closed in hosted CI. Master Records pins the exact ERL schemas, custodies both authentic receipts, deterministically reproduces their import, and reconstructs them alongside the original metadata-only observation; all nine workflows passed before PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169`.
 
+The bounded propagation verification is also complete. Site and Publisher now carry validated upstream-proof projections; Admissibility Wiki and the intentionally `StegVerse-002`-hosted Guardian wiki were inspected and recorded as not applicable because neither contains an ERL/KV consumer path. Canonical closure is retained under `SS-ERL-KV-PROPAGATION-VERIFICATION-001` at `StegVerse-Labs/.github@2d6e477c6ebed075c1610a979ace28e53560f284`.
+
 See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).
 
 ## Status
