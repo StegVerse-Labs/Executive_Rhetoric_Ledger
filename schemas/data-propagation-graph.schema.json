@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/data-propagation-graph.schema.json",
+  "title": "StegVerse Data Propagation Graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "graph_id", "subject_ref", "generated_at", "nodes", "edges"],
+  "properties": {
+    "schema": {"const": "stegverse.data-propagation-graph/v1"},
+    "graph_id": {"type": "string", "minLength": 3},
+    "subject_ref": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["node_id", "node_type", "identity"],
+        "properties": {
+          "node_id": {"type": "string", "minLength": 1},
+          "node_type": {"type": "string", "enum": ["source_object", "platform_account", "copy_or_repost", "index_or_cache", "data_broker", "derived_attribute", "downstream_recipient", "model_or_retrieval_surface"]},
+          "identity": {"type": "string", "minLength": 1},
+          "current_state": {"type": "string", "enum": ["OBSERVED", "NOT_OBSERVED", "REMOVAL_REQUESTED", "RESTRICTED", "PROVIDER_ASSERTED_DELETED", "INDEPENDENTLY_VERIFIED_DELETED", "REAPPEARED", "UNVERIFIABLE"]}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["edge_id", "from", "to", "relationship", "evidence_class", "verification_state"],
+        "properties": {
+          "edge_id": {"type": "string", "minLength": 1},
+          "from": {"type": "string", "minLength": 1},
+          "to": {"type": "string", "minLength": 1},
+          "relationship": {"type": "string", "enum": ["copied_to", "indexed_by", "cached_by", "aggregated_by", "correlated_with", "derived_into", "disclosed_to", "retrievable_through"]},
+          "observed_at": {"type": ["string", "null"], "format": "date-time"},
+          "authority_basis": {"type": ["string", "null"]},
+          "permitted_purpose": {"type": ["string", "null"]},
+          "revocation_state": {"type": "string", "enum": ["NOT_REQUESTED", "REQUESTED", "ACKNOWLEDGED", "VERIFIED", "UNVERIFIABLE", "NOT_APPLICABLE"]},
+          "evidence_class": {"type": "string", "enum": ["DIRECT_OBSERVATION", "PROVIDER_ASSERTION", "INDEPENDENT_RECHECK", "INFERRED_RELATIONSHIP", "USER_ASSERTION", "UNKNOWN"]},
+          "verification_state": {"type": "string", "enum": ["UNVERIFIED", "PARTIALLY_VERIFIED", "VERIFIED", "CONTRADICTED"]}
+        }
+      }
+    }
+  }
+}
