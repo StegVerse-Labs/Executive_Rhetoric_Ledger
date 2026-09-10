@@ -1,6 +1,6 @@
 # ERL KnowledgeVault Storage Mirror Handoff
 
-Updated: 2026-09-09
+Updated: 2026-09-10
 
 ## Goal Task ID
 
@@ -99,10 +99,22 @@ A new ERL research candidate was added at `research-candidates/2026-09-09-meta-a
 
 The candidate formalizes a StegVerse-relevant distinction between source-object custody and `Derived Data Authority`: technical possession/readability of multiple objects does not itself authorize correlation, inference, or propagation. It also identifies custody, access, correlation, derivation, and propagation as separable digital-data rights relevant to KnowledgeVault and governed AI access.
 
+## 2026-09-10 Iran critical-infrastructure capability / warning-transparency intake
+
+A new ERL research candidate was added at `research-candidates/2026-09-10-iran-critical-infrastructure-capability-and-public-warning-gap.md` as `ERL-2026-09-10-IRAN-CRITICAL-INFRASTRUCTURE-CAPABILITY-001`.
+
+The intake preserves the September 9-10 APT IRAN claims concerning AT&T and a Texas water utility without promoting the disputed AT&T claim into attribution. AT&T's public assessment remains separately preserved: the company said it had no evidence supporting APT IRAN's claim and attributed the outage to attempted cable theft.
+
+The candidate separately captures Iranian / Iran-linked critical-infrastructure capability and intent as a supported threat class, including the contemporaneous public CISA warning posture regarding Iranian-affiliated targeting of internet-connected operational technology. It therefore rejects the categorical proposition that the administration gave no warning at all.
+
+The unresolved accountability question is narrower: what specific attempted, suspected, or confirmed compromises were known to federal authorities; what was disclosed privately to operators; what was disclosed publicly; and how did the specificity and timing of those disclosures compare with the administration's escalating military posture toward Iran? Current sources establish the broad warning and the military escalation but do not establish intentional concealment of a known specific attack. The transparency issue remains an assessment candidate pending first-party incident notices, operator records, congressional/oversight material, and additional attribution evidence.
+
+README.md was reviewed for this intake. Its existing repository purpose, research-candidate link, source-posture rules, contradiction-preservation rule, and governance policy already describe the admission semantics applied here; no root README wording change was required to make this candidate discoverable or governable.
+
 ## Remaining work
 
-None for the ERL-to-MyKV storage integration or its bounded propagation verification. Authentic current-iPhone StegSocials standard-flow evidence remains under the parent task and is not part of this storage integration. The new privacy candidate remains a research candidate pending original-source capture, first-party platform documentation, and evidence that discriminates among retention, reposting, caching, indexing, embeddings, or other derived representations.
+None for the ERL-to-MyKV storage integration or its bounded propagation verification. Authentic current-iPhone StegSocials standard-flow evidence remains under the parent task and is not part of this storage integration. The privacy candidate remains a research candidate pending original-source capture and first-party platform documentation. The Iran capability/transparency candidate remains a research candidate pending first-party federal/state/operator incident evidence, historical claim-confirmation comparison, and evidence sufficient to assess specific-target warning and disclosure timing.
 
 ## Current state
 
-ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / PRIVACY_DERIVED_DATA_RESEARCH_CANDIDATE_ADDED
+ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / PRIVACY_DERIVED_DATA_RESEARCH_CANDIDATE_ADDED / IRAN_CRITICAL_INFRASTRUCTURE_CAPABILITY_TRANSPARENCY_RESEARCH_CANDIDATE_ADDED
