@@ -5,6 +5,7 @@ import tempfile
 from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 from build_reclamation_target_set import build as build_target_set
+from reconcile_skap_evidence import reconcile as reconcile_skap_evidence
 
 ROOT = Path(__file__).resolve().parents[1]
 FIX = ROOT / "fixtures" / "digital-data-reclamation"
@@ -14,6 +15,7 @@ SCHEMAS = {
     "authority": ROOT / "schemas" / "derived-data-authority-receipt.schema.json",
     "skap_disclosure": ROOT / "schemas" / "skap-account-disclosure-graph.schema.json",
     "target_set": ROOT / "schemas" / "reclamation-target-set.schema.json",
+    "skap_evidence_reconciliation": ROOT / "schemas" / "skap-evidence-reconciliation.schema.json",
 }
 SAMPLES = {
     "inventory": FIX / "personal-data-inventory.sample.json",
@@ -21,6 +23,7 @@ SAMPLES = {
     "authority": FIX / "derived-data-authority-receipt.sample.json",
     "skap_disclosure": FIX / "skap-account-disclosure-graph.sample.json",
     "target_set": FIX / "reclamation-target-set.sample.json",
+    "skap_evidence_reconciliation": FIX / "skap-evidence-reconciliation.sample.json",
 }
 
 
@@ -120,6 +123,40 @@ def check_target_reconciliation(skap_disclosure):
             raise SystemExit("unverified target was incorrectly promoted to ELIGIBLE")
 
 
+def check_skap_evidence_reconciliation(skap_disclosure):
+    propagation = validate("graph", FIX / "data-propagation-graph.reconciliation.sample.json")
+    expected = validate("skap_evidence_reconciliation", SAMPLES["skap_evidence_reconciliation"])
+    actual = reconcile_skap_evidence(skap_disclosure, propagation, expected["generated_at"])
+    if actual != expected:
+        raise SystemExit("deterministic SKAP/evidence reconciliation does not match expected fixture")
+
+    mismatch = dict(propagation)
+    mismatch["subject_ref"] = "subject:different-user"
+    try:
+        reconcile_skap_evidence(skap_disclosure, mismatch, expected["generated_at"])
+    except ValueError:
+        pass
+    else:
+        raise SystemExit("cross-subject SKAP/evidence reconciliation was incorrectly accepted")
+
+    extended = json.loads(json.dumps(skap_disclosure))
+    extended["organizations"].append({"org_ref":"org:unmapped-provider","name":"Unmapped Provider","role":"ACCOUNT_PROVIDER"})
+    extended["accounts"].append({"skap_account_ref":"skap:account:unmapped","provider_org_ref":"org:unmapped-provider","account_class":"other","status":"ACTIVE"})
+    gap = reconcile_skap_evidence(extended, propagation, expected["generated_at"])
+    unmapped = [a for a in gap["accounts"] if a["skap_account_ref"] == "skap:account:unmapped"]
+    if len(unmapped) != 1 or unmapped[0]["classification"] != "KNOWN_BUT_UNMAPPED":
+        raise SystemExit("known SKAP account without evidence mapping was not classified as KNOWN_BUT_UNMAPPED")
+
+    inferred = next(e for e in skap_disclosure["disclosure_edges"] if e["evidence_state"] == "INFERRED_UNVERIFIED")
+    if inferred["evidence_refs"]:
+        raise SystemExit("fixture invariant changed: inferred edge unexpectedly has evidence refs")
+    account = next(a for a in actual["accounts"] if a["skap_account_ref"] == "skap:account:example-social")
+    if "org:example-broker" not in account["downstream_org_refs"]:
+        raise SystemExit("inferred downstream organization disappeared from discovery context")
+    if any(ref.startswith("observed-transfer:") for ref in account["evidence_refs"]):
+        raise SystemExit("inferred edge was incorrectly promoted to observed transfer evidence")
+
+
 def check_kv_custody():
     module_path = ROOT / "adapters" / "kv" / "reclamation_target_set_writer.py"
     spec = importlib.util.spec_from_file_location("reclamation_target_set_writer", module_path)
@@ -131,25 +168,15 @@ def check_kv_custody():
 
     with tempfile.TemporaryDirectory() as temp:
         kv_root = Path(temp)
-        write_receipt = module.write_target_set(
-            kv_root=kv_root,
-            target_set=target_set,
-            kv_instance_id="validator-kv",
-        )
+        write_receipt = module.write_target_set(kv_root=kv_root, target_set=target_set, kv_instance_id="validator-kv")
         if write_receipt["result"] != "WRITTEN" or write_receipt["provider_deletion_success"] is not False:
             raise SystemExit("reclamation KV write receipt semantics invalid")
         readback = module.readback_target_set(kv_root=kv_root, write_receipt=write_receipt)
         if not readback["exact_byte_match"] or readback["sha256"] != write_receipt["sha256"]:
             raise SystemExit("reclamation KV exact-byte readback failed")
-
-        retry = module.write_target_set(
-            kv_root=kv_root,
-            target_set=target_set,
-            kv_instance_id="validator-kv",
-        )
+        retry = module.write_target_set(kv_root=kv_root, target_set=target_set, kv_instance_id="validator-kv")
         if retry["result"] != "NOOP" or retry["sha256"] != write_receipt["sha256"]:
             raise SystemExit("reclamation KV idempotent retry failed")
-
         cross_subject = dict(write_receipt)
         cross_subject["subject_ref"] = "subject:different-user"
         try:
@@ -170,8 +197,9 @@ def main():
     check_authority_fail_closed()
     check_unverified_disclosure_fail_closed()
     check_target_reconciliation(skap_disclosure)
+    check_skap_evidence_reconciliation(skap_disclosure)
     check_kv_custody()
-    print("Digital Data Reclamation foundation + KV custody validation: PASS")
+    print("Digital Data Reclamation foundation + SKAP evidence reconciliation + KV custody validation: PASS")
 
 
 if __name__ == "__main__":
