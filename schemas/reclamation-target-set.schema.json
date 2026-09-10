@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/reclamation-target-set.schema.json",
+  "title": "StegVerse Reclamation Target Set",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "target_set_id", "subject_ref", "generated_at", "targets"],
+  "properties": {
+    "schema": {"const": "stegverse.reclamation-target-set/v1"},
+    "target_set_id": {"type": "string", "minLength": 3},
+    "subject_ref": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["target_id", "org_ref", "source", "priority", "evidence_state", "action_state", "reason_refs"],
+        "properties": {
+          "target_id": {"type": "string", "minLength": 1},
+          "org_ref": {"type": "string", "minLength": 1},
+          "source": {"type": "string", "enum": ["SKAP_ACCOUNT_PROVIDER", "SKAP_DISCLOSURE_EDGE", "OBSERVED_PROPAGATION_NODE", "KNOWN_REMOVAL_SURFACE"]},
+          "priority": {"type": "string", "enum": ["PRIMARY", "DOWNSTREAM", "WATCH", "EXCLUDED"]},
+          "evidence_state": {"type": "string", "enum": ["DIRECT", "DECLARED", "REGULATORY", "OBSERVED", "CREDIBLE_REPORT", "INFERRED_UNVERIFIED", "UNKNOWN"]},
+          "action_state": {"type": "string", "enum": ["ELIGIBLE", "WATCH_ONLY", "BLOCKED_UNVERIFIED", "EXCLUDED_LEGAL", "COMPLETE"]},
+          "data_classes": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+          "skap_account_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+          "reason_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+        }
+      }
+    }
+  }
+}
