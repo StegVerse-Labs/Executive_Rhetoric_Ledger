@@ -14,6 +14,7 @@ EDGE_POSTURE = {
 }
 
 PROPAGATION_ELIGIBLE_TYPES = {"data_broker", "downstream_recipient", "index_or_cache", "model_or_retrieval_surface"}
+PRIORITY_RANK = {"PRIMARY": 0, "DOWNSTREAM": 1, "WATCH": 2, "EXCLUDED": 3}
 
 
 def load(path):
@@ -25,23 +26,22 @@ def target_key(target):
 
 
 def build(skap, propagation, generated_at):
+    if skap["subject_ref"] != propagation["subject_ref"]:
+        raise ValueError("SKAP and propagation graphs must refer to the same subject")
+
     targets = []
 
     # A user-authorized SKAP account is direct evidence that the account provider
     # holds at least account-associated data for the subject. It is therefore a
     # primary reclamation/access/export candidate without inferring downstream flow.
     for account in skap["accounts"]:
-        if account["status"] == "CLOSED":
-            action_state = "ELIGIBLE"
-        else:
-            action_state = "ELIGIBLE"
         targets.append({
             "target_id": f"target:account-provider:{account['provider_org_ref']}",
             "org_ref": account["provider_org_ref"],
             "source": "SKAP_ACCOUNT_PROVIDER",
             "priority": "PRIMARY",
             "evidence_state": "DIRECT",
-            "action_state": action_state,
+            "action_state": "ELIGIBLE",
             "data_classes": ["account"],
             "skap_account_refs": [account["skap_account_ref"]],
             "reason_refs": [f"skap-account:{account['skap_account_ref']}"],
@@ -107,7 +107,10 @@ def build(skap, propagation, generated_at):
         "target_set_id": f"{skap['graph_id']}:targets",
         "subject_ref": skap["subject_ref"],
         "generated_at": generated_at,
-        "targets": sorted(deduped.values(), key=lambda t: (t["priority"], t["org_ref"], t["source"])),
+        "targets": sorted(
+            deduped.values(),
+            key=lambda t: (PRIORITY_RANK[t["priority"]], t["org_ref"], t["source"]),
+        ),
     }
 
 
