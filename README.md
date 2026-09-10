@@ -75,6 +75,16 @@ The bounded propagation verification is also complete. Site and Publisher now ca
 
 See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).
 
+## Digital data reclamation and sovereignty
+
+The Meta AI child-data assembly privacy intake exposed a broader StegVerse architecture requirement: digital ownership must govern more than storage and deletion of source objects. Custody, access, correlation, derivation, and propagation are treated as separable rights, and technical readability does not automatically confer authority to combine data into new sensitive inferences.
+
+The documented StegVerse direction is a governed reclamation lifecycle: discover external personal data, classify it, establish authority, request or execute deletion/restriction, propagate revocation where possible, independently verify resulting state, retain receipts, and monitor recurrence. The architecture explicitly rejects claims of universal Internet erasure and requires source-specific proof classes instead.
+
+KnowledgeVault is the intended authoritative private inventory and continuity surface for known source objects, external appearances, legal/contractual authority, correlation and derivation permissions, deletion/restriction requests, verification evidence, receipts, and recurrence state. KnowledgeVault custody itself is not blanket authority for AI correlation across everything stored in the vault.
+
+See [Digital Data Reclamation and Sovereignty](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY.md) and its [scoped mirror handoff](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY_MIRROR_HANDOFF.md).
+
 ## Status
 
 ```yaml
