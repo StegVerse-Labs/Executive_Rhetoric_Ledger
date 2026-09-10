@@ -1,0 +1,15 @@
+{
+  "schema": "stegverse.data-propagation-graph/v1",
+  "graph_id": "DPG-RECONCILIATION-001",
+  "subject_ref": "subject:example-user",
+  "generated_at": "2026-09-10T03:40:00Z",
+  "nodes": [
+    {"node_id": "n-source", "node_type": "source_object", "identity": "obj:email:example", "current_state": "OBSERVED"},
+    {"node_id": "n-broker", "node_type": "data_broker", "identity": "org:observed-broker", "current_state": "OBSERVED"},
+    {"node_id": "n-search", "node_type": "index_or_cache", "identity": "org:observed-search-surface", "current_state": "REMOVAL_REQUESTED"}
+  ],
+  "edges": [
+    {"edge_id": "edge:source-broker", "from": "n-source", "to": "n-broker", "relationship": "aggregated_by", "observed_at": "2026-09-10T03:40:00Z", "authority_basis": null, "permitted_purpose": null, "revocation_state": "NOT_REQUESTED", "evidence_class": "DIRECT_OBSERVATION", "verification_state": "VERIFIED"},
+    {"edge_id": "edge:broker-search", "from": "n-broker", "to": "n-search", "relationship": "indexed_by", "observed_at": "2026-09-10T03:40:00Z", "authority_basis": null, "permitted_purpose": null, "revocation_state": "REQUESTED", "evidence_class": "DIRECT_OBSERVATION", "verification_state": "VERIFIED"}
+  ]
+}
