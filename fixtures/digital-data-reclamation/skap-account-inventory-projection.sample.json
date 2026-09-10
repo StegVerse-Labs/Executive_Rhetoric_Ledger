@@ -1,0 +1,9 @@
+{
+  "schema":"stegverse.skap.account-inventory-projection/v1",
+  "subject_ref":"subject:example-user",
+  "generated_at":"2026-09-10T12:30:00Z",
+  "contains_secret_material":false,
+  "accounts":[
+    {"skap_account_ref":"skap:account:example-social","provider_org_ref":"org:example-social","account_class":"social","status":"ACTIVE"}
+  ]
+}

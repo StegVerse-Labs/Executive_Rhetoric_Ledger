@@ -1,0 +1,33 @@
+{
+  "schema": "stegverse.skap-evidence-reconciliation/v1",
+  "subject_ref": "subject:example-user",
+  "generated_at": "2026-09-10T12:00:00Z",
+  "accounts": [
+    {
+      "skap_account_ref": "skap:account:example-social",
+      "provider_org_ref": "org:example-social",
+      "classification": "KNOWN_AND_MAPPED",
+      "downstream_org_refs": ["org:example-analytics", "org:example-broker"],
+      "evidence_refs": ["evidence:provider-privacy-disclosure:example"]
+    }
+  ],
+  "evidence_only_origins": [
+    {
+      "org_ref": "org:observed-broker",
+      "classification": "EVIDENCE_WITHOUT_KNOWN_ACCOUNT_ORIGIN",
+      "evidence_refs": ["propagation-edge:edge:source-broker"]
+    },
+    {
+      "org_ref": "org:observed-search-surface",
+      "classification": "EVIDENCE_WITHOUT_KNOWN_ACCOUNT_ORIGIN",
+      "evidence_refs": ["propagation-edge:edge:broker-search"]
+    }
+  ],
+  "summary": {
+    "known_accounts": 1,
+    "known_and_mapped": 1,
+    "known_but_unmapped": 0,
+    "downstream_from_known_account": 2,
+    "evidence_without_known_account_origin": 2
+  }
+}

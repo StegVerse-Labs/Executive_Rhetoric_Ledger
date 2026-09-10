@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://stegverse.org/schemas/skap-account-inventory-projection.schema.json",
+  "title":"StegVerse SKAP Account Inventory Projection",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schema","subject_ref","generated_at","contains_secret_material","accounts"],
+  "properties":{
+    "schema":{"const":"stegverse.skap.account-inventory-projection/v1"},
+    "subject_ref":{"type":"string","minLength":1},
+    "generated_at":{"type":"string","format":"date-time"},
+    "contains_secret_material":{"const":false},
+    "accounts":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["skap_account_ref","provider_org_ref","account_class","status"],"properties":{"skap_account_ref":{"type":"string","minLength":1},"provider_org_ref":{"type":"string","minLength":1},"account_class":{"type":"string","enum":["social","email","commerce","financial","health","cloud","identity","telecom","government","other"]},"status":{"type":"string","enum":["ACTIVE","INACTIVE","CLOSED","UNKNOWN"]}}}}
+  }
+}
