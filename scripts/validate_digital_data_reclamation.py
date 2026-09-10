@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
+from build_reclamation_target_set import build as build_target_set
 
 ROOT = Path(__file__).resolve().parents[1]
 FIX = ROOT / "fixtures" / "digital-data-reclamation"
@@ -10,12 +11,14 @@ SCHEMAS = {
     "graph": ROOT / "schemas" / "data-propagation-graph.schema.json",
     "authority": ROOT / "schemas" / "derived-data-authority-receipt.schema.json",
     "skap_disclosure": ROOT / "schemas" / "skap-account-disclosure-graph.schema.json",
+    "target_set": ROOT / "schemas" / "reclamation-target-set.schema.json",
 }
 SAMPLES = {
     "inventory": FIX / "personal-data-inventory.sample.json",
     "graph": FIX / "data-propagation-graph.sample.json",
     "authority": FIX / "derived-data-authority-receipt.sample.json",
     "skap_disclosure": FIX / "skap-account-disclosure-graph.sample.json",
+    "target_set": FIX / "reclamation-target-set.sample.json",
 }
 
 
@@ -94,6 +97,27 @@ def check_unverified_disclosure_fail_closed():
     raise SystemExit("unverified disclosure edge was incorrectly accepted as PRIMARY")
 
 
+def check_target_reconciliation(skap_disclosure):
+    propagation = validate("graph", FIX / "data-propagation-graph.reconciliation.sample.json")
+    expected = validate("target_set", SAMPLES["target_set"])
+    actual = build_target_set(skap_disclosure, propagation, expected["generated_at"])
+    if actual != expected:
+        raise SystemExit("deterministic reclamation target reconciliation does not match expected fixture")
+
+    mismatch = dict(propagation)
+    mismatch["subject_ref"] = "subject:different-user"
+    try:
+        build_target_set(skap_disclosure, mismatch, expected["generated_at"])
+    except ValueError:
+        pass
+    else:
+        raise SystemExit("cross-subject reconciliation was incorrectly accepted")
+
+    for target in actual["targets"]:
+        if target["evidence_state"] in {"INFERRED_UNVERIFIED", "UNKNOWN"} and target["action_state"] == "ELIGIBLE":
+            raise SystemExit("unverified target was incorrectly promoted to ELIGIBLE")
+
+
 def main():
     inventory = validate("inventory", SAMPLES["inventory"])
     graph = validate("graph", SAMPLES["graph"])
@@ -103,6 +127,7 @@ def main():
     check_skap_disclosure_refs(skap_disclosure)
     check_authority_fail_closed()
     check_unverified_disclosure_fail_closed()
+    check_target_reconciliation(skap_disclosure)
     print("Digital Data Reclamation foundation validation: PASS")
 
 
