@@ -1,0 +1,21 @@
+{
+  "schema": "stegverse.derived-data-authority-receipt/v1",
+  "receipt_id": "DDA-INVALID-001",
+  "issued_at": "2026-09-09T21:30:00Z",
+  "subject_ref": "subject:sample",
+  "actor": "external-ai",
+  "requester": "external-requester",
+  "source_object_refs": ["obj:email:1"],
+  "requested_derivation": "derive home location",
+  "purpose": "unspecified",
+  "decision": "ALLOW",
+  "authority_basis": "NO_AUTHORITY",
+  "constraints": {
+    "expires_at": null,
+    "redistribution_allowed": true,
+    "training_use_allowed": true,
+    "further_derivation_allowed": true
+  },
+  "governance_artifact_ref": null,
+  "revocation_ref": null
+}

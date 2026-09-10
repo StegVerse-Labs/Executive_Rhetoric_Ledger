@@ -1,0 +1,33 @@
+{
+  "schema": "stegverse.personal-data-inventory/v1",
+  "inventory_id": "PDI-SAMPLE-001",
+  "subject_ref": "subject:sample",
+  "updated_at": "2026-09-09T21:30:00Z",
+  "objects": [
+    {
+      "object_id": "obj:email:1",
+      "classification": "contact",
+      "custody_state": "BOTH",
+      "source_identity": "user-owned-email-address",
+      "sha256": null,
+      "sensitivity": "sensitive"
+    }
+  ],
+  "external_appearances": [
+    {
+      "appearance_id": "appearance:whitepages:1",
+      "object_ref": "obj:email:1",
+      "surface": "people-search-service",
+      "url": "https://example.invalid/person/1",
+      "observed_at": "2026-09-09T21:30:00Z",
+      "state": "REMOVAL_REQUESTED"
+    }
+  ],
+  "authority": {
+    "custody": "ALLOW",
+    "access": "CONDITIONAL",
+    "correlation": "DENY",
+    "derivation": "DENY",
+    "propagation": "DENY"
+  }
+}

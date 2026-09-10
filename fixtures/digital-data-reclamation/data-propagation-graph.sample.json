@@ -1,0 +1,37 @@
+{
+  "schema": "stegverse.data-propagation-graph/v1",
+  "graph_id": "DPG-SAMPLE-001",
+  "subject_ref": "subject:sample",
+  "generated_at": "2026-09-09T21:30:00Z",
+  "nodes": [
+    {"node_id": "n1", "node_type": "source_object", "identity": "obj:email:1", "current_state": "OBSERVED"},
+    {"node_id": "n2", "node_type": "data_broker", "identity": "people-search-service", "current_state": "REMOVAL_REQUESTED"},
+    {"node_id": "n3", "node_type": "index_or_cache", "identity": "search-result-surface", "current_state": "OBSERVED"}
+  ],
+  "edges": [
+    {
+      "edge_id": "e1",
+      "from": "n1",
+      "to": "n2",
+      "relationship": "aggregated_by",
+      "observed_at": "2026-09-09T21:30:00Z",
+      "authority_basis": null,
+      "permitted_purpose": null,
+      "revocation_state": "REQUESTED",
+      "evidence_class": "DIRECT_OBSERVATION",
+      "verification_state": "VERIFIED"
+    },
+    {
+      "edge_id": "e2",
+      "from": "n2",
+      "to": "n3",
+      "relationship": "indexed_by",
+      "observed_at": "2026-09-09T21:30:00Z",
+      "authority_basis": null,
+      "permitted_purpose": null,
+      "revocation_state": "REQUESTED",
+      "evidence_class": "DIRECT_OBSERVATION",
+      "verification_state": "VERIFIED"
+    }
+  ]
+}

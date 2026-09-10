@@ -11,7 +11,9 @@ COSV: `40000100100000`
 
 ## Scope
 
-This scoped handoff governs the documentation and architecture projection created from the ERL privacy/derived-data intake. It does not replace `docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md` for ERL-to-KnowledgeVault storage proof.
+This scoped handoff governs the documentation and first implementation foundation created from the ERL privacy/derived-data intake. It does not replace `docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md` for ERL-to-KnowledgeVault storage proof.
+
+The current parent task remains canonical because it is the registered ACTIVE task that established the ERL/KV evidence boundary. This implementation slice is bounded to schemas, deterministic validation, and fail-closed authority semantics; it does not claim a live deletion service.
 
 ## Installed architecture
 
@@ -19,13 +21,31 @@ This scoped handoff governs the documentation and architecture projection create
 - `research-candidates/2026-09-09-meta-ai-child-data-assembly-privacy.md`
 - `research-candidates/README.md`
 
+## First implementation foundation
+
+Implemented on branch `impl/digital-data-reclamation-foundation-20260909`:
+
+- `schemas/personal-data-inventory.schema.json`
+- `schemas/data-propagation-graph.schema.json`
+- `schemas/derived-data-authority-receipt.schema.json`
+- `fixtures/digital-data-reclamation/personal-data-inventory.sample.json`
+- `fixtures/digital-data-reclamation/data-propagation-graph.sample.json`
+- `fixtures/digital-data-reclamation/derived-data-authority-receipt.sample.json`
+- `fixtures/digital-data-reclamation/invalid-no-authority-allows-derivation.json`
+- `scripts/validate_digital_data_reclamation.py`
+- `.github/workflows/validate-digital-data-reclamation.yml`
+
+The Personal Data Inventory provides a machine-readable user-centered inventory for source objects, external appearances, current removal state, and the five separable authority dimensions. The Data Propagation Graph provides explicit source/copy/index/broker/derived/downstream/model nodes and provenance-bearing edges. The Derived Data Authority receipt requires actor, requester, source objects, requested derivation, purpose, authority basis, decision, and downstream-use constraints.
+
+The receipt schema fails closed when `authority_basis=NO_AUTHORITY`: the only valid decision is `DENY`. The deterministic validator also checks inventory object references, graph node/edge referential integrity, duplicate graph identifiers, and a negative fixture proving that `NO_AUTHORITY + ALLOW` is rejected.
+
 ## Canonical concepts
 
 The installed design separates five digital-data rights: custody, access, correlation, derivation, and propagation.
 
 `Derived Data Authority` is a separate governed question from source-object access. Technical readability of several objects does not automatically authorize joining them into a sensitive inference.
 
-The proposed reclamation lifecycle is:
+The reclamation lifecycle is:
 
 `discover -> classify -> establish authority -> request/execute deletion or restriction -> propagate revocation -> verify -> receipt -> monitor recurrence`
 
@@ -55,23 +75,23 @@ The long-term differentiator is prospective sovereignty: new disclosures can car
 
 ## Current state
 
-`DOCUMENTED / ERL-BOUND / KNOWLEDGEVAULT-ROLE-DEFINED / GOOGLE-SEARCH-REMOVAL-BASELINE-RECORDED / IMPLEMENTATION-NOT-YET-CLAIMED`
+`FOUNDATION_IMPLEMENTED / SCHEMAS_AND_FAIL_CLOSED_VALIDATOR_PRESENT / HOSTED_VALIDATION_PENDING / LIVE_RECLAMATION_RUNTIME_NOT_YET_CLAIMED`
 
-No runtime deletion/reclamation service, provider adapter set, legal-rights router, propagation graph engine, recurrence monitor, or cross-provider verification runtime is claimed by this documentation change.
+No live deletion/reclamation service, provider adapter set, legal-rights router, recurrence monitor, or cross-provider verification runtime is claimed yet.
 
-## Next implementation decomposition
+## Remaining implementation decomposition
 
-When implementation begins, create dedicated canonical tasks for separable execution lanes rather than overloading this research/evidence parent:
+1. Bind Personal Data Inventory to a concrete KnowledgeVault storage contract and writer/readback receipt.
+2. Add Data Propagation Graph mutation/reconciliation logic from observed provider/search evidence.
+3. Bind Derived Data Authority receipts to Interlock/InTr governed transition evaluation.
+4. Build provider discovery/removal/restriction adapter framework, beginning with search-result and people-search lanes.
+5. Build verification/proof-class engine that cannot promote request/acknowledgement into deletion.
+6. Build recurrence/reappearance monitor.
+7. Add legal-rights/jurisdiction routing with explicit non-legal-advice boundaries.
+8. Add prospective disclosure authority envelope for new StegVerse-originated data.
 
-1. Personal Data Inventory schema and KnowledgeVault storage contract.
-2. Data Propagation Graph schema and provenance model.
-3. Derived Data Authority policy/receipt schema.
-4. Provider discovery/removal/restriction adapter framework.
-5. Verification and proof-class engine.
-6. Recurrence/reappearance monitor.
-7. Legal-rights/jurisdiction routing with explicit non-legal-advice boundaries.
-8. Prospective disclosure authority envelope for new StegVerse-originated data.
+By Goal Prompt Count 20, any genuinely separable remaining implementation lanes must be transferred into new canonical Goal Task IDs rather than extending this evidence-comparison parent indefinitely.
 
 ## Manual work
 
-None for the documentation projection.
+None for this implementation foundation.
