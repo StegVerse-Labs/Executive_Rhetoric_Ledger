@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bidirectionally reconcile SKAP-known accounts against evidence-backed organization mappings."""
+"""Bidirectionally reconcile a non-secret SKAP account projection against evidence mappings."""
 
 from __future__ import annotations
 
@@ -9,7 +9,6 @@ from typing import Any
 
 
 def _reachable_from_provider(graph: dict[str, Any], provider: str) -> tuple[set[str], set[str]]:
-    account_edges = [e for e in graph["disclosure_edges"] if e["from_org_ref"] == provider]
     downstream: set[str] = set()
     refs: set[str] = set()
     frontier = [provider]
@@ -19,7 +18,6 @@ def _reachable_from_provider(graph: dict[str, Any], provider: str) -> tuple[set[
         for edge in graph["disclosure_edges"]:
             if edge["from_org_ref"] != current:
                 continue
-            # Every edge may be retained as evidence context, but inference never becomes observed transfer.
             downstream.add(edge["to_org_ref"])
             refs.update(edge.get("evidence_refs", []))
             if edge["to_org_ref"] not in visited:
@@ -28,21 +26,35 @@ def _reachable_from_provider(graph: dict[str, Any], provider: str) -> tuple[set[
     return downstream, refs
 
 
-def reconcile(skap_graph: dict[str, Any], propagation_graph: dict[str, Any], generated_at: str) -> dict[str, Any]:
-    if skap_graph["subject_ref"] != propagation_graph["subject_ref"]:
+def reconcile(
+    skap_inventory: dict[str, Any],
+    disclosure_graph: dict[str, Any],
+    propagation_graph: dict[str, Any],
+    generated_at: str,
+) -> dict[str, Any]:
+    subjects = {
+        skap_inventory["subject_ref"],
+        disclosure_graph["subject_ref"],
+        propagation_graph["subject_ref"],
+    }
+    if len(subjects) != 1:
         raise ValueError("cross-subject SKAP/evidence reconciliation is prohibited")
+    if skap_inventory.get("contains_secret_material") is not False:
+        raise ValueError("SKAP reconciliation input must be a non-secret account projection")
 
-    known_providers = {a["provider_org_ref"] for a in skap_graph["accounts"]}
+    mapped_orgs = {org["org_ref"] for org in disclosure_graph["organizations"]}
+    known_providers = {a["provider_org_ref"] for a in skap_inventory["accounts"]}
     accounts = []
     downstream_from_known: set[str] = set()
-    for account in sorted(skap_graph["accounts"], key=lambda a: a["skap_account_ref"]):
-        downstream, refs = _reachable_from_provider(skap_graph, account["provider_org_ref"])
+
+    for account in sorted(skap_inventory["accounts"], key=lambda a: a["skap_account_ref"]):
+        provider = account["provider_org_ref"]
+        downstream, refs = _reachable_from_provider(disclosure_graph, provider)
         downstream_from_known.update(downstream)
-        mapped = bool(downstream or refs)
         accounts.append({
             "skap_account_ref": account["skap_account_ref"],
-            "provider_org_ref": account["provider_org_ref"],
-            "classification": "KNOWN_AND_MAPPED" if mapped else "KNOWN_BUT_UNMAPPED",
+            "provider_org_ref": provider,
+            "classification": "KNOWN_AND_MAPPED" if provider in mapped_orgs else "KNOWN_BUT_UNMAPPED",
             "downstream_org_refs": sorted(downstream),
             "evidence_refs": sorted(refs),
         })
@@ -62,11 +74,15 @@ def reconcile(skap_graph: dict[str, Any], propagation_graph: dict[str, Any], gen
 
     return {
         "schema": "stegverse.skap-evidence-reconciliation/v1",
-        "subject_ref": skap_graph["subject_ref"],
+        "subject_ref": skap_inventory["subject_ref"],
         "generated_at": generated_at,
         "accounts": accounts,
         "evidence_only_origins": [
-            {"org_ref": org, "classification": "EVIDENCE_WITHOUT_KNOWN_ACCOUNT_ORIGIN", "evidence_refs": sorted(refs)}
+            {
+                "org_ref": org,
+                "classification": "EVIDENCE_WITHOUT_KNOWN_ACCOUNT_ORIGIN",
+                "evidence_refs": sorted(refs),
+            }
             for org, refs in sorted(evidence_only.items())
         ],
         "summary": {
@@ -82,11 +98,17 @@ def reconcile(skap_graph: dict[str, Any], propagation_graph: dict[str, Any], gen
 def main() -> None:
     import argparse
     p = argparse.ArgumentParser()
-    p.add_argument("--skap-graph", type=Path, required=True)
+    p.add_argument("--skap-inventory", type=Path, required=True)
+    p.add_argument("--disclosure-graph", type=Path, required=True)
     p.add_argument("--propagation-graph", type=Path, required=True)
     p.add_argument("--generated-at", required=True)
     args = p.parse_args()
-    result = reconcile(json.loads(args.skap_graph.read_text()), json.loads(args.propagation_graph.read_text()), args.generated_at)
+    result = reconcile(
+        json.loads(args.skap_inventory.read_text()),
+        json.loads(args.disclosure_graph.read_text()),
+        json.loads(args.propagation_graph.read_text()),
+        args.generated_at,
+    )
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
