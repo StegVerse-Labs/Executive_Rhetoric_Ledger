@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://stegverse.org/schemas/skap-evidence-reconciliation.schema.json",
+  "title":"StegVerse SKAP Evidence Reconciliation",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schema","subject_ref","generated_at","accounts","evidence_only_origins","summary"],
+  "properties":{
+    "schema":{"const":"stegverse.skap-evidence-reconciliation/v1"},
+    "subject_ref":{"type":"string","minLength":1},
+    "generated_at":{"type":"string","format":"date-time"},
+    "accounts":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["skap_account_ref","provider_org_ref","classification","downstream_org_refs","evidence_refs"],"properties":{"skap_account_ref":{"type":"string","minLength":1},"provider_org_ref":{"type":"string","minLength":1},"classification":{"type":"string","enum":["KNOWN_AND_MAPPED","KNOWN_BUT_UNMAPPED"]},"downstream_org_refs":{"type":"array","uniqueItems":true,"items":{"type":"string","minLength":1}},"evidence_refs":{"type":"array","uniqueItems":true,"items":{"type":"string","minLength":1}}}}},
+    "evidence_only_origins":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["org_ref","classification","evidence_refs"],"properties":{"org_ref":{"type":"string","minLength":1},"classification":{"const":"EVIDENCE_WITHOUT_KNOWN_ACCOUNT_ORIGIN"},"evidence_refs":{"type":"array","uniqueItems":true,"items":{"type":"string","minLength":1}}}}},
+    "summary":{"type":"object","additionalProperties":false,"required":["known_accounts","known_and_mapped","known_but_unmapped","downstream_from_known_account","evidence_without_known_account_origin"],"properties":{"known_accounts":{"type":"integer","minimum":0},"known_and_mapped":{"type":"integer","minimum":0},"known_but_unmapped":{"type":"integer","minimum":0},"downstream_from_known_account":{"type":"integer","minimum":0},"evidence_without_known_account_origin":{"type":"integer","minimum":0}}}
+  }
+}
