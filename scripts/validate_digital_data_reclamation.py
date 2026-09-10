@@ -14,6 +14,7 @@ SCHEMAS = {
     "graph": ROOT / "schemas" / "data-propagation-graph.schema.json",
     "authority": ROOT / "schemas" / "derived-data-authority-receipt.schema.json",
     "skap_disclosure": ROOT / "schemas" / "skap-account-disclosure-graph.schema.json",
+    "skap_inventory_projection": ROOT / "schemas" / "skap-account-inventory-projection.schema.json",
     "target_set": ROOT / "schemas" / "reclamation-target-set.schema.json",
     "skap_evidence_reconciliation": ROOT / "schemas" / "skap-evidence-reconciliation.schema.json",
 }
@@ -22,6 +23,7 @@ SAMPLES = {
     "graph": FIX / "data-propagation-graph.sample.json",
     "authority": FIX / "derived-data-authority-receipt.sample.json",
     "skap_disclosure": FIX / "skap-account-disclosure-graph.sample.json",
+    "skap_inventory_projection": FIX / "skap-account-inventory-projection.sample.json",
     "target_set": FIX / "reclamation-target-set.sample.json",
     "skap_evidence_reconciliation": FIX / "skap-evidence-reconciliation.sample.json",
 }
@@ -124,25 +126,34 @@ def check_target_reconciliation(skap_disclosure):
 
 
 def check_skap_evidence_reconciliation(skap_disclosure):
+    skap_inventory = validate("skap_inventory_projection", SAMPLES["skap_inventory_projection"])
     propagation = validate("graph", FIX / "data-propagation-graph.reconciliation.sample.json")
     expected = validate("skap_evidence_reconciliation", SAMPLES["skap_evidence_reconciliation"])
-    actual = reconcile_skap_evidence(skap_disclosure, propagation, expected["generated_at"])
+    actual = reconcile_skap_evidence(skap_inventory, skap_disclosure, propagation, expected["generated_at"])
     if actual != expected:
         raise SystemExit("deterministic SKAP/evidence reconciliation does not match expected fixture")
 
     mismatch = dict(propagation)
     mismatch["subject_ref"] = "subject:different-user"
     try:
-        reconcile_skap_evidence(skap_disclosure, mismatch, expected["generated_at"])
+        reconcile_skap_evidence(skap_inventory, skap_disclosure, mismatch, expected["generated_at"])
     except ValueError:
         pass
     else:
         raise SystemExit("cross-subject SKAP/evidence reconciliation was incorrectly accepted")
 
-    extended = json.loads(json.dumps(skap_disclosure))
-    extended["organizations"].append({"org_ref":"org:unmapped-provider","name":"Unmapped Provider","role":"ACCOUNT_PROVIDER"})
-    extended["accounts"].append({"skap_account_ref":"skap:account:unmapped","provider_org_ref":"org:unmapped-provider","account_class":"other","status":"ACTIVE"})
-    gap = reconcile_skap_evidence(extended, propagation, expected["generated_at"])
+    secret_projection = dict(skap_inventory)
+    secret_projection["contains_secret_material"] = True
+    try:
+        reconcile_skap_evidence(secret_projection, skap_disclosure, propagation, expected["generated_at"])
+    except ValueError:
+        pass
+    else:
+        raise SystemExit("SKAP projection containing secret material was incorrectly accepted")
+
+    extended_inventory = json.loads(json.dumps(skap_inventory))
+    extended_inventory["accounts"].append({"skap_account_ref":"skap:account:unmapped","provider_org_ref":"org:unmapped-provider","account_class":"other","status":"ACTIVE"})
+    gap = reconcile_skap_evidence(extended_inventory, skap_disclosure, propagation, expected["generated_at"])
     unmapped = [a for a in gap["accounts"] if a["skap_account_ref"] == "skap:account:unmapped"]
     if len(unmapped) != 1 or unmapped[0]["classification"] != "KNOWN_BUT_UNMAPPED":
         raise SystemExit("known SKAP account without evidence mapping was not classified as KNOWN_BUT_UNMAPPED")
@@ -192,6 +203,7 @@ def main():
     graph = validate("graph", SAMPLES["graph"])
     validate("authority", SAMPLES["authority"])
     skap_disclosure = validate("skap_disclosure", SAMPLES["skap_disclosure"])
+    validate("skap_inventory_projection", SAMPLES["skap_inventory_projection"])
     check_cross_refs(inventory, graph)
     check_skap_disclosure_refs(skap_disclosure)
     check_authority_fail_closed()
