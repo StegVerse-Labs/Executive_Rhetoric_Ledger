@@ -1,0 +1,63 @@
+{
+  "schema": "stegverse.reclamation-target-set/v1",
+  "target_set_id": "DDR-SKAP-GRAPH-001:targets",
+  "subject_ref": "subject:example-user",
+  "generated_at": "2026-09-10T03:45:00Z",
+  "targets": [
+    {
+      "target_id": "target:account-provider:org:example-social",
+      "org_ref": "org:example-social",
+      "source": "SKAP_ACCOUNT_PROVIDER",
+      "priority": "PRIMARY",
+      "evidence_state": "DIRECT",
+      "action_state": "ELIGIBLE",
+      "data_classes": ["account"],
+      "skap_account_refs": ["skap:account:example-social"],
+      "reason_refs": ["skap-account:skap:account:example-social"]
+    },
+    {
+      "target_id": "target:disclosure:edge:provider-to-analytics",
+      "org_ref": "org:example-analytics",
+      "source": "SKAP_DISCLOSURE_EDGE",
+      "priority": "DOWNSTREAM",
+      "evidence_state": "DECLARED",
+      "action_state": "ELIGIBLE",
+      "data_classes": ["behavioral", "device", "identity"],
+      "skap_account_refs": ["skap:account:example-social"],
+      "reason_refs": ["evidence:provider-privacy-disclosure:example"]
+    },
+    {
+      "target_id": "target:propagation:n-broker",
+      "org_ref": "org:observed-broker",
+      "source": "OBSERVED_PROPAGATION_NODE",
+      "priority": "DOWNSTREAM",
+      "evidence_state": "OBSERVED",
+      "action_state": "ELIGIBLE",
+      "data_classes": [],
+      "skap_account_refs": [],
+      "reason_refs": ["propagation-node:n-broker"]
+    },
+    {
+      "target_id": "target:disclosure:edge:analytics-to-broker",
+      "org_ref": "org:example-broker",
+      "source": "SKAP_DISCLOSURE_EDGE",
+      "priority": "WATCH",
+      "evidence_state": "INFERRED_UNVERIFIED",
+      "action_state": "BLOCKED_UNVERIFIED",
+      "data_classes": ["advertising", "derived"],
+      "skap_account_refs": ["skap:account:example-social"],
+      "reason_refs": ["disclosure-edge:edge:analytics-to-broker"]
+    },
+    {
+      "target_id": "target:propagation:n-search",
+      "org_ref": "org:observed-search-surface",
+      "source": "OBSERVED_PROPAGATION_NODE",
+      "priority": "WATCH",
+      "evidence_state": "OBSERVED",
+      "action_state": "WATCH_ONLY",
+      "data_classes": [],
+      "skap_account_refs": [],
+      "reason_refs": ["propagation-node:n-search"]
+    }
+  ]
+}

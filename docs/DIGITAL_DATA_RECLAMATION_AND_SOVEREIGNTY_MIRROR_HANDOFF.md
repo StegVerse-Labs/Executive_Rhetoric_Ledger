@@ -11,19 +11,22 @@ COSV: `40000100100000`
 
 ## Scope
 
-This scoped handoff governs the documentation and first implementation foundation created from the ERL privacy/derived-data intake. It does not replace `docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md` for ERL-to-KnowledgeVault storage proof.
+This scoped handoff governs the documentation and implementation foundation created from the ERL privacy/derived-data intake. It does not replace `docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md` for ERL-to-KnowledgeVault storage proof.
 
-The current parent task remains canonical because it is the registered ACTIVE task that established the ERL/KV evidence boundary. This implementation slice is bounded to schemas, deterministic validation, fail-closed authority semantics, and evidence-bounded discovery topology; it does not claim a live deletion service.
+The current parent task remains canonical because it is the registered ACTIVE task that established the ERL/KV evidence boundary. This implementation slice is bounded to schemas, deterministic validation, fail-closed authority semantics, evidence-bounded discovery topology, and deterministic reclamation-target reconciliation; it does not claim a live deletion service.
 
 ## Installed architecture and implementation
 
 - `docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY.md`
 - `docs/SKAP_ACCOUNT_DISCLOSURE_GRAPH.md`
+- `docs/RECLAMATION_TARGET_RECONCILIATION.md`
 - `schemas/personal-data-inventory.schema.json`
 - `schemas/data-propagation-graph.schema.json`
 - `schemas/derived-data-authority-receipt.schema.json`
 - `schemas/skap-account-disclosure-graph.schema.json`
+- `schemas/reclamation-target-set.schema.json`
 - `fixtures/digital-data-reclamation/`
+- `scripts/build_reclamation_target_set.py`
 - `scripts/validate_digital_data_reclamation.py`
 - `.github/workflows/validate-digital-data-reclamation.yml`
 
@@ -37,15 +40,33 @@ This graph distinguishes evidence-backed distribution relationships from unverif
 
 The deterministic validator enforces SKAP account/provider referential integrity, organization and edge uniqueness, retained evidence references for evidence-backed edges, and a fail-closed rule preventing `INFERRED_UNVERIFIED` or `UNKNOWN` edges from becoming `PRIMARY` reclamation targets.
 
+## Reclamation target reconciliation
+
+`build_reclamation_target_set.py` now combines the SKAP disclosure graph with an observed Data Propagation Graph to produce `stegverse.reclamation-target-set/v1`.
+
+Target posture is evidence bounded:
+
+- authorized SKAP account providers -> `PRIMARY / DIRECT / ELIGIBLE`;
+- provider-declared, observed-transfer, and regulator/court downstream edges -> eligible downstream targets unless the source graph deliberately makes them more conservative;
+- credible third-party reports -> watch-only;
+- inferred or unknown downstream edges -> `WATCH / BLOCKED_UNVERIFIED`;
+- currently observed or reappeared propagation nodes -> eligible downstream targets;
+- already requested/restricted/provider-asserted-deleted propagation nodes -> watch posture;
+- independently verified deleted propagation nodes -> complete posture.
+
+The reconciler refuses cross-subject joins and preserves distinct evidence lanes even when multiple lanes identify the same organization. The target set is a governed investigation/action candidate surface, not proof that deletion occurred or that a specific datum traversed any unobserved edge.
+
+The paired reconciliation fixtures and `reclamation-target-set.sample.json` provide deterministic expected output. Repository validation reconstructs and compares that target set, rejects a cross-subject join, and verifies that unverified targets cannot become `ELIGIBLE`.
+
 ## Canonical concepts
 
 Digital ownership separates custody, access, correlation, derivation, and propagation. Technical readability does not automatically confer authority to correlate or derive.
 
 The reclamation lifecycle is:
 
-`discover -> classify -> establish authority -> request/execute deletion or restriction -> propagate revocation -> verify -> receipt -> monitor recurrence`
+`discover -> classify -> establish authority -> reconcile targets -> request/execute deletion or restriction -> propagate revocation -> verify -> receipt -> monitor recurrence`
 
-Discovery itself now has two complementary origins:
+Discovery has two complementary origins:
 
 `known external harvesting/removal targets`
 
@@ -53,11 +74,11 @@ plus
 
 `known SKAP accounts -> account providers -> evidence-backed customer-data distribution graph`
 
-KnowledgeVault is the intended authoritative private inventory/continuity surface for account topology, source objects, external appearances, provider-distribution evidence, requests, responses, revocation state, receipts, and recurrence observations. Graph membership is discovery context, not execution authority; Interlock/InTr remains the governed transition authority.
+KnowledgeVault is the intended authoritative private inventory/continuity surface for account topology, source objects, external appearances, provider-distribution evidence, generated target sets, requests, responses, revocation state, receipts, and recurrence observations. Graph membership is discovery context, not execution authority; Interlock/InTr remains the governed transition authority.
 
 ## Evidence boundary
 
-The architecture refuses universal Internet-erasure claims. A submitted request is not proof of deletion. A provider disclosure relationship is not proof that a specific user's data traversed it. An inferred relationship cannot be promoted to a primary reclamation target without stronger evidence.
+The architecture refuses universal Internet-erasure claims. A submitted request is not proof of deletion. A provider disclosure relationship is not proof that a specific user's data traversed it. An inferred relationship cannot be promoted to an eligible reclamation target without stronger evidence.
 
 ## Observed Google baseline — 2026-09-09
 
@@ -65,19 +86,18 @@ The user supplied current-iPhone screenshots of Google's `Results about you` int
 
 ## Current state
 
-`FOUNDATION_IMPLEMENTED / HOSTED_VALIDATION_OF_BASE_FOUNDATION_PASSED / SKAP_DISCLOSURE_GRAPH_IMPLEMENTED_PENDING_CURRENT_PR_VALIDATION / LIVE_RECLAMATION_RUNTIME_NOT_YET_CLAIMED`
+`FOUNDATION_IMPLEMENTED / BASE_AND_SKAP_GRAPH_HOSTED_VALIDATION_PASSED / DETERMINISTIC_TARGET_RECONCILIATION_IMPLEMENTED_PENDING_CURRENT_PR_VALIDATION / LIVE_RECLAMATION_RUNTIME_NOT_YET_CLAIMED`
 
-No live deletion/reclamation service, provider adapter set, legal-rights router, recurrence monitor, or cross-provider verification runtime is claimed yet.
+No live deletion/reclamation service, provider adapter set, legal-rights router, recurrence monitor, KnowledgeVault target-set writer/readback receipt, or cross-provider verification runtime is claimed yet.
 
 ## Remaining implementation decomposition
 
-1. Bind Personal Data Inventory and SKAP account topology to concrete KnowledgeVault writer/readback receipts.
+1. Bind Personal Data Inventory, SKAP account topology, and generated reclamation target sets to concrete KnowledgeVault writer/readback receipts.
 2. Build evidence ingestion that derives disclosure-graph edges from provider policies, subprocessor lists, regulatory records, user exports, and authentic observations.
-3. Reconcile the SKAP Account Disclosure Graph into the Data Propagation Graph without converting candidate relationships into user-specific transfer facts.
-4. Bind Derived Data Authority receipts to Interlock/InTr governed transition evaluation.
-5. Build provider discovery/removal/restriction adapters and verification/proof-class engine.
-6. Build recurrence/reappearance monitoring and legal-rights/jurisdiction routing.
-7. Add prospective disclosure authority envelopes for new StegVerse-originated data.
+3. Bind Derived Data Authority and target execution to Interlock/InTr governed transition evaluation.
+4. Build provider discovery/removal/restriction adapters and verification/proof-class engine.
+5. Build recurrence/reappearance monitoring and legal-rights/jurisdiction routing.
+6. Add prospective disclosure authority envelopes for new StegVerse-originated data.
 
 By Goal Prompt Count 20, genuinely separable implementation lanes must move into new canonical Goal Task IDs rather than extending this evidence-comparison parent indefinitely.
 
