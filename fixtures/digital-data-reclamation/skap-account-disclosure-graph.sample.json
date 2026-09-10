@@ -1,0 +1,42 @@
+{
+  "schema": "stegverse.skap-account-disclosure-graph/v1",
+  "graph_id": "DDR-SKAP-GRAPH-001",
+  "subject_ref": "subject:example-user",
+  "updated_at": "2026-09-10T03:28:00Z",
+  "accounts": [
+    {"skap_account_ref": "skap:account:example-social", "provider_org_ref": "org:example-social", "account_class": "social", "status": "ACTIVE"}
+  ],
+  "organizations": [
+    {"org_ref": "org:example-social", "name": "Example Social Provider", "role": "ACCOUNT_PROVIDER"},
+    {"org_ref": "org:example-analytics", "name": "Example Analytics Partner", "role": "ANALYTICS_PARTNER"},
+    {"org_ref": "org:example-broker", "name": "Example Data Broker", "role": "DATA_BROKER"}
+  ],
+  "disclosure_edges": [
+    {
+      "edge_id": "edge:provider-to-analytics",
+      "from_org_ref": "org:example-social",
+      "to_org_ref": "org:example-analytics",
+      "skap_account_refs": ["skap:account:example-social"],
+      "data_classes": ["identity", "device", "behavioral"],
+      "relationship": "SHARED_WITH",
+      "purpose": "analytics",
+      "evidence_state": "DECLARED_BY_PROVIDER",
+      "evidence_refs": ["evidence:provider-privacy-disclosure:example"],
+      "last_verified_at": "2026-09-10T03:28:00Z",
+      "reclamation_priority": "DOWNSTREAM"
+    },
+    {
+      "edge_id": "edge:analytics-to-broker",
+      "from_org_ref": "org:example-analytics",
+      "to_org_ref": "org:example-broker",
+      "skap_account_refs": ["skap:account:example-social"],
+      "data_classes": ["derived", "advertising"],
+      "relationship": "UNKNOWN_TRANSFER",
+      "purpose": null,
+      "evidence_state": "INFERRED_UNVERIFIED",
+      "evidence_refs": [],
+      "last_verified_at": "2026-09-10T03:28:00Z",
+      "reclamation_priority": "WATCH"
+    }
+  ]
+}
