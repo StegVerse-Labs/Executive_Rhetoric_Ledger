@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/personal-data-inventory.schema.json",
+  "title": "StegVerse Personal Data Inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "inventory_id", "subject_ref", "updated_at", "objects", "external_appearances", "authority"],
+  "properties": {
+    "schema": {"const": "stegverse.personal-data-inventory/v1"},
+    "inventory_id": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9._:-]{2,127}$"},
+    "subject_ref": {"type": "string", "minLength": 1},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["object_id", "classification", "custody_state", "source_identity"],
+        "properties": {
+          "object_id": {"type": "string", "minLength": 1},
+          "classification": {"type": "string", "enum": ["identity", "contact", "location", "family", "media", "financial", "health", "employment", "account", "legal", "other"]},
+          "custody_state": {"type": "string", "enum": ["USER_CUSTODIED", "EXTERNAL_ONLY", "BOTH", "UNKNOWN"]},
+          "source_identity": {"type": "string", "minLength": 1},
+          "sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+          "sensitivity": {"type": "string", "enum": ["ordinary", "sensitive", "highly_sensitive", "minor_related"]}
+        }
+      }
+    },
+    "external_appearances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["appearance_id", "object_ref", "surface", "observed_at", "state"],
+        "properties": {
+          "appearance_id": {"type": "string", "minLength": 1},
+          "object_ref": {"type": "string", "minLength": 1},
+          "surface": {"type": "string", "minLength": 1},
+          "url": {"type": ["string", "null"], "format": "uri"},
+          "observed_at": {"type": "string", "format": "date-time"},
+          "state": {"type": "string", "enum": ["DISCOVERED", "REMOVAL_REQUESTED", "PROVIDER_ACKNOWLEDGED", "NOT_FOUND_ON_RECHECK", "DEINDEXED", "DELETED_PROVIDER_ASSERTED", "DELETED_INDEPENDENTLY_VERIFIED", "RESTRICTED", "REAPPEARED", "UNVERIFIABLE", "NOT_REMOVABLE_LEGAL_RECORD"]}
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["custody", "access", "correlation", "derivation", "propagation"],
+      "properties": {
+        "custody": {"type": "string", "enum": ["ALLOW", "DENY", "CONDITIONAL"]},
+        "access": {"type": "string", "enum": ["ALLOW", "DENY", "CONDITIONAL"]},
+        "correlation": {"type": "string", "enum": ["ALLOW", "DENY", "CONDITIONAL"]},
+        "derivation": {"type": "string", "enum": ["ALLOW", "DENY", "CONDITIONAL"]},
+        "propagation": {"type": "string", "enum": ["ALLOW", "DENY", "CONDITIONAL"]}
+      }
+    }
+  }
+}
