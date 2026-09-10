@@ -42,7 +42,7 @@ The deterministic validator enforces SKAP account/provider referential integrity
 
 ## Reclamation target reconciliation
 
-`build_reclamation_target_set.py` now combines the SKAP disclosure graph with an observed Data Propagation Graph to produce `stegverse.reclamation-target-set/v1`.
+`build_reclamation_target_set.py` combines the SKAP disclosure graph with an observed Data Propagation Graph to produce `stegverse.reclamation-target-set/v1`.
 
 Target posture is evidence bounded:
 
@@ -57,6 +57,14 @@ Target posture is evidence bounded:
 The reconciler refuses cross-subject joins and preserves distinct evidence lanes even when multiple lanes identify the same organization. The target set is a governed investigation/action candidate surface, not proof that deletion occurred or that a specific datum traversed any unobserved edge.
 
 The paired reconciliation fixtures and `reclamation-target-set.sample.json` provide deterministic expected output. Repository validation reconstructs and compares that target set, rejects a cross-subject join, and verifies that unverified targets cannot become `ELIGIBLE`.
+
+## Validation evidence
+
+PR #146 installed the SKAP Account Disclosure Graph and passed both the dedicated Digital Data Reclamation workflow and the full Ledger validation before merge at `26208c5c17cd6cc4bc0594f789d9803e9dc5f3f8`.
+
+PR #147 installed deterministic reclamation-target reconciliation. Before merge, dedicated Digital Data Reclamation workflow run `34435166055` completed `success`, and full Ledger validation run `34435165897` completed `success`, both against head `d68dd5ad6eeb00577c85ff487ede42a1d56c0453`. PR #147 then merged to `main` at `c78b2fe4be29dc4e9e15167281b35be8105a922a`.
+
+These runs validate repository implementation and deterministic evidence boundaries. They do not prove live provider deletion, external network execution, or KnowledgeVault write/readback for generated target sets.
 
 ## Canonical concepts
 
@@ -86,7 +94,7 @@ The user supplied current-iPhone screenshots of Google's `Results about you` int
 
 ## Current state
 
-`FOUNDATION_IMPLEMENTED / BASE_AND_SKAP_GRAPH_HOSTED_VALIDATION_PASSED / DETERMINISTIC_TARGET_RECONCILIATION_IMPLEMENTED_PENDING_CURRENT_PR_VALIDATION / LIVE_RECLAMATION_RUNTIME_NOT_YET_CLAIMED`
+`FOUNDATION_IMPLEMENTED / SKAP_DISCLOSURE_GRAPH_VALIDATED / DETERMINISTIC_TARGET_RECONCILIATION_VALIDATED_AND_MERGED / LIVE_RECLAMATION_RUNTIME_NOT_YET_CLAIMED`
 
 No live deletion/reclamation service, provider adapter set, legal-rights router, recurrence monitor, KnowledgeVault target-set writer/readback receipt, or cross-provider verification runtime is claimed yet.
 
