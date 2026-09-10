@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/skap-account-disclosure-graph.schema.json",
+  "title": "StegVerse SKAP Account Disclosure Graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "graph_id", "subject_ref", "updated_at", "accounts", "organizations", "disclosure_edges"],
+  "properties": {
+    "schema": {"const": "stegverse.skap-account-disclosure-graph/v1"},
+    "graph_id": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9._:-]{2,127}$"},
+    "subject_ref": {"type": "string", "minLength": 1},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["skap_account_ref", "provider_org_ref", "account_class", "status"],
+        "properties": {
+          "skap_account_ref": {"type": "string", "minLength": 1},
+          "provider_org_ref": {"type": "string", "minLength": 1},
+          "account_class": {"type": "string", "enum": ["social", "email", "commerce", "financial", "health", "cloud", "identity", "telecom", "government", "other"]},
+          "status": {"type": "string", "enum": ["ACTIVE", "INACTIVE", "CLOSED", "UNKNOWN"]}
+        }
+      }
+    },
+    "organizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["org_ref", "name", "role"],
+        "properties": {
+          "org_ref": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "role": {"type": "string", "enum": ["ACCOUNT_PROVIDER", "PROCESSOR", "SUBPROCESSOR", "DATA_BROKER", "ADVERTISING_PARTNER", "ANALYTICS_PARTNER", "AFFILIATE", "PUBLIC_SOURCE", "SEARCH_ENGINE", "OTHER"]}
+        }
+      }
+    },
+    "disclosure_edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["edge_id", "from_org_ref", "to_org_ref", "data_classes", "relationship", "evidence_state", "evidence_refs", "last_verified_at"],
+        "properties": {
+          "edge_id": {"type": "string", "minLength": 1},
+          "from_org_ref": {"type": "string", "minLength": 1},
+          "to_org_ref": {"type": "string", "minLength": 1},
+          "skap_account_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+          "data_classes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "enum": ["identity", "contact", "location", "family", "media", "financial", "health", "employment", "account", "device", "behavioral", "advertising", "derived", "other"]}},
+          "relationship": {"type": "string", "enum": ["DISCLOSED_TO", "SOLD_TO", "SHARED_WITH", "PROCESSED_BY", "SUBPROCESSED_BY", "AFFILIATED_WITH", "INDEXED_BY", "PUBLICLY_EXPOSED_TO", "UNKNOWN_TRANSFER"]},
+          "purpose": {"type": ["string", "null"]},
+          "evidence_state": {"type": "string", "enum": ["DECLARED_BY_PROVIDER", "OBSERVED_TRANSFER", "REGULATORY_OR_COURT_RECORD", "CREDIBLE_THIRD_PARTY_REPORT", "INFERRED_UNVERIFIED", "UNKNOWN"]},
+          "evidence_refs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "last_verified_at": {"type": "string", "format": "date-time"},
+          "reclamation_priority": {"type": "string", "enum": ["PRIMARY", "DOWNSTREAM", "WATCH", "EXCLUDED_LEGAL", "UNKNOWN"]}
+        }
+      }
+    }
+  }
+}
