@@ -83,7 +83,9 @@ The documented StegVerse direction is a governed reclamation lifecycle: discover
 
 KnowledgeVault is the intended authoritative private inventory and continuity surface for known source objects, external appearances, legal/contractual authority, correlation and derivation permissions, deletion/restriction requests, verification evidence, receipts, and recurrence state. KnowledgeVault custody itself is not blanket authority for AI correlation across everything stored in the vault.
 
-See [Digital Data Reclamation and Sovereignty](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY.md) and its [scoped mirror handoff](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY_MIRROR_HANDOFF.md).
+Discovery is not limited to known data brokers or harvesting sites. Authorized SKAP accounts can seed an evidence-bounded account-provider disclosure graph so StegVerse can expand from a user's known account companies into organizations those companies are documented, observed, reported, or suspected to share customer data with. Evidence state is retained per edge, and an unverified relationship cannot be promoted into a primary reclamation target. Provider relationship evidence identifies where to look next; it does not prove that a specific user's datum traversed that edge.
+
+See [Digital Data Reclamation and Sovereignty](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY.md), [SKAP-Seeded Account Disclosure Graph](docs/SKAP_ACCOUNT_DISCLOSURE_GRAPH.md), and the [scoped mirror handoff](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY_MIRROR_HANDOFF.md).
 
 ## Status
 
@@ -145,20 +147,25 @@ The Automated Political Reality Compendium Standard defines recurring search, ad
 ## Machine-readable schemas
 
 - [Political Influence Tree JSON Schema](schemas/political-influence-tree.schema.json)
-- [Source Posture JSON Schema](schemas/source-posture.schema.json)
+- [Source Posture JSON Schema](schemas/source-posture-schema.json)
 - [Producer Export JSON Schema](schemas/producer-export.schema.json)
 - [Validation Result JSON Schema](schemas/validation-result.schema.json)
 - [Primary Record Intake JSON Schema](schemas/primary-record-intake.schema.json)
 - [Force Event Packet JSON Schema](schemas/force-event-packet.schema.json)
 - [Discovery Cycle JSON Schema](schemas/discovery-cycle.schema.json)
 - [Related Repository Network JSON Schema](schemas/related-repository-network.schema.json)
+- [Personal Data Inventory JSON Schema](schemas/personal-data-inventory.schema.json)
+- [Data Propagation Graph JSON Schema](schemas/data-propagation-graph.schema.json)
+- [Derived Data Authority Receipt JSON Schema](schemas/derived-data-authority-receipt.schema.json)
+- [SKAP Account Disclosure Graph JSON Schema](schemas/skap-account-disclosure-graph.schema.json)
 
-These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation receipts, evidence-intake queues, individualized events, recurring discovery cycles, and governed repository relationships.
+These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation receipts, evidence-intake queues, individualized events, recurring discovery cycles, governed repository relationships, and the Digital Data Reclamation foundation.
 
 ## Validation
 
 - [Validate Ledger Schemas workflow](.github/workflows/validate-ledger-schemas.yml)
 - [Validate UAP Evidence Classes workflow](.github/workflows/validate-uap-evidence-classes.yml)
+- [Validate Digital Data Reclamation Foundation workflow](.github/workflows/validate-digital-data-reclamation.yml)
 - [Validation Status Note](release/validation-status-note.md)
 - [Final Activation Handoff](release/final-activation-handoff.md)
 - [Passed Activation Validation Receipt](validation_results/workflow-run-29719676248.passed.json)
