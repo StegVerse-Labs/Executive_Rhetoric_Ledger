@@ -106,6 +106,58 @@ Priority current lanes:
 - state, proxy, contractor, insider, and criminal-role separation;
 - corrections to earlier public attribution or impact claims.
 
+## 2026-09-09/10 Iran-linked U.S. critical-infrastructure evidence intake
+
+Threat Beat reported that APT IRAN claimed responsibility for disrupting AT&T service in Houston, Dallas, Austin, and San Antonio and separately claimed penetration of an unnamed Texas water utility. AT&T publicly rejected the cyber attribution, stating that it had no evidence supporting the claim and that its assessment indicated attempted cable theft caused the outage. Threat Beat further reported that there were no public reports identifying a recent Texas water-system breach matching the actor's claim.
+
+The specific AT&T event therefore remains `SPECIFIC_ATTRIBUTION_UNRESOLVED` and must not be promoted into an Iranian cyberattack finding.
+
+The broader capability proposition is stronger. The reporting describes APT IRAN as closely linked to the IRGC-affiliated CyberAv3ngers, preserves repeated threats against U.S. water, telecommunications, energy, gas, and electricity infrastructure, and cites a CISA warning to critical-infrastructure organizations about ongoing Iranian-affiliated targeting of internet-connected operational technology, including programmable logic controllers. ERL therefore treats Iranian / Iran-linked targeting of U.S. critical infrastructure as a supported threat and capability class while preserving incident-level attribution ceilings.
+
+Source set for this intake:
+
+- https://threatbeat.com/attacks-and-incidents/iran-hackers-claim-texas-att-outage-vow-to-intensify-attacks-before-9-11/
+- https://threatbeat.com/attacks-and-incidents/iran-hackers-after-denial-of-texas-att-claim-idiots-dont-even-know-what-we-tampered-with/
+- https://www.reuters.com/world/middle-east/iran-urges-us-comply-with-interim-deal-after-trump-threatens-further-strikes-2026-09-01/
+- https://www.reuters.com/world/middle-east/us-military-says-it-completed-latest-wave-strikes-iran-2026-09-02/
+- https://www.reuters.com/world/trumps-iran-campaign-echoes-post-911-forever-wars-2026-09-10/
+
+### Public-warning and administration-transparency question
+
+The available evidence does not support saying that the administration provided no warning at all: CISA had issued a broad public warning concerning Iranian-affiliated OT targeting. The unresolved accountability question is narrower and more specific.
+
+The current reporting does not establish what specific attempted, suspected, or confirmed domestic infrastructure compromises federal authorities knew about, when they knew about them, what was communicated privately to affected operators, and what target-specific information was made public. That distinction matters because broad sector warning is not the same evidentiary state as disclosure of specific attempts or affected systems.
+
+This should be tracked as a transparency inquiry across four independent states:
+
+1. `GOVERNMENT_SPECIFIC_KNOWLEDGE`: what federal authorities actually knew about named attempts or compromises;
+2. `OPERATOR_WARNING`: what was privately communicated to telecom, water, energy, state, and local operators;
+3. `GENERAL_PUBLIC_WARNING`: broad advisories such as the CISA OT warning; and
+4. `TARGET_SPECIFIC_PUBLIC_DISCLOSURE`: whether named or localized attempts were publicly disclosed, and when.
+
+The current source set establishes state 3 and leaves states 1, 2, and 4 incomplete. It does not establish intentional concealment.
+
+### Escalating-war-posture context
+
+Reuters separately documented renewed U.S. strikes against IRGC targets on September 1, Iranian retaliation against U.S. assets, additional U.S. military operations and threats, and by September 10 described the conflict as a six-month campaign involving continuing military, naval, and economic pressure.
+
+That escalation does not prove Iranian responsibility for any subsequent domestic outage. It does create a legitimate ERL accountability question: when executive policy materially escalates confrontation with a state adversary assessed to possess cyber capability against U.S. critical infrastructure, what specific threat information should be disclosed to the public, states, local governments, and infrastructure operators, on what timetable, and with what attribution confidence?
+
+For this intake, the evidence states remain separate:
+
+- `OBSERVED_SERVICE_DISRUPTION`: AT&T interruption occurred;
+- `ADVERSARY_CLAIM`: APT IRAN claimed responsibility;
+- `OPERATOR_ASSESSMENT`: AT&T attributed the outage to attempted cable theft and rejected the cyber claim based on available evidence;
+- `GOVERNMENT_THREAT_WARNING`: broad Iranian-affiliated OT warning existed;
+- `CAPABILITY_CONTEXT`: Iranian / Iran-linked critical-infrastructure targeting is a supported threat class;
+- `SPECIFIC_ATTRIBUTION`: unresolved;
+- `PUBLIC_DISCLOSURE_POSTURE`: broad warning observed, target-specific knowledge/disclosure unresolved;
+- `EXECUTIVE_CONFLICT_POSTURE`: contemporaneous U.S.-Iran military escalation independently documented.
+
+No one state may be promoted into another without additional evidence.
+
+Required follow-up evidence includes first-party CISA/FBI/EPA notices, Texas state/local and operator incident material, later AT&T attribution updates, historical APT IRAN/CyberAv3ngers claim-confirmation comparisons, congressional or oversight records, and a dated chronology linking government threat knowledge, operator warning, public warning, target disclosure, and military escalation without inferring causation from temporal proximity alone.
+
 ## Source and custody policy
 
 Evidence should be physically separated into future namespaces for official records, technical analyses, judicial records, contemporaneous reporting, retrospective reporting, contested accounts, and derived comparisons. A secondary account may locate a primary object but may not inherit primary-source status.
