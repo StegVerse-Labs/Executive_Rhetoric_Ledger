@@ -145,7 +145,7 @@ The Automated Political Reality Compendium Standard defines recurring search, ad
 ## Machine-readable schemas
 
 - [Political Influence Tree JSON Schema](schemas/political-influence-tree.schema.json)
-- [Source Posture JSON Schema](standards/source-posture-schema.md)
+- [Source Posture JSON Schema](schemas/source-posture.schema.json)
 - [Producer Export JSON Schema](schemas/producer-export.schema.json)
 - [Validation Result JSON Schema](schemas/validation-result.schema.json)
 - [Primary Record Intake JSON Schema](schemas/primary-record-intake.schema.json)
