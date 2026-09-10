@@ -1,0 +1,23 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry_overlay.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "repository_authority": "ERL_MIRROR_HANDOFF.md",
+  "base_registry": "coordination/research-candidate-activation-registry.v1.json",
+  "groups": [
+    {
+      "group_id": "ERL-RC-META-AI-CHILD-DATA-ASSEMBLY-2026",
+      "title": "Meta AI child-data assembly and derived-data privacy",
+      "candidate_paths": [
+        "research-candidates/2026-09-09-meta-ai-child-data-assembly-privacy.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire the original LinkedIn source, first-party Meta deletion/retention and AI-data policies, and technical evidence that discriminates source retention from reposting, caching, indexing, embeddings, or other derived representations.",
+      "terminal_condition": "Primary-source custody, platform-policy reconstruction, mechanism discrimination, contradiction review, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    }
+  ]
+}

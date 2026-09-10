@@ -4,7 +4,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "coordination" / "research-candidate-activation-registry.v1.json"
+OVERLAY_GLOB = "research-candidate-activation-registry.overlay.*.json"
 EXPECTED_SCHEMA = "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry.v1"
+EXPECTED_OVERLAY_SCHEMA = "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry_overlay.v1"
 TERMINAL_STATES = {"PROMOTED", "SUPERSEDED", "MERGED", "CLOSED_WITH_REASON"}
 
 
@@ -16,7 +18,7 @@ def repo_candidate_paths() -> set[str]:
     paths = {
         p.relative_to(ROOT).as_posix()
         for p in (ROOT / "research-candidates").glob("*")
-        if p.is_file()
+        if p.is_file() and p.name.lower() != "readme.md"
     }
     paths.update(
         p.relative_to(ROOT).as_posix()
@@ -26,7 +28,7 @@ def repo_candidate_paths() -> set[str]:
     return paths
 
 
-def main() -> None:
+def load_groups() -> tuple[list[dict], int]:
     if not REGISTRY.exists():
         fail("research-candidate activation registry missing")
 
@@ -40,9 +42,31 @@ def main() -> None:
     if not data.get("umbrella_issue"):
         fail("umbrella durable issue missing")
 
-    groups = data.get("groups") or []
+    groups = list(data.get("groups") or [])
+    overlay_count = 0
+    for overlay_path in sorted((ROOT / "coordination").glob(OVERLAY_GLOB)):
+        overlay = json.loads(overlay_path.read_text())
+        if overlay.get("schema") != EXPECTED_OVERLAY_SCHEMA:
+            fail(f"{overlay_path.name}: unexpected overlay schema")
+        if overlay.get("repository") != "StegVerse-Labs/Executive_Rhetoric_Ledger":
+            fail(f"{overlay_path.name}: repository binding invalid")
+        if overlay.get("base_registry") != REGISTRY.relative_to(ROOT).as_posix():
+            fail(f"{overlay_path.name}: base registry binding invalid")
+        if overlay.get("repository_authority") != "ERL_MIRROR_HANDOFF.md":
+            fail(f"{overlay_path.name}: repository authority binding invalid")
+        overlay_groups = overlay.get("groups") or []
+        if not overlay_groups:
+            fail(f"{overlay_path.name}: groups missing")
+        groups.extend(overlay_groups)
+        overlay_count += 1
+
     if not groups:
         fail("registry must contain candidate groups")
+    return groups, overlay_count
+
+
+def main() -> None:
+    groups, overlay_count = load_groups()
 
     ids: set[str] = set()
     registered_paths: set[str] = set()
@@ -96,7 +120,8 @@ def main() -> None:
     active_count = sum(1 for group in groups if group.get("active") is True)
     print(
         f"PASS: {len(groups)} research-candidate groups; "
-        f"{len(discovered)} candidate files; {active_count} active groups"
+        f"{len(discovered)} candidate files; {active_count} active groups; "
+        f"{overlay_count} registry overlays"
     )
 
 
