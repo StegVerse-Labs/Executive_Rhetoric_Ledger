@@ -1,0 +1,21 @@
+{
+  "schema": "stegverse.derived-data-authority-receipt/v1",
+  "receipt_id": "DDA-SAMPLE-001",
+  "issued_at": "2026-09-09T21:30:00Z",
+  "subject_ref": "subject:sample",
+  "actor": "stegverse-governed-ai",
+  "requester": "subject:sample",
+  "source_object_refs": ["obj:email:1"],
+  "requested_derivation": "correlate public appearances to discover removal targets",
+  "purpose": "personal-data-reclamation",
+  "decision": "CONDITIONAL",
+  "authority_basis": "SUBJECT_CONSENT",
+  "constraints": {
+    "expires_at": "2026-09-10T21:30:00Z",
+    "redistribution_allowed": false,
+    "training_use_allowed": false,
+    "further_derivation_allowed": false
+  },
+  "governance_artifact_ref": "governance:sample:1",
+  "revocation_ref": null
+}
