@@ -100,6 +100,24 @@ The system should preserve fail-closed proof classes such as:
 
 No class may imply universal Internet erasure.
 
+## Observed industry baseline — Google Results about you
+
+A user-supplied current-iPhone capture of Google's `Results about you` surface on 2026-09-09 provides a useful bounded comparison point.
+
+The visible interface shows Google checking for search results associated with the user and maintaining a removal-request history with states such as `In progress` and `Approved`. Visible targets in the supplied capture include Whitepages, Anywho, USPhonebook, SearchPeopleFREE, and True People Search.
+
+This is useful capability, but the observed surface is materially narrower than the StegVerse reclamation model. It appears centered on Google Search discovery and removal-request handling for qualifying results. The screenshots do not establish that Google deletes the originating records from the named third-party services, reconstructs downstream propagation, revokes derived attributes, verifies model-training deletion, governs future correlation, or provides user-owned cross-provider custody of the full reclamation history.
+
+The StegVerse design therefore treats a search-engine removal workflow as one adapter class inside a broader reclamation system rather than as the whole system:
+
+`search-result discovery -> deindex/removal request -> search-surface verification`
+
+is only one branch of:
+
+`personal-data inventory -> source discovery -> source-specific action -> downstream propagation analysis -> derived-data authority/revocation -> independent verification -> receipt custody -> recurrence monitoring`
+
+This comparison must remain evidence-bounded. The supplied screenshots prove only what is visible in that interface at that moment; they do not prove Google's complete internal capabilities or product limits.
+
 ## Expected effectiveness by source class
 
 The system should express effectiveness as evidence-backed source-specific posture rather than a single removal percentage.
