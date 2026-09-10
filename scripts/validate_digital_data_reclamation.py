@@ -88,6 +88,15 @@ def check_authority_fail_closed():
         raise SystemExit("NO_AUTHORITY + ALLOW was incorrectly accepted")
 
 
+def check_unverified_disclosure_fail_closed():
+    invalid = load(FIX / "invalid-unverified-primary-disclosure-edge.json")
+    try:
+        check_skap_disclosure_refs(invalid)
+    except SystemExit:
+        return
+    raise SystemExit("unverified disclosure edge was incorrectly accepted as PRIMARY")
+
+
 def main():
     inventory = validate("inventory", SAMPLES["inventory"])
     graph = validate("graph", SAMPLES["graph"])
@@ -96,6 +105,7 @@ def main():
     check_cross_refs(inventory, graph)
     check_skap_disclosure_refs(skap_disclosure)
     check_authority_fail_closed()
+    check_unverified_disclosure_fail_closed()
     print("Digital Data Reclamation foundation validation: PASS")
 
 
