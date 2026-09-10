@@ -93,10 +93,16 @@ The separate task `SS-ERL-KV-PROPAGATION-VERIFICATION-001` completed and was can
 - Publisher consumed the proof through `93a4743ceb5974689c1872c0e88dbb86de980f7e` and finalized its handoff at `0debdb0cf0e06f672a515e8b7fbf6d642521588e`.
 - Admissibility Wiki and the correctly located `StegVerse-002/stegguardian-wiki` were inspected and received evidence-backed `NOT_APPLICABLE` dispositions because neither has an ERL/KV consumer path.
 
+## 2026-09-09 privacy / derived-data intake
+
+A new ERL research candidate was added at `research-candidates/2026-09-09-meta-ai-child-data-assembly-privacy.md` as `ERL-2026-09-09-META-AI-CHILD-DATA-ASSEMBLY-001`. The intake is bounded to user-supplied LinkedIn screenshots and the supplied short link; the short link was not independently fetchable in the current public-web retrieval path. The candidate therefore preserves the visible privacy/AI correlation claims without promoting them into findings about Meta's internal retention mechanism or legal liability.
+
+The candidate formalizes a StegVerse-relevant distinction between source-object custody and `Derived Data Authority`: technical possession/readability of multiple objects does not itself authorize correlation, inference, or propagation. It also identifies custody, access, correlation, derivation, and propagation as separable digital-data rights relevant to KnowledgeVault and governed AI access.
+
 ## Remaining work
 
-None for the ERL-to-MyKV storage integration or its bounded propagation verification. Authentic current-iPhone StegSocials standard-flow evidence remains under the parent task and is not part of this storage integration.
+None for the ERL-to-MyKV storage integration or its bounded propagation verification. Authentic current-iPhone StegSocials standard-flow evidence remains under the parent task and is not part of this storage integration. The new privacy candidate remains a research candidate pending original-source capture, first-party platform documentation, and evidence that discriminates among retention, reposting, caching, indexing, embeddings, or other derived representations.
 
 ## Current state
 
-ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE
+ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / PRIVACY_DERIVED_DATA_RESEARCH_CANDIDATE_ADDED
