@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/derived-data-authority-receipt.schema.json",
+  "title": "StegVerse Derived Data Authority Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "receipt_id", "issued_at", "subject_ref", "actor", "requester", "source_object_refs", "requested_derivation", "purpose", "decision", "authority_basis", "constraints"],
+  "properties": {
+    "schema": {"const": "stegverse.derived-data-authority-receipt/v1"},
+    "receipt_id": {"type": "string", "minLength": 3},
+    "issued_at": {"type": "string", "format": "date-time"},
+    "subject_ref": {"type": "string", "minLength": 1},
+    "actor": {"type": "string", "minLength": 1},
+    "requester": {"type": "string", "minLength": 1},
+    "source_object_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "requested_derivation": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string", "minLength": 1},
+    "decision": {"type": "string", "enum": ["ALLOW", "DENY", "CONDITIONAL"]},
+    "authority_basis": {"type": "string", "enum": ["SUBJECT_CONSENT", "GUARDIAN_AUTHORITY", "CONTRACT", "LEGAL_REQUIREMENT", "GOVERNANCE_POLICY", "NO_AUTHORITY"]},
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expires_at", "redistribution_allowed", "training_use_allowed", "further_derivation_allowed"],
+      "properties": {
+        "expires_at": {"type": ["string", "null"], "format": "date-time"},
+        "redistribution_allowed": {"type": "boolean"},
+        "training_use_allowed": {"type": "boolean"},
+        "further_derivation_allowed": {"type": "boolean"}
+      }
+    },
+    "governance_artifact_ref": {"type": ["string", "null"]},
+    "revocation_ref": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"authority_basis": {"const": "NO_AUTHORITY"}}, "required": ["authority_basis"]},
+      "then": {"properties": {"decision": {"const": "DENY"}}}
+    }
+  ]
+}
