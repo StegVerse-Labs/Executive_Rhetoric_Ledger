@@ -1,0 +1,33 @@
+{
+  "schema": "stegverse.reclamation.kv-provider-operation-receipt/v1",
+  "task_id": "SS-DATA-RECLAMATION-KV-CUSTODY-001",
+  "target_set_id": "DDR-SKAP-GRAPH-001:targets",
+  "subject_ref": "subject:example-user",
+  "kv_lane": "02_Research/Data_Reclamation/Subjects",
+  "subject_key": "a775443b596d2e36671aed65",
+  "target_set_key": "ac83f5a1bcf1c7954eff039b",
+  "provider": "GOOGLE_DRIVE",
+  "provider_root_id": "1c8OdhJeLD6E4ALmi-aR7dXvG8PjDLSfi",
+  "provider_research_folder_id": "19h26O3YrJSpkc4MCSjwpxT9W61u_YxEj",
+  "provider_reclamation_folder_id": "19EbuZJZkPEpxZCQaQd4JkMIVsBjykGKt",
+  "provider_subjects_folder_id": "1cDIchsVoxfVDQ-_BPAjyUDrY9l3EzGDl",
+  "provider_subject_folder_id": "1biTpI_0aRzsCs5HBGZQV5bbs4iJwOtkX",
+  "provider_target_folder_id": "1Wb4XugrDQeIdRNciIfsYnme2NyVmATx7",
+  "provider_resource_id": "1hEupmHWhc3l0r-pxhIM_m2RTWZuTAFSB",
+  "provider_parent_id": "1Wb4XugrDQeIdRNciIfsYnme2NyVmATx7",
+  "provider_mime_type": "text/plain",
+  "provider_title": "target-set.json",
+  "sha256": "6dceb82a933be3668fe7ac6e38695bad889ef95add2cf57ca27d1bdd256957cd",
+  "size_bytes": 1810,
+  "exact_provider_readback": true,
+  "proof_class": "PROVIDER_OPERATION_EXACT_READBACK",
+  "native_writer_executed": false,
+  "provider_deletion_success": false,
+  "credential_material_present": false,
+  "observed_at": "2026-09-10T11:53:24.779Z",
+  "evidence_refs": [
+    "google-drive:file:1hEupmHWhc3l0r-pxhIM_m2RTWZuTAFSB",
+    "google-drive:folder:1Wb4XugrDQeIdRNciIfsYnme2NyVmATx7",
+    "fixtures/digital-data-reclamation/reclamation-target-set.sample.json"
+  ]
+}

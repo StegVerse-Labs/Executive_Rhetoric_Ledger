@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+import importlib.util
 import json
+import tempfile
 from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 from build_reclamation_target_set import build as build_target_set
@@ -118,6 +120,46 @@ def check_target_reconciliation(skap_disclosure):
             raise SystemExit("unverified target was incorrectly promoted to ELIGIBLE")
 
 
+def check_kv_custody():
+    module_path = ROOT / "adapters" / "kv" / "reclamation_target_set_writer.py"
+    spec = importlib.util.spec_from_file_location("reclamation_target_set_writer", module_path)
+    if spec is None or spec.loader is None:
+        raise SystemExit("cannot load reclamation target-set KV writer")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    target_set = load(SAMPLES["target_set"])
+
+    with tempfile.TemporaryDirectory() as temp:
+        kv_root = Path(temp)
+        write_receipt = module.write_target_set(
+            kv_root=kv_root,
+            target_set=target_set,
+            kv_instance_id="validator-kv",
+        )
+        if write_receipt["result"] != "WRITTEN" or write_receipt["provider_deletion_success"] is not False:
+            raise SystemExit("reclamation KV write receipt semantics invalid")
+        readback = module.readback_target_set(kv_root=kv_root, write_receipt=write_receipt)
+        if not readback["exact_byte_match"] or readback["sha256"] != write_receipt["sha256"]:
+            raise SystemExit("reclamation KV exact-byte readback failed")
+
+        retry = module.write_target_set(
+            kv_root=kv_root,
+            target_set=target_set,
+            kv_instance_id="validator-kv",
+        )
+        if retry["result"] != "NOOP" or retry["sha256"] != write_receipt["sha256"]:
+            raise SystemExit("reclamation KV idempotent retry failed")
+
+        cross_subject = dict(write_receipt)
+        cross_subject["subject_ref"] = "subject:different-user"
+        try:
+            module.readback_target_set(kv_root=kv_root, write_receipt=cross_subject)
+        except module.ReclamationKVError:
+            pass
+        else:
+            raise SystemExit("cross-subject reclamation KV readback was incorrectly accepted")
+
+
 def main():
     inventory = validate("inventory", SAMPLES["inventory"])
     graph = validate("graph", SAMPLES["graph"])
@@ -128,7 +170,8 @@ def main():
     check_authority_fail_closed()
     check_unverified_disclosure_fail_closed()
     check_target_reconciliation(skap_disclosure)
-    print("Digital Data Reclamation foundation validation: PASS")
+    check_kv_custody()
+    print("Digital Data Reclamation foundation + KV custody validation: PASS")
 
 
 if __name__ == "__main__":

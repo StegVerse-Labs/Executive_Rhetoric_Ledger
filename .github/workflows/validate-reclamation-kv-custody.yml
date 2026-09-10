@@ -1,0 +1,31 @@
+name: Validate reclamation KV custody
+
+on:
+  pull_request:
+    paths:
+      - 'adapters/kv/reclamation_target_set_writer.py'
+      - 'scripts/test_reclamation_kv_custody.py'
+      - 'scripts/test_reclamation_kv_provider_operation_receipt.py'
+      - 'schemas/reclamation-kv-provider-operation-receipt.schema.json'
+      - 'evidence/reclamation-kv/**'
+      - 'fixtures/digital-data-reclamation/reclamation-target-set.sample.json'
+      - '.github/workflows/validate-reclamation-kv-custody.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install validator dependency
+        run: python -m pip install jsonschema
+      - name: Run reclamation KV custody tests
+        run: python scripts/test_reclamation_kv_custody.py
+      - name: Validate authentic provider operation receipt
+        run: python scripts/test_reclamation_kv_provider_operation_receipt.py
