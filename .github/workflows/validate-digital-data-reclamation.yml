@@ -1,0 +1,39 @@
+name: Validate Digital Data Reclamation Foundation
+
+on:
+  pull_request:
+    paths:
+      - 'schemas/personal-data-inventory.schema.json'
+      - 'schemas/data-propagation-graph.schema.json'
+      - 'schemas/derived-data-authority-receipt.schema.json'
+      - 'fixtures/digital-data-reclamation/**'
+      - 'scripts/validate_digital_data_reclamation.py'
+      - 'docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY**'
+      - '.github/workflows/validate-digital-data-reclamation.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'schemas/personal-data-inventory.schema.json'
+      - 'schemas/data-propagation-graph.schema.json'
+      - 'schemas/derived-data-authority-receipt.schema.json'
+      - 'fixtures/digital-data-reclamation/**'
+      - 'scripts/validate_digital_data_reclamation.py'
+      - 'docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY**'
+      - '.github/workflows/validate-digital-data-reclamation.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install validator
+        run: python -m pip install --upgrade jsonschema referencing
+      - name: Validate Digital Data Reclamation foundation
+        run: python scripts/validate_digital_data_reclamation.py
