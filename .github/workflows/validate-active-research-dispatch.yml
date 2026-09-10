@@ -1,0 +1,64 @@
+name: Validate Active Research MyKV Dispatch
+
+on:
+  pull_request:
+    paths:
+      - "coordination/research-candidate-activation-registry.v1.json"
+      - "coordination/research-candidate-activation-registry.overlay.*.json"
+      - "config/*queue*.json"
+      - "config/*research-lane*.json"
+      - "scripts/generate_active_research_dispatch.py"
+      - "tests/test_active_research_dispatch.py"
+      - "docs/ACTIVE_RESEARCH_MYKV_COORDINATION.md"
+      - ".github/workflows/validate-active-research-dispatch.yml"
+  push:
+    branches: [main]
+    paths:
+      - "coordination/research-candidate-activation-registry.v1.json"
+      - "coordination/research-candidate-activation-registry.overlay.*.json"
+      - "config/*queue*.json"
+      - "config/*research-lane*.json"
+      - "scripts/generate_active_research_dispatch.py"
+      - "tests/test_active_research_dispatch.py"
+      - "docs/ACTIVE_RESEARCH_MYKV_COORDINATION.md"
+      - ".github/workflows/validate-active-research-dispatch.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install pytest
+      - name: Run dispatcher regression tests
+        run: python -m pytest -q tests/test_active_research_dispatch.py
+      - name: Generate dispatch from live registry state
+        run: |
+          python scripts/generate_active_research_dispatch.py \
+            --generated-at 2026-09-10T23:59:00Z \
+            --output /tmp/active-research-dispatch.json
+      - name: Enforce MyKV and non-authority boundaries
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/active-research-dispatch.json'))
+          assert p['mykv_coordination']['required_lane']=='02_Research/ERL'
+          assert p['mykv_coordination']['github_storage_satisfies_persistence'] is False
+          assert p['mykv_coordination']['exact_byte_readback_required'] is True
+          active={x['group_id']:x for x in p['lanes']}
+          cyber=active['ERL-RC-CYBER-SABOTAGE-LINEAGE-2026']
+          assert cyber['dispatch_state']=='ELIGIBLE_FOR_AUTOMATED_ACQUISITION'
+          assert cyber['mykv']['required'] is True
+          assert cyber['finding_authorized'] is False
+          assert cyber['publication_authorized'] is False
+          assert sum(len(q['executable_items']) for q in cyber['queues']) >= 1
+          print({'status':'PASS','active_lanes':len(active),'cyber_dispatch':cyber['dispatch_state']})
+          PY
