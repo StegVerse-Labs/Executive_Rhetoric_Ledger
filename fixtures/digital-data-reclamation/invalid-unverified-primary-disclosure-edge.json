@@ -1,0 +1,12 @@
+{
+  "schema": "stegverse.skap-account-disclosure-graph/v1",
+  "graph_id": "DDR-SKAP-GRAPH-INVALID-001",
+  "subject_ref": "subject:example-user",
+  "updated_at": "2026-09-10T03:28:00Z",
+  "accounts": [{"skap_account_ref": "skap:account:example-social", "provider_org_ref": "org:example-social", "account_class": "social", "status": "ACTIVE"}],
+  "organizations": [
+    {"org_ref": "org:example-social", "name": "Example Social Provider", "role": "ACCOUNT_PROVIDER"},
+    {"org_ref": "org:unknown-recipient", "name": "Unknown Recipient", "role": "OTHER"}
+  ],
+  "disclosure_edges": [{"edge_id": "edge:unverified-primary", "from_org_ref": "org:example-social", "to_org_ref": "org:unknown-recipient", "skap_account_refs": ["skap:account:example-social"], "data_classes": ["identity"], "relationship": "UNKNOWN_TRANSFER", "purpose": null, "evidence_state": "INFERRED_UNVERIFIED", "evidence_refs": [], "last_verified_at": "2026-09-10T03:28:00Z", "reclamation_priority": "PRIMARY"}]
+}
