@@ -73,7 +73,11 @@ The second live artifact, `ERL-2026-09-08-NSA-AI-DISTILLATION`, completed the fu
 
 The bounded propagation verification is also complete. Site and Publisher now carry validated upstream-proof projections; Admissibility Wiki and the intentionally `StegVerse-002`-hosted Guardian wiki were inspected and recorded as not applicable because neither contains an ERL/KV consumer path. Canonical closure is retained under `SS-ERL-KV-PROPAGATION-VERIFICATION-001` at `StegVerse-Labs/.github@2d6e477c6ebed075c1610a979ace28e53560f284`.
 
-See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md).
+Active ERL research continuation is now bound to the canonical Universal InTr boundary model before durable MyKV admission. A public-source acquisition moving from `EXTERNAL_SYSTEM` into KV must prove the complete adjacent chain `EXTERNAL_SYSTEM -> STEGOS_ECOSYSTEM -> DEVICE_SYSTEM -> KV`, with one packet/operation identity, exact acquisition-envelope payload binding at every hop, prior-receipt hash continuity, verified boundaries, no secret plaintext, and no authority transfer. Intermediate hops are `FORWARDED`; the terminal KV hop is `RECEIVED`. A single syntactically valid hop cannot satisfy durable acquisition admission.
+
+The first live active-research provider observation for this continuation is the bounded CISA/Iran joint-fact-sheet capture under `ERL-ACTIVE-ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET`. Google Drive accepted the 1,015-byte text capture in the live ERL MyKV hierarchy, and an independent raw download reproduced SHA-256 `94470c58db24e544c3edfcd390cca395375a348879ec3c53451ba517ff917763`. This proves the live provider write/readback half only; authentic Universal InTr runtime receipts for the complete three-hop chain remain a separate proof requirement and may not be inferred from provider success.
+
+See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md) and [Active Research MyKV Dispatch Mirror Handoff](docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md).
 
 ## Digital data reclamation and sovereignty
 
