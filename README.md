@@ -75,6 +75,8 @@ The bounded propagation verification is also complete. Site and Publisher now ca
 
 Active ERL research continuation is now bound to the canonical Universal InTr boundary model before durable MyKV admission. A public-source acquisition moving from `EXTERNAL_SYSTEM` into KV must prove the complete adjacent chain `EXTERNAL_SYSTEM -> STEGOS_ECOSYSTEM -> DEVICE_SYSTEM -> KV`, with one packet/operation identity, exact acquisition-envelope payload binding at every hop, prior-receipt hash continuity, verified boundaries, no secret plaintext, and no authority transfer. Intermediate hops are `FORWARDED`; the terminal KV hop is `RECEIVED`. A single syntactically valid hop cannot satisfy durable acquisition admission.
 
+The reusable binding at `scripts/build_active_research_intr_binding.py` now derives the exact admitted acquisition envelope from the ACTIVE dispatch item, creates a deterministic canonical Universal InTr intent for the full external-to-KV path, and creates an event-ephemeral materialization request bound to the same packet and envelope hash. The binding is deliberately non-authorizing: it preserves TV/TVC credential authority, gives GitHub no runtime authority, mints no claim or fence, transfers no authority, and never fabricates hop receipts or claims transport execution. Authentic completion still requires the actual runtime to return all three chained receipts.
+
 The first live active-research provider observation for this continuation is the bounded CISA/Iran joint-fact-sheet capture under `ERL-ACTIVE-ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET`. Google Drive accepted the 1,015-byte text capture in the live ERL MyKV hierarchy, and an independent raw download reproduced SHA-256 `94470c58db24e544c3edfcd390cca395375a348879ec3c53451ba517ff917763`. This proves the live provider write/readback half only; authentic Universal InTr runtime receipts for the complete three-hop chain remain a separate proof requirement and may not be inferred from provider success.
 
 See [ERL KnowledgeVault Storage Mirror Handoff](docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md) and [Active Research MyKV Dispatch Mirror Handoff](docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md).
@@ -151,7 +153,7 @@ The Automated Political Reality Compendium Standard defines recurring search, ad
 ## Machine-readable schemas
 
 - [Political Influence Tree JSON Schema](schemas/political-influence-tree.schema.json)
-- [Source Posture JSON Schema](schemas/source-posture-schema.json)
+- [Source Posture JSON Schema](standards/source-posture-schema.md)
 - [Producer Export JSON Schema](schemas/producer-export.schema.json)
 - [Validation Result JSON Schema](schemas/validation-result.schema.json)
 - [Primary Record Intake JSON Schema](schemas/primary-record-intake.schema.json)
@@ -163,7 +165,7 @@ The Automated Political Reality Compendium Standard defines recurring search, ad
 - [Derived Data Authority Receipt JSON Schema](schemas/derived-data-authority-receipt.schema.json)
 - [SKAP Account Disclosure Graph JSON Schema](schemas/skap-account-disclosure-graph.schema.json)
 
-These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation receipts, evidence-intake queues, individualized events, recurring discovery cycles, governed repository relationships, and the Digital Data Reclamation foundation.
+These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation-result receipts, evidence-intake queues, individualized events, recurring discovery cycles, governed repository relationships, and the Digital Data Reclamation foundation.
 
 ## Validation
 
