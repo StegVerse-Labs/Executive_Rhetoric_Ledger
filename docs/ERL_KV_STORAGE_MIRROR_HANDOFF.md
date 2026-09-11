@@ -42,8 +42,10 @@ KV is storage, continuity, and user-custodied persistence. It does not replace E
 - `scripts/test_erl_kv_writer.py`
 - `scripts/generate_active_research_dispatch.py`
 - `scripts/consume_active_research_acquisition.py`
+- `scripts/build_active_research_intr_binding.py`
 - `tests/test_active_research_dispatch.py`
 - `tests/test_active_research_acquisition_consumer.py`
+- `tests/test_active_research_intr_binding.py`
 - `docs/ACTIVE_RESEARCH_MYKV_COORDINATION.md`
 - `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md`
 - `.github/workflows/validate-active-research-dispatch.yml`
@@ -85,7 +87,7 @@ Review against the canonical StegOS Universal InTr implementation exposed that #
     -> DEVICE_SYSTEM
     -> KV
 
-PR #156 repairs that boundary. The consumer now requires exactly three canonical `stegverse.intr.hop_receipt/v1` receipts with:
+PR #156 merged at `2e5d972895177484cabf07bacfcd51e098b90bc1` after exact-head validation. The consumer now requires exactly three canonical `stegverse.intr.hop_receipt/v1` receipts with:
 
 - one packet identity and one operation identity across all hops;
 - exact acquisition-envelope payload hash binding at every hop;
@@ -97,6 +99,10 @@ PR #156 repairs that boundary. The consumer now requires exactly three canonical
 - no authority transfer.
 
 Regression coverage rejects a single otherwise-valid hop, skipped boundary, broken prior-hash lineage, and attempted authority transfer.
+
+The current continuation branch `ss-evidence-comparison-erl-intr-binding` adds a reusable non-authorizing runtime binding. `scripts/build_active_research_intr_binding.py` derives the exact admitted acquisition envelope from the ACTIVE dispatch item, produces a deterministic canonical Universal InTr intent for the full external-to-KV path, and produces a deterministic event-ephemeral materialization request bound to the same packet and envelope hash. It never produces hop receipts and explicitly records that runtime transport has not yet executed.
+
+The binding preserves `TV/TVC` credential authority, sets GitHub runtime authority to `NONE`, mints no claim/fence, transfers no authority, and grants no execution authority. The validation workflow now couples binding tests with the acquisition-consumer tests so the exact envelope hash and three-hop contract cannot drift apart.
 
 ## Live active-research provider proof
 
@@ -115,23 +121,23 @@ This proves an authentic live provider write plus exact-byte provider readback f
 
 ## Current authentic runtime boundary
 
-The remaining runtime predicate is one real active-research acquisition whose exact acquisition envelope traverses the authentic Universal InTr chain `EXTERNAL_SYSTEM -> STEGOS_ECOSYSTEM -> DEVICE_SYSTEM -> KV`, producing the three chained canonical receipts required by PR #156 and then binding those receipts to the live MyKV/provider persistence result.
+The reusable runtime-binding request surface is now implemented on the continuation branch. The remaining runtime predicate is still one real active-research acquisition whose exact acquisition envelope traverses the authentic Universal InTr chain `EXTERNAL_SYSTEM -> STEGOS_ECOSYSTEM -> DEVICE_SYSTEM -> KV`, producing the three chained canonical receipts required by PR #156 and then binding those receipts to the live MyKV/provider persistence result.
 
-A repository fixture, GitHub workflow, locally constructed receipt, or provider write without authentic InTr traversal may validate code but cannot satisfy this runtime predicate.
+A repository fixture, GitHub workflow, locally constructed receipt, generated binding, or provider write without authentic InTr traversal may validate code but cannot satisfy this runtime predicate.
 
 ## Research posture
 
-The Iran-linked cyber-sabotage lineage remains a research candidate. The bounded CISA/FBI/DC3/NSA capture supports broad public warning/capability posture but does not itself establish a specific incident, attribution, concealment, or legal/political accountability finding. The unresolved question remains the specificity and timing of known attempted/suspected/confirmed compromises and public/private warning relative to escalation. The current capture carries no finding or publication authority. 
+The Iran-linked cyber-sabotage lineage remains a research candidate. The bounded CISA/FBI/DC3/NSA capture supports broad public warning/capability posture but does not itself establish a specific incident, attribution, concealment, or legal/political accountability finding. The unresolved question remains the specificity and timing of known attempted/suspected/confirmed compromises and public/private warning relative to escalation. The current capture carries no finding or publication authority.
 
 ## Remaining work
 
-1. Confirm PR #156 exact-head workflows after README and handoff reconciliation.
-2. Merge PR #156 if those workflows pass.
-3. Execute one authentic Universal InTr external-source-to-KV acquisition and preserve all three chained receipts.
-4. Bind the resulting terminal KV receipt to the real provider-write/readback proof rather than synthesizing transport evidence.
-5. Update this handoff and `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md` with the exact runtime receipt hashes and final proof class.
+1. Validate the reusable runtime-binding branch at exact head and merge only if applicable workflows pass.
+2. Submit the deterministic materialization request for the admitted CISA/Iran acquisition envelope to the authentic Universal InTr runtime owner.
+3. Preserve all three authentic chained receipts and verify them with the merged consumer.
+4. Bind the terminal KV receipt to the real provider-write/readback proof rather than synthesizing transport evidence.
+5. Update this handoff and `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md` with exact runtime receipt hashes and final proof class.
 6. Only after authentic runtime evidence exists, determine whether a new bounded propagation-verification task is applicable for this active-research runtime capability; do not reuse the retired storage-propagation task merely to reset coordination state.
 
 ## Current state
 
-`ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / ACTIVE_RESEARCH_DISPATCH_AND_CONSUMER_MERGED / LIVE_ACTIVE_RESEARCH_PROVIDER_WRITE_READBACK_VERIFIED / PR_156_FULL_INTR_CHAIN_REPAIR_PENDING_REVALIDATION / AUTHENTIC_FULL_INTR_RUNTIME_CHAIN_NOT_YET_OBSERVED`
+`ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / ACTIVE_RESEARCH_DISPATCH_AND_CONSUMER_MERGED / PR_156_FULL_INTR_CHAIN_ADMISSION_MERGED_AND_VALIDATED / LIVE_ACTIVE_RESEARCH_PROVIDER_WRITE_READBACK_VERIFIED / REUSABLE_INTR_RUNTIME_BINDING_IMPLEMENTED_ON_BRANCH / AUTHENTIC_FULL_INTR_RUNTIME_CHAIN_NOT_YET_OBSERVED`
