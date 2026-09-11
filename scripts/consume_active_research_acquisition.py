@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Consume one admitted ERL active-research acquisition into MyKV.
 
-This consumer is intentionally transport-neutral: source acquisition happens before this
-step, but durable completion is impossible unless a canonical InTr hop receipt binds the
-exact acquisition envelope and the existing ERL KV writer completes exact-byte readback.
+Durable completion requires the complete canonical Universal InTr path from
+EXTERNAL_SYSTEM to KV plus exact-byte MyKV readback. A single valid hop cannot
+satisfy admission.
 """
 from __future__ import annotations
 
@@ -13,13 +13,14 @@ import json
 import mimetypes
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Mapping, Sequence
 from urllib.parse import urlparse
 
 from adapters.kv.erl_kv_writer import write_bundle
 
 INTR_SCHEMA = "stegverse.intr.hop_receipt/v1"
 RESULT_SCHEMA = "stegverse.erl.active-research-acquisition-result/v1"
+INTR_PATH = ("EXTERNAL_SYSTEM", "STEGOS_ECOSYSTEM", "DEVICE_SYSTEM", "KV")
 
 
 def canonical_bytes(value: Any) -> bytes:
@@ -30,29 +31,48 @@ def digest(value: Any) -> str:
     return "sha256:" + hashlib.sha256(canonical_bytes(value)).hexdigest()
 
 
-def verify_intr_receipt(receipt: Mapping[str, Any], *, payload_hash: str) -> None:
+def verify_intr_receipt_chain(receipts: Sequence[Mapping[str, Any]], *, payload_hash: str) -> None:
     required = {
         "schema", "receipt_id", "packet_id", "hop_index", "direction", "from_role", "to_role",
         "operation_hash", "payload_hash", "prior_receipt_hash", "boundary_identity_ref",
         "boundary_verification", "transition_state", "secret_plaintext_present", "authority_transfer",
         "recorded_at", "receipt_hash",
     }
-    if set(receipt) != required:
-        raise ValueError("InTr hop receipt canonical field mismatch")
-    if receipt.get("schema") != INTR_SCHEMA:
-        raise ValueError("unexpected InTr hop receipt schema")
-    if receipt.get("direction") != "FORWARD" or not isinstance(receipt.get("hop_index"), int):
-        raise ValueError("InTr receipt must describe a forward hop")
-    if receipt.get("boundary_verification") != "VERIFIED" or receipt.get("transition_state") != "RECEIVED":
-        raise ValueError("InTr receipt must prove verified receipt at the consumer boundary")
-    if receipt.get("payload_hash") != payload_hash:
-        raise ValueError("InTr receipt does not bind the exact acquisition envelope")
-    if receipt.get("secret_plaintext_present") is not False or receipt.get("authority_transfer") is not False:
-        raise ValueError("InTr acquisition receipt may contain neither secret plaintext nor authority transfer")
-    body = dict(receipt)
-    claimed = body.pop("receipt_hash")
-    if claimed != digest(body):
-        raise ValueError("InTr receipt hash mismatch")
+    if len(receipts) != len(INTR_PATH) - 1:
+        raise ValueError("complete EXTERNAL_SYSTEM-to-KV InTr receipt chain is required")
+    prior = None
+    packet_id = None
+    operation_hash = None
+    for index, receipt in enumerate(receipts, start=1):
+        if set(receipt) != required:
+            raise ValueError("InTr hop receipt canonical field mismatch")
+        if receipt.get("schema") != INTR_SCHEMA:
+            raise ValueError("unexpected InTr hop receipt schema")
+        if receipt.get("direction") != "FORWARD" or receipt.get("hop_index") != index:
+            raise ValueError("InTr receipt chain hop order is invalid")
+        if receipt.get("from_role") != INTR_PATH[index - 1] or receipt.get("to_role") != INTR_PATH[index]:
+            raise ValueError("InTr receipt chain does not follow canonical EXTERNAL_SYSTEM-to-KV adjacency")
+        if receipt.get("payload_hash") != payload_hash:
+            raise ValueError("InTr receipt does not bind the exact acquisition envelope")
+        if receipt.get("prior_receipt_hash") != prior:
+            raise ValueError("InTr receipt prior-hash chain mismatch")
+        if receipt.get("boundary_verification") != "VERIFIED":
+            raise ValueError("InTr receipt boundary must be verified")
+        expected_state = "RECEIVED" if index == len(receipts) else "FORWARDED"
+        if receipt.get("transition_state") != expected_state:
+            raise ValueError("InTr receipt transition state does not match chain position")
+        if receipt.get("secret_plaintext_present") is not False or receipt.get("authority_transfer") is not False:
+            raise ValueError("InTr acquisition receipt may contain neither secret plaintext nor authority transfer")
+        if packet_id is None:
+            packet_id = receipt.get("packet_id")
+            operation_hash = receipt.get("operation_hash")
+        elif receipt.get("packet_id") != packet_id or receipt.get("operation_hash") != operation_hash:
+            raise ValueError("InTr receipt chain packet/operation binding mismatch")
+        body = dict(receipt)
+        claimed = body.pop("receipt_hash")
+        if claimed != digest(body):
+            raise ValueError("InTr receipt hash mismatch")
+        prior = claimed
 
 
 def find_item(dispatch: Mapping[str, Any], group_id: str, source_id: str) -> Mapping[str, Any]:
@@ -74,8 +94,9 @@ def find_item(dispatch: Mapping[str, Any], group_id: str, source_id: str) -> Map
     raise ValueError("dispatch item not found")
 
 
-def consume(*, dispatch: Mapping[str, Any], group_id: str, source_id: str, intr_receipt: Mapping[str, Any],
-            payload: Path, kv_root: Path, kv_instance_id: str, captured_at: str | None = None) -> dict[str, Any]:
+def consume(*, dispatch: Mapping[str, Any], group_id: str, source_id: str,
+            intr_receipts: Sequence[Mapping[str, Any]], payload: Path, kv_root: Path,
+            kv_instance_id: str, captured_at: str | None = None) -> dict[str, Any]:
     if dispatch.get("mykv_coordination", {}).get("github_storage_satisfies_persistence") is not False:
         raise ValueError("dispatch must explicitly reject GitHub storage as MyKV persistence")
     if dispatch.get("mykv_coordination", {}).get("exact_byte_readback_required") is not True:
@@ -100,7 +121,7 @@ def consume(*, dispatch: Mapping[str, Any], group_id: str, source_id: str, intr_
         "publication_authorized": False,
     }
     envelope_hash = digest(acquisition_envelope)
-    verify_intr_receipt(intr_receipt, payload_hash=envelope_hash)
+    verify_intr_receipt_chain(intr_receipts, payload_hash=envelope_hash)
 
     data = payload.read_bytes()
     raw_sha = hashlib.sha256(data).hexdigest()
@@ -114,13 +135,9 @@ def consume(*, dispatch: Mapping[str, Any], group_id: str, source_id: str, intr_
         "captured_at": timestamp,
         "source": {"title": source_id, "publisher": parsed.hostname or "unknown", "primary_url": url},
         "storage": {"lane": "02_Research/ERL", "kv_instance_id": kv_instance_id, "credential_material_present": False},
-        "objects": [{
-            "filename": filename,
-            "sha256": raw_sha,
-            "size_bytes": len(data),
-            "media_type": mimetypes.guess_type(filename)[0] or "application/octet-stream",
-            "role": "acquired-source",
-        }],
+        "objects": [{"filename": filename, "sha256": raw_sha, "size_bytes": len(data),
+                     "media_type": mimetypes.guess_type(filename)[0] or "application/octet-stream",
+                     "role": "acquired-source"}],
     }
     kv_receipt = write_bundle(kv_root=kv_root, manifest=manifest, payloads={filename: payload})
     if kv_receipt.get("readback_verified") is not True:
@@ -132,7 +149,8 @@ def consume(*, dispatch: Mapping[str, Any], group_id: str, source_id: str, intr_
         "source_id": source_id,
         "state": "KV_STORED_AND_READBACK_VERIFIED" if kv_receipt["result"] == "WRITTEN" else "KV_ALREADY_PRESENT_AND_HASH_MATCHED",
         "acquisition_envelope_sha256": envelope_hash,
-        "intr_receipt_hash": intr_receipt["receipt_hash"],
+        "intr_receipt_chain": [receipt["receipt_hash"] for receipt in intr_receipts],
+        "intr_terminal_receipt_hash": intr_receipts[-1]["receipt_hash"],
         "artifact_id": artifact_id,
         "source_sha256": raw_sha,
         "kv_write_receipt": kv_receipt,
@@ -146,7 +164,7 @@ def main() -> None:
     p.add_argument("--dispatch", type=Path, required=True)
     p.add_argument("--group-id", required=True)
     p.add_argument("--source-id", required=True)
-    p.add_argument("--intr-receipt", type=Path, required=True)
+    p.add_argument("--intr-receipts", type=Path, required=True)
     p.add_argument("--payload", type=Path, required=True)
     p.add_argument("--kv-root", type=Path, required=True)
     p.add_argument("--kv-instance-id", required=True)
@@ -155,7 +173,7 @@ def main() -> None:
     args = p.parse_args()
     result = consume(
         dispatch=json.loads(args.dispatch.read_text()), group_id=args.group_id, source_id=args.source_id,
-        intr_receipt=json.loads(args.intr_receipt.read_text()), payload=args.payload, kv_root=args.kv_root,
+        intr_receipts=json.loads(args.intr_receipts.read_text()), payload=args.payload, kv_root=args.kv_root,
         kv_instance_id=args.kv_instance_id, captured_at=args.captured_at,
     )
     rendered = json.dumps(result, indent=2, sort_keys=True) + "\n"
