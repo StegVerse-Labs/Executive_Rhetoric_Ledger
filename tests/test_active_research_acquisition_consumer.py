@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import hashlib
-import json
 from pathlib import Path
 
 import pytest
@@ -33,28 +32,6 @@ def make_dispatch():
     }
 
 
-def make_receipt(payload_hash: str):
-    body = {
-        "schema": "stegverse.intr.hop_receipt/v1",
-        "receipt_id": "receipt-1",
-        "packet_id": "packet-1",
-        "hop_index": 1,
-        "direction": "FORWARD",
-        "from_role": "ERL_DISPATCHER",
-        "to_role": "ERL_ACQUISITION_EXECUTOR",
-        "operation_hash": "sha256:" + "1" * 64,
-        "payload_hash": payload_hash,
-        "prior_receipt_hash": None,
-        "boundary_identity_ref": "erl-acquisition-executor:test",
-        "boundary_verification": "VERIFIED",
-        "transition_state": "RECEIVED",
-        "secret_plaintext_present": False,
-        "authority_transfer": False,
-        "recorded_at": "2026-09-10T20:00:00Z",
-    }
-    return {**body, "receipt_hash": digest(body)}
-
-
 def envelope_hash():
     return digest({
         "schema": "stegverse.erl.active-research-acquisition-envelope/v1",
@@ -67,22 +44,57 @@ def envelope_hash():
     })
 
 
-def test_consumes_admitted_payload_into_kv(tmp_path: Path):
+def make_chain(payload_hash: str):
+    roles = [
+        ("EXTERNAL_SYSTEM", "STEGOS_ECOSYSTEM"),
+        ("STEGOS_ECOSYSTEM", "DEVICE_SYSTEM"),
+        ("DEVICE_SYSTEM", "KV"),
+    ]
+    receipts = []
+    prior = None
+    for index, (from_role, to_role) in enumerate(roles, start=1):
+        body = {
+            "schema": "stegverse.intr.hop_receipt/v1",
+            "receipt_id": f"receipt-{index}",
+            "packet_id": "packet-1",
+            "hop_index": index,
+            "direction": "FORWARD",
+            "from_role": from_role,
+            "to_role": to_role,
+            "operation_hash": "sha256:" + "1" * 64,
+            "payload_hash": payload_hash,
+            "prior_receipt_hash": prior,
+            "boundary_identity_ref": f"boundary:test:{to_role.lower()}",
+            "boundary_verification": "VERIFIED",
+            "transition_state": "RECEIVED" if index == len(roles) else "FORWARDED",
+            "secret_plaintext_present": False,
+            "authority_transfer": False,
+            "recorded_at": "2026-09-10T20:00:00Z",
+        }
+        receipt = {**body, "receipt_hash": digest(body)}
+        receipts.append(receipt)
+        prior = receipt["receipt_hash"]
+    return receipts
+
+
+def test_consumes_complete_intr_chain_into_kv(tmp_path: Path):
     payload = tmp_path / "cern.html"
     payload.write_bytes(b"<html>cern</html>\n")
     kv = tmp_path / "kv"
     kv.mkdir()
+    chain = make_chain(envelope_hash())
     result = consume(
         dispatch=make_dispatch(),
         group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
         source_id="ERL-CYBER-WEB-HISTORY-CERN",
-        intr_receipt=make_receipt(envelope_hash()),
+        intr_receipts=chain,
         payload=payload,
         kv_root=kv,
         kv_instance_id="MYKV-TEST",
         captured_at="2026-09-10T20:00:00Z",
     )
     assert result["state"] == "KV_STORED_AND_READBACK_VERIFIED"
+    assert result["intr_terminal_receipt_hash"] == chain[-1]["receipt_hash"]
     assert result["finding_authorized"] is False
     assert result["publication_authorized"] is False
     stored = kv / "02_Research" / "ERL" / result["artifact_id"] / "cern.html"
@@ -90,22 +102,44 @@ def test_consumes_admitted_payload_into_kv(tmp_path: Path):
     assert result["source_sha256"] == hashlib.sha256(payload.read_bytes()).hexdigest()
 
 
-def test_rejects_receipt_not_bound_to_envelope(tmp_path: Path):
+def test_rejects_single_valid_hop(tmp_path: Path):
     payload = tmp_path / "cern.html"
     payload.write_bytes(b"x")
     kv = tmp_path / "kv"
     kv.mkdir()
-    with pytest.raises(ValueError, match="bind"):
+    with pytest.raises(ValueError, match="complete"):
         consume(
-            dispatch=make_dispatch(),
-            group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
-            source_id="ERL-CYBER-WEB-HISTORY-CERN",
-            intr_receipt=make_receipt("sha256:" + "0" * 64),
-            payload=payload,
-            kv_root=kv,
-            kv_instance_id="MYKV-TEST",
-            captured_at="2026-09-10T20:00:00Z",
-        )
+            dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+            source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=make_chain(envelope_hash())[:1],
+            payload=payload, kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")
+
+
+def test_rejects_skipped_boundary(tmp_path: Path):
+    payload = tmp_path / "cern.html"
+    payload.write_bytes(b"x")
+    kv = tmp_path / "kv"
+    kv.mkdir()
+    chain = make_chain(envelope_hash())
+    chain[1]["to_role"] = "KV"
+    body = dict(chain[1]); body.pop("receipt_hash"); chain[1]["receipt_hash"] = digest(body)
+    with pytest.raises(ValueError, match="adjacency"):
+        consume(dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+                source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=chain, payload=payload,
+                kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")
+
+
+def test_rejects_broken_prior_hash(tmp_path: Path):
+    payload = tmp_path / "cern.html"
+    payload.write_bytes(b"x")
+    kv = tmp_path / "kv"
+    kv.mkdir()
+    chain = make_chain(envelope_hash())
+    chain[2]["prior_receipt_hash"] = "sha256:" + "0" * 64
+    body = dict(chain[2]); body.pop("receipt_hash"); chain[2]["receipt_hash"] = digest(body)
+    with pytest.raises(ValueError, match="prior-hash"):
+        consume(dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+                source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=chain, payload=payload,
+                kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")
 
 
 def test_rejects_authority_transfer(tmp_path: Path):
@@ -113,19 +147,10 @@ def test_rejects_authority_transfer(tmp_path: Path):
     payload.write_bytes(b"x")
     kv = tmp_path / "kv"
     kv.mkdir()
-    receipt = make_receipt(envelope_hash())
-    receipt["authority_transfer"] = True
-    body = dict(receipt)
-    body.pop("receipt_hash")
-    receipt["receipt_hash"] = digest(body)
+    chain = make_chain(envelope_hash())
+    chain[1]["authority_transfer"] = True
+    body = dict(chain[1]); body.pop("receipt_hash"); chain[1]["receipt_hash"] = digest(body)
     with pytest.raises(ValueError, match="authority"):
-        consume(
-            dispatch=make_dispatch(),
-            group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
-            source_id="ERL-CYBER-WEB-HISTORY-CERN",
-            intr_receipt=receipt,
-            payload=payload,
-            kv_root=kv,
-            kv_instance_id="MYKV-TEST",
-            captured_at="2026-09-10T20:00:00Z",
-        )
+        consume(dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+                source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=chain, payload=payload,
+                kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")
