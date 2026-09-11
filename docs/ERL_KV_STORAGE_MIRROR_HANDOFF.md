@@ -13,7 +13,7 @@ COSV: 40000100100000
 
 ## Purpose
 
-Make KnowledgeVault the durable storage medium for ERL research and evidence artifacts as the ledger grows. ERL continues to define research, evidence, review, and assessment semantics; KV persists the resulting artifacts under the canonical 02_Research/ERL lane.
+Make KnowledgeVault the durable storage medium for ERL research and evidence artifacts as the ledger grows. ERL continues to define research, evidence, review, and assessment semantics; KV persists the resulting artifacts under the canonical `02_Research/ERL` lane.
 
 ## Storage contract
 
@@ -32,89 +32,106 @@ KV is storage, continuity, and user-custodied persistence. It does not replace E
 
 ## Installed repository surfaces
 
-- schemas/erl-kv-artifact.schema.json
-- schemas/erl-kv-write-receipt.schema.json
-- schemas/erl-kv-provider-write-observation.schema.json
-- schemas/erl-kv-provider-operation-receipt.schema.json
-- adapters/kv/erl_kv_writer.py
-- scripts/validate_erl_kv_storage.py
-- scripts/validate_erl_kv_provider_operation.py
-- scripts/test_erl_kv_writer.py
-- fixtures/erl-kv/sample-manifest.json
-- fixtures/erl-kv/sample-write-receipt.json
-- fixtures/erl-kv/sample-provider-write-observation.json
-- fixtures/erl-kv/invalid-provider-observation-overclaims.json
-- fixtures/erl-kv/invalid-provider-operation-overclaims.json
-- evidence/kv-provider-operations/2026-09-09-google-drive-nsa-distillation.*.json
-- fixtures/erl-kv/source.txt
-- docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md
-- .github/workflows/validate-ledger-schemas.yml
-- README.md
+- `schemas/erl-kv-artifact.schema.json`
+- `schemas/erl-kv-write-receipt.schema.json`
+- `schemas/erl-kv-provider-write-observation.schema.json`
+- `schemas/erl-kv-provider-operation-receipt.schema.json`
+- `adapters/kv/erl_kv_writer.py`
+- `scripts/validate_erl_kv_storage.py`
+- `scripts/validate_erl_kv_provider_operation.py`
+- `scripts/test_erl_kv_writer.py`
+- `scripts/generate_active_research_dispatch.py`
+- `scripts/consume_active_research_acquisition.py`
+- `tests/test_active_research_dispatch.py`
+- `tests/test_active_research_acquisition_consumer.py`
+- `docs/ACTIVE_RESEARCH_MYKV_COORDINATION.md`
+- `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md`
+- `.github/workflows/validate-active-research-dispatch.yml`
+- `.github/workflows/validate-active-research-acquisition-consumer.yml`
+- `README.md`
 
-## Implemented behavior
+## Implemented storage behavior
 
 - requires explicit existing mounted KV root;
-- fixes the ERL destination to 02_Research/ERL;
+- fixes the ERL destination to `02_Research/ERL`;
 - verifies artifact ID, object filenames, media metadata, byte size, and SHA-256;
 - rejects traversal, symlink payloads, missing objects, extra objects, hash mismatch, credential material, and conflicting overwrite;
 - allows identical idempotent re-entry as NOOP;
-- writes a canonical manifest.json after payloads;
+- writes a canonical `manifest.json` after payloads;
 - performs byte-for-byte readback;
 - returns an ERL KV write receipt without opening a provider session;
 - accepts a separate retained provider-operation receipt only when provider writes, manifest-last ordering, provider resource identities, native receipt binding, and independent provider byte readback are all proven.
 
-## Current proof boundary
+## Completed ERL-to-MyKV proof
 
-Deterministic local and hosted tests prove the schema and mounted-filesystem writer behavior.
+On 2026-09-09, the OpenAI "An Alien Mind" intake was organized in the live MyKV lane at `02_Research/ERL/ERL-2026-09-06-OPENAI-AN-ALIEN-MIND`. Google Drive metadata readback verified provider storage without overstating native writer execution; the observation remains `PROVIDER_METADATA_ONLY`.
 
-On 2026-09-09, the OpenAI "An Alien Mind" intake was organized in the live MyKV lane at `02_Research/ERL/ERL-2026-09-06-OPENAI-AN-ALIEN-MIND`. The folder contains the preserved PDF, plain-text capture, ERL research record, canonical `manifest.json`, and `provider-write-observation.json`.
+`ERL-2026-09-08-NSA-AI-DISTILLATION` then completed the native-materialization and live Google Drive path. Google Drive accepted the two validated Markdown payloads, canonical manifest last, native writer receipt, and retained provider-operation receipt. Independent downloads matched expected bytes and SHA-256 for all five files. Composite receipt hash: `bb74904fcd8169829c78bdc1c0d64905b33243c2c22852565c13e614abcd1fa8`.
 
-Google Drive metadata readback verified the destination folder, stable file IDs, filenames, media types, and byte sizes. The observation explicitly records `byte_for_byte_provider_readback_verified=false` and `adapter_execution_proven=false`; therefore it proves live provider storage and metadata readback without overstating execution of the mounted-filesystem adapter or completion of the canonical receipt proof.
+Master Records pinned the ERL KV schemas, custodied the authentic native/provider receipts, reproduced imports, and reconstructed the combined chain. `master-records/orchestration` PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169` after all nine workflows passed.
 
-The canonical writer receipt and provisional provider observation now have separate JSON Schemas. The provider-observation schema requires both byte-for-byte verification and adapter execution to remain false, preventing metadata-only evidence from being promoted into a canonical writer receipt.
+The separate propagation task `SS-ERL-KV-PROPAGATION-VERIFICATION-001` completed and retired. Site and Publisher consumed the proof; Admissibility Wiki and `StegVerse-002/stegguardian-wiki` were verified not applicable because they have no ERL/KV consumer path.
 
-Master Records now mirrors the two ERL KV schemas with immutable upstream commit and blob pins, imports qualifying receipts into append-only custody, and reconstructs their custody chain deterministically. `master-records/orchestration` PR #86 merged at `94fa52a61363494e248859181403c59d03b34980`; PR #87 then custodied the live OpenAI provider observation and merged at `cad9c97deb06e897a72c5fa56ba0ada28edc3e05`. All nine hosted workflows passed for both changes. The live observation remains classified `PROVIDER_METADATA_ONLY` with `native_writer_proof=false`; custody preserves the evidence without elevating its proof class.
+## Active research / MyKV continuation
 
-StegSocials now references the stable artifact ID, the exact-byte Level 1 evidence, and the Master Records provider-observation custody chain in its active evidence and ERL-assisted drafting handoffs. PR #22 merged at `a0b049730d16df8febafcb85cf5190974c19f15d` after both hosted workflows passed. These consumer references preserve the same non-promotion rule.
+PR #154 merged at `51ebf09e2412be858243e4925a8dd48f624cf467`, adding restartable ACTIVE research dispatch. The dispatcher retains non-automatable active lanes as explicit deferred states, discovers executable public HTTPS queue items, requires `02_Research/ERL` persistence and exact-byte readback, rejects GitHub storage as durable MyKV persistence, permits exact-byte source reuse without finding-state reuse, and carries no finding or publication authority.
 
-## Authentic provider-operation proof
+PR #155 merged at `e3c75c8671609f154b9e8742b873971f425e9205` after both exact-head workflows passed. It added the repository-side acquisition consumer, binding dispatched source identity to an InTr receipt and delegating create-only persistence/readback to the existing ERL KV writer.
 
-On 2026-09-09, `ERL-2026-09-08-NSA-AI-DISTILLATION` completed the native-materialization and live Google Drive path. The provider folder is `google-drive:folder:1esoETwRd5A2YgdVTMskCSgzTOpuRyIV5`. Google Drive accepted the two validated Markdown payloads, the canonical manifest last, the native writer receipt, and the retained provider-operation receipt. Independent provider downloads matched the expected bytes and SHA-256 values for all five files. The composite receipt hash is `bb74904fcd8169829c78bdc1c0d64905b33243c2c22852565c13e614abcd1fa8`.
+Review against the canonical StegOS Universal InTr implementation exposed that #155 accepted one valid hop even though external-source delivery into KV must traverse the complete adjacent boundary path:
 
-## Master Records completion
+    EXTERNAL_SYSTEM
+    -> STEGOS_ECOSYSTEM
+    -> DEVICE_SYSTEM
+    -> KV
 
-Master Records pinned the three ERL KV schemas at exact source commit/blob coordinates, custodied the native writer and provider-operation receipts, reproduced all three live imports, and reconstructed the combined chain. All nine workflows passed; PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169`.
+PR #156 repairs that boundary. The consumer now requires exactly three canonical `stegverse.intr.hop_receipt/v1` receipts with:
 
-## Propagation completion
+- one packet identity and one operation identity across all hops;
+- exact acquisition-envelope payload hash binding at every hop;
+- canonical adjacent `from_role`/`to_role` transitions with no skipped boundary;
+- prior-receipt hash continuity;
+- `FORWARDED` on intermediate hops and terminal `RECEIVED` at KV;
+- `boundary_verification=VERIFIED` at each hop;
+- no secret plaintext;
+- no authority transfer.
 
-The separate task `SS-ERL-KV-PROPAGATION-VERIFICATION-001` completed and was canonically retired by `StegVerse-Labs/.github@2d6e477c6ebed075c1610a979ace28e53560f284`.
+Regression coverage rejects a single otherwise-valid hop, skipped boundary, broken prior-hash lineage, and attempted authority transfer.
 
-- Site consumed the proof through `ca106480cd78a35fffa107e73a678219ca918bb1` and finalized its handoff at `3ac0a20ddf9895e724984e9b24dfa174537cc796`.
-- Publisher consumed the proof through `93a4743ceb5974689c1872c0e88dbb86de980f7e` and finalized its handoff at `0debdb0cf0e06f672a515e8b7fbf6d642521588e`.
-- Admissibility Wiki and the correctly located `StegVerse-002/stegguardian-wiki` were inspected and received evidence-backed `NOT_APPLICABLE` dispositions because neither has an ERL/KV consumer path.
+## Live active-research provider proof
 
-## 2026-09-09 privacy / derived-data intake
+The first live provider operation for this continuation uses a bounded capture from the CISA/FBI/DC3/NSA Iran-related joint fact sheet. The capture remains explicitly bounded to a public-web extraction rather than original PDF octets, and it carries `finding_authority: NONE` and `publication_authority: NONE`.
 
-A new ERL research candidate was added at `research-candidates/2026-09-09-meta-ai-child-data-assembly-privacy.md` as `ERL-2026-09-09-META-AI-CHILD-DATA-ASSEMBLY-001`. The intake is bounded to user-supplied LinkedIn screenshots and the supplied short link; the short link was not independently fetchable in the current public-web retrieval path. The candidate therefore preserves the visible privacy/AI correlation claims without promoting them into findings about Meta's internal retention mechanism or legal liability.
+Live MyKV provider destination:
 
-The candidate formalizes a StegVerse-relevant distinction between source-object custody and `Derived Data Authority`: technical possession/readability of multiple objects does not itself authorize correlation, inference, or propagation. It also identifies custody, access, correlation, derivation, and propagation as separable digital-data rights relevant to KnowledgeVault and governed AI access.
+- ERL parent folder: `google-drive:folder:147zp4--w_dnf_cOJzC0nKGZrWtwB2M6n`
+- artifact folder: `google-drive:folder:1osZ9dvIHmYI58t7PoopRVI6UbrPLxxIG`
+- capture file: `google-drive:file:1KKBS1drUFVh-czLpmg5koRgDs4YMf-gG`
+- filename: `ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET.capture.txt`
+- size: `1015` bytes
+- SHA-256 before upload and after independent raw provider download: `94470c58db24e544c3edfcd390cca395375a348879ec3c53451ba517ff917763`
 
-## 2026-09-10 Iran critical-infrastructure capability / warning-transparency intake
+This proves an authentic live provider write plus exact-byte provider readback for the active-research source capture. It does **not** prove that the source traversed Universal InTr. Provider success and InTr transport are separate proof classes.
 
-The existing registered research candidate `research-candidates/2026-network-cyberphysical-sabotage-lineage.md` (`ERL-CYBER-SABOTAGE-LINEAGE-001`) was extended with the September 9-10 Iran-linked U.S. critical-infrastructure evidence intake.
+## Current authentic runtime boundary
 
-The intake preserves the APT IRAN claims concerning AT&T and a Texas water utility without promoting the disputed AT&T claim into attribution. AT&T's public assessment remains separately preserved: the company said it had no evidence supporting APT IRAN's claim and attributed the outage to attempted cable theft.
+The remaining runtime predicate is one real active-research acquisition whose exact acquisition envelope traverses the authentic Universal InTr chain `EXTERNAL_SYSTEM -> STEGOS_ECOSYSTEM -> DEVICE_SYSTEM -> KV`, producing the three chained canonical receipts required by PR #156 and then binding those receipts to the live MyKV/provider persistence result.
 
-The candidate separately captures Iranian / Iran-linked critical-infrastructure capability and intent as a supported threat class, including the contemporaneous public CISA warning posture regarding Iranian-affiliated targeting of internet-connected operational technology. It therefore rejects the categorical proposition that the administration gave no warning at all.
+A repository fixture, GitHub workflow, locally constructed receipt, or provider write without authentic InTr traversal may validate code but cannot satisfy this runtime predicate.
 
-The unresolved accountability question is narrower: what specific attempted, suspected, or confirmed compromises were known to federal authorities; what was disclosed privately to operators; what was disclosed publicly; and how did the specificity and timing of those disclosures compare with the administration's escalating military posture toward Iran? Current sources establish the broad warning and the military escalation but do not establish intentional concealment of a known specific attack. The transparency issue remains an assessment candidate pending first-party incident notices, operator records, congressional/oversight material, and additional attribution evidence.
+## Research posture
 
-README.md was reviewed for this intake. Its existing repository purpose, research-candidate link, source-posture rules, contradiction-preservation rule, and governance policy already describe the admission semantics applied here; no root README wording change was required.
+The Iran-linked cyber-sabotage lineage remains a research candidate. The bounded CISA/FBI/DC3/NSA capture supports broad public warning/capability posture but does not itself establish a specific incident, attribution, concealment, or legal/political accountability finding. The unresolved question remains the specificity and timing of known attempted/suspected/confirmed compromises and public/private warning relative to escalation. The current capture carries no finding or publication authority. 
 
 ## Remaining work
 
-None for the ERL-to-MyKV storage integration or its bounded propagation verification. Authentic current-iPhone StegSocials standard-flow evidence remains under the parent task and is not part of this storage integration. The privacy candidate remains a research candidate pending original-source capture and first-party platform documentation. The cyber-sabotage lineage remains active under its existing registry group and now includes the Iran capability/transparency evidence; remaining work is first-party federal/state/operator incident evidence, historical claim-confirmation comparison, and evidence sufficient to assess specific-target warning and disclosure timing.
+1. Confirm PR #156 exact-head workflows after README and handoff reconciliation.
+2. Merge PR #156 if those workflows pass.
+3. Execute one authentic Universal InTr external-source-to-KV acquisition and preserve all three chained receipts.
+4. Bind the resulting terminal KV receipt to the real provider-write/readback proof rather than synthesizing transport evidence.
+5. Update this handoff and `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md` with the exact runtime receipt hashes and final proof class.
+6. Only after authentic runtime evidence exists, determine whether a new bounded propagation-verification task is applicable for this active-research runtime capability; do not reuse the retired storage-propagation task merely to reset coordination state.
 
 ## Current state
 
-ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / PRIVACY_DERIVED_DATA_RESEARCH_CANDIDATE_ADDED / IRAN_CRITICAL_INFRASTRUCTURE_EVIDENCE_ADDED_TO_REGISTERED_CYBER_SABOTAGE_LINEAGE
+`ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / ACTIVE_RESEARCH_DISPATCH_AND_CONSUMER_MERGED / LIVE_ACTIVE_RESEARCH_PROVIDER_WRITE_READBACK_VERIFIED / PR_156_FULL_INTR_CHAIN_REPAIR_PENDING_REVALIDATION / AUTHENTIC_FULL_INTR_RUNTIME_CHAIN_NOT_YET_OBSERVED`
