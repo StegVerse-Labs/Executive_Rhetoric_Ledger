@@ -14,34 +14,49 @@ COSV: `40000100100000`
 
 Make ACTIVE ERL research lanes restartable when acquisition is machine-capable, while making MyKV the durable coordination substrate for acquired sources, provenance, derived research artifacts, and execution receipts.
 
-## Dispatcher completion
+## Merged dispatcher and consumer
 
-PR #154 merged at `51ebf09e2412be858243e4925a8dd48f624cf467` after both hosted checks passed on head `d21d48442f9c61456e0d73c7155e9de85084e963`.
+PR #154 merged at `51ebf09e2412be858243e4925a8dd48f624cf467` after both hosted checks passed. It installs the ACTIVE research dispatcher and requires `02_Research/ERL` persistence, exact-byte readback, and no finding/publication promotion.
 
-The merged dispatcher:
+PR #155 merged at `e3c75c8671609f154b9e8742b873971f425e9205` after `Validate Active Research Acquisition Consumer` and `Validate Ledger Schemas` both passed at exact head `2eb89b57e26d64d6ef14fe4629684ce6a45b4128`. It installs the repository-side acquisition-to-ERL-KV consumer.
 
-- reads the canonical research-candidate activation registry plus overlays;
-- retains active groups even when no machine acquisition surface exists;
-- exposes executable HTTPS items in `READY`, `CONTINUING`, or `REFRESH` state;
-- requires MyKV persistence under `02_Research/ERL`;
-- rejects GitHub artifact storage as durable MyKV persistence;
-- requires exact-byte MyKV readback;
-- permits exact-byte source reuse across lanes without reusing finding state;
-- carries no finding or publication authority.
+## Live provider observation after PR #155
 
-## InTr-bound consumer continuation
+A bounded official CISA/FBI/DC3/NSA Iran-critical-infrastructure fact-sheet capture was materialized for the active cyber-sabotage lane. This is an extracted capture, explicitly **not** the original PDF octets.
 
-Branch `erl-active-research-intr-mykv-consumer-2026-09-10` adds the next bounded execution unit:
+Live MyKV target:
 
-- `scripts/consume_active_research_acquisition.py` consumes one dispatched acquisition only after a canonical `stegverse.intr.hop_receipt/v1` binds the exact acquisition envelope;
-- the consumer verifies HTTPS source identity against the dispatch allowlist;
-- verified transport receipt may not contain secret plaintext or transfer authority;
-- the consumer emits the existing `stegverse.erl.kv-artifact/v1` source-capture manifest;
-- it delegates create-only materialization and exact-byte readback to `adapters/kv/erl_kv_writer.py`;
-- durable completion becomes `KV_STORED_AND_READBACK_VERIFIED` or `KV_ALREADY_PRESENT_AND_HASH_MATCHED` only after writer readback succeeds;
-- finding and publication authority remain false;
-- regression tests reject an unbound InTr receipt and an attempted authority transfer;
-- `.github/workflows/validate-active-research-acquisition-consumer.yml` provides hosted validation without claiming GitHub is MyKV execution authority.
+- canonical ERL parent folder: `google-drive:folder:147zp4--w_dnf_cOJzC0nKGZrWtwB2M6n`;
+- new artifact folder: `google-drive:folder:1osZ9dvIHmYI58t7PoopRVI6UbrPLxxIG`;
+- source capture: `google-drive:file:1KKBS1drUFVh-czLpmg5koRgDs4YMf-gG`;
+- file name: `ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET.capture.txt`;
+- exact size: `1015` bytes;
+- pre-upload SHA-256: `94470c58db24e544c3edfcd390cca395375a348879ec3c53451ba517ff917763`;
+- independent raw provider download size: `1015` bytes;
+- independent raw provider download SHA-256: `94470c58db24e544c3edfcd390cca395375a348879ec3c53451ba517ff917763`.
+
+This proves a real MyKV provider write and exact-byte readback of the bounded capture. It does not by itself prove Universal InTr admission.
+
+## InTr full-chain gap discovered and repair in progress
+
+Review against canonical `StegVerse-Labs/StegOS/stegos/universal_intr_transport.py` found that PR #155 accepted one valid hop receipt. Canonical transport from an external acquisition source to KV is instead the adjacent path:
+
+`EXTERNAL_SYSTEM -> STEGOS_ECOSYSTEM -> DEVICE_SYSTEM -> KV`
+
+A single valid receipt must not satisfy the complete transport predicate.
+
+Branch `erl-active-research-intr-chain-2026-09-10` therefore changes the consumer to require exactly three chained receipts with:
+
+- canonical adjacent boundary roles in order;
+- one packet ID and operation hash across the chain;
+- exact acquisition-envelope payload hash at every hop;
+- prior-receipt hash continuity;
+- `FORWARDED` for intermediate hops and terminal `RECEIVED` at KV;
+- verified boundary identity at every hop;
+- no secret plaintext and no authority transfer;
+- terminal receipt hash retained separately from the full chain.
+
+Regression coverage now rejects a single valid hop, a skipped boundary, broken prior-hash lineage, and authority transfer.
 
 ## Restart rule
 
@@ -51,12 +66,12 @@ An ACTIVE lane is eligible for automated continuation when it has a machine-capa
 
 GitHub Actions may validate and transport dispatch/candidate state. They are not MyKV execution authority and GitHub-hosted artifacts do not satisfy durable ERL research persistence.
 
-The new consumer proves the repository-side admission-to-writer boundary deterministically. Authentic runtime completion still requires a real acquisition to traverse an actual Interlock/InTr admission surface and a real MyKV/provider target to return exact-byte storage/readback evidence.
+The live provider observation proves real MyKV byte persistence/readback. The remaining authentic runtime predicate is a complete Universal InTr receipt chain generated by the actual transport implementation for the exact admitted acquisition envelope and bound to the live provider operation. Canonical-library or fixture-generated receipts must remain classified separately from sovereign runtime observation.
 
 ## First test lane
 
-`ERL-RC-CYBER-SABOTAGE-LINEAGE-2026` using `config/network-cyberphysical-sabotage-source-queue.v1.json`.
+`ERL-RC-CYBER-SABOTAGE-LINEAGE-2026`.
 
 ## Current state
 
-DISPATCH_MERGED / INTR_BOUND_MYKV_CONSUMER_IMPLEMENTED_ON_BRANCH / HOSTED_VALIDATION_PENDING / AUTHENTIC_INTERLOCK_INTR_ACQUISITION_TO_MYKV_RECEIPT_NOT_YET_OBSERVED
+DISPATCH_MERGED / PR_155_CONSUMER_MERGED_AND_VALIDATED / LIVE_MYKV_PROVIDER_WRITE_AND_EXACT_READBACK_OBSERVED / SINGLE_HOP_ADMISSION_GAP_DISCOVERED / FULL_UNIVERSAL_INTR_CHAIN_REPAIR_IMPLEMENTED_ON_BRANCH / REPAIR_VALIDATION_AND_MERGE_PENDING / AUTHENTIC_FULL_INTR_CHAIN_BOUND_TO_LIVE_PROVIDER_OPERATION_PENDING
