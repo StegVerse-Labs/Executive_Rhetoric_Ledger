@@ -4,16 +4,24 @@ on:
   pull_request:
     paths:
       - "scripts/consume_active_research_acquisition.py"
+      - "scripts/build_active_research_intr_binding.py"
       - "tests/test_active_research_acquisition_consumer.py"
+      - "tests/test_active_research_intr_binding.py"
       - ".github/workflows/validate-active-research-acquisition-consumer.yml"
       - "docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md"
+      - "docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md"
+      - "README.md"
   push:
     branches: [main]
     paths:
       - "scripts/consume_active_research_acquisition.py"
+      - "scripts/build_active_research_intr_binding.py"
       - "tests/test_active_research_acquisition_consumer.py"
+      - "tests/test_active_research_intr_binding.py"
       - ".github/workflows/validate-active-research-acquisition-consumer.yml"
       - "docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md"
+      - "docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md"
+      - "README.md"
   workflow_dispatch:
 
 permissions:
@@ -30,5 +38,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install pytest
-      - name: Run acquisition consumer tests
-        run: python -m pytest -q tests/test_active_research_acquisition_consumer.py
+      - name: Run acquisition consumer and runtime-binding tests
+        run: >-
+          python -m pytest -q
+          tests/test_active_research_acquisition_consumer.py
+          tests/test_active_research_intr_binding.py
