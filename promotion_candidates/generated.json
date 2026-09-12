@@ -1,0 +1,72 @@
+{
+  "receipts": [
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-09-12/CAND-0A8D92AC31E576B8D8CC.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-71233D48F3376DBAB5EA",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-43CDF6302F6F85D93B31",
+      "subject_id": "CAND-0A8D92AC31E576B8D8CC"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-09-12/CAND-1152B6EFF359820A2394.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-EA37DE768FCB6873A5DD",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-0AB22F886D66DD547DDF",
+      "subject_id": "CAND-1152B6EFF359820A2394"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-09-12/CAND-736B9A9B0064338F9D73.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-036328516DF3363F08D9",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-D5AC359DC92EBBD1A966",
+      "subject_id": "CAND-736B9A9B0064338F9D73"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-09-12/CAND-B4FA98E576198BD3B772.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-3F8589A8ACE2C32DA7A9",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-7BE9B66075593ADEC342",
+      "subject_id": "CAND-B4FA98E576198BD3B772"
+    }
+  ]
+}
