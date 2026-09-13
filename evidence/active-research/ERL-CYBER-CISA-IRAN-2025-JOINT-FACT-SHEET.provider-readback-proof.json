@@ -1,0 +1,28 @@
+{
+  "schema": "stegverse.erl.active-research-provider-proof-projection/v1",
+  "state": "EXISTING_PROVIDER_WRITE_READBACK_OBSERVED",
+  "source_id": "ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET",
+  "source_url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-176a",
+  "required_storage_lane": "02_Research/ERL",
+  "provider": "GOOGLE_DRIVE",
+  "provider_parent_ref": "google-drive:folder:147zp4--w_dnf_cOJzC0nKGZrWtwB2M6n",
+  "provider_artifact_folder_ref": "google-drive:folder:1osZ9dvIHmYI58t7PoopRVI6UbrPLxxIG",
+  "provider_file_ref": "google-drive:file:1KKBS1drUFVh-czLpmg5koRgDs4YMf-gG",
+  "provider_filename": "ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET.capture.txt",
+  "exact_size_bytes": 1015,
+  "exact_sha256": "94470c58db24e544c3edfcd390cca395375a348879ec3c53451ba517ff917763",
+  "write_observed": true,
+  "independent_raw_readback_observed": true,
+  "exact_byte_readback_verified": true,
+  "proof_class": "PROVIDER_WRITE_PLUS_EXACT_BYTE_READBACK",
+  "universal_intr_traversal_proven_by_this_record": false,
+  "provider_operation_reexecution_authorized": false,
+  "projection_only": true,
+  "projection_creates_new_provider_evidence": false,
+  "canonical_documentation_refs": [
+    "docs/ERL_KV_STORAGE_MIRROR_HANDOFF.md",
+    "docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md",
+    "README.md"
+  ],
+  "authority_effect": "NONE_EVIDENCE_PROJECTION_ONLY"
+}
