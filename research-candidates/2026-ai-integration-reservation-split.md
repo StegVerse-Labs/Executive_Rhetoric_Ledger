@@ -7,7 +7,7 @@ candidate_id: "RC-2026-AI-INTEGRATION-RESERVATION-SPLIT"
 topic_name: "AI Integration Reservation Split Across Fact, Religion, Conviction, Trust, and Risk Tolerance"
 entry_status: "draft-research-candidate"
 created_date: "2026-06-17"
-last_reviewed: "2026-06-17"
+last_reviewed: "2026-09-14"
 reviewer: "StegVerse-Labs"
 related_entry: "trees/modern-topics/2026-ai-human-dignity-warning-language.md"
 related_standard: "standards/political-influence-tree-standard.md"
@@ -280,6 +280,61 @@ This research candidate converts that rhetorical marker into a measurable resear
 How many people hear AI warning language as fact, religion, conviction, distrust, risk management, dignity defense, or governance demand?
 ```
 
+## September 14, 2026 governance-and-safety rhetoric intake
+
+### Source posture
+
+- Reuters report: `Trump says US has tools to keep AI safe, concerns are part of 'sick conspiracy'`, published 2026-09-14.
+- Reuters URL: `https://www.reuters.com/world/trump-says-there-is-sick-conspiracy-against-ai-data-centers-2026-09-14/`
+- User-supplied distribution URL: `https://www.msn.com/en-us/news/news/content/ar-AA2ccqWy?ocid=sapphireappshare`
+- source class: secondary reporting of current political and industry rhetoric.
+- primary-source custody: pending; the underlying Trump social-media statement and complete source context are not yet preserved in this candidate.
+- finding authorized: false.
+- publication authorized from this intake alone: false.
+
+### Reported positions preserved as claims, not findings
+
+Reuters reports that President Donald Trump argued that existing United States criminal, regulatory, and executive tools are sufficient to hold AI companies accountable, characterized prominent AI-safety concern as a "sick conspiracy" against AI and data centers, and argued that such resistance benefits China.
+
+Reuters also reports a competing industry posture in which Anthropic CEO Dario Amodei advocated slowing frontier AI development to create additional safety-management time, with support reported from OpenAI CEO Sam Altman and xAI owner Elon Musk.
+
+These positions are recorded as reported rhetoric. Their underlying factual premises, adequacy claims, policy consequences, and motives are not established by this intake.
+
+### ERL discriminator introduced by this event
+
+This event exposes a distinct governance axis that should not be collapsed into a simple pro-AI versus anti-AI split:
+
+```text
+external governmental authority and after-the-fact enforcement
+versus
+runtime admission, human-control, reversibility, evidence, and reconstructability at the moment an AI-mediated consequence is permitted to bind
+```
+
+The candidate should therefore measure whether respondents distinguish among:
+
+- government ability to punish or regulate an AI company after harm;
+- company-authored model conduct rules;
+- human supervision or shutdown authority;
+- independent runtime governance before consequential execution;
+- machine-verifiable admissibility, provenance, receipts, and reconstruction;
+- slowing development as a safety mechanism;
+- continuing rapid development while strengthening execution-time controls.
+
+The existence of these alternatives does not establish that one is sufficient. It creates a testable comparison for institutional trust, authority-delegation tolerance, consequence sensitivity, reversibility requirements, and receipt requirements.
+
+### StegVerse-specific research relevance
+
+For StegVerse comparison work, the event is relevant to the architectural proposition that legal authority and runtime governance operate at different layers. That proposition remains a research/architecture comparison here, not an ERL political finding.
+
+A future controlled comparison should test whether public reservation changes when participants are separately told that:
+
+1. existing law can punish an AI company after misconduct;
+2. humans can correct or shut down the model;
+3. consequential state transitions require independent admissibility before execution; and
+4. the resulting decision and execution chain is reconstructable from evidence receipts.
+
+This intake should be joined with contemporary primary statements and policy documents before any longitudinal conclusion about executive, industry, or public AI-governance posture is authorized.
+
 ## Non-Claims
 
 This research candidate does not claim:
@@ -292,6 +347,10 @@ This research candidate does not claim:
 - that governance safeguards will satisfy all objections
 - that AI integration should proceed in every domain
 - that AI integration should be blocked in every domain
+- that existing United States law is sufficient to govern advanced AI
+- that slowing AI development is necessary or sufficient for safety
+- that runtime governance alone resolves AI risk
+- that the reported statements establish the speaker's motive
 
 ## Initial Done Criteria
 
@@ -313,3 +372,5 @@ This research candidate is minimally established when:
 - Add a coding schema for responses.
 - Add a machine-readable candidate manifest.
 - Add source receipts from current polling, survey literature, and public AI-attitude research.
+- Acquire and preserve the primary Trump statement underlying the 2026-09-14 Reuters report.
+- Acquire the contemporaneous Amodei, Altman, Musk, Microsoft, and relevant U.S. government primary materials needed to compare slowdown, human-control, enforcement, and runtime-governance positions.
