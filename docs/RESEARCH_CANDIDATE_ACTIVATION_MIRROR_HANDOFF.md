@@ -29,6 +29,8 @@ The original activation rollout contained 12 research groups representing 13 can
 
 The two Iran/Jordan candidate documents remain one continuing research group. The September 9 Meta AI child-data assembly/privacy candidate is registered through `coordination/research-candidate-activation-registry.overlay.2026-09.json` under Issue #63 ownership.
 
+The existing `ERL-RC-AI-RESERVATION-SPLIT-2026` group remains the canonical research-candidate owner for the AI-integration reservation split. On 2026-09-14, the candidate was advanced with a Reuters-reported Trump AI-safety/governance rhetoric event rather than creating a duplicate candidate group.
+
 ## Activation semantics
 
 `active=true` means an unresolved research frontier has a durable owner and a concrete next executable task. It does not mean a proposition is true, independently established, admissible for publication, or promoted to a final assessment.
@@ -80,11 +82,28 @@ On 2026-09-10, PR #152 exposed a new drift condition. The activation validator r
 
 The remediation installs an additive overlay contract, registers the Meta privacy candidate in `coordination/research-candidate-activation-registry.overlay.2026-09.json`, excludes `README.md` from candidate discovery, validates overlay repository/base-registry/authority bindings, enforces duplicate group/path detection across base plus overlays, and updates the workflow path filters so overlay changes always execute the activation validator.
 
+### 2026-09-14 AI safety/governance rhetoric intake
+
+- registry group: `ERL-RC-AI-RESERVATION-SPLIT-2026`
+- candidate: `research-candidates/2026-ai-integration-reservation-split.md`
+- durable owner: Issue `#63`
+- source: Reuters report published 2026-09-14 concerning President Donald Trump's position that existing U.S. tools are sufficient to hold AI companies accountable and his characterization of prominent AI-safety concern as a "sick conspiracy" against AI/data centers.
+- competing posture preserved: Reuters-reported calls by Anthropic CEO Dario Amodei to slow frontier development, with support reported from Sam Altman and Elon Musk.
+- ERL discriminator added: external governmental/after-the-fact enforcement versus human-control, runtime admission, reversibility, evidence, and reconstructability at consequential execution time.
+- primary-source custody: pending.
+- factual finding authorized: false.
+- motive finding authorized: false.
+- publication authorized from this intake alone: false.
+- candidate commit: `0b15dd520fd166e063b6640d6b3b536e8bbc52eb`.
+- next executable work: custody the underlying primary Trump statement and contemporaneous Amodei/Altman/Musk/Microsoft/U.S.-government primary materials, then compare the distinct safety/governance mechanisms without collapsing them into a binary pro-/anti-AI frame.
+
 ## Validation and completion
 
 The activation-control goal remains complete only when every extant candidate path is represented exactly once across the base registry plus validated overlays, all active groups remain durably owned with concrete next actions and terminal conditions, and the hosted validator succeeds on the current `main` state.
 
 The September 10 drift repair is not considered complete until its pull-request validation succeeds and the repair is merged.
+
+The September 14 intake modified an already registered candidate rather than creating a new candidate path, so no activation-registry addition is required. Hosted validation of the new commits must still be observed before claiming repository-wide validation.
 
 ## Release and propagation posture
 
