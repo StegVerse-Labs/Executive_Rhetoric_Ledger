@@ -1,0 +1,27 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry_overlay.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "base_registry": "coordination/research-candidate-activation-registry.v1.json",
+  "repository_authority": "ERL_MIRROR_HANDOFF.md",
+  "groups": [
+    {
+      "group_id": "ERL-RC-SPURLOCK-CPD-2024",
+      "title": "Trae Spurlock Casper PD entry and fatal-force reconstruction",
+      "candidate_paths": [
+        "research-candidates/2026-09-15-trae-spurlock-casper-pd-entry-and-force.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:160+task-state:ERL-SPURLOCK-CPD-ENTRY-001",
+      "artifact_paths": [
+        "task-state/ERL-SPURLOCK-CPD-ENTRY-001.json",
+        "docs/TRAE_SPURLOCK_CASPER_PD_MIRROR_HANDOFF.md"
+      ],
+      "owner_branch": "research/erl-spurlock-cpd-entry-001",
+      "next_executable_task": "Acquire 911/CAD/dispatch and complete pre-entry bodycam records first, then build a timestamped knowledge-state matrix for Kelch, the second witness, dispatch, Maples, Padilla, and LaPointe before threshold entry.",
+      "terminal_condition": "Primary-source custody, proposition-relative review, and independent validation support explicit promotion, supersession, merge, or closure with reason.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    }
+  ]
+}
