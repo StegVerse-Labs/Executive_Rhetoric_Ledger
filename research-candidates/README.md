@@ -11,3 +11,7 @@ Candidate activation is enforced by `scripts/validate_research_candidate_activat
 ## 2026-09-10
 
 - The Iran critical-infrastructure capability / warning-transparency intake was incorporated into the already-registered [`ERL-CYBER-SABOTAGE-LINEAGE-001`](2026-network-cyberphysical-sabotage-lineage.md) rather than creating a duplicate research-candidate group. Its evidentiary states preserve observed service disruption, adversary claim, operator assessment, government warning, capability context, specific-attribution uncertainty, disclosure posture, and executive conflict posture separately.
+
+## 2026-09-15
+
+- [`ERL-SPURLOCK-CPD-ENTRY-001`](2026-09-15-trae-spurlock-casper-pd-entry-and-force.md) — governed reconstruction of the June 6, 2024 Trae Spurlock / Casper Police Department encounter, with emphasis on pre-entry domestic-call safety assessment, Kelch/witness disclosures, occupancy/entry authority, stated belongings-retrieval rationale, rifle knowledge, arrest transition, Taser deployment, and seven-shot fatal-force sequence. Status: `research_candidate / NOT_ASSESSABLE_PENDING_PRIMARY_SOURCE_CUSTODY`; no deception, motive, suicidality, murder, justification, or liability finding is authorized. Canonical owner: Issue #160 and `docs/TRAE_SPURLOCK_CASPER_PD_MIRROR_HANDOFF.md`.
