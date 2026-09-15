@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "goal_task_id": "ERL-SPURLOCK-CPD-ENTRY-001",
+  "title": "Trae Spurlock / Casper PD pre-entry and fatal-force reconstruction",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "canonical_issue": 160,
+  "branch": "research/erl-spurlock-cpd-entry-001",
+  "handoff": "docs/TRAE_SPURLOCK_CASPER_PD_MIRROR_HANDOFF.md",
+  "research_candidate": "research-candidates/2026-09-15-trae-spurlock-casper-pd-entry-and-force.md",
+  "coordination_state": "ACTIVE",
+  "checkout_state": "CHECKED_OUT",
+  "finding_authorized": false,
+  "publication_authorized": false,
+  "motive_authorized": false,
+  "culpability_authorized": false,
+  "primary_source_state": "INCOMPLETE",
+  "assessment_state": "NOT_ASSESSABLE_PENDING_PRIMARY_SOURCE_CUSTODY",
+  "workstreams": [
+    {"id":"A","name":"pre-entry safety assessment","state":"ACTIVE","next":"Acquire 911, CAD/dispatch, and full pre-entry bodycam"},
+    {"id":"B","name":"entry authority and occupancy","state":"PENDING_PRIMARY_RECORDS","next":"Acquire occupancy/lease and exact consent/entry record"},
+    {"id":"C","name":"belongings retrieval rationale","state":"PENDING_PRIMARY_RECORDS","next":"Identify requested/retrieved property and Kelch movement timeline"},
+    {"id":"D","name":"domestic-call protocol compliance","state":"PENDING_POLICY_CUSTODY","next":"Acquire Casper PD and dispatch policies in force 2024-06-06"},
+    {"id":"E","name":"rifle knowledge and escalation","state":"ACTIVE","next":"Reconstruct who knew what about firearms before and after entry"},
+    {"id":"F","name":"Taser and fatal-force reconstruction","state":"PENDING_PRIMARY_RECORDS","next":"Synchronize all bodycams, Taser logs, scene geometry, ballistics and trajectories"}
+  ],
+  "required_evidence": [
+    "911 audio/transcript",
+    "CAD/dispatch log and radio audio",
+    "complete unedited bodycam files and metadata",
+    "Kelch and second-witness pre-entry statements",
+    "Casper PD 2024 domestic-violence/civil-standby/warrantless-entry/officer-safety/de-escalation/arrest/bodycam policies",
+    "dispatch call-taking protocol",
+    "Casper PD internal administrative review",
+    "Wyoming DCI investigative materials",
+    "Natrona County DA decision letter and supporting evidence",
+    "occupancy/lease evidence",
+    "public federal civil-case evidence and authenticated exhibits"
+  ],
+  "inference_ceilings": [
+    "NO_DECEPTION_FINDING_FROM_OMISSION_ALONE",
+    "NO_MOTIVE_FINDING_FROM_EMOTIONAL_REACTION_OR_SILENCE",
+    "NO_SUICIDALITY_FINDING_FROM_DEATH_BY_COP_REMARK_ALONE",
+    "NO_ENTRY_LAWFULNESS_FINDING_FROM_KEY_POSSESSION_ALONE",
+    "NO_RETROACTIVE_PRE_ENTRY_KNOWLEDGE_FROM_LATER_RIFLE_DISCOVERY",
+    "NO_MURDER_OR_JUSTIFIED_SHOOTING_FINDING_FROM_SECONDARY_SUMMARIES"
+  ],
+  "next_executable_task": "Acquire the earliest pre-entry primary records and build a timestamped knowledge-state matrix for Kelch, the second witness, dispatch, Maples, Padilla, and LaPointe before threshold entry.",
+  "terminal_condition": "Primary-source custody and proposition-relative review are sufficient for explicit governed findings, supersession, merge, or closure with reason."
+}
