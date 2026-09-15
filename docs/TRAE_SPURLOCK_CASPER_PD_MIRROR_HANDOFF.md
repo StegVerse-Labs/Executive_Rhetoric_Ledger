@@ -11,11 +11,24 @@ Repository-wide authority remains `ERL_MIRROR_HANDOFF.md`. Person/event evaluati
 - Goal Task ID: `ERL-SPURLOCK-CPD-ENTRY-001`
 - repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - canonical issue: `#160`
-- branch: `research/erl-spurlock-cpd-entry-001`
+- canonical Task Registry record: `StegVerse-Labs/.github/data/canonical-task-records/ERL-SPURLOCK-CPD-ENTRY-001.json`
 - coordination status: `ACTIVE`
+- checkout status: `CHECKED_OUT`
+- COSV task vector: `null` (not assigned; do not fabricate)
 - publication finding authorized: `false`
 - motive finding authorized: `false`
 - culpability finding authorized: `false`
+
+## Coordination and merge receipts
+
+- ERL issue: `StegVerse-Labs/Executive_Rhetoric_Ledger#160`
+- ERL implementation PR: `#161` — merged
+- ERL merge commit: `e69881a13d9cd73a06ba1ca2912e6e8f3a13434c`
+- central Task Registry PR: `StegVerse-Labs/.github#1922` — merged
+- central Task Registry merge commit: `5531337e30b44de521ad6ef18c015b1066d50335`
+- canonical coordination state after registry merge: `ACTIVE / CHECKED_OUT`
+- completion claimed: `false`
+- activation proof complete: `false`
 
 ## Goal
 
@@ -109,8 +122,9 @@ Synchronize all bodycams, Taser logs if available, shot timing, scene geometry, 
 - `research-candidates/2026-09-15-trae-spurlock-casper-pd-entry-and-force.md`
 - `task-state/ERL-SPURLOCK-CPD-ENTRY-001.json`
 - `docs/TRAE_SPURLOCK_CASPER_PD_MIRROR_HANDOFF.md`
+- `StegVerse-Labs/.github/data/canonical-task-records/ERL-SPURLOCK-CPD-ENTRY-001.json`
 - Issue `#160`
 
 ## Next executable task
 
-Acquire and custody the earliest available pre-entry primary records first: 911/CAD/dispatch audio, then full pre-entry bodycam. Use those records to populate a timestamped knowledge-state matrix showing what Kelch, the witness, dispatch, and each officer knew or disclosed before crossing the threshold. Do not begin motive or culpability scoring before that matrix exists.
+Acquire and custody the earliest available pre-entry primary records first: 911/CAD/dispatch audio, then full pre-entry bodycam, then the Casper PD policy set in force on 2024-06-06. Use those records to populate a timestamped knowledge-state matrix showing what Kelch, the witness, dispatch, and each officer knew or disclosed before crossing the threshold. Do not begin motive or culpability scoring before that matrix exists.
