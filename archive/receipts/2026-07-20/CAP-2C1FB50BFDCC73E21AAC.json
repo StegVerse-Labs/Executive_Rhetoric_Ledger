@@ -1,0 +1,14 @@
+{
+  "adapter_id": "WBTV_REISINI_ROOS_OPERATION_CHARLOTTES_WEB",
+  "byte_length": 200128,
+  "candidate_path": "discovery_candidates/2026-07-20/CAND-2C1FB50BFDCC73E21AAC.json",
+  "capture_id": "CAP-2C1FB50BFDCC73E21AAC",
+  "capture_status": "captured",
+  "captured_at": "2026-07-20T12:00:00Z",
+  "content_sha256": "2c1fb50bfdcc73e21aacb82c6420e2c609f59ee25416dc71e35c65c2e9946a39",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-07-20/2c1fb50bfdcc73e21aacb82c6420e2c609f59ee25416dc71e35c65c2e9946a39.html",
+  "review_status": "candidate-review-required",
+  "source_class": "local-reporting",
+  "source_uri": "https://www.wbtv.com/2026/07/22/charlotte-women-file-claims-notice-against-us-government-after-arrest-during-operation-charlottes-web/"
+}

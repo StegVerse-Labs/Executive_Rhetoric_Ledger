@@ -1,0 +1,130 @@
+{
+  "automation_authority": {
+    "may_assert_causation": false,
+    "may_assert_identity": false,
+    "may_link": true,
+    "may_publish": false
+  },
+  "edges": [
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-2FBBE8585E7577FA018A",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-1152B6EFF359820A2394",
+      "target": "CLUSTER-696945D4E380BFAE8370"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-4CBF3DE67EFD266BE6F3",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-782210D1876124426923",
+      "target": "CLUSTER-EE0EB33EE34CF25DE024"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 0.8,
+      "edge_id": "EDGE-C2081F4D6918851E4E45",
+      "evidence_basis": "normalized payload title or fixture identifier",
+      "relationship_type": "topical-overlap",
+      "review_status": "edge-review-required",
+      "source": "CAND-1152B6EFF359820A2394",
+      "target": "TOPIC-4839A663BD02E7A5EC45"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-D470170AD3D6B6D494BB",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-9A46192D9D92B2B95994",
+      "target": "CLUSTER-1EEA72247AAC68C5A497"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-F9BE63E42BD0BB5B6D50",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-2C1FB50BFDCC73E21AAC",
+      "target": "CLUSTER-41AB09BF7E78F200D329"
+    }
+  ],
+  "generated_from": [
+    "incident_clusters/generated.json",
+    "discovery_candidates/2026-07-20/CAND-1152B6EFF359820A2394.json",
+    "discovery_candidates/2026-07-20/CAND-2C1FB50BFDCC73E21AAC.json",
+    "discovery_candidates/2026-07-20/CAND-782210D1876124426923.json",
+    "discovery_candidates/2026-07-20/CAND-9A46192D9D92B2B95994.json",
+    "discovery_candidates/2026-09-15/CAND-1152B6EFF359820A2394.json",
+    "discovery_candidates/2026-09-15/CAND-2C1FB50BFDCC73E21AAC.json",
+    "discovery_candidates/2026-09-15/CAND-782210D1876124426923.json",
+    "discovery_candidates/2026-09-15/CAND-9A46192D9D92B2B95994.json"
+  ],
+  "graph_id": "GRAPH-7F556E9831EA53D56DBF",
+  "graph_status": "candidate-graph",
+  "nodes": [
+    {
+      "label": "Reported DHS and FBI accountability-chain sequence",
+      "node_id": "CAND-1152B6EFF359820A2394",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-2C1FB50BFDCC73E21AAC",
+      "node_id": "CAND-2C1FB50BFDCC73E21AAC",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-782210D1876124426923",
+      "node_id": "CAND-782210D1876124426923",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-9A46192D9D92B2B95994",
+      "node_id": "CAND-9A46192D9D92B2B95994",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-1EEA72247AAC68C5A497",
+      "node_id": "CLUSTER-1EEA72247AAC68C5A497",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-41AB09BF7E78F200D329",
+      "node_id": "CLUSTER-41AB09BF7E78F200D329",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-696945D4E380BFAE8370",
+      "node_id": "CLUSTER-696945D4E380BFAE8370",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-EE0EB33EE34CF25DE024",
+      "node_id": "CLUSTER-EE0EB33EE34CF25DE024",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "DHS-FBI-ACCOUNTABILITY-SEQUENCE-2026-07",
+      "node_id": "TOPIC-4839A663BD02E7A5EC45",
+      "node_type": "topic",
+      "review_status": "candidate-review-required"
+    }
+  ],
+  "review_status": "graph-review-required"
+}
