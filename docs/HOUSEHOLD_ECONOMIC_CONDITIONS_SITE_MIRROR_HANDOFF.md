@@ -5,6 +5,7 @@
 - Goal Task ID: `ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001`
 - central handoff: `StegVerse-Labs/.github/docs/ERL_HOUSEHOLD_ECONOMIC_CONDITIONS_SITE_MIRROR_HANDOFF.md`
 - ERL issue: `#163`
+- ERL PR: `#164`
 - Site issue: `StegVerse-Labs/Site#1368`
 - branch: `feat/household-economic-conditions-series-163`
 - coordination state: `ACTIVE`
@@ -17,7 +18,7 @@ ERL owns the evidence/analysis contract for the persistent household economic-co
 
 1. `research-data/household-economic-conditions/official-series-inventory.v1.json`
    - records source agency, source family, frequency, units, earliest comparable date, page display start, revision semantics, structural breaks, limitations, and current admission state;
-   - explicitly records the Federal Reserve DSR 2024 methodology replacement and limits the current-method series to 2005 forward;
+   - explicitly records the Federal Reserve DSR methodology replacement and limits the current-method series to 2005 forward;
    - records the NY Fed main CCP continuity boundary at 2003, separate 1999-2003 historical material, and the 2003 student-loan reporting reliability boundary;
    - records ACS 2020 experimental 1-year noncomparability and the Census-2000-to-ACS comparison boundary.
 2. `schemas/household-economic-conditions-output.schema.json`
@@ -53,15 +54,28 @@ No positive macro or spending indicator may be promoted into a household-welfare
 - New York Fed Consumer Credit Panel public household-debt reporting has a main continuity lane from 2003, with separately provided 1999-2003 historical data. Student-loan data are reliable from 2003.
 - ACS standard 1-year comparisons begin in 2005 for this lane; the 2020 experimental 1-year release is noncomparable, and Census 2000 comparison requires table/universe/question review rather than direct splicing.
 
-## Not yet complete
+## Validation evidence
 
-- exact agency-series identifiers and automated acquisition bindings;
-- deterministic schema validator/tests in ERL CI;
-- cohort joins and required-cost composite construction;
-- live governed household-state generation;
-- authentic ERL-to-Site output binding;
-- public activation or served-body verification.
+Current exact head: `432697db308fa183a566f69af88219c910e1912c`.
+
+- `Validate Ledger Schemas` run `35162542553`: `SUCCESS`.
+
+This establishes repository schema consistency for the branch only. It does not establish authentic official-data acquisition, live household-state generation, Site transport, deployment, or public activation.
+
+## Current state
+
+- official-series inventory: IMPLEMENTED ON PR #164
+- household output schema: IMPLEMENTED ON PR #164
+- fail-closed fixture: IMPLEMENTED ON PR #164
+- exact-head ledger validation: PASS
+- README.md reconciliation: PENDING
+- exact agency-series identifiers and automated acquisition bindings: PENDING
+- dedicated deterministic schema/fixture tests: PENDING
+- cohort joins and required-cost composite construction: PENDING
+- live governed household-state generation: NOT IMPLEMENTED
+- authentic ERL-to-Site output binding: NOT IMPLEMENTED
+- public activation / served-body verification: NOT OBSERVED
 
 ## Next work
 
-Validate the new schema and fixture deterministically, bind exact source series identifiers, then consume the fixture contract in the Site page shell while leaving live activation fail-closed.
+Reconcile `README.md`, add dedicated deterministic validator/tests for the output contract and fixture, bind exact official series identifiers and acquisition/normalization semantics, re-run exact-head validation, and only then merge with expected-head protection. Live output and public activation remain separate later evidence predicates.
