@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stegverse.org/schemas/household-economic-conditions-output.schema.json",
+  "title": "ERL Household Economic Conditions Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "goal_task_id", "generated_at", "evidence_state", "freshness", "household_state", "series", "public_activation_authorized"],
+  "properties": {
+    "schema": {"const": "stegverse.erl.household-economic-conditions-output/v1"},
+    "goal_task_id": {"const": "ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "evidence_state": {"enum": ["GOVERNED_CURRENT", "PARTIAL", "STALE", "FIXTURE_ONLY", "UNKNOWN"]},
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["as_of", "max_age_seconds", "is_stale"],
+      "properties": {
+        "as_of": {"type": "string", "format": "date-time"},
+        "max_age_seconds": {"type": "integer", "minimum": 1},
+        "is_stale": {"type": "boolean"}
+      }
+    },
+    "household_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gross_labor_income", "net_disposable_resources", "required_cost_burden", "debt_service", "necessary_consumption", "discretionary_residual", "saving_dissaving", "new_borrowing", "delinquency_arrears", "unmet_foregone_consumption"],
+      "properties": {
+        "gross_labor_income": {"$ref": "#/$defs/stateComponent"},
+        "net_disposable_resources": {"$ref": "#/$defs/stateComponent"},
+        "required_cost_burden": {"$ref": "#/$defs/stateComponent"},
+        "debt_service": {"$ref": "#/$defs/stateComponent"},
+        "necessary_consumption": {"$ref": "#/$defs/stateComponent"},
+        "discretionary_residual": {"$ref": "#/$defs/stateComponent"},
+        "saving_dissaving": {"$ref": "#/$defs/stateComponent"},
+        "new_borrowing": {"$ref": "#/$defs/stateComponent"},
+        "delinquency_arrears": {"$ref": "#/$defs/stateComponent"},
+        "unmet_foregone_consumption": {"$ref": "#/$defs/stateComponent"}
+      }
+    },
+    "series": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/series"}
+    },
+    "interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "what_changed": {"type": "array", "items": {"type": "string"}},
+        "what_it_may_mean": {"type": "array", "items": {"type": "string"}},
+        "prohibited_inferences": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "public_activation_authorized": {"type": "boolean"}
+  },
+  "$defs": {
+    "stateComponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "coverage", "evidence_refs"],
+      "properties": {
+        "state": {"enum": ["SUPPORTED", "PARTIAL", "UNKNOWN", "NOT_COMPARABLE", "PROXY", "STALE", "FIXTURE_ONLY"]},
+        "coverage": {"type": "string"},
+        "value": {"type": ["number", "string", "null"]},
+        "unit": {"type": ["string", "null"]},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "break": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "type", "description"],
+      "properties": {
+        "date": {"type": "string"},
+        "type": {"enum": ["METHODOLOGY_REPLACEMENT", "SERIES_COVERAGE_BOUNDARY", "NONCOMPARABLE_EXPERIMENTAL_RELEASE", "CENSUS_TO_ACS_COMPARISON_BOUNDARY", "DEFINITION_CHANGE", "OTHER"]},
+        "description": {"type": "string"}
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["period", "value", "evidence_class"],
+      "properties": {
+        "period": {"type": "string"},
+        "value": {"type": "number"},
+        "evidence_class": {"enum": ["DIRECT_OBSERVATION", "DERIVED_HISTORICAL_PROXY", "INFERRED_RELATIONSHIP"]}
+      }
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["series_id", "label", "source_agency", "frequency", "unit", "earliest_comparable_date", "vintage", "comparison_mode", "observations", "structural_breaks"],
+      "properties": {
+        "series_id": {"type": "string"},
+        "label": {"type": "string"},
+        "source_agency": {"type": "string"},
+        "frequency": {"enum": ["MONTHLY", "QUARTERLY", "ANNUAL"]},
+        "unit": {"type": "string"},
+        "earliest_comparable_date": {"type": "string"},
+        "vintage": {"type": "string"},
+        "revision_timestamp": {"type": ["string", "null"]},
+        "comparison_mode": {"enum": ["ABSOLUTE", "NORMALIZED_INDEX_ONLY", "SEPARATE_SERIES_SEGMENT"]},
+        "same_axis_group": {"type": ["string", "null"]},
+        "observations": {"type": "array", "items": {"$ref": "#/$defs/observation"}},
+        "structural_breaks": {"type": "array", "items": {"$ref": "#/$defs/break"}},
+        "source_url": {"type": ["string", "null"]},
+        "methodology_url": {"type": ["string", "null"]}
+      }
+    }
+  }
+}
