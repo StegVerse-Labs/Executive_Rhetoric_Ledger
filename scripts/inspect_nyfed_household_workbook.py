@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
 from pathlib import Path
 
@@ -42,7 +43,8 @@ def main() -> int:
     parser.add_argument("--max-cols", type=int, default=16)
     args = parser.parse_args()
 
-    wb = load_workbook(args.workbook, read_only=True, data_only=True)
+    raw = args.workbook.read_bytes()
+    wb = load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
     sheets = []
     for ws in wb.worksheets:
         nonempty = []
@@ -61,7 +63,7 @@ def main() -> int:
         "schema": "stegverse.erl.nyfed-household-workbook-structure-observation/v1",
         "goal_task_id": GOAL,
         "workbook_name": args.workbook.name,
-        "workbook_sha256": sha256_file(args.workbook),
+        "workbook_sha256": hashlib.sha256(raw).hexdigest(),
         "sheet_names": wb.sheetnames,
         "sheets": sheets,
         "finding_authority": False,
