@@ -77,8 +77,16 @@ def normalize_bls(binding: dict[str, Any], payload: dict[str, Any]) -> list[dict
         period = row.get("period", "")
         if not re.fullmatch(r"M(0[1-9]|1[0-2])", period):
             continue
-        value = float(str(row["value"]).replace(",", ""))
+        raw_value = row.get("value")
+        if raw_value in (None, "", "-", "."):
+            continue
+        try:
+            value = float(str(raw_value).replace(",", ""))
+        except ValueError as exc:
+            raise ValueError(f"BLS {expected} invalid numeric value for {row.get('year')}-{period}: {raw_value!r}") from exc
         result.append({"period": f"{row['year']}-{period[1:]}", "value": value, "evidence_class": "DIRECT_OBSERVATION"})
+    if not result:
+        raise ValueError(f"BLS response contained no numeric monthly observations for {expected}")
     return sorted(result, key=lambda row: row["period"])
 
 

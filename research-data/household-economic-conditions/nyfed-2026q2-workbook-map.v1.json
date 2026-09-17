@@ -1,0 +1,66 @@
+{
+  "schema": "stegverse.erl.nyfed-workbook-map/v1",
+  "goal_task_id": "ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001",
+  "release_id": "2026Q2",
+  "workbook_sha256": "ddfba16b87e187848ed591a1283f310188e7bdeebe5cf409b70a35b058d99237",
+  "source_workbook": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/xls/hhd_c_report_2026q2.xlsx",
+  "maps": {
+    "NYFED_CCP_DEBT_BALANCE_BY_CLASS": {
+      "worksheet": "Page 3 Data",
+      "title": "Total Debt Balance and Its Composition",
+      "unit": "trillions of nominal dollars",
+      "header_row": 4,
+      "period_column": "A",
+      "expected_headers": {
+        "B": "Mortgage",
+        "C": "HE Revolving",
+        "D": "Auto Loan",
+        "E": "Credit Card",
+        "F": "Student Loan",
+        "G": "Other",
+        "H": "Total"
+      },
+      "category_columns": {
+        "Mortgage": "B",
+        "HELOC": "C",
+        "Auto Loan": "D",
+        "Credit Card": "E",
+        "Student Loan": "F",
+        "Other": "G",
+        "Total": "H"
+      },
+      "latest_observed_period": "2026-Q2",
+      "latest_observed_row": 98
+    },
+    "NYFED_CCP_DELINQUENCY_BY_CLASS": {
+      "worksheet": "Page 14 Data",
+      "title": "New Seriously Delinquent* Balances by Loan Type ",
+      "unit": "percent",
+      "definition": "90 or more days delinquent",
+      "header_row": 5,
+      "period_column": "A",
+      "expected_headers": {
+        "B": "AUTO",
+        "C": "CC",
+        "D": "MORTGAGE",
+        "E": "HELOC",
+        "F": "STUDENT LOAN",
+        "G": "OTHER",
+        "H": "ALL"
+      },
+      "category_columns": {
+        "Auto Loan": "B",
+        "Credit Card": "C",
+        "Mortgage": "D",
+        "HELOC": "E",
+        "Student Loan": "F",
+        "Other": "G",
+        "ALL": "H"
+      },
+      "latest_observed_period": "2026-Q2",
+      "latest_observed_row": 99
+    }
+  },
+  "finding_authority": false,
+  "public_activation_authorized": false
+}
