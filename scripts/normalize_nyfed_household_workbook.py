@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Normalize only the exact, observed NY Fed Q2 2026 workbook surfaces.
 
-This module is non-authorizing. It validates worksheet/header/column identity before
-emitting observations, so a changed workbook layout fails closed rather than being
-silently reinterpreted.
+This module is non-authorizing. It validates the retained workbook hash plus exact
+worksheet/header/column identity before emitting observations, so changed source
+layout fails closed rather than being silently reinterpreted.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import io
 import json
 import re
@@ -18,7 +19,7 @@ from openpyxl import load_workbook
 from openpyxl.utils import column_index_from_string
 
 ROOT = Path(__file__).resolve().parents[1]
-BINDINGS_PATH = ROOT / "research-data/household-economic-conditions/official-series-bindings.v1.json"
+MAP_PATH = ROOT / "research-data/household-economic-conditions/nyfed-2026q2-workbook-map.v1.json"
 GOAL = "ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001"
 PERIOD_RE = re.compile(r"^(\d{2}):Q([1-4])$")
 
@@ -27,9 +28,13 @@ def canonical_bytes(value: Any) -> bytes:
     return (json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
 
 
-def load_bindings() -> dict[str, dict[str, Any]]:
-    document = json.loads(BINDINGS_PATH.read_text(encoding="utf-8"))
-    return {row["inventory_series_id"]: row for row in document["bindings"]}
+def load_map() -> dict[str, Any]:
+    document = json.loads(MAP_PATH.read_text(encoding="utf-8"))
+    if document.get("goal_task_id") != GOAL:
+        raise ValueError("NY Fed map goal mismatch")
+    if document.get("finding_authority") is not False or document.get("public_activation_authorized") is not False:
+        raise ValueError("NY Fed map gained authority")
+    return document
 
 
 def normalize_period(value: Any) -> str | None:
@@ -41,11 +46,7 @@ def normalize_period(value: Any) -> str | None:
     return f"20{match.group(1)}-Q{match.group(2)}"
 
 
-def normalize_workbook(raw: bytes, binding: dict[str, Any]) -> list[dict[str, Any]]:
-    mapping = binding["normalization"]
-    if mapping.get("parser_state") != "EXACT_WORKBOOK_MAP_BOUND":
-        raise ValueError("NY Fed parser map is not exact-bound")
-
+def normalize_workbook(raw: bytes, mapping: dict[str, Any]) -> list[dict[str, Any]]:
     workbook = load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
     sheet_name = mapping["worksheet"]
     if sheet_name not in workbook.sheetnames:
@@ -54,8 +55,7 @@ def normalize_workbook(raw: bytes, binding: dict[str, Any]) -> list[dict[str, An
 
     header_row = int(mapping["header_row"])
     period_column = mapping["period_column"]
-    expected_headers = mapping["expected_headers"]
-    for column, expected in expected_headers.items():
+    for column, expected in mapping["expected_headers"].items():
         observed = worksheet.cell(header_row, column_index_from_string(column)).value
         if observed != expected:
             raise ValueError(
@@ -86,11 +86,11 @@ def normalize_workbook(raw: bytes, binding: dict[str, Any]) -> list[dict[str, An
     return output
 
 
-def rewrite_candidate(candidate_path: Path, raw: bytes, binding: dict[str, Any]) -> int:
+def rewrite_candidate(candidate_path: Path, raw: bytes, mapping: dict[str, Any]) -> int:
     candidate = json.loads(candidate_path.read_text(encoding="utf-8"))
     if candidate.get("goal_task_id") != GOAL:
         raise ValueError(f"unexpected goal task in {candidate_path}")
-    observations = normalize_workbook(raw, binding)
+    observations = normalize_workbook(raw, mapping)
     candidate["status"] = "NORMALIZED_SOURCE_OBSERVATIONS"
     candidate["observations"] = observations
     candidate["finding_authority"] = False
@@ -106,11 +106,14 @@ def main() -> int:
     args = parser.parse_args()
 
     raw = args.workbook.read_bytes()
-    bindings = load_bindings()
-    ids = ["NYFED_CCP_DEBT_BALANCE_BY_CLASS", "NYFED_CCP_DELINQUENCY_BY_CLASS"]
-    for series_id in ids:
+    document = load_map()
+    observed_hash = hashlib.sha256(raw).hexdigest()
+    if observed_hash != document["workbook_sha256"]:
+        raise SystemExit(f"NY Fed workbook hash mismatch: {observed_hash}")
+
+    for series_id, mapping in document["maps"].items():
         candidate_path = args.candidate_root / f"{series_id.lower()}.candidate.json"
-        count = rewrite_candidate(candidate_path, raw, bindings[series_id])
+        count = rewrite_candidate(candidate_path, raw, mapping)
         print(f"{series_id}=NORMALIZED_SOURCE_OBSERVATIONS observations={count}")
     print("NYFED_WORKBOOK_NORMALIZATION=EXACT_MAP_BOUND_PASS")
     print("PUBLIC_ACTIVATION_AUTHORIZED=false")
