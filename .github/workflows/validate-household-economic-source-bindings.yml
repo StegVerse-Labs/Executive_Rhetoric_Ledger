@@ -1,0 +1,42 @@
+name: Validate Household Economic Source Bindings
+
+on:
+  pull_request:
+    paths:
+      - "research-data/household-economic-conditions/**"
+      - "scripts/acquire_household_economic_conditions.py"
+      - "scripts/validate_household_economic_source_bindings.py"
+      - ".github/workflows/validate-household-economic-source-bindings.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research-data/household-economic-conditions/**"
+      - "scripts/acquire_household_economic_conditions.py"
+      - "scripts/validate_household_economic_source_bindings.py"
+      - ".github/workflows/validate-household-economic-source-bindings.yml"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate exact source bindings and deterministic normalizers
+        run: python scripts/validate_household_economic_source_bindings.py
+      - name: Validate non-authorizing acquisition entrypoint
+        run: python scripts/acquire_household_economic_conditions.py --validate-bindings-only
+      - name: Preserve activation boundary
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          binding = json.loads(Path('research-data/household-economic-conditions/official-series-bindings.v1.json').read_text())
+          assert binding['public_activation_authorized'] is False
+          source = Path('scripts/acquire_household_economic_conditions.py').read_text()
+          assert 'finding_authority' in source
+          assert 'public_activation_authorized' in source
+          print('HOUSEHOLD_ECONOMIC_SOURCE_AUTHORITY=NONE')
+          print('HOUSEHOLD_ECONOMIC_PUBLIC_ACTIVATION=false')
+          PY
