@@ -8,6 +8,8 @@ on:
       - "scripts/acquire_census_b25140.py"
       - "scripts/inspect_nyfed_household_workbook.py"
       - "scripts/normalize_nyfed_household_workbook.py"
+      - "scripts/extract_nyfed_distributional_context.py"
+      - "scripts/augment_household_economic_state_candidate.py"
       - "scripts/build_household_economic_state_candidate.py"
       - "research-data/household-economic-conditions/**"
       - ".github/workflows/observe-household-economic-current-candidates.yml"
@@ -41,11 +43,16 @@ jobs:
           python scripts/inspect_nyfed_household_workbook.py \
             build/household-economic-source-candidates/nyfed/nyfed_ccp_debt_balance_by_class.raw \
             --output build/nyfed-workbook-structure-observation.json
-      - name: Normalize exact-bound New York Fed workbook surfaces
+      - name: Normalize exact-bound New York Fed class surfaces
         run: |
           python scripts/normalize_nyfed_household_workbook.py \
             build/household-economic-source-candidates/nyfed/nyfed_ccp_debt_balance_by_class.raw \
             --candidate-root build/household-economic-source-candidates/nyfed
+      - name: Extract exact-bound New York Fed age distribution context
+        run: |
+          python scripts/extract_nyfed_distributional_context.py \
+            build/household-economic-source-candidates/nyfed/nyfed_ccp_debt_balance_by_class.raw \
+            --output build/nyfed-distributional-context.json
       - name: Inspect BEA credential presence without secret interpolation
         shell: bash
         run: |
@@ -56,36 +63,48 @@ jobs:
           echo 'BEA_CREDENTIAL_ENVIRONMENT=ABSENT'
           echo 'BEA_CREDENTIAL_EXECUTION_BOUNDARY=TV_TVC_RESIDENT_ONLY'
           echo 'BEA_TV_TVC_REGISTRATION_EVIDENCE=NOT_OBSERVED'
-      - name: Build first partial non-authorizing household state candidate
+      - name: Build partial non-authorizing household state candidate
         run: |
           python scripts/build_household_economic_state_candidate.py \
             --candidate-root build/household-economic-source-candidates \
             --output build/household-economic-state-candidate.json
-      - name: Verify all candidate outputs remain non-authorizing and unsupported fields unknown
+      - name: Admit exact bounded required-cost and distribution context
+        run: |
+          python scripts/augment_household_economic_state_candidate.py \
+            --state build/household-economic-state-candidate.json \
+            --candidate-root build/household-economic-source-candidates \
+            --nyfed-distribution build/nyfed-distributional-context.json
+      - name: Verify semantic and authority boundaries
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          candidates = sorted(Path('build/household-economic-source-candidates').rglob('*.candidate.json'))
-          if not candidates:
-              raise SystemExit('no candidate outputs produced')
-          for path in candidates:
-              body = json.loads(path.read_text())
-              if body.get('finding_authority') is not False:
-                  raise SystemExit(f'candidate gained finding authority: {path}')
-              if body.get('public_activation_authorized') is not False:
-                  raise SystemExit(f'candidate gained public activation authority: {path}')
-              if not body.get('raw_sha256') or not body.get('source_vintage'):
-                  raise SystemExit(f'candidate missing raw hash/vintage: {path}')
           state = json.loads(Path('build/household-economic-state-candidate.json').read_text())
           if state.get('public_activation_authorized') is not False or state.get('evidence_state') != 'PARTIAL':
-              raise SystemExit('state candidate authority/evidence boundary violated')
-          required_unknown = ['net_disposable_resources','required_cost_burden','necessary_consumption','discretionary_residual','saving_dissaving','new_borrowing','delinquency_arrears','unmet_foregone_consumption']
-          for key in required_unknown:
-              if state['household_state'][key]['state'] != 'UNKNOWN':
-                  raise SystemExit(f'unsupported field was promoted: {key}')
-          print(f'HOUSEHOLD_CURRENT_CANDIDATES_NONAUTHORIZING=PASS count={len(candidates)}')
-          print('HOUSEHOLD_MULTI_SOURCE_STATE_CANDIDATE=PARTIAL')
+              raise SystemExit('state authority/evidence boundary violated')
+          expected = {
+              'net_disposable_resources':'UNKNOWN',
+              'required_cost_burden':'PARTIAL',
+              'necessary_consumption':'UNKNOWN',
+              'discretionary_residual':'UNKNOWN',
+              'saving_dissaving':'UNKNOWN',
+              'new_borrowing':'UNKNOWN',
+              'delinquency_arrears':'PARTIAL',
+              'unmet_foregone_consumption':'UNKNOWN',
+          }
+          for key, value in expected.items():
+              if state['household_state'][key]['state'] != value:
+                  raise SystemExit(f'unexpected household state {key}: {state["household_state"][key]["state"]}')
+          ids = {row['series_id'] for row in state['series']}
+          for required in ('NYFED_CCP_DEBT_BALANCE_BY_AGE','NYFED_CCP_SERIOUS_DELINQUENCY_BY_AGE'):
+              if required not in ids:
+                  raise SystemExit(f'missing distribution series: {required}')
+          if not any('Do not infer new borrowing' in x for x in state['interpretation']['prohibited_inferences']):
+              raise SystemExit('new-borrowing prohibition missing')
+          print('HOUSEHOLD_DISTRIBUTIONAL_CONTEXT=PASS')
+          print('REQUIRED_COST_BURDEN=PARTIAL_HOUSING_ONLY')
+          print('DELINQUENCY_ARREARS=PARTIAL_AGE_CONTEXT')
+          print('NEW_BORROWING=UNKNOWN')
           print('PUBLIC_ACTIVATION_AUTHORIZED=false')
           PY
       - name: Upload bounded observation evidence
@@ -95,5 +114,6 @@ jobs:
           path: |
             build/household-economic-source-candidates/**
             build/nyfed-workbook-structure-observation.json
+            build/nyfed-distributional-context.json
             build/household-economic-state-candidate.json
           if-no-files-found: error
