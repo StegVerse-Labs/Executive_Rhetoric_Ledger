@@ -5,6 +5,7 @@ on:
     paths:
       - "scripts/acquire_household_economic_conditions.py"
       - "scripts/acquire_board_dsr.py"
+      - "scripts/acquire_census_b25140.py"
       - "scripts/inspect_nyfed_household_workbook.py"
       - "scripts/build_household_economic_state_candidate.py"
       - "research-data/household-economic-conditions/**"
@@ -31,7 +32,7 @@ jobs:
       - name: Acquire Federal Reserve Board DSR candidates without credentials
         run: python scripts/acquire_board_dsr.py --output-dir build/household-economic-source-candidates/fred
       - name: Acquire latest standard ACS candidate without credentials
-        run: python scripts/acquire_household_economic_conditions.py --source census --census-year 2024 --output-dir build/household-economic-source-candidates/census
+        run: python scripts/acquire_census_b25140.py --year 2024 --output-dir build/household-economic-source-candidates/census
       - name: Capture official New York Fed workbook without normalizing
         run: python scripts/acquire_household_economic_conditions.py --source nyfed --output-dir build/household-economic-source-candidates/nyfed
       - name: Observe exact New York Fed workbook structure
