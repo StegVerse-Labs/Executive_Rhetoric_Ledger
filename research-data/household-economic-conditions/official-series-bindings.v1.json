@@ -1,0 +1,160 @@
+{
+  "schema": "stegverse.erl.household-economic-series-bindings/v1",
+  "goal_task_id": "ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001",
+  "binding_state": "IDENTIFIERS_BOUND_ACQUISITION_PARTIAL",
+  "public_activation_authorized": false,
+  "rules": {
+    "raw_source_bytes_retained_before_normalization": true,
+    "source_vintage_required": true,
+    "missing_or_failed_source_remains_unknown": true,
+    "no_cross_method_splicing": true,
+    "normalization_does_not_create_household_welfare_finding": true
+  },
+  "bindings": [
+    {
+      "inventory_series_id": "BLS_CES_PE_REAL_HOURLY_EARNINGS",
+      "provider": "BLS_PUBLIC_DATA_API",
+      "dataset": "CES",
+      "official_series_id": "CES0500000032",
+      "title": "Average hourly earnings of production and nonsupervisory employees, total private, 1982-84 dollars, seasonally adjusted",
+      "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+      "normalization": {"period_key": "year+period", "value_type": "number", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "BLS_CES_PE_REAL_WEEKLY_EARNINGS",
+      "provider": "BLS_PUBLIC_DATA_API",
+      "dataset": "CES",
+      "official_series_id": "CES0500000031",
+      "title": "Average weekly earnings of production and nonsupervisory employees, total private, 1982-84 dollars, seasonally adjusted",
+      "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+      "normalization": {"period_key": "year+period", "value_type": "number", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "BLS_CPI_U_ALL_ITEMS",
+      "provider": "BLS_PUBLIC_DATA_API",
+      "dataset": "CPI",
+      "official_series_id": "CUUR0000SA0",
+      "title": "CPI-U, U.S. city average, all items, not seasonally adjusted",
+      "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+      "normalization": {"period_key": "year+period", "value_type": "number", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "BEA_DPI_CURRENT_DOLLARS",
+      "provider": "BEA_DATA_API",
+      "dataset": "NIPA",
+      "table_name": "T20600",
+      "line_number": 27,
+      "frequency": "M",
+      "title": "Disposable personal income",
+      "endpoint": "https://apps.bea.gov/api/data/",
+      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "unit_field": "UNIT_MULT", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "BEA_REAL_DPI",
+      "provider": "BEA_DATA_API",
+      "dataset": "NIPA",
+      "table_name": "T20600",
+      "line_number": 37,
+      "frequency": "M",
+      "title": "Disposable personal income: total, billions of chained dollars",
+      "endpoint": "https://apps.bea.gov/api/data/",
+      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "unit_field": "UNIT_MULT", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "BEA_PCE_TOTAL",
+      "provider": "BEA_DATA_API",
+      "dataset": "NIPA",
+      "table_name": "T20600",
+      "line_number": 29,
+      "frequency": "M",
+      "title": "Personal consumption expenditures",
+      "endpoint": "https://apps.bea.gov/api/data/",
+      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "unit_field": "UNIT_MULT", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "BEA_PERSONAL_SAVING_RATE",
+      "provider": "BEA_DATA_API",
+      "dataset": "NIPA",
+      "table_name": "T20600",
+      "line_number": 35,
+      "frequency": "M",
+      "title": "Personal saving as a percentage of disposable personal income",
+      "endpoint": "https://apps.bea.gov/api/data/",
+      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "frequency": "MONTHLY"}
+    },
+    {
+      "inventory_series_id": "FRB_DSR_CURRENT_TOTAL",
+      "provider": "FRED_BOARD_OF_GOVERNORS_SOURCE",
+      "official_series_id": "TDSP",
+      "title": "Household Debt Service Payments as a Percent of Disposable Personal Income",
+      "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TDSP",
+      "source_authority": "Board of Governors of the Federal Reserve System (US)",
+      "earliest_current_method": "2005-01-01",
+      "normalization": {"date_column": "DATE", "value_column": "TDSP", "frequency": "QUARTERLY"}
+    },
+    {
+      "inventory_series_id": "FRB_DSR_CURRENT_MORTGAGE",
+      "provider": "FRED_BOARD_OF_GOVERNORS_SOURCE",
+      "official_series_id": "MDSP",
+      "title": "Mortgage Debt Service Payments as a Percent of Disposable Personal Income",
+      "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MDSP",
+      "source_authority": "Board of Governors of the Federal Reserve System (US)",
+      "earliest_current_method": "2005-01-01",
+      "normalization": {"date_column": "DATE", "value_column": "MDSP", "frequency": "QUARTERLY"}
+    },
+    {
+      "inventory_series_id": "FRB_DSR_CURRENT_CONSUMER",
+      "provider": "FRED_BOARD_OF_GOVERNORS_SOURCE",
+      "official_series_id": "CDSP",
+      "title": "Consumer Debt Service Payments as a Percent of Disposable Personal Income",
+      "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CDSP",
+      "source_authority": "Board of Governors of the Federal Reserve System (US)",
+      "earliest_current_method": "2005-01-01",
+      "normalization": {"date_column": "DATE", "value_column": "CDSP", "frequency": "QUARTERLY"}
+    },
+    {
+      "inventory_series_id": "NYFED_CCP_DEBT_BALANCE_BY_CLASS",
+      "provider": "NYFED_QUARTERLY_HOUSEHOLD_DEBT_CREDIT",
+      "source_product": "Data Underlying Report",
+      "current_release_id": "2026Q2",
+      "current_release_page": "https://www.newyorkfed.org/newsevents/news/research/2026/20260811",
+      "current_workbook": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/xls/hhd_c_report_2026q2.xlsx",
+      "categories": ["Mortgage", "HELOC", "Student Loan", "Auto Loan", "Credit Card", "Other", "Total"],
+      "normalization": {"frequency": "QUARTERLY", "unit": "nominal dollars", "parser_state": "WORKBOOK_COLUMN_BINDING_PENDING"}
+    },
+    {
+      "inventory_series_id": "NYFED_CCP_DELINQUENCY_BY_CLASS",
+      "provider": "NYFED_QUARTERLY_HOUSEHOLD_DEBT_CREDIT",
+      "source_product": "Flow into Serious Delinquency (90 days or more delinquent)",
+      "current_release_id": "2026Q2",
+      "current_release_page": "https://www.newyorkfed.org/newsevents/news/research/2026/20260811",
+      "current_workbook": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/xls/hhd_c_report_2026q2.xlsx",
+      "categories": ["Mortgage", "HELOC", "Student Loan", "Auto Loan", "Credit Card", "Other", "ALL"],
+      "normalization": {"frequency": "QUARTERLY", "unit": "annualized share transitioning to 90+ days delinquent", "parser_state": "WORKBOOK_COLUMN_BINDING_PENDING"}
+    },
+    {
+      "inventory_series_id": "CENSUS_ACS_HOUSING_COST_BURDEN",
+      "provider": "CENSUS_DATA_API",
+      "dataset": "acs/acs1",
+      "group": "B25140",
+      "title": "Housing Costs as a Percentage of Household Income in the Past 12 Months",
+      "universe": "Occupied housing units",
+      "endpoint_template": "https://api.census.gov/data/{year}/acs/acs1",
+      "geography": "us:*",
+      "variables": {
+        "total": "B25140_001E",
+        "owned_with_mortgage_total": "B25140_002E",
+        "owned_with_mortgage_over_30": "B25140_003E",
+        "owned_with_mortgage_over_50": "B25140_004E",
+        "owned_without_mortgage_total": "B25140_006E",
+        "owned_without_mortgage_over_30": "B25140_007E",
+        "owned_without_mortgage_over_50": "B25140_008E",
+        "rented_total": "B25140_010E",
+        "rented_over_30": "B25140_011E",
+        "rented_over_50": "B25140_012E"
+      },
+      "excluded_standard_comparison_years": [2020],
+      "normalization": {"frequency": "ANNUAL", "estimate_suffix": "E", "retain_margins_of_error_when_added": true}
+    }
+  ]
+}
