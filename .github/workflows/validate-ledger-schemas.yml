@@ -115,6 +115,8 @@ jobs:
         run: python scripts/validate_force_event_packets.py
       - name: Validate related repository network
         run: python scripts/validate_related_repository_network.py
+      - name: Validate household economic conditions contract and fail-closed fixture
+        run: python scripts/validate_household_economic_conditions_contract.py
       - name: Validate repository capability registry
         run: python scripts/validate_repository_capabilities.py
       - name: Validate repository contract audit registry
