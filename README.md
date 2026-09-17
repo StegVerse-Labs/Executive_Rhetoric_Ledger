@@ -164,8 +164,19 @@ The Automated Political Reality Compendium Standard defines recurring search, ad
 - [Data Propagation Graph JSON Schema](schemas/data-propagation-graph.schema.json)
 - [Derived Data Authority Receipt JSON Schema](schemas/derived-data-authority-receipt.schema.json)
 - [SKAP Account Disclosure Graph JSON Schema](schemas/skap-account-disclosure-graph.schema.json)
+- [Household Economic Conditions Output Schema](schemas/household-economic-conditions-output.schema.json)
 
-These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation-result receipts, evidence-intake queues, individualized events, recurring discovery cycles, governed repository relationships, and the Digital Data Reclamation foundation.
+These schemas provide validation targets for ledger entries, source receipts, upstream exports, validation-result receipts, evidence-intake queues, individualized events, recurring discovery cycles, governed repository relationships, Digital Data Reclamation, and the fail-closed household economic-conditions output contract.
+
+## Household economic conditions evidence contract
+
+Goal `ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001` adds an evidence/analysis contract for a persistent U.S. household economic-conditions surface. ERL remains the evidence authority; Site is a presentation consumer and may not promote headline macroeconomic measures into household-welfare findings.
+
+The household-state contract separates gross labor income, net disposable resources, required-cost burden, debt service, necessary consumption, discretionary residual, saving/dissaving, new borrowing, delinquency/arrears, and unmet or foregone consumption. Longitudinal comparison uses each series' earliest defensible comparable date; methodology breaks remain visible; incompatible definitions are not silently spliced; and cross-metric comparison defaults to normalized index mode instead of misleading mixed-unit or dual-axis presentation.
+
+Current bounded source families are inventoried in [`research-data/household-economic-conditions/official-series-inventory.v1.json`](research-data/household-economic-conditions/official-series-inventory.v1.json). The machine output contract is [`schemas/household-economic-conditions-output.schema.json`](schemas/household-economic-conditions-output.schema.json), the non-evidentiary fixture is [`fixtures/household-economic-conditions/fail-closed.fixture.json`](fixtures/household-economic-conditions/fail-closed.fixture.json), and deterministic validation is performed by [`scripts/validate_household_economic_conditions_contract.py`](scripts/validate_household_economic_conditions_contract.py).
+
+The fixture is explicitly `FIXTURE_ONLY` and `public_activation_authorized=false`. Source code, fixture validation, CI success, merge, or Site deployment must not be reported as a live household economic finding or as public activation.
 
 ## Validation
 
@@ -176,7 +187,7 @@ These schemas provide validation targets for ledger entries, source receipts, up
 - [Final Activation Handoff](release/final-activation-handoff.md)
 - [Passed Activation Validation Receipt](validation_results/workflow-run-29719676248.passed.json)
 
-The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, the related-repository network, cross-record links, filenames, and repository index visibility. The UAP evidence-class workflow separately fails closed on class mixing under `assessments/uap-media/**`.
+The validation workflow checks Political Influence Trees, Source Posture receipts, producer exports, validation-result receipts, governance patterns, activation state, assessments, primary-record intake queues, individualized event packets, the related-repository network, cross-record links, filenames, repository index visibility, and the household economic-conditions contract/fixture. The UAP evidence-class workflow separately fails closed on class mixing under `assessments/uap-media/**`.
 
 ## Cross-repo ingestion
 
