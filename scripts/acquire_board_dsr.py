@@ -20,35 +20,25 @@ SERIES = {
 }
 
 
-class TableRows(HTMLParser):
+class VisibleText(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.in_row = False
-        self.in_cell = False
-        self.cell = []
-        self.row = []
-        self.rows = []
+        self.parts: list[str] = []
+        self.suppressed = 0
 
     def handle_starttag(self, tag, attrs):
-        if tag == "tr":
-            self.in_row = True
-            self.row = []
-        elif self.in_row and tag in ("td", "th"):
-            self.in_cell = True
-            self.cell = []
-
-    def handle_data(self, data):
-        if self.in_cell:
-            self.cell.append(data)
+        if tag in ("script", "style"):
+            self.suppressed += 1
 
     def handle_endtag(self, tag):
-        if self.in_row and tag in ("td", "th") and self.in_cell:
-            self.row.append(" ".join("".join(self.cell).split()))
-            self.in_cell = False
-        elif tag == "tr" and self.in_row:
-            if self.row:
-                self.rows.append(self.row)
-            self.in_row = False
+        if tag in ("script", "style") and self.suppressed:
+            self.suppressed -= 1
+
+    def handle_data(self, data):
+        if not self.suppressed:
+            text = " ".join(data.split())
+            if text:
+                self.parts.append(text)
 
 
 def fetch() -> bytes:
@@ -57,21 +47,33 @@ def fetch() -> bytes:
         return response.read()
 
 
-def observations(raw: bytes, index: int) -> list[dict]:
-    parser = TableRows()
+def parsed_rows(raw: bytes) -> list[tuple[str, float, float, float]]:
+    parser = VisibleText()
     parser.feed(raw.decode("utf-8", errors="replace"))
+    text = " ".join(parser.parts)
+    matches = re.findall(
+        r"(?<!\d)(20\d{2}:[1-4])\s+([0-9]+(?:\.[0-9]+)?)\s+([0-9]+(?:\.[0-9]+)?)\s+([0-9]+(?:\.[0-9]+)?)(?![0-9.])",
+        text,
+    )
+    rows = [(period, float(total), float(mortgage), float(consumer)) for period, total, mortgage, consumer in matches]
+    rows = [row for row in rows if int(row[0][:4]) >= 2005]
+    if not rows:
+        # Retain a bounded diagnostic without fabricating observations.
+        marker = "Household debt service payments as a percentage of disposable personal income"
+        raise SystemExit(f"Federal Reserve Board DSR release produced no parseable observations; expected marker present={marker in text}")
+    return rows
+
+
+def observations(raw: bytes, index: int) -> list[dict]:
     out = []
-    for row in parser.rows:
-        if len(row) < 4 or not re.fullmatch(r"\d{4}:\d", row[0]):
-            continue
-        year, quarter = row[0].split(":")
+    for period, total, mortgage, consumer in parsed_rows(raw):
+        year, quarter = period.split(":")
+        values = (total, mortgage, consumer)
         out.append({
             "period": f"{year}-Q{quarter}",
-            "value": float(row[index + 1].replace(",", "")),
+            "value": values[index],
             "evidence_class": "DIRECT_OBSERVATION",
         })
-    if not out:
-        raise SystemExit("Federal Reserve Board DSR table produced no observations")
     return out
 
 
