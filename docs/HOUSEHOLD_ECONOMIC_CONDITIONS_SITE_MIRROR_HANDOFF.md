@@ -5,77 +5,88 @@
 - Goal Task ID: `ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001`
 - central handoff: `StegVerse-Labs/.github/docs/ERL_HOUSEHOLD_ECONOMIC_CONDITIONS_SITE_MIRROR_HANDOFF.md`
 - ERL issue: `#163`
-- ERL PR: `#164`
 - Site issue: `StegVerse-Labs/Site#1368`
-- branch: `feat/household-economic-conditions-series-163`
 - coordination state: `ACTIVE`
 
-## Scope
+## ERL authority boundary
 
-ERL owns the evidence/analysis contract for the persistent household economic-conditions surface. Site is presentation-only and may not derive unsupported findings.
+ERL owns the evidence/analysis contract for the household economic-conditions surface. Site remains presentation-only. Neither aggregate macro observations nor source acquisition alone may be promoted into a household-welfare finding.
 
-## Implemented in this branch
+## Merged implementation evidence
 
-1. `research-data/household-economic-conditions/official-series-inventory.v1.json`
-   - records source agency, source family, frequency, units, earliest comparable date, page display start, revision semantics, structural breaks, limitations, and current admission state;
-   - explicitly records the Federal Reserve DSR methodology replacement and limits the current-method series to 2005 forward;
-   - records the NY Fed main CCP continuity boundary at 2003, separate 1999-2003 historical material, and the 2003 student-loan reporting reliability boundary;
-   - records ACS 2020 experimental 1-year noncomparability and the Census-2000-to-ACS comparison boundary.
-2. `schemas/household-economic-conditions-output.schema.json`
-   - machine contract for current household-state components, evidence states, freshness, series observations, source vintage, comparison mode, and methodology breaks;
-   - `public_activation_authorized` is explicit and fail-closed.
-3. `fixtures/household-economic-conditions/fail-closed.fixture.json`
-   - UI-only normalized-index fixture;
-   - carries no live finding and sets `public_activation_authorized=false`.
+PR `#164` merged with expected-head protection at merge commit `03aab5fe5eb75a1d8955d82d820bdd46be015316` after exact head `d47311c2cb7f33a7fa1c460d7756efab8f504ab3` passed all applicable validation lanes. It established:
 
-## Required household state
+- `research-data/household-economic-conditions/official-series-inventory.v1.json`;
+- `schemas/household-economic-conditions-output.schema.json`;
+- `fixtures/household-economic-conditions/fail-closed.fixture.json`;
+- `scripts/validate_household_economic_conditions_contract.py`;
+- README household-economic-conditions documentation.
+
+PR `#165` merged with expected-head protection at merge commit `b0d51340238b798ba46b36ab13988f1255d43642` after exact head `555d9717e2046653af8ca61ece23617a919217f9` passed:
+
+- `Validate Household Economic Source Bindings` run `35167747226`: `SUCCESS`;
+- `Validate Ledger Schemas` run `35167747146`: `SUCCESS`.
+
+It added:
+
+- `research-data/household-economic-conditions/official-series-bindings.v1.json`;
+- `scripts/acquire_household_economic_conditions.py`;
+- `scripts/validate_household_economic_source_bindings.py`;
+- `.github/workflows/validate-household-economic-source-bindings.yml`.
+
+## Exact official source bindings
+
+The current binding manifest records:
+
+- BLS real production/nonsupervisory hourly earnings: `CES0500000032`;
+- BLS real production/nonsupervisory weekly earnings: `CES0500000031`;
+- BLS CPI-U U.S. city average all items, not seasonally adjusted: `CUUR0000SA0`;
+- BEA NIPA monthly Table 2.6: dataset `NIPA`, table `T20600`, line `27` disposable personal income, line `29` PCE, line `35` personal saving rate, line `37` real disposable personal income;
+- Board of Governors Household Debt Service Ratios via FRED: `TDSP`, `MDSP`, and `CDSP`, current-method history from 2005;
+- New York Fed Household Debt and Credit Q2 2026 release plus exact underlying-workbook URL, with debt-balance and serious-delinquency category semantics retained;
+- Census ACS 1-year detailed table `B25140`, including explicit total, owner-with/without-mortgage, renter, over-30-percent, and over-50-percent variables; 2020 remains excluded from standard comparison.
+
+## Acquisition and normalization state
+
+`scripts/acquire_household_economic_conditions.py` now provides fail-closed candidate acquisition and normalization for BLS, BEA, FRED/Board, Census, and New York Fed source material.
+
+- BLS, BEA, FRED, and Census have deterministic normalizers covered by synthetic provider-shaped validation inputs.
+- BEA live acquisition requires `BEA_API_KEY`; absence fails closed and does not block other source families.
+- New York Fed official workbook bytes can be retained and SHA-256 bound, but worksheet/column-level normalization remains `WORKBOOK_COLUMN_BINDING_PENDING`; no values are guessed or converted to zeros.
+- every candidate output carries `finding_authority=false` and `public_activation_authorized=false`.
+- raw-source retention and source-vintage metadata precede normalization.
+
+## Household-state and history invariants
 
 The output contract preserves gross labor income, net disposable resources, required-cost burden, debt service, necessary consumption, discretionary residual, saving/dissaving, new borrowing, delinquency/arrears, and unmet/foregone consumption.
 
-No positive macro or spending indicator may be promoted into a household-welfare finding without the required household-state evidence.
+Historical rules remain:
 
-## Historical comparison rules
-
-- 2000 is a requested display horizon, not a promise that every series begins there.
-- A series begins at the earliest defensible directly comparable date.
-- Incompatible definitions are separate segments; no silent splicing.
-- Methodology and coverage breaks are visible.
-- Same-axis absolute overlays require same unit and definition.
-- Cross-metric trajectories use selected-start normalized index mode.
-- Historical proxies remain `DERIVED_HISTORICAL_PROXY`.
-- Gaps remain gaps without a governed reconstruction method.
-
-## Source inventory findings
-
-- BLS CPI-U all-items supports history well before 2000; 2000 is therefore a safe page floor for the selected current series.
-- BLS CES production/nonsupervisory real earnings reaches back at least to the 1960s depending on series/industry; 2000 is a safe page floor for total-private context, but gross earnings are not net take-home pay.
-- BEA monthly personal-income/disposition series provide history before 2000 and are revision-sensitive; every public observation must expose vintage.
-- Federal Reserve current-method DSR is available from 2005 forward. The archived prior-method 1980-2024 series is a separate methodology segment and must not be spliced into the current line.
-- New York Fed Consumer Credit Panel public household-debt reporting has a main continuity lane from 2003, with separately provided 1999-2003 historical data. Student-loan data are reliable from 2003.
-- ACS standard 1-year comparisons begin in 2005 for this lane; the 2020 experimental 1-year release is noncomparable, and Census 2000 comparison requires table/universe/question review rather than direct splicing.
-
-## Validation evidence
-
-Current exact head: `432697db308fa183a566f69af88219c910e1912c`.
-
-- `Validate Ledger Schemas` run `35162542553`: `SUCCESS`.
-
-This establishes repository schema consistency for the branch only. It does not establish authentic official-data acquisition, live household-state generation, Site transport, deployment, or public activation.
+- 2000 is a requested horizon, not a forced start;
+- series begin at the earliest defensible comparable observation;
+- methodology and coverage breaks remain visible;
+- incompatible definitions are not silently spliced;
+- same-axis absolute comparison requires compatible units/definitions;
+- cross-metric trajectories use selected-start normalized indexing;
+- historical proxies remain explicitly labeled;
+- missing observations remain missing unless a governed reconstruction exists.
 
 ## Current state
 
-- official-series inventory: IMPLEMENTED ON PR #164
-- household output schema: IMPLEMENTED ON PR #164
-- fail-closed fixture: IMPLEMENTED ON PR #164
-- exact-head ledger validation: PASS
-- README.md reconciliation: PENDING
-- exact agency-series identifiers and automated acquisition bindings: PENDING
-- dedicated deterministic schema/fixture tests: PENDING
+- official-series inventory: MERGED
+- household output schema: MERGED
+- fail-closed fixture: MERGED
+- deterministic contract/fixture validation: MERGED / PASS
+- README reconciliation: MERGED
+- exact official source identifiers: MERGED / BOUND
+- deterministic BLS/BEA/FRED/Census normalizers: MERGED / PASS
+- New York Fed raw workbook binding: MERGED
+- New York Fed workbook cell/column normalization: PENDING EXACT BINDING
 - cohort joins and required-cost composite construction: PENDING
 - live governed household-state generation: NOT IMPLEMENTED
-- authentic ERL-to-Site output binding: NOT IMPLEMENTED
+- authentic ERL-to-Site live output binding: NOT IMPLEMENTED
 - public activation / served-body verification: NOT OBSERVED
 
 ## Next work
 
-Reconcile `README.md`, add dedicated deterministic validator/tests for the output contract and fixture, bind exact official series identifiers and acquisition/normalization semantics, re-run exact-head validation, and only then merge with expected-head protection. Live output and public activation remain separate later evidence predicates.
+Resolve the exact New York Fed workbook worksheet/column map from retained official source evidence, execute bounded live candidate acquisition for credential-free BLS/FRED/Census sources, preserve raw hashes/vintages, add BEA acquisition when TV/TVC-governed API-key custody is available, then construct the first governed multi-source household-state candidate without authorizing public activation. Site may consume only an authenticated governed ERL output after those evidence predicates are satisfied.
