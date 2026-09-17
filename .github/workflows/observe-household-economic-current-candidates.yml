@@ -5,6 +5,7 @@ on:
     paths:
       - "scripts/acquire_household_economic_conditions.py"
       - "scripts/inspect_nyfed_household_workbook.py"
+      - "scripts/build_household_economic_state_candidate.py"
       - "research-data/household-economic-conditions/**"
       - ".github/workflows/observe-household-economic-current-candidates.yml"
   workflow_dispatch:
@@ -46,7 +47,13 @@ jobs:
           fi
           echo 'BEA_CREDENTIAL_ENVIRONMENT=ABSENT'
           echo 'BEA_CREDENTIAL_EXECUTION_BOUNDARY=TV_TVC_RESIDENT_ONLY'
-      - name: Verify all candidate outputs remain non-authorizing
+          echo 'BEA_TV_TVC_REGISTRATION_EVIDENCE=NOT_OBSERVED'
+      - name: Build first partial non-authorizing household state candidate
+        run: |
+          python scripts/build_household_economic_state_candidate.py \
+            --candidate-root build/household-economic-source-candidates \
+            --output build/household-economic-state-candidate.json
+      - name: Verify all candidate outputs remain non-authorizing and unsupported fields unknown
         run: |
           python - <<'PY'
           import json
@@ -62,7 +69,16 @@ jobs:
                   raise SystemExit(f'candidate gained public activation authority: {path}')
               if not body.get('raw_sha256') or not body.get('source_vintage'):
                   raise SystemExit(f'candidate missing raw hash/vintage: {path}')
+          state = json.loads(Path('build/household-economic-state-candidate.json').read_text())
+          if state.get('public_activation_authorized') is not False or state.get('evidence_state') != 'PARTIAL':
+              raise SystemExit('state candidate authority/evidence boundary violated')
+          required_unknown = ['net_disposable_resources','required_cost_burden','necessary_consumption','discretionary_residual','saving_dissaving','new_borrowing','delinquency_arrears','unmet_foregone_consumption']
+          for key in required_unknown:
+              if state['household_state'][key]['state'] != 'UNKNOWN':
+                  raise SystemExit(f'unsupported field was promoted: {key}')
           print(f'HOUSEHOLD_CURRENT_CANDIDATES_NONAUTHORIZING=PASS count={len(candidates)}')
+          print('HOUSEHOLD_MULTI_SOURCE_STATE_CANDIDATE=PARTIAL')
+          print('PUBLIC_ACTIVATION_AUTHORIZED=false')
           PY
       - name: Upload bounded observation evidence
         uses: actions/upload-artifact@v4
@@ -71,4 +87,5 @@ jobs:
           path: |
             build/household-economic-source-candidates/**
             build/nyfed-workbook-structure-observation.json
+            build/household-economic-state-candidate.json
           if-no-files-found: error
