@@ -1,0 +1,42 @@
+{
+  "schema": "stegverse.erl.nyfed-distributional-map/v1",
+  "goal_task_id": "ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001",
+  "release_id": "2026Q2",
+  "workbook_sha256": "ddfba16b87e187848ed591a1283f310188e7bdeebe5cf409b70a35b058d99237",
+  "source_workbook": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/xls/hhd_c_report_2026q2.xlsx",
+  "maps": {
+    "NYFED_CCP_DEBT_BALANCE_BY_AGE": {
+      "worksheet": "Page 20 Data",
+      "title": "Total Debt Balance by Age",
+      "unit": "trillions of nominal dollars",
+      "header_row": 4,
+      "period_column": "A",
+      "expected_headers": {"B":"18-29","C":"30-39","D":"40-49","E":"50-59","F":"60-69","G":"70+"},
+      "category_columns": {"18-29":"B","30-39":"C","40-49":"D","50-59":"E","60-69":"F","70+":"G"},
+      "latest_observed_period": "2026-Q2",
+      "latest_observed_row": 114,
+      "admission_role": "DISTRIBUTIONAL_DEBT_STOCK_CONTEXT_ONLY"
+    },
+    "NYFED_CCP_SERIOUS_DELINQUENCY_BY_AGE": {
+      "worksheet": "Page 24 Data",
+      "title": "Transition into Serious Delinquency (90+) by Age",
+      "unit": "percent",
+      "definition": "Four-quarter moving sum of transition into serious delinquency (90+) by age",
+      "header_row": 3,
+      "period_column": "A",
+      "expected_headers": {"A":"quarter","B":"18-29","C":"30-39","D":"40-49","E":"50-59","F":"60-69","G":"70+","H":"all"},
+      "category_columns": {"18-29":"B","30-39":"C","40-49":"D","50-59":"E","60-69":"F","70+":"G","all":"H"},
+      "latest_observed_period": "2026-Q2",
+      "latest_observed_row": 109,
+      "admission_role": "AGE_DISTRIBUTIONAL_DELINQUENCY_CONTEXT_ONLY"
+    }
+  },
+  "semantic_boundaries": {
+    "debt_stock_is_new_borrowing": false,
+    "aggregate_or_age_delinquency_is_complete_household_stress": false,
+    "age_distribution_can_support_partial_delinquency_context": true,
+    "household_welfare_finding_authority": false
+  },
+  "finding_authority": false,
+  "public_activation_authorized": false
+}
