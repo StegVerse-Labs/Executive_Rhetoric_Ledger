@@ -7,6 +7,7 @@ on:
       - "scripts/acquire_board_dsr.py"
       - "scripts/acquire_census_b25140.py"
       - "scripts/inspect_nyfed_household_workbook.py"
+      - "scripts/normalize_nyfed_household_workbook.py"
       - "scripts/build_household_economic_state_candidate.py"
       - "research-data/household-economic-conditions/**"
       - ".github/workflows/observe-household-economic-current-candidates.yml"
@@ -33,13 +34,18 @@ jobs:
         run: python scripts/acquire_board_dsr.py --output-dir build/household-economic-source-candidates/fred
       - name: Acquire latest standard ACS candidate without credentials
         run: python scripts/acquire_census_b25140.py --year 2024 --output-dir build/household-economic-source-candidates/census
-      - name: Capture official New York Fed workbook without normalizing
+      - name: Capture official New York Fed workbook
         run: python scripts/acquire_household_economic_conditions.py --source nyfed --output-dir build/household-economic-source-candidates/nyfed
       - name: Observe exact New York Fed workbook structure
         run: |
           python scripts/inspect_nyfed_household_workbook.py \
             build/household-economic-source-candidates/nyfed/nyfed_ccp_debt_balance_by_class.raw \
             --output build/nyfed-workbook-structure-observation.json
+      - name: Normalize exact-bound New York Fed workbook surfaces
+        run: |
+          python scripts/normalize_nyfed_household_workbook.py \
+            build/household-economic-source-candidates/nyfed/nyfed_ccp_debt_balance_by_class.raw \
+            --candidate-root build/household-economic-source-candidates/nyfed
       - name: Inspect BEA credential presence without secret interpolation
         shell: bash
         run: |
