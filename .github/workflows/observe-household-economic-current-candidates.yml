@@ -1,0 +1,74 @@
+name: Observe Household Economic Current Candidates
+
+on:
+  pull_request:
+    paths:
+      - "scripts/acquire_household_economic_conditions.py"
+      - "scripts/inspect_nyfed_household_workbook.py"
+      - "research-data/household-economic-conditions/**"
+      - ".github/workflows/observe-household-economic-current-candidates.yml"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  observe-public-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install workbook parser
+        run: python -m pip install --upgrade openpyxl
+      - name: Acquire current BLS candidates without credentials
+        run: python scripts/acquire_household_economic_conditions.py --source bls --start-year 2025 --end-year 2026 --output-dir build/household-economic-source-candidates/bls
+      - name: Acquire Board/FRED DSR candidates without credentials
+        run: python scripts/acquire_household_economic_conditions.py --source fred --output-dir build/household-economic-source-candidates/fred
+      - name: Acquire latest standard ACS candidate without credentials
+        run: python scripts/acquire_household_economic_conditions.py --source census --census-year 2024 --output-dir build/household-economic-source-candidates/census
+      - name: Capture official New York Fed workbook without normalizing
+        run: python scripts/acquire_household_economic_conditions.py --source nyfed --output-dir build/household-economic-source-candidates/nyfed
+      - name: Observe exact New York Fed workbook structure
+        run: |
+          python scripts/inspect_nyfed_household_workbook.py \
+            build/household-economic-source-candidates/nyfed/nyfed_ccp_debt_balance_by_class.raw \
+            --output build/nyfed-workbook-structure-observation.json
+      - name: Inspect BEA credential presence without secret interpolation
+        shell: bash
+        run: |
+          if [ -n "${BEA_API_KEY:-}" ]; then
+            echo 'BEA_CREDENTIAL_ENVIRONMENT=PRESENT_UNEXPECTED_IN_HOSTED_VALIDATION'
+            exit 1
+          fi
+          echo 'BEA_CREDENTIAL_ENVIRONMENT=ABSENT'
+          echo 'BEA_CREDENTIAL_EXECUTION_BOUNDARY=TV_TVC_RESIDENT_ONLY'
+      - name: Verify all candidate outputs remain non-authorizing
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          candidates = sorted(Path('build/household-economic-source-candidates').rglob('*.candidate.json'))
+          if not candidates:
+              raise SystemExit('no candidate outputs produced')
+          for path in candidates:
+              body = json.loads(path.read_text())
+              if body.get('finding_authority') is not False:
+                  raise SystemExit(f'candidate gained finding authority: {path}')
+              if body.get('public_activation_authorized') is not False:
+                  raise SystemExit(f'candidate gained public activation authority: {path}')
+              if not body.get('raw_sha256') or not body.get('source_vintage'):
+                  raise SystemExit(f'candidate missing raw hash/vintage: {path}')
+          print(f'HOUSEHOLD_CURRENT_CANDIDATES_NONAUTHORIZING=PASS count={len(candidates)}')
+          PY
+      - name: Upload bounded observation evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: household-economic-current-candidates
+          path: |
+            build/household-economic-source-candidates/**
+            build/nyfed-workbook-structure-observation.json
+          if-no-files-found: error
