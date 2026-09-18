@@ -88,6 +88,21 @@
         "no_result_effect": "no-update",
         "candidate_only": true
       }
+    },
+    {
+      "query_id": "white-house-press-access-precedent",
+      "query_text": "Find new primary executive statements, White House credential or press-pool actions, written access criteria, outlet/WHCA responses, court filings and orders, corrections, implementation changes, and historical controls relevant to White House press access, freedom of the press, viewpoint discrimination, procedural safeguards, and cross-administration reuse.",
+      "discovery_class": "captured-topic-refresh",
+      "status": "planned",
+      "dpoi_search_parameters": {
+        "evidence_directions": ["strengthen", "weaken", "disambiguate"],
+        "strengthen_terms": ["credential revoked", "access denied", "written criteria", "court order", "injunction", "hard pass", "press pool", "implemented"],
+        "weaken_terms": ["rescinded", "restored access", "not implemented", "narrowed", "vacated", "reversed", "superseded"],
+        "disambiguation_terms": ["hard pass", "briefing room", "East Room", "press pool", "Oval Office", "Air Force One", "restricted workspace", "viewpoint", "procedure", "written reason", "appeal", "administration"],
+        "state_dimensions": ["implementation", "access-surface", "viewpoint", "procedure", "precedent", "cross-administration-symmetry", "timeline"],
+        "no_result_effect": "no-update",
+        "candidate_only": true
+      }
     }
   ],
   "candidate_outputs": {
