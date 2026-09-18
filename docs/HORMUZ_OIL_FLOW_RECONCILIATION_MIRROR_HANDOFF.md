@@ -83,7 +83,23 @@ The evidence supports only a measurement-reconciliation finding at this stage:
 
 `SS-EVIDENCE-COMPARISON-001` reached `20/20` and may not be extended. This task preserves an already-existing ERL research group as a separate evidence-reconstruction goal rather than splitting the parent merely to reset its counter.
 
-Current Goal Prompt Count for this canonicalized research continuation: `3/20`.
+Current Goal Prompt Count for this canonicalized research continuation: `4/20`.
+
+## Matched-window advancement — 2026-09-17
+
+Current evidence artifact:
+`assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md`
+
+Completed in source for this prompt:
+- Sep 7–13 PortWatch/Kpler/Lloyd's matched-window comparison;
+- Kpler preliminary -> revised count preservation;
+- UKMTO U.S.-stated facilitated vs AIS-derived category separation;
+- Windward imagery/dark-detection mechanism check;
+- Hormuz vs Gulf-of-Oman / Yanbu / outside-strait STS bypass separation;
+- destination trace with Al Marrouna -> Port Qasim arrival/berth confirmed from public port reporting;
+- Gas Polaris India and Saudi-China STS destination cases retained below discharge-proof threshold.
+
+The substantive lane remains `RESEARCH_ACTIVE`. Exact CENTCOM/NCAGS/JMIC vessel manifests, same-window barrel series, exact Chinese discharge evidence, native terminal metering, and independent review remain unresolved. No falsehood, deception, intent, motive, or publication finding is authorized.
 
 ## Latest validated source advancement
 
@@ -100,4 +116,4 @@ This proves the repository source/coordination advancement only. It does not pro
 
 ## Next action
 
-Acquire matched same-day and same-seven-day U.S./CENTCOM/JMIC and independent-provider measurements, preserve revisions as dark transits are identified, separate Hormuz from bypass exports, and reconcile claimed outbound barrels against downstream import/delivery evidence before independent review.
+Acquire exact CENTCOM/NCAGS/JMIC facilitated-transit source records for matched calendar days; extend the barrel-volume comparison onto one common seven-day window; obtain exact destination arrival/discharge evidence for the Saudi-China STS cargoes and Gas Polaris; then perform independent review before any finding transition.
