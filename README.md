@@ -99,6 +99,12 @@ The existing research group `ERL-RC-OIL-FLOW-2026` now has a dedicated governed 
 
 The initial evidence record is [2026-09-17 Hormuz vessel / oil-flow reconciliation](assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md). The current matched-window continuation is [2026-09-17 matched-window / dark-transit / destination reconciliation](assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md). It preserves Sep 7–13 PortWatch/Kpler/Lloyd's denominators, preliminary-to-revised dark-transit counts, Hormuz-versus-bypass volumes, and destination proof classes. Its scoped continuation is [Hormuz Oil-Flow Reconciliation Mirror Handoff](docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md). The lane remains `RESEARCH_ACTIVE`; candidate-layer finding and publication authority remain false.
 
+## AI emergency-control / digital-asset non-control authority comparison
+
+Goal `ERL-AI-EMERGENCY-CLARITY-AUTHORITY-BOUNDARY-001` preserves a source-bounded September 2026 comparison between the proposed AI Emergency Button Act and the Senate final-draft Digital Asset Market Clarity Act. The lane keeps AI shutdown capability distinct from unilateral user-asset transaction control, custody, ledger governance, and emergency suspension authority, and it does not treat either proposal as enacted law or infer StegVerse applicability.
+
+See [AI Emergency Button / CLARITY authority-boundary comparison](assessments/evidence/2026-09-18-ai-emergency-button-clarity-authority-boundary.md) and the [scoped mirror handoff](docs/AI_EMERGENCY_CLARITY_AUTHORITY_BOUNDARY_MIRROR_HANDOFF.md). The lane remains `RESEARCH_INTAKE / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`.
+
 ## Status
 
 ```yaml
