@@ -13,21 +13,9 @@
       "constitutional and civil-rights accountability"
     ],
     "time_window": "rolling-14-days-with-historical-links",
-    "jurisdictions": [
-      "United States federal"
-    ],
-    "actors": [
-      "President",
-      "Attorney General",
-      "DHS Secretary",
-      "FBI Director"
-    ],
-    "agencies": [
-      "Department of Justice",
-      "Federal Bureau of Investigation",
-      "Department of Homeland Security",
-      "Immigration and Customs Enforcement"
-    ]
+    "jurisdictions": ["United States federal"],
+    "actors": ["President", "Attorney General", "DHS Secretary", "FBI Director"],
+    "agencies": ["Department of Justice", "Federal Bureau of Investigation", "Department of Homeland Security", "Immigration and Customs Enforcement"]
   },
   "source_classes": [
     "primary-legal-record",
@@ -46,46 +34,11 @@
       "priority": "critical",
       "enabled": true,
       "dpoi_search_parameters": {
-        "evidence_directions": [
-          "strengthen",
-          "weaken",
-          "disambiguate"
-        ],
-        "strengthen_terms": [
-          "confirmed",
-          "corroborated",
-          "substantiated",
-          "admitted",
-          "verified",
-          "consistent with"
-        ],
-        "weaken_terms": [
-          "retracted",
-          "dismissed",
-          "contradicted",
-          "unsubstantiated",
-          "no evidence",
-          "incorrect"
-        ],
-        "disambiguation_terms": [
-          "timeline",
-          "chronology",
-          "authority",
-          "jurisdiction",
-          "scope",
-          "definition",
-          "records",
-          "testimony",
-          "metadata"
-        ],
-        "state_dimensions": [
-          "current-evidence-state",
-          "authority",
-          "timeline",
-          "identity",
-          "causation",
-          "scope"
-        ],
+        "evidence_directions": ["strengthen", "weaken", "disambiguate"],
+        "strengthen_terms": ["confirmed", "corroborated", "substantiated", "admitted", "verified", "consistent with"],
+        "weaken_terms": ["retracted", "dismissed", "contradicted", "unsubstantiated", "no evidence", "incorrect"],
+        "disambiguation_terms": ["timeline", "chronology", "authority", "jurisdiction", "scope", "definition", "records", "testimony", "metadata"],
+        "state_dimensions": ["current-evidence-state", "authority", "timeline", "identity", "causation", "scope"],
         "no_result_effect": "no-update",
         "candidate_only": true
       }
@@ -97,44 +50,11 @@
       "priority": "high",
       "enabled": true,
       "dpoi_search_parameters": {
-        "evidence_directions": [
-          "strengthen",
-          "weaken",
-          "disambiguate"
-        ],
-        "strengthen_terms": [
-          "confirmed",
-          "charged",
-          "filed",
-          "documented",
-          "body camera",
-          "official record"
-        ],
-        "weaken_terms": [
-          "cleared",
-          "dismissed",
-          "misidentified",
-          "false report",
-          "no violation",
-          "not involved"
-        ],
-        "disambiguation_terms": [
-          "incident report",
-          "agency responsibility",
-          "jurisdiction",
-          "sequence",
-          "timestamp",
-          "identity",
-          "chain of command"
-        ],
-        "state_dimensions": [
-          "identity",
-          "authority",
-          "timeline",
-          "jurisdiction",
-          "conduct",
-          "outcome"
-        ],
+        "evidence_directions": ["strengthen", "weaken", "disambiguate"],
+        "strengthen_terms": ["confirmed", "charged", "filed", "documented", "body camera", "official record"],
+        "weaken_terms": ["cleared", "dismissed", "misidentified", "false report", "no violation", "not involved"],
+        "disambiguation_terms": ["incident report", "agency responsibility", "jurisdiction", "sequence", "timestamp", "identity", "chain of command"],
+        "state_dimensions": ["identity", "authority", "timeline", "jurisdiction", "conduct", "outcome"],
         "no_result_effect": "no-update",
         "candidate_only": true
       }
@@ -146,45 +66,11 @@
       "priority": "high",
       "enabled": true,
       "dpoi_search_parameters": {
-        "evidence_directions": [
-          "strengthen",
-          "weaken",
-          "disambiguate"
-        ],
-        "strengthen_terms": [
-          "corroborated",
-          "consistent",
-          "confirmed",
-          "matches",
-          "authenticated",
-          "under oath"
-        ],
-        "weaken_terms": [
-          "contradiction",
-          "inconsistent",
-          "recanted",
-          "corrected",
-          "disputed",
-          "unsupported"
-        ],
-        "disambiguation_terms": [
-          "who authorized",
-          "who directed",
-          "who executed",
-          "who knew",
-          "custodian",
-          "delegation",
-          "email metadata",
-          "records retention"
-        ],
-        "state_dimensions": [
-          "authority",
-          "knowledge",
-          "execution",
-          "records-custody",
-          "channel-purpose",
-          "timeline"
-        ],
+        "evidence_directions": ["strengthen", "weaken", "disambiguate"],
+        "strengthen_terms": ["corroborated", "consistent", "confirmed", "matches", "authenticated", "under oath"],
+        "weaken_terms": ["contradiction", "inconsistent", "recanted", "corrected", "disputed", "unsupported"],
+        "disambiguation_terms": ["who authorized", "who directed", "who executed", "who knew", "custodian", "delegation", "email metadata", "records retention"],
+        "state_dimensions": ["authority", "knowledge", "execution", "records-custody", "channel-purpose", "timeline"],
         "no_result_effect": "no-update",
         "candidate_only": true
       }
@@ -196,41 +82,11 @@
       "priority": "medium",
       "enabled": true,
       "dpoi_search_parameters": {
-        "evidence_directions": [
-          "strengthen",
-          "weaken",
-          "disambiguate"
-        ],
-        "strengthen_terms": [
-          "precedent",
-          "same pattern",
-          "repeated",
-          "consistent practice",
-          "historical match"
-        ],
-        "weaken_terms": [
-          "exception",
-          "different authority",
-          "different procedure",
-          "noncomparable",
-          "changed policy"
-        ],
-        "disambiguation_terms": [
-          "historical control",
-          "baseline",
-          "standard practice",
-          "policy in force",
-          "authority at time",
-          "comparison period"
-        ],
-        "state_dimensions": [
-          "baseline",
-          "alternative-explanation",
-          "policy-context",
-          "authority",
-          "timeline",
-          "comparability"
-        ],
+        "evidence_directions": ["strengthen", "weaken", "disambiguate"],
+        "strengthen_terms": ["precedent", "same pattern", "repeated", "consistent practice", "historical match"],
+        "weaken_terms": ["exception", "different authority", "different procedure", "noncomparable", "changed policy"],
+        "disambiguation_terms": ["historical control", "baseline", "standard practice", "policy in force", "authority at time", "comparison period"],
+        "state_dimensions": ["baseline", "alternative-explanation", "policy-context", "authority", "timeline", "comparability"],
         "no_result_effect": "no-update",
         "candidate_only": true
       }
@@ -242,53 +98,11 @@
       "priority": "critical",
       "enabled": true,
       "dpoi_search_parameters": {
-        "evidence_directions": [
-          "strengthen",
-          "weaken",
-          "disambiguate"
-        ],
-        "strengthen_terms": [
-          "credential revoked",
-          "access denied",
-          "written criteria",
-          "court order",
-          "injunction",
-          "hard pass",
-          "press pool",
-          "implemented"
-        ],
-        "weaken_terms": [
-          "rescinded",
-          "restored access",
-          "not implemented",
-          "narrowed",
-          "vacated",
-          "reversed",
-          "superseded"
-        ],
-        "disambiguation_terms": [
-          "hard pass",
-          "briefing room",
-          "East Room",
-          "press pool",
-          "Oval Office",
-          "Air Force One",
-          "restricted workspace",
-          "viewpoint",
-          "procedure",
-          "written reason",
-          "appeal",
-          "administration"
-        ],
-        "state_dimensions": [
-          "implementation",
-          "access-surface",
-          "viewpoint",
-          "procedure",
-          "precedent",
-          "cross-administration-symmetry",
-          "timeline"
-        ],
+        "evidence_directions": ["strengthen", "weaken", "disambiguate"],
+        "strengthen_terms": ["credential revoked", "access denied", "written criteria", "court order", "injunction", "hard pass", "press pool", "implemented"],
+        "weaken_terms": ["rescinded", "restored access", "not implemented", "narrowed", "vacated", "reversed", "superseded"],
+        "disambiguation_terms": ["hard pass", "briefing room", "East Room", "press pool", "Oval Office", "Air Force One", "restricted workspace", "viewpoint", "procedure", "written reason", "appeal", "administration"],
+        "state_dimensions": ["implementation", "access-surface", "viewpoint", "procedure", "precedent", "cross-administration-symmetry", "timeline"],
         "no_result_effect": "no-update",
         "candidate_only": true
       }
@@ -297,11 +111,7 @@
   "review_boundary": {
     "automation_may_propose": true,
     "automation_may_publish": false,
-    "required_review_states": [
-      "candidate-generated",
-      "source-posture-reviewed",
-      "ledger-review-required"
-    ]
+    "required_review_states": ["candidate-generated", "source-posture-reviewed", "ledger-review-required"]
   },
   "notes": "Automation creates discovery candidates only. Directional DPOI parameters identify potentially strengthening, weakening, or disambiguating evidence for review; they do not change a DPOI state automatically, and a zero-result search produces no evidentiary update."
 }
