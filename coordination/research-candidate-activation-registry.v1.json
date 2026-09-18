@@ -169,9 +169,10 @@
       "durable_owner": "issue:63",
       "artifact_paths": [
         "assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md",
-        "docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md"
+        "docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md",
+        "assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md"
       ],
-      "next_executable_task": "Reconstruct matched same-day and same-seven-day U.S./CENTCOM/JMIC versus Lloyd's/Kpler/PortWatch/Vortexa/Windward/TankerTrackers vessel and oil-flow measures, preserve dark-transit revisions, separate Hormuz from bypass exports, and cross-check outbound barrels against downstream delivery/import evidence before any finding transition.",
+      "next_executable_task": "Acquire exact CENTCOM/NCAGS/JMIC facilitated-transit records for matched calendar days; align official and independent barrel-volume series to one seven-day window; custody exact destination arrival/discharge evidence for Saudi-China STS cargoes and Gas Polaris; then conduct independent review before any finding transition.",
       "terminal_condition": "Exact statements and physical-flow evidence are independently reconstructed and a governed terminal transition is recorded.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false

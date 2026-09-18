@@ -742,5 +742,15 @@ The task must not equate U.S.-facilitated vessels, non-Iranian-linked cargo vess
 
 This lane preserves the existing research-group identity rather than creating a duplicate candidate. `SS-EVIDENCE-COMPARISON-001` remains prompt-exhausted at `20/20`; substantive Hormuz evidence reconstruction proceeds only under `ERL-RC-OIL-FLOW-2026`.
 
+Matched-window evidence advancement:
+- evidence: `assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md`;
+- Sep 7–13 PortWatch/Kpler/Lloyd's comparison preserved without denominator collapse;
+- preliminary-to-revised Kpler counts preserved;
+- U.S.-stated facilitated, AIS-derived, and dark-reconstructed traffic kept separate;
+- Hormuz and bypass export routes kept separate;
+- Al Marrouna -> Port Qasim arrival/berth preserved as current strongest downstream example;
+- exact CENTCOM/JMIC manifests, same-window barrel series, remaining destination discharges, and independent review remain pending;
+- no finding/publication promotion authorized.
+
 Latest source advancement: ERL PR `#168` merged at `a4ee58c674373bbc49253760352ed6fd1ba3120d` after all four triggered exact-head workflows succeeded (`35296936596`, `35296936513`, `35296936466`, `35296936489`). Task Registry registration merged separately in `StegVerse-Labs/.github#2086` at `500f08b144f34e9be83b291defee38ab534a9746`. These are source/coordination proofs only; substantive reconciliation remains active.
 
