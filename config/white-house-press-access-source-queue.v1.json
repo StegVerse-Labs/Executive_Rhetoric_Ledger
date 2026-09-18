@@ -12,6 +12,42 @@
   "publication_authority": "NONE",
   "items": [
     {
+      "source_id": "ERL-PRESS-CBS-IMPLEMENTATION-2026-09-18",
+      "evidence_class": "authoritative-contemporaneous-reporting",
+      "url": "https://www.cbsnews.com/news/trump-banning-cnn-ms-now-politico-white-house/",
+      "allowed_hosts": [
+        "www.cbsnews.com",
+        "cbsnews.com"
+      ],
+      "destination": "assessments/press-access/evidence/implementation/ERL-PRESS-CBS-IMPLEMENTATION-2026-09-18.native",
+      "state": "READY",
+      "purpose": "Preserve direct link to the first-party post, Oval Office clarification, observed continued White House-ground access, and outlet responses while implementation remains unresolved."
+    },
+    {
+      "source_id": "ERL-PRESS-REUTERS-SCOPE-FOLLOWUP-2026-09-18",
+      "evidence_class": "authoritative-contemporaneous-reporting",
+      "url": "https://www.reuters.com/business/media-telecom/trump-says-he-might-ban-other-media-outlets-white-house-2026-09-18/",
+      "allowed_hosts": [
+        "www.reuters.com",
+        "reuters.com"
+      ],
+      "destination": "assessments/press-access/evidence/implementation/ERL-PRESS-REUTERS-SCOPE-FOLLOWUP-2026-09-18.native",
+      "state": "READY",
+      "purpose": "Preserve same-day scope clarification and distinguish stated intent from observed implementation."
+    },
+    {
+      "source_id": "ERL-PRESS-TRUMP-TRUTH-SOCIAL-2026-09-18",
+      "evidence_class": "first-party-presidential-social-statement",
+      "url": "https://truthsocial.com/@realDonaldTrump/posts/117293599348325006",
+      "allowed_hosts": [
+        "truthsocial.com",
+        "www.truthsocial.com"
+      ],
+      "destination": "assessments/press-access/evidence/primary/ERL-PRESS-TRUMP-TRUTH-SOCIAL-2026-09-18.native",
+      "state": "READY",
+      "purpose": "Acquire and preserve the exact first-party presidential post. If the public response is only a JavaScript shell or otherwise omits the post body, retain locator provenance but do not claim statement-content custody."
+    },
+    {
       "source_id": "ERL-PRESS-FIRST-AMENDMENT-CONGRESS",
       "evidence_class": "official-constitutional-text",
       "url": "https://constitution.congress.gov/constitution/amendment-1/",
