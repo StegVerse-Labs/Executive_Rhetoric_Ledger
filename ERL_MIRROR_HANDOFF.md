@@ -742,3 +742,5 @@ The task must not equate U.S.-facilitated vessels, non-Iranian-linked cargo vess
 
 This lane preserves the existing research-group identity rather than creating a duplicate candidate. `SS-EVIDENCE-COMPARISON-001` remains prompt-exhausted at `20/20`; substantive Hormuz evidence reconstruction proceeds only under `ERL-RC-OIL-FLOW-2026`.
 
+Latest source advancement: ERL PR `#168` merged at `a4ee58c674373bbc49253760352ed6fd1ba3120d` after all four triggered exact-head workflows succeeded (`35296936596`, `35296936513`, `35296936466`, `35296936489`). Task Registry registration merged separately in `StegVerse-Labs/.github#2086` at `500f08b144f34e9be83b291defee38ab534a9746`. These are source/coordination proofs only; substantive reconciliation remains active.
+
