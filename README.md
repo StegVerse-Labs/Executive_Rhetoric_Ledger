@@ -97,7 +97,7 @@ See [Digital Data Reclamation and Sovereignty](docs/DIGITAL_DATA_RECLAMATION_AND
 
 The existing research group `ERL-RC-OIL-FLOW-2026` now has a dedicated governed reconciliation lane for competing Strait of Hormuz vessel and petroleum-throughput measurements. The lane keeps U.S.-facilitated/protected movements, AIS-visible transits, retrospectively reconstructed dark transits, provider-specific vessel populations, crude-only versus crude-plus-products volumes, bypass exports, and downstream deliveries as separate evidence classes.
 
-The current evidence record is [2026-09-17 Hormuz vessel / oil-flow reconciliation](assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md). Its scoped continuation is [Hormuz Oil-Flow Reconciliation Mirror Handoff](docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md). The lane remains `RESEARCH_ACTIVE`; candidate-layer finding and publication authority remain false.
+The initial evidence record is [2026-09-17 Hormuz vessel / oil-flow reconciliation](assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md). The current matched-window continuation is [2026-09-17 matched-window / dark-transit / destination reconciliation](assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md). It preserves Sep 7–13 PortWatch/Kpler/Lloyd's denominators, preliminary-to-revised dark-transit counts, Hormuz-versus-bypass volumes, and destination proof classes. Its scoped continuation is [Hormuz Oil-Flow Reconciliation Mirror Handoff](docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md). The lane remains `RESEARCH_ACTIVE`; candidate-layer finding and publication authority remain false.
 
 ## Status
 
