@@ -9,7 +9,7 @@ Updated: 2026-09-18
 - Canonical issue: `#177`
 - COSV: `40000100100000`
 - Task Registry registration generation: `48`
-- Current Task Registry generation re-read for this continuation: `53`
+- Current Task Registry generation re-read after evidence merge: `54`
 - Status: `ACTIVE / CHECKED_OUT / RESEARCH_ACTIVE_NOT_ASSESSABLE / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 
 ## Objective
@@ -100,3 +100,17 @@ Continue through the existing recurring-discovery and active-acquisition/MyKV me
 - Observed implementation remains partial: named-outlet journalists were reported still present on White House grounds after the announcement, while the President described a broad intended ban and specifically referenced his office.
 - No evidence in this continuation proves hard-pass revocation, briefing-room exclusion, pool exclusion, opened-facility exclusion, Air Force One exclusion, or event-specific denial as completed acts.
 - No finding or publication authority is granted.
+
+
+## Evidence merge reconciliation — 2026-09-18
+
+- Evidence PR `#183`: merged.
+- Exact validated evidence head: `2c270ecdb5696c333584695030c63e325a3b476b`.
+- Merge commit: `a09ee7c90300560850718618ac6b78b31b013d3a`.
+- Validate Active Research Acquisition Consumer run `35401955460`: SUCCESS.
+- Validate Active Research MyKV Dispatch run `35401955493`: SUCCESS.
+- Validate Ledger Schemas run `35401955458`: SUCCESS.
+- The ledger-wide source-capture regression was made deterministic after its prior live third-party dependency returned HTTP 503; structural validation of all adapters remains, while the regression execution now uses the existing local JSON fixture and separate live smoke/discovery lanes continue live-source testing.
+- First-party Truth Social locator custody is established; exact statement-content bytes remain **PENDING** until the existing acquisition/MyKV path returns usable source bytes and readback evidence.
+- Same-day implementation state remains **PARTIAL_OBSERVATION_ONLY**. No completed per-surface exclusion is inferred from the announcement.
+- `finding_authorized=false`; `publication_authorized=false`; independent review remains required.
