@@ -29,6 +29,9 @@ The comparison asks whether these concepts can coexist architecturally without t
 - U.S. Senate floor activity, 2026-09-15: https://www.senate.gov/legislative/LIS/floor_activity/09_15_2026_Senate_Floor.htm
 - Kennedy floor remarks video linked by Senate office: https://www.youtube.com/watch?v=cWfavLHKkSU
 - GovInfo H.R. 9917 introduced text, AI Kill Switch Act: https://www.govinfo.gov/app/details/BILLS-119hr9917ih
+- U.S. Senate Daily Press, September 16 floor log: https://www.dailypress.senate.gov/page/2/
+- S. 5417 official bill locator: https://www.congress.gov/bill/119th-congress/senate-bill/5417
+- GovInfo Congressional Record Index (2026): https://www.govinfo.gov/app/details/CRI-2026/CRI-2026-PAPER
 - Reuters, 2026-09-15 Senate procedural status (secondary context): https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/
 
 ## Current verified posture
@@ -38,7 +41,9 @@ The comparison asks whether these concepts can coexist architecturally without t
 - The September 14 Senate final draft of H.R. 3633 includes Section 10604, the Blockchain Regulatory Certainty Act. Its definition of a non-controlling blockchain developer or provider turns on the absence of legal right or unilateral and independent ability to control, initiate upon demand, or effectuate transactions involving digital assets to which users are entitled without third-party approval, consent, or direction.
 - The official Senate record identifies Roll Call Vote No. 234 at 2:19 p.m. on September 15, 2026: cloture on the motion to proceed to H.R. 3633 was rejected, 49 yeas to 50 nays with 1 not voting. Senate floor activity also records a motion to reconsider entered after that vote. Accordingly, the September 14 final-draft language remains preserved as proposed legislative text, not enacted law.
 - The September 16 Kennedy Senate-office record states that Kennedy sought unanimous consent for the AI Emergency Button Act and Sen. Rand Paul objected; the office links the floor remarks video. This was not a roll-call vote.
-- H.R. 9917, the separately introduced House `AI Kill Switch Act`, is a distinct July 23, 2026 House bill sponsored by Rep. Ted Lieu with Rep. Nathaniel Moran as cosponsor. It is not silently substituted for Kennedy's later Senate-office `AI Emergency Button Act` draft. No numbered Senate version of Kennedy's draft was established in this source pass.
+- H.R. 9917, the separately introduced House `AI Kill Switch Act`, is a distinct July 23, 2026 House bill sponsored by Rep. Ted Lieu with Rep. Nathaniel Moran as cosponsor. It is not silently substituted for Kennedy's later Senate-office `AI Emergency Button Act` draft.
+- A subsequent September 18 source pass located the official U.S. Senate Daily Press floor log for September 16. It records that at 5:15 p.m. Kennedy asked unanimous consent to pass **S. 5417**; Paul reserved the right to object and asked unanimous consent to modify Kennedy's request; Kennedy objected to Paul's modification request; Paul then objected to Kennedy's original request. This independently resolves the numbered Senate bill identity for the floor exchange while preserving the earlier no-number-observed state as historical research context.
+- Legislative metadata for S. 5417 identifies it as a Kennedy-sponsored bill introduced September 16, read twice, and referred to the Committee on Commerce, Science, and Transportation. Exact-text identity with the earlier Kennedy-office two-page draft is not yet claimed because primary full-text S. 5417 bytes were not independently retrieved in this pass.
 
 ## ERL analytical boundary
 
@@ -60,9 +65,9 @@ This intake may be used as a design-comparison reference for StegVerse's separat
 
 ## Required next evidence
 
-1. Preserve a later Congressional Record transcript or Senate journal entry for the September 16 unanimous-consent exchange if one becomes independently retrievable; retain the Senate-office floor record already captured.
-2. Reconcile any later numbered Senate AI Emergency Button Act text against the Kennedy discussion draft; preserve H.R. 9917 as a separate House bill unless primary sources establish a formal relationship.
-3. Track subsequent CLARITY substitutes, amendments, reconsideration, or reintroduction without overwriting the September 14/15 snapshot.
+1. Preserve a later Congressional Record transcript or Senate journal entry for the September 16 S. 5417 unanimous-consent exchange if one becomes independently retrievable; retain the Senate-office record and Senate Daily Press floor log already captured.
+2. Retrieve primary S. 5417 full text when independently available and reconcile it clause-by-clause against the Kennedy discussion draft; preserve H.R. 9917 as a separate House bill unless primary sources establish a formal relationship.
+3. Track subsequent CLARITY substitutes, amendments, disposition of the September 15 reconsideration motion, or reintroduction without overwriting the September 14/15 snapshot.
 4. If StegVerse-specific applicability is later requested, perform a separate legal/technical applicability analysis rather than promoting this architectural comparison into a compliance finding.
 5. Independent review before any ERL finding or publication transition.
 
@@ -76,7 +81,7 @@ This intake may be used as a design-comparison reference for StegVerse's separat
 
 ## Prompt lineage
 
-Goal Prompt Count: `3/20`.
+Goal Prompt Count: `4/20`.
 
 ## Current source advancement
 
@@ -100,8 +105,8 @@ Goal Prompt Count: `3/20`.
 
 ## Current continuation
 
-The official September 15 Senate roll call and floor activity are now captured, including Vote No. 234, the 49-50-1 tally, rejection of cloture, and the entered motion to reconsider. The September 16 unanimous-consent event is anchored to Kennedy's official Senate-office account and linked floor video; no roll-call occurred. H.R. 9917 is now explicitly separated from Kennedy's Senate-office draft. Finding and publication authority remain false pending independent review.
+The official September 15 Senate roll call and floor activity remain preserved, including Vote No. 234, the 49-50-1 tally, rejection of cloture, and the entered motion to reconsider. The September 16 unanimous-consent event is now independently anchored by both Kennedy's official Senate-office account and the U.S. Senate Daily Press floor log. The latter identifies the floor bill as S. 5417 and preserves the sequence of Kennedy's request, Paul's modification request, Kennedy's objection, and Paul's objection. H.R. 9917 remains explicitly separate. No later official CLARITY substitute/amendment text was established through the September 18 source pass. Finding and publication authority remain false pending independent review.
 
 ## Next action
 
-Preserve this September 2026 legislative-state snapshot. Next substantive work is to obtain an independently retrievable Congressional Record/Senate journal transcript for the September 16 exchange if published, track later numbered Senate AI Emergency Button or CLARITY text as appended versions, and obtain independent review before any ERL finding or publication transition.
+Preserve this September 2026 legislative-state snapshot. Next substantive work is to retrieve primary full text for S. 5417 and compare it against the Kennedy-office draft, obtain an independently retrievable Congressional Record/Senate journal transcript for the September 16 exchange if published, track any later CLARITY text or reconsideration disposition as appended evidence, and obtain independent review before any ERL finding or publication transition.
