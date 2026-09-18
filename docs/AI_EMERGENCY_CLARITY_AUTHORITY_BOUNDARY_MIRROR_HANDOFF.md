@@ -8,7 +8,7 @@ Updated: 2026-09-18
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#172`
 - COSV: `40000100100000`
-- Status: `ACTIVE / CHECKED_OUT / TASK_REGISTRY_GENERATION_45_REGISTERED / RESEARCH_ARTIFACT_AND_README_MERGED / SOURCE_VALIDATED / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
+- Status: `ACTIVE / CHECKED_OUT / TASK_REGISTRY_GENERATION_47_SESSION_CLOSE_RECONCILED / RESEARCH_ARTIFACT_AND_README_MERGED / SOURCE_VALIDATED / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 
 ## Purpose
 
@@ -70,20 +70,26 @@ This intake may be used as a design-comparison reference for StegVerse's separat
 
 ## Prompt lineage
 
-Goal Prompt Count: `1/20`.
+Goal Prompt Count: `2/20`.
 
 ## Current source advancement
 
 - ERL issue #172 is the durable research owner.
-- Evidence artifact staged: `assessments/evidence/2026-09-18-ai-emergency-button-clarity-authority-boundary.md`.
-- README discoverability staged.
-- ERL PR #173 is open.
+- Evidence artifact merged: `assessments/evidence/2026-09-18-ai-emergency-button-clarity-authority-boundary.md`.
+- README discoverability is merged and present on current ERL main.
+- ERL PR #173 merged at `622f3ca28bbedf313ebddc1efa3926572ce8d831`.
 - Initial Task Registry PR `StegVerse-Labs/.github#2126` was closed unmerged after the canonical generation advanced concurrently.
 - Reconciled Task Registry PR `StegVerse-Labs/.github#2128` merged at `ac79abca1ae8d22362a17fc86560fdaad7e17c65`, registering this Goal at canonical generation 45 with `ACTIVE / CHECKED_OUT` and COSV `40000100100000`.
 - The pre-merge ERL exact head `9ea04150f598b41ac3f2eb9cccf58af639648f19` passed `Validate Ledger Schemas` run `35393734324` and `Validate Active Research Acquisition Consumer` run `35393734319`; because this handoff reconciliation changes the exact head, those runs are historical branch evidence and are not claimed for the new head.
 - Reconciled ERL exact head `83072dea2f1a904b290ddcfec0f2156e04fac60d` passed `Validate Ledger Schemas` run `35394321730` and `Validate Active Research Acquisition Consumer` run `35394321748`.
 - ERL PR `#173` squash-merged at `622f3ca28bbedf313ebddc1efa3926572ce8d831`.
+- Final handoff reconciliation PR `#174` passed `Validate Ledger Schemas` run `35394510370` and squash-merged at `0fc6d832379fddc50a906f607efa75873e594f4c`.
+- Canonical Task Registry session-close reconciliation merged through `.github` PR `#2134` at `8c09cb425a47ce7f63506cbc2d380b48d029ec72`, advancing the registry to generation 47 and this Goal Prompt Count to `2/20`; stale generation-46 PR `#2133` was closed unmerged.
 - The merged source establishes the research artifact and repository discoverability only; no finding promotion, publication, runtime execution, legal-compliance conclusion, or StegVerse applicability conclusion is claimed.
+
+## Session close
+
+This session is closed at a clean handoff point. Canonical state remains `ACTIVE / CHECKED_OUT`; the research snapshot is merged, README discoverability is current, and no unresolved repository mutation from this session remains.
 
 ## Next action
 
