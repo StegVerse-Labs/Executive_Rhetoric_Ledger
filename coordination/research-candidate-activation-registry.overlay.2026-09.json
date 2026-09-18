@@ -18,6 +18,25 @@
       "terminal_condition": "Primary-source custody, platform-policy reconstruction, mechanism discrimination, contradiction review, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-WHITE-HOUSE-PRESS-ACCESS-2026",
+      "title": "White House press-access exclusion and cross-administration precedent",
+      "candidate_paths": [
+        "research-candidates/2026-09-18-white-house-press-access-precedent.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:177",
+      "artifact_paths": [
+        "docs/WHITE_HOUSE_PRESS_ACCESS_PRECEDENT_MIRROR_HANDOFF.md",
+        "assessments/evidence/2026-09-18-white-house-press-access-precedent-intake.md",
+        "config/white-house-press-access-source-queue.v1.json"
+      ],
+      "next_executable_task": "Acquire the exact first-party presidential/White House announcement and implementation records, preserve hard-pass/briefing-room/pool/open-facility/restricted-workspace distinctions, track outlet/WHCA responses and litigation by procedural stage, and maintain a symmetric cross-administration precedent control before any finding transition.",
+      "terminal_condition": "Primary executive statement and implementation evidence, access-surface scope, controlling legal posture, cross-administration control analysis, contradiction review, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }

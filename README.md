@@ -266,3 +266,8 @@ Remaining implementation areas:
 - automated contradiction and correction detection;
 - review assignment and promotion receipts;
 - publication and searchable compendium surfaces.
+
+
+## White House press-access / cross-administration precedent research
+
+Goal `ERL-WHITE-HOUSE-PRESS-ACCESS-PRECEDENT-001` registers the September 18, 2026 CNN/MS NOW/Politico White House access-exclusion event as an active ERL research subject. The lane reuses the existing recurring-discovery and active-research dispatcher, keeps hard-pass, briefing-room, pool, opened-facility, and restricted-workspace access distinct, preserves `Sherrill v. Knight` and `Associated Press v. Budowich` by procedural posture, and tests any surviving access rule symmetrically across administrations. See [the scoped handoff](docs/WHITE_HOUSE_PRESS_ACCESS_PRECEDENT_MIRROR_HANDOFF.md), [initial evidence intake](assessments/evidence/2026-09-18-white-house-press-access-precedent-intake.md), and [research candidate](research-candidates/2026-09-18-white-house-press-access-precedent.md). Status remains `RESEARCH_ACTIVE_NOT_ASSESSABLE / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`.

@@ -98,3 +98,8 @@ Canonical-library, fixture, repository-generated, or locally constructed receipt
 ## Current state
 
 `ACTIVE_RESEARCH_AUTOMATION_OBSERVED_2026-09-18 / DISPATCH_MERGED / PR_155_CONSUMER_MERGED_AND_VALIDATED / PR_156_FULL_CHAIN_ADMISSION_MERGED_AND_VALIDATED / PR_157_REUSABLE_INTR_RUNTIME_BINDING_MERGED / LIVE_MYKV_PROVIDER_WRITE_AND_EXACT_READBACK_OBSERVED / AUTHENTIC_FULL_INTR_CHAIN_BOUND_TO_LIVE_PROVIDER_OPERATION_PENDING`
+
+
+## Registered lane — White House press access / precedent — 2026-09-18
+
+`ERL-RC-WHITE-HOUSE-PRESS-ACCESS-2026` is registered through the September activation overlay with `config/white-house-press-access-source-queue.v1.json`. It reuses this dispatcher and MyKV contract; no duplicate scheduler/crawler was created. The queue contains public no-credential READY legal and contemporaneous-reporting sources, while exact first-party presidential/White House statement custody remains a lane-specific acquisition requirement. Finding and publication authority remain false.
