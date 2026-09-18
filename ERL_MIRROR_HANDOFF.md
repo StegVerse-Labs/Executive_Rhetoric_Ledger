@@ -708,3 +708,37 @@ Current state:
 - authentic ERL-to-KV write receipt: pending;
 - release/publication propagation: not yet ready.
 
+## Adjacent active research lane — Hormuz vessel / oil-flow reconciliation — ACTIVE
+
+Goal ID: `ERL-RC-OIL-FLOW-2026`
+
+COSV: `40000100100000`
+
+Canonical candidate:
+`research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`
+
+Scoped handoff:
+`docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md`
+
+Evidence reconciliation:
+`assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md`
+
+Durable owner:
+Issue `#63`.
+
+Current bounded state:
+- lifecycle: `RESEARCH_ACTIVE`;
+- exact Trump 2026-08-31 30-ships/night statement: captured through transcript/reporting;
+- White House 2026-08-28 cumulative 1,500-vessel / 750-million-barrel claims: captured as official claims;
+- current U.S. protected-traffic estimate of about 40 ships/day and about 14 million barrels/day: attributed U.S.-official report captured;
+- Lloyd's, Kpler/Reuters, and IMF PortWatch-derived comparison: captured with population/methodology distinctions;
+- dark/off-AIS revision uncertainty: explicitly preserved;
+- same-window cross-provider reconciliation: incomplete;
+- downstream destination/import reconciliation: pending;
+- falsehood/deception/intent/motive finding: not authorized;
+- publication/release: not authorized.
+
+The task must not equate U.S.-facilitated vessels, non-Iranian-linked cargo vessels, commodity-vessel tracker counts, AIS-derived completed transits, crude-only flow, crude-plus-products flow, Gulf-wide exports, or bypass-route exports. The next executable boundary is matched same-day and same-seven-day reconstruction plus downstream delivery/import confirmation.
+
+This lane preserves the existing research-group identity rather than creating a duplicate candidate. `SS-EVIDENCE-COMPARISON-001` remains prompt-exhausted at `20/20`; substantive Hormuz evidence reconstruction proceeds only under `ERL-RC-OIL-FLOW-2026`.
+
