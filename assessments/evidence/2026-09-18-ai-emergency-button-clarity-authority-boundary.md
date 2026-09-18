@@ -21,7 +21,8 @@ The research question is architectural and evidentiary: can a system expose a bo
 | Kennedy Senate-office release, 2026-09-16 | Kennedy sought unanimous consent; Sen. Rand Paul objected, so the proposal did not pass by unanimous consent. Kennedy described the company owning the model, rather than government, as operating the switch. | Sponsor-office account of the floor effort and sponsor's explanation of intended operation. |
 | Senate final-draft H.R. 3633 substitute, 2026-09-14 | Section 10604 defines a `non-controlling blockchain developer or provider` as a developer/provider that, in the regular course of operations, lacks the legal right or unilateral and independent ability to control, initiate upon demand, or effectuate transactions involving digital assets to which users are entitled without third-party approval, consent, or direction. | Proposed Senate substitute text, not enacted law. |
 | Lummis Senate-office release, 2026-09-14 | The final draft included BRCA edits intended to shield developers from money-transmission registration requirements and establish a civil safe harbor. | Sponsor-office characterization; exact legal effect remains governed by the draft text and any later enacted text. |
-| Senate procedural vote reported 2026-09-15 | The Senate failed to invoke cloture on the motion to proceed to H.R. 3633; Reuters reported a 50-49 vote, below the 60 votes required. | Procedural status only; does not resolve the merits or future disposition of the legislation. |
+| U.S. Senate Roll Call Vote No. 234, 2026-09-15 2:19 p.m. | On cloture on the motion to proceed to H.R. 3633, the Senate recorded 49 yeas, 50 nays, and 1 not voting; cloture was rejected. The Senate floor-activity record also records a motion to reconsider entered after the failed cloture vote. | Official Senate procedural record. This supersedes the earlier secondary-source vote-count wording while leaving the preserved September 14 draft untouched. |
+| Kennedy Senate-office floor record and linked floor video, 2026-09-16 | Kennedy sought unanimous consent to pass the AI Emergency Button Act; Sen. Rand Paul objected, preventing passage by unanimous consent. The official Senate-office release links the floor remarks video. | Official Senate-office account of the floor event. No roll-call vote occurred; this record does not imply broader Senate agreement or disagreement beyond the failed unanimous-consent request. |
 
 ## Primary source anchors
 
@@ -29,7 +30,11 @@ The research question is architectural and evidentiary: can a system expose a bo
 - Kennedy Senate office, 2026-09-16: https://www.kennedy.senate.gov/public/2026/9/senate-blocks-kennedy-bill-to-require-ai-developers-to-install-an-emergency-kill-switch
 - Senate final-draft CLARITY substitute: https://www.lummis.senate.gov/wp-content/uploads/EHF26724.pdf
 - Lummis Senate office, 2026-09-14: https://www.lummis.senate.gov/press-releases/lummis-boozman-scott-release-final-clarity-act-text/
-- Reuters procedural report, 2026-09-15: https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/
+- U.S. Senate Roll Call Vote No. 234, 2026-09-15: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00234.htm
+- U.S. Senate floor activity, 2026-09-15: https://www.senate.gov/legislative/LIS/floor_activity/09_15_2026_Senate_Floor.htm
+- Kennedy Senate office, 2026-09-16: https://www.kennedy.senate.gov/public/2026/9/senate-blocks-kennedy-bill-to-require-ai-developers-to-install-an-emergency-kill-switch
+- Kennedy floor remarks video linked by Senate office: https://www.youtube.com/watch?v=cWfavLHKkSU
+- Reuters procedural report, 2026-09-15 (secondary context retained): https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/
 
 ## Control-plane comparison
 
@@ -74,6 +79,12 @@ The evidence does **not** establish:
 
 Any StegVerse-specific applicability or compliance analysis must be a separate, source-bounded task.
 
+## Later-version reconciliation
+
+- The formally introduced House `AI Kill Switch Act`, H.R. 9917, was introduced July 23, 2026 by Rep. Ted Lieu with Rep. Nathaniel Moran as cosponsor and is separately indexed by GovInfo. It is a distinct House bill and must not be silently substituted for Kennedy's later Senate-office `AI Emergency Button Act` discussion draft.
+- As of this source pass, no numbered Senate bill corresponding to Kennedy's `AI Emergency Button Act` was established from the official sources reviewed. The Kennedy draft therefore remains preserved as its own September 16 source state unless a later numbered Senate text is independently verified.
+- The September 14 Senate final-draft CLARITY text remains preserved as the compared draft state. Any later substitute, amendment, reconsideration, or reintroduction must be appended as a new evidence state rather than replacing it.
+
 ## Legislative-state preservation
 
 As of this intake:
@@ -86,9 +97,9 @@ Later legislative changes must be appended as new evidence states rather than ov
 
 ## Required follow-up before finding promotion
 
-1. Preserve the exact Senate floor/roll-call procedural records for both September events.
-2. Reconcile any subsequently numbered or formally introduced AI Emergency Button Act text against the Kennedy-office draft.
-3. Track later CLARITY substitutes, amendments, reconsideration, or reintroduction.
+1. Preserve any later Congressional Record transcript or Senate journal entry that gives a more granular verbatim record of the September 16 unanimous-consent exchange; do not overwrite the official Senate-office floor record captured here.
+2. Reconcile any subsequently numbered Senate version of the AI Emergency Button Act against the Kennedy-office draft and keep H.R. 9917 separate unless a formal relationship is established by primary sources.
+3. Track later CLARITY substitutes, amendments, reconsideration, or reintroduction as appended evidence states.
 4. Obtain independent legal review before making any statutory-applicability or compliance statement about a specific system.
 5. Perform independent ERL review before any publication or substantive finding transition.
 
