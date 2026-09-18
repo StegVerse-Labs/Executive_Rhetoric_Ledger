@@ -42,3 +42,29 @@ Preserve the initial event, primary legal framework, procedural posture, and una
 ## Authority boundary
 
 Research automation may acquire, hash, preserve, compare, cluster, and route candidate evidence. It may not declare the ban constitutional or unconstitutional as a final ERL finding, infer motive, recommend political action, score an administration or outlet, or publish a finding without the existing review/promotion process.
+
+
+## First-party locator and implementation update — 2026-09-18
+
+The exact first-party post locator is now resolved as:
+
+`https://truthsocial.com/@realDonaldTrump/posts/117293599348325006`
+
+The public Truth Social page presently resolves to a JavaScript-dependent shell in the available web acquisition surface, so the durable identity of the post is known but exact statement-body bytes have **not** yet been independently custodied through the ERL/MyKV path. The source queue now places this URL first as a `READY` first-party acquisition item. A fetch that returns only a shell, redirect, or incomplete body must remain `LOCATOR_ONLY` or an explicit acquisition failure; it may not be promoted to exact statement-content custody.
+
+Same-day implementation evidence is now separated from the announcement:
+
+- Reuters reported that representatives of CNN, MS NOW, and Politico were still working in the White House after the announcement, and separately reported the President describing the intended scope in broad terms while referring specifically to his office.
+- CBS News reported that the White House referred questions back to the President's Oval Office comments, that the President specifically said he did not want the outlets in his office, and that journalists from the named outlets remained on White House grounds late Friday afternoon.
+- These observations do **not** establish whether hard passes were revoked, briefing-room access changed, pool eligibility changed, East Room/open-facility access changed, Air Force One access changed, or event-specific invitations were denied. Each surface remains independently unresolved until direct implementation evidence is acquired.
+
+Outlet-response posture is also preserved separately: CNN and Politico publicly disputed the threatened restriction on First Amendment grounds; MS NOW had no comparable substantive response in the contemporaneous Reuters/AP reporting reviewed for this update.
+
+No written White House credential notice, access criterion, appeal process, reconsideration mechanism, filed complaint, TRO request, or new merits disposition has yet been custodied for this September 18 event.
+
+## Evidence-state effect
+
+- `PRESIDENTIAL_OR_WHITE_HOUSE_PRIMARY_STATEMENT_CUSTODIED_OR_EXPLICITLY_PENDING`: **EXPLICITLY_PENDING_WITH_PRIMARY_LOCATOR_RESOLVED**
+- `IMPLEMENTATION_DISTINGUISHES_HARD_PASS_BRIEFING_ROOM_POOL_AND_RESTRICTED_SPACES`: **PARTIAL_OBSERVATION_ONLY**
+- `FINDING_AND_PUBLICATION_AUTHORITY_REMAIN_FALSE`: **PASS**
+- independent review before any finding/publication transition: **REQUIRED**
