@@ -70,6 +70,20 @@ Evidence intake: `assessments/evidence/2026-09-18-white-house-press-access-prece
 Durable issue: `#177`.  
 Task Registry registration: merged at generation 48 under COSV `40000100100000`.
 
+## Merge and validation evidence
+
+- Task Registry registration: generation `48`, canonical Goal Task `ERL-WHITE-HOUSE-PRESS-ACCESS-PRECEDENT-001`, COSV `40000100100000`.
+- Initial conflicted registry PR `#2137`: closed as superseded after concurrent main movement; no state from it is canonical.
+- Replacement registry PR `StegVerse-Labs/.github#2139`: merged at `6532ce05d62ea3a0810aa77581a01591439e87ea`.
+- ERL implementation PR `#178`: merged at `b775028d4ad74bc3ce790e37f7863b6edbe11920`.
+- Final implementation head: `f326ee6ae25d978a701961364ae8dda51283a02e`.
+- Validate research candidate activation run `35399221996`: SUCCESS.
+- Validate Active Research MyKV Dispatch run `35399222046`: SUCCESS.
+- Validate Active Research Acquisition Consumer run `35399221962`: SUCCESS.
+- Validate Ledger Schemas run `35399222084`: SUCCESS after the recurring-discovery deterministic fixture was updated to include the new search.
+- The dispatcher remains generic. The active overlay plus public no-credential READY queue places this lane on the existing automated-acquisition path; no lane-specific execution authority or promotion authority was added.
+- No authentic source-acquisition-to-MyKV receipt for this new lane is claimed by registration alone.
+
 ## Next action
 
-Run the existing candidate-activation and active-research-dispatch validation against the new overlay/queue, then allow the existing recurring-discovery and active-acquisition mechanisms to continue evidence intake. Do not promote an acquired source into a finding merely because acquisition succeeds.
+Continue the lane through the existing recurring-discovery and active-acquisition mechanisms: acquire the exact first-party presidential/White House statement first, then bind observed implementation by access surface, preserve outlet/WHCA responses and litigation stages, and update the cross-administration control record. Do not promote acquired material into a finding merely because acquisition succeeds.
