@@ -101,6 +101,9 @@ Goal Prompt Count: `4/20`.
 - Replacement ERL PR `#181` exact head `d9739628f649295fa6e1ea20183d1a883dd6c412` passed `Validate Active Research Acquisition Consumer` run `35399915543` and `Validate Ledger Schemas` run `35399915554`, then squash-merged at `e4b635ddd9ecc167a905ee7a2f87f3c5ef0c39c8`.
 - The merged evidence now preserves official Senate Roll Call Vote No. 234 (`49-50-1`, cloture rejected), the September 15 motion-to-reconsider floor entry, the September 16 Senate-office unanimous-consent/Paul-objection record with linked floor video, and H.R. 9917 as a separate House bill rather than a substitute for Kennedy's Senate-office draft.
 - Independent ERL review remains required before any finding or publication transition; neither is authorized by this merge.
+- S. 5417 continuation PR `#185` exact head `e440064b8dde0fc6df68b2b8d673ede29e845730` passed `Validate Active Research Acquisition Consumer` run `35402961248` and `Validate Ledger Schemas` run `35402961353`, then squash-merged at `8039bf028b98ea149262102a59cfc69c39af449f`.
+- The merged continuation appends the official U.S. Senate Daily Press 5:15 p.m. September 16 floor log identifying Kennedy's unanimous-consent request as S. 5417 and preserving the Kennedy/Paul request-modification-objection sequence; it does not overwrite the prior no-number-observed research state.
+- Exact primary-text comparison between S. 5417 and the Kennedy-office two-page draft remains pending independent retrieval of the numbered bill text. No later official CLARITY substitute/amendment text was established in this source pass, and independent review remains required before finding/publication transition.
 - The merged source establishes the research artifact and repository discoverability only; no finding promotion, publication, runtime execution, legal-compliance conclusion, or StegVerse applicability conclusion is claimed.
 
 ## Current continuation
