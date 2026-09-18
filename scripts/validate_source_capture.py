@@ -33,9 +33,27 @@ def main() -> None:
     for adapter in config["adapters"]:
         validate(adapter, adapter_schema, adapter["adapter_id"])
 
+    # Regression validation must not depend on live third-party availability.
+    # Exercise the real capture path with the repository's deterministic local fixture;
+    # live adapters are validated structurally above and exercised by separate discovery/smoke lanes.
     with tempfile.TemporaryDirectory() as temporary:
         sandbox = Path(temporary)
-        command = ["python", str(ROOT / "scripts/run_source_capture.py"), "--captured-at", "2026-07-20T12:00:00Z"]
+        local_adapters = [adapter for adapter in config["adapters"] if adapter["adapter_type"] == "local-json" and adapter["enabled"]]
+        if not local_adapters:
+            raise SystemExit("Source capture regression requires at least one enabled local-json adapter.")
+        deterministic_config = sandbox / "source-adapters.local.json"
+        deterministic_config.write_text(
+            json.dumps({"adapters": local_adapters}, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        command = [
+            "python",
+            str(ROOT / "scripts/run_source_capture.py"),
+            "--config",
+            str(deterministic_config),
+            "--captured-at",
+            "2026-07-20T12:00:00Z",
+        ]
         subprocess.run(command, cwd=ROOT, check=True)
 
     receipt_schema = ROOT / "schemas/archive-capture.schema.json"
