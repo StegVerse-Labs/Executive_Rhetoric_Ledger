@@ -1,0 +1,83 @@
+{
+  "queue_version": "stegverse.erl.white-house-press-access-source-queue/v1",
+  "goal_id": "ERL-WHITE-HOUSE-PRESS-ACCESS-PRECEDENT-001",
+  "lane_id": "ERL-RC-WHITE-HOUSE-PRESS-ACCESS-2026",
+  "created_at": "2026-09-18T00:00:00Z",
+  "enabled": true,
+  "credential_authority": "TV/TVC",
+  "credential_requirement": "NONE",
+  "github_token_runtime_authority": "NONE",
+  "network_policy": "PUBLIC_HTTPS_ONLY_NO_AUTH",
+  "finding_authority": "NONE",
+  "publication_authority": "NONE",
+  "items": [
+    {
+      "source_id": "ERL-PRESS-FIRST-AMENDMENT-CONGRESS",
+      "evidence_class": "official-constitutional-text",
+      "url": "https://constitution.congress.gov/constitution/amendment-1/",
+      "allowed_hosts": [
+        "constitution.congress.gov"
+      ],
+      "destination": "assessments/press-access/evidence/legal/ERL-PRESS-FIRST-AMENDMENT-CONGRESS.native",
+      "state": "READY",
+      "purpose": "Preserve official First Amendment text and press-freedom baseline"
+    },
+    {
+      "source_id": "ERL-PRESS-SHERRILL-DC-CIR-1977",
+      "evidence_class": "primary-legal-opinion-mirror",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/569/124/35083/",
+      "allowed_hosts": [
+        "law.justia.com"
+      ],
+      "destination": "assessments/press-access/evidence/legal/ERL-PRESS-SHERRILL-DC-CIR-1977.native",
+      "state": "READY",
+      "purpose": "Preserve the Sherrill White House hard-pass/open-facility and due-process baseline while seeking an official archival copy when available"
+    },
+    {
+      "source_id": "ERL-PRESS-AP-BUDOWICH-DDC-2025-04-08",
+      "evidence_class": "primary-legal-opinion-mirror",
+      "url": "https://law.justia.com/cases/federal/district-courts/district-of-columbia/dcdce/1%3A2025cv00532/277682/46/",
+      "allowed_hosts": [
+        "law.justia.com"
+      ],
+      "destination": "assessments/press-access/evidence/legal/ERL-PRESS-AP-BUDOWICH-DDC-2025-04-08.native",
+      "state": "READY",
+      "purpose": "Preserve the district-court preliminary-injunction posture and viewpoint-discrimination analysis"
+    },
+    {
+      "source_id": "ERL-PRESS-AP-BUDOWICH-CADC-STAY-2025-06-06",
+      "evidence_class": "official-appellate-order",
+      "url": "https://media.cadc.uscourts.gov/orders/docs/2025/06/25-5109LDSN3.pdf",
+      "allowed_hosts": [
+        "media.cadc.uscourts.gov"
+      ],
+      "destination": "assessments/press-access/evidence/legal/ERL-PRESS-AP-BUDOWICH-CADC-STAY-2025-06-06.native.pdf",
+      "state": "READY",
+      "purpose": "Preserve the D.C. Circuit stay-stage distinction between restricted presidential workspaces and opened press facilities"
+    },
+    {
+      "source_id": "ERL-PRESS-TRUMP-BAN-REUTERS-2026-09-18",
+      "evidence_class": "authoritative-contemporaneous-reporting",
+      "url": "https://www.reuters.com/world/us/trump-bans-media-outlets-cnn-msnow-politico-white-house-2026-09-18/",
+      "allowed_hosts": [
+        "www.reuters.com",
+        "reuters.com"
+      ],
+      "destination": "assessments/press-access/evidence/contemporaneous-reporting/ERL-PRESS-TRUMP-BAN-REUTERS-2026-09-18.native",
+      "state": "READY",
+      "purpose": "Preserve contemporaneous event chronology and quoted announcement while direct first-party executive source custody remains required"
+    },
+    {
+      "source_id": "ERL-PRESS-TRUMP-BAN-AP-2026-09-18",
+      "evidence_class": "authoritative-contemporaneous-reporting",
+      "url": "https://apnews.com/article/bb675679fb10738a51bef90bde6c525a",
+      "allowed_hosts": [
+        "apnews.com",
+        "www.apnews.com"
+      ],
+      "destination": "assessments/press-access/evidence/contemporaneous-reporting/ERL-PRESS-TRUMP-BAN-AP-2026-09-18.native",
+      "state": "READY",
+      "purpose": "Preserve independent contemporaneous event and press-pool context"
+    }
+  ]
+}
