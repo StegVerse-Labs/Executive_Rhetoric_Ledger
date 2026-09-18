@@ -8,7 +8,7 @@ Updated: 2026-09-18
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#172`
 - COSV: `40000100100000`
-- Status: `ACTIVE / CHECKED_OUT / RESEARCH_ARTIFACT_AND_README_STAGED_IN_PR_173 / TASK_REGISTRY_REGISTRATION_STAGED_IN_DOTGITHUB_PR_2126 / VALIDATION_PENDING / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
+- Status: `ACTIVE / CHECKED_OUT / TASK_REGISTRY_GENERATION_45_REGISTERED / RESEARCH_ARTIFACT_AND_README_STAGED_IN_PR_173 / EXACT_HEAD_REVALIDATION_PENDING_AFTER_HANDOFF_RECONCILIATION / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 
 ## Purpose
 
@@ -78,9 +78,11 @@ Goal Prompt Count: `1/20`.
 - Evidence artifact staged: `assessments/evidence/2026-09-18-ai-emergency-button-clarity-authority-boundary.md`.
 - README discoverability staged.
 - ERL PR #173 is open.
-- Canonical Task Registry registration is staged in `StegVerse-Labs/.github#2126` at proposed generation 44.
-- No merge, CI validation, finding promotion, publication, runtime execution, or legal-compliance conclusion is claimed until evidenced.
+- Initial Task Registry PR `StegVerse-Labs/.github#2126` was closed unmerged after the canonical generation advanced concurrently.
+- Reconciled Task Registry PR `StegVerse-Labs/.github#2128` merged at `ac79abca1ae8d22362a17fc86560fdaad7e17c65`, registering this Goal at canonical generation 45 with `ACTIVE / CHECKED_OUT` and COSV `40000100100000`.
+- The pre-merge ERL exact head `9ea04150f598b41ac3f2eb9cccf58af639648f19` passed `Validate Ledger Schemas` run `35393734324` and `Validate Active Research Acquisition Consumer` run `35393734319`; because this handoff reconciliation changes the exact head, those runs are historical branch evidence and are not claimed for the new head.
+- No ERL merge, finding promotion, publication, runtime execution, or legal-compliance conclusion is claimed until the reconciled exact head is validated.
 
 ## Next action
 
-Require exact-head validation for the Task Registry registration and ERL source PR. Merge the registry registration first if green and still current; then merge ERL PR #173 if its exact head remains current and all applicable checks pass. After merge, update this handoff with exact merge SHAs and validation runs.
+Wait for exact-head validation on the reconciled ERL PR #173 head. If all applicable checks pass and the branch remains mergeable/current, merge PR #173, verify main, then record the exact merge SHA and final validation runs in this handoff.
