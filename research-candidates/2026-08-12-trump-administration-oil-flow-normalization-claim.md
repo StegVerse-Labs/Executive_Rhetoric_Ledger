@@ -111,6 +111,26 @@ The present lead supports investigation of a possible **metric-substitution / de
 
 This pattern is **not yet a finding**. It becomes assessable only after the exact statement, baseline, and independent physical-flow evidence are preserved.
 
+## 2026-09-17 vessel / oil-flow reconciliation addendum
+
+A dedicated evidence reconciliation is now preserved at:
+
+`assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md`
+
+The new comparison captures the exact August 31 Trump “30 ships a night” statement, the August 28 White House cumulative 1,500-vessel / 750-million-barrel claims, a September 15 U.S.-official estimate of about 40 protected ships/day and about 14 million barrels/day, and independent Lloyd's List Intelligence, Kpler/Reuters, and IMF PortWatch-derived measurements.
+
+The measurements are intentionally **not** collapsed into one score or verdict. U.S.-facilitated/protected ships, Lloyd's non-Iranian-linked cargo vessels, Kpler commodity vessels, and PortWatch AIS-derived completed transits use different populations and revision behavior. Dark/off-AIS passage is a demonstrated uncertainty source, but it does not by itself reconcile the remaining oil-volume gap.
+
+Current bounded posture:
+
+- vessel passage through Hormuz is observed;
+- independent sources preserve evidence that raw AIS counts can miss dark transits;
+- independent reconstructed traffic remains below pre-conflict activity under provider-defined baselines;
+- official U.S. and independent oil-flow estimates remain materially divergent and not yet same-window/methodology reconciled;
+- no finding of falsehood, deception, intent, or motive is authorized.
+
+The next evidence boundary is same-day/same-seven-day reconstruction across U.S./CENTCOM/JMIC, Lloyd's, Kpler, PortWatch, Vortexa, Windward, and TankerTrackers plus downstream import/delivery confirmation.
+
 ## Current disposition
 
 `RESEARCH_REQUIRED`
