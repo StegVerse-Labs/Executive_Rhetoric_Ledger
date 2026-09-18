@@ -1,6 +1,6 @@
 # ERL KnowledgeVault Storage Mirror Handoff
 
-Updated: 2026-09-10
+Updated: 2026-09-18
 
 ## Goal Task ID
 
@@ -100,7 +100,7 @@ PR #156 merged at `2e5d972895177484cabf07bacfcd51e098b90bc1` after exact-head va
 
 Regression coverage rejects a single otherwise-valid hop, skipped boundary, broken prior-hash lineage, and attempted authority transfer.
 
-The current continuation branch `ss-evidence-comparison-erl-intr-binding` adds a reusable non-authorizing runtime binding. `scripts/build_active_research_intr_binding.py` derives the exact admitted acquisition envelope from the ACTIVE dispatch item, produces a deterministic canonical Universal InTr intent for the full external-to-KV path, and produces a deterministic event-ephemeral materialization request bound to the same packet and envelope hash. It never produces hop receipts and explicitly records that runtime transport has not yet executed.
+PR #157 merged at `bfb76a068717ff0aaf96c32af97ebcc43324149f`, installing the reusable non-authorizing runtime binding on `main`. `scripts/build_active_research_intr_binding.py` derives the exact admitted acquisition envelope from the ACTIVE dispatch item, produces a deterministic canonical Universal InTr intent for the full external-to-KV path, and produces a deterministic event-ephemeral materialization request bound to the same packet and envelope hash. It never produces hop receipts and explicitly records that runtime transport has not yet executed. The prior `ss-evidence-comparison-erl-intr-binding` branch is historical and must not be treated as the current execution owner.
 
 The binding preserves `TV/TVC` credential authority, sets GitHub runtime authority to `NONE`, mints no claim/fence, transfers no authority, and grants no execution authority. The validation workflow now couples binding tests with the acquisition-consumer tests so the exact envelope hash and three-hop contract cannot drift apart.
 
@@ -131,13 +131,14 @@ The Iran-linked cyber-sabotage lineage remains a research candidate. The bounded
 
 ## Remaining work
 
-1. Validate the reusable runtime-binding branch at exact head and merge only if applicable workflows pass.
-2. Submit the deterministic materialization request for the admitted CISA/Iran acquisition envelope to the authentic Universal InTr runtime owner.
-3. Preserve all three authentic chained receipts and verify them with the merged consumer.
-4. Bind the terminal KV receipt to the real provider-write/readback proof rather than synthesizing transport evidence.
-5. Update this handoff and `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md` with exact runtime receipt hashes and final proof class.
-6. Only after authentic runtime evidence exists, determine whether a new bounded propagation-verification task is applicable for this active-research runtime capability; do not reuse the retired storage-propagation task merely to reset coordination state.
+1. Preserve the merged PR #157 runtime-binding implementation on `main`; no branch reactivation is required.
+2. Continue the existing automated ERL research acquisition surfaces. Current-day 2026-09-18 repository evidence includes the recurring-discovery reviewed-compendium publication and repeated active UAP acquisition-cycle commits, confirming that research acquisition is operating independently of the unresolved InTr-to-MyKV proof seam.
+3. Submit the deterministic materialization request for the admitted CISA/Iran acquisition envelope to the authentic Universal InTr runtime owner.
+4. Preserve all three authentic chained receipts and verify them with the merged consumer.
+5. Bind the terminal KV receipt to the real provider-write/readback proof rather than synthesizing transport evidence.
+6. Update this handoff and `docs/ACTIVE_RESEARCH_MYKV_DISPATCH_MIRROR_HANDOFF.md` with exact runtime receipt hashes and final proof class.
+7. Only after authentic runtime evidence exists, determine whether a new bounded propagation-verification task is applicable for this active-research runtime capability; do not reuse the retired storage-propagation task merely to reset coordination state.
 
 ## Current state
 
-`ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / ACTIVE_RESEARCH_DISPATCH_AND_CONSUMER_MERGED / PR_156_FULL_INTR_CHAIN_ADMISSION_MERGED_AND_VALIDATED / LIVE_ACTIVE_RESEARCH_PROVIDER_WRITE_READBACK_VERIFIED / REUSABLE_INTR_RUNTIME_BINDING_IMPLEMENTED_ON_BRANCH / AUTHENTIC_FULL_INTR_RUNTIME_CHAIN_NOT_YET_OBSERVED`
+`ERL_KV_INTEGRATION_AND_PROPAGATION_COMPLETE / ACTIVE_RESEARCH_AUTOMATION_OBSERVED_2026-09-18 / ACTIVE_RESEARCH_DISPATCH_AND_CONSUMER_MERGED / PR_156_FULL_INTR_CHAIN_ADMISSION_MERGED_AND_VALIDATED / PR_157_REUSABLE_INTR_RUNTIME_BINDING_MERGED / LIVE_ACTIVE_RESEARCH_PROVIDER_WRITE_READBACK_VERIFIED / AUTHENTIC_FULL_INTR_RUNTIME_CHAIN_NOT_YET_OBSERVED`
