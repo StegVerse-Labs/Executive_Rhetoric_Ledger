@@ -85,6 +85,19 @@ The evidence supports only a measurement-reconciliation finding at this stage:
 
 Current Goal Prompt Count for this canonicalized research continuation: `3/20`.
 
+## Latest validated source advancement
+
+ERL PR `#168` merged at `a4ee58c674373bbc49253760352ed6fd1ba3120d` after exact-head `8a1c8702c4c4fac77c8af660af8878b6f9166a8a` passed all triggered validation:
+
+- Validate Ledger Schemas: run `35296936596` — SUCCESS
+- Validate research candidate activation: run `35296936513` — SUCCESS
+- Validate Active Research MyKV Dispatch: run `35296936466` — SUCCESS
+- Validate Active Research Acquisition Consumer: run `35296936489` — SUCCESS
+
+Canonical Task Registry registration was separately merged in `StegVerse-Labs/.github#2086` at `500f08b144f34e9be83b291defee38ab534a9746`.
+
+This proves the repository source/coordination advancement only. It does not prove a substantive political claim, live maritime movement, downstream delivery, runtime execution, publication, or finding promotion.
+
 ## Next action
 
-Commit the 2026-09-17 vessel/oil-flow evidence reconciliation, update the existing candidate and activation registry without creating a duplicate research candidate, update README and repository-wide ERL handoff, then validate the resulting source state.
+Acquire matched same-day and same-seven-day U.S./CENTCOM/JMIC and independent-provider measurements, preserve revisions as dark transits are identified, separate Hormuz from bypass exports, and reconcile claimed outbound barrels against downstream import/delivery evidence before independent review.
