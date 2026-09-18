@@ -8,7 +8,7 @@ Updated: 2026-09-18
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#172`
 - COSV: `40000100100000`
-- Status: `ACTIVE / CHECKED_OUT / TASK_REGISTRY_GENERATION_47_SESSION_CLOSE_RECONCILED / RESEARCH_ARTIFACT_AND_README_MERGED / SOURCE_VALIDATED / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
+- Status: `ACTIVE / CHECKED_OUT / TASK_REGISTRY_GENERATION_48_RECONCILED / OFFICIAL_SENATE_PROCEDURAL_RECORDS_CAPTURED / RESEARCH_ARTIFACT_AND_README_MERGED / SOURCE_VALIDATED / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 
 ## Purpose
 
@@ -25,14 +25,20 @@ The comparison asks whether these concepts can coexist architecturally without t
 - Kennedy Senate office, 2026-09-16: https://www.kennedy.senate.gov/public/2026/9/senate-blocks-kennedy-bill-to-require-ai-developers-to-install-an-emergency-kill-switch
 - Senate final-draft CLARITY text, 2026-09-14: https://www.lummis.senate.gov/wp-content/uploads/EHF26724.pdf
 - Lummis Senate office release, 2026-09-14: https://www.lummis.senate.gov/press-releases/lummis-boozman-scott-release-final-clarity-act-text/
-- Reuters, 2026-09-15 Senate procedural status: https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/
+- U.S. Senate Roll Call Vote No. 234, 2026-09-15: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00234.htm
+- U.S. Senate floor activity, 2026-09-15: https://www.senate.gov/legislative/LIS/floor_activity/09_15_2026_Senate_Floor.htm
+- Kennedy floor remarks video linked by Senate office: https://www.youtube.com/watch?v=cWfavLHKkSU
+- GovInfo H.R. 9917 introduced text, AI Kill Switch Act: https://www.govinfo.gov/app/details/BILLS-119hr9917ih
+- Reuters, 2026-09-15 Senate procedural status (secondary context): https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/
 
 ## Current verified posture
 
 - Kennedy's two-page draft states that a covered entity developing or operating an advanced AI system in the United States must ensure the system includes a technical capability for a human operator to shut it down; DHS, consulting relevant federal agencies, would promulgate compliance regulations after enactment.
 - Kennedy's September 16 Senate-floor effort to pass the proposal by unanimous consent did not succeed after an objection from Sen. Rand Paul.
 - The September 14 Senate final draft of H.R. 3633 includes Section 10604, the Blockchain Regulatory Certainty Act. Its definition of a non-controlling blockchain developer or provider turns on the absence of legal right or unilateral and independent ability to control, initiate upon demand, or effectuate transactions involving digital assets to which users are entitled without third-party approval, consent, or direction.
-- The Senate failed to invoke cloture on the motion to proceed to H.R. 3633 on September 15, 2026. Accordingly, the final-draft language is preserved as proposed legislative text, not enacted law.
+- The official Senate record identifies Roll Call Vote No. 234 at 2:19 p.m. on September 15, 2026: cloture on the motion to proceed to H.R. 3633 was rejected, 49 yeas to 50 nays with 1 not voting. Senate floor activity also records a motion to reconsider entered after that vote. Accordingly, the September 14 final-draft language remains preserved as proposed legislative text, not enacted law.
+- The September 16 Kennedy Senate-office record states that Kennedy sought unanimous consent for the AI Emergency Button Act and Sen. Rand Paul objected; the office links the floor remarks video. This was not a roll-call vote.
+- H.R. 9917, the separately introduced House `AI Kill Switch Act`, is a distinct July 23, 2026 House bill sponsored by Rep. Ted Lieu with Rep. Nathaniel Moran as cosponsor. It is not silently substituted for Kennedy's later Senate-office `AI Emergency Button Act` draft. No numbered Senate version of Kennedy's draft was established in this source pass.
 
 ## ERL analytical boundary
 
@@ -54,9 +60,9 @@ This intake may be used as a design-comparison reference for StegVerse's separat
 
 ## Required next evidence
 
-1. Preserve the exact Senate procedural records for the September 15 CLARITY cloture vote and September 16 unanimous-consent objection.
-2. Reconcile any introduced/numbered version of the AI Emergency Button Act against the Kennedy discussion draft.
-3. Track subsequent amendments or reintroduction of either proposal without overwriting this September 2026 state.
+1. Preserve a later Congressional Record transcript or Senate journal entry for the September 16 unanimous-consent exchange if one becomes independently retrievable; retain the Senate-office floor record already captured.
+2. Reconcile any later numbered Senate AI Emergency Button Act text against the Kennedy discussion draft; preserve H.R. 9917 as a separate House bill unless primary sources establish a formal relationship.
+3. Track subsequent CLARITY substitutes, amendments, reconsideration, or reintroduction without overwriting the September 14/15 snapshot.
 4. If StegVerse-specific applicability is later requested, perform a separate legal/technical applicability analysis rather than promoting this architectural comparison into a compliance finding.
 5. Independent review before any ERL finding or publication transition.
 
@@ -70,7 +76,7 @@ This intake may be used as a design-comparison reference for StegVerse's separat
 
 ## Prompt lineage
 
-Goal Prompt Count: `2/20`.
+Goal Prompt Count: `3/20`.
 
 ## Current source advancement
 
@@ -87,10 +93,10 @@ Goal Prompt Count: `2/20`.
 - Canonical Task Registry session-close reconciliation merged through `.github` PR `#2134` at `8c09cb425a47ce7f63506cbc2d380b48d029ec72`, advancing the registry to generation 47 and this Goal Prompt Count to `2/20`; stale generation-46 PR `#2133` was closed unmerged.
 - The merged source establishes the research artifact and repository discoverability only; no finding promotion, publication, runtime execution, legal-compliance conclusion, or StegVerse applicability conclusion is claimed.
 
-## Session close
+## Current continuation
 
-This session is closed at a clean handoff point. Canonical state remains `ACTIVE / CHECKED_OUT`; the research snapshot is merged, README discoverability is current, and no unresolved repository mutation from this session remains.
+The official September 15 Senate roll call and floor activity are now captured, including Vote No. 234, the 49-50-1 tally, rejection of cloture, and the entered motion to reconsider. The September 16 unanimous-consent event is anchored to Kennedy's official Senate-office account and linked floor video; no roll-call occurred. H.R. 9917 is now explicitly separated from Kennedy's Senate-office draft. Finding and publication authority remain false pending independent review.
 
 ## Next action
 
-Preserve this September 2026 legislative-state snapshot. Next substantive work, if requested, is to capture exact Senate floor/roll-call records, reconcile any later numbered AI Emergency Button Act text or CLARITY substitute, and obtain independent review before any ERL finding or publication transition.
+Preserve this September 2026 legislative-state snapshot. Next substantive work is to obtain an independently retrievable Congressional Record/Senate journal transcript for the September 16 exchange if published, track later numbered Senate AI Emergency Button or CLARITY text as appended versions, and obtain independent review before any ERL finding or publication transition.
