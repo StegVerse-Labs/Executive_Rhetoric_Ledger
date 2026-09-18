@@ -8,7 +8,7 @@ Updated: 2026-09-18
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#172`
 - COSV: `40000100100000`
-- Status: `ACTIVE / RESEARCH_INTAKE / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
+- Status: `ACTIVE / CHECKED_OUT / RESEARCH_ARTIFACT_AND_README_STAGED_IN_PR_173 / TASK_REGISTRY_REGISTRATION_STAGED_IN_DOTGITHUB_PR_2126 / VALIDATION_PENDING / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 
 ## Purpose
 
@@ -72,6 +72,15 @@ This intake may be used as a design-comparison reference for StegVerse's separat
 
 Goal Prompt Count: `1/20`.
 
+## Current source advancement
+
+- ERL issue #172 is the durable research owner.
+- Evidence artifact staged: `assessments/evidence/2026-09-18-ai-emergency-button-clarity-authority-boundary.md`.
+- README discoverability staged.
+- ERL PR #173 is open.
+- Canonical Task Registry registration is staged in `StegVerse-Labs/.github#2126` at proposed generation 44.
+- No merge, CI validation, finding promotion, publication, runtime execution, or legal-compliance conclusion is claimed until evidenced.
+
 ## Next action
 
-Materialize the evidence artifact, update README discoverability, validate the exact branch head, and merge only if the applicable repository checks are green.
+Require exact-head validation for the Task Registry registration and ERL source PR. Merge the registry registration first if green and still current; then merge ERL PR #173 if its exact head remains current and all applicable checks pass. After merge, update this handoff with exact merge SHAs and validation runs.
