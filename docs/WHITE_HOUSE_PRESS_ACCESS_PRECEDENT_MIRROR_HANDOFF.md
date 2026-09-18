@@ -8,7 +8,8 @@ Updated: 2026-09-18
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#177`
 - COSV: `40000100100000`
-- Task Registry generation: `48`
+- Task Registry registration generation: `48`
+- Current Task Registry generation re-read for this continuation: `53`
 - Status: `ACTIVE / CHECKED_OUT / RESEARCH_ACTIVE_NOT_ASSESSABLE / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 
 ## Objective
@@ -36,7 +37,7 @@ The First Amendment text is an official constitutional anchor. `Sherrill v. Knig
 
 The April 8, 2025 district-court order in `Associated Press v. Budowich` granted preliminary relief on a likely viewpoint-discrimination theory. The June 6, 2025 D.C. Circuit stay order partially stayed that injunction and distinguished restricted presidential workspaces from opened press facilities. Those are different procedural stages and must remain distinct; neither is to be rewritten as a final merits judgment that resolves every White House access surface.
 
-For the September 18, 2026 event, Reuters and AP presently provide contemporaneous event locators and reported wording. Direct first-party custody of the exact presidential/White House announcement remains an active acquisition requirement.
+For the September 18, 2026 event, Reuters and AP presently provide contemporaneous event locators and reported wording. The exact first-party Truth Social locator is now resolved to post `117293599348325006`. Exact statement-content bytes remain pending because the public page is JavaScript-dependent in the currently available acquisition surface; the source queue now attempts that primary URL first and must fail closed if only a shell or incomplete body is returned.
 
 ## Cross-administration rule
 
@@ -86,4 +87,16 @@ Task Registry registration: merged at generation 48 under COSV `40000100100000`.
 
 ## Next action
 
-Continue the lane through the existing recurring-discovery and active-acquisition mechanisms: acquire the exact first-party presidential/White House statement first, then bind observed implementation by access surface, preserve outlet/WHCA responses and litigation stages, and update the cross-administration control record. Do not promote acquired material into a finding merely because acquisition succeeds.
+Continue through the existing recurring-discovery and active-acquisition/MyKV mechanisms. First, attempt exact-byte acquisition of Truth Social post `117293599348325006`; a JavaScript shell is locator evidence only, not statement-content custody. Then continue implementation reconstruction independently for hard pass, briefing room, pool, opened facilities, restricted presidential workspaces, Air Force One, and event-specific invitations. Current same-day reporting shows continued White House-ground presence after the announcement and broad presidential statements of intended exclusion, but does not establish completed implementation on each surface. Preserve written criteria, notice/reconsideration procedures, outlet/WHCA responses, and litigation by procedural stage. Independent review remains mandatory before any finding or publication transition.
+
+
+## Continuation evidence — primary locator and implementation
+
+- Current registry generation re-read before mutation: `53`.
+- New evidence branch: `research/white-house-press-access-evidence-002`.
+- First-party locator resolved: `https://truthsocial.com/@realDonaldTrump/posts/117293599348325006`.
+- Exact first-party statement-body custody: **PENDING**; the available public page is JavaScript-dependent and may not be represented as exact-content custody without retained body bytes and readback evidence.
+- Source queue now prioritizes the first-party Truth Social URL and adds same-day Reuters scope follow-up plus CBS implementation reporting.
+- Observed implementation remains partial: named-outlet journalists were reported still present on White House grounds after the announcement, while the President described a broad intended ban and specifically referenced his office.
+- No evidence in this continuation proves hard-pass revocation, briefing-room exclusion, pool exclusion, opened-facility exclusion, Air Force One exclusion, or event-specific denial as completed acts.
+- No finding or publication authority is granted.
