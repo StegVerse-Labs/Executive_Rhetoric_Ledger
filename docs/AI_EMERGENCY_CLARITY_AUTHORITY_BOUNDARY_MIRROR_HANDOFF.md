@@ -91,6 +91,11 @@ Goal Prompt Count: `3/20`.
 - ERL PR `#173` squash-merged at `622f3ca28bbedf313ebddc1efa3926572ce8d831`.
 - Final handoff reconciliation PR `#174` passed `Validate Ledger Schemas` run `35394510370` and squash-merged at `0fc6d832379fddc50a906f607efa75873e594f4c`.
 - Canonical Task Registry session-close reconciliation merged through `.github` PR `#2134` at `8c09cb425a47ce7f63506cbc2d380b48d029ec72`, advancing the registry to generation 47 and this Goal Prompt Count to `2/20`; stale generation-46 PR `#2133` was closed unmerged.
+- Current-session registry reconciliation began from generation `48`; source evidence was rebuilt after concurrent main advancement rather than overwriting unrelated work.
+- Superseded ERL PR `#180` was closed unmerged after main advanced concurrently.
+- Replacement ERL PR `#181` exact head `d9739628f649295fa6e1ea20183d1a883dd6c412` passed `Validate Active Research Acquisition Consumer` run `35399915543` and `Validate Ledger Schemas` run `35399915554`, then squash-merged at `e4b635ddd9ecc167a905ee7a2f87f3c5ef0c39c8`.
+- The merged evidence now preserves official Senate Roll Call Vote No. 234 (`49-50-1`, cloture rejected), the September 15 motion-to-reconsider floor entry, the September 16 Senate-office unanimous-consent/Paul-objection record with linked floor video, and H.R. 9917 as a separate House bill rather than a substitute for Kennedy's Senate-office draft.
+- Independent ERL review remains required before any finding or publication transition; neither is authorized by this merge.
 - The merged source establishes the research artifact and repository discoverability only; no finding promotion, publication, runtime execution, legal-compliance conclusion, or StegVerse applicability conclusion is claimed.
 
 ## Current continuation
