@@ -131,6 +131,18 @@ Current bounded posture:
 
 The next evidence boundary is same-day/same-seven-day reconstruction across U.S./CENTCOM/JMIC, Lloyd's, Kpler, PortWatch, Vortexa, Windward, and TankerTrackers plus downstream import/delivery confirmation.
 
+## 2026-09-17 matched-window / destination continuation
+
+The next evidence layer is preserved at:
+
+`assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md`
+
+It adds a Sep 7–13 matched-window comparison (PortWatch 37 AIS-derived total transits; latest-public Kpler reconstruction 67 commodity-vessel transits; Lloyd's at least 97 non-Iranian-linked cargo-vessel transits), preserves preliminary-to-revised Kpler counts, separates Hormuz volumes from Gulf-of-Oman/Red Sea/outside-strait bypass flows, and begins destination-level tracing.
+
+One downstream energy movement is now publicly traceable through arrival/berth: Al Marrouna crossed Hormuz on Sep 7 and reached Port Qasim on Sep 10. Other cases remain below that proof class: Gas Polaris was reported bound for India, while the exact Saudi crude STS cargoes reported bound for Ningbo/Zhanjiang still lack independently preserved destination discharge evidence in this lane.
+
+This narrows the remaining question but does not authorize a truth/falsehood, deception, intent, motive, or publication finding.
+
 ## Current disposition
 
 `RESEARCH_REQUIRED`
