@@ -101,6 +101,19 @@ Completed in source for this prompt:
 
 The substantive lane remains `RESEARCH_ACTIVE`. Exact CENTCOM/NCAGS/JMIC vessel manifests, same-window barrel series, exact Chinese discharge evidence, native terminal metering, and independent review remain unresolved. No falsehood, deception, intent, motive, or publication finding is authorized.
 
+## Goal Prompt 4 validated source advancement
+
+ERL PR `#170` merged at `8c4e4ee4a6e9b603db6b85846dd9a0dd8488753c` after exact-head `8cd83877458a81513704587cb99f07b3438e6110` passed all four triggered validations:
+
+- Validate Active Research MyKV Dispatch: run `35297680049` — SUCCESS
+- Validate research candidate activation: run `35297680087` — SUCCESS
+- Validate Active Research Acquisition Consumer: run `35297680102` — SUCCESS
+- Validate Ledger Schemas: run `35297680050` — SUCCESS; its validation job completed all 42 substantive validation stages successfully.
+
+Task Registry projection PR `StegVerse-Labs/.github#2090` merged at `f82d9e7392e1ff0d452546aebad4da1a7cefb14e`; current Task Registry generation is `29`, with this Goal Task `ACTIVE / CHECKED_OUT`, COSV `40000100100000`, Goal Prompt Count `4/20`.
+
+Source/CI/merge evidence proves the research artifact and coordination state only. It does not prove a political conclusion, complete physical-flow reconstruction, exact destination discharge for every cargo, or publication readiness.
+
 ## Latest validated source advancement
 
 ERL PR `#168` merged at `a4ee58c674373bbc49253760352ed6fd1ba3120d` after exact-head `8a1c8702c4c4fac77c8af660af8878b6f9166a8a` passed all triggered validation:

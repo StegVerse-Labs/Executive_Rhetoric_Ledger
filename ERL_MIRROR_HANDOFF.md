@@ -742,6 +742,8 @@ The task must not equate U.S.-facilitated vessels, non-Iranian-linked cargo vess
 
 This lane preserves the existing research-group identity rather than creating a duplicate candidate. `SS-EVIDENCE-COMPARISON-001` remains prompt-exhausted at `20/20`; substantive Hormuz evidence reconstruction proceeds only under `ERL-RC-OIL-FLOW-2026`.
 
+Goal Prompt 4 merged advancement: ERL PR `#170` merged at `8c4e4ee4a6e9b603db6b85846dd9a0dd8488753c` after exact-head `8cd83877458a81513704587cb99f07b3438e6110` passed runs `35297680049`, `35297680087`, `35297680102`, and `35297680050`; Task Registry projection PR `StegVerse-Labs/.github#2090` merged at `f82d9e7392e1ff0d452546aebad4da1a7cefb14e`, generation `29`, Goal Prompt Count `4/20`. No substantive finding or publication transition is authorized.
+
 Matched-window evidence advancement:
 - evidence: `assessments/evidence/2026-09-17-hormuz-matched-window-dark-transit-destination-reconciliation.md`;
 - Sep 7–13 PortWatch/Kpler/Lloyd's comparison preserved without denominator collapse;
