@@ -93,6 +93,12 @@ Discovery is not limited to known data brokers or harvesting sites. Authorized S
 
 See [Digital Data Reclamation and Sovereignty](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY.md), [SKAP-Seeded Account Disclosure Graph](docs/SKAP_ACCOUNT_DISCLOSURE_GRAPH.md), and the [scoped mirror handoff](docs/DIGITAL_DATA_RECLAMATION_AND_SOVEREIGNTY_MIRROR_HANDOFF.md).
 
+## Active Hormuz vessel / oil-flow reconciliation
+
+The existing research group `ERL-RC-OIL-FLOW-2026` now has a dedicated governed reconciliation lane for competing Strait of Hormuz vessel and petroleum-throughput measurements. The lane keeps U.S.-facilitated/protected movements, AIS-visible transits, retrospectively reconstructed dark transits, provider-specific vessel populations, crude-only versus crude-plus-products volumes, bypass exports, and downstream deliveries as separate evidence classes.
+
+The current evidence record is [2026-09-17 Hormuz vessel / oil-flow reconciliation](assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md). Its scoped continuation is [Hormuz Oil-Flow Reconciliation Mirror Handoff](docs/HORMUZ_OIL_FLOW_RECONCILIATION_MIRROR_HANDOFF.md). The lane remains `RESEARCH_ACTIVE`; candidate-layer finding and publication authority remain false.
+
 ## Status
 
 ```yaml
