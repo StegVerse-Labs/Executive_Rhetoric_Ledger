@@ -1,6 +1,6 @@
 # ERL Active Research MyKV Dispatch Mirror Handoff
 
-Updated: 2026-09-10
+Updated: 2026-09-18
 
 ## Parent Goal Task ID
 
@@ -58,7 +58,7 @@ Regression coverage rejects a single valid hop, a skipped boundary, broken prior
 
 ## Reusable runtime binding continuation
 
-The current continuation branch `ss-evidence-comparison-erl-intr-binding` adds `scripts/build_active_research_intr_binding.py` and `tests/test_active_research_intr_binding.py`.
+PR #157 merged at `bfb76a068717ff0aaf96c32af97ebcc43324149f`, installing `scripts/build_active_research_intr_binding.py` and `tests/test_active_research_intr_binding.py` on `main`. The prior `ss-evidence-comparison-erl-intr-binding` branch is historical, not an active continuation owner.
 
 The builder reuses the admitted ACTIVE research dispatch item to create the exact canonical acquisition envelope consumed by `scripts/consume_active_research_acquisition.py`, then creates:
 
@@ -88,13 +88,13 @@ Canonical-library, fixture, repository-generated, or locally constructed receipt
 
 ## Next exact steps
 
-1. Validate the runtime-binding branch at exact head.
-2. Merge the binding PR only if the applicable workflows pass.
-3. Submit the deterministic materialization request for `ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET` to the authentic Universal InTr runtime owner using the exact canonical acquisition-envelope bytes referenced by the binding.
+1. Preserve the merged PR #157 runtime-binding surface on `main`; do not recreate or re-check out the historical branch as a new owner.
+2. Continue automated ERL research acquisition through the existing recurring-discovery and lane-specific scheduled workflows. Current-day evidence on 2026-09-18 includes recurring reviewed-compendium publication and repeated active UAP source-acquisition commits on `main`.
+3. Submit the deterministic materialization request for `ERL-CYBER-CISA-IRAN-2025-JOINT-FACT-SHEET` to the authentic Universal InTr runtime owner using the exact canonical acquisition-envelope bytes referenced by the merged binding.
 4. Preserve the three authentic chained receipts and verify them with the merged consumer.
 5. Bind the terminal KV receipt to the existing live provider-write/readback evidence without synthesizing transport proof.
 6. Update this handoff and the canonical parent handoff with exact receipt hashes and final proof classification; do not promote finding or publication authority.
 
 ## Current state
 
-`DISPATCH_MERGED / PR_155_CONSUMER_MERGED_AND_VALIDATED / PR_156_FULL_CHAIN_ADMISSION_MERGED_AND_VALIDATED / LIVE_MYKV_PROVIDER_WRITE_AND_EXACT_READBACK_OBSERVED / REUSABLE_INTR_RUNTIME_BINDING_IMPLEMENTED_ON_BRANCH / AUTHENTIC_FULL_INTR_CHAIN_BOUND_TO_LIVE_PROVIDER_OPERATION_PENDING`
+`ACTIVE_RESEARCH_AUTOMATION_OBSERVED_2026-09-18 / DISPATCH_MERGED / PR_155_CONSUMER_MERGED_AND_VALIDATED / PR_156_FULL_CHAIN_ADMISSION_MERGED_AND_VALIDATED / PR_157_REUSABLE_INTR_RUNTIME_BINDING_MERGED / LIVE_MYKV_PROVIDER_WRITE_AND_EXACT_READBACK_OBSERVED / AUTHENTIC_FULL_INTR_CHAIN_BOUND_TO_LIVE_PROVIDER_OPERATION_PENDING`
