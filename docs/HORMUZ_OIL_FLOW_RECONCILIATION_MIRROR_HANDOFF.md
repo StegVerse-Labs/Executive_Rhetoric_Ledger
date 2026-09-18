@@ -46,6 +46,8 @@ Independent / methodological comparison:
 - Lloyd's List Intelligence, 2026-09-16, weekly non-Iranian-linked transit reconstruction: https://www.lloydslistintelligence.com/resources/blog/strait-of-hormuz-brief-16-september-2026
 - IMF PortWatch-derived daily AIS series, observation through 2026-09-13; current public mirror: https://ycharts.com/indicators/strait_of_hormuz_total_vessel_transits
 
+Evidence artifact: `assessments/evidence/2026-09-17-hormuz-vessel-oil-flow-reconciliation.md`
+
 ## Current bounded state
 
 The evidence supports only a measurement-reconciliation finding at this stage:
@@ -81,7 +83,7 @@ The evidence supports only a measurement-reconciliation finding at this stage:
 
 `SS-EVIDENCE-COMPARISON-001` reached `20/20` and may not be extended. This task preserves an already-existing ERL research group as a separate evidence-reconstruction goal rather than splitting the parent merely to reset its counter.
 
-Initial Goal Prompt Count for this canonicalized research continuation: `1/20`.
+Current Goal Prompt Count for this canonicalized research continuation: `3/20`.
 
 ## Next action
 
