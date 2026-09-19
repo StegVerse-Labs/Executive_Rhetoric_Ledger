@@ -1,0 +1,14 @@
+{
+  "adapter_id": "SCSJ_REISINI_ROOS_FTCA_ANNOUNCEMENT",
+  "byte_length": 422456,
+  "candidate_path": "discovery_candidates/2026-09-19/CAND-AC690A1416D6DD386436.json",
+  "capture_id": "CAP-AC690A1416D6DD386436",
+  "capture_status": "captured",
+  "captured_at": "2026-09-19T15:52:14Z",
+  "content_sha256": "ac690a1416d6dd3864361c0ba204fc2a4d12c91b00eb7f32502a12a46bae74ac",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-09-19/ac690a1416d6dd3864361c0ba204fc2a4d12c91b00eb7f32502a12a46bae74ac.html",
+  "review_status": "candidate-review-required",
+  "source_class": "advocacy-record",
+  "source_uri": "https://southerncoalition.org/two-women-assaulted-arrested-during-operation-charlottes-web-file-federal-claims-against-immigration-agents/"
+}
