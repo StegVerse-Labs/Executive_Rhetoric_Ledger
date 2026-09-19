@@ -139,3 +139,17 @@ Dated successor evidence:
 - the report's stated two-month government-response window has not expired.
 
 The 14 September 2026 report snapshot remains unchanged.
+
+
+## Independent-review merge evidence
+
+- Independent-review ERL PR `#190` exact head `a3852aae4bffee770a0fc404e700eeb6b79997a4` passed:
+  - `Validate Active Research Acquisition Consumer` run `35476914675`;
+  - `Validate Ledger Schemas` run `35476914558`.
+- ERL PR `#190` merged as `3f438e8b8746b0c1b831736ac15fcb0dfa0a5805`.
+- Canonical Task Registry reconciliation PR `StegVerse-Labs/.github#2317` exact head `644ecc6e3b8bd7bbb31530a38135d6d9159c3406` passed:
+  - `Cross-Task Coordination Validation - Non-Authorizing` run `35476916765`;
+  - `Validate Purpose-Bound Worker Derived Lifetime` run `35476916682`.
+- Registry PR `#2317` merged as `aa4bf6fd0b39ae797ea9a49f86db17cc546e1be5`.
+- Post-merge canonical Task Registry generation is `129` with status `ERL_UK_JCHR_INDEPENDENT_REVIEW_RECONCILED`.
+- Task-specific canonical record now carries Goal Prompt Count `2/20`, `independent_review_complete=true`, `successor_status_check_complete=true`, and retains `finding_authorized=false` / `publication_authorized=false`.
