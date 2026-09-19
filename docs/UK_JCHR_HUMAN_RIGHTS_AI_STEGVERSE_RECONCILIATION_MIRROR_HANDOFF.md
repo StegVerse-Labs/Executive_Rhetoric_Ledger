@@ -8,7 +8,7 @@ Updated: 2026-09-19
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#187`
 - COSV: `40000100100000`
-- Status: `ACTIVE / CHECKED_OUT / SOURCE_RECONCILIATION_IN_PROGRESS / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
+- Status: `ACTIVE / CHECKED_OUT / PRIMARY_SOURCE_RECONCILED / MATRIX_MATERIALIZED / README_CURRENT / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 - Primary source: UK Parliament Joint Committee on Human Rights, *Human Rights and the Regulation of AI*, Fourth Report of Session 2026–27, published 14 September 2026
 - Primary source URL: https://publications.parliament.uk/pa/jt5902/jtselect/jtrights/160/report.html
 - Matrix artifact: `assessments/evidence/2026-09-19-uk-jchr-human-rights-ai-stegverse-reconciliation.md`
@@ -95,4 +95,11 @@ Goal Prompt Count: `1/20`.
 
 ## Next action
 
-Build the source-cited recommendation-to-StegVerse matrix, reconcile each row against current canonical source evidence, identify missing predicates without converting them into automatic remediation work, update README discoverability, and register this goal in the canonical Task Registry while preserving concurrent registry changes.
+Register this goal in the canonical Task Registry while preserving concurrent registry changes, validate the ERL exact head, and merge only with evidence. Independent review remains required before any finding or publication transition.
+
+
+## Source reconciliation completed in this change set
+
+The matrix now covers JCHR paragraphs 193–195, 199–200, 204, 205–208, 213, 214–218 and 224–227. Each row records the nearest StegVerse component, current canonical source evidence, an explicit missing predicate/gap, and a nonclaim. The matrix keeps source-level implementation distinct from authentic runtime proof and explicitly states that Master Records is not a regulator or remedy authority.
+
+README discoverability is also updated on the same branch.
