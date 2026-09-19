@@ -8,7 +8,7 @@ Updated: 2026-09-19
 - Repository: `StegVerse-Labs/Executive_Rhetoric_Ledger`
 - Canonical issue: `#187`
 - COSV: `40000100100000`
-- Status: `ACTIVE / CHECKED_OUT / PRIMARY_SOURCE_RECONCILED / MATRIX_MATERIALIZED / README_CURRENT / TASK_REGISTRY_GENERATION_128_REGISTERED / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
+- Status: `ACTIVE / CHECKED_OUT / INDEPENDENT_REVIEW_COMPLETE / MATRIX_CORRECTED / SUCCESSOR_STATUS_CHECKED_2026_09_19 / README_CURRENT / TASK_REGISTRY_GENERATION_128_REGISTERED / FINDING_NOT_AUTHORIZED / PUBLICATION_NOT_AUTHORIZED`
 - Primary source: UK Parliament Joint Committee on Human Rights, *Human Rights and the Regulation of AI*, Fourth Report of Session 2026–27, published 14 September 2026
 - Primary source URL: https://publications.parliament.uk/pa/jt5902/jtselect/jtrights/160/report.html
 - Matrix artifact: `assessments/evidence/2026-09-19-uk-jchr-human-rights-ai-stegverse-reconciliation.md`
@@ -27,15 +27,19 @@ The matrix is limited to externally observable report recommendations and curren
 
 ## Relevant report recommendations
 
-The initial reconciliation covers:
+The independently reviewed reconciliation covers:
 
+- paragraph 178: recommended AI Bill / legal-framework boundary;
+- paragraph 188: risk classification with proportionate obligations;
 - paragraph 195: proportionate obligations across the AI lifecycle and supply chain;
 - paragraph 200: proposed prohibitions for AI uses assessed as incompatible with human rights;
+- paragraph 201: public consultation on prohibition details;
 - paragraph 204: prior approval before high-risk AI systems are provided or deployed;
 - paragraphs 207–208: differentiated due-diligence duties across the AI supply chain;
 - paragraph 213: mandatory transparency across the AI lifecycle, including notice, purpose and data-source information;
 - paragraph 218: meaningful human involvement requires more than a nominal human-in-the-loop and must support an effective individual challenge;
-- paragraphs 226–227: independent oversight, incident reporting, testing/audit, investigation, sanctions and remedies.
+- paragraphs 226–227: independent oversight, incident reporting, testing/audit, investigation, sanctions and remedies;
+- paragraphs 231–233: statutory AISI review, mandatory developer submission/testing, and AISI-to-authority risk escalation.
 
 ## StegVerse comparison boundary
 
@@ -91,11 +95,11 @@ Current canonical evidence to inspect includes:
 
 ## Prompt lineage
 
-Goal Prompt Count: `1/20`.
+Goal Prompt Count: `2/20`.
 
 ## Next action
 
-Obtain independent review of the source mapping. Track the UK Government response or resulting legislation only as appended dated evidence. Derive a separate remediation/design task only if implementation of an identified gap is explicitly requested.
+Preserve the corrected matrix and dated successor-status record. Re-check only when a formal Government Response/Special Report, explicitly responsive bill/regulation, AISI statutory change, oversight-body change, or relevant UK GDPR automated-decision regulation change becomes observable. Derive a separate remediation/design task only if implementation of an identified gap is explicitly requested.
 
 
 ## Source reconciliation completed in this change set
@@ -116,3 +120,22 @@ README discoverability is also updated on the same branch.
 - The registry PR merged as `f262e96b63fe07e0aff45c9c1eca28decefe3391`.
 - Post-merge canonical Task Registry generation is `128` with status `ERL_UK_JCHR_HUMAN_RIGHTS_AI_RECONCILIATION_REGISTERED`.
 - The task-specific canonical record is present on main at `data/canonical-task-records/ERL-UK-JCHR-HUMAN-RIGHTS-AI-RECONCILIATION-001.json`.
+
+
+## Independent review result — 2026-09-19
+
+Independent review against the primary JCHR report and current canonical StegVerse sources produced concrete corrections rather than a blanket confirmation.
+
+Corrections:
+- ¶204 is now explicitly classified as source-contract correspondence; authentic end-to-end runtime custody remains pending under its separate goal.
+- ¶213 no longer implies every transition receipt contains an affected-person purpose explanation.
+- previously omitted architecture-relevant recommendations ¶178, ¶188, ¶201 and ¶¶231–233 are now represented explicitly.
+- state-policy/international recommendations such as ¶27, ¶61, ¶62 and ¶172 are retained as report context but are not converted into StegVerse implementation claims.
+
+Dated successor evidence:
+- `assessments/evidence/2026-09-19-uk-jchr-human-rights-ai-successor-status.md`
+- no formal Government Response located as of 2026-09-19;
+- no resulting legislation/regulation causally attributable to the report independently established as of that date;
+- the report's stated two-month government-response window has not expired.
+
+The 14 September 2026 report snapshot remains unchanged.
