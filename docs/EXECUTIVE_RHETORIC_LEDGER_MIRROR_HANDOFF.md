@@ -144,3 +144,8 @@ MERGED INTO: StegVerse-Labs/Executive_Rhetoric_Ledger/docs/EXECUTIVE_RHETORIC_LE
 ## Archive Readiness
 
 Issues #18 and #26, PRs #19 through #27, producer PRs #1 through #3, canonical producer manifests, acknowledgment-consumption workflows, reviewed-receipt schema/template, validation run `29804236495`, the Decision Economy research note, the session-consolidation inventory, and this handoff preserve all unique continuation information. Earlier chat context is not required.
+
+
+## 2026-09-20 producer-discovery schema parse remediation
+
+Run `35517891320` reproduced the current `Discover Producer Adapters` failure after discovery itself completed with 2 declarations and 0 discovery failures. `scripts/validate_producer_adapters.py` then failed with `JSONDecodeError: Expecting ',' delimiter: line 56 column 1` while loading `schemas/producer-adapter.schema.json`. The first deterministic defect is one missing closing brace on the existing `retry_policy` object. The repair is syntax-only and preserves candidate-only authority semantics. Validation/merge evidence must be appended before this remediation is considered closed.
