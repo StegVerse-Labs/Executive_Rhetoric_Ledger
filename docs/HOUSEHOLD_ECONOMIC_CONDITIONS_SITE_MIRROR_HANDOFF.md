@@ -90,3 +90,10 @@ Historical rules remain:
 ## Next work
 
 Resolve the exact New York Fed workbook worksheet/column map from retained official source evidence, execute bounded live candidate acquisition for credential-free BLS/FRED/Census sources, preserve raw hashes/vintages, add BEA acquisition when TV/TVC-governed API-key custody is available, then construct the first governed multi-source household-state candidate without authorizing public activation. Site may consume only an authenticated governed ERL output after those evidence predicates are satisfied.
+
+## Credential-free required-cost distribution source — ACS B25140
+
+The U.S. Census Bureau ACS 1-year detailed table `B25140` is now bound not only to exact published counts but also to six deterministic non-authorizing housing-cost-burden shares: over-30% and over-50% for owner units with a mortgage, owner units without a mortgage, and renters. These ratios are computed only from the exact B25140 numerator/denominator variables already bound in the manifest.
+
+This advances `required_cost_burden` evidence only for housing-cost distribution. It does not represent total household required costs, disposable residual capacity, or welfare. Standard ACS 1-year comparability begins at 2005 here, and 2020 experimental 1-year estimates remain excluded. The source requires no provider credential; raw Census API bytes are still hashed before normalization and the candidate retains `finding_authority=false` and `public_activation_authorized=false`.
+
