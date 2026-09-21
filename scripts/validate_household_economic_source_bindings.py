@@ -36,6 +36,10 @@ assert bindings["FRB_DSR_CURRENT_CONSUMER"]["official_series_id"] == "CDSP"
 assert bindings["FRB_DSR_CURRENT_TOTAL"]["earliest_current_method"] == "2005-01-01"
 assert bindings["CENSUS_ACS_HOUSING_COST_BURDEN"]["group"] == "B25140"
 assert 2020 in bindings["CENSUS_ACS_HOUSING_COST_BURDEN"]["excluded_standard_comparison_years"]
+assert bindings["CENSUS_ACS_HOUSING_COST_BURDEN"]["credential_required"] is False
+assert bindings["CENSUS_ACS_HOUSING_COST_BURDEN"]["earliest_standard_acs1_year"] == 2005
+assert bindings["CENSUS_ACS_HOUSING_COST_BURDEN"]["required_cost_scope"] == "HOUSING_COST_BURDEN_ONLY"
+assert set(bindings["CENSUS_ACS_HOUSING_COST_BURDEN"]["derived_measures"]) == {"owned_with_mortgage_over_30_share_pct","owned_with_mortgage_over_50_share_pct","owned_without_mortgage_over_30_share_pct","owned_without_mortgage_over_50_share_pct","rented_over_30_share_pct","rented_over_50_share_pct"}
 assert bindings["NYFED_CCP_DEBT_BALANCE_BY_CLASS"]["current_release_id"] == "2026Q2"
 assert bindings["NYFED_CCP_DEBT_BALANCE_BY_CLASS"]["normalization"]["parser_state"] == "WORKBOOK_COLUMN_BINDING_PENDING"
 
@@ -62,8 +66,12 @@ variables = census_binding["variables"]
 header = ["NAME"] + list(variables.values()) + ["us"]
 values = ["United States"] + [str(index + 100) for index in range(len(variables))] + ["1"]
 census = module.normalize_census(census_binding, [header, values], 2024)
-assert len(census) == len(variables)
-assert all(row["evidence_class"] == "DIRECT_OBSERVATION" for row in census)
+assert len(census) == len(variables) + 6
+assert sum(row["evidence_class"] == "DIRECT_OBSERVATION" for row in census) == len(variables)
+derived = {row["measure"]: row for row in census if row["evidence_class"] == "DERIVED_FROM_DIRECT_OBSERVATIONS"}
+assert set(derived) == set(census_binding["derived_measures"])
+assert all(row["finding_authority"] is False for row in derived.values())
+assert derived["owned_with_mortgage_over_30_share_pct"]["value"] == ((102.0 / 101.0) * 100.0)
 try:
     module.normalize_census(census_binding, [header, values], 2020)
 except ValueError:
