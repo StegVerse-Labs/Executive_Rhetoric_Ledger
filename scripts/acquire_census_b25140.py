@@ -51,17 +51,44 @@ def main() -> int:
         raise SystemExit("Census B25140 Summary File missing national GEO_ID 0100000US")
 
     observations = []
+    direct_values = {}
     for measure, (estimate_field, moe_field) in FIELDS.items():
         if estimate_field not in national or moe_field not in national:
             raise SystemExit(f"Census Summary File missing {estimate_field}/{moe_field}")
+        value = float(national[estimate_field])
+        direct_values[measure] = value
         observations.append({
             "period": str(args.year),
-            "value": float(national[estimate_field]),
+            "value": value,
             "margin_of_error": float(national[moe_field]),
             "measure": measure,
             "source_variable": estimate_field,
             "source_moe_variable": moe_field,
             "evidence_class": "DIRECT_OBSERVATION",
+        })
+
+    derived = {
+        "owned_with_mortgage_over_30_share_pct": ("owned_with_mortgage_over_30", "owned_with_mortgage_total"),
+        "owned_with_mortgage_over_50_share_pct": ("owned_with_mortgage_over_50", "owned_with_mortgage_total"),
+        "owned_without_mortgage_over_30_share_pct": ("owned_without_mortgage_over_30", "owned_without_mortgage_total"),
+        "owned_without_mortgage_over_50_share_pct": ("owned_without_mortgage_over_50", "owned_without_mortgage_total"),
+        "rented_over_30_share_pct": ("rented_over_30", "rented_total"),
+        "rented_over_50_share_pct": ("rented_over_50", "rented_total"),
+    }
+    for measure, (numerator_name, denominator_name) in derived.items():
+        numerator = direct_values[numerator_name]
+        denominator = direct_values[denominator_name]
+        if denominator <= 0:
+            continue
+        observations.append({
+            "period": str(args.year),
+            "value": (numerator / denominator) * 100.0,
+            "measure": measure,
+            "unit": "percent",
+            "numerator_measure": numerator_name,
+            "denominator_measure": denominator_name,
+            "evidence_class": "DERIVED_FROM_DIRECT_OBSERVATIONS",
+            "finding_authority": False,
         })
 
     acquired_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -76,6 +103,8 @@ def main() -> int:
         "raw_sha256": hashlib.sha256(raw).hexdigest(),
         "raw_size_bytes": len(raw),
         "status": "NORMALIZED_SOURCE_OBSERVATIONS",
+        "required_cost_scope": "HOUSING_COST_BURDEN_ONLY",
+        "standard_acs1_comparability_floor": 2005,
         "observations": observations,
         "finding_authority": False,
         "public_activation_authorized": False,
@@ -83,7 +112,7 @@ def main() -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
     (args.output_dir / "census_acs_housing_cost_burden.raw").write_bytes(raw)
     (args.output_dir / "census_acs_housing_cost_burden.candidate.json").write_text(json.dumps(body, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
-    print(f"CENSUS_ACS_HOUSING_COST_BURDEN=NORMALIZED_SOURCE_OBSERVATIONS observations={len(observations)} raw_sha256={body['raw_sha256']}")
+    print(f"CENSUS_ACS_HOUSING_COST_BURDEN=NORMALIZED_SOURCE_OBSERVATIONS observations={len(observations)} derived=6 required_cost_scope=HOUSING_COST_BURDEN_ONLY raw_sha256={body['raw_sha256']}")
     return 0
 
 

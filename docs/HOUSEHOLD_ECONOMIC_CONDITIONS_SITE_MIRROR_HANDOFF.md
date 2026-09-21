@@ -97,3 +97,9 @@ The U.S. Census Bureau ACS 1-year detailed table `B25140` is now bound not only 
 
 This advances `required_cost_burden` evidence only for housing-cost distribution. It does not represent total household required costs, disposable residual capacity, or welfare. Standard ACS 1-year comparability begins at 2005 here, and 2020 experimental 1-year estimates remain excluded. The source requires no provider credential; raw Census API bytes are still hashed before normalization and the candidate retains `finding_authority=false` and `public_activation_authorized=false`.
 
+## Live ACS B25140 acquisition alignment — 2026-09-21
+
+The credential-free live acquisition entrypoint `scripts/acquire_census_b25140.py` now emits the same six bounded housing-cost-burden shares as the canonical binding: over-30% and over-50% for mortgaged owners, owners without mortgages, and renters. The direct ACS counts and margins of error remain retained, the raw official Table-Based Summary File is SHA-256 bound before normalization, and the derived shares are labeled `DERIVED_FROM_DIRECT_OBSERVATIONS` with `finding_authority=false`.
+
+This remains only `HOUSING_COST_BURDEN_ONLY`; it does not establish total required-cost burden or public activation.
+
