@@ -18,7 +18,11 @@
       "official_series_id": "CES0500000032",
       "title": "Average hourly earnings of production and nonsupervisory employees, total private, 1982-84 dollars, seasonally adjusted",
       "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
-      "normalization": {"period_key": "year+period", "value_type": "number", "frequency": "MONTHLY"}
+      "normalization": {
+        "period_key": "year+period",
+        "value_type": "number",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "BLS_CES_PE_REAL_WEEKLY_EARNINGS",
@@ -27,7 +31,11 @@
       "official_series_id": "CES0500000031",
       "title": "Average weekly earnings of production and nonsupervisory employees, total private, 1982-84 dollars, seasonally adjusted",
       "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
-      "normalization": {"period_key": "year+period", "value_type": "number", "frequency": "MONTHLY"}
+      "normalization": {
+        "period_key": "year+period",
+        "value_type": "number",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "BLS_CPI_U_ALL_ITEMS",
@@ -36,7 +44,11 @@
       "official_series_id": "CUUR0000SA0",
       "title": "CPI-U, U.S. city average, all items, not seasonally adjusted",
       "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
-      "normalization": {"period_key": "year+period", "value_type": "number", "frequency": "MONTHLY"}
+      "normalization": {
+        "period_key": "year+period",
+        "value_type": "number",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "BEA_DPI_CURRENT_DOLLARS",
@@ -47,7 +59,12 @@
       "frequency": "M",
       "title": "Disposable personal income",
       "endpoint": "https://apps.bea.gov/api/data/",
-      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "unit_field": "UNIT_MULT", "frequency": "MONTHLY"}
+      "normalization": {
+        "time_period_field": "TimePeriod",
+        "value_field": "DataValue",
+        "unit_field": "UNIT_MULT",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "BEA_REAL_DPI",
@@ -58,7 +75,12 @@
       "frequency": "M",
       "title": "Disposable personal income: total, billions of chained dollars",
       "endpoint": "https://apps.bea.gov/api/data/",
-      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "unit_field": "UNIT_MULT", "frequency": "MONTHLY"}
+      "normalization": {
+        "time_period_field": "TimePeriod",
+        "value_field": "DataValue",
+        "unit_field": "UNIT_MULT",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "BEA_PCE_TOTAL",
@@ -69,7 +91,12 @@
       "frequency": "M",
       "title": "Personal consumption expenditures",
       "endpoint": "https://apps.bea.gov/api/data/",
-      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "unit_field": "UNIT_MULT", "frequency": "MONTHLY"}
+      "normalization": {
+        "time_period_field": "TimePeriod",
+        "value_field": "DataValue",
+        "unit_field": "UNIT_MULT",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "BEA_PERSONAL_SAVING_RATE",
@@ -80,7 +107,11 @@
       "frequency": "M",
       "title": "Personal saving as a percentage of disposable personal income",
       "endpoint": "https://apps.bea.gov/api/data/",
-      "normalization": {"time_period_field": "TimePeriod", "value_field": "DataValue", "frequency": "MONTHLY"}
+      "normalization": {
+        "time_period_field": "TimePeriod",
+        "value_field": "DataValue",
+        "frequency": "MONTHLY"
+      }
     },
     {
       "inventory_series_id": "FRB_DSR_CURRENT_TOTAL",
@@ -90,7 +121,11 @@
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TDSP",
       "source_authority": "Board of Governors of the Federal Reserve System (US)",
       "earliest_current_method": "2005-01-01",
-      "normalization": {"date_column": "DATE", "value_column": "TDSP", "frequency": "QUARTERLY"}
+      "normalization": {
+        "date_column": "DATE",
+        "value_column": "TDSP",
+        "frequency": "QUARTERLY"
+      }
     },
     {
       "inventory_series_id": "FRB_DSR_CURRENT_MORTGAGE",
@@ -100,7 +135,11 @@
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MDSP",
       "source_authority": "Board of Governors of the Federal Reserve System (US)",
       "earliest_current_method": "2005-01-01",
-      "normalization": {"date_column": "DATE", "value_column": "MDSP", "frequency": "QUARTERLY"}
+      "normalization": {
+        "date_column": "DATE",
+        "value_column": "MDSP",
+        "frequency": "QUARTERLY"
+      }
     },
     {
       "inventory_series_id": "FRB_DSR_CURRENT_CONSUMER",
@@ -110,7 +149,11 @@
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CDSP",
       "source_authority": "Board of Governors of the Federal Reserve System (US)",
       "earliest_current_method": "2005-01-01",
-      "normalization": {"date_column": "DATE", "value_column": "CDSP", "frequency": "QUARTERLY"}
+      "normalization": {
+        "date_column": "DATE",
+        "value_column": "CDSP",
+        "frequency": "QUARTERLY"
+      }
     },
     {
       "inventory_series_id": "NYFED_CCP_DEBT_BALANCE_BY_CLASS",
@@ -119,8 +162,20 @@
       "current_release_id": "2026Q2",
       "current_release_page": "https://www.newyorkfed.org/newsevents/news/research/2026/20260811",
       "current_workbook": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/xls/hhd_c_report_2026q2.xlsx",
-      "categories": ["Mortgage", "HELOC", "Student Loan", "Auto Loan", "Credit Card", "Other", "Total"],
-      "normalization": {"frequency": "QUARTERLY", "unit": "nominal dollars", "parser_state": "WORKBOOK_COLUMN_BINDING_PENDING"}
+      "categories": [
+        "Mortgage",
+        "HELOC",
+        "Student Loan",
+        "Auto Loan",
+        "Credit Card",
+        "Other",
+        "Total"
+      ],
+      "normalization": {
+        "frequency": "QUARTERLY",
+        "unit": "nominal dollars",
+        "parser_state": "WORKBOOK_COLUMN_BINDING_PENDING"
+      }
     },
     {
       "inventory_series_id": "NYFED_CCP_DELINQUENCY_BY_CLASS",
@@ -129,8 +184,20 @@
       "current_release_id": "2026Q2",
       "current_release_page": "https://www.newyorkfed.org/newsevents/news/research/2026/20260811",
       "current_workbook": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/xls/hhd_c_report_2026q2.xlsx",
-      "categories": ["Mortgage", "HELOC", "Student Loan", "Auto Loan", "Credit Card", "Other", "ALL"],
-      "normalization": {"frequency": "QUARTERLY", "unit": "annualized share transitioning to 90+ days delinquent", "parser_state": "WORKBOOK_COLUMN_BINDING_PENDING"}
+      "categories": [
+        "Mortgage",
+        "HELOC",
+        "Student Loan",
+        "Auto Loan",
+        "Credit Card",
+        "Other",
+        "ALL"
+      ],
+      "normalization": {
+        "frequency": "QUARTERLY",
+        "unit": "annualized share transitioning to 90+ days delinquent",
+        "parser_state": "WORKBOOK_COLUMN_BINDING_PENDING"
+      }
     },
     {
       "inventory_series_id": "CENSUS_ACS_HOUSING_COST_BURDEN",
@@ -153,8 +220,49 @@
         "rented_over_30": "B25140_011E",
         "rented_over_50": "B25140_012E"
       },
-      "excluded_standard_comparison_years": [2020],
-      "normalization": {"frequency": "ANNUAL", "estimate_suffix": "E", "retain_margins_of_error_when_added": true}
+      "excluded_standard_comparison_years": [
+        2020
+      ],
+      "normalization": {
+        "frequency": "ANNUAL",
+        "estimate_suffix": "E",
+        "retain_margins_of_error_when_added": true
+      },
+      "earliest_standard_acs1_year": 2005,
+      "credential_required": false,
+      "required_cost_scope": "HOUSING_COST_BURDEN_ONLY",
+      "derived_measures": {
+        "owned_with_mortgage_over_30_share_pct": {
+          "numerator": "B25140_003E",
+          "denominator": "B25140_002E"
+        },
+        "owned_with_mortgage_over_50_share_pct": {
+          "numerator": "B25140_004E",
+          "denominator": "B25140_002E"
+        },
+        "owned_without_mortgage_over_30_share_pct": {
+          "numerator": "B25140_007E",
+          "denominator": "B25140_006E"
+        },
+        "owned_without_mortgage_over_50_share_pct": {
+          "numerator": "B25140_008E",
+          "denominator": "B25140_006E"
+        },
+        "rented_over_30_share_pct": {
+          "numerator": "B25140_011E",
+          "denominator": "B25140_010E"
+        },
+        "rented_over_50_share_pct": {
+          "numerator": "B25140_012E",
+          "denominator": "B25140_010E"
+        }
+      },
+      "interpretation_boundary": [
+        "Measures occupied-housing-unit housing-cost burden distribution, not total required-cost burden.",
+        "Derived percentages are arithmetic ratios of exact ACS B25140 published counts and do not create a welfare finding.",
+        "2020 ACS 1-year experimental estimates remain excluded from the standard series.",
+        "Do not combine ACS 1-year and 5-year estimates on one absolute series without explicit methodology segmentation."
+      ]
     }
   ]
 }
