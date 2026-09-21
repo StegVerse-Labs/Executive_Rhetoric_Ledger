@@ -153,18 +153,37 @@ def acquire_bea(binding: dict[str, Any], years: str, acquired_at: str) -> tuple[
 def normalize_census(binding: dict[str, Any], payload: list[list[str]], year: int) -> list[dict[str, Any]]:
     if year in binding.get("excluded_standard_comparison_years", []):
         raise ValueError(f"ACS {year} is excluded from standard comparison")
+    earliest = int(binding.get("earliest_standard_acs1_year", 2005))
+    if year < earliest:
+        raise ValueError(f"ACS {year} predates standard 1-year comparability floor {earliest}")
     if len(payload) < 2:
         raise ValueError("Census response has no data rows")
     header, values = payload[0], payload[1]
     row = dict(zip(header, values))
     variables = binding["variables"]
-    return [{
+    observations = [{
         "period": str(year),
         "value": float(row[variable]),
         "measure": name,
         "source_variable": variable,
         "evidence_class": "DIRECT_OBSERVATION",
     } for name, variable in variables.items()]
+    for name, spec in (binding.get("derived_measures") or {}).items():
+        numerator = float(row[spec["numerator"]])
+        denominator = float(row[spec["denominator"]])
+        if denominator <= 0:
+            continue
+        observations.append({
+            "period": str(year),
+            "value": (numerator / denominator) * 100.0,
+            "measure": name,
+            "unit": "percent",
+            "numerator_source_variable": spec["numerator"],
+            "denominator_source_variable": spec["denominator"],
+            "evidence_class": "DERIVED_FROM_DIRECT_OBSERVATIONS",
+            "finding_authority": False,
+        })
+    return observations
 
 
 def acquire_census(binding: dict[str, Any], year: int, acquired_at: str) -> tuple[bytes, list[dict[str, Any]]]:
