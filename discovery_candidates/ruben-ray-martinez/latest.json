@@ -1,9 +1,9 @@
 {
   "monitor_id": "ERL-RRM-EVIDENCE-MONITOR-001",
   "case_id": "RRM-SPI-2025-03-15",
-  "generated_at": "2026-09-23T15:26:39Z",
+  "generated_at": "2026-09-24T15:48:51Z",
   "status": "healthy",
-  "candidate_count": 146,
+  "candidate_count": 144,
   "candidates": [
     {
       "candidate_id": "RRM-DISCOVERY-9B8A04AD7BB99CC4",
@@ -146,6 +146,16 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
+      "candidate_id": "RRM-DISCOVERY-05900BBE56B5AC98",
+      "title": "Ruben Ray Martinez Shooting: Texas Grand Jury Declines to Indict ICE Agent - Newsweek",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVFBJVUJDRlplZUxlcTdDRllLSWhfNTFDU25tNWQ3bkpnRExiRm1oU3hJVVdNbkNBZGZHeVRRb2NlM1BZd1VoNl9mbl92WHY4bkYzZWlWRGIweTlrd3hablN0VF95cXVZcndQcTIyY25GYVdJc2xLVGE5VURLUzV6N0lQdjd3VmVjbGtjN0F5am1BUXRV?oc=5",
+      "publication_date": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "source_name": "Newsweek",
+      "matched_query": "\"Ruben Ray Martinez\" grand jury",
+      "review_status": "candidate-generated",
+      "evidence_effect": "none-until-reviewed"
+    },
+    {
       "candidate_id": "RRM-DISCOVERY-032A81E2BF75D02B",
       "title": "Pingree Hears Emotional Testimony from Families, Representatives of Slain ICE Victims - Bar Harbor Story | Carrie Jones | Substack",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE52OHBvREc0Skd2US15TUV0Tk1OQVpIMy1SMlRGTnA2ZDRWMi1lcF92R21sQjJRN0pfRWh3R19qNV9TV0VFcFlqM0x3TWJXYVZHYXFNNVZ0eEZjV0pIdF9lbk1yU0VFaHJvWmRjVFZYQXBIUE0zTjlQMDBjZw?oc=5",
@@ -166,11 +176,11 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-40CE13E5878AE728",
-      "title": "Her son was killed by ICE at a traffic stop. She says she's still waiting for justice - npr.org",
+      "candidate_id": "RRM-DISCOVERY-31F4889426888866",
+      "title": "Her son was killed by ICE at a traffic stop. She says she's still waiting for justice - NPR",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ3lCbDFJQUVleGt0LUpOSTRCbWlRTTZ5eGFoUW1uS3JISm9zbHUzN0V5X0tTYWs5WmZUM25BVXItNU5TUmd0SEUtek14ajZnRGFTMGtSSzdDU2tPX2hNSzRQR2ZoZ053elJLdlJ0UTQ2UVFxTlo4dVc2S1dGNXlMN0s5U2o3dHk3dEtzalNyZWFPUQ?oc=5",
       "publication_date": "Wed, 22 Jul 2026 07:00:00 GMT",
-      "source_name": "npr.org",
+      "source_name": "NPR",
       "matched_query": "\"Ruben Ray Martinez\" grand jury",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -196,22 +206,12 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-3E8E87BC42215885",
-      "title": "'No peace': Nearly a year after her son's death, she's still searching for answers - npr.org",
+      "candidate_id": "RRM-DISCOVERY-F237A2A76081E4B7",
+      "title": "'No peace': Nearly a year after her son's death, she's still searching for answers - NPR",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYjlPdTI1bTQxSFRKaDlGOEV2S1FFSW9OLUVpcFp1R2k5MUhVRmhaQVgxV3J6VDVzRm9VYzNBQVFJOHJUNGNXQjVVZUpFd0l5dkJqaktJcXViWVd0NHY5OUp4bmxYS1E4aklTUVd6X0ExandZcHFpeWlGQUlvdnlLb3ltSU1mdnRxSGJLbEpycDlXMFE?oc=5",
       "publication_date": "Wed, 15 Apr 2026 07:00:00 GMT",
-      "source_name": "npr.org",
+      "source_name": "NPR",
       "matched_query": "\"Ruben Ray Martinez\" inspector general",
-      "review_status": "candidate-generated",
-      "evidence_effect": "none-until-reviewed"
-    },
-    {
-      "candidate_id": "RRM-DISCOVERY-07DB8E995564C92B",
-      "title": "Letter to the Editor: Walter Jospin - Atlanta Jewish Times",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TSm1SUXphbl9ENHNvNTU2YXgxd2JWcEdiVFp3R1FpS2R6djlQWGJSNExSN1I3WUNvX0dOZEw4dkFveGViZkhDS2d6OHY0TVBjR3l1eVVtU09fV244Z2ExV292WnMyZEdxX1FkSGt0RFJsVWlaX3hFQ1ln0gF_QVVfeXFMTzNYd05idUQwdXNldWcyWDBrZ01IalFScVRUaElqRGprZHhBNVMzby1UbkZRbmZfcmgxaWNlQzVnOWU3S0JhT0RzRkJSRDhITGU2SDNKNlBLekVZQlRRZjNhbW42UTVjdG1pZ0ZzYXhhX0ZUbXpwekhaeVhxWHdWQQ?oc=5",
-      "publication_date": "Wed, 11 Mar 2026 07:00:00 GMT",
-      "source_name": "Atlanta Jewish Times",
-      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -356,16 +356,6 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-07DDD72C0544EAAE",
-      "title": "Joshua Orta ICE Shooting Witness Dies in Crash - Baller Alert",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HdmN2REowaWE2S2llOUJXU3NCaDZaYWVPWUljWktWY1VXRnhPcnc5R3JEbDF6c1BNUEJZbEUxZ3JBSDdFX2ZreVF3S2pKNjdzVWo2c1RiLWwwcHJhRk1KbC0xenNCTEZiZ3l5WGs2Zw?oc=5",
-      "publication_date": "Tue, 24 Feb 2026 08:00:00 GMT",
-      "source_name": "Baller Alert",
-      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
-      "review_status": "candidate-generated",
-      "evidence_effect": "none-until-reviewed"
-    },
-    {
       "candidate_id": "RRM-DISCOVERY-BDDC61B068919E80",
       "title": "Renee Good's mother and brother testify in Congress about her killing by an ICE officer - CBS News",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaE9XT05pQXZtYVhtaE9sSVhoRUQ3WDZGVTZHS253eTZ2Z2lGbFVxMG44XzloNWxpQlNpZXY3bEhBMVpiSzlNUVU3VDZJbXZRVjhTaUo4YnR6SjFQczhYU01EOFc0cXZlc3RmS0taY05qS1JseVRGOXVEczNucmtwVUhRRFl0NllUWmk3YWdOR3I3NVBDODZXNlMzNVU3QldXNGdTMktNY1NDTktocEFPYklUdjJzVUU?oc=5",
@@ -466,11 +456,11 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-9150F80FBF7DD6D2",
-      "title": "Family of Ruben Ray Martinez Demands Answers After Grand Jury Declines to Indict ICE Agent Who Killed Him - commondreams.org",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4dTJUSFZsMF90aC1wckVHTVRnZm1WcjZFSGRnUTROZHYwNWNxUTd2dk1wd2VBZkJ4eGlWRmo2NlFwVUUyWjhjRUdRNVdiQk1sM1Y4UGF5dkN2cUgy?oc=5",
+      "candidate_id": "RRM-DISCOVERY-78AFA0277F5329C5",
+      "title": "No charges for ICE agent who killed US citizen in Texas - Straight Arrow",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWGZLNURsbHJZRTlndVJBOFFYZnAwRndIek5uTlFnU0JkQktyUHhuU2ViYW5pRXBKU0QycERuTjc4SEt6aDFia2Y2c1R2N0lCOUx3cDFEbzZxUW9sNzhFdWJUa2E4d0pvWjlNcVRqVzBlLTQyb1pRTmtWVmFjSFdNbQ?oc=5",
       "publication_date": "Thu, 26 Feb 2026 08:00:00 GMT",
-      "source_name": "commondreams.org",
+      "source_name": "Straight Arrow",
       "matched_query": "\"Ruben Ray Martinez\" grand jury",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -516,6 +506,16 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
+      "candidate_id": "RRM-DISCOVERY-24D49586D3A8A08B",
+      "title": "Family of Ruben Ray Martinez Demands Answers After Grand Jury Declines to Indict ICE Agent Who Killed Him - Common Dreams",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4dTJUSFZsMF90aC1wckVHTVRnZm1WcjZFSGRnUTROZHYwNWNxUTd2dk1wd2VBZkJ4eGlWRmo2NlFwVUUyWjhjRUdRNVdiQk1sM1Y4UGF5dkN2cUgy?oc=5",
+      "publication_date": "Thu, 26 Feb 2026 08:00:00 GMT",
+      "source_name": "Common Dreams",
+      "matched_query": "\"Ruben Ray Martinez\" grand jury",
+      "review_status": "candidate-generated",
+      "evidence_effect": "none-until-reviewed"
+    },
+    {
       "candidate_id": "RRM-DISCOVERY-2082E0FF3A3DC7CD",
       "title": "Grand jury declines charges in deadly ICE shooting of San Antonio man, attorneys demand transparency - KSAT",
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUlBKZzF5VUZjZTkwTHE5c0w4NHlBaXlhN0tXVXdid1c3LTdJYjZGSXJHSHNvYm1TalE1bl9kbWdZNFc5MkNpTTI0WTNoODlvV2xiU3k0Z0xJbWZBLUNPckU0UldoR3pvTDlxamlDYzlSSGFkQzNRTnVUakNxcXAxeUV5bFh1MGk1cUIxbV9zdk9ZYU8ycDFqUlhrNGdDb2VhQ2NfWHltNThGVGNCSkp2ZTExQ05iZnRfNkZ4ZHhBanJvQVdpRGkxRno5dE0zendwcFpSbDBGaTZuX0E?oc=5",
@@ -526,21 +526,21 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-3F7AC5B657F41FA8",
-      "title": "'He took my son's life for nothing,' says mother of man killed by immigration agent - PBS",
+      "candidate_id": "RRM-DISCOVERY-305B151BB3771B21",
+      "title": "'He took my son's life for nothing,' says mother of man killed by immigration agent - pbs.org",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTVo2ckhBX1hjTlZmQU5UM001NWZCbm5aYXdGZDBTQUEtQ2dTTHQ2QTgxa2taMkpxLVhaZk44YlItdU5ZaFlLbEhhQndsLWRtOERGNmp5Y3lITF8weDRXcEYySThfZkdWNG5hc1hBRTZaTHhvVGFaWDNDUF90RW5HeE5BMHVpWEpVdGp6U0dkdjN4Slg1dXd6d25QRjN1bWNoWGdGTFZiVUo0RnBIRFhGSG1jUQ?oc=5",
       "publication_date": "Thu, 19 Mar 2026 07:00:00 GMT",
-      "source_name": "PBS",
+      "source_name": "pbs.org",
       "matched_query": "\"Ruben Ray Martinez\" grand jury",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-D5824C704CF29FD0",
-      "title": "Videos of ICE Shooting in Texas Capture a Confused and Fatal Encounter - nytimes.com",
+      "candidate_id": "RRM-DISCOVERY-BF2781AA2C6B6EAC",
+      "title": "Videos of ICE Shooting in Texas Capture a Confused and Fatal Encounter - The New York Times",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQUHllTVN2M1p2bWJ0V3B6R05sNFlveUJKLWJLMmEwdndzaG9lMnVnNU5pV2JrVDFfc3NYVGIwV1R0U3JnWFI0c0tKdzZ1MlVUdUZKcFJBN0I4ZzN6dkc0V3FDb2ZoWHh3eno0YTBfalJNR0RpWXA3WDBmeTJMZ0hqZGpkNEx0dw?oc=5",
       "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
-      "source_name": "nytimes.com",
+      "source_name": "The New York Times",
       "matched_query": "\"Ruben Ray Martinez\" grand jury",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -556,8 +556,8 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-00A6F29BC9F68DE9",
-      "title": "What to know about Austin ICE shooting and migrant deaths in Texas - The Texas Tribune",
+      "candidate_id": "RRM-DISCOVERY-CC32B095ECF69F0E",
+      "title": "Tracking ICE shootings, migrant deaths in Texas since 2025 - The Texas Tribune",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE80cGFLdWtxc1RtMG0zdnBhT0ZzLTQwV0hNazNPaGxUa2s4QWlxb09Mb2kwU1laSmxpU01NeTExdHkzWEE2RTdFVG5mbHpZdnk0UGFIb1dYZ0YtWjQ0VkZxVU9XLVRIUHFQM0dYeW82TEtkT0d1U24tag?oc=5",
       "publication_date": "Thu, 09 Jul 2026 07:00:00 GMT",
       "source_name": "The Texas Tribune",
@@ -616,11 +616,11 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-5B2FA73D330796CD",
-      "title": "DHS agent killed US citizen in March last year, records reveal - aljazeera.com",
+      "candidate_id": "RRM-DISCOVERY-C596D71C9E5E2F92",
+      "title": "DHS agent killed US citizen in March last year, records reveal - Al Jazeera",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVmVwLXREazlZdWUxZDhweXhLVUV1ZUJyZUk0QU1XMko1YWxZQXN6NGwzd1BUaXBaa3dONTIxUnQyX0RhazQ4MVhFR2FUUU9TZkJQZ2pSQ3FPelVoT09PSlBjdFl4cF9DYzQ4MnJtRlpua2UzaWNyZktGS19iaE1mQnlZbnZOeEVQR20xMHFfaW1NYk1MUms1NDFLRDlEUXlxNzExU9IBqgFBVV95cUxNSmtrTVg5RGtoS1I5c0k2cUZHT05HNk9rcFhTbXlFdkhBUHR0U09xWExZVDNvNF9LZ3JjcDdpZFVXWVlTZE55bmFZbzVtRVhJN3dOVWEtUmZwYzdXb0ZVZ2p0NHh5bzVELUUwSFZRRVlTNk4zRmotWTE3dmsxWEdWMmJVblFka1JXYkFaRWJra1ZMS21SNkZsMkpzTENYZE45NXVZQnhBQ0htQQ?oc=5",
       "publication_date": "Sun, 22 Feb 2026 08:00:00 GMT",
-      "source_name": "aljazeera.com",
+      "source_name": "Al Jazeera",
       "matched_query": "\"Ruben Ray Martinez\" lawsuit",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -652,16 +652,6 @@
       "publication_date": "Sun, 22 Feb 2026 08:00:00 GMT",
       "source_name": "Newsweek",
       "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
-      "review_status": "candidate-generated",
-      "evidence_effect": "none-until-reviewed"
-    },
-    {
-      "candidate_id": "RRM-DISCOVERY-4BA398FCAEEF80AA",
-      "title": "Man killed in officer-involved shooting at South Padre Island attempted to run over federal agent, DHS says - KRGV",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVDdJVDlhWl9kS0paRkV0MW5lYUxEeS1tS3JFcmxjSlcwRnkwZHEyRDFtbGRGMFlOS0NjRjBxbGN2aWhCejA3ckN5OENKcDhnUkN1Z2JES3BTQW9oM0lRUkhuZVh5dVNjN0JMUVdNVDhQcmRSdjNCTmpyWkJMejdHSi1tWjhTeE8zY2xGOHpLRmtCVWV3QmV6dldJNGZPZ19UUGhvVFI1MU1ndUl1N2VYcEpXU3ZKbDRVYWFhUm5lQjhKT0J2M2JZR0ZjQlJ4Qldy?oc=5",
-      "publication_date": "Sun, 22 Feb 2026 01:02:11 GMT",
-      "source_name": "KRGV",
-      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -721,17 +711,7 @@
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPWlByOHVrRllhQVg5cVFXU2tXZjF1SlBkLVZEYW1OY1dnOUpDaDJTN0xVNTFSQmdad2JRR3R5TGhPT3JuRWVkSVNWRWU1RnhfazEyc3VnMmZxUW4wQmJhMnZJak9LbW1BbmdPNnJIbU1uMTVGdm1kSUlzdDNZRkJYZVNlOENjcjEzdXhMUXlwbnBuSWxHbEQxbW5GS3RyWmNid2Z3SjlXZlhRZEgwN29pT1dBUnJBUHd3MlZaZUxTdXJJcHRGS2ktS2t1ZUNzdU01NEIyakRFRmgxbEZk?oc=5",
       "publication_date": "Sun, 08 Mar 2026 08:00:00 GMT",
       "source_name": "facebook.com",
-      "matched_query": "\"Ruben Ray Martinez\" grand jury",
-      "review_status": "candidate-generated",
-      "evidence_effect": "none-until-reviewed"
-    },
-    {
-      "candidate_id": "RRM-DISCOVERY-FCD47055354C6955",
-      "title": "Calls for Accountability Mount in ICE Shooting of Ruben Ray Martinez Last March - Truthout",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQLVYzVGRCUlF1X3puclNpd0NGMTJPR09FSEg1cHNBRWRMTTFWb3h0YU1kWERjSklVVjc3aUREU2dFODA1OHBtS2habjBEVnFpc1ZoeWJzMy0zaEFYTTJzdy1uZWhuZDRoS2d5aEJ5NnNrMTRwMlpRc09YZWtJMkpUQjUyT29CZUlsS3ZBSFg0TUsxanZFSWU2QjExY2xiUjQyd2pDM3lvTkt5TVk1SlhZOWpLSFR6Wk1vaG1qbWdpY3dhY2FpWEM5dVQ4cDlUbUxyZjBsSjBWeEpMV1J1TmxsbDNoNkU?oc=5",
-      "publication_date": "Sat, 21 Feb 2026 08:00:00 GMT",
-      "source_name": "Truthout",
-      "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
+      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -746,6 +726,16 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
+      "candidate_id": "RRM-DISCOVERY-B325D4CDCEA8EFD8",
+      "title": "Calls for Accountability Mount in ICE Shooting of Ruben Ray Martinez Last March - truthout.org",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQLVYzVGRCUlF1X3puclNpd0NGMTJPR09FSEg1cHNBRWRMTTFWb3h0YU1kWERjSklVVjc3aUREU2dFODA1OHBtS2habjBEVnFpc1ZoeWJzMy0zaEFYTTJzdy1uZWhuZDRoS2d5aEJ5NnNrMTRwMlpRc09YZWtJMkpUQjUyT29CZUlsS3ZBSFg0TUsxanZFSWU2QjExY2xiUjQyd2pDM3lvTkt5TVk1SlhZOWpLSFR6Wk1vaG1qbWdpY3dhY2FpWEM5dVQ4cDlUbUxyZjBsSjBWeEpMV1J1TmxsbDNoNkU?oc=5",
+      "publication_date": "Sat, 21 Feb 2026 08:00:00 GMT",
+      "source_name": "truthout.org",
+      "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
+      "review_status": "candidate-generated",
+      "evidence_effect": "none-until-reviewed"
+    },
+    {
       "candidate_id": "RRM-DISCOVERY-AFB2BFE2494E6B66",
       "title": "ICE shot and killed an American citizen last year new records show - The Independent",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbWN1bVQ1LXM0N28zQWQ2eUcwN09NQUx0bHo2NnZFaVhSRTQwcEVyTkZlMk5WQXNkZDVjeUtsOG5oX185YmE3eFo1cEhLc1RTTk9hODc0NF9HUmxQNWJXRW4xb0NmdUtyYnpOU2t5SDk1MHBIeS1MVmpsN0dsT0hVSWxaMldkRHNBeDFQb3ZrWWJ4ZDVGRWlHVXMyRQ?oc=5",
@@ -756,12 +746,12 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-A3AEA9364D31FB04",
-      "title": "'How Many Other Killings Are They Concealing?' ICE Shot Ruben Ray Martinez in Texas Last March - commondreams.org",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBxSzIzaXdNd3QzRjF4VFl0TGdOSERjSWJ1anVqUGtzc0x6alpBY1JiWDg1Uk1lSkEycjNoRlJTeTA5T1VwY0FZdklzY2pyZlM3YWVkYVJoRloweDhZeGpHaFp3?oc=5",
+      "candidate_id": "RRM-DISCOVERY-AF6A7C1FA15D1760",
+      "title": "Calls for Accountability Mount in ICE Shooting of Ruben Ray Martinez Last March - truthout.org",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFFBN3JUcnRqTHhTUzNROGpLQlBLeS1MTHdVb09vRG1BNm44MEtSZ2hsNTAxOEIzcEh6Sl9oNno3YnpIX0FBRndOWHI2Zlhkd2x4TVJ5UTZwNmx6dmlEUjFOaUVYay1tTzZiaXlQT2pUNGNDazBBdjlTNkVjdzVPdVhMZjdvODJxUmRBQmRtU2kzb2p1alNHSFQ4ZXlZbDZ3aklkOVpveWpIUV9HS2tv?oc=5",
       "publication_date": "Sat, 21 Feb 2026 08:00:00 GMT",
-      "source_name": "commondreams.org",
-      "matched_query": "\"Ruben Ray Martinez\" grand jury",
+      "source_name": "truthout.org",
+      "matched_query": "\"Ruben Ray Martinez\" lawsuit",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -776,12 +766,12 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-82A84BC819E3FB43",
-      "title": "Calls for Accountability Mount in ICE Shooting of Ruben Ray Martinez Last March - Truthout",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFFBN3JUcnRqTHhTUzNROGpLQlBLeS1MTHdVb09vRG1BNm44MEtSZ2hsNTAxOEIzcEh6Sl9oNno3YnpIX0FBRndOWHI2Zlhkd2x4TVJ5UTZwNmx6dmlEUjFOaUVYay1tTzZiaXlQT2pUNGNDazBBdjlTNkVjdzVPdVhMZjdvODJxUmRBQmRtU2kzb2p1alNHSFQ4ZXlZbDZ3aklkOVpveWpIUV9HS2tv?oc=5",
+      "candidate_id": "RRM-DISCOVERY-7CD47F7F1405C1CE",
+      "title": "'How Many Other Killings Are They Concealing?' ICE Shot Ruben Ray Martinez in Texas Last March - Common Dreams",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBxSzIzaXdNd3QzRjF4VFl0TGdOSERjSWJ1anVqUGtzc0x6alpBY1JiWDg1Uk1lSkEycjNoRlJTeTA5T1VwY0FZdklzY2pyZlM3YWVkYVJoRloweDhZeGpHaFp3?oc=5",
       "publication_date": "Sat, 21 Feb 2026 08:00:00 GMT",
-      "source_name": "Truthout",
-      "matched_query": "\"Ruben Ray Martinez\" lawsuit",
+      "source_name": "Common Dreams",
+      "matched_query": "\"Ruben Ray Martinez\" grand jury",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -846,12 +836,12 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-149D9E1664A9D66F",
-      "title": "Opinion | My Son Was Killed by ICE. I Want Accountability. - nytimes.com",
+      "candidate_id": "RRM-DISCOVERY-B1A3E322358722F6",
+      "title": "Opinion | My Son Was Killed by ICE. I Want Accountability. - The New York Times",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNejZGOExDOXNZWWEwSzdrUkUycTlXbkxMWEc2c3djaDBfVURYdHVmbXVQNmRVZEFvS1VvNXBjaWJOb0VqZmFlZEh3eXhjeFd4NHJWSUJIcGp6TUdKcDBCXzVSV2hacGxqLXFLXzk1LUdLb2tqRHU5NWotbEdpRWJ0SUI3QnhZZXYtUTRJWW5R?oc=5",
       "publication_date": "Sat, 18 Jul 2026 07:00:00 GMT",
-      "source_name": "nytimes.com",
-      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
+      "source_name": "The New York Times",
+      "matched_query": "\"Ruben Ray Martinez\" lawsuit",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -886,12 +876,12 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-3C4D8317416BD69A",
+      "candidate_id": "RRM-DISCOVERY-92DAB39FD35BA8D4",
       "title": "Family seeks justice for Ruben Ray Martinez, killed by federal agent on South Padre Island - WOAI",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOGJtd3dvVTdOblNUQzg4MVd0bXBKY3c1WVNNc0JFbXU2d0hPUVdpN3ZTVDQtTzEtaVQ4NUlUUVhrZkIybW95TFJDc1ltd1h6MkZyZVJrVThZYWYyRnQ5Wld3aFV1SE5OQTZIZVA1NEVsS2NOblF6eFVhR0lQSDN4bG5XdUFMZnBFdlZfaXRLVlBQbWZIaTZnOFhMTGprSmxvUlhKaXNTX2FGUVdtVGMtNXB6Y1EzZVFOaWo2X0k5bmxRNUo1UzlzYjk4bjI?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQc2JITEhvYUptZkhuWGt0ZURJSEdmSXZ4eFZJMUZaMDRzelhzUnZhRVdzTWkwREdpd0E3Sms3aURiVDdaVmxRandpV241bzU5c0NhY3ZTVjI2Q2djWUl6MjVaT0ZhTEhkX3FVTWwycWN6WVl6NXVwS3E1VHQ2WkFZZUdjcmE3MU5GYXNWd0oxcU1wdzZtcEtCenRrSXctR0FZM2drMjV3TTh5Vk1SV01TZ2dCY1BZWVNTZ1BQZDVGX2VjVUJlVVdV?oc=5",
       "publication_date": "Sat, 14 Mar 2026 07:00:00 GMT",
       "source_name": "WOAI",
-      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
+      "matched_query": "\"Ruben Ray Martinez\" body camera",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
@@ -1056,21 +1046,21 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-E425DEEEDF2A8F20",
-      "title": "Key Witness Who Disputed ICE Account of Fatal Texas Shooting Dies in Car Accident - nytimes.com",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53UmVDa181UUo1djZfRHRvREpsN250VVV4QjJLQ1VXSDY0Z0NSR25XVDY3ZVB6Sm5VbkZJMWE5LW5iMmxyNUNoMk5xSUV1MUpGM1dJSUlFd3JpcW9XOFpCMm1pdEpNMnhKQWVHR2hlOE5oVnVXV1B2RTQ3OVhaenM?oc=5",
-      "publication_date": "Mon, 23 Feb 2026 08:00:00 GMT",
-      "source_name": "nytimes.com",
-      "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
-      "review_status": "candidate-generated",
-      "evidence_effect": "none-until-reviewed"
-    },
-    {
       "candidate_id": "RRM-DISCOVERY-B1C7AAB00F576497",
       "title": "Senator Demands Kristi Noem Impeachment After Ruben Ray Martinez Death - Newsweek",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbUQ4V1N0aDdiUDJPY3FreUUyd0JOWFFrQzZRYUdlZ3BvLTVqMTVtVWNzOEJrM2VCaU10TTY5bUNTQzNueTRDMEI1dFp1ZHBYUE9waHJ0MS1MX0pYZlBZNTRBR1laZU51clU4Vlc3UkEyNVdqS2dubFJoN1NCaGx1dGRYT09wMmFuNDVmanZKTTFJaGxpZlUxZ001a1hfOGtBT3F0ZGhZaw?oc=5",
       "publication_date": "Mon, 23 Feb 2026 08:00:00 GMT",
       "source_name": "Newsweek",
+      "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
+      "review_status": "candidate-generated",
+      "evidence_effect": "none-until-reviewed"
+    },
+    {
+      "candidate_id": "RRM-DISCOVERY-AB8A18BE262A65BE",
+      "title": "Key Witness Who Disputed ICE Account of Fatal Texas Shooting Dies in Car Accident - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53UmVDa181UUo1djZfRHRvREpsN250VVV4QjJLQ1VXSDY0Z0NSR25XVDY3ZVB6Sm5VbkZJMWE5LW5iMmxyNUNoMk5xSUV1MUpGM1dJSUlFd3JpcW9XOFpCMm1pdEpNMnhKQWVHR2hlOE5oVnVXV1B2RTQ3OVhaenM?oc=5",
+      "publication_date": "Mon, 23 Feb 2026 08:00:00 GMT",
+      "source_name": "The New York Times",
       "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -1206,11 +1196,11 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-C1C7E5B5013D7013",
-      "title": "A Fatal ICE Shooting Occurred in Texas Months Before Renee Good\u2019s Killing - nytimes.com",
+      "candidate_id": "RRM-DISCOVERY-C44F9CE52393F36D",
+      "title": "A Fatal ICE Shooting Occurred in Texas Months Before Renee Good\u2019s Killing - The New York Times",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNFpUX2o2TzEtZXp5SkhWNEp0UjdwdnVvbkFuQW5GN0ExeTdOQnVZU3MwRVdfQkJuVWlmaXhaaVZKZEF3cU1PRGpiSm9TMDhLaExYTm1hOWI1eGdIa3BpZy1IMnFHdlgzNE5kMWRvVl81c1ZCS3ZqZUc1ZEp2czgwNUVZNm1rVnc?oc=5",
       "publication_date": "Fri, 20 Feb 2026 08:00:00 GMT",
-      "source_name": "nytimes.com",
+      "source_name": "The New York Times",
       "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -1276,16 +1266,6 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-3C8FD1C544CC5C34",
-      "title": "San Antonio man killed by HSI agent last March in undisclosed shooting, records show - KSAT",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZHo5cmVTbkJZTTlnb1RmUEtZNUJneXV3d0EzZDdwWl8wSjVzQzh1RXhmcm9BSkdncFl2ZVZUb1A4ZDVSWGFUVkx1akFfMjRXY2d1UjRESk95b0FQSm15c01aVkI5SFVYaUQ1WTlBYjdQbFR4S1ZkeEIzZFdobG1telNqWnhDNHhHNHIxS1otQTBFX0tVYTdrUmdTaTRXZUlRRjlyMHRvZDR6aVY4Z1FVdU5UaUl6YTNsMHN1cHUwa0RGM3BXTi1oclExdDU5U3ZsVjBMNHB1SzlSbUc2MGc?oc=5",
-      "publication_date": "Fri, 20 Feb 2026 08:00:00 GMT",
-      "source_name": "KSAT",
-      "matched_query": "\"Ruben Ray Martinez\" DHS HSI",
-      "review_status": "candidate-generated",
-      "evidence_effect": "none-until-reviewed"
-    },
-    {
       "candidate_id": "RRM-DISCOVERY-14E2D1CEFC3FF304",
       "title": "ICE fatally shot San Antonio man last year, and it was kept quiet until now - San Antonio Current",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVkFMN3dNQmNwOW0tdTFKcGFLZXNDbm5vbkozOF91RWpBdVhWRTdvYUNfRkJOSVRBN0p4WEhlay01TTJxTXFaVnlCU2dXd2tRd05tVWRLeVBnYUVWVzJoQXJ6X1dCOWNiNHBjZDhnZE13TkVHekpFR2FOR1VNZndiMWpBNkZqTGhnVFhGd2sxdmdUUVRhTUV4MXN2UG5jaVFuaWdwNlNKb1Y1MGcwTDF1RWFPVDRtQ1FBbVlWREhVY08?oc=5",
@@ -1326,11 +1306,11 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-D7BD0731412DC6DB",
-      "title": "Gunshots in traffic: Why did DHS fatally shoot unarmed motorist in Texas? - usatoday.com",
+      "candidate_id": "RRM-DISCOVERY-DEB1C4680BEF9A65",
+      "title": "Gunshots in traffic: Why did DHS fatally shoot unarmed motorist in Texas? - USA Today",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdWhKYWQ0Y2VDVV9QZFNUb0xDY3BnY2lnd0Y5b2FtYUJVNWFJR1ZwZ2lPSXZWeDlBZGh2dFZNcjhGREJBR3JneFE5Q2ZGeU9MQnhQTlJNelhSdmRkUlVoSEZldkZvSl9yTEhmWEpIT19zTWxIZVdIckhIU0tpVEx3TWJ1Wm9nenlZbEZXSWFrWTRUS01tMERxTC1CaUU5TkdjRFE5WS14X3IzSGcyalE?oc=5",
       "publication_date": "Fri, 13 Mar 2026 07:00:00 GMT",
-      "source_name": "usatoday.com",
+      "source_name": "USA Today",
       "matched_query": "\"Ruben Ray Martinez\" grand jury",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -1341,16 +1321,16 @@
       "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQelhpRXNmeDdfeEZnam9CRXJfRElNeUdaUUNoNXVZQzRrU3pxaG9TblB1N2ZRN0h2RnZHMW5LQWxDUV9UcXBCcGc5TkpHdGZQUllVWXdTajk2NmRkSzhDYmM3X2NDVnNFV0dNNlV5dVBLWGFxcXU1QU9XeGNiR2hrZjUxTkxzSUotN2laanJEV2g2R1ZYWHM3Tzl6MzVtaW96aTNDdlV4cVpFaGhQN1lvLWRHaVhKd1ZsVnE2Z3dRSzJOaVh0dDR5S3NrRF9Gbmg3NWZCc2FsR0VVV0NybFpQUm1ZX2hKVkhOQklWaFBHU2xIU2VBS1RERFZ6SUpVYkx0a0ZUOW9hRjI?oc=5",
       "publication_date": "Fri, 13 Mar 2026 07:00:00 GMT",
       "source_name": "kens5.com",
-      "matched_query": "\"Ruben Ray Martinez\" South Padre Island",
+      "matched_query": "\"Ruben Ray Martinez\" body camera",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-68252BD5AFF29957",
-      "title": "Kill, Lie, and Cover-Up: The Shooting of Ruben Martinez - counterpunch.org",
+      "candidate_id": "RRM-DISCOVERY-35A105AA30EF9C43",
+      "title": "Kill, Lie, and Cover-Up: The Shooting of Ruben Martinez - CounterPunch.org",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN0JhVFpHeGpQTDhaTHVYWURMRTlud2tBS21ab0pseFNhRnpDVVp4UTVOUDcwcTZWRmdDTmU4ZDlYWm4zMkFvM3NqQlVGVzNHOTVZS3F6OWdRRUVZTW9jaEkwb0tJb1VtS3pGT2xObUpodFBoejNZa0U3N0psQ19zcjBnRmFCTU52bDZWYUV2QS1WVTlfekZGZg?oc=5",
       "publication_date": "Fri, 13 Mar 2026 07:00:00 GMT",
-      "source_name": "counterpunch.org",
+      "source_name": "CounterPunch.org",
       "matched_query": "\"Ruben Ray Martinez\" lawsuit",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
@@ -1446,11 +1426,11 @@
       "evidence_effect": "none-until-reviewed"
     },
     {
-      "candidate_id": "RRM-DISCOVERY-3060D38D6054D865",
-      "title": "Immigration agents killed third US citizen nearly a year before Minnesota shootings - gbnews.com",
+      "candidate_id": "RRM-DISCOVERY-07FE75D414EFDC45",
+      "title": "Immigration agents killed third US citizen nearly a year before Minnesota shootings - GB News",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEJLeWZLYi1idzE2Rlk3ejI1ZHo0UnlRVDVveWEzVkNXaWJkZnBrSndsbU1RMVJwSndMam9BZ1pBUEtWbnhrWTFTc0N0WkhkMFpVY0pUcG1IaVd1UmctZndQVzFja0JQZUVwYzZxbVlHeW8wUlYxUHc1cnNzZzR2LVJDdWMzSTk0cmRlbWZoZVNENld4MTlRZW9n?oc=5",
       "publication_date": "Fri, 03 Jul 2026 07:00:00 GMT",
-      "source_name": "gbnews.com",
+      "source_name": "GB News",
       "matched_query": "\"Ruben Ray Martinez\" body camera",
       "review_status": "candidate-generated",
       "evidence_effect": "none-until-reviewed"
