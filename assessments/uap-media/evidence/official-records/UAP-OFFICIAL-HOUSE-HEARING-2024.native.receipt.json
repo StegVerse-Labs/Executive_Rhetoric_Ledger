@@ -6,13 +6,13 @@
     "github_token_used": false,
     "promotion_authority": false
   },
-  "byte_length": 66736,
+  "byte_length": 66472,
   "content_type": "text/html; charset=UTF-8",
   "evidence_class": "official-record",
   "final_url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-exposing-the-truth/",
   "native_object": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-HOUSE-HEARING-2024.native",
-  "retrieved_at": "2026-09-25T12:03:43.531722Z",
-  "sha256": "04de4cfba2eea16ca0659308afe60eb59c7ceb14c73678634b255911cda9b9db",
+  "retrieved_at": "2026-09-25T17:24:52.596476Z",
+  "sha256": "038ff99fc891ffa423b5e648e653aad6dd921806c7806b1e79a6dffe6922230f",
   "source_id": "UAP-OFFICIAL-HOUSE-HEARING-2024",
   "source_url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-exposing-the-truth/"
 }

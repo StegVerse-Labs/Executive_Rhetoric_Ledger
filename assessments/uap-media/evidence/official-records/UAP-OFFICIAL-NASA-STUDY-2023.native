@@ -134,7 +134,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 /*# sourceURL=https://science.nasa.gov/wp-content/plugins/nasa-blocks/build/blocks/topic-cards/style-index.css */
 </style>
 
-<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1790330400' media='all' />
+<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1790355600' media='all' />
 <link rel='stylesheet' id='all-css-8' href='https://science.nasa.gov/_static/??/wp-content/plugins/accessibility-checker/build/css/srOnlyFormat.css,/wp-content/plugins/hubble-space-telescope/css/style.css?m=1790280130' type='text/css' media='all' />
 <link rel='stylesheet' id='nasa-child-style-css' href='https://science.nasa.gov/wp-content/themes/nasa-child/build/style.css?ver=78da5645b79c20a885fa' media='all' />
 <link rel='stylesheet' id='all-css-10' href='https://science.nasa.gov/_static/??-eJyFyjEOgCAMQNELiRUd1MF4lkIaMUohFPH6mrjL+H8e3FHZwJk4Q3bkSYBREKwIbGcweCrG0r7ZwA+l8l6pMkzW7YWUQWZKVR5DvKLyeHx29Yse566fOj3MDxVAQ3A=' type='text/css' media='all' />
@@ -514,7 +514,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>7 days ago</span>
+			<span>1 week ago</span>
 
 		</div>
 	</div>
@@ -595,7 +595,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>21 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -676,7 +676,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>7 hours ago</span>
+			<span>13 hours ago</span>
 
 		</div>
 	</div>
@@ -703,7 +703,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>19 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -730,7 +730,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -825,7 +825,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 
 	<div class="grid-col padding-left-105">
 
-		<div class="label margin-bottom-1">35 min read</div>
+		<div class="label margin-bottom-1">41 min read</div>
 
 		<div class="margin-bottom-2">
 			<h3 class="heading-16 line-height-md">Visual Distortions Near a Black Hole and Neutron Star</h3>
@@ -838,7 +838,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>16 hours ago</span>
+			<span>23 hours ago</span>
 
 		</div>
 	</div>
@@ -865,7 +865,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>18 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -919,7 +919,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>19 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -1081,7 +1081,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>7 hours ago</span>
+			<span>13 hours ago</span>
 
 		</div>
 	</div>
@@ -1108,7 +1108,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>18 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -1135,7 +1135,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -1243,7 +1243,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>7 days ago</span>
+			<span>1 week ago</span>
 
 		</div>
 	</div>
@@ -1785,7 +1785,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 			<div id="" class="hds-single-form-embed bg-spacesuit-white hds-module alignwide wp-block-nasa-blocks-gravity-form-embed"><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-title-intro-block padding-x-3"><div class="padding-top-2 padding-bottom-2 width-full maxw-full hds-module hds-module-full wp-block-nasa-blocks-article-intro"></div></div><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-render-block padding-x-3"><div class="form-entry-content margin-bottom-3"><div class="margin-bottom-3">
                 <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_45' ><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_45' id='gform_45'  action='/uap/' data-formid='45' novalidate>					<div style="display: none !important;" class="akismet-fields-container gf_invisible" data-prefix="ak_">
 						<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label>
-						<input type="hidden" id="ak_js_1" name="ak_js" value="209" />
+						<input type="hidden" id="ak_js_1" name="ak_js" value="58" />
 						<script>
 document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
 </script>
@@ -1811,9 +1811,9 @@ document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTi
             <input type='hidden' class='gform_hidden' name='is_submit_45' value='1' />
             <input type='hidden' class='gform_hidden' name='gform_submit' value='45' />
             
-            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='fW/hZKavoiXa3vqKHGIefY2zYYN1+jhHwtZcR5++scQNVO3iTwj8t6epX7xfqdgcVS8NTvs0f1Mnj8rufWfryj3dzVrxFINmaCTsMVWpWh+lMFU=' />
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='JQv7Ouzjg+uco0pvDuaODVhgGfSX5obyEegvZbeCGEhoWgtsLveoNq12eszWCoT+DdJHdlXe9cR01WpfeTwhl7HheURpdqKyQMfZWdQcJ59KkiQ=' />
             <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI4NTZjZGZhM2I3NDEwYTg5YmI1ZTlmOWUyY2Y4Yjk4MlwifSIsIjE5NjZjMzQ5Y2NjNTA2ZjE5NTZkMDA2YjdmM2YyMmMzIiwxNzkwMzMzMzg5XQ==' />
+            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI3MjZkNWFiMGZkYTJlNzE3MGJmMjQyMjRiZjdiZjcxZVwifSIsImNiMDIzMjg1YjZhZTY1NWRhYzIwZGI4YTc0M2U2NGQ5IiwxNzkwMzU2NTg0XQ==' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_45' id='gform_target_page_number_45' value='0' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_45' id='gform_source_page_number_45' value='1' />
             <input type='hidden' name='gform_field_values' value='' />
@@ -1868,7 +1868,7 @@ var edac_frontend_fixes = [];
 <script id="wp-a11y-js" defer="defer" src="https://science.nasa.gov/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e"></script>
 <script id="gform_gravityforms_theme_vendors-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=0c901cb641ce64b99c20ea1a4d208cc9"></script>
 <script id="gform_gravityforms_theme-js-extra">
-var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"4f06dba39cdbd9885e8db30261d6eb7e"},"ajax":{"ajaxurl":"https://science.nasa.gov/wp-admin/admin-ajax.php","ajax_submission_nonce":"beafc80ac9","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"35f43284b1"};
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"4f06dba39cdbd9885e8db30261d6eb7e"},"ajax":{"ajaxurl":"https://science.nasa.gov/wp-admin/admin-ajax.php","ajax_submission_nonce":"beafc80ac9","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"9f4cc00ae5"};
 //# sourceURL=gform_gravityforms_theme-js-extra
 </script>
 <script id="gform_gravityforms_theme-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=e27d9712159624c99129c8c208f022ad"></script>
