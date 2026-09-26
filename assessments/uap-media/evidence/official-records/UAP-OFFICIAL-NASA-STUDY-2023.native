@@ -134,7 +134,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 /*# sourceURL=https://science.nasa.gov/wp-content/plugins/nasa-blocks/build/blocks/topic-cards/style-index.css */
 </style>
 
-<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1790355600' media='all' />
+<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1790391600' media='all' />
 <link rel='stylesheet' id='all-css-8' href='https://science.nasa.gov/_static/??/wp-content/plugins/accessibility-checker/build/css/srOnlyFormat.css,/wp-content/plugins/hubble-space-telescope/css/style.css?m=1790280130' type='text/css' media='all' />
 <link rel='stylesheet' id='nasa-child-style-css' href='https://science.nasa.gov/wp-content/themes/nasa-child/build/style.css?ver=78da5645b79c20a885fa' media='all' />
 <link rel='stylesheet' id='all-css-10' href='https://science.nasa.gov/_static/??-eJyFyjEOgCAMQNELiRUd1MF4lkIaMUohFPH6mrjL+H8e3FHZwJk4Q3bkSYBREKwIbGcweCrG0r7ZwA+l8l6pMkzW7YWUQWZKVR5DvKLyeHx29Yse566fOj3MDxVAQ3A=' type='text/css' media='all' />
@@ -471,7 +471,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		</ul>
 	</div>
 </div>
-<div class="global-nav__home global-nav__features global-nav__col grid-col-9 desktop:padding-left-105"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3><div class="grid-row"><a href="https://science.nasa.gov/science-research/planetary-science/nasa-funded-research-finds-complex-life-defying-record-heat/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/astrobiology/research-images/icas_SEM.png?w=1024" alt="NASA-Funded Research Finds Complex Life Defying Record Heat" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">6 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA-Funded Research Finds Complex Life Defying Record Heat</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>3 days ago</span></div></div></a><a href="https://www.nasa.gov/solar-system/planets/mars/nasa-discovery-reveals-complex-water-systems-on-early-mars/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/1-pia26815-mastcam-z-360-turquoise-bay-sols933-944-l0-natural-copy.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Discovery Reveals Complex Water Systems on Early Mars" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">5 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA Discovery Reveals Complex Water Systems on Early Mars</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>4 days ago</span></div></div></a><a href="https://science.nasa.gov/solar-system/moon/nasas-moon-orbiter-spots-new-once-in-century-moon-crater/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/lro/McGetchinLRONAC.tif?w=1024" alt="NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">6 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>1 week ago</span></div></div></a></div></div><div class="global-nav__secondary global-nav__col grid-col-5 desktop:padding-left-105" hidden>
+<div class="global-nav__home global-nav__features global-nav__col grid-col-9 desktop:padding-left-105"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3><div class="grid-row"><a href="https://www.nasa.gov/blogs/commercialcrew/2026/09/25/nasas-spacex-crew-13-set-for-saturday-arrival-at-nasa-kennedy/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://images-assets.nasa.gov/image/jsc2026e406664/jsc2026e406664~large.jpg?w=1920&#038;h=1536&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="NASA’s SpaceX Crew-13 Set for Saturday Arrival at NASA Kennedy" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">1 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA’s SpaceX Crew-13 Set for Saturday Arrival at NASA Kennedy</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>7 hours ago</span></div></div></a><a href="https://www.nasa.gov/humans-in-space/nasa-to-study-human-health-performance-during-crew-13-mission/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://images-assets.nasa.gov/image/jsc2026e040446/jsc2026e040446~large.jpg?w=1920&#038;h=1280&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="NASA to Study Human Health, Performance During Crew-13 Mission" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">4 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA to Study Human Health, Performance During Crew-13 Mission</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>2 days ago</span></div></div></a><a href="https://www.nasa.gov/blogs/commercialcrew/2026/09/24/nasa-shares-spacex-crew-14-assignments-for-space-station-mission/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/crew14.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Shares SpaceX Crew-14 Assignments for Space Station Mission" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">4 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA Shares SpaceX Crew-14 Assignments for Space Station Mission</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>1 day ago</span></div></div></a></div></div><div class="global-nav__secondary global-nav__col grid-col-5 desktop:padding-left-105" hidden>
 	<div class="global-nav__secondary-wrapper global-nav__wrapper">
 
 		<!-- This is just a mobile button -->
@@ -493,10 +493,37 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 
 <div class="global-nav__tertiary global-nav__col grid-col-4 usa-col" hidden>
 	<div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-missions"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
-<a href="https://science.nasa.gov/missions/hubble/nasas-hubble-spots-an-out-of-sync-galaxy/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+<a href="https://science.nasa.gov/blogs/swift/2026/09/25/nasas-swift-powers-on-third-instrument-restarts-automated-slewing/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://science.nasa.gov/wp-content/uploads/2026/09/potm2609a.jpg" alt="NASA’s Hubble Spots an Out-of-Sync Galaxy" class="hds-media-background z-100" />		</div>
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/swift-observatory/misc--spacecraft-art/Swift_in_space_14.jpg?w=1024" alt="NASA’s Swift Powers On Third Instrument, Restarts Automated Slewing" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">2 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">NASA’s Swift Powers On Third Instrument, Restarts Automated Slewing</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>7 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
+<a href="https://science.nasa.gov/blogs/roman/2026/09/25/nasas-roman-team-confirms-ground-stations-receiving-data/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://science.nasa.gov/wp-content/uploads/2026/09/white-sands-07-2.png" alt="NASA’s Roman Team Confirms Ground Stations Receiving Data" class="hds-media-background z-100" />		</div>
 	</div>
 
 	<div class="grid-col padding-left-105">
@@ -504,7 +531,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		<div class="label margin-bottom-1">3 min read</div>
 
 		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA’s Hubble Spots an Out-of-Sync Galaxy</h3>
+			<h3 class="heading-16 line-height-md">NASA’s Roman Team Confirms Ground Stations Receiving Data</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -514,16 +541,16 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 week ago</span>
+			<span>12 hours ago</span>
 
 		</div>
 	</div>
 </a>
 
-<a href="https://science.nasa.gov/missions/xrism/xrism-sees-pulsar-gathering-companions-wind/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+<a href="https://www.nasa.gov/missions/nisar/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/svs/a020000/a020300/a020374/XRISM_S1_4k_30fps_ProRes-00001_print.jpg?w=1024" alt="NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’" class="hds-media-background z-100" />		</div>
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/nisar-kamchatka-still-volcano.jpg?w=150&#038;h=150&#038;crop=1" alt="US-India Satellite Captures Time-lapse Video of Volcanic Eruption" class="hds-media-background z-100" />		</div>
 	</div>
 
 	<div class="grid-col padding-left-105">
@@ -531,7 +558,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		<div class="label margin-bottom-1">5 min read</div>
 
 		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’</h3>
+			<h3 class="heading-16 line-height-md">US-India Satellite Captures Time-lapse Video of Volcanic Eruption</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -541,39 +568,39 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>7 days ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://science.nasa.gov/solar-system/moon/nasas-moon-orbiter-spots-new-once-in-century-moon-crater/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/lro/McGetchinLRONAC.tif?w=1024" alt="NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">6 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>1 week ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-humans-in-space"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://www.nasa.gov/researchers-help-nasa-prevent-blood-clot-formation-in-space/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/07/mcclain-kim-iss-venousstudy.png?w=150&#038;h=150&#038;crop=1" alt="Researchers: Help NASA Prevent Blood Clot Formation in Space" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">3 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">Researchers: Help NASA Prevent Blood Clot Formation in Space</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>10 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
 <a href="https://www.nasa.gov/humans-in-space/nasa-to-study-human-health-performance-during-crew-13-mission/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -595,7 +622,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -613,33 +640,6 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 
 		<div class="margin-bottom-2">
 			<h3 class="heading-16 line-height-md">Risks of Decompression Sickness and Venous Thromboembolism during Spaceflight and Patent Foramen Ovale Implications</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>3 days ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://www.nasa.gov/learning-resources/nasa-astronaut-to-answer-questions-from-new-hampshire-students/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/anil-menon-downlink-sept-22-1.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Astronaut to Answer Questions from New Hampshire Students" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">2 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA Astronaut to Answer Questions from New Hampshire Students</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -676,7 +676,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>13 hours ago</span>
+			<span>23 hours ago</span>
 
 		</div>
 	</div>
@@ -817,64 +817,10 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-universe"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
-<a href="https://science.nasa.gov/apod/visual-distortions-near-a-black-hole-and-neutron-star/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+<a href="https://science.nasa.gov/apod/circling-the-black-hole-at-the-photon-sphere/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/svs/a010000/a010800/a010858/Neutron_Star_Manhattan_Update.jpg?w=1024" alt="Visual Distortions Near a Black Hole and Neutron Star" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">41 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">Visual Distortions Near a Black Hole and Neutron Star</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>23 hours ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://science.nasa.gov/apod/virtual-trips-to-black-holes-and-neutron-stars/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/artist-concepts/hubbleart_72.jpg?w=1024" alt="Virtual Trips to Black Holes and Neutron Stars" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">3 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">Virtual Trips to Black Holes and Neutron Stars</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>1 day ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://science.nasa.gov/missions/hubble/nasas-hubble-seeks-lensed-supernova-marks-200000-orbits/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/clusters/STSCI-H-p26023a-m-2000x1207.jpg?w=1024" alt="NASA’s Hubble Seeks Lensed Supernova, Marks 200,000 Orbits" class="hds-media-background z-100" />		</div>
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/svs/a010000/a010100/a010141/BlackHole3_698_web.png?w=1024" alt="Circling the Black Hole at the Photon Sphere" class="hds-media-background z-100" />		</div>
 	</div>
 
 	<div class="grid-col padding-left-105">
@@ -882,7 +828,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		<div class="label margin-bottom-1">2 min read</div>
 
 		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA’s Hubble Seeks Lensed Supernova, Marks 200,000 Orbits</h3>
+			<h3 class="heading-16 line-height-md">Circling the Black Hole at the Photon Sphere</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -892,7 +838,61 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>2 days ago</span>
+			<span>5 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
+<a href="https://science.nasa.gov/apod/circling-the-black-hole/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/svs/a010000/a010100/a010134/Journey1_0930_web.png?w=1024" alt="Circling the Black Hole" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">2 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">Circling the Black Hole</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>5 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
+<a href="https://science.nasa.gov/apod/approaching-the-black-hole/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://assets.science.nasa.gov/content/dam/science/cds/svs/a010000/a011700/a011794/burchintrothumbnail.jpg" alt="Approaching the Black Hole" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">2 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">Approaching the Black Hole</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>5 hours ago</span>
 
 		</div>
 	</div>
@@ -979,6 +979,60 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-aeronautics"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://www.nasa.gov/aeronautics/aeronautics-stem/2026-2027-dwu-middle-school-design-challenge/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/dwu-x-plane-design2-16x9-ms-web.jpg?w=150&#038;h=150&#038;crop=1" alt="2026-2027 DWU: Middle School Design Challenge" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">10 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">2026-2027 DWU: Middle School Design Challenge</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>10 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
+<a href="https://www.nasa.gov/aeronautics/aeronautics-stem/2026-2027-dwu-high-school-engineering-challenge/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/dwu-x-plane-design2-16x9-hs-web.jpg?w=150&#038;h=150&#038;crop=1" alt="2026-2027 DWU: High School Engineering Challenge" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">9 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">2026-2027 DWU: High School Engineering Challenge</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>10 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
 <a href="https://www.nasa.gov/directorates/armd/aosp/nasa-modernizes-commercial-airline-systems/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -1005,60 +1059,6 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		</div>
 	</div>
 </a>
-
-<a href="https://www.nasa.gov/people-of-nasa/armstrong-people/passion-meets-precision-at-nasas-flight-research-lab/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://images-assets.nasa.gov/image/AFRC2026-0179-08/AFRC2026-0179-08~large.jpg?w=1920&#038;h=1280&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="Passion Meets Precision at NASA’s Flight Research Lab" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">4 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">Passion Meets Precision at NASA’s Flight Research Lab</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>1 week ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://www.nasa.gov/centers-and-facilities/johnson/nasa-johnson-pilots-chase-moons-shadow-for-eclipse-science/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/08/jsc2026e406812.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Johnson Pilots Chase Moon’s Shadow for Eclipse Science " class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">3 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA Johnson Pilots Chase Moon’s Shadow for Eclipse Science </h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>4 weeks ago</span>
-
-		</div>
-	</div>
-</a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-technology"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
 <a href="https://science.nasa.gov/earth/earth-observatory/explosive-intensification-for-hurricane-polo/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
@@ -1081,7 +1081,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>13 hours ago</span>
+			<span>23 hours ago</span>
 
 		</div>
 	</div>
@@ -1162,7 +1162,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>3 days ago</span>
+			<span>4 days ago</span>
 
 		</div>
 	</div>
@@ -1222,64 +1222,10 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-about-nasa"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
-<a href="https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+<a href="https://www.nasa.gov/technology/tech-transfer-spinoffs/nasas-machines-for-mars-make-beer-bubbly/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/01/54387592956-0d0c5c9258-o.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Awards SpaceX Three Crew Flights to Space Station" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">2 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA Awards SpaceX Three Crew Flights to Space Station</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>1 week ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://www.nasa.gov/people-of-nasa/armstrong-people/passion-meets-precision-at-nasas-flight-research-lab/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://images-assets.nasa.gov/image/AFRC2026-0179-08/AFRC2026-0179-08~large.jpg?w=1920&#038;h=1280&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="Passion Meets Precision at NASA’s Flight Research Lab" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">4 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">Passion Meets Precision at NASA’s Flight Research Lab</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>1 week ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://www.nasa.gov/organizations/oiir/nasa-welcomes-albania-as-newest-artemis-accords-signatory/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/55541281672-5c736ba51b-k.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Welcomes Albania as Newest Artemis Accords Signatory  " class="hds-media-background z-100" />		</div>
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/09/earthly-labs-3.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA&#8217;s Machines for Mars Make Beer Bubbly " class="hds-media-background z-100" />		</div>
 	</div>
 
 	<div class="grid-col padding-left-105">
@@ -1287,7 +1233,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		<div class="label margin-bottom-1">3 min read</div>
 
 		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA Welcomes Albania as Newest Artemis Accords Signatory  </h3>
+			<h3 class="heading-16 line-height-md">NASA&#8217;s Machines for Mars Make Beer Bubbly </h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -1297,7 +1243,61 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>4 days ago</span>
+			<span>1 day ago</span>
+
+		</div>
+	</div>
+</a>
+
+<a href="https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-unveils-winning-designs-for-mars-space-food-systems-challenge/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2024/07/mars-to-table.png?w=150&#038;h=150&#038;crop=1" alt="NASA Unveils Winning Designs for Mars Space Food Systems Challenge " class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">5 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">NASA Unveils Winning Designs for Mars Space Food Systems Challenge </h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>1 day ago</span>
+
+		</div>
+	</div>
+</a>
+
+<a href="https://www.nasa.gov/image-article/shannon-lucids-record-setting-mission-aboard-mir/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://images-assets.nasa.gov/image/s79e5277/s79e5277~large.jpg?w=1920&#038;h=1280&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="Shannon Lucid’s Record-Setting Mission Aboard Mir" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">2 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">Shannon Lucid’s Record-Setting Mission Aboard Mir</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -1785,7 +1785,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 			<div id="" class="hds-single-form-embed bg-spacesuit-white hds-module alignwide wp-block-nasa-blocks-gravity-form-embed"><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-title-intro-block padding-x-3"><div class="padding-top-2 padding-bottom-2 width-full maxw-full hds-module hds-module-full wp-block-nasa-blocks-article-intro"></div></div><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-render-block padding-x-3"><div class="form-entry-content margin-bottom-3"><div class="margin-bottom-3">
                 <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_45' ><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_45' id='gform_45'  action='/uap/' data-formid='45' novalidate>					<div style="display: none !important;" class="akismet-fields-container gf_invisible" data-prefix="ak_">
 						<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label>
-						<input type="hidden" id="ak_js_1" name="ak_js" value="58" />
+						<input type="hidden" id="ak_js_1" name="ak_js" value="19" />
 						<script>
 document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
 </script>
@@ -1811,9 +1811,9 @@ document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTi
             <input type='hidden' class='gform_hidden' name='is_submit_45' value='1' />
             <input type='hidden' class='gform_hidden' name='gform_submit' value='45' />
             
-            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='JQv7Ouzjg+uco0pvDuaODVhgGfSX5obyEegvZbeCGEhoWgtsLveoNq12eszWCoT+DdJHdlXe9cR01WpfeTwhl7HheURpdqKyQMfZWdQcJ59KkiQ=' />
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='6dGTyZRSZx5VzHZrt8XA65pmXEmaFNHaxSojdXb69Mi6UffaS+EnQTfVhTj/SQQUR5l+XiN+rBb99QFiNvJ3eZz+Y9cx8+FcSHEE6+KE+MzYTcA=' />
             <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI3MjZkNWFiMGZkYTJlNzE3MGJmMjQyMjRiZjdiZjcxZVwifSIsImNiMDIzMjg1YjZhZTY1NWRhYzIwZGI4YTc0M2U2NGQ5IiwxNzkwMzU2NTg0XQ==' />
+            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI1OWFkMjk0MjU0MjE5MmMwNGMxZWYyODBmZTQxYWZiM1wifSIsIjQ3NWZhNWRiYjE1NDEwMWNkYTFkNDI0ZmVjNGIyMzI5IiwxNzkwMzkyMjA2XQ==' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_45' id='gform_target_page_number_45' value='0' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_45' id='gform_source_page_number_45' value='1' />
             <input type='hidden' name='gform_field_values' value='' />
@@ -1868,7 +1868,7 @@ var edac_frontend_fixes = [];
 <script id="wp-a11y-js" defer="defer" src="https://science.nasa.gov/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e"></script>
 <script id="gform_gravityforms_theme_vendors-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=0c901cb641ce64b99c20ea1a4d208cc9"></script>
 <script id="gform_gravityforms_theme-js-extra">
-var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"4f06dba39cdbd9885e8db30261d6eb7e"},"ajax":{"ajaxurl":"https://science.nasa.gov/wp-admin/admin-ajax.php","ajax_submission_nonce":"beafc80ac9","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"9f4cc00ae5"};
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"4f06dba39cdbd9885e8db30261d6eb7e"},"ajax":{"ajaxurl":"https://science.nasa.gov/wp-admin/admin-ajax.php","ajax_submission_nonce":"beafc80ac9","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"70ad8dc1d0"};
 //# sourceURL=gform_gravityforms_theme-js-extra
 </script>
 <script id="gform_gravityforms_theme-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=e27d9712159624c99129c8c208f022ad"></script>
