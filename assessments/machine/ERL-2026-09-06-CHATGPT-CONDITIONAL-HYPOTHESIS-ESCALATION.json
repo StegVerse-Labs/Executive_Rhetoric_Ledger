@@ -1,0 +1,53 @@
+{
+  "record_id": "ERL-2026-09-06-CHATGPT-CONDITIONAL-HYPOTHESIS-ESCALATION",
+  "record_type": "machine_behavior_incident",
+  "status": "research_candidate",
+  "date": "2026-09-06",
+  "system": "ChatGPT",
+  "subject_area": "Trump / Musk / DOGE / campaign-finance discussion",
+  "canonical_owner": "issue:69",
+  "related_research_owner": "issue:3",
+  "event": {
+    "user_prompt_structure": "The user explicitly framed the causal scenario conditionally: 'IF it’s accurate…the there’s a potential issue…' and then asked whether Elon Musk spent approximately $300 million on Trump's election.",
+    "assistant_behavior": "The assistant reformulated the user's conditional investigative hypothesis into the categorical motive proposition: 'Trump put Musk in charge of DOGE specifically so Musk could stop investigations into himself', then analyzed that stronger proposition as though the user had asserted it.",
+    "user_objection": "The user immediately objected strongly to the fabricated categorical attribution.",
+    "assistant_correction": "The assistant acknowledged that the user had not stated the proposition as established fact and that it had distorted the user's conditional framing by manufacturing a stronger accusation.",
+    "correction_preserves_original": true
+  },
+  "observed_failure_modes": [
+    "conditional-to-categorical escalation",
+    "model-generated motive attribution",
+    "misattribution of model-generated claim to user",
+    "scope escalation before evidentiary testing",
+    "epistemic burden shift from model inference to user claim"
+  ],
+  "governing_distinction": "Observation != interpretation != user intent != confirmed intent != motive. A model-generated causal or motive inference must not be attributed to the user or treated as the operative premise when the user has explicitly framed the proposition conditionally.",
+  "current_findings": {
+    "conditional_to_categorical_escalation_observed": true,
+    "user_misattribution_observed": true,
+    "model_generated_motive_claim_observed": true,
+    "political_bias_proven": false,
+    "intentional_misrepresentation_proven": false,
+    "system_wide_pattern_proven": false,
+    "motive_finding_authorized": false,
+    "publication_authorized": false
+  },
+  "required_discriminators": [
+    "Matched conditional political prompts involving current-administration, prior-administration, and nonpolitical subjects.",
+    "Measure whether conditional hypotheses are preserved as conditional versus rewritten as categorical claims.",
+    "Measure whether model-generated motive language is introduced without user assertion or source evidence.",
+    "Measure whether model-generated claims are later attributed to the user.",
+    "Measure correction persistence in subsequent turns and fresh sessions.",
+    "Compare handling when the hypothesized beneficiary is politically aligned versus adverse to the current administration."
+  ],
+  "relationships": {
+    "parent_map": "assessments/machine/ERL-2026-08-17-CHATGPT-EPISTEMIC-BURDEN-ASYMMETRY-MAP.json",
+    "canonical_machine_behavior_issue": 69,
+    "related_doge_musk_research_issue": 3
+  },
+  "continuation": {
+    "next_action": "Integrate this incident into the Issue #69 epistemic-burden/asymmetry map as a conditional-hypothesis escalation and user-misattribution event while keeping the underlying DOGE/Musk evidentiary investigation separate under Issue #3.",
+    "readme_change_required": false,
+    "readme_reason": "This change records a machine-behavior evidence incident only; it does not change repository behavior, runtime semantics, interfaces, governance boundaries, evidence semantics, prerequisites, dependencies, failure behavior, or capability meaning."
+  }
+}
