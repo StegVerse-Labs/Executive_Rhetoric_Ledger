@@ -30,3 +30,12 @@ Two additional verified first-party URLs are now `READY` in the *same* executabl
 The scheduled research workflow re-executes the queue twice daily and whenever the queue or worker changes. The classifier now preserves original-Chinese candidate excerpts for dialogue and incident notification instead of relying exclusively on English translation. Exact eight-source acquisition claims must await its own generated cycle receipt.
 
 All retained political propositions require neutral, source- and date-bounded review. No leader motive, geopolitical prediction, policy endorsement, actual SI incident-channel operation, secured semiconductor transaction, named dinner guest or new export act is inferred from these source captures.
+
+## Second autonomous cycle: authentic original-Chinese eight-source capture
+
+The scheduled worker re-executed automatically at `2026-09-27T23:13:29Z` after PR #206 merged. It acquired **all 8/8** official first-party sources with **zero** failed source acquisitions. The complete proposition-bound machine receipt is retained on `main` at `assessments/us-china-ai-summit/research-cycles/2026-09-27.json` in commit `37801e8e0e1a3f196796a3e4032efadce78d5de0`.
+
+- Original-Chinese MFA September 25 talks: exact HTML SHA-256 `243268dcde3f40f890252f63b2a060c3a65fc02bc2d636b4f887aa60016d5bfa`; Chinese date and AI-dialogue candidate matches retained.
+- Original-Chinese MFA September 26 bilateral eight-point outcome: exact HTML SHA-256 `ea4b14003e81de99b9fc049b2a0d9a1ea205b9a8c64fc9d11344f86cbaabac89`; original-language AI dialogue and AI-incident communication-channel matches retained.
+
+The U.S. September 25 fact sheet and the PRC original-Chinese September 26 announcement therefore independently corroborate **that both governments publicly report agreement** on an AI dialogue and incident-communication channel. Actual deployed notification technology, procedural thresholds, sent notices, mutual verification or independently retained incident receipts remain **not observed**. These are documentary candidate findings pending governed review, not a judgment about either leader or the relative political merits of the agreement.
