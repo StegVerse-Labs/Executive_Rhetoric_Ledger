@@ -82,6 +82,30 @@
       "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.native",
       "state": "READY",
       "purpose": "Verify dinner occurrence/guest categories only; cannot prove named individual attendance without actual guest list."
+    },
+    {
+      "source_id": "ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925",
+      "lane": "STATEMENTS",
+      "evidence_class": "official-prc-original-language",
+      "url": "https://www.fmprc.gov.cn/zyxw/202609/t20260925_12031134.shtml",
+      "allowed_hosts": [
+        "www.fmprc.gov.cn"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925.native",
+      "state": "READY",
+      "purpose": "Preserve original Chinese version of Xi-Trump September 24 talks and compare exact original-language AI/human-control claims with the ministry English version."
+    },
+    {
+      "source_id": "ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926",
+      "lane": "INCIDENT",
+      "evidence_class": "official-prc-bilateral-outcome-list",
+      "url": "https://www.fmprc.gov.cn/zyxw/202609/t20260926_12031616.shtml",
+      "allowed_hosts": [
+        "www.fmprc.gov.cn"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926.native",
+      "state": "READY",
+      "purpose": "Independent Chinese original-language confirmation of bilateral AI dialogue and AI incident-communication agreement; claimed agreement is distinct from operational implementation."
     }
   ]
 }
