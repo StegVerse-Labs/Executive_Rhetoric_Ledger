@@ -18,7 +18,17 @@ Prioritize contemporaneous official U.S. and PRC transcripts/readouts (retain or
 Candidate intake only; no finding, attribution of hidden motives, review acceptance or publication authorized. Proposed initial outputs: three distinct source inventories, event/proposition chronology, exact quote/transcript concordance, proposed-vs-adopted-vs-enforced matrix, contradictions/unknowns log, and a clearly nonauthorizing StegVerse architectural comparison of incident reporting vs independently verified admissibility and custody. Any future central task admission/COSV requires Registry collision check and actual governed allocation, not this file.
 
 ## Current disposition
-Source research lanes defined on candidate branch. Initial social-post assertions are **NOT_INDEPENDENTLY_VERIFIED** within these artifacts. Repository issue #63 continues to own candidates until explicit governed promotion/supersession/merge/closure. No sovereign runtime receipt or external policy endorsement claimed.
+Candidate definitions merged in PR #203; the executable source queue and scheduled worker are installed in the present follow-up candidate. Initial social-post assertions are **NOT_INDEPENDENTLY_VERIFIED** within these artifacts. Repository issue #63 continues to own candidates until explicit governed promotion/supersession/merge/closure. No sovereign runtime receipt or external policy endorsement claimed.
 
-## Next operation
-Acquire and preserve official contemporaneous records for the event itself before evaluating the social post's subsidiary claims; then execute the three source-reconstruction tracks, record any evidence contradictions and submit separately for governed review. Maintain README and this handoff on subsequent changes.
+## Executable research, not a chat continuation requirement
+
+- The canonical group `ERL-RC-US-CN-AI-SUMMIT-2026` binds to `config/us-china-ai-summit-source-queue.v1.json`; six real, public, first-party URLs start in `READY` and are selected by the existing `generate_active_research_dispatch.py`.
+- `.github/workflows/run-us-china-ai-summit-research.yml` runs twice daily and on source changes, validates the active dispatch, reuses existing public-source `safe_request`, captures exact original bytes with SHA-256, extracts literal source text and generates proposition-relative source candidates with explicit no-match, unavailable and retry states.
+- `scripts/run_us_china_ai_summit_research.py` does the work; `tests/test_us_china_ai_summit_research.py` covers ready queues, six-source acquisition, proof-preserving nonauthority, failure isolation and adversarial configuration.
+- Automated candidate source snapshots and dated research-cycle reports are committed to `main` following the existing UAP research precedent. GitHub captures are NOT proof of MyKV persistence; the existing InTr and MyKV authorizing path remains separate and must not be counterfeited.
+- The worker reports exact extract matches, not truth of government assertions. Primary-source fact sheet and Chinese ministry readout are competing official accounts; a stated bilateral channel is not proof of deployed operation.
+- No manual next prompt is required to research these six sources. Source-family expansion and subsequent governed human/independent review remain normal ERL lifecycle operations, not prerequisites for continuous public-source acquisition.
+
+## Current execution state
+
+Source queue and scheduled worker implemented as a native repository change. CI and live scheduled run must be observed at exact head before claiming operational activation; retain pending if not observed. This handoff is the bounded operational reference for the existing issue #63 owner; no new Goal Task ID or COSV.
