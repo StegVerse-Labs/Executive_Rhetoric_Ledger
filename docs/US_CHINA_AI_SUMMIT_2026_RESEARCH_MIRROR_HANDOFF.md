@@ -22,12 +22,20 @@ Candidate definitions merged in PR #203; the executable source queue and schedul
 
 ## Executable research, not a chat continuation requirement
 
-- The canonical group `ERL-RC-US-CN-AI-SUMMIT-2026` binds to `config/us-china-ai-summit-source-queue.v1.json`; six real, public, first-party URLs start in `READY` and are selected by the existing `generate_active_research_dispatch.py`.
+- The canonical group `ERL-RC-US-CN-AI-SUMMIT-2026` binds to `config/us-china-ai-summit-source-queue.v1.json`; eight real, public, first-party URLs start in `READY` and are selected by the existing `generate_active_research_dispatch.py`.
 - `.github/workflows/run-us-china-ai-summit-research.yml` runs twice daily and on source changes, validates the active dispatch, reuses existing public-source `safe_request`, captures exact original bytes with SHA-256, extracts literal source text and generates proposition-relative source candidates with explicit no-match, unavailable and retry states.
-- `scripts/run_us_china_ai_summit_research.py` does the work; `tests/test_us_china_ai_summit_research.py` covers ready queues, six-source acquisition, proof-preserving nonauthority, failure isolation and adversarial configuration.
+- `scripts/run_us_china_ai_summit_research.py` does the work; `tests/test_us_china_ai_summit_research.py` covers ready queues, eight-source acquisition, proof-preserving nonauthority, failure isolation and adversarial configuration.
 - Automated candidate source snapshots and dated research-cycle reports are committed to `main` following the existing UAP research precedent. GitHub captures are NOT proof of MyKV persistence; the existing InTr and MyKV authorizing path remains separate and must not be counterfeited.
 - The worker reports exact extract matches, not truth of government assertions. Primary-source fact sheet and Chinese ministry readout are competing official accounts; a stated bilateral channel is not proof of deployed operation.
-- No manual next prompt is required to research these six sources. Source-family expansion and subsequent governed human/independent review remain normal ERL lifecycle operations, not prerequisites for continuous public-source acquisition.
+- No manual next prompt is required to research these eight sources. Source-family expansion and subsequent governed human/independent review remain normal ERL lifecycle operations, not prerequisites for continuous public-source acquisition.
+
+## Observed automated research execution — 2026-09-27
+
+ERL PR #205 merged as `e2d8d8f21a1aadd3008cc4b55a2430d8f4b08a8f` after all five applicable exact-head CI workflows passed. Its `main` push automatically triggered the installed twice-daily research worker. Real execution at `2026-09-27T23:10:18Z` captured all six then-READY official U.S./PRC/BIS URLs (6 captured, 0 unavailable), emitted proposition-bound source-text evidence candidates and retained original bytes with SHA-256 on `main` at commit `17b9492af1cef34effc1f58c5e35c61a9e5e3ea6`. The immutable candidate receipt is `assessments/us-china-ai-summit/research-cycles/2026-09-27.json`. The initial bounded source reconstruction is `assessments/evidence/2026-09-27-us-china-ai-summit-original-source-reconstruction.md`.
+
+The original-Chinese MFA talks and bilateral eight-point statements have been added as two additional READY entries to the same live queue, for **eight** ongoing public primary sources. The primary-language classifier preserves Chinese text and source-specific proposition state. Verify the next actual cycle receipt before stating that all eight have been captured.
+
+The initial six-source observation **does not** establish authentic original Universal InTr runtime receipt chain, MyKV exact-byte readback, an operational AI incident channel, export shipments or governed publication. Those are separable evidence classes. Automated research continues on the existing scheduler without another ChatGPT continuation prompt.
 
 ## Current execution state
 
