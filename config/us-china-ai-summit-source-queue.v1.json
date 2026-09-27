@@ -1,0 +1,87 @@
+{
+  "queue_version": "stegverse.erl.us-china-ai-summit-source-queue/v1",
+  "goal_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
+  "lane_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
+  "created_at": "2026-09-27T00:00:00Z",
+  "enabled": true,
+  "credential_authority": "TV/TVC",
+  "credential_requirement": "NONE",
+  "github_token_runtime_authority": "NONE",
+  "network_policy": "PUBLIC_HTTPS_ONLY_NO_AUTH",
+  "finding_authority": "NONE",
+  "publication_authority": "NONE",
+  "items": [
+    {
+      "source_id": "ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921",
+      "lane": "STATEMENTS",
+      "evidence_class": "official-us-visit-schedule",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/",
+      "allowed_hosts": [
+        "www.whitehouse.gov"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921.native",
+      "state": "READY",
+      "purpose": "Establish official planned visit chronology; schedule alone does not prove occurrence."
+    },
+    {
+      "source_id": "ERL-USCN-WH-STATE-VISIT-RECAP-20260925",
+      "lane": "STATEMENTS",
+      "evidence_class": "official-us-visit-recap",
+      "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/",
+      "allowed_hosts": [
+        "www.whitehouse.gov"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.native",
+      "state": "READY",
+      "purpose": "First-party US account of the September 24 visit and dinner; distinguish characterized success from separately evidenced agreement."
+    },
+    {
+      "source_id": "ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925",
+      "lane": "STATEMENTS",
+      "evidence_class": "official-prc-diplomatic-readout",
+      "url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html",
+      "allowed_hosts": [
+        "www.fmprc.gov.cn"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925.native",
+      "state": "READY",
+      "purpose": "Independent counterpart official account of timing, presidential remarks and any actual AI commitments; treat state claims as attributed."
+    },
+    {
+      "source_id": "ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925",
+      "lane": "INCIDENT",
+      "evidence_class": "official-us-diplomatic-fact-sheet",
+      "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+      "allowed_hosts": [
+        "www.whitehouse.gov"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925.native",
+      "state": "READY",
+      "purpose": "Extract exact US account of SI dialogue and bilateral incident communication; do not infer operational channel or independent PRC confirmation."
+    },
+    {
+      "source_id": "ERL-USCN-BIS-H200-EXPORT-POLICY-20260113",
+      "lane": "CHIPS",
+      "evidence_class": "official-us-export-policy",
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "allowed_hosts": [
+        "www.bis.gov"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.native",
+      "state": "READY",
+      "purpose": "Capture pre-summit January 2026 legal baseline for chip exports; must not be represented as new summit decision."
+    },
+    {
+      "source_id": "ERL-USCN-WH-STATE-DINNER-NOTICE-20260924",
+      "lane": "CHIPS",
+      "evidence_class": "official-us-event-announcement",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-on-the-state-dinner-with-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuan/",
+      "allowed_hosts": [
+        "www.whitehouse.gov"
+      ],
+      "destination": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.native",
+      "state": "READY",
+      "purpose": "Verify dinner occurrence/guest categories only; cannot prove named individual attendance without actual guest list."
+    }
+  ]
+}
