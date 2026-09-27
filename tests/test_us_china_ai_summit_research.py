@@ -19,7 +19,7 @@ class SummitResearchTest(unittest.TestCase):
 
     def test_all_six_live_configured_sources_are_executable(self):
         self.assertEqual(self.queue["lane_id"], GROUP)
-        self.assertGreaterEqual(len(self.queue["items"]), 6)
+        self.assertGreaterEqual(len(self.queue["items"]), 8)
         self.assertTrue(all(x["state"] == "READY" and x["url"].startswith("https://") for x in self.queue["items"]))
         self.assertEqual(self.queue["credential_requirement"], "NONE")
         self.assertEqual(self.queue["finding_authority"], "NONE")
@@ -56,6 +56,14 @@ class SummitResearchTest(unittest.TestCase):
             self.assertEqual(result["items"][0]["acquisition_state"], "SOURCE_UNAVAILABLE")
             self.assertTrue(result["items"][0]["retry_eligible"])
             self.assertEqual(result["execution_state"], "ACQUISITION_CYCLE_COMPLETED_WITH_SOURCE_FAILURES")
+
+    def test_chinese_primary_language_does_not_depend_on_english_translation(self):
+        original = "双方同意建立中美人工智能对话，交流人工智能相关风险和惠益。双方同意建立人工智能事件的沟通渠道。"
+        propositions = evaluate(original, "INCIDENT")
+        hit = {x["proposition_id"] for x in propositions if x["state"] == "SOURCE_TEXT_MATCH_REVIEW_REQUIRED"}
+        self.assertIn("PRC-CHINESE-AI-DIALOGUE", hit)
+        self.assertIn("PRC-CHINESE-INCIDENT-CHANNEL", hit)
+        self.assertFalse(any(x["interpretation_authorized"] for x in propositions))
 
     def test_security_and_unverified_claim_boundaries(self):
         bad = dict(self.queue)
