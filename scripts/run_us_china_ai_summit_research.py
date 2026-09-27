@@ -31,6 +31,9 @@ PROPOSITIONS = {
     "OFFICIAL-AI-DIALOGUE": (r"(?:super intelligence|artificial intelligence|\bSI\b).{0,130}(?:dialogue|exchange|talks)|(?:dialogue|exchange).{0,130}(?:super intelligence|artificial intelligence)", {"INCIDENT"}),
     "OFFICIAL-INCIDENT-CHANNEL": (r"(?:communication channel|notification|incident).{0,130}(?:incident|super intelligence|\bSI\b)|(?:incident).{0,130}(?:communication channel|notification)", {"INCIDENT"}),
     "EXPORT-LICENSING-BASELINE": (r"(?:H200|MI325X|semiconductor).{0,130}(?:license|China|export)|(?:license|export).{0,130}(?:H200|MI325X|semiconductor)", {"CHIPS"}),
+    "PRC-CHINESE-TALKS-DATE": (r"2026年9月24日|9月24日上午", {"STATEMENTS"}),
+    "PRC-CHINESE-AI-DIALOGUE": (r"人工智能.{0,65}(对话|风险|惠益)|中美人工智能对话", {"STATEMENTS", "INCIDENT"}),
+    "PRC-CHINESE-INCIDENT-CHANNEL": (r"人工智能事件.{0,65}(沟通渠道|通报)|建立人工智能事件的沟通渠道", {"INCIDENT"}),
     "DINNER-ATTENDANCE": (r"(?:state dinner|State Dinner).{0,130}(?:Xi Jinping|President Xi|delegations|business leaders)", {"CHIPS"}),
 }
 SENTENCE = re.compile(r"(?<=[.!?。！？])\s+")
