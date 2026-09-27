@@ -1,0 +1,183 @@
+{
+  "execution_state": "SOURCE_ACQUISITION_COMPLETE_REVIEW_REQUIRED",
+  "finding_authorized": false,
+  "generated_at": "2026-09-27T23:10:18Z",
+  "group_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
+  "items": [
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": " of the People’s Republic of China and Madame Peng Liyuan to the White House on Thursday, September 24, 2026, for an official state visit. This visit comes more than a decade since President Xi and "
+        }
+      ],
+      "retrieved_at": "2026-09-27T23:10:18Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921.aa8d426afb720c84af1cd3fc0ded2c2cd1e93f5b0ce50a9bc0789337aebfccb8.native",
+      "source_id": "ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921",
+      "source_posture": "official-us-visit-schedule",
+      "source_sha256": "aa8d426afb720c84af1cd3fc0ded2c2cd1e93f5b0ce50a9bc0789337aebfccb8",
+      "source_size_bytes": 299828,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "resident of The People’s Republic of China, and Madame Peng Liyuan Briefings & Statements September 24, 2026 First Lady Melania Trump and Madame Peng Liyuan Visit Smithsonian National Museum of Asia"
+        }
+      ],
+      "retrieved_at": "2026-09-27T23:10:18Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.38cf9781708c85d230942a9bf164d0c576171ef3494836864c5ffc053c152b57.native",
+      "source_id": "ERL-USCN-WH-STATE-VISIT-RECAP-20260925",
+      "source_posture": "official-us-visit-recap",
+      "source_sha256": "38cf9781708c85d230942a9bf164d0c576171ef3494836864c5ffc053c152b57",
+      "source_size_bytes": 296782,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html",
+      "final_url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "s with U.S. President Donald J. Trump Updated: September 25, 2026 07:50 On the morning of September 24 local time, President Xi Jinping held talks with the U.S. President Donald J. Trump at the White Hou"
+        }
+      ],
+      "retrieved_at": "2026-09-27T23:10:18Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925.b7e7326ef25ef6574e1585a0dd3ae316f44301f133983a740458c21e73f6687f.native",
+      "source_id": "ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925",
+      "source_posture": "official-prc-diplomatic-readout",
+      "source_sha256": "b7e7326ef25ef6574e1585a0dd3ae316f44301f133983a740458c21e73f6687f",
+      "source_size_bytes": 24136,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+      "lane": "INCIDENT",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "OFFICIAL-AI-DIALOGUE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "ssia, and China. The two leaders agreed to use the term “super intelligence” rather than “artificial intelligence” to describe the applicable emerging technologies. The two countries established the U.S.-China Super Intelligence (SI) Dialogue to exchange views on risks and benefits related to SI. The next exchange will occur by No"
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "OFFICIAL-INCIDENT-CHANNEL",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": " occur by November 2026. The United States and China also agreed to establish a bilateral communication channel for SI incidents. Related Fact Sheet: President Donald J. Trump Secures Historic Deals with China, Delive"
+        }
+      ],
+      "retrieved_at": "2026-09-27T23:10:18Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925.78ca465b2e9d26a6cbc3481c81f68021ef50f4f0503b484e31bcf0a6bfdb1628.native",
+      "source_id": "ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925",
+      "source_posture": "official-us-diplomatic-fact-sheet",
+      "source_sha256": "78ca465b2e9d26a6cbc3481c81f68021ef50f4f0503b484e31bcf0a6bfdb1628",
+      "source_size_bytes": 267867,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "lane": "CHIPS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EXPORT-LICENSING-BASELINE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "EASE | January 13, 2026 | Media Contact: [email protected] Department of Commerce Revises License Review Policy for Semiconductors Exported to China Download as PDF WASHINGTON, D.C. — Today the Department of Commerce’s "
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "DINNER-ATTENDANCE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        }
+      ],
+      "retrieved_at": "2026-09-27T23:10:18Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.857d4282677cb78f45ab35a14e2a4160cd3723ac47c5bb898cc4fcfeefe433c5.native",
+      "source_id": "ERL-USCN-BIS-H200-EXPORT-POLICY-20260113",
+      "source_posture": "official-us-export-policy",
+      "source_sha256": "857d4282677cb78f45ab35a14e2a4160cd3723ac47c5bb898cc4fcfeefe433c5",
+      "source_size_bytes": 55710,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-on-the-state-dinner-with-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuan/",
+      "lane": "CHIPS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EXPORT-LICENSING-BASELINE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "DINNER-ATTENDANCE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "First Lady Melania Trump Releases Details on the State Dinner with His Excellency Xi Jinping, President of The People’s Republic of China, and Madame Peng Liyuan – The White House Sk"
+        }
+      ],
+      "retrieved_at": "2026-09-27T23:10:18Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.f7010d9d89d8b6acd3ca6749de9d6b7b98133598e83ea85e2fda900fc4f1eed3.native",
+      "source_id": "ERL-USCN-WH-STATE-DINNER-NOTICE-20260924",
+      "source_posture": "official-us-event-announcement",
+      "source_sha256": "f7010d9d89d8b6acd3ca6749de9d6b7b98133598e83ea85e2fda900fc4f1eed3",
+      "source_size_bytes": 261724,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-on-the-state-dinner-with-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuan/"
+    }
+  ],
+  "mykv_persistence_verified": false,
+  "nonclaims": [
+    "No claim that a source statement is independently true",
+    "No inferred international incident channel deployment",
+    "No inferred motive or predicted geopolitical leadership",
+    "No MyKV custody or runtime admission inferred from GitHub capture"
+  ],
+  "original_intr_receipts_observed": false,
+  "publication_authorized": false,
+  "review_state": "PRIMARY_SOURCE_CANDIDATES_REQUIRE_INDEPENDENT_REVIEW",
+  "schema": "stegverse.erl.us-china-ai-summit-cycle/v1",
+  "source_captured_count": 6,
+  "source_unavailable_count": 0
+}
