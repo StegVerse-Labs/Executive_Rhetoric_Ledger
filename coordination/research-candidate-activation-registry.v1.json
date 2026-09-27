@@ -469,6 +469,23 @@
       "terminal_condition": "Primary source custody, comparative institutional evidence, disconfirming evidence, transition-governance analysis, and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
+      "title": "September 2026 U.S.–China AI summit: statements, incident notification, chips and trade",
+      "candidate_paths": [
+        "research-candidates/2026-09-us-china-ai-summit-three-lanes.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [
+        "docs/US_CHINA_AI_SUMMIT_2026_RESEARCH_MIRROR_HANDOFF.md"
+      ],
+      "next_executable_task": "Authenticate alleged September 2026 summit against official contemporaneous U.S. and PRC records; pursue three bounded primary-source acquisition lanes for leader statements, AI-incident notification, and chips/trade/legislative/guest claims.",
+      "terminal_condition": "Primary-source custody, proposition-relative contradiction review and independent review support an explicit governed promotion, supersession, merge, or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }

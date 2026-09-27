@@ -12,6 +12,10 @@ It performs cross-administration and cross-jurisdiction analysis of:
 
 This repository is not an opinion archive and does not presume that any publisher, agency, party, ideology, or institution is inherently unbiased. It is a comparative research and historical continuity layer that separates what was reported from what available evidence can establish.
 
+## September 2026 U.S.–China AI summit research intake
+
+Three bounded, nonauthorizing candidate lanes now track (1) official summit/leader-statement authenticity, (2) any bilateral AI-incident-notification proposal and actual implementation, and (3) chips, trade, legislative and corporate-guest claims. The initiating social-media infographic and any earlier LLM summary are **unverified leads**, not ERL findings. All lanes reuse existing candidate umbrella owner [issue #63](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/63); no new canonical Goal Task ID, COSV, publication authority, or runtime completion is implied. See [candidate intake](research-candidates/2026-09-us-china-ai-summit-three-lanes.md) and [scoped mirror handoff](docs/US_CHINA_AI_SUMMIT_2026_RESEARCH_MIRROR_HANDOFF.md).
+
 ## Long-term operating purpose
 
 The ledger is intended to run as a recurring research process rather than a collection of one-time manual assessments.
