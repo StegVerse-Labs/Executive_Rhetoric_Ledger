@@ -9,9 +9,11 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.client
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -86,19 +88,43 @@ def validate_queue(data: dict[str, Any]) -> list[str]:
     return errors
 
 
-def safe_request(url: str, allowed_hosts: list[str], timeout: float) -> tuple[bytes, str, str | None]:
+def safe_request(
+    url: str,
+    allowed_hosts: list[str],
+    timeout: float,
+    *,
+    max_attempts: int = 3,
+    retry_delay: float = 0.25,
+) -> tuple[bytes, str, str | None]:
+    if max_attempts < 1:
+        raise ValueError("max_attempts must be >= 1")
     req = urllib.request.Request(url, headers={"User-Agent": "StegVerse-ERL-UAP-Research/1.0", "Accept": "*/*"})
     for key in req.headers:
         if key.lower() in FORBIDDEN_REQUEST_HEADERS:
             raise RuntimeError(f"forbidden request header: {key}")
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        final_url = response.geturl()
-        host = urllib.parse.urlparse(final_url).hostname
-        if host not in allowed_hosts:
-            raise RuntimeError(f"redirect escaped allowlisted hosts: {host}")
-        payload = response.read()
-        content_type = response.headers.get("Content-Type")
-        return payload, final_url, content_type
+
+    last_error: Exception | None = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                final_url = response.geturl()
+                host = urllib.parse.urlparse(final_url).hostname
+                if host not in allowed_hosts:
+                    raise RuntimeError(f"redirect escaped allowlisted hosts: {host}")
+                payload = response.read()
+                content_type = response.headers.get("Content-Type")
+                return payload, final_url, content_type
+        except (http.client.IncompleteRead, urllib.error.URLError, TimeoutError) as exc:
+            last_error = exc
+            if attempt >= max_attempts:
+                break
+            if retry_delay > 0:
+                time.sleep(retry_delay)
+
+    raise RuntimeError(
+        f"public source transport incomplete after {max_attempts} attempts: "
+        f"{type(last_error).__name__}: {last_error}"
+    )
 
 
 def acquire_item(item: dict[str, Any], output_root: Path, timeout: float) -> dict[str, Any]:

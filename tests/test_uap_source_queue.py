@@ -1,4 +1,5 @@
 import copy
+import http.client
 import json
 import os
 import subprocess
@@ -6,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -59,6 +61,71 @@ class UapSourceQueueTests(unittest.TestCase):
             self.assertTrue(data["inherited_token_presence_removed_before_network"]["GITHUB_TOKEN"])
             self.assertTrue(data["inherited_token_presence_removed_before_network"]["GH_TOKEN"])
             self.assertEqual(data["results"], [])
+
+    def test_incomplete_read_retries_and_discards_partial_bytes(self):
+        class FakeResponse:
+            def __init__(self, payload, fail=False):
+                self.payload = payload
+                self.fail = fail
+                self.headers = {"Content-Type": "application/octet-stream"}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def geturl(self):
+                return "https://example.org/source.bin"
+
+            def read(self):
+                if self.fail:
+                    raise http.client.IncompleteRead(self.payload, len(self.payload) + 5)
+                return self.payload
+
+        responses = [
+            FakeResponse(b"partial", fail=True),
+            FakeResponse(b"complete", fail=False),
+        ]
+        with patch("urllib.request.urlopen", side_effect=responses) as mocked:
+            payload, final_url, content_type = worker.safe_request(
+                "https://example.org/source.bin",
+                ["example.org"],
+                1.0,
+                max_attempts=2,
+                retry_delay=0,
+            )
+
+        self.assertEqual(payload, b"complete")
+        self.assertEqual(final_url, "https://example.org/source.bin")
+        self.assertEqual(content_type, "application/octet-stream")
+        self.assertEqual(mocked.call_count, 2)
+
+    def test_repeated_incomplete_read_becomes_actionable_runtime_error(self):
+        class FakeResponse:
+            headers = {"Content-Type": "application/octet-stream"}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def geturl(self):
+                return "https://example.org/source.bin"
+
+            def read(self):
+                raise http.client.IncompleteRead(b"partial", 20)
+
+        with patch("urllib.request.urlopen", side_effect=[FakeResponse(), FakeResponse()]):
+            with self.assertRaisesRegex(RuntimeError, "public source transport incomplete after 2 attempts"):
+                worker.safe_request(
+                    "https://example.org/source.bin",
+                    ["example.org"],
+                    1.0,
+                    max_attempts=2,
+                    retry_delay=0,
+                )
 
 
 if __name__ == "__main__":
