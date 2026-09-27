@@ -1,0 +1,73 @@
+name: Run ERL U.S.–China AI Summit Research
+
+on:
+  schedule:
+    - cron: "13 5,17 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "config/us-china-ai-summit-source-queue.v1.json"
+      - "scripts/run_us_china_ai_summit_research.py"
+      - ".github/workflows/run-us-china-ai-summit-research.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: erl-us-china-ai-summit-research
+  cancel-in-progress: false
+
+jobs:
+  acquire-and-research:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out authoritative main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run offline queue and evidence regressions
+        run: python -m unittest -v tests.test_us_china_ai_summit_research
+      - name: Acquire and analyze official public sources
+        env:
+          GITHUB_TOKEN: ""
+          GH_TOKEN: ""
+        run: |
+          python scripts/generate_active_research_dispatch.py \
+            --generated-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --output /tmp/erl-active-research-dispatch.json
+          python - <<'PY'
+          import json
+          d=json.load(open('/tmp/erl-active-research-dispatch.json'))
+          lane=next(x for x in d['lanes'] if x['group_id']=='ERL-RC-US-CN-AI-SUMMIT-2026')
+          assert lane['dispatch_state']=='ELIGIBLE_FOR_AUTOMATED_ACQUISITION'
+          assert sum(len(q['executable_items']) for q in lane['queues']) >= 6
+          assert lane['finding_authorized'] is False
+          assert lane['publication_authorized'] is False
+          PY
+          python scripts/run_us_china_ai_summit_research.py
+      - name: Retain public candidate source snapshots and exact hash receipts
+        run: |
+          git config user.name "stegverse-research-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assessments/us-china-ai-summit/
+          if git diff --cached --quiet; then
+            echo "No changed source candidate artifacts."
+          else
+            git commit -m "research: record recurring U.S.-China AI official-source evidence candidates"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Publish cycle receipt as audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: erl-us-china-ai-summit-${{ github.run_id }}
+          path: assessments/us-china-ai-summit/research-cycles/*.json
+          if-no-files-found: warn
+          retention-days: 90
