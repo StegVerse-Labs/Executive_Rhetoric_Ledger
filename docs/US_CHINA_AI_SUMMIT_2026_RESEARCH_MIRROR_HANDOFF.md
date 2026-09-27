@@ -40,3 +40,9 @@ The initial six-source observation **does not** establish authentic original Uni
 ## Current execution state
 
 Source queue and scheduled worker implemented as a native repository change. CI and live scheduled run must be observed at exact head before claiming operational activation; retain pending if not observed. This handoff is the bounded operational reference for the existing issue #63 owner; no new Goal Task ID or COSV.
+
+## Eight-source autonomous execution readback — 2026-09-27T23:13:29Z
+
+After PR #206 merged at `b17260676bd6ddb863f2a2970563bc75e16c98e5` (four applicable exact-head workflows SUCCESS), its main-branch push automatically ran the existing scheduled research worker again. The source-native execution receipt, `assessments/us-china-ai-summit/research-cycles/2026-09-27.json`, was committed to main as `37801e8e0e1a3f196796a3e4032efadce78d5de0`: **8/8 official public sources acquired, 0 source failures**, including original-Chinese MFA talks SHA-256 `243268dcde3f40f890252f63b2a060c3a65fc02bc2d636b4f887aa60016d5bfa` and original-Chinese eight-point outcomes SHA-256 `ea4b14003e81de99b9fc049b2a0d9a1ea205b9a8c64fc9d11344f86cbaabac89`. Original Chinese dialogue and incident-communication candidate propositions both matched and were retained with source context. The fixed six-source baseline remains preserved in earlier main commit `17b9492af1cef34effc1f58c5e35c61a9e5e3ea6`; updates may create new content-addressed versions rather than rewriting old source bytes.
+
+This is **actual automated research execution**; source statements are first-party evidence, not automatic independent-review findings. Continued twice-daily source refresh is installed, and an unavailable source yields per-item retry state without suppressing other evidence. The observed GitHub source captures are not authentic Interlock/InTr three-hop transport evidence or sovereign MyKV write/readback. No manual ChatGPT continuation prompt is required.
