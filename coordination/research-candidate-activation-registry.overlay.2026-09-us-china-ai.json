@@ -1,0 +1,25 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry_overlay.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "repository_authority": "ERL_MIRROR_HANDOFF.md",
+  "base_registry": "coordination/research-candidate-activation-registry.v1.json",
+  "groups": [
+    {
+      "group_id": "ERL-RC-US-CN-AI-SUMMIT-THREE-LANES-2026",
+      "title": "September 2026 U.S.–China AI summit statements, incident notification, and chips claims",
+      "candidate_paths": [
+        "research-candidates/2026-09-us-china-ai-summit-three-lanes.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:63",
+      "artifact_paths": [
+        "docs/US_CHINA_AI_SUMMIT_2026_RESEARCH_MIRROR_HANDOFF.md"
+      ],
+      "next_executable_task": "Authenticate the alleged summit and each attributed claim from primary U.S. and Chinese records; separately reconstruct any incident-notification proposal and chips/trade/legislative claims while preserving requests, proposals, enacted measures, implementation and commercial outcomes as distinct evidence states.",
+      "terminal_condition": "Primary-source custody, chronology reconstruction, proposition-level contradiction review and independent review support an explicit governed promotion, supersession, merge or closure decision.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    }
+  ]
+}
