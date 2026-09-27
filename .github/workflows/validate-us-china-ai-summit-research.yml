@@ -1,0 +1,49 @@
+name: Validate ERL U.S.–China AI Summit Research
+
+on:
+  pull_request:
+    paths:
+      - "config/us-china-ai-summit-source-queue.v1.json"
+      - "scripts/run_us_china_ai_summit_research.py"
+      - "tests/test_us_china_ai_summit_research.py"
+      - "coordination/research-candidate-activation-registry.v1.json"
+      - "docs/US_CHINA_AI_SUMMIT_2026_RESEARCH_MIRROR_HANDOFF.md"
+      - ".github/workflows/run-us-china-ai-summit-research.yml"
+      - ".github/workflows/validate-us-china-ai-summit-research.yml"
+  push:
+    branches: [main]
+    paths:
+      - "config/us-china-ai-summit-source-queue.v1.json"
+      - "scripts/run_us_china_ai_summit_research.py"
+      - "tests/test_us_china_ai_summit_research.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Test actual autonomous candidate acquisition logic offline
+        run: python -m unittest -v tests.test_us_china_ai_summit_research
+      - name: Validate live registry dispatch eligibility
+        run: |
+          python scripts/generate_active_research_dispatch.py \
+            --generated-at 2026-09-27T00:00:00Z --output /tmp/erl-ai-summit-dispatch.json
+          python - <<'PY'
+          import json
+          data=json.load(open('/tmp/erl-ai-summit-dispatch.json'))
+          x=next(v for v in data['lanes'] if v['group_id']=='ERL-RC-US-CN-AI-SUMMIT-2026')
+          assert x['dispatch_state']=='ELIGIBLE_FOR_AUTOMATED_ACQUISITION', x['dispatch_state']
+          assert len(x['queues']) == 1
+          assert len(x['queues'][0]['executable_items']) >= 6
+          assert x['finding_authorized'] is False
+          assert x['publication_authorized'] is False
+          assert x['mykv']['lane']=='02_Research/ERL'
+          print('PASS: automated six-source dispatch is eligible and remains nonauthorizing')
+          PY
