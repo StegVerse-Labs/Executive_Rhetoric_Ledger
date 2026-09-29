@@ -4,6 +4,19 @@
 
 Repository-wide continuity source of truth for `StegVerse-Labs/Executive_Rhetoric_Ledger`. Task-specific manifests, issues, task registries, receipts, and evidence files are authoritative within their bounded scope and must be read before mutation.
 
+
+## ERL intake routing invariant
+
+The instruction `enter into ERL` is literal repository intake authority. For every such instruction:
+
+1. inspect the lanes already present in ERL and route the subject into an existing lane only when that lane materially fits the subject and its evidence boundary;
+2. if no present lane materially fits, create a new bounded ERL lane rather than force-fitting the subject, dropping the intake, or asking the user to identify a lane that does not yet exist;
+3. create the scoped continuity artifacts required for the new lane, including its applicable `*_MIRROR_HANDOFF.md`, and register/coordinate the work under the canonical Task Registry before substantive continuation;
+4. preserve evidence posture: creating or routing a lane does not itself authorize a factual finding, causal inference, motive attribution, political conclusion, publication, or promotion;
+5. keep README and the applicable handoff synchronized so later sessions interpret `enter into ERL` the same way.
+
+Lane creation is therefore a normal consequence of ERL intake when the existing taxonomy is insufficient, not a blocker or a prerequisite to be delegated back to the user.
+
 ## Active goal
 
 Goal ID: `ERL-SCA-2026-07-29-FAUCI-HSGAC`
