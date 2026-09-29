@@ -1,0 +1,309 @@
+{
+  "execution_state": "SOURCE_ACQUISITION_COMPLETE_REVIEW_REQUIRED",
+  "finding_authorized": false,
+  "generated_at": "2026-09-29T11:20:17Z",
+  "group_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
+  "items": [
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": " of the People’s Republic of China and Madame Peng Liyuan to the White House on Thursday, September 24, 2026, for an official state visit. This visit comes more than a decade since President Xi and "
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-TALKS-DATE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-AI-DIALOGUE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921.9ef6964a7a6d8c6a163ba3c126c2d10f2321b11dddf1cf61360b6c83d55c7c8f.native",
+      "source_id": "ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921",
+      "source_posture": "official-us-visit-schedule",
+      "source_sha256": "9ef6964a7a6d8c6a163ba3c126c2d10f2321b11dddf1cf61360b6c83d55c7c8f",
+      "source_size_bytes": 270541,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-ahead-of-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuans-visit-to-the-white-house/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "resident of The People’s Republic of China, and Madame Peng Liyuan Briefings & Statements September 24, 2026 First Lady Melania Trump and Madame Peng Liyuan Visit Smithsonian National Museum of Asia"
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-TALKS-DATE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-AI-DIALOGUE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.f8dae6772280529c61589c4b1549924e289ec14bff050dee204ffdadee210735.native",
+      "source_id": "ERL-USCN-WH-STATE-VISIT-RECAP-20260925",
+      "source_posture": "official-us-visit-recap",
+      "source_sha256": "f8dae6772280529c61589c4b1549924e289ec14bff050dee204ffdadee210735",
+      "source_size_bytes": 296782,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html",
+      "final_url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "s with U.S. President Donald J. Trump Updated: September 25, 2026 07:50 On the morning of September 24 local time, President Xi Jinping held talks with U.S. President Donald J. Trump at the White House. "
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-TALKS-DATE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-AI-DIALOGUE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925.43e48349768e72fb83a01a3c4d77cf367e9cb2b2c10d5c3fc043d43a00b34b5b.native",
+      "source_id": "ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925",
+      "source_posture": "official-prc-diplomatic-readout",
+      "source_sha256": "43e48349768e72fb83a01a3c4d77cf367e9cb2b2c10d5c3fc043d43a00b34b5b",
+      "source_size_bytes": 24132,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.fmprc.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+      "lane": "INCIDENT",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "OFFICIAL-AI-DIALOGUE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "ssia, and China. The two leaders agreed to use the term “super intelligence” rather than “artificial intelligence” to describe the applicable emerging technologies. The two countries established the U.S.-China Super Intelligence (SI) Dialogue to exchange views on risks and benefits related to SI. The next exchange will occur by No"
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "OFFICIAL-INCIDENT-CHANNEL",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": " occur by November 2026. The United States and China also agreed to establish a bilateral communication channel for SI incidents. Related Fact Sheet: President Donald J. Trump Secures Historic Deals with China, Delive"
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-AI-DIALOGUE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-INCIDENT-CHANNEL",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925.78ca465b2e9d26a6cbc3481c81f68021ef50f4f0503b484e31bcf0a6bfdb1628.native",
+      "source_id": "ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925",
+      "source_posture": "official-us-diplomatic-fact-sheet",
+      "source_sha256": "78ca465b2e9d26a6cbc3481c81f68021ef50f4f0503b484e31bcf0a6bfdb1628",
+      "source_size_bytes": 267867,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "lane": "CHIPS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EXPORT-LICENSING-BASELINE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "EASE | January 13, 2026 | Media Contact: [email protected] Department of Commerce Revises License Review Policy for Semiconductors Exported to China Download as PDF WASHINGTON, D.C. — Today the Department of Commerce’s "
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "DINNER-ATTENDANCE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.63e3e518270425cf3f07f80ff08c1696a2214147b128fc895781beff9b9b9575.native",
+      "source_id": "ERL-USCN-BIS-H200-EXPORT-POLICY-20260113",
+      "source_posture": "official-us-export-policy",
+      "source_sha256": "63e3e518270425cf3f07f80ff08c1696a2214147b128fc895781beff9b9b9575",
+      "source_size_bytes": 55710,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-on-the-state-dinner-with-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuan/",
+      "lane": "CHIPS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EXPORT-LICENSING-BASELINE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "DINNER-ATTENDANCE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "First Lady Melania Trump Releases Details on the State Dinner with His Excellency Xi Jinping, President of The People’s Republic of China, and Madame Peng Liyuan – The White House Sk"
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.f7010d9d89d8b6acd3ca6749de9d6b7b98133598e83ea85e2fda900fc4f1eed3.native",
+      "source_id": "ERL-USCN-WH-STATE-DINNER-NOTICE-20260924",
+      "source_posture": "official-us-event-announcement",
+      "source_sha256": "f7010d9d89d8b6acd3ca6749de9d6b7b98133598e83ea85e2fda900fc4f1eed3",
+      "source_size_bytes": 261724,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-on-the-state-dinner-with-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuan/"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html",
+      "final_url": "https://www.fmprc.gov.cn/zyxw/202609/t20260925_12031134.shtml",
+      "lane": "STATEMENTS",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "EVENT-US-VISIT",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-TALKS-DATE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "知识 建交国家一览表 中国地图 专题 政府信息公开 外交新媒体 首页 > 重要新闻 习近平同美国总统特朗普会谈 2026-09-25 04:26 【 中 大 小 】 打印 当地时间2026年9月24日上午，国家主席习近平同美国总统特朗普在白宫举行会谈。 习近平指出，中美两国元首在不到半年时间里实现互访，在中美关系史上是前所未有的。我和特朗普总统一直通过各种方式保持沟通，共同为中"
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-AI-DIALOGUE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "长合作清单，也需要压缩问题清单。只要秉持平等、尊重、互惠的精神，就能找到解决问题的出路。希望双方相向而行，坚持互利共赢导向，推动中美经贸关系持续稳定向好发展。 习近平指出，中美都是人工智能大国，双方有竞争，更可以合作，应该各展所长而不是相互设防。双方可以继续开展人工智能对话，就其风险和收益进行交流，共同防范人工智能被滥用恶用。要保持人类对人工智能技术的管控，秉持以人为本、向上向善理念，让人工智能为人类的进步服务。 习近平强调，中方维护国家统一和领土完整的立场是"
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925.243268dcde3f40f890252f63b2a060c3a65fc02bc2d636b4f887aa60016d5bfa.native",
+      "source_id": "ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925",
+      "source_posture": "official-prc-original-language",
+      "source_sha256": "243268dcde3f40f890252f63b2a060c3a65fc02bc2d636b4f887aa60016d5bfa",
+      "source_size_bytes": 62931,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.fmprc.gov.cn/zyxw/202609/t20260925_12031134.shtml"
+    },
+    {
+      "acquisition_state": "SOURCE_CAPTURED",
+      "authority_effect": "NONE",
+      "content_type": "text/html",
+      "final_url": "https://www.fmprc.gov.cn/zyxw/202609/t20260926_12031616.shtml",
+      "lane": "INCIDENT",
+      "mykv_persistence": "NOT_CLAIMED",
+      "proposition_candidates": [
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "OFFICIAL-AI-DIALOGUE",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "OFFICIAL-INCIDENT-CHANNEL",
+          "state": "NO_MATCH_IN_CAPTURED_TEXT",
+          "verbatim_source_context": null
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-AI-DIALOGUE",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "果等，并指示予以落实。 六、中美禁毒执法部门合作取得可视化成果。近期，双方密切合作，联合破获多起涉新精神活性物质及前体化学品案件，在两国抓获数十名相关犯罪嫌疑人。 七、双方同意建立中美人工智能对话，交流人工智能相关风险和惠益。下次对话将于今年11月举行。双方同意建立人工智能事件的沟通渠道。 八、美方欢迎中方租借给美国亚特兰大动物园的一对大熊猫抵美。 此外，中美两军还同意尽快"
+        },
+        {
+          "interpretation_authorized": false,
+          "proposition_id": "PRC-CHINESE-INCIDENT-CHANNEL",
+          "state": "SOURCE_TEXT_MATCH_REVIEW_REQUIRED",
+          "verbatim_source_context": "，联合破获多起涉新精神活性物质及前体化学品案件，在两国抓获数十名相关犯罪嫌疑人。 七、双方同意建立中美人工智能对话，交流人工智能相关风险和惠益。下次对话将于今年11月举行。双方同意建立人工智能事件的沟通渠道。 八、美方欢迎中方租借给美国亚特兰大动物园的一对大熊猫抵美。 此外，中美两军还同意尽快签署加强危机沟通与预防的谅解备忘录，继续合作搜寻在华美军失踪人员遗骸。 相关附件 相关新闻 "
+        }
+      ],
+      "retrieved_at": "2026-09-29T11:20:17Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926.ea4b14003e81de99b9fc049b2a0d9a1ea205b9a8c64fc9d11344f86cbaabac89.native",
+      "source_id": "ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926",
+      "source_posture": "official-prc-bilateral-outcome-list",
+      "source_sha256": "ea4b14003e81de99b9fc049b2a0d9a1ea205b9a8c64fc9d11344f86cbaabac89",
+      "source_size_bytes": 61337,
+      "text_extraction": "HTML_PLAIN_TEXT",
+      "url": "https://www.fmprc.gov.cn/zyxw/202609/t20260926_12031616.shtml"
+    }
+  ],
+  "mykv_persistence_verified": false,
+  "nonclaims": [
+    "No claim that a source statement is independently true",
+    "No inferred international incident channel deployment",
+    "No inferred motive or predicted geopolitical leadership",
+    "No MyKV custody or runtime admission inferred from GitHub capture"
+  ],
+  "original_intr_receipts_observed": false,
+  "publication_authorized": false,
+  "review_state": "PRIMARY_SOURCE_CANDIDATES_REQUIRE_INDEPENDENT_REVIEW",
+  "schema": "stegverse.erl.us-china-ai-summit-cycle/v1",
+  "source_captured_count": 8,
+  "source_unavailable_count": 0
+}
