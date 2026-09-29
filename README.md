@@ -126,6 +126,11 @@ related_repository_network: "14-declared-governed-relationships"
 next_goal: "automated recurring political-reality discovery and compendium maintenance"
 ```
 
+
+## ERL intake routing
+
+`enter into ERL` means route the subject into a materially fitting existing ERL lane; when no present lane fits, create a new bounded lane and its scoped continuity artifacts rather than force-fit or discard the intake. Lane creation does not promote evidence into a finding, causal claim, motive attribution, political conclusion, or publication authority. See [ERL Mirror Handoff](ERL_MIRROR_HANDOFF.md) for the canonical intake invariant.
+
 ## Core rules
 
 ```text
