@@ -75,3 +75,7 @@ The lane may close only through PROMOTED, SUPERSEDED, MERGED, or CLOSED_WITH_REA
 ## Manual work
 
 None.
+
+## Proposition-delta reconstruction started
+
+On 2026-10-07, the first machine-readable reconstruction packet was added at `assessments/machine/2026-10-07-model-election-framing-proposition-delta.json`. It records three bounded candidate deltas: gasoline-referent interpretation-to-fact conversion; assistant-introduced polling-place hypothesis and rebuttal; and collapse of descriptive federal election involvement toward the stronger improper-interference proposition. The packet explicitly marks verbatim transcript custody incomplete and does not silently convert conversation-history summaries into quotations. Bias, partisan influence, intent, motive, and publication findings remain unauthorized.
