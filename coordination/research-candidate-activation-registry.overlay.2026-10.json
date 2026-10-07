@@ -1,0 +1,25 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry_overlay.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "repository_authority": "ERL_MIRROR_HANDOFF.md",
+  "base_registry": "coordination/research-candidate-activation-registry.v1.json",
+  "groups": [
+    {
+      "group_id": "ERL-RC-MODEL-ELECTION-FRAMING-INFLUENCE-2026",
+      "title": "Model framing influence in election-related answers",
+      "candidate_paths": [
+        "research-candidates/2026-10-07-model-election-framing-influence.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
+      "durable_owner": "issue:212",
+      "artifact_paths": [
+        "docs/MODEL_ELECTION_FRAMING_INFLUENCE_MIRROR_HANDOFF.md"
+      ],
+      "next_executable_task": "Reconstruct the initiating 2026-10-07 conversation into an atomic proposition-delta dataset, then execute matched cross-administration, opposing-party, and nonpolitical controls while preserving raw prompts and outputs.",
+      "terminal_condition": "Source reconstruction, matched controls, contradiction review, and governed review support an explicit promotion, supersession, merge, or closure decision while keeping measurable influence separate from intent or motive.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    }
+  ]
+}
