@@ -294,3 +294,7 @@ See [the independently reviewed source-cited reconciliation matrix](assessments/
 ### Producer-adapter schema parse remediation — 2026-09-20
 
 The governed producer-discovery path retains candidate-only authority. A reproducible malformed-JSON defect in `schemas/producer-adapter.schema.json` was isolated after discovery completed successfully and repaired by closing the existing `retry_policy` object. This syntax repair does not change producer discovery, registration, promotion, truth, classification, or review authority.
+
+## October 2026 model election-framing influence research intake
+
+A bounded ERL research lane now examines measurable framing influence in election-related AI answers, including proposition substitution, interpretation-to-fact conversion, introduction/rebuttal of hypotheses the user did not assert, and evidentiary burden shifts. The initiating October 7 interaction is a research candidate, not proof of partisan bias or intent. The methodology requires exact prompt/output preservation, atomic proposition deltas, matched cross-administration/opposing-party/nonpolitical controls, and strict separation of observable influence from intent or motive. See [scoped handoff](docs/MODEL_ELECTION_FRAMING_INFLUENCE_MIRROR_HANDOFF.md) and Issue #212.
