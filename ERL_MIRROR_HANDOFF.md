@@ -769,3 +769,7 @@ Matched-window evidence advancement:
 
 Latest source advancement: ERL PR `#168` merged at `a4ee58c674373bbc49253760352ed6fd1ba3120d` after all four triggered exact-head workflows succeeded (`35296936596`, `35296936513`, `35296936466`, `35296936489`). Task Registry registration merged separately in `StegVerse-Labs/.github#2086` at `500f08b144f34e9be83b291defee38ab534a9746`. These are source/coordination proofs only; substantive reconciliation remains active.
 
+
+## 2026-10-07 model election-framing influence lane — ACTIVE RESEARCH CANDIDATE
+
+Goal Task ID: `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Durable owner: Issue #212. Canonical bounded handoff: `docs/MODEL_ELECTION_FRAMING_INFLUENCE_MIRROR_HANDOFF.md`. The lane measures proposition substitution, interpretation-to-fact conversion, unasserted-hypothesis rebuttal, evidentiary burden shifts, and resulting reader-framing effects in election-related model answers. It requires matched cross-administration and nonpolitical controls and preserves `influence/effect != intent`. Lane creation authorizes no partisan, motive, illegality, or publication finding.
