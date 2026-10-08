@@ -50,7 +50,7 @@
 - live smoke artifact `8560503648`, digest `sha256:e8e336bf2cd67d0cb3d2e8bd5b2a4f75fe34071009dd3a6e16a00142f68a7f19`.
 - stale duplicate ERL implementation PRs #39, #41, and #42 closed as SUPERSEDED.
 - reviewed Trumpality projection producer, consumer, object, pointer, and destination receipt complete; stale PR #5 closed as superseded by repository-native consumption.
-- custody continuation installed at `master-records/orchestration/docs/ECOSYSTEM_CHAT_CUSTODY_MIRROR_HANDOFF.md`.
+- organization-records continuation installed at `master-records/orchestration/docs/ECOSYSTEM_CHAT_CUSTODY_MIRROR_HANDOFF.md`.
 - adapter handoff linked to the cross-session inventory and custody handoff.
 - machine-enforced task registry merged by PR #52, merge commit `8dd38a2b7d93a093be5aa5ceb632d80bce1fac14`.
 - focused registry run `30749881346` PASS.

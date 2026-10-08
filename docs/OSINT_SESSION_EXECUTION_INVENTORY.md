@@ -28,7 +28,7 @@ Remaining implementation owner: Issue #51
 6. Charlotte case intake — COMPLETE and monitored.
 7. Duplicate PR/session consolidation — COMPLETE; stale PRs closed and collisions machine-rejected.
 8. Site/Publisher propagation — MERGED INTO canonical Site and Publisher handoffs.
-9. Custody/reconstruction continuation — MERGED INTO Master-Records handoff.
+9. Organization-records/reconstruction continuation — MERGED INTO Master-Records handoff.
 10. Session continuation automation — COMPLETE through registry, validator, workflow, Issue #51, and canonical handoffs.
 
 ## Collision rules
