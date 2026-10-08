@@ -15,7 +15,7 @@ Resolved before functional mutation:
 - bounded Orli candidate authority: `docs/ORLI_SHULL_AI_GOVERNANCE_COLLAPSE_MIRROR_HANDOFF.md` / issue #63;
 - research-candidate activation authority: `docs/RESEARCH_CANDIDATE_ACTIVATION_MIRROR_HANDOFF.md` and `coordination/research-candidate-activation-registry.v1.json`;
 - canonical source-object provenance authority: `StegVerse-Labs/StegOS#190` / `stegos.object_provenance_lineage.v1`;
-- Master Records: custody/reconstruction only;
+- Master Records: organization records/reconstruction only;
 - ERL: downstream research-candidate/assessment producer only;
 - Workspace/Site/task registries: downstream references/projections only;
 - TV/TVC credential authority remains unchanged.
