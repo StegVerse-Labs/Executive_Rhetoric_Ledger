@@ -2,7 +2,7 @@
 """Validate ERL references to canonical StegOS object-provenance lineage.
 
 This validator is projection-only. It never mints provenance objects, edges,
-lineage IDs, transition receipts, or Master Records custody receipts.
+lineage IDs, transition receipts, or Master Records organization-record receipts.
 """
 from __future__ import annotations
 
@@ -17,6 +17,10 @@ CANONICAL_LINEAGE_SCHEMA = "stegos.object_provenance_lineage.v1"
 OBJ = re.compile(r"^svobj:sha256:[0-9a-f]{64}$")
 EDGE = re.compile(r"^svedge:sha256:[0-9a-f]{64}$")
 LINEAGE = re.compile(r"^svlineage:sha256:[0-9a-f]{64}$")
+ORGANIZATION_RECORD_RECEIPT_REF = "master_records_organization_record_receipt_ref"
+# Pre-migration field name, still accepted from already-written references
+# (Master Records boundary remediation, MASTER-RECORDS-BULK-SEMANTIC-REMEDIATION-002).
+LEGACY_ORGANIZATION_RECORD_RECEIPT_REF = "master_records_custody_receipt_ref"
 
 
 class ProvenanceReferenceError(ValueError):
@@ -56,9 +60,18 @@ def validate_reference(record: Mapping[str, Any]) -> None:
         raise ProvenanceReferenceError("derivation_edge_ids must contain canonical edge ids")
     _nonempty_unique_strings(record.get("transition_receipt_refs"), "transition_receipt_refs")
 
-    custody = record.get("master_records_custody_receipt_ref")
-    if custody is not None and (not isinstance(custody, str) or not custody):
-        raise ProvenanceReferenceError("master_records_custody_receipt_ref must be null or non-empty")
+    if ORGANIZATION_RECORD_RECEIPT_REF in record and LEGACY_ORGANIZATION_RECORD_RECEIPT_REF in record:
+        raise ProvenanceReferenceError(
+            f"{ORGANIZATION_RECORD_RECEIPT_REF} and its legacy name must not both be present"
+        )
+    field = (
+        LEGACY_ORGANIZATION_RECORD_RECEIPT_REF
+        if LEGACY_ORGANIZATION_RECORD_RECEIPT_REF in record
+        else ORGANIZATION_RECORD_RECEIPT_REF
+    )
+    receipt_ref = record.get(field)
+    if receipt_ref is not None and (not isinstance(receipt_ref, str) or not receipt_ref):
+        raise ProvenanceReferenceError(f"{field} must be null or non-empty")
 
     forbidden = {
         "objects",

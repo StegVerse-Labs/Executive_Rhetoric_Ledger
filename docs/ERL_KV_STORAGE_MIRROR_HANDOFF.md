@@ -70,7 +70,7 @@ On 2026-09-09, the OpenAI "An Alien Mind" intake was organized in the live MyKV 
 
 `ERL-2026-09-08-NSA-AI-DISTILLATION` then completed the native-materialization and live Google Drive path. Google Drive accepted the two validated Markdown payloads, canonical manifest last, native writer receipt, and retained provider-operation receipt. Independent downloads matched expected bytes and SHA-256 for all five files. Composite receipt hash: `bb74904fcd8169829c78bdc1c0d64905b33243c2c22852565c13e614abcd1fa8`.
 
-Master Records pinned the ERL KV schemas, custodied the authentic native/provider receipts, reproduced imports, and reconstructed the combined chain. `master-records/orchestration` PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169` after all nine workflows passed.
+Master Records pinned the ERL KV schemas, recorded the authentic native/provider receipts as organization records, reproduced imports, and reconstructed the combined chain. `master-records/orchestration` PR #89 merged at `1c565c160d1a25b408e130402b5da52e855a8169` after all nine workflows passed.
 
 The separate propagation task `SS-ERL-KV-PROPAGATION-VERIFICATION-001` completed and retired. Site and Publisher consumed the proof; Admissibility Wiki and `StegVerse-002/stegguardian-wiki` were verified not applicable because they have no ERL/KV consumer path.
 

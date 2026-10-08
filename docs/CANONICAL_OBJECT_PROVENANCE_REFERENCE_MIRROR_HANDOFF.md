@@ -51,7 +51,7 @@ The validator requires:
 - at least one canonical derivation edge;
 - at least one transition receipt reference;
 - `authority_effect: NONE`;
-- optional Master Records custody receipt reference only after such a receipt actually exists.
+- optional Master Records organization-record receipt reference (`master_records_organization_record_receipt_ref`) only after such a receipt actually exists.
 
 It fails closed on local/noncanonical IDs, missing roots or edges, duplicate receipt references, authority expansion, and attempts to reproduce canonical graph fields inside ERL.
 
@@ -77,7 +77,7 @@ Source/schema/test success proves only that ERL can reject malformed or authorit
 - authentic conversation-event identity;
 - an authentic transition receipt;
 - a canonical ERL candidate object;
-- Master Records custody;
+- a Master Records organization record;
 - reverse reconstruction from a real ERL artifact;
 - Workspace projection;
 - publication or finding authority.

@@ -39,7 +39,8 @@
       "uniqueItems": true,
       "items": {"type": "string", "minLength": 1}
     },
-    "master_records_custody_receipt_ref": {"type": ["string", "null"], "minLength": 1},
+    "master_records_organization_record_receipt_ref": {"type": ["string", "null"], "minLength": 1},
+    "master_records_custody_receipt_ref": {"$comment": "LEGACY: pre-migration name of master_records_organization_record_receipt_ref (MASTER-RECORDS-BULK-SEMANTIC-REMEDIATION-002); accepted from already-written references.", "type": ["string", "null"], "minLength": 1},
     "authority_effect": {"const": "NONE"}
   }
 }

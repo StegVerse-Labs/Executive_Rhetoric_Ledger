@@ -18,7 +18,7 @@ def record():
         "source_root_object_ids": ["svobj:sha256:" + "c" * 64],
         "derivation_edge_ids": ["svedge:sha256:" + "d" * 64],
         "transition_receipt_refs": ["intr-receipt:erl-candidate-001"],
-        "master_records_custody_receipt_ref": None,
+        "master_records_organization_record_receipt_ref": None,
         "authority_effect": "NONE",
     }
 
@@ -59,4 +59,30 @@ def test_rejects_duplicate_receipt_refs():
     value = record()
     value["transition_receipt_refs"] = ["receipt:1", "receipt:1"]
     with pytest.raises(ProvenanceReferenceError, match="must be unique"):
+        validate_reference(value)
+
+
+def test_organization_record_receipt_ref_new_name():
+    value = record()
+    value["master_records_organization_record_receipt_ref"] = "mr-record:erl-candidate-001"
+    validate_reference(value)
+    value["master_records_organization_record_receipt_ref"] = ""
+    with pytest.raises(ProvenanceReferenceError, match="master_records_organization_record_receipt_ref"):
+        validate_reference(value)
+
+
+def test_organization_record_receipt_ref_legacy_name():
+    value = record()
+    del value["master_records_organization_record_receipt_ref"]
+    value["master_records_custody_receipt_ref"] = "mr-record:erl-candidate-001"
+    validate_reference(value)
+    value["master_records_custody_receipt_ref"] = ""
+    with pytest.raises(ProvenanceReferenceError, match="master_records_custody_receipt_ref"):
+        validate_reference(value)
+
+
+def test_organization_record_receipt_ref_both_names_rejected():
+    value = record()
+    value["master_records_custody_receipt_ref"] = None
+    with pytest.raises(ProvenanceReferenceError, match="legacy name"):
         validate_reference(value)
