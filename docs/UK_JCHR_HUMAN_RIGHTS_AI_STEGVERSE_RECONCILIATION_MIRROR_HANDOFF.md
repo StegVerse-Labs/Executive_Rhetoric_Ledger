@@ -50,7 +50,7 @@ The comparison may map those recommendations to existing StegVerse concepts such
 - WorkerCoordinator task/assignment state;
 - TV/TVC credential authority where applicable;
 - execution consequence evidence;
-- Master Records custody and reconstruction;
+- Master Records organization records and reconstruction;
 - explicit separation of governance, execution, credential authority, evidence custody and observability;
 - fail-closed state transitions and exact receipt/reconstruction equality where already required by canonical tasks.
 
