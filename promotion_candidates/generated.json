@@ -1,0 +1,89 @@
+{
+  "receipts": [
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-10-10/CAND-1152B6EFF359820A2394.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-EA37DE768FCB6873A5DD",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-0AB22F886D66DD547DDF",
+      "subject_id": "CAND-1152B6EFF359820A2394"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-10-10/CAND-170D6AB07DD7B48D0ABC.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-E3E2C6FC7D87DE51D596",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-0DC11134F7BAA93B04B3",
+      "subject_id": "CAND-170D6AB07DD7B48D0ABC"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-10-10/CAND-27B8289D149FBB7CF4C0.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-99B1BF31F2B812598230",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-71C8F373655D83637816",
+      "subject_id": "CAND-27B8289D149FBB7CF4C0"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-10-10/CAND-C37397A05E372C6D365A.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-6DBBC04513456BB34208",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-3E9A9E3D28C2F09DCDDE",
+      "subject_id": "CAND-C37397A05E372C6D365A"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/ruben-ray-martinez/latest.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-5F21B78670DD8647B31B",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-74429FE61AC467F7C597",
+      "subject_id": "discovery_candidates/ruben-ray-martinez/latest.json"
+    }
+  ]
+}

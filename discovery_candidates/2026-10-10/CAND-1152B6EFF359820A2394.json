@@ -1,0 +1,37 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-1152B6EFF359820A2394",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69",
+  "normalized_payload": {
+    "captured_scope": "research-candidate-only",
+    "events": [
+      "fatal ICE vehicle encounters",
+      "temporary DHS restraint on vehicle stops",
+      "presidential reversal of that restraint",
+      "reported FBI withdrawal from ICE or DHS confrontation investigations",
+      "public denial of a formal policy change"
+    ],
+    "evidence_boundary": {
+      "does_not_establish": [
+        "coordinated intent",
+        "final constitutional violation",
+        "automatic reviewed-ledger status"
+      ],
+      "establishes": [
+        "reported chronology",
+        "existence of conflicting public and operational accounts"
+      ]
+    },
+    "fixture_id": "DHS-FBI-ACCOUNTABILITY-SEQUENCE-2026-07",
+    "title": "Reported DHS and FBI accountability-chain sequence"
+  },
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "national-reporting",
+  "source_uri": "source_fixtures/dhs-fbi-accountability-sequence.json"
+}

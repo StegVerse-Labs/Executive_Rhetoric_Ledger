@@ -1,0 +1,118 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "REVIEW-0AB22F886D66DD547DDF",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-10-10/CAND-1152B6EFF359820A2394.json"
+      ],
+      "queue": "civil-rights-high-risk",
+      "quorum": 2,
+      "required_authority": [
+        "evidence-reviewer",
+        "civil-rights-reviewer",
+        "legal-reviewer"
+      ],
+      "risk_level": "critical",
+      "status": "review-required",
+      "subject_id": "CAND-1152B6EFF359820A2394",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-0DC11134F7BAA93B04B3",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-10-10/CAND-170D6AB07DD7B48D0ABC.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-170D6AB07DD7B48D0ABC",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-71C8F373655D83637816",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-10-10/CAND-27B8289D149FBB7CF4C0.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-27B8289D149FBB7CF4C0",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-3E9A9E3D28C2F09DCDDE",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-10-10/CAND-C37397A05E372C6D365A.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-C37397A05E372C6D365A",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-74429FE61AC467F7C597",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/ruben-ray-martinez/latest.json"
+      ],
+      "queue": "civil-rights-high-risk",
+      "quorum": 2,
+      "required_authority": [
+        "evidence-reviewer",
+        "civil-rights-reviewer",
+        "legal-reviewer"
+      ],
+      "risk_level": "critical",
+      "status": "review-required",
+      "subject_id": "discovery_candidates/ruben-ray-martinez/latest.json",
+      "subject_type": "candidate"
+    }
+  ]
+}
