@@ -2,14 +2,15 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 1,
-  "pending_candidate_count": 12,
-  "pending_sha256": "9a49ab2d86ea6ea9b99fe253410979b91a2ada88036fdeca770a86136718c5e0",
+  "intake_cycles": 2,
+  "pending_candidate_count": 27,
+  "pending_sha256": "fb123c8fc8c6f6295a36c4f8191b3f30fa5b7a41cc7f879a5c843ae189c4a0fb",
   "producer_commits": [
-    "d139ff3437bdfdb327a58dccc810d11e4b1a975e"
+    "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+    "1ed621a847f38532cfbd2f6c927e4355ac914b23"
   ],
   "publication_authorized": false,
-  "scan_record_count": 1152,
+  "scan_record_count": 2592,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -18,25 +19,65 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 80
+        "NO_UPDATE": 180
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 3,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-4f7595d5339878a9505e6634",
+          "custody_pointer": "RSRCH-2af5bcc5cac62adcab67a9ac",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Establish Listing Standards and Withdrawal Criteria for Options on Commodity-Based Trusts Holding a Single Crypto Asset or Multiple Crypto Assets and To Amend Rules Regarding Position and Exercise Limits for Options on iShares Bitcoin Trust ETF",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20505/self-regulatory-organizations-investors-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
+        },
+        {
+          "candidate_id": "SRC-a56cdb7a8c9d758723adf5dd",
+          "custody_pointer": "RSRCH-2af5bcc5cac62adcab67a9ac",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Cboe Bitcoin U.S. ETF Index Options (\u201cCBTX\u201d) and Cboe Mini Bitcoin U.S. ETF Index Options (\u201cMBTX\u201d) Standard Transaction Fees",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/29/2026-19863/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
+        },
+        {
+          "candidate_id": "SRC-6f5347e5b72cf6dd4feaa7e0",
+          "custody_pointer": "RSRCH-eca2930fa167f4d3a603a3d6",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC Staff Releases Updates to FAQs Concerning Registrants and Registered Entity Activities Relating to Crypto Assets and Blockchain Technologies",
+          "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 96
+        "CANDIDATES_IDENTIFIED": 2,
+        "NO_UPDATE": 214
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 1,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-aef79759d8372aced024f0ed",
+          "custody_pointer": "RSRCH-e42741e6217dd844f4401df3",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC Issues Final Rule to Modify Clearing Requirement for Canadian Dollar- and Mexican Peso-Denominated Interest Rate Swaps",
+          "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9292-26"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 80
+        "CANDIDATES_IDENTIFIED": 1,
+        "NO_UPDATE": 179
       }
     },
     "family-token-rotation-fee-capture": {
@@ -45,7 +86,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 96
+        "NO_UPDATE": 216
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -64,8 +105,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 2,
-        "NO_UPDATE": 94
+        "CANDIDATES_IDENTIFIED": 3,
+        "NO_UPDATE": 213
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -74,7 +115,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 112
+        "NO_UPDATE": 252
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -83,16 +124,90 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 96
+        "NO_UPDATE": 216
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 8,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
+          "custody_pointer": "RSRCH-fc60c2359ac227fc68574420",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Granting Approval of a Proposed Rule Change To List and Trade Shares of the 3x Gold ETF, 3x Silver ETF, 3x Bitcoin ETF, 3x Ether ETF, 3x Crude Oil ETF, and 3x Natural Gas ETF, Each a Series of the VS Trust, Under BZX Rule 14.11(e)(4) (Commodity-Based Trust Shares)",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20507/self-regulatory-organizations-cboe-bzx-exchange-inc-order-granting-approval-of-a-proposed-rule"
+        },
+        {
+          "candidate_id": "SRC-cd0f8ad25e5e2656d85198fb",
+          "custody_pointer": "RSRCH-d171fcf18195b91dd01d0c7e",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Certain Oil Country Tubular Goods From the Republic of Korea: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/24/2026-19529/certain-oil-country-tubular-goods-from-the-republic-of-korea-final-results-of-antidumping-duty"
+        },
+        {
+          "candidate_id": "SRC-a08d879871efc65cfe12d6e8",
+          "custody_pointer": "RSRCH-d171fcf18195b91dd01d0c7e",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil Country Tubular Goods From the Socialist Republic of Vietnam: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/17/2026-19091/oil-country-tubular-goods-from-the-socialist-republic-of-vietnam-final-results-of-antidumping-duty"
+        },
+        {
+          "candidate_id": "SRC-3495faead5bcf35f21219532",
+          "custody_pointer": "RSRCH-d171fcf18195b91dd01d0c7e",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil Country Tubular Goods From the Republic of Korea: Final Results of Countervailing Duty Administrative Review and Rescission, in Part; 2023",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/15/2026-18788/oil-country-tubular-goods-from-the-republic-of-korea-final-results-of-countervailing-duty"
+        },
+        {
+          "candidate_id": "SRC-7745ca56c4b588e74147e5ff",
+          "custody_pointer": "RSRCH-fadc6a9fc9c407364f7b2828",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Granting Approval of a Proposed Rule Change To List and Trade Shares of the 3x Gold ETF, 3x Silver ETF, 3x Bitcoin ETF, 3x Ether ETF, 3x Crude Oil ETF, and 3x Natural Gas ETF, Each a Series of the VS Trust, Under BZX Rule 14.11(e)(4) (Commodity-Based Trust Shares)",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20507/self-regulatory-organizations-cboe-bzx-exchange-inc-order-granting-approval-of-a-proposed-rule"
+        },
+        {
+          "candidate_id": "SRC-50809cfde2e113eafca5c769",
+          "custody_pointer": "RSRCH-d19419246b055fe26311143e",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Certain Oil Country Tubular Goods From the Republic of Korea: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/24/2026-19529/certain-oil-country-tubular-goods-from-the-republic-of-korea-final-results-of-antidumping-duty"
+        },
+        {
+          "candidate_id": "SRC-61c75f67c98f42b2cf2f8106",
+          "custody_pointer": "RSRCH-d19419246b055fe26311143e",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil Country Tubular Goods From the Socialist Republic of Vietnam: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/17/2026-19091/oil-country-tubular-goods-from-the-socialist-republic-of-vietnam-final-results-of-antidumping-duty"
+        },
+        {
+          "candidate_id": "SRC-a7e52531b82cd3e209e1454c",
+          "custody_pointer": "RSRCH-d19419246b055fe26311143e",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil Country Tubular Goods From the Republic of Korea: Final Results of Countervailing Duty Administrative Review and Rescission, in Part; 2023",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/15/2026-18788/oil-country-tubular-goods-from-the-republic-of-korea-final-results-of-countervailing-duty"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 80
+        "CANDIDATES_IDENTIFIED": 4,
+        "NO_UPDATE": 176
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -120,14 +235,14 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 4,
-        "NO_UPDATE": 92
+        "CANDIDATES_IDENTIFIED": 6,
+        "NO_UPDATE": 210
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 1,
+      "pending_candidate_count": 4,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -137,11 +252,38 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CFTC Seeks Public Comments on Proposed Elimination of SEF Order Book Requirement for Permitted Transactions",
           "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9287-26"
+        },
+        {
+          "candidate_id": "SRC-a5dfd35ea26ddcd8736500a6",
+          "custody_pointer": "RSRCH-96990580cc75b9104b551529",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
+          "source_url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal"
+        },
+        {
+          "candidate_id": "SRC-684b8a83cc622641ef8821fe",
+          "custody_pointer": "RSRCH-b82c321ba51db0cb27e36d17",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC Seeks Public Comment on Advanced Notice of Proposed Rulemaking Relating to Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets",
+          "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9307-26"
+        },
+        {
+          "candidate_id": "SRC-034fc3ffb99586ff4028f29f",
+          "custody_pointer": "RSRCH-b82c321ba51db0cb27e36d17",
+          "producer_commit": "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC Staff Releases Updates to FAQs Concerning Registrants and Registered Entity Activities Relating to Crypto Assets and Blockchain Technologies",
+          "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 2,
-        "NO_UPDATE": 94
+        "CANDIDATES_IDENTIFIED": 5,
+        "NO_UPDATE": 211
       }
     },
     "trump-token-promotion-access-supply": {
@@ -160,8 +302,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 2,
-        "NO_UPDATE": 94
+        "CANDIDATES_IDENTIFIED": 3,
+        "NO_UPDATE": 213
       }
     },
     "wlf-positive-adoption-radar": {
@@ -234,8 +376,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 6,
-        "NO_UPDATE": 122
+        "CANDIDATES_IDENTIFIED": 9,
+        "NO_UPDATE": 279
       }
     }
   }
