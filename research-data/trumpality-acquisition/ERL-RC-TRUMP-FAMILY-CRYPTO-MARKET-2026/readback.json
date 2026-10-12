@@ -1,0 +1,242 @@
+{
+  "append_only_verified": true,
+  "finding_authorized": false,
+  "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
+  "intake_cycles": 1,
+  "pending_candidate_count": 12,
+  "pending_sha256": "9a49ab2d86ea6ea9b99fe253410979b91a2ada88036fdeca770a86136718c5e0",
+  "producer_commits": [
+    "d139ff3437bdfdb327a58dccc810d11e4b1a975e"
+  ],
+  "publication_authorized": false,
+  "scan_record_count": 1152,
+  "schema": "stegverse.erl.trumpality_research_readback.v1",
+  "trajectories": {
+    "cross-market-rhetoric-sequencing": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 80
+      }
+    },
+    "crypto-policy-private-interest-overlap": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 96
+      }
+    },
+    "dollar-debasement-crypto-substitution": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 80
+      }
+    },
+    "family-token-rotation-fee-capture": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 96
+      }
+    },
+    "foreign-counterparty-presidential-access": {
+      "movement": "no-update",
+      "null_scan_only": false,
+      "pending_candidate_count": 1,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-495a8919e08b87f73580afa5",
+          "custody_pointer": "RSRCH-1d62c5f13a067c566b73d4ff",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Investment Company Act Form N-17f-1, Certificate of Accounting of Securities and Similar Investments of a Management Investment Company in the Custody of Members of National Securities Exchanges",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/28/2026-19787/agency-information-collection-activities-proposed-collection-comment-request-extension-investment"
+        }
+      ],
+      "scan_results": {
+        "CANDIDATES_IDENTIFIED": 2,
+        "NO_UPDATE": 94
+      }
+    },
+    "geopolitical-financial-rail-demand": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 112
+      }
+    },
+    "institutional-bridge-asset-repricing": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 96
+      }
+    },
+    "market-rhetoric-oil-impact": {
+      "movement": "no-update",
+      "null_scan_only": true,
+      "pending_candidate_count": 0,
+      "pending_candidates": [],
+      "scan_results": {
+        "NO_UPDATE": 80
+      }
+    },
+    "melania-token-preannouncement-wallets": {
+      "movement": "no-update",
+      "null_scan_only": false,
+      "pending_candidate_count": 2,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-af8c33eeb2daad8af8521e24",
+          "custody_pointer": "RSRCH-1900aff840274e3777334706",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "announcement timestamp",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "INVESTMENT ANNOUNCEMENTS",
+          "source_url": "https://www.whitehouse.gov/investments/"
+        },
+        {
+          "candidate_id": "SRC-6caa1360b532c6b3033be3a0",
+          "custody_pointer": "RSRCH-1602b06b2c96411108dcbc5a",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "announcement timestamp",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; The Depository Trust Company; Notice of Filing of Proposed Rule Change To Establish and Implement AnnounceDirect for the Submission of Corporate Action Announcements",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/29/2026-19870/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change"
+        }
+      ],
+      "scan_results": {
+        "CANDIDATES_IDENTIFIED": 4,
+        "NO_UPDATE": 92
+      }
+    },
+    "regulatory-boundary-value-accretion": {
+      "movement": "no-update",
+      "null_scan_only": false,
+      "pending_candidate_count": 1,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-2b7e388392246fd35b09f71b",
+          "custody_pointer": "RSRCH-12feaa3aeef0a92b182e9562",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC Seeks Public Comments on Proposed Elimination of SEF Order Book Requirement for Permitted Transactions",
+          "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9287-26"
+        }
+      ],
+      "scan_results": {
+        "CANDIDATES_IDENTIFIED": 2,
+        "NO_UPDATE": 94
+      }
+    },
+    "trump-token-promotion-access-supply": {
+      "movement": "no-update",
+      "null_scan_only": false,
+      "pending_candidate_count": 1,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
+          "custody_pointer": "RSRCH-0e69c4cb3e5faec8a30cefd4",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "fee and liquidity flows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Nasdaq Equity 7, Section 118, To Establish a Tier of Credit for Non-Displayed Orders (Other Than Supplemental Orders) That Provide Liquidity",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/09/2026-20711/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
+        }
+      ],
+      "scan_results": {
+        "CANDIDATES_IDENTIFIED": 2,
+        "NO_UPDATE": 94
+      }
+    },
+    "wlf-positive-adoption-radar": {
+      "movement": "no-update",
+      "null_scan_only": false,
+      "pending_candidate_count": 7,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
+          "custody_pointer": "RSRCH-e1efdb0d9a0a4c063d4d8355",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Financial Crimes Enforcement Network (FinCEN)",
+          "source_url": "https://www.fincen.gov/"
+        },
+        {
+          "candidate_id": "SRC-d5c8ea8145e3b8fcddd7d602",
+          "custody_pointer": "RSRCH-e1efdb0d9a0a4c063d4d8355",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Operation Economic Outcast Neutralizes Iranian Regime\u2019s Remaining Shadow Fleet Network",
+          "source_url": "https://home.treasury.gov/news/press-releases/sb0653/"
+        },
+        {
+          "candidate_id": "SRC-f41c580b533a98caed399ad1",
+          "custody_pointer": "RSRCH-e1efdb0d9a0a4c063d4d8355",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Treasury Dismantles Major Hamas Financing Network",
+          "source_url": "https://home.treasury.gov/news/press-releases/sb0647/"
+        },
+        {
+          "candidate_id": "SRC-15d2e979ea3e0e2ef4d12b08",
+          "custody_pointer": "RSRCH-e1efdb0d9a0a4c063d4d8355",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Financial Crimes Enforcement Network (FinCEN)",
+          "source_url": "http://www.fincen.gov/"
+        },
+        {
+          "candidate_id": "SRC-42a348f7cc7462efdf6aa827",
+          "custody_pointer": "RSRCH-8fda474cc461040e35cb1aaa",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Adviser and Regulated Fund Custody Rules; Crypto Custody Rules",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/06/2026-20466/adviser-and-regulated-fund-custody-rules-crypto-custody-rules"
+        },
+        {
+          "candidate_id": "SRC-313cb838e84215d110137a7f",
+          "custody_pointer": "RSRCH-8fda474cc461040e35cb1aaa",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Investment Company Act Form N-17f-1, Certificate of Accounting of Securities and Similar Investments of a Management Investment Company in the Custody of Members of National Securities Exchanges",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/28/2026-19787/agency-information-collection-activities-proposed-collection-comment-request-extension-investment"
+        },
+        {
+          "candidate_id": "SRC-f44ffe0bbd367d70ddc8da01",
+          "custody_pointer": "RSRCH-5b05000fe31c5258d910dc3d",
+          "producer_commit": "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
+          "source_url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal"
+        }
+      ],
+      "scan_results": {
+        "CANDIDATES_IDENTIFIED": 6,
+        "NO_UPDATE": 122
+      }
+    }
+  }
+}
