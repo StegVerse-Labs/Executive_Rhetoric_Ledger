@@ -79,3 +79,7 @@ None.
 ## Proposition-delta reconstruction started
 
 On 2026-10-07, the first machine-readable reconstruction packet was added at `assessments/machine/2026-10-07-model-election-framing-proposition-delta.json`. It records three bounded candidate deltas: gasoline-referent interpretation-to-fact conversion; assistant-introduced polling-place hypothesis and rebuttal; and collapse of descriptive federal election involvement toward the stronger improper-interference proposition. The packet explicitly marks verbatim transcript custody incomplete and does not silently convert conversation-history summaries into quotations. Bias, partisan influence, intent, motive, and publication findings remain unauthorized.
+
+## October 12, 2026 Russia discussion incident
+
+Committed research candidate: `assessments/machine/2026-10-12-chatgpt-russia-proposition-substitution.json` (initial commit `1301b84e3b0d27067fa302c74c5e1327a4a4e494`). Five bounded observations document unsolicited oil-shortage topic substitution, model-invented universal disinformation-cessation proposition and rebuttal, correction after user objection, and premature historical-access limitation. Linked to Issue #212 and Issue #69. Full verbatim transcript custody, matched controls, and independent review are pending; no motive, partisan bias, or system-wide finding is authorized.
