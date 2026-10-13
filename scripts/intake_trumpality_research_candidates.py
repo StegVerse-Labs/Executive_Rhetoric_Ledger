@@ -8,6 +8,9 @@ and appends accepted candidates to the lane's pending intake file. Nothing here
 creates a finding: every accepted candidate stays PENDING_REVIEW with evidence
 movement `no-update`, and zero-result scans are recorded as no-update nulls.
 
+Every intake and readback attempt is an attempted state transition and appends
+one ALLOW, DENY or FAIL_CLOSED record to the lane's transition-dispositions.jsonl.
+
 Subcommands:
   intake    --producer-commit <40-hex sha> [--source-dir DIR]
   readback  [--output FILE]
@@ -30,7 +33,10 @@ from urllib.parse import urlsplit
 PRODUCER_REPO = "StegVerse-Labs/Trumpality"
 ERL_REPO = "StegVerse-Labs/Executive_Rhetoric_Ledger"
 CANDIDATE_SCHEMA = "stegverse.erl.research_source_candidate.v1"
+DISPOSITION_SCHEMA = "stegverse.erl.trumpality_intake_transition_disposition.v1"
 GROUP_ID = "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026"
+OWNING_GOAL = "StegVerse-Labs/Executive_Rhetoric_Ledger#60"
+RETRY_ENTRYPOINT = ".github/workflows/trumpality-research-intake.yml -> python scripts/intake_trumpality_research_candidates.py"
 LANE_DOC = Path("research-candidates/2026-08-21-trump-family-crypto-rhetoric-market-impact.md")
 LANE_DIR = Path("research-data/trumpality-acquisition") / GROUP_ID
 PENDING = LANE_DIR / "pending-candidates.jsonl"
@@ -38,6 +44,7 @@ SCANS = LANE_DIR / "scan-ledger.jsonl"
 QUARANTINE = LANE_DIR / "quarantine.jsonl"
 RECEIPTS = LANE_DIR / "intake-receipts.jsonl"
 READBACK = LANE_DIR / "readback.json"
+DISPOSITIONS = LANE_DIR / "transition-dispositions.jsonl"
 PRODUCER_FILES = {
     "candidates": "research/source_candidates.jsonl",
     "receipts": "research/research_receipts.jsonl",
@@ -69,6 +76,40 @@ def append_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
     with path.open("a", encoding="utf-8") as handle:
         for row in rows:
             handle.write(json.dumps(row, sort_keys=True) + "\n")
+
+
+def pending_state(root: Path) -> dict[str, Any]:
+    data = (root / PENDING).read_bytes() if (root / PENDING).exists() else b""
+    return {"pending_bytes": len(data), "pending_sha256": sha256(data)}
+
+
+def dispose(root: Path, action: str, predecessor: dict[str, Any], disposition: str, **fields: Any) -> dict[str, Any]:
+    record = {
+        "schema": DISPOSITION_SCHEMA,
+        "group_id": GROUP_ID,
+        "owning_existing_goal": OWNING_GOAL,
+        "requested_action": action,
+        "predecessor": predecessor,
+        "disposition": disposition,
+        "consequence_committed": disposition == "ALLOW",
+        "observed_at": now(),
+        "finding_authorized": False,
+        **fields,
+    }
+    append_jsonl(root / DISPOSITIONS, [record])
+    return record
+
+
+def fail_closed(root: Path, action: str, predecessor: dict[str, Any], code: str, predicate: str, repair: str, message: str) -> None:
+    dispose(
+        root, action, predecessor, "FAIL_CLOSED",
+        failure_code=code,
+        failed_predicate=predicate,
+        required_evidence_or_repair=repair,
+        retry_entrypoint=RETRY_ENTRYPOINT,
+        next_attempt="rerun retry_entrypoint after the repair",
+    )
+    raise SystemExit("FAIL_CLOSED: " + message)
 
 
 def fetch_producer(commit: str, source_dir: Path | None) -> dict[str, bytes]:
@@ -131,9 +172,14 @@ def validate(candidate: dict[str, Any], receipts: dict[str, dict[str, Any]], act
 
 
 def intake(root: Path, commit: str, source_dir: Path | None) -> dict[str, Any]:
+    action = "INTAKE_PRODUCER_CANDIDATES"
+    predecessor = {"producer_commit": commit, **pending_state(root)}
     if not SHA_RE.match(commit):
-        raise SystemExit("FAIL_CLOSED: --producer-commit must be a full 40-hex commit SHA")
-    raw = fetch_producer(commit, source_dir)
+        fail_closed(root, action, predecessor, "PRODUCER_COMMIT_NOT_PINNED", "--producer-commit is a full 40-hex commit SHA", "pass the exact Trumpality commit SHA to ingest", "--producer-commit must be a full 40-hex commit SHA")
+    try:
+        raw = fetch_producer(commit, source_dir)
+    except Exception as exc:  # noqa: BLE001 - any retrieval failure is this transition's failed predicate
+        fail_closed(root, action, predecessor, "PRODUCER_FETCH_FAILED", "producer research files are readable at the pinned commit", f"verify {PRODUCER_REPO}@{commit} contains {', '.join(PRODUCER_FILES.values())} ({type(exc).__name__})", f"producer files unreadable at {commit}: {type(exc).__name__}")
     candidates = parse_jsonl(raw["candidates"])
     producer_receipts = parse_jsonl(raw["receipts"])
     frontier = json.loads(raw["frontier"])
@@ -202,7 +248,8 @@ def intake(root: Path, commit: str, source_dir: Path | None) -> dict[str, Any]:
     append_jsonl(scans_path, new_scans)
     after = pending_path.read_bytes() if pending_path.exists() else b""
     if not after.startswith(before):
-        raise SystemExit("FAIL_CLOSED: pending candidate history was rewritten")
+        fail_closed(root, action, predecessor, "PENDING_HISTORY_REWRITTEN", "pending-candidates.jsonl after intake begins with its exact prior bytes", "restore pending-candidates.jsonl from its last intake receipt and rerun", "pending candidate history was rewritten")
+    disposition = "ALLOW" if candidates or new_scans else "DENY"
     receipt = {
         "schema": "stegverse.erl.trumpality_research_intake_receipt.v1",
         "intake_at": now(),
@@ -218,23 +265,29 @@ def intake(root: Path, commit: str, source_dir: Path | None) -> dict[str, Any]:
         "pending_sha256_before": sha256(before),
         "pending_bytes_after": len(after),
         "pending_sha256_after": sha256(after),
-        "disposition": "ALLOW" if candidates or new_scans else "FAIL_CLOSED",
+        "disposition": disposition,
         "finding_authorized": False,
     }
     append_jsonl(root / RECEIPTS, [receipt])
+    if disposition == "ALLOW":
+        dispose(root, action, predecessor, "ALLOW", successor=pending_state(root), evidence={key: receipt[key] for key in ("producer_files_sha256", "accepted", "duplicates", "quarantined", "scan_records_added")})
+    else:
+        dispose(root, action, predecessor, "DENY", failure_code="NO_PRODUCER_EVIDENCE", failed_predicate="producer commit carries at least one candidate or scan receipt", required_evidence_or_repair="run a Trumpality acquisition cycle and ingest the commit it persists", retry_entrypoint=RETRY_ENTRYPOINT, next_attempt="rerun retry_entrypoint with a producer commit that carries acquisition evidence")
     return receipt
 
 
 def readback(root: Path) -> dict[str, Any]:
+    action = "READ_BACK_LANE_EVIDENCE"
+    predecessor = pending_state(root)
     pending_bytes = (root / PENDING).read_bytes() if (root / PENDING).exists() else b""
     intake_receipts = read_jsonl(root / RECEIPTS)
     if not intake_receipts:
-        raise SystemExit("FAIL_CLOSED: no intake receipts to read back")
+        fail_closed(root, action, predecessor, "NO_INTAKE_RECEIPTS", "at least one intake receipt exists for this lane", "run intake for a pinned producer commit first", "no intake receipts to read back")
     # Every recorded intake must still be an exact byte prefix of the current file.
     for r in intake_receipts:
         prefix = pending_bytes[: r["pending_bytes_after"]]
         if len(prefix) != r["pending_bytes_after"] or sha256(prefix) != r["pending_sha256_after"]:
-            raise SystemExit(f"FAIL_CLOSED: pending history diverges from intake at {r['producer_commit']}")
+            fail_closed(root, action, predecessor, "PENDING_HISTORY_DIVERGED", "every intake receipt's pending_sha256_after matches the same-length prefix of pending-candidates.jsonl", f"restore pending-candidates.jsonl to the bytes recorded at producer commit {r['producer_commit']}", f"pending history diverges from intake at {r['producer_commit']}")
     candidates = parse_jsonl(pending_bytes)
     scans = read_jsonl(root / SCANS)
     lanes: dict[str, dict[str, Any]] = defaultdict(lambda: {"pending_candidates": [], "scan_results": Counter()})
@@ -263,6 +316,7 @@ def readback(root: Path) -> dict[str, Any]:
             "movement": "no-update",
             "null_scan_only": not lane["pending_candidates"] and bool(results),
         }
+    dispose(root, action, predecessor, "ALLOW", evidence={"intake_cycles": len(intake_receipts), "pending_candidate_count": len(candidates), "scan_record_count": len(scans), "append_only_verified": True})
     return {
         "schema": "stegverse.erl.trumpality_research_readback.v1",
         "group_id": GROUP_ID,
