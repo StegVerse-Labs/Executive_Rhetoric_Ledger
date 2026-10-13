@@ -2,32 +2,44 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 4,
-  "pending_candidate_count": 54,
-  "pending_sha256": "b5f396a31dd3ea3e2d82186cc07a8fc4ef06d66c41df9265647386abdc9dd733",
+  "intake_cycles": 5,
+  "pending_candidate_count": 192,
+  "pending_sha256": "a4281ce5edb5f4aa4891aa76465090bcfb2b6a25954983a3d7eaa32ddf87216b",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
     "029db5664d947492a9131a642fab12915cb1f696",
-    "1d4719f66098544d1c8210382a7b10c7a983fe01"
+    "1d4719f66098544d1c8210382a7b10c7a983fe01",
+    "8e0b9e07a2ab52de806c2e00c07ed29875691658"
   ],
   "publication_authorized": false,
-  "scan_record_count": 5328,
+  "scan_record_count": 6912,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 1,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-7f40bd5331431678be53662b",
+          "custody_pointer": "RSRCH-001873d2532f1bed355bf418",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "2026 Crypto Predictions! Tom Lee still buying ETH! Rekt tease WorldStar collab!",
+          "source_url": "https://decrypt.co/videos/interviews/dBDZqp65/2026-crypto-predictions-tom-lee-still-buying-eth-rekt-tease-worldstar-collab"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 370
+        "CANDIDATES_IDENTIFIED": 1,
+        "NO_UPDATE": 479
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 5,
+      "pending_candidate_count": 20,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -73,17 +85,152 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
           "source_url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
+        },
+        {
+          "candidate_id": "SRC-1526f92c99f12937474d8ba5",
+          "custody_pointer": "RSRCH-266d6dad656eba333f8c4134",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global financial watchdog calls for cross-border information sharing, planning for stablecoin crisis",
+          "source_url": "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis"
+        },
+        {
+          "candidate_id": "SRC-705fafa1162799eabb5ad126",
+          "custody_pointer": "RSRCH-7f625f5f554e7b2a38fcf8b1",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
+          "source_url": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-4aeff49c776442c2e0d4aeb4",
+          "custody_pointer": "RSRCH-ded203db324ad5da55b426d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
+          "source_url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta"
+        },
+        {
+          "candidate_id": "SRC-e707d6a32309da93eaeb2c49",
+          "custody_pointer": "RSRCH-ded203db324ad5da55b426d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
+          "source_url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced"
+        },
+        {
+          "candidate_id": "SRC-61459023de58dc09f35d2477",
+          "custody_pointer": "RSRCH-ded203db324ad5da55b426d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        },
+        {
+          "candidate_id": "SRC-c88bb423524930f5458ae231",
+          "custody_pointer": "RSRCH-ded203db324ad5da55b426d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-e5f85ef888cf73974f373059",
+          "custody_pointer": "RSRCH-ded203db324ad5da55b426d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
+          "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
+        },
+        {
+          "candidate_id": "SRC-914964e240f09c0de42036e4",
+          "custody_pointer": "RSRCH-ded203db324ad5da55b426d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
+        },
+        {
+          "candidate_id": "SRC-8e441e36853b148ce3c98fca",
+          "custody_pointer": "RSRCH-144f5a9b8cefc33837124dcc",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto PACs report $2.7M spending blitz on House races as midterms loom",
+          "source_url": "https://cointelegraph.com/news/crypto-pac-spending-house-races-2026-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9bf37c32067f8aad99383803",
+          "custody_pointer": "RSRCH-ce2805c07d1add8d0dc06fc8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto starts 2026 STRONG! Venezuela Impacts on the market! Lighter TGE reactions!",
+          "source_url": "https://decrypt.co/videos/interviews/XjhRjGIk/crypto-starts-2026-strong-venezuela-impacts-on-the-market-lighter-tge-reactions"
+        },
+        {
+          "candidate_id": "SRC-539cf57ba348d2d593e05bd0",
+          "custody_pointer": "RSRCH-ce2805c07d1add8d0dc06fc8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global Crypto MCap up to $3.22 Trillion! XRP up 12%! Japan Endorse Crypto! Fear & Greed back to Neutral!",
+          "source_url": "https://decrypt.co/videos/interviews/OS1PGiAq/global-crypto-mcap-up-to-322-trillion-xrp-up-12-japan-endorse-crypto-fear-greed-back-to-neutral"
+        },
+        {
+          "candidate_id": "SRC-5b862d8768c202737ceebe78",
+          "custody_pointer": "RSRCH-ee4a4f62280a01bb41b191eb",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global financial watchdog calls for cross-border information sharing, planning for stablecoin crisis",
+          "source_url": "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis"
+        },
+        {
+          "candidate_id": "SRC-bf006446079888419ca7f599",
+          "custody_pointer": "RSRCH-ee4a4f62280a01bb41b191eb",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto"
+        },
+        {
+          "candidate_id": "SRC-93d3a6ae337bcbe0cbb6c081",
+          "custody_pointer": "RSRCH-ee4a4f62280a01bb41b191eb",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Clarity's failure could speed crypto innovation while shielding incumbents",
+          "source_url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents"
+        },
+        {
+          "candidate_id": "SRC-1417133b1d78ed151f8f4150",
+          "custody_pointer": "RSRCH-a44059b1d58bfae5767d7358",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
+          "source_url": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 10,
-        "NO_UPDATE": 434
+        "CANDIDATES_IDENTIFIED": 21,
+        "NO_UPDATE": 555
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 2,
+      "pending_candidate_count": 30,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -102,26 +249,325 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Interval Fund Modernization; Expansion of Multiple Share Class to Registered Closed-End Management Investment Companies and Business Development Companies",
           "source_url": "https://www.federalregister.gov/documents/2026/10/05/2026-20360/interval-fund-modernization-expansion-of-multiple-share-class-to-registered-closed-end-management"
+        },
+        {
+          "candidate_id": "SRC-b2a538867513c9372cda37d6",
+          "custody_pointer": "RSRCH-d756cd3bbb999ecf19c76ee5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto"
+        },
+        {
+          "candidate_id": "SRC-cfb7fb73f1a263b036f99bfd",
+          "custody_pointer": "RSRCH-d756cd3bbb999ecf19c76ee5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Clarity's failure could speed crypto innovation while shielding incumbents",
+          "source_url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents"
+        },
+        {
+          "candidate_id": "SRC-ee17d248f27f688d41e74795",
+          "custody_pointer": "RSRCH-c59142459497db0259cdb50c",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy adds 250 Bitcoin as holdings reach 848,250 BTC",
+          "source_url": "https://cointelegraph.com/news/michael-saylor-strategy-250-btc-buy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c3838b6fb4e3c3cffb8a87a0",
+          "custody_pointer": "RSRCH-c59142459497db0259cdb50c",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "BTC price support holds ahead of US CPI data: Three things Bitcoin traders need to know this week",
+          "source_url": "https://cointelegraph.com/markets/btc-price-support-holds-ahead-of-us-cpi-data-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-eb2491018c8b9d246b04a7f3",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy Scoops Up $21.5M in Bitcoin, Buys Back $192M in STRC",
+          "source_url": "https://decrypt.co/380677/strategy-scoops-up-21-5m-in-bitcoin-buys-back-192m-in-strc"
+        },
+        {
+          "candidate_id": "SRC-c8a71336cfbbc20dc5b46161",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Rebounds After Rough Week, But Traders Are Pricing In More Downside",
+          "source_url": "https://decrypt.co/380599/bitcoin-rebounds-traders-predict-more-downside"
+        },
+        {
+          "candidate_id": "SRC-eb5a27ad9dd51831f594b392",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! \u201cCrypto Adoption is no longer reversible\u201d says PWC!",
+          "source_url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc"
+        },
+        {
+          "candidate_id": "SRC-3f6d24c6527072fcf57833fa",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rebounds after Trump TACO\u2019s on Tariffs! BitGo $2.1B IPO! Solana\u2019s SKR token soars 250% FDV!",
+          "source_url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv"
+        },
+        {
+          "candidate_id": "SRC-1c1c9bdf15713b40cf826bd3",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-b96cc6e34b2b92ddfe6f38f5",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
+          "source_url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta"
+        },
+        {
+          "candidate_id": "SRC-0d42abc8a50d2f2430cda844",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
+          "source_url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced"
+        },
+        {
+          "candidate_id": "SRC-b0c42fce0612152c793efe71",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        },
+        {
+          "candidate_id": "SRC-0471e232e61c8cd1de05cb63",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Are we back? Crypto is Green! Solana Intern goes rogue! Pump up 13%! Monero hits another ATH!",
+          "source_url": "https://decrypt.co/videos/interviews/Iv1NIhI4/are-we-back-crypto-is-green-solana-intern-goes-rogue-pump-up-13-monero-hits-another-ath"
+        },
+        {
+          "candidate_id": "SRC-2575026fb86495fe733371ca",
+          "custody_pointer": "RSRCH-d2616a0301a1017238128625",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-0506cd23e6946860b7a02402",
+          "custody_pointer": "RSRCH-d238b2cbfb6f89dcfd0567c3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy adds 250 Bitcoin as holdings reach 848,250 BTC",
+          "source_url": "https://cointelegraph.com/news/michael-saylor-strategy-250-btc-buy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a4c6eecf2f46eb63b314a73c",
+          "custody_pointer": "RSRCH-d238b2cbfb6f89dcfd0567c3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korean bank launches Bitcoin-backed business loans: Report",
+          "source_url": "https://cointelegraph.com/news/south-korea-jeonbuk-bank-bitcoin-backed-business-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-bb2e6f8a83ee5fe05690875c",
+          "custody_pointer": "RSRCH-d238b2cbfb6f89dcfd0567c3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Saylor teases Strategy Bitcoin buying after ending September with STRC buybacks",
+          "source_url": "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-901e6343b1be0756d820356f",
+          "custody_pointer": "RSRCH-d238b2cbfb6f89dcfd0567c3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Sam Altman-backed Bitcoin life insurer, Meanwhile, raises more funds",
+          "source_url": "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-389d95bf47ea24d4fc0f08e3",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy Scoops Up $21.5M in Bitcoin, Buys Back $192M in STRC",
+          "source_url": "https://decrypt.co/380677/strategy-scoops-up-21-5m-in-bitcoin-buys-back-192m-in-strc"
+        },
+        {
+          "candidate_id": "SRC-09c302b1c9c7ea4514e524fc",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Ranges Near $83K as Traders Look to US Inflation Data",
+          "source_url": "https://decrypt.co/380669/bitcoin-ranges-near-83k-as-traders-look-to-us-inflation-data"
+        },
+        {
+          "candidate_id": "SRC-804d0f1fdc56bcf36b0adcb3",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! \u201cCrypto Adoption is no longer reversible\u201d says PWC!",
+          "source_url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc"
+        },
+        {
+          "candidate_id": "SRC-8e18978f65c39da4e4f8134a",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-63645d3a3d8745312980f77e",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
+          "source_url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta"
+        },
+        {
+          "candidate_id": "SRC-fd05bac95918551f146be4ae",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
+          "source_url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced"
+        },
+        {
+          "candidate_id": "SRC-6502956bcb251f2ae1fc521a",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Are we back? Crypto is Green! Solana Intern goes rogue! Pump up 13%! Monero hits another ATH!",
+          "source_url": "https://decrypt.co/videos/interviews/Iv1NIhI4/are-we-back-crypto-is-green-solana-intern-goes-rogue-pump-up-13-monero-hits-another-ath"
+        },
+        {
+          "candidate_id": "SRC-9dfa455587f3f2bc43d5ded8",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-6d1e44aeda5f1dcdf38fa5ce",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-9773cd6c8b9e0917d3da7705",
+          "custody_pointer": "RSRCH-ad211f25804016f989dff88f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "ZEC Rebounds 11%! Trump says he won\u2019t pardon Sam Bankman-Fried! Florida revisits it\u2019s Strategic Bitcoin Reserve!",
+          "source_url": "https://decrypt.co/videos/interviews/72tPnqPX/zec-rebounds-11-trump-says-he-wont-pardon-sam-bankman-fried-florida-revisits-its-strategic-bitcoin-reserve"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 5,
-        "NO_UPDATE": 365
+        "CANDIDATES_IDENTIFIED": 12,
+        "NO_UPDATE": 468
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 5,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-930947baafed40e4c38f8426",
+          "custody_pointer": "RSRCH-7996beff3651c1548d293082",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "fee paths",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Are we back? Crypto is Green! Solana Intern goes rogue! Pump up 13%! Monero hits another ATH!",
+          "source_url": "https://decrypt.co/videos/interviews/Iv1NIhI4/are-we-back-crypto-is-green-solana-intern-goes-rogue-pump-up-13-monero-hits-another-ath"
+        },
+        {
+          "candidate_id": "SRC-782a3b39b1924c75eca0779a",
+          "custody_pointer": "RSRCH-2e8766e314f9f055146f5f3e",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-045f9a45706da9404e32cc40",
+          "custody_pointer": "RSRCH-2e8766e314f9f055146f5f3e",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Are we back? Crypto is Green! Solana Intern goes rogue! Pump up 13%! Monero hits another ATH!",
+          "source_url": "https://decrypt.co/videos/interviews/Iv1NIhI4/are-we-back-crypto-is-green-solana-intern-goes-rogue-pump-up-13-monero-hits-another-ath"
+        },
+        {
+          "candidate_id": "SRC-5a5242a39bb1e01cb923c123",
+          "custody_pointer": "RSRCH-2e8766e314f9f055146f5f3e",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
+        },
+        {
+          "candidate_id": "SRC-6c9e69760d3d122c5f6b3ba6",
+          "custody_pointer": "RSRCH-55aa5b261b5b056e6076ccce",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "affiliate ownership",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 444
+        "CANDIDATES_IDENTIFIED": 3,
+        "NO_UPDATE": 573
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 1,
+      "pending_candidate_count": 8,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -131,35 +577,381 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Investment Company Act Form N-17f-1, Certificate of Accounting of Securities and Similar Investments of a Management Investment Company in the Custody of Members of National Securities Exchanges",
           "source_url": "https://www.federalregister.gov/documents/2026/09/28/2026-19787/agency-information-collection-activities-proposed-collection-comment-request-extension-investment"
+        },
+        {
+          "candidate_id": "SRC-08f3ece4692d4c5635572133",
+          "custody_pointer": "RSRCH-3f81aff3df573f2345c95a8b",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "leaderboard beneficial ownership",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-29a1d58b6405481c6e63e605",
+          "custody_pointer": "RSRCH-1eabcfa27249d6357fd6d843",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-464f097a6414d0f1a6c774fa",
+          "custody_pointer": "RSRCH-1eabcfa27249d6357fd6d843",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
+          "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
+        },
+        {
+          "candidate_id": "SRC-dd369629b4c9557911f73d66",
+          "custody_pointer": "RSRCH-1eabcfa27249d6357fd6d843",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
+        },
+        {
+          "candidate_id": "SRC-35ca65e2057334420a2d96fc",
+          "custody_pointer": "RSRCH-af5fdf0ea8ac3924e02f2457",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun says Tron\u2019s post-quantum cryptography has gone live on testnet",
+          "source_url": "https://cointelegraph.com/news/justin-sun-says-trons-post-quantum-cryptography-has-gone-live-on-testnet?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-59e78728b732e266e706c429",
+          "custody_pointer": "RSRCH-caec9b6e789c04522f8e6ef3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "regulatory case chronology",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-22a9149aaddb7fceb7c9bb74",
+          "custody_pointer": "RSRCH-caec9b6e789c04522f8e6ef3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "regulatory case chronology",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 441
+        "CANDIDATES_IDENTIFIED": 7,
+        "NO_UPDATE": 569
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 4,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
+          "custody_pointer": "RSRCH-e0ed688099960540a5ba9b97",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "oil/shipping event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-2382b51e4c40c445a9b5e7f1",
+          "custody_pointer": "RSRCH-005fb2ae59e9aa8d0218f27c",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "USD1 volume and supply",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "2026 Crypto Predictions! Tom Lee still buying ETH! Rekt tease WorldStar collab!",
+          "source_url": "https://decrypt.co/videos/interviews/dBDZqp65/2026-crypto-predictions-tom-lee-still-buying-eth-rekt-tease-worldstar-collab"
+        },
+        {
+          "candidate_id": "SRC-3116be4cb724ffb0d447edd9",
+          "custody_pointer": "RSRCH-776af3db414f784165e9df9c",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "USDT/USDC/RLUSD controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered adds Ripple USD custody, eyes LMAX collateral deal",
+          "source_url": "https://cointelegraph.com/news/standard-chartered-rlusd-custody-lmax-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c7c981c7c0cc350598d74f20",
+          "custody_pointer": "RSRCH-828591f4fa319ea82261e0d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "USDT/USDC/RLUSD controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered Will Hold Ripple's Stablecoin in Dubai\u2014And Let Clients Trade With It Without Moving It",
+          "source_url": "https://decrypt.co/380776/standard-chartered-hold-ripple-rlusd-stablecoin-dubai"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 518
+        "CANDIDATES_IDENTIFIED": 4,
+        "NO_UPDATE": 668
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
-      "null_scan_only": true,
-      "pending_candidate_count": 0,
-      "pending_candidates": [],
+      "null_scan_only": false,
+      "pending_candidate_count": 27,
+      "pending_candidates": [
+        {
+          "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
+          "custody_pointer": "RSRCH-efb349732e32db136da43a55",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "canonical XRP and XLM price series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP treasury Evernorth\u2019s shares rise 5% at Nasdaq opening print",
+          "source_url": "https://cointelegraph.com/news/xrp-treasury-evernorth-rise-nasdaq-opening?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-7e586ebf4724c63ec2a31e6b",
+          "custody_pointer": "RSRCH-2b08ab06633a8235e5539314",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "canonical XRP and XLM price series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! \u201cCrypto Adoption is no longer reversible\u201d says PWC!",
+          "source_url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc"
+        },
+        {
+          "candidate_id": "SRC-a6913836266da2d8216e63e6",
+          "custody_pointer": "RSRCH-2b08ab06633a8235e5539314",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "canonical XRP and XLM price series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-6442a5043cf0ef13309d3c5b",
+          "custody_pointer": "RSRCH-43ae893ad194744e8b7cc184",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "XRP/XLM ratio",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! \u201cCrypto Adoption is no longer reversible\u201d says PWC!",
+          "source_url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc"
+        },
+        {
+          "candidate_id": "SRC-2fe6989640ed3bf2800f5a83",
+          "custody_pointer": "RSRCH-43ae893ad194744e8b7cc184",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "XRP/XLM ratio",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rebounds after Trump TACO\u2019s on Tariffs! BitGo $2.1B IPO! Solana\u2019s SKR token soars 250% FDV!",
+          "source_url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv"
+        },
+        {
+          "candidate_id": "SRC-2434b6c9fece9133ed939761",
+          "custody_pointer": "RSRCH-43ae893ad194744e8b7cc184",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "XRP/XLM ratio",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
+          "source_url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta"
+        },
+        {
+          "candidate_id": "SRC-146551c0528c9bb97da8b658",
+          "custody_pointer": "RSRCH-43ae893ad194744e8b7cc184",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "XRP/XLM ratio",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
+          "source_url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced"
+        },
+        {
+          "candidate_id": "SRC-697446a6cee6de8e244bf59b",
+          "custody_pointer": "RSRCH-43ae893ad194744e8b7cc184",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "XRP/XLM ratio",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto starts 2026 STRONG! Venezuela Impacts on the market! Lighter TGE reactions!",
+          "source_url": "https://decrypt.co/videos/interviews/XjhRjGIk/crypto-starts-2026-strong-venezuela-impacts-on-the-market-lighter-tge-reactions"
+        },
+        {
+          "candidate_id": "SRC-feac8d851f49f62ac9e418bf",
+          "custody_pointer": "RSRCH-43ae893ad194744e8b7cc184",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "XRP/XLM ratio",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global Crypto MCap up to $3.22 Trillion! XRP up 12%! Japan Endorse Crypto! Fear & Greed back to Neutral!",
+          "source_url": "https://decrypt.co/videos/interviews/OS1PGiAq/global-crypto-mcap-up-to-322-trillion-xrp-up-12-japan-endorse-crypto-fear-greed-back-to-neutral"
+        },
+        {
+          "candidate_id": "SRC-7169129d0c5b334f49468c18",
+          "custody_pointer": "RSRCH-1e568fb028b80d3f4f83b7f3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "volume/spread/open-interest data",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ledger attack spreads to EU, AI finds \u201918 trillion XRP\u2019 bug: Hodler\u2019s Digest",
+          "source_url": "https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-1b60aa7623bb5da6313c550d",
+          "custody_pointer": "RSRCH-a5f37f8b6e8cdb0b740b8218",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered offers RLUSD custody in Dubai and plans LMAX collateral link",
+          "source_url": "https://www.coindesk.com/business/2026/10/12/standard-chartered-offers-rlusd-custody-in-dubai-and-plans-lmax-collateral-link"
+        },
+        {
+          "candidate_id": "SRC-cc12e5666cdc454de6637a63",
+          "custody_pointer": "RSRCH-a5f37f8b6e8cdb0b740b8218",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Why a bug that could have threatened XRP's 100 billion supply cap stayed hidden for years",
+          "source_url": "https://www.coindesk.com/tech/2026/10/12/why-a-bug-that-could-have-threatened-xrp-s-100-billion-supply-cap-stayed-hidden-for-years"
+        },
+        {
+          "candidate_id": "SRC-bdcdacedd62766c81b01223d",
+          "custody_pointer": "RSRCH-a5f37f8b6e8cdb0b740b8218",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger patched decade-old bug that could create billions of dollars in XRP from nothing",
+          "source_url": "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing"
+        },
+        {
+          "candidate_id": "SRC-d19fe48d060703a553b7d178",
+          "custody_pointer": "RSRCH-4c25d99df4e1d6f4cae696d3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP treasury Evernorth\u2019s shares rise 5% at Nasdaq opening print",
+          "source_url": "https://cointelegraph.com/news/xrp-treasury-evernorth-rise-nasdaq-opening?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-0f6c97703abe2f93767623a7",
+          "custody_pointer": "RSRCH-4c25d99df4e1d6f4cae696d3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered adds Ripple USD custody, eyes LMAX collateral deal",
+          "source_url": "https://cointelegraph.com/news/standard-chartered-rlusd-custody-lmax-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-6075f6e9ffecfccca2efed10",
+          "custody_pointer": "RSRCH-4c25d99df4e1d6f4cae696d3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger defends emergency patch for unlimited XRP bug",
+          "source_url": "https://cointelegraph.com/news/xrp-ledger-defends-emergency-patch-for-unlimited-xrp-bug?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-5ac3736d97286bb9e6e66f1d",
+          "custody_pointer": "RSRCH-4c25d99df4e1d6f4cae696d3",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ledger attack spreads to EU, AI finds \u201918 trillion XRP\u2019 bug: Hodler\u2019s Digest",
+          "source_url": "https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-755d64b3463026242ca57244",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered Will Hold Ripple's Stablecoin in Dubai\u2014And Let Clients Trade With It Without Moving It",
+          "source_url": "https://decrypt.co/380776/standard-chartered-hold-ripple-rlusd-stablecoin-dubai"
+        },
+        {
+          "candidate_id": "SRC-fa558cf72e94e8a93d39039d",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple-Backed Evernorth Hits Nasdaq Holding 473 Million XRP Worth Far Less Than It Paid",
+          "source_url": "https://decrypt.co/380728/ripple-backed-evernorth-hits-nasdaq-holding-473-million-xrp"
+        },
+        {
+          "candidate_id": "SRC-65defed2e952e1b81aa1969f",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger\u2019s Payment Engine Had a Counterfeiting Bug Hiding Since 2015",
+          "source_url": "https://decrypt.co/380693/xrp-ledger-payment-engine-counterfeiting-bug-hiding"
+        },
+        {
+          "candidate_id": "SRC-a63e22840b8f649d3c85df97",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! \u201cCrypto Adoption is no longer reversible\u201d says PWC!",
+          "source_url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc"
+        },
+        {
+          "candidate_id": "SRC-8f7a7f9dde059899737d072c",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "From Stellar to Canton: How Franklin Templeton Adopted Tokenization",
+          "source_url": "https://decrypt.co/videos/interviews/ZJJKjnAR/from-stellar-to-canton-how-franklin-templeton-adopted-tokenization"
+        },
+        {
+          "candidate_id": "SRC-cc2d21a8b3153150effb1928",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rebounds after Trump TACO\u2019s on Tariffs! BitGo $2.1B IPO! Solana\u2019s SKR token soars 250% FDV!",
+          "source_url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv"
+        },
+        {
+          "candidate_id": "SRC-e3701f1a8d80b339f1eb3468",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-d749e24ec04974ff1dd7a30d",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
+          "source_url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta"
+        },
+        {
+          "candidate_id": "SRC-297cb3fd430b0656bc7e2aaa",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
+          "source_url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced"
+        },
+        {
+          "candidate_id": "SRC-63d36f5361bc4480ffadaad9",
+          "custody_pointer": "RSRCH-f8b662d3291a423af4bbe591",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        }
+      ],
       "scan_results": {
-        "NO_UPDATE": 444
+        "CANDIDATES_IDENTIFIED": 7,
+        "NO_UPDATE": 569
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 28,
+      "pending_candidate_count": 40,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -412,11 +1204,119 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump\u2019s \u2018energy ceasefire\u2019 collides with real-world problems of dwindling fuel supplies",
           "source_url": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-66e19de69d8d56644b2ac0fa",
+          "custody_pointer": "RSRCH-7954ae10a01603c76783a725",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin pulls back from $84,000 as oil recovers, ETFs bleed over $600 million",
+          "source_url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls"
+        },
+        {
+          "candidate_id": "SRC-b8974c854c5ab45019cb797f",
+          "custody_pointer": "RSRCH-7954ae10a01603c76783a725",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tokenized commodities look beyond gold as lending and oil open new markets",
+          "source_url": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets"
+        },
+        {
+          "candidate_id": "SRC-164dc3a4c44f3aa971205c3d",
+          "custody_pointer": "RSRCH-ae7e8b97f2dd635c90e22c7e",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin drops 2.2% as Ukraine, Iran strikes send oil toward one-month high",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2e761fd1b2f5541fc5eca9ba",
+          "custody_pointer": "RSRCH-2cec1ce31432404bcc15593b",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Spooked? Crypto Fear and Greed Index Drops to Pre-Rally August Lows",
+          "source_url": "https://decrypt.co/380708/bitcoin-spooked-crypto-fear-greed-drops"
+        },
+        {
+          "candidate_id": "SRC-599023917428007ce81e4461",
+          "custody_pointer": "RSRCH-2cec1ce31432404bcc15593b",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-596125093f125d1043e0bbc1",
+          "custody_pointer": "RSRCH-f8915beb82923240e94d11ad",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin pulls back from $84,000 as oil recovers, ETFs bleed over $600 million",
+          "source_url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls"
+        },
+        {
+          "candidate_id": "SRC-c297cc73b1fd92215d4def80",
+          "custody_pointer": "RSRCH-f8915beb82923240e94d11ad",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tokenized commodities look beyond gold as lending and oil open new markets",
+          "source_url": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets"
+        },
+        {
+          "candidate_id": "SRC-3d578500d9d7782fa366dce5",
+          "custody_pointer": "RSRCH-9e5e8750bee07a49d56e3df2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin drops 2.2% as Ukraine, Iran strikes send oil toward one-month high",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-aadceb7d01861ccce809d6ef",
+          "custody_pointer": "RSRCH-ba081563d06e655f5baaebe5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Spooked? Crypto Fear and Greed Index Drops to Pre-Rally August Lows",
+          "source_url": "https://decrypt.co/380708/bitcoin-spooked-crypto-fear-greed-drops"
+        },
+        {
+          "candidate_id": "SRC-a25ef1cb524e1dbcd4288c19",
+          "custody_pointer": "RSRCH-ba081563d06e655f5baaebe5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-7ee12ca650a24c619f0d91ac",
+          "custody_pointer": "RSRCH-a1524f77e3ad67d701bfb6df",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "physical flow observations",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin pulls back from $84,000 as oil recovers, ETFs bleed over $600 million",
+          "source_url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls"
+        },
+        {
+          "candidate_id": "SRC-6d824a9766cbcb44dd863c5d",
+          "custody_pointer": "RSRCH-46b99d26cca03792bd7594c1",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "physical flow observations",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Spooked? Crypto Fear and Greed Index Drops to Pre-Rally August Lows",
+          "source_url": "https://decrypt.co/380708/bitcoin-spooked-crypto-fear-greed-drops"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 28,
-        "NO_UPDATE": 342
+        "CANDIDATES_IDENTIFIED": 46,
+        "NO_UPDATE": 434
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -445,13 +1345,13 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 6,
-        "NO_UPDATE": 438
+        "NO_UPDATE": 570
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 8,
+      "pending_candidate_count": 36,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -524,11 +1424,263 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
           "source_url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
+        },
+        {
+          "candidate_id": "SRC-f997a83462a2e0122d1e54d5",
+          "custody_pointer": "RSRCH-afe3acd75ee6499824aee9ac",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Kraken parent clears Dubai\u2019s final hurdle for dirham trading rollout",
+          "source_url": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2102798ae2267e092d57dfb2",
+          "custody_pointer": "RSRCH-0b30132f5195068c2eea11d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Blockchain.com Seeks Approval for US Prediction Markets and Crypto Derivatives",
+          "source_url": "https://decrypt.co/380612/blockchain-cftc-prediction-markets-crypto-derivatives"
+        },
+        {
+          "candidate_id": "SRC-36736a1d72b0e920e43da213",
+          "custody_pointer": "RSRCH-0b30132f5195068c2eea11d8",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-d43ff9fcfbf6a4948878f978",
+          "custody_pointer": "RSRCH-f3a031a09cca51021da14661",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto"
+        },
+        {
+          "candidate_id": "SRC-9c3198a35f4d1626c6cd6c08",
+          "custody_pointer": "RSRCH-272924cad1bb6cd2b84cc3ea",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Kraken parent clears Dubai\u2019s final hurdle for dirham trading rollout",
+          "source_url": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a6b59c2cb4f65f1a8d24cd65",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered Will Hold Ripple's Stablecoin in Dubai\u2014And Let Clients Trade With It Without Moving It",
+          "source_url": "https://decrypt.co/380776/standard-chartered-hold-ripple-rlusd-stablecoin-dubai"
+        },
+        {
+          "candidate_id": "SRC-7d06d802e0d19c8d2f33f749",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Spooked? Crypto Fear and Greed Index Drops to Pre-Rally August Lows",
+          "source_url": "https://decrypt.co/380708/bitcoin-spooked-crypto-fear-greed-drops"
+        },
+        {
+          "candidate_id": "SRC-92deb78eed6c52b66c82fe14",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitmine Adds $32M in Ethereum as Tom Lee Says Firm Is Nearly 'Done Stacking'",
+          "source_url": "https://decrypt.co/380685/bitmine-adds-32m-in-ethereum-as-tom-lee-says-firm-is-nearly-done-stacking"
+        },
+        {
+          "candidate_id": "SRC-9a2c2fbdfecb6fe4f1e75f1f",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Blockchain.com Seeks Approval for US Prediction Markets and Crypto Derivatives",
+          "source_url": "https://decrypt.co/380612/blockchain-cftc-prediction-markets-crypto-derivatives"
+        },
+        {
+          "candidate_id": "SRC-a8b1578cd82c4a97d9be970e",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! \u201cCrypto Adoption is no longer reversible\u201d says PWC!",
+          "source_url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc"
+        },
+        {
+          "candidate_id": "SRC-7473013b177afafe2ffe08d2",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rebounds after Trump TACO\u2019s on Tariffs! BitGo $2.1B IPO! Solana\u2019s SKR token soars 250% FDV!",
+          "source_url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv"
+        },
+        {
+          "candidate_id": "SRC-20a767186121db0b3daff80d",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-831cd1b39135c6de437d6aa0",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
+          "source_url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta"
+        },
+        {
+          "candidate_id": "SRC-a712d775c2b236df111a5567",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
+          "source_url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced"
+        },
+        {
+          "candidate_id": "SRC-f9a2e269e76b925ac4fa0a56",
+          "custody_pointer": "RSRCH-c7f155362a941702623c00d5",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        },
+        {
+          "candidate_id": "SRC-6e4445418f50973d6c9082cc",
+          "custody_pointer": "RSRCH-27666d3b33e03ecd052cef13",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "French Committee Backs Stablecoin Swap Tax and Crypto Exit Tax, Then Rejects the Budget",
+          "source_url": "https://decrypt.co/380630/france-stablecoin-swap-crypto-exit-tax"
+        },
+        {
+          "candidate_id": "SRC-6f1386ea8e9de4a5c7b1c8b3",
+          "custody_pointer": "RSRCH-8477b24dd7f4faf186d3282e",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "ownership/economic-interest records",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-a54a12c0871583c596c08615",
+          "custody_pointer": "RSRCH-d62ffeb28abbfc5e9479fa1b",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin's $19 billion wake-up call: One-year after flash crash, has crypto learned anything?",
+          "source_url": "https://www.coindesk.com/markets/2026/10/10/bitcoin-s-usd19-billion-wake-up-call-one-year-later-has-crypto-learned-anything"
+        },
+        {
+          "candidate_id": "SRC-b9b47a47c52d24a4cda0726b",
+          "custody_pointer": "RSRCH-f17676715e1af30b93b9807d",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Kraken parent clears Dubai\u2019s final hurdle for dirham trading rollout",
+          "source_url": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-38fa3274559ed9d2ff14662d",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "This Sam Altman-Backed Life Insurer Runs Entirely on Bitcoin, and Just Raised $37.5 Million",
+          "source_url": "https://decrypt.co/380633/sam-altman-backed-life-insurer-bitcoin-raise"
+        },
+        {
+          "candidate_id": "SRC-e1810feb063f8cec39afccd2",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Blockchain.com Seeks Approval for US Prediction Markets and Crypto Derivatives",
+          "source_url": "https://decrypt.co/380612/blockchain-cftc-prediction-markets-crypto-derivatives"
+        },
+        {
+          "candidate_id": "SRC-551ed0515aeb9e832dfed30a",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "SIM-Swap Fraudster Who Spent Stolen Crypto on Gold Grills and Dubai Trips Jailed",
+          "source_url": "https://decrypt.co/380554/sim-swap-fraudster-who-spent-stolen-crypto-on-gold-grills-and-dubai-trips-jailed"
+        },
+        {
+          "candidate_id": "SRC-c6d44ab5564209dc62e02445",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rebounds after Trump TACO\u2019s on Tariffs! BitGo $2.1B IPO! Solana\u2019s SKR token soars 250% FDV!",
+          "source_url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv"
+        },
+        {
+          "candidate_id": "SRC-e70738b760ba588d09423071",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
+          "source_url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview"
+        },
+        {
+          "candidate_id": "SRC-fd38900fa03044bf1cded511",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        },
+        {
+          "candidate_id": "SRC-b283cd68040ee7a201cffe4a",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-f2357a00930dbee9c75461c0",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "ZEC Rebounds 11%! Trump says he won\u2019t pardon Sam Bankman-Fried! Florida revisits it\u2019s Strategic Bitcoin Reserve!",
+          "source_url": "https://decrypt.co/videos/interviews/72tPnqPX/zec-rebounds-11-trump-says-he-wont-pardon-sam-bankman-fried-florida-revisits-its-strategic-bitcoin-reserve"
+        },
+        {
+          "candidate_id": "SRC-562a147d62a776fa2b7fb831",
+          "custody_pointer": "RSRCH-f12565f9514aa21036840af2",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 15,
-        "NO_UPDATE": 429
+        "CANDIDATES_IDENTIFIED": 30,
+        "NO_UPDATE": 546
       }
     },
     "trump-token-promotion-access-supply": {
@@ -548,13 +1700,13 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 441
+        "NO_UPDATE": 573
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 7,
+      "pending_candidate_count": 18,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -618,11 +1770,110 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
           "source_url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal"
+        },
+        {
+          "candidate_id": "SRC-abb52f47c6fd9fa9c2fcc0db",
+          "custody_pointer": "RSRCH-634cc9efca946f9e4fb9c2c0",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
+          "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        },
+        {
+          "candidate_id": "SRC-10b334124ef2e0e2b960385b",
+          "custody_pointer": "RSRCH-634cc9efca946f9e4fb9c2c0",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
+        },
+        {
+          "candidate_id": "SRC-4dbcd3391b87ecf052a69625",
+          "custody_pointer": "RSRCH-ed5c4ed6a73cdaa3411db5c0",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered adds Ripple USD custody, eyes LMAX collateral deal",
+          "source_url": "https://cointelegraph.com/news/standard-chartered-rlusd-custody-lmax-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-42556a4f29f180f9d0c411d5",
+          "custody_pointer": "RSRCH-94baef7b02599e169e2377aa",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered Will Hold Ripple's Stablecoin in Dubai\u2014And Let Clients Trade With It Without Moving It",
+          "source_url": "https://decrypt.co/380776/standard-chartered-hold-ripple-rlusd-stablecoin-dubai"
+        },
+        {
+          "candidate_id": "SRC-69f56969e816e413a62bdf52",
+          "custody_pointer": "RSRCH-94baef7b02599e169e2377aa",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-4678b9071d1676d66e891368",
+          "custody_pointer": "RSRCH-94baef7b02599e169e2377aa",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
+          "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
+        },
+        {
+          "candidate_id": "SRC-18e5e1d6c096ea8034120fde",
+          "custody_pointer": "RSRCH-94baef7b02599e169e2377aa",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
+        },
+        {
+          "candidate_id": "SRC-eccc578307d966c88658a397",
+          "custody_pointer": "RSRCH-f7aa45defedb13b880d24b15",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "bridge routes",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rebounds after Trump TACO\u2019s on Tariffs! BitGo $2.1B IPO! Solana\u2019s SKR token soars 250% FDV!",
+          "source_url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv"
+        },
+        {
+          "candidate_id": "SRC-9116eae4a7a0ed355a08c5ac",
+          "custody_pointer": "RSRCH-053364b242c5180872693f3f",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "settlement routes",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
+          "source_url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19"
+        },
+        {
+          "candidate_id": "SRC-ccf406059bb4aa1eea75e93a",
+          "custody_pointer": "RSRCH-7172b2a3d30f6c86f9f2f03a",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "treasury holdings",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US accounting overhaul could make stablecoins more attractive to corporations: Tempo",
+          "source_url": "https://cointelegraph.com/news/fasb-stablecoin-accounting-rules-corporate-adoption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a4032ec51cdf519e5dcdddaf",
+          "custody_pointer": "RSRCH-15c614522c66ae645cbcd37d",
+          "producer_commit": "8e0b9e07a2ab52de806c2e00c07ed29875691658",
+          "query": "treasury holdings",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "2026 Crypto Predictions! Tom Lee still buying ETH! Rekt tease WorldStar collab!",
+          "source_url": "https://decrypt.co/videos/interviews/dBDZqp65/2026-crypto-predictions-tom-lee-still-buying-eth-rekt-tease-worldstar-collab"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 9,
-        "NO_UPDATE": 583
+        "CANDIDATES_IDENTIFIED": 16,
+        "NO_UPDATE": 752
       }
     }
   }
