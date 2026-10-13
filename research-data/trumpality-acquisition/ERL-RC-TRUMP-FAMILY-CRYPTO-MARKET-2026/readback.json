@@ -2,16 +2,17 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 3,
+  "intake_cycles": 4,
   "pending_candidate_count": 54,
   "pending_sha256": "b5f396a31dd3ea3e2d82186cc07a8fc4ef06d66c41df9265647386abdc9dd733",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
-    "029db5664d947492a9131a642fab12915cb1f696"
+    "029db5664d947492a9131a642fab12915cb1f696",
+    "1d4719f66098544d1c8210382a7b10c7a983fe01"
   ],
   "publication_authorized": false,
-  "scan_record_count": 3960,
+  "scan_record_count": 5328,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -20,7 +21,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 275
+        "NO_UPDATE": 370
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -75,8 +76,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 6,
-        "NO_UPDATE": 324
+        "CANDIDATES_IDENTIFIED": 10,
+        "NO_UPDATE": 434
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -104,8 +105,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 272
+        "CANDIDATES_IDENTIFIED": 5,
+        "NO_UPDATE": 365
       }
     },
     "family-token-rotation-fee-capture": {
@@ -114,7 +115,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 330
+        "NO_UPDATE": 444
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -134,7 +135,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 327
+        "NO_UPDATE": 441
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -143,7 +144,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 385
+        "NO_UPDATE": 518
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -152,7 +153,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 330
+        "NO_UPDATE": 444
       }
     },
     "market-rhetoric-oil-impact": {
@@ -414,8 +415,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 16,
-        "NO_UPDATE": 259
+        "CANDIDATES_IDENTIFIED": 28,
+        "NO_UPDATE": 342
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -444,7 +445,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 6,
-        "NO_UPDATE": 324
+        "NO_UPDATE": 438
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -526,8 +527,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 10,
-        "NO_UPDATE": 320
+        "CANDIDATES_IDENTIFIED": 15,
+        "NO_UPDATE": 429
       }
     },
     "trump-token-promotion-access-supply": {
@@ -547,7 +548,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 327
+        "NO_UPDATE": 441
       }
     },
     "wlf-positive-adoption-radar": {
@@ -621,7 +622,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 9,
-        "NO_UPDATE": 431
+        "NO_UPDATE": 583
       }
     }
   }
