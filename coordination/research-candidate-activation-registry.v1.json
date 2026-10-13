@@ -306,7 +306,10 @@
       "active": true,
       "state": "RESEARCH_ACTIVE",
       "durable_owner": "issue:63",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research-data/trumpality-acquisition/ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026/readback.json",
+        "research-data/trumpality-acquisition/ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026/intake-receipts.jsonl"
+      ],
       "next_executable_task": "Acquire exact primary rhetoric, ownership/revenue records, market timing data, controls, and counterfactual baselines before any causal or motive finding.",
       "terminal_condition": "Primary-source custody, market/control reconstruction, conflicts review, and independent assessment yield an explicit governed terminal transition.",
       "candidate_layer_finding_authorized": false,
