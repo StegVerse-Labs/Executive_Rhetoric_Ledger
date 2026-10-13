@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 7,
-  "pending_candidate_count": 224,
-  "pending_sha256": "adcd773b8fb2901420ef5f4fd6a6c6a8e17516035963c84ee0028208ce91eaad",
+  "intake_cycles": 8,
+  "pending_candidate_count": 241,
+  "pending_sha256": "f05b5cf3a1b46e2707a7a9e2bfa1922fa5d37cfb7eeb47c3ddb864c2adb174fc",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -12,10 +12,11 @@
     "1d4719f66098544d1c8210382a7b10c7a983fe01",
     "8e0b9e07a2ab52de806c2e00c07ed29875691658",
     "a547dfe98a7dfadc515beba30cb88f181bea0617",
-    "a547dfe98a7dfadc515beba30cb88f181bea0617"
+    "a547dfe98a7dfadc515beba30cb88f181bea0617",
+    "38fa1b46555c60f6d1ae95e009b5323c09e64058"
   ],
   "publication_authorized": false,
-  "scan_record_count": 11808,
+  "scan_record_count": 13536,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -34,14 +35,14 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1,
-        "NO_UPDATE": 819
+        "CANDIDATES_IDENTIFIED": 2,
+        "NO_UPDATE": 938
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 20,
+      "pending_candidate_count": 23,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -222,17 +223,44 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
           "source_url": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-846f905646e4bebbf4a5845f",
+          "custody_pointer": "RSRCH-03a2c5417a61b7dc45474697",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin continues in tight range near $83,000, recovering from overnight slide",
+          "source_url": "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide"
+        },
+        {
+          "candidate_id": "SRC-8c2f262a83d276a2e7741761",
+          "custody_pointer": "RSRCH-60c7b91c488152ff6c88f580",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea blocks 27 crypto exchanges, including Bitmart and Kucoin",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/south-korea-blocks-27-crypto-exchanges-including-bitmart-and-kucoin"
+        },
+        {
+          "candidate_id": "SRC-9ee690c2aa957baf1fbffbb2",
+          "custody_pointer": "RSRCH-60c7b91c488152ff6c88f580",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK court ruling boosts government\u2019s chances of keeping $5 billion in seized bitcoin",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 48,
-        "NO_UPDATE": 936
+        "CANDIDATES_IDENTIFIED": 60,
+        "NO_UPDATE": 1068
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 30,
+      "pending_candidate_count": 34,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -503,17 +531,53 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "ZEC Rebounds 11%! Trump says he won\u2019t pardon Sam Bankman-Fried! Florida revisits it\u2019s Strategic Bitcoin Reserve!",
           "source_url": "https://decrypt.co/videos/interviews/72tPnqPX/zec-rebounds-11-trump-says-he-wont-pardon-sam-bankman-fried-florida-revisits-its-strategic-bitcoin-reserve"
+        },
+        {
+          "candidate_id": "SRC-5903786600f57ac2cae0b203",
+          "custody_pointer": "RSRCH-3c52ef05be4b2cd18d433d20",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea blocks 27 crypto exchanges, including Bitmart and Kucoin",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/south-korea-blocks-27-crypto-exchanges-including-bitmart-and-kucoin"
+        },
+        {
+          "candidate_id": "SRC-59741c0aea4d92a166a2c9c1",
+          "custody_pointer": "RSRCH-3c52ef05be4b2cd18d433d20",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK court ruling boosts government\u2019s chances of keeping $5 billion in seized bitcoin",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin"
+        },
+        {
+          "candidate_id": "SRC-a5f0013193e6da37e08b7e83",
+          "custody_pointer": "RSRCH-7099e7c4bdeb473086f4b0eb",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin hits $84K resistance as Korean tech rout deepens KOSPI losses",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-hits-84k-resistance-as-korea-tech-sell-off-sends-kospi-down-74?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-86ecab89741f2c8f9253f063",
+          "custody_pointer": "RSRCH-2d773ad8d962dc7d69f75c93",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK Moves Closer to Keeping $5B Bitcoin Haul After High Court Ruling",
+          "source_url": "https://decrypt.co/380818/uk-moves-closer-to-keeping-5b-bitcoin-haul-after-high-court-ruling"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 33,
-        "NO_UPDATE": 787
+        "CANDIDATES_IDENTIFIED": 40,
+        "NO_UPDATE": 900
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 16,
+      "pending_candidate_count": 17,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -658,11 +722,20 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Trump announces launch of $MELANIA meme coin; Trump\u2019s token value hit - News9live",
           "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRmZFb1VfZS1KRllnb05MaEtjNWt5MWFKX3BJTkx5T2pCY0NIVVIwTWc3dGpLeWhUT19mSDlyYl9ZVmFlOW5VZFpka2xvZnZ4bkdPb3prNFlxTC1rYUtVWDloQWpTZUtyeDI1MTlCa2c4R2p4NWZhUG9GLUNrQjVPcVFCYmsxX3pJSVEyUU8ycW41RXJKXzBFZUVpWnhCTzd3SXJWVlVqVjVJaXZKeERaalB2RzJqaHJDdUQyZUU1MWM5MlR60gHKAUFVX3lxTE5xTjVJSXBQT1RraFYtLVAxSFZQQV9SZTdsUVhYT1hjanNUVjhyTmJacDFtYjVRRnZuOW5yNHRTT25QS1lSU3V0bGc3ZTAzY3YzX0FJSnRGMTc0SlF1U3pnTFp3bjdjNmgyWC1tdDdLYVNvQURrZlc5aHVrejd2YVVENlZnam96WE9ZX0JJMXEtcW5ERWlFQnN2bEJPTUNEWFVMMzdOSGFMQzN0Ung1OHRSR2U0cFZwbXY4WmdDVmhhVEZZc0RFTDAxNVE?oc=5"
+        },
+        {
+          "candidate_id": "SRC-1dbf2a5c790edb605cbb8bcd",
+          "custody_pointer": "RSRCH-47bf9adcd25f5bf4b8715724",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "fee paths",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Group of Traders Made $100M on Melania Memecoin Before It Went Public - The Daily Beast",
+          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ01nVTlZOWtRNTA3cGFBTWxWSHVVbndxdjFDUENlLS1uMHFrbkt5OTV1SFVTX0I2MmwzS3haTHdJbDVNWFp0S1l5RGVjYnhQdUNwbEJnYlRQNm9TclF1R09KTG9YMlRnaGFFeExjMzk3cjh1b1FvSHlUMmE1dXRqWTZzanlfYWIzemNDcEpseFZVUm92b2dMdE1IZEppQWM?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 9,
-        "NO_UPDATE": 975
+        "CANDIDATES_IDENTIFIED": 18,
+        "NO_UPDATE": 1110
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -762,8 +835,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 11,
-        "NO_UPDATE": 973
+        "CANDIDATES_IDENTIFIED": 15,
+        "NO_UPDATE": 1113
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -809,14 +882,14 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 10,
-        "NO_UPDATE": 1138
+        "CANDIDATES_IDENTIFIED": 14,
+        "NO_UPDATE": 1302
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 27,
+      "pending_candidate_count": 28,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1060,17 +1133,26 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
           "source_url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder"
+        },
+        {
+          "candidate_id": "SRC-ea0b3c14475f7f0ba5e0d530",
+          "custody_pointer": "RSRCH-b78b23f4bc15352df79a0e2f",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tokenized SanDisk bets saw more liquidations than XRP as Asia\u2019s chip rout wipes out $800 million",
+          "source_url": "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 22,
-        "NO_UPDATE": 962
+        "CANDIDATES_IDENTIFIED": 28,
+        "NO_UPDATE": 1100
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 42,
+      "pending_candidate_count": 44,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -1449,11 +1531,29 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "The global economy is starting to look K-shaped. Here are the winners and losers, and where the U.S. fits.",
           "source_url": "https://www.marketwatch.com/story/the-global-economy-is-starting-to-look-k-shaped-here-are-the-winners-and-losers-and-where-the-u-s-fits-4ad93ea7?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-5c85396db968d3da9badbb60",
+          "custody_pointer": "RSRCH-9dea3be6d3b6fba36ac3228b",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Is punishing the poor Trump\u2019s last hand to play?",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/13/trump-aca-healthcare-politics-midterms"
+        },
+        {
+          "candidate_id": "SRC-c88b62ba6c29fbab5f70a1fa",
+          "custody_pointer": "RSRCH-912b61223ed0b586c473cdcc",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Is punishing the poor Trump\u2019s last hand to play?",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/13/trump-aca-healthcare-politics-midterms"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 102,
-        "NO_UPDATE": 718
+        "CANDIDATES_IDENTIFIED": 117,
+        "NO_UPDATE": 823
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -1508,14 +1608,14 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 8,
-        "NO_UPDATE": 976
+        "CANDIDATES_IDENTIFIED": 10,
+        "NO_UPDATE": 1118
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 44,
+      "pending_candidate_count": 49,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -1912,17 +2012,62 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Exposed: Coffeezilla Uncovers Memecoin Mastermind's Confession of Widespread Market Manipulation - Crypto News Australia",
           "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNV9VSmEtMkxFelc4QzZyRUd0Z2xNaVhNRHJnVVY1ZzFnbTJ5OENQZXJzTlRYdGxyQzZjeS1fdWFBdDVDMm5ERzZuTEdUQkVCU2NISmlwVlJ1TTlINTc0MmV5b01hS2tUbURQMDZjSHlMOEVoRy1MRHBQV2pnd0YydXlheE5vRWRXQWZMRjdvOFhIbnp2TDk5X3FOdXRYLW9kSVd5Z2pqT2ZVb0Q1YXRCendQU285ZWdFb3dLN2dfSWh1OTM4MFNsWXBsMVFvdw?oc=5"
+        },
+        {
+          "candidate_id": "SRC-ac3a106ce74a6e53a48caee6",
+          "custody_pointer": "RSRCH-03c095f31082444b29f7022d",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia\u2019s largest bank Sberbank secures approval to trade crypto",
+          "source_url": "https://www.coindesk.com/business/2026/10/13/russia-s-largest-bank-sberbank-secures-approval-to-trade-crypto"
+        },
+        {
+          "candidate_id": "SRC-395c74d7dce017d4452ebbb8",
+          "custody_pointer": "RSRCH-636091926874200b790dafc4",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia clears Sberbank for crypto trading ahead of December launch",
+          "source_url": "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9fa919a0e5cdefe7c45d071d",
+          "custody_pointer": "RSRCH-75747344b26da8c141f59c65",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia clears Sberbank for crypto trading ahead of December launch",
+          "source_url": "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e7da8dae682d5393463b9740",
+          "custody_pointer": "RSRCH-fc0afb5772149a1d532965bf",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia\u2019s largest bank Sberbank secures approval to trade crypto",
+          "source_url": "https://www.coindesk.com/business/2026/10/13/russia-s-largest-bank-sberbank-secures-approval-to-trade-crypto"
+        },
+        {
+          "candidate_id": "SRC-33c8085e498f170837a4abe8",
+          "custody_pointer": "RSRCH-ef2316f0e4968a44c24cb29a",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia clears Sberbank for crypto trading ahead of December launch",
+          "source_url": "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 74,
-        "NO_UPDATE": 910
+        "CANDIDATES_IDENTIFIED": 91,
+        "NO_UPDATE": 1037
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 7,
+      "pending_candidate_count": 8,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -1986,11 +2131,20 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Exposed: Coffeezilla Uncovers Memecoin Mastermind's Confession of Widespread Market Manipulation - Crypto News Australia",
           "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNV9VSmEtMkxFelc4QzZyRUd0Z2xNaVhNRHJnVVY1ZzFnbTJ5OENQZXJzTlRYdGxyQzZjeS1fdWFBdDVDMm5ERzZuTEdUQkVCU2NISmlwVlJ1TTlINTc0MmV5b01hS2tUbURQMDZjSHlMOEVoRy1MRHBQV2pnd0YydXlheE5vRWRXQWZMRjdvOFhIbnp2TDk5X3FOdXRYLW9kSVd5Z2pqT2ZVb0Q1YXRCendQU285ZWdFb3dLN2dfSWh1OTM4MFNsWXBsMVFvdw?oc=5"
+        },
+        {
+          "candidate_id": "SRC-8c8017b54fb099b4a4a29eae",
+          "custody_pointer": "RSRCH-44b6d1a43ad7e89c2a3a6d86",
+          "producer_commit": "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+          "query": "fee and liquidity flows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Group of Traders Made $100M on Melania Memecoin Before It Went Public - The Daily Beast",
+          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ01nVTlZOWtRNTA3cGFBTWxWSHVVbndxdjFDUENlLS1uMHFrbkt5OTV1SFVTX0I2MmwzS3haTHdJbDVNWFp0S1l5RGVjYnhQdUNwbEJnYlRQNm9TclF1R09KTG9YMlRnaGFFeExjMzk3cjh1b1FvSHlUMmE1dXRqWTZzanlfYWIzemNDcEpseFZVUm92b2dMdE1IZEppQWM?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 7,
-        "NO_UPDATE": 977
+        "CANDIDATES_IDENTIFIED": 11,
+        "NO_UPDATE": 1117
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2162,8 +2316,8 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 25,
-        "NO_UPDATE": 1287
+        "CANDIDATES_IDENTIFIED": 32,
+        "NO_UPDATE": 1472
       }
     }
   }
