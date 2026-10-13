@@ -20,12 +20,11 @@ jobs:
       - name: Prepare governed discovery branch
         run: |
           branch="discovery/ruben-ray-martinez-evidence"
+          # Fetch only so --force-with-lease has the current remote tip to compare against.
           git fetch origin "$branch" || true
-          if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
-            git checkout -B "$branch" "origin/$branch"
-          else
-            git checkout -b "$branch"
-          fi
+          # Always start from main: latest.json is regenerated from scratch, and reusing the
+          # old branch tip leaves stale history that conflicts with main after a refresh merges.
+          git checkout -B "$branch"
       - name: Run case evidence monitor
         run: python scripts/run_case_evidence_monitor.py
       - name: Create or update governed discovery PR
