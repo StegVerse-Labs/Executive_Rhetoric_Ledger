@@ -20,6 +20,21 @@
       "terminal_condition": "Source reconstruction, matched controls, contradiction review, and governed review support an explicit promotion, supersession, merge, or closure decision while keeping measurable influence separate from intent or motive.",
       "candidate_layer_finding_authorized": false,
       "candidate_layer_publication_authorized": false
+    },
+    {
+      "group_id": "ERL-RC-RUSSIAN-DIESEL-DATACENTER-ELECTION-2026",
+      "title": "Russian diesel transaction, data-center recovery, and pre-election network activity",
+      "candidate_paths": [
+        "research-candidates/2026-10-12-russian-diesel-datacenter-election-infrastructure-recovery.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:219",
+      "artifact_paths": [],
+      "next_executable_task": "Acquire primary transaction and sanctions announcements, operator incident statements, and independent network measurements for Yandex Cloud AS200350 and other affected ASNs against the frozen 2026-10-07 baseline.",
+      "terminal_condition": "Recovery dataset, influence-cohort comparison with controls, and contradiction review support an explicit governed promotion, supersession, or closure while keeping measured association separate from intent or knowledge.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
     }
   ]
 }
