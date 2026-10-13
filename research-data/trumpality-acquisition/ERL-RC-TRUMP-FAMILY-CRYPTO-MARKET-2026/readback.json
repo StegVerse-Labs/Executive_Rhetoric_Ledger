@@ -2,15 +2,16 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 2,
-  "pending_candidate_count": 27,
-  "pending_sha256": "fb123c8fc8c6f6295a36c4f8191b3f30fa5b7a41cc7f879a5c843ae189c4a0fb",
+  "intake_cycles": 3,
+  "pending_candidate_count": 54,
+  "pending_sha256": "b5f396a31dd3ea3e2d82186cc07a8fc4ef06d66c41df9265647386abdc9dd733",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
-    "1ed621a847f38532cfbd2f6c927e4355ac914b23"
+    "1ed621a847f38532cfbd2f6c927e4355ac914b23",
+    "029db5664d947492a9131a642fab12915cb1f696"
   ],
   "publication_authorized": false,
-  "scan_record_count": 2592,
+  "scan_record_count": 3960,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -19,13 +20,13 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 180
+        "NO_UPDATE": 275
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 3,
+      "pending_candidate_count": 5,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -53,17 +54,35 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CFTC Staff Releases Updates to FAQs Concerning Registrants and Registered Entity Activities Relating to Crypto Assets and Blockchain Technologies",
           "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26"
+        },
+        {
+          "candidate_id": "SRC-deb0dd02c814ba590942fdaf",
+          "custody_pointer": "RSRCH-2f1e7521cbc7bebd54a936d6",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Adviser and Regulated Fund Custody Rules; Crypto Custody Rules",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/06/2026-20466/adviser-and-regulated-fund-custody-rules-crypto-custody-rules"
+        },
+        {
+          "candidate_id": "SRC-354b10888e49f64f4476f621",
+          "custody_pointer": "RSRCH-aa851a00e76d557aa88897e9",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 2,
-        "NO_UPDATE": 214
+        "CANDIDATES_IDENTIFIED": 6,
+        "NO_UPDATE": 324
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 1,
+      "pending_candidate_count": 2,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -73,11 +92,20 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CFTC Issues Final Rule to Modify Clearing Requirement for Canadian Dollar- and Mexican Peso-Denominated Interest Rate Swaps",
           "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9292-26"
+        },
+        {
+          "candidate_id": "SRC-5ea003c3611092f3b9381d95",
+          "custody_pointer": "RSRCH-a524443cab153ce72074098d",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Interval Fund Modernization; Expansion of Multiple Share Class to Registered Closed-End Management Investment Companies and Business Development Companies",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/05/2026-20360/interval-fund-modernization-expansion-of-multiple-share-class-to-registered-closed-end-management"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1,
-        "NO_UPDATE": 179
+        "CANDIDATES_IDENTIFIED": 3,
+        "NO_UPDATE": 272
       }
     },
     "family-token-rotation-fee-capture": {
@@ -86,7 +114,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 216
+        "NO_UPDATE": 330
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -106,7 +134,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 213
+        "NO_UPDATE": 327
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -115,7 +143,7 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 252
+        "NO_UPDATE": 385
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -124,13 +152,13 @@
       "pending_candidate_count": 0,
       "pending_candidates": [],
       "scan_results": {
-        "NO_UPDATE": 216
+        "NO_UPDATE": 330
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 8,
+      "pending_candidate_count": 28,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -203,11 +231,191 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil Country Tubular Goods From the Republic of Korea: Final Results of Countervailing Duty Administrative Review and Rescission, in Part; 2023",
           "source_url": "https://www.federalregister.gov/documents/2026/09/15/2026-18788/oil-country-tubular-goods-from-the-republic-of-korea-final-results-of-countervailing-duty"
+        },
+        {
+          "candidate_id": "SRC-5bb4bcdd2a52c5f27ac3c1a7",
+          "custody_pointer": "RSRCH-40080ab2ffe8b429418650a9",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of Intertek USA, Inc. (Carteret, NJ), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/29/2026-19924/accreditation-and-approval-of-intertek-usa-inc-carteret-nj-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-2e6df8899ed32b109a81adf0",
+          "custody_pointer": "RSRCH-40080ab2ffe8b429418650a9",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of Saybolt LP (Deer Park, TX), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/15/2026-18832/accreditation-and-approval-of-saybolt-lp-deer-park-tx-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-7886f89723a609f396f16e90",
+          "custody_pointer": "RSRCH-4b716aeab969fb347fb7f36b",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mixed outlook for energy expenditures this winter",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68264"
+        },
+        {
+          "candidate_id": "SRC-ed8dfcf96544b44e790fdfc8",
+          "custody_pointer": "RSRCH-4b716aeab969fb347fb7f36b",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68245"
+        },
+        {
+          "candidate_id": "SRC-db8df165ef23d1a9363ab984",
+          "custody_pointer": "RSRCH-4b716aeab969fb347fb7f36b",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Public companies produce most U.S. crude oil and natural gas",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68184"
+        },
+        {
+          "candidate_id": "SRC-6198d3b14116c665c2e57b4f",
+          "custody_pointer": "RSRCH-4b716aeab969fb347fb7f36b",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What goes into diesel prices?",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68164"
+        },
+        {
+          "candidate_id": "SRC-7de06ae2b6d43ff9c3bac1fe",
+          "custody_pointer": "RSRCH-4b716aeab969fb347fb7f36b",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "United States on track for record crude oil production in 2026",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68125"
+        },
+        {
+          "candidate_id": "SRC-863fb77457270af0ea60b25a",
+          "custody_pointer": "RSRCH-4b716aeab969fb347fb7f36b",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68104"
+        },
+        {
+          "candidate_id": "SRC-035226dc59e435977e2d1b60",
+          "custody_pointer": "RSRCH-c1c0e357c946848647079b93",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Zelenskyy vows to retaliate if Russian strikes on Ukraine\u2019s power grid continue",
+          "source_url": "https://www.theguardian.com/world/2026/oct/12/zelenskyy-vows-retaliate-russia-strikes-ukraine-power-grid"
+        },
+        {
+          "candidate_id": "SRC-251e8771df51c6f5b3655072",
+          "custody_pointer": "RSRCH-b8b1b6b475d4d3c61b432129",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s \u2018energy ceasefire\u2019 collides with real-world problems of dwindling fuel supplies",
+          "source_url": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-6672a94cf4fb52af280b1ca1",
+          "custody_pointer": "RSRCH-52c0a5bad1533910e5a9d5d7",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of Intertek USA, Inc. (Carteret, NJ), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/29/2026-19924/accreditation-and-approval-of-intertek-usa-inc-carteret-nj-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-823dc68142398a8fd1297850",
+          "custody_pointer": "RSRCH-52c0a5bad1533910e5a9d5d7",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of Saybolt LP (Deer Park, TX), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/15/2026-18832/accreditation-and-approval-of-saybolt-lp-deer-park-tx-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-27b24122f545c562fee14748",
+          "custody_pointer": "RSRCH-469e0879bf5ff8c6a7f5aaf1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mixed outlook for energy expenditures this winter",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68264"
+        },
+        {
+          "candidate_id": "SRC-52972f37535f3d6b07527677",
+          "custody_pointer": "RSRCH-469e0879bf5ff8c6a7f5aaf1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68245"
+        },
+        {
+          "candidate_id": "SRC-5d2a667f2211509f11cd5d41",
+          "custody_pointer": "RSRCH-469e0879bf5ff8c6a7f5aaf1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Public companies produce most U.S. crude oil and natural gas",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68184"
+        },
+        {
+          "candidate_id": "SRC-2134f0253e9a23c037eed8c7",
+          "custody_pointer": "RSRCH-469e0879bf5ff8c6a7f5aaf1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What goes into diesel prices?",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68164"
+        },
+        {
+          "candidate_id": "SRC-93176d1eed58c4019bff2c84",
+          "custody_pointer": "RSRCH-469e0879bf5ff8c6a7f5aaf1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "United States on track for record crude oil production in 2026",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68125"
+        },
+        {
+          "candidate_id": "SRC-f0200ab352cafafca2a298d7",
+          "custody_pointer": "RSRCH-469e0879bf5ff8c6a7f5aaf1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68104"
+        },
+        {
+          "candidate_id": "SRC-9969c81c31b15b33da7a3128",
+          "custody_pointer": "RSRCH-2fd8a3e38c7e2e10c2b474e8",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Zelenskyy vows to retaliate if Russian strikes on Ukraine\u2019s power grid continue",
+          "source_url": "https://www.theguardian.com/world/2026/oct/12/zelenskyy-vows-retaliate-russia-strikes-ukraine-power-grid"
+        },
+        {
+          "candidate_id": "SRC-d6c315d52e9a95e688ebb4cd",
+          "custody_pointer": "RSRCH-34a7451b2e1617b8e46e1735",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s \u2018energy ceasefire\u2019 collides with real-world problems of dwindling fuel supplies",
+          "source_url": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 4,
-        "NO_UPDATE": 176
+        "CANDIDATES_IDENTIFIED": 16,
+        "NO_UPDATE": 259
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -236,13 +444,13 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 6,
-        "NO_UPDATE": 210
+        "NO_UPDATE": 324
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 4,
+      "pending_candidate_count": 8,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -279,11 +487,47 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CFTC Staff Releases Updates to FAQs Concerning Registrants and Registered Entity Activities Relating to Crypto Assets and Blockchain Technologies",
           "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26"
+        },
+        {
+          "candidate_id": "SRC-572d22a8aed17801a2b08b08",
+          "custody_pointer": "RSRCH-521f572e033312eaf33260d1",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
+        },
+        {
+          "candidate_id": "SRC-b5901036191a95702afb4a2e",
+          "custody_pointer": "RSRCH-957f2d84346dc556c704c48f",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
+        },
+        {
+          "candidate_id": "SRC-798b6cd7aa4a52603bc1bd7e",
+          "custody_pointer": "RSRCH-957f2d84346dc556c704c48f",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Implementing the Federal Reserve Board's Responsibilities Under the GENIUS Act",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/29/2026-19860/implementing-the-federal-reserve-boards-responsibilities-under-the-genius-act"
+        },
+        {
+          "candidate_id": "SRC-c0fc8af139552bc37a56c798",
+          "custody_pointer": "RSRCH-75039a3b3c9915162d1e2ccd",
+          "producer_commit": "029db5664d947492a9131a642fab12915cb1f696",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 5,
-        "NO_UPDATE": 211
+        "CANDIDATES_IDENTIFIED": 10,
+        "NO_UPDATE": 320
       }
     },
     "trump-token-promotion-access-supply": {
@@ -303,7 +547,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "NO_UPDATE": 213
+        "NO_UPDATE": 327
       }
     },
     "wlf-positive-adoption-radar": {
@@ -377,7 +621,7 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 9,
-        "NO_UPDATE": 279
+        "NO_UPDATE": 431
       }
     }
   }
