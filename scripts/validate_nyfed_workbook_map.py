@@ -7,7 +7,7 @@ import io
 import json
 from pathlib import Path
 
-from openpyxl import Workbook
+from stdlib_xlsx import Workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 MAP_PATH = ROOT / "research-data/household-economic-conditions/nyfed-2026q2-workbook-map.v1.json"

@@ -12,7 +12,7 @@ import io
 import json
 from pathlib import Path
 
-from openpyxl import load_workbook
+from stdlib_xlsx import load_workbook
 
 GOAL = "ERL-HOUSEHOLD-ECONOMIC-CONDITIONS-SITE-001"
 
