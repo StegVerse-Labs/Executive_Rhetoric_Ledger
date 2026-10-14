@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 8,
-  "pending_candidate_count": 241,
-  "pending_sha256": "f05b5cf3a1b46e2707a7a9e2bfa1922fa5d37cfb7eeb47c3ddb864c2adb174fc",
+  "intake_cycles": 9,
+  "pending_candidate_count": 254,
+  "pending_sha256": "8296051c42a339611ef49b38260ab57d6d10a2334a7d4d6986aa6be69d47e578",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -13,10 +13,11 @@
     "8e0b9e07a2ab52de806c2e00c07ed29875691658",
     "a547dfe98a7dfadc515beba30cb88f181bea0617",
     "a547dfe98a7dfadc515beba30cb88f181bea0617",
-    "38fa1b46555c60f6d1ae95e009b5323c09e64058"
+    "38fa1b46555c60f6d1ae95e009b5323c09e64058",
+    "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e"
   ],
   "publication_authorized": false,
-  "scan_record_count": 13536,
+  "scan_record_count": 16992,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -36,13 +37,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 2,
-        "NO_UPDATE": 938
+        "FAILED": 5,
+        "NO_UPDATE": 1173
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 23,
+      "pending_candidate_count": 25,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -250,17 +252,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "UK court ruling boosts government\u2019s chances of keeping $5 billion in seized bitcoin",
           "source_url": "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin"
+        },
+        {
+          "candidate_id": "SRC-d7168b82d76dd849f0c62ef6",
+          "custody_pointer": "RSRCH-517dc8b233963688c9a1b414",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK crypto trader says almost $800,000 lost in knife assault as wrench attacks proliferate",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion"
+        },
+        {
+          "candidate_id": "SRC-7d9c7390e32eae213563316c",
+          "custody_pointer": "RSRCH-172e87b25d2d56a8f8e5d2a8",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 60,
-        "NO_UPDATE": 1068
+        "CANDIDATES_IDENTIFIED": 75,
+        "FAILED": 6,
+        "NO_UPDATE": 1335
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 34,
+      "pending_candidate_count": 42,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -567,11 +588,84 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "UK Moves Closer to Keeping $5B Bitcoin Haul After High Court Ruling",
           "source_url": "https://decrypt.co/380818/uk-moves-closer-to-keeping-5b-bitcoin-haul-after-high-court-ruling"
+        },
+        {
+          "candidate_id": "SRC-d09b6b7e7df873534e760e46",
+          "custody_pointer": "RSRCH-2056829c20310bcfefd83b72",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK crypto trader says almost $800,000 lost in knife assault as wrench attacks proliferate",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion"
+        },
+        {
+          "candidate_id": "SRC-12ac3fc81a87ae5c9c928d19",
+          "custody_pointer": "RSRCH-3918ac0de6fdfa06e80425ea",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strive reports $208M in warrant exercises as Bitcoin holdings jump 11%",
+          "source_url": "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2eceec608e2f443d4f9a65eb",
+          "custody_pointer": "RSRCH-dfba0af94247edfb603562c9",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Whale That Sat Through Every Crash Since 2020 Just Moved $377M",
+          "source_url": "https://decrypt.co/380867/bitcoin-whale-every-crash-2020-moves-377m"
+        },
+        {
+          "candidate_id": "SRC-ec23f13981613119e5d7ad67",
+          "custody_pointer": "RSRCH-dfba0af94247edfb603562c9",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strive Buys $280 Million in Bitcoin, Its Largest Purchase in Months",
+          "source_url": "https://decrypt.co/380858/strive-buys-280-million-bitcoin-largest-purchase-months"
+        },
+        {
+          "candidate_id": "SRC-3785a660e58e391d5c2cd76c",
+          "custody_pointer": "RSRCH-72132ee4ce9953322f8925e3",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK crypto trader says almost $800,000 lost in knife assault as wrench attacks proliferate",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion"
+        },
+        {
+          "candidate_id": "SRC-f3a36b7b61402c020a0c8ba0",
+          "custody_pointer": "RSRCH-97fc4f83a9bcc2cf57d09b46",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strive reports $208M in warrant exercises as Bitcoin holdings jump 11%",
+          "source_url": "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-ef84e7a2024cfbed5306c912",
+          "custody_pointer": "RSRCH-83c106dd77f5bb3211b778a1",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action"
+        },
+        {
+          "candidate_id": "SRC-f76689faf873ba8da3f85f4b",
+          "custody_pointer": "RSRCH-bbb7198a033a41b7fd06b918",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin climbs toward $84,000 after Fed\u2019s Williams sees no rate hikes in 2027",
+          "source_url": "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 40,
-        "NO_UPDATE": 900
+        "CANDIDATES_IDENTIFIED": 56,
+        "FAILED": 5,
+        "NO_UPDATE": 1119
       }
     },
     "family-token-rotation-fee-capture": {
@@ -734,8 +828,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 18,
-        "NO_UPDATE": 1110
+        "CANDIDATES_IDENTIFIED": 30,
+        "FAILED": 6,
+        "NO_UPDATE": 1380
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -835,8 +930,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 15,
-        "NO_UPDATE": 1113
+        "CANDIDATES_IDENTIFIED": 17,
+        "FAILED": 6,
+        "NO_UPDATE": 1393
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -882,8 +978,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 14,
-        "NO_UPDATE": 1302
+        "CANDIDATES_IDENTIFIED": 16,
+        "FAILED": 7,
+        "NO_UPDATE": 1629
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1145,8 +1242,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 28,
-        "NO_UPDATE": 1100
+        "CANDIDATES_IDENTIFIED": 36,
+        "FAILED": 6,
+        "NO_UPDATE": 1374
       }
     },
     "market-rhetoric-oil-impact": {
@@ -1552,8 +1650,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 117,
-        "NO_UPDATE": 823
+        "CANDIDATES_IDENTIFIED": 143,
+        "FAILED": 5,
+        "NO_UPDATE": 1032
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -1608,14 +1707,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 10,
-        "NO_UPDATE": 1118
+        "CANDIDATES_IDENTIFIED": 14,
+        "FAILED": 6,
+        "NO_UPDATE": 1396
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 49,
+      "pending_candidate_count": 52,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2057,11 +2157,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Russia clears Sberbank for crypto trading ahead of December launch",
           "source_url": "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e525d9c135f732f14b53760f",
+          "custody_pointer": "RSRCH-80df51a1b7a70025161b8857",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchange MNX takes on OKX, Bitget offering pre-IPO futures for AI giants",
+          "source_url": "https://www.coindesk.com/business/2026/10/13/new-crypto-exchange-takes-on-okx-bitget-with-unique-way-to-trade-ai-giants"
+        },
+        {
+          "candidate_id": "SRC-fe4a24d3805a5bccd768fb33",
+          "custody_pointer": "RSRCH-80df51a1b7a70025161b8857",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK crypto trader says almost $800,000 lost in knife assault as wrench attacks proliferate",
+          "source_url": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion"
+        },
+        {
+          "candidate_id": "SRC-0e7b1b13ce5fdce53fcd915d",
+          "custody_pointer": "RSRCH-c7cd4d075626bb8808df32cc",
+          "producer_commit": "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trezor Cuts Its Resellers After Ledger Finds Spy Implant in Crypto Wallets",
+          "source_url": "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 91,
-        "NO_UPDATE": 1037
+        "CANDIDATES_IDENTIFIED": 121,
+        "FAILED": 6,
+        "NO_UPDATE": 1289
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2143,8 +2271,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 11,
-        "NO_UPDATE": 1117
+        "CANDIDATES_IDENTIFIED": 19,
+        "FAILED": 6,
+        "NO_UPDATE": 1391
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2316,8 +2445,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 32,
-        "NO_UPDATE": 1472
+        "CANDIDATES_IDENTIFIED": 36,
+        "FAILED": 8,
+        "NO_UPDATE": 1844
       }
     }
   }
