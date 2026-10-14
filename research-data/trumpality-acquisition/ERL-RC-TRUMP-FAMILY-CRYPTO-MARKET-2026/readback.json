@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 12,
-  "pending_candidate_count": 291,
-  "pending_sha256": "6fb928201835c033fec40d3c7a4350e48b43eaef2cff94f8af028521bc2ba62c",
+  "intake_cycles": 13,
+  "pending_candidate_count": 297,
+  "pending_sha256": "627409b3e4f740de7a657ab37e48ce4a6bbb270974c5697cf88fe6ee666c58d8",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -17,10 +17,11 @@
     "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
     "777821d007100f0cc463593f206222a75e8f8bca",
     "777821d007100f0cc463593f206222a75e8f8bca",
-    "750837c920ba11de4f6dbb06bcbe615b121345f1"
+    "750837c920ba11de4f6dbb06bcbe615b121345f1",
+    "9c9584b862ab6967d0d2817ba1d9f4b923c64dee"
   ],
   "publication_authorized": false,
-  "scan_record_count": 22370,
+  "scan_record_count": 24195,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -40,8 +41,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 15,
-        "NO_UPDATE": 1532
+        "FAILED": 20,
+        "NO_UPDATE": 1652
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -294,15 +295,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 91,
-        "FAILED": 18,
-        "NO_UPDATE": 1751
+        "CANDIDATES_IDENTIFIED": 95,
+        "FAILED": 24,
+        "NO_UPDATE": 1891
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 44,
+      "pending_candidate_count": 45,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -699,12 +700,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CryptoQuant\u2019s 3 charts keeping Bitcoin\u2019s \u2018Uptober\u2019 thesis valid",
           "source_url": "https://cointelegraph.com/markets/cryptoquant-charts-bitcoin-uptober-thesis-valid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c382aa906360cd2a499867a5",
+          "custody_pointer": "RSRCH-a53ea53b94952a12466498a9",
+          "producer_commit": "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered Opens Bitcoin and Ethereum Trading to Wealthy UAE Clients",
+          "source_url": "https://decrypt.co/380967/standard-chartered-bitcoin-ethereum-trading"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 77,
-        "FAILED": 15,
-        "NO_UPDATE": 1458
+        "CANDIDATES_IDENTIFIED": 83,
+        "FAILED": 20,
+        "NO_UPDATE": 1572
       }
     },
     "family-token-rotation-fee-capture": {
@@ -930,9 +940,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 51,
-        "FAILED": 18,
-        "NO_UPDATE": 1791
+        "CANDIDATES_IDENTIFIED": 58,
+        "FAILED": 24,
+        "NO_UPDATE": 1928
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1032,9 +1042,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 23,
-        "FAILED": 18,
-        "NO_UPDATE": 1819
+        "CANDIDATES_IDENTIFIED": 24,
+        "FAILED": 24,
+        "NO_UPDATE": 1962
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1098,9 +1108,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 23,
-        "FAILED": 21,
-        "NO_UPDATE": 2126
+        "CANDIDATES_IDENTIFIED": 26,
+        "FAILED": 28,
+        "NO_UPDATE": 2291
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1371,15 +1381,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 43,
-        "FAILED": 18,
-        "NO_UPDATE": 1799
+        "CANDIDATES_IDENTIFIED": 45,
+        "FAILED": 24,
+        "NO_UPDATE": 1941
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 50,
+      "pending_candidate_count": 52,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -1830,12 +1840,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin price dips below $82K as high oil prices spike US CPI inflation",
           "source_url": "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e94e1ee947ac88db6a13d62f",
+          "custody_pointer": "RSRCH-955c6c20aff32ec25d563bbc",
+          "producer_commit": "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "OCC report finds debanking efforts tied to crypto activities",
+          "source_url": "https://cointelegraph.com/news/occ-trump-debanking-crypto-activities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fdcc19654467403c3c42f8dc",
+          "custody_pointer": "RSRCH-b6e76302e26cf9a978fcc2b7",
+          "producer_commit": "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "OCC report finds debanking efforts tied to crypto activities",
+          "source_url": "https://cointelegraph.com/news/occ-trump-debanking-crypto-activities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 182,
-        "FAILED": 15,
-        "NO_UPDATE": 1353
+        "CANDIDATES_IDENTIFIED": 196,
+        "FAILED": 20,
+        "NO_UPDATE": 1459
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -1944,15 +1972,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 24,
-        "FAILED": 19,
-        "NO_UPDATE": 1867
+        "CANDIDATES_IDENTIFIED": 27,
+        "FAILED": 26,
+        "NO_UPDATE": 2032
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 57,
+      "pending_candidate_count": 60,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2466,12 +2494,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Notorious Crypto Celeb Meme Coin Promoter Plots Second Wave on New Launchpad",
           "source_url": "https://decrypt.co/380928/notorious-crypto-celeb-meme-coin-promoter-plots-second-wave-on-new-launchpad"
+        },
+        {
+          "candidate_id": "SRC-ad354d8f3cd4dac3d25a04bb",
+          "custody_pointer": "RSRCH-8a44d283b655012881afeaab",
+          "producer_commit": "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia's Biggest Bank Sberbank Wins Approval to Trade Bitcoin",
+          "source_url": "https://decrypt.co/380981/sberbank-russia-bank-trade-crypto-bitcoin"
+        },
+        {
+          "candidate_id": "SRC-11b733673c0b595b1faf0962",
+          "custody_pointer": "RSRCH-2888ea7540361b1e10ce231e",
+          "producer_commit": "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Organizations join forces to fight Illinois crypto tax, after 6-month pause",
+          "source_url": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-83c8e20efde9d8a2294e1771",
+          "custody_pointer": "RSRCH-15bf56f7977aca178ff79be9",
+          "producer_commit": "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia's Biggest Bank Sberbank Wins Approval to Trade Bitcoin",
+          "source_url": "https://decrypt.co/380981/sberbank-russia-bank-trade-crypto-bitcoin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 167,
-        "FAILED": 18,
-        "NO_UPDATE": 1675
+        "CANDIDATES_IDENTIFIED": 182,
+        "FAILED": 24,
+        "NO_UPDATE": 1804
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2607,9 +2662,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 30,
-        "FAILED": 18,
-        "NO_UPDATE": 1812
+        "CANDIDATES_IDENTIFIED": 34,
+        "FAILED": 24,
+        "NO_UPDATE": 1952
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2781,9 +2836,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 43,
-        "FAILED": 24,
-        "NO_UPDATE": 2413
+        "CANDIDATES_IDENTIFIED": 44,
+        "FAILED": 32,
+        "NO_UPDATE": 2604
       }
     }
   }
