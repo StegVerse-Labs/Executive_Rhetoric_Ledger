@@ -15,8 +15,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from openpyxl import load_workbook
-from openpyxl.utils import column_index_from_string
+from stdlib_xlsx import column_index_from_string, load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 MAP_PATH = ROOT / "research-data/household-economic-conditions/nyfed-2026q2-workbook-map.v1.json"

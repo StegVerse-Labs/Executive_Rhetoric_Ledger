@@ -28,8 +28,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install workbook parser
-        run: python -m pip install --upgrade openpyxl
       - name: Acquire current BLS candidates without credentials
         run: python scripts/acquire_household_economic_conditions.py --source bls --start-year 2025 --end-year 2026 --output-dir build/household-economic-source-candidates/bls
       - name: Acquire Federal Reserve Board DSR candidates without credentials
