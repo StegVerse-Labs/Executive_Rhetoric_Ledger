@@ -37,9 +37,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python -m pip install pytest
       - name: Run dispatcher regression tests
-        run: python -m pytest -q tests/test_active_research_dispatch.py
+        run: python tests/stdlib_testing.py tests/test_active_research_dispatch.py
       - name: Generate dispatch from live registry state
         run: |
           python scripts/generate_active_research_dispatch.py \

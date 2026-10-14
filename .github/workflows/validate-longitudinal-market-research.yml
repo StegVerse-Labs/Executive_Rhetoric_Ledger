@@ -46,7 +46,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: python -m pip install pytest jsonschema
+        run: python -m pip install jsonschema
 
       - name: Compile longitudinal research code
         run: >-
@@ -63,7 +63,7 @@ jobs:
           scripts/calibrate_longitudinal_analogue_oos.py
 
       - name: Run deterministic longitudinal research tests
-        run: pytest -q tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py tests/test_longitudinal_source_health.py tests/test_longitudinal_analogue_oos.py tests/test_market_source_timeseries.py
+        run: python tests/stdlib_testing.py tests/test_longitudinal_market_research.py tests/test_market_observation_ingestion.py tests/test_generic_market_event_normalizer.py tests/test_longitudinal_source_health.py tests/test_longitudinal_analogue_oos.py tests/test_market_source_timeseries.py
 
       - name: Index canonical ERL crypto panel
         run: |
