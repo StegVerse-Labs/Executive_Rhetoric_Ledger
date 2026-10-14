@@ -17,14 +17,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install validator
-        run: python -m pip install --upgrade jsonschema referencing
+      - name: Guard against framework dependencies (standard library only)
+        run: python tests/stdlib_testing.py tests/test_no_framework_dependencies.py
       - name: Validate sample political influence tree
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          from jsonschema import Draft202012Validator
+          import sys; sys.path.insert(0, "scripts")
+          from jsonschema_stdlib import Draft202012Validator
           schema = json.loads(Path("schemas/political-influence-tree.schema.json").read_text())
           sample = json.loads(Path("samples/political-influence-tree.sample.json").read_text())
           if list(Draft202012Validator(schema).iter_errors(sample)):
@@ -72,7 +73,8 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          from jsonschema import Draft202012Validator
+          import sys; sys.path.insert(0, "scripts")
+          from jsonschema_stdlib import Draft202012Validator
           schema = json.loads(Path("schemas/producer-intake-result.schema.json").read_text())
           files = sorted(Path("/tmp/producer-intake-results").glob("ERL-INTAKE-*.json"))
           if not files:

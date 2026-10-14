@@ -8,9 +8,9 @@ import sys
 from pathlib import Path
 
 try:
-    from jsonschema import Draft202012Validator
+    from jsonschema_stdlib import Draft202012Validator
 except ImportError as exc:  # pragma: no cover
-    raise SystemExit("Missing dependency: jsonschema") from exc
+    raise SystemExit("Missing scripts/jsonschema_stdlib.py (standard-library schema validator).") from exc
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_SCHEMA = ROOT / "schemas" / "recurring-search-config.schema.json"

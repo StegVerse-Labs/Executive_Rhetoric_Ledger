@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 try:
-    import jsonschema
+    import jsonschema_stdlib as jsonschema
 except ImportError as exc:  # pragma: no cover
     raise SystemExit("jsonschema is required: pip install jsonschema") from exc
 

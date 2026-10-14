@@ -2,7 +2,7 @@
 """Validate destination adapter, acknowledgment, and propagation authority boundaries."""
 import json
 from pathlib import Path
-from jsonschema import Draft202012Validator
+from jsonschema_stdlib import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
 config = json.loads((ROOT / "config/destination-adapters.json").read_text(encoding="utf-8"))

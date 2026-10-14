@@ -37,8 +37,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install validator dependencies
-        run: python -m pip install --upgrade jsonschema referencing
 
       - name: Run validators and create evidence packet
         id: capture

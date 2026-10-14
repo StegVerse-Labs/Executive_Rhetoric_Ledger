@@ -3,7 +3,7 @@
 from __future__ import annotations
 import json
 from pathlib import Path
-from jsonschema import Draft202012Validator
+from jsonschema_stdlib import Draft202012Validator
 ROOT=Path(__file__).resolve().parents[1]
 def load(path): return json.loads(path.read_text(encoding="utf-8"))
 def validate_items(schema_name, doc_path, key):

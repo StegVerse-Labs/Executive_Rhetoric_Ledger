@@ -28,5 +28,4 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check jsonschema
       - run: python scripts/validate_silence_causation_assessment.py

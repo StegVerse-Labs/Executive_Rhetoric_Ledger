@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from jsonschema import Draft202012Validator, FormatChecker
+from jsonschema_stdlib import Draft202012Validator, FormatChecker
 
 SCHEMA_BY_KIND = {
     "state": "schemas/market-state-vector.schema.json",

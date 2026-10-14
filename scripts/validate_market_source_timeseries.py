@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from jsonschema import Draft202012Validator, FormatChecker
+from jsonschema_stdlib import Draft202012Validator, FormatChecker
 
 
 def _utc(value: str) -> datetime:

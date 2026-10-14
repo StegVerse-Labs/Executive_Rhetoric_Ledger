@@ -39,8 +39,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install validation dependencies
-        run: python -m pip install --upgrade pip jsonschema
 
       - name: Capture governed validation evidence
         id: capture

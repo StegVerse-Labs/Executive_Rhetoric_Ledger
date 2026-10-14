@@ -33,8 +33,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install validator
-        run: python -m pip install --upgrade jsonschema referencing
       - name: Verify governed producer review receipt when present
         run: python scripts/verify_governed_producer_review.py
       - name: Determine producer activation and reviewed-output eligibility
