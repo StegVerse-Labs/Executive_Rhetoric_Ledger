@@ -2,7 +2,7 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 10,
+  "intake_cycles": 11,
   "pending_candidate_count": 282,
   "pending_sha256": "257d2d130ddf7377c1be6a9de225da832251de750ca781114eff57ae9ef0e3e6",
   "producer_commits": [
@@ -15,6 +15,7 @@
     "a547dfe98a7dfadc515beba30cb88f181bea0617",
     "38fa1b46555c60f6d1ae95e009b5323c09e64058",
     "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+    "777821d007100f0cc463593f206222a75e8f8bca",
     "777821d007100f0cc463593f206222a75e8f8bca"
   ],
   "publication_authorized": false,
