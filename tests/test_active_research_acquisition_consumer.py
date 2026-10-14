@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
-import pytest
+from stdlib_testing import raises
 
 from scripts.consume_active_research_acquisition import consume, digest
 
@@ -107,7 +107,7 @@ def test_rejects_single_valid_hop(tmp_path: Path):
     payload.write_bytes(b"x")
     kv = tmp_path / "kv"
     kv.mkdir()
-    with pytest.raises(ValueError, match="complete"):
+    with raises(ValueError, match="complete"):
         consume(
             dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
             source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=make_chain(envelope_hash())[:1],
@@ -122,7 +122,7 @@ def test_rejects_skipped_boundary(tmp_path: Path):
     chain = make_chain(envelope_hash())
     chain[1]["to_role"] = "KV"
     body = dict(chain[1]); body.pop("receipt_hash"); chain[1]["receipt_hash"] = digest(body)
-    with pytest.raises(ValueError, match="adjacency"):
+    with raises(ValueError, match="adjacency"):
         consume(dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
                 source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=chain, payload=payload,
                 kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")
@@ -136,7 +136,7 @@ def test_rejects_broken_prior_hash(tmp_path: Path):
     chain = make_chain(envelope_hash())
     chain[2]["prior_receipt_hash"] = "sha256:" + "0" * 64
     body = dict(chain[2]); body.pop("receipt_hash"); chain[2]["receipt_hash"] = digest(body)
-    with pytest.raises(ValueError, match="prior-hash"):
+    with raises(ValueError, match="prior-hash"):
         consume(dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
                 source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=chain, payload=payload,
                 kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")
@@ -150,7 +150,7 @@ def test_rejects_authority_transfer(tmp_path: Path):
     chain = make_chain(envelope_hash())
     chain[1]["authority_transfer"] = True
     body = dict(chain[1]); body.pop("receipt_hash"); chain[1]["receipt_hash"] = digest(body)
-    with pytest.raises(ValueError, match="authority"):
+    with raises(ValueError, match="authority"):
         consume(dispatch=make_dispatch(), group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
                 source_id="ERL-CYBER-WEB-HISTORY-CERN", intr_receipts=chain, payload=payload,
                 kv_root=kv, kv_instance_id="MYKV-TEST", captured_at="2026-09-10T20:00:00Z")

@@ -37,9 +37,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python -m pip install pytest
       - name: Run acquisition consumer and runtime-binding tests
         run: >-
-          python -m pytest -q
+          python tests/stdlib_testing.py
           tests/test_active_research_acquisition_consumer.py
           tests/test_active_research_intr_binding.py

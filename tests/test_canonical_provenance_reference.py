@@ -1,6 +1,6 @@
 import copy
 
-import pytest
+from stdlib_testing import raises
 
 from scripts.validate_canonical_provenance_reference import (
     ProvenanceReferenceError,
@@ -30,35 +30,35 @@ def test_accepts_reference_only_record():
 def test_rejects_missing_source_root():
     value = record()
     value["source_root_object_ids"] = []
-    with pytest.raises(ProvenanceReferenceError, match="source_root_object_ids"):
+    with raises(ProvenanceReferenceError, match="source_root_object_ids"):
         validate_reference(value)
 
 
 def test_rejects_noncanonical_object_identity():
     value = record()
     value["candidate_object_id"] = "candidate-local-id"
-    with pytest.raises(ProvenanceReferenceError, match="canonical object id"):
+    with raises(ProvenanceReferenceError, match="canonical object id"):
         validate_reference(value)
 
 
 def test_rejects_authority_expansion():
     value = record()
     value["authority_effect"] = "PUBLICATION"
-    with pytest.raises(ProvenanceReferenceError, match="cannot grant authority"):
+    with raises(ProvenanceReferenceError, match="cannot grant authority"):
         validate_reference(value)
 
 
 def test_rejects_manufactured_canonical_graph_fields():
     value = copy.deepcopy(record())
     value["objects"] = []
-    with pytest.raises(ProvenanceReferenceError, match="must not reproduce or manufacture"):
+    with raises(ProvenanceReferenceError, match="must not reproduce or manufacture"):
         validate_reference(value)
 
 
 def test_rejects_duplicate_receipt_refs():
     value = record()
     value["transition_receipt_refs"] = ["receipt:1", "receipt:1"]
-    with pytest.raises(ProvenanceReferenceError, match="must be unique"):
+    with raises(ProvenanceReferenceError, match="must be unique"):
         validate_reference(value)
 
 
@@ -67,7 +67,7 @@ def test_organization_record_receipt_ref_new_name():
     value["master_records_organization_record_receipt_ref"] = "mr-record:erl-candidate-001"
     validate_reference(value)
     value["master_records_organization_record_receipt_ref"] = ""
-    with pytest.raises(ProvenanceReferenceError, match="master_records_organization_record_receipt_ref"):
+    with raises(ProvenanceReferenceError, match="master_records_organization_record_receipt_ref"):
         validate_reference(value)
 
 
@@ -77,12 +77,12 @@ def test_organization_record_receipt_ref_legacy_name():
     value["master_records_custody_receipt_ref"] = "mr-record:erl-candidate-001"
     validate_reference(value)
     value["master_records_custody_receipt_ref"] = ""
-    with pytest.raises(ProvenanceReferenceError, match="master_records_custody_receipt_ref"):
+    with raises(ProvenanceReferenceError, match="master_records_custody_receipt_ref"):
         validate_reference(value)
 
 
 def test_organization_record_receipt_ref_both_names_rejected():
     value = record()
     value["master_records_custody_receipt_ref"] = None
-    with pytest.raises(ProvenanceReferenceError, match="legacy name"):
+    with raises(ProvenanceReferenceError, match="legacy name"):
         validate_reference(value)

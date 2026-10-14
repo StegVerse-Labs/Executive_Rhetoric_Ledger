@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import pytest
+from stdlib_testing import raises
 
 from scripts.build_active_research_intr_binding import (
     INTR_PATH,
@@ -100,12 +100,12 @@ def test_binding_is_deterministic_and_idempotently_persisted(tmp_path: Path):
 
     changed = dict(second)
     changed["source_id"] = "different"
-    with pytest.raises(ValueError, match="different bytes"):
+    with raises(ValueError, match="different bytes"):
         persist_binding(output, changed)
 
 
 def test_empty_payload_reference_fails_closed():
-    with pytest.raises(ValueError, match="payload_ref"):
+    with raises(ValueError, match="payload_ref"):
         build_binding(
             dispatch=make_dispatch(),
             group_id="ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
