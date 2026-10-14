@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 9,
-  "pending_candidate_count": 254,
-  "pending_sha256": "8296051c42a339611ef49b38260ab57d6d10a2334a7d4d6986aa6be69d47e578",
+  "intake_cycles": 10,
+  "pending_candidate_count": 282,
+  "pending_sha256": "257d2d130ddf7377c1be6a9de225da832251de750ca781114eff57ae9ef0e3e6",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -14,10 +14,11 @@
     "a547dfe98a7dfadc515beba30cb88f181bea0617",
     "a547dfe98a7dfadc515beba30cb88f181bea0617",
     "38fa1b46555c60f6d1ae95e009b5323c09e64058",
-    "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e"
+    "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
+    "777821d007100f0cc463593f206222a75e8f8bca"
   ],
   "publication_authorized": false,
-  "scan_record_count": 16992,
+  "scan_record_count": 20545,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -36,15 +37,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 2,
-        "FAILED": 5,
-        "NO_UPDATE": 1173
+        "CANDIDATES_IDENTIFIED": 3,
+        "FAILED": 10,
+        "NO_UPDATE": 1412
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 25,
+      "pending_candidate_count": 27,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -270,18 +271,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
           "source_url": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action"
+        },
+        {
+          "candidate_id": "SRC-8d5be5f5b55a766947a307f7",
+          "custody_pointer": "RSRCH-0cd498e661b5829ea0717038",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin treading water near $83,000 ahead of U.S. inflation data",
+          "source_url": "https://www.coindesk.com/business/2026/10/14/live-updates-bitcoin-tumbles-from-near-usd84-000-ahead-of-u-s-inflation-data"
+        },
+        {
+          "candidate_id": "SRC-fa9e86c31874e241b3a71927",
+          "custody_pointer": "RSRCH-4025618647ab9728964cf3ce",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Proposed 31.4% French tax on regulated stablecoins could drive crypto traders offshore",
+          "source_url": "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 75,
-        "FAILED": 6,
-        "NO_UPDATE": 1335
+        "CANDIDATES_IDENTIFIED": 87,
+        "FAILED": 12,
+        "NO_UPDATE": 1611
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 42,
+      "pending_candidate_count": 44,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -660,18 +679,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin climbs toward $84,000 after Fed\u2019s Williams sees no rate hikes in 2027",
           "source_url": "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027"
+        },
+        {
+          "candidate_id": "SRC-f33c94fe0819653c1d6c50bc",
+          "custody_pointer": "RSRCH-c7c13e06cb0b53325835a0fe",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Proposed 31.4% French tax on regulated stablecoins could drive crypto traders offshore",
+          "source_url": "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore"
+        },
+        {
+          "candidate_id": "SRC-68ddf9e9d2514168c8872140",
+          "custody_pointer": "RSRCH-39517affbfaf8b748e10cc8d",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CryptoQuant\u2019s 3 charts keeping Bitcoin\u2019s \u2018Uptober\u2019 thesis valid",
+          "source_url": "https://cointelegraph.com/markets/cryptoquant-charts-bitcoin-uptober-thesis-valid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 56,
-        "FAILED": 5,
-        "NO_UPDATE": 1119
+        "CANDIDATES_IDENTIFIED": 71,
+        "FAILED": 10,
+        "NO_UPDATE": 1344
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 17,
+      "pending_candidate_count": 23,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -825,12 +862,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Group of Traders Made $100M on Melania Memecoin Before It Went Public - The Daily Beast",
           "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ01nVTlZOWtRNTA3cGFBTWxWSHVVbndxdjFDUENlLS1uMHFrbkt5OTV1SFVTX0I2MmwzS3haTHdJbDVNWFp0S1l5RGVjYnhQdUNwbEJnYlRQNm9TclF1R09KTG9YMlRnaGFFeExjMzk3cjh1b1FvSHlUMmE1dXRqWTZzanlfYWIzemNDcEpseFZVUm92b2dMdE1IZEppQWM?oc=5"
+        },
+        {
+          "candidate_id": "SRC-88baec577e9f95675d4d1f3e",
+          "custody_pointer": "RSRCH-24175cc57798849350dca8cf",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "cross-token price and volume series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Team Pulls Millions From TRUMP Memecoin Liquidity Pools During Price Rally - Yahoo Finance",
+          "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLUtHcjBfMG5kZjV5clZmSUZHa1FDM1lBTVUwQnFuQkJ0N3RoTWR1WmJ1OUhpNkludDhMOGFpdW5wOUhXVzRYTmJ6V1VCYmFfcTJnNm9vN3F1cXh3dzB0ODVBTUFYbGtSTTk4QXdDeDJ6aFhtRXQ4M0NqeWZXVkJLLXJkSE5xcWl5VkJuREUwTHIwVmoyTGNZV29hQmg?oc=5"
+        },
+        {
+          "candidate_id": "SRC-d64bd603f4584196ca29a247",
+          "custody_pointer": "RSRCH-a52bea11b3d37156214a0f97",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Solana Meme Coin Team Quietly Dumps $30 Million in Tokens: Bubblemaps - Decrypt",
+          "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RaV9FRU1CNW14WWNRcWl4NUZTVnhMNkxKWmNjUHl4V3g3TkNEWnNOcFc2Z2JfaVVkZzdEZWtJWG5nR3ZhSHZWb3JvUFQzMlc3SmhsTFh4WUExRjY2aUZJTWxPOU84ckhWSEk5MlpyRmotdHFyNkE?oc=5"
+        },
+        {
+          "candidate_id": "SRC-c0b961a242dc2ca26bf193ff",
+          "custody_pointer": "RSRCH-a52bea11b3d37156214a0f97",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "On-Chain Evidence Links LIBRA Token to MELANIA Meme Coin Issuers - Decrypt News",
+          "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOEV6YzFRRzFXUFBkVGVsQlJNSzVyVUpCZGh4clNIeFdCZENRc3d1ajAwc1hIZXk3MVJjcmtRVzFhYUtEUXowUEx4OEg4M3RIbnU0aEdYdWN4TFJHZngwU2VfYUNpVktEMkVnWVRTZTVvN1hrR3lZM2tPYkQ1a3BOUEc5aVNpQ3dFRzhTMGlpTkxzWWRG?oc=5"
+        },
+        {
+          "candidate_id": "SRC-a9eea354b30417bffda30448",
+          "custody_pointer": "RSRCH-a52bea11b3d37156214a0f97",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump\u2019s meme coin debut shakes crypto market, hits Trump token value - The Times of India",
+          "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQcXZNVGdPY0ZmVHl3VDZNZFRLWUtBbHV1NFNkOVZzZ19hd1R6ZkhseVRYVjNJRnltS2szaFBkdUdmRDNpaHJaOE9xdDJCMnVBWFRBTW41NE5iTUpOd0ZYWmJ0Y3pNa2MtSmptbGZRWE1jUnNLWGF4SWRFNkJpV2hWSFlKV2pmOEowVnJsUW0tSFd6Nm5maEtfNjlpWktya05PQkp2a1EyMkxkLXdXSVQ3bDZQRnRZVnN1V2Vxb2Jack1iUnJjcUVzVlMzR3hFY25NcTNjYXRRYTI1bk01VzJHWS1MbXVaOXBMb0VFSGpQOVJnVmNIZGtBamNxZFjSAYICQVVfeXFMT3Y1THhwdGhORjRnQ0x5c3FYQ1p0UGZJQ3Z5ZzRIcGZOTFRqYjhzN2tPSGEzVUFMd0RaZF95bU9zeGVsZjFhNV9LU0g2RlpEdHNnRUpOZGdKblJic2NTajhlUzc3bWlwbUI5ckVfdGZvQWJMc3JzUDE3LU5xTkROeUtLUTA0RG5IS0xhQUljZk13SkdxTy1zZkszSmF5ZUtlbUJQMXJ1TDNsbDc0bWpwdmpVVzRwZUtwQ09rLUxTRldjRWp5LWlxRFh4YmhJeGRiMDhsMXgxaDlXbFQ0amd1T29ZUWVBVWZUckRpLWNydnlydV9oaEt3UElXWUhFTkR1Y25n?oc=5"
+        },
+        {
+          "candidate_id": "SRC-5827b95fb95d99e243053a16",
+          "custody_pointer": "RSRCH-a52bea11b3d37156214a0f97",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump Relaunches Meme Coin Amid Allegations of Hidden Sales - Morocco World News",
+          "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOFBzWDlWNG4wd3Rlb1E1d21vdHN3RXhRa1JKUzA2SHpoMFRNTjFXMzY3Yk4wQk1vdFhscE9rQnVVMzNIQVRvRVZtTXB5dWRLU3RqN1pmV2R2R0oxMXJ0UjZKanpnUVBZWEtKbko4MERHTXN4WVhJcWE3WlgyU2Z2R3VScktvek1QRnhWeHBwWVRXNG1rZWtSRV92UVhHVzBBQlNnd3hBRkJ3c2lldG5odGVYMzFJQms?oc=5"
+        },
+        {
+          "candidate_id": "SRC-3a156eff0a7b21ba8cfd17a0",
+          "custody_pointer": "RSRCH-a52bea11b3d37156214a0f97",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump Gets Memecoin Fever; Token Soars 22000% in 9 Hours - The Crypto Times",
+          "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYTM0a3JwaGcySmdJNi1SdG9LT0RvZlZuUEl0LVd5N2c4bWJzZVF5ZHNHTEs3TUpVVWdPdEtTWjBmdHZDSkNOc1RtTTIzZzZ2UGNVUGNRUEsxQ2JXMzFIYVVCdlNPQ0h2RjhhOHh2ZFhWVzd0OGxVTERoNEtna1dpMEp5QTVtTjNkWExvV3I2Z3NBMjZnQ2tMUA?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 30,
-        "FAILED": 6,
-        "NO_UPDATE": 1380
+        "CANDIDATES_IDENTIFIED": 44,
+        "FAILED": 12,
+        "NO_UPDATE": 1654
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -930,9 +1021,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 17,
-        "FAILED": 6,
-        "NO_UPDATE": 1393
+        "CANDIDATES_IDENTIFIED": 22,
+        "FAILED": 12,
+        "NO_UPDATE": 1676
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -978,15 +1069,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 16,
-        "FAILED": 7,
-        "NO_UPDATE": 1629
+        "CANDIDATES_IDENTIFIED": 20,
+        "FAILED": 14,
+        "NO_UPDATE": 1961
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 28,
+      "pending_candidate_count": 29,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1239,18 +1330,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Tokenized SanDisk bets saw more liquidations than XRP as Asia\u2019s chip rout wipes out $800 million",
           "source_url": "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million"
+        },
+        {
+          "candidate_id": "SRC-1de5e7d0474c76c3510d6769",
+          "custody_pointer": "RSRCH-8f4eeba7793e345bf2c3f985",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple adds Stripe-owned wallets to XRP Ledger as AI payments pass 14 million",
+          "source_url": "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 36,
-        "FAILED": 6,
-        "NO_UPDATE": 1374
+        "CANDIDATES_IDENTIFIED": 41,
+        "FAILED": 12,
+        "NO_UPDATE": 1657
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 44,
+      "pending_candidate_count": 46,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -1647,18 +1747,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Is punishing the poor Trump\u2019s last hand to play?",
           "source_url": "https://www.theguardian.com/us-news/2026/oct/13/trump-aca-healthcare-politics-midterms"
+        },
+        {
+          "candidate_id": "SRC-b06c84d7afb6e1ae509cf313",
+          "custody_pointer": "RSRCH-3a340158d05381b3b4e6a1a6",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ukrainian soldiers in combat have access to Starlink satellite internet restricted",
+          "source_url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted"
+        },
+        {
+          "candidate_id": "SRC-1b52ceb887fab8494a89ce90",
+          "custody_pointer": "RSRCH-b5c4af0ba431e8c9c1eb726c",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ukrainian soldiers in combat have access to Starlink satellite internet restricted",
+          "source_url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 143,
-        "FAILED": 5,
-        "NO_UPDATE": 1032
+        "CANDIDATES_IDENTIFIED": 168,
+        "FAILED": 10,
+        "NO_UPDATE": 1247
       }
     },
     "melania-token-preannouncement-wallets": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 5,
+      "pending_candidate_count": 11,
       "pending_candidates": [
         {
           "candidate_id": "SRC-af8c33eeb2daad8af8521e24",
@@ -1704,18 +1822,72 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "58 crypto wallets have made millions on Trump's meme coin. 764,000 have lost money, data shows - CNBC",
           "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJOFlPRWQ5MXVFWDB1V2NETlJRb1g3cVJ6U3djV2c1MkxWaERyd1Uxb2dYV19QMTBDaVhDbWNFeThwWV8zRUhNMFNUc0poZTYydFJpQ2JDM09GTnJ5LTNNeTJxVXlBdUpBaFdB0gFwQVVfeXFMTUxXSkJyeUM1RmVWM19mcGJONUhKbXZ4MWkyNkNnUU9oTURTbTRLaVduN1ZqZzNiWnNkeUlIMVQ2SFJSWGszSnBoT2pYby1ZWl82WGRLX3VCNXlWTENIaWxfMjNFa3ZsUklxVnhXUlJ5ZQ?oc=5"
+        },
+        {
+          "candidate_id": "SRC-1e607ddd8ec51077f2b05246",
+          "custody_pointer": "RSRCH-8c89096a743ba6303d03fdcd",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "contract and pool timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Team Pulls Millions From TRUMP Memecoin Liquidity Pools During Price Rally - Yahoo Finance",
+          "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLUtHcjBfMG5kZjV5clZmSUZHa1FDM1lBTVUwQnFuQkJ0N3RoTWR1WmJ1OUhpNkludDhMOGFpdW5wOUhXVzRYTmJ6V1VCYmFfcTJnNm9vN3F1cXh3dzB0ODVBTUFYbGtSTTk4QXdDeDJ6aFhtRXQ4M0NqeWZXVkJLLXJkSE5xcWl5VkJuREUwTHIwVmoyTGNZV29hQmg?oc=5"
+        },
+        {
+          "candidate_id": "SRC-47c3ef34b5520aa7979a8a5a",
+          "custody_pointer": "RSRCH-45bbc74943682b758b758fdc",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "bubblemaps nansen arkham on-chain wallets wallet sniped sniping cluster funded",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Solana Meme Coin Team Quietly Dumps $30 Million in Tokens: Bubblemaps - Decrypt",
+          "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RaV9FRU1CNW14WWNRcWl4NUZTVnhMNkxKWmNjUHl4V3g3TkNEWnNOcFc2Z2JfaVVkZzdEZWtJWG5nR3ZhSHZWb3JvUFQzMlc3SmhsTFh4WUExRjY2aUZJTWxPOU84ckhWSEk5MlpyRmotdHFyNkE?oc=5"
+        },
+        {
+          "candidate_id": "SRC-43386a6d059322287ba6fd2c",
+          "custody_pointer": "RSRCH-45bbc74943682b758b758fdc",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "bubblemaps nansen arkham on-chain wallets wallet sniped sniping cluster funded",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "On-Chain Evidence Links LIBRA Token to MELANIA Meme Coin Issuers - Decrypt News",
+          "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOEV6YzFRRzFXUFBkVGVsQlJNSzVyVUpCZGh4clNIeFdCZENRc3d1ajAwc1hIZXk3MVJjcmtRVzFhYUtEUXowUEx4OEg4M3RIbnU0aEdYdWN4TFJHZngwU2VfYUNpVktEMkVnWVRTZTVvN1hrR3lZM2tPYkQ1a3BOUEc5aVNpQ3dFRzhTMGlpTkxzWWRG?oc=5"
+        },
+        {
+          "candidate_id": "SRC-ad97713d1ddf78e69bfc0fb4",
+          "custody_pointer": "RSRCH-45bbc74943682b758b758fdc",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "bubblemaps nansen arkham on-chain wallets wallet sniped sniping cluster funded",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The winning bid in Melania Trump's NFT auction appears to have come from a wallet associated with Melania Trump - markets.businessinsider.com",
+          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNU5NU2dZbWtGMUhiS24yMUxvXzhLYXVXZDNNY2NMcVdRZmM5ZVlFWTdUeG42RFdFemRtSjJ6SjhSWE1NT2FrS1ZpMWNFdHVCdjUwYVJmNklSbTdyeEZqNUxORE9vcWdjemVIeE5oNGRJUktoaUJaRnpCVlFBcFo0ZW5hZWlCVXQ1STd6MTF6YmZRUXE4Z25RNHFOa2wxa2JMTVRKd1Rja2hERG1LQzBuakhDSG54d0RYcDFUb2xteDZ2TFhTd2x3?oc=5"
+        },
+        {
+          "candidate_id": "SRC-4aee609abc385d3d9370fad0",
+          "custody_pointer": "RSRCH-45bbc74943682b758b758fdc",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "bubblemaps nansen arkham on-chain wallets wallet sniped sniping cluster funded",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Insider Hayden Davis Admits: Sniped Token at Launch, Participated in MELANIA Issuance - Binance",
+          "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1EUFg5OVJ5aUxydG5BQUxIand3Q0JFQnFGUmpIV0N2UXBzRmNsRXJwc0NaM1NFUnRwb2ZPUXFfaENyQXRld0lncEQ3aEo0RF9SY1liNjVfOFUwOV8xZ3JLRWJZRQ?oc=5"
+        },
+        {
+          "candidate_id": "SRC-9d5a6d1f79835be18a6d0b10",
+          "custody_pointer": "RSRCH-49927d631338061f284a3c3f",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "wallet funding provenance",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The winning bid in Melania Trump's NFT auction appears to have come from a wallet associated with Melania Trump - markets.businessinsider.com",
+          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNU5NU2dZbWtGMUhiS24yMUxvXzhLYXVXZDNNY2NMcVdRZmM5ZVlFWTdUeG42RFdFemRtSjJ6SjhSWE1NT2FrS1ZpMWNFdHVCdjUwYVJmNklSbTdyeEZqNUxORE9vcWdjemVIeE5oNGRJUktoaUJaRnpCVlFBcFo0ZW5hZWlCVXQ1STd6MTF6YmZRUXE4Z25RNHFOa2wxa2JMTVRKd1Rja2hERG1LQzBuakhDSG54d0RYcDFUb2xteDZ2TFhTd2x3?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 14,
-        "FAILED": 6,
-        "NO_UPDATE": 1396
+        "CANDIDATES_IDENTIFIED": 21,
+        "FAILED": 12,
+        "NO_UPDATE": 1702
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 52,
+      "pending_candidate_count": 55,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2184,18 +2356,45 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trezor Cuts Its Resellers After Ledger Finds Spy Implant in Crypto Wallets",
           "source_url": "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets"
+        },
+        {
+          "candidate_id": "SRC-d0a673bd6b219c9c568cf182",
+          "custody_pointer": "RSRCH-d8261491505368c8434b2abd",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US President\u2019s Memecoin \u2018$TRUMP and $MELANIA Stir Crypto Bulls Sentiments\u2019 - Tekedia",
+          "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQT1dXblRQQ2MtcjZuc3lsc2tPSUE1TjlNX295cDhuTDVSSmx5cDF2UmFLeGRrOG9YRlZNV1NZd0hMLVNHVzd5Y0p0TEUzcjVvRGZ4d0NKaUhndmZDSFVMSWJ1cUNSdXZBNVp2UWFFMVlmNXhDeHp0R1VNSFJyX2ZweEVmcnlOQVM4cGVSYW5tYUZwOE1nMTRsREJ3?oc=5"
+        },
+        {
+          "candidate_id": "SRC-32aa682f3c8c655d9549a42a",
+          "custody_pointer": "RSRCH-f4fd994d3a87b89994851559",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-e4def4817197738cb8d79185",
+          "custody_pointer": "RSRCH-aea2a003ce2a1a7f740ccd37",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto traders who bought Melania Trump coin minutes before launch bagged $100M: report - New York Post",
+          "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcURuSXdQZ2tsR0h2N293Z25GU2w5MnBQM1I5c2cyYUtEeDAyQWZBOEVBYU5jQm9VMm5Bc3h4SW9JX0tuVnhrZVdjc2FHWlhxQ0hqMmRBSHBQZFBpYzl1T0M5SGIwSl9FdVk1NmRNUmpqZ1ItV3dBaXAzbmp0MUw0aURMYW9ueDZGSHZiWmxodHNyUGpGcjRhV1RtUWotX21zM3JzVHAzaTN4Q214NGQ4Z0E2djkyLWN1?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 121,
-        "FAILED": 6,
-        "NO_UPDATE": 1289
+        "CANDIDATES_IDENTIFIED": 153,
+        "FAILED": 12,
+        "NO_UPDATE": 1545
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 8,
+      "pending_candidate_count": 14,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -2268,12 +2467,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Group of Traders Made $100M on Melania Memecoin Before It Went Public - The Daily Beast",
           "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ01nVTlZOWtRNTA3cGFBTWxWSHVVbndxdjFDUENlLS1uMHFrbkt5OTV1SFVTX0I2MmwzS3haTHdJbDVNWFp0S1l5RGVjYnhQdUNwbEJnYlRQNm9TclF1R09KTG9YMlRnaGFFeExjMzk3cjh1b1FvSHlUMmE1dXRqWTZzanlfYWIzemNDcEpseFZVUm92b2dMdE1IZEppQWM?oc=5"
+        },
+        {
+          "candidate_id": "SRC-ce0b07c4331697943cfc3f06",
+          "custody_pointer": "RSRCH-bd65e95235599218185fa206",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "fee and liquidity flows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump Team Pulls Millions From TRUMP Memecoin Liquidity Pools During Price Rally - Yahoo Finance",
+          "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLUtHcjBfMG5kZjV5clZmSUZHa1FDM1lBTVUwQnFuQkJ0N3RoTWR1WmJ1OUhpNkludDhMOGFpdW5wOUhXVzRYTmJ6V1VCYmFfcTJnNm9vN3F1cXh3dzB0ODVBTUFYbGtSTTk4QXdDeDJ6aFhtRXQ4M0NqeWZXVkJLLXJkSE5xcWl5VkJuREUwTHIwVmoyTGNZV29hQmg?oc=5"
+        },
+        {
+          "candidate_id": "SRC-eb5f08120535a3d49857f4c3",
+          "custody_pointer": "RSRCH-24de00a9b08fa4f2f5cd0494",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Solana Meme Coin Team Quietly Dumps $30 Million in Tokens: Bubblemaps - Decrypt",
+          "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RaV9FRU1CNW14WWNRcWl4NUZTVnhMNkxKWmNjUHl4V3g3TkNEWnNOcFc2Z2JfaVVkZzdEZWtJWG5nR3ZhSHZWb3JvUFQzMlc3SmhsTFh4WUExRjY2aUZJTWxPOU84ckhWSEk5MlpyRmotdHFyNkE?oc=5"
+        },
+        {
+          "candidate_id": "SRC-b66b01fcdde2d212e329a63d",
+          "custody_pointer": "RSRCH-24de00a9b08fa4f2f5cd0494",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "On-Chain Evidence Links LIBRA Token to MELANIA Meme Coin Issuers - Decrypt News",
+          "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOEV6YzFRRzFXUFBkVGVsQlJNSzVyVUpCZGh4clNIeFdCZENRc3d1ajAwc1hIZXk3MVJjcmtRVzFhYUtEUXowUEx4OEg4M3RIbnU0aEdYdWN4TFJHZngwU2VfYUNpVktEMkVnWVRTZTVvN1hrR3lZM2tPYkQ1a3BOUEc5aVNpQ3dFRzhTMGlpTkxzWWRG?oc=5"
+        },
+        {
+          "candidate_id": "SRC-56a56657f5d02208a13e14c6",
+          "custody_pointer": "RSRCH-24de00a9b08fa4f2f5cd0494",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump Launches MELANIA Cryptocurrency, Triggering 38% Drop in TRUMP Token Value - CoinMarketCap",
+          "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU3ZDUEJqX19mMHdpNGxVM0Frb1Q3NFd3aHdqOFRnTXFUSEh3VDZuRmtVSVM5M3Nsbmlrc2RSNm01SjJlaUN6OFNUM2ZiMS1RM3d4Y1JTa0dTc3pMb201MHdCc0FrTnJYQlpnTjBSVHc5aEVGNExmRk9MTzZtOXdHMTlBU3ZGbXdtdWl5YWdrX1JFT0tiM01pdmYzejNoSVpjaFgyX21pV192Ti1Pck13T1NyQzlmU1hwekpjY1pEVV9nUlQwSEtaRkdxTTVYbXM?oc=5"
+        },
+        {
+          "candidate_id": "SRC-46d07428576f3944e2a95dec",
+          "custody_pointer": "RSRCH-24de00a9b08fa4f2f5cd0494",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump\u2019s meme coin debut shakes crypto market, hits Trump token value - The Times of India",
+          "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQcXZNVGdPY0ZmVHl3VDZNZFRLWUtBbHV1NFNkOVZzZ19hd1R6ZkhseVRYVjNJRnltS2szaFBkdUdmRDNpaHJaOE9xdDJCMnVBWFRBTW41NE5iTUpOd0ZYWmJ0Y3pNa2MtSmptbGZRWE1jUnNLWGF4SWRFNkJpV2hWSFlKV2pmOEowVnJsUW0tSFd6Nm5maEtfNjlpWktya05PQkp2a1EyMkxkLXdXSVQ3bDZQRnRZVnN1V2Vxb2Jack1iUnJjcUVzVlMzR3hFY25NcTNjYXRRYTI1bk01VzJHWS1MbXVaOXBMb0VFSGpQOVJnVmNIZGtBamNxZFjSAYICQVVfeXFMT3Y1THhwdGhORjRnQ0x5c3FYQ1p0UGZJQ3Z5ZzRIcGZOTFRqYjhzN2tPSGEzVUFMd0RaZF95bU9zeGVsZjFhNV9LU0g2RlpEdHNnRUpOZGdKblJic2NTajhlUzc3bWlwbUI5ckVfdGZvQWJMc3JzUDE3LU5xTkROeUtLUTA0RG5IS0xhQUljZk13SkdxTy1zZkszSmF5ZUtlbUJQMXJ1TDNsbDc0bWpwdmpVVzRwZUtwQ09rLUxTRldjRWp5LWlxRFh4YmhJeGRiMDhsMXgxaDlXbFQ0amd1T29ZUWVBVWZUckRpLWNydnlydV9oaEt3UElXWUhFTkR1Y25n?oc=5"
+        },
+        {
+          "candidate_id": "SRC-06a8b94bbd5f2ae895b7615b",
+          "custody_pointer": "RSRCH-24de00a9b08fa4f2f5cd0494",
+          "producer_commit": "777821d007100f0cc463593f206222a75e8f8bca",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump Gets Memecoin Fever; Token Soars 22000% in 9 Hours - The Crypto Times",
+          "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYTM0a3JwaGcySmdJNi1SdG9LT0RvZlZuUEl0LVd5N2c4bWJzZVF5ZHNHTEs3TUpVVWdPdEtTWjBmdHZDSkNOc1RtTTIzZzZ2UGNVUGNRUEsxQ2JXMzFIYVVCdlNPQ0h2RjhhOHh2ZFhWVzd0OGxVTERoNEtna1dpMEp5QTVtTjNkWExvV3I2Z3NBMjZnQ2tMUA?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 19,
-        "FAILED": 6,
-        "NO_UPDATE": 1391
+        "CANDIDATES_IDENTIFIED": 26,
+        "FAILED": 12,
+        "NO_UPDATE": 1672
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2445,9 +2698,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 36,
-        "FAILED": 8,
-        "NO_UPDATE": 1844
+        "CANDIDATES_IDENTIFIED": 42,
+        "FAILED": 16,
+        "NO_UPDATE": 2222
       }
     }
   }
