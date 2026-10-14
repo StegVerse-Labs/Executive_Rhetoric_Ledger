@@ -2,7 +2,9 @@ import importlib.util
 import json
 from pathlib import Path
 
-from jsonschema import Draft202012Validator, FormatChecker
+import pathlib as _pathlib, sys as _sys
+_sys.path.insert(0, str(_pathlib.Path(__file__).resolve().parents[1] / "scripts"))
+from jsonschema_stdlib import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = ROOT / "scripts" / "validate_market_source_timeseries.py"

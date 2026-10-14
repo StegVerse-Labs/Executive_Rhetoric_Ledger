@@ -3,7 +3,7 @@ import importlib.util
 import json
 import tempfile
 from pathlib import Path
-from jsonschema import Draft202012Validator, FormatChecker
+from jsonschema_stdlib import Draft202012Validator, FormatChecker
 from build_reclamation_target_set import build as build_target_set
 from reconcile_skap_evidence import reconcile as reconcile_skap_evidence
 

@@ -15,10 +15,10 @@ import sys
 from pathlib import Path
 
 try:
-    import jsonschema
+    import jsonschema_stdlib as jsonschema
 except ImportError as exc:  # pragma: no cover
     raise SystemExit(
-        "Missing dependency: jsonschema. Install with `python -m pip install jsonschema`."
+        "Missing scripts/jsonschema_stdlib.py (standard-library schema validator)."
     ) from exc
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 try:
-    import jsonschema
+    import jsonschema_stdlib as jsonschema
 except ImportError as exc:
     raise SystemExit("jsonschema is required") from exc
 

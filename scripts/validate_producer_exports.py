@@ -20,11 +20,11 @@ from pathlib import Path
 from typing import Iterable
 
 try:
-    import jsonschema
-    from referencing import Registry, Resource
+    import jsonschema_stdlib as jsonschema
+    from jsonschema_stdlib import Registry, Resource
 except ImportError as exc:  # pragma: no cover
     raise SystemExit(
-        "Missing dependency: jsonschema. Install with `python -m pip install jsonschema`."
+        "Missing scripts/jsonschema_stdlib.py (standard-library schema validator)."
     ) from exc
 
 ROOT = Path(__file__).resolve().parents[1]

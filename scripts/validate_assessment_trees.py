@@ -14,7 +14,7 @@ import json
 import sys
 from pathlib import Path
 
-from jsonschema import Draft202012Validator
+from jsonschema_stdlib import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSESSMENT_DIR = ROOT / "assessments" / "machine"

@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from jsonschema import Draft202012Validator, FormatChecker
+from jsonschema_stdlib import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "schemas" / "reclamation-kv-provider-operation-receipt.schema.json"

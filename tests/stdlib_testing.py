@@ -39,7 +39,9 @@ def _load(path: Path):
 
 
 def run(paths: list[str]) -> int:
-    sys.path[:0] = [str(Path.cwd()), str(Path(__file__).resolve().parent)]
+    here = Path(__file__).resolve().parent
+    # cwd (as `python -m pytest` did), tests/, and scripts/ for modules loaded by file path
+    sys.path[:0] = [str(Path.cwd()), str(here), str(here.parent / "scripts")]
     passed, failed = 0, []
     for raw in paths:
         module = _load(Path(raw).resolve())

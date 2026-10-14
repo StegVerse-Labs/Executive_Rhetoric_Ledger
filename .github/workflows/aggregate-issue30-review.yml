@@ -19,8 +19,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install validator
-        run: python -m pip install --upgrade jsonschema referencing
       - name: Fetch all Issue 30 comments
         env:
           GH_TOKEN: ${{ github.token }}
