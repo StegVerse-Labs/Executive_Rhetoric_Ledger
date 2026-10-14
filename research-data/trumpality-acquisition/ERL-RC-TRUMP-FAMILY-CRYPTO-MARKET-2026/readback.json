@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 11,
-  "pending_candidate_count": 282,
-  "pending_sha256": "257d2d130ddf7377c1be6a9de225da832251de750ca781114eff57ae9ef0e3e6",
+  "intake_cycles": 12,
+  "pending_candidate_count": 291,
+  "pending_sha256": "6fb928201835c033fec40d3c7a4350e48b43eaef2cff94f8af028521bc2ba62c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -16,10 +16,11 @@
     "38fa1b46555c60f6d1ae95e009b5323c09e64058",
     "96bc14e04a2c3c00fd5c6d00d4137807c2a5377e",
     "777821d007100f0cc463593f206222a75e8f8bca",
-    "777821d007100f0cc463593f206222a75e8f8bca"
+    "777821d007100f0cc463593f206222a75e8f8bca",
+    "750837c920ba11de4f6dbb06bcbe615b121345f1"
   ],
   "publication_authorized": false,
-  "scan_record_count": 20545,
+  "scan_record_count": 22370,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -39,8 +40,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 10,
-        "NO_UPDATE": 1412
+        "FAILED": 15,
+        "NO_UPDATE": 1532
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -293,9 +294,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 87,
-        "FAILED": 12,
-        "NO_UPDATE": 1611
+        "CANDIDATES_IDENTIFIED": 91,
+        "FAILED": 18,
+        "NO_UPDATE": 1751
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -701,15 +702,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 71,
-        "FAILED": 10,
-        "NO_UPDATE": 1344
+        "CANDIDATES_IDENTIFIED": 77,
+        "FAILED": 15,
+        "NO_UPDATE": 1458
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 23,
+      "pending_candidate_count": 24,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -917,12 +918,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Trump Gets Memecoin Fever; Token Soars 22000% in 9 Hours - The Crypto Times",
           "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYTM0a3JwaGcySmdJNi1SdG9LT0RvZlZuUEl0LVd5N2c4bWJzZVF5ZHNHTEs3TUpVVWdPdEtTWjBmdHZDSkNOc1RtTTIzZzZ2UGNVUGNRUEsxQ2JXMzFIYVVCdlNPQ0h2RjhhOHh2ZFhWVzd0OGxVTERoNEtna1dpMEp5QTVtTjNkWExvV3I2Z3NBMjZnQ2tMUA?oc=5"
+        },
+        {
+          "candidate_id": "SRC-d8abaa84c4c3ef791aea981a",
+          "custody_pointer": "RSRCH-690a364e07c98cf98cc287ab",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "EasyA hits $1.1 billion valuation, targets 2027 public listing and tokenized shares",
+          "source_url": "https://www.coindesk.com/business/2026/10/14/easya-hits-usd1-1-billion-valuation-targets-2027-public-listing-and-tokenized-shares"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 44,
-        "FAILED": 12,
-        "NO_UPDATE": 1654
+        "CANDIDATES_IDENTIFIED": 51,
+        "FAILED": 18,
+        "NO_UPDATE": 1791
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1022,15 +1032,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 22,
-        "FAILED": 12,
-        "NO_UPDATE": 1676
+        "CANDIDATES_IDENTIFIED": 23,
+        "FAILED": 18,
+        "NO_UPDATE": 1819
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 4,
+      "pending_candidate_count": 6,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -1067,12 +1077,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Standard Chartered Will Hold Ripple's Stablecoin in Dubai\u2014And Let Clients Trade With It Without Moving It",
           "source_url": "https://decrypt.co/380776/standard-chartered-hold-ripple-rlusd-stablecoin-dubai"
+        },
+        {
+          "candidate_id": "SRC-3ee05082af15365a78166892",
+          "custody_pointer": "RSRCH-af6756e04863ebd2da9b9e9b",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "oil/shipping event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "\u2018From liabilities to goldmines\u2019: refineries eye record profits from diesel shortage",
+          "source_url": "https://www.theguardian.com/business/2026/oct/14/refineries-record-profits-diesel-shortage-fuel-crude-oil"
+        },
+        {
+          "candidate_id": "SRC-10f83ab745e0289be10cc814",
+          "custody_pointer": "RSRCH-335a11ea2a00ab5b9ad6905b",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "USD1 volume and supply",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered pushes $2T stablecoin forecast to 2030 as transaction volumes grow",
+          "source_url": "https://cointelegraph.com/news/standard-chartered-stablecoin-forecast-2030-market-growth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 20,
-        "FAILED": 14,
-        "NO_UPDATE": 1961
+        "CANDIDATES_IDENTIFIED": 23,
+        "FAILED": 21,
+        "NO_UPDATE": 2126
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1343,15 +1371,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 41,
-        "FAILED": 12,
-        "NO_UPDATE": 1657
+        "CANDIDATES_IDENTIFIED": 43,
+        "FAILED": 18,
+        "NO_UPDATE": 1799
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 46,
+      "pending_candidate_count": 50,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -1766,12 +1794,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ukrainian soldiers in combat have access to Starlink satellite internet restricted",
           "source_url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted"
+        },
+        {
+          "candidate_id": "SRC-30f26765000be6d9f6ec54e3",
+          "custody_pointer": "RSRCH-bc2e14e37f6b923572770199",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "\u2018From liabilities to goldmines\u2019: refineries eye record profits from diesel shortage",
+          "source_url": "https://www.theguardian.com/business/2026/oct/14/refineries-record-profits-diesel-shortage-fuel-crude-oil"
+        },
+        {
+          "candidate_id": "SRC-7155fb5f17596b9c2cd6bd9a",
+          "custody_pointer": "RSRCH-d1fabbccf6cf903b63ba5ab5",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price dips below $82K as high oil prices spike US CPI inflation",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-1d604955edb2243c4739a58a",
+          "custody_pointer": "RSRCH-2b4d455889a6229ba0b3d700",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "\u2018From liabilities to goldmines\u2019: refineries eye record profits from diesel shortage",
+          "source_url": "https://www.theguardian.com/business/2026/oct/14/refineries-record-profits-diesel-shortage-fuel-crude-oil"
+        },
+        {
+          "candidate_id": "SRC-048f617e462af424f280d509",
+          "custody_pointer": "RSRCH-3d847cb63041a557a577effe",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price dips below $82K as high oil prices spike US CPI inflation",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 168,
-        "FAILED": 10,
-        "NO_UPDATE": 1247
+        "CANDIDATES_IDENTIFIED": 182,
+        "FAILED": 15,
+        "NO_UPDATE": 1353
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -1880,15 +1944,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 21,
-        "FAILED": 12,
-        "NO_UPDATE": 1702
+        "CANDIDATES_IDENTIFIED": 24,
+        "FAILED": 19,
+        "NO_UPDATE": 1867
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 55,
+      "pending_candidate_count": 57,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2384,12 +2448,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto traders who bought Melania Trump coin minutes before launch bagged $100M: report - New York Post",
           "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcURuSXdQZ2tsR0h2N293Z25GU2w5MnBQM1I5c2cyYUtEeDAyQWZBOEVBYU5jQm9VMm5Bc3h4SW9JX0tuVnhrZVdjc2FHWlhxQ0hqMmRBSHBQZFBpYzl1T0M5SGIwSl9FdVk1NmRNUmpqZ1ItV3dBaXAzbmp0MUw0aURMYW9ueDZGSHZiWmxodHNyUGpGcjRhV1RtUWotX21zM3JzVHAzaTN4Q214NGQ4Z0E2djkyLWN1?oc=5"
+        },
+        {
+          "candidate_id": "SRC-c9a31d083b31bf0612e12885",
+          "custody_pointer": "RSRCH-66eda1fb67b30330acace242",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "\u2018Bunker mode\u2019 won\u2019t protect your crypto, critics say",
+          "source_url": "https://cointelegraph.com/magazine/bunker-mode-wont-protect-your-crypto-critics-say?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-1ab2ff789dfe53037be14c2b",
+          "custody_pointer": "RSRCH-1b890e4e9e284417bc5262fa",
+          "producer_commit": "750837c920ba11de4f6dbb06bcbe615b121345f1",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Notorious Crypto Celeb Meme Coin Promoter Plots Second Wave on New Launchpad",
+          "source_url": "https://decrypt.co/380928/notorious-crypto-celeb-meme-coin-promoter-plots-second-wave-on-new-launchpad"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 153,
-        "FAILED": 12,
-        "NO_UPDATE": 1545
+        "CANDIDATES_IDENTIFIED": 167,
+        "FAILED": 18,
+        "NO_UPDATE": 1675
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2525,9 +2607,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 26,
-        "FAILED": 12,
-        "NO_UPDATE": 1672
+        "CANDIDATES_IDENTIFIED": 30,
+        "FAILED": 18,
+        "NO_UPDATE": 1812
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2699,9 +2781,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 42,
-        "FAILED": 16,
-        "NO_UPDATE": 2222
+        "CANDIDATES_IDENTIFIED": 43,
+        "FAILED": 24,
+        "NO_UPDATE": 2413
       }
     }
   }
