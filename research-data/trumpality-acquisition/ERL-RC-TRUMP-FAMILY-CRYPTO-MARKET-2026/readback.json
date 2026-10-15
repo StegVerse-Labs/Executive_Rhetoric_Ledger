@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 13,
-  "pending_candidate_count": 297,
-  "pending_sha256": "627409b3e4f740de7a657ab37e48ce4a6bbb270974c5697cf88fe6ee666c58d8",
+  "intake_cycles": 14,
+  "pending_candidate_count": 298,
+  "pending_sha256": "8f3595807601dac7d72a9148e8bb8b7a6d60068d577985cebc525498b9bef5af",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -18,10 +18,11 @@
     "777821d007100f0cc463593f206222a75e8f8bca",
     "777821d007100f0cc463593f206222a75e8f8bca",
     "750837c920ba11de4f6dbb06bcbe615b121345f1",
-    "9c9584b862ab6967d0d2817ba1d9f4b923c64dee"
+    "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
+    "e52be801ab0e6b67ea5f8faed63d9da92727ccde"
   ],
   "publication_authorized": false,
-  "scan_record_count": 24195,
+  "scan_record_count": 26020,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -41,8 +42,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 20,
-        "NO_UPDATE": 1652
+        "FAILED": 25,
+        "NO_UPDATE": 1772
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -295,15 +296,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 95,
-        "FAILED": 24,
-        "NO_UPDATE": 1891
+        "CANDIDATES_IDENTIFIED": 99,
+        "FAILED": 30,
+        "NO_UPDATE": 2031
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 45,
+      "pending_candidate_count": 46,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -709,12 +710,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Standard Chartered Opens Bitcoin and Ethereum Trading to Wealthy UAE Clients",
           "source_url": "https://decrypt.co/380967/standard-chartered-bitcoin-ethereum-trading"
+        },
+        {
+          "candidate_id": "SRC-8e155a1c9613c37893198770",
+          "custody_pointer": "RSRCH-012e8357456c6877a7896223",
+          "producer_commit": "e52be801ab0e6b67ea5f8faed63d9da92727ccde",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
+          "source_url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 83,
-        "FAILED": 20,
-        "NO_UPDATE": 1572
+        "CANDIDATES_IDENTIFIED": 89,
+        "FAILED": 25,
+        "NO_UPDATE": 1686
       }
     },
     "family-token-rotation-fee-capture": {
@@ -940,9 +950,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 24,
-        "NO_UPDATE": 1928
+        "CANDIDATES_IDENTIFIED": 65,
+        "FAILED": 30,
+        "NO_UPDATE": 2065
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1042,9 +1052,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 24,
-        "FAILED": 24,
-        "NO_UPDATE": 1962
+        "CANDIDATES_IDENTIFIED": 25,
+        "FAILED": 30,
+        "NO_UPDATE": 2105
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1108,9 +1118,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 26,
-        "FAILED": 28,
-        "NO_UPDATE": 2291
+        "CANDIDATES_IDENTIFIED": 29,
+        "FAILED": 35,
+        "NO_UPDATE": 2456
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1381,9 +1391,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 45,
-        "FAILED": 24,
-        "NO_UPDATE": 1941
+        "CANDIDATES_IDENTIFIED": 47,
+        "FAILED": 30,
+        "NO_UPDATE": 2083
       }
     },
     "market-rhetoric-oil-impact": {
@@ -1861,9 +1871,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 196,
-        "FAILED": 20,
-        "NO_UPDATE": 1459
+        "CANDIDATES_IDENTIFIED": 210,
+        "FAILED": 25,
+        "NO_UPDATE": 1565
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -1972,9 +1982,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 27,
-        "FAILED": 26,
-        "NO_UPDATE": 2032
+        "CANDIDATES_IDENTIFIED": 30,
+        "FAILED": 33,
+        "NO_UPDATE": 2197
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -2524,9 +2534,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 182,
-        "FAILED": 24,
-        "NO_UPDATE": 1804
+        "CANDIDATES_IDENTIFIED": 195,
+        "FAILED": 30,
+        "NO_UPDATE": 1935
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2662,9 +2672,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 34,
-        "FAILED": 24,
-        "NO_UPDATE": 1952
+        "CANDIDATES_IDENTIFIED": 38,
+        "FAILED": 30,
+        "NO_UPDATE": 2092
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2836,9 +2846,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 44,
-        "FAILED": 32,
-        "NO_UPDATE": 2604
+        "CANDIDATES_IDENTIFIED": 45,
+        "FAILED": 40,
+        "NO_UPDATE": 2795
       }
     }
   }
