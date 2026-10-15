@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 14,
-  "pending_candidate_count": 298,
-  "pending_sha256": "8f3595807601dac7d72a9148e8bb8b7a6d60068d577985cebc525498b9bef5af",
+  "intake_cycles": 15,
+  "pending_candidate_count": 311,
+  "pending_sha256": "81f20b60243efc7790df8d1b6925307b06c20a431c5f4fd996eab0bec26bc3b4",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -19,10 +19,11 @@
     "777821d007100f0cc463593f206222a75e8f8bca",
     "750837c920ba11de4f6dbb06bcbe615b121345f1",
     "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
-    "e52be801ab0e6b67ea5f8faed63d9da92727ccde"
+    "e52be801ab0e6b67ea5f8faed63d9da92727ccde",
+    "06d15e212e312b8b035910d2055e80693d0f10bf"
   ],
   "publication_authorized": false,
-  "scan_record_count": 26020,
+  "scan_record_count": 27845,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -42,14 +43,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 25,
-        "NO_UPDATE": 1772
+        "FAILED": 30,
+        "NO_UPDATE": 1892
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 27,
+      "pending_candidate_count": 31,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -293,18 +294,54 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Proposed 31.4% French tax on regulated stablecoins could drive crypto traders offshore",
           "source_url": "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore"
+        },
+        {
+          "candidate_id": "SRC-80711cd07328e3c778583a5e",
+          "custody_pointer": "RSRCH-0a18c94028e45e882e4f1a22",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Australia\u2019s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
+          "source_url": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline"
+        },
+        {
+          "candidate_id": "SRC-657834825a4dd95ae415174a",
+          "custody_pointer": "RSRCH-ddd3857318847693c8042027",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea plans cybersecurity overhaul after attacks hit banks, crypto firms",
+          "source_url": "https://cointelegraph.com/news/south-korea-cybersecurity-overhaul-crypto-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-223aee94003a50f76fff4462",
+          "custody_pointer": "RSRCH-bd46eb74727d9a68e245b267",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Hyperliquid founder wants U.S. oversight of trading platforms, not his blockchain",
+          "source_url": "https://www.coindesk.com/policy/2026/10/15/hyperliquid-founder-wants-u-s-oversight-of-trading-platforms-not-his-blockchain"
+        },
+        {
+          "candidate_id": "SRC-f5169406673a15c8726f06eb",
+          "custody_pointer": "RSRCH-bd46eb74727d9a68e245b267",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Australia\u2019s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
+          "source_url": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 99,
-        "FAILED": 30,
-        "NO_UPDATE": 2031
+        "CANDIDATES_IDENTIFIED": 105,
+        "FAILED": 36,
+        "NO_UPDATE": 2169
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 46,
+      "pending_candidate_count": 48,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -719,12 +756,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
           "source_url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs"
+        },
+        {
+          "candidate_id": "SRC-faffb048e57ac62a721dfe95",
+          "custody_pointer": "RSRCH-0c6767f47825add3a8182410",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Australia\u2019s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
+          "source_url": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline"
+        },
+        {
+          "candidate_id": "SRC-ffc485b615d19708f0141e41",
+          "custody_pointer": "RSRCH-c0a45cca86f0015c2fe835e4",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin ETFs shed $261M as XRP funds buck weekly outflow trend",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 89,
-        "FAILED": 25,
-        "NO_UPDATE": 1686
+        "CANDIDATES_IDENTIFIED": 95,
+        "FAILED": 30,
+        "NO_UPDATE": 1800
       }
     },
     "family-token-rotation-fee-capture": {
@@ -950,9 +1005,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 65,
-        "FAILED": 30,
-        "NO_UPDATE": 2065
+        "CANDIDATES_IDENTIFIED": 72,
+        "FAILED": 36,
+        "NO_UPDATE": 2202
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1052,9 +1107,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 25,
-        "FAILED": 30,
-        "NO_UPDATE": 2105
+        "CANDIDATES_IDENTIFIED": 26,
+        "FAILED": 36,
+        "NO_UPDATE": 2248
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1118,15 +1173,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 29,
-        "FAILED": 35,
-        "NO_UPDATE": 2456
+        "CANDIDATES_IDENTIFIED": 32,
+        "FAILED": 42,
+        "NO_UPDATE": 2621
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 29,
+      "pending_candidate_count": 31,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1388,18 +1443,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple adds Stripe-owned wallets to XRP Ledger as AI payments pass 14 million",
           "source_url": "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million"
+        },
+        {
+          "candidate_id": "SRC-cea398919f1605457f3d5428",
+          "custody_pointer": "RSRCH-cc22e106123163b91c36b330",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
+          "source_url": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide"
+        },
+        {
+          "candidate_id": "SRC-dcac3c07813c7b5c6870ae73",
+          "custody_pointer": "RSRCH-2ad5a3be96d4996b9e034df6",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin ETFs shed $261M as XRP funds buck weekly outflow trend",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 47,
-        "FAILED": 30,
-        "NO_UPDATE": 2083
+        "CANDIDATES_IDENTIFIED": 50,
+        "FAILED": 36,
+        "NO_UPDATE": 2224
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 52,
+      "pending_candidate_count": 56,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -1868,12 +1941,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "OCC report finds debanking efforts tied to crypto activities",
           "source_url": "https://cointelegraph.com/news/occ-trump-debanking-crypto-activities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-bb1ef79532f4f324b93c7d10",
+          "custody_pointer": "RSRCH-0d702dfcef45d22dcf5c364d",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Donald Trump claims \u2018Iran war will end very soon\u2019 as midterm rallies heat up \u2013 US politics live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/15/donald-trump-midterms-rallies-iran-ukraine-starlink-intelligence-fuel-gas-cost-of-living-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-16ba08f1cce065e33897815c",
+          "custody_pointer": "RSRCH-0d702dfcef45d22dcf5c364d",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "source_url": "https://www.theguardian.com/world/2026/oct/15/thursday-briefing-thanks-to-an-erratic-trump-peace-in-ukraine-is-still-far-away"
+        },
+        {
+          "candidate_id": "SRC-3fdc802c49070a36d4fe891d",
+          "custody_pointer": "RSRCH-c6e13b17b4259c1fb9c7cf89",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Donald Trump claims \u2018Iran war will end very soon\u2019 as midterm rallies heat up \u2013 US politics live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/15/donald-trump-midterms-rallies-iran-ukraine-starlink-intelligence-fuel-gas-cost-of-living-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-286fe95c3dc331dcddffacb4",
+          "custody_pointer": "RSRCH-c6e13b17b4259c1fb9c7cf89",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "source_url": "https://www.theguardian.com/world/2026/oct/15/thursday-briefing-thanks-to-an-erratic-trump-peace-in-ukraine-is-still-far-away"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 210,
-        "FAILED": 25,
-        "NO_UPDATE": 1565
+        "CANDIDATES_IDENTIFIED": 222,
+        "FAILED": 30,
+        "NO_UPDATE": 1673
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -1982,15 +2091,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 30,
-        "FAILED": 33,
-        "NO_UPDATE": 2197
+        "CANDIDATES_IDENTIFIED": 33,
+        "FAILED": 40,
+        "NO_UPDATE": 2362
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 60,
+      "pending_candidate_count": 61,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2531,12 +2640,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Russia's Biggest Bank Sberbank Wins Approval to Trade Bitcoin",
           "source_url": "https://decrypt.co/380981/sberbank-russia-bank-trade-crypto-bitcoin"
+        },
+        {
+          "candidate_id": "SRC-1ea0d4d312532f8aac6a0b4e",
+          "custody_pointer": "RSRCH-34e321aac5d5f50f979f8325",
+          "producer_commit": "06d15e212e312b8b035910d2055e80693d0f10bf",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea plans cybersecurity overhaul after attacks hit banks, crypto firms",
+          "source_url": "https://cointelegraph.com/news/south-korea-cybersecurity-overhaul-crypto-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 195,
-        "FAILED": 30,
-        "NO_UPDATE": 1935
+        "CANDIDATES_IDENTIFIED": 208,
+        "FAILED": 36,
+        "NO_UPDATE": 2066
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2672,9 +2790,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 38,
-        "FAILED": 30,
-        "NO_UPDATE": 2092
+        "CANDIDATES_IDENTIFIED": 42,
+        "FAILED": 36,
+        "NO_UPDATE": 2232
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2846,9 +2964,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 45,
-        "FAILED": 40,
-        "NO_UPDATE": 2795
+        "CANDIDATES_IDENTIFIED": 46,
+        "FAILED": 48,
+        "NO_UPDATE": 2986
       }
     }
   }
