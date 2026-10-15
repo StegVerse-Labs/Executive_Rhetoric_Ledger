@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 15,
-  "pending_candidate_count": 311,
-  "pending_sha256": "81f20b60243efc7790df8d1b6925307b06c20a431c5f4fd996eab0bec26bc3b4",
+  "intake_cycles": 16,
+  "pending_candidate_count": 320,
+  "pending_sha256": "6cf70fc5f2aac1ff79502553eecb0fe30bc0b869766c224b1c55ae83dfd43e50",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -20,10 +20,11 @@
     "750837c920ba11de4f6dbb06bcbe615b121345f1",
     "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
     "e52be801ab0e6b67ea5f8faed63d9da92727ccde",
-    "06d15e212e312b8b035910d2055e80693d0f10bf"
+    "06d15e212e312b8b035910d2055e80693d0f10bf",
+    "ec0e358169bacbb86c5db82461e6b3100def5e6f"
   ],
   "publication_authorized": false,
-  "scan_record_count": 27845,
+  "scan_record_count": 29670,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -43,8 +44,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 30,
-        "NO_UPDATE": 1892
+        "FAILED": 35,
+        "NO_UPDATE": 2012
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -333,15 +334,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 105,
-        "FAILED": 36,
-        "NO_UPDATE": 2169
+        "CANDIDATES_IDENTIFIED": 111,
+        "FAILED": 42,
+        "NO_UPDATE": 2307
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 48,
+      "pending_candidate_count": 51,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -774,12 +775,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin ETFs shed $261M as XRP funds buck weekly outflow trend",
           "source_url": "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-45c9c4ba10b6119a1e9d9ed9",
+          "custody_pointer": "RSRCH-3e75217362dda4a35c9aa0c6",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin slips under $80K after US PPI gains most in four years",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-breaks-under-80k-after-us-ppi-gains-most-in-over-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-6f82055a712a472accaf4b6f",
+          "custody_pointer": "RSRCH-2ce98c486a294d0f77e3fec9",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Whipsaws as Crypto Liquidations Near $1 Billion",
+          "source_url": "https://decrypt.co/381044/bitcoin-whipsaws-crypto-liquidations-near-1-billion"
+        },
+        {
+          "candidate_id": "SRC-41fd6802d22d06fe897f72d5",
+          "custody_pointer": "RSRCH-2ce98c486a294d0f77e3fec9",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Tests $81,000 as Rate Hike Fears Linger After Hot Inflation Data",
+          "source_url": "https://decrypt.co/381008/bitcoin-tests-81000-as-rate-hike-fears-linger-after-hot-inflation-data"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 95,
-        "FAILED": 30,
-        "NO_UPDATE": 1800
+        "CANDIDATES_IDENTIFIED": 102,
+        "FAILED": 35,
+        "NO_UPDATE": 1913
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1005,15 +1033,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 72,
-        "FAILED": 36,
-        "NO_UPDATE": 2202
+        "CANDIDATES_IDENTIFIED": 79,
+        "FAILED": 42,
+        "NO_UPDATE": 2339
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 10,
+      "pending_candidate_count": 11,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -1104,12 +1132,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Tron's Justin Sun says he's buying another $100 million of Trump's memecoin - CNBC",
           "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUU40V1VyNGhKY2M3VTRtWS1KUkRmYVp6RXBFazZYczliOWFrTjQ3SUdKRGJEemtOdkZHc2U0X2NFbEhjOXdXNnlJRWU2Qk1hUy01NlRubmM1eVRmdktkUW1EOVUxVm1hUlhXWkVQY3BTaGFCQjNheTZRdE1WQmpsUURDWEpQZknSAYwBQVVfeXFMTmtUeWNmMDBzRzYwYTR1a2swdVU5R0llcmlkeVNvVDJRVHJERm1IZzdXVWE5ZnpXTTFnSE1laXBkaTNMWWdQVDZzd0hRdjQwMGUzcXZwMUUyNWo3Y2NWR3M3bkRwd043am93cXNtbEttNE5GMnlsT0JUVVJDVEJVdG1KeTFBLXBwNEo3aVQ?oc=5"
+        },
+        {
+          "candidate_id": "SRC-6a08a5c32dcccd2bf988420c",
+          "custody_pointer": "RSRCH-397d6cd7a7c33d815f22e422",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tron founder Justin Sun says he's the top $TRUMP meme coin holder - CNBC",
+          "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9oc19SN2NwRGlUVFI0Z3JvZlB6WDZEMmFuMktHdTBRX3pGOTZ6bVhhMEp4QzJKV1RwaENCWVR3bkZGX2Zyck1TZEJqbE81T1JyQkZ0V2RwNTEzUEJGVW82M2poQlZoNXItVzdPVNIBckFVX3lxTFB6WEpqSmEtLUFJV0NBbFQ3UEZEZzlOT05vRzBvbzRoU2Vxcnk4RERpZE5EUmhqZVZJTUdGYjEtNXY4MUY3UmNibXlwS0gyVUtHanBMSm9iRGlKUHp4V09JVURKZnBWanhaV2JpN3NCY3NNZw?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 26,
-        "FAILED": 36,
-        "NO_UPDATE": 2248
+        "CANDIDATES_IDENTIFIED": 27,
+        "FAILED": 42,
+        "NO_UPDATE": 2391
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1173,15 +1210,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 32,
-        "FAILED": 42,
-        "NO_UPDATE": 2621
+        "CANDIDATES_IDENTIFIED": 33,
+        "FAILED": 49,
+        "NO_UPDATE": 2788
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 31,
+      "pending_candidate_count": 33,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1461,12 +1498,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin ETFs shed $261M as XRP funds buck weekly outflow trend",
           "source_url": "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-cdce5dd4ec450b8d49d11b8b",
+          "custody_pointer": "RSRCH-7cc2bfce13d2981eb1a014b1",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "canonical XRP and XLM price series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ethereum, Altcoins See 'Outsized Drawdowns' Due to Macro Pressures",
+          "source_url": "https://decrypt.co/381034/ethereum-altcoins-see-outsized-drawdowns-due-to-macro-pressures"
+        },
+        {
+          "candidate_id": "SRC-d28e682b231e5f264ca23935",
+          "custody_pointer": "RSRCH-6b9647f9afe3e552eecc65fc",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ethereum, Altcoins See 'Outsized Drawdowns' Due to Macro Pressures",
+          "source_url": "https://decrypt.co/381034/ethereum-altcoins-see-outsized-drawdowns-due-to-macro-pressures"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 36,
-        "NO_UPDATE": 2224
+        "CANDIDATES_IDENTIFIED": 54,
+        "FAILED": 42,
+        "NO_UPDATE": 2364
       }
     },
     "market-rhetoric-oil-impact": {
@@ -1980,9 +2035,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 222,
-        "FAILED": 30,
-        "NO_UPDATE": 1673
+        "CANDIDATES_IDENTIFIED": 234,
+        "FAILED": 35,
+        "NO_UPDATE": 1781
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2091,15 +2146,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 33,
-        "FAILED": 40,
-        "NO_UPDATE": 2362
+        "CANDIDATES_IDENTIFIED": 36,
+        "FAILED": 47,
+        "NO_UPDATE": 2527
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 61,
+      "pending_candidate_count": 64,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2649,12 +2704,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "South Korea plans cybersecurity overhaul after attacks hit banks, crypto firms",
           "source_url": "https://cointelegraph.com/news/south-korea-cybersecurity-overhaul-crypto-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-bfd7aec0fe02ffe04aa81c57",
+          "custody_pointer": "RSRCH-12a9cc17890ef7f6ce5bcfb9",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Under pressure, Ledger unveils plan to turn its crypto hardware wallet into a smartphone",
+          "source_url": "https://www.coindesk.com/tech/2026/10/15/under-pressure-ledger-unveils-plan-to-turn-its-crypto-hardware-wallet-into-a-smartphone"
+        },
+        {
+          "candidate_id": "SRC-65fc07d75124f0c56c32445e",
+          "custody_pointer": "RSRCH-15b493b76fed16e2bfde3a9a",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Zcash Tanks Double Digits After 'Meteoric Rise' Sees Leverage Build Up",
+          "source_url": "https://decrypt.co/381015/zcash-tanks-double-digits-after-meteoric-rise-sees-leverage-build-up"
+        },
+        {
+          "candidate_id": "SRC-504ce69ce044a5e95b7aff14",
+          "custody_pointer": "RSRCH-16d452c17aada5745486ed88",
+          "producer_commit": "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+          "query": "peer and no-effect controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia to ban direct peer-to-peer crypto trades starting July 2027",
+          "source_url": "https://cointelegraph.com/news/russia-ban-p2p-crypto-trades-july-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 208,
-        "FAILED": 36,
-        "NO_UPDATE": 2066
+        "CANDIDATES_IDENTIFIED": 223,
+        "FAILED": 42,
+        "NO_UPDATE": 2195
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2790,9 +2872,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 42,
-        "FAILED": 36,
-        "NO_UPDATE": 2232
+        "CANDIDATES_IDENTIFIED": 46,
+        "FAILED": 42,
+        "NO_UPDATE": 2372
       }
     },
     "wlf-positive-adoption-radar": {
@@ -2965,8 +3047,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 48,
-        "NO_UPDATE": 2986
+        "FAILED": 56,
+        "NO_UPDATE": 3178
       }
     }
   }
