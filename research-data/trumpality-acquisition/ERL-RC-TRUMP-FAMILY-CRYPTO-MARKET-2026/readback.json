@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 16,
-  "pending_candidate_count": 320,
-  "pending_sha256": "6cf70fc5f2aac1ff79502553eecb0fe30bc0b869766c224b1c55ae83dfd43e50",
+  "intake_cycles": 17,
+  "pending_candidate_count": 327,
+  "pending_sha256": "8d04dbc7d76b656ddeefc116f0466a8609e9549a3d2ae6d18cfcdb426d2fb079",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -21,10 +21,11 @@
     "9c9584b862ab6967d0d2817ba1d9f4b923c64dee",
     "e52be801ab0e6b67ea5f8faed63d9da92727ccde",
     "06d15e212e312b8b035910d2055e80693d0f10bf",
-    "ec0e358169bacbb86c5db82461e6b3100def5e6f"
+    "ec0e358169bacbb86c5db82461e6b3100def5e6f",
+    "b413a6e4032f0449e79ad1e41c41c877c1e37f09"
   ],
   "publication_authorized": false,
-  "scan_record_count": 29670,
+  "scan_record_count": 31495,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -44,14 +45,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 35,
-        "NO_UPDATE": 2012
+        "FAILED": 40,
+        "NO_UPDATE": 2132
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 31,
+      "pending_candidate_count": 32,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -331,18 +332,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Australia\u2019s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
           "source_url": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline"
+        },
+        {
+          "candidate_id": "SRC-ff9e27a74b434e68384c0ad0",
+          "custody_pointer": "RSRCH-e90bc34baba03bdaee652fed",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "At the White House, crypto policy vacancy looms large",
+          "source_url": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 111,
-        "FAILED": 42,
-        "NO_UPDATE": 2307
+        "CANDIDATES_IDENTIFIED": 117,
+        "FAILED": 48,
+        "NO_UPDATE": 2445
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 51,
+      "pending_candidate_count": 52,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -802,12 +812,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Tests $81,000 as Rate Hike Fears Linger After Hot Inflation Data",
           "source_url": "https://decrypt.co/381008/bitcoin-tests-81000-as-rate-hike-fears-linger-after-hot-inflation-data"
+        },
+        {
+          "candidate_id": "SRC-a4a7e4078b3c45d6ea73435e",
+          "custody_pointer": "RSRCH-63950c68de4193bd80250790",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "At the White House, crypto policy vacancy looms large",
+          "source_url": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 102,
-        "FAILED": 35,
-        "NO_UPDATE": 1913
+        "CANDIDATES_IDENTIFIED": 109,
+        "FAILED": 40,
+        "NO_UPDATE": 2026
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1033,15 +1052,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 79,
-        "FAILED": 42,
-        "NO_UPDATE": 2339
+        "CANDIDATES_IDENTIFIED": 86,
+        "FAILED": 48,
+        "NO_UPDATE": 2476
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 11,
+      "pending_candidate_count": 12,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -1141,18 +1160,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Tron founder Justin Sun says he's the top $TRUMP meme coin holder - CNBC",
           "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9oc19SN2NwRGlUVFI0Z3JvZlB6WDZEMmFuMktHdTBRX3pGOTZ6bVhhMEp4QzJKV1RwaENCWVR3bkZGX2Zyck1TZEJqbE81T1JyQkZ0V2RwNTEzUEJGVW82M2poQlZoNXItVzdPVNIBckFVX3lxTFB6WEpqSmEtLUFJV0NBbFQ3UEZEZzlOT05vRzBvbzRoU2Vxcnk4RERpZE5EUmhqZVZJTUdGYjEtNXY4MUY3UmNibXlwS0gyVUtHanBMSm9iRGlKUHp4V09JVURKZnBWanhaV2JpN3NCY3NNZw?oc=5"
+        },
+        {
+          "candidate_id": "SRC-762eeb48d591412510b9f6d8",
+          "custody_pointer": "RSRCH-3e2264389d88b21897ef13c4",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance.US seeks $1B valuation in potential $100M funding round: Report",
+          "source_url": "https://cointelegraph.com/news/binance-us-funding-valuation-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 27,
-        "FAILED": 42,
-        "NO_UPDATE": 2391
+        "CANDIDATES_IDENTIFIED": 29,
+        "FAILED": 48,
+        "NO_UPDATE": 2533
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 6,
+      "pending_candidate_count": 7,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -1207,12 +1235,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Standard Chartered pushes $2T stablecoin forecast to 2030 as transaction volumes grow",
           "source_url": "https://cointelegraph.com/news/standard-chartered-stablecoin-forecast-2030-market-growth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-8b27b3f5d674e158a1cacf04",
+          "custody_pointer": "RSRCH-432fb352515da51a2cd37107",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "conflict and non-conflict matched periods",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ex-Trump crypto adviser profited after helping pass stablecoin bill: WSJ",
+          "source_url": "https://cointelegraph.com/news/bo-hines-donald-trump-crypto-advisor-nxum-tether-conflict?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 33,
-        "FAILED": 49,
-        "NO_UPDATE": 2788
+        "CANDIDATES_IDENTIFIED": 35,
+        "FAILED": 56,
+        "NO_UPDATE": 2954
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1519,9 +1556,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 54,
-        "FAILED": 42,
-        "NO_UPDATE": 2364
+        "CANDIDATES_IDENTIFIED": 58,
+        "FAILED": 48,
+        "NO_UPDATE": 2504
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2035,9 +2072,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 234,
-        "FAILED": 35,
-        "NO_UPDATE": 1781
+        "CANDIDATES_IDENTIFIED": 244,
+        "FAILED": 40,
+        "NO_UPDATE": 1891
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2146,15 +2183,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 36,
-        "FAILED": 47,
-        "NO_UPDATE": 2527
+        "CANDIDATES_IDENTIFIED": 39,
+        "FAILED": 54,
+        "NO_UPDATE": 2692
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 64,
+      "pending_candidate_count": 67,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2731,12 +2768,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Russia to ban direct peer-to-peer crypto trades starting July 2027",
           "source_url": "https://cointelegraph.com/news/russia-ban-p2p-crypto-trades-july-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-0ad9857ba7ddb8d788461054",
+          "custody_pointer": "RSRCH-b80ff60fe7a8cf7fba5e303a",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ex-Trump crypto adviser profited after helping pass stablecoin bill: WSJ",
+          "source_url": "https://cointelegraph.com/news/bo-hines-donald-trump-crypto-advisor-nxum-tether-conflict?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-07c6ec9b5c22feace3247ba8",
+          "custody_pointer": "RSRCH-3f9cc84bb2588c33c228a35a",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia Will Soon Ban Peer-to-Peer Bitcoin Trading, Central Bank Confirms",
+          "source_url": "https://decrypt.co/381079/russia-ban-peer-to-peer-bitcoin-trading"
+        },
+        {
+          "candidate_id": "SRC-b8283cd0bf19d1fbf9410cf6",
+          "custody_pointer": "RSRCH-e7396c385648ccbfcf95dcdd",
+          "producer_commit": "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+          "query": "peer and no-effect controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Russia Will Soon Ban Peer-to-Peer Bitcoin Trading, Central Bank Confirms",
+          "source_url": "https://decrypt.co/381079/russia-ban-peer-to-peer-bitcoin-trading"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 223,
-        "FAILED": 42,
-        "NO_UPDATE": 2195
+        "CANDIDATES_IDENTIFIED": 239,
+        "FAILED": 48,
+        "NO_UPDATE": 2323
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2872,9 +2936,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 42,
-        "NO_UPDATE": 2372
+        "CANDIDATES_IDENTIFIED": 50,
+        "FAILED": 48,
+        "NO_UPDATE": 2512
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3047,8 +3111,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 56,
-        "NO_UPDATE": 3178
+        "FAILED": 64,
+        "NO_UPDATE": 3370
       }
     }
   }
