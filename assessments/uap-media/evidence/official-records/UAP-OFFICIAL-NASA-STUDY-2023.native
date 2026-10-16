@@ -134,7 +134,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 /*# sourceURL=https://science.nasa.gov/wp-content/plugins/nasa-blocks/build/blocks/topic-cards/style-index.css */
 </style>
 
-<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1792108800' media='all' />
+<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1792148400' media='all' />
 <link rel='stylesheet' id='all-css-8' href='https://science.nasa.gov/_static/??/wp-content/plugins/accessibility-checker/build/css/srOnlyFormat.css,/wp-content/plugins/hubble-space-telescope/css/style.css?m=1792000957' type='text/css' media='all' />
 <link rel='stylesheet' id='nasa-child-style-css' href='https://science.nasa.gov/wp-content/themes/nasa-child/build/style.css?ver=78da5645b79c20a885fa' media='all' />
 <link rel='stylesheet' id='all-css-10' href='https://science.nasa.gov/_static/??-eJyFykEKgCAQQNELZVOERYvoLKMMGeUojdn1E9rn8n8ePFHZwIk4QXLkSYBREKwIbGcweCrG3JZs4IdSLleqDC/r9kzKIDNdVR5DvKPyeHx29Us/zd3Yd1oPLxU/Q20=' type='text/css' media='all' />
@@ -471,7 +471,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		</ul>
 	</div>
 </div>
-<div class="global-nav__home global-nav__features global-nav__col grid-col-9 desktop:padding-left-105"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3><div class="grid-row"><a href="https://science.nasa.gov/blogs/perseverance-mars-rover/2026/10/12/nasas-perseverance-sets-off-world-record-for-total-distance-driven/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/mars2020/2026/perseverance-rover-updates/e1%20-%20PIA26812%20-%20NAVCAM%20record.png?w=1024" alt="NASA’s Perseverance Sets Off-World Record for Total Distance Driven" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">5 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA’s Perseverance Sets Off-World Record for Total Distance Driven</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>3 days ago</span></div></div></a><a href="https://www.nasa.gov/missions/spherex/nasas-spherex-telescope-sees-menagerie-of-brown-dwarfs/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/10/e1-pia23684.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA’s SPHEREx Telescope Sees Menagerie of Brown Dwarfs" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">5 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA’s SPHEREx Telescope Sees Menagerie of Brown Dwarfs</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>1 week ago</span></div></div></a><a href="https://science.nasa.gov/solar-system/skywatching/whats-up-october-2026-skywatching-tips-from-nasa/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar-system/skywatching/2026/october/Orionid%20Meteor%20Shower%202017_Ben%20Goldstein%20via%20Flickr_CC%20BY-NC-SA.jpg?w=1024" alt="What’s Up: October 2026 Skywatching Tips from NASA" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">3 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">What’s Up: October 2026 Skywatching Tips from NASA</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>2 weeks ago</span></div></div></a></div></div><div class="global-nav__secondary global-nav__col grid-col-5 desktop:padding-left-105" hidden>
+<div class="global-nav__home global-nav__features global-nav__col grid-col-9 desktop:padding-left-105"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3><div class="grid-row"><a href="https://science.nasa.gov/blogs/perseverance-mars-rover/2026/10/12/nasas-perseverance-sets-off-world-record-for-total-distance-driven/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/mars2020/2026/perseverance-rover-updates/e1%20-%20PIA26812%20-%20NAVCAM%20record.png?w=1024" alt="NASA’s Perseverance Sets Off-World Record for Total Distance Driven" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">5 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA’s Perseverance Sets Off-World Record for Total Distance Driven</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>4 days ago</span></div></div></a><a href="https://www.nasa.gov/missions/spherex/nasas-spherex-telescope-sees-menagerie-of-brown-dwarfs/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/10/e1-pia23684.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA’s SPHEREx Telescope Sees Menagerie of Brown Dwarfs" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">5 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">NASA’s SPHEREx Telescope Sees Menagerie of Brown Dwarfs</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>1 week ago</span></div></div></a><a href="https://science.nasa.gov/solar-system/skywatching/whats-up-october-2026-skywatching-tips-from-nasa/" class="hds-content-card hds-content-card-home grid-col-12 desktop:grid-col-4 color-spacesuit-white padding-x-0 desktop:padding-right-3 margin-bottom-4" target="_self"><div class="grid-col margin-bottom-2"><div class="bg-carbon-black minh-mobile"><img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar-system/skywatching/2026/october/Orionid%20Meteor%20Shower%202017_Ben%20Goldstein%20via%20Flickr_CC%20BY-NC-SA.jpg?w=1024" alt="What’s Up: October 2026 Skywatching Tips from NASA" class="hds-media-background z-100" /></div></div><div class="grid-col padding-left-0"><div class="label margin-bottom-1">3 min read</div><div class="margin-bottom-2"><h3 class="heading-16 line-height-md">What’s Up: October 2026 Skywatching Tips from NASA</h3></div><div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40"><span class="display-flex flex-align-center margin-right-2"><svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg><span>article</span></span><span>2 weeks ago</span></div></div></a></div></div><div class="global-nav__secondary global-nav__col grid-col-5 desktop:padding-left-105" hidden>
 	<div class="global-nav__secondary-wrapper global-nav__wrapper">
 
 		<!-- This is just a mobile button -->
@@ -514,7 +514,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>3 days ago</span>
+			<span>4 days ago</span>
 
 		</div>
 	</div>
@@ -595,7 +595,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -655,6 +655,33 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-earth-climate"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://science.nasa.gov/earth/earth-observatory/isaias-dims-the-gulf-coast/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/isaias-dims-the-gulf-coast/isaias_bmhd_20261011_th.jpg?w=1024" alt="Isaias Dims the Gulf Coast" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">4 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">Isaias Dims the Gulf Coast</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>7 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
 <a href="https://science.nasa.gov/earth/nasa-satellites-observe-historic-2026-el-nino/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -676,7 +703,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>6 hours ago</span>
+			<span>17 hours ago</span>
 
 		</div>
 	</div>
@@ -703,34 +730,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>20 hours ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://science.nasa.gov/earth/earth-observatory/hurricane-simon-lurks-off-the-mexican-coast/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/hurricane-simon-lurks-off-the-mexican-coast/hurricanesimon_vir2_20261011_th.jpg?w=1024" alt="Hurricane Simon Lurks Off the Mexican Coast" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">3 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">Hurricane Simon Lurks Off the Mexican Coast</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>2 days ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -757,7 +757,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>4 hours ago</span>
+			<span>15 hours ago</span>
 
 		</div>
 	</div>
@@ -784,7 +784,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>2 days ago</span>
+			<span>3 days ago</span>
 
 		</div>
 	</div>
@@ -838,7 +838,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>8 hours ago</span>
+			<span>19 hours ago</span>
 
 		</div>
 	</div>
@@ -865,7 +865,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -919,7 +919,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>3 hours ago</span>
+			<span>14 hours ago</span>
 
 		</div>
 	</div>
@@ -946,7 +946,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>8 hours ago</span>
+			<span>19 hours ago</span>
 
 		</div>
 	</div>
@@ -973,7 +973,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -1081,7 +1081,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>20 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -1108,7 +1108,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -1162,7 +1162,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>8 hours ago</span>
+			<span>19 hours ago</span>
 
 		</div>
 	</div>
@@ -1189,7 +1189,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 day ago</span>
+			<span>2 days ago</span>
 
 		</div>
 	</div>
@@ -1216,7 +1216,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>6 days ago</span>
+			<span>7 days ago</span>
 
 		</div>
 	</div>
@@ -1270,7 +1270,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>3 days ago</span>
+			<span>4 days ago</span>
 
 		</div>
 	</div>
@@ -1785,7 +1785,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 			<div id="" class="hds-single-form-embed bg-spacesuit-white hds-module alignwide wp-block-nasa-blocks-gravity-form-embed"><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-title-intro-block padding-x-3"><div class="padding-top-2 padding-bottom-2 width-full maxw-full hds-module hds-module-full wp-block-nasa-blocks-article-intro"></div></div><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-render-block padding-x-3"><div class="form-entry-content margin-bottom-3"><div class="margin-bottom-3">
                 <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_45' ><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_45' id='gform_45'  action='/uap/' data-formid='45' novalidate>					<div style="display: none !important;" class="akismet-fields-container gf_invisible" data-prefix="ak_">
 						<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label>
-						<input type="hidden" id="ak_js_1" name="ak_js" value="102" />
+						<input type="hidden" id="ak_js_1" name="ak_js" value="1" />
 						<script>
 document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
 </script>
@@ -1811,9 +1811,9 @@ document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTi
             <input type='hidden' class='gform_hidden' name='is_submit_45' value='1' />
             <input type='hidden' class='gform_hidden' name='gform_submit' value='45' />
             
-            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='gQvW4+lbQvYuCJ1ESro6rqr1uYzDmiCwlAopgD7zs7REvH3smt+p8mADh/YzYMb7eH2Va+8JtjAQEZjIL3nPgw68R9ervx00LFE80Mekp1JyKnE=' />
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='QiJkHMTTPphccPym4SlogGrDSIqtfa3YwHGEGAy+ctEvt4j2rsOL/waifglRQ9cw8R+FfKVrS8t/CQw8KZhIrUA/5Xur1Oep5/Dfogn7VwE+PKA=' />
             <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCIyY2Y4ODljMDQxOGVlN2Y4MjA1NmNjYjgwNzVmYTkyNFwifSIsIjJhNTIyZDNmZjk3OGFiNzhhYmRiZmQ0M2VkYTUzNDBhIiwxNzkyMTA4OTk1XQ==' />
+            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCIyMmI4MzBiYzM4YmE3MjExODFlZDI5Y2YwMjlhNWU2MVwifSIsIjBkMTM3YTcxNzk3ZWYwYTE1OTA2ZTkxZmE5NWRjMTBlIiwxNzkyMTQ5NzM0XQ==' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_45' id='gform_target_page_number_45' value='0' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_45' id='gform_source_page_number_45' value='1' />
             <input type='hidden' name='gform_field_values' value='' />
