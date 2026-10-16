@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 18,
-  "pending_candidate_count": 332,
-  "pending_sha256": "d7d81c204911960094010fe9aaf812fc2c3b5eef6a0bf387b67ababa0342fd0e",
+  "intake_cycles": 19,
+  "pending_candidate_count": 348,
+  "pending_sha256": "a591040348d09039fd8e73cfcc5f7ac9e199c2844c7cf286a4c59e518d8e318d",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -23,16 +23,17 @@
     "06d15e212e312b8b035910d2055e80693d0f10bf",
     "ec0e358169bacbb86c5db82461e6b3100def5e6f",
     "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
-    "5c83f27b8c22432490134b5d4b9242d235ca9164"
+    "5c83f27b8c22432490134b5d4b9242d235ca9164",
+    "b361508fa2f0417c2a5a254db41982b43c9896e4"
   ],
   "publication_authorized": false,
-  "scan_record_count": 33320,
+  "scan_record_count": 35145,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 1,
+      "pending_candidate_count": 4,
       "pending_candidates": [
         {
           "candidate_id": "SRC-7f40bd5331431678be53662b",
@@ -42,18 +43,45 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "2026 Crypto Predictions! Tom Lee still buying ETH! Rekt tease WorldStar collab!",
           "source_url": "https://decrypt.co/videos/interviews/dBDZqp65/2026-crypto-predictions-tom-lee-still-buying-eth-rekt-tease-worldstar-collab"
+        },
+        {
+          "candidate_id": "SRC-200f61d9b0f8e5b44e28a66c",
+          "custody_pointer": "RSRCH-2247785da01d061a33692d8f",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "multi-asset timestamped event panel",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CONNECT recap: Liquidity is tokenization\u2019s next challenge, everyday stablecoins",
+          "source_url": "https://cointelegraph.com/news/connect-recap-tokenizations-next-challenge-is-building-liquidity-gsr-executive-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-5296d49f884a6453b37c5dfe",
+          "custody_pointer": "RSRCH-59065bceac3aeb72751a88a0",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump attacks fellow Republicans for \u2018hurting Texas\u2019 during senate election race \u2013 US politics live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/16/trump-texas-senate-race-midterms-paxton-talarico-zacharia-ukraine-starlink-diesel-oregon-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-54a89bca84d3149b825fde91",
+          "custody_pointer": "RSRCH-7b82c1ee4e8be39e41981fbb",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP has failed to make holders rich like bitcoin and ether. Here\u2019s why",
+          "source_url": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 4,
-        "FAILED": 45,
-        "NO_UPDATE": 2251
+        "CANDIDATES_IDENTIFIED": 7,
+        "FAILED": 50,
+        "NO_UPDATE": 2368
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 32,
+      "pending_candidate_count": 33,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -342,18 +370,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "At the White House, crypto policy vacancy looms large",
           "source_url": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large"
+        },
+        {
+          "candidate_id": "SRC-b4650f3687bef940f56ff2cb",
+          "custody_pointer": "RSRCH-614a9f6dfc09f0cc724e32dd",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rule 19.3 and Rule 19.4 To Establish Generic Listing Criteria and Continued Listing Standards for Options on Commodity-Based Trusts Holding Multiple Crypto Assets and To Permit the Listing of Options on Exchange-Traded Funds",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/16/2026-21128/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 125,
-        "FAILED": 54,
-        "NO_UPDATE": 2581
+        "CANDIDATES_IDENTIFIED": 131,
+        "FAILED": 60,
+        "NO_UPDATE": 2719
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 52,
+      "pending_candidate_count": 54,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -822,18 +859,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "At the White House, crypto policy vacancy looms large",
           "source_url": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large"
+        },
+        {
+          "candidate_id": "SRC-d0caed6ac841549cee373933",
+          "custody_pointer": "RSRCH-e8cfd47f34e7c1c7cbfe1b9e",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin may seek 20-month trend line reclaim before new record highs: CryptoQuant",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-07571b2443e23166d087c3a6",
+          "custody_pointer": "RSRCH-3de94b556d787a306f14a215",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Altcoins outpace bitcoin as celestia jumps 16%, Warsh silent on interest-rate plans",
+          "source_url": "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 116,
-        "FAILED": 45,
-        "NO_UPDATE": 2139
+        "CANDIDATES_IDENTIFIED": 123,
+        "FAILED": 50,
+        "NO_UPDATE": 2252
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 24,
+      "pending_candidate_count": 26,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -1050,12 +1105,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "EasyA hits $1.1 billion valuation, targets 2027 public listing and tokenized shares",
           "source_url": "https://www.coindesk.com/business/2026/10/14/easya-hits-usd1-1-billion-valuation-targets-2027-public-listing-and-tokenized-shares"
+        },
+        {
+          "candidate_id": "SRC-bc1162a4fe2acc067d9c7fa4",
+          "custody_pointer": "RSRCH-97032ca9c47b0d21430d0921",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "cross-token price and volume series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump launches his own $TRUMP meme coin, price soars overnight - CBS News",
+          "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0xRVhRVXFOMktFbDRHTkp2WU1rb1FyS09ST2FZVllQQ3Q4dWdFMThwd1h3czNhQVp2Qi1XazFBMGhtNXBFSTNRZlh0R3REXy1IUlMxazhfVGR5M191My1DcUpqREZYVHhBdEFaYnZUUFF3QllrLUpaRWc3SEw1dw?oc=5"
+        },
+        {
+          "candidate_id": "SRC-85441c52d5ce62ed1595ae77",
+          "custody_pointer": "RSRCH-fac91d58a0dcd11a3f250401",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "fee paths",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump memecoin traders lost $2 billion after crash while family and partners make $100 million in trading fees - Fortune",
+          "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYXdJTzVHYjRzU1FHUTlWRUtsb0FST3J3ZHZUcVpEVVpuZTNENDRQQi1ZNnRJTldwYm5SeWltZGVqRWhtQy10TlhlVGRMS05OeVBRZU92NnRNTEFMUXRfNm9TRTJPYXlzSTNhSE8wcE1xMzZlaDhjSWNPcTI1ZHBQLXlMS1lBb1prYVJsVzRkZTZnd0Y2S2FJSjdpM3VpWXVrZHc?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 96,
-        "FAILED": 54,
-        "NO_UPDATE": 2610
+        "CANDIDATES_IDENTIFIED": 101,
+        "FAILED": 60,
+        "NO_UPDATE": 2749
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1173,9 +1246,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 34,
-        "FAILED": 54,
-        "NO_UPDATE": 2672
+        "CANDIDATES_IDENTIFIED": 36,
+        "FAILED": 60,
+        "NO_UPDATE": 2814
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1248,15 +1321,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 38,
-        "FAILED": 63,
-        "NO_UPDATE": 3119
+        "CANDIDATES_IDENTIFIED": 39,
+        "FAILED": 70,
+        "NO_UPDATE": 3286
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 35,
+      "pending_candidate_count": 36,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1572,18 +1645,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
           "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
+        },
+        {
+          "candidate_id": "SRC-0b72f296714f887aeb9a8cd6",
+          "custody_pointer": "RSRCH-9dbc0fbd4ca4bb02539c1d27",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP has failed to make holders rich like bitcoin and ether. Here\u2019s why",
+          "source_url": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 62,
-        "FAILED": 54,
-        "NO_UPDATE": 2644
+        "CANDIDATES_IDENTIFIED": 66,
+        "FAILED": 60,
+        "NO_UPDATE": 2784
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 56,
+      "pending_candidate_count": 62,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2088,12 +2170,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
           "source_url": "https://www.theguardian.com/world/2026/oct/15/thursday-briefing-thanks-to-an-erratic-trump-peace-in-ukraine-is-still-far-away"
+        },
+        {
+          "candidate_id": "SRC-e377293fd60dd90934a9222f",
+          "custody_pointer": "RSRCH-eb0e15f1a579b901316b2c7a",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Fish, Oil and Corruption: 6 Takeaways From Alaska\u2019s Senate Debate",
+          "source_url": "https://www.nytimes.com/2026/10/16/us/politics/alaska-senate-debate-peltola-sullivan.html"
+        },
+        {
+          "candidate_id": "SRC-7b588365726f24bcd219e9b9",
+          "custody_pointer": "RSRCH-c89be11cbb2918478523faeb",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump attacks fellow Republicans for \u2018hurting Texas\u2019 during senate election race \u2013 US politics live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/16/trump-texas-senate-race-midterms-paxton-talarico-zacharia-ukraine-starlink-diesel-oregon-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-b652aa6eb102165a4373ef0b",
+          "custody_pointer": "RSRCH-c89be11cbb2918478523faeb",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump calls Ukraine\u2019s renewed strikes on Russian oil refineries \u2018a disgrace\u2019",
+          "source_url": "https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace"
+        },
+        {
+          "candidate_id": "SRC-5061a50f96357c865ec378be",
+          "custody_pointer": "RSRCH-81f398dcb8ffecd2c505ed0a",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Fish, Oil and Corruption: 6 Takeaways From Alaska\u2019s Senate Debate",
+          "source_url": "https://www.nytimes.com/2026/10/16/us/politics/alaska-senate-debate-peltola-sullivan.html"
+        },
+        {
+          "candidate_id": "SRC-990f5dec92e41d32d2a5ff5b",
+          "custody_pointer": "RSRCH-5f635daba834d398084d90a2",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump attacks fellow Republicans for \u2018hurting Texas\u2019 during senate election race \u2013 US politics live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/16/trump-texas-senate-race-midterms-paxton-talarico-zacharia-ukraine-starlink-diesel-oregon-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-78c66594da8e597405a84d83",
+          "custody_pointer": "RSRCH-5f635daba834d398084d90a2",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump calls Ukraine\u2019s renewed strikes on Russian oil refineries \u2018a disgrace\u2019",
+          "source_url": "https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 256,
-        "FAILED": 45,
-        "NO_UPDATE": 1999
+        "CANDIDATES_IDENTIFIED": 268,
+        "FAILED": 50,
+        "NO_UPDATE": 2107
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2202,9 +2338,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 43,
-        "FAILED": 61,
-        "NO_UPDATE": 2856
+        "CANDIDATES_IDENTIFIED": 46,
+        "FAILED": 68,
+        "NO_UPDATE": 3021
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -2844,15 +2980,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 256,
-        "FAILED": 54,
-        "NO_UPDATE": 2450
+        "CANDIDATES_IDENTIFIED": 272,
+        "FAILED": 60,
+        "NO_UPDATE": 2578
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 14,
+      "pending_candidate_count": 15,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -2979,12 +3115,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Trump Gets Memecoin Fever; Token Soars 22000% in 9 Hours - The Crypto Times",
           "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYTM0a3JwaGcySmdJNi1SdG9LT0RvZlZuUEl0LVd5N2c4bWJzZVF5ZHNHTEs3TUpVVWdPdEtTWjBmdHZDSkNOc1RtTTIzZzZ2UGNVUGNRUEsxQ2JXMzFIYVVCdlNPQ0h2RjhhOHh2ZFhWVzd0OGxVTERoNEtna1dpMEp5QTVtTjNkWExvV3I2Z3NBMjZnQ2tMUA?oc=5"
+        },
+        {
+          "candidate_id": "SRC-713d42eee172d76adaf1f36f",
+          "custody_pointer": "RSRCH-cca3219deac068ebca0e7dc6",
+          "producer_commit": "b361508fa2f0417c2a5a254db41982b43c9896e4",
+          "query": "fee and liquidity flows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump memecoin traders lost $2 billion after crash while family and partners make $100 million in trading fees - Fortune",
+          "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYXdJTzVHYjRzU1FHUTlWRUtsb0FST3J3ZHZUcVpEVVpuZTNENDRQQi1ZNnRJTldwYm5SeWltZGVqRWhtQy10TlhlVGRMS05OeVBRZU92NnRNTEFMUXRfNm9TRTJPYXlzSTNhSE8wcE1xMzZlaDhjSWNPcTI1ZHBQLXlMS1lBb1prYVJsVzRkZTZnd0Y2S2FJSjdpM3VpWXVrZHc?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 54,
-        "FAILED": 54,
-        "NO_UPDATE": 2652
+        "CANDIDATES_IDENTIFIED": 57,
+        "FAILED": 60,
+        "NO_UPDATE": 2793
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3157,8 +3302,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 51,
-        "FAILED": 72,
-        "NO_UPDATE": 3557
+        "FAILED": 80,
+        "NO_UPDATE": 3749
       }
     }
   }
