@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 17,
-  "pending_candidate_count": 327,
-  "pending_sha256": "8d04dbc7d76b656ddeefc116f0466a8609e9549a3d2ae6d18cfcdb426d2fb079",
+  "intake_cycles": 18,
+  "pending_candidate_count": 332,
+  "pending_sha256": "d7d81c204911960094010fe9aaf812fc2c3b5eef6a0bf387b67ababa0342fd0e",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -22,10 +22,11 @@
     "e52be801ab0e6b67ea5f8faed63d9da92727ccde",
     "06d15e212e312b8b035910d2055e80693d0f10bf",
     "ec0e358169bacbb86c5db82461e6b3100def5e6f",
-    "b413a6e4032f0449e79ad1e41c41c877c1e37f09"
+    "b413a6e4032f0449e79ad1e41c41c877c1e37f09",
+    "5c83f27b8c22432490134b5d4b9242d235ca9164"
   ],
   "publication_authorized": false,
-  "scan_record_count": 31495,
+  "scan_record_count": 33320,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -44,9 +45,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 3,
-        "FAILED": 40,
-        "NO_UPDATE": 2132
+        "CANDIDATES_IDENTIFIED": 4,
+        "FAILED": 45,
+        "NO_UPDATE": 2251
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -344,9 +345,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 117,
-        "FAILED": 48,
-        "NO_UPDATE": 2445
+        "CANDIDATES_IDENTIFIED": 125,
+        "FAILED": 54,
+        "NO_UPDATE": 2581
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -824,9 +825,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 109,
-        "FAILED": 40,
-        "NO_UPDATE": 2026
+        "CANDIDATES_IDENTIFIED": 116,
+        "FAILED": 45,
+        "NO_UPDATE": 2139
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1052,9 +1053,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 86,
-        "FAILED": 48,
-        "NO_UPDATE": 2476
+        "CANDIDATES_IDENTIFIED": 96,
+        "FAILED": 54,
+        "NO_UPDATE": 2610
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1172,9 +1173,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 29,
-        "FAILED": 48,
-        "NO_UPDATE": 2533
+        "CANDIDATES_IDENTIFIED": 34,
+        "FAILED": 54,
+        "NO_UPDATE": 2672
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1247,15 +1248,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 35,
-        "FAILED": 56,
-        "NO_UPDATE": 2954
+        "CANDIDATES_IDENTIFIED": 38,
+        "FAILED": 63,
+        "NO_UPDATE": 3119
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 33,
+      "pending_candidate_count": 35,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1553,12 +1554,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ethereum, Altcoins See 'Outsized Drawdowns' Due to Macro Pressures",
           "source_url": "https://decrypt.co/381034/ethereum-altcoins-see-outsized-drawdowns-due-to-macro-pressures"
+        },
+        {
+          "candidate_id": "SRC-a31fda13a2563d0588e570ed",
+          "custody_pointer": "RSRCH-4eb4b6be6ec03ede00e5fac0",
+          "producer_commit": "5c83f27b8c22432490134b5d4b9242d235ca9164",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
+          "source_url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed"
+        },
+        {
+          "candidate_id": "SRC-98af07a9d592994900713837",
+          "custody_pointer": "RSRCH-4eb4b6be6ec03ede00e5fac0",
+          "producer_commit": "5c83f27b8c22432490134b5d4b9242d235ca9164",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
+          "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 48,
-        "NO_UPDATE": 2504
+        "CANDIDATES_IDENTIFIED": 62,
+        "FAILED": 54,
+        "NO_UPDATE": 2644
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2072,9 +2091,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 244,
-        "FAILED": 40,
-        "NO_UPDATE": 1891
+        "CANDIDATES_IDENTIFIED": 256,
+        "FAILED": 45,
+        "NO_UPDATE": 1999
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2183,15 +2202,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 39,
-        "FAILED": 54,
-        "NO_UPDATE": 2692
+        "CANDIDATES_IDENTIFIED": 43,
+        "FAILED": 61,
+        "NO_UPDATE": 2856
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 67,
+      "pending_candidate_count": 70,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -2795,12 +2814,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Russia Will Soon Ban Peer-to-Peer Bitcoin Trading, Central Bank Confirms",
           "source_url": "https://decrypt.co/381079/russia-ban-peer-to-peer-bitcoin-trading"
+        },
+        {
+          "candidate_id": "SRC-76ff2480acbcd06d28522a83",
+          "custody_pointer": "RSRCH-8c55ee4b5bfbb38c77b15afd",
+          "producer_commit": "5c83f27b8c22432490134b5d4b9242d235ca9164",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Judge Refuses to Reverse Penalties Against Crypto Firm With Ties to Trump Family",
+          "source_url": "https://www.nytimes.com/2026/10/15/us/politics/crypto-court-ruling-gemini-trust-trump.html"
+        },
+        {
+          "candidate_id": "SRC-1be14c23f95e009ec819f4f7",
+          "custody_pointer": "RSRCH-830ba5d055e7353a6c1568a3",
+          "producer_commit": "5c83f27b8c22432490134b5d4b9242d235ca9164",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
+          "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
+        },
+        {
+          "candidate_id": "SRC-7c4a87549b79fdfb87a751ef",
+          "custody_pointer": "RSRCH-830ba5d055e7353a6c1568a3",
+          "producer_commit": "5c83f27b8c22432490134b5d4b9242d235ca9164",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 239,
-        "FAILED": 48,
-        "NO_UPDATE": 2323
+        "CANDIDATES_IDENTIFIED": 256,
+        "FAILED": 54,
+        "NO_UPDATE": 2450
       }
     },
     "trump-token-promotion-access-supply": {
@@ -2936,9 +2982,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 48,
-        "NO_UPDATE": 2512
+        "CANDIDATES_IDENTIFIED": 54,
+        "FAILED": 54,
+        "NO_UPDATE": 2652
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3110,9 +3156,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 64,
-        "NO_UPDATE": 3370
+        "CANDIDATES_IDENTIFIED": 51,
+        "FAILED": 72,
+        "NO_UPDATE": 3557
       }
     }
   }
