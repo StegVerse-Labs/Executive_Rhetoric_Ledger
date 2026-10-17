@@ -14,7 +14,7 @@
   "results": [
     {
       "receipt": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-NASA-STUDY-2023.native.receipt.json",
-      "sha256": "34219b6ae603b46ab7820cebf6a7ece9575614b60bfa3d48d04eecdc6d9293d3",
+      "sha256": "279e06e9ff65239fa6a7526b74fe229b9ef81cf8d262e888bcce24f1dbf1f170",
       "source_id": "UAP-OFFICIAL-NASA-STUDY-2023",
       "status": "COMPLETE"
     },
@@ -37,15 +37,14 @@
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native.receipt.json",
-      "sha256": "7f21f7cec5b31a5aeb7818e0292d17192d456db8d5d691aac1e8a4944b047470",
+      "sha256": "e9a32076a064e7ed34316d316d418580f921b910c2b5a1752d9f4028eb27950b",
       "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
       "status": "COMPLETE"
     },
     {
-      "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native.receipt.json",
-      "sha256": "ac51292e1f212c69ddc37a1679e1df5cf333eefe76922ccc748e035be178146e",
+      "error": "public source transport incomplete after 3 attempts: IncompleteRead: IncompleteRead(3161701 bytes read)",
       "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
-      "status": "COMPLETE"
+      "status": "RETRY"
     }
   ]
 }
