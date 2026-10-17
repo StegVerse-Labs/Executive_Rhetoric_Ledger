@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 24,
-  "pending_candidate_count": 358,
-  "pending_sha256": "2c9ec6b6ce8f0aa36c6877d5c75dd54b2296d027847ed89f566d2897a1746b72",
+  "intake_cycles": 25,
+  "pending_candidate_count": 359,
+  "pending_sha256": "8afd154662ddfbeb292e98618519cb990eeaf054f8996351daad6122866d32f1",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -29,10 +29,11 @@
     "097cfa418ff3fc033507ba08314429ec98ce635d",
     "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7",
     "2cdbac24ded65d90c2269d1d817183a1d59889c6",
-    "da4ac5568b19ae636d588d0cf2c762ea01de7215"
+    "da4ac5568b19ae636d588d0cf2c762ea01de7215",
+    "3ee2dc43b44490391f242aeb1a431f37966d0f07"
   ],
   "publication_authorized": false,
-  "scan_record_count": 44270,
+  "scan_record_count": 46095,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -87,9 +88,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 21,
-        "FAILED": 75,
-        "NO_UPDATE": 2954
+        "CANDIDATES_IDENTIFIED": 23,
+        "FAILED": 80,
+        "NO_UPDATE": 3072
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -405,9 +406,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 164,
-        "FAILED": 90,
-        "NO_UPDATE": 3406
+        "CANDIDATES_IDENTIFIED": 169,
+        "FAILED": 96,
+        "NO_UPDATE": 3545
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -921,9 +922,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 163,
-        "FAILED": 75,
-        "NO_UPDATE": 2812
+        "CANDIDATES_IDENTIFIED": 171,
+        "FAILED": 80,
+        "NO_UPDATE": 2924
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1176,9 +1177,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 90,
-        "NO_UPDATE": 3433
+        "CANDIDATES_IDENTIFIED": 143,
+        "FAILED": 96,
+        "NO_UPDATE": 3571
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1296,9 +1297,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 52,
-        "FAILED": 90,
-        "NO_UPDATE": 3518
+        "CANDIDATES_IDENTIFIED": 54,
+        "FAILED": 96,
+        "NO_UPDATE": 3660
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1371,9 +1372,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 48,
-        "FAILED": 105,
-        "NO_UPDATE": 4117
+        "CANDIDATES_IDENTIFIED": 49,
+        "FAILED": 112,
+        "NO_UPDATE": 4284
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1707,9 +1708,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 81,
-        "FAILED": 90,
-        "NO_UPDATE": 3489
+        "CANDIDATES_IDENTIFIED": 84,
+        "FAILED": 96,
+        "NO_UPDATE": 3630
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2277,9 +2278,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 326,
-        "FAILED": 75,
-        "NO_UPDATE": 2649
+        "CANDIDATES_IDENTIFIED": 334,
+        "FAILED": 80,
+        "NO_UPDATE": 2761
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2388,15 +2389,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 66,
-        "FAILED": 103,
-        "NO_UPDATE": 3841
+        "CANDIDATES_IDENTIFIED": 70,
+        "FAILED": 110,
+        "NO_UPDATE": 4005
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 74,
+      "pending_candidate_count": 75,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3063,12 +3064,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Opinion | Trump\u2019s crypto windfall showcases his ability to turn loyalty into power - South China Morning Post",
           "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMTBCWHE5OTRWMDYzTFhOT3plcE01c0tUTWhZU1k1TGZzWmlSMk1uVHdldHhzZFh2am5KX21fZzVFUlY4cTRDN2hkMnpsZTl1Y3I2UWJhbTQtbDBPZk1hZVhkXzlwLWNjVkdfem9WS2dDSWc0OFktU3ItajkxX29DeHlld0tkU2ZPMWVEbFRzQkM0emhPcXhYYkZQLU14VGxfMUhBT3NVdktNWGZaTUZSbVphMVM2Q0FIUjB1TEwwaw?oc=5"
+        },
+        {
+          "candidate_id": "SRC-504091522ecc0785e52e5179",
+          "custody_pointer": "RSRCH-ac581ab900e19a83f7b67b68",
+          "producer_commit": "3ee2dc43b44490391f242aeb1a431f37966d0f07",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto Super PAC Fairshake Pours Millions More Into Defeating Sherrod Brown",
+          "source_url": "https://decrypt.co/381238/crypto-super-pac-fairshake-pours-millions-more-into-defeating-sherrod-brown"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 354,
-        "FAILED": 90,
-        "NO_UPDATE": 3216
+        "CANDIDATES_IDENTIFIED": 369,
+        "FAILED": 96,
+        "NO_UPDATE": 3345
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3222,9 +3232,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 77,
-        "FAILED": 90,
-        "NO_UPDATE": 3493
+        "CANDIDATES_IDENTIFIED": 81,
+        "FAILED": 96,
+        "NO_UPDATE": 3633
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3397,8 +3407,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 61,
-        "FAILED": 120,
-        "NO_UPDATE": 4699
+        "FAILED": 128,
+        "NO_UPDATE": 4891
       }
     }
   }
