@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 21,
-  "pending_candidate_count": 353,
-  "pending_sha256": "995fd3a9ee6ad5ea01cead25cb8b5662ea3854501f2e45e1b2f65069e37585de",
+  "intake_cycles": 22,
+  "pending_candidate_count": 356,
+  "pending_sha256": "6c9ad698a4920c89cd0d15670738f420adedad2762886314ed1377b9c15af3e4",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -26,10 +26,11 @@
     "5c83f27b8c22432490134b5d4b9242d235ca9164",
     "b361508fa2f0417c2a5a254db41982b43c9896e4",
     "dbbfa73a9594b478704b15b06c6e1a3ce9cd5f36",
-    "097cfa418ff3fc033507ba08314429ec98ce635d"
+    "097cfa418ff3fc033507ba08314429ec98ce635d",
+    "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7"
   ],
   "publication_authorized": false,
-  "scan_record_count": 38795,
+  "scan_record_count": 40620,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -84,9 +85,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 13,
-        "FAILED": 60,
-        "NO_UPDATE": 2602
+        "CANDIDATES_IDENTIFIED": 16,
+        "FAILED": 65,
+        "NO_UPDATE": 2719
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -402,15 +403,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 143,
-        "FAILED": 72,
-        "NO_UPDATE": 2995
+        "CANDIDATES_IDENTIFIED": 151,
+        "FAILED": 78,
+        "NO_UPDATE": 3131
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 55,
+      "pending_candidate_count": 56,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -906,12 +907,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin price steadies around $82K after Fed\u2019s Warsh avoids rate-hike hints",
           "source_url": "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-6ac27be5604ee0b8165b578f",
+          "custody_pointer": "RSRCH-5edba0172f151e2b864c840a",
+          "producer_commit": "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
+          "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 139,
-        "FAILED": 60,
-        "NO_UPDATE": 2476
+        "CANDIDATES_IDENTIFIED": 147,
+        "FAILED": 65,
+        "NO_UPDATE": 2588
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1155,9 +1165,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 113,
-        "FAILED": 72,
-        "NO_UPDATE": 3025
+        "CANDIDATES_IDENTIFIED": 122,
+        "FAILED": 78,
+        "NO_UPDATE": 3160
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1275,9 +1285,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 40,
-        "FAILED": 72,
-        "NO_UPDATE": 3098
+        "CANDIDATES_IDENTIFIED": 45,
+        "FAILED": 78,
+        "NO_UPDATE": 3237
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1350,9 +1360,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 41,
-        "FAILED": 84,
-        "NO_UPDATE": 3620
+        "CANDIDATES_IDENTIFIED": 44,
+        "FAILED": 91,
+        "NO_UPDATE": 3785
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1686,9 +1696,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 72,
-        "FAILED": 72,
-        "NO_UPDATE": 3066
+        "CANDIDATES_IDENTIFIED": 75,
+        "FAILED": 78,
+        "NO_UPDATE": 3207
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2256,9 +2266,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 292,
-        "FAILED": 60,
-        "NO_UPDATE": 2323
+        "CANDIDATES_IDENTIFIED": 304,
+        "FAILED": 65,
+        "NO_UPDATE": 2431
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2367,15 +2377,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 54,
-        "FAILED": 82,
-        "NO_UPDATE": 3349
+        "CANDIDATES_IDENTIFIED": 58,
+        "FAILED": 89,
+        "NO_UPDATE": 3513
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 72,
+      "pending_candidate_count": 74,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3024,12 +3034,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto Biz: Wall Street closes at 4. Tokenized stocks keep trading",
           "source_url": "https://cointelegraph.com/news/tokenized-stocks-after-hours-trading-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-d14d629b11821f18c52bbbb0",
+          "custody_pointer": "RSRCH-5ae5200a3a8af2ae8c7f6fc4",
+          "producer_commit": "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "ZEC Rebounds 11%! Trump says he won\u2019t pardon Sam Bankman-Fried! Florida revisits it\u2019s Strategic Bitcoin Reserve!",
+          "source_url": "https://decrypt.co/videos/interviews/72tPnqPX/zec-rebounds-11-trump-says-he-wont-pardon-sam-bankman-fried-florida-revisits-its-strategic-bitcoin-reserve"
+        },
+        {
+          "candidate_id": "SRC-eac1fed1b1ba8aa0813eb9fd",
+          "custody_pointer": "RSRCH-7ce7f7834582f43205696628",
+          "producer_commit": "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Opinion | Trump\u2019s crypto windfall showcases his ability to turn loyalty into power - South China Morning Post",
+          "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMTBCWHE5OTRWMDYzTFhOT3plcE01c0tUTWhZU1k1TGZzWmlSMk1uVHdldHhzZFh2am5KX21fZzVFUlY4cTRDN2hkMnpsZTl1Y3I2UWJhbTQtbDBPZk1hZVhkXzlwLWNjVkdfem9WS2dDSWc0OFktU3ItajkxX29DeHlld0tkU2ZPMWVEbFRzQkM0emhPcXhYYkZQLU14VGxfMUhBT3NVdktNWGZaTUZSbVphMVM2Q0FIUjB1TEwwaw?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 305,
-        "FAILED": 72,
-        "NO_UPDATE": 2833
+        "CANDIDATES_IDENTIFIED": 322,
+        "FAILED": 78,
+        "NO_UPDATE": 2960
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3174,9 +3202,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 65,
-        "FAILED": 72,
-        "NO_UPDATE": 3073
+        "CANDIDATES_IDENTIFIED": 69,
+        "FAILED": 78,
+        "NO_UPDATE": 3213
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3348,9 +3376,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 51,
-        "FAILED": 96,
-        "NO_UPDATE": 4133
+        "CANDIDATES_IDENTIFIED": 56,
+        "FAILED": 104,
+        "NO_UPDATE": 4320
       }
     }
   }
