@@ -1,0 +1,14 @@
+{
+  "adapter_id": "SCSJ_REISINI_ROOS_CASE_PAGE",
+  "byte_length": 302060,
+  "candidate_path": "discovery_candidates/2026-10-17/CAND-D22216579D50B15D5E74.json",
+  "capture_id": "CAP-D22216579D50B15D5E74",
+  "capture_status": "captured",
+  "captured_at": "2026-10-17T15:32:53Z",
+  "content_sha256": "d22216579d50b15d5e74a2ae0496c6221196fdf0ac6d078de51e854a3b661253",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-10-17/d22216579d50b15d5e74a2ae0496c6221196fdf0ac6d078de51e854a3b661253.html",
+  "review_status": "candidate-review-required",
+  "source_class": "advocacy-record",
+  "source_uri": "https://southerncoalition.org/case/reisini-roos-v-u-s-department-of-homeland-security-et-al/"
+}
