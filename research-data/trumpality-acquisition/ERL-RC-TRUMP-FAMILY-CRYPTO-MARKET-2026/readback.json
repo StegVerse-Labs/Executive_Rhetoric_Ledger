@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 23,
-  "pending_candidate_count": 356,
-  "pending_sha256": "6c9ad698a4920c89cd0d15670738f420adedad2762886314ed1377b9c15af3e4",
+  "intake_cycles": 24,
+  "pending_candidate_count": 358,
+  "pending_sha256": "2c9ec6b6ce8f0aa36c6877d5c75dd54b2296d027847ed89f566d2897a1746b72",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -28,10 +28,11 @@
     "dbbfa73a9594b478704b15b06c6e1a3ce9cd5f36",
     "097cfa418ff3fc033507ba08314429ec98ce635d",
     "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7",
-    "2cdbac24ded65d90c2269d1d817183a1d59889c6"
+    "2cdbac24ded65d90c2269d1d817183a1d59889c6",
+    "da4ac5568b19ae636d588d0cf2c762ea01de7215"
   ],
   "publication_authorized": false,
-  "scan_record_count": 42445,
+  "scan_record_count": 44270,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -86,9 +87,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 19,
-        "FAILED": 70,
-        "NO_UPDATE": 2836
+        "CANDIDATES_IDENTIFIED": 21,
+        "FAILED": 75,
+        "NO_UPDATE": 2954
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -404,9 +405,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 159,
-        "FAILED": 84,
-        "NO_UPDATE": 3267
+        "CANDIDATES_IDENTIFIED": 164,
+        "FAILED": 90,
+        "NO_UPDATE": 3406
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -920,15 +921,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 155,
-        "FAILED": 70,
-        "NO_UPDATE": 2700
+        "CANDIDATES_IDENTIFIED": 163,
+        "FAILED": 75,
+        "NO_UPDATE": 2812
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 26,
+      "pending_candidate_count": 27,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -1163,12 +1164,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump memecoin traders lost $2 billion after crash while family and partners make $100 million in trading fees - Fortune",
           "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYXdJTzVHYjRzU1FHUTlWRUtsb0FST3J3ZHZUcVpEVVpuZTNENDRQQi1ZNnRJTldwYm5SeWltZGVqRWhtQy10TlhlVGRMS05OeVBRZU92NnRNTEFMUXRfNm9TRTJPYXlzSTNhSE8wcE1xMzZlaDhjSWNPcTI1ZHBQLXlMS1lBb1prYVJsVzRkZTZnd0Y2S2FJSjdpM3VpWXVrZHc?oc=5"
+        },
+        {
+          "candidate_id": "SRC-2e982e6077c900b971992211",
+          "custody_pointer": "RSRCH-46a460318cdf5f0d3e38f5a2",
+          "producer_commit": "da4ac5568b19ae636d588d0cf2c762ea01de7215",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "LIBRA token 'facilitator' earns $12 million sniping Kanye West memecoin: Bubblemaps - The Block",
+          "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTXlDazhHTURWVzJIb1oyT0JFdHNDVjBLU3ZsT2hyMl9Wa2ExbTJnNzJMVW9FY3ZNc1lGWGZtWHdNaGRGNVBFM2hOUFp6elg4dTRnWTdnVXhEc0pocVpHVkJucTEtLWZJSVFubG1sRHMtTHJyS194NUNwTzk1QzlMeWU0Rlp4TE9sWERVWTBnV2NrdldVLXdQNExaSWZtbmJnYS1Uak1zX2kzSS1pd2RsaGdJQXgza1ZTRHdlTExMMTVBb2VuTXNhd1RqUWdhU2pkX2dF?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 131,
-        "FAILED": 84,
-        "NO_UPDATE": 3295
+        "CANDIDATES_IDENTIFIED": 137,
+        "FAILED": 90,
+        "NO_UPDATE": 3433
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1286,9 +1296,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 84,
-        "NO_UPDATE": 3376
+        "CANDIDATES_IDENTIFIED": 52,
+        "FAILED": 90,
+        "NO_UPDATE": 3518
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1361,9 +1371,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 47,
-        "FAILED": 98,
-        "NO_UPDATE": 3950
+        "CANDIDATES_IDENTIFIED": 48,
+        "FAILED": 105,
+        "NO_UPDATE": 4117
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1697,9 +1707,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 78,
-        "FAILED": 84,
-        "NO_UPDATE": 3348
+        "CANDIDATES_IDENTIFIED": 81,
+        "FAILED": 90,
+        "NO_UPDATE": 3489
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2267,9 +2277,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 316,
-        "FAILED": 70,
-        "NO_UPDATE": 2539
+        "CANDIDATES_IDENTIFIED": 326,
+        "FAILED": 75,
+        "NO_UPDATE": 2649
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2378,9 +2388,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 62,
-        "FAILED": 96,
-        "NO_UPDATE": 3677
+        "CANDIDATES_IDENTIFIED": 66,
+        "FAILED": 103,
+        "NO_UPDATE": 3841
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3056,15 +3066,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 339,
-        "FAILED": 84,
-        "NO_UPDATE": 3087
+        "CANDIDATES_IDENTIFIED": 354,
+        "FAILED": 90,
+        "NO_UPDATE": 3216
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 15,
+      "pending_candidate_count": 16,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -3200,12 +3210,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump memecoin traders lost $2 billion after crash while family and partners make $100 million in trading fees - Fortune",
           "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYXdJTzVHYjRzU1FHUTlWRUtsb0FST3J3ZHZUcVpEVVpuZTNENDRQQi1ZNnRJTldwYm5SeWltZGVqRWhtQy10TlhlVGRMS05OeVBRZU92NnRNTEFMUXRfNm9TRTJPYXlzSTNhSE8wcE1xMzZlaDhjSWNPcTI1ZHBQLXlMS1lBb1prYVJsVzRkZTZnd0Y2S2FJSjdpM3VpWXVrZHc?oc=5"
+        },
+        {
+          "candidate_id": "SRC-10dfb0d58c675adc94b57428",
+          "custody_pointer": "RSRCH-19e21414a458ab494fbbd908",
+          "producer_commit": "da4ac5568b19ae636d588d0cf2c762ea01de7215",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "LIBRA token 'facilitator' earns $12 million sniping Kanye West memecoin: Bubblemaps - The Block",
+          "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTXlDazhHTURWVzJIb1oyT0JFdHNDVjBLU3ZsT2hyMl9Wa2ExbTJnNzJMVW9FY3ZNc1lGWGZtWHdNaGRGNVBFM2hOUFp6elg4dTRnWTdnVXhEc0pocVpHVkJucTEtLWZJSVFubG1sRHMtTHJyS194NUNwTzk1QzlMeWU0Rlp4TE9sWERVWTBnV2NrdldVLXdQNExaSWZtbmJnYS1Uak1zX2kzSS1pd2RsaGdJQXgza1ZTRHdlTExMMTVBb2VuTXNhd1RqUWdhU2pkX2dF?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 73,
-        "FAILED": 84,
-        "NO_UPDATE": 3353
+        "CANDIDATES_IDENTIFIED": 77,
+        "FAILED": 90,
+        "NO_UPDATE": 3493
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3378,8 +3397,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 61,
-        "FAILED": 112,
-        "NO_UPDATE": 4507
+        "FAILED": 120,
+        "NO_UPDATE": 4699
       }
     }
   }
