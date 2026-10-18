@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 25,
-  "pending_candidate_count": 359,
-  "pending_sha256": "8afd154662ddfbeb292e98618519cb990eeaf054f8996351daad6122866d32f1",
+  "intake_cycles": 27,
+  "pending_candidate_count": 361,
+  "pending_sha256": "6f1cdb5985b41ae5cc18ff3eda6b3cfe9fdda0c8115b84b321f0f7b1ca04fc63",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -30,10 +30,12 @@
     "11cf2b49d65c6a220ded58c40c2ea631ff7ce8b7",
     "2cdbac24ded65d90c2269d1d817183a1d59889c6",
     "da4ac5568b19ae636d588d0cf2c762ea01de7215",
-    "3ee2dc43b44490391f242aeb1a431f37966d0f07"
+    "3ee2dc43b44490391f242aeb1a431f37966d0f07",
+    "a4c7591823c24788c3c8da4d91fe8caa3f3811cd",
+    "7d4801c232bd56d3d8f3386b702248c8d12c2894"
   ],
   "publication_authorized": false,
-  "scan_record_count": 46095,
+  "scan_record_count": 49745,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -88,9 +90,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 23,
-        "FAILED": 80,
-        "NO_UPDATE": 3072
+        "CANDIDATES_IDENTIFIED": 28,
+        "FAILED": 105,
+        "NO_UPDATE": 3292
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -406,9 +408,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 169,
-        "FAILED": 96,
-        "NO_UPDATE": 3545
+        "CANDIDATES_IDENTIFIED": 181,
+        "FAILED": 126,
+        "NO_UPDATE": 3803
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -922,9 +924,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 171,
-        "FAILED": 80,
-        "NO_UPDATE": 2924
+        "CANDIDATES_IDENTIFIED": 187,
+        "FAILED": 105,
+        "NO_UPDATE": 3133
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1177,9 +1179,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 143,
-        "FAILED": 96,
-        "NO_UPDATE": 3571
+        "CANDIDATES_IDENTIFIED": 152,
+        "FAILED": 126,
+        "NO_UPDATE": 3832
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1297,9 +1299,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 54,
-        "FAILED": 96,
-        "NO_UPDATE": 3660
+        "CANDIDATES_IDENTIFIED": 60,
+        "FAILED": 126,
+        "NO_UPDATE": 3924
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1372,9 +1374,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 49,
-        "FAILED": 112,
-        "NO_UPDATE": 4284
+        "CANDIDATES_IDENTIFIED": 53,
+        "FAILED": 147,
+        "NO_UPDATE": 4595
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1708,9 +1710,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 84,
-        "FAILED": 96,
-        "NO_UPDATE": 3630
+        "CANDIDATES_IDENTIFIED": 90,
+        "FAILED": 126,
+        "NO_UPDATE": 3894
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2278,15 +2280,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 334,
-        "FAILED": 80,
-        "NO_UPDATE": 2761
+        "CANDIDATES_IDENTIFIED": 352,
+        "FAILED": 105,
+        "NO_UPDATE": 2968
       }
     },
     "melania-token-preannouncement-wallets": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 11,
+      "pending_candidate_count": 12,
       "pending_candidates": [
         {
           "candidate_id": "SRC-af8c33eeb2daad8af8521e24",
@@ -2386,18 +2388,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "The winning bid in Melania Trump's NFT auction appears to have come from a wallet associated with Melania Trump - markets.businessinsider.com",
           "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNU5NU2dZbWtGMUhiS24yMUxvXzhLYXVXZDNNY2NMcVdRZmM5ZVlFWTdUeG42RFdFemRtSjJ6SjhSWE1NT2FrS1ZpMWNFdHVCdjUwYVJmNklSbTdyeEZqNUxORE9vcWdjemVIeE5oNGRJUktoaUJaRnpCVlFBcFo0ZW5hZWlCVXQ1STd6MTF6YmZRUXE4Z25RNHFOa2wxa2JMTVRKd1Rja2hERG1LQzBuakhDSG54d0RYcDFUb2xteDZ2TFhTd2x3?oc=5"
+        },
+        {
+          "candidate_id": "SRC-4c2d011fe57f5b57004d4fd9",
+          "custody_pointer": "RSRCH-cea0412c46099e5a7b24efff",
+          "producer_commit": "7d4801c232bd56d3d8f3386b702248c8d12c2894",
+          "query": "wallet funding provenance",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Official Trump memecoin wallet cashes out $4.6m to Coinbase ahead of team unlocks - dlnews.com",
+          "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOel96TXl2bXFQZTRwVldHN2pnRDB5LWw0YkthWkZnS3RodDR0b3lQdWxmRUxENzlpMVBmenRRZ0pSWHRhc2VfYkhTQUVvazZ0cXlKR05rWEVZYko2S0ZIQmRtX2l5V3ZBakhMUU5lZmpWZ00xSjEzQlFGRG5GVE1qUGJMYWtxVkZmWWpDUkNqUEFjZHpra2VpbFRsdkE?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 70,
-        "FAILED": 110,
-        "NO_UPDATE": 4005
+        "CANDIDATES_IDENTIFIED": 74,
+        "FAILED": 145,
+        "NO_UPDATE": 4316
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 75,
+      "pending_candidate_count": 76,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3073,12 +3084,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto Super PAC Fairshake Pours Millions More Into Defeating Sherrod Brown",
           "source_url": "https://decrypt.co/381238/crypto-super-pac-fairshake-pours-millions-more-into-defeating-sherrod-brown"
+        },
+        {
+          "candidate_id": "SRC-76f01df0363f01c015486aa7",
+          "custody_pointer": "RSRCH-6c4e7cc8cce2178e2388f1f6",
+          "producer_commit": "7d4801c232bd56d3d8f3386b702248c8d12c2894",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Cysic crypto bridge halted after unauthorized mint of 10M CYS",
+          "source_url": "https://cointelegraph.com/news/cysic-crypto-bridge-halted-after-unauthorized-mint-of-10m-cys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 369,
-        "FAILED": 96,
-        "NO_UPDATE": 3345
+        "CANDIDATES_IDENTIFIED": 397,
+        "FAILED": 126,
+        "NO_UPDATE": 3587
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3232,9 +3252,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 81,
-        "FAILED": 96,
-        "NO_UPDATE": 3633
+        "CANDIDATES_IDENTIFIED": 85,
+        "FAILED": 126,
+        "NO_UPDATE": 3899
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3406,9 +3426,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 61,
-        "FAILED": 128,
-        "NO_UPDATE": 4891
+        "CANDIDATES_IDENTIFIED": 66,
+        "FAILED": 168,
+        "NO_UPDATE": 5246
       }
     }
   }
