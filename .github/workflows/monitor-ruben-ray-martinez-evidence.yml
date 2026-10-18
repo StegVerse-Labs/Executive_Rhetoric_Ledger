@@ -1,13 +1,24 @@
 name: Monitor Ruben Ray Martinez Evidence
 
+# On-request only (ORGANIZATION-ROLE-RUNTIME-REALITY-DEPLOYMENT-001): no schedule polls an
+# outside source. A reviewer starts a refresh with a stated reason, and each run commits a
+# receipt next to the candidate file. P4 Maintenance Lane, H47, activity
+# b450ce57-31b9-40f8-904d-b4c8b9dd5239.
 on:
-  schedule:
-    - cron: "17 11 * * *"
   workflow_dispatch:
+    inputs:
+      reason:
+        description: "Why this refresh is requested (recorded in the receipt)"
+        required: true
+        type: string
 
 permissions:
   contents: write
   pull-requests: write
+
+concurrency:
+  group: ruben-ray-martinez-evidence-monitor
+  cancel-in-progress: false
 
 jobs:
   monitor:
@@ -27,18 +38,70 @@ jobs:
           git checkout -B "$branch"
       - name: Run case evidence monitor
         run: python scripts/run_case_evidence_monitor.py
+      - name: Write run receipt
+        env:
+          REQUESTER: ${{ github.actor }}
+          REASON: ${{ inputs.reason }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          HEAD_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          def sha256(path):
+              return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+          config_path = "config/ruben-ray-martinez-evidence-monitor.json"
+          output_path = "discovery_candidates/ruben-ray-martinez/latest.json"
+          config = json.loads(Path(config_path).read_text())
+          state = json.loads(Path(output_path).read_text())
+          receipt = {
+              "receipt_type": "on_request_discovery_refresh",
+              "monitor_id": config["monitor_id"],
+              "requester": os.environ["REQUESTER"],
+              "reason": os.environ["REASON"],
+              "repository": os.environ["REPOSITORY"],
+              "run_id": os.environ["RUN_ID"],
+              "run_attempt": os.environ["RUN_ATTEMPT"],
+              "run_url": f"https://github.com/{os.environ['REPOSITORY']}/actions/runs/{os.environ['RUN_ID']}",
+              "head_sha": os.environ["HEAD_SHA"],
+              "sources_queried": {
+                  "endpoint": "https://news.google.com/rss/search",
+                  "query_count": len(config["queries"]),
+                  "config_path": config_path,
+                  "config_sha256": sha256(config_path),
+              },
+              "timestamp": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+              "monitor_status": state["status"],
+              "candidate_count": state["candidate_count"],
+              "error_count": len(state["errors"]),
+              "outputs": {output_path: sha256(output_path)},
+              "authority": state["authority"],
+          }
+          receipt_path = Path(f"discovery_candidates/ruben-ray-martinez/receipts/{os.environ['RUN_ID']}-{os.environ['RUN_ATTEMPT']}.receipt.json")
+          receipt_path.parent.mkdir(parents=True, exist_ok=True)
+          receipt_path.write_text(json.dumps(receipt, indent=2) + "\n")
+          print(receipt_path)
+          PY
       - name: Create or update governed discovery PR
         env:
           GH_TOKEN: ${{ github.token }}
+          REASON: ${{ inputs.reason }}
+          RUN_ID: ${{ github.run_id }}
         run: |
           branch="discovery/ruben-ray-martinez-evidence"
           git config user.name "stegverse-discovery-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add discovery_candidates/ruben-ray-martinez/latest.json
+          git add discovery_candidates/ruben-ray-martinez/latest.json discovery_candidates/ruben-ray-martinez/receipts/
           if git diff --cached --quiet; then
+            echo "Nothing to commit."
             exit 0
           fi
-          git commit -m "Refresh Ruben Ray Martinez evidence candidates"
+          git commit -m "Refresh Ruben Ray Martinez evidence candidates (on request, run ${RUN_ID})"
           git push --force-with-lease origin "$branch"
           existing=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
           if [ -z "$existing" ]; then
@@ -46,5 +109,5 @@ jobs:
               --head "$branch" \
               --base main \
               --title "Refresh Ruben Ray Martinez evidence candidates" \
-              --body "Daily keyless discovery refresh for Issue #30. Results remain candidate-generated with no evidentiary or publication effect until governed review."
+              --body "On-request keyless discovery refresh for Issue #30 (run ${RUN_ID}). Reason: ${REASON}. A run receipt is committed under discovery_candidates/ruben-ray-martinez/receipts/. Results remain candidate-generated with no evidentiary or publication effect until governed review."
           fi

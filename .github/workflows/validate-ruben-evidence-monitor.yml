@@ -44,3 +44,13 @@ jobs:
           assert state['authority']['automation_may_change_review_disposition'] is False
           assert state['authority']['automation_may_publish'] is False
           PY
+      - name: Verify monitor is on-request only (no schedule)
+        run: |
+          wf=.github/workflows/monitor-ruben-ray-martinez-evidence.yml
+          if grep -nE '^[[:space:]]*schedule:' "$wf"; then
+            echo "::error file=$wf::scheduled trigger present (SCHEDULED_TRIGGER_NOT_MANIFEST_TRANSITION)"
+            exit 1
+          fi
+          grep -q 'workflow_dispatch:' "$wf"
+          grep -q 'git diff --cached --quiet' "$wf"
+          grep -q 'receipt.json' "$wf"
