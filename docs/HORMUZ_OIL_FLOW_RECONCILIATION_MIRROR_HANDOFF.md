@@ -134,3 +134,5 @@ Acquire exact CENTCOM/NCAGS/JMIC facilitated-transit source records for matched 
 ## October 9–18, 2026 continuation
 
 The canonical candidate now includes an October event-time and contract-aware evidence intake with linked Reuters/WSJ reporting, conditional Hormuz reopening, and explicitly unverified owner-corrected $275 million futures-related figure. No same-window October physical throughput or exchange-level net positioning is proven. Next: authenticate primary statement timestamps, reconcile exact contract settlements and CFTC/exchange data, and acquire independently matched vessel/cargo/discharge measurements. No publication, manipulation, or advance-knowledge finding authorized.
+
+Mr. Global attribution correction (2026-10-18): the owner recalls a video summary describing $250M–$300M in new crude contracts; $275M is a midpoint, not a verified precise inflow. See canonical oil-flow research candidate; source video and exchange corroboration pending.
