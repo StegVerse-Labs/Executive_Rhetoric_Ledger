@@ -307,4 +307,4 @@ A bounded machine-behavior research candidate is preserved at `assessments/machi
 
 ## October 2026 Iran/Hormuz oil-market evidence intake
 
-An October 9–18 presidential-rhetoric, Reuters/WSJ oil-price, and futures-positioning evidence intake is appended to `research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`. The >$225 million inflow assertion remains unverified; no motive or manipulation finding is authorized. The canonical Hormuz reconciliation handoff tracks next evidence and independent-review requirements.
+An October 9–18 presidential-rhetoric, Reuters/WSJ oil-price, and futures-positioning evidence intake is appended to `research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`. The $275 million inflow assertion remains unverified; no motive or manipulation finding is authorized. The canonical Hormuz reconciliation handoff tracks next evidence and independent-review requirements.
