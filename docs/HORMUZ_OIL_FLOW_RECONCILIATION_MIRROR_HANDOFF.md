@@ -130,3 +130,7 @@ This proves the repository source/coordination advancement only. It does not pro
 ## Next action
 
 Acquire exact CENTCOM/NCAGS/JMIC facilitated-transit source records for matched calendar days; extend the barrel-volume comparison onto one common seven-day window; obtain exact destination arrival/discharge evidence for the Saudi-China STS cargoes and Gas Polaris; then perform independent review before any finding transition.
+
+## October 9–18, 2026 continuation
+
+The canonical candidate now includes an October event-time and contract-aware evidence intake with linked Reuters/WSJ reporting, conditional Hormuz reopening, and explicitly unverified owner-reported futures inflows. No same-window October physical throughput or exchange-level net positioning is proven. Next: authenticate primary statement timestamps, reconcile exact contract settlements and CFTC/exchange data, and acquire independently matched vessel/cargo/discharge measurements. No publication, manipulation, or advance-knowledge finding authorized.
