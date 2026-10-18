@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 28,
-  "pending_candidate_count": 364,
-  "pending_sha256": "ff4c08d5a2d062312f56d3fdbb294fbd3e24c6a2a7bd4aa9a5b4d62ce843829e",
+  "intake_cycles": 29,
+  "pending_candidate_count": 370,
+  "pending_sha256": "f67bce1a6998c48cfd9f02d98993f67bf1eab79396762780a185a3a83d08fae0",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -33,10 +33,11 @@
     "3ee2dc43b44490391f242aeb1a431f37966d0f07",
     "a4c7591823c24788c3c8da4d91fe8caa3f3811cd",
     "7d4801c232bd56d3d8f3386b702248c8d12c2894",
-    "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070"
+    "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070",
+    "0deb8e4803ee649a2a69b2118da552ecd38b9689"
   ],
   "publication_authorized": false,
-  "scan_record_count": 51570,
+  "scan_record_count": 53395,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -91,15 +92,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 30,
-        "FAILED": 110,
-        "NO_UPDATE": 3410
+        "CANDIDATES_IDENTIFIED": 31,
+        "FAILED": 115,
+        "NO_UPDATE": 3529
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 34,
+      "pending_candidate_count": 36,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -406,18 +407,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Deutsche Bank prepares German crypto custody launch, eyes Asia: Report",
           "source_url": "https://cointelegraph.com/news/deutsche-bank-crypto-custody-expansion-asia-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-0acb07fed6ccd84a2eb893fd",
+          "custody_pointer": "RSRCH-293dda936fba93542c16dbbd",
+          "producer_commit": "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The White House's crypto chief departs: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto"
+        },
+        {
+          "candidate_id": "SRC-012cabd99c01a33c7c808a22",
+          "custody_pointer": "RSRCH-293dda936fba93542c16dbbd",
+          "producer_commit": "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
+          "source_url": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 185,
-        "FAILED": 132,
-        "NO_UPDATE": 3943
+        "CANDIDATES_IDENTIFIED": 190,
+        "FAILED": 138,
+        "NO_UPDATE": 4082
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 56,
+      "pending_candidate_count": 58,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -922,18 +941,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
           "source_url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink"
+        },
+        {
+          "candidate_id": "SRC-1560c33e4b0d5a29ad58dba5",
+          "custody_pointer": "RSRCH-779ac60802995515809eacd5",
+          "producer_commit": "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The White House's crypto chief departs: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto"
+        },
+        {
+          "candidate_id": "SRC-62931a9816d7400cf2844478",
+          "custody_pointer": "RSRCH-779ac60802995515809eacd5",
+          "producer_commit": "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
+          "source_url": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 193,
-        "FAILED": 110,
-        "NO_UPDATE": 3247
+        "CANDIDATES_IDENTIFIED": 200,
+        "FAILED": 115,
+        "NO_UPDATE": 3360
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 27,
+      "pending_candidate_count": 28,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -1177,12 +1214,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "LIBRA token 'facilitator' earns $12 million sniping Kanye West memecoin: Bubblemaps - The Block",
           "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTXlDazhHTURWVzJIb1oyT0JFdHNDVjBLU3ZsT2hyMl9Wa2ExbTJnNzJMVW9FY3ZNc1lGWGZtWHdNaGRGNVBFM2hOUFp6elg4dTRnWTdnVXhEc0pocVpHVkJucTEtLWZJSVFubG1sRHMtTHJyS194NUNwTzk1QzlMeWU0Rlp4TE9sWERVWTBnV2NrdldVLXdQNExaSWZtbmJnYS1Uak1zX2kzSS1pd2RsaGdJQXgza1ZTRHdlTExMMTVBb2VuTXNhd1RqUWdhU2pkX2dF?oc=5"
+        },
+        {
+          "candidate_id": "SRC-6e58da04f809cab6d30169e9",
+          "custody_pointer": "RSRCH-c83078dc80d92750398039a9",
+          "producer_commit": "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump\u2019s Meme Coin Tanks as $30 Million in Tokens Moved Without Warning - TechStory",
+          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObTBhWU9oM0dfbGVKWEd3M1lMZndFZFpvWjhLczBtWVBEOVcyNFZnRkdqc3ZTRnVDM2ZqYnpKU29ZcFgzektseDJUNWkxNXUwOEdUbjkwWW5hS1RneGp6VFA2TTBCQ0ViREVTcWdwN2huYjVBcXR3UC1BZC05c2k5bVBvZk85dS1yRVFuek9rdTdqYTNqbm4xbHhuYno5QkE?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 158,
-        "FAILED": 132,
-        "NO_UPDATE": 3970
+        "CANDIDATES_IDENTIFIED": 164,
+        "FAILED": 138,
+        "NO_UPDATE": 4108
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1309,9 +1355,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 63,
-        "FAILED": 132,
-        "NO_UPDATE": 4065
+        "CANDIDATES_IDENTIFIED": 66,
+        "FAILED": 138,
+        "NO_UPDATE": 4206
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1393,9 +1439,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 55,
-        "FAILED": 154,
-        "NO_UPDATE": 4761
+        "CANDIDATES_IDENTIFIED": 57,
+        "FAILED": 161,
+        "NO_UPDATE": 4927
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1729,9 +1775,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 93,
-        "FAILED": 132,
-        "NO_UPDATE": 4035
+        "CANDIDATES_IDENTIFIED": 95,
+        "FAILED": 138,
+        "NO_UPDATE": 4177
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2299,9 +2345,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 360,
-        "FAILED": 110,
-        "NO_UPDATE": 3080
+        "CANDIDATES_IDENTIFIED": 368,
+        "FAILED": 115,
+        "NO_UPDATE": 3192
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2419,9 +2465,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 78,
-        "FAILED": 152,
-        "NO_UPDATE": 4480
+        "CANDIDATES_IDENTIFIED": 82,
+        "FAILED": 159,
+        "NO_UPDATE": 4644
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3115,15 +3161,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 410,
-        "FAILED": 132,
-        "NO_UPDATE": 3718
+        "CANDIDATES_IDENTIFIED": 422,
+        "FAILED": 138,
+        "NO_UPDATE": 3850
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 16,
+      "pending_candidate_count": 17,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -3268,12 +3314,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "LIBRA token 'facilitator' earns $12 million sniping Kanye West memecoin: Bubblemaps - The Block",
           "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTXlDazhHTURWVzJIb1oyT0JFdHNDVjBLU3ZsT2hyMl9Wa2ExbTJnNzJMVW9FY3ZNc1lGWGZtWHdNaGRGNVBFM2hOUFp6elg4dTRnWTdnVXhEc0pocVpHVkJucTEtLWZJSVFubG1sRHMtTHJyS194NUNwTzk1QzlMeWU0Rlp4TE9sWERVWTBnV2NrdldVLXdQNExaSWZtbmJnYS1Uak1zX2kzSS1pd2RsaGdJQXgza1ZTRHdlTExMMTVBb2VuTXNhd1RqUWdhU2pkX2dF?oc=5"
+        },
+        {
+          "candidate_id": "SRC-57f107b3967eb3599618ec6a",
+          "custody_pointer": "RSRCH-75d7ffc8ceae25f8d81f3691",
+          "producer_commit": "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump\u2019s Meme Coin Tanks as $30 Million in Tokens Moved Without Warning - TechStory",
+          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObTBhWU9oM0dfbGVKWEd3M1lMZndFZFpvWjhLczBtWVBEOVcyNFZnRkdqc3ZTRnVDM2ZqYnpKU29ZcFgzektseDJUNWkxNXUwOEdUbjkwWW5hS1RneGp6VFA2TTBCQ0ViREVTcWdwN2huYjVBcXR3UC1BZC05c2k5bVBvZk85dS1yRVFuek9rdTdqYTNqbm4xbHhuYno5QkE?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 89,
-        "FAILED": 132,
-        "NO_UPDATE": 4039
+        "CANDIDATES_IDENTIFIED": 93,
+        "FAILED": 138,
+        "NO_UPDATE": 4179
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3454,9 +3509,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 67,
-        "FAILED": 176,
-        "NO_UPDATE": 5437
+        "CANDIDATES_IDENTIFIED": 68,
+        "FAILED": 184,
+        "NO_UPDATE": 5628
       }
     }
   }
