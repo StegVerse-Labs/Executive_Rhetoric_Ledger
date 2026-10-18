@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 27,
-  "pending_candidate_count": 361,
-  "pending_sha256": "6f1cdb5985b41ae5cc18ff3eda6b3cfe9fdda0c8115b84b321f0f7b1ca04fc63",
+  "intake_cycles": 28,
+  "pending_candidate_count": 364,
+  "pending_sha256": "ff4c08d5a2d062312f56d3fdbb294fbd3e24c6a2a7bd4aa9a5b4d62ce843829e",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -32,10 +32,11 @@
     "da4ac5568b19ae636d588d0cf2c762ea01de7215",
     "3ee2dc43b44490391f242aeb1a431f37966d0f07",
     "a4c7591823c24788c3c8da4d91fe8caa3f3811cd",
-    "7d4801c232bd56d3d8f3386b702248c8d12c2894"
+    "7d4801c232bd56d3d8f3386b702248c8d12c2894",
+    "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070"
   ],
   "publication_authorized": false,
-  "scan_record_count": 49745,
+  "scan_record_count": 51570,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -90,9 +91,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 28,
-        "FAILED": 105,
-        "NO_UPDATE": 3292
+        "CANDIDATES_IDENTIFIED": 30,
+        "FAILED": 110,
+        "NO_UPDATE": 3410
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -408,9 +409,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 181,
-        "FAILED": 126,
-        "NO_UPDATE": 3803
+        "CANDIDATES_IDENTIFIED": 185,
+        "FAILED": 132,
+        "NO_UPDATE": 3943
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -924,9 +925,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 187,
-        "FAILED": 105,
-        "NO_UPDATE": 3133
+        "CANDIDATES_IDENTIFIED": 193,
+        "FAILED": 110,
+        "NO_UPDATE": 3247
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1179,15 +1180,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 152,
-        "FAILED": 126,
-        "NO_UPDATE": 3832
+        "CANDIDATES_IDENTIFIED": 158,
+        "FAILED": 132,
+        "NO_UPDATE": 3970
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 12,
+      "pending_candidate_count": 13,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -1296,18 +1297,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance.US seeks $1B valuation in potential $100M funding round: Report",
           "source_url": "https://cointelegraph.com/news/binance-us-funding-valuation-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9433e0fbeb3a9cc97ef9841b",
+          "custody_pointer": "RSRCH-43d78c5d9066630aa69ba4f6",
+          "producer_commit": "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchanges Binance, Coinbase join West Africa scam sweep that flagged $11 million",
+          "source_url": "https://www.coindesk.com/business/2026/10/14/crypto-exchanges-binance-coinbase-join-west-africa-scam-sweep-that-flagged-usd11-million"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 60,
-        "FAILED": 126,
-        "NO_UPDATE": 3924
+        "CANDIDATES_IDENTIFIED": 63,
+        "FAILED": 132,
+        "NO_UPDATE": 4065
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 7,
+      "pending_candidate_count": 8,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -1371,12 +1381,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ex-Trump crypto adviser profited after helping pass stablecoin bill: WSJ",
           "source_url": "https://cointelegraph.com/news/bo-hines-donald-trump-crypto-advisor-nxum-tether-conflict?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e1c46af6ff235395c1fc7a2a",
+          "custody_pointer": "RSRCH-a0b0aa04690b5f99692576ad",
+          "producer_commit": "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070",
+          "query": "USD1 volume and supply",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
+          "source_url": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 53,
-        "FAILED": 147,
-        "NO_UPDATE": 4595
+        "CANDIDATES_IDENTIFIED": 55,
+        "FAILED": 154,
+        "NO_UPDATE": 4761
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1710,9 +1729,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 90,
-        "FAILED": 126,
-        "NO_UPDATE": 3894
+        "CANDIDATES_IDENTIFIED": 93,
+        "FAILED": 132,
+        "NO_UPDATE": 4035
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2280,9 +2299,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 352,
-        "FAILED": 105,
-        "NO_UPDATE": 2968
+        "CANDIDATES_IDENTIFIED": 360,
+        "FAILED": 110,
+        "NO_UPDATE": 3080
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2400,9 +2419,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 74,
-        "FAILED": 145,
-        "NO_UPDATE": 4316
+        "CANDIDATES_IDENTIFIED": 78,
+        "FAILED": 152,
+        "NO_UPDATE": 4480
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3096,9 +3115,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 397,
-        "FAILED": 126,
-        "NO_UPDATE": 3587
+        "CANDIDATES_IDENTIFIED": 410,
+        "FAILED": 132,
+        "NO_UPDATE": 3718
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3252,15 +3271,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 85,
-        "FAILED": 126,
-        "NO_UPDATE": 3899
+        "CANDIDATES_IDENTIFIED": 89,
+        "FAILED": 132,
+        "NO_UPDATE": 4039
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 18,
+      "pending_candidate_count": 19,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -3423,12 +3442,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "2026 Crypto Predictions! Tom Lee still buying ETH! Rekt tease WorldStar collab!",
           "source_url": "https://decrypt.co/videos/interviews/dBDZqp65/2026-crypto-predictions-tom-lee-still-buying-eth-rekt-tease-worldstar-collab"
+        },
+        {
+          "candidate_id": "SRC-32896539f3c4c59123a42990",
+          "custody_pointer": "RSRCH-dad40a57cd75ce3f27821da7",
+          "producer_commit": "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070",
+          "query": "settlement routes",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Banks Hold a Lever Over Stablecoin Adoption, BIS Economists Say",
+          "source_url": "https://decrypt.co/381253/banks-hold-a-lever-over-stablecoin-adoption-bis-economists-say"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 66,
-        "FAILED": 168,
-        "NO_UPDATE": 5246
+        "CANDIDATES_IDENTIFIED": 67,
+        "FAILED": 176,
+        "NO_UPDATE": 5437
       }
     }
   }
