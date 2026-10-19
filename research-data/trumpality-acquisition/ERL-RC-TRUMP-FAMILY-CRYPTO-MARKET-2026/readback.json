@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 30,
-  "pending_candidate_count": 372,
-  "pending_sha256": "c4ba670a92d892bf55a9f47bae3f79e7a325c86b46ae1ecc7a900771ab028b80",
+  "intake_cycles": 31,
+  "pending_candidate_count": 379,
+  "pending_sha256": "91ab7c89d132b502788e443dbe13bc96432a2d34cddce1198f7c5f4cfa9ad7dd",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -35,16 +35,17 @@
     "7d4801c232bd56d3d8f3386b702248c8d12c2894",
     "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070",
     "0deb8e4803ee649a2a69b2118da552ecd38b9689",
-    "feaa756a209eb1a29e1499e0aaf707ef4f203bcc"
+    "feaa756a209eb1a29e1499e0aaf707ef4f203bcc",
+    "5f8e4175a0eac6bb1454026fea933a48f66f7267"
   ],
   "publication_authorized": false,
-  "scan_record_count": 55220,
+  "scan_record_count": 57045,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 5,
+      "pending_candidate_count": 6,
       "pending_candidates": [
         {
           "candidate_id": "SRC-7f40bd5331431678be53662b",
@@ -90,18 +91,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump calls Ukraine\u2019s renewed strikes on Russian oil refineries \u2018a disgrace\u2019",
           "source_url": "https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace"
+        },
+        {
+          "candidate_id": "SRC-3dd5dd45b2f74f888a08866b",
+          "custody_pointer": "RSRCH-0128b510e1e515e37eeb5f06",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK Trio Jailed Over Home Invasion in Failed Crypto Theft Attempt",
+          "source_url": "https://decrypt.co/381281/uk-trio-jailed-over-home-invasion-in-failed-crypto-theft-attempt"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 32,
-        "FAILED": 120,
-        "NO_UPDATE": 3648
+        "CANDIDATES_IDENTIFIED": 34,
+        "FAILED": 125,
+        "NO_UPDATE": 3766
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 36,
+      "pending_candidate_count": 37,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -426,18 +436,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
           "source_url": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation"
+        },
+        {
+          "candidate_id": "SRC-71850436e7ab3cab0db111a3",
+          "custody_pointer": "RSRCH-a92fce8e95e4b2ae93817ac9",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "World Liberty\u2019s USD1 stablecoin sheds $400M in market cap in two weeks",
+          "source_url": "https://cointelegraph.com/news/world-liberty-usd1-stablecoin-market-cap-drops-400-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 195,
-        "FAILED": 144,
-        "NO_UPDATE": 4221
+        "CANDIDATES_IDENTIFIED": 202,
+        "FAILED": 150,
+        "NO_UPDATE": 4358
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 58,
+      "pending_candidate_count": 61,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -960,12 +979,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
           "source_url": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation"
+        },
+        {
+          "candidate_id": "SRC-da48173e30ba67edc10dbefc",
+          "custody_pointer": "RSRCH-ad71a9d3a556e57150d07bc4",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin whale moves $34 million in BTC it got in 2013 when coins traded at $131",
+          "source_url": "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131"
+        },
+        {
+          "candidate_id": "SRC-704cf81ca8b8800540bc9140",
+          "custody_pointer": "RSRCH-fe0e97404a04e437320255f2",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy buys $22M in Bitcoin, repurchases $193M in STRC",
+          "source_url": "https://cointelegraph.com/news/strategy-btc-22-million-buy-strc-buyback-193-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-5e39bdd86a05b59c74ec798d",
+          "custody_pointer": "RSRCH-bd71f723a62e9d73f52c4c0e",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 207,
-        "FAILED": 120,
-        "NO_UPDATE": 3473
+        "CANDIDATES_IDENTIFIED": 215,
+        "FAILED": 125,
+        "NO_UPDATE": 3585
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1227,9 +1273,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 170,
-        "FAILED": 144,
-        "NO_UPDATE": 4246
+        "CANDIDATES_IDENTIFIED": 179,
+        "FAILED": 150,
+        "NO_UPDATE": 4381
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1356,9 +1402,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 69,
-        "FAILED": 144,
-        "NO_UPDATE": 4347
+        "CANDIDATES_IDENTIFIED": 74,
+        "FAILED": 150,
+        "NO_UPDATE": 4486
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1440,15 +1486,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 59,
-        "FAILED": 168,
-        "NO_UPDATE": 5093
+        "CANDIDATES_IDENTIFIED": 62,
+        "FAILED": 175,
+        "NO_UPDATE": 5258
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 36,
+      "pending_candidate_count": 37,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1773,12 +1819,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "XRP has failed to make holders rich like bitcoin and ether. Here\u2019s why",
           "source_url": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why"
+        },
+        {
+          "candidate_id": "SRC-27c72f81afda53bd2dfe2d16",
+          "custody_pointer": "RSRCH-4221577e24c09d2da4736947",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger is set to fix its lending code before anyone can use it",
+          "source_url": "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 97,
-        "FAILED": 144,
-        "NO_UPDATE": 4319
+        "CANDIDATES_IDENTIFIED": 100,
+        "FAILED": 150,
+        "NO_UPDATE": 4460
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2346,9 +2401,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 376,
-        "FAILED": 120,
-        "NO_UPDATE": 3304
+        "CANDIDATES_IDENTIFIED": 386,
+        "FAILED": 125,
+        "NO_UPDATE": 3414
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2466,15 +2521,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 86,
-        "FAILED": 166,
-        "NO_UPDATE": 4808
+        "CANDIDATES_IDENTIFIED": 90,
+        "FAILED": 173,
+        "NO_UPDATE": 4972
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 78,
+      "pending_candidate_count": 79,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3177,12 +3232,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
           "source_url": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-ad4264f2acc6307607358be1",
+          "custody_pointer": "RSRCH-15116e03cc5aca1d872ffc1f",
+          "producer_commit": "5f8e4175a0eac6bb1454026fea933a48f66f7267",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea to meet crypto exchanges amid calls for tax delay",
+          "source_url": "https://cointelegraph.com/news/south-korea-to-meet-crypto-exchanges-amid-calls-for-tax-delay?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 434,
-        "FAILED": 144,
-        "NO_UPDATE": 3982
+        "CANDIDATES_IDENTIFIED": 449,
+        "FAILED": 150,
+        "NO_UPDATE": 4111
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3345,9 +3409,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 97,
-        "FAILED": 144,
-        "NO_UPDATE": 4319
+        "CANDIDATES_IDENTIFIED": 101,
+        "FAILED": 150,
+        "NO_UPDATE": 4459
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3528,9 +3592,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 69,
-        "FAILED": 192,
-        "NO_UPDATE": 5819
+        "CANDIDATES_IDENTIFIED": 74,
+        "FAILED": 200,
+        "NO_UPDATE": 6006
       }
     }
   }
