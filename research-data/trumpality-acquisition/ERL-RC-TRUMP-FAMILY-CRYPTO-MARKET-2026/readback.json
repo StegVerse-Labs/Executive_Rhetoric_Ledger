@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 29,
-  "pending_candidate_count": 370,
-  "pending_sha256": "f67bce1a6998c48cfd9f02d98993f67bf1eab79396762780a185a3a83d08fae0",
+  "intake_cycles": 30,
+  "pending_candidate_count": 372,
+  "pending_sha256": "c4ba670a92d892bf55a9f47bae3f79e7a325c86b46ae1ecc7a900771ab028b80",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -34,10 +34,11 @@
     "a4c7591823c24788c3c8da4d91fe8caa3f3811cd",
     "7d4801c232bd56d3d8f3386b702248c8d12c2894",
     "8aa88bff2e8d6ed4dc7bb0f66f65ac9600751070",
-    "0deb8e4803ee649a2a69b2118da552ecd38b9689"
+    "0deb8e4803ee649a2a69b2118da552ecd38b9689",
+    "feaa756a209eb1a29e1499e0aaf707ef4f203bcc"
   ],
   "publication_authorized": false,
-  "scan_record_count": 53395,
+  "scan_record_count": 55220,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -92,9 +93,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 31,
-        "FAILED": 115,
-        "NO_UPDATE": 3529
+        "CANDIDATES_IDENTIFIED": 32,
+        "FAILED": 120,
+        "NO_UPDATE": 3648
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -428,9 +429,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 190,
-        "FAILED": 138,
-        "NO_UPDATE": 4082
+        "CANDIDATES_IDENTIFIED": 195,
+        "FAILED": 144,
+        "NO_UPDATE": 4221
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -962,9 +963,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 200,
-        "FAILED": 115,
-        "NO_UPDATE": 3360
+        "CANDIDATES_IDENTIFIED": 207,
+        "FAILED": 120,
+        "NO_UPDATE": 3473
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1226,9 +1227,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 164,
-        "FAILED": 138,
-        "NO_UPDATE": 4108
+        "CANDIDATES_IDENTIFIED": 170,
+        "FAILED": 144,
+        "NO_UPDATE": 4246
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1355,9 +1356,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 66,
-        "FAILED": 138,
-        "NO_UPDATE": 4206
+        "CANDIDATES_IDENTIFIED": 69,
+        "FAILED": 144,
+        "NO_UPDATE": 4347
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1439,9 +1440,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 161,
-        "NO_UPDATE": 4927
+        "CANDIDATES_IDENTIFIED": 59,
+        "FAILED": 168,
+        "NO_UPDATE": 5093
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1775,9 +1776,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 95,
-        "FAILED": 138,
-        "NO_UPDATE": 4177
+        "CANDIDATES_IDENTIFIED": 97,
+        "FAILED": 144,
+        "NO_UPDATE": 4319
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2345,9 +2346,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 368,
-        "FAILED": 115,
-        "NO_UPDATE": 3192
+        "CANDIDATES_IDENTIFIED": 376,
+        "FAILED": 120,
+        "NO_UPDATE": 3304
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2465,15 +2466,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 82,
-        "FAILED": 159,
-        "NO_UPDATE": 4644
+        "CANDIDATES_IDENTIFIED": 86,
+        "FAILED": 166,
+        "NO_UPDATE": 4808
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 76,
+      "pending_candidate_count": 78,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3158,12 +3159,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Cysic crypto bridge halted after unauthorized mint of 10M CYS",
           "source_url": "https://cointelegraph.com/news/cysic-crypto-bridge-halted-after-unauthorized-mint-of-10m-cys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-90c0dda91e690c82fb927753",
+          "custody_pointer": "RSRCH-a4b568097e8775fa18a147f4",
+          "producer_commit": "feaa756a209eb1a29e1499e0aaf707ef4f203bcc",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
+          "source_url": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-93c30ff7171cd03d792913ab",
+          "custody_pointer": "RSRCH-867748cd7b6dd023dbcf0912",
+          "producer_commit": "feaa756a209eb1a29e1499e0aaf707ef4f203bcc",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
+          "source_url": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 422,
-        "FAILED": 138,
-        "NO_UPDATE": 3850
+        "CANDIDATES_IDENTIFIED": 434,
+        "FAILED": 144,
+        "NO_UPDATE": 3982
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3326,9 +3345,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 93,
-        "FAILED": 138,
-        "NO_UPDATE": 4179
+        "CANDIDATES_IDENTIFIED": 97,
+        "FAILED": 144,
+        "NO_UPDATE": 4319
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3509,9 +3528,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 68,
-        "FAILED": 184,
-        "NO_UPDATE": 5628
+        "CANDIDATES_IDENTIFIED": 69,
+        "FAILED": 192,
+        "NO_UPDATE": 5819
       }
     }
   }
