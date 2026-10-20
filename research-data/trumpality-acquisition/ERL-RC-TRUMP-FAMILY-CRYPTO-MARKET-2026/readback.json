@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 33,
-  "pending_candidate_count": 394,
-  "pending_sha256": "58257ccfc138581de948f0110e3a7ea28863903d16f32c5042998a42352e0392",
+  "intake_cycles": 34,
+  "pending_candidate_count": 405,
+  "pending_sha256": "c29525be5b7e163068e06b584ebfb8ce3d982f412842ddee5474d888b5658bc9",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -38,10 +38,11 @@
     "feaa756a209eb1a29e1499e0aaf707ef4f203bcc",
     "5f8e4175a0eac6bb1454026fea933a48f66f7267",
     "544528efba2768a30a1c61a98e9d0cd0ce482c4e",
-    "61869e9999d61d084a38c7c92669184d3e8ec4f2"
+    "61869e9999d61d084a38c7c92669184d3e8ec4f2",
+    "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c"
   ],
   "publication_authorized": false,
-  "scan_record_count": 60695,
+  "scan_record_count": 62520,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -114,9 +115,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 38,
-        "FAILED": 135,
-        "NO_UPDATE": 4002
+        "CANDIDATES_IDENTIFIED": 40,
+        "FAILED": 140,
+        "NO_UPDATE": 4120
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -477,9 +478,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 214,
-        "FAILED": 162,
-        "NO_UPDATE": 4634
+        "CANDIDATES_IDENTIFIED": 220,
+        "FAILED": 168,
+        "NO_UPDATE": 4772
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1083,9 +1084,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 227,
-        "FAILED": 135,
-        "NO_UPDATE": 3813
+        "CANDIDATES_IDENTIFIED": 233,
+        "FAILED": 140,
+        "NO_UPDATE": 3927
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1356,9 +1357,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 192,
-        "FAILED": 162,
-        "NO_UPDATE": 4656
+        "CANDIDATES_IDENTIFIED": 198,
+        "FAILED": 168,
+        "NO_UPDATE": 4794
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1485,9 +1486,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 78,
-        "FAILED": 162,
-        "NO_UPDATE": 4770
+        "CANDIDATES_IDENTIFIED": 79,
+        "FAILED": 168,
+        "NO_UPDATE": 4913
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1570,14 +1571,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 64,
-        "FAILED": 189,
-        "NO_UPDATE": 5592
+        "FAILED": 196,
+        "NO_UPDATE": 5760
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 38,
+      "pending_candidate_count": 40,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1920,18 +1921,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "XRP Ledger Repairs Its Lending Protocol Before It Goes Live",
           "source_url": "https://decrypt.co/381358/xrp-ledger-repairs-lending-protocol-before-live"
+        },
+        {
+          "candidate_id": "SRC-18750d053d8b3874a40f0a4d",
+          "custody_pointer": "RSRCH-61e9b7ed19860e5a28a4eb37",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP 30-day exchange inflows pass 6B tokens as whales move to the sidelines",
+          "source_url": "https://cointelegraph.com/markets/xrp-30-day-exchange-inflows-pass-6b-tokens-as-whales-move-to-the-sidelines?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-050f92b04971a8ba24ce6f0f",
+          "custody_pointer": "RSRCH-61e9b7ed19860e5a28a4eb37",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "BlackRock files for third Bitcoin ETF, still no Solana or XRP",
+          "source_url": "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 104,
-        "FAILED": 162,
-        "NO_UPDATE": 4744
+        "CANDIDATES_IDENTIFIED": 107,
+        "FAILED": 168,
+        "NO_UPDATE": 4885
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 64,
+      "pending_candidate_count": 72,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2508,12 +2527,84 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Tests Key Support as Oil and AI Fears Squeeze Markets",
           "source_url": "https://decrypt.co/381319/bitcoin-price-key-support-oil-ai-fears-squeeze-markets"
+        },
+        {
+          "candidate_id": "SRC-e9cd49776b99709ad67d0718",
+          "custody_pointer": "RSRCH-56cf5d269b7bac8093eaa786",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of AmSpec, LLC (La Porte, TX), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/20/2026-21406/accreditation-and-approval-of-amspec-llc-la-porte-tx-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-aad8c50f48124bb7820356f1",
+          "custody_pointer": "RSRCH-56cf5d269b7bac8093eaa786",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of SGS North America, Inc. (St. Rose, LA), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/20/2026-21405/accreditation-and-approval-of-sgs-north-america-inc-st-rose-la-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-81cfc9cad7bda59142e4edb3",
+          "custody_pointer": "RSRCH-73ac9c858d1d0a7dea85ff2d",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Taunting Trump Over Gas Prices, Iran Braces for Aftermath of U.S. Vote",
+          "source_url": "https://www.nytimes.com/2026/10/20/us/politics/iran-trump-midterm-elections.html"
+        },
+        {
+          "candidate_id": "SRC-f2d219d7bf25b97bda2fd745",
+          "custody_pointer": "RSRCH-a683f86305ce09c1bbf25325",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
+          "source_url": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111"
+        },
+        {
+          "candidate_id": "SRC-1e5d4e7cd74eaba6edb430b8",
+          "custody_pointer": "RSRCH-11bd8a58b65286671d3b718f",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of AmSpec, LLC (La Porte, TX), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/20/2026-21406/accreditation-and-approval-of-amspec-llc-la-porte-tx-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-593797b4242e61a17662cd3c",
+          "custody_pointer": "RSRCH-11bd8a58b65286671d3b718f",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Accreditation and Approval of SGS North America, Inc. (St. Rose, LA), as a Commercial Gauger and Laboratory",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/20/2026-21405/accreditation-and-approval-of-sgs-north-america-inc-st-rose-la-as-a-commercial-gauger-and-laboratory"
+        },
+        {
+          "candidate_id": "SRC-7306762ef6acfb62c5589ffa",
+          "custody_pointer": "RSRCH-02d674f287ceb90b73206f92",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Taunting Trump Over Gas Prices, Iran Braces for Aftermath of U.S. Vote",
+          "source_url": "https://www.nytimes.com/2026/10/20/us/politics/iran-trump-midterm-elections.html"
+        },
+        {
+          "candidate_id": "SRC-433064fea490d4b52fd76ac5",
+          "custody_pointer": "RSRCH-b1ceb647be2a35135ef7f2d0",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
+          "source_url": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 406,
-        "FAILED": 135,
-        "NO_UPDATE": 3634
+        "CANDIDATES_IDENTIFIED": 420,
+        "FAILED": 140,
+        "NO_UPDATE": 3740
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2631,15 +2722,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 98,
-        "FAILED": 187,
-        "NO_UPDATE": 5300
+        "CANDIDATES_IDENTIFIED": 102,
+        "FAILED": 194,
+        "NO_UPDATE": 5464
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 79,
+      "pending_candidate_count": 80,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3351,12 +3442,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "South Korea to meet crypto exchanges amid calls for tax delay",
           "source_url": "https://cointelegraph.com/news/south-korea-to-meet-crypto-exchanges-amid-calls-for-tax-delay?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-bd42caaaeb581f49e1f6015b",
+          "custody_pointer": "RSRCH-1c22739a28b983e8a2a2efb9",
+          "producer_commit": "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitget plans Thai crypto exchange acquisition weeks after $388M hack",
+          "source_url": "https://cointelegraph.com/news/bitget-plans-thai-crypto-exchange-acquisition-weeks-after-388m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 471,
-        "FAILED": 162,
-        "NO_UPDATE": 4377
+        "CANDIDATES_IDENTIFIED": 481,
+        "FAILED": 168,
+        "NO_UPDATE": 4511
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3519,9 +3619,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 109,
-        "FAILED": 162,
-        "NO_UPDATE": 4739
+        "CANDIDATES_IDENTIFIED": 113,
+        "FAILED": 168,
+        "NO_UPDATE": 4879
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3729,9 +3829,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 82,
-        "FAILED": 216,
-        "NO_UPDATE": 6382
+        "CANDIDATES_IDENTIFIED": 86,
+        "FAILED": 224,
+        "NO_UPDATE": 6570
       }
     }
   }
