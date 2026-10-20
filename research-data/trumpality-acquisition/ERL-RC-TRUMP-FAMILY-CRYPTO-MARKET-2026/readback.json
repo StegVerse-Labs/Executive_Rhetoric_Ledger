@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 34,
-  "pending_candidate_count": 405,
-  "pending_sha256": "c29525be5b7e163068e06b584ebfb8ce3d982f412842ddee5474d888b5658bc9",
+  "intake_cycles": 35,
+  "pending_candidate_count": 414,
+  "pending_sha256": "2f9eaf2cdd43eb9e68185adcc2d470248bb0ed802afbcdb224fc9ca8abf93764",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -39,10 +39,11 @@
     "5f8e4175a0eac6bb1454026fea933a48f66f7267",
     "544528efba2768a30a1c61a98e9d0cd0ce482c4e",
     "61869e9999d61d084a38c7c92669184d3e8ec4f2",
-    "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c"
+    "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
+    "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1"
   ],
   "publication_authorized": false,
-  "scan_record_count": 62520,
+  "scan_record_count": 64345,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -115,15 +116,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 40,
-        "FAILED": 140,
-        "NO_UPDATE": 4120
+        "CANDIDATES_IDENTIFIED": 42,
+        "FAILED": 145,
+        "NO_UPDATE": 4238
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 39,
+      "pending_candidate_count": 41,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -475,18 +476,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Revolut secures Gibraltar crypto license to support global expansion",
           "source_url": "https://cointelegraph.com/news/revolut-secures-gibraltar-crypto-license-to-support-global-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2e9e134c6af963b7d1e0fcfa",
+          "custody_pointer": "RSRCH-54dd1d1e9f2ed32f61d46b7f",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
+          "source_url": "https://www.coindesk.com/business/2026/10/20/kazakhstan-court-bars-coinbase-five-others-from-unlicensed-crypto-services-in-astana-international-financial-centre"
+        },
+        {
+          "candidate_id": "SRC-749041d8e55691f3c8bf90ee",
+          "custody_pointer": "RSRCH-0b275d80b9747c25b266840d",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "France's parliament approves vote to hit stablecoin trades with 31% capital gains tax",
+          "source_url": "https://www.coindesk.com/policy/2026/10/20/france-s-parliament-approves-vote-to-hit-crypto-to-stablecoin-trades-with-31-levy"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 220,
-        "FAILED": 168,
-        "NO_UPDATE": 4772
+        "CANDIDATES_IDENTIFIED": 227,
+        "FAILED": 174,
+        "NO_UPDATE": 4909
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 66,
+      "pending_candidate_count": 68,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1081,12 +1100,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Strategy Buys $22M in Bitcoin, Buys Back $193M of STRC",
           "source_url": "https://decrypt.co/381302/strategy-buys-22m-in-bitcoin-buys-back-193m-of-strc"
+        },
+        {
+          "candidate_id": "SRC-2b77514cf58724f8ab70eb49",
+          "custody_pointer": "RSRCH-1f1006968e6fa3496f281cd1",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "France's parliament approves vote to hit stablecoin trades with 31% capital gains tax",
+          "source_url": "https://www.coindesk.com/policy/2026/10/20/france-s-parliament-approves-vote-to-hit-crypto-to-stablecoin-trades-with-31-levy"
+        },
+        {
+          "candidate_id": "SRC-f9049eb70445fc04def3bad8",
+          "custody_pointer": "RSRCH-edda3fd234fad23e4b034468",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price spikes to $83.3K as US stocks rise on Q3 earnings, oil falls",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 233,
-        "FAILED": 140,
-        "NO_UPDATE": 3927
+        "CANDIDATES_IDENTIFIED": 239,
+        "FAILED": 145,
+        "NO_UPDATE": 4041
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1357,9 +1394,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 198,
-        "FAILED": 168,
-        "NO_UPDATE": 4794
+        "CANDIDATES_IDENTIFIED": 204,
+        "FAILED": 174,
+        "NO_UPDATE": 4932
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1486,15 +1523,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 79,
-        "FAILED": 168,
-        "NO_UPDATE": 4913
+        "CANDIDATES_IDENTIFIED": 80,
+        "FAILED": 174,
+        "NO_UPDATE": 5056
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 8,
+      "pending_candidate_count": 9,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -1567,12 +1604,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
           "source_url": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash"
+        },
+        {
+          "candidate_id": "SRC-5294c8406912dd5ce4b50863",
+          "custody_pointer": "RSRCH-4292735b1b245d6963d003c6",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "USD1 volume and supply",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Stablecoin transfers quadruple to $891B as US banks expand adoption: Report",
+          "source_url": "https://cointelegraph.com/news/stablecoins-move-400m-an-hour-as-73-of-volume-occurs-outside-banking-hours-coinbase-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 64,
-        "FAILED": 196,
-        "NO_UPDATE": 5760
+        "CANDIDATES_IDENTIFIED": 65,
+        "FAILED": 203,
+        "NO_UPDATE": 5927
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1942,15 +1988,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 107,
-        "FAILED": 168,
-        "NO_UPDATE": 4885
+        "CANDIDATES_IDENTIFIED": 110,
+        "FAILED": 174,
+        "NO_UPDATE": 5026
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 72,
+      "pending_candidate_count": 74,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2599,12 +2645,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
           "source_url": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111"
+        },
+        {
+          "candidate_id": "SRC-376526258e6661ec44ab2d9c",
+          "custody_pointer": "RSRCH-4e5e2fd96de8766d1744c6fb",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price spikes to $83.3K as US stocks rise on Q3 earnings, oil falls",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-19b6065e3b826cd4f92f8409",
+          "custody_pointer": "RSRCH-ba294d2feb4209cfd8d6bd13",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price spikes to $83.3K as US stocks rise on Q3 earnings, oil falls",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 420,
-        "FAILED": 140,
-        "NO_UPDATE": 3740
+        "CANDIDATES_IDENTIFIED": 436,
+        "FAILED": 145,
+        "NO_UPDATE": 3844
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2722,9 +2786,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 102,
-        "FAILED": 194,
-        "NO_UPDATE": 5464
+        "CANDIDATES_IDENTIFIED": 106,
+        "FAILED": 201,
+        "NO_UPDATE": 5628
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3454,9 +3518,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 481,
-        "FAILED": 168,
-        "NO_UPDATE": 4511
+        "CANDIDATES_IDENTIFIED": 491,
+        "FAILED": 174,
+        "NO_UPDATE": 4645
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3619,15 +3683,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 113,
-        "FAILED": 168,
-        "NO_UPDATE": 4879
+        "CANDIDATES_IDENTIFIED": 117,
+        "FAILED": 174,
+        "NO_UPDATE": 5019
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 22,
+      "pending_candidate_count": 24,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -3826,12 +3890,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Mastercard Brings Its Fraud-Fighting Tools to Stablecoin Payments",
           "source_url": "https://decrypt.co/381365/mastercard-brings-its-fraud-fighting-tools-to-stablecoin-payments"
+        },
+        {
+          "candidate_id": "SRC-b63a1203b1c2714afd66912b",
+          "custody_pointer": "RSRCH-c60076764c0ca1828249e3a4",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tx launches USTX stablecoin to pull RWA liquidity onto its chain",
+          "source_url": "https://cointelegraph.com/news/tx-ustx-stablecoin-rwa-liquidity-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f3d86b502df88cfd5a666730",
+          "custody_pointer": "RSRCH-7387ec9e238c5cdbc4177bf0",
+          "producer_commit": "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+          "query": "settlement routes",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Injective, BDACS plan Korean won stablecoin settlement for tokenized assets",
+          "source_url": "https://cointelegraph.com/news/injective-bdacs-korean-won-stablecoin-tokenized-assets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 86,
-        "FAILED": 224,
-        "NO_UPDATE": 6570
+        "CANDIDATES_IDENTIFIED": 90,
+        "FAILED": 232,
+        "NO_UPDATE": 6758
       }
     }
   }
