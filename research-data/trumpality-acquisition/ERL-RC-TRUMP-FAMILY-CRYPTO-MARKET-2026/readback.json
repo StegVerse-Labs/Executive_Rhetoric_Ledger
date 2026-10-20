@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 35,
-  "pending_candidate_count": 414,
-  "pending_sha256": "2f9eaf2cdd43eb9e68185adcc2d470248bb0ed802afbcdb224fc9ca8abf93764",
+  "intake_cycles": 36,
+  "pending_candidate_count": 417,
+  "pending_sha256": "fcd249d113637b370fd00f9ef4d92164ca65def14f95ea99afdba28b9bbce89f",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -40,10 +40,11 @@
     "544528efba2768a30a1c61a98e9d0cd0ce482c4e",
     "61869e9999d61d084a38c7c92669184d3e8ec4f2",
     "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
-    "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1"
+    "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
+    "ab45ac33318dfd330473c4ff1524f82e9a532de0"
   ],
   "publication_authorized": false,
-  "scan_record_count": 64345,
+  "scan_record_count": 66170,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -116,9 +117,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 42,
-        "FAILED": 145,
-        "NO_UPDATE": 4238
+        "CANDIDATES_IDENTIFIED": 43,
+        "FAILED": 150,
+        "NO_UPDATE": 4357
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -497,15 +498,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 227,
-        "FAILED": 174,
-        "NO_UPDATE": 4909
+        "CANDIDATES_IDENTIFIED": 234,
+        "FAILED": 180,
+        "NO_UPDATE": 5046
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 68,
+      "pending_candidate_count": 69,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1118,12 +1119,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin price spikes to $83.3K as US stocks rise on Q3 earnings, oil falls",
           "source_url": "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fe78dae49e07533a1be28c46",
+          "custody_pointer": "RSRCH-e29f31c55a1891a7a6f4802c",
+          "producer_commit": "ab45ac33318dfd330473c4ff1524f82e9a532de0",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strive closes $630M SATS IPO, leaves Bitcoin allocation unspecified",
+          "source_url": "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 239,
-        "FAILED": 145,
-        "NO_UPDATE": 4041
+        "CANDIDATES_IDENTIFIED": 245,
+        "FAILED": 150,
+        "NO_UPDATE": 4155
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1394,9 +1404,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 204,
-        "FAILED": 174,
-        "NO_UPDATE": 4932
+        "CANDIDATES_IDENTIFIED": 210,
+        "FAILED": 180,
+        "NO_UPDATE": 5070
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1523,9 +1533,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 80,
-        "FAILED": 174,
-        "NO_UPDATE": 5056
+        "CANDIDATES_IDENTIFIED": 81,
+        "FAILED": 180,
+        "NO_UPDATE": 5199
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1616,9 +1626,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 65,
-        "FAILED": 203,
-        "NO_UPDATE": 5927
+        "CANDIDATES_IDENTIFIED": 66,
+        "FAILED": 210,
+        "NO_UPDATE": 6094
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -1988,15 +1998,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 110,
-        "FAILED": 174,
-        "NO_UPDATE": 5026
+        "CANDIDATES_IDENTIFIED": 112,
+        "FAILED": 180,
+        "NO_UPDATE": 5168
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 74,
+      "pending_candidate_count": 76,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2663,12 +2673,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin price spikes to $83.3K as US stocks rise on Q3 earnings, oil falls",
           "source_url": "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fbcb7a8d0a8d6194b3b73987",
+          "custody_pointer": "RSRCH-842294b42fed56194c070d6e",
+          "producer_commit": "ab45ac33318dfd330473c4ff1524f82e9a532de0",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The Guardian view on Alberta\u2019s referendum: Canada holds together \u2013 against Donald Trump | Editorial",
+          "source_url": "https://www.theguardian.com/commentisfree/2026/oct/20/the-guardian-view-on-albertas-referendum-canada-holds-together-against-donald-trump"
+        },
+        {
+          "candidate_id": "SRC-b35dc1e796a7f690f15f963e",
+          "custody_pointer": "RSRCH-475fcb619318c7dd2a3f3dc3",
+          "producer_commit": "ab45ac33318dfd330473c4ff1524f82e9a532de0",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The Guardian view on Alberta\u2019s referendum: Canada holds together \u2013 against Donald Trump | Editorial",
+          "source_url": "https://www.theguardian.com/commentisfree/2026/oct/20/the-guardian-view-on-albertas-referendum-canada-holds-together-against-donald-trump"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 436,
-        "FAILED": 145,
-        "NO_UPDATE": 3844
+        "CANDIDATES_IDENTIFIED": 454,
+        "FAILED": 150,
+        "NO_UPDATE": 3946
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2786,9 +2814,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 106,
-        "FAILED": 201,
-        "NO_UPDATE": 5628
+        "CANDIDATES_IDENTIFIED": 110,
+        "FAILED": 208,
+        "NO_UPDATE": 5792
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3518,9 +3546,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 491,
-        "FAILED": 174,
-        "NO_UPDATE": 4645
+        "CANDIDATES_IDENTIFIED": 501,
+        "FAILED": 180,
+        "NO_UPDATE": 4779
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3683,9 +3711,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 117,
-        "FAILED": 174,
-        "NO_UPDATE": 5019
+        "CANDIDATES_IDENTIFIED": 121,
+        "FAILED": 180,
+        "NO_UPDATE": 5159
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3911,9 +3939,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 90,
-        "FAILED": 232,
-        "NO_UPDATE": 6758
+        "CANDIDATES_IDENTIFIED": 94,
+        "FAILED": 240,
+        "NO_UPDATE": 6946
       }
     }
   }
