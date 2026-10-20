@@ -304,3 +304,9 @@ The model election-framing lane has begun its first atomic proposition-delta rec
 ### October 12, 2026 — ChatGPT Russia-discussion proposition substitution
 
 A bounded machine-behavior research candidate is preserved at `assessments/machine/2026-10-12-chatgpt-russia-proposition-substitution.json` under Goal `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001` / Issue #212, cross-referenced to Issue #69. It records unrequested oil-shortage framing, an unasserted universal-disinformation proposition and rebuttal, and subsequent corrections. No partisan bias, motive, or system-wide finding is authorized; complete verbatim transcript custody and matched controls remain outstanding.
+
+## October 2026 Iran/Hormuz oil-market evidence intake
+
+An October 9–18 presidential-rhetoric, Reuters/WSJ oil-price, and futures-positioning evidence intake is appended to `research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`. The $275 million inflow assertion remains unverified; no motive or manipulation finding is authorized. The canonical Hormuz reconciliation handoff tracks next evidence and independent-review requirements.
+
+Mr. Global attribution correction (2026-10-18): the owner recalls a video summary describing $250M–$300M in new crude contracts; $275M is a midpoint, not a verified precise inflow. See canonical oil-flow research candidate; source video and exchange corroboration pending.

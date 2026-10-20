@@ -130,3 +130,11 @@ This proves the repository source/coordination advancement only. It does not pro
 ## Next action
 
 Acquire exact CENTCOM/NCAGS/JMIC facilitated-transit source records for matched calendar days; extend the barrel-volume comparison onto one common seven-day window; obtain exact destination arrival/discharge evidence for the Saudi-China STS cargoes and Gas Polaris; then perform independent review before any finding transition.
+
+## October 9–18, 2026 continuation
+
+The canonical candidate now includes an October event-time and contract-aware evidence intake with linked Reuters/WSJ reporting, conditional Hormuz reopening, and explicitly unverified owner-corrected $275 million futures-related figure. No same-window October physical throughput or exchange-level net positioning is proven. Next: authenticate primary statement timestamps, reconcile exact contract settlements and CFTC/exchange data, and acquire independently matched vessel/cargo/discharge measurements. No publication, manipulation, or advance-knowledge finding authorized.
+
+Mr. Global attribution correction (2026-10-18): the owner recalls a video summary describing $250M–$300M in new crude contracts; $275M is a midpoint, not a verified precise inflow. See canonical oil-flow research candidate; source video and exchange corroboration pending.
+
+**CFTC weekly positioning lead (2026-10-18 follow-up):** Prior assistant source review cited the CFTC report published October 16, 2026: WTI futures open interest 1,900,179; producer/merchant long positions 660,971; producer/merchant **net-long positioning reportedly increased 18,133 contracts week over week**. Earlier discussion also cited +16,439 commercial gross long contracts; these are distinct series, not additive. Confirm report format, as-of date (COT Tuesday cutoff), market/contract coverage, prior-week comparator, gross long and short rows, and whether 18,133 is net-position delta before upgrading source status. This does not establish Thursday–Friday trades or identify Mr. Global's claimed 3,000-contract position. For standard 1,000-barrel WTI futures, 18,133 contracts correspond to 18.133 million barrels of contract-equivalent exposure, not $275M cash inflow. Primary dataset: https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm .
