@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 39,
-  "pending_candidate_count": 428,
-  "pending_sha256": "585d08fab5fd17483cac62c83c0c9411058813a3186f3799a2ce682b408cee46",
+  "intake_cycles": 40,
+  "pending_candidate_count": 443,
+  "pending_sha256": "e7f0fcde830118e99d0e8dc0d37acf78fcdda02c974146ac1671ac153ff5c281",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -44,10 +44,11 @@
     "ab45ac33318dfd330473c4ff1524f82e9a532de0",
     "50081369fdafa46caf692974afd4d85b50a94a86",
     "0ff079f78dab34374221fa181adf5dd28ebc9b2b",
-    "5e74827f7d02d864b6088601342edb780a44c462"
+    "5e74827f7d02d864b6088601342edb780a44c462",
+    "da2430146c34ca1ba963e003264eeb218bffcc11"
   ],
   "publication_authorized": false,
-  "scan_record_count": 71645,
+  "scan_record_count": 73470,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -121,14 +122,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 165,
-        "NO_UPDATE": 4714
+        "FAILED": 170,
+        "NO_UPDATE": 4834
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 44,
+      "pending_candidate_count": 47,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -525,18 +526,45 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "UK Banks Hit With 10,000 Complaints Over Blocked Crypto Transfers in 90 Days: Report",
           "source_url": "https://decrypt.co/381475/uk-banks-hit-with-10000-complaints-over-blocked-crypto-transfers-in-90-days-report"
+        },
+        {
+          "candidate_id": "SRC-502d7641a2d92ed124ac3236",
+          "custody_pointer": "RSRCH-51a66c24cbc40836b79d9c39",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Cardano Foundation urges EU against expanding MiCA rules to DeFi and staking",
+          "source_url": "https://cointelegraph.com/news/cardano-foundation-urges-eu-against-expanding-mica-rules-to-defi-and-staking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c82682663b280336b46d5678",
+          "custody_pointer": "RSRCH-51a66c24cbc40836b79d9c39",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK financial watchdog opens consultations for DeFi guidance, crypto laws",
+          "source_url": "https://cointelegraph.com/news/uk-fca-consultations-defi-crypto-laws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e36c64f37a15b72cbdd4470a",
+          "custody_pointer": "RSRCH-b82b22c00a0ea421ea95ed72",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump to throw spotlight on overseas crypto abuses at White House event",
+          "source_url": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 257,
-        "FAILED": 198,
-        "NO_UPDATE": 5455
+        "CANDIDATES_IDENTIFIED": 264,
+        "FAILED": 204,
+        "NO_UPDATE": 5592
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 72,
+      "pending_candidate_count": 76,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1185,18 +1213,54 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin \u2018top buyers\u2019 halt BTC price upside with $87.7K now key: Glassnode",
           "source_url": "https://cointelegraph.com/markets/bitcoin-top-buyers-halt-btc-price-upside-with-877k-now-key-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-046366eb3df93f1a4500d7e2",
+          "custody_pointer": "RSRCH-7b187eee99998e80c26bc64e",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump to throw spotlight on overseas crypto abuses at White House event",
+          "source_url": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event"
+        },
+        {
+          "candidate_id": "SRC-873e6c4759c3f975e7023b36",
+          "custody_pointer": "RSRCH-ef0136bab0e518f0217d85d8",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Musk\u2019s SpaceX-Tesla Merger Would Create a Bitcoin Treasury Behemoth",
+          "source_url": "https://decrypt.co/381538/musk-spacex-tesla-merger-bitcoin-treasury-behemoth"
+        },
+        {
+          "candidate_id": "SRC-49e75255e6581c766cb60029",
+          "custody_pointer": "RSRCH-ef0136bab0e518f0217d85d8",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What Is a Bitcoin-Backed Loan? Borrowing Against BTC Explained",
+          "source_url": "https://decrypt.co/resources/what-is-a-bitcoin-backed-loan-borrowing-against-btc-explained"
+        },
+        {
+          "candidate_id": "SRC-4d3c1f5b4f5478a9945b5617",
+          "custody_pointer": "RSRCH-3d5e5cc003425bdd717955de",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto Long & Short: Why real-world assets need fixed-rate loans onchain",
+          "source_url": "https://www.coindesk.com/coindesk-indices/2026/10/21/crypto-long-and-short-why-real-world-assets-need-fixed-rate-loans-onchain"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 265,
-        "FAILED": 165,
-        "NO_UPDATE": 4495
+        "CANDIDATES_IDENTIFIED": 272,
+        "FAILED": 170,
+        "NO_UPDATE": 4608
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 29,
+      "pending_candidate_count": 30,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -1458,12 +1522,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Meme Coin Explained: Price History, Market Cap & Everything You Need to Know - MEXC",
           "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQd1dUWGEzdi1VdjlYVXRoWkkwczhHT1NjdTJXYS1scHprZkpKa0JLRU9xZHdfT1NsbkRhdHB4UkZ1eFNNUG5QTndSZ0ZwLWVCeW9UeEVnYjR4UTVoUW9acV9MeUxudjIweExoTU4xNEVtZnZ6Rkx6UmFGSFBRTm9ERGFxRGlIR0gycC1ia2h2VUJJYWxlOVUtcHA0S3JWaXo0cGJkclVCZXBGaTFCN0hWR0V0S3poVEtK?oc=5"
+        },
+        {
+          "candidate_id": "SRC-028b98c795c73efb47a120d7",
+          "custody_pointer": "RSRCH-aa6458261097b77606249a08",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Quick Take: Melania Trump\u2019s Meme Coin Derails $TRUMP Token Rally, Fake Barron, Ivanka Coins Launched - BitPinas",
+          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZW1oVkpUUDNOVE00TWhnSXVhUnpzZjRzX0NmV1pSY09XYTAzbDJTOW9TY0dfQVR2ZHRNcHBlWDQ4LU13UEJObkVrMkpPOUFWem5MbU0wWnVNVHB4dHlTdlQ0V3NIWWtfdTdxWklMbzVXRzlpcElkWWhvZExtRk1qT2xTZWF4WUdYVEx4WkNVeVNicUotUHNqdWdIRVZOcEU?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 237,
-        "FAILED": 198,
-        "NO_UPDATE": 5475
+        "CANDIDATES_IDENTIFIED": 244,
+        "FAILED": 204,
+        "NO_UPDATE": 5612
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1590,9 +1663,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 93,
-        "FAILED": 198,
-        "NO_UPDATE": 5619
+        "CANDIDATES_IDENTIFIED": 94,
+        "FAILED": 204,
+        "NO_UPDATE": 5762
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1683,15 +1756,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 75,
-        "FAILED": 231,
-        "NO_UPDATE": 6589
+        "CANDIDATES_IDENTIFIED": 76,
+        "FAILED": 238,
+        "NO_UPDATE": 6756
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 41,
+      "pending_candidate_count": 43,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2061,18 +2134,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple brings Wall Street into 24/7 stock bets, but HSBC warns markets are still thin",
           "source_url": "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin"
+        },
+        {
+          "candidate_id": "SRC-e0228ef1dbd95313c0fdb4a6",
+          "custody_pointer": "RSRCH-5c425c40209685026ea1af15",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "canonical XRP and XLM price series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Hits Weekly High as Crypto Market Rebounds",
+          "source_url": "https://decrypt.co/381555/bitcoin-price-weekly-high-crypto-rebounds"
+        },
+        {
+          "candidate_id": "SRC-da5e3d559381f5f5c0e89cd8",
+          "custody_pointer": "RSRCH-a21c4728f6d2764705b2683e",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Hits Weekly High as Crypto Market Rebounds",
+          "source_url": "https://decrypt.co/381555/bitcoin-price-weekly-high-crypto-rebounds"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 123,
-        "FAILED": 198,
-        "NO_UPDATE": 5589
+        "CANDIDATES_IDENTIFIED": 126,
+        "FAILED": 204,
+        "NO_UPDATE": 5730
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 76,
+      "pending_candidate_count": 78,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2757,12 +2848,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "The Guardian view on Alberta\u2019s referendum: Canada holds together \u2013 against Donald Trump | Editorial",
           "source_url": "https://www.theguardian.com/commentisfree/2026/oct/20/the-guardian-view-on-albertas-referendum-canada-holds-together-against-donald-trump"
+        },
+        {
+          "candidate_id": "SRC-c84d959ada249592d8321d48",
+          "custody_pointer": "RSRCH-00e5bd0130bc2dbb342803f7",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. to Tap Heating Oil Reserves Ahead of Midterm Elections",
+          "source_url": "https://www.nytimes.com/2026/10/21/business/heating-oil-emergency-reserve-prices.html"
+        },
+        {
+          "candidate_id": "SRC-3b43e7a46df107ef718b0ec1",
+          "custody_pointer": "RSRCH-f22deaafcc61097887c5e1de",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. to Tap Heating Oil Reserves Ahead of Midterm Elections",
+          "source_url": "https://www.nytimes.com/2026/10/21/business/heating-oil-emergency-reserve-prices.html"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 504,
-        "FAILED": 165,
-        "NO_UPDATE": 4256
+        "CANDIDATES_IDENTIFIED": 520,
+        "FAILED": 170,
+        "NO_UPDATE": 4360
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2880,15 +2989,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 122,
-        "FAILED": 229,
-        "NO_UPDATE": 6284
+        "CANDIDATES_IDENTIFIED": 126,
+        "FAILED": 236,
+        "NO_UPDATE": 6448
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 83,
+      "pending_candidate_count": 84,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3636,18 +3745,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto rises with Asian tech stocks, zcash extends gain after setting upgrade date",
           "source_url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
+        },
+        {
+          "candidate_id": "SRC-9050913f2d4524dbdc8202d9",
+          "custody_pointer": "RSRCH-c71d6fb45e4099bac8bdb011",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK financial watchdog opens consultations for DeFi guidance, crypto laws",
+          "source_url": "https://cointelegraph.com/news/uk-fca-consultations-defi-crypto-laws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 543,
-        "FAILED": 198,
-        "NO_UPDATE": 5169
+        "CANDIDATES_IDENTIFIED": 554,
+        "FAILED": 204,
+        "NO_UPDATE": 5302
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 17,
+      "pending_candidate_count": 18,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -3801,18 +3919,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Trump\u2019s Meme Coin Tanks as $30 Million in Tokens Moved Without Warning - TechStory",
           "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObTBhWU9oM0dfbGVKWEd3M1lMZndFZFpvWjhLczBtWVBEOVcyNFZnRkdqc3ZTRnVDM2ZqYnpKU29ZcFgzektseDJUNWkxNXUwOEdUbjkwWW5hS1RneGp6VFA2TTBCQ0ViREVTcWdwN2huYjVBcXR3UC1BZC05c2k5bVBvZk85dS1yRVFuek9rdTdqYTNqbm4xbHhuYno5QkE?oc=5"
+        },
+        {
+          "candidate_id": "SRC-e33690e59cd4966cca4abcc6",
+          "custody_pointer": "RSRCH-57799c5326390de16cc57661",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Quick Take: Melania Trump\u2019s Meme Coin Derails $TRUMP Token Rally, Fake Barron, Ivanka Coins Launched - BitPinas",
+          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZW1oVkpUUDNOVE00TWhnSXVhUnpzZjRzX0NmV1pSY09XYTAzbDJTOW9TY0dfQVR2ZHRNcHBlWDQ4LU13UEJObkVrMkpPOUFWem5MbU0wWnVNVHB4dHlTdlQ0V3NIWWtfdTdxWklMbzVXRzlpcElkWWhvZExtRk1qT2xTZWF4WUdYVEx4WkNVeVNicUotUHNqdWdIRVZOcEU?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 133,
-        "FAILED": 198,
-        "NO_UPDATE": 5579
+        "CANDIDATES_IDENTIFIED": 137,
+        "FAILED": 204,
+        "NO_UPDATE": 5719
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 25,
+      "pending_candidate_count": 26,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -4038,12 +4165,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Shinhan, SBI make Japan-Korea tourist spending a test case for yen stablecoins",
           "source_url": "https://cointelegraph.com/news/shinhan-sbi-japan-korea-travel-yen-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-84c468ca5ffd99c277c2c871",
+          "custody_pointer": "RSRCH-c450539bdce56b64627e555e",
+          "producer_commit": "da2430146c34ca1ba963e003264eeb218bffcc11",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "OCC finalizes GENIUS Act rules for stablecoin issuers and custody",
+          "source_url": "https://cointelegraph.com/news/occ-finalizes-genius-act-rules-stablecoin-issuers-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 118,
-        "FAILED": 264,
-        "NO_UPDATE": 7498
+        "CANDIDATES_IDENTIFIED": 121,
+        "FAILED": 272,
+        "NO_UPDATE": 7687
       }
     }
   }
