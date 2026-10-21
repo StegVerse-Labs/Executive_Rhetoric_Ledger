@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 38,
-  "pending_candidate_count": 419,
-  "pending_sha256": "5705a4f4d58807671e8c773c8ef7df4ea7be6ae3c3c59496c6a1f69a63176b2b",
+  "intake_cycles": 39,
+  "pending_candidate_count": 428,
+  "pending_sha256": "585d08fab5fd17483cac62c83c0c9411058813a3186f3799a2ce682b408cee46",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -43,10 +43,11 @@
     "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
     "ab45ac33318dfd330473c4ff1524f82e9a532de0",
     "50081369fdafa46caf692974afd4d85b50a94a86",
-    "0ff079f78dab34374221fa181adf5dd28ebc9b2b"
+    "0ff079f78dab34374221fa181adf5dd28ebc9b2b",
+    "5e74827f7d02d864b6088601342edb780a44c462"
   ],
   "publication_authorized": false,
-  "scan_record_count": 69820,
+  "scan_record_count": 71645,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -119,15 +120,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 45,
-        "FAILED": 160,
-        "NO_UPDATE": 4595
+        "CANDIDATES_IDENTIFIED": 46,
+        "FAILED": 165,
+        "NO_UPDATE": 4714
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 41,
+      "pending_candidate_count": 44,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -497,18 +498,45 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "France's parliament approves vote to hit stablecoin trades with 31% capital gains tax",
           "source_url": "https://www.coindesk.com/policy/2026/10/20/france-s-parliament-approves-vote-to-hit-crypto-to-stablecoin-trades-with-31-levy"
+        },
+        {
+          "candidate_id": "SRC-3469400c05c2eb8cb4930d67",
+          "custody_pointer": "RSRCH-cc7aa9f41d727cd61e0e2d88",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Why centralized exchanges refuse to list legacy crypto tokens without explicit SEC immunity",
+          "source_url": "https://www.coindesk.com/policy/2026/10/21/why-centralized-exchanges-refuse-to-list-legacy-crypto-tokens-without-explicit-sec-immunity"
+        },
+        {
+          "candidate_id": "SRC-27fa416c6c9393abd510bceb",
+          "custody_pointer": "RSRCH-cc7aa9f41d727cd61e0e2d88",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "OCC's final rule to start fresh in weighing stablecoin rewards against GENIUS Act ban",
+          "source_url": "https://www.coindesk.com/policy/2026/10/21/occ-s-final-rule-to-start-fresh-in-weighing-stablecoin-rewards-against-genius-act-ban"
+        },
+        {
+          "candidate_id": "SRC-0eebb928fe535487a9322a26",
+          "custody_pointer": "RSRCH-5701875e603a8911d28ed0a9",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK Banks Hit With 10,000 Complaints Over Blocked Crypto Transfers in 90 Days: Report",
+          "source_url": "https://decrypt.co/381475/uk-banks-hit-with-10000-complaints-over-blocked-crypto-transfers-in-90-days-report"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 249,
-        "FAILED": 192,
-        "NO_UPDATE": 5319
+        "CANDIDATES_IDENTIFIED": 257,
+        "FAILED": 198,
+        "NO_UPDATE": 5455
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 69,
+      "pending_candidate_count": 72,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1130,12 +1158,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Strive closes $630M SATS IPO, leaves Bitcoin allocation unspecified",
           "source_url": "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-8db3eefa69282242c1226536",
+          "custody_pointer": "RSRCH-e484eb17861ceb6301c9b86b",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Why centralized exchanges refuse to list legacy crypto tokens without explicit SEC immunity",
+          "source_url": "https://www.coindesk.com/policy/2026/10/21/why-centralized-exchanges-refuse-to-list-legacy-crypto-tokens-without-explicit-sec-immunity"
+        },
+        {
+          "candidate_id": "SRC-87479fac35ad5614d62d0275",
+          "custody_pointer": "RSRCH-4dd2288e7e00f1839f74d8b4",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK Banks Hit With 10,000 Complaints Over Blocked Crypto Transfers in 90 Days: Report",
+          "source_url": "https://decrypt.co/381475/uk-banks-hit-with-10000-complaints-over-blocked-crypto-transfers-in-90-days-report"
+        },
+        {
+          "candidate_id": "SRC-296bcd19c3319b861a6dd311",
+          "custody_pointer": "RSRCH-9e6cd817359602c19042329b",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin \u2018top buyers\u2019 halt BTC price upside with $87.7K now key: Glassnode",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-top-buyers-halt-btc-price-upside-with-877k-now-key-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 258,
-        "FAILED": 160,
-        "NO_UPDATE": 4382
+        "CANDIDATES_IDENTIFIED": 265,
+        "FAILED": 165,
+        "NO_UPDATE": 4495
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1406,9 +1461,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 228,
-        "FAILED": 192,
-        "NO_UPDATE": 5340
+        "CANDIDATES_IDENTIFIED": 237,
+        "FAILED": 198,
+        "NO_UPDATE": 5475
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1535,9 +1590,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 89,
-        "FAILED": 192,
-        "NO_UPDATE": 5479
+        "CANDIDATES_IDENTIFIED": 93,
+        "FAILED": 198,
+        "NO_UPDATE": 5619
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1628,9 +1683,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 72,
-        "FAILED": 224,
-        "NO_UPDATE": 6424
+        "CANDIDATES_IDENTIFIED": 75,
+        "FAILED": 231,
+        "NO_UPDATE": 6589
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2009,9 +2064,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 119,
-        "FAILED": 192,
-        "NO_UPDATE": 5449
+        "CANDIDATES_IDENTIFIED": 123,
+        "FAILED": 198,
+        "NO_UPDATE": 5589
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2705,9 +2760,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 490,
-        "FAILED": 160,
-        "NO_UPDATE": 4150
+        "CANDIDATES_IDENTIFIED": 504,
+        "FAILED": 165,
+        "NO_UPDATE": 4256
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2825,15 +2880,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 118,
-        "FAILED": 222,
-        "NO_UPDATE": 6120
+        "CANDIDATES_IDENTIFIED": 122,
+        "FAILED": 229,
+        "NO_UPDATE": 6284
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 81,
+      "pending_candidate_count": 83,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3563,12 +3618,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto\u2019s 2026 shutdown wave claims 82 projects. What went wrong?",
           "source_url": "https://cointelegraph.com/news/crypto-project-shutdowns-2026-what-went-wrong?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-5b1a276ca1c5f2623aa5d037",
+          "custody_pointer": "RSRCH-39f7cc1f17ec9fc156f408c1",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Hunter Biden launches crypto meme coin making light of laptop scandal - New York Post",
+          "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTkpqVmtUNy1relBfMExkOHRuQzVsYmpCdC1Hb1hjYmhxb1ZqQTR2SnNkZTVXcFhmY1FPV1djQXMyMlZFajg4STlCWVo0VGxibXRiS2Y4dy1Tb2htd1AzX2MxUjFzT1NFVEFsUDlkVi1kakpnaDMzeDRROExEUXZqUkpFTzZEWkRUcE9YdWMtSDhtRThVVVNZT1NncmRic2t5WXVGLU1wTndBaXFBQ3c?oc=5"
+        },
+        {
+          "candidate_id": "SRC-2a7940ce81fc92dc31e17489",
+          "custody_pointer": "RSRCH-d03d9dec9a91d9f8fc897965",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto rises with Asian tech stocks, zcash extends gain after setting upgrade date",
+          "source_url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 529,
-        "FAILED": 192,
-        "NO_UPDATE": 5039
+        "CANDIDATES_IDENTIFIED": 543,
+        "FAILED": 198,
+        "NO_UPDATE": 5169
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3731,15 +3804,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 129,
-        "FAILED": 192,
-        "NO_UPDATE": 5439
+        "CANDIDATES_IDENTIFIED": 133,
+        "FAILED": 198,
+        "NO_UPDATE": 5579
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 24,
+      "pending_candidate_count": 25,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -3956,12 +4029,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Injective, BDACS plan Korean won stablecoin settlement for tokenized assets",
           "source_url": "https://cointelegraph.com/news/injective-bdacs-korean-won-stablecoin-tokenized-assets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-bc52ab5ff3b245589546e3fa",
+          "custody_pointer": "RSRCH-c557c792f9302089bb4be91c",
+          "producer_commit": "5e74827f7d02d864b6088601342edb780a44c462",
+          "query": "settlement routes",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Shinhan, SBI make Japan-Korea tourist spending a test case for yen stablecoins",
+          "source_url": "https://cointelegraph.com/news/shinhan-sbi-japan-korea-travel-yen-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 110,
-        "FAILED": 256,
-        "NO_UPDATE": 7314
+        "CANDIDATES_IDENTIFIED": 118,
+        "FAILED": 264,
+        "NO_UPDATE": 7498
       }
     }
   }
