@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 37,
-  "pending_candidate_count": 418,
-  "pending_sha256": "dc2d65d692c506b4750e37f549ea73cbfc7e8b4330aa5fb61c75b3f86c3ee140",
+  "intake_cycles": 38,
+  "pending_candidate_count": 419,
+  "pending_sha256": "5705a4f4d58807671e8c773c8ef7df4ea7be6ae3c3c59496c6a1f69a63176b2b",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -42,10 +42,11 @@
     "84ab9fe51df90c3d14d24a502c3f5c81b7a4e22c",
     "517f26ad2b4fa8ef2b3798dca3aed4ea649374b1",
     "ab45ac33318dfd330473c4ff1524f82e9a532de0",
-    "50081369fdafa46caf692974afd4d85b50a94a86"
+    "50081369fdafa46caf692974afd4d85b50a94a86",
+    "0ff079f78dab34374221fa181adf5dd28ebc9b2b"
   ],
   "publication_authorized": false,
-  "scan_record_count": 67995,
+  "scan_record_count": 69820,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -118,9 +119,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 44,
-        "FAILED": 155,
-        "NO_UPDATE": 4476
+        "CANDIDATES_IDENTIFIED": 45,
+        "FAILED": 160,
+        "NO_UPDATE": 4595
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -499,9 +500,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 186,
-        "NO_UPDATE": 5182
+        "CANDIDATES_IDENTIFIED": 249,
+        "FAILED": 192,
+        "NO_UPDATE": 5319
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1132,9 +1133,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 252,
-        "FAILED": 155,
-        "NO_UPDATE": 4268
+        "CANDIDATES_IDENTIFIED": 258,
+        "FAILED": 160,
+        "NO_UPDATE": 4382
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1405,9 +1406,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 219,
-        "FAILED": 186,
-        "NO_UPDATE": 5205
+        "CANDIDATES_IDENTIFIED": 228,
+        "FAILED": 192,
+        "NO_UPDATE": 5340
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1534,9 +1535,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 85,
-        "FAILED": 186,
-        "NO_UPDATE": 5339
+        "CANDIDATES_IDENTIFIED": 89,
+        "FAILED": 192,
+        "NO_UPDATE": 5479
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1627,15 +1628,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 69,
-        "FAILED": 217,
-        "NO_UPDATE": 6259
+        "CANDIDATES_IDENTIFIED": 72,
+        "FAILED": 224,
+        "NO_UPDATE": 6424
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 40,
+      "pending_candidate_count": 41,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -1996,12 +1997,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "BlackRock files for third Bitcoin ETF, still no Solana or XRP",
           "source_url": "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-dcfb927c7dac59cd7e1ea2d2",
+          "custody_pointer": "RSRCH-c790eac415418df5280b33f8",
+          "producer_commit": "0ff079f78dab34374221fa181adf5dd28ebc9b2b",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple brings Wall Street into 24/7 stock bets, but HSBC warns markets are still thin",
+          "source_url": "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 115,
-        "FAILED": 186,
-        "NO_UPDATE": 5309
+        "CANDIDATES_IDENTIFIED": 119,
+        "FAILED": 192,
+        "NO_UPDATE": 5449
       }
     },
     "market-rhetoric-oil-impact": {
@@ -2695,9 +2705,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 472,
-        "FAILED": 155,
-        "NO_UPDATE": 4048
+        "CANDIDATES_IDENTIFIED": 490,
+        "FAILED": 160,
+        "NO_UPDATE": 4150
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2815,9 +2825,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 114,
-        "FAILED": 215,
-        "NO_UPDATE": 5956
+        "CANDIDATES_IDENTIFIED": 118,
+        "FAILED": 222,
+        "NO_UPDATE": 6120
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3556,9 +3566,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 515,
-        "FAILED": 186,
-        "NO_UPDATE": 4909
+        "CANDIDATES_IDENTIFIED": 529,
+        "FAILED": 192,
+        "NO_UPDATE": 5039
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3721,9 +3731,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 125,
-        "FAILED": 186,
-        "NO_UPDATE": 5299
+        "CANDIDATES_IDENTIFIED": 129,
+        "FAILED": 192,
+        "NO_UPDATE": 5439
       }
     },
     "wlf-positive-adoption-radar": {
@@ -3949,9 +3959,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 102,
-        "FAILED": 248,
-        "NO_UPDATE": 7130
+        "CANDIDATES_IDENTIFIED": 110,
+        "FAILED": 256,
+        "NO_UPDATE": 7314
       }
     }
   }
