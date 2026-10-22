@@ -22,3 +22,6 @@ Related ERL #104 is closed independent review for a different inference-cost res
 
 ## Validation and next transitions
 Review JSON parsing and provenance; reconcile with current canonical Registry; obtain new admitted task identity and COSV; independent review; only then propose guarded promotion and ledger evidence. No external device or hosted framework prerequisite.
+
+## Deterministic validation
+`python3 scripts/validate_nvidia_market_intelligence.py` and `python3 -m unittest discover -s tests -p test_nvidia_market_intelligence.py` validate source provenance, unique identifiers, explicit unknowns, candidate economics and hard-disabled outreach. Native Registry/COSV admission and sovereign readback remain independent conditions.
