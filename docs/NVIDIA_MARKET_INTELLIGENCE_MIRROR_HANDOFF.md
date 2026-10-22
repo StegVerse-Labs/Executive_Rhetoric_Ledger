@@ -25,3 +25,20 @@ Review JSON parsing and provenance; reconcile with current canonical Registry; o
 
 ## Deterministic validation
 `python3 scripts/validate_nvidia_market_intelligence.py` and `python3 -m unittest discover -s tests -p test_nvidia_market_intelligence.py` validate source provenance, unique identifiers, explicit unknowns, candidate economics and hard-disabled outreach. Native Registry/COSV admission and sovereign readback remain independent conditions.
+
+
+## Session archive / autonomous ERL research ownership — 2026-10-22
+
+**Owner directive:** The user is not the research tool. ERL owns source acquisition, dated capture, source comparison, market-direction analysis, opportunity discovery, deterministic revalidation, and coordination updates. Do not ask the user to manually research NVIDIA, provide repeated prompts, transfer evidence between sessions, or operate another machine. The user supplies strategic direction and any separately required owner approval. All execution remains ACTION BY MANIFEST.
+
+**ERL-owned continuing work:**
+1. Acquire dated NVIDIA, foundry/packaging, supply-chain, allocation, energy/site and deployment evidence through existing authorized research acquisition pathways. Preserve acquisition failures as explicit non-ALLOW dispositions with evidence predicates.
+2. Refresh research-data/nvidia-market-intelligence/evidence-matrix.json; separate announcement, orders, manufacturing, delivery, commissioning and realized revenue. Never infer semiconductor wafer yield from factory integration.
+3. Refresh scenarios, opportunity register, buyer and economics assumptions, alternatives, leading indicators and disconfirmers. Unknown values remain unknown.
+4. Run deterministic checks; reconcile methodology with the retired AI Governance Opportunity Engine without reopening its completed task or reusing COSV.
+5. Reconcile canonical NVIDIA Goal Task/COSV and authenticated WorkerCoordinator claim/fence via Task Registry; keep Issue #236, PR #239, README and this handoff current.
+6. Obtain independent review and original manifested SDK/InTr and sovereign Organization Ledger append/readback. Every attempted transition receives ALLOW, DENY or FAIL_CLOSED; protected merge requires verified expected-head evidence.
+
+**Historical exact-head CI evidence:** At 4f7e7a4679dcb631f2d9935c43caea1f10dd8864, GitHub runs 39726863674 (Ledger Schemas), 39726863708 (Active Research Acquisition Consumer), and 39726863727 (NVIDIA Market Intelligence) completed SUCCESS. This new handoff commit requires fresh exact-head validation. Independent review, canonical NVIDIA task/COSV, native ALLOW and sovereign ledger readback remain unverified.
+
+**Archive rule:** The user can archive this chat; Issue #236, draft PR #239, this handoff and committed artifacts are durable coordination. A passing validator is not proof that autonomous NVIDIA source acquisition is scheduled or admitted. Verify the existing ERL acquisition/dispatch mechanism; do not invent new infrastructure or shift work back to the user.
