@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 40,
-  "pending_candidate_count": 443,
-  "pending_sha256": "e7f0fcde830118e99d0e8dc0d37acf78fcdda02c974146ac1671ac153ff5c281",
+  "intake_cycles": 41,
+  "pending_candidate_count": 448,
+  "pending_sha256": "99e267d383ef994d88e7d5638b6e29fced05a73f48ff4c03ab537152421dd3c4",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -45,10 +45,11 @@
     "50081369fdafa46caf692974afd4d85b50a94a86",
     "0ff079f78dab34374221fa181adf5dd28ebc9b2b",
     "5e74827f7d02d864b6088601342edb780a44c462",
-    "da2430146c34ca1ba963e003264eeb218bffcc11"
+    "da2430146c34ca1ba963e003264eeb218bffcc11",
+    "3e1cd0b061906f0a66b16a860521a6360b1d7d42"
   ],
   "publication_authorized": false,
-  "scan_record_count": 73470,
+  "scan_record_count": 75295,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -122,8 +123,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 170,
-        "NO_UPDATE": 4834
+        "FAILED": 175,
+        "NO_UPDATE": 4954
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -556,9 +557,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 264,
-        "FAILED": 204,
-        "NO_UPDATE": 5592
+        "CANDIDATES_IDENTIFIED": 271,
+        "FAILED": 210,
+        "NO_UPDATE": 5729
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1252,9 +1253,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 272,
-        "FAILED": 170,
-        "NO_UPDATE": 4608
+        "CANDIDATES_IDENTIFIED": 279,
+        "FAILED": 175,
+        "NO_UPDATE": 4721
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1534,9 +1535,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 244,
-        "FAILED": 204,
-        "NO_UPDATE": 5612
+        "CANDIDATES_IDENTIFIED": 250,
+        "FAILED": 210,
+        "NO_UPDATE": 5750
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1663,9 +1664,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 94,
-        "FAILED": 204,
-        "NO_UPDATE": 5762
+        "CANDIDATES_IDENTIFIED": 95,
+        "FAILED": 210,
+        "NO_UPDATE": 5905
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1757,8 +1758,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 76,
-        "FAILED": 238,
-        "NO_UPDATE": 6756
+        "FAILED": 245,
+        "NO_UPDATE": 6924
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2155,15 +2156,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 126,
-        "FAILED": 204,
-        "NO_UPDATE": 5730
+        "CANDIDATES_IDENTIFIED": 129,
+        "FAILED": 210,
+        "NO_UPDATE": 5871
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 78,
+      "pending_candidate_count": 81,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2866,12 +2867,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "U.S. to Tap Heating Oil Reserves Ahead of Midterm Elections",
           "source_url": "https://www.nytimes.com/2026/10/21/business/heating-oil-emergency-reserve-prices.html"
+        },
+        {
+          "candidate_id": "SRC-53e5de526eef48373138413d",
+          "custody_pointer": "RSRCH-aa3af24b64ee3ccbc4ab682f",
+          "producer_commit": "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
+          "source_url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-80e9856449335aaad41a6d32",
+          "custody_pointer": "RSRCH-905cac4eccc6896642202ef8",
+          "producer_commit": "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
+          "source_url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-d26e0627e9fc42569bf47c61",
+          "custody_pointer": "RSRCH-74bf88212981092581600a02",
+          "producer_commit": "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
+          "query": "physical flow observations",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
+          "source_url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 520,
-        "FAILED": 170,
-        "NO_UPDATE": 4360
+        "CANDIDATES_IDENTIFIED": 535,
+        "FAILED": 175,
+        "NO_UPDATE": 4465
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -2989,15 +3017,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 126,
-        "FAILED": 236,
-        "NO_UPDATE": 6448
+        "CANDIDATES_IDENTIFIED": 130,
+        "FAILED": 243,
+        "NO_UPDATE": 6612
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 84,
+      "pending_candidate_count": 85,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3754,12 +3782,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "UK financial watchdog opens consultations for DeFi guidance, crypto laws",
           "source_url": "https://cointelegraph.com/news/uk-fca-consultations-defi-crypto-laws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-d8d7703dc26e8da0adf756fa",
+          "custody_pointer": "RSRCH-289546409d8316f48b7a9bad",
+          "producer_commit": "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump didn\u2018t mention \u2018crypto\u2019 once in White House cybercrime roundtable",
+          "source_url": "https://cointelegraph.com/news/white-house-cybercrime-roundtable-donald-trump-crypto-ventures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 554,
-        "FAILED": 204,
-        "NO_UPDATE": 5302
+        "CANDIDATES_IDENTIFIED": 566,
+        "FAILED": 210,
+        "NO_UPDATE": 5434
       }
     },
     "trump-token-promotion-access-supply": {
@@ -3931,15 +3968,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 204,
-        "NO_UPDATE": 5719
+        "CANDIDATES_IDENTIFIED": 141,
+        "FAILED": 210,
+        "NO_UPDATE": 5859
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 26,
+      "pending_candidate_count": 27,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -4174,12 +4211,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "OCC finalizes GENIUS Act rules for stablecoin issuers and custody",
           "source_url": "https://cointelegraph.com/news/occ-finalizes-genius-act-rules-stablecoin-issuers-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9fbb4cbd492462f3a794216e",
+          "custody_pointer": "RSRCH-6040bd70c4292a9edcd67513",
+          "producer_commit": "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
+          "query": "official network support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tether backs Bolivian fintech bringing USDT payments to food delivery and banking",
+          "source_url": "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 121,
-        "FAILED": 272,
-        "NO_UPDATE": 7687
+        "CANDIDATES_IDENTIFIED": 125,
+        "FAILED": 280,
+        "NO_UPDATE": 7875
       }
     }
   }
