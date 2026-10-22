@@ -1,0 +1,52 @@
+{
+  "schema": "erl.market-evidence/v1",
+  "as_of": "2026-10-22",
+  "issue": 236,
+  "observations": [
+    {
+      "id": "DSX-001",
+      "date": "2026-10-21",
+      "source": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+      "class": "ANNOUNCED_DESIGN",
+      "claim": "Factory integrated Vera Rubin DSX POD; prepared-site deployment as little as 14 days versus approximately six months",
+      "confidence": "A_SOURCE_CLAIM",
+      "unknowns": [
+        "measured field distribution",
+        "site readiness",
+        "total end-to-end schedule"
+      ]
+    },
+    {
+      "id": "RUBIN-001",
+      "date": "2026-05-31",
+      "source": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+      "class": "PRODUCTION_RAMP_ANNOUNCEMENT",
+      "claim": "Vera Rubin production ramp and distributed manufacturing partners announced",
+      "confidence": "A_SOURCE_CLAIM",
+      "unknowns": [
+        "wafer yield",
+        "advanced packaging throughput",
+        "deliveries"
+      ]
+    },
+    {
+      "id": "PRO-001",
+      "date": "2026-10-20",
+      "source": "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
+      "class": "REPORTED_ORDERS",
+      "claim": "Reported China RTX PRO demand and constrained forward production",
+      "confidence": "B_REPORTED",
+      "unknowns": [
+        "verified fulfilled orders",
+        "GB202 allocation fraction",
+        "consumer opportunity cost"
+      ]
+    }
+  ],
+  "boundaries": [
+    "announced != deployed",
+    "orders != revenue",
+    "system integration yield != wafer yield",
+    "unknown != zero"
+  ]
+}
