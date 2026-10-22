@@ -310,3 +310,8 @@ A bounded machine-behavior research candidate is preserved at `assessments/machi
 An October 9–18 presidential-rhetoric, Reuters/WSJ oil-price, and futures-positioning evidence intake is appended to `research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`. The $275 million inflow assertion remains unverified; no motive or manipulation finding is authorized. The canonical Hormuz reconciliation handoff tracks next evidence and independent-review requirements.
 
 Mr. Global attribution correction (2026-10-18): the owner recalls a video summary describing $250M–$300M in new crude contracts; $275M is a midpoint, not a verified precise inflow. See canonical oil-flow research candidate; source video and exchange corroboration pending.
+
+
+## NVIDIA AI infrastructure market intelligence (research candidate)
+
+[ERL #236](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/236) studies market direction and business opportunities across semiconductor supply, RTX/PRO allocation, AI-factory integration and deployment economics. It does **not** require adjudicating a single manufacturing-yield hypothesis. Dated evidence and explicit unknowns live in `research-data/nvidia-market-intelligence/`; scenario and authority boundaries are documented in `docs/NVIDIA_MARKET_INTELLIGENCE_MIRROR_HANDOFF.md`. Run `python3 scripts/validate_nvidia_market_intelligence.py` to check the source matrix and opportunity register. This is analysis-only; outreach, publication, runtime admission and sovereign transitions are not authorized by research artifacts.
