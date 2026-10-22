@@ -16,11 +16,13 @@ def validate():
     assert opportunities["schema"] == "erl.market-opportunity/v1"
     assert opportunities["outreach_enabled"] is False
     assert opportunities["ranking_state"].startswith("UNRANKED_")
+    assert evidence["as_of"] == opportunities["as_of"]
     ids = set()
     for item in evidence["observations"]:
         assert item["id"] not in ids
         ids.add(item["id"])
         assert item["date"] and item["source"].startswith("https://")
+        assert len(item["date"]) == 10 and item["date"][4] == "-" and item["date"][7] == "-"
         assert item["class"] and item["claim"] and item["confidence"]
         assert isinstance(item["unknowns"], list)
     ids.clear()
