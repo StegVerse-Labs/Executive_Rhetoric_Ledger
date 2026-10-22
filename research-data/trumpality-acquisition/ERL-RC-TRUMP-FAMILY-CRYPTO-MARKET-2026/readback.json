@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 41,
-  "pending_candidate_count": 448,
-  "pending_sha256": "99e267d383ef994d88e7d5638b6e29fced05a73f48ff4c03ab537152421dd3c4",
+  "intake_cycles": 42,
+  "pending_candidate_count": 454,
+  "pending_sha256": "d595c15e429dfb5ba3edde76e3214c8a61bc165ae1d1b7b9db06e938eb64e72c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -46,10 +46,11 @@
     "0ff079f78dab34374221fa181adf5dd28ebc9b2b",
     "5e74827f7d02d864b6088601342edb780a44c462",
     "da2430146c34ca1ba963e003264eeb218bffcc11",
-    "3e1cd0b061906f0a66b16a860521a6360b1d7d42"
+    "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
+    "b7ece836fec2abcea2b74e0026525f5b1c3b84d7"
   ],
   "publication_authorized": false,
-  "scan_record_count": 75295,
+  "scan_record_count": 77120,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -123,14 +124,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 175,
-        "NO_UPDATE": 4954
+        "FAILED": 180,
+        "NO_UPDATE": 5074
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 47,
+      "pending_candidate_count": 48,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -554,12 +555,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump to throw spotlight on overseas crypto abuses at White House event",
           "source_url": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event"
+        },
+        {
+          "candidate_id": "SRC-16efdbfff16bb170c96a8b04",
+          "custody_pointer": "RSRCH-056d9c808b5f5aa84d1d1c67",
+          "producer_commit": "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rule 19.3 and Rule 19.4 To Establish Generic Listing Criteria and Continued Listing Standards for Options on Commodity-Based Trusts Holding Multiple Crypto Assets and To Permit the Listing of Options on Exchange-Traded Funds",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/22/2026-21572/self-regulatory-organizations-cboe-edgx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 271,
-        "FAILED": 210,
-        "NO_UPDATE": 5729
+        "CANDIDATES_IDENTIFIED": 277,
+        "FAILED": 216,
+        "NO_UPDATE": 5867
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1253,15 +1263,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 279,
-        "FAILED": 175,
-        "NO_UPDATE": 4721
+        "CANDIDATES_IDENTIFIED": 286,
+        "FAILED": 180,
+        "NO_UPDATE": 4834
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 30,
+      "pending_candidate_count": 31,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -1532,12 +1542,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Quick Take: Melania Trump\u2019s Meme Coin Derails $TRUMP Token Rally, Fake Barron, Ivanka Coins Launched - BitPinas",
           "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZW1oVkpUUDNOVE00TWhnSXVhUnpzZjRzX0NmV1pSY09XYTAzbDJTOW9TY0dfQVR2ZHRNcHBlWDQ4LU13UEJObkVrMkpPOUFWem5MbU0wWnVNVHB4dHlTdlQ0V3NIWWtfdTdxWklMbzVXRzlpcElkWWhvZExtRk1qT2xTZWF4WUdYVEx4WkNVeVNicUotUHNqdWdIRVZOcEU?oc=5"
+        },
+        {
+          "candidate_id": "SRC-23f34f2dd6ec94163aeff76a",
+          "custody_pointer": "RSRCH-5fdadb69e8e059ba7a983d4d",
+          "producer_commit": "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Official Trump Solana Meme Coin Falls as Melania Drops Token of Her Own - Decrypt",
+          "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPY2FZRGhDSnlDMnhZZWtSZ3UyZEZDeW1uQUNjMVlxWFUxOWxXcFhwNFdwZ1UzRDF5QVBNcGFIaGFyRVdIaUZZSzZwWTZTejJvbmY3dk5jRWNxdDAxMHZVNW9vQ2hqTTh1LVBzNzNOXzhsRWptNmJpT1k2ZldUMEVRNGcxdmNYTXNueHJycl9oal9FcUFGdDBPaXhUdVRMQQ?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 250,
-        "FAILED": 210,
-        "NO_UPDATE": 5750
+        "CANDIDATES_IDENTIFIED": 256,
+        "FAILED": 216,
+        "NO_UPDATE": 5888
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1664,9 +1683,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 95,
-        "FAILED": 210,
-        "NO_UPDATE": 5905
+        "CANDIDATES_IDENTIFIED": 96,
+        "FAILED": 216,
+        "NO_UPDATE": 6048
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1758,14 +1777,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 76,
-        "FAILED": 245,
-        "NO_UPDATE": 6924
+        "FAILED": 252,
+        "NO_UPDATE": 7092
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 43,
+      "pending_candidate_count": 44,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2153,18 +2172,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Hits Weekly High as Crypto Market Rebounds",
           "source_url": "https://decrypt.co/381555/bitcoin-price-weekly-high-crypto-rebounds"
+        },
+        {
+          "candidate_id": "SRC-1799c3aec76adf8c1defc17a",
+          "custody_pointer": "RSRCH-ebc94121b228fa33f5cb7d6a",
+          "producer_commit": "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
+          "source_url": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 129,
-        "FAILED": 210,
-        "NO_UPDATE": 5871
+        "CANDIDATES_IDENTIFIED": 132,
+        "FAILED": 216,
+        "NO_UPDATE": 6012
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 81,
+      "pending_candidate_count": 83,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2894,12 +2922,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
           "source_url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-616a6334db1e2fd5fd0648a9",
+          "custody_pointer": "RSRCH-bade1826ff308135824a837a",
+          "producer_commit": "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Certain Oil Country Tubular Goods From India, the Republic of Korea, the Republic of T\u00fcrkiye, the Socialist Republic of Vietnam, and Ukraine: Continuation of Antidumping Duty Orders and Countervailing Duty Orders",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/22/2026-21530/certain-oil-country-tubular-goods-from-india-the-republic-of-korea-the-republic-of-trkiye-the"
+        },
+        {
+          "candidate_id": "SRC-c9d8ef7ec64dd034a18b06bc",
+          "custody_pointer": "RSRCH-327f3ff1aa05e0782c6e618f",
+          "producer_commit": "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Certain Oil Country Tubular Goods From India, the Republic of Korea, the Republic of T\u00fcrkiye, the Socialist Republic of Vietnam, and Ukraine: Continuation of Antidumping Duty Orders and Countervailing Duty Orders",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/22/2026-21530/certain-oil-country-tubular-goods-from-india-the-republic-of-korea-the-republic-of-trkiye-the"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 535,
-        "FAILED": 175,
-        "NO_UPDATE": 4465
+        "CANDIDATES_IDENTIFIED": 550,
+        "FAILED": 180,
+        "NO_UPDATE": 4570
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3017,9 +3063,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 130,
-        "FAILED": 243,
-        "NO_UPDATE": 6612
+        "CANDIDATES_IDENTIFIED": 134,
+        "FAILED": 250,
+        "NO_UPDATE": 6776
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3794,15 +3840,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 566,
-        "FAILED": 210,
-        "NO_UPDATE": 5434
+        "CANDIDATES_IDENTIFIED": 578,
+        "FAILED": 216,
+        "NO_UPDATE": 5566
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 18,
+      "pending_candidate_count": 19,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -3965,12 +4011,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Quick Take: Melania Trump\u2019s Meme Coin Derails $TRUMP Token Rally, Fake Barron, Ivanka Coins Launched - BitPinas",
           "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZW1oVkpUUDNOVE00TWhnSXVhUnpzZjRzX0NmV1pSY09XYTAzbDJTOW9TY0dfQVR2ZHRNcHBlWDQ4LU13UEJObkVrMkpPOUFWem5MbU0wWnVNVHB4dHlTdlQ0V3NIWWtfdTdxWklMbzVXRzlpcElkWWhvZExtRk1qT2xTZWF4WUdYVEx4WkNVeVNicUotUHNqdWdIRVZOcEU?oc=5"
+        },
+        {
+          "candidate_id": "SRC-6447b28db1c2af4bf4232a6b",
+          "custody_pointer": "RSRCH-1b0f14306557279f99bf66f3",
+          "producer_commit": "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Official Trump Solana Meme Coin Falls as Melania Drops Token of Her Own - Decrypt",
+          "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPY2FZRGhDSnlDMnhZZWtSZ3UyZEZDeW1uQUNjMVlxWFUxOWxXcFhwNFdwZ1UzRDF5QVBNcGFIaGFyRVdIaUZZSzZwWTZTejJvbmY3dk5jRWNxdDAxMHZVNW9vQ2hqTTh1LVBzNzNOXzhsRWptNmJpT1k2ZldUMEVRNGcxdmNYTXNueHJycl9oal9FcUFGdDBPaXhUdVRMQQ?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 210,
-        "NO_UPDATE": 5859
+        "CANDIDATES_IDENTIFIED": 145,
+        "FAILED": 216,
+        "NO_UPDATE": 5999
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4223,9 +4278,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 125,
-        "FAILED": 280,
-        "NO_UPDATE": 7875
+        "CANDIDATES_IDENTIFIED": 129,
+        "FAILED": 288,
+        "NO_UPDATE": 8063
       }
     }
   }
