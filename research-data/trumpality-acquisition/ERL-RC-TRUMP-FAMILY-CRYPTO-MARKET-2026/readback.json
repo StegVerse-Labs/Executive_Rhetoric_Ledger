@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 42,
-  "pending_candidate_count": 454,
-  "pending_sha256": "d595c15e429dfb5ba3edde76e3214c8a61bc165ae1d1b7b9db06e938eb64e72c",
+  "intake_cycles": 43,
+  "pending_candidate_count": 467,
+  "pending_sha256": "43343874c3c4289c6d9e3aa134d5de2196ad2906c29b992b02e0fbb4845da19c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -47,10 +47,11 @@
     "5e74827f7d02d864b6088601342edb780a44c462",
     "da2430146c34ca1ba963e003264eeb218bffcc11",
     "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
-    "b7ece836fec2abcea2b74e0026525f5b1c3b84d7"
+    "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
+    "de6f31611b84376c3cc5b5445b1c958fafbe87db"
   ],
   "publication_authorized": false,
-  "scan_record_count": 77120,
+  "scan_record_count": 78945,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -124,14 +125,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 180,
-        "NO_UPDATE": 5074
+        "FAILED": 185,
+        "NO_UPDATE": 5194
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 48,
+      "pending_candidate_count": 49,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -564,18 +565,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rule 19.3 and Rule 19.4 To Establish Generic Listing Criteria and Continued Listing Standards for Options on Commodity-Based Trusts Holding Multiple Crypto Assets and To Permit the Listing of Options on Exchange-Traded Funds",
           "source_url": "https://www.federalregister.gov/documents/2026/10/22/2026-21572/self-regulatory-organizations-cboe-edgx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
+        },
+        {
+          "candidate_id": "SRC-13e3acd3664ea50bb86da291",
+          "custody_pointer": "RSRCH-d08c625c848b670764d6e9a0",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The UK needs a workable route to regulated DeFi access",
+          "source_url": "https://cointelegraph.com/opinion/uk-crypto-rules-regulated-defi-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 277,
-        "FAILED": 216,
-        "NO_UPDATE": 5867
+        "CANDIDATES_IDENTIFIED": 284,
+        "FAILED": 222,
+        "NO_UPDATE": 6004
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 76,
+      "pending_candidate_count": 78,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1260,12 +1270,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto Long & Short: Why real-world assets need fixed-rate loans onchain",
           "source_url": "https://www.coindesk.com/coindesk-indices/2026/10/21/crypto-long-and-short-why-real-world-assets-need-fixed-rate-loans-onchain"
+        },
+        {
+          "candidate_id": "SRC-4f2b843578ee90039213b797",
+          "custody_pointer": "RSRCH-f7df81f1bf2e2644e6a83209",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The UK needs a workable route to regulated DeFi access",
+          "source_url": "https://cointelegraph.com/opinion/uk-crypto-rules-regulated-defi-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-72a4c9d3c6e4d8b91cff553c",
+          "custody_pointer": "RSRCH-05d4388a836145fa9f11c630",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin ETFs bag another $528M, taking 3-day haul past $1B",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 286,
-        "FAILED": 180,
-        "NO_UPDATE": 4834
+        "CANDIDATES_IDENTIFIED": 294,
+        "FAILED": 185,
+        "NO_UPDATE": 4946
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1554,9 +1582,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 256,
-        "FAILED": 216,
-        "NO_UPDATE": 5888
+        "CANDIDATES_IDENTIFIED": 262,
+        "FAILED": 222,
+        "NO_UPDATE": 6026
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1683,15 +1711,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 96,
-        "FAILED": 216,
-        "NO_UPDATE": 6048
+        "CANDIDATES_IDENTIFIED": 97,
+        "FAILED": 222,
+        "NO_UPDATE": 6191
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 9,
+      "pending_candidate_count": 10,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -1773,12 +1801,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Stablecoin transfers quadruple to $891B as US banks expand adoption: Report",
           "source_url": "https://cointelegraph.com/news/stablecoins-move-400m-an-hour-as-73-of-volume-occurs-outside-banking-hours-coinbase-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-8595ac69867e62c2cca0e3fb",
+          "custody_pointer": "RSRCH-75cfe84c681c6713117ef0ab",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "conflict and non-conflict matched periods",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Donald Trump has sold out Ukraine. He makes Chamberlain look like a man of iron principle | Simon Tisdall",
+          "source_url": "https://www.theguardian.com/commentisfree/2026/oct/22/donald-trump-ukraine-betrayal-putin-nato"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 76,
-        "FAILED": 252,
-        "NO_UPDATE": 7092
+        "CANDIDATES_IDENTIFIED": 77,
+        "FAILED": 259,
+        "NO_UPDATE": 7259
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2184,15 +2221,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 132,
-        "FAILED": 216,
-        "NO_UPDATE": 6012
+        "CANDIDATES_IDENTIFIED": 135,
+        "FAILED": 222,
+        "NO_UPDATE": 6153
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 83,
+      "pending_candidate_count": 92,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -2940,12 +2977,93 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Certain Oil Country Tubular Goods From India, the Republic of Korea, the Republic of T\u00fcrkiye, the Socialist Republic of Vietnam, and Ukraine: Continuation of Antidumping Duty Orders and Countervailing Duty Orders",
           "source_url": "https://www.federalregister.gov/documents/2026/10/22/2026-21530/certain-oil-country-tubular-goods-from-india-the-republic-of-korea-the-republic-of-trkiye-the"
+        },
+        {
+          "candidate_id": "SRC-07aac5a108c1ffa09913a24c",
+          "custody_pointer": "RSRCH-6b98d8a426119fe14ed33dae",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How tech became the villain of the US midterms",
+          "source_url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/22/us-midterms-tech-datacenters-ai"
+        },
+        {
+          "candidate_id": "SRC-93cf5a521eced5d4c1ea2386",
+          "custody_pointer": "RSRCH-6b98d8a426119fe14ed33dae",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s war and tariffs have battered Alaska. A pro-oil Democrat could flip the key Senate seat",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/22/alaska-mary-peltola-senate-midterms"
+        },
+        {
+          "candidate_id": "SRC-886e98aaad8e271626029628",
+          "custody_pointer": "RSRCH-55742f73d469c4ccd0950803",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
+          "source_url": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-ff777e7cbd31059d08d0ec42",
+          "custody_pointer": "RSRCH-375f1136ac962ccf964450fe",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin slumps below $82,000 as markets go risk off on AI selloff, oil surge",
+          "source_url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
+        },
+        {
+          "candidate_id": "SRC-3775e4f3dae08fde967a361a",
+          "custody_pointer": "RSRCH-14e1af8d8c0ebc7993727f12",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How tech became the villain of the US midterms",
+          "source_url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/22/us-midterms-tech-datacenters-ai"
+        },
+        {
+          "candidate_id": "SRC-aad5bf48c716cc17e03eec71",
+          "custody_pointer": "RSRCH-14e1af8d8c0ebc7993727f12",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s war and tariffs have battered Alaska. A pro-oil Democrat could flip the key Senate seat",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/22/alaska-mary-peltola-senate-midterms"
+        },
+        {
+          "candidate_id": "SRC-953992c5ef72bcbd38b3308d",
+          "custody_pointer": "RSRCH-43c1dce83d9b26d9e3c6849c",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
+          "source_url": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-0cb3a5b75dcff64c21da0421",
+          "custody_pointer": "RSRCH-89aad8b3771164f20b45f4d8",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin slumps below $82,000 as markets go risk off on AI selloff, oil surge",
+          "source_url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
+        },
+        {
+          "candidate_id": "SRC-f6b909175e350983a6bd45e3",
+          "custody_pointer": "RSRCH-8b25be999fca545fa6dfbaf9",
+          "producer_commit": "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+          "query": "physical flow observations",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
+          "source_url": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 550,
-        "FAILED": 180,
-        "NO_UPDATE": 4570
+        "CANDIDATES_IDENTIFIED": 567,
+        "FAILED": 185,
+        "NO_UPDATE": 4673
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3063,9 +3181,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 134,
-        "FAILED": 250,
-        "NO_UPDATE": 6776
+        "CANDIDATES_IDENTIFIED": 137,
+        "FAILED": 257,
+        "NO_UPDATE": 6941
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -3840,9 +3958,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 578,
-        "FAILED": 216,
-        "NO_UPDATE": 5566
+        "CANDIDATES_IDENTIFIED": 589,
+        "FAILED": 222,
+        "NO_UPDATE": 5699
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4023,9 +4141,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 145,
-        "FAILED": 216,
-        "NO_UPDATE": 5999
+        "CANDIDATES_IDENTIFIED": 149,
+        "FAILED": 222,
+        "NO_UPDATE": 6139
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4278,9 +4396,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 129,
-        "FAILED": 288,
-        "NO_UPDATE": 8063
+        "CANDIDATES_IDENTIFIED": 133,
+        "FAILED": 296,
+        "NO_UPDATE": 8251
       }
     }
   }
