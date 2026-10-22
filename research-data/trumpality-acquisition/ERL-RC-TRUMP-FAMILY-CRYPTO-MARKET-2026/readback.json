@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 43,
-  "pending_candidate_count": 467,
-  "pending_sha256": "43343874c3c4289c6d9e3aa134d5de2196ad2906c29b992b02e0fbb4845da19c",
+  "intake_cycles": 44,
+  "pending_candidate_count": 477,
+  "pending_sha256": "dccf13f20bdeff66f852901a2f328d2713ffbf0c13eecf8f0404f6127a3d0f75",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -48,10 +48,11 @@
     "da2430146c34ca1ba963e003264eeb218bffcc11",
     "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
     "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
-    "de6f31611b84376c3cc5b5445b1c958fafbe87db"
+    "de6f31611b84376c3cc5b5445b1c958fafbe87db",
+    "6e9931f30036e3052d29419bd426d4a2401a7737"
   ],
   "publication_authorized": false,
-  "scan_record_count": 78945,
+  "scan_record_count": 80770,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -125,14 +126,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 185,
-        "NO_UPDATE": 5194
+        "FAILED": 190,
+        "NO_UPDATE": 5314
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 49,
+      "pending_candidate_count": 50,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -574,18 +575,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "The UK needs a workable route to regulated DeFi access",
           "source_url": "https://cointelegraph.com/opinion/uk-crypto-rules-regulated-defi-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-78a04a5533431468d8ad3e8d",
+          "custody_pointer": "RSRCH-de414b12b238d74483f75b85",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
+          "source_url": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 284,
-        "FAILED": 222,
-        "NO_UPDATE": 6004
+        "CANDIDATES_IDENTIFIED": 292,
+        "FAILED": 228,
+        "NO_UPDATE": 6140
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 78,
+      "pending_candidate_count": 81,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1288,12 +1298,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin ETFs bag another $528M, taking 3-day haul past $1B",
           "source_url": "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-1099ede016067346a074949e",
+          "custody_pointer": "RSRCH-0ece1985732dc7473345aafc",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CryptoQuant CEO calls rising Bitcoin hashrate \u2018indirect bullish signal\u2019 from institutions",
+          "source_url": "https://cointelegraph.com/markets/cryptoquant-rising-bitcoin-hashrate-indirect-bullish-signal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-315bfba31dae2c9c09c9100a",
+          "custody_pointer": "RSRCH-0ece1985732dc7473345aafc",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin ETF buyers are trend followers, not setters, DWF Labs says",
+          "source_url": "https://cointelegraph.com/news/bitcoin-etf-flows-follow-price-trends-dwf-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a8c506ebcc1e5f2c77415455",
+          "custody_pointer": "RSRCH-5211195168e15c67abb21285",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin falls back to $81,000, with interest rates tumbling as stocks crack",
+          "source_url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 294,
-        "FAILED": 185,
-        "NO_UPDATE": 4946
+        "CANDIDATES_IDENTIFIED": 302,
+        "FAILED": 190,
+        "NO_UPDATE": 5058
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1582,9 +1619,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 262,
-        "FAILED": 222,
-        "NO_UPDATE": 6026
+        "CANDIDATES_IDENTIFIED": 268,
+        "FAILED": 228,
+        "NO_UPDATE": 6164
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1711,9 +1748,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 97,
-        "FAILED": 222,
-        "NO_UPDATE": 6191
+        "CANDIDATES_IDENTIFIED": 98,
+        "FAILED": 228,
+        "NO_UPDATE": 6334
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1813,9 +1850,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 77,
-        "FAILED": 259,
-        "NO_UPDATE": 7259
+        "CANDIDATES_IDENTIFIED": 78,
+        "FAILED": 266,
+        "NO_UPDATE": 7426
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2221,15 +2258,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 135,
-        "FAILED": 222,
-        "NO_UPDATE": 6153
+        "CANDIDATES_IDENTIFIED": 138,
+        "FAILED": 228,
+        "NO_UPDATE": 6294
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 92,
+      "pending_candidate_count": 96,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3058,12 +3095,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
           "source_url": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-6e89df9bcd13623057ce895b",
+          "custody_pointer": "RSRCH-2388d3a24b4371d593851813",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. refineries have been running at very high rates in 2026",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68344"
+        },
+        {
+          "candidate_id": "SRC-3209aa380a619596c68b0b35",
+          "custody_pointer": "RSRCH-6f82eac1fab0ee5a777f1844",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil Climbs Above $111 as AI Stocks Slide, Dragging the S&#038;P 500 and Global Markets With Them",
+          "source_url": "https://decrypt.co/381613/oil-climbs-above-111-as-ai-stocks-slide-dragging-the-sp-500-and-global-markets-with-them"
+        },
+        {
+          "candidate_id": "SRC-45a9f846a24a282e6c5c138c",
+          "custody_pointer": "RSRCH-8c75e44bcb6538aa4e2c2770",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. refineries have been running at very high rates in 2026",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68344"
+        },
+        {
+          "candidate_id": "SRC-bbf9b89691d767277a21dc95",
+          "custody_pointer": "RSRCH-a6c4949bff0b92d6e18a001b",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil Climbs Above $111 as AI Stocks Slide, Dragging the S&#038;P 500 and Global Markets With Them",
+          "source_url": "https://decrypt.co/381613/oil-climbs-above-111-as-ai-stocks-slide-dragging-the-sp-500-and-global-markets-with-them"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 567,
-        "FAILED": 185,
-        "NO_UPDATE": 4673
+        "CANDIDATES_IDENTIFIED": 579,
+        "FAILED": 190,
+        "NO_UPDATE": 4781
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3181,15 +3254,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 257,
-        "NO_UPDATE": 6941
+        "CANDIDATES_IDENTIFIED": 141,
+        "FAILED": 264,
+        "NO_UPDATE": 7105
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 85,
+      "pending_candidate_count": 87,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -3955,12 +4028,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump didn\u2018t mention \u2018crypto\u2019 once in White House cybercrime roundtable",
           "source_url": "https://cointelegraph.com/news/white-house-cybercrime-roundtable-donald-trump-crypto-ventures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-105b643c79faefc236e3192b",
+          "custody_pointer": "RSRCH-3e569b9b8adb329c6f002e9c",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
+          "source_url": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-cf0dd4dbd43aeae42aaab5b7",
+          "custody_pointer": "RSRCH-d3aa8e4063c8206b47f6108b",
+          "producer_commit": "6e9931f30036e3052d29419bd426d4a2401a7737",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Underdog taps zerohash to bring crypto deposits to prediction markets",
+          "source_url": "https://cointelegraph.com/news/underdog-taps-zerohash-to-bring-crypto-deposits-to-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 589,
-        "FAILED": 222,
-        "NO_UPDATE": 5699
+        "CANDIDATES_IDENTIFIED": 601,
+        "FAILED": 228,
+        "NO_UPDATE": 5831
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4141,9 +4232,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 149,
-        "FAILED": 222,
-        "NO_UPDATE": 6139
+        "CANDIDATES_IDENTIFIED": 153,
+        "FAILED": 228,
+        "NO_UPDATE": 6279
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4396,9 +4487,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 133,
-        "FAILED": 296,
-        "NO_UPDATE": 8251
+        "CANDIDATES_IDENTIFIED": 135,
+        "FAILED": 304,
+        "NO_UPDATE": 8441
       }
     }
   }
