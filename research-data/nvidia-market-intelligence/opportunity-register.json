@@ -51,7 +51,8 @@
       ],
       "disconfirmers": [
         "site power delays dominate schedule"
-      ]
+      ],
+      "score": null
     }
   ],
   "ranking_state": "UNRANKED_MISSING_MARKET_AND_COST_EVIDENCE"
