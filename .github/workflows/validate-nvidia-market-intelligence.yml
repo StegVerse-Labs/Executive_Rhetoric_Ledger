@@ -1,0 +1,25 @@
+name: Validate NVIDIA Market Intelligence
+on:
+  pull_request:
+    paths:
+      - 'research-data/nvidia-market-intelligence/**'
+      - 'scripts/validate_nvidia_market_intelligence.py'
+      - 'tests/test_nvidia_market_intelligence.py'
+      - '.github/workflows/validate-nvidia-market-intelligence.yml'
+  push:
+    paths:
+      - 'research-data/nvidia-market-intelligence/**'
+      - 'scripts/validate_nvidia_market_intelligence.py'
+      - 'tests/test_nvidia_market_intelligence.py'
+      - '.github/workflows/validate-nvidia-market-intelligence.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate deterministic evidence and opportunity records
+        run: python3 scripts/validate_nvidia_market_intelligence.py
+      - name: Regression tests
+        run: python3 -m unittest discover -s tests -p 'test_nvidia_market_intelligence.py'

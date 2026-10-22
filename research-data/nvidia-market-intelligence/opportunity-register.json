@@ -1,0 +1,59 @@
+{
+  "schema": "erl.market-opportunity/v1",
+  "as_of": "2026-10-22",
+  "outreach_enabled": false,
+  "opportunities": [
+    {
+      "id": "OP-01",
+      "name": "AI factory commissioning evidence and acceptance verification",
+      "mechanism": "factory validation and site commissioning complexity",
+      "buyer": "AI factory operators and integrators",
+      "timing": "2026-2027",
+      "confidence": "LOW",
+      "commercial_validation": "UNKNOWN",
+      "triggers": [
+        "first deployments report commissioning defects and timelines",
+        "buyers confirm independent validation budgets"
+      ],
+      "disconfirmers": [
+        "OEM warranty fully absorbs verification demand"
+      ],
+      "score": null
+    },
+    {
+      "id": "OP-02",
+      "name": "Compute allocation and supply constraint intelligence",
+      "mechanism": "scarce chips and complex channel allocation",
+      "buyer": "AI compute buyers and infrastructure planners",
+      "timing": "near-term",
+      "confidence": "MEDIUM",
+      "commercial_validation": "UNKNOWN",
+      "triggers": [
+        "independent pricing and lead-time dispersion persists",
+        "paid buyer demand verified"
+      ],
+      "disconfirmers": [
+        "allocation transparency and lead times normalize"
+      ],
+      "score": null
+    },
+    {
+      "id": "OP-03",
+      "name": "Time-to-first-token financing and utilization analytics",
+      "mechanism": "deployment compression changes project cash flows",
+      "buyer": "AI infrastructure financiers and operators",
+      "timing": "2027+",
+      "confidence": "LOW",
+      "commercial_validation": "UNKNOWN",
+      "triggers": [
+        "real commissioning-to-revenue data published",
+        "repeatable measurable value from forecasting"
+      ],
+      "disconfirmers": [
+        "site power delays dominate schedule"
+      ],
+      "score": null
+    }
+  ],
+  "ranking_state": "UNRANKED_MISSING_MARKET_AND_COST_EVIDENCE"
+}
