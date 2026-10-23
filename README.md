@@ -310,3 +310,9 @@ A bounded machine-behavior research candidate is preserved at `assessments/machi
 An October 9–18 presidential-rhetoric, Reuters/WSJ oil-price, and futures-positioning evidence intake is appended to `research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`. The $275 million inflow assertion remains unverified; no motive or manipulation finding is authorized. The canonical Hormuz reconciliation handoff tracks next evidence and independent-review requirements.
 
 Mr. Global attribution correction (2026-10-18): the owner recalls a video summary describing $250M–$300M in new crude contracts; $275M is a midpoint, not a verified precise inflow. See canonical oil-flow research candidate; source video and exchange corroboration pending.
+
+## Project 2025 and election-authority research intake (October 2026)
+
+[Issue #240](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/240) coordinates five independent evidence-acquisition lanes for cumulative institutional change, federal election litigation and constitutional authority. Its [scoped mirror handoff](docs/PROJECT2025_ELECTION_AUTHORITY_MIRROR_HANDOFF.md) records the source queue, evidence requirements and governance posture. This is an unadmitted research intake; no factual finding or sovereign execution authority is implied.
+
+Initial five-lane source observations are preserved in [October 23 research acquisition](research-candidates/2026-10-23-project2025-election-authority-source-acquisition.md); raw-source custody and Registry admission are not yet established.
