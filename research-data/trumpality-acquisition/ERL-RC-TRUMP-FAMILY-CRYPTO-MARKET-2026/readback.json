@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 45,
-  "pending_candidate_count": 486,
-  "pending_sha256": "17f775b36d674a3185036721aca4f73d1ef49ae60d886de81215795254acfe1c",
+  "intake_cycles": 46,
+  "pending_candidate_count": 492,
+  "pending_sha256": "7cc533e252d61e8be70322b025c7f2a6a84ec13c0f1c65d109d5b775ae6bffc0",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -50,10 +50,11 @@
     "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
     "de6f31611b84376c3cc5b5445b1c958fafbe87db",
     "6e9931f30036e3052d29419bd426d4a2401a7737",
-    "6461216dbb149fef03d3665f5688664ad55287a6"
+    "6461216dbb149fef03d3665f5688664ad55287a6",
+    "2c7030aed6af4b95e72dde35ce18cf1a859c63b6"
   ],
   "publication_authorized": false,
-  "scan_record_count": 82595,
+  "scan_record_count": 84420,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -127,14 +128,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 195,
-        "NO_UPDATE": 5434
+        "FAILED": 200,
+        "NO_UPDATE": 5554
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 51,
+      "pending_candidate_count": 52,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -594,18 +595,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Circle shareholder sues Trump, World Liberty and Steve Witkoff over crypto deals",
           "source_url": "https://cointelegraph.com/news/circle-shareholder-lawsuit-donald-trump-world-liberty-financial-steve-witkoff-crypto-corruption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-643d0af4c799bb51ae8bc99b",
+          "custody_pointer": "RSRCH-b231865005e5106f38a9dd25",
+          "producer_commit": "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Core changes security policy as AI makes bugs easier to find",
+          "source_url": "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 299,
-        "FAILED": 234,
-        "NO_UPDATE": 6277
+        "CANDIDATES_IDENTIFIED": 306,
+        "FAILED": 240,
+        "NO_UPDATE": 6414
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 81,
+      "pending_candidate_count": 82,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1335,12 +1345,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Live updates: Bitcoin falls back to $81,000, with interest rates tumbling as stocks crack",
           "source_url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
+        },
+        {
+          "candidate_id": "SRC-da678b32765caddd5537215a",
+          "custody_pointer": "RSRCH-f3b7e9d831eaedc781f8484d",
+          "producer_commit": "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Core changes security policy as AI makes bugs easier to find",
+          "source_url": "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 310,
-        "FAILED": 195,
-        "NO_UPDATE": 5170
+        "CANDIDATES_IDENTIFIED": 318,
+        "FAILED": 200,
+        "NO_UPDATE": 5282
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1629,15 +1648,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 274,
-        "FAILED": 234,
-        "NO_UPDATE": 6302
+        "CANDIDATES_IDENTIFIED": 279,
+        "FAILED": 240,
+        "NO_UPDATE": 6441
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 13,
+      "pending_candidate_count": 14,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -1755,12 +1774,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto exchanges Binance, Coinbase join West Africa scam sweep that flagged $11 million",
           "source_url": "https://www.coindesk.com/business/2026/10/14/crypto-exchanges-binance-coinbase-join-west-africa-scam-sweep-that-flagged-usd11-million"
+        },
+        {
+          "candidate_id": "SRC-e421244ef52a9f1943b45169",
+          "custody_pointer": "RSRCH-98e34e87f2f8aa8f16af8768",
+          "producer_commit": "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "$TRUMP Memecoin Launches on Major Exchanges: Binance, Coinbase and Robinhood - Yahoo Finance",
+          "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbEVqZW0wckh1UXUzb1lWYnJ2Y2NiRnNoamlUd0dzV1VPbkE3alI2a2tpeGM5cUkwbGlsLVB3eVNTdXNsdWItY2IyUkpJc3BiRHZfMnBjWEdqV0NFSHZiNlhYZnhmVnU4WXRNQWtxd2lyVDJ4bEMzX3BmTk5ORHdmaWZFZ1VGai13OVM0S2V3?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 99,
-        "FAILED": 234,
-        "NO_UPDATE": 6477
+        "CANDIDATES_IDENTIFIED": 101,
+        "FAILED": 240,
+        "NO_UPDATE": 6619
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1860,9 +1888,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 79,
-        "FAILED": 273,
-        "NO_UPDATE": 7593
+        "CANDIDATES_IDENTIFIED": 80,
+        "FAILED": 280,
+        "NO_UPDATE": 7760
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2268,15 +2296,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 234,
-        "NO_UPDATE": 6435
+        "CANDIDATES_IDENTIFIED": 144,
+        "FAILED": 240,
+        "NO_UPDATE": 6576
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 102,
+      "pending_candidate_count": 104,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3195,12 +3223,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
           "source_url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-606c5bbc951bf08339217597",
+          "custody_pointer": "RSRCH-d742aacd25f845a7b45466c9",
+          "producer_commit": "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
+          "source_url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
+        },
+        {
+          "candidate_id": "SRC-32fb2545b2deba2f22917bc4",
+          "custody_pointer": "RSRCH-202410d5456ef5d450085fe0",
+          "producer_commit": "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
+          "source_url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 595,
-        "FAILED": 195,
-        "NO_UPDATE": 4885
+        "CANDIDATES_IDENTIFIED": 613,
+        "FAILED": 200,
+        "NO_UPDATE": 4987
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3318,15 +3364,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 145,
-        "FAILED": 271,
-        "NO_UPDATE": 7269
+        "CANDIDATES_IDENTIFIED": 148,
+        "FAILED": 278,
+        "NO_UPDATE": 7434
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 89,
+      "pending_candidate_count": 90,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4128,12 +4174,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Is the Internet Safe Again After the PHP Nightmare? What You Need to Know",
           "source_url": "https://decrypt.co/381662/internet-safe-again-after-php-nightmare-what-you-need-know"
+        },
+        {
+          "candidate_id": "SRC-923b3980c0472e4de40605d2",
+          "custody_pointer": "RSRCH-9ba6331830172732c2ab8fcc",
+          "producer_commit": "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Agency Information Collection Activities: Proposed Information Collection; Submission for OMB Review; Reporting Forms and Instructions for Permitted Payment Stablecoin Issuers Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/23/2026-21705/agency-information-collection-activities-proposed-information-collection-submission-for-omb-review"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 612,
-        "FAILED": 234,
-        "NO_UPDATE": 5964
+        "CANDIDATES_IDENTIFIED": 622,
+        "FAILED": 240,
+        "NO_UPDATE": 6098
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4314,9 +4369,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 157,
-        "FAILED": 234,
-        "NO_UPDATE": 6419
+        "CANDIDATES_IDENTIFIED": 160,
+        "FAILED": 240,
+        "NO_UPDATE": 6560
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4569,9 +4624,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 136,
-        "FAILED": 312,
-        "NO_UPDATE": 8632
+        "CANDIDATES_IDENTIFIED": 137,
+        "FAILED": 320,
+        "NO_UPDATE": 8823
       }
     }
   }
