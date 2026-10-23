@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 44,
-  "pending_candidate_count": 477,
-  "pending_sha256": "dccf13f20bdeff66f852901a2f328d2713ffbf0c13eecf8f0404f6127a3d0f75",
+  "intake_cycles": 45,
+  "pending_candidate_count": 486,
+  "pending_sha256": "17f775b36d674a3185036721aca4f73d1ef49ae60d886de81215795254acfe1c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -49,10 +49,11 @@
     "3e1cd0b061906f0a66b16a860521a6360b1d7d42",
     "b7ece836fec2abcea2b74e0026525f5b1c3b84d7",
     "de6f31611b84376c3cc5b5445b1c958fafbe87db",
-    "6e9931f30036e3052d29419bd426d4a2401a7737"
+    "6e9931f30036e3052d29419bd426d4a2401a7737",
+    "6461216dbb149fef03d3665f5688664ad55287a6"
   ],
   "publication_authorized": false,
-  "scan_record_count": 80770,
+  "scan_record_count": 82595,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -126,14 +127,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 190,
-        "NO_UPDATE": 5314
+        "FAILED": 195,
+        "NO_UPDATE": 5434
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 50,
+      "pending_candidate_count": 51,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -584,12 +585,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
           "source_url": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-e6ddeb57c4ac056e5c09f24a",
+          "custody_pointer": "RSRCH-1a21895af57fae92fc9337f8",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Circle shareholder sues Trump, World Liberty and Steve Witkoff over crypto deals",
+          "source_url": "https://cointelegraph.com/news/circle-shareholder-lawsuit-donald-trump-world-liberty-financial-steve-witkoff-crypto-corruption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 292,
-        "FAILED": 228,
-        "NO_UPDATE": 6140
+        "CANDIDATES_IDENTIFIED": 299,
+        "FAILED": 234,
+        "NO_UPDATE": 6277
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1328,9 +1338,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 302,
-        "FAILED": 190,
-        "NO_UPDATE": 5058
+        "CANDIDATES_IDENTIFIED": 310,
+        "FAILED": 195,
+        "NO_UPDATE": 5170
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1619,9 +1629,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 268,
-        "FAILED": 228,
-        "NO_UPDATE": 6164
+        "CANDIDATES_IDENTIFIED": 274,
+        "FAILED": 234,
+        "NO_UPDATE": 6302
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1748,9 +1758,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 98,
-        "FAILED": 228,
-        "NO_UPDATE": 6334
+        "CANDIDATES_IDENTIFIED": 99,
+        "FAILED": 234,
+        "NO_UPDATE": 6477
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1850,9 +1860,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 78,
-        "FAILED": 266,
-        "NO_UPDATE": 7426
+        "CANDIDATES_IDENTIFIED": 79,
+        "FAILED": 273,
+        "NO_UPDATE": 7593
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2258,15 +2268,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 138,
-        "FAILED": 228,
-        "NO_UPDATE": 6294
+        "CANDIDATES_IDENTIFIED": 141,
+        "FAILED": 234,
+        "NO_UPDATE": 6435
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 96,
+      "pending_candidate_count": 102,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3131,12 +3141,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil Climbs Above $111 as AI Stocks Slide, Dragging the S&#038;P 500 and Global Markets With Them",
           "source_url": "https://decrypt.co/381613/oil-climbs-above-111-as-ai-stocks-slide-dragging-the-sp-500-and-global-markets-with-them"
+        },
+        {
+          "candidate_id": "SRC-6126b7098797db3aaa150b11",
+          "custody_pointer": "RSRCH-0b8ae4f01108f0e84703a351",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Presidential Determination Pursuant to Section 303 of the Defense Production Act of 1950, as Amended, on Domestic Petroleum Production, Refining, and Logistics Capacity",
+          "source_url": "https://www.whitehouse.gov/presidential-actions/2026/10/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-domestic-petroleum-production-refining-and-logistics-capacity-c139/"
+        },
+        {
+          "candidate_id": "SRC-d88d025e1a1331e80adf2684",
+          "custody_pointer": "RSRCH-356056526f3e8804e4bda22f",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Sharp drops for AI stocks overwhelm markets worldwide as oil prices jump",
+          "source_url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil"
+        },
+        {
+          "candidate_id": "SRC-0308c9057aefb9d7f523dcf6",
+          "custody_pointer": "RSRCH-8d240f6aabc780ad13f65749",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
+          "source_url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-5eddf66d84269d2a598944f2",
+          "custody_pointer": "RSRCH-9ba7c2e71de771d618223d6e",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Presidential Determination Pursuant to Section 303 of the Defense Production Act of 1950, as Amended, on Domestic Petroleum Production, Refining, and Logistics Capacity",
+          "source_url": "https://www.whitehouse.gov/presidential-actions/2026/10/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-domestic-petroleum-production-refining-and-logistics-capacity-c139/"
+        },
+        {
+          "candidate_id": "SRC-8523a2aef06598270238417d",
+          "custody_pointer": "RSRCH-c063b4644824bfa153c1bd92",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Sharp drops for AI stocks overwhelm markets worldwide as oil prices jump",
+          "source_url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil"
+        },
+        {
+          "candidate_id": "SRC-055b4312693b83c023f2cb07",
+          "custody_pointer": "RSRCH-186395eda982398405b7cf50",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
+          "source_url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 579,
-        "FAILED": 190,
-        "NO_UPDATE": 4781
+        "CANDIDATES_IDENTIFIED": 595,
+        "FAILED": 195,
+        "NO_UPDATE": 4885
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3254,15 +3318,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 264,
-        "NO_UPDATE": 7105
+        "CANDIDATES_IDENTIFIED": 145,
+        "FAILED": 271,
+        "NO_UPDATE": 7269
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 87,
+      "pending_candidate_count": 89,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4046,12 +4110,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Underdog taps zerohash to bring crypto deposits to prediction markets",
           "source_url": "https://cointelegraph.com/news/underdog-taps-zerohash-to-bring-crypto-deposits-to-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-3de51751ea676099f978419f",
+          "custody_pointer": "RSRCH-9c549598b164cfce7e11f280",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Circle shareholder sues Trump, World Liberty and Steve Witkoff over crypto deals",
+          "source_url": "https://cointelegraph.com/news/circle-shareholder-lawsuit-donald-trump-world-liberty-financial-steve-witkoff-crypto-corruption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-abc3d28ae15bcfc6e9f58ea9",
+          "custody_pointer": "RSRCH-b2772d58fab392fc41f6b5e2",
+          "producer_commit": "6461216dbb149fef03d3665f5688664ad55287a6",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Is the Internet Safe Again After the PHP Nightmare? What You Need to Know",
+          "source_url": "https://decrypt.co/381662/internet-safe-again-after-php-nightmare-what-you-need-know"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 601,
-        "FAILED": 228,
-        "NO_UPDATE": 5831
+        "CANDIDATES_IDENTIFIED": 612,
+        "FAILED": 234,
+        "NO_UPDATE": 5964
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4232,9 +4314,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 153,
-        "FAILED": 228,
-        "NO_UPDATE": 6279
+        "CANDIDATES_IDENTIFIED": 157,
+        "FAILED": 234,
+        "NO_UPDATE": 6419
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4487,9 +4569,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 135,
-        "FAILED": 304,
-        "NO_UPDATE": 8441
+        "CANDIDATES_IDENTIFIED": 136,
+        "FAILED": 312,
+        "NO_UPDATE": 8632
       }
     }
   }
