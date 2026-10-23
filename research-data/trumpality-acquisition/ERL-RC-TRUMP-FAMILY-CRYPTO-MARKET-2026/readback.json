@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 46,
-  "pending_candidate_count": 492,
-  "pending_sha256": "7cc533e252d61e8be70322b025c7f2a6a84ec13c0f1c65d109d5b775ae6bffc0",
+  "intake_cycles": 47,
+  "pending_candidate_count": 495,
+  "pending_sha256": "8758e1571cc2c961f11fe9fba19da36f7f8493d8d7fcbf9be57dbd60235b6bbd",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -51,10 +51,11 @@
     "de6f31611b84376c3cc5b5445b1c958fafbe87db",
     "6e9931f30036e3052d29419bd426d4a2401a7737",
     "6461216dbb149fef03d3665f5688664ad55287a6",
-    "2c7030aed6af4b95e72dde35ce18cf1a859c63b6"
+    "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
+    "1d45b3fdfe4fdc1372bf62ac8e93de3968f992d6"
   ],
   "publication_authorized": false,
-  "scan_record_count": 84420,
+  "scan_record_count": 86245,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -128,14 +129,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 46,
-        "FAILED": 200,
-        "NO_UPDATE": 5554
+        "FAILED": 205,
+        "NO_UPDATE": 5674
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 52,
+      "pending_candidate_count": 53,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -604,12 +605,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Core changes security policy as AI makes bugs easier to find",
           "source_url": "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-adec8e00d37cb78c151f42c8",
+          "custody_pointer": "RSRCH-c70cb18b13ade1d9f2f270fe",
+          "producer_commit": "1d45b3fdfe4fdc1372bf62ac8e93de3968f992d6",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Malaysia, Thailand join Singapore\u2019s cross-border stablecoin push",
+          "source_url": "https://cointelegraph.com/news/malaysia-thailand-join-singapores-cross-border-stablecoin-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 306,
-        "FAILED": 240,
-        "NO_UPDATE": 6414
+        "CANDIDATES_IDENTIFIED": 312,
+        "FAILED": 246,
+        "NO_UPDATE": 6552
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1357,9 +1367,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 318,
-        "FAILED": 200,
-        "NO_UPDATE": 5282
+        "CANDIDATES_IDENTIFIED": 325,
+        "FAILED": 205,
+        "NO_UPDATE": 5395
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1648,9 +1658,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 279,
-        "FAILED": 240,
-        "NO_UPDATE": 6441
+        "CANDIDATES_IDENTIFIED": 286,
+        "FAILED": 246,
+        "NO_UPDATE": 6578
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1786,9 +1796,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 101,
-        "FAILED": 240,
-        "NO_UPDATE": 6619
+        "CANDIDATES_IDENTIFIED": 102,
+        "FAILED": 246,
+        "NO_UPDATE": 6762
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1888,9 +1898,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 80,
-        "FAILED": 280,
-        "NO_UPDATE": 7760
+        "CANDIDATES_IDENTIFIED": 81,
+        "FAILED": 287,
+        "NO_UPDATE": 7927
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2296,15 +2306,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 144,
-        "FAILED": 240,
-        "NO_UPDATE": 6576
+        "CANDIDATES_IDENTIFIED": 146,
+        "FAILED": 246,
+        "NO_UPDATE": 6718
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 104,
+      "pending_candidate_count": 106,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3241,12 +3251,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
           "source_url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
+        },
+        {
+          "candidate_id": "SRC-927d3fc2f931a0f6b7024406",
+          "custody_pointer": "RSRCH-c6088864e3521c6c8f2acfed",
+          "producer_commit": "1d45b3fdfe4fdc1372bf62ac8e93de3968f992d6",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin holds above $81,000 as markets calm, oil continues to gain",
+          "source_url": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
+        },
+        {
+          "candidate_id": "SRC-6c464629c6d23b0f36f3fd99",
+          "custody_pointer": "RSRCH-40d9e5394874f4b48dc22227",
+          "producer_commit": "1d45b3fdfe4fdc1372bf62ac8e93de3968f992d6",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin holds above $81,000 as markets calm, oil continues to gain",
+          "source_url": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 613,
-        "FAILED": 200,
-        "NO_UPDATE": 4987
+        "CANDIDATES_IDENTIFIED": 629,
+        "FAILED": 205,
+        "NO_UPDATE": 5091
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3364,9 +3392,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 148,
-        "FAILED": 278,
-        "NO_UPDATE": 7434
+        "CANDIDATES_IDENTIFIED": 152,
+        "FAILED": 285,
+        "NO_UPDATE": 7598
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -4186,9 +4214,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 622,
-        "FAILED": 240,
-        "NO_UPDATE": 6098
+        "CANDIDATES_IDENTIFIED": 632,
+        "FAILED": 246,
+        "NO_UPDATE": 6232
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4369,9 +4397,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 160,
-        "FAILED": 240,
-        "NO_UPDATE": 6560
+        "CANDIDATES_IDENTIFIED": 164,
+        "FAILED": 246,
+        "NO_UPDATE": 6700
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4625,8 +4653,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 320,
-        "NO_UPDATE": 8823
+        "FAILED": 328,
+        "NO_UPDATE": 9015
       }
     }
   }
