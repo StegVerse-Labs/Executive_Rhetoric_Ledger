@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 49,
-  "pending_candidate_count": 509,
-  "pending_sha256": "82955661f0051e21cc66e6474421f0a524ef1bee75a9e653c6f58384e88b8482",
+  "intake_cycles": 50,
+  "pending_candidate_count": 510,
+  "pending_sha256": "449a9100e13281196013842a2f84f1c8f8f4625650623d749c42a1172119992a",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -54,10 +54,11 @@
     "2c7030aed6af4b95e72dde35ce18cf1a859c63b6",
     "1d45b3fdfe4fdc1372bf62ac8e93de3968f992d6",
     "a319d2f4cfd22219e07fed0e1b62d261cf70b9a0",
-    "d85a8300b0fe736e2f5c8be0414947fe2912c997"
+    "d85a8300b0fe736e2f5c8be0414947fe2912c997",
+    "287f22707b4f7a4621ff58fbc2aeb98f863972d0"
   ],
   "publication_authorized": false,
-  "scan_record_count": 89895,
+  "scan_record_count": 91720,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -131,8 +132,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 48,
-        "FAILED": 215,
-        "NO_UPDATE": 5912
+        "FAILED": 220,
+        "NO_UPDATE": 6032
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -637,9 +638,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 328,
-        "FAILED": 258,
-        "NO_UPDATE": 6824
+        "CANDIDATES_IDENTIFIED": 334,
+        "FAILED": 264,
+        "NO_UPDATE": 6962
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1396,9 +1397,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 341,
-        "FAILED": 215,
-        "NO_UPDATE": 5619
+        "CANDIDATES_IDENTIFIED": 348,
+        "FAILED": 220,
+        "NO_UPDATE": 5732
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1687,9 +1688,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 306,
-        "FAILED": 258,
-        "NO_UPDATE": 6846
+        "CANDIDATES_IDENTIFIED": 313,
+        "FAILED": 264,
+        "NO_UPDATE": 6983
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1825,9 +1826,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 110,
-        "FAILED": 258,
-        "NO_UPDATE": 7042
+        "CANDIDATES_IDENTIFIED": 111,
+        "FAILED": 264,
+        "NO_UPDATE": 7185
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1927,15 +1928,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 87,
-        "FAILED": 301,
-        "NO_UPDATE": 8257
+        "CANDIDATES_IDENTIFIED": 88,
+        "FAILED": 308,
+        "NO_UPDATE": 8424
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 44,
+      "pending_candidate_count": 45,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2332,12 +2333,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
           "source_url": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours"
+        },
+        {
+          "candidate_id": "SRC-6ae16d52ae706473d173d2a5",
+          "custody_pointer": "RSRCH-38ca4e4d6b3bc66826a18c7b",
+          "producer_commit": "287f22707b4f7a4621ff58fbc2aeb98f863972d0",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+          "source_url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 150,
-        "FAILED": 258,
-        "NO_UPDATE": 7002
+        "CANDIDATES_IDENTIFIED": 153,
+        "FAILED": 264,
+        "NO_UPDATE": 7143
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3373,9 +3383,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 671,
-        "FAILED": 215,
-        "NO_UPDATE": 5289
+        "CANDIDATES_IDENTIFIED": 693,
+        "FAILED": 220,
+        "NO_UPDATE": 5387
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3493,9 +3503,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 160,
-        "FAILED": 299,
-        "NO_UPDATE": 7926
+        "CANDIDATES_IDENTIFIED": 162,
+        "FAILED": 306,
+        "NO_UPDATE": 8092
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -4342,9 +4352,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 660,
-        "FAILED": 258,
-        "NO_UPDATE": 6492
+        "CANDIDATES_IDENTIFIED": 672,
+        "FAILED": 264,
+        "NO_UPDATE": 6624
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4525,9 +4535,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 172,
-        "FAILED": 258,
-        "NO_UPDATE": 6980
+        "CANDIDATES_IDENTIFIED": 176,
+        "FAILED": 264,
+        "NO_UPDATE": 7120
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4781,8 +4791,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 147,
-        "FAILED": 344,
-        "NO_UPDATE": 9389
+        "FAILED": 352,
+        "NO_UPDATE": 9581
       }
     }
   }
