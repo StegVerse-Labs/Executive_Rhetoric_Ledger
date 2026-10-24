@@ -1,0 +1,36 @@
+{
+  "authority": {
+    "may_acknowledge": true,
+    "may_deprecate": false,
+    "may_promote": false,
+    "may_retrieve": true,
+    "may_retry": true
+  },
+  "generated_at": "2026-07-20T14:00:00Z",
+  "producers": [
+    {
+      "attempts": 0,
+      "last_error": null,
+      "manifest_path": "exports/executive-rhetoric-ledger/manifest.json",
+      "manifest_sha256": "5e9719d7e3eb66189175c6ac72ce2abbd82405a1d3e5bd2d5bad7ec30d3da93f",
+      "next_retry_at": null,
+      "producer_commit": "38b2d6238b51cd937a759603c67640daffc0ed1d",
+      "quarantined_records": 0,
+      "repository": "StegVerse-Labs/Administrations",
+      "retrieved_records": 1,
+      "status": "healthy"
+    },
+    {
+      "attempts": 0,
+      "last_error": null,
+      "manifest_path": "datasets/exports/executive-rhetoric-ledger/manifest.json",
+      "manifest_sha256": "e3ae7306b263b61b1644672dba728bd116a2b4c64ed476dc95d5dc225446fd62",
+      "next_retry_at": null,
+      "producer_commit": "1d45b3fdfe4fdc1372bf62ac8e93de3968f992d6",
+      "quarantined_records": 0,
+      "repository": "StegVerse-Labs/Trumpality",
+      "retrieved_records": 20,
+      "status": "healthy"
+    }
+  ]
+}

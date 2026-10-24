@@ -1,0 +1,167 @@
+{
+  "authority": {
+    "may_approve_review": false,
+    "may_mark_reviewed_eligibility": true,
+    "may_promote": false,
+    "may_publish": false,
+    "may_reconcile_chronology": true,
+    "may_record_ack_consumption": true
+  },
+  "generated_at": "2026-07-20T14:00:00Z",
+  "producers": [
+    {
+      "acknowledgment_consumption": "complete",
+      "capability_complete": true,
+      "chronology_state": "consistent",
+      "manifest_live": true,
+      "records_acknowledged": 1,
+      "records_review_routed": 1,
+      "records_seen": 1,
+      "repository": "StegVerse-Labs/Administrations"
+    },
+    {
+      "acknowledgment_consumption": "complete",
+      "capability_complete": true,
+      "chronology_state": "consistent",
+      "manifest_live": true,
+      "records_acknowledged": 21,
+      "records_review_routed": 21,
+      "records_seen": 21,
+      "repository": "StegVerse-Labs/Trumpality"
+    }
+  ],
+  "reviewed_output_eligibility": [
+    {
+      "intake_id": "ERL-INTAKE-07BDF642DF8581623D00199E",
+      "producer_repository": "StegVerse-Labs/Administrations",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-18B9CEE7C9FC8C78BD470D76",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-2D5DFAA785C9264ED7930CF1",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-2D69A3C20FEB4EFF630D4FE4",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-3BBD00CC5ACDE856A8FB5FC1",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-4CF0A1BFD5D9906D404CFEA3",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-541A81324E3A0B6D402987D4",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-55AA824174B5ED994F8EC799",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-6914BD5FD4F634A7BFF0EB88",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-85A4CBBC5389CBAE913A9116",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-88AAB755DBEE06B1B98AF98C",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-912AE292BDED21CA97140D00",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-94D75551B4126AEF0C99FF50",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-9D1F9DC349C259BDC4995CB0",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-B27E928115F9599923E4FB03",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-D6B3515C4513B89DF222E7C0",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-DD22FFA927FC944AD4B6172F",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-DFE8F41553B13D87BB8CC344",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-E5BE9FA2ACEE3B000E7D2D17",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-E70FD91C4FD2EBBFEDC934C0",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-E83FACB8674B9722336A27B2",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    },
+    {
+      "intake_id": "ERL-INTAKE-FB5C8E7071F0398EF7269E16",
+      "producer_repository": "StegVerse-Labs/Trumpality",
+      "reason": "pending final evidentiary review; automation cannot approve",
+      "status": "ineligible-unreviewed"
+    }
+  ]
+}
