@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 51,
-  "pending_candidate_count": 510,
-  "pending_sha256": "449a9100e13281196013842a2f84f1c8f8f4625650623d749c42a1172119992a",
+  "intake_cycles": 52,
+  "pending_candidate_count": 511,
+  "pending_sha256": "eda8201c3834150c43af255119c3d5476d2af27686198a6824ff2605791d3b7a",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -56,10 +56,11 @@
     "a319d2f4cfd22219e07fed0e1b62d261cf70b9a0",
     "d85a8300b0fe736e2f5c8be0414947fe2912c997",
     "287f22707b4f7a4621ff58fbc2aeb98f863972d0",
-    "acc50ada90d057aaf148c3c880b92392fba7e0e6"
+    "acc50ada90d057aaf148c3c880b92392fba7e0e6",
+    "adc93dac2019f5ad54b58fb157b9234c296c015d"
   ],
   "publication_authorized": false,
-  "scan_record_count": 93545,
+  "scan_record_count": 95370,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -133,8 +134,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 48,
-        "FAILED": 225,
-        "NO_UPDATE": 6152
+        "FAILED": 230,
+        "NO_UPDATE": 6272
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -639,9 +640,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 340,
-        "FAILED": 270,
-        "NO_UPDATE": 7100
+        "CANDIDATES_IDENTIFIED": 346,
+        "FAILED": 276,
+        "NO_UPDATE": 7238
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1398,9 +1399,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 354,
-        "FAILED": 225,
-        "NO_UPDATE": 5846
+        "CANDIDATES_IDENTIFIED": 360,
+        "FAILED": 230,
+        "NO_UPDATE": 5960
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1689,9 +1690,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 320,
-        "FAILED": 270,
-        "NO_UPDATE": 7120
+        "CANDIDATES_IDENTIFIED": 327,
+        "FAILED": 276,
+        "NO_UPDATE": 7257
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1827,9 +1828,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 112,
-        "FAILED": 270,
-        "NO_UPDATE": 7328
+        "CANDIDATES_IDENTIFIED": 113,
+        "FAILED": 276,
+        "NO_UPDATE": 7471
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1930,8 +1931,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 88,
-        "FAILED": 315,
-        "NO_UPDATE": 8592
+        "FAILED": 322,
+        "NO_UPDATE": 8760
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2346,9 +2347,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 156,
-        "FAILED": 270,
-        "NO_UPDATE": 7284
+        "CANDIDATES_IDENTIFIED": 159,
+        "FAILED": 276,
+        "NO_UPDATE": 7425
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3384,9 +3385,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 713,
-        "FAILED": 225,
-        "NO_UPDATE": 5487
+        "CANDIDATES_IDENTIFIED": 733,
+        "FAILED": 230,
+        "NO_UPDATE": 5587
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3504,15 +3505,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 164,
-        "FAILED": 313,
-        "NO_UPDATE": 8258
+        "CANDIDATES_IDENTIFIED": 165,
+        "FAILED": 320,
+        "NO_UPDATE": 8425
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 93,
+      "pending_candidate_count": 94,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4350,12 +4351,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Netanyahu Considering Crypto Plan to Dodge Banking Sanctions on Israel",
           "source_url": "https://decrypt.co/381758/netanyahu-crypto-plan-banking-sanctions-israel"
+        },
+        {
+          "candidate_id": "SRC-af05ecf46e43ae81c4c5e579",
+          "custody_pointer": "RSRCH-e67e214cf061344d86db3fd2",
+          "producer_commit": "adc93dac2019f5ad54b58fb157b9234c296c015d",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
+          "source_url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 684,
-        "FAILED": 270,
-        "NO_UPDATE": 6756
+        "CANDIDATES_IDENTIFIED": 697,
+        "FAILED": 276,
+        "NO_UPDATE": 6887
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4536,9 +4546,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 180,
-        "FAILED": 270,
-        "NO_UPDATE": 7260
+        "CANDIDATES_IDENTIFIED": 184,
+        "FAILED": 276,
+        "NO_UPDATE": 7400
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4792,8 +4802,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 147,
-        "FAILED": 360,
-        "NO_UPDATE": 9773
+        "FAILED": 368,
+        "NO_UPDATE": 9965
       }
     }
   }
