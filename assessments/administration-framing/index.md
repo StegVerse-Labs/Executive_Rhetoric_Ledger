@@ -4,6 +4,8 @@
 
 **Count:** 16 distinct source records indexed below, including raw incidents, machine assessments, cross-event analyses, and one governance pattern. This is a **record count, not an independent incident count**: some records analyze the same underlying exchanges. The register is a reviewed search-based inventory, not a certified exhaustive history.
 
+**Comparative research assessment:** [Directional framing, comparative frequency, and user-input confounds](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/research/erl-administration-framing-index-20261023/assessments/administration-framing/comparative-research-assessment-2026-10-23.md) — 16-record audit, no defensible relative-rate estimate without non-Trump denominators and matched controls.
+
 ## Direct records
 
 | Date | Record | Concise assessment |
