@@ -36,6 +36,28 @@
 - [Trump crypto source baseline](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/research-data/2025-01_trump_meme_event_baseline.v1.json) — evidence for launch/fees, not automatically a finding of manipulation.
 - [Research activation registry](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/coordination/research-candidate-activation-registry.v1.json) — check current admission state before any promotion.
 
+## Federal-force video evidence, missing-context exculpation, and historical-administration comparison
+
+**Originating question:** Evaluate what the supplied video actually shows about force used against a person appearing physically controlled or detained. Do not substitute imagined events outside the recorded interval for visible conduct. Preserve the distinction between observed restraint/force, inferred injury or motive, agency identification, asserted legal authority, and an ultimate legal finding.
+
+**Reported model behavior:** The user reports that ChatGPT repeatedly speculated about prior or subsequent events to mitigate visible harm, required court resolution before recognizing possible human-rights violations, and invoked Biden-administration equivalence without establishing a corresponding policy. The scope-reduction and missing-context behavior is supported by existing ERL records; **the precise Biden-comparison utterance has not been recovered from a primary transcript and is not represented as a verified quote or established historical fact.** The claim that no other administration adopted the same policy is a historical comparison to test against actual directives, agency practices and relevant evidence—not an assumption or an equivalence by default.
+
+**Evidence and control links (verified repository paths):**
+
+- [Federal detention/protest video assessment](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/2026-07-federal-detention-protest-use-of-force.md)
+- [Delaney Hall event and source assessment](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/machine/PIT-MODERN-2026-DELANEY-HALL-FORCE.json)
+- [Visible physical control/carrying event DH-FORCE-004](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/events/DH-FORCE-004-carry-removal.json)
+- [Primary record intake](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/intake/2026-07-delaney-hall-primary-record-intake.md)
+- [Federal-to-state operational control](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/controls/2026-07-delaney-hall-federal-to-state-operational-control.md)
+- [Missing-context exculpation control](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/controls/2026-08-16-ai-missing-context-exculpation-control.json)
+- [Federal-force missing-context discovery batch](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/intake/2026-08-16-federal-force-missing-context-discovery-batch-001.json)
+- [Research origin/scope audit](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/docs/RESEARCH_SURFACE_ORIGIN_SCOPE_AUDIT.md)
+- [Administration maltreatment scope-reduction event](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/events/2026-08-16-chatgpt-administration-maltreatment-scope-reduction.raw.md)
+
+**Observation and uncertainty rule:** Missing pre/post-video context stays UNKNOWN and does not itself favor official justification or civilian fault. Directly observable conduct is not erased by an incomplete clip. A visually secured person does not automatically establish injury, precise agency affiliation, illegality or administration-wide policy without separate evidence. Court adjudication is not a prerequisite to describing video observations or analyzing constitutional/human-rights implications; criminal/civil liability and institutional policy attribution remain distinct questions.
+
+**Cross-administration comparison:** Do not infer that Biden-era incidents were equivalent to Trump-era policy or practice simply because both administrations operated federal immigration enforcement. Require specific policy text, dates, agency scope, implementation evidence, and genuinely comparable conduct; record non-equivalence when demonstrated. The alleged Biden false-equivalence exchange remains `ORIGINAL_RESPONSE_NOT_RECOVERED` pending transcript custody.
+
 ## Overall assessment
 
 **Repeated observable behavior:** Multiple ERL records document unsolicited balancing, replacing a user's proposition with a stronger or narrower one, rebutting accusations the user did not make, asserting task completeness without recovering original scope, and shifting the burden of proving senior accountability to outside observers. The August relationship map and later cross-event assessments make this a **documented multi-event research pattern**, not a single October 2026 complaint.
