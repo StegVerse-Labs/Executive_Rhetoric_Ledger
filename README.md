@@ -310,3 +310,7 @@ A bounded machine-behavior research candidate is preserved at `assessments/machi
 An October 9–18 presidential-rhetoric, Reuters/WSJ oil-price, and futures-positioning evidence intake is appended to `research-candidates/2026-08-12-trump-administration-oil-flow-normalization-claim.md`. The $275 million inflow assertion remains unverified; no motive or manipulation finding is authorized. The canonical Hormuz reconciliation handoff tracks next evidence and independent-review requirements.
 
 Mr. Global attribution correction (2026-10-18): the owner recalls a video summary describing $250M–$300M in new crude contracts; $275M is a midpoint, not a verified precise inflow. See canonical oil-flow research candidate; source video and exchange corroboration pending.
+
+### October 23, 2026 — Tennessee voting-machine answer framing
+
+Research candidate `assessments/machine/2026-10-23-chatgpt-tennessee-voting-machine-framing.json` records the assistant's introduction and rebuttal of an unasserted deliberate-manipulation allegation, subsequent qualification of the reverse-direction comparison, and failure to consult existing ERL records before addressing the user's longitudinal concern. Owned by Issue #212 / `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Event-level framing failures are observed; system-wide political bias, motive, election-machine causation, and publication are not established. Verbatim custody, matched controls, and independent review remain pending.
