@@ -62,3 +62,17 @@ To disentangle these effects, separately code (a) the *question's target* (Trump
 
 ## Disposition and limitations
 **RESEARCH_CANDIDATE / COMPARATIVE_RATE_UNKNOWN / ORIGINAL_BIDEN_UTTERANCE_NOT_RECOVERED.** Evidence of multiple event-level framing failures exists. A differential risk estimate and causal attribution to political target, user input, or model policy are not available. No protected merge, publication, or sovereign ALLOW is implied by this file. Next authorized steps are transcript/denominator recovery, preregistered matched controls, independent review, and native Registry readback.
+
+## Additional incident: contaminated comparison group (2026-10-23)
+
+**Source:** This conversation, following the 16-record comparative assessment. **Classification:** user-identified methodological error; assistant acknowledged the control-group misclassification. This is a distinct research-design incident, not an additional independent instance of the underlying California gasoline or Biden comparison events.
+
+**User observation:** Discussions nominally concerning non-Trump administrations or Democratic-governed states can themselves contain framing favorable to Trump or Republican-governed states. Treating those discussions as non-Trump *controls* therefore risks placing evidence of the hypothesized effect into the comparison group. The user cited the existing California-versus-Texas gasoline analysis and a reported Biden-policy-equivalence comparison.
+
+**Assistant error:** The assessment proposed cross-administration and non-Trump comparison groups without making *directional framing effect* an independent coding axis. It also distinguished national federal gasoline-price influences from interstate price differentials without initially foregrounding that a red-state/blue-state attribution asymmetry can be the outcome under study. The assistant subsequently acknowledged both points.
+
+**Verified linked record:** [California–Texas asymmetric partisan attribution](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/governance-patterns/2026-asymmetric-partisan-attribution-failure.md). **Related candidate:** [administration maltreatment scope reduction](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/assessments/events/2026-08-16-chatgpt-administration-maltreatment-scope-reduction.raw.md). The original Biden-comparison transcript remains unrecovered; do not promote its precise wording as verified.
+
+**Required correction:** Independently code (1) discussion subject, (2) party/administration of each actor, (3) whose accountability is amplified or mitigated, (4) whether the effect is Trump/Republican-favorable, Democratic-favorable, mixed, neutral or indeterminate, (5) whether political attribution is user-requested or assistant-inserted, and (6) whether the response addresses national price levels or interstate price differentials. A non-Trump *topic* is not automatically a non-Trump *control*. A genuinely opposite-direction control must be selected based on a matched evidentiary task, not presumed from the name of the politician or state.
+
+**Disposition:** CONFIRMED_DESIGN_DEFECT_IN_ASSESSMENT; COMPARATIVE_DIRECTIONAL_FREQUENCY_NOT_YET_ESTIMATED. Do not infer intentional party support or a platform-wide rate from this correction alone.
