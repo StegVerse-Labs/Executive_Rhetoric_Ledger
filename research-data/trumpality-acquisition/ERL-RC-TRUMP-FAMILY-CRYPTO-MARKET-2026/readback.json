@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 54,
-  "pending_candidate_count": 511,
-  "pending_sha256": "eda8201c3834150c43af255119c3d5476d2af27686198a6824ff2605791d3b7a",
+  "intake_cycles": 55,
+  "pending_candidate_count": 512,
+  "pending_sha256": "584a8210f3acc6adac74d3b2b86c38754e6ee0e67f56d6b5f3f1344d0ccc7e2f",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -59,10 +59,11 @@
     "acc50ada90d057aaf148c3c880b92392fba7e0e6",
     "adc93dac2019f5ad54b58fb157b9234c296c015d",
     "f286776051c1b1021c661ab2dd1378f7a085588d",
-    "844d72bad67a4e1bd1d27fd8ec1574c2b7a0e0da"
+    "844d72bad67a4e1bd1d27fd8ec1574c2b7a0e0da",
+    "29c0504eba34e22cafc141cad60f59d560d4955a"
   ],
   "publication_authorized": false,
-  "scan_record_count": 99020,
+  "scan_record_count": 100845,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -135,15 +136,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 49,
-        "FAILED": 240,
-        "NO_UPDATE": 6511
+        "CANDIDATES_IDENTIFIED": 50,
+        "FAILED": 245,
+        "NO_UPDATE": 6630
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 55,
+      "pending_candidate_count": 56,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -639,12 +640,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "IRS plans lower tax disclosure penalties, including for crypto: Forbes",
           "source_url": "https://cointelegraph.com/news/irs-plans-lower-penalties-for-crypto-tax-disclosures-forbes-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-346eb25c070c4090b74441e6",
+          "custody_pointer": "RSRCH-940152641cf42b58e4b54d30",
+          "producer_commit": "29c0504eba34e22cafc141cad60f59d560d4955a",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Netanyahu floats use of blockchain as solution to potential financial sanctions",
+          "source_url": "https://cointelegraph.com/news/netanyahu-floats-use-of-blockchain-as-solution-to-potential-financial-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 360,
-        "FAILED": 288,
-        "NO_UPDATE": 7512
+        "CANDIDATES_IDENTIFIED": 368,
+        "FAILED": 294,
+        "NO_UPDATE": 7648
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1401,9 +1411,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 373,
-        "FAILED": 240,
-        "NO_UPDATE": 6187
+        "CANDIDATES_IDENTIFIED": 379,
+        "FAILED": 245,
+        "NO_UPDATE": 6301
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1692,9 +1702,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 344,
-        "FAILED": 288,
-        "NO_UPDATE": 7528
+        "CANDIDATES_IDENTIFIED": 354,
+        "FAILED": 294,
+        "NO_UPDATE": 7662
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1830,9 +1840,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 118,
-        "FAILED": 288,
-        "NO_UPDATE": 7754
+        "CANDIDATES_IDENTIFIED": 122,
+        "FAILED": 294,
+        "NO_UPDATE": 7894
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1932,9 +1942,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 90,
-        "FAILED": 336,
-        "NO_UPDATE": 9094
+        "CANDIDATES_IDENTIFIED": 92,
+        "FAILED": 343,
+        "NO_UPDATE": 9260
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2349,9 +2359,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 165,
-        "FAILED": 288,
-        "NO_UPDATE": 7707
+        "CANDIDATES_IDENTIFIED": 168,
+        "FAILED": 294,
+        "NO_UPDATE": 7848
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3387,9 +3397,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 773,
-        "FAILED": 240,
-        "NO_UPDATE": 5787
+        "CANDIDATES_IDENTIFIED": 791,
+        "FAILED": 245,
+        "NO_UPDATE": 5889
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3507,9 +3517,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 167,
-        "FAILED": 334,
-        "NO_UPDATE": 8759
+        "CANDIDATES_IDENTIFIED": 168,
+        "FAILED": 341,
+        "NO_UPDATE": 8926
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -4365,9 +4375,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 725,
-        "FAILED": 288,
-        "NO_UPDATE": 7147
+        "CANDIDATES_IDENTIFIED": 740,
+        "FAILED": 294,
+        "NO_UPDATE": 7276
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4548,9 +4558,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 192,
-        "FAILED": 288,
-        "NO_UPDATE": 7680
+        "CANDIDATES_IDENTIFIED": 196,
+        "FAILED": 294,
+        "NO_UPDATE": 7820
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4803,9 +4813,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 152,
-        "FAILED": 384,
-        "NO_UPDATE": 10344
+        "CANDIDATES_IDENTIFIED": 157,
+        "FAILED": 392,
+        "NO_UPDATE": 10531
       }
     }
   }
