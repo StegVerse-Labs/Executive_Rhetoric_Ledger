@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 55,
-  "pending_candidate_count": 512,
-  "pending_sha256": "584a8210f3acc6adac74d3b2b86c38754e6ee0e67f56d6b5f3f1344d0ccc7e2f",
+  "intake_cycles": 56,
+  "pending_candidate_count": 514,
+  "pending_sha256": "c73f251988fbd36dcb1d105f2b60b76b8669f74c3981b0cc25c4d9655c93baec",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -60,10 +60,11 @@
     "adc93dac2019f5ad54b58fb157b9234c296c015d",
     "f286776051c1b1021c661ab2dd1378f7a085588d",
     "844d72bad67a4e1bd1d27fd8ec1574c2b7a0e0da",
-    "29c0504eba34e22cafc141cad60f59d560d4955a"
+    "29c0504eba34e22cafc141cad60f59d560d4955a",
+    "a22895f6033b83748e75a003ee7c83de05870c40"
   ],
   "publication_authorized": false,
-  "scan_record_count": 100845,
+  "scan_record_count": 102670,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -137,14 +138,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 245,
-        "NO_UPDATE": 6630
+        "FAILED": 250,
+        "NO_UPDATE": 6750
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 56,
+      "pending_candidate_count": 57,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -649,18 +650,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Netanyahu floats use of blockchain as solution to potential financial sanctions",
           "source_url": "https://cointelegraph.com/news/netanyahu-floats-use-of-blockchain-as-solution-to-potential-financial-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-b7c381d8998dea0c3d83a8e0",
+          "custody_pointer": "RSRCH-903ec55e2d4e4cfa7a074721",
+          "producer_commit": "a22895f6033b83748e75a003ee7c83de05870c40",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
+          "source_url": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 368,
-        "FAILED": 294,
-        "NO_UPDATE": 7648
+        "CANDIDATES_IDENTIFIED": 375,
+        "FAILED": 300,
+        "NO_UPDATE": 7785
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 83,
+      "pending_candidate_count": 84,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1408,12 +1418,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Core Rewrites Its Security Policy for a World Where AI Finds Bugs in One Prompt",
           "source_url": "https://decrypt.co/381715/bitcoin-core-security-policy-ai-threats"
+        },
+        {
+          "candidate_id": "SRC-4c1873962dae2f5d22ddfdf4",
+          "custody_pointer": "RSRCH-24e997cb6d0e0612489261d5",
+          "producer_commit": "a22895f6033b83748e75a003ee7c83de05870c40",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
+          "source_url": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 379,
-        "FAILED": 245,
-        "NO_UPDATE": 6301
+        "CANDIDATES_IDENTIFIED": 385,
+        "FAILED": 250,
+        "NO_UPDATE": 6415
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1702,9 +1721,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 354,
-        "FAILED": 294,
-        "NO_UPDATE": 7662
+        "CANDIDATES_IDENTIFIED": 360,
+        "FAILED": 300,
+        "NO_UPDATE": 7800
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1840,9 +1859,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 122,
-        "FAILED": 294,
-        "NO_UPDATE": 7894
+        "CANDIDATES_IDENTIFIED": 123,
+        "FAILED": 300,
+        "NO_UPDATE": 8037
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1943,8 +1962,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 92,
-        "FAILED": 343,
-        "NO_UPDATE": 9260
+        "FAILED": 350,
+        "NO_UPDATE": 9428
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2359,9 +2378,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 168,
-        "FAILED": 294,
-        "NO_UPDATE": 7848
+        "CANDIDATES_IDENTIFIED": 171,
+        "FAILED": 300,
+        "NO_UPDATE": 7989
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3397,9 +3416,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 791,
-        "FAILED": 245,
-        "NO_UPDATE": 5889
+        "CANDIDATES_IDENTIFIED": 809,
+        "FAILED": 250,
+        "NO_UPDATE": 5991
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3517,9 +3536,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 168,
-        "FAILED": 341,
-        "NO_UPDATE": 8926
+        "CANDIDATES_IDENTIFIED": 169,
+        "FAILED": 348,
+        "NO_UPDATE": 9093
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -4375,9 +4394,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 740,
-        "FAILED": 294,
-        "NO_UPDATE": 7276
+        "CANDIDATES_IDENTIFIED": 753,
+        "FAILED": 300,
+        "NO_UPDATE": 7407
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4558,9 +4577,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 196,
-        "FAILED": 294,
-        "NO_UPDATE": 7820
+        "CANDIDATES_IDENTIFIED": 200,
+        "FAILED": 300,
+        "NO_UPDATE": 7960
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4814,8 +4833,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 157,
-        "FAILED": 392,
-        "NO_UPDATE": 10531
+        "FAILED": 400,
+        "NO_UPDATE": 10723
       }
     }
   }
