@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 58,
-  "pending_candidate_count": 517,
-  "pending_sha256": "a3f98bc133d7d36c16cba04d1e360da9a46f111997d7f1ab640eba78639ee043",
+  "intake_cycles": 59,
+  "pending_candidate_count": 532,
+  "pending_sha256": "c8534327b4eea12f000e49c7b4ce23c71d59fd650670fbeb23ceaffde775576d",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -63,10 +63,11 @@
     "29c0504eba34e22cafc141cad60f59d560d4955a",
     "a22895f6033b83748e75a003ee7c83de05870c40",
     "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4",
-    "1fb8893d6db24da95229f1518d032d4110deaa71"
+    "1fb8893d6db24da95229f1518d032d4110deaa71",
+    "ec20cb10b87689478be0fc25ec9848eb47d42f0f"
   ],
   "publication_authorized": false,
-  "scan_record_count": 106320,
+  "scan_record_count": 108145,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -140,8 +141,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 260,
-        "NO_UPDATE": 6990
+        "FAILED": 265,
+        "NO_UPDATE": 7110
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -664,15 +665,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 389,
-        "FAILED": 312,
-        "NO_UPDATE": 8059
+        "CANDIDATES_IDENTIFIED": 395,
+        "FAILED": 318,
+        "NO_UPDATE": 8197
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 84,
+      "pending_candidate_count": 89,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1429,12 +1430,57 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
           "source_url": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions"
+        },
+        {
+          "candidate_id": "SRC-45ab7bfaaa568e6466c6fa92",
+          "custody_pointer": "RSRCH-07f55f1ba3a2effb915c60c3",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Over 11 million bitcoin has no known owner. Here's what it means",
+          "source_url": "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying"
+        },
+        {
+          "candidate_id": "SRC-79faf25ed3634262f081804b",
+          "custody_pointer": "RSRCH-0e27dc9176797eadfeef8c8a",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy skips Bitcoin purchases, spends $205M on STRC buybacks",
+          "source_url": "https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-d9dbddca83caa8b114ae7fcc",
+          "custody_pointer": "RSRCH-0e27dc9176797eadfeef8c8a",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "BTC price risks $80K loss into FOMC, earnings: Three things to know in Bitcoin this week",
+          "source_url": "https://cointelegraph.com/markets/btc-price-risks-80k-loss-into-fomc-earnings-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-66bf88961270665175cd083b",
+          "custody_pointer": "RSRCH-a4e250bb0ab529ef39d908e9",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Fed, ECB and BOJ interest-rate decisions, Coinbase earnings: Crypto Week Ahead",
+          "source_url": "https://www.coindesk.com/markets/2026/10/26/fed-ecb-and-boj-interest-rate-decisions-coinbase-earnings-crypto-week-ahead"
+        },
+        {
+          "candidate_id": "SRC-cec00fddf517bc3d1cbbe056",
+          "custody_pointer": "RSRCH-0ef57b3cee09026093cfd278",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Morning Minute: Bitcoin Breaks Below $80,000 as Iran Fears Hit the Weekend",
+          "source_url": "https://decrypt.co/381797/morning-minute-bitcoin-breaks-below-80000-as-iran-fears-hit-the-weekend"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 397,
-        "FAILED": 260,
-        "NO_UPDATE": 6643
+        "CANDIDATES_IDENTIFIED": 405,
+        "FAILED": 265,
+        "NO_UPDATE": 6755
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1723,9 +1769,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 374,
-        "FAILED": 312,
-        "NO_UPDATE": 8074
+        "CANDIDATES_IDENTIFIED": 380,
+        "FAILED": 318,
+        "NO_UPDATE": 8212
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1861,9 +1907,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 125,
-        "FAILED": 312,
-        "NO_UPDATE": 8323
+        "CANDIDATES_IDENTIFIED": 126,
+        "FAILED": 318,
+        "NO_UPDATE": 8466
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -1972,15 +2018,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 94,
-        "FAILED": 364,
-        "NO_UPDATE": 9762
+        "CANDIDATES_IDENTIFIED": 95,
+        "FAILED": 371,
+        "NO_UPDATE": 9929
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 45,
+      "pending_candidate_count": 46,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2386,18 +2432,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
           "source_url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet"
+        },
+        {
+          "candidate_id": "SRC-9889036fa3bde5f7af491297",
+          "custody_pointer": "RSRCH-7a608ee38e9232aaf10c55b5",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Aviva Investors launches tokenized share class of $29B Sterling fund on XRP Ledger",
+          "source_url": "https://cointelegraph.com/news/aviva-investors-launches-tokenized-share-class-of-sterling-fund-on-xrp-ledger?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 177,
-        "FAILED": 312,
-        "NO_UPDATE": 8271
+        "CANDIDATES_IDENTIFIED": 179,
+        "FAILED": 318,
+        "NO_UPDATE": 8413
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 114,
+      "pending_candidate_count": 120,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3424,12 +3479,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil markets are on edge ahead of the weekend, as midterm elections near and fresh U.S. strikes on Iran are predicted",
           "source_url": "https://www.marketwatch.com/story/oil-markets-are-on-edge-ahead-of-the-weekend-as-midterm-elections-near-and-fresh-u-s-strikes-on-iran-are-predicted-8c27e634?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-d1cc73637e94ce8d9d8d771c",
+          "custody_pointer": "RSRCH-e90797b9ba51c6ec6ee1105e",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin holds near $80,000 as oil retreats and the Fed decision looms",
+          "source_url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-holds-near-usd80-000-as-oil-retreats-and-the-fed-decision-looms"
+        },
+        {
+          "candidate_id": "SRC-bca1967ae2cac0fc95447792",
+          "custody_pointer": "RSRCH-e90797b9ba51c6ec6ee1105e",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live news: Bitcoin slips below $80,000 as Anthropic files for massive IPO",
+          "source_url": "https://www.coindesk.com/tech/2026/10/26/live-news-brent-crude-slides-below-usd110-as-iran-deal-hopes-grow-and-brazil-stocks-sink"
+        },
+        {
+          "candidate_id": "SRC-c2422322fbe769cd63156db0",
+          "custody_pointer": "RSRCH-3903b21e1747565144ea0771",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Morning Minute: Bitcoin Breaks Below $80,000 as Iran Fears Hit the Weekend",
+          "source_url": "https://decrypt.co/381797/morning-minute-bitcoin-breaks-below-80000-as-iran-fears-hit-the-weekend"
+        },
+        {
+          "candidate_id": "SRC-d1c0b688738e44e7a16ffbae",
+          "custody_pointer": "RSRCH-0f7bbe46b108d96ba2c12b9c",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin holds near $80,000 as oil retreats and the Fed decision looms",
+          "source_url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-holds-near-usd80-000-as-oil-retreats-and-the-fed-decision-looms"
+        },
+        {
+          "candidate_id": "SRC-3af864c4b0b2f37cf1e2a040",
+          "custody_pointer": "RSRCH-0f7bbe46b108d96ba2c12b9c",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live news: Bitcoin slips below $80,000 as Anthropic files for massive IPO",
+          "source_url": "https://www.coindesk.com/tech/2026/10/26/live-news-brent-crude-slides-below-usd110-as-iran-deal-hopes-grow-and-brazil-stocks-sink"
+        },
+        {
+          "candidate_id": "SRC-dd0dba2f4220d80044ae6275",
+          "custody_pointer": "RSRCH-3913b2b989685308b68e9cc7",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Morning Minute: Bitcoin Breaks Below $80,000 as Iran Fears Hit the Weekend",
+          "source_url": "https://decrypt.co/381797/morning-minute-bitcoin-breaks-below-80000-as-iran-fears-hit-the-weekend"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 845,
-        "FAILED": 260,
-        "NO_UPDATE": 6195
+        "CANDIDATES_IDENTIFIED": 863,
+        "FAILED": 265,
+        "NO_UPDATE": 6297
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3547,15 +3656,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 173,
-        "FAILED": 362,
-        "NO_UPDATE": 9425
+        "CANDIDATES_IDENTIFIED": 175,
+        "FAILED": 369,
+        "NO_UPDATE": 9591
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 95,
+      "pending_candidate_count": 97,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4411,18 +4520,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Standard Chartered-led Anchorpoint says it\u2019s not rushing retail stablecoin",
           "source_url": "https://cointelegraph.com/news/standard-chartered-led-anchorpoint-says-its-not-rushing-retail-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2ee7f2185974fc408431d4e8",
+          "custody_pointer": "RSRCH-8db497a6619e9c38956c2228",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "HOOD\u2019s prediction markets to add $1.7B to revenue, exceed crypto by 2028: Bernstein",
+          "source_url": "https://cointelegraph.com/news/prediction-markets-17b-robinhood-exceed-crypto-revenue-2028-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9fd840779cdda05893fba311",
+          "custody_pointer": "RSRCH-f842cc029f79f4dd7f87a4de",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "HOOD\u2019s prediction markets to add $1.7B to revenue, exceed crypto by 2028: Bernstein",
+          "source_url": "https://cointelegraph.com/news/prediction-markets-17b-robinhood-exceed-crypto-revenue-2028-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 779,
-        "FAILED": 312,
-        "NO_UPDATE": 7669
+        "CANDIDATES_IDENTIFIED": 793,
+        "FAILED": 318,
+        "NO_UPDATE": 7799
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 20,
+      "pending_candidate_count": 21,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -4603,12 +4730,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "$TRUMP Token Unlock Today: Can the Official Trump Coin Hold the $2 Zone? - Binance",
           "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTYnlzQ2NEbEgyRXlUeDdPUU0xbVhQZ3Uwc2pwdFROWEtHcWI4WE9jaG52ZV9YcDMzU3FMbm1SQzZvRGk2akRwN3RqMXpQemtOOC05Y2lCcXdjZHl1a2FWemdIMWZnMmNl?oc=5"
+        },
+        {
+          "candidate_id": "SRC-cc8d3ecc94082d3561aecc05",
+          "custody_pointer": "RSRCH-db826af23ceb5b27e2030690",
+          "producer_commit": "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto News: Bitcoin Flash Crash, Trump Token Dumps, and Exchanges are Down? - CryptoTicker",
+          "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUjdmZzZsX3JKdEFrd3Q4Y2paQU45UU1JdWtmSDJpRFlqenp1VlpveXJtNVlPaDB1N2xuNFlvUFNtcnpOdTg0THdTaDRVT1ZYZGdEamNHSGllXzViMDBtNFplMGM4WDRLM0RNUEt5Z1d5eG4xY055cjA1bEk2SjY2ay1acl9RbU5ZZWZB?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 208,
-        "FAILED": 312,
-        "NO_UPDATE": 8240
+        "CANDIDATES_IDENTIFIED": 212,
+        "FAILED": 318,
+        "NO_UPDATE": 8380
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4862,8 +4998,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 157,
-        "FAILED": 416,
-        "NO_UPDATE": 11107
+        "FAILED": 424,
+        "NO_UPDATE": 11299
       }
     }
   }
