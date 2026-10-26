@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 56,
-  "pending_candidate_count": 514,
-  "pending_sha256": "c73f251988fbd36dcb1d105f2b60b76b8669f74c3981b0cc25c4d9655c93baec",
+  "intake_cycles": 57,
+  "pending_candidate_count": 517,
+  "pending_sha256": "a3f98bc133d7d36c16cba04d1e360da9a46f111997d7f1ab640eba78639ee043",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -61,10 +61,11 @@
     "f286776051c1b1021c661ab2dd1378f7a085588d",
     "844d72bad67a4e1bd1d27fd8ec1574c2b7a0e0da",
     "29c0504eba34e22cafc141cad60f59d560d4955a",
-    "a22895f6033b83748e75a003ee7c83de05870c40"
+    "a22895f6033b83748e75a003ee7c83de05870c40",
+    "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4"
   ],
   "publication_authorized": false,
-  "scan_record_count": 102670,
+  "scan_record_count": 104495,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -138,8 +139,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 250,
-        "NO_UPDATE": 6750
+        "FAILED": 255,
+        "NO_UPDATE": 6870
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -662,9 +663,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 375,
-        "FAILED": 300,
-        "NO_UPDATE": 7785
+        "CANDIDATES_IDENTIFIED": 382,
+        "FAILED": 306,
+        "NO_UPDATE": 7922
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1430,9 +1431,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 385,
-        "FAILED": 250,
-        "NO_UPDATE": 6415
+        "CANDIDATES_IDENTIFIED": 391,
+        "FAILED": 255,
+        "NO_UPDATE": 6529
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1721,9 +1722,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 360,
-        "FAILED": 300,
-        "NO_UPDATE": 7800
+        "CANDIDATES_IDENTIFIED": 367,
+        "FAILED": 306,
+        "NO_UPDATE": 7937
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1859,15 +1860,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 123,
-        "FAILED": 300,
-        "NO_UPDATE": 8037
+        "CANDIDATES_IDENTIFIED": 124,
+        "FAILED": 306,
+        "NO_UPDATE": 8180
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 10,
+      "pending_candidate_count": 11,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -1958,12 +1959,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Donald Trump has sold out Ukraine. He makes Chamberlain look like a man of iron principle | Simon Tisdall",
           "source_url": "https://www.theguardian.com/commentisfree/2026/oct/22/donald-trump-ukraine-betrayal-putin-nato"
+        },
+        {
+          "candidate_id": "SRC-e13d85fc5e9b0fe860b617da",
+          "custody_pointer": "RSRCH-1ab606f89e50e91051662b03",
+          "producer_commit": "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4",
+          "query": "sanctions/access constraints",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered-led Anchorpoint says it\u2019s not rushing retail stablecoin",
+          "source_url": "https://cointelegraph.com/news/standard-chartered-led-anchorpoint-says-its-not-rushing-retail-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 92,
-        "FAILED": 350,
-        "NO_UPDATE": 9428
+        "CANDIDATES_IDENTIFIED": 93,
+        "FAILED": 357,
+        "NO_UPDATE": 9595
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2378,9 +2388,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 171,
-        "FAILED": 300,
-        "NO_UPDATE": 7989
+        "CANDIDATES_IDENTIFIED": 174,
+        "FAILED": 306,
+        "NO_UPDATE": 8130
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3416,9 +3426,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 809,
-        "FAILED": 250,
-        "NO_UPDATE": 5991
+        "CANDIDATES_IDENTIFIED": 827,
+        "FAILED": 255,
+        "NO_UPDATE": 6093
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3536,15 +3546,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 169,
-        "FAILED": 348,
-        "NO_UPDATE": 9093
+        "CANDIDATES_IDENTIFIED": 171,
+        "FAILED": 355,
+        "NO_UPDATE": 9259
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 94,
+      "pending_candidate_count": 95,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4391,18 +4401,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
           "source_url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations"
+        },
+        {
+          "candidate_id": "SRC-445098f678132fa919bce144",
+          "custody_pointer": "RSRCH-c93bdcf3bc65d5865451894d",
+          "producer_commit": "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered-led Anchorpoint says it\u2019s not rushing retail stablecoin",
+          "source_url": "https://cointelegraph.com/news/standard-chartered-led-anchorpoint-says-its-not-rushing-retail-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 753,
-        "FAILED": 300,
-        "NO_UPDATE": 7407
+        "CANDIDATES_IDENTIFIED": 766,
+        "FAILED": 306,
+        "NO_UPDATE": 7538
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 19,
+      "pending_candidate_count": 20,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -4574,12 +4593,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Official Trump Solana Meme Coin Falls as Melania Drops Token of Her Own - Decrypt",
           "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPY2FZRGhDSnlDMnhZZWtSZ3UyZEZDeW1uQUNjMVlxWFUxOWxXcFhwNFdwZ1UzRDF5QVBNcGFIaGFyRVdIaUZZSzZwWTZTejJvbmY3dk5jRWNxdDAxMHZVNW9vQ2hqTTh1LVBzNzNOXzhsRWptNmJpT1k2ZldUMEVRNGcxdmNYTXNueHJycl9oal9FcUFGdDBPaXhUdVRMQQ?oc=5"
+        },
+        {
+          "candidate_id": "SRC-27f3fec774c9494a64179e30",
+          "custody_pointer": "RSRCH-3338be9bc9b13e4142b01600",
+          "producer_commit": "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "$TRUMP Token Unlock Today: Can the Official Trump Coin Hold the $2 Zone? - Binance",
+          "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTYnlzQ2NEbEgyRXlUeDdPUU0xbVhQZ3Uwc2pwdFROWEtHcWI4WE9jaG52ZV9YcDMzU3FMbm1SQzZvRGk2akRwN3RqMXpQemtOOC05Y2lCcXdjZHl1a2FWemdIMWZnMmNl?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 200,
-        "FAILED": 300,
-        "NO_UPDATE": 7960
+        "CANDIDATES_IDENTIFIED": 204,
+        "FAILED": 306,
+        "NO_UPDATE": 8100
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4833,8 +4861,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 157,
-        "FAILED": 400,
-        "NO_UPDATE": 10723
+        "FAILED": 408,
+        "NO_UPDATE": 10915
       }
     }
   }
