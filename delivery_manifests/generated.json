@@ -4,7 +4,7 @@
     "may_claim_delivery": false,
     "may_prepare": true
   },
-  "delivery_id": "DELIVERY-FB0E1EC1ED1930BD2F2A",
+  "delivery_id": "DELIVERY-A1B0671B26EFC93CFBE3",
   "destinations": [
     {
       "acknowledgment": null,
@@ -45,13 +45,13 @@
       "delivery_status": "prepared",
       "repository": "StegVerse-Labs/Trumpality",
       "source_path": "person_specific_projections/trumpality.json",
-      "source_sha256": "a13038c87f5393791c274ef9c31927af9651cd5011f40675172c6a3a393363c4",
+      "source_sha256": "05a07428f517c9630dbdf301e1a0cfa5e660cc26bedee42f7ba70cb067cf7fee",
       "target_path": "data/receipts/ledger_reviewed_projections/latest.json"
     }
   ],
-  "generated_at": "2026-10-25T12:32:47Z",
+  "generated_at": "2026-10-26T14:02:59Z",
   "source_publication": {
     "path": "publication/compendium.json",
-    "sha256": "fb0e1ec1ed1930bd2f2a81c95ef55757382f6edab7739fa047847c3fb88738b7"
+    "sha256": "a1b0671b26efc93cfbe3f7c9f6dbb31ae9fab14cc1472164bd1020d347c658ab"
   }
 }
