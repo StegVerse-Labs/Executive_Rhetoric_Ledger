@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 59,
-  "pending_candidate_count": 532,
-  "pending_sha256": "c8534327b4eea12f000e49c7b4ce23c71d59fd650670fbeb23ceaffde775576d",
+  "intake_cycles": 60,
+  "pending_candidate_count": 538,
+  "pending_sha256": "4b3d5cd8b93134093a3375244c0fa88678e936e9b3974ae460e879645a99a8ff",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -64,10 +64,11 @@
     "a22895f6033b83748e75a003ee7c83de05870c40",
     "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4",
     "1fb8893d6db24da95229f1518d032d4110deaa71",
-    "ec20cb10b87689478be0fc25ec9848eb47d42f0f"
+    "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
+    "008833f2b8df8ad7bb03d28542a41580b614a4c8"
   ],
   "publication_authorized": false,
-  "scan_record_count": 108145,
+  "scan_record_count": 109970,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -141,14 +142,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 265,
-        "NO_UPDATE": 7110
+        "FAILED": 270,
+        "NO_UPDATE": 7230
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 57,
+      "pending_candidate_count": 61,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -662,18 +663,54 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
           "source_url": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions"
+        },
+        {
+          "candidate_id": "SRC-e54cb362b71c0abd47610421",
+          "custody_pointer": "RSRCH-9688fe88d418cd4a49545e0c",
+          "producer_commit": "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "OCC calls on community banks to enter the stablecoin payments market",
+          "source_url": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market"
+        },
+        {
+          "candidate_id": "SRC-8d83c54864d1d80b848f2119",
+          "custody_pointer": "RSRCH-9688fe88d418cd4a49545e0c",
+          "producer_commit": "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
+          "source_url": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029"
+        },
+        {
+          "candidate_id": "SRC-593359c74061eedec9855417",
+          "custody_pointer": "RSRCH-9688fe88d418cd4a49545e0c",
+          "producer_commit": "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Canada opens consultation on draft stablecoin rules, maintains ban on yields",
+          "source_url": "https://www.coindesk.com/policy/2026/10/26/canada-opens-consultation-on-draft-stablecoin-rules-maintains-ban-on-yields"
+        },
+        {
+          "candidate_id": "SRC-da0a724308295d1e8b5d05b3",
+          "custody_pointer": "RSRCH-73abbcaf2d8900c78b58ecfc",
+          "producer_commit": "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea lawmakers mull pushing crypto tax implementation to 2029",
+          "source_url": "https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 395,
-        "FAILED": 318,
-        "NO_UPDATE": 8197
+        "CANDIDATES_IDENTIFIED": 402,
+        "FAILED": 324,
+        "NO_UPDATE": 8334
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 89,
+      "pending_candidate_count": 91,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1475,12 +1512,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Morning Minute: Bitcoin Breaks Below $80,000 as Iran Fears Hit the Weekend",
           "source_url": "https://decrypt.co/381797/morning-minute-bitcoin-breaks-below-80000-as-iran-fears-hit-the-weekend"
+        },
+        {
+          "candidate_id": "SRC-c8d2159ed6f1cc5cde30968b",
+          "custody_pointer": "RSRCH-9f29da4ae3d03b44e2b5eced",
+          "producer_commit": "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
+          "source_url": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029"
+        },
+        {
+          "candidate_id": "SRC-720fcf08737f4620c6b399c1",
+          "custody_pointer": "RSRCH-a4b3acc7ccf84ebe17a008ee",
+          "producer_commit": "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea lawmakers mull pushing crypto tax implementation to 2029",
+          "source_url": "https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 405,
-        "FAILED": 265,
-        "NO_UPDATE": 6755
+        "CANDIDATES_IDENTIFIED": 414,
+        "FAILED": 270,
+        "NO_UPDATE": 6866
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1769,9 +1824,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 380,
-        "FAILED": 318,
-        "NO_UPDATE": 8212
+        "CANDIDATES_IDENTIFIED": 385,
+        "FAILED": 324,
+        "NO_UPDATE": 8351
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1907,9 +1962,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 126,
-        "FAILED": 318,
-        "NO_UPDATE": 8466
+        "CANDIDATES_IDENTIFIED": 127,
+        "FAILED": 324,
+        "NO_UPDATE": 8609
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2018,9 +2073,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 95,
-        "FAILED": 371,
-        "NO_UPDATE": 9929
+        "CANDIDATES_IDENTIFIED": 96,
+        "FAILED": 378,
+        "NO_UPDATE": 10096
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2444,9 +2499,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 179,
-        "FAILED": 318,
-        "NO_UPDATE": 8413
+        "CANDIDATES_IDENTIFIED": 180,
+        "FAILED": 324,
+        "NO_UPDATE": 8556
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3536,9 +3591,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 863,
-        "FAILED": 265,
-        "NO_UPDATE": 6297
+        "CANDIDATES_IDENTIFIED": 881,
+        "FAILED": 270,
+        "NO_UPDATE": 6399
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3656,9 +3711,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 175,
-        "FAILED": 369,
-        "NO_UPDATE": 9591
+        "CANDIDATES_IDENTIFIED": 177,
+        "FAILED": 376,
+        "NO_UPDATE": 9757
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -4541,9 +4596,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 793,
-        "FAILED": 318,
-        "NO_UPDATE": 7799
+        "CANDIDATES_IDENTIFIED": 807,
+        "FAILED": 324,
+        "NO_UPDATE": 7929
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4742,9 +4797,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 212,
-        "FAILED": 318,
-        "NO_UPDATE": 8380
+        "CANDIDATES_IDENTIFIED": 215,
+        "FAILED": 324,
+        "NO_UPDATE": 8521
       }
     },
     "wlf-positive-adoption-radar": {
@@ -4998,8 +5053,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 157,
-        "FAILED": 424,
-        "NO_UPDATE": 11299
+        "FAILED": 432,
+        "NO_UPDATE": 11491
       }
     }
   }
