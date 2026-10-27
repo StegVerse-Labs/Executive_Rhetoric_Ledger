@@ -6,13 +6,13 @@
     "github_token_used": false,
     "promotion_authority": false
   },
-  "byte_length": 2145544,
+  "byte_length": 2145547,
   "content_type": "text/html; charset=utf-8",
   "evidence_class": "media-primary",
   "final_url": "https://www.netflix.com/tudum/articles/investigation-alien-release-date-news",
   "native_object": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native",
-  "retrieved_at": "2026-10-27T01:07:14.198694Z",
-  "sha256": "70bfaf723d6cc7660188e83d366e528c9c3342152568dd0fa0498d106f9be341",
+  "retrieved_at": "2026-10-27T06:52:42.530723Z",
+  "sha256": "938cfc5e03c35680f86644b9ae50c79b8abeb825a5c26ab8abebdaadd247e9e7",
   "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
   "source_url": "https://www.netflix.com/tudum/articles/investigation-alien-release-date-news"
 }
