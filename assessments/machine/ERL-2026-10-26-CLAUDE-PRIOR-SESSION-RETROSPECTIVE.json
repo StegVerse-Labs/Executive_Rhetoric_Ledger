@@ -11,7 +11,17 @@
     "classification": "REPORTED — search-surfaced conversation summaries of the user's own Claude history",
     "verbatim_model_output_quoted": false,
     "verbatim_transcript_custody_complete": false,
-    "completeness": "Floor. Summaries are incomplete and search recall is unmeasured."
+    "completeness": "Search-surfaced summaries; recall unmeasured. Whether the set over- or under-represents actual incidents is UNKNOWN (see self_report_bias).",
+    "self_report_bias": {
+      "classification": "PROJECTED",
+      "statement": "Direction of self-report bias is an assumption, not an observation.",
+      "assumptions": [
+        "A1: the subject model's recall of its own failures is incomplete (would make the series a floor).",
+        "A2: no systematic incentive to over-report exists; this is NOT established. Over-reporting is possible, e.g. accommodation to the user's framing during a correction exchange.",
+        "A3: incident boundaries chosen by the subject model match independent classification."
+      ],
+      "test": "Independent classification of hashed transcript spans; compare counts in both directions."
+    }
   },
   "incidents": [
     {
@@ -81,18 +91,19 @@
     }
   ],
   "series_summary": {
-    "incident_count_floor": 7,
-    "combined_with_session_series": "at least 15 instances 2026-05-27 to 2026-10-26, plus uncounted 2026-06-07 corrections"
+    "combined_with_session_series": "15 self-reported instances 2026-05-27 to 2026-10-26 (8 session + 7 retrospective), plus uncounted 2026-06-07 corrections; not independently classified",
+    "incident_count_reported": 7
   },
   "current_findings": {
-    "partial_read_then_act_observed": true,
     "unqualified_model_claim_observed": true,
     "correction_persistence_failure_observed": true,
     "system_wide_pattern_proven": false,
     "intentional_misrepresentation_proven": false,
     "motive_finding_authorized": false,
     "finding_authorized": false,
-    "publication_authorized": false
+    "publication_authorized": false,
+    "partial_read_then_act_self_documented": true,
+    "partial_read_then_act_independently_verified": false
   },
   "relationships": {
     "session_series": "assessments/machine/ERL-2026-10-26-CLAUDE-SESSION-PARTIAL-READ-SERIES.json",

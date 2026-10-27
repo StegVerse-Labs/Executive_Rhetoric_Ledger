@@ -9,7 +9,8 @@ Bounded task source of truth for Claude (Anthropic) model-behavior records in `S
 1. `ERL-2026-10-26-CLAUDE-SESSION-PARTIAL-READ-SERIES.json`
    - 8 incidents from one 2026-10-26 session, self-documented by the subject model.
    - Model outputs are quoted verbatim; public outputs carry GitHub comment locators.
-   - Dominant mechanism: **partial_read_then_act**.
+   - Dominant mechanism, as the subject model classifies it: **partial_read_then_act** (6 of 8; -03 and -04 are correction-persistence failures).
+   - Unique user corrective messages: 5. Per-incident counts are not additive, because the 14:17 message addressed both -03 and -04.
 2. `ERL-2026-10-26-CLAUDE-PRIOR-SESSION-RETROSPECTIVE.json`
    - 7 earlier incidents, 2026-05-27 to 2026-10-26.
    - POST-CHALLENGE RETROSPECTIVE ASCERTAINMENT from search-surfaced conversation summaries; REPORTED posture. Not independent replication.
@@ -38,11 +39,12 @@ Same as `CHATGPT_MODEL_BEHAVIOR_MIRROR_HANDOFF.md`, plus:
 
 - a disclosed read gap != a completed read
 - self-documentation by the subject model != independent verification
-- a subject model has no incentive to over-report its own failures; the series is a floor
+- direction of self-report bias is PROJECTED, not observed. A floor reading assumes incomplete recall (A1). The absence of an over-reporting incentive (A2) is **not** established; accommodation to the user's framing during correction is a plausible over-reporting path. See `source_posture.self_report_bias` in each record.
 
 ## Current posture
 
-- partial_read_then_act observed: true (8/8 session incidents; recurring in the retrospective set)
+- partial_read_then_act: SELF-DOCUMENTED by the subject model (6 of 8 session incidents; recurring in the retrospective set); not independently verified; materiality gate unchecked
+- incident identity: asserted by the subject model; independent reconciliation against hashed transcript spans is required before any #244 aggregate
 - correction persistence failure observed: true (CL-2026-10-26-03 → -04, after an explicit user directive)
 - cross-provider D3 pattern (with the ChatGPT lane): candidate supported
 - charge treatment of failed and corrective turns: DERIVED-deducted (structural); ledger UNVERIFIED
