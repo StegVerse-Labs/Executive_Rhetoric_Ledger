@@ -1,0 +1,119 @@
+{
+  "schema": "erl-mirror-frozen-evidence-register/v1",
+  "mirror_id": "ERL-MIRROR-EC9",
+  "source": "SV-LLM/Ecosystem_Chat issue #9 (private repository)",
+  "frozen_at": {
+    "comment_id": 6432565196,
+    "timestamp": "2026-10-27T02:53:21Z",
+    "note": "Register state as of the final mirrored comment. This file is an index for navigation and tooling; the authoritative wording of every entry is the mirrored issue body and comment files. Locators are source comment IDs."
+  },
+  "claim_classes": {
+    "OBSERVED": "Directly observed in the record (published text, customer-visible behavior, source code, or attested exhibit description).",
+    "DERIVED": "Inferred from observed material under a stated inference rule.",
+    "PROJECTED": "Forward-looking estimate; not a finding.",
+    "UNAVAILABLE": "Sought but not obtainable within the record."
+  },
+  "five_layer_claim_stack": [
+    {"layer": 1, "name": "published_policy_text", "status": "LOAD_BEARING", "note": "Provider public documentation and pricing/help pages."},
+    {"layer": 2, "name": "customer_visible_behavior", "status": "LOAD_BEARING", "note": "Interface messaging, usage displays, refund notices as displayed."},
+    {"layer": 3, "name": "source_level_behavior", "status": "LOAD_BEARING", "note": "Source-verified code behavior (e.g., Kimi Code adapter mapping)."},
+    {"layer": 4, "name": "provider_billing_ledger", "status": "UNVERIFIED", "note": "No ledger data for any provider; per-event debit UNKNOWN throughout; layer 4 is not load-bearing for layers 1-3. Displayed 'refunded' messaging does not establish ledger mutation."},
+    {"layer": 5, "name": "motive_or_intent", "status": "EXCLUDED", "note": "The issue's own boundary excludes intent attribution; no conclusion depends on it."}
+  ],
+  "observations": [
+    {"id": "O1", "summary": "Kimi publishes automatic non-deduction/refund language for certain product failures (monthly credit-pool products: Agent, Deep Research).", "class": "OBSERVED (published text)", "locators": [6428435857, 6428727909]},
+    {"id": "O2", "summary": "Other Kimi official pages describe a request-and-verification path with a deployed anti-abuse verification gate (thumbs-down report flow). Applicability of O1 vs O2 unresolved.", "class": "OBSERVED (published text)", "locators": [6428435857, 6428727909, 6428801428]},
+    {"id": "O3", "summary": "Case A: failures surfaced to the customer as failures with automatic customer-facing refund messaging. Adjudicated label: AUTOMATIC CUSTOMER-FACING REFUND NOTICE; backend restoration UNVERIFIED.", "class": "OBSERVED (customer-facing) / backend UNVERIFIED", "locators": [6428435857, 6429477644]},
+    {"id": "O4", "summary": "No applicable failure-restoration rule identified on the specific Anthropic pages reviewed (Pro, Max, error pages). Recoded per final review: NO_PUBLISHED_PATH; support outcome UNKNOWN. Not evidence that no path exists.", "class": "OBSERVED absence (bounded page review)", "locators": [6428435857, 6429425538, 6429477644]},
+    {"id": "O5", "summary": "Kimi customer-visible per-task usage telemetry exists (named task-level percentages, including 0% entries, in owner-supplied screenshot descriptions).", "class": "OBSERVED (as displayed; screenshots described, not attached)", "locators": [6428143199, 6428727909, 6428801428]},
+    {"id": "O6", "summary": "Kimi Code source-verified behavior: a non-auth provider failure maps to client-visible end_turn (failed -> end_turn), so a detected failure reaches the customer as apparent success. In the same function, auth errors are surfaced loudly via JSON-RPC auth_required (the deployed fail-loud counterexample). Strongest behavioral artifact of the presentation divergence.", "class": "OBSERVED (source-verified)", "locators": [6428435857, 6429425538, 6429453316]},
+    {"id": "O7", "summary": "Claude Code /usage missing-bars report (#53735). Adjudicated label: reported silent unavailability of usage display; mechanism unverified; not equivalent to O6's source-verified mapping.", "class": "OBSERVED as external report; mechanism UNVERIFIED", "locators": [6428435857, 6429477644]},
+    {"id": "O8", "summary": "Two longitudinal self-recorded silent-nonconformance series exist (Cases C and C-2): the customer, not the system, detected the failures.", "class": "OBSERVED (self-recorded; custody limits apply)", "locators": [6428727909, 6428801428]},
+    {"id": "O9", "summary": "Customer detected 2 of 4 specific documented in-issue error events (C-2 A5-A8). Adjudicated: a count over four events from one model, not a rate; qualitative finding: customer detection remained necessary even inside a three-model adversarial review.", "class": "OBSERVED", "locators": [6428435857, 6429453316]},
+    {"id": "O10", "summary": "Published pricing text describes fine-grained, dated, per-feature deductions (Claw sandbox approx. 0.6%/day settled 16:00; website hosting approx. 0.08%). Supports a feasibility inference for receipts.", "class": "DERIVED from published text; ledger UNVERIFIED", "locators": [6428727909, 6429425538, 6429477644]},
+    {"id": "O11", "summary": "Within-provider documentation inconsistency on two independent axes: charge treatment (2v2 domain-family split) and history depth (1v2; 'Showing last 1000 records' interface statement, pending screenshot custody). Adjudicated: a documented ambiguity/disclosure inconsistency; whether it is a legal/contractual/engineering defect is not adjudicated.", "class": "OBSERVED (texts, three channels; UI statement pending custody)", "locators": [6428143199, 6428727909, 6429425538, 6429477644]}
+  ],
+  "hypotheses": [
+    {"id": "H1", "name": "actuarial_absorption", "status": "OPEN", "note": "Providers may absorb failure costs silently. Routes to disclosure requests and post-cutoff instrumented trials."},
+    {"id": "H2", "name": "disclosure_lag", "status": "OPEN", "note": "Publication divergence does not establish implementation divergence; non-publication is weak evidence about mechanism."},
+    {"id": "H3", "name": "unit_geometry_friction", "status": "OPEN (strengthened)", "note": "The register contains no published failure rule for any time/window-geometried entitlement from any provider. Geometry per adjudicated correction: Kimi Code rolling 5-hour window (new plans); rolling 5-hour plus weekly limit (legacy plans)."},
+    {"id": "H4", "name": "gaming_exposure", "status": "COUNTER-INSTANCED, standing", "note": "The deployed thumbs-down verification gate is a live anti-abuse answer."},
+    {"id": "H5", "name": "competitive_insufficiency", "status": "OPEN", "note": "Residual 'why' hypothesis; not established."},
+    {"id": "H6", "name": "presentation_layer_loss", "status": "SUPPORTED for presentation divergence only", "note": "Failures detected internally can be lost before the customer surface (O6 source-verified; O7 reported). Adjudicated scope: explains the presentation divergence; publication and telemetry divergences remain under H1-H5. Basis for the fail-loud standard requirement."}
+  ],
+  "evidence_items": [
+    {"id": "E1", "summary": "Registered evidence item; authoritative definition in the mirrored source comments (not restated here to avoid paraphrase drift).", "locators": [6426183046, 6428435857]},
+    {"id": "E2", "summary": "Three-channel verification sweep of Kimi membership-pricing documentation (basis for the entitlement-geometry adjudication).", "locators": [6429453316, 6430189444]},
+    {"id": "E3", "summary": "Claude Code ERL self-recorded failure series (Case C-2 records) on unmerged PR #247, head 8ae786bc; locator-only citation per the ERL publication gate.", "locators": [6428727909, 6430189444]},
+    {"id": "E4", "summary": "Registered evidence item; authoritative definition in the mirrored source comments (not restated here to avoid paraphrase drift).", "locators": [6428435857]},
+    {"id": "E5", "summary": "Source verification of the onTurnEnded auth-error path: failed && isAuthError(error) is surfaced loudly as a JSON-RPC auth_required error, adjacent to the silent non-auth path; the deployed fail-loud counterexample.", "locators": [6429425538]},
+    {"id": "E6", "summary": "Registered evidence item; authoritative definition in the mirrored source comments (not restated here to avoid paraphrase drift).", "locators": [6428435857]}
+  ],
+  "case_studies": [
+    {"id": "A", "name": "Kimi failure/refund UX", "summary": "Explicit failure messaging with automatic customer-facing refund notice; backend restoration UNVERIFIED. Exhibit IMG_4068 (bytes omitted, OM-2).", "locators": [6429843530, 6430920989]},
+    {"id": "B", "name": "ChatGPT PDF download failure", "summary": "Failed deliverable (PDF download) with correction burden on the customer. Exhibit C1AFD2B5 (bytes omitted, OM-2).", "locators": [6429843530, 6430920989]},
+    {"id": "C", "name": "ChatGPT self-recorded ERL failure series", "summary": "Silent nonconformance series recorded in ERL assessments/machine records; locator-only per publication gate (OM-3). Basis of the detection-burden finding.", "locators": [6426915816, 6430189444]},
+    {"id": "C-2", "name": "Claude self-documented failure series", "summary": ">=15 instances; ERL PR #247 @ 8ae786bc, unmerged at mirror time (OM-4). Includes the 2-of-4 customer-detection count (O9).", "locators": [6428727909, 6430189444]}
+  ],
+  "taxonomies": {
+    "four_axis_failure_accounting": ["delivery", "side_effects", "attribution", "charge_treatment"],
+    "supplementary_fields": ["remedy_burden", "remedy_effectiveness", "displayed_usage_availability"],
+    "remedy_burden_range": ["AUTOMATIC", "ON_REQUEST (verification-gated)", "NO_PUBLISHED_PATH (support outcome UNKNOWN)"],
+    "three_zone_structure": {
+      "zone_1": "Observed customer-facing facts.",
+      "zone_2": "Design/standard significance analysis (e.g., O6 as strongest behavioral artifact; provider review rule as strongest documentary artifact).",
+      "zone_3": "Legal conclusions — gated. Referred to independent counsel; no legal conclusions in this record; Kimi-authored text must not support legal sections."
+    }
+  },
+  "customer_burdens": [
+    {"id": "detection", "summary": "The customer finds the failure (O8, O9); for O6/O7-class events the system hides a failure it detected — burden imposed by system behavior, not customer omission; design intent not established."},
+    {"id": "remedy", "summary": "Full range populated on this record: AUTOMATIC (O1/O3) / ON_REQUEST with verification gate (O2) / NO_PUBLISHED_PATH with support outcome UNKNOWN (O4; Cases C, C-2)."},
+    {"id": "continuation", "summary": "New chat, lost context, elapsed time, deadline risk; no credit treatment restores these."},
+    {"id": "correction_cost_transfer", "summary": "Corrective turns may consume the same finite allowance; marginal debit and resulting spend UNMEASURED. A purchasable-credit pathway exists (balance 0, 100-credit monthly limit visible); no purchase observed — the pathway's existence is the finding."}
+  ],
+  "proposed_standard_eight_requirements": [
+    {"n": 1, "name": "consistent_publication", "summary": "Publish consistent, product-, plan-, and entitlement-specific failure rules; inconsistency across a provider's own pages is itself a disclosure finding (O11)."},
+    {"n": 2, "name": "per_execution_receipt", "summary": "Durable, exportable per-execution receipt: dispositions, charge treatment, metered units, timestamp, uncertainty/posting delay. Merged with requirement 8's objective-linked layer for bounded tasks (Kimi S1)."},
+    {"n": 3, "name": "no_silent_success_mapping", "summary": "Never map a known failure to unqualified success (O6; provider's own review rule names silent failure the most severe class)."},
+    {"n": 4, "name": "fail_loud_usage_display", "summary": "Usage displays must surface failures, not silently omit them (O7)."},
+    {"n": 5, "name": "verified_dispute_path", "summary": "Contestable disposition path for customer-asserted nonconformance (D3 class), with anti-abuse verification (deployed precedent: O2). Never conditioned on pre-declared acceptance criteria (Claude objection 7)."},
+    {"n": 6, "name": "restoration_not_remedy_disclosure", "summary": "Credit restoration does not reverse lost time, context, deadlines, or side effects; disclose this rather than hiding it."},
+    {"n": 7, "name": "geometry_complete_rules", "summary": "Publish failure treatment per entitlement geometry — monthly pool and time/window limits (H3 gap)."},
+    {"n": 8, "name": "objective_linked_accounting", "summary": "For bounded agentic deliverables with disclosed acceptance criteria: record EXECUTION_ENDED / ARTIFACT_PRODUCED / CRITERIA_VERIFIED / CUSTOMER_DISPUTED as separate states; NOT_DECLARED never defaults to verified; a SUCCESS/end_turn signal alone must not imply a conforming deliverable. Optional extension, not a universal subjective-refund trigger (ChatGPT F6)."}
+  ],
+  "adjudicated_corrections": [
+    {"id": "ADJ-1", "summary": "Anthropic remedy cell recoded from NONE_AVAILABLE to NO_PUBLISHED_PATH; support outcome UNKNOWN.", "locators": [6429425538, 6429477644]},
+    {"id": "ADJ-2", "summary": "Kimi Code geometry corrected: rolling 5-hour window (new plans); rolling 5-hour plus weekly (legacy). 'Five hours per week' wording wrong; Claude's objection 2 withdrawn.", "locators": [6429453316, 6430189444]},
+    {"id": "ADJ-3", "summary": "Detection burden phrasing: imposed by system behavior, not customer omission; design intent not established.", "locators": [6429425538]},
+    {"id": "ADJ-4", "summary": "Deployed fail-loud counterexample is the auth-error JSON-RPC path (E5), not the CLAUDE.md review rule (documentary artifact). Strengthens selectivity finding.", "locators": [6429425538, 6429453316]},
+    {"id": "ADJ-5", "summary": "O10 reworded: published text describes fine-grained deductions; ledger UNVERIFIED.", "locators": [6429425538, 6429477644]},
+    {"id": "ADJ-6", "summary": "O11 history-depth resolution is pending screenshot custody.", "locators": [6429425538]},
+    {"id": "ADJ-7", "summary": "Objective-linked accounting: NOT_DECLARED state added; remedy eligibility not conditioned on customer pre-declaration; scoped to bounded tasks.", "locators": [6429425538, 6429453316, 6429477644]},
+    {"id": "ADJ-8", "summary": "H6 scope narrowed to the presentation divergence only; Claude Code /usage case classed as reported display failure, mechanism unverified.", "locators": [6429425538, 6429477644]},
+    {"id": "ADJ-9", "summary": "Automatic remedy labels recoded: AUTOMATIC CUSTOMER-FACING REFUND NOTICE / DOCUMENTED AUTOMATIC POLICY; backend restoration UNVERIFIED.", "locators": [6429477644]},
+    {"id": "ADJ-10", "summary": "Correction-cost transfer narrowed: corrective turns may consume entitlements; marginal debit unmeasured; purchase pathway exists but no purchase observed.", "locators": [6429477644]},
+    {"id": "ADJ-11", "summary": "2-of-4 detection figure: qualitative count, not a rate.", "locators": [6429453316]},
+    {"id": "ADJ-12", "summary": "Documentation inconsistency narrowed from 'defect' to documented ambiguity/disclosure inconsistency; defect characterization not adjudicated.", "locators": [6429477644]},
+    {"id": "ADJ-13", "summary": "Artifact hash reconciliations: canonical v0.6 PDF = 76dbb4ce...f649 (f60a8646...7766 unverified prior export); final-edition PDF = db163e29...8565f (7f08ae39...715f07 superseded, must not be used).", "locators": [6430966408, 6432565196]}
+  ],
+  "unresolved_unknowns": [
+    "Provider-side ledger events for all providers; per-event debits UNKNOWN throughout",
+    "Run-to-usage linkage: whether Kimi 0% entries correspond to specific failed runs",
+    "Screenshot bytes/hashes custody and failure-window mapping (OM-1, OM-2)",
+    "Claude Code #53735 unreproduced; Kimi Code remediation PR #2076 unmerged; ERL PR #247 unmerged at mirror time",
+    "Anthropic support outcomes never observed",
+    "Applicability of the conflicting Kimi pages (2v2 charge-treatment split)",
+    "Incremental customer spend via the purchasable-credit pathway (UNMEASURED)",
+    "Residual causal hypotheses H1, H2, H3, H5 (route to disclosure requests and instrumented trials)",
+    "All legal questions (Zone 3 gate; referred to independent counsel)"
+  ],
+  "standing_exclusions": [
+    "No motive or intent attribution",
+    "No provider ranking",
+    "No ledger-behavior assertions",
+    "No legal conclusions before independent legal review",
+    "'Apparently overcharging' barred as a standalone/headline term; the approved public term is 'computational overcharging' as defined in comment 6429784312",
+    "No claim that observed 0% usage entries correspond to specific failed runs",
+    "No NONE_AVAILABLE coding for providers whose support outcomes were not observed"
+  ]
+}

@@ -48,10 +48,18 @@
     {
       "id": "OM-6",
       "class": "local_binary_artifacts",
-      "objects": "Manuscript binaries: When_AI_Services_Fail_Research_v06.docx (SHA-256 67fefacf...82a2), v06.pdf (canonical reviewed bytes SHA-256 76dbb4ce...f649; earlier announced hash f60a8646...7766 unreconciled per comment 6430966408), public article v06.md (adf510ca...feeb), and v0.7 local artifacts (DOCX 6a5501b0...cb74; PDF ace26450...f66c; article 42c75caf...61dd)",
-      "status_in_source": "Local artifacts announced in source comments 6429843530 and 6430966408; never committed to repository custody",
-      "reason": "Repository custody and readback not yet performed; hashes are recorded for later verification",
+      "objects": "Manuscript binaries, all versions announced in the source issue: v0.6 (DOCX 67fefacf...82a2; canonical reviewed PDF 76dbb4ce...f649; earlier announced PDF hash f60a8646...7766 unreconciled per comment 6430966408; public article adf510ca...feeb); v0.7 condensed brief (DOCX 6a5501b0...cb74; PDF ace26450...f66c; article 42c75caf...61dd); v0.8 (DOCX dcec62cd...e1dc; PDF c5b88abc...5b3d); v0.9 (DOCX 279c120b...74ae; PDF 75fc1091...a587); v1.0 (DOCX 38a15af1...a9; PDF aa6df6fb...c7); final 19-page edition (DOCX 2a93dd96...c81; canonical PDF db163e29...565f per comment 6432565196 — earlier final-edition PDF hash 7f08ae39...5f07 superseded, must not be used; reference Python f50fb1d1...a759)",
+      "status_in_source": "Local artifacts announced in source comments 6429843530, 6430966408, 6431936701, 6431962677, 6432012488, 6432435970, 6432565196; never committed to repository custody; the source record expressly disclaims GitHub binary custody and readback",
+      "reason": "Repository custody and readback not performed; hashes are recorded for later verification; the mirror must not become a binary-custody claim the source record does not make",
       "disposition": "Hashes and provenance mirrored; binaries omitted pending custody"
+    },
+    {
+      "id": "OM-7",
+      "class": "local_binary_artifacts",
+      "objects": "Site candidate package announced in source comment 6432565196: research.html, papers/when-ai-services-fail/index.html, the exact final PDF and DOCX, assembled as a downloadable ZIP in the authoring conversation",
+      "status_in_source": "Prepared locally; the source comment expressly claims no repository commit, live Site deployment, or sovereign readback",
+      "reason": "Same custody principle as OM-6; additionally, Site publication follows Site's PUBLICATION_PROCESS.md owner lane, not this mirror",
+      "disposition": "Package contents and status mirrored as text; package bytes omitted pending the Site owner lane"
     }
   ]
 }

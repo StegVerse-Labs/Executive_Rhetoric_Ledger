@@ -11,7 +11,7 @@ A 100% mirror of the research process conducted in the private issue `SV-LLM/Eco
 | Path | Object |
 |---|---|
 | `issue-body.md` | Verbatim source issue body (provenance front matter) |
-| `comments/` | One Markdown file per source comment, chronological, 40 files, verbatim bodies with provenance front matter |
+| `comments/` | One Markdown file per source comment, chronological, 46 files, verbatim bodies with provenance front matter |
 | `register/frozen-evidence-register.json` | Machine-readable register of the frozen evidence baseline (observations, hypotheses, evidence items, case studies, claim stack, burdens, standard, unknowns) |
 | `register/authorized-omissions.json` | Explicit manifest of every authorized omission (required by the publication direction) |
 | `register/redaction-log.json` | Redaction review record for all mirrored text |
@@ -27,19 +27,21 @@ Every mirrored file carries front matter with:
 - `attributed_author` — the author named in the object text (Kimi / Claude / ChatGPT / issue coordinator), or `not stated in comment text`
 - `created_at` / `updated_at` — UTC timestamps from the source API record
 - `redactions` — per-object redaction status
+- `note` — optional; flags later corrections or supersessions (e.g., superseded artifact hashes) without altering the verbatim body
 
 ## Redaction and omission policy
 
 1. **Redactions** (text altered): applied only where text would expose credentials, private account secrets, or third-party PII. Every redaction is logged in `register/redaction-log.json` with location and class. Result of the mirror review: **no redactions were required** — all mirrored text is research prose, public URLs, public GitHub identifiers, and owner-supplied evidence descriptions.
-2. **Omissions** (objects not mirrored): private screenshot image bytes, ERL-gated Case C/C-2 record contents, originating-conversation data, and local manuscript binaries. Each is explicitly recorded in `register/authorized-omissions.json` with class, reason, and authorization reference. An omission is part of the mirror, not a gap in it.
+2. **Omissions** (objects not mirrored): private screenshot image bytes, ERL-gated Case C/C-2 record contents, originating-conversation data, local manuscript binaries (all versions), and the Site candidate package. Each is explicitly recorded in `register/authorized-omissions.json` with class, reason, and authorization reference. An omission is part of the mirror, not a gap in it.
 3. **Private-repo boundary:** the source issue lives in a private repository. This mirror publishes its *text record* under explicit owner direction. Nothing here grants access to, or reproduces, any other content of the source repository.
 
 ## Reading guidance
 
-- The record is adversarial and self-correcting by design. Later comments frequently narrow or correct earlier ones (e.g., `6426819450` corrects `6426783484`; `6427594129` corrects `6427349734`; final reviews `6429425538` / `6429453316` / `6429477644` apply corrections F1–F6 / S1–S2 / N1–N3). **Do not quote an early comment as the record's position without checking for later corrections.**
+- The record is adversarial and self-correcting by design. Later comments frequently narrow or correct earlier ones (e.g., `6426819450` corrects `6426783484`; `6427594129` corrects `6427349734`; final reviews `6429425538` / `6429453316` / `6429477644` apply corrections F1–F6 / S1–S2 / N1–N3; `6432565196` supersedes the final-edition PDF hash announced in `6432435970`). **Do not quote an early comment as the record's position without checking for later corrections.**
 - Claim classes OBSERVED / DERIVED / PROJECTED / UNAVAILABLE are used throughout and are load-bearing.
 - "Overcharging" in this record means *computational overcharging* as defined in source comment `6429784312`; the standalone phrase "apparently overcharging" is barred by reviewer consensus.
-- The register's key structural artifacts: the four-axis failure taxonomy (delivery / side effects / attribution / charge treatment) with remedy-burden, remedy-effectiveness, and displayed-usage-availability fields; the five-layer claim stack; the three customer burdens (detection / remedy / continuation) plus correction-cost transfer; the three-zone design/significance/legal structure; the eight-requirement failure-accountability standard.
+- The register's key structural artifacts: the four-axis failure taxonomy (delivery / side effects / attribution / charge treatment) with remedy-burden, remedy-effectiveness, and displayed-usage-availability fields; the five-layer claim stack; the three customer burdens (detection / remedy / continuation) plus correction-cost transfer; the three-zone design/significance/legal structure; the eight-requirement failure-accountability standard. See `register/frozen-evidence-register.json` for the indexed baseline.
+- Manuscript version chain (all local artifacts; hashes in `register/authorized-omissions.json` OM-6): v0.6 (21 pp., reviewed) → v0.7 (7 pp. condensed brief, not a replacement) → v0.8 (25 pp.) → v0.9 (27 pp. annotated reconciliation) → v1.0 (18 pp. unified rewrite) → final 19-page publication edition.
 
 ## Custody statement
 
