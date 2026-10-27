@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 62,
-  "pending_candidate_count": 548,
-  "pending_sha256": "3836a7229a0d93fefe913d8a9213913080683d082ebc4addf68d46afe94dbadc",
+  "intake_cycles": 63,
+  "pending_candidate_count": 559,
+  "pending_sha256": "c3cef3fc41402f246ffd646fc5ccd9dd67859d62dbd468aaec6cd4d5b2052339",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -67,10 +67,11 @@
     "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
     "008833f2b8df8ad7bb03d28542a41580b614a4c8",
     "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
-    "16a6f90312201f40c6a835d14c7df7ac38e39c6f"
+    "16a6f90312201f40c6a835d14c7df7ac38e39c6f",
+    "155d4169193fb83e6eb5716eef07d0fec656e4b7"
   ],
   "publication_authorized": false,
-  "scan_record_count": 113620,
+  "scan_record_count": 115445,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -144,8 +145,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 280,
-        "NO_UPDATE": 7470
+        "FAILED": 285,
+        "NO_UPDATE": 7590
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -713,15 +714,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 416,
-        "FAILED": 336,
-        "NO_UPDATE": 8608
+        "CANDIDATES_IDENTIFIED": 423,
+        "FAILED": 342,
+        "NO_UPDATE": 8745
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 91,
+      "pending_candidate_count": 92,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1541,12 +1542,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "South Korea lawmakers mull pushing crypto tax implementation to 2029",
           "source_url": "https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-3f771e67b5f1744972d48f80",
+          "custody_pointer": "RSRCH-b037dd7a0872732ab709f8a5",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin ETFs claw back $110M after $774M exit",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-etf-rebound-110-million-btc-dip-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 432,
-        "FAILED": 280,
-        "NO_UPDATE": 7088
+        "CANDIDATES_IDENTIFIED": 441,
+        "FAILED": 285,
+        "NO_UPDATE": 7199
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1835,15 +1845,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 396,
-        "FAILED": 336,
-        "NO_UPDATE": 8628
+        "CANDIDATES_IDENTIFIED": 401,
+        "FAILED": 342,
+        "NO_UPDATE": 8767
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 14,
+      "pending_candidate_count": 15,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -1970,18 +1980,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "$TRUMP Memecoin Launches on Major Exchanges: Binance, Coinbase and Robinhood - Yahoo Finance",
           "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbEVqZW0wckh1UXUzb1lWYnJ2Y2NiRnNoamlUd0dzV1VPbkE3alI2a2tpeGM5cUkwbGlsLVB3eVNTdXNsdWItY2IyUkpJc3BiRHZfMnBjWEdqV0NFSHZiNlhYZnhmVnU4WXRNQWtxd2lyVDJ4bEMzX3BmTk5ORHdmaWZFZ1VGai13OVM0S2V3?oc=5"
+        },
+        {
+          "candidate_id": "SRC-0ea370bbc0e90c16105c8071",
+          "custody_pointer": "RSRCH-7f45b5b2793cd187827ca948",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance files for Brazil crypto license ahead of Friday deadline",
+          "source_url": "https://cointelegraph.com/news/binance-brazil-crypto-license-oct-30-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 129,
-        "FAILED": 336,
-        "NO_UPDATE": 8895
+        "CANDIDATES_IDENTIFIED": 131,
+        "FAILED": 342,
+        "NO_UPDATE": 9037
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 12,
+      "pending_candidate_count": 13,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -2090,18 +2109,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple wins final US approval for national trust bank",
           "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-afa2c1e4307753f6eb485f5f",
+          "custody_pointer": "RSRCH-e1efe3f013aa0a7d96330fad",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "USDT/USDC/RLUSD controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
+          "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 100,
-        "FAILED": 392,
-        "NO_UPDATE": 10428
+        "CANDIDATES_IDENTIFIED": 103,
+        "FAILED": 399,
+        "NO_UPDATE": 10593
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 48,
+      "pending_candidate_count": 50,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2534,18 +2562,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple gets a final go-ahead to launch its own U.S. national trust bank",
           "source_url": "https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank"
+        },
+        {
+          "candidate_id": "SRC-c808f9e3f11a9a5ed314aa13",
+          "custody_pointer": "RSRCH-312e75384ac547b61fd03b81",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin shows signs of weakness while Ripple's bank win fails to bolster XRP",
+          "source_url": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp"
+        },
+        {
+          "candidate_id": "SRC-1bd37505564dcb5558a555da",
+          "custody_pointer": "RSRCH-678b806d74b2a4b14c2e85a2",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
+          "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 183,
-        "FAILED": 336,
-        "NO_UPDATE": 8841
+        "CANDIDATES_IDENTIFIED": 186,
+        "FAILED": 342,
+        "NO_UPDATE": 8982
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 122,
+      "pending_candidate_count": 124,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3644,12 +3690,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Norway Pushes Back After Trump Disparages It Over Nobel Prize Decision",
           "source_url": "https://www.nytimes.com/2026/10/26/world/europe/trump-norway-nobel-prize.html"
+        },
+        {
+          "candidate_id": "SRC-6647d50eb82dcea0594cc62a",
+          "custody_pointer": "RSRCH-aeededd68be11de825453de1",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What Marco Rubio\u2019s sidestepping of New Delhi says about the US\u2019s stance on India",
+          "source_url": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai"
+        },
+        {
+          "candidate_id": "SRC-fb2cef777cf95ee92b6d3a59",
+          "custody_pointer": "RSRCH-3c82de55c41573a770a30c8e",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What Marco Rubio\u2019s sidestepping of New Delhi says about the US\u2019s stance on India",
+          "source_url": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 919,
-        "FAILED": 280,
-        "NO_UPDATE": 6601
+        "CANDIDATES_IDENTIFIED": 937,
+        "FAILED": 285,
+        "NO_UPDATE": 6703
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3767,15 +3831,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 181,
-        "FAILED": 390,
-        "NO_UPDATE": 10089
+        "CANDIDATES_IDENTIFIED": 183,
+        "FAILED": 397,
+        "NO_UPDATE": 10255
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 100,
+      "pending_candidate_count": 103,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4676,12 +4740,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "RedotPay weighs confidential US IPO filing by year-end: Bloomberg",
           "source_url": "https://cointelegraph.com/news/redotpay-weighs-confidential-us-ipo-filing-by-year-end-bloomberg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c1168825645abf77a1ff5396",
+          "custody_pointer": "RSRCH-c5e974fb4fc9fd1657908745",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
+          "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
+        },
+        {
+          "candidate_id": "SRC-fe7ddd2edc1cf0df13d3e256",
+          "custody_pointer": "RSRCH-f88b65d7ccdcd2ddbf516e2a",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto wallet maker Keystone to destroy almost 19,000 devices after security breach",
+          "source_url": "https://www.coindesk.com/business/2026/10/27/crypto-wallet-maker-keystone-to-destroy-almost-19-000-devices-after-security-breach"
+        },
+        {
+          "candidate_id": "SRC-8c3ff81bf2e85f050ca2f933",
+          "custody_pointer": "RSRCH-327012a92527e481cac4f2ad",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
+          "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 837,
-        "FAILED": 336,
-        "NO_UPDATE": 8187
+        "CANDIDATES_IDENTIFIED": 852,
+        "FAILED": 342,
+        "NO_UPDATE": 8316
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4880,15 +4971,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 222,
-        "FAILED": 336,
-        "NO_UPDATE": 8802
+        "CANDIDATES_IDENTIFIED": 224,
+        "FAILED": 342,
+        "NO_UPDATE": 8944
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 28,
+      "pending_candidate_count": 29,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -5141,12 +5232,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple wins final US approval for national trust bank",
           "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9189b7a243f531dfe7ca3659",
+          "custody_pointer": "RSRCH-973fed113ee2ce39c36cdb92",
+          "producer_commit": "155d4169193fb83e6eb5716eef07d0fec656e4b7",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
+          "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 159,
-        "FAILED": 448,
-        "NO_UPDATE": 11873
+        "CANDIDATES_IDENTIFIED": 161,
+        "FAILED": 456,
+        "NO_UPDATE": 12063
       }
     }
   }
