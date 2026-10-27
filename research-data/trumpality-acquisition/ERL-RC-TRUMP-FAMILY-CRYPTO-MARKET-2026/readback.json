@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 61,
-  "pending_candidate_count": 546,
-  "pending_sha256": "3a85fc2a82669b5249e7e826bc31e11b434286753157547cca959522a481bc7c",
+  "intake_cycles": 62,
+  "pending_candidate_count": 548,
+  "pending_sha256": "3836a7229a0d93fefe913d8a9213913080683d082ebc4addf68d46afe94dbadc",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -66,10 +66,11 @@
     "1fb8893d6db24da95229f1518d032d4110deaa71",
     "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
     "008833f2b8df8ad7bb03d28542a41580b614a4c8",
-    "2d0c42ac462969a612b574c46cfb811f6ae0cd06"
+    "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+    "16a6f90312201f40c6a835d14c7df7ac38e39c6f"
   ],
   "publication_authorized": false,
-  "scan_record_count": 111795,
+  "scan_record_count": 113620,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -143,8 +144,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 275,
-        "NO_UPDATE": 7350
+        "FAILED": 280,
+        "NO_UPDATE": 7470
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -712,9 +713,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 409,
-        "FAILED": 330,
-        "NO_UPDATE": 8471
+        "CANDIDATES_IDENTIFIED": 416,
+        "FAILED": 336,
+        "NO_UPDATE": 8608
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1543,9 +1544,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 423,
-        "FAILED": 275,
-        "NO_UPDATE": 6977
+        "CANDIDATES_IDENTIFIED": 432,
+        "FAILED": 280,
+        "NO_UPDATE": 7088
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1834,9 +1835,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 390,
-        "FAILED": 330,
-        "NO_UPDATE": 8490
+        "CANDIDATES_IDENTIFIED": 396,
+        "FAILED": 336,
+        "NO_UPDATE": 8628
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1972,9 +1973,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 128,
-        "FAILED": 330,
-        "NO_UPDATE": 8752
+        "CANDIDATES_IDENTIFIED": 129,
+        "FAILED": 336,
+        "NO_UPDATE": 8895
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2092,15 +2093,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 98,
-        "FAILED": 385,
-        "NO_UPDATE": 10262
+        "CANDIDATES_IDENTIFIED": 100,
+        "FAILED": 392,
+        "NO_UPDATE": 10428
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 47,
+      "pending_candidate_count": 48,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2524,12 +2525,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple wins final US approval for national trust bank",
           "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c67a5087b75419bded4357b0",
+          "custody_pointer": "RSRCH-cd21c68b4b911b72126c9b7e",
+          "producer_commit": "16a6f90312201f40c6a835d14c7df7ac38e39c6f",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple gets a final go-ahead to launch its own U.S. national trust bank",
+          "source_url": "https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 181,
-        "FAILED": 330,
-        "NO_UPDATE": 8699
+        "CANDIDATES_IDENTIFIED": 183,
+        "FAILED": 336,
+        "NO_UPDATE": 8841
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3637,9 +3647,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 901,
-        "FAILED": 275,
-        "NO_UPDATE": 6499
+        "CANDIDATES_IDENTIFIED": 919,
+        "FAILED": 280,
+        "NO_UPDATE": 6601
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3757,15 +3767,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 179,
-        "FAILED": 383,
-        "NO_UPDATE": 9923
+        "CANDIDATES_IDENTIFIED": 181,
+        "FAILED": 390,
+        "NO_UPDATE": 10089
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 99,
+      "pending_candidate_count": 100,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4657,12 +4667,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple wins final US approval for national trust bank",
           "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-7cbf92ca3f44482d71847e28",
+          "custody_pointer": "RSRCH-c054cd650affcb7ee5f9d0f4",
+          "producer_commit": "16a6f90312201f40c6a835d14c7df7ac38e39c6f",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "RedotPay weighs confidential US IPO filing by year-end: Bloomberg",
+          "source_url": "https://cointelegraph.com/news/redotpay-weighs-confidential-us-ipo-filing-by-year-end-bloomberg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 822,
-        "FAILED": 330,
-        "NO_UPDATE": 8058
+        "CANDIDATES_IDENTIFIED": 837,
+        "FAILED": 336,
+        "NO_UPDATE": 8187
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4861,9 +4880,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 218,
-        "FAILED": 330,
-        "NO_UPDATE": 8662
+        "CANDIDATES_IDENTIFIED": 222,
+        "FAILED": 336,
+        "NO_UPDATE": 8802
       }
     },
     "wlf-positive-adoption-radar": {
@@ -5125,9 +5144,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 158,
-        "FAILED": 440,
-        "NO_UPDATE": 11682
+        "CANDIDATES_IDENTIFIED": 159,
+        "FAILED": 448,
+        "NO_UPDATE": 11873
       }
     }
   }
