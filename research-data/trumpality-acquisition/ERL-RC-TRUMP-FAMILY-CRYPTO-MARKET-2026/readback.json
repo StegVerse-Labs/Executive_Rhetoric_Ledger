@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 60,
-  "pending_candidate_count": 538,
-  "pending_sha256": "4b3d5cd8b93134093a3375244c0fa88678e936e9b3974ae460e879645a99a8ff",
+  "intake_cycles": 61,
+  "pending_candidate_count": 546,
+  "pending_sha256": "3a85fc2a82669b5249e7e826bc31e11b434286753157547cca959522a481bc7c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -65,10 +65,11 @@
     "df3a0a9e41a4a90b2b3fd70dd23b78a2e6ff6da4",
     "1fb8893d6db24da95229f1518d032d4110deaa71",
     "ec20cb10b87689478be0fc25ec9848eb47d42f0f",
-    "008833f2b8df8ad7bb03d28542a41580b614a4c8"
+    "008833f2b8df8ad7bb03d28542a41580b614a4c8",
+    "2d0c42ac462969a612b574c46cfb811f6ae0cd06"
   ],
   "publication_authorized": false,
-  "scan_record_count": 109970,
+  "scan_record_count": 111795,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -142,14 +143,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 270,
-        "NO_UPDATE": 7230
+        "FAILED": 275,
+        "NO_UPDATE": 7350
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 61,
+      "pending_candidate_count": 62,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -699,12 +700,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "South Korea lawmakers mull pushing crypto tax implementation to 2029",
           "source_url": "https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-6aa2aa98b605e337df9ffa9d",
+          "custody_pointer": "RSRCH-6e1bc1c6859c322726d2c171",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Canada opens consultation on stablecoins, citing US GENIUS Act",
+          "source_url": "https://cointelegraph.com/news/canada-consultation-stablecoins-genius-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 402,
-        "FAILED": 324,
-        "NO_UPDATE": 8334
+        "CANDIDATES_IDENTIFIED": 409,
+        "FAILED": 330,
+        "NO_UPDATE": 8471
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1533,9 +1543,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 414,
-        "FAILED": 270,
-        "NO_UPDATE": 6866
+        "CANDIDATES_IDENTIFIED": 423,
+        "FAILED": 275,
+        "NO_UPDATE": 6977
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1824,9 +1834,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 385,
-        "FAILED": 324,
-        "NO_UPDATE": 8351
+        "CANDIDATES_IDENTIFIED": 390,
+        "FAILED": 330,
+        "NO_UPDATE": 8490
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -1962,15 +1972,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 127,
-        "FAILED": 324,
-        "NO_UPDATE": 8609
+        "CANDIDATES_IDENTIFIED": 128,
+        "FAILED": 330,
+        "NO_UPDATE": 8752
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 11,
+      "pending_candidate_count": 12,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -2070,18 +2080,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Standard Chartered-led Anchorpoint says it\u2019s not rushing retail stablecoin",
           "source_url": "https://cointelegraph.com/news/standard-chartered-led-anchorpoint-says-its-not-rushing-retail-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e5aa62d1973581df9c972f89",
+          "custody_pointer": "RSRCH-94230ba36b89776b73fde271",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "USDT/USDC/RLUSD controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple wins final US approval for national trust bank",
+          "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 96,
-        "FAILED": 378,
-        "NO_UPDATE": 10096
+        "CANDIDATES_IDENTIFIED": 98,
+        "FAILED": 385,
+        "NO_UPDATE": 10262
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 46,
+      "pending_candidate_count": 47,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2496,18 +2515,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Aviva Investors launches tokenized share class of $29B Sterling fund on XRP Ledger",
           "source_url": "https://cointelegraph.com/news/aviva-investors-launches-tokenized-share-class-of-sterling-fund-on-xrp-ledger?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-08e57a5782eb8565f038ebbd",
+          "custody_pointer": "RSRCH-738802078d7067ff17831f5e",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple wins final US approval for national trust bank",
+          "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 180,
-        "FAILED": 324,
-        "NO_UPDATE": 8556
+        "CANDIDATES_IDENTIFIED": 181,
+        "FAILED": 330,
+        "NO_UPDATE": 8699
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 120,
+      "pending_candidate_count": 122,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3588,12 +3616,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Morning Minute: Bitcoin Breaks Below $80,000 as Iran Fears Hit the Weekend",
           "source_url": "https://decrypt.co/381797/morning-minute-bitcoin-breaks-below-80000-as-iran-fears-hit-the-weekend"
+        },
+        {
+          "candidate_id": "SRC-3f798ad24e4c66a557f9201d",
+          "custody_pointer": "RSRCH-0ea25794f81e12268dfabf08",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Norway Pushes Back After Trump Disparages It Over Nobel Prize Decision",
+          "source_url": "https://www.nytimes.com/2026/10/26/world/europe/trump-norway-nobel-prize.html"
+        },
+        {
+          "candidate_id": "SRC-4ffafe8581aaa76c6665e333",
+          "custody_pointer": "RSRCH-0e0efb842333848f82524e57",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Norway Pushes Back After Trump Disparages It Over Nobel Prize Decision",
+          "source_url": "https://www.nytimes.com/2026/10/26/world/europe/trump-norway-nobel-prize.html"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 881,
-        "FAILED": 270,
-        "NO_UPDATE": 6399
+        "CANDIDATES_IDENTIFIED": 901,
+        "FAILED": 275,
+        "NO_UPDATE": 6499
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3711,15 +3757,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 177,
-        "FAILED": 376,
-        "NO_UPDATE": 9757
+        "CANDIDATES_IDENTIFIED": 179,
+        "FAILED": 383,
+        "NO_UPDATE": 9923
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 97,
+      "pending_candidate_count": 99,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4593,12 +4639,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "HOOD\u2019s prediction markets to add $1.7B to revenue, exceed crypto by 2028: Bernstein",
           "source_url": "https://cointelegraph.com/news/prediction-markets-17b-robinhood-exceed-crypto-revenue-2028-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-12ff9f1f51de4765b9b879ef",
+          "custody_pointer": "RSRCH-1a57686b544a69dd21c21914",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple wins final US approval for national trust bank",
+          "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-93939baa5b94f88c14939319",
+          "custody_pointer": "RSRCH-81005063fff52a91732487a5",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple wins final US approval for national trust bank",
+          "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 807,
-        "FAILED": 324,
-        "NO_UPDATE": 7929
+        "CANDIDATES_IDENTIFIED": 822,
+        "FAILED": 330,
+        "NO_UPDATE": 8058
       }
     },
     "trump-token-promotion-access-supply": {
@@ -4797,15 +4861,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 215,
-        "FAILED": 324,
-        "NO_UPDATE": 8521
+        "CANDIDATES_IDENTIFIED": 218,
+        "FAILED": 330,
+        "NO_UPDATE": 8662
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 27,
+      "pending_candidate_count": 28,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -5049,12 +5113,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Tether backs Bolivian fintech bringing USDT payments to food delivery and banking",
           "source_url": "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-de7606d85e02f18798782f71",
+          "custody_pointer": "RSRCH-370f6e6dcb47385e5a94f1fe",
+          "producer_commit": "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple wins final US approval for national trust bank",
+          "source_url": "https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 157,
-        "FAILED": 432,
-        "NO_UPDATE": 11491
+        "CANDIDATES_IDENTIFIED": 158,
+        "FAILED": 440,
+        "NO_UPDATE": 11682
       }
     }
   }
