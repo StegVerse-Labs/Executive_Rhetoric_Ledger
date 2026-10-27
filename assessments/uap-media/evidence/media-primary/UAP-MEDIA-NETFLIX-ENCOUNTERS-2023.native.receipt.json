@@ -6,13 +6,13 @@
     "github_token_used": false,
     "promotion_authority": false
   },
-  "byte_length": 2154102,
+  "byte_length": 2148977,
   "content_type": "text/html; charset=utf-8",
   "evidence_class": "media-primary",
   "final_url": "https://www.netflix.com/tudum/articles/encounters-trailer-release-date-news",
   "native_object": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native",
-  "retrieved_at": "2026-10-27T06:52:41.946208Z",
-  "sha256": "6f95d21f8ed92c392c6e053b1ca40162bb41bfd7bb0c1dd0072103897a51fa61",
+  "retrieved_at": "2026-10-27T12:48:20.469794Z",
+  "sha256": "5701481da0efaeaab74d506e7777482acc90c32e97a1f2c16adc30aaf6dbc5da",
   "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
   "source_url": "https://www.netflix.com/tudum/articles/encounters-trailer-release-date-news"
 }
