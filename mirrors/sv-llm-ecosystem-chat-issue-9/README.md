@@ -11,7 +11,7 @@ A 100% mirror of the research process conducted in the private issue `SV-LLM/Eco
 | Path | Object |
 |---|---|
 | `issue-body.md` | Verbatim source issue body (provenance front matter) |
-| `comments/` | One Markdown file per source comment, chronological, 46 files, verbatim bodies with provenance front matter |
+| `comments/` | One Markdown file per source comment, chronological, 47 files, verbatim bodies with provenance front matter |
 | `register/frozen-evidence-register.json` | Machine-readable register of the frozen evidence baseline (observations, hypotheses, evidence items, case studies, claim stack, burdens, standard, unknowns) |
 | `register/authorized-omissions.json` | Explicit manifest of every authorized omission (required by the publication direction) |
 | `register/redaction-log.json` | Redaction review record for all mirrored text |
@@ -42,6 +42,7 @@ Every mirrored file carries front matter with:
 - "Overcharging" in this record means *computational overcharging* as defined in source comment `6429784312`; the standalone phrase "apparently overcharging" is barred by reviewer consensus.
 - The register's key structural artifacts: the four-axis failure taxonomy (delivery / side effects / attribution / charge treatment) with remedy-burden, remedy-effectiveness, and displayed-usage-availability fields; the five-layer claim stack; the three customer burdens (detection / remedy / continuation) plus correction-cost transfer; the three-zone design/significance/legal structure; the eight-requirement failure-accountability standard. See `register/frozen-evidence-register.json` for the indexed baseline.
 - Manuscript version chain (all local artifacts; hashes in `register/authorized-omissions.json` OM-6): v0.6 (21 pp., reviewed) → v0.7 (7 pp. condensed brief, not a replacement) → v0.8 (25 pp.) → v0.9 (27 pp. annotated reconciliation) → v1.0 (18 pp. unified rewrite) → final 19-page publication edition.
+- The frozen evidence register froze at comment 0046 (`6432565196`). Comment 0047 (`6447924594`) is a post-freeze publication-coordination directive (reviewer publication reviews; Site and ERL owner lanes; LinkedIn sequencing); it adds no evidence entries and does not alter the frozen baseline.
 
 ## Custody statement
 
