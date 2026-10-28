@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 65,
-  "pending_candidate_count": 579,
-  "pending_sha256": "75079373aa62435f252c3db2215839d843c8fb74ae1bd0ede5f8b0f2fe7fe1c1",
+  "intake_cycles": 66,
+  "pending_candidate_count": 582,
+  "pending_sha256": "9291367751a552df1840a6e226f620ec779a206b880bc064226da0ecda6336de",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -70,10 +70,11 @@
     "16a6f90312201f40c6a835d14c7df7ac38e39c6f",
     "155d4169193fb83e6eb5716eef07d0fec656e4b7",
     "aaea92b5eada9b48927c15409225c558ac9f6ee7",
-    "3c80b7a0001ba533136d2142114e7e204d688651"
+    "3c80b7a0001ba533136d2142114e7e204d688651",
+    "da626bccd952d13639ae76684ef28600f9720823"
   ],
   "publication_authorized": false,
-  "scan_record_count": 119095,
+  "scan_record_count": 120920,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -147,8 +148,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 295,
-        "NO_UPDATE": 7830
+        "FAILED": 300,
+        "NO_UPDATE": 7950
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -734,15 +735,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 435,
-        "FAILED": 354,
-        "NO_UPDATE": 9021
+        "CANDIDATES_IDENTIFIED": 441,
+        "FAILED": 360,
+        "NO_UPDATE": 9159
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 93,
+      "pending_candidate_count": 94,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1580,12 +1581,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
           "source_url": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top"
+        },
+        {
+          "candidate_id": "SRC-0390bf3f3f102cf3c8e08ebe",
+          "custody_pointer": "RSRCH-b2e04eee50a40152813f210b",
+          "producer_commit": "da626bccd952d13639ae76684ef28600f9720823",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin treasury Datavault AI plunges 50% after firm says it can\u2019t access its BTC",
+          "source_url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 453,
-        "FAILED": 295,
-        "NO_UPDATE": 7427
+        "CANDIDATES_IDENTIFIED": 460,
+        "FAILED": 300,
+        "NO_UPDATE": 7540
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1883,9 +1893,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 412,
-        "FAILED": 354,
-        "NO_UPDATE": 9044
+        "CANDIDATES_IDENTIFIED": 418,
+        "FAILED": 360,
+        "NO_UPDATE": 9182
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2030,9 +2040,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 135,
-        "FAILED": 354,
-        "NO_UPDATE": 9321
+        "CANDIDATES_IDENTIFIED": 137,
+        "FAILED": 360,
+        "NO_UPDATE": 9463
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2177,9 +2187,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 109,
-        "FAILED": 413,
-        "NO_UPDATE": 10923
+        "CANDIDATES_IDENTIFIED": 112,
+        "FAILED": 420,
+        "NO_UPDATE": 11088
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2675,15 +2685,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 192,
-        "FAILED": 354,
-        "NO_UPDATE": 9264
+        "CANDIDATES_IDENTIFIED": 195,
+        "FAILED": 360,
+        "NO_UPDATE": 9405
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 128,
+      "pending_candidate_count": 130,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3836,12 +3846,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump shows off tanker with \u20181m barrels of oil\u2019 and floats Venezuela as 51st state",
           "source_url": "https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela"
+        },
+        {
+          "candidate_id": "SRC-eab4fc944c91dedf9a04ccc3",
+          "custody_pointer": "RSRCH-3d3eaa0c4f561191867ab338",
+          "producer_commit": "da626bccd952d13639ae76684ef28600f9720823",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump says government to \u2018terminate\u2019 Biden-era methane emissions rules",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/27/trump-biden-era-methane-emissions-rules-oil-gas"
+        },
+        {
+          "candidate_id": "SRC-15eef0c9503350218601ec41",
+          "custody_pointer": "RSRCH-3470063ce3163fc29ceedc58",
+          "producer_commit": "da626bccd952d13639ae76684ef28600f9720823",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump says government to \u2018terminate\u2019 Biden-era methane emissions rules",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/27/trump-biden-era-methane-emissions-rules-oil-gas"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 967,
-        "FAILED": 295,
-        "NO_UPDATE": 6913
+        "CANDIDATES_IDENTIFIED": 981,
+        "FAILED": 300,
+        "NO_UPDATE": 7019
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3959,9 +3987,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 189,
-        "FAILED": 411,
-        "NO_UPDATE": 10585
+        "CANDIDATES_IDENTIFIED": 192,
+        "FAILED": 418,
+        "NO_UPDATE": 10750
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -4934,9 +4962,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 884,
-        "FAILED": 354,
-        "NO_UPDATE": 8572
+        "CANDIDATES_IDENTIFIED": 902,
+        "FAILED": 360,
+        "NO_UPDATE": 8698
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5144,9 +5172,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 230,
-        "FAILED": 354,
-        "NO_UPDATE": 9226
+        "CANDIDATES_IDENTIFIED": 234,
+        "FAILED": 360,
+        "NO_UPDATE": 9366
       }
     },
     "wlf-positive-adoption-radar": {
@@ -5426,9 +5454,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 165,
-        "FAILED": 472,
-        "NO_UPDATE": 12443
+        "CANDIDATES_IDENTIFIED": 167,
+        "FAILED": 480,
+        "NO_UPDATE": 12633
       }
     }
   }
