@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 64,
-  "pending_candidate_count": 565,
-  "pending_sha256": "1fcb9747c23e382c1fe3696e2cc807544b1b0ae808d5d2facb8f69ba05db1562",
+  "intake_cycles": 65,
+  "pending_candidate_count": 579,
+  "pending_sha256": "75079373aa62435f252c3db2215839d843c8fb74ae1bd0ede5f8b0f2fe7fe1c1",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -69,10 +69,11 @@
     "2d0c42ac462969a612b574c46cfb811f6ae0cd06",
     "16a6f90312201f40c6a835d14c7df7ac38e39c6f",
     "155d4169193fb83e6eb5716eef07d0fec656e4b7",
-    "aaea92b5eada9b48927c15409225c558ac9f6ee7"
+    "aaea92b5eada9b48927c15409225c558ac9f6ee7",
+    "3c80b7a0001ba533136d2142114e7e204d688651"
   ],
   "publication_authorized": false,
-  "scan_record_count": 117270,
+  "scan_record_count": 119095,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -146,14 +147,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 290,
-        "NO_UPDATE": 7710
+        "FAILED": 295,
+        "NO_UPDATE": 7830
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 63,
+      "pending_candidate_count": 64,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -721,18 +722,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Majority of Americans want candidates who support US-based financial technology: Poll",
           "source_url": "https://cointelegraph.com/news/us-voters-candidates-support-financial-technology-poll?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c9fc73a9df5a181d9b2cd12c",
+          "custody_pointer": "RSRCH-b4f4c5a6f77c64792246a4c1",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
+          "source_url": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 429,
-        "FAILED": 348,
-        "NO_UPDATE": 8883
+        "CANDIDATES_IDENTIFIED": 435,
+        "FAILED": 354,
+        "NO_UPDATE": 9021
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 92,
+      "pending_candidate_count": 93,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1561,12 +1571,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin ETFs claw back $110M after $774M exit",
           "source_url": "https://cointelegraph.com/markets/bitcoin-etf-rebound-110-million-btc-dip-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-68b9ce1dffcea9e7691b21c9",
+          "custody_pointer": "RSRCH-1def67fd9c1b5247c8098a7b",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
+          "source_url": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 447,
-        "FAILED": 290,
-        "NO_UPDATE": 7313
+        "CANDIDATES_IDENTIFIED": 453,
+        "FAILED": 295,
+        "NO_UPDATE": 7427
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1864,9 +1883,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 406,
-        "FAILED": 348,
-        "NO_UPDATE": 8906
+        "CANDIDATES_IDENTIFIED": 412,
+        "FAILED": 354,
+        "NO_UPDATE": 9044
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2011,15 +2030,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 133,
-        "FAILED": 348,
-        "NO_UPDATE": 9179
+        "CANDIDATES_IDENTIFIED": 135,
+        "FAILED": 354,
+        "NO_UPDATE": 9321
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 14,
+      "pending_candidate_count": 15,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -2146,18 +2165,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Robinhood taps Ripple\u2019s $2.5 billion RLUSD stablecoin despite backing rival USDG",
           "source_url": "https://www.coindesk.com/business/2026/10/27/ripple-s-rlusd-stablecoin-is-coming-to-robinhood-s-28-6-million-customer-platform"
+        },
+        {
+          "candidate_id": "SRC-36c704ac53651e7481c53090",
+          "custody_pointer": "RSRCH-d8e5a16aadc6604133204cf9",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "USDT/USDC/RLUSD controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Robinhood Taps Ripple's Stablecoin, Treasury Software and Trading Loans",
+          "source_url": "https://decrypt.co/382002/robinhood-taps-ripple-stablecoin-treasury-software-trading-loans"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 106,
-        "FAILED": 406,
-        "NO_UPDATE": 10758
+        "CANDIDATES_IDENTIFIED": 109,
+        "FAILED": 413,
+        "NO_UPDATE": 10923
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 52,
+      "pending_candidate_count": 54,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -2626,18 +2654,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Janus Henderson, Centrifuge launch tokenized Nasdaq-100 fund on Stellar",
           "source_url": "https://cointelegraph.com/news/janus-henderson-centrifuge-launch-tokenized-nasdaq-100-fund-on-stellar?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f3d3f74f0d7178c8630fdeed",
+          "custody_pointer": "RSRCH-454918b7da9a2909398c9bc8",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Ripple, Robinhood expand partnership to bring RLUSD to retail and institutional markets",
+          "source_url": "https://cointelegraph.com/news/ripple-robinhood-expand-partnership-rlusd-retail-institutional-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-036d626fb4ed05803b70c822",
+          "custody_pointer": "RSRCH-c1a59d3e85051afec4453253",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Robinhood Taps Ripple's Stablecoin, Treasury Software and Trading Loans",
+          "source_url": "https://decrypt.co/382002/robinhood-taps-ripple-stablecoin-treasury-software-trading-loans"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 189,
-        "FAILED": 348,
-        "NO_UPDATE": 9123
+        "CANDIDATES_IDENTIFIED": 192,
+        "FAILED": 354,
+        "NO_UPDATE": 9264
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 124,
+      "pending_candidate_count": 128,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -3754,12 +3800,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "What Marco Rubio\u2019s sidestepping of New Delhi says about the US\u2019s stance on India",
           "source_url": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai"
+        },
+        {
+          "candidate_id": "SRC-7b78bee5a36cc369f40216d7",
+          "custody_pointer": "RSRCH-f9ec51e9274e8032902a40f5",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump, campaigning in Texas for Republicans, touts Iran war and \u201851st state\u2019 Venezuela: \u2018I knew that oil would go up\u2019 \u2013 live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/27/comey-trump-rubio-texas-vance-israel-midterms-politics-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-a760d052b215235a209bafff",
+          "custody_pointer": "RSRCH-f9ec51e9274e8032902a40f5",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump shows off tanker with \u20181m barrels of oil\u2019 and floats Venezuela as 51st state",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela"
+        },
+        {
+          "candidate_id": "SRC-70bd983521a185563b12017e",
+          "custody_pointer": "RSRCH-d86973065f4599f625e17245",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump, campaigning in Texas for Republicans, touts Iran war and \u201851st state\u2019 Venezuela: \u2018I knew that oil would go up\u2019 \u2013 live",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/oct/27/comey-trump-rubio-texas-vance-israel-midterms-politics-latest-news-updates"
+        },
+        {
+          "candidate_id": "SRC-0111268fdc56f5f884dc2b01",
+          "custody_pointer": "RSRCH-d86973065f4599f625e17245",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump shows off tanker with \u20181m barrels of oil\u2019 and floats Venezuela as 51st state",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 953,
-        "FAILED": 290,
-        "NO_UPDATE": 6807
+        "CANDIDATES_IDENTIFIED": 967,
+        "FAILED": 295,
+        "NO_UPDATE": 6913
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -3877,15 +3959,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 186,
-        "FAILED": 404,
-        "NO_UPDATE": 10420
+        "CANDIDATES_IDENTIFIED": 189,
+        "FAILED": 411,
+        "NO_UPDATE": 10585
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 103,
+      "pending_candidate_count": 107,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -4813,12 +4895,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
           "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
+        },
+        {
+          "candidate_id": "SRC-27c9895099df008070c306a1",
+          "custody_pointer": "RSRCH-a05eb2f495fcb29db7e87d27",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Robinhood's crypto revenue fell 55% from last year, but topped Street forecasts",
+          "source_url": "https://www.coindesk.com/markets/2026/10/27/robinhood-s-crypto-revenue-plunges-55-even-as-trading-platform-posts-record-sales"
+        },
+        {
+          "candidate_id": "SRC-8dd390e0ad72700bb8774bd8",
+          "custody_pointer": "RSRCH-aad125d332070d543f17a7e0",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Robinhood Misses Q3 Earnings as Crypto Revenue Rises and Prediction Market Bets Grow",
+          "source_url": "https://decrypt.co/382004/robinhood-misses-q3-earnings-crypto-prediction-markets"
+        },
+        {
+          "candidate_id": "SRC-86f7cef742dd93d420ba65f8",
+          "custody_pointer": "RSRCH-e36850e424ddc2ee07839748",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Robinhood's crypto revenue fell 55% from last year, but topped Street forecasts",
+          "source_url": "https://www.coindesk.com/markets/2026/10/27/robinhood-s-crypto-revenue-plunges-55-even-as-trading-platform-posts-record-sales"
+        },
+        {
+          "candidate_id": "SRC-c9ae4e070315acfc42759a24",
+          "custody_pointer": "RSRCH-87a71d99d9d2895086d201ad",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Robinhood Misses Q3 Earnings as Crypto Revenue Rises and Prediction Market Bets Grow",
+          "source_url": "https://decrypt.co/382004/robinhood-misses-q3-earnings-crypto-prediction-markets"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 866,
-        "FAILED": 348,
-        "NO_UPDATE": 8446
+        "CANDIDATES_IDENTIFIED": 884,
+        "FAILED": 354,
+        "NO_UPDATE": 8572
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5026,15 +5144,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 227,
-        "FAILED": 348,
-        "NO_UPDATE": 9085
+        "CANDIDATES_IDENTIFIED": 230,
+        "FAILED": 354,
+        "NO_UPDATE": 9226
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 29,
+      "pending_candidate_count": 30,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -5296,12 +5414,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Ripple Wins Final OCC Approval for Trust Bank Behind $2.6B RLUSD Stablecoin",
           "source_url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
+        },
+        {
+          "candidate_id": "SRC-0d7c0d33b76136b764840650",
+          "custody_pointer": "RSRCH-150977a5e020276377b633c0",
+          "producer_commit": "3c80b7a0001ba533136d2142114e7e204d688651",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Anchorage Positions Itself as Custody Backbone of US-Mexico Stablecoin Corridor",
+          "source_url": "https://decrypt.co/381988/anchorage-custody-backbone-us-mexico-stablecoin-corridor"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 163,
-        "FAILED": 464,
-        "NO_UPDATE": 12253
+        "CANDIDATES_IDENTIFIED": 165,
+        "FAILED": 472,
+        "NO_UPDATE": 12443
       }
     }
   }
