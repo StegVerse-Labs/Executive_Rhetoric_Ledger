@@ -9,7 +9,7 @@ Bounded task source of truth for Claude (Anthropic) model-behavior records in `S
 1. `ERL-2026-10-26-CLAUDE-SESSION-PARTIAL-READ-SERIES.json`
    - 8 incidents from one 2026-10-26 session, self-documented by the subject model.
    - Model outputs are quoted verbatim; public outputs carry GitHub comment locators.
-   - Dominant mechanism, as the subject model classifies it: **partial_read_then_act** (6 of 8; -03 and -04 are correction-persistence failures).
+   - Dominant mechanism, as the subject model classifies it: **partial_read_then_act** (6 of 8; -03 and -04 are repeated standing-instruction noncompliance).
    - Unique user corrective messages: 5. Per-incident counts are not additive, because the 14:17 message addressed both -03 and -04.
 2. `ERL-2026-10-26-CLAUDE-PRIOR-SESSION-RETROSPECTIVE.json`
    - 7 earlier incidents, 2026-05-27 to 2026-10-26.
@@ -22,7 +22,7 @@ Bounded task source of truth for Claude (Anthropic) model-behavior records in `S
 | research_surface_narrowing / false completeness | CL-2026-10-26-01, -02, -05; RETRO 05-27, 07-31 |
 | assertion_before_probe | CL-2026-10-26-01, -02, -03, -07; RETRO 07-31, 10-14 |
 | unqualified_model_claim | CL-2026-10-26-05, -06, -07, -08; RETRO 06-07, 08-27 |
-| correction_persistence_failure (#69 discriminator 5) | CL-2026-10-26-03, -04; RETRO StegClaw 10-26 |
+| standing_instruction_noncompliance (repeated; not #69 discriminator 5) | CL-2026-10-26-03, -04 (13:59 and 14:12 CDT, after the 13:09 standing directive, before the 14:17 correction); RETRO StegClaw 10-26 |
 
 ## Candidate failure mode
 
@@ -45,7 +45,8 @@ Same as `CHATGPT_MODEL_BEHAVIOR_MIRROR_HANDOFF.md`, plus:
 
 - partial_read_then_act: SELF-DOCUMENTED by the subject model (6 of 8 session incidents; recurring in the retrospective set); not independently verified; materiality gate unchecked
 - incident identity: asserted by the subject model; independent reconciliation against hashed transcript spans is required before any #244 aggregate
-- correction persistence failure observed: true (CL-2026-10-26-03 → -04, after an explicit user directive)
+- repeated standing-instruction noncompliance (CL-2026-10-26-03 → -04): subject-model reported / candidate, not independently verified
+- correction persistence failure: **not established**; both incidents precede the 14:17 CDT correction, and no correction intervened between them
 - cross-provider D3 pattern (with the ChatGPT lane): candidate supported
 - charge treatment of failed and corrective turns: DERIVED-deducted (structural); ledger UNVERIFIED
 - system-wide pattern proven: false

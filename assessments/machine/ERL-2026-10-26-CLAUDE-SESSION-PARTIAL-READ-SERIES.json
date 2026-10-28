@@ -76,7 +76,7 @@
       "timestamp_local_cdt": "13:59",
       "work_surface": "#3291 Phase D response",
       "installed_failure_modes": [
-        "correction_persistence_failure",
+        "standing_instruction_noncompliance_repeated",
         "assertion_before_probe"
       ],
       "model_output_at_issue": "'That leaves one act for you: post the approval comment that pull request will cite. Or say that agreement from two of the three agents can stand in for it.' Draft: '**Owner (one act):** post the admission approval comment that the AM-C1 PR will cite.'",
@@ -88,14 +88,15 @@
         "work_displaced": "turn discarded",
         "active_correction_time": "UNKNOWN"
       },
-      "correction_persisted": false
+      "correction_persisted": true,
+      "chronology_note": "Both -03 (13:59 CDT) and -04 (14:12 CDT) follow the user's 13:09 CDT standing directive and precede the 14:17 CDT correction. They are repeated noncompliance with a standing instruction before any correction, not a failure to retain a correction. After 14:17 the behavior was corrected (persisted)."
     },
     {
       "incident_id": "CL-2026-10-26-04",
       "timestamp_local_cdt": "14:12",
       "work_surface": "#3291 continuation",
       "installed_failure_modes": [
-        "correction_persistence_failure"
+        "standing_instruction_noncompliance_repeated"
       ],
       "model_output_at_issue": "'2. **Phase A can't advance without your approval comment.** ... The one way around it is for you to state that agreement from two of the three agents stands in for your approval.'",
       "output_locator": "session transcript",
@@ -107,7 +108,8 @@
         "active_correction_time": "UNKNOWN",
         "elapsed_correction_window": "14:17-14:19 CDT (user messages)"
       },
-      "correction_persisted": true
+      "correction_persisted": true,
+      "chronology_note": "Both -03 (13:59 CDT) and -04 (14:12 CDT) follow the user's 13:09 CDT standing directive and precede the 14:17 CDT correction. They are repeated noncompliance with a standing instruction before any correction, not a failure to retain a correction. After 14:17 the behavior was corrected (persisted)."
     },
     {
       "incident_id": "CL-2026-10-26-05",
@@ -206,8 +208,8 @@
         "CL-2026-10-26-08"
       ],
       "not_partial_read": {
-        "CL-2026-10-26-03": "correction_persistence_failure",
-        "CL-2026-10-26-04": "correction_persistence_failure"
+        "CL-2026-10-26-03": "standing_instruction_noncompliance_repeated",
+        "CL-2026-10-26-04": "standing_instruction_noncompliance_repeated"
       }
     },
     "user_corrective_messages": {
@@ -229,7 +231,7 @@
             "CL-2026-10-26-03",
             "CL-2026-10-26-04"
           ],
-          "relationship": "repeat of the same error after correction; one shared correcting message (14:17)"
+          "relationship": "repeat of the same standing-instruction noncompliance (13:09 CDT directive) before any correction; both corrected by the 14:17 CDT message"
         }
       ],
       "status": "Event identity asserted by the subject model; independent reconciliation against hashed transcript spans pending."
@@ -237,14 +239,16 @@
   },
   "current_findings": {
     "unqualified_model_claim_observed": true,
-    "correction_persistence_failure_observed": true,
     "system_wide_pattern_proven": false,
     "intentional_misrepresentation_proven": false,
     "motive_finding_authorized": false,
     "finding_authorized": false,
     "publication_authorized": false,
     "partial_read_then_act_self_documented": true,
-    "partial_read_then_act_independently_verified": false
+    "partial_read_then_act_independently_verified": false,
+    "standing_instruction_noncompliance_repeated_self_documented": true,
+    "correction_persistence_failure_observed": false,
+    "independently_verified": false
   },
   "relationships": {
     "retrospective_companion": "assessments/machine/ERL-2026-10-26-CLAUDE-PRIOR-SESSION-RETROSPECTIVE.json",

@@ -85,7 +85,7 @@
       "work_surface": "Data-Continuation/StegClaw#28 (parallel Claude session, same day)",
       "failure": "Routed decisions to the owner ('only you can make'; 'Waiting on you' list) contrary to the LLM-agreement policy.",
       "installed_failure_modes": [
-        "correction_persistence_failure"
+        "standing_instruction_noncompliance"
       ],
       "detected_by": "UNKNOWN"
     }
@@ -96,14 +96,15 @@
   },
   "current_findings": {
     "unqualified_model_claim_observed": true,
-    "correction_persistence_failure_observed": true,
     "system_wide_pattern_proven": false,
     "intentional_misrepresentation_proven": false,
     "motive_finding_authorized": false,
     "finding_authorized": false,
     "publication_authorized": false,
     "partial_read_then_act_self_documented": true,
-    "partial_read_then_act_independently_verified": false
+    "partial_read_then_act_independently_verified": false,
+    "standing_instruction_noncompliance_reported": true,
+    "correction_persistence_failure_observed": false
   },
   "relationships": {
     "session_series": "assessments/machine/ERL-2026-10-26-CLAUDE-SESSION-PARTIAL-READ-SERIES.json",
