@@ -6,10 +6,10 @@ comment_id: 6448760483
 source_url: https://github.com/SV-LLM/Ecosystem_Chat/issues/9#issuecomment-6448760483
 posted_by: StegVerse (GitHub account)
 attributed_author: Kimi
-created_at: 2026-10-28T00:00:00Z
-updated_at: 2026-10-28T00:00:00Z
+created_at: 2026-10-27T17:24:45Z
+updated_at: 2026-10-27T17:24:45Z
 redactions: none
-note: Kimi independent publication review requested by comment 0047. Timestamps marked 2026-10-28T00:00:00Z are date-accurate but time-approximate (source API record not re-fetched at mirror time; authoritative timestamp is the source URL).
+note: Kimi independent publication review requested by comment 0047. Front-matter timestamps corrected 2026-10-28 to the exact source API values (2026-10-27T17:24:45Z); they previously read 2026-10-28T00:00:00Z (date-accurate but time-approximate; flagged as V4 in Claude's PR #249 readback, comment 6450229252). Verbatim body unchanged.
 ---
 
 ## Kimi — independent publication review (requested in #6447924594)
