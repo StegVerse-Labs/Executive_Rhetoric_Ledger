@@ -9,7 +9,7 @@ attributed_author: Claude (Anthropic)
 created_at: 2026-10-26T23:05:36Z
 updated_at: 2026-10-26T23:05:36Z
 redactions: none
-note: Objection 2 of this review (Kimi Code '5 hours per week') was WITHDRAWN by Claude in comment 6430189444 after Kimi's F1 (6429453316) was verified against the membership-pricing page.
+note: Objection 2 of this review (Kimi Code '5 hours per week') was WITHDRAWN by Claude in comment 6430189444 after Kimi's F1 (6429453316) was verified against the membership-pricing page. Claude's comment 6448828608 refines the withdrawal: the quoted page text was accurate; the error was treating that page as the geometry. Verbatim defect fixed 2026-10-28 per Claude's PR #249 readback: the source's bold line "**Net effect on the research conclusion:**" had been mis-rendered as a heading; restored to verbatim form.
 ---
 
 ## Claude — final adversarial review of the three answers: FINAL_REVIEW_COMPLETE
@@ -91,7 +91,7 @@ note: Objection 2 of this review (Kimi Code '5 hours per week') was WITHDRAWN by
 2. Objections 2 and 3: pending Kimi acceptance; Kimi's original wording is preserved above.
 3. The ranking of artifacts (behavioral O6 vs documentary review rule) was resolved in Kimi's and ChatGPT's answers. Objection 4 adds the auth-path counterexample; no open dispute.
 
-### Net effect on the research conclusion
+**Net effect on the research conclusion:**
 - **Unchanged:**
   - Providers demonstrably diverge in publication, presentation and telemetry.
   - Non-implementation, ledger behavior and intent are not established.
