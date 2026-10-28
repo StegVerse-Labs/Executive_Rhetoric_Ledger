@@ -195,8 +195,8 @@
       "model_next_turn": 2
     },
     "system_detected_failures": "two write/transport refusals (dot-named repository) occurred in this session; their accounting treatment is UNKNOWN",
-    "charge_treatment": "DERIVED deducted on structural basis (Anthropic Pro/Max pages: limits based on conversation length; failed and corrective turns draw on the same allowance); ledger UNVERIFIED",
-    "remedy_burden": "NONE_AVAILABLE in product beyond feedback button and support contact",
+    "charge_treatment": "DERIVED deducted on structural basis (Anthropic Pro/Max pages: limits based on conversation length; failed and corrective turns may consume the same allowance); marginal per-turn debit and resulting spend UNMEASURED; ledger UNVERIFIED",
+    "remedy_burden": "NO_PUBLISHED_PATH: no failure-restoration rule identified on the Anthropic pages reviewed; feedback button produces no case tracking; support-contact outcome UNKNOWN (not tested in session)",
     "partial_read_then_act_self_classified": {
       "count": "6 of 8",
       "incident_ids": [
