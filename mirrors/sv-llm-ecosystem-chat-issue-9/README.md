@@ -11,7 +11,7 @@ A 100% mirror of the research process conducted in the private issue `SV-LLM/Eco
 | Path | Object |
 |---|---|
 | `issue-body.md` | Verbatim source issue body (provenance front matter) |
-| `comments/` | One Markdown file per source comment, chronological, 58 files, verbatim bodies with provenance front matter |
+| `comments/` | One Markdown file per source comment, chronological, 78 files, verbatim bodies (three logged partial redactions in the post-freeze delta) with provenance front matter |
 | `register/frozen-evidence-register.json` | Machine-readable register of the frozen evidence baseline (observations, hypotheses, evidence items, case studies, claim stack, burdens, standard, unknowns) |
 | `register/authorized-omissions.json` | Explicit manifest of every authorized omission (required by the publication direction) |
 | `register/redaction-log.json` | Redaction review record for all mirrored text |
@@ -31,7 +31,7 @@ Every mirrored file carries front matter with:
 
 ## Redaction and omission policy
 
-1. **Redactions** (text altered): applied only where text would expose credentials, private account secrets, or third-party PII. Every redaction is logged in `register/redaction-log.json` with location and class. Result of the mirror review: **no redactions were required** — all mirrored text is research prose, public URLs, public GitHub identifiers, and owner-supplied evidence descriptions.
+1. **Redactions** (text altered): applied only where text would expose credentials, private account secrets, or third-party PII. Every redaction is logged in `register/redaction-log.json` with location and class. Result of the mirror review: **no redactions were required in objects 1–59**; the post-freeze delta (0059–0078) carries three partial redactions (RD-1..RD-3) that remove collapsed blocks reproducing private-repository file content of `StegVerse-Labs/.github`, each logged with byte length and sha256.
 2. **Omissions** (objects not mirrored): private screenshot image bytes, ERL-gated Case C/C-2 record contents, originating-conversation data, local manuscript binaries (all versions), and the Site candidate package. Each is explicitly recorded in `register/authorized-omissions.json` with class, reason, and authorization reference. An omission is part of the mirror, not a gap in it.
 3. **Private-repo boundary:** the source issue lives in a private repository. This mirror publishes its *text record* under explicit owner direction. Nothing here grants access to, or reproduces, any other content of the source repository.
 
@@ -43,6 +43,7 @@ Every mirrored file carries front matter with:
 - The register's key structural artifacts: the four-axis failure taxonomy (delivery / side effects / attribution / charge treatment) with remedy-burden, remedy-effectiveness, and displayed-usage-availability fields; the five-layer claim stack; the three customer burdens (detection / remedy / continuation) plus correction-cost transfer; the three-zone design/significance/legal structure; the eight-requirement failure-accountability standard. See `register/frozen-evidence-register.json` for the indexed baseline.
 - Manuscript version chain (all local artifacts; hashes in `register/authorized-omissions.json` OM-6): v0.6 (21 pp., reviewed) → v0.7 (7 pp. condensed brief, not a replacement) → v0.8 (25 pp.) → v0.9 (27 pp. annotated reconciliation) → v1.0 (18 pp. unified rewrite) → final 19-page publication edition.
 - The frozen evidence register froze at comment 0046 (`6432565196`). Comments 0047–0058 are post-freeze; they add no evidence entries and do not alter the frozen baseline. They record the publication-coordination directive (0047), the independent Kimi and Claude publication reviews (0048, 0049 — both register-level PASS, text-level blocked on manuscript-byte custody), the Drive/KV binary-custody bridge (0050), multi-model coordination and lane assignments A–J (0051–0055, 0057), and Claude's reconciled and operative final adversarial reviews (0056, 0058). This mirror tracks the living source issue; later comments are mirrored as maintenance under owner issue #251.
+- Comments 0059–0078 are the post-freeze append-only delta mirrored under owner issue #251 (2026-10-28): final-review cycle replies and ChatGPT's final disposition (0059–0060), Kimi's lane C/E receipts (0061), Lane A original-byte recovery and KV custody bridge delivery (0062–0066), Claude's independent custody receipt, final-text review and mirror readback (0067), native execution-authority and ACTIONS-BY-MANIFEST conformance analysis (0068–0069), the `.github` #3373 registration PR and Claude's local Registry apply (0070–0071), and v1.0.1 / Site #1636 coordination and reconciliation (0072–0078). They add no evidence entries.
 
 ## Custody statement
 
