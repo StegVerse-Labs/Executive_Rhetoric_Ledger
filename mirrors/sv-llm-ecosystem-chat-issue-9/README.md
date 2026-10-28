@@ -11,7 +11,7 @@ A 100% mirror of the research process conducted in the private issue `SV-LLM/Eco
 | Path | Object |
 |---|---|
 | `issue-body.md` | Verbatim source issue body (provenance front matter) |
-| `comments/` | One Markdown file per source comment, chronological, 48 files, verbatim bodies with provenance front matter |
+| `comments/` | One Markdown file per source comment, chronological, 58 files, verbatim bodies with provenance front matter |
 | `register/frozen-evidence-register.json` | Machine-readable register of the frozen evidence baseline (observations, hypotheses, evidence items, case studies, claim stack, burdens, standard, unknowns) |
 | `register/authorized-omissions.json` | Explicit manifest of every authorized omission (required by the publication direction) |
 | `register/redaction-log.json` | Redaction review record for all mirrored text |
@@ -37,12 +37,12 @@ Every mirrored file carries front matter with:
 
 ## Reading guidance
 
-- The record is adversarial and self-correcting by design. Later comments frequently narrow or correct earlier ones (e.g., `6426819450` corrects `6426783484`; `6427594129` corrects `6427349734`; final reviews `6429425538` / `6429453316` / `6429477644` apply corrections F1–F6 / S1–S2 / N1–N3; `6432565196` supersedes the final-edition PDF hash announced in `6432435970`). **Do not quote an early comment as the record's position without checking for later corrections.**
+- The record is adversarial and self-correcting by design. Later comments frequently narrow or correct earlier ones (e.g., `6426819450` corrects `6426783484`; `6427594129` corrects `6427349734`; final reviews `6429425538` / `6429453316` / `6429477644` apply corrections F1–F6 / S1–S2 / N1–N3; `6432565196` supersedes the final-edition PDF hash announced in `6432435970`; `6466554826` supersedes `6429425538` and `6460969942` as Claude's operative final review). **Do not quote an early comment as the record's position without checking for later corrections.**
 - Claim classes OBSERVED / DERIVED / PROJECTED / UNAVAILABLE are used throughout and are load-bearing.
 - "Overcharging" in this record means *computational overcharging* as defined in source comment `6429784312`; the standalone phrase "apparently overcharging" is barred by reviewer consensus.
 - The register's key structural artifacts: the four-axis failure taxonomy (delivery / side effects / attribution / charge treatment) with remedy-burden, remedy-effectiveness, and displayed-usage-availability fields; the five-layer claim stack; the three customer burdens (detection / remedy / continuation) plus correction-cost transfer; the three-zone design/significance/legal structure; the eight-requirement failure-accountability standard. See `register/frozen-evidence-register.json` for the indexed baseline.
 - Manuscript version chain (all local artifacts; hashes in `register/authorized-omissions.json` OM-6): v0.6 (21 pp., reviewed) → v0.7 (7 pp. condensed brief, not a replacement) → v0.8 (25 pp.) → v0.9 (27 pp. annotated reconciliation) → v1.0 (18 pp. unified rewrite) → final 19-page publication edition.
-- The frozen evidence register froze at comment 0046 (`6432565196`). Comments 0047 (`6447924594`, publication-coordination directive) and 0048 (`6448760483`, Kimi publication review with live 2026-10-28 source re-verification) are post-freeze; they add no evidence entries and do not alter the frozen baseline. This mirror tracks the living source issue; later comments are mirrored as maintenance under owner issue #251.
+- The frozen evidence register froze at comment 0046 (`6432565196`). Comments 0047–0058 are post-freeze; they add no evidence entries and do not alter the frozen baseline. They record the publication-coordination directive (0047), the independent Kimi and Claude publication reviews (0048, 0049 — both register-level PASS, text-level blocked on manuscript-byte custody), the Drive/KV binary-custody bridge (0050), multi-model coordination and lane assignments A–J (0051–0055, 0057), and Claude's reconciled and operative final adversarial reviews (0056, 0058). This mirror tracks the living source issue; later comments are mirrored as maintenance under owner issue #251.
 
 ## Custody statement
 
