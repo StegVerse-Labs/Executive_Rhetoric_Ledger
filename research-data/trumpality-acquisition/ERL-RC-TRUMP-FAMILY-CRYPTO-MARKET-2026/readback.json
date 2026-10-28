@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 67,
-  "pending_candidate_count": 600,
-  "pending_sha256": "dd04135ea7c64a3264787545d8a2b084fb50bb0f7f9558f32eb53ffb4a916a1b",
+  "intake_cycles": 68,
+  "pending_candidate_count": 610,
+  "pending_sha256": "566e99e42c5230b998afbde53699b93124678791f90a8ec1c202c407d3a13d17",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -72,16 +72,17 @@
     "aaea92b5eada9b48927c15409225c558ac9f6ee7",
     "3c80b7a0001ba533136d2142114e7e204d688651",
     "da626bccd952d13639ae76684ef28600f9720823",
-    "83a71823dcca57c75fec33598c40c5d5a08491b9"
+    "83a71823dcca57c75fec33598c40c5d5a08491b9",
+    "43b6f0a788ac9e72fde5a24faf201dc22117def2"
   ],
   "publication_authorized": false,
-  "scan_record_count": 122745,
+  "scan_record_count": 124570,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 7,
+      "pending_candidate_count": 8,
       "pending_candidates": [
         {
           "candidate_id": "SRC-7f40bd5331431678be53662b",
@@ -145,12 +146,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin is rejected at $83K as US bond yields reverse higher with equities",
           "source_url": "https://cointelegraph.com/markets/bitcoin-is-rejected-at-83k-as-us-bond-yields-reverse-higher-with-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f99b84a30860faa894f9de8c",
+          "custody_pointer": "RSRCH-f833f778d7a7ae6da41abded",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price bounce rejected at 50-day trend line ahead of FOMC, earnings",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-bounce-rejected-at-50-day-trend-line-ahead-of-fomc-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 50,
-        "FAILED": 305,
-        "NO_UPDATE": 8070
+        "CANDIDATES_IDENTIFIED": 51,
+        "FAILED": 310,
+        "NO_UPDATE": 8189
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -754,15 +764,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 447,
-        "FAILED": 366,
-        "NO_UPDATE": 9297
+        "CANDIDATES_IDENTIFIED": 453,
+        "FAILED": 372,
+        "NO_UPDATE": 9435
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 96,
+      "pending_candidate_count": 99,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1627,12 +1637,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin ETF inflows climb to $176M as BTC rebounds above $80K",
           "source_url": "https://cointelegraph.com/markets/bitcoin-etf-176-million-inflow-sentiment-rebounds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-272611ad0bb6425818f7b9e7",
+          "custody_pointer": "RSRCH-7f5f60338ba7d65c267b040c",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Wall Street\u2019s Fast Money Fled Bitcoin ETFs, Sovereign Funds Stepped In",
+          "source_url": "https://decrypt.co/382059/wall-street-fast-money-fled-bitcoin-etfs-sovereign-funds"
+        },
+        {
+          "candidate_id": "SRC-9dedddddf269f9e4534b00c6",
+          "custody_pointer": "RSRCH-5fd5c54605c31c9107d5ae40",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Bitcoin trading just above $80,000 as Fed delivers hold on rates",
+          "source_url": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+        },
+        {
+          "candidate_id": "SRC-3b8bbfb873b169e5efc116cb",
+          "custody_pointer": "RSRCH-0ccf3c709cfb90acb9415bb7",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Fed Rate Decision: What Markets and Bitcoin Traders Can Expect",
+          "source_url": "https://decrypt.co/382044/fed-rate-decision-what-markets-bitcoin-traders-expect"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 465,
-        "FAILED": 305,
-        "NO_UPDATE": 7655
+        "CANDIDATES_IDENTIFIED": 473,
+        "FAILED": 310,
+        "NO_UPDATE": 7767
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1930,9 +1967,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 424,
-        "FAILED": 366,
-        "NO_UPDATE": 9320
+        "CANDIDATES_IDENTIFIED": 429,
+        "FAILED": 372,
+        "NO_UPDATE": 9459
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2077,9 +2114,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 139,
-        "FAILED": 366,
-        "NO_UPDATE": 9605
+        "CANDIDATES_IDENTIFIED": 140,
+        "FAILED": 372,
+        "NO_UPDATE": 9748
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2233,9 +2270,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 115,
-        "FAILED": 427,
-        "NO_UPDATE": 11253
+        "CANDIDATES_IDENTIFIED": 116,
+        "FAILED": 434,
+        "NO_UPDATE": 11420
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2758,9 +2795,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 198,
-        "FAILED": 366,
-        "NO_UPDATE": 9546
+        "CANDIDATES_IDENTIFIED": 201,
+        "FAILED": 372,
+        "NO_UPDATE": 9687
       }
     },
     "market-rhetoric-oil-impact": {
@@ -3994,9 +4031,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 995,
-        "FAILED": 305,
-        "NO_UPDATE": 7125
+        "CANDIDATES_IDENTIFIED": 1009,
+        "FAILED": 310,
+        "NO_UPDATE": 7231
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4114,15 +4151,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 195,
-        "FAILED": 425,
-        "NO_UPDATE": 10915
+        "CANDIDATES_IDENTIFIED": 197,
+        "FAILED": 432,
+        "NO_UPDATE": 11081
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 111,
+      "pending_candidate_count": 117,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5122,12 +5159,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Moody's Rates Ripple's $2.6B RLUSD Stablecoin A2, a Day After OCC Bank Approval",
           "source_url": "https://decrypt.co/382030/moodys-rates-ripples-2-6b-rlusd-stablecoin-a2-a-day-after-occ-bank-approval"
+        },
+        {
+          "candidate_id": "SRC-d41567d6f9af1bb4ba58e37c",
+          "custody_pointer": "RSRCH-1a9af642fc1c4c5e22f91b5c",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Phantom launches Kalshi-powered prediction markets for US users",
+          "source_url": "https://cointelegraph.com/news/phantom-launches-kalshi-powered-prediction-markets-for-us-users?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-0175a809b6fca2bbc50ad685",
+          "custody_pointer": "RSRCH-1a9af642fc1c4c5e22f91b5c",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Google Cloud outlines MPC service for institutional Bitcoin custody",
+          "source_url": "https://cointelegraph.com/news/google-cloud-mpc-service-bitcoin-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-1393e04aa171d303382820ea",
+          "custody_pointer": "RSRCH-a5d2acc7275e81d8ec89e69c",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Aptos Advisor Leaves Post, Moves Meme-Fueled Campaign to Meta Stock",
+          "source_url": "https://decrypt.co/382061/aptos-advisor-leaves-post-moves-meme-fueled-campaign-to-meta-stock"
+        },
+        {
+          "candidate_id": "SRC-8d5caac6aa2f2979625bb2e9",
+          "custody_pointer": "RSRCH-ba3e0ba83cbecf980588ef02",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Coinbase earnings: Wall Street divided on trading rebound after Robinhood crypto revenue sinks 55%",
+          "source_url": "https://www.coindesk.com/markets/2026/10/28/coinbase-earnings-wall-street-divided-on-trading-rebound-as-robinhood-crypto-revenue-sinks-55"
+        },
+        {
+          "candidate_id": "SRC-ad67faf23b7fbba779dc8dc9",
+          "custody_pointer": "RSRCH-958efa1174b5a7bb8f5438c5",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Coinbase earnings: Wall Street divided on trading rebound after Robinhood crypto revenue sinks 55%",
+          "source_url": "https://www.coindesk.com/markets/2026/10/28/coinbase-earnings-wall-street-divided-on-trading-rebound-as-robinhood-crypto-revenue-sinks-55"
+        },
+        {
+          "candidate_id": "SRC-8739ccc7a72c68fddd6ad275",
+          "custody_pointer": "RSRCH-172551a93107629601363586",
+          "producer_commit": "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto PAC spending before midterms possibly obscured after reported FEC hack",
+          "source_url": "https://cointelegraph.com/news/crypto-pac-spending-midterms-fec-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 920,
-        "FAILED": 366,
-        "NO_UPDATE": 8824
+        "CANDIDATES_IDENTIFIED": 938,
+        "FAILED": 372,
+        "NO_UPDATE": 8950
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5335,9 +5426,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 238,
-        "FAILED": 366,
-        "NO_UPDATE": 9506
+        "CANDIDATES_IDENTIFIED": 241,
+        "FAILED": 372,
+        "NO_UPDATE": 9647
       }
     },
     "wlf-positive-adoption-radar": {
@@ -5617,9 +5708,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 169,
-        "FAILED": 488,
-        "NO_UPDATE": 12823
+        "CANDIDATES_IDENTIFIED": 170,
+        "FAILED": 496,
+        "NO_UPDATE": 13014
       }
     }
   }
