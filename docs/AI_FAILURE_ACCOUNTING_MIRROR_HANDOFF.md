@@ -8,11 +8,11 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 
 - Goal ID: `ERL-AI-FAILURE-ACCOUNTING-MIRROR-2026-10-26`
 - Lane type: research-process mirror (not a primary evidence lane)
-- Source: `SV-LLM/Ecosystem_Chat` issue #9 (private repository), issue body plus 78 comments (0001–0058 frozen batch, ERL PR #249; 0059–0078 append-only delta), 2026-10-26/28 UTC
+- Source: `SV-LLM/Ecosystem_Chat` issue #9 (private repository), issue body plus 101 comments (0001–0058 frozen batch, ERL PR #249; 0059–0078 delta 1, ERL PR #253; 0079–0101 delta 2), 2026-10-26/29 UTC
 - Mirror root: `mirrors/sv-llm-ecosystem-chat-issue-9/`
 - Mirror authorization: owner direction recorded in source-issue comment `6429784312` ("Deferred public research publication — ERL mirror and Site pages"), which requires a 100% mirror — issue body, full comment chronology, multi-LLM contributions, competing claims, corrections, final adversarial review, and subsequent clarifications — with authorship, source URLs, stable identifiers, provenance, publicly appropriate redactions, and explicitly recorded authorized omissions. "A summary or link alone is not a 100% mirror."
 - Canonical coordination owner: ERL issue #251 (research-candidate owner; append-only delta lane)
-- Task Registry registration: PROPOSED as `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` in StegVerse-Labs/.github PR #3373 (registration plan/apply ALLOW locally, COSV `10100000110000`, generation 321→322); not merged at this revision, so registration is not yet admitted
+- Task Registry registration: PROPOSED as `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` in StegVerse-Labs/.github PR #3373 (registration plan/apply ALLOW locally, COSV `10100000110000`, generation 321→322); transported to #3373 and independently verified byte-identical (tree c4c3b3b3 at aa741bd0); not merged at this revision, so registration is not yet admitted
 
 ## Governing state
 
