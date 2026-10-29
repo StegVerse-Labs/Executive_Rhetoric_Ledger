@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 68,
-  "pending_candidate_count": 610,
-  "pending_sha256": "566e99e42c5230b998afbde53699b93124678791f90a8ec1c202c407d3a13d17",
+  "intake_cycles": 69,
+  "pending_candidate_count": 614,
+  "pending_sha256": "891f94f1e605acc1e25ba1060e81ee3f82b320825f6bb1bc08138341fffbf778",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -73,10 +73,11 @@
     "3c80b7a0001ba533136d2142114e7e204d688651",
     "da626bccd952d13639ae76684ef28600f9720823",
     "83a71823dcca57c75fec33598c40c5d5a08491b9",
-    "43b6f0a788ac9e72fde5a24faf201dc22117def2"
+    "43b6f0a788ac9e72fde5a24faf201dc22117def2",
+    "cdfacd53ea64a70e501435f1c365d5f8c8099d88"
   ],
   "publication_authorized": false,
-  "scan_record_count": 124570,
+  "scan_record_count": 126395,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -158,15 +159,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 51,
-        "FAILED": 310,
-        "NO_UPDATE": 8189
+        "CANDIDATES_IDENTIFIED": 52,
+        "FAILED": 315,
+        "NO_UPDATE": 8308
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 66,
+      "pending_candidate_count": 67,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -761,18 +762,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Brazil\u2019s largest lender becomes first bank to formalize crypto brokerage under new rules",
           "source_url": "https://www.coindesk.com/policy/2026/10/28/brazil-s-largest-lender-becomes-first-bank-to-formalize-crypto-brokerage-under-new-rules"
+        },
+        {
+          "candidate_id": "SRC-7721109627a8caa04a141a6f",
+          "custody_pointer": "RSRCH-d67bca822bde407a30740e35",
+          "producer_commit": "cdfacd53ea64a70e501435f1c365d5f8c8099d88",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Treasury Datavault AI Says It Can\u2019t Access Its BTC, Stock Tanks",
+          "source_url": "https://decrypt.co/382116/bitcoin-treasury-datavault-ai-stock-crashes-cant-access-btc"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 453,
-        "FAILED": 372,
-        "NO_UPDATE": 9435
+        "CANDIDATES_IDENTIFIED": 459,
+        "FAILED": 378,
+        "NO_UPDATE": 9573
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 99,
+      "pending_candidate_count": 101,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1664,12 +1674,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Fed Rate Decision: What Markets and Bitcoin Traders Can Expect",
           "source_url": "https://decrypt.co/382044/fed-rate-decision-what-markets-bitcoin-traders-expect"
+        },
+        {
+          "candidate_id": "SRC-940c7e18961a01198f0c3ccd",
+          "custody_pointer": "RSRCH-b76123c978a350921ca3ae47",
+          "producer_commit": "cdfacd53ea64a70e501435f1c365d5f8c8099d88",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Treasury Datavault AI Says It Can\u2019t Access Its BTC, Stock Tanks",
+          "source_url": "https://decrypt.co/382116/bitcoin-treasury-datavault-ai-stock-crashes-cant-access-btc"
+        },
+        {
+          "candidate_id": "SRC-8367b45066994b9ff683ed96",
+          "custody_pointer": "RSRCH-7fc99233e40e22cf99d0894d",
+          "producer_commit": "cdfacd53ea64a70e501435f1c365d5f8c8099d88",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Fed Stands Pat, Bitcoin Holds Steady\u2014But a December Rate Hike Is in Play",
+          "source_url": "https://decrypt.co/382092/fed-hold-interest-rate-steady-bitcoin-december-rate-hike"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 473,
-        "FAILED": 310,
-        "NO_UPDATE": 7767
+        "CANDIDATES_IDENTIFIED": 481,
+        "FAILED": 315,
+        "NO_UPDATE": 7879
       }
     },
     "family-token-rotation-fee-capture": {
@@ -1967,9 +1995,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 429,
-        "FAILED": 372,
-        "NO_UPDATE": 9459
+        "CANDIDATES_IDENTIFIED": 434,
+        "FAILED": 378,
+        "NO_UPDATE": 9598
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2114,9 +2142,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 140,
-        "FAILED": 372,
-        "NO_UPDATE": 9748
+        "CANDIDATES_IDENTIFIED": 141,
+        "FAILED": 378,
+        "NO_UPDATE": 9891
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2270,9 +2298,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 116,
-        "FAILED": 434,
-        "NO_UPDATE": 11420
+        "CANDIDATES_IDENTIFIED": 117,
+        "FAILED": 441,
+        "NO_UPDATE": 11587
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2795,9 +2823,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 201,
-        "FAILED": 372,
-        "NO_UPDATE": 9687
+        "CANDIDATES_IDENTIFIED": 204,
+        "FAILED": 378,
+        "NO_UPDATE": 9828
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4031,9 +4059,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1009,
-        "FAILED": 310,
-        "NO_UPDATE": 7231
+        "CANDIDATES_IDENTIFIED": 1023,
+        "FAILED": 315,
+        "NO_UPDATE": 7337
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4151,9 +4179,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 197,
-        "FAILED": 432,
-        "NO_UPDATE": 11081
+        "CANDIDATES_IDENTIFIED": 200,
+        "FAILED": 439,
+        "NO_UPDATE": 11246
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -5216,15 +5244,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 938,
-        "FAILED": 372,
-        "NO_UPDATE": 8950
+        "CANDIDATES_IDENTIFIED": 955,
+        "FAILED": 378,
+        "NO_UPDATE": 9077
       }
     },
     "trump-token-promotion-access-supply": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 22,
+      "pending_candidate_count": 23,
       "pending_candidates": [
         {
           "candidate_id": "SRC-ecd23ea9db28c0853a20de0b",
@@ -5423,12 +5451,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Trump's meme coin 'quietly sold' for $30 Million in tokens amid stock market saga - Irish Star",
           "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObm1MRkZkUWJ1SVdqZ1EzSnJzcWxucnMtSDR0cXpQckVxQVQ2SjRBeGJ0WVJKLUxrMkxsZ2pMbUR0NDFzY0NHX1RiVG15NzRkXzd1RmNIV0JWZ3VRVHpXMGhWQ3NyZmFrNUpWLW1hYzd3ZHBJSFBNbTBPbTJ3SVl4OVNwY3ZoYknSAYwBQVVfeXFMTU9IU0tvaFNEY3B6emNVMEx3VlhWZFJldE5iMWJ1Vl94RTZlWlRIT1VMVHhfYWNnc2dIbURyTlJoQUNMSGF2NVZQdlJPY2lyN3pKXzZaMW9yZnd0ZDhLbk5RclU5LVFlVDBlTzJKQTZmVVdib3Z6QXNiaGJrOXc3NGNIdHpfU2tqSG4wYUI?oc=5"
+        },
+        {
+          "candidate_id": "SRC-3c7cc90b5c4b26023f4842bb",
+          "custody_pointer": "RSRCH-6e3cc420fb62ad7dba3cd8f4",
+          "producer_commit": "cdfacd53ea64a70e501435f1c365d5f8c8099d88",
+          "query": "official token contract",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Melania Trump Launches MELANIA Cryptocurrency, Triggering 38% Drop in TRUMP Token Value - Yahoo Finance",
+          "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN0ZNaTdBdlY5b3ZsUFNhYU5aSlFuQlpDSzZXN2lkZVpiZVJNZ3Jad0gyWU1vWVZUWGJNUk1uUmdKYnVzOTIxeEEtc1RlV21HMTFOV3o0NFJqN1hQMTdTblBGVFlwTXNKc1ZGLTkxb095eDhGNUotdW5od0Z1WmJBTVRFVVc1eV9EeWlTeWtqdy1ZTnRST3c?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 241,
-        "FAILED": 372,
-        "NO_UPDATE": 9647
+        "CANDIDATES_IDENTIFIED": 244,
+        "FAILED": 378,
+        "NO_UPDATE": 9788
       }
     },
     "wlf-positive-adoption-radar": {
@@ -5708,9 +5745,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 170,
-        "FAILED": 496,
-        "NO_UPDATE": 13014
+        "CANDIDATES_IDENTIFIED": 171,
+        "FAILED": 504,
+        "NO_UPDATE": 13205
       }
     }
   }
