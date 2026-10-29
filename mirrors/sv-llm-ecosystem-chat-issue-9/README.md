@@ -11,7 +11,7 @@ A 100% mirror of the research process conducted in the private issue `SV-LLM/Eco
 | Path | Object |
 |---|---|
 | `issue-body.md` | Verbatim source issue body (provenance front matter) |
-| `comments/` | One Markdown file per source comment, chronological, 111 files, verbatim bodies (four logged partial redactions in the post-freeze deltas) with provenance front matter |
+| `comments/` | One Markdown file per source comment, chronological, 113 files, verbatim bodies (four logged partial redactions in the post-freeze deltas) with provenance front matter |
 | `register/frozen-evidence-register.json` | Machine-readable register of the frozen evidence baseline (observations, hypotheses, evidence items, case studies, claim stack, burdens, standard, unknowns) |
 | `register/authorized-omissions.json` | Explicit manifest of every authorized omission (required by the publication direction) |
 | `register/redaction-log.json` | Redaction review record for all mirrored text |
@@ -31,7 +31,7 @@ Every mirrored file carries front matter with:
 
 ## Redaction and omission policy
 
-1. **Redactions** (text altered): applied only where text would expose credentials, private account secrets, or third-party PII. Every redaction is logged in `register/redaction-log.json` with location and class. Result of the mirror review: **no redactions were required in objects 1–59**; the post-freeze deltas (0059–0111) carry four partial redactions (RD-1..RD-4) that remove collapsed blocks reproducing private-repository file content of `StegVerse-Labs/.github`, each logged with byte length and sha256.
+1. **Redactions** (text altered): applied only where text would expose credentials, private account secrets, or third-party PII. Every redaction is logged in `register/redaction-log.json` with location and class. Result of the mirror review: **no redactions were required in objects 1–59**; the post-freeze deltas (0059–0113) carry four partial redactions (RD-1..RD-4) that remove collapsed blocks reproducing private-repository file content of `StegVerse-Labs/.github`, each logged with byte length and sha256.
 2. **Omissions** (objects not mirrored): private screenshot image bytes, ERL-gated Case C/C-2 record contents, originating-conversation data, local manuscript binaries (all versions), and the Site candidate package. Each is explicitly recorded in `register/authorized-omissions.json` with class, reason, and authorization reference. An omission is part of the mirror, not a gap in it.
 3. **Private-repo boundary:** the source issue lives in a private repository. This mirror publishes its *text record* under explicit owner direction. Nothing here grants access to, or reproduces, any other content of the source repository.
 
@@ -48,6 +48,8 @@ Every mirrored file carries front matter with:
 - Comments 0102–0105 are append-only delta 3 (2026-10-29): Claude's delta-2 build status (0102), the ERL #249 expected-head merge receipt (0103), the goal checkpoint after the #3373/#249/#247/#253 merges (0104), and the cycle reply correcting the #254 exact head to `8b7ffc8a` (0105). They add no evidence entries and required no redactions.
 - Comments 0106–0111 are append-only delta 4 (2026-10-29): the ERL #254 and #256 merge readbacks (0106, 0109), ChatGPT's source-owner checkpoint (0107), the L2 byte-check reply with the v1.0.1→v1.0.2 text delta (0108), Kimi's L2/L2b PASS readbacks with the ¶73 dated-snapshot adjudication (0110), and the v1.0.2 integration into Site #1633 (0111). They add no evidence entries and required no redactions.
 
+- Comments 0112–0113 are append-only delta 5 (2026-10-29): Kimi's independent L2c readback of Site #1633 at `a95422e0` and reported Drive faults (0112), followed by Claude's acceptance and separately authored coordination pointer (0113). They add no evidence entries and required no redactions. The comments preserve their original dated state; delta 4 subsequently merged in ERL #257 at `855c1237`. A Drive coordination pointer is not sovereign KV custody or a publication authorization.
+
 ## Custody statement
 
-Mirrored from source API records on 2026-10-27/28. Source comment IDs and timestamps are preserved verbatim in front matter. File-level custody hashes: see `manifest.json` (git blob SHAs). A hash establishes byte identity, not the correctness of any interface accounting described in the record.
+Mirrored from source API records on 2026-10-27/28/29. Source comment IDs and timestamps are preserved verbatim in front matter. File-level custody hashes: see `manifest.json` (git blob SHAs). A hash establishes byte identity, not the correctness of any interface accounting described in the record.
