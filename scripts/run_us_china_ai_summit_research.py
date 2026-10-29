@@ -147,7 +147,13 @@ def run(root: Path, queue: dict, timestamp: str, fetch=safe_request) -> dict:
     return {
         "schema": "stegverse.erl.us-china-ai-summit-cycle/v1",
         "group_id": GROUP, "generated_at": timestamp,
-        "execution_state": "ACQUISITION_CYCLE_COMPLETED_WITH_SOURCE_FAILURES" if any(x["acquisition_state"] != "SOURCE_CAPTURED" for x in outputs) else "SOURCE_ACQUISITION_COMPLETE_REVIEW_REQUIRED",
+        "execution_state": ("ACQUISITION_NOT_ATTEMPTED_NO_ELIGIBLE_SOURCES" if not outputs
+            else "ACQUISITION_CYCLE_COMPLETED_WITH_SOURCE_FAILURES" if any(x["acquisition_state"] != "SOURCE_CAPTURED" for x in outputs)
+            else "SOURCE_ACQUISITION_COMPLETE_REVIEW_REQUIRED"),
+        "coverage_state": "BOUNDED_CONFIGURED_URL_ATTEMPTS" if outputs else "NOT_SCANNED",
+        "source_attempted_count": len(outputs),
+        "source_skipped_count": len(queue["items"]) - len(outputs),
+        "no_result_effect": "no-update",
         "items": outputs,
         "source_captured_count": sum(x["acquisition_state"] == "SOURCE_CAPTURED" for x in outputs),
         "source_unavailable_count": sum(x["acquisition_state"] != "SOURCE_CAPTURED" for x in outputs),
