@@ -1,0 +1,117 @@
+{
+  "record_id": "ERL-2026-10-26-CLAUDE-PRIOR-SESSION-RETROSPECTIVE",
+  "record_type": "machine_behavior_incident_series",
+  "status": "research_candidate",
+  "date": "2026-10-26",
+  "system": "Claude (Anthropic)",
+  "recorded_by": "the subject model itself (self-documented at the user's direction)",
+  "canonical_owner": "issue:244",
+  "ascertainment": "POST-CHALLENGE RETROSPECTIVE ASCERTAINMENT — located by searching the user's Claude conversation history after the user challenged the model on 2026-10-26; per the #69 dependence-reconciliation rule these entries cannot be promoted to independent replication without the exact originating exchange, timing and provenance.",
+  "source_posture": {
+    "classification": "REPORTED — search-surfaced conversation summaries of the user's own Claude history",
+    "verbatim_model_output_quoted": false,
+    "verbatim_transcript_custody_complete": false,
+    "completeness": "Search-surfaced summaries; recall unmeasured. Whether the set over- or under-represents actual incidents is UNKNOWN (see self_report_bias).",
+    "self_report_bias": {
+      "classification": "PROJECTED",
+      "statement": "Direction of self-report bias is an assumption, not an observation.",
+      "assumptions": [
+        "A1: the subject model's recall of its own failures is incomplete (would make the series a floor).",
+        "A2: no systematic incentive to over-report exists; this is NOT established. Over-reporting is possible, e.g. accommodation to the user's framing during a correction exchange.",
+        "A3: incident boundaries chosen by the subject model match independent classification."
+      ],
+      "test": "Independent classification of hashed transcript spans; compare counts in both directions."
+    }
+  },
+  "incidents": [
+    {
+      "incident_id": "CL-RETRO-2026-05-27",
+      "work_surface": "StegVerse-001 / sandbox.py",
+      "failure": "Read code without its architectural context; asked for confirmation when sufficient evidence was already in context.",
+      "installed_failure_modes": [
+        "research_surface_narrowing / false completeness"
+      ],
+      "detected_by": "user"
+    },
+    {
+      "incident_id": "CL-RETRO-2026-06-07",
+      "work_surface": "math_solver / core-lite repositories",
+      "failure": "Repeatedly produced plausible outputs without checking real files first (count not recorded in summary).",
+      "installed_failure_modes": [
+        "unqualified_model_claim"
+      ],
+      "detected_by": "user",
+      "count": "UNKNOWN (>1)"
+    },
+    {
+      "incident_id": "CL-RETRO-2026-07-31",
+      "work_surface": "HIL study",
+      "failure": "Critiqued study design without reading the artifacts already built in GitHub and Cloudflare.",
+      "installed_failure_modes": [
+        "assertion_before_probe",
+        "research_surface_narrowing / false completeness"
+      ],
+      "detected_by": "user"
+    },
+    {
+      "incident_id": "CL-RETRO-2026-08-27",
+      "work_surface": "DiamondOps / SBIR",
+      "failure": "Mischaracterized the DiamondOps repository stack; stated the wrong SBIR release number through most of the conversation.",
+      "installed_failure_modes": [
+        "unqualified_model_claim"
+      ],
+      "detected_by": "user"
+    },
+    {
+      "incident_id": "CL-RETRO-2026-10-08",
+      "work_surface": "StegVerse-Labs/.github#3012",
+      "failure": "Review produced but not postable (dot-named repository write limit); user restarted in a new session. Tooling limit, not a read failure; included as rework.",
+      "installed_failure_modes": [
+        "system-detectable write/transport failure"
+      ],
+      "detected_by": "system (403) and model"
+    },
+    {
+      "incident_id": "CL-RETRO-2026-10-14",
+      "work_surface": "StegVerse-SDK #484",
+      "failure": "Halted admission step as 'InTr unreachable' without first reading Task Registry runtime-observation documentation, which prohibits waiting on receiver liveness.",
+      "installed_failure_modes": [
+        "assertion_before_probe"
+      ],
+      "detected_by": "user"
+    },
+    {
+      "incident_id": "CL-RETRO-2026-10-26-STEGCLAW",
+      "work_surface": "Data-Continuation/StegClaw#28 (parallel Claude session, same day)",
+      "failure": "Routed decisions to the owner ('only you can make'; 'Waiting on you' list) contrary to the LLM-agreement policy.",
+      "installed_failure_modes": [
+        "standing_instruction_noncompliance"
+      ],
+      "detected_by": "UNKNOWN"
+    }
+  ],
+  "series_summary": {
+    "combined_with_session_series": "15 self-reported instances 2026-05-27 to 2026-10-26 (8 session + 7 retrospective), plus uncounted 2026-06-07 corrections; not independently classified",
+    "incident_count_reported": 7
+  },
+  "current_findings": {
+    "unqualified_model_claim_observed": true,
+    "system_wide_pattern_proven": false,
+    "intentional_misrepresentation_proven": false,
+    "motive_finding_authorized": false,
+    "finding_authorized": false,
+    "publication_authorized": false,
+    "partial_read_then_act_self_documented": true,
+    "partial_read_then_act_independently_verified": false,
+    "standing_instruction_noncompliance_reported": true,
+    "correction_persistence_failure_observed": false
+  },
+  "relationships": {
+    "session_series": "assessments/machine/ERL-2026-10-26-CLAUDE-SESSION-PARTIAL-READ-SERIES.json",
+    "lane_handoff": "assessments/machine/CLAUDE_MODEL_BEHAVIOR_MIRROR_HANDOFF.md"
+  },
+  "continuation": {
+    "next_action": "Recover originating exchanges and timestamps for each entry before any recurrence or CBOC aggregation.",
+    "readme_change_required": false
+  }
+}
