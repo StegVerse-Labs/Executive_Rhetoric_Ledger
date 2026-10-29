@@ -314,3 +314,10 @@ Mr. Global attribution correction (2026-10-18): the owner recalls a video summar
 ### October 23, 2026 — Tennessee voting-machine answer framing
 
 Research candidate `assessments/machine/2026-10-23-chatgpt-tennessee-voting-machine-framing.json` records the assistant's introduction and rebuttal of an unasserted deliberate-manipulation allegation, subsequent qualification of the reverse-direction comparison, and failure to consult existing ERL records before addressing the user's longitudinal concern. Owned by Issue #212 / `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Event-level framing failures are observed; system-wide political bias, motive, election-machine causation, and publication are not established. Verbatim custody, matched controls, and independent review remain pending.
+
+
+## AI failure-aware compute-accounting research-process mirror
+
+Canonical Goal `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` (COSV `10100000110000`) owns the [EC9 research-process mirror](mirrors/sv-llm-ecosystem-chat-issue-9/README.md) and [scoped handoff](docs/AI_FAILURE_ACCOUNTING_MIRROR_HANDOFF.md), coordinated in [issue #251](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/251). The merged baseline covers comments 0001–0111 through PR #257 (`855c1237`); delta 5 appends 0112–0113 for independent review. The manifest states the precise coverage. Four redactions and seven authorized omissions remain preserved.
+
+Registry identity is registered at generation 322 with coordination state `PROPOSED` and no WorkerCoordinator claim/fence. The public process mirror does not authorize the manuscript: Site #1633 remains draft and `NOT_ALLOWED` pending authentic Q74-01 custody and SPPA authorization. Coordination Drive pointers are not sovereign KV receipts. Later source comments are bounded maintenance, not an indefinite publication dependency.
