@@ -8,19 +8,19 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 
 - Goal ID: `ERL-AI-FAILURE-ACCOUNTING-MIRROR-2026-10-26`
 - Lane type: research-process mirror (not a primary evidence lane)
-- Source: `SV-LLM/Ecosystem_Chat` issue #9 (private repository), issue body plus 40 comments, 2026-10-26/27 UTC
+- Source: `SV-LLM/Ecosystem_Chat` issue #9 (private repository), issue body plus 78 comments (0001–0058 frozen batch, ERL PR #249; 0059–0078 append-only delta), 2026-10-26/28 UTC
 - Mirror root: `mirrors/sv-llm-ecosystem-chat-issue-9/`
 - Mirror authorization: owner direction recorded in source-issue comment `6429784312` ("Deferred public research publication — ERL mirror and Site pages"), which requires a 100% mirror — issue body, full comment chronology, multi-LLM contributions, competing claims, corrections, final adversarial review, and subsequent clarifications — with authorship, source URLs, stable identifiers, provenance, publicly appropriate redactions, and explicitly recorded authorized omissions. "A summary or link alone is not a 100% mirror."
-- Canonical coordination owner: ERL tracking issue — PENDING CREATION (owner action or follow-up lane task)
-- Task Registry registration: PENDING — to be registered under the canonical Task Registry per the ERL intake routing invariant; this handoff plus the mirror README carry continuity until registration lands
+- Canonical coordination owner: ERL issue #251 (research-candidate owner; append-only delta lane)
+- Task Registry registration: PROPOSED as `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` in StegVerse-Labs/.github PR #3373 (registration plan/apply ALLOW locally, COSV `10100000110000`, generation 321→322); not merged at this revision, so registration is not yet admitted
 
 ## Governing state
 
-- Mirror lifecycle: `STRUCTURE_INSTALLED` / chronology population in progress
+- Mirror lifecycle: frozen batch 0001–0058 verified (ERL PR #249, exact head `c3116e5e`: 58/58 bodies, 63/63 manifest blobs, two independent readbacks); append-only delta 0059–0078 installed under #251
 - Case status of the underlying research: `evidence_solicitation_phase_closed` (source comment `6428361696`); provisional evidence baseline frozen; bounded custody work continuing
 - Motive finding authorized: false
 - Legal/culpability finding authorized: false (source issue maintains an explicit Zone 3 legal gate; independent legal review required before any cause-of-action language)
-- Publication authorized for the manuscript: false (v0.7 local artifacts exist; not repository-custodied)
+- Publication authorized for the manuscript: false. v1.0 bytes are in KV custody with two readbacks; v1.0.1 is committed to Site PR #1633 (draft, non-ALLOW; SPPA FAIL_CLOSED pending the Q74-01 custody basis)
 - Publication authorized for THIS MIRROR: true, per comment `6429784312`, subject to the redaction and omission rules below
 
 ## Content boundaries (binding on this lane)
@@ -41,7 +41,7 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 - `mirrors/sv-llm-ecosystem-chat-issue-9/register/frozen-evidence-register.json` — machine-readable register: observations O1–O11, hypotheses H1–H6, evidence items E1–E6, case studies, claim stack, burdens, standard requirements, unresolved unknowns
 - `mirrors/sv-llm-ecosystem-chat-issue-9/register/authorized-omissions.json` — explicit omission manifest (required by `6429784312`)
 - `mirrors/sv-llm-ecosystem-chat-issue-9/register/redaction-log.json` — redaction review record
-- `mirrors/sv-llm-ecosystem-chat-issue-9/manifest.json` — file inventory with git blob SHAs (populated after chronology push)
+- `mirrors/sv-llm-ecosystem-chat-issue-9/manifest.json` — file inventory with git blob SHAs (v5 covers the delta)
 
 ## Downstream
 
