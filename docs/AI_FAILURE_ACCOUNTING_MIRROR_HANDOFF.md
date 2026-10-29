@@ -8,7 +8,7 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 
 - Goal ID: `ERL-AI-FAILURE-ACCOUNTING-MIRROR-2026-10-26`
 - Lane type: research-process mirror (not a primary evidence lane)
-- Source: `SV-LLM/Ecosystem_Chat` issue #9 (private repository), issue body plus 101 comments (0001–0058 frozen batch, ERL PR #249; 0059–0078 delta 1, ERL PR #253; 0079–0101 delta 2), 2026-10-26/29 UTC
+- Source: `SV-LLM/Ecosystem_Chat` issue #9 (private repository), issue body plus 105 comments (0001–0058 frozen batch, ERL PR #249; 0059–0078 delta 1, ERL PR #253; 0079–0101 delta 2, ERL PR #254; 0102–0105 delta 3), 2026-10-26/29 UTC
 - Mirror root: `mirrors/sv-llm-ecosystem-chat-issue-9/`
 - Mirror authorization: owner direction recorded in source-issue comment `6429784312` ("Deferred public research publication — ERL mirror and Site pages"), which requires a 100% mirror — issue body, full comment chronology, multi-LLM contributions, competing claims, corrections, final adversarial review, and subsequent clarifications — with authorship, source URLs, stable identifiers, provenance, publicly appropriate redactions, and explicitly recorded authorized omissions. "A summary or link alone is not a 100% mirror."
 - Canonical coordination owner: ERL issue #251 (research-candidate owner; append-only delta lane)
@@ -16,7 +16,7 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 
 ## Governing state
 
-- Mirror lifecycle: frozen batch 0001–0058 MERGED (ERL PR #249 at `c3116e5e` → `5b55da3c`; 58/58 bodies, 63/63 manifest blobs, two independent readbacks); delta 1 0059–0078 MERGED (ERL PR #253 at `16fe6167` → `8daf6a01`; ChatGPT review 5690446174, Kimi readback PASS 6484885831); delta 2 0079–0101 in ERL PR #254 (pending non-author readback); Claude CBOC records MERGED (ERL PR #247 at `878da1b8` → `e6b2193d`)
+- Mirror lifecycle: frozen batch 0001–0058 MERGED (ERL PR #249 at `c3116e5e` → `5b55da3c`; 58/58 bodies, 63/63 manifest blobs, two independent readbacks); delta 1 0059–0078 MERGED (ERL PR #253 at `16fe6167` → `8daf6a01`; ChatGPT review 5690446174, Kimi readback PASS 6484885831); delta 2 0079–0101 MERGED (ERL PR #254 at `8b7ffc8a` → `0e319795`; non-author readback 6486520554: 22/22 bodies, RD-4 28,433 B digest, 106/106 blobs); delta 3 0102–0105 in a follow-up PR (pending non-author readback); Claude CBOC records MERGED (ERL PR #247 at `878da1b8` → `e6b2193d`)
 - Case status of the underlying research: `evidence_solicitation_phase_closed` (source comment `6428361696`); provisional evidence baseline frozen; bounded custody work continuing
 - Motive finding authorized: false
 - Legal/culpability finding authorized: false (source issue maintains an explicit Zone 3 legal gate; independent legal review required before any cause-of-action language)
