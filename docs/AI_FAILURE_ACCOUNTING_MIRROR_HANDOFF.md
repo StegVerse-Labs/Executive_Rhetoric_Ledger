@@ -12,15 +12,15 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 - Mirror root: `mirrors/sv-llm-ecosystem-chat-issue-9/`
 - Mirror authorization: owner direction recorded in source-issue comment `6429784312` ("Deferred public research publication — ERL mirror and Site pages"), which requires a 100% mirror — issue body, full comment chronology, multi-LLM contributions, competing claims, corrections, final adversarial review, and subsequent clarifications — with authorship, source URLs, stable identifiers, provenance, publicly appropriate redactions, and explicitly recorded authorized omissions. "A summary or link alone is not a 100% mirror."
 - Canonical coordination owner: ERL issue #251 (research-candidate owner; append-only delta lane)
-- Task Registry registration: PROPOSED as `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` in StegVerse-Labs/.github PR #3373 (registration plan/apply ALLOW locally, COSV `10100000110000`, generation 321→322); transported to #3373 and independently verified byte-identical (tree c4c3b3b3 at aa741bd0); not merged at this revision, so registration is not yet admitted
+- Task Registry registration: ADMITTED as `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` — StegVerse-Labs/.github PR #3373 merged at expected head `9dce84f2` → `0fff5f55`; Registry generation 322, coordination_state PROPOSED, COSV `10100000110000`, WorkerCoordinator claim/fence null (registration is not execution authority). ERL main-merge exemption `REPOSITORY_MAIN_MERGE_TRANSFER_NOT_INSTALLED` is on file in `data/organization-role-exemption-register.json`
 
 ## Governing state
 
-- Mirror lifecycle: frozen batch 0001–0058 verified (ERL PR #249, exact head `c3116e5e`: 58/58 bodies, 63/63 manifest blobs, two independent readbacks); append-only delta 0059–0078 installed under #251
+- Mirror lifecycle: frozen batch 0001–0058 MERGED (ERL PR #249 at `c3116e5e` → `5b55da3c`; 58/58 bodies, 63/63 manifest blobs, two independent readbacks); delta 1 0059–0078 MERGED (ERL PR #253 at `16fe6167` → `8daf6a01`; ChatGPT review 5690446174, Kimi readback PASS 6484885831); delta 2 0079–0101 in ERL PR #254 (pending non-author readback); Claude CBOC records MERGED (ERL PR #247 at `878da1b8` → `e6b2193d`)
 - Case status of the underlying research: `evidence_solicitation_phase_closed` (source comment `6428361696`); provisional evidence baseline frozen; bounded custody work continuing
 - Motive finding authorized: false
 - Legal/culpability finding authorized: false (source issue maintains an explicit Zone 3 legal gate; independent legal review required before any cause-of-action language)
-- Publication authorized for the manuscript: false. v1.0 bytes are in KV custody with two readbacks; v1.0.1 is committed to Site PR #1633 (draft, non-ALLOW; SPPA FAIL_CLOSED pending the Q74-01 custody basis)
+- Publication authorized for the manuscript: false. v1.0 bytes are in KV custody with two readbacks; v1.0.1 is committed to Site PR #1633 and an editorial v1.0.2 is staged (draft, non-ALLOW; SPPA FAIL_CLOSED pending the Q74-01 custody basis)
 - Publication authorized for THIS MIRROR: true, per comment `6429784312`, subject to the redaction and omission rules below
 
 ## Content boundaries (binding on this lane)
