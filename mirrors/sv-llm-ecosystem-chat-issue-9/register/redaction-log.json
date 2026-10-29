@@ -4,9 +4,9 @@
   "source": "SV-LLM/Ecosystem_Chat issue #9 (private repository)",
   "mirror_authorization": "source issue comment 6429784312",
   "review_date": "2026-10-28",
-  "reviewer": "Kimi (mirror construction, objects 1-59); Claude (append-only delta 0059-0078, owner issue #251); pending non-author verification",
-  "objects_reviewed": 79,
-  "objects_redacted": 3,
+  "reviewer": "Kimi (mirror construction, objects 1-59); Claude (append-only deltas 0059-0078 and 0079-0101, owner issue #251); delta 1 non-author readbacks: ChatGPT review 5690446174, Kimi PASS 6484885831",
+  "objects_reviewed": 102,
+  "objects_redacted": 4,
   "redactions": [
     {
       "id": "RD-1",
@@ -34,6 +34,15 @@
       "detail": "collapsed <details> block reproducing file content proposed for or derived from the private repository StegVerse-Labs/.github (registration manifest, exemption entries, or git patch)",
       "removed_bytes": 28431,
       "removed_sha256": "7f1b333bc953a687e246db1f27c968864799de8864f1a50925238e741e0419ca"
+    },
+    {
+      "id": "RD-4",
+      "comment_id": 6483634671,
+      "mirror_file_number": "0085",
+      "class": "PRIVATE_REPOSITORY_FILE_CONTENT",
+      "detail": "collapsed <details> block reproducing the v2 two-commit git patch for the private repository StegVerse-Labs/.github (Registry diff and fixtures)",
+      "removed_bytes": 28433,
+      "removed_sha256": "de59e9b7e5853cc069a1263d93f2d279278050c6e3f1a9c09e69cf290276871a"
     }
   ],
   "review_notes": [
@@ -47,6 +56,7 @@
     "Comments 6467100743 (0059) through 6480611475 (0078) are the post-freeze append-only delta mirrored under owner issue #251 (source fetched 2026-10-28 ~21:10Z). All 20 bodies are verbatim except the three logged redactions.",
     "RD-1..RD-3 remove collapsed <details> blocks in comments 0068, 0069 and 0071 that reproduce file content proposed for or derived from the private repository StegVerse-Labs/.github (a canonical registration manifest, two exemption-register entries, and a two-commit git patch including the 1.25 MB Registry diff). The mirror authorization covers the text record of SV-LLM/Ecosystem_Chat#9, not the contents of another private repository; each removed block is identified by byte length and sha256 so the source text can be verified against the private record. The surrounding prose, hashes, commit IDs, results and dispositions are retained verbatim.",
     "Correction to an earlier note: Data-Continuation/StegClaw is a private repository (REST API reports private: true as of 2026-10-28); references to it in mirrored text are repository names only, with no content reproduced.",
-    "Drive file/folder identifiers of the EC9_PUBLICATION_HANDOFF custody bridge appear in delta comments; they were already published as owner-published custody-bridge identifiers in the frozen batch (see README)."
+    "Drive file/folder identifiers of the EC9_PUBLICATION_HANDOFF custody bridge appear in delta comments; they were already published as owner-published custody-bridge identifiers in the frozen batch (see README).",
+    "Comments 6480718345 (0079) through 6485202417 (0101) are append-only delta 2 under owner issue #251 (source fetched 2026-10-29 ~01:55Z). All 23 bodies verbatim except RD-4, which removes the collapsed <details> block in 0085 reproducing the v2 two-commit git patch for private StegVerse-Labs/.github, logged with byte length and sha256."
   ]
 }
