@@ -321,3 +321,8 @@ Research candidate `assessments/machine/2026-10-23-chatgpt-tennessee-voting-mach
 Canonical Goal `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` (COSV `10100000110000`) owns the [EC9 research-process mirror](mirrors/sv-llm-ecosystem-chat-issue-9/README.md) and [scoped handoff](docs/AI_FAILURE_ACCOUNTING_MIRROR_HANDOFF.md), coordinated in [issue #251](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/251). The merged baseline covers comments 0001–0111 through PR #257 (`855c1237`); delta 5 appends 0112–0113 for independent review. The manifest states the precise coverage. Four redactions and seven authorized omissions remain preserved.
 
 Registry identity is registered at generation 322 with coordination state `PROPOSED` and no WorkerCoordinator claim/fence. The public process mirror does not authorize the manuscript: Site #1633 remains draft and `NOT_ALLOWED` pending authentic Q74-01 custody and SPPA authorization. Coordination Drive pointers are not sovereign KV receipts. Later source comments are bounded maintenance, not an indefinite publication dependency.
+
+
+## EC9 publication continuity checkpoint
+
+The authorized EC9 process mirror is complete through comments 0001–0113 (PR #258, merge `7ac28e23`; owner closure in [issue #251](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/251#issuecomment-6492450128)). Site #1633 contains reviewed v1.0.3 but remains NOT_ALLOWED pending authentic custody, Registry reconciliation and exact-head SPPA authorization. See the [canonical EC9 mirror handoff](docs/AI_FAILURE_ACCOUNTING_MIRROR_HANDOFF.md) for current artifact identities and owner actions. This status correction changes no mirrored evidence or publication authority.
