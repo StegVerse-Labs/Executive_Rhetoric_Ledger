@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 71,
-  "pending_candidate_count": 622,
-  "pending_sha256": "b17e55f4556567716a906b59c0aba32a3f713a0d64fbd469b3e10b40fbc6ec5e",
+  "intake_cycles": 72,
+  "pending_candidate_count": 639,
+  "pending_sha256": "57a7bdd087294551919d987dc2d576696be2c7fb6c252521d68e9a87b3dd527b",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -76,10 +76,11 @@
     "43b6f0a788ac9e72fde5a24faf201dc22117def2",
     "cdfacd53ea64a70e501435f1c365d5f8c8099d88",
     "b856fd249eb6e44a3c2215f1552e7d2c0c3f6627",
-    "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef"
+    "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+    "d1c65770f695aa5e158b97336bf16abcdbba9614"
   ],
   "publication_authorized": false,
-  "scan_record_count": 130045,
+  "scan_record_count": 131870,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -161,15 +162,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 55,
-        "FAILED": 325,
-        "NO_UPDATE": 8545
+        "CANDIDATES_IDENTIFIED": 56,
+        "FAILED": 330,
+        "NO_UPDATE": 8664
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 69,
+      "pending_candidate_count": 73,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -791,18 +792,54 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Thai Supreme Court rules bitcoin is property after thief challenges conviction",
           "source_url": "https://www.coindesk.com/policy/2026/10/29/thai-supreme-court-rules-bitcoin-is-property-after-thief-challenges-conviction"
+        },
+        {
+          "candidate_id": "SRC-51d702937dac8849639cd5a4",
+          "custody_pointer": "RSRCH-df1839efcaecef061600d8ee",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto for Advisors: Only 1 in 5 Americans say the financial system is secure",
+          "source_url": "https://www.coindesk.com/coindesk-indices/2026/10/29/crypto-for-advisors-only-1-in-5-americans-say-the-financial-system-is-secure"
+        },
+        {
+          "candidate_id": "SRC-910b1769cf5c3649ac549b11",
+          "custody_pointer": "RSRCH-8147f81a12d5e34ca9d8a458",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun's HTX Agrees to Leave UK in Settlement With Financial Watchdog",
+          "source_url": "https://decrypt.co/382138/justin-suns-htx-agrees-to-leave-uk-in-settlement-with-financial-watchdog"
+        },
+        {
+          "candidate_id": "SRC-faa513530295ac933dadf248",
+          "custody_pointer": "RSRCH-b586bba5178d9050bee066d9",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "KuCoin exits Russia and Belarus as crypto exchanges withdraw from Western-sanctioned markets",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/kucoin-exits-russia-and-belarus-as-crypto-exchanges-withdraw-from-western-sanctioned-markets"
+        },
+        {
+          "candidate_id": "SRC-78871698fdd48c3a58814165",
+          "custody_pointer": "RSRCH-b586bba5178d9050bee066d9",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchange HTX exits the UK after settling with the FCA",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 472,
-        "FAILED": 390,
-        "NO_UPDATE": 9848
+        "CANDIDATES_IDENTIFIED": 479,
+        "FAILED": 396,
+        "NO_UPDATE": 9985
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 104,
+      "pending_candidate_count": 109,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1739,12 +1776,57 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin long-term resistance in focus as analysis sees selling risk above $85K",
           "source_url": "https://cointelegraph.com/markets/bitcoin-long-term-resistance-in-focus-as-analysis-sees-selling-risk-above-85k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-98799405b8dc786847b2075b",
+          "custody_pointer": "RSRCH-750bd5f2c3b2cac7fe337c2d",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "KuCoin exits Russia and Belarus as crypto exchanges withdraw from Western-sanctioned markets",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/kucoin-exits-russia-and-belarus-as-crypto-exchanges-withdraw-from-western-sanctioned-markets"
+        },
+        {
+          "candidate_id": "SRC-6b68a215516f8d542c7f1778",
+          "custody_pointer": "RSRCH-750bd5f2c3b2cac7fe337c2d",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchange HTX exits the UK after settling with the FCA",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca"
+        },
+        {
+          "candidate_id": "SRC-0955293570f7990b1a7314cb",
+          "custody_pointer": "RSRCH-f5bf1148043d8c00d0b9a2dd",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin price jumps to $81.5K as US GDP data beats expectations",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-reaction-to-pce-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-cef40e36f204b6b0868e0c26",
+          "custody_pointer": "RSRCH-61299844c05ab6c1d3c5e337",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "$11 Billion in Bitcoin Options Expire Tomorrow\u2014Here's What It Means",
+          "source_url": "https://decrypt.co/382171/11-billion-bitcoin-options-expire-tomorrow-what-means"
+        },
+        {
+          "candidate_id": "SRC-92a8e62e76782327e0d3da8e",
+          "custody_pointer": "RSRCH-61299844c05ab6c1d3c5e337",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "4M Bitcoin Bought Above $85K Could Cap Recovery: Glassnode",
+          "source_url": "https://decrypt.co/382161/4m-bitcoin-bought-above-85k-could-cap-recovery-glassnode"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 497,
-        "FAILED": 325,
-        "NO_UPDATE": 8103
+        "CANDIDATES_IDENTIFIED": 504,
+        "FAILED": 330,
+        "NO_UPDATE": 8216
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2042,15 +2124,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 446,
-        "FAILED": 390,
-        "NO_UPDATE": 9874
+        "CANDIDATES_IDENTIFIED": 452,
+        "FAILED": 396,
+        "NO_UPDATE": 10012
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 15,
+      "pending_candidate_count": 20,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2186,12 +2268,57 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance files for Brazil crypto license ahead of Friday deadline",
           "source_url": "https://cointelegraph.com/news/binance-brazil-crypto-license-oct-30-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-51aa8bc71c294f57081b9f65",
+          "custody_pointer": "RSRCH-d02eab3ccc559598cced7b24",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchange HTX exits the UK after settling with the FCA",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca"
+        },
+        {
+          "candidate_id": "SRC-ae81b2a465c1053cff89747b",
+          "custody_pointer": "RSRCH-6cf49588c5a3b92dc818b761",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun's HTX Agrees to Leave UK in Settlement With Financial Watchdog",
+          "source_url": "https://decrypt.co/382138/justin-suns-htx-agrees-to-leave-uk-in-settlement-with-financial-watchdog"
+        },
+        {
+          "candidate_id": "SRC-005b51a099a91bfe6f86c345",
+          "custody_pointer": "RSRCH-d2456d20d904a80d71ad425e",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun's HTX Agrees to Leave UK in Settlement With Financial Watchdog",
+          "source_url": "https://decrypt.co/382138/justin-suns-htx-agrees-to-leave-uk-in-settlement-with-financial-watchdog"
+        },
+        {
+          "candidate_id": "SRC-06466a3bc139bbb96d0a1c14",
+          "custody_pointer": "RSRCH-4851d84ce50788aa5799fe6e",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "regulatory case chronology",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "HTX agrees to halt unlawful UK crypto promotions after FCA case",
+          "source_url": "https://cointelegraph.com/news/htx-halt-unlawful-uk-crypto-promotions-fca?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a830cc8765831908bcb3eb6e",
+          "custody_pointer": "RSRCH-31240bf266778ac0345aafce",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "regulatory case chronology",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun's HTX Agrees to Leave UK in Settlement With Financial Watchdog",
+          "source_url": "https://decrypt.co/382138/justin-suns-htx-agrees-to-leave-uk-in-settlement-with-financial-watchdog"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 146,
-        "FAILED": 390,
-        "NO_UPDATE": 10174
+        "CANDIDATES_IDENTIFIED": 152,
+        "FAILED": 396,
+        "NO_UPDATE": 10312
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2345,9 +2472,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 121,
-        "FAILED": 455,
-        "NO_UPDATE": 11919
+        "CANDIDATES_IDENTIFIED": 122,
+        "FAILED": 462,
+        "NO_UPDATE": 12086
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2870,9 +2997,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 209,
-        "FAILED": 390,
-        "NO_UPDATE": 10111
+        "CANDIDATES_IDENTIFIED": 210,
+        "FAILED": 396,
+        "NO_UPDATE": 10254
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4124,9 +4251,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1055,
-        "FAILED": 325,
-        "NO_UPDATE": 7545
+        "CANDIDATES_IDENTIFIED": 1069,
+        "FAILED": 330,
+        "NO_UPDATE": 7651
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4244,15 +4371,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 205,
-        "FAILED": 453,
-        "NO_UPDATE": 11577
+        "CANDIDATES_IDENTIFIED": 208,
+        "FAILED": 460,
+        "NO_UPDATE": 11742
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 118,
+      "pending_candidate_count": 121,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5315,12 +5442,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Former Swift CEO joins stablecoin firm OpenTrade as chairman",
           "source_url": "https://www.coindesk.com/business/2026/10/29/former-swift-ceo-joins-stablecoin-firm-opentrade-as-chairman-after-a-usd17-million-raise"
+        },
+        {
+          "candidate_id": "SRC-c7486bb24e0524472ce043b4",
+          "custody_pointer": "RSRCH-1aab3b536b651a33ee1e0fcd",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Polymarket brings ultra-short crypto prediction markets to U.S. platform",
+          "source_url": "https://www.coindesk.com/markets/2026/10/29/polymarket-brings-ultra-short-crypto-prediction-markets-to-u-s-platform"
+        },
+        {
+          "candidate_id": "SRC-1690239ddd309a70c5e74161",
+          "custody_pointer": "RSRCH-1f1c7cb5dc3131d26bf7cfb4",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchange HTX exits the UK after settling with the FCA",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca"
+        },
+        {
+          "candidate_id": "SRC-19a2c832dc47834e9c85f246",
+          "custody_pointer": "RSRCH-7a551ebc529adaff852bdd4f",
+          "producer_commit": "d1c65770f695aa5e158b97336bf16abcdbba9614",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "HTX agrees to halt unlawful UK crypto promotions after FCA case",
+          "source_url": "https://cointelegraph.com/news/htx-halt-unlawful-uk-crypto-promotions-fca?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 988,
-        "FAILED": 390,
-        "NO_UPDATE": 9332
+        "CANDIDATES_IDENTIFIED": 1004,
+        "FAILED": 396,
+        "NO_UPDATE": 9460
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5537,9 +5691,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 249,
-        "FAILED": 390,
-        "NO_UPDATE": 10071
+        "CANDIDATES_IDENTIFIED": 252,
+        "FAILED": 396,
+        "NO_UPDATE": 10212
       }
     },
     "wlf-positive-adoption-radar": {
@@ -5819,9 +5973,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 177,
-        "FAILED": 520,
-        "NO_UPDATE": 13583
+        "CANDIDATES_IDENTIFIED": 178,
+        "FAILED": 528,
+        "NO_UPDATE": 13774
       }
     }
   }
