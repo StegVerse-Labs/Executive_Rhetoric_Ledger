@@ -6,6 +6,10 @@ on:
       - "config/us-china-ai-summit-source-queue.v1.json"
       - "scripts/run_us_china_ai_summit_research.py"
       - "tests/test_us_china_ai_summit_research.py"
+      - "tests/test_empty_intake_regression.py"
+      - "tests/test_summit_workflow_attempt.py"
+      - "tests/test_workflow_integration.py"
+      - "scripts/run_summit_workflow_attempt.py"
       - "coordination/research-candidate-activation-registry.v1.json"
       - "docs/US_CHINA_AI_SUMMIT_2026_RESEARCH_MIRROR_HANDOFF.md"
       - ".github/workflows/run-us-china-ai-summit-research.yml"
@@ -16,6 +20,10 @@ on:
       - "config/us-china-ai-summit-source-queue.v1.json"
       - "scripts/run_us_china_ai_summit_research.py"
       - "tests/test_us_china_ai_summit_research.py"
+      - "tests/test_empty_intake_regression.py"
+      - "tests/test_summit_workflow_attempt.py"
+      - "tests/test_workflow_integration.py"
+      - "scripts/run_summit_workflow_attempt.py"
   workflow_dispatch:
 
 permissions:
@@ -30,7 +38,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Test actual autonomous candidate acquisition logic offline
-        run: python -m unittest -v tests.test_us_china_ai_summit_research
+        run: python -m unittest -v tests.test_us_china_ai_summit_research tests.test_empty_intake_regression tests.test_summit_workflow_attempt tests.test_workflow_integration
       - name: Validate live registry dispatch eligibility
         run: |
           python scripts/generate_active_research_dispatch.py \
