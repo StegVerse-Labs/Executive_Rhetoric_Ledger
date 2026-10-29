@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 70,
-  "pending_candidate_count": 616,
-  "pending_sha256": "ae16cc74a3d0e3403b358d72d736fafff101ff31a4344c30a6afcda1afab757a",
+  "intake_cycles": 71,
+  "pending_candidate_count": 622,
+  "pending_sha256": "b17e55f4556567716a906b59c0aba32a3f713a0d64fbd469b3e10b40fbc6ec5e",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -75,10 +75,11 @@
     "83a71823dcca57c75fec33598c40c5d5a08491b9",
     "43b6f0a788ac9e72fde5a24faf201dc22117def2",
     "cdfacd53ea64a70e501435f1c365d5f8c8099d88",
-    "b856fd249eb6e44a3c2215f1552e7d2c0c3f6627"
+    "b856fd249eb6e44a3c2215f1552e7d2c0c3f6627",
+    "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef"
   ],
   "publication_authorized": false,
-  "scan_record_count": 128220,
+  "scan_record_count": 130045,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -160,15 +161,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 54,
-        "FAILED": 320,
-        "NO_UPDATE": 8426
+        "CANDIDATES_IDENTIFIED": 55,
+        "FAILED": 325,
+        "NO_UPDATE": 8545
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 68,
+      "pending_candidate_count": 69,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -781,18 +782,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Your fridge could one day stake Ether, launch memecoins: CFTC chair",
           "source_url": "https://cointelegraph.com/news/a-fridge-that-launches-memecoins-cftc-floats-ai-crypto-future?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-69f1ac8acb95fbe9b782f155",
+          "custody_pointer": "RSRCH-26c17e7575c15777a5bc29f7",
+          "producer_commit": "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Thai Supreme Court rules bitcoin is property after thief challenges conviction",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/thai-supreme-court-rules-bitcoin-is-property-after-thief-challenges-conviction"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 466,
-        "FAILED": 384,
-        "NO_UPDATE": 9710
+        "CANDIDATES_IDENTIFIED": 472,
+        "FAILED": 390,
+        "NO_UPDATE": 9848
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 102,
+      "pending_candidate_count": 104,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1711,12 +1721,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Fed\u2019s hawkish rate hold keeps pressure on Bitcoin: Analysts",
           "source_url": "https://cointelegraph.com/markets/bitcoin-faces-fresh-pressure-after-feds-hawkish-rate-hold-analysts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f14b7d7a038acc605c01ae73",
+          "custody_pointer": "RSRCH-b2fee1ebdb186069c2632c24",
+          "producer_commit": "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Thai Supreme Court rules bitcoin is property after thief challenges conviction",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/thai-supreme-court-rules-bitcoin-is-property-after-thief-challenges-conviction"
+        },
+        {
+          "candidate_id": "SRC-26c06d5a9efe4e5a488ffe42",
+          "custody_pointer": "RSRCH-e2bac4478ce8a8b82ed19817",
+          "producer_commit": "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin long-term resistance in focus as analysis sees selling risk above $85K",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-long-term-resistance-in-focus-as-analysis-sees-selling-risk-above-85k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 490,
-        "FAILED": 320,
-        "NO_UPDATE": 7990
+        "CANDIDATES_IDENTIFIED": 497,
+        "FAILED": 325,
+        "NO_UPDATE": 8103
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2014,9 +2042,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 442,
-        "FAILED": 384,
-        "NO_UPDATE": 9734
+        "CANDIDATES_IDENTIFIED": 446,
+        "FAILED": 390,
+        "NO_UPDATE": 9874
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2161,9 +2189,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 145,
-        "FAILED": 384,
-        "NO_UPDATE": 10031
+        "CANDIDATES_IDENTIFIED": 146,
+        "FAILED": 390,
+        "NO_UPDATE": 10174
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2317,9 +2345,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 120,
-        "FAILED": 448,
-        "NO_UPDATE": 11752
+        "CANDIDATES_IDENTIFIED": 121,
+        "FAILED": 455,
+        "NO_UPDATE": 11919
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -2842,15 +2870,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 208,
-        "FAILED": 384,
-        "NO_UPDATE": 9968
+        "CANDIDATES_IDENTIFIED": 209,
+        "FAILED": 390,
+        "NO_UPDATE": 10111
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 136,
+      "pending_candidate_count": 138,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4075,12 +4103,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Both blocs claim upper hand in crucial Israeli election | First Thing",
           "source_url": "https://www.theguardian.com/us-news/2026/oct/28/first-thing-israeli-election-elon-musk-ai-odyssey"
+        },
+        {
+          "candidate_id": "SRC-946e087912a47d522514e022",
+          "custody_pointer": "RSRCH-fb972a61db344235dd0ec59b",
+          "producer_commit": "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Additional Reconsideration Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/29/2026-22082/additional-reconsideration-standards-of-performance-for-new-reconstructed-and-modified-sources-and"
+        },
+        {
+          "candidate_id": "SRC-237369c7562cc7a84bf996eb",
+          "custody_pointer": "RSRCH-62adfe70697f8fec1fdbc9f4",
+          "producer_commit": "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Additional Reconsideration Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/29/2026-22082/additional-reconsideration-standards-of-performance-for-new-reconstructed-and-modified-sources-and"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1039,
-        "FAILED": 320,
-        "NO_UPDATE": 7441
+        "CANDIDATES_IDENTIFIED": 1055,
+        "FAILED": 325,
+        "NO_UPDATE": 7545
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4198,15 +4244,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 203,
-        "FAILED": 446,
-        "NO_UPDATE": 11411
+        "CANDIDATES_IDENTIFIED": 205,
+        "FAILED": 453,
+        "NO_UPDATE": 11577
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 117,
+      "pending_candidate_count": 118,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5260,12 +5306,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto PAC spending before midterms possibly obscured after reported FEC hack",
           "source_url": "https://cointelegraph.com/news/crypto-pac-spending-midterms-fec-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f195e219d6daaf2bb236eabe",
+          "custody_pointer": "RSRCH-6ca85ee5262ce35a480363d8",
+          "producer_commit": "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Former Swift CEO joins stablecoin firm OpenTrade as chairman",
+          "source_url": "https://www.coindesk.com/business/2026/10/29/former-swift-ceo-joins-stablecoin-firm-opentrade-as-chairman-after-a-usd17-million-raise"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 972,
-        "FAILED": 384,
-        "NO_UPDATE": 9204
+        "CANDIDATES_IDENTIFIED": 988,
+        "FAILED": 390,
+        "NO_UPDATE": 9332
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5482,9 +5537,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 247,
-        "FAILED": 384,
-        "NO_UPDATE": 9929
+        "CANDIDATES_IDENTIFIED": 249,
+        "FAILED": 390,
+        "NO_UPDATE": 10071
       }
     },
     "wlf-positive-adoption-radar": {
@@ -5764,9 +5819,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 176,
-        "FAILED": 512,
-        "NO_UPDATE": 13392
+        "CANDIDATES_IDENTIFIED": 177,
+        "FAILED": 520,
+        "NO_UPDATE": 13583
       }
     }
   }
