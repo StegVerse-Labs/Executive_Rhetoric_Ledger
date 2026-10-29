@@ -314,3 +314,7 @@ Mr. Global attribution correction (2026-10-18): the owner recalls a video summar
 ### October 23, 2026 — Tennessee voting-machine answer framing
 
 Research candidate `assessments/machine/2026-10-23-chatgpt-tennessee-voting-machine-framing.json` records the assistant's introduction and rebuttal of an unasserted deliberate-manipulation allegation, subsequent qualification of the reverse-direction comparison, and failure to consult existing ERL records before addressing the user's longitudinal concern. Owned by Issue #212 / `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Event-level framing failures are observed; system-wide political bias, motive, election-machine causation, and publication are not established. Verbatim custody, matched controls, and independent review remain pending.
+
+### October 28, 2026 — ERL native research automation continuation
+
+ERL #245 is coordinated by `docs/ERL_NATIVE_RESEARCH_AUTOMATION_MIRROR_HANDOFF.md` (draft PR #255). Reuse the existing Trumpality six-hour trajectory acquisition and ERL pinned-commit intake; #223 records prior successful producer, intake and custody transitions. The current ERL consumer is hardcoded to the Trump-family crypto group and must be generalized through authenticated existing-owner scope, with two-lane negative tests and sovereign readback. No new source execution or protected merge is claimed by the coordination draft. Related research intake: #252.
