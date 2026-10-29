@@ -1,0 +1,65 @@
+{
+  "schema": "erl-mirror-authorized-omissions/v1",
+  "mirror_id": "ERL-MIRROR-EC9",
+  "source": "SV-LLM/Ecosystem_Chat issue #9 (private repository)",
+  "authorization": "source issue comment 6429784312: 'Protect private screenshots/account details and record authorized omissions explicitly.'",
+  "principle": "An explicitly recorded omission is part of the mirror, not a gap in it. No omission removes a claim, correction, or dissent from the mirrored text record.",
+  "omissions": [
+    {
+      "id": "OM-1",
+      "class": "private_screenshot_bytes",
+      "objects": "Nine customer usage-interface screenshots IMG_4077.png through IMG_4085.png",
+      "status_in_source": "Never attached to the source issue; described textually in source comment 6428143199 (mirrored); SHA-256 hashed locally per source comment 6429843530 and the v0.6 manuscript evidence appendix",
+      "reason": "Private account UI; publication requires separate owner approval per image",
+      "disposition": "Textual descriptions mirrored in full; image bytes omitted"
+    },
+    {
+      "id": "OM-2",
+      "class": "private_screenshot_bytes",
+      "objects": "Case A exhibit IMG_4068.png (Kimi failure/refund message); Case A extension exhibits IMG_4070.png-IMG_4075.png; Case B exhibit C1AFD2B5-AF68-4B20-BEDB-C18A1126338E.png (ChatGPT PDF download failure)",
+      "status_in_source": "Held in the originating conversation; never attached to the source issue; described textually in the issue body and comments 6425482337, 6425503552 (mirrored)",
+      "reason": "Private account UI; publication requires separate owner approval per image",
+      "disposition": "Textual descriptions mirrored in full; image bytes omitted"
+    },
+    {
+      "id": "OM-3",
+      "class": "gated_internal_records",
+      "objects": "Contents of ERL Case C source records cited in source comment 6426915816 (assessments/machine/*.json and governance-patterns/*.md, this repository)",
+      "status_in_source": "Records are public in this repository but carry finding_authorized: false / publication_authorized: false gates and research_candidate status; some carry verbatim_transcript_custody_complete: false",
+      "reason": "ERL's own publication gate (source comments 6427349734 L1, 6427370281, 6427861641): locator-only citation until the gate clears; the mirror must not become a republication channel that bypasses the gate",
+      "disposition": "Cited by path/commit locator only; contents not reproduced in mirror-derived publications"
+    },
+    {
+      "id": "OM-4",
+      "class": "gated_internal_records",
+      "objects": "Contents of ERL Case C-2 records on PR #247 (head 8ae786bc, unmerged at mirror time): ERL-2026-10-26-CLAUDE-SESSION-PARTIAL-READ-SERIES.json and ERL-2026-10-26-CLAUDE-PRIOR-SESSION-RETROSPECTIVE.json",
+      "status_in_source": "Unmerged PR at mirror time; peer-merge pending",
+      "reason": "Same publication gate as OM-3; plus unmerged-branch custody caveat (pin commit hash; update locator on merge)",
+      "disposition": "Cited by PR/commit locator only"
+    },
+    {
+      "id": "OM-5",
+      "class": "private_conversation_data",
+      "objects": "Originating-conversation content: user prompts, session transcripts, and any material not posted to the source issue",
+      "status_in_source": "Never in the source issue",
+      "reason": "Private conversation data; source issue governance prohibits publication of private conversation data",
+      "disposition": "Omitted in full"
+    },
+    {
+      "id": "OM-6",
+      "class": "local_binary_artifacts",
+      "objects": "Manuscript binaries, all versions announced in the source issue: v0.6 (DOCX 67fefacf...82a2; canonical reviewed PDF 76dbb4ce...f649; earlier announced PDF hash f60a8646...7766 unreconciled per comment 6430966408; public article adf510ca...feeb); v0.7 condensed brief (DOCX 6a5501b0...cb74; PDF ace26450...f66c; article 42c75caf...61dd); v0.8 (DOCX dcec62cd...e1dc; PDF c5b88abc...5b3d); v0.9 (DOCX 279c120b...74ae; PDF 75fc1091...a587); v1.0 (DOCX 38a15af1...a9; PDF aa6df6fb...c7); final 19-page edition (DOCX 2a93dd96...c81; canonical PDF db163e29...565f per comment 6432565196 — earlier final-edition PDF hash 7f08ae39...5f07 superseded, must not be used; reference Python f50fb1d1...a759)",
+      "status_in_source": "Local artifacts announced in source comments 6429843530, 6430966408, 6431936701, 6431962677, 6432012488, 6432435970, 6432565196; never committed to repository custody; the source record expressly disclaims GitHub binary custody and readback",
+      "reason": "Repository custody and readback not performed; hashes are recorded for later verification; the mirror must not become a binary-custody claim the source record does not make",
+      "disposition": "Hashes and provenance mirrored; binaries omitted pending custody"
+    },
+    {
+      "id": "OM-7",
+      "class": "local_binary_artifacts",
+      "objects": "Site candidate package announced in source comment 6432565196: research.html, papers/when-ai-services-fail/index.html, the exact final PDF and DOCX, assembled as a downloadable ZIP in the authoring conversation",
+      "status_in_source": "Prepared locally; the source comment expressly claims no repository commit, live Site deployment, or sovereign readback",
+      "reason": "Same custody principle as OM-6; additionally, Site publication follows Site's PUBLICATION_PROCESS.md owner lane, not this mirror",
+      "disposition": "Package contents and status mirrored as text; package bytes omitted pending the Site owner lane"
+    }
+  ]
+}

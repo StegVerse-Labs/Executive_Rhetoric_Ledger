@@ -1,0 +1,25 @@
+{
+  "schema": "stegverse.executive_rhetoric_ledger.research_candidate_activation_registry_overlay.v1",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "repository_authority": "ERL_MIRROR_HANDOFF.md",
+  "base_registry": "coordination/research-candidate-activation-registry.v1.json",
+  "groups": [
+    {
+      "group_id": "ERL-RC-AI-FAILURE-COMPUTE-ACCOUNTING-MIRROR-2026",
+      "title": "AI failure-aware compute accounting research — SV-LLM/Ecosystem_Chat#9 process mirror",
+      "candidate_paths": [
+        "research-candidates/2026-10-26-ai-failure-compute-accounting-mirror.md"
+      ],
+      "active": true,
+      "state": "RESEARCH_ACTIVE",
+      "durable_owner": "issue:251",
+      "artifact_paths": [
+        "docs/AI_FAILURE_ACCOUNTING_MIRROR_HANDOFF.md"
+      ],
+      "next_executable_task": "Owner review and merge decision on PR #249 (mirror of SV-LLM/Ecosystem_Chat#9, including adjudication of the deferral language in source comment 6431772946), then independent byte readback of the merged mirror against mirrors/sv-llm-ecosystem-chat-issue-9/manifest.json.",
+      "terminal_condition": "Mirror merged to main, independently read back against the manifest, and the lane explicitly promoted, superseded, merged, or closed with reason; subsequent source-issue comments continue to be mirrored as maintenance under issue:251.",
+      "candidate_layer_finding_authorized": false,
+      "candidate_layer_publication_authorized": false
+    }
+  ]
+}
