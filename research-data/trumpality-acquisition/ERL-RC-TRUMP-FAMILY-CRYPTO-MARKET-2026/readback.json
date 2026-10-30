@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 75,
-  "pending_candidate_count": 666,
-  "pending_sha256": "733f42acadd5488aa15a9e4c80e4fe003ee2587d06026b07241c0874bb13e8e6",
+  "intake_cycles": 76,
+  "pending_candidate_count": 679,
+  "pending_sha256": "ee5b3e1f3e18af8efdc360d8e96f1f4d4c71f0311a95523e54d97affac85cd32",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -80,10 +80,11 @@
     "d1c65770f695aa5e158b97336bf16abcdbba9614",
     "8601f3d7d4369d2422031c96f46667a5ffac26d9",
     "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
-    "f5f3301b2a5bafec740f10b87a1e1c22daa948dc"
+    "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+    "ade8de3cfc17e1e223694d5d6a9c9859986f42f8"
   ],
   "publication_authorized": false,
-  "scan_record_count": 137345,
+  "scan_record_count": 139170,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -166,8 +167,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 345,
-        "NO_UPDATE": 9023
+        "FAILED": 350,
+        "NO_UPDATE": 9143
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -843,15 +844,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 499,
-        "FAILED": 414,
-        "NO_UPDATE": 10397
+        "CANDIDATES_IDENTIFIED": 505,
+        "FAILED": 420,
+        "NO_UPDATE": 10535
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 112,
+      "pending_candidate_count": 113,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1860,12 +1861,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance hacker\u2019s Bitcoin haul tops Coinbase\u2019s corporate treasury",
           "source_url": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-47d259cd590818c557e47897",
+          "custody_pointer": "RSRCH-933f35c404a1f9891d94554c",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto Biz: Bitcoin\u2019s quantum threat is becoming an economic problem",
+          "source_url": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 523,
-        "FAILED": 345,
-        "NO_UPDATE": 8557
+        "CANDIDATES_IDENTIFIED": 529,
+        "FAILED": 350,
+        "NO_UPDATE": 8671
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2163,15 +2173,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 474,
-        "FAILED": 414,
-        "NO_UPDATE": 10422
+        "CANDIDATES_IDENTIFIED": 480,
+        "FAILED": 420,
+        "NO_UPDATE": 10560
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 28,
+      "pending_candidate_count": 33,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2424,12 +2434,57 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance hit by $6.3B hack, the largest in cryptocurrency history",
           "source_url": "https://cointelegraph.com/news/binance-linked-wallet-faces-possible-exploit-blockchain-researcher-warns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-46776f052b07b20e910ab529",
+          "custody_pointer": "RSRCH-6d1cc70b667d43ac33322749",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Recap: How Binance\u2019s record $6.3B hack unfolded",
+          "source_url": "https://cointelegraph.com/news/recap-binances-record-63b-hack-unfolded?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2c8db1595cfb50643e106741",
+          "custody_pointer": "RSRCH-6d1cc70b667d43ac33322749",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance says it holds $5B in matching tokens to cover hack losses",
+          "source_url": "https://cointelegraph.com/news/binance-5-billion-replacement-crypto-in-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-d5734d94f9a1f8bd02c08e61",
+          "custody_pointer": "RSRCH-77272f2686fb844df1025df7",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Secret Service, FBI Join Binance Hack Probe as Circle Freezes $823 Million",
+          "source_url": "https://decrypt.co/382268/secret-service-fbi-binance-hack-probe"
+        },
+        {
+          "candidate_id": "SRC-28b41eaa9fa5ad85204e43dc",
+          "custody_pointer": "RSRCH-77272f2686fb844df1025df7",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Elon Musk, CZ Trade Blows Over SpaceX Shares After $6.4B Binance Hack",
+          "source_url": "https://decrypt.co/382236/elon-musk-cz-trade-blows-spacex-shares-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-dccda95fda2715ca389fbcb8",
+          "custody_pointer": "RSRCH-4dc7e8fb7049a98a41b8e266",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
+          "source_url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 177,
-        "FAILED": 414,
-        "NO_UPDATE": 10719
+        "CANDIDATES_IDENTIFIED": 186,
+        "FAILED": 420,
+        "NO_UPDATE": 10854
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2610,15 +2665,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 134,
-        "FAILED": 483,
-        "NO_UPDATE": 12578
+        "CANDIDATES_IDENTIFIED": 135,
+        "FAILED": 490,
+        "NO_UPDATE": 12745
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 59,
+      "pending_candidate_count": 60,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -3150,18 +3205,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
           "source_url": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens"
+        },
+        {
+          "candidate_id": "SRC-7f17856a822a3911de18ba89",
+          "custody_pointer": "RSRCH-bf779e9d9826f82f7bbf2d51",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto Biz: Bitcoin\u2019s quantum threat is becoming an economic problem",
+          "source_url": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 216,
-        "FAILED": 414,
-        "NO_UPDATE": 10680
+        "CANDIDATES_IDENTIFIED": 218,
+        "FAILED": 420,
+        "NO_UPDATE": 10822
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 146,
+      "pending_candidate_count": 150,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4476,12 +4540,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "This one chart tells you everything you need to know about Exxon, Chevron and BP\u2019s forecasting-beating earnings",
           "source_url": "https://www.marketwatch.com/story/this-one-chart-tells-you-everything-you-need-to-know-about-exxon-chevron-and-bps-forecasting-beating-earnings-24babdfc?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-2dfc94d95c1bcde91a11084f",
+          "custody_pointer": "RSRCH-ca95495328b6ec5bbf01ee59",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The Iran war is deepening the US energy crisis. A bad winter is ahead | Mark Wolfe",
+          "source_url": "https://www.theguardian.com/commentisfree/2026/oct/30/iran-war-energy-crisis-winter"
+        },
+        {
+          "candidate_id": "SRC-893094e01f73af03de8ad5f7",
+          "custody_pointer": "RSRCH-ca95495328b6ec5bbf01ee59",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "ExxonMobil and Chevron top estimates for Q3 as Americans feel gas price pain",
+          "source_url": "https://www.theguardian.com/business/2026/oct/30/exxonmobil-chevron-q3-results"
+        },
+        {
+          "candidate_id": "SRC-0d8b6663e6f53316cf150ec6",
+          "custody_pointer": "RSRCH-9d63b9aefce6d4409893b19e",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The Iran war is deepening the US energy crisis. A bad winter is ahead | Mark Wolfe",
+          "source_url": "https://www.theguardian.com/commentisfree/2026/oct/30/iran-war-energy-crisis-winter"
+        },
+        {
+          "candidate_id": "SRC-4b42415f315695dcbaf69acd",
+          "custody_pointer": "RSRCH-9d63b9aefce6d4409893b19e",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "ExxonMobil and Chevron top estimates for Q3 as Americans feel gas price pain",
+          "source_url": "https://www.theguardian.com/business/2026/oct/30/exxonmobil-chevron-q3-results"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1123,
-        "FAILED": 345,
-        "NO_UPDATE": 7957
+        "CANDIDATES_IDENTIFIED": 1141,
+        "FAILED": 350,
+        "NO_UPDATE": 8059
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4599,15 +4699,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 216,
-        "FAILED": 481,
-        "NO_UPDATE": 12238
+        "CANDIDATES_IDENTIFIED": 219,
+        "FAILED": 488,
+        "NO_UPDATE": 12403
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 123,
+      "pending_candidate_count": 125,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5715,12 +5815,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
           "source_url": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-6638d08cea92cc7ce643df2d",
+          "custody_pointer": "RSRCH-cd1c27bb6e8bdcdc4a1295ae",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Wall Street analysts urge investors to buy crypto stocks after $6.3 billion Binance hack",
+          "source_url": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-7109bdd1990f296587dfd06f",
+          "custody_pointer": "RSRCH-432e7d77624d1fd524c938ad",
+          "producer_commit": "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Coinbase leads crypto stock selloff following $6.3B Binance hack",
+          "source_url": "https://cointelegraph.com/markets/coinbase-leads-crypto-stock-selloff-shares-tumble?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1051,
-        "FAILED": 414,
-        "NO_UPDATE": 9845
+        "CANDIDATES_IDENTIFIED": 1063,
+        "FAILED": 420,
+        "NO_UPDATE": 9977
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5937,9 +6055,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 263,
-        "FAILED": 414,
-        "NO_UPDATE": 10633
+        "CANDIDATES_IDENTIFIED": 267,
+        "FAILED": 420,
+        "NO_UPDATE": 10773
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6220,8 +6338,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 184,
-        "FAILED": 552,
-        "NO_UPDATE": 14344
+        "FAILED": 560,
+        "NO_UPDATE": 14536
       }
     }
   }
