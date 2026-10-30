@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 73,
-  "pending_candidate_count": 649,
-  "pending_sha256": "59972c50547393d6d9aba395020d8ce7ac9f6ff9395039889ac0f7ee373b7827",
+  "intake_cycles": 74,
+  "pending_candidate_count": 659,
+  "pending_sha256": "361d540c0f1a862444613ef2452364525470709fb2ce4c157d97360f25c84625",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -78,10 +78,11 @@
     "b856fd249eb6e44a3c2215f1552e7d2c0c3f6627",
     "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
     "d1c65770f695aa5e158b97336bf16abcdbba9614",
-    "8601f3d7d4369d2422031c96f46667a5ffac26d9"
+    "8601f3d7d4369d2422031c96f46667a5ffac26d9",
+    "2920b0bda1f314ccedcc8de8902b9e3158f6095a"
   ],
   "publication_authorized": false,
-  "scan_record_count": 133695,
+  "scan_record_count": 135520,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -164,14 +165,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 335,
-        "NO_UPDATE": 8783
+        "FAILED": 340,
+        "NO_UPDATE": 8903
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 73,
+      "pending_candidate_count": 74,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -829,18 +830,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto exchange HTX exits the UK after settling with the FCA",
           "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca"
+        },
+        {
+          "candidate_id": "SRC-b7f8907d7db89a4c003c0f05",
+          "custody_pointer": "RSRCH-7c5a65ad273cc10a2d6933d8",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 487,
-        "FAILED": 402,
-        "NO_UPDATE": 10121
+        "CANDIDATES_IDENTIFIED": 493,
+        "FAILED": 408,
+        "NO_UPDATE": 10259
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 109,
+      "pending_candidate_count": 111,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1822,12 +1832,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "4M Bitcoin Bought Above $85K Could Cap Recovery: Glassnode",
           "source_url": "https://decrypt.co/382161/4m-bitcoin-bought-above-85k-could-cap-recovery-glassnode"
+        },
+        {
+          "candidate_id": "SRC-bdb4de94ba035ca11c72f3e2",
+          "custody_pointer": "RSRCH-a97598dc03383ed8b916ada8",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
+          "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths"
+        },
+        {
+          "candidate_id": "SRC-d6ea8920bb814ecea220f60a",
+          "custody_pointer": "RSRCH-f7bdb4c8dc73bbe3386eb158",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacity",
+          "source_url": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 511,
-        "FAILED": 335,
-        "NO_UPDATE": 8329
+        "CANDIDATES_IDENTIFIED": 517,
+        "FAILED": 340,
+        "NO_UPDATE": 8443
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2125,15 +2153,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 462,
-        "FAILED": 402,
-        "NO_UPDATE": 10146
+        "CANDIDATES_IDENTIFIED": 468,
+        "FAILED": 408,
+        "NO_UPDATE": 10284
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 22,
+      "pending_candidate_count": 26,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2332,12 +2360,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance Hacker Hunts for Exit Ramps as DeFi Exchanges Pause Markets",
           "source_url": "https://decrypt.co/382194/binance-hack-exit-ramps-defi-exchange-ethereum"
+        },
+        {
+          "candidate_id": "SRC-be82b99ecb59bacaf606e76d",
+          "custody_pointer": "RSRCH-c80b414348687eefe22aed91",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
+          "source_url": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity"
+        },
+        {
+          "candidate_id": "SRC-ca746d54fe7a0218a0392f59",
+          "custody_pointer": "RSRCH-c80b414348687eefe22aed91",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
+          "source_url": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-d2d053591faed0ed63a976b4",
+          "custody_pointer": "RSRCH-d93d2aea32eede6244785f52",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "North Korea\u2019s TraderTraitor linked to $6.3B Binance hack",
+          "source_url": "https://cointelegraph.com/news/north-korea-linked-to-63b-binance-hack-by-crypto-investigators?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-aeba9ea2fbd546885d3bcc89",
+          "custody_pointer": "RSRCH-b0259bd6642e4158de73c8d1",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "regulatory case chronology",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance hack could accelerate shift to DEXs: Standard Chartered",
+          "source_url": "https://cointelegraph.com/news/binance-hack-could-accelerate-shift-to-dexs-standard-chartered?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 160,
-        "FAILED": 402,
-        "NO_UPDATE": 10448
+        "CANDIDATES_IDENTIFIED": 168,
+        "FAILED": 408,
+        "NO_UPDATE": 10584
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2518,15 +2582,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 128,
-        "FAILED": 469,
-        "NO_UPDATE": 12248
+        "CANDIDATES_IDENTIFIED": 132,
+        "FAILED": 476,
+        "NO_UPDATE": 12412
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 57,
+      "pending_candidate_count": 59,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -3040,12 +3104,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Moody's Rates Ripple's $2.6B RLUSD Stablecoin A2, a Day After OCC Bank Approval",
           "source_url": "https://decrypt.co/382030/moodys-rates-ripples-2-6b-rlusd-stablecoin-a2-a-day-after-occ-bank-approval"
+        },
+        {
+          "candidate_id": "SRC-a248ac3f8f141aa825cc9863",
+          "custody_pointer": "RSRCH-c3987b51c23abc8af70175f6",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin, ether and XRP selloff wipes out $1.5 billion in leveraged crypto bets",
+          "source_url": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets"
+        },
+        {
+          "candidate_id": "SRC-df63d806571f4bf8a3d3e293",
+          "custody_pointer": "RSRCH-c3987b51c23abc8af70175f6",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
+          "source_url": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 212,
-        "FAILED": 402,
-        "NO_UPDATE": 10396
+        "CANDIDATES_IDENTIFIED": 214,
+        "FAILED": 408,
+        "NO_UPDATE": 10538
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4333,9 +4415,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1087,
-        "FAILED": 335,
-        "NO_UPDATE": 7753
+        "CANDIDATES_IDENTIFIED": 1103,
+        "FAILED": 340,
+        "NO_UPDATE": 7857
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4453,15 +4535,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 211,
-        "FAILED": 467,
-        "NO_UPDATE": 11907
+        "CANDIDATES_IDENTIFIED": 213,
+        "FAILED": 474,
+        "NO_UPDATE": 12073
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 122,
+      "pending_candidate_count": 123,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5560,12 +5642,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Coinbase Swings to $719 Million Q3 Profit on Crypto Gains",
           "source_url": "https://decrypt.co/382188/coinbase-beats-719-million-q3-profit-crypto-gains"
+        },
+        {
+          "candidate_id": "SRC-f2e4b1f650dacad0e1c89bee",
+          "custody_pointer": "RSRCH-bc7644e07e826633ae6523ac",
+          "producer_commit": "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
+          "source_url": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1020,
-        "FAILED": 402,
-        "NO_UPDATE": 9588
+        "CANDIDATES_IDENTIFIED": 1036,
+        "FAILED": 408,
+        "NO_UPDATE": 9716
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5782,9 +5873,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 256,
-        "FAILED": 402,
-        "NO_UPDATE": 10352
+        "CANDIDATES_IDENTIFIED": 259,
+        "FAILED": 408,
+        "NO_UPDATE": 10493
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6064,9 +6155,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 183,
-        "FAILED": 536,
-        "NO_UPDATE": 13961
+        "CANDIDATES_IDENTIFIED": 184,
+        "FAILED": 544,
+        "NO_UPDATE": 14152
       }
     }
   }
