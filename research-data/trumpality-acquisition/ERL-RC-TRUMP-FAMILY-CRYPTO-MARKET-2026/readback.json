@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 74,
-  "pending_candidate_count": 659,
-  "pending_sha256": "361d540c0f1a862444613ef2452364525470709fb2ce4c157d97360f25c84625",
+  "intake_cycles": 75,
+  "pending_candidate_count": 666,
+  "pending_sha256": "733f42acadd5488aa15a9e4c80e4fe003ee2587d06026b07241c0874bb13e8e6",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -79,10 +79,11 @@
     "4968b2c1c4e86c9eb22eac53b60e093aa6dfa1ef",
     "d1c65770f695aa5e158b97336bf16abcdbba9614",
     "8601f3d7d4369d2422031c96f46667a5ffac26d9",
-    "2920b0bda1f314ccedcc8de8902b9e3158f6095a"
+    "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
+    "f5f3301b2a5bafec740f10b87a1e1c22daa948dc"
   ],
   "publication_authorized": false,
-  "scan_record_count": 135520,
+  "scan_record_count": 137345,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -165,8 +166,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 340,
-        "NO_UPDATE": 8903
+        "FAILED": 345,
+        "NO_UPDATE": 9023
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -842,15 +843,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 493,
-        "FAILED": 408,
-        "NO_UPDATE": 10259
+        "CANDIDATES_IDENTIFIED": 499,
+        "FAILED": 414,
+        "NO_UPDATE": 10397
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 111,
+      "pending_candidate_count": 112,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1850,12 +1851,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacity",
           "source_url": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-40e0925e71addd99b5e90b65",
+          "custody_pointer": "RSRCH-768229490fc1c4163d38b5a8",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance hacker\u2019s Bitcoin haul tops Coinbase\u2019s corporate treasury",
+          "source_url": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 517,
-        "FAILED": 340,
-        "NO_UPDATE": 8443
+        "CANDIDATES_IDENTIFIED": 523,
+        "FAILED": 345,
+        "NO_UPDATE": 8557
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2153,15 +2163,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 468,
-        "FAILED": 408,
-        "NO_UPDATE": 10284
+        "CANDIDATES_IDENTIFIED": 474,
+        "FAILED": 414,
+        "NO_UPDATE": 10422
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 26,
+      "pending_candidate_count": 28,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2396,12 +2406,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance hack could accelerate shift to DEXs: Standard Chartered",
           "source_url": "https://cointelegraph.com/news/binance-hack-could-accelerate-shift-to-dexs-standard-chartered?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a4b92e735ed92f8b9c7d20a3",
+          "custody_pointer": "RSRCH-3e85da9feb218ebf2dfa66e9",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Here\u2019s when Binance plans to reopen after what\u2019s believed to be the largest-ever $6.3 billion hack",
+          "source_url": "https://www.marketwatch.com/story/heres-when-binance-plans-to-reopen-after-whats-believed-to-be-the-largest-ever-6-3-billion-hack-d3cb8154?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-8e078ffc3bad220f35a2c36b",
+          "custody_pointer": "RSRCH-145bce384409a8ef2bd32ae9",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance hit by $6.3B hack, the largest in cryptocurrency history",
+          "source_url": "https://cointelegraph.com/news/binance-linked-wallet-faces-possible-exploit-blockchain-researcher-warns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 168,
-        "FAILED": 408,
-        "NO_UPDATE": 10584
+        "CANDIDATES_IDENTIFIED": 177,
+        "FAILED": 414,
+        "NO_UPDATE": 10719
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2582,9 +2610,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 132,
-        "FAILED": 476,
-        "NO_UPDATE": 12412
+        "CANDIDATES_IDENTIFIED": 134,
+        "FAILED": 483,
+        "NO_UPDATE": 12578
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3125,15 +3153,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 214,
-        "FAILED": 408,
-        "NO_UPDATE": 10538
+        "CANDIDATES_IDENTIFIED": 216,
+        "FAILED": 414,
+        "NO_UPDATE": 10680
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 142,
+      "pending_candidate_count": 146,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4412,12 +4440,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "JD Vance letter may offer last chance to avert fresh conflict between US and Iran",
           "source_url": "https://www.theguardian.com/world/2026/oct/29/jd-vance-letter-may-offer-last-chance-to-avert-fresh-conflict-between-us-and-iran"
+        },
+        {
+          "candidate_id": "SRC-adc1b2968465b96ae6cf4028",
+          "custody_pointer": "RSRCH-a34b5571640c22ee5c393169",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. Oil Industry Earned Over $130 Billion in Profit During Iran War",
+          "source_url": "https://www.nytimes.com/2026/10/30/business/energy-environment/exxon-chevron-oil-profits-iran-war.html"
+        },
+        {
+          "candidate_id": "SRC-f88199544a99eae0b21b346b",
+          "custody_pointer": "RSRCH-688c9b0f0fc9d1289be5cb8c",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "This one chart tells you everything you need to know about Exxon, Chevron and BP\u2019s forecasting-beating earnings",
+          "source_url": "https://www.marketwatch.com/story/this-one-chart-tells-you-everything-you-need-to-know-about-exxon-chevron-and-bps-forecasting-beating-earnings-24babdfc?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-a6f1f11ca51ec1282b4ed423",
+          "custody_pointer": "RSRCH-2a3a3920981ad91be8313a8b",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. Oil Industry Earned Over $130 Billion in Profit During Iran War",
+          "source_url": "https://www.nytimes.com/2026/10/30/business/energy-environment/exxon-chevron-oil-profits-iran-war.html"
+        },
+        {
+          "candidate_id": "SRC-7e7b4a3874ef37186562a5a4",
+          "custody_pointer": "RSRCH-a1b88d7f6b334aac302e32c2",
+          "producer_commit": "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "This one chart tells you everything you need to know about Exxon, Chevron and BP\u2019s forecasting-beating earnings",
+          "source_url": "https://www.marketwatch.com/story/this-one-chart-tells-you-everything-you-need-to-know-about-exxon-chevron-and-bps-forecasting-beating-earnings-24babdfc?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1103,
-        "FAILED": 340,
-        "NO_UPDATE": 7857
+        "CANDIDATES_IDENTIFIED": 1123,
+        "FAILED": 345,
+        "NO_UPDATE": 7957
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4535,9 +4599,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 213,
-        "FAILED": 474,
-        "NO_UPDATE": 12073
+        "CANDIDATES_IDENTIFIED": 216,
+        "FAILED": 481,
+        "NO_UPDATE": 12238
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -5654,9 +5718,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1036,
-        "FAILED": 408,
-        "NO_UPDATE": 9716
+        "CANDIDATES_IDENTIFIED": 1051,
+        "FAILED": 414,
+        "NO_UPDATE": 9845
       }
     },
     "trump-token-promotion-access-supply": {
@@ -5873,9 +5937,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 259,
-        "FAILED": 408,
-        "NO_UPDATE": 10493
+        "CANDIDATES_IDENTIFIED": 263,
+        "FAILED": 414,
+        "NO_UPDATE": 10633
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6156,8 +6220,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 184,
-        "FAILED": 544,
-        "NO_UPDATE": 14152
+        "FAILED": 552,
+        "NO_UPDATE": 14344
       }
     }
   }
