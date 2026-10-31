@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 78,
-  "pending_candidate_count": 682,
-  "pending_sha256": "7a43a02ac1eb719cf2748ef5ff190564a0727be3499a0e67d040cf28df61762b",
+  "intake_cycles": 79,
+  "pending_candidate_count": 686,
+  "pending_sha256": "f10d93a60dc7573aace07ef0c418f370d8adb72d0f72b389303d7057e332b263",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -83,10 +83,11 @@
     "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
     "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
     "533f220fff6b40ebc8887d9f45d1febc43248ee9",
-    "939e74423760dff1317232de3240b81a9a888ac5"
+    "939e74423760dff1317232de3240b81a9a888ac5",
+    "8df94b848decbde6e8cd2340b8de4f0a2154e595"
   ],
   "publication_authorized": false,
-  "scan_record_count": 142820,
+  "scan_record_count": 144645,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -169,14 +170,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 360,
-        "NO_UPDATE": 9383
+        "FAILED": 365,
+        "NO_UPDATE": 9503
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 74,
+      "pending_candidate_count": 75,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -843,12 +844,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
           "source_url": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths"
+        },
+        {
+          "candidate_id": "SRC-136a66913c947493aaa9026a",
+          "custody_pointer": "RSRCH-8a00685cc50c6cae4067e047",
+          "producer_commit": "8df94b848decbde6e8cd2340b8de4f0a2154e595",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump beware: US voters are concerned about government corruption",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/31/trump-government-corruption-midterms-voters"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 514,
-        "FAILED": 432,
-        "NO_UPDATE": 10814
+        "CANDIDATES_IDENTIFIED": 519,
+        "FAILED": 438,
+        "NO_UPDATE": 10953
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1875,9 +1885,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 541,
-        "FAILED": 360,
-        "NO_UPDATE": 8899
+        "CANDIDATES_IDENTIFIED": 547,
+        "FAILED": 365,
+        "NO_UPDATE": 9013
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2175,9 +2185,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 491,
-        "FAILED": 432,
-        "NO_UPDATE": 10837
+        "CANDIDATES_IDENTIFIED": 497,
+        "FAILED": 438,
+        "NO_UPDATE": 10975
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2502,9 +2512,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 205,
-        "FAILED": 432,
-        "NO_UPDATE": 11123
+        "CANDIDATES_IDENTIFIED": 215,
+        "FAILED": 438,
+        "NO_UPDATE": 11257
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2686,8 +2696,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 135,
-        "FAILED": 504,
-        "NO_UPDATE": 13081
+        "FAILED": 511,
+        "NO_UPDATE": 13249
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3237,9 +3247,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 222,
-        "FAILED": 432,
-        "NO_UPDATE": 11106
+        "CANDIDATES_IDENTIFIED": 224,
+        "FAILED": 438,
+        "NO_UPDATE": 11248
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4599,9 +4609,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1177,
-        "FAILED": 360,
-        "NO_UPDATE": 8263
+        "CANDIDATES_IDENTIFIED": 1193,
+        "FAILED": 365,
+        "NO_UPDATE": 8367
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4719,15 +4729,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 224,
-        "FAILED": 502,
-        "NO_UPDATE": 12734
+        "CANDIDATES_IDENTIFIED": 226,
+        "FAILED": 509,
+        "NO_UPDATE": 12900
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 125,
+      "pending_candidate_count": 128,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5853,12 +5863,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Coinbase leads crypto stock selloff following $6.3B Binance hack",
           "source_url": "https://cointelegraph.com/markets/coinbase-leads-crypto-stock-selloff-shares-tumble?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-7527ce81f982c499493e0533",
+          "custody_pointer": "RSRCH-654ebe1e0fb5dc4f783f8768",
+          "producer_commit": "8df94b848decbde6e8cd2340b8de4f0a2154e595",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump beware: US voters are concerned about government corruption",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/31/trump-government-corruption-midterms-voters"
+        },
+        {
+          "candidate_id": "SRC-8673033c446b73d50d633f4a",
+          "custody_pointer": "RSRCH-f363c3b4114793afe9b523c3",
+          "producer_commit": "8df94b848decbde6e8cd2340b8de4f0a2154e595",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance $6.3B record hack sparks pre-election political clashes",
+          "source_url": "https://cointelegraph.com/news/binance-63b-record-hack-sparks-pre-election-political-chatter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fb93ad302f68bb7e85cce7da",
+          "custody_pointer": "RSRCH-affb0dd0367bf05e8169e8d5",
+          "producer_commit": "8df94b848decbde6e8cd2340b8de4f0a2154e595",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump beware: US voters are concerned about government corruption",
+          "source_url": "https://www.theguardian.com/us-news/2026/oct/31/trump-government-corruption-midterms-voters"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1082,
-        "FAILED": 432,
-        "NO_UPDATE": 10246
+        "CANDIDATES_IDENTIFIED": 1092,
+        "FAILED": 438,
+        "NO_UPDATE": 10380
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6075,9 +6112,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 273,
-        "FAILED": 432,
-        "NO_UPDATE": 11055
+        "CANDIDATES_IDENTIFIED": 276,
+        "FAILED": 438,
+        "NO_UPDATE": 11196
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6366,9 +6403,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 186,
-        "FAILED": 576,
-        "NO_UPDATE": 14918
+        "CANDIDATES_IDENTIFIED": 187,
+        "FAILED": 584,
+        "NO_UPDATE": 15109
       }
     }
   }
