@@ -1,0 +1,58 @@
+[
+  {
+    "adapter_id": "LOCAL_DHS_FBI_SEQUENCE_FIXTURE",
+    "byte_length": 699,
+    "candidate_path": "discovery_candidates/2026-10-31/CAND-1152B6EFF359820A2394.json",
+    "capture_id": "CAP-1152B6EFF359820A2394",
+    "capture_status": "captured",
+    "captured_at": "2026-10-31T12:21:36Z",
+    "content_sha256": "1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69",
+    "content_type": "application/json",
+    "raw_archive_path": "archive/captures/2026-10-31/1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69.json",
+    "review_status": "candidate-review-required",
+    "source_class": "national-reporting",
+    "source_uri": "source_fixtures/dhs-fbi-accountability-sequence.json"
+  },
+  {
+    "adapter_id": "SCSJ_REISINI_ROOS_CASE_PAGE",
+    "byte_length": 302390,
+    "candidate_path": "discovery_candidates/2026-10-31/CAND-992C6F84DFAC3D259B4A.json",
+    "capture_id": "CAP-992C6F84DFAC3D259B4A",
+    "capture_status": "captured",
+    "captured_at": "2026-10-31T12:21:36Z",
+    "content_sha256": "992c6f84dfac3d259b4acb1acb1a85b95831ba76c0aa4f1b45cc32d0c3b96d9d",
+    "content_type": "text/html",
+    "raw_archive_path": "archive/captures/2026-10-31/992c6f84dfac3d259b4acb1acb1a85b95831ba76c0aa4f1b45cc32d0c3b96d9d.html",
+    "review_status": "candidate-review-required",
+    "source_class": "advocacy-record",
+    "source_uri": "https://southerncoalition.org/case/reisini-roos-v-u-s-department-of-homeland-security-et-al/"
+  },
+  {
+    "adapter_id": "SCSJ_REISINI_ROOS_FTCA_ANNOUNCEMENT",
+    "byte_length": 285528,
+    "candidate_path": "discovery_candidates/2026-10-31/CAND-A2A629121D21A6F164D3.json",
+    "capture_id": "CAP-A2A629121D21A6F164D3",
+    "capture_status": "captured",
+    "captured_at": "2026-10-31T12:21:36Z",
+    "content_sha256": "a2a629121d21a6f164d354b01dce9423f8f0e37e7b70737201734c4f4631149a",
+    "content_type": "text/html",
+    "raw_archive_path": "archive/captures/2026-10-31/a2a629121d21a6f164d354b01dce9423f8f0e37e7b70737201734c4f4631149a.html",
+    "review_status": "candidate-review-required",
+    "source_class": "advocacy-record",
+    "source_uri": "https://southerncoalition.org/two-women-assaulted-arrested-during-operation-charlottes-web-file-federal-claims-against-immigration-agents/"
+  },
+  {
+    "adapter_id": "WBTV_REISINI_ROOS_OPERATION_CHARLOTTES_WEB",
+    "byte_length": 213070,
+    "candidate_path": "discovery_candidates/2026-10-31/CAND-8CC7C47FF0381C1D47C3.json",
+    "capture_id": "CAP-8CC7C47FF0381C1D47C3",
+    "capture_status": "captured",
+    "captured_at": "2026-10-31T12:21:36Z",
+    "content_sha256": "8cc7c47ff0381c1d47c3f7820d8c23842925673a2a3c893a269e6135693d3211",
+    "content_type": "text/html",
+    "raw_archive_path": "archive/captures/2026-10-31/8cc7c47ff0381c1d47c3f7820d8c23842925673a2a3c893a269e6135693d3211.html",
+    "review_status": "candidate-review-required",
+    "source_class": "local-reporting",
+    "source_uri": "https://www.wbtv.com/2026/07/22/charlotte-women-file-claims-notice-against-us-government-after-arrest-during-operation-charlottes-web/"
+  }
+]

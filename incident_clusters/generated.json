@@ -1,0 +1,81 @@
+{
+  "clusters": [
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-696945D4E380BFAE8370",
+      "cluster_key": "c4261c1b2b9bd42c3a17b1014c4654b3be3a67caf0e8ecab5ee883add10ec444",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-1152B6EFF359820A2394"
+      ],
+      "member_hashes": [
+        "1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-8F8443936FE66C0A139B",
+      "cluster_key": "8db9a8074bfc9e31229ec7edefcad2a1f0123da3c0893dad81a8e9d68b5a939d",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-8CC7C47FF0381C1D47C3"
+      ],
+      "member_hashes": [
+        "8cc7c47ff0381c1d47c3f7820d8c23842925673a2a3c893a269e6135693d3211"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-968489AE2CB9FB47D038",
+      "cluster_key": "b85bfe88f27e5c5e865609ccf6b9889bd98b7485e272db343f423e637ba57f47",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-992C6F84DFAC3D259B4A"
+      ],
+      "member_hashes": [
+        "992c6f84dfac3d259b4acb1acb1a85b95831ba76c0aa4f1b45cc32d0c3b96d9d"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-906560F3B8978D3F9AF4",
+      "cluster_key": "af44ef3c01342ac3399a39bd2df28b8c3bb260aeb23a0b528ace8aed5c75fab0",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-A2A629121D21A6F164D3"
+      ],
+      "member_hashes": [
+        "a2a629121d21a6f164d354b01dce9423f8f0e37e7b70737201734c4f4631149a"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    }
+  ],
+  "threshold": 0.72
+}
