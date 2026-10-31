@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 76,
-  "pending_candidate_count": 679,
-  "pending_sha256": "ee5b3e1f3e18af8efdc360d8e96f1f4d4c71f0311a95523e54d97affac85cd32",
+  "intake_cycles": 77,
+  "pending_candidate_count": 682,
+  "pending_sha256": "7a43a02ac1eb719cf2748ef5ff190564a0727be3499a0e67d040cf28df61762b",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -81,10 +81,11 @@
     "8601f3d7d4369d2422031c96f46667a5ffac26d9",
     "2920b0bda1f314ccedcc8de8902b9e3158f6095a",
     "f5f3301b2a5bafec740f10b87a1e1c22daa948dc",
-    "ade8de3cfc17e1e223694d5d6a9c9859986f42f8"
+    "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
+    "533f220fff6b40ebc8887d9f45d1febc43248ee9"
   ],
   "publication_authorized": false,
-  "scan_record_count": 139170,
+  "scan_record_count": 140995,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -167,8 +168,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 350,
-        "NO_UPDATE": 9143
+        "FAILED": 355,
+        "NO_UPDATE": 9263
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -844,9 +845,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 505,
-        "FAILED": 420,
-        "NO_UPDATE": 10535
+        "CANDIDATES_IDENTIFIED": 510,
+        "FAILED": 426,
+        "NO_UPDATE": 10674
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1873,9 +1874,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 529,
-        "FAILED": 350,
-        "NO_UPDATE": 8671
+        "CANDIDATES_IDENTIFIED": 535,
+        "FAILED": 355,
+        "NO_UPDATE": 8785
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2173,15 +2174,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 480,
-        "FAILED": 420,
-        "NO_UPDATE": 10560
+        "CANDIDATES_IDENTIFIED": 487,
+        "FAILED": 426,
+        "NO_UPDATE": 10697
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 33,
+      "pending_candidate_count": 35,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2479,12 +2480,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
           "source_url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart"
+        },
+        {
+          "candidate_id": "SRC-0adc00ac4472dc782d35014c",
+          "custody_pointer": "RSRCH-11abab5265e6c18e7fa44902",
+          "producer_commit": "533f220fff6b40ebc8887d9f45d1febc43248ee9",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance Hack Shows Why Offshore Exchanges Need US Oversight, CFTC Chair Says",
+          "source_url": "https://decrypt.co/382285/binance-hack-why-offshore-exchanges-need-us-oversight-cftc-chair"
+        },
+        {
+          "candidate_id": "SRC-202761936b5281220b695333",
+          "custody_pointer": "RSRCH-11abab5265e6c18e7fa44902",
+          "producer_commit": "533f220fff6b40ebc8887d9f45d1febc43248ee9",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance Hack: Why Bitcoin Didn't Crash Like It Did in 2018",
+          "source_url": "https://decrypt.co/382257/binance-hack-why-bitcoin-didnt-crash"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 186,
-        "FAILED": 420,
-        "NO_UPDATE": 10854
+        "CANDIDATES_IDENTIFIED": 195,
+        "FAILED": 426,
+        "NO_UPDATE": 10989
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2666,8 +2685,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 135,
-        "FAILED": 490,
-        "NO_UPDATE": 12745
+        "FAILED": 497,
+        "NO_UPDATE": 12913
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3217,9 +3236,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 218,
-        "FAILED": 420,
-        "NO_UPDATE": 10822
+        "CANDIDATES_IDENTIFIED": 220,
+        "FAILED": 426,
+        "NO_UPDATE": 10964
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4579,9 +4598,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1141,
-        "FAILED": 350,
-        "NO_UPDATE": 8059
+        "CANDIDATES_IDENTIFIED": 1159,
+        "FAILED": 355,
+        "NO_UPDATE": 8161
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4699,9 +4718,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 219,
-        "FAILED": 488,
-        "NO_UPDATE": 12403
+        "CANDIDATES_IDENTIFIED": 222,
+        "FAILED": 495,
+        "NO_UPDATE": 12568
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -5836,9 +5855,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1063,
-        "FAILED": 420,
-        "NO_UPDATE": 9977
+        "CANDIDATES_IDENTIFIED": 1075,
+        "FAILED": 426,
+        "NO_UPDATE": 10109
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6055,15 +6074,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 267,
-        "FAILED": 420,
-        "NO_UPDATE": 10773
+        "CANDIDATES_IDENTIFIED": 271,
+        "FAILED": 426,
+        "NO_UPDATE": 10913
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 30,
+      "pending_candidate_count": 31,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -6334,12 +6353,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Anchorage Positions Itself as Custody Backbone of US-Mexico Stablecoin Corridor",
           "source_url": "https://decrypt.co/381988/anchorage-custody-backbone-us-mexico-stablecoin-corridor"
+        },
+        {
+          "candidate_id": "SRC-2bf240ad6ed877c876a4c964",
+          "custody_pointer": "RSRCH-b2522b90cb82623cea3a9094",
+          "producer_commit": "533f220fff6b40ebc8887d9f45d1febc43248ee9",
+          "query": "treasury holdings",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tether\u2019s excess reserves nearly double to $8B as Q3 profit hits $1.5B",
+          "source_url": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 184,
-        "FAILED": 560,
-        "NO_UPDATE": 14536
+        "CANDIDATES_IDENTIFIED": 185,
+        "FAILED": 568,
+        "NO_UPDATE": 14727
       }
     }
   }
