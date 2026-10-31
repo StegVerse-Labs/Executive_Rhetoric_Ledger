@@ -1,0 +1,16 @@
+{
+  "acknowledgment": "producer_intake/acknowledgments/StegVerse-Labs__Trumpality/ERL-INTAKE-250AE8C81B2423FF32199C42.json",
+  "authority": {
+    "automation_may_approve": false,
+    "automation_may_assign": true,
+    "automation_may_promote": false,
+    "automation_may_publish": false
+  },
+  "export_sha256": "e759caeeb4dd04a8e36fa62b2c5db1ac827a2e5b2e96ef3e71668fa157fd1516",
+  "generated_at": "2026-10-31T12:20:36.325437Z",
+  "intake_result": "producer_intake/results/ERL-INTAKE-250AE8C81B2423FF32199C42.json",
+  "producer_repository": "StegVerse-Labs/Trumpality",
+  "review_packet_id": "ERL-PRODUCER-REVIEW-C4795A00779437277E89",
+  "review_status": "pending",
+  "source": "producer-intake"
+}
