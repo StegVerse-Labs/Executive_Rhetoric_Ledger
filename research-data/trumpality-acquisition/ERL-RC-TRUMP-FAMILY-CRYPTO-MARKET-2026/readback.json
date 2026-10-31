@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 79,
-  "pending_candidate_count": 686,
-  "pending_sha256": "f10d93a60dc7573aace07ef0c418f370d8adb72d0f72b389303d7057e332b263",
+  "intake_cycles": 80,
+  "pending_candidate_count": 691,
+  "pending_sha256": "df99a0c98974fec686e2d5f04afb521490ab9b1ff71b924a3d0317e15cfa0d0a",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -84,10 +84,11 @@
     "ade8de3cfc17e1e223694d5d6a9c9859986f42f8",
     "533f220fff6b40ebc8887d9f45d1febc43248ee9",
     "939e74423760dff1317232de3240b81a9a888ac5",
-    "8df94b848decbde6e8cd2340b8de4f0a2154e595"
+    "8df94b848decbde6e8cd2340b8de4f0a2154e595",
+    "5d12f11351c07d15b3abcfb24336bcbcb46e10a8"
   ],
   "publication_authorized": false,
-  "scan_record_count": 144645,
+  "scan_record_count": 146470,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -169,9 +170,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 57,
-        "FAILED": 365,
-        "NO_UPDATE": 9503
+        "CANDIDATES_IDENTIFIED": 58,
+        "FAILED": 370,
+        "NO_UPDATE": 9622
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -856,9 +857,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 519,
-        "FAILED": 438,
-        "NO_UPDATE": 10953
+        "CANDIDATES_IDENTIFIED": 523,
+        "FAILED": 444,
+        "NO_UPDATE": 11093
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1885,9 +1886,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 547,
-        "FAILED": 365,
-        "NO_UPDATE": 9013
+        "CANDIDATES_IDENTIFIED": 552,
+        "FAILED": 370,
+        "NO_UPDATE": 9128
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2185,15 +2186,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 497,
-        "FAILED": 438,
-        "NO_UPDATE": 10975
+        "CANDIDATES_IDENTIFIED": 506,
+        "FAILED": 444,
+        "NO_UPDATE": 11110
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 35,
+      "pending_candidate_count": 38,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2509,12 +2510,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance Hack: Why Bitcoin Didn't Crash Like It Did in 2018",
           "source_url": "https://decrypt.co/382257/binance-hack-why-bitcoin-didnt-crash"
+        },
+        {
+          "candidate_id": "SRC-53cc39869b01494385d7dbb8",
+          "custody_pointer": "RSRCH-4dc105b75eb3954722c65eba",
+          "producer_commit": "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance Hack: Everything You Need to Know About the Biggest Crypto Heist in History",
+          "source_url": "https://decrypt.co/382306/binance-hack-everything-you-need-to-know"
+        },
+        {
+          "candidate_id": "SRC-e124bcfe92a36a2ada41a88b",
+          "custody_pointer": "RSRCH-923099845055c5c1c5fb6693",
+          "producer_commit": "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance says 90% of stolen assets replenished, targets Sunday withdrawals",
+          "source_url": "https://cointelegraph.com/news/binance-hack-90-percent-replenished?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-840f381945794be34c58253e",
+          "custody_pointer": "RSRCH-43054ea71970adc086d42307",
+          "producer_commit": "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
+          "query": "regulatory case chronology",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin held up better than expected after Binance hack, Strive CEO says",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-binance-hack-strive-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 215,
-        "FAILED": 438,
-        "NO_UPDATE": 11257
+        "CANDIDATES_IDENTIFIED": 226,
+        "FAILED": 444,
+        "NO_UPDATE": 11390
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2695,15 +2723,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 135,
-        "FAILED": 511,
-        "NO_UPDATE": 13249
+        "CANDIDATES_IDENTIFIED": 137,
+        "FAILED": 518,
+        "NO_UPDATE": 13415
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 60,
+      "pending_candidate_count": 61,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -3244,12 +3272,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto Biz: Bitcoin\u2019s quantum threat is becoming an economic problem",
           "source_url": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-1d5f4d5747ecbb43f1b4234b",
+          "custody_pointer": "RSRCH-a15c3fea8aed0745d13f821d",
+          "producer_commit": "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
+          "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 224,
-        "FAILED": 438,
-        "NO_UPDATE": 11248
+        "CANDIDATES_IDENTIFIED": 228,
+        "FAILED": 444,
+        "NO_UPDATE": 11388
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4609,9 +4646,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1193,
-        "FAILED": 365,
-        "NO_UPDATE": 8367
+        "CANDIDATES_IDENTIFIED": 1211,
+        "FAILED": 370,
+        "NO_UPDATE": 8469
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4729,15 +4766,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 226,
-        "FAILED": 509,
-        "NO_UPDATE": 12900
+        "CANDIDATES_IDENTIFIED": 229,
+        "FAILED": 516,
+        "NO_UPDATE": 13065
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 128,
+      "pending_candidate_count": 129,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5890,12 +5927,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump beware: US voters are concerned about government corruption",
           "source_url": "https://www.theguardian.com/us-news/2026/oct/31/trump-government-corruption-midterms-voters"
+        },
+        {
+          "candidate_id": "SRC-633698a61c45174dfea4241f",
+          "custody_pointer": "RSRCH-11661672b39617028fd2dcfa",
+          "producer_commit": "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
+          "source_url": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1092,
-        "FAILED": 438,
-        "NO_UPDATE": 10380
+        "CANDIDATES_IDENTIFIED": 1105,
+        "FAILED": 444,
+        "NO_UPDATE": 10511
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6112,9 +6158,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 276,
-        "FAILED": 438,
-        "NO_UPDATE": 11196
+        "CANDIDATES_IDENTIFIED": 279,
+        "FAILED": 444,
+        "NO_UPDATE": 11337
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6403,9 +6449,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 187,
-        "FAILED": 584,
-        "NO_UPDATE": 15109
+        "CANDIDATES_IDENTIFIED": 193,
+        "FAILED": 592,
+        "NO_UPDATE": 15295
       }
     }
   }
