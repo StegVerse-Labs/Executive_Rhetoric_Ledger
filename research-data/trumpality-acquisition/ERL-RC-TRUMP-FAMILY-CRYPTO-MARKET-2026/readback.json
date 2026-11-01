@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 83,
-  "pending_candidate_count": 693,
-  "pending_sha256": "dc62bb8cde82053d0c8708c706d3c5345e23c669a932aaa5627e12063a3ac27c",
+  "intake_cycles": 84,
+  "pending_candidate_count": 697,
+  "pending_sha256": "437e1f7088506ebc2c1986aefd21384f01d3f959ab49b9b3ace429e720b01442",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -88,10 +88,11 @@
     "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
     "a384f24bc28e01214e060c0583c75f03230beae0",
     "894e062ffc7e0ea9e41a7e8c6c67a79306a9cc57",
-    "20b35751fb26f10f3e434fd7218336e306689226"
+    "20b35751fb26f10f3e434fd7218336e306689226",
+    "cc75cfc09c61a87ba36af1906522e5305567defe"
   ],
   "publication_authorized": false,
-  "scan_record_count": 151945,
+  "scan_record_count": 153770,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -174,14 +175,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 385,
-        "NO_UPDATE": 9982
+        "FAILED": 390,
+        "NO_UPDATE": 10102
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 75,
+      "pending_candidate_count": 76,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -857,18 +858,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump beware: US voters are concerned about government corruption",
           "source_url": "https://www.theguardian.com/us-news/2026/oct/31/trump-government-corruption-midterms-voters"
+        },
+        {
+          "candidate_id": "SRC-09ff0ef9525153107008efe0",
+          "custody_pointer": "RSRCH-07e1c01e320fce9059e610c9",
+          "producer_commit": "cc75cfc09c61a87ba36af1906522e5305567defe",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto PACs made big Republican push in final weeks before November 3 election",
+          "source_url": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 532,
-        "FAILED": 462,
-        "NO_UPDATE": 11516
+        "CANDIDATES_IDENTIFIED": 536,
+        "FAILED": 468,
+        "NO_UPDATE": 11656
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 113,
+      "pending_candidate_count": 114,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1886,12 +1896,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto Biz: Bitcoin\u2019s quantum threat is becoming an economic problem",
           "source_url": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-d20885acc5ccf1a6cff0af11",
+          "custody_pointer": "RSRCH-2c43f86c93975d9b3e8d4bf6",
+          "producer_commit": "cc75cfc09c61a87ba36af1906522e5305567defe",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto PACs made big Republican push in final weeks before November 3 election",
+          "source_url": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 567,
-        "FAILED": 385,
-        "NO_UPDATE": 9473
+        "CANDIDATES_IDENTIFIED": 573,
+        "FAILED": 390,
+        "NO_UPDATE": 9587
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2189,9 +2208,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 522,
-        "FAILED": 462,
-        "NO_UPDATE": 11526
+        "CANDIDATES_IDENTIFIED": 529,
+        "FAILED": 468,
+        "NO_UPDATE": 11663
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2552,9 +2571,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 256,
-        "FAILED": 462,
-        "NO_UPDATE": 11792
+        "CANDIDATES_IDENTIFIED": 265,
+        "FAILED": 468,
+        "NO_UPDATE": 11927
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2736,8 +2755,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 539,
-        "NO_UPDATE": 13919
+        "FAILED": 546,
+        "NO_UPDATE": 14087
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3296,9 +3315,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 234,
-        "FAILED": 462,
-        "NO_UPDATE": 11814
+        "CANDIDATES_IDENTIFIED": 235,
+        "FAILED": 468,
+        "NO_UPDATE": 11957
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4658,9 +4677,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1259,
-        "FAILED": 385,
-        "NO_UPDATE": 8781
+        "CANDIDATES_IDENTIFIED": 1275,
+        "FAILED": 390,
+        "NO_UPDATE": 8885
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4778,15 +4797,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 234,
-        "FAILED": 537,
-        "NO_UPDATE": 13564
+        "CANDIDATES_IDENTIFIED": 236,
+        "FAILED": 544,
+        "NO_UPDATE": 13730
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 130,
+      "pending_candidate_count": 132,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5957,12 +5976,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance says phase one of withdrawals opens after $6.3B hack",
           "source_url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-143740cc7d80df33c12ca7a7",
+          "custody_pointer": "RSRCH-cb139d02b17100ae3d659e11",
+          "producer_commit": "cc75cfc09c61a87ba36af1906522e5305567defe",
+          "query": "official approval instruments",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
+          "source_url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
+        },
+        {
+          "candidate_id": "SRC-0cf080ec2f2c5135e20f3ef6",
+          "custody_pointer": "RSRCH-29864832ad60833a2c8867f9",
+          "producer_commit": "cc75cfc09c61a87ba36af1906522e5305567defe",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
+          "source_url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1131,
-        "FAILED": 462,
-        "NO_UPDATE": 10917
+        "CANDIDATES_IDENTIFIED": 1142,
+        "FAILED": 468,
+        "NO_UPDATE": 11050
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6179,9 +6216,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 289,
-        "FAILED": 462,
-        "NO_UPDATE": 11759
+        "CANDIDATES_IDENTIFIED": 293,
+        "FAILED": 468,
+        "NO_UPDATE": 11899
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6470,9 +6507,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 196,
-        "FAILED": 616,
-        "NO_UPDATE": 15868
+        "CANDIDATES_IDENTIFIED": 197,
+        "FAILED": 624,
+        "NO_UPDATE": 16059
       }
     }
   }
