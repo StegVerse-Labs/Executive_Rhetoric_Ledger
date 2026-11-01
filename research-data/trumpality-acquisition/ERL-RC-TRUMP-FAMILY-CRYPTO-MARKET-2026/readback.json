@@ -2,7 +2,7 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 80,
+  "intake_cycles": 81,
   "pending_candidate_count": 691,
   "pending_sha256": "df99a0c98974fec686e2d5f04afb521490ab9b1ff71b924a3d0317e15cfa0d0a",
   "producer_commits": [
@@ -85,10 +85,11 @@
     "533f220fff6b40ebc8887d9f45d1febc43248ee9",
     "939e74423760dff1317232de3240b81a9a888ac5",
     "8df94b848decbde6e8cd2340b8de4f0a2154e595",
-    "5d12f11351c07d15b3abcfb24336bcbcb46e10a8"
+    "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
+    "a384f24bc28e01214e060c0583c75f03230beae0"
   ],
   "publication_authorized": false,
-  "scan_record_count": 146470,
+  "scan_record_count": 148295,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -171,8 +172,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 370,
-        "NO_UPDATE": 9622
+        "FAILED": 375,
+        "NO_UPDATE": 9742
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -857,9 +858,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 523,
-        "FAILED": 444,
-        "NO_UPDATE": 11093
+        "CANDIDATES_IDENTIFIED": 526,
+        "FAILED": 450,
+        "NO_UPDATE": 11234
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1886,9 +1887,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 552,
-        "FAILED": 370,
-        "NO_UPDATE": 9128
+        "CANDIDATES_IDENTIFIED": 557,
+        "FAILED": 375,
+        "NO_UPDATE": 9243
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2186,9 +2187,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 506,
-        "FAILED": 444,
-        "NO_UPDATE": 11110
+        "CANDIDATES_IDENTIFIED": 511,
+        "FAILED": 450,
+        "NO_UPDATE": 11249
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -2540,9 +2541,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 226,
-        "FAILED": 444,
-        "NO_UPDATE": 11390
+        "CANDIDATES_IDENTIFIED": 237,
+        "FAILED": 450,
+        "NO_UPDATE": 11523
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2724,8 +2725,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 518,
-        "NO_UPDATE": 13415
+        "FAILED": 525,
+        "NO_UPDATE": 13583
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3284,9 +3285,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 228,
-        "FAILED": 444,
-        "NO_UPDATE": 11388
+        "CANDIDATES_IDENTIFIED": 230,
+        "FAILED": 450,
+        "NO_UPDATE": 11530
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4646,9 +4647,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1211,
-        "FAILED": 370,
-        "NO_UPDATE": 8469
+        "CANDIDATES_IDENTIFIED": 1227,
+        "FAILED": 375,
+        "NO_UPDATE": 8573
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4766,9 +4767,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 229,
-        "FAILED": 516,
-        "NO_UPDATE": 13065
+        "CANDIDATES_IDENTIFIED": 231,
+        "FAILED": 523,
+        "NO_UPDATE": 13231
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -5939,9 +5940,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1105,
-        "FAILED": 444,
-        "NO_UPDATE": 10511
+        "CANDIDATES_IDENTIFIED": 1113,
+        "FAILED": 450,
+        "NO_UPDATE": 10647
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6158,9 +6159,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 279,
-        "FAILED": 444,
-        "NO_UPDATE": 11337
+        "CANDIDATES_IDENTIFIED": 282,
+        "FAILED": 450,
+        "NO_UPDATE": 11478
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6449,9 +6450,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 193,
-        "FAILED": 592,
-        "NO_UPDATE": 15295
+        "CANDIDATES_IDENTIFIED": 194,
+        "FAILED": 600,
+        "NO_UPDATE": 15486
       }
     }
   }
