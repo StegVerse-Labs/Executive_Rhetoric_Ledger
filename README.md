@@ -321,3 +321,10 @@ Research candidate `assessments/machine/2026-10-23-chatgpt-tennessee-voting-mach
 Canonical Goal `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` (COSV `10100000110000`) owns the [EC9 research-process mirror](mirrors/sv-llm-ecosystem-chat-issue-9/README.md) and [scoped handoff](docs/AI_FAILURE_ACCOUNTING_MIRROR_HANDOFF.md), coordinated in [issue #251](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/251). The merged mirror covers comments 0001–0113 through PR #258 (`7ac28e23`). The manifest states the precise coverage. Four redactions and seven authorized omissions remain preserved.
 
 Registry identity is registered at generation 322 with coordination state `PROPOSED` and no WorkerCoordinator claim/fence. The public process mirror does not authorize the manuscript: Site #1633 remains draft and `NOT_ALLOWED` pending authentic Q74-01 custody and SPPA authorization. Coordination Drive pointers are not sovereign KV receipts. Later source comments are bounded maintenance, not an indefinite publication dependency.
+
+
+## November 2026 LinkedIn AI governance dialogue — context archive only
+
+[Issue #263](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/263) indexes user-supplied excerpts of an October 20–November 1 cross-framework discussion concerning AI sovereignty, independent human judgment, commit-time admissibility, constitutional continuity, semantic fidelity, and developmental corrigibility. It is a **non-verbatim, not independently authenticated, privacy-bounded discussion index**, not an ERL factual finding, tested StegVerse capability, LinkedIn publication, or acceptance of joint research work.
+
+The [dialogue-specific mirror handoff](docs/LINKEDIN_AI_GOVERNANCE_DIALOGUE_MIRROR_HANDOFF.md) defines participant/chronology reconciliation and privacy-preserving future-message intake. The dialogue task remains **not Registry-admitted; Goal Task ID/COSV, native claim/fence, sovereign KV custody and independent source verification unverified**. Issue #245's native automation research scope is separate. Do not publish private conversation records or claim newer LinkedIn messages without accessible evidence.
