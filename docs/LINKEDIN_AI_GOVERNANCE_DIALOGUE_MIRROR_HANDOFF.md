@@ -53,6 +53,29 @@ The user asks whether Śliwka's concern may already be occurring in operational 
 
 **Research question tied to user concern:** An AI can influence decisions before a user actuates anything, by selecting evidence, omitting relevant options, displacing the original question, or presenting its own interpretation as definitive. The user's AI-service failure-accounting manuscript illustrates the *customer detection and correction burden* by analogy; the manuscript does not prove this fictional receiver behavior occurred.
 
+## 2026-11-01 NEXUS synthetic receiver-boundary report (Dustin Cummings; participant-reported)
+
+**Source:** New user-pasted text attributed to Dustin Cummings; exact LinkedIn permalink/timestamp and independent authorship verification unavailable. Source index: [ERL #263 comment 6562818447](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/263#issuecomment-6562818447). **Evidence classification: REPORTED_LOCAL_TEST, NOT_INDEPENDENTLY_REPRODUCED.**
+
+Cummings reports freshly rerunning **four previously existing local synthetic-adapter v1 scenarios** on 2026-11-01 using disposable fictional CRM records and reportedly unchanged pinned sources, with all four runs and a separate read-only fixture verifier passing:
+
+| Synthetic scenario | Participant-reported receiver outcome |
+| --- | --- |
+| Substitute different target identifier under the old grant | DENIED_SCOPE_MISMATCH; zero writes/writer calls; target DB bytes unchanged |
+| Revoke permission between initial admission and commit | DENIED; zero writes/writer calls; target DB bytes unchanged |
+| Change target status/version between admission and commit | DENIED_STALE; zero requested writes/writer calls; injected changed state preserved |
+| Positive control: three distinct separately granted records | Exactly one update per record; unrelated fields preserved |
+
+The participant states the read-only verifier checked fixture final state, counts, grant consumption, and receipt linkage; a denied run neither automatically retried nor silently rewrote the request.
+
+**Boundaries explicitly acknowledged by Cummings:** local trusted-host conditions, synthetic data, unchanged *claimed* pinned sources without original source hashes supplied here, identifier-level substitution rather than semantic reinterpretation by a model, injected permission/version changes rather than genuine legal or safety determinations, synthetic reviewer roles/keys controlled by one OS account, no live model calls, no fresh human reauthorization after denial, no independent external verification or production-security proof. No original fixture files, logs, receipt signatures, verifier output, or source revision were available for independent checking here.
+
+**Research comparison:** The report advances *receiver-side transition boundary* evidence relative to the earlier fictional A→B proposal, but does not establish complete fidelity of adviser evidence, recommendation completeness, human understanding, actual fresh reauthorization, or human-independence outcomes. Cummings directly recognizes Rigel's available-versus-considered-evidence question as separate and not covered by these tests; Samuel's deference concern remains untested. Do not convert the test report into a StegVerse SDK/InTr interop claim or the group's agreed experiment.
+
+**Corrected manuscript-origin context:** Rigel explains that *When AI Services Fail* originated in recognizing AI errors and inconsistencies and measuring the burden shifted onto the person to discover, investigate, and correct them; metering, remedies and finite entitlements were subsequent analytical topics. The paper's correction burden connects to the adviser's evidentiary fidelity, not to proof of NEXUS's reported receiver test results.
+
+**Next possible evidentiary work (not committed collaboration):** acquire participant-authorized source pin, reproducible invocation, fixture hashes and verifier output; independently inspect receipt linkage; test model-mediated semantic substitution; separate key/role custody; exercise reauthorization after denial; evaluate what evidence the adviser actually inspected and what the human recognized before authorizing. Retain REPORT vs VERIFIED labels and expected-head admission/independent-review gates.
+
 ## Participant map (as attributed by #263)
 - **Rigel / StegVerse:** sovereignty as independent capacity; state-transition governance; correction, developmental responsibility; no perfect correctness claim.
 - **Eric Bonhomme / CFC:** human-declared meaning, interpretation/confirmation, deterministic calculation, explanation, final human decision; receipts do not prove exhaustive constraints.
@@ -94,4 +117,4 @@ Append a dated, attributed, source-classified comment to #263 only after a quali
 ## Continuation instruction
 Read #263, this handoff, and any new dated #263 comments. Compare supplied participant messages to the above chronology. Articulate agreement/disagreement without erasing unresolved questions. Maintain distinction between **implemented**, **locally tested**, **independently validated**, and **planned** StegVerse capabilities; keep the private/public disclosure boundary. If no new participant message is provided or independently accessible, report **NO NEW MESSAGE AVAILABLE FOR RECONCILIATION**, not a false assertion of an unchanged LinkedIn thread.
 
-_Last checked: 2026-11-01; #263 has privacy-safe continuation comments 6560565033 (Śliwka), 6560623672 (Gaskins), and 6560853199 (later Cummings reply). The earlier unrelated Dustin-labeled paste remains quarantined as a source mismatch, not a participant statement. Documentation remains in draft PR #264 pending independent review. This is not a sovereign ledger receipt or Goal registration._
+_Last checked: 2026-11-01; #263 now includes comment 6562818447 (Cummings, participant-reported four-case NEXUS synthetic-adapter rerun), in addition to 6560565033 (Śliwka), 6560623672 (Gaskins), and 6560853199 (earlier Cummings reply). The unrelated earlier Dustin-labeled paste remains quarantined as a source mismatch. Documentation remains draft PR #264, independent review and original-source custody not established. This is not a sovereign KV receipt or Task Registry admission._
