@@ -10,7 +10,7 @@
 ## Evidence and provenance boundary
 Issue #263 is a *structured index* of user-provided LinkedIn screenshots/excerpts from the originating ChatGPT conversation. It is **not** a verbatim transcript, a primary-source LinkedIn capture, a participant endorsement, a factual/political ERL finding, a tested implementation result, or publication permission. Participant positions below are **attributions in that index** and not independently authenticated statements.
 
-No new post-index LinkedIn messages were supplied to this 2026-11-01 continuation session. Neither an unchanged GitHub issue nor inability to access a private LinkedIn thread proves that no newer messages exist.
+A later 2026-11-01 ChatGPT continuation supplied a further two-screenshot LinkedIn excerpt attributed to Krzysztof Śliwka (UI displays 9:58 a.m.; exact native date/time, permalink and edit-state unverified). It is summarized in issue #263 comment 6560565033, not copied verbatim. Absence of further visible messages does not establish that the private LinkedIn thread itself is unchanged.
 
 ## Dated continuity
 1. **2026-10-20:** Eric Bonhomme invited collaboration; authorization, recommendation, deterministic preflight, consequence boundaries and receipts were discussed.
@@ -20,6 +20,11 @@ No new post-index LinkedIn messages were supplied to this 2026-11-01 continuatio
 5. **Prototype discussion:** StegVerse is an evolving ecosystem with SDK-driven manifest-bound experiments; an unavailable-request learning ecosystem remains **under development**.
 6. **Development/legitimacy discussion:** David Thusi engaged the parenting analogy and development-versus-deviation question. This analogy makes no AI personhood, sentience or human-equivalent moral-status claim.
 7. **2026-11-01:** Bonhomme proposed bounded fictional Record A→B / receiver-rule cases; Samuel Gaskins raised human deference and benevolent-ruler risk; Dustin Cummings and Krzysztof Śliwka discussed independent judgment, non-manipulation, and teacher/tool analogies.
+8. **Later 2026-11-01 screenshot (displayed 9:58 a.m.; original posting date and timezone not native-verified):** Śliwka illustrates a smart-home gas-leak safety shutdown and a homeowner's demand to reactivate gas despite continuing danger. His central distinction: authority to refuse a dangerous action **is not** authority to author new rules or make general decisions for humans. He asks who defines, verifies and can revise justified-refusal boundaries. **Source:** user-supplied screenshot; see #263 comment 6560565033 for a privacy-safe synopsis. No original screenshot or private permalink is published.
+
+## New research question from 2026-11-01 continuation
+
+The user asks whether Śliwka's concern may already be occurring in operational AI services. The defensible *hypothesis* is that provider-defined restrictions, model interpretation, risk classification, response framing, interface limits and opaque contestation can already constrain human decisions—even without proof that an AI autonomously authors policy. Separate **policy authorship**, **delegated enforcement**, **risk-evidence validation**, **constraint interpretation**, **challenge/remedy** and **authorized rule revision**. A justified safety refusal and an unjustified or overbroad refusal require different evidence and dispositions; do not substitute intent speculation for a validated state record. An AI-service failure-accounting manuscript supplied in the same user conversation is analogous on evidence/receipt/remedy design, but does not prove a safety-policy mutation. Preserve the manuscript and screenshot contents outside this public repository absent explicit disclosure authorization.
 
 ## Participant map (as attributed by #263)
 - **Rigel / StegVerse:** sovereignty as independent capacity; state-transition governance; correction, developmental responsibility; no perfect correctness claim.
@@ -62,4 +67,4 @@ Append a dated, attributed, source-classified comment to #263 only after a quali
 ## Continuation instruction
 Read #263, this handoff, and any new dated #263 comments. Compare supplied participant messages to the above chronology. Articulate agreement/disagreement without erasing unresolved questions. Maintain distinction between **implemented**, **locally tested**, **independently validated**, and **planned** StegVerse capabilities; keep the private/public disclosure boundary. If no new participant message is provided or independently accessible, report **NO NEW MESSAGE AVAILABLE FOR RECONCILIATION**, not a false assertion of an unchanged LinkedIn thread.
 
-_Last checked: 2026-11-01; source index #263 had 0 comments at this read. Documentation proposal pending review. This is not a sovereign ledger receipt or Goal registration._
+_Last checked: 2026-11-01; #263 has a newly filed privacy-safe continuation comment 6560565033. Documentation remains in draft PR #264 pending independent review. This is not a sovereign ledger receipt or Goal registration._
