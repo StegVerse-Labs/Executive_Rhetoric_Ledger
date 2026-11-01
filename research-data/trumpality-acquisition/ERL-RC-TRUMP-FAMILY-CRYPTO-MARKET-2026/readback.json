@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 82,
-  "pending_candidate_count": 691,
-  "pending_sha256": "df99a0c98974fec686e2d5f04afb521490ab9b1ff71b924a3d0317e15cfa0d0a",
+  "intake_cycles": 83,
+  "pending_candidate_count": 693,
+  "pending_sha256": "dc62bb8cde82053d0c8708c706d3c5345e23c669a932aaa5627e12063a3ac27c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -87,10 +87,11 @@
     "8df94b848decbde6e8cd2340b8de4f0a2154e595",
     "5d12f11351c07d15b3abcfb24336bcbcb46e10a8",
     "a384f24bc28e01214e060c0583c75f03230beae0",
-    "894e062ffc7e0ea9e41a7e8c6c67a79306a9cc57"
+    "894e062ffc7e0ea9e41a7e8c6c67a79306a9cc57",
+    "20b35751fb26f10f3e434fd7218336e306689226"
   ],
   "publication_authorized": false,
-  "scan_record_count": 150120,
+  "scan_record_count": 151945,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -173,8 +174,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 380,
-        "NO_UPDATE": 9862
+        "FAILED": 385,
+        "NO_UPDATE": 9982
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -859,9 +860,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 529,
-        "FAILED": 456,
-        "NO_UPDATE": 11375
+        "CANDIDATES_IDENTIFIED": 532,
+        "FAILED": 462,
+        "NO_UPDATE": 11516
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -1888,9 +1889,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 562,
-        "FAILED": 380,
-        "NO_UPDATE": 9358
+        "CANDIDATES_IDENTIFIED": 567,
+        "FAILED": 385,
+        "NO_UPDATE": 9473
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2188,15 +2189,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 517,
-        "FAILED": 456,
-        "NO_UPDATE": 11387
+        "CANDIDATES_IDENTIFIED": 522,
+        "FAILED": 462,
+        "NO_UPDATE": 11526
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 38,
+      "pending_candidate_count": 39,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2539,12 +2540,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin held up better than expected after Binance hack, Strive CEO says",
           "source_url": "https://cointelegraph.com/markets/bitcoin-binance-hack-strive-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-3efa6c18145a776c07d8ce70",
+          "custody_pointer": "RSRCH-29739a4e4a102004c7235653",
+          "producer_commit": "20b35751fb26f10f3e434fd7218336e306689226",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance says phase one of withdrawals opens after $6.3B hack",
+          "source_url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 246,
-        "FAILED": 456,
-        "NO_UPDATE": 11658
+        "CANDIDATES_IDENTIFIED": 256,
+        "FAILED": 462,
+        "NO_UPDATE": 11792
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2726,8 +2736,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 532,
-        "NO_UPDATE": 13751
+        "FAILED": 539,
+        "NO_UPDATE": 13919
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3286,9 +3296,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 232,
-        "FAILED": 456,
-        "NO_UPDATE": 11672
+        "CANDIDATES_IDENTIFIED": 234,
+        "FAILED": 462,
+        "NO_UPDATE": 11814
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4648,9 +4658,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1243,
-        "FAILED": 380,
-        "NO_UPDATE": 8677
+        "CANDIDATES_IDENTIFIED": 1259,
+        "FAILED": 385,
+        "NO_UPDATE": 8781
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4768,15 +4778,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 232,
-        "FAILED": 530,
-        "NO_UPDATE": 13398
+        "CANDIDATES_IDENTIFIED": 234,
+        "FAILED": 537,
+        "NO_UPDATE": 13564
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 129,
+      "pending_candidate_count": 130,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -5938,12 +5948,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
           "source_url": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach"
+        },
+        {
+          "candidate_id": "SRC-22ad8306772b14c74db4a372",
+          "custody_pointer": "RSRCH-14d092dbf0994f937dee501a",
+          "producer_commit": "20b35751fb26f10f3e434fd7218336e306689226",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance says phase one of withdrawals opens after $6.3B hack",
+          "source_url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1123,
-        "FAILED": 456,
-        "NO_UPDATE": 10781
+        "CANDIDATES_IDENTIFIED": 1131,
+        "FAILED": 462,
+        "NO_UPDATE": 10917
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6160,9 +6179,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 286,
-        "FAILED": 456,
-        "NO_UPDATE": 11618
+        "CANDIDATES_IDENTIFIED": 289,
+        "FAILED": 462,
+        "NO_UPDATE": 11759
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6451,9 +6470,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 195,
-        "FAILED": 608,
-        "NO_UPDATE": 15677
+        "CANDIDATES_IDENTIFIED": 196,
+        "FAILED": 616,
+        "NO_UPDATE": 15868
       }
     }
   }
