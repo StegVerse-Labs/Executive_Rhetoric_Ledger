@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 86,
-  "pending_candidate_count": 702,
-  "pending_sha256": "f6f64d5321d88c9799cb01c0490e5f252280ac38771461c3c1cda0947974abd3",
+  "intake_cycles": 87,
+  "pending_candidate_count": 708,
+  "pending_sha256": "1270b56a789b63ee70106bc359cc46a5cf90b10b552403d617fbab014dcc180e",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -91,10 +91,11 @@
     "20b35751fb26f10f3e434fd7218336e306689226",
     "cc75cfc09c61a87ba36af1906522e5305567defe",
     "b2bde3747ae90a4889fe7851b69974f18fc411a1",
-    "bcaf10b32c00d18aa983ec554c21e2eb5e84ba09"
+    "bcaf10b32c00d18aa983ec554c21e2eb5e84ba09",
+    "1712b028e0b3cf06662b3b373d2059984ef0f7c4"
   ],
   "publication_authorized": false,
-  "scan_record_count": 157420,
+  "scan_record_count": 159245,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -177,8 +178,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 400,
-        "NO_UPDATE": 10342
+        "FAILED": 405,
+        "NO_UPDATE": 10462
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -890,15 +891,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 545,
-        "FAILED": 480,
-        "NO_UPDATE": 11935
+        "CANDIDATES_IDENTIFIED": 550,
+        "FAILED": 486,
+        "NO_UPDATE": 12074
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 116,
+      "pending_candidate_count": 117,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1943,12 +1944,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "BTCPay, a bitcoin payment tool, tells users to switch off their servers after reports of drained wallets",
           "source_url": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets"
+        },
+        {
+          "candidate_id": "SRC-f37dd1c94e16749e942f5999",
+          "custody_pointer": "RSRCH-aa41599913195fa561a0dbd0",
+          "producer_commit": "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "BTC heads into US midterm showdown: Three things to know in Bitcoin this week",
+          "source_url": "https://cointelegraph.com/markets/btc-price-script-midterms-three-things-bitcoin-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 586,
-        "FAILED": 400,
-        "NO_UPDATE": 9814
+        "CANDIDATES_IDENTIFIED": 593,
+        "FAILED": 405,
+        "NO_UPDATE": 9927
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2246,15 +2256,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 539,
-        "FAILED": 480,
-        "NO_UPDATE": 11941
+        "CANDIDATES_IDENTIFIED": 544,
+        "FAILED": 486,
+        "NO_UPDATE": 12080
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 40,
+      "pending_candidate_count": 42,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2615,12 +2625,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance net outflows surge to $5.8B as withdrawals resume after record hack",
           "source_url": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c17c35aa44a26aa2e5fa2dc5",
+          "custody_pointer": "RSRCH-1a55bce7474d12dc29e9a02c",
+          "producer_commit": "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "OKX draws $445M in net inflows as Binance outflows exceed $7B",
+          "source_url": "https://cointelegraph.com/news/okx-leads-crypto-exchanges-445m-inflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-391ab3c211f3db9b7283c789",
+          "custody_pointer": "RSRCH-3ac664e8f353ef1c343954f2",
+          "producer_commit": "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "FBI Blames North Korea for $6B Binance Hack as Exchange Reopens Withdrawals",
+          "source_url": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 285,
-        "FAILED": 480,
-        "NO_UPDATE": 12195
+        "CANDIDATES_IDENTIFIED": 294,
+        "FAILED": 486,
+        "NO_UPDATE": 12330
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2802,8 +2830,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 560,
-        "NO_UPDATE": 14423
+        "FAILED": 567,
+        "NO_UPDATE": 14591
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3362,15 +3390,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 237,
-        "FAILED": 480,
-        "NO_UPDATE": 12243
+        "CANDIDATES_IDENTIFIED": 238,
+        "FAILED": 486,
+        "NO_UPDATE": 12386
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 150,
+      "pending_candidate_count": 152,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4721,12 +4749,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "ExxonMobil and Chevron top estimates for Q3 as Americans feel gas price pain",
           "source_url": "https://www.theguardian.com/business/2026/oct/30/exxonmobil-chevron-q3-results"
+        },
+        {
+          "candidate_id": "SRC-3b50a2fb365e5c9c9d7beadc",
+          "custody_pointer": "RSRCH-21eb55c36b00987d2e97a51e",
+          "producer_commit": "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How oil prices could average $130 per barrel next year, according to Goldman Sachs",
+          "source_url": "https://www.marketwatch.com/story/how-oil-prices-could-average-130-per-barrel-next-year-according-to-goldman-sachs-235ce32b?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-794213248638916f2cc33d64",
+          "custody_pointer": "RSRCH-b6b567e1139f747fdef8db76",
+          "producer_commit": "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How oil prices could average $130 per barrel next year, according to Goldman Sachs",
+          "source_url": "https://www.marketwatch.com/story/how-oil-prices-could-average-130-per-barrel-next-year-according-to-goldman-sachs-235ce32b?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1307,
-        "FAILED": 400,
-        "NO_UPDATE": 9093
+        "CANDIDATES_IDENTIFIED": 1325,
+        "FAILED": 405,
+        "NO_UPDATE": 9195
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4844,9 +4890,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 240,
-        "FAILED": 558,
-        "NO_UPDATE": 14062
+        "CANDIDATES_IDENTIFIED": 242,
+        "FAILED": 565,
+        "NO_UPDATE": 14228
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -6044,9 +6090,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1162,
-        "FAILED": 480,
-        "NO_UPDATE": 11318
+        "CANDIDATES_IDENTIFIED": 1171,
+        "FAILED": 486,
+        "NO_UPDATE": 11453
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6263,15 +6309,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 299,
-        "FAILED": 480,
-        "NO_UPDATE": 12181
+        "CANDIDATES_IDENTIFIED": 301,
+        "FAILED": 486,
+        "NO_UPDATE": 12323
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 31,
+      "pending_candidate_count": 32,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -6551,12 +6597,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Tether\u2019s excess reserves nearly double to $8B as Q3 profit hits $1.5B",
           "source_url": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-09ca4ef6f83b6cd33f839784",
+          "custody_pointer": "RSRCH-fe44183bb1ec502947610c75",
+          "producer_commit": "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+          "query": "settlement routes",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Hong Kong takes tokenized settlement to 24/7, plans stablecoin trials",
+          "source_url": "https://cointelegraph.com/news/hong-kong-24-7-tokenized-settlements-stablecoin-trials?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 199,
-        "FAILED": 640,
-        "NO_UPDATE": 16441
+        "CANDIDATES_IDENTIFIED": 201,
+        "FAILED": 648,
+        "NO_UPDATE": 16631
       }
     }
   }
