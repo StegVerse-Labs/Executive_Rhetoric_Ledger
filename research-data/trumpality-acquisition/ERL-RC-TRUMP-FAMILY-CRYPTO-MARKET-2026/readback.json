@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 84,
-  "pending_candidate_count": 697,
-  "pending_sha256": "437e1f7088506ebc2c1986aefd21384f01d3f959ab49b9b3ace429e720b01442",
+  "intake_cycles": 85,
+  "pending_candidate_count": 700,
+  "pending_sha256": "8366b65f1c7d562544234f7253605ae59ad7fd7dc625f01f4de2e8882af347ab",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -89,10 +89,11 @@
     "a384f24bc28e01214e060c0583c75f03230beae0",
     "894e062ffc7e0ea9e41a7e8c6c67a79306a9cc57",
     "20b35751fb26f10f3e434fd7218336e306689226",
-    "cc75cfc09c61a87ba36af1906522e5305567defe"
+    "cc75cfc09c61a87ba36af1906522e5305567defe",
+    "b2bde3747ae90a4889fe7851b69974f18fc411a1"
   ],
   "publication_authorized": false,
-  "scan_record_count": 153770,
+  "scan_record_count": 155595,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -175,14 +176,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 390,
-        "NO_UPDATE": 10102
+        "FAILED": 395,
+        "NO_UPDATE": 10222
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 76,
+      "pending_candidate_count": 77,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -867,18 +868,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto PACs made big Republican push in final weeks before November 3 election",
           "source_url": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election"
+        },
+        {
+          "candidate_id": "SRC-b95fb70967fc0ca5035759c5",
+          "custody_pointer": "RSRCH-e7988ad022b1f5089edd526d",
+          "producer_commit": "b2bde3747ae90a4889fe7851b69974f18fc411a1",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 536,
-        "FAILED": 468,
-        "NO_UPDATE": 11656
+        "CANDIDATES_IDENTIFIED": 540,
+        "FAILED": 474,
+        "NO_UPDATE": 11796
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 114,
+      "pending_candidate_count": 115,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1905,12 +1915,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto PACs made big Republican push in final weeks before November 3 election",
           "source_url": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election"
+        },
+        {
+          "candidate_id": "SRC-73a929fef1351c3855b4e878",
+          "custody_pointer": "RSRCH-4facc795c5dd07391aed64f2",
+          "producer_commit": "b2bde3747ae90a4889fe7851b69974f18fc411a1",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 573,
-        "FAILED": 390,
-        "NO_UPDATE": 9587
+        "CANDIDATES_IDENTIFIED": 579,
+        "FAILED": 395,
+        "NO_UPDATE": 9701
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2208,15 +2227,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 529,
-        "FAILED": 468,
-        "NO_UPDATE": 11663
+        "CANDIDATES_IDENTIFIED": 534,
+        "FAILED": 474,
+        "NO_UPDATE": 11802
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 39,
+      "pending_candidate_count": 40,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2568,12 +2587,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance says phase one of withdrawals opens after $6.3B hack",
           "source_url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-62db16843c921e6f3ab6363c",
+          "custody_pointer": "RSRCH-2afdeb0409308d3613796df6",
+          "producer_commit": "b2bde3747ae90a4889fe7851b69974f18fc411a1",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance net outflows surge to $5.8B as withdrawals resume after record hack",
+          "source_url": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 265,
-        "FAILED": 468,
-        "NO_UPDATE": 11927
+        "CANDIDATES_IDENTIFIED": 275,
+        "FAILED": 474,
+        "NO_UPDATE": 12061
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2755,8 +2783,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 546,
-        "NO_UPDATE": 14087
+        "FAILED": 553,
+        "NO_UPDATE": 14255
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3315,9 +3343,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 235,
-        "FAILED": 468,
-        "NO_UPDATE": 11957
+        "CANDIDATES_IDENTIFIED": 236,
+        "FAILED": 474,
+        "NO_UPDATE": 12100
       }
     },
     "market-rhetoric-oil-impact": {
@@ -4677,9 +4705,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1275,
-        "FAILED": 390,
-        "NO_UPDATE": 8885
+        "CANDIDATES_IDENTIFIED": 1291,
+        "FAILED": 395,
+        "NO_UPDATE": 8989
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4797,9 +4825,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 236,
-        "FAILED": 544,
-        "NO_UPDATE": 13730
+        "CANDIDATES_IDENTIFIED": 238,
+        "FAILED": 551,
+        "NO_UPDATE": 13896
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -5997,9 +6025,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1142,
-        "FAILED": 468,
-        "NO_UPDATE": 11050
+        "CANDIDATES_IDENTIFIED": 1152,
+        "FAILED": 474,
+        "NO_UPDATE": 11184
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6216,9 +6244,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 293,
-        "FAILED": 468,
-        "NO_UPDATE": 11899
+        "CANDIDATES_IDENTIFIED": 296,
+        "FAILED": 474,
+        "NO_UPDATE": 12040
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6507,9 +6535,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 197,
-        "FAILED": 624,
-        "NO_UPDATE": 16059
+        "CANDIDATES_IDENTIFIED": 198,
+        "FAILED": 632,
+        "NO_UPDATE": 16250
       }
     }
   }
