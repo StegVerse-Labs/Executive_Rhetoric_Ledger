@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 87,
-  "pending_candidate_count": 708,
-  "pending_sha256": "1270b56a789b63ee70106bc359cc46a5cf90b10b552403d617fbab014dcc180e",
+  "intake_cycles": 88,
+  "pending_candidate_count": 717,
+  "pending_sha256": "f5fb52e16db827b305b9752bfcf45b78fb016d2acb4f1b6ae3b543e509207a3f",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -92,10 +92,11 @@
     "cc75cfc09c61a87ba36af1906522e5305567defe",
     "b2bde3747ae90a4889fe7851b69974f18fc411a1",
     "bcaf10b32c00d18aa983ec554c21e2eb5e84ba09",
-    "1712b028e0b3cf06662b3b373d2059984ef0f7c4"
+    "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
+    "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159"
   ],
   "publication_authorized": false,
-  "scan_record_count": 159245,
+  "scan_record_count": 161070,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -178,14 +179,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 405,
-        "NO_UPDATE": 10462
+        "FAILED": 410,
+        "NO_UPDATE": 10582
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 78,
+      "pending_candidate_count": 79,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -888,18 +889,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bank of Korea probes financial firms\u2019 exposure to crypto risks",
           "source_url": "https://cointelegraph.com/news/bank-of-korea-probes-financial-firms-exposure-to-crypto-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-23e8b1900213e1e6891b9df3",
+          "custody_pointer": "RSRCH-bc0e370254ff79450805c194",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Animoca Brands clears final hurdle for Abu Dhabi fund management",
+          "source_url": "https://cointelegraph.com/news/animoca-brands-expands-asset-management-business-with-abu-dhabi-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 550,
-        "FAILED": 486,
-        "NO_UPDATE": 12074
+        "CANDIDATES_IDENTIFIED": 554,
+        "FAILED": 492,
+        "NO_UPDATE": 12214
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 117,
+      "pending_candidate_count": 119,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1953,12 +1963,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "BTC heads into US midterm showdown: Three things to know in Bitcoin this week",
           "source_url": "https://cointelegraph.com/markets/btc-price-script-midterms-three-things-bitcoin-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-6b48054c4f3aafa2c391a961",
+          "custody_pointer": "RSRCH-ffb571fb0c9c817c89698534",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance taps half its SAFU Bitcoin holdings, releases reserve proof",
+          "source_url": "https://cointelegraph.com/news/binance-safu-btc-balance-halves-recovery-unclear?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-78de8734c8065980ae458420",
+          "custody_pointer": "RSRCH-ad9464969a4bab8815ad7e17",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "BTCPay Tells Merchants to Switch Off Servers Amid Hot Wallet Attack Reports",
+          "source_url": "https://decrypt.co/382324/btcpay-tells-merchants-to-switch-off-servers-amid-hot-wallet-attack-reports"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 593,
-        "FAILED": 405,
-        "NO_UPDATE": 9927
+        "CANDIDATES_IDENTIFIED": 600,
+        "FAILED": 410,
+        "NO_UPDATE": 10040
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2256,15 +2284,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 544,
-        "FAILED": 486,
-        "NO_UPDATE": 12080
+        "CANDIDATES_IDENTIFIED": 548,
+        "FAILED": 492,
+        "NO_UPDATE": 12220
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 42,
+      "pending_candidate_count": 43,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2643,12 +2671,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "FBI Blames North Korea for $6B Binance Hack as Exchange Reopens Withdrawals",
           "source_url": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals"
+        },
+        {
+          "candidate_id": "SRC-4c12e33a3da7f00f20177da6",
+          "custody_pointer": "RSRCH-be95ef996b6da2bf441276f0",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis",
+          "source_url": "https://cointelegraph.com/news/binance-hackers-solana-new-phase-laundering-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 294,
-        "FAILED": 486,
-        "NO_UPDATE": 12330
+        "CANDIDATES_IDENTIFIED": 301,
+        "FAILED": 492,
+        "NO_UPDATE": 12467
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2830,14 +2867,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 567,
-        "NO_UPDATE": 14591
+        "FAILED": 574,
+        "NO_UPDATE": 14759
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 61,
+      "pending_candidate_count": 62,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -3387,18 +3424,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
           "source_url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas"
+        },
+        {
+          "candidate_id": "SRC-9182b0ca60a30a55c2b0c832",
+          "custody_pointer": "RSRCH-612109ffb8eaa294fae3c23a",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "XRP Ledger set to fix flaw that could have let stablecoin partners print new tokens",
+          "source_url": "https://www.coindesk.com/tech/2026/11/02/xrp-ledger-set-to-fix-flaw-that-could-let-stablecoin-partners-print-new-tokens"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 238,
-        "FAILED": 486,
-        "NO_UPDATE": 12386
+        "CANDIDATES_IDENTIFIED": 239,
+        "FAILED": 492,
+        "NO_UPDATE": 12529
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 152,
+      "pending_candidate_count": 154,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4767,12 +4813,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "How oil prices could average $130 per barrel next year, according to Goldman Sachs",
           "source_url": "https://www.marketwatch.com/story/how-oil-prices-could-average-130-per-barrel-next-year-according-to-goldman-sachs-235ce32b?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-d663cae9f718d5496185a41e",
+          "custody_pointer": "RSRCH-5e6600d8ec698abbb0c3e5ee",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil price falls amid hope of a breakthrough to end Iran war",
+          "source_url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war"
+        },
+        {
+          "candidate_id": "SRC-1f1db2f687045aa2a8466dd0",
+          "custody_pointer": "RSRCH-ec1938f453d5100dbde7afc9",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil price falls amid hope of a breakthrough to end Iran war",
+          "source_url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1325,
-        "FAILED": 405,
-        "NO_UPDATE": 9195
+        "CANDIDATES_IDENTIFIED": 1341,
+        "FAILED": 410,
+        "NO_UPDATE": 9299
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4890,15 +4954,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 565,
-        "NO_UPDATE": 14228
+        "CANDIDATES_IDENTIFIED": 244,
+        "FAILED": 572,
+        "NO_UPDATE": 14394
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 132,
+      "pending_candidate_count": 134,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6087,12 +6151,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
           "source_url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
+        },
+        {
+          "candidate_id": "SRC-32d19cac7b6df7b1dd809685",
+          "custody_pointer": "RSRCH-878b5a06dd1437c1dcede309",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Brazil's Largest Exchange Mercado Bitcoin Halts Withdrawals After $40 Million Hack",
+          "source_url": "https://decrypt.co/382341/mercado-bitcoin-halts-withdrawals-40-million-hack"
+        },
+        {
+          "candidate_id": "SRC-b040a1e5b12f6bb9ffe785aa",
+          "custody_pointer": "RSRCH-878b5a06dd1437c1dcede309",
+          "producer_commit": "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish",
+          "source_url": "https://decrypt.co/382340/bitmine-buys-more-ethereum-tom-lee-binance-hack-bullish"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1171,
-        "FAILED": 486,
-        "NO_UPDATE": 11453
+        "CANDIDATES_IDENTIFIED": 1181,
+        "FAILED": 492,
+        "NO_UPDATE": 11587
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6309,9 +6391,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 301,
-        "FAILED": 486,
-        "NO_UPDATE": 12323
+        "CANDIDATES_IDENTIFIED": 303,
+        "FAILED": 492,
+        "NO_UPDATE": 12465
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6609,9 +6691,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 201,
-        "FAILED": 648,
-        "NO_UPDATE": 16631
+        "CANDIDATES_IDENTIFIED": 203,
+        "FAILED": 656,
+        "NO_UPDATE": 16821
       }
     }
   }
