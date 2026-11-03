@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 90,
-  "pending_candidate_count": 735,
-  "pending_sha256": "1d3bd450266f00b92d755b679375393e43984eba72b47642747763553436e9f9",
+  "intake_cycles": 91,
+  "pending_candidate_count": 747,
+  "pending_sha256": "ce279d2f2347316f937eb599687934ee12de51a414d10350e53491667e1230f0",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -95,10 +95,11 @@
     "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
     "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
     "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
-    "a20ada19cd1c27f28f69220fc44522f9dec519bd"
+    "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+    "d12763f7bcda88e7322fb57e9fd99e14617d4387"
   ],
   "publication_authorized": false,
-  "scan_record_count": 164720,
+  "scan_record_count": 166545,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -181,14 +182,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 420,
-        "NO_UPDATE": 10822
+        "FAILED": 425,
+        "NO_UPDATE": 10942
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 79,
+      "pending_candidate_count": 80,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -900,12 +901,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Animoca Brands clears final hurdle for Abu Dhabi fund management",
           "source_url": "https://cointelegraph.com/news/animoca-brands-expands-asset-management-business-with-abu-dhabi-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-006319a2af15361db82ea6dc",
+          "custody_pointer": "RSRCH-adcf3aa7320bd6ae06515618",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "effective dates",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To List Shares of the Bitwise 10 Crypto Index ETF Under NYSE Arca Rule 8.201-E (Generic)",
+          "source_url": "https://www.federalregister.gov/documents/2026/11/03/2026-22374/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-and-immediate-effectiveness-of-proposed"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 561,
-        "FAILED": 504,
-        "NO_UPDATE": 12495
+        "CANDIDATES_IDENTIFIED": 563,
+        "FAILED": 510,
+        "NO_UPDATE": 12637
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -2004,9 +2014,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 610,
-        "FAILED": 420,
-        "NO_UPDATE": 10270
+        "CANDIDATES_IDENTIFIED": 614,
+        "FAILED": 425,
+        "NO_UPDATE": 10386
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2313,15 +2323,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 558,
-        "FAILED": 504,
-        "NO_UPDATE": 12498
+        "CANDIDATES_IDENTIFIED": 563,
+        "FAILED": 510,
+        "NO_UPDATE": 12637
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 49,
+      "pending_candidate_count": 51,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2763,12 +2773,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance begins second withdrawal phase, exchange outflows slow",
           "source_url": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fa6b51ca150134e604c95dbb",
+          "custody_pointer": "RSRCH-aa8160b0a9e4081b8cbb0a56",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance\u2019s net inflows turn positive at $2.3B as withdrawals expand",
+          "source_url": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-5d76c1ef20977d043830db0d",
+          "custody_pointer": "RSRCH-5b2bf68e83e33006b15188d2",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance Misses Monthly Luna Classic Burn for First Time Since 2023",
+          "source_url": "https://decrypt.co/382401/binance-misses-monthly-luna-classic-burn-for-first-time-since-2023"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 315,
-        "FAILED": 504,
-        "NO_UPDATE": 12741
+        "CANDIDATES_IDENTIFIED": 321,
+        "FAILED": 510,
+        "NO_UPDATE": 12879
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2950,8 +2978,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 588,
-        "NO_UPDATE": 15095
+        "FAILED": 595,
+        "NO_UPDATE": 15263
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3519,15 +3547,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 241,
-        "FAILED": 504,
-        "NO_UPDATE": 12815
+        "CANDIDATES_IDENTIFIED": 242,
+        "FAILED": 510,
+        "NO_UPDATE": 12958
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 160,
+      "pending_candidate_count": 166,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4968,12 +4996,66 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "US reportedly strikes Iran\u2019s Qeshm Island as Vance voices optimism about a deal",
           "source_url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island"
+        },
+        {
+          "candidate_id": "SRC-cb346aad0593bc45f049fbf8",
+          "custody_pointer": "RSRCH-ebc955d18b69f050f1d060a8",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. Military Strikes Iran\u2019s Qeshm Island in What U.S. Officials Call a Defensive Measure",
+          "source_url": "https://www.nytimes.com/2026/11/02/us/politics/us-military-strikes-iran-qeshm-island.html"
+        },
+        {
+          "candidate_id": "SRC-9ac1fe6f3a4d700ec087be97",
+          "custody_pointer": "RSRCH-f4aaef69409014552666d7f5",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US midterm elections 2026 live: Americans go to the polls in referendum on Trump\u2019s agenda",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/nov/03/midterm-elections-live-updates-voting"
+        },
+        {
+          "candidate_id": "SRC-f36c9de235febebdde9c74ab",
+          "custody_pointer": "RSRCH-77ea60a0749bb4aeb39bc5b1",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil has had a massive run, but a prominent bull sees a turning point on midterm eve",
+          "source_url": "https://www.marketwatch.com/story/oil-has-had-a-massive-run-but-a-prominent-bull-sees-a-turning-point-on-midterm-eve-be2c5fa7?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-0d0e9b71080a262f324dd936",
+          "custody_pointer": "RSRCH-393f6ba0108b7f6729b2b15e",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. Military Strikes Iran\u2019s Qeshm Island in What U.S. Officials Call a Defensive Measure",
+          "source_url": "https://www.nytimes.com/2026/11/02/us/politics/us-military-strikes-iran-qeshm-island.html"
+        },
+        {
+          "candidate_id": "SRC-91ea0ebd3a30004395a04f23",
+          "custody_pointer": "RSRCH-d817ac09b8b766efea211e8f",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US midterm elections 2026 live: Americans go to the polls in referendum on Trump\u2019s agenda",
+          "source_url": "https://www.theguardian.com/us-news/live/2026/nov/03/midterm-elections-live-updates-voting"
+        },
+        {
+          "candidate_id": "SRC-13e1b6a6808ccd7f86a1e356",
+          "custody_pointer": "RSRCH-0616bf80c68dc2d4a260a2ad",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Oil has had a massive run, but a prominent bull sees a turning point on midterm eve",
+          "source_url": "https://www.marketwatch.com/story/oil-has-had-a-massive-run-but-a-prominent-bull-sees-a-turning-point-on-midterm-eve-be2c5fa7?mod=mw_rss_topstories"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1379,
-        "FAILED": 420,
-        "NO_UPDATE": 9501
+        "CANDIDATES_IDENTIFIED": 1401,
+        "FAILED": 425,
+        "NO_UPDATE": 9599
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5100,15 +5182,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 247,
-        "FAILED": 586,
-        "NO_UPDATE": 14727
+        "CANDIDATES_IDENTIFIED": 248,
+        "FAILED": 593,
+        "NO_UPDATE": 14894
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 136,
+      "pending_candidate_count": 139,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6333,12 +6415,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "South Korea urges exchanges to boost cold storage after Binance hack",
           "source_url": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-4da14d3d016f7eda764d115c",
+          "custody_pointer": "RSRCH-70e8b052fb70f2f1f937d91e",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "France postpones 2027 budget vote, crypto exit-tax proposals scrapped",
+          "source_url": "https://cointelegraph.com/news/france-postpones-2027-budget-vote-reject-crypto-exit-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-176a7af167f168a07cf2ba39",
+          "custody_pointer": "RSRCH-5ef73f84713772331784e7ee",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "France postpones 2027 budget vote, crypto exit-tax proposals scrapped",
+          "source_url": "https://cointelegraph.com/news/france-postpones-2027-budget-vote-reject-crypto-exit-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-6c4fced896bbcc9020bda83f",
+          "custody_pointer": "RSRCH-fbfc0eb8409c49b11d266e55",
+          "producer_commit": "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin steadies after dip to $76,300 as ETF outflows and midterm elections weigh on crypto",
+          "source_url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1197,
-        "FAILED": 504,
-        "NO_UPDATE": 11859
+        "CANDIDATES_IDENTIFIED": 1207,
+        "FAILED": 510,
+        "NO_UPDATE": 11993
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6555,9 +6664,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 309,
-        "FAILED": 504,
-        "NO_UPDATE": 12747
+        "CANDIDATES_IDENTIFIED": 312,
+        "FAILED": 510,
+        "NO_UPDATE": 12888
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6855,9 +6964,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 205,
-        "FAILED": 672,
-        "NO_UPDATE": 17203
+        "CANDIDATES_IDENTIFIED": 206,
+        "FAILED": 680,
+        "NO_UPDATE": 17394
       }
     }
   }
