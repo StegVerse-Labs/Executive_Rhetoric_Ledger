@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 88,
-  "pending_candidate_count": 717,
-  "pending_sha256": "f5fb52e16db827b305b9752bfcf45b78fb016d2acb4f1b6ae3b543e509207a3f",
+  "intake_cycles": 89,
+  "pending_candidate_count": 725,
+  "pending_sha256": "04c16d3d79ca29f3a197232fc360a8c2a16ed14c9470ddd8fb85f5c5e93c82aa",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -93,10 +93,11 @@
     "b2bde3747ae90a4889fe7851b69974f18fc411a1",
     "bcaf10b32c00d18aa983ec554c21e2eb5e84ba09",
     "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
-    "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159"
+    "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
+    "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a"
   ],
   "publication_authorized": false,
-  "scan_record_count": 161070,
+  "scan_record_count": 162895,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -179,8 +180,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 410,
-        "NO_UPDATE": 10582
+        "FAILED": 415,
+        "NO_UPDATE": 10702
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -901,15 +902,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 554,
-        "FAILED": 492,
-        "NO_UPDATE": 12214
+        "CANDIDATES_IDENTIFIED": 558,
+        "FAILED": 498,
+        "NO_UPDATE": 12354
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 119,
+      "pending_candidate_count": 121,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -1981,12 +1982,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "BTCPay Tells Merchants to Switch Off Servers Amid Hot Wallet Attack Reports",
           "source_url": "https://decrypt.co/382324/btcpay-tells-merchants-to-switch-off-servers-amid-hot-wallet-attack-reports"
+        },
+        {
+          "candidate_id": "SRC-ef486fa8e3ce446039996633",
+          "custody_pointer": "RSRCH-fc4b7a4081eccc39d39bb7f0",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin risks drop below $76K as 7% oil slide fails to spark BTC price rally",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-d4291f1314306451dde80c6b",
+          "custody_pointer": "RSRCH-a6676282c3511f026cd870d8",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Firm Strive Climbs Up the Treasury Ranks With Another Big Buy",
+          "source_url": "https://decrypt.co/382385/bitcoin-firm-strive-treasury-ranks-another-big-buy"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 600,
-        "FAILED": 410,
-        "NO_UPDATE": 10040
+        "CANDIDATES_IDENTIFIED": 606,
+        "FAILED": 415,
+        "NO_UPDATE": 10154
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2284,15 +2303,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 548,
-        "FAILED": 492,
-        "NO_UPDATE": 12220
+        "CANDIDATES_IDENTIFIED": 553,
+        "FAILED": 498,
+        "NO_UPDATE": 12359
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 43,
+      "pending_candidate_count": 46,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2680,12 +2699,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis",
           "source_url": "https://cointelegraph.com/news/binance-hackers-solana-new-phase-laundering-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-713d4f4fdddc238812bcba32",
+          "custody_pointer": "RSRCH-95aad0f98ede4594afe575cb",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "North Korea denies role in $6.3B Binance hack, points finger at US",
+          "source_url": "https://cointelegraph.com/news/north-korea-denies-role-in-63b-binance-hack-points-finger-at-us?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-3b0d63b00094174cff322d9e",
+          "custody_pointer": "RSRCH-26b39a02d6f02113186e0533",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
+          "source_url": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-9335ffc5b95b13b84f5af829",
+          "custody_pointer": "RSRCH-581145533dd785d9fbcac5e2",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
+          "source_url": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 301,
-        "FAILED": 492,
-        "NO_UPDATE": 12467
+        "CANDIDATES_IDENTIFIED": 309,
+        "FAILED": 498,
+        "NO_UPDATE": 12603
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2867,8 +2913,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 574,
-        "NO_UPDATE": 14759
+        "FAILED": 581,
+        "NO_UPDATE": 14927
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3436,15 +3482,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 239,
-        "FAILED": 492,
-        "NO_UPDATE": 12529
+        "CANDIDATES_IDENTIFIED": 240,
+        "FAILED": 498,
+        "NO_UPDATE": 12672
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 154,
+      "pending_candidate_count": 156,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4831,12 +4877,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil price falls amid hope of a breakthrough to end Iran war",
           "source_url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war"
+        },
+        {
+          "candidate_id": "SRC-978e5dd6c24e88ff3990cd38",
+          "custody_pointer": "RSRCH-cef0bc165a0419f4baf577ab",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin risks drop below $76K as 7% oil slide fails to spark BTC price rally",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f01c6e87a3f0337ce1c4433f",
+          "custody_pointer": "RSRCH-0b6c9b02e6a1ab138a4a5e41",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin risks drop below $76K as 7% oil slide fails to spark BTC price rally",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1341,
-        "FAILED": 410,
-        "NO_UPDATE": 9299
+        "CANDIDATES_IDENTIFIED": 1359,
+        "FAILED": 415,
+        "NO_UPDATE": 9401
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -4954,15 +5018,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 244,
-        "FAILED": 572,
-        "NO_UPDATE": 14394
+        "CANDIDATES_IDENTIFIED": 246,
+        "FAILED": 579,
+        "NO_UPDATE": 14560
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 134,
+      "pending_candidate_count": 135,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6169,12 +6233,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish",
           "source_url": "https://decrypt.co/382340/bitmine-buys-more-ethereum-tom-lee-binance-hack-bullish"
+        },
+        {
+          "candidate_id": "SRC-96fedeed64dc22335f36fda1",
+          "custody_pointer": "RSRCH-9c44e2c3375401fa0ec97360",
+          "producer_commit": "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
+          "source_url": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1181,
-        "FAILED": 492,
-        "NO_UPDATE": 11587
+        "CANDIDATES_IDENTIFIED": 1189,
+        "FAILED": 498,
+        "NO_UPDATE": 11723
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6391,9 +6464,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 303,
-        "FAILED": 492,
-        "NO_UPDATE": 12465
+        "CANDIDATES_IDENTIFIED": 306,
+        "FAILED": 498,
+        "NO_UPDATE": 12606
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6691,9 +6764,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 203,
-        "FAILED": 656,
-        "NO_UPDATE": 16821
+        "CANDIDATES_IDENTIFIED": 204,
+        "FAILED": 664,
+        "NO_UPDATE": 17012
       }
     }
   }
