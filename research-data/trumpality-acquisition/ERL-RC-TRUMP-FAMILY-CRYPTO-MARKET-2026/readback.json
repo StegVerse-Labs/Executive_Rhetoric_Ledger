@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 89,
-  "pending_candidate_count": 725,
-  "pending_sha256": "04c16d3d79ca29f3a197232fc360a8c2a16ed14c9470ddd8fb85f5c5e93c82aa",
+  "intake_cycles": 90,
+  "pending_candidate_count": 735,
+  "pending_sha256": "1d3bd450266f00b92d755b679375393e43984eba72b47642747763553436e9f9",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -94,10 +94,11 @@
     "bcaf10b32c00d18aa983ec554c21e2eb5e84ba09",
     "1712b028e0b3cf06662b3b373d2059984ef0f7c4",
     "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
-    "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a"
+    "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
+    "a20ada19cd1c27f28f69220fc44522f9dec519bd"
   ],
   "publication_authorized": false,
-  "scan_record_count": 162895,
+  "scan_record_count": 164720,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -180,8 +181,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 415,
-        "NO_UPDATE": 10702
+        "FAILED": 420,
+        "NO_UPDATE": 10822
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -902,9 +903,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 558,
-        "FAILED": 498,
-        "NO_UPDATE": 12354
+        "CANDIDATES_IDENTIFIED": 561,
+        "FAILED": 504,
+        "NO_UPDATE": 12495
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -2003,15 +2004,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 606,
-        "FAILED": 415,
-        "NO_UPDATE": 10154
+        "CANDIDATES_IDENTIFIED": 610,
+        "FAILED": 420,
+        "NO_UPDATE": 10270
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 32,
+      "pending_candidate_count": 33,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -2300,18 +2301,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Melania Trump's meme coin 'quietly sold' for $30 Million in tokens amid stock market saga - Irish Star",
           "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObm1MRkZkUWJ1SVdqZ1EzSnJzcWxucnMtSDR0cXpQckVxQVQ2SjRBeGJ0WVJKLUxrMkxsZ2pMbUR0NDFzY0NHX1RiVG15NzRkXzd1RmNIV0JWZ3VRVHpXMGhWQ3NyZmFrNUpWLW1hYzd3ZHBJSFBNbTBPbTJ3SVl4OVNwY3ZoYknSAYwBQVVfeXFMTU9IU0tvaFNEY3B6emNVMEx3VlhWZFJldE5iMWJ1Vl94RTZlWlRIT1VMVHhfYWNnc2dIbURyTlJoQUNMSGF2NVZQdlJPY2lyN3pKXzZaMW9yZnd0ZDhLbk5RclU5LVFlVDBlTzJKQTZmVVdib3Z6QXNiaGJrOXc3NGNIdHpfU2tqSG4wYUI?oc=5"
+        },
+        {
+          "candidate_id": "SRC-e4b1acb425eeacc3313805af",
+          "custody_pointer": "RSRCH-cea52b40ac64b809c74bbbd9",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "cross-token price and volume series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "'Fuck This Coin': Trump Crypto Gala Admission Price Plummets as Meme Coin Value Down Over 90% - Common Dreams",
+          "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9TRVJSejlRNkhkSmJWNUMxbnhLelhzTnE5V2c3LTA1blhsamNUdm5Xc3VLT25oMWROTnAxd2FUb3ZyX2VGVEVlV0VRaVZwSzNEMGl0Sk0wMXFNWUtWb0E?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 553,
-        "FAILED": 498,
-        "NO_UPDATE": 12359
+        "CANDIDATES_IDENTIFIED": 558,
+        "FAILED": 504,
+        "NO_UPDATE": 12498
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 46,
+      "pending_candidate_count": 49,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2726,12 +2736,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
           "source_url": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-b66cd05adeb9b3716c244c64",
+          "custody_pointer": "RSRCH-ec1a199c52074d099c592128",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance begins second withdrawal phase, exchange outflows slow",
+          "source_url": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-7ae04559729f0789a9834f26",
+          "custody_pointer": "RSRCH-ec1a199c52074d099c592128",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea urges exchanges to boost cold storage after Binance hack",
+          "source_url": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-459b9b271860ade981ab8b75",
+          "custody_pointer": "RSRCH-0c3e779d34b713b8d80cd3b5",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance begins second withdrawal phase, exchange outflows slow",
+          "source_url": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 309,
-        "FAILED": 498,
-        "NO_UPDATE": 12603
+        "CANDIDATES_IDENTIFIED": 315,
+        "FAILED": 504,
+        "NO_UPDATE": 12741
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2913,8 +2950,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 581,
-        "NO_UPDATE": 14927
+        "FAILED": 588,
+        "NO_UPDATE": 15095
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3482,15 +3519,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 240,
-        "FAILED": 498,
-        "NO_UPDATE": 12672
+        "CANDIDATES_IDENTIFIED": 241,
+        "FAILED": 504,
+        "NO_UPDATE": 12815
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 156,
+      "pending_candidate_count": 160,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -4895,18 +4932,54 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin risks drop below $76K as 7% oil slide fails to spark BTC price rally",
           "source_url": "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-5cfed9e666f8c16f752b708a",
+          "custody_pointer": "RSRCH-74128b7d609b2aaa68f5a29d",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. Military Strikes Iran\u2019s Qeshm Island in What U.S. Officials Call a Defensive Measure",
+          "source_url": "https://www.nytimes.com/2026/11/02/us/politics/us-military-strike-defensive-iran.html"
+        },
+        {
+          "candidate_id": "SRC-6fc980b2a18310e7e516233c",
+          "custody_pointer": "RSRCH-47ab8488b6a3fea1227a50cc",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US reportedly strikes Iran\u2019s Qeshm Island as Vance voices optimism about a deal",
+          "source_url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island"
+        },
+        {
+          "candidate_id": "SRC-4080ce4da643bdb81ba38f11",
+          "custody_pointer": "RSRCH-03f2a484eabab59d463dcb4e",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "U.S. Military Strikes Iran\u2019s Qeshm Island in What U.S. Officials Call a Defensive Measure",
+          "source_url": "https://www.nytimes.com/2026/11/02/us/politics/us-military-strike-defensive-iran.html"
+        },
+        {
+          "candidate_id": "SRC-1e4e0e68e52a3adc960b052a",
+          "custody_pointer": "RSRCH-c2dd0e67aacccf1f48f5734f",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US reportedly strikes Iran\u2019s Qeshm Island as Vance voices optimism about a deal",
+          "source_url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1359,
-        "FAILED": 415,
-        "NO_UPDATE": 9401
+        "CANDIDATES_IDENTIFIED": 1379,
+        "FAILED": 420,
+        "NO_UPDATE": 9501
       }
     },
     "melania-token-preannouncement-wallets": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 12,
+      "pending_candidate_count": 13,
       "pending_candidates": [
         {
           "candidate_id": "SRC-af8c33eeb2daad8af8521e24",
@@ -5015,18 +5088,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Official Trump memecoin wallet cashes out $4.6m to Coinbase ahead of team unlocks - dlnews.com",
           "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOel96TXl2bXFQZTRwVldHN2pnRDB5LWw0YkthWkZnS3RodDR0b3lQdWxmRUxENzlpMVBmenRRZ0pSWHRhc2VfYkhTQUVvazZ0cXlKR05rWEVZYko2S0ZIQmRtX2l5V3ZBakhMUU5lZmpWZ00xSjEzQlFGRG5GVE1qUGJMYWtxVkZmWWpDUkNqUEFjZHpra2VpbFRsdkE?oc=5"
+        },
+        {
+          "candidate_id": "SRC-c80ce31dec35fb93f1ee0cdb",
+          "custody_pointer": "RSRCH-c19b7fb8bffb207ee3ceb46a",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "bubblemaps nansen arkham on-chain wallets wallet sniped sniping cluster funded",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bubblemaps links Libra and Melania memecoin teams - Latest news from Azerbaijan",
+          "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGVThVUy1LOVVMZmI0MDhUOUVyNUxOZTV4TS0xWkpBZGpQTmpCRUowMS0zQ29xLVVjdDB5dHE3YlFWMHQwVEU5STRCREpJcS1CUzNNNDNsRkxjSFlRRkk0ZnJyTHMwWE8wc25PTmk2ZWVfem1hcWNZbVJR?oc=5"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 246,
-        "FAILED": 579,
-        "NO_UPDATE": 14560
+        "CANDIDATES_IDENTIFIED": 247,
+        "FAILED": 586,
+        "NO_UPDATE": 14727
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 135,
+      "pending_candidate_count": 136,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6242,12 +6324,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
           "source_url": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack"
+        },
+        {
+          "candidate_id": "SRC-c3cb6f78fa78a39becf7b53d",
+          "custody_pointer": "RSRCH-aae7629167c13406c49e0a80",
+          "producer_commit": "a20ada19cd1c27f28f69220fc44522f9dec519bd",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea urges exchanges to boost cold storage after Binance hack",
+          "source_url": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1189,
-        "FAILED": 498,
-        "NO_UPDATE": 11723
+        "CANDIDATES_IDENTIFIED": 1197,
+        "FAILED": 504,
+        "NO_UPDATE": 11859
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6464,9 +6555,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 306,
-        "FAILED": 498,
-        "NO_UPDATE": 12606
+        "CANDIDATES_IDENTIFIED": 309,
+        "FAILED": 504,
+        "NO_UPDATE": 12747
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6764,9 +6855,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 204,
-        "FAILED": 664,
-        "NO_UPDATE": 17012
+        "CANDIDATES_IDENTIFIED": 205,
+        "FAILED": 672,
+        "NO_UPDATE": 17203
       }
     }
   }
