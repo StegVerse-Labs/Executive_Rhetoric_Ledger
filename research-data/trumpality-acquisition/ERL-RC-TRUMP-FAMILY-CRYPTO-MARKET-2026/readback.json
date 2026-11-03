@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 91,
-  "pending_candidate_count": 747,
-  "pending_sha256": "ce279d2f2347316f937eb599687934ee12de51a414d10350e53491667e1230f0",
+  "intake_cycles": 92,
+  "pending_candidate_count": 755,
+  "pending_sha256": "e3f4ebd351945971369fa16d032978ef50f9247068a38ffce44d14cc07fde236",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -96,10 +96,11 @@
     "6fbd91e8bc3cbf17fbb3d8a2aa7f2793a745d159",
     "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
     "a20ada19cd1c27f28f69220fc44522f9dec519bd",
-    "d12763f7bcda88e7322fb57e9fd99e14617d4387"
+    "d12763f7bcda88e7322fb57e9fd99e14617d4387",
+    "49f41acd21bd6ca0c50777bd1bc76029330f8b0f"
   ],
   "publication_authorized": false,
-  "scan_record_count": 166545,
+  "scan_record_count": 168370,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -182,14 +183,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 425,
-        "NO_UPDATE": 10942
+        "FAILED": 430,
+        "NO_UPDATE": 11062
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 80,
+      "pending_candidate_count": 81,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -910,18 +911,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To List Shares of the Bitwise 10 Crypto Index ETF Under NYSE Arca Rule 8.201-E (Generic)",
           "source_url": "https://www.federalregister.gov/documents/2026/11/03/2026-22374/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-and-immediate-effectiveness-of-proposed"
+        },
+        {
+          "candidate_id": "SRC-cc884a3b60852a25cf2776e8",
+          "custody_pointer": "RSRCH-fd28121bdfced70bb1aef043",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC clears perpetual futures on stocks, bringing crypto trading model to Wall Street",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 563,
-        "FAILED": 510,
-        "NO_UPDATE": 12637
+        "CANDIDATES_IDENTIFIED": 566,
+        "FAILED": 516,
+        "NO_UPDATE": 12778
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 121,
+      "pending_candidate_count": 122,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2011,12 +2021,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Firm Strive Climbs Up the Treasury Ranks With Another Big Buy",
           "source_url": "https://decrypt.co/382385/bitcoin-firm-strive-treasury-ranks-another-big-buy"
+        },
+        {
+          "candidate_id": "SRC-078e4ee5ccb6dd3c20881503",
+          "custody_pointer": "RSRCH-6f80c9238243a4f37ce3be58",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC clears perpetual futures on stocks, bringing crypto trading model to Wall Street",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 614,
-        "FAILED": 425,
-        "NO_UPDATE": 10386
+        "CANDIDATES_IDENTIFIED": 619,
+        "FAILED": 430,
+        "NO_UPDATE": 10501
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2323,15 +2342,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 563,
-        "FAILED": 510,
-        "NO_UPDATE": 12637
+        "CANDIDATES_IDENTIFIED": 568,
+        "FAILED": 516,
+        "NO_UPDATE": 12776
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 51,
+      "pending_candidate_count": 54,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2791,12 +2810,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance Misses Monthly Luna Classic Burn for First Time Since 2023",
           "source_url": "https://decrypt.co/382401/binance-misses-monthly-luna-classic-burn-for-first-time-since-2023"
+        },
+        {
+          "candidate_id": "SRC-886379442b018fde81167e53",
+          "custody_pointer": "RSRCH-73b5435d0c1be122b9732032",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance's $6.3 billion hack began with a fake job interview, and a campaign 'built over many months'",
+          "source_url": "https://www.coindesk.com/business/2026/11/03/binance-s-usd6-3-billion-hack-began-with-a-fake-job-interview-exchange-says"
+        },
+        {
+          "candidate_id": "SRC-43e9b521ef055497acb00ac5",
+          "custody_pointer": "RSRCH-6aba1f905317b1a1248436b4",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance traces $6.3B hack to fake job interviews, compromised AI tool",
+          "source_url": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-cd1fec19bf712f5db7528d51",
+          "custody_pointer": "RSRCH-51f08299234a24fbe7c34fe2",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 321,
-        "FAILED": 510,
-        "NO_UPDATE": 12879
+        "CANDIDATES_IDENTIFIED": 329,
+        "FAILED": 516,
+        "NO_UPDATE": 13015
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -2978,8 +3024,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 595,
-        "NO_UPDATE": 15263
+        "FAILED": 602,
+        "NO_UPDATE": 15431
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3548,14 +3594,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 510,
-        "NO_UPDATE": 12958
+        "FAILED": 516,
+        "NO_UPDATE": 13102
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 166,
+      "pending_candidate_count": 169,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -5050,12 +5096,39 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Oil has had a massive run, but a prominent bull sees a turning point on midterm eve",
           "source_url": "https://www.marketwatch.com/story/oil-has-had-a-massive-run-but-a-prominent-bull-sees-a-turning-point-on-midterm-eve-be2c5fa7?mod=mw_rss_topstories"
+        },
+        {
+          "candidate_id": "SRC-45168040d82c3741d45e2161",
+          "custody_pointer": "RSRCH-50848e0a7330479f67091307",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68404"
+        },
+        {
+          "candidate_id": "SRC-02d9c8bc59569120f4b4a31f",
+          "custody_pointer": "RSRCH-2452e2004fcfcf77379087b6",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68404"
+        },
+        {
+          "candidate_id": "SRC-200bd0290ef0a3977350700c",
+          "custody_pointer": "RSRCH-625a8987a44b360e82b4d72e",
+          "producer_commit": "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+          "query": "physical flow observations",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68404"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1401,
-        "FAILED": 425,
-        "NO_UPDATE": 9599
+        "CANDIDATES_IDENTIFIED": 1422,
+        "FAILED": 430,
+        "NO_UPDATE": 9698
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5182,9 +5255,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 248,
-        "FAILED": 593,
-        "NO_UPDATE": 14894
+        "CANDIDATES_IDENTIFIED": 249,
+        "FAILED": 600,
+        "NO_UPDATE": 15061
       }
     },
     "regulatory-boundary-value-accretion": {
@@ -6445,9 +6518,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1207,
-        "FAILED": 510,
-        "NO_UPDATE": 11993
+        "CANDIDATES_IDENTIFIED": 1217,
+        "FAILED": 516,
+        "NO_UPDATE": 12127
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6664,9 +6737,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 312,
-        "FAILED": 510,
-        "NO_UPDATE": 12888
+        "CANDIDATES_IDENTIFIED": 315,
+        "FAILED": 516,
+        "NO_UPDATE": 13029
       }
     },
     "wlf-positive-adoption-radar": {
@@ -6965,8 +7038,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 206,
-        "FAILED": 680,
-        "NO_UPDATE": 17394
+        "FAILED": 688,
+        "NO_UPDATE": 17586
       }
     }
   }
