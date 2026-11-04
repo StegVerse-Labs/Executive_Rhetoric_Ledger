@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 95,
-  "pending_candidate_count": 778,
-  "pending_sha256": "bb805fb036e254ff4c81b122b71c7c648fb8e4700b2d44fd0299eff3802cd70c",
+  "intake_cycles": 96,
+  "pending_candidate_count": 789,
+  "pending_sha256": "04cedbb465af6495132b9159dabf6c2899c2d9deef83ac3bf5934e409f05a3e2",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -100,16 +100,17 @@
     "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
     "cdda09675ee16336e07edd90616d7e61ff93e1e0",
     "d02afb3caa968b33610a4739c4d11172daf87cac",
-    "6939c6571c223c90c4d7651fb67f273128d0126e"
+    "6939c6571c223c90c4d7651fb67f273128d0126e",
+    "731686d39d0fbeab9fdc00b57711b73cd79ba0ed"
   ],
   "publication_authorized": false,
-  "scan_record_count": 173845,
+  "scan_record_count": 175670,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 9,
+      "pending_candidate_count": 10,
       "pending_candidates": [
         {
           "candidate_id": "SRC-7f40bd5331431678be53662b",
@@ -191,18 +192,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Judge Orders Bitcoin Wallet Returned to Family of Convicted Canadian Killer",
           "source_url": "https://decrypt.co/382484/judge-orders-bitcoin-wallet-returned-to-family-of-convicted-canadian-killer"
+        },
+        {
+          "candidate_id": "SRC-6144d0b408c616786e096a15",
+          "custody_pointer": "RSRCH-2acb80ac91818b499d71ed73",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Morning Minute: CFTC Clears Stock Perps, Gets Sued the Same Day",
+          "source_url": "https://decrypt.co/382497/morning-minute-cftc-clears-stock-perps-gets-sued-the-same-day"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 59,
-        "FAILED": 445,
-        "NO_UPDATE": 11421
+        "CANDIDATES_IDENTIFIED": 60,
+        "FAILED": 450,
+        "NO_UPDATE": 11540
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 87,
+      "pending_candidate_count": 88,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -986,18 +996,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "1inch lawyer sees agencies driving US crypto regulation as midterms unfold",
           "source_url": "https://cointelegraph.com/news/1inch-lawyer-sees-agencies-driving-us-crypto-regulation-as-midterms-unfold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-81f29383a14f6b586200ffc4",
+          "custody_pointer": "RSRCH-06a88015e12b0ab732be4d09",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Shrugs Off Midterms as Experts Say Democratic Sweep Was 'Priced In'",
+          "source_url": "https://decrypt.co/382492/bitcoin-shrugs-off-midterms-as-experts-say-democratic-sweep-was-priced-in"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 577,
-        "FAILED": 534,
-        "NO_UPDATE": 13199
+        "CANDIDATES_IDENTIFIED": 582,
+        "FAILED": 540,
+        "NO_UPDATE": 13338
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 128,
+      "pending_candidate_count": 130,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2150,12 +2169,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "1inch lawyer sees agencies driving US crypto regulation as midterms unfold",
           "source_url": "https://cointelegraph.com/news/1inch-lawyer-sees-agencies-driving-us-crypto-regulation-as-midterms-unfold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2b7e757f1861ea5b5f8d3735",
+          "custody_pointer": "RSRCH-a0f96d5ab4498a3d7f896282",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US stocks rise, dollar slides as investors digest Democrats\u2019 midterm victories",
+          "source_url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears"
+        },
+        {
+          "candidate_id": "SRC-8096a1c2a9130f0818ac535b",
+          "custody_pointer": "RSRCH-38b450d0e7191d3ffc40530e",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Shrugs Off Midterms as Experts Say Democratic Sweep Was 'Priced In'",
+          "source_url": "https://decrypt.co/382492/bitcoin-shrugs-off-midterms-as-experts-say-democratic-sweep-was-priced-in"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 634,
-        "FAILED": 445,
-        "NO_UPDATE": 10846
+        "CANDIDATES_IDENTIFIED": 641,
+        "FAILED": 450,
+        "NO_UPDATE": 10959
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2471,9 +2508,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 586,
-        "FAILED": 534,
-        "NO_UPDATE": 13190
+        "CANDIDATES_IDENTIFIED": 591,
+        "FAILED": 540,
+        "NO_UPDATE": 13329
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -3005,15 +3042,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 355,
-        "FAILED": 534,
-        "NO_UPDATE": 13421
+        "CANDIDATES_IDENTIFIED": 363,
+        "FAILED": 540,
+        "NO_UPDATE": 13557
       }
     },
     "geopolitical-financial-rail-demand": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 19,
+      "pending_candidate_count": 20,
       "pending_candidates": [
         {
           "candidate_id": "SRC-89ab38b6cb431c049b4bd2c2",
@@ -3185,12 +3222,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "JD Vance letter may offer last chance to avert fresh conflict between US and Iran",
           "source_url": "https://www.theguardian.com/world/2026/oct/29/jd-vance-letter-may-offer-last-chance-to-avert-fresh-conflict-between-us-and-iran"
+        },
+        {
+          "candidate_id": "SRC-00e3cad779f9a64ab3090d39",
+          "custody_pointer": "RSRCH-62ccbb5e8389decff77bad45",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "USD1 volume and supply",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Circle beats earnings expectations on strong revenue, but cuts 5% of its workforce",
+          "source_url": "https://www.coindesk.com/business/2026/11/04/circle-beats-earnings-and-revenue-estimates-on-soaring-usdc-transaction-volume"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 623,
-        "NO_UPDATE": 15935
+        "CANDIDATES_IDENTIFIED": 138,
+        "FAILED": 630,
+        "NO_UPDATE": 16102
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3759,14 +3805,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 534,
-        "NO_UPDATE": 13534
+        "FAILED": 540,
+        "NO_UPDATE": 13678
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 169,
+      "pending_candidate_count": 171,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -5288,12 +5334,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
           "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68404"
+        },
+        {
+          "candidate_id": "SRC-379b3bc13a62af57d12fd697",
+          "custody_pointer": "RSRCH-25f9a01647eebd0d33cf55a4",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin hits $80.5K as US stocks rally on midterm election results",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-us-stocks-rally-midterm-election-result?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f57662a319412dd4284f3655",
+          "custody_pointer": "RSRCH-1506283ee082cc77adee6a15",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin hits $80.5K as US stocks rally on midterm election results",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-price-us-stocks-rally-midterm-election-result?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1477,
-        "FAILED": 445,
-        "NO_UPDATE": 10003
+        "CANDIDATES_IDENTIFIED": 1496,
+        "FAILED": 450,
+        "NO_UPDATE": 10104
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5420,15 +5484,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 253,
-        "FAILED": 621,
-        "NO_UPDATE": 15561
+        "CANDIDATES_IDENTIFIED": 255,
+        "FAILED": 628,
+        "NO_UPDATE": 15727
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 144,
+      "pending_candidate_count": 148,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6725,12 +6789,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Live updates: Rep. Garcia vows to investigate Trump after 'blue wave' defeats crypto election gamble",
           "source_url": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog"
+        },
+        {
+          "candidate_id": "SRC-e61178a19b0352fe89227e4f",
+          "custody_pointer": "RSRCH-1c9613086d8dca31a883946d",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Circle\u2019s ARC token sale lifts earnings as lower yields weigh on USDC income",
+          "source_url": "https://cointelegraph.com/news/circles-arc-token-sale-earnings-yields-usdc-income?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-10eaeba6743e4de41ae70654",
+          "custody_pointer": "RSRCH-2312b99d1a475c733a88a2fe",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Circle\u2019s ARC token sale lifts earnings as lower yields weigh on USDC income",
+          "source_url": "https://cointelegraph.com/news/circles-arc-token-sale-earnings-yields-usdc-income?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f219cdf327ee57d734234599",
+          "custody_pointer": "RSRCH-b859f1fc14f121b73cb36493",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Rebounds After Democratic Midterm Sweep, But Crypto Faces Tougher Fight in Washington",
+          "source_url": "https://decrypt.co/382515/bitcoin-rebounds-democratic-midterm-sweep-crypto-washington"
+        },
+        {
+          "candidate_id": "SRC-fa2fc8e90ac53f1783929c7d",
+          "custody_pointer": "RSRCH-b859f1fc14f121b73cb36493",
+          "producer_commit": "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Cr\u00e9dit Mutuel Ark\u00e9a Confirms Cyberattack After ZachXBT Ties It to $133M Crypto Theft",
+          "source_url": "https://decrypt.co/382486/zachxbt-names-french-bank-credit-mutuel-arkea-as-alleged-victim-of-133m-crypto-theft"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1247,
-        "FAILED": 534,
-        "NO_UPDATE": 12529
+        "CANDIDATES_IDENTIFIED": 1256,
+        "FAILED": 540,
+        "NO_UPDATE": 12664
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6947,9 +7047,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 324,
-        "FAILED": 534,
-        "NO_UPDATE": 13452
+        "CANDIDATES_IDENTIFIED": 326,
+        "FAILED": 540,
+        "NO_UPDATE": 13594
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7248,8 +7348,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 206,
-        "FAILED": 712,
-        "NO_UPDATE": 18162
+        "FAILED": 720,
+        "NO_UPDATE": 18354
       }
     }
   }
