@@ -21,7 +21,7 @@ Scoped continuity handoff for the ERL lane mirroring the multi-LLM research proc
 - Case status of the underlying research: `evidence_solicitation_phase_closed` (source comment `6428361696`); provisional evidence baseline frozen; bounded custody work continuing
 - Motive finding authorized: false
 - Legal/culpability finding authorized: false (source issue maintains an explicit Zone 3 legal gate; independent legal review required before any cause-of-action language)
-- Publication authorized for the manuscript: false. v1.0 bytes are in KV custody with two readbacks; reviewed v1.0.3 is integrated into Site PR #1633 at `822b77e1` (PDF sha256 `463fce02…ab28`, 186,269 B; DOCX `be72df87…9db7`, 55,591 B; non-author L3/L3b/wording PASS ChatGPT on Site #1633 6503943545; v1.0.2 L2/L2b/L2c receipts retained as superseded; draft, non-ALLOW; SPPA FAIL_CLOSED pending the Q74-01 custody basis)
+- Manuscript publication: v1.0.3 is public under the [November 1 owner ruling](https://github.com/StegVerse-Labs/Site/pull/1633#issuecomment-6565435586). Site merged head `1897ebaa` at `08bc4283`. The native custody and SPPA process remains outstanding.
 - Publication authorized for THIS MIRROR: true, per comment `6429784312`, subject to the redaction and omission rules below
 
 ## Content boundaries (binding on this lane)
@@ -94,3 +94,11 @@ Read-only evidence from continuation session `3214c6899daf`, prompt 1. This chec
 | Optional regression retention | #2810/#3376 owner may fold already executed seven cases into its existing suite on its next source update; coverage discovery is closed. |
 
 Final sequence remains authentic current-head native SPPA ALLOW, non-author protected promotion, then actual live artifact/hash/discovery verification. No runtime admission, sovereign write, publication, release or propagation is claimed. Manual Work: None.
+
+## November 3, 2026 — Publication and production verification
+
+The [production readback](https://github.com/StegVerse-Labs/Site/pull/1633#issuecomment-6621094250) fetched both directory URLs, Papers.html, provenance and both downloads over HTTPS. All six returned 200. Discovery links resolve to both pages. The live PDF is 186,269 bytes (SHA-256 `463fce02c432dede1a5505376e1f41b67b05c81c2a34f0a2f9ab07c56373ab28`). The DOCX is 55,591 bytes (SHA-256 `be72df87676b07f9e6cef84d5c338abe5738344a82ffefc98edc592c52dd9db7`). Live provenance declares v1.0.3 PUBLISHED.
+
+The [author erratum](https://github.com/StegVerse-Labs/Site/pull/1633#issuecomment-6564229952) records §8, page 14 and reconciles claim metadata. The reviewed binaries retain the edition-note typo. The publishing owner has a separate [six-item landing-copy accuracy review](https://github.com/StegVerse-Labs/Site/pull/1633#issuecomment-6565414704), including the claim that a charge stood where the paper could not establish a debit.
+
+The designated writer ingested the TVC receipt through #3453. The [consumer result](https://github.com/StegVerse-Labs/.github/pull/3376#issuecomment-6564224454) verified 149 receipts and bound 64 source files at historical head `d810644d`. Current #3376 targets the #3442 successor branch. Its owner must evaluate the new source and checks there. [Custody #2810](https://github.com/StegVerse-Labs/.github/issues/2810) owns task-bound custody and sovereign readback. [Registry #3195](https://github.com/StegVerse-Labs/.github/issues/3195) owns dependency and count reconciliation. EC9 remains PROPOSED with both dependencies unresolved and no WorkerCoordinator claim or fence.
