@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 94,
-  "pending_candidate_count": 773,
-  "pending_sha256": "7a40571ccd403467f730a1ad6974ad08a30859273c93f39b6605586e074ff63f",
+  "intake_cycles": 95,
+  "pending_candidate_count": 778,
+  "pending_sha256": "bb805fb036e254ff4c81b122b71c7c648fb8e4700b2d44fd0299eff3802cd70c",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -99,16 +99,17 @@
     "d12763f7bcda88e7322fb57e9fd99e14617d4387",
     "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
     "cdda09675ee16336e07edd90616d7e61ff93e1e0",
-    "d02afb3caa968b33610a4739c4d11172daf87cac"
+    "d02afb3caa968b33610a4739c4d11172daf87cac",
+    "6939c6571c223c90c4d7651fb67f273128d0126e"
   ],
   "publication_authorized": false,
-  "scan_record_count": 172020,
+  "scan_record_count": 173845,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 8,
+      "pending_candidate_count": 9,
       "pending_candidates": [
         {
           "candidate_id": "SRC-7f40bd5331431678be53662b",
@@ -181,12 +182,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin price bounce rejected at 50-day trend line ahead of FOMC, earnings",
           "source_url": "https://cointelegraph.com/markets/bitcoin-price-bounce-rejected-at-50-day-trend-line-ahead-of-fomc-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-a03d05b9884317748cc8eb75",
+          "custody_pointer": "RSRCH-c6d4b302bfceeb0cce7c3fa4",
+          "producer_commit": "6939c6571c223c90c4d7651fb67f273128d0126e",
+          "query": "failed predictions",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Judge Orders Bitcoin Wallet Returned to Family of Convicted Canadian Killer",
+          "source_url": "https://decrypt.co/382484/judge-orders-bitcoin-wallet-returned-to-family-of-convicted-canadian-killer"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 440,
-        "NO_UPDATE": 11302
+        "CANDIDATES_IDENTIFIED": 59,
+        "FAILED": 445,
+        "NO_UPDATE": 11421
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -979,9 +989,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 573,
-        "FAILED": 528,
-        "NO_UPDATE": 13059
+        "CANDIDATES_IDENTIFIED": 577,
+        "FAILED": 534,
+        "NO_UPDATE": 13199
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -2143,15 +2153,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 629,
-        "FAILED": 440,
-        "NO_UPDATE": 10731
+        "CANDIDATES_IDENTIFIED": 634,
+        "FAILED": 445,
+        "NO_UPDATE": 10846
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 33,
+      "pending_candidate_count": 34,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -2449,18 +2459,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "'Fuck This Coin': Trump Crypto Gala Admission Price Plummets as Meme Coin Value Down Over 90% - Common Dreams",
           "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9TRVJSejlRNkhkSmJWNUMxbnhLelhzTnE5V2c3LTA1blhsamNUdm5Xc3VLT25oMWROTnAxd2FUb3ZyX2VGVEVlV0VRaVZwSzNEMGl0Sk0wMXFNWUtWb0E?oc=5"
+        },
+        {
+          "candidate_id": "SRC-994ca804b941e0e04357ee42",
+          "custody_pointer": "RSRCH-3d1f38fa271feea48ff31252",
+          "producer_commit": "6939c6571c223c90c4d7651fb67f273128d0126e",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun seeks $264K sanctions over World Liberty\u2019s UAE disclosure",
+          "source_url": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 581,
-        "FAILED": 528,
-        "NO_UPDATE": 13051
+        "CANDIDATES_IDENTIFIED": 586,
+        "FAILED": 534,
+        "NO_UPDATE": 13190
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 56,
+      "pending_candidate_count": 58,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2965,12 +2984,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump's crypto grifts: memecoins and more money from Justin Sun - NewsTRACS",
           "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMFg2OElDckhBR0k1bkdWSGdkRjJNSnI5WWE5SEhrWU9hTFlob3pJdnd2ejhXRVp5T1Jtd21KX0NiallYazFTVnBycG9OTzl0N0x6QkNyd1Q4QlB4RVplN0FZc0ZDNzd0QWgxLUQtNk5DbWtCSERxaEIzVUs0WHRvNjhZSDRQc1BhRXRnbjcxSWRiRjFjcTJFbDFvazRyWWhCaHlLQ0JIcHZlZ0JuN29USWZhcw?oc=5"
+        },
+        {
+          "candidate_id": "SRC-86830d95f127e5bea42b2525",
+          "custody_pointer": "RSRCH-92a99ed11af77adecc48dfd9",
+          "producer_commit": "6939c6571c223c90c4d7651fb67f273128d0126e",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance hack may be \u2018temporary setback\u2019 for crypto, Grayscale\u2019s Pandl says",
+          "source_url": "https://cointelegraph.com/markets/crypto-market-recovery-grayscale-binance-hack-temporary-setback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2a26de0c0876e59ce873d312",
+          "custody_pointer": "RSRCH-43dd1ad983df3bff037a0c02",
+          "producer_commit": "6939c6571c223c90c4d7651fb67f273128d0126e",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun seeks $264K sanctions over World Liberty\u2019s UAE disclosure",
+          "source_url": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 346,
-        "FAILED": 528,
-        "NO_UPDATE": 13286
+        "CANDIDATES_IDENTIFIED": 355,
+        "FAILED": 534,
+        "NO_UPDATE": 13421
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3152,8 +3189,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 616,
-        "NO_UPDATE": 15767
+        "FAILED": 623,
+        "NO_UPDATE": 15935
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3722,8 +3759,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 528,
-        "NO_UPDATE": 13390
+        "FAILED": 534,
+        "NO_UPDATE": 13534
       }
     },
     "market-rhetoric-oil-impact": {
@@ -5254,9 +5291,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1460,
-        "FAILED": 440,
-        "NO_UPDATE": 9900
+        "CANDIDATES_IDENTIFIED": 1477,
+        "FAILED": 445,
+        "NO_UPDATE": 10003
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5383,15 +5420,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 251,
-        "FAILED": 614,
-        "NO_UPDATE": 15395
+        "CANDIDATES_IDENTIFIED": 253,
+        "FAILED": 621,
+        "NO_UPDATE": 15561
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 143,
+      "pending_candidate_count": 144,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6679,12 +6716,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "US midterms: Prediction markets favor Democrats in key crypto races",
           "source_url": "https://cointelegraph.com/news/us-midterm-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-078a7f9e74ce3ff463101810",
+          "custody_pointer": "RSRCH-bec74bf673f9e4a4e23020b1",
+          "producer_commit": "6939c6571c223c90c4d7651fb67f273128d0126e",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Live updates: Rep. Garcia vows to investigate Trump after 'blue wave' defeats crypto election gamble",
+          "source_url": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1238,
-        "FAILED": 528,
-        "NO_UPDATE": 12394
+        "CANDIDATES_IDENTIFIED": 1247,
+        "FAILED": 534,
+        "NO_UPDATE": 12529
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6901,9 +6947,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 322,
-        "FAILED": 528,
-        "NO_UPDATE": 13310
+        "CANDIDATES_IDENTIFIED": 324,
+        "FAILED": 534,
+        "NO_UPDATE": 13452
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7202,8 +7248,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 206,
-        "FAILED": 704,
-        "NO_UPDATE": 17970
+        "FAILED": 712,
+        "NO_UPDATE": 18162
       }
     }
   }
