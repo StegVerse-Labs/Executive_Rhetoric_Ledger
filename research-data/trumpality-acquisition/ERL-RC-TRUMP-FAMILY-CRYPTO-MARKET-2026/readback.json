@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 92,
-  "pending_candidate_count": 755,
-  "pending_sha256": "e3f4ebd351945971369fa16d032978ef50f9247068a38ffce44d14cc07fde236",
+  "intake_cycles": 93,
+  "pending_candidate_count": 764,
+  "pending_sha256": "8cb556a9ae4ca75771eafe0c35bb43877b67bb6069f14ca75e02d97a82177919",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -97,10 +97,11 @@
     "3a822aaf3c3ea06ffa84c4f1360813448ea80f7a",
     "a20ada19cd1c27f28f69220fc44522f9dec519bd",
     "d12763f7bcda88e7322fb57e9fd99e14617d4387",
-    "49f41acd21bd6ca0c50777bd1bc76029330f8b0f"
+    "49f41acd21bd6ca0c50777bd1bc76029330f8b0f",
+    "cdda09675ee16336e07edd90616d7e61ff93e1e0"
   ],
   "publication_authorized": false,
-  "scan_record_count": 168370,
+  "scan_record_count": 170195,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -183,14 +184,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 58,
-        "FAILED": 430,
-        "NO_UPDATE": 11062
+        "FAILED": 435,
+        "NO_UPDATE": 11182
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 81,
+      "pending_candidate_count": 83,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -920,18 +921,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CFTC clears perpetual futures on stocks, bringing crypto trading model to Wall Street",
           "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street"
+        },
+        {
+          "candidate_id": "SRC-fcc32c318e924e4fb6399323",
+          "custody_pointer": "RSRCH-c6d518aa33afb8c2af8b740f",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What voters said about their views on crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/what-voters-said-about-their-views-on-crypto"
+        },
+        {
+          "candidate_id": "SRC-979d4dc9afab037bc954053d",
+          "custody_pointer": "RSRCH-c6d518aa33afb8c2af8b740f",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 566,
-        "FAILED": 516,
-        "NO_UPDATE": 12778
+        "CANDIDATES_IDENTIFIED": 569,
+        "FAILED": 522,
+        "NO_UPDATE": 12919
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 122,
+      "pending_candidate_count": 124,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2030,12 +2049,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "CFTC clears perpetual futures on stocks, bringing crypto trading model to Wall Street",
           "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street"
+        },
+        {
+          "candidate_id": "SRC-b36416dc4b9fae2319e0737d",
+          "custody_pointer": "RSRCH-2dce87d06ac7a946231a672c",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "What voters said about their views on crypto",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/what-voters-said-about-their-views-on-crypto"
+        },
+        {
+          "candidate_id": "SRC-49c6f814c9fde8c43374a1aa",
+          "custody_pointer": "RSRCH-2dce87d06ac7a946231a672c",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 619,
-        "FAILED": 430,
-        "NO_UPDATE": 10501
+        "CANDIDATES_IDENTIFIED": 624,
+        "FAILED": 435,
+        "NO_UPDATE": 10616
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2342,15 +2379,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 568,
-        "FAILED": 516,
-        "NO_UPDATE": 12776
+        "CANDIDATES_IDENTIFIED": 574,
+        "FAILED": 522,
+        "NO_UPDATE": 12914
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 54,
+      "pending_candidate_count": 55,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -2837,12 +2874,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
           "source_url": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties"
+        },
+        {
+          "candidate_id": "SRC-2c9705291f61a18810fed41e",
+          "custody_pointer": "RSRCH-6e0fe4c6d75074867c74e952",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "HTX/Justin Sun relationship evidence",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Justin Sun Accuses Trump-Backed World Liberty of Using UAE Ties to Escape Federal Court",
+          "source_url": "https://decrypt.co/382469/justin-sun-sanctions-trump-backed-world-liberty-uae-ties"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 329,
-        "FAILED": 516,
-        "NO_UPDATE": 13015
+        "CANDIDATES_IDENTIFIED": 337,
+        "FAILED": 522,
+        "NO_UPDATE": 13151
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3024,8 +3070,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 137,
-        "FAILED": 602,
-        "NO_UPDATE": 15431
+        "FAILED": 609,
+        "NO_UPDATE": 15599
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3594,8 +3640,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 516,
-        "NO_UPDATE": 13102
+        "FAILED": 522,
+        "NO_UPDATE": 13246
       }
     },
     "market-rhetoric-oil-impact": {
@@ -5126,9 +5172,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1422,
-        "FAILED": 430,
-        "NO_UPDATE": 9698
+        "CANDIDATES_IDENTIFIED": 1443,
+        "FAILED": 435,
+        "NO_UPDATE": 9797
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5255,15 +5301,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 249,
-        "FAILED": 600,
-        "NO_UPDATE": 15061
+        "CANDIDATES_IDENTIFIED": 250,
+        "FAILED": 607,
+        "NO_UPDATE": 15228
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 139,
+      "pending_candidate_count": 143,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6515,12 +6561,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin steadies after dip to $76,300 as ETF outflows and midterm elections weigh on crypto",
           "source_url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
+        },
+        {
+          "candidate_id": "SRC-203e874c1ee3369a46b58403",
+          "custody_pointer": "RSRCH-bc4a7520f875acf6bc61be8b",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US midterms: Prediction markets favor Democrats in key crypto races",
+          "source_url": "https://cointelegraph.com/news/us-midterm-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-b5da97e24598a16d8df0dacd",
+          "custody_pointer": "RSRCH-e28075cac47eee07f5d8520e",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+          "source_url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version"
+        },
+        {
+          "candidate_id": "SRC-3102e374b13d9ff5fe4692f0",
+          "custody_pointer": "RSRCH-8c1e20e09c1b85efb9ead250",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
+          "source_url": "https://cointelegraph.com/news/spacex-tokenization-okxice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-8ba18037d8d0d3801040aecf",
+          "custody_pointer": "RSRCH-8c1e20e09c1b85efb9ead250",
+          "producer_commit": "cdda09675ee16336e07edd90616d7e61ff93e1e0",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "US midterms: Prediction markets favor Democrats in key crypto races",
+          "source_url": "https://cointelegraph.com/news/us-midterm-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1217,
-        "FAILED": 516,
-        "NO_UPDATE": 12127
+        "CANDIDATES_IDENTIFIED": 1227,
+        "FAILED": 522,
+        "NO_UPDATE": 12261
       }
     },
     "trump-token-promotion-access-supply": {
@@ -6737,9 +6819,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 315,
-        "FAILED": 516,
-        "NO_UPDATE": 13029
+        "CANDIDATES_IDENTIFIED": 318,
+        "FAILED": 522,
+        "NO_UPDATE": 13170
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7038,8 +7120,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 206,
-        "FAILED": 688,
-        "NO_UPDATE": 17586
+        "FAILED": 696,
+        "NO_UPDATE": 17778
       }
     }
   }
