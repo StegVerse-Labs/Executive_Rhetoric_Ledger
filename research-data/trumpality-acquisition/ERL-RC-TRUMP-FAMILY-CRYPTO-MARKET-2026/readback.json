@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 99,
-  "pending_candidate_count": 816,
-  "pending_sha256": "67e8fcd3fd27e77ebb8af8bbece0925655dcdb26a35c31c34d95b130f9cc06ef",
+  "intake_cycles": 100,
+  "pending_candidate_count": 827,
+  "pending_sha256": "df4c185c295640407ae0a06ae1e5660f51ca9a7f44556df819b82bab662f358b",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -104,10 +104,11 @@
     "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
     "2888fe6843784aa5ea521a4beb03825975893911",
     "98d85feb53c7f3474aef2eef2e3f5693a4acfe90",
-    "4def910e28a8bae71f701be8111514fcf601b1c0"
+    "4def910e28a8bae71f701be8111514fcf601b1c0",
+    "5a02da85cf097196705b94c62adca0c9a3e3199e"
   ],
   "publication_authorized": false,
-  "scan_record_count": 181145,
+  "scan_record_count": 182970,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -207,15 +208,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 63,
-        "FAILED": 465,
-        "NO_UPDATE": 11897
+        "CANDIDATES_IDENTIFIED": 64,
+        "FAILED": 470,
+        "NO_UPDATE": 12016
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 92,
+      "pending_candidate_count": 93,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -1044,18 +1045,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Hong Kong passes law requiring crypto exchanges to report customer transactions to tax authorities",
           "source_url": "https://www.coindesk.com/policy/2026/11/04/hong-kong-passes-law-requiring-crypto-exchanges-to-report-customer-transactions-to-tax-authorities"
+        },
+        {
+          "candidate_id": "SRC-8414dc710a2a88b5d81de557",
+          "custody_pointer": "RSRCH-364abcb38061de6402e0f2fc",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
+          "source_url": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 600,
-        "FAILED": 558,
-        "NO_UPDATE": 13752
+        "CANDIDATES_IDENTIFIED": 605,
+        "FAILED": 564,
+        "NO_UPDATE": 13891
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 134,
+      "pending_candidate_count": 136,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2262,12 +2272,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin win rate vs. S&P 500 recovers as post-midterm history favors stocks",
           "source_url": "https://cointelegraph.com/markets/bitcoin-win-rate-sp-500-us-midterms-stocks-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-9cfc9dad19eef1612865ae7e",
+          "custody_pointer": "RSRCH-c36d3319b2cef666f07ab181",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
+          "source_url": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs"
+        },
+        {
+          "candidate_id": "SRC-93f816410d74c7625bc0facc",
+          "custody_pointer": "RSRCH-1759496bbab2178f72f7ffa2",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
+          "source_url": "https://www.coindesk.com/business/2026/11/05/soter-raises-usd23-5m-plus-btc-and-eth-as-banks-demand-theft-protection"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 662,
-        "FAILED": 465,
-        "NO_UPDATE": 11298
+        "CANDIDATES_IDENTIFIED": 668,
+        "FAILED": 470,
+        "NO_UPDATE": 11412
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2601,15 +2629,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 608,
-        "FAILED": 558,
-        "NO_UPDATE": 13744
+        "CANDIDATES_IDENTIFIED": 613,
+        "FAILED": 564,
+        "NO_UPDATE": 13883
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 59,
+      "pending_candidate_count": 61,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -3141,12 +3169,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump\u2019s wealth dented after Democrats trounce Republicans in midterms",
           "source_url": "https://www.theguardian.com/us-news/2026/nov/04/trump-wealth-midterm-elections"
+        },
+        {
+          "candidate_id": "SRC-53fde90973a6e977f7ebad1d",
+          "custody_pointer": "RSRCH-1b568489404d3d21a86c16bc",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Gate CEO says crypto exchanges must prove they can survive a hack like Binance\u2019s",
+          "source_url": "https://www.coindesk.com/business/2026/11/05/gate-ceo-says-crypto-exchanges-must-prove-they-can-survive-a-hack-like-binance-s"
+        },
+        {
+          "candidate_id": "SRC-212267a2a0b33b7a79e6dc18",
+          "custody_pointer": "RSRCH-898f187a75fb950649eb07ec",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance Cuts Off SignalPlus API Keys Over 'Potential Security Issue' at Trading Platform",
+          "source_url": "https://decrypt.co/382599/binance-cuts-off-signalplus-api-keys-over-potential-security-issue-at-trading-platform"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 380,
-        "FAILED": 558,
-        "NO_UPDATE": 13972
+        "CANDIDATES_IDENTIFIED": 386,
+        "FAILED": 564,
+        "NO_UPDATE": 14110
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3337,8 +3383,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 651,
-        "NO_UPDATE": 16603
+        "FAILED": 658,
+        "NO_UPDATE": 16771
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3915,15 +3961,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 244,
-        "FAILED": 558,
-        "NO_UPDATE": 14108
+        "CANDIDATES_IDENTIFIED": 245,
+        "FAILED": 564,
+        "NO_UPDATE": 14251
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 177,
+      "pending_candidate_count": 181,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -5517,18 +5563,54 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Certain Oil Country Tubular Goods From Mexico: Final Results of Antidumping Duty Administrative Review; 2023-2024",
           "source_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22628/certain-oil-country-tubular-goods-from-mexico-final-results-of-antidumping-duty-administrative"
+        },
+        {
+          "candidate_id": "SRC-23f91c94e7c9fe2a03ab06c4",
+          "custody_pointer": "RSRCH-eba56cdd1701fc42ff8a397e",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Refineries have shifted production away from gasoline to middle distillates",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68424"
+        },
+        {
+          "candidate_id": "SRC-81acc09270aa4f2ea8924e8e",
+          "custody_pointer": "RSRCH-b77cfe8d5aeb1ddebdd6345b",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How Democrats used the midterms to turn affordability concerns into \u2018green populism\u2019",
+          "source_url": "https://www.theguardian.com/us-news/2026/nov/05/democrats-climate-crisis-in-midterm-election-results"
+        },
+        {
+          "candidate_id": "SRC-b0f466bc8a60c14552f5b985",
+          "custody_pointer": "RSRCH-705219e79fd4b5cabfbc72da",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Refineries have shifted production away from gasoline to middle distillates",
+          "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68424"
+        },
+        {
+          "candidate_id": "SRC-737881086def0461bd9b219a",
+          "custody_pointer": "RSRCH-6bb4e7af8299fc0c456cfb6d",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How Democrats used the midterms to turn affordability concerns into \u2018green populism\u2019",
+          "source_url": "https://www.theguardian.com/us-news/2026/nov/05/democrats-climate-crisis-in-midterm-election-results"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1557,
-        "FAILED": 465,
-        "NO_UPDATE": 10403
+        "CANDIDATES_IDENTIFIED": 1578,
+        "FAILED": 470,
+        "NO_UPDATE": 10502
       }
     },
     "melania-token-preannouncement-wallets": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 13,
+      "pending_candidate_count": 14,
       "pending_candidates": [
         {
           "candidate_id": "SRC-af8c33eeb2daad8af8521e24",
@@ -5646,18 +5728,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bubblemaps links Libra and Melania memecoin teams - Latest news from Azerbaijan",
           "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGVThVUy1LOVVMZmI0MDhUOUVyNUxOZTV4TS0xWkpBZGpQTmpCRUowMS0zQ29xLVVjdDB5dHE3YlFWMHQwVEU5STRCREpJcS1CUzNNNDNsRkxjSFlRRkk0ZnJyTHMwWE8wc25PTmk2ZWVfem1hcWNZbVJR?oc=5"
+        },
+        {
+          "candidate_id": "SRC-9bea1dd6a542122aacedc272",
+          "custody_pointer": "RSRCH-72518d1454479dd1963155d2",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "bot/mempool control",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s memecoin ventures derailed CLARITY Act, Scaramucci says",
+          "source_url": "https://cointelegraph.com/news/scaramucci-trump-memecoins-clarity-act-failure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 261,
-        "FAILED": 649,
-        "NO_UPDATE": 16225
+        "CANDIDATES_IDENTIFIED": 264,
+        "FAILED": 656,
+        "NO_UPDATE": 16390
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 156,
+      "pending_candidate_count": 157,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -7062,12 +7153,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Cr\u00e9dit Mutuel Ark\u00e9a resumes operations after attack, assesses losses",
           "source_url": "https://cointelegraph.com/news/credit-mutuel-arkea-resumes-operations-133m-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-e10419d325ccdeeec8d79d1c",
+          "custody_pointer": "RSRCH-6d3417c00ea73264d0e48b3f",
+          "producer_commit": "5a02da85cf097196705b94c62adca0c9a3e3199e",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Democrats to Push Broader Crypto Market Structure Bill After Sweeping US Midterms: Report",
+          "source_url": "https://decrypt.co/382602/democrats-to-push-broader-crypto-market-structure-bill-after-sweeping-us-midterms-report"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1284,
-        "FAILED": 558,
-        "NO_UPDATE": 13068
+        "CANDIDATES_IDENTIFIED": 1293,
+        "FAILED": 564,
+        "NO_UPDATE": 13203
       }
     },
     "trump-token-promotion-access-supply": {
@@ -7284,9 +7384,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 332,
-        "FAILED": 558,
-        "NO_UPDATE": 14020
+        "CANDIDATES_IDENTIFIED": 334,
+        "FAILED": 564,
+        "NO_UPDATE": 14162
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7593,9 +7693,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 207,
-        "FAILED": 744,
-        "NO_UPDATE": 18929
+        "CANDIDATES_IDENTIFIED": 208,
+        "FAILED": 752,
+        "NO_UPDATE": 19120
       }
     }
   }
