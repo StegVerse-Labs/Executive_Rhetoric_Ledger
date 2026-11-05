@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 96,
-  "pending_candidate_count": 789,
-  "pending_sha256": "04cedbb465af6495132b9159dabf6c2899c2d9deef83ac3bf5934e409f05a3e2",
+  "intake_cycles": 97,
+  "pending_candidate_count": 802,
+  "pending_sha256": "752b592b33a324faec10cdd30f03b6c0de578dfd1c2cd0790300ec0864275beb",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -101,10 +101,11 @@
     "cdda09675ee16336e07edd90616d7e61ff93e1e0",
     "d02afb3caa968b33610a4739c4d11172daf87cac",
     "6939c6571c223c90c4d7651fb67f273128d0126e",
-    "731686d39d0fbeab9fdc00b57711b73cd79ba0ed"
+    "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
+    "2888fe6843784aa5ea521a4beb03825975893911"
   ],
   "publication_authorized": false,
-  "scan_record_count": 175670,
+  "scan_record_count": 177495,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -204,15 +205,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 60,
-        "FAILED": 450,
-        "NO_UPDATE": 11540
+        "CANDIDATES_IDENTIFIED": 61,
+        "FAILED": 455,
+        "NO_UPDATE": 11659
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 88,
+      "pending_candidate_count": 90,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -1005,18 +1006,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Shrugs Off Midterms as Experts Say Democratic Sweep Was 'Priced In'",
           "source_url": "https://decrypt.co/382492/bitcoin-shrugs-off-midterms-as-experts-say-democratic-sweep-was-priced-in"
+        },
+        {
+          "candidate_id": "SRC-767a4a0a8f1e915442ee9d15",
+          "custody_pointer": "RSRCH-a53f2e198d6ab43cfb03030e",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump-linked tokens lead crypto losses after Democrats sweep in the US midterms",
+          "source_url": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-2a2fdb29d05dd93e8f367f42",
+          "custody_pointer": "RSRCH-025575534e6e09bfd6fe6f0d",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tokenization and stablecoins may weather Democrats' sweep as broader crypto rules face uncertainty",
+          "source_url": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 582,
-        "FAILED": 540,
-        "NO_UPDATE": 13338
+        "CANDIDATES_IDENTIFIED": 588,
+        "FAILED": 546,
+        "NO_UPDATE": 13476
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 130,
+      "pending_candidate_count": 132,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2187,18 +2206,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Shrugs Off Midterms as Experts Say Democratic Sweep Was 'Priced In'",
           "source_url": "https://decrypt.co/382492/bitcoin-shrugs-off-midterms-as-experts-say-democratic-sweep-was-priced-in"
+        },
+        {
+          "candidate_id": "SRC-ce7ed6ce9a5689114f374857",
+          "custody_pointer": "RSRCH-1b3b96bd8d5b1b43e25e03a5",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Tokenization and stablecoins may weather Democrats' sweep as broader crypto rules face uncertainty",
+          "source_url": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty"
+        },
+        {
+          "candidate_id": "SRC-a58cffc0191c1dae4afb818a",
+          "custody_pointer": "RSRCH-33ed07d900d3ec9569523979",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Riot shares surge on $28B AI lease as Hut 8 sinks on revenue miss",
+          "source_url": "https://cointelegraph.com/news/riots-28b-ai-deal-lifts-shares-as-hut-8-faces-transition-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 641,
-        "FAILED": 450,
-        "NO_UPDATE": 10959
+        "CANDIDATES_IDENTIFIED": 649,
+        "FAILED": 455,
+        "NO_UPDATE": 11071
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 34,
+      "pending_candidate_count": 36,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -2505,18 +2542,36 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Justin Sun seeks $264K sanctions over World Liberty\u2019s UAE disclosure",
           "source_url": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f66d959bb82a9025dc04305c",
+          "custody_pointer": "RSRCH-68cada7f3f1cbdaf78fe7656",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "cross-token price and volume series",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s wealth dented after Democrats trounce Republicans in midterms",
+          "source_url": "https://www.theguardian.com/us-news/2026/nov/04/trump-wealth-midterm-elections"
+        },
+        {
+          "candidate_id": "SRC-5406f3dc226d509d48dd51dc",
+          "custody_pointer": "RSRCH-e71c09b025f7f83973fe3dc8",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump-linked tokens lead crypto losses after Democrats sweep in the US midterms",
+          "source_url": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 591,
-        "FAILED": 540,
-        "NO_UPDATE": 13329
+        "CANDIDATES_IDENTIFIED": 597,
+        "FAILED": 546,
+        "NO_UPDATE": 13467
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 58,
+      "pending_candidate_count": 59,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -3039,12 +3094,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Justin Sun seeks $264K sanctions over World Liberty\u2019s UAE disclosure",
           "source_url": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-7e3321e651ca80845716c662",
+          "custody_pointer": "RSRCH-88a5ce2a2c022ab0a14f95fb",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump\u2019s wealth dented after Democrats trounce Republicans in midterms",
+          "source_url": "https://www.theguardian.com/us-news/2026/nov/04/trump-wealth-midterm-elections"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 363,
-        "FAILED": 540,
-        "NO_UPDATE": 13557
+        "CANDIDATES_IDENTIFIED": 369,
+        "FAILED": 546,
+        "NO_UPDATE": 13695
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3234,9 +3298,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 138,
-        "FAILED": 630,
-        "NO_UPDATE": 16102
+        "CANDIDATES_IDENTIFIED": 139,
+        "FAILED": 637,
+        "NO_UPDATE": 16269
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3805,14 +3869,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 242,
-        "FAILED": 540,
-        "NO_UPDATE": 13678
+        "FAILED": 546,
+        "NO_UPDATE": 13822
       }
     },
     "market-rhetoric-oil-impact": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 171,
+      "pending_candidate_count": 175,
       "pending_candidates": [
         {
           "candidate_id": "SRC-352f16032b22bf5b64a5b7cb",
@@ -5352,12 +5416,48 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin hits $80.5K as US stocks rally on midterm election results",
           "source_url": "https://cointelegraph.com/markets/bitcoin-price-us-stocks-rally-midterm-election-result?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f68f4839913786144f9ff0f5",
+          "custody_pointer": "RSRCH-1e95858fbf8e3637d7c020b5",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How Trump\u2019s Energy Policies Helped Trigger Midterm Rout",
+          "source_url": "https://www.nytimes.com/2026/11/04/climate/trump-fossil-fuel-energy-policy-election.html"
+        },
+        {
+          "candidate_id": "SRC-46e0ee1d2f069594588539ae",
+          "custody_pointer": "RSRCH-be316532adb61d1d8abd0330",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "Brent/WTI event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Democrat Jon Rosenthal elected Texas railroad commissioner over controversial Republican Bo French",
+          "source_url": "https://www.theguardian.com/us-news/2026/nov/04/jon-rosenthal-texas-railroad-commissioner"
+        },
+        {
+          "candidate_id": "SRC-3e072461655952e9a10d6b87",
+          "custody_pointer": "RSRCH-ec86aca9b8c94e04dde475ac",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "How Trump\u2019s Energy Policies Helped Trigger Midterm Rout",
+          "source_url": "https://www.nytimes.com/2026/11/04/climate/trump-fossil-fuel-energy-policy-election.html"
+        },
+        {
+          "candidate_id": "SRC-54b6b98d0a00f71adb495ee6",
+          "custody_pointer": "RSRCH-da4f0fc6782fc8dab0db91f6",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "matched control events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Democrat Jon Rosenthal elected Texas railroad commissioner over controversial Republican Bo French",
+          "source_url": "https://www.theguardian.com/us-news/2026/nov/04/jon-rosenthal-texas-railroad-commissioner"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1496,
-        "FAILED": 450,
-        "NO_UPDATE": 10104
+        "CANDIDATES_IDENTIFIED": 1517,
+        "FAILED": 455,
+        "NO_UPDATE": 10203
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5484,15 +5584,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 255,
-        "FAILED": 628,
-        "NO_UPDATE": 15727
+        "CANDIDATES_IDENTIFIED": 257,
+        "FAILED": 635,
+        "NO_UPDATE": 15893
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 148,
+      "pending_candidate_count": 150,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6825,12 +6925,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Cr\u00e9dit Mutuel Ark\u00e9a Confirms Cyberattack After ZachXBT Ties It to $133M Crypto Theft",
           "source_url": "https://decrypt.co/382486/zachxbt-names-french-bank-credit-mutuel-arkea-as-alleged-victim-of-133m-crypto-theft"
+        },
+        {
+          "candidate_id": "SRC-5f50560b30f41959eecd1865",
+          "custody_pointer": "RSRCH-c74232e8f47df9239c72971e",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "BitMart founder says security team \u2018severely understaffed\u2019 after new hack",
+          "source_url": "https://cointelegraph.com/news/bitmart-hack-security-staffing-crypto-exchange-restructuring?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-ad99d6c755264612c572728a",
+          "custody_pointer": "RSRCH-c74232e8f47df9239c72971e",
+          "producer_commit": "2888fe6843784aa5ea521a4beb03825975893911",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump-linked tokens lead crypto losses after Democrats sweep in the US midterms",
+          "source_url": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1256,
-        "FAILED": 540,
-        "NO_UPDATE": 12664
+        "CANDIDATES_IDENTIFIED": 1264,
+        "FAILED": 546,
+        "NO_UPDATE": 12800
       }
     },
     "trump-token-promotion-access-supply": {
@@ -7047,9 +7165,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 326,
-        "FAILED": 540,
-        "NO_UPDATE": 13594
+        "CANDIDATES_IDENTIFIED": 328,
+        "FAILED": 546,
+        "NO_UPDATE": 13736
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7348,8 +7466,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 206,
-        "FAILED": 720,
-        "NO_UPDATE": 18354
+        "FAILED": 728,
+        "NO_UPDATE": 18546
       }
     }
   }
