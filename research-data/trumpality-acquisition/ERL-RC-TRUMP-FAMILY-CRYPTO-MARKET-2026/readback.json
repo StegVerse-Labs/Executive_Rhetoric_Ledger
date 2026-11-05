@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 98,
-  "pending_candidate_count": 807,
-  "pending_sha256": "b280ec5d026792690bfe39327fa54e5f802b3ec62a549fe7eed71a6c3d8d54fb",
+  "intake_cycles": 99,
+  "pending_candidate_count": 816,
+  "pending_sha256": "67e8fcd3fd27e77ebb8af8bbece0925655dcdb26a35c31c34d95b130f9cc06ef",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -103,10 +103,11 @@
     "6939c6571c223c90c4d7651fb67f273128d0126e",
     "731686d39d0fbeab9fdc00b57711b73cd79ba0ed",
     "2888fe6843784aa5ea521a4beb03825975893911",
-    "98d85feb53c7f3474aef2eef2e3f5693a4acfe90"
+    "98d85feb53c7f3474aef2eef2e3f5693a4acfe90",
+    "4def910e28a8bae71f701be8111514fcf601b1c0"
   ],
   "publication_authorized": false,
-  "scan_record_count": 179320,
+  "scan_record_count": 181145,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -206,15 +207,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 62,
-        "FAILED": 460,
-        "NO_UPDATE": 11778
+        "CANDIDATES_IDENTIFIED": 63,
+        "FAILED": 465,
+        "NO_UPDATE": 11897
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 91,
+      "pending_candidate_count": 92,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -1034,18 +1035,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "India warns AI-powered hackers targeting crypto exchanges at \u2018machine speed\u2019",
           "source_url": "https://cointelegraph.com/news/india-warns-ai-powered-hackers-targeting-crypto-exchanges-at-machine-speed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-82ff440cbc776d46da1065c1",
+          "custody_pointer": "RSRCH-9530fdeaa0166f79d4af4f00",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Hong Kong passes law requiring crypto exchanges to report customer transactions to tax authorities",
+          "source_url": "https://www.coindesk.com/policy/2026/11/04/hong-kong-passes-law-requiring-crypto-exchanges-to-report-customer-transactions-to-tax-authorities"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 594,
-        "FAILED": 552,
-        "NO_UPDATE": 13614
+        "CANDIDATES_IDENTIFIED": 600,
+        "FAILED": 558,
+        "NO_UPDATE": 13752
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 132,
+      "pending_candidate_count": 134,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2234,12 +2244,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Riot shares surge on $28B AI lease as Hut 8 sinks on revenue miss",
           "source_url": "https://cointelegraph.com/news/riots-28b-ai-deal-lifts-shares-as-hut-8-faces-transition-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-f8bf42447c8c759839756c3a",
+          "custody_pointer": "RSRCH-dccecf7e39cc3a70affabf1b",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Hong Kong passes law requiring crypto exchanges to report customer transactions to tax authorities",
+          "source_url": "https://www.coindesk.com/policy/2026/11/04/hong-kong-passes-law-requiring-crypto-exchanges-to-report-customer-transactions-to-tax-authorities"
+        },
+        {
+          "candidate_id": "SRC-2ecc3fc831726c77be56fea9",
+          "custody_pointer": "RSRCH-6b80dbdac0e7143bec2c8ce0",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "rate and macro controls",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin win rate vs. S&P 500 recovers as post-midterm history favors stocks",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-win-rate-sp-500-us-midterms-stocks-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 655,
-        "FAILED": 460,
-        "NO_UPDATE": 11185
+        "CANDIDATES_IDENTIFIED": 662,
+        "FAILED": 465,
+        "NO_UPDATE": 11298
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2573,9 +2601,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 603,
-        "FAILED": 552,
-        "NO_UPDATE": 13605
+        "CANDIDATES_IDENTIFIED": 608,
+        "FAILED": 558,
+        "NO_UPDATE": 13744
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -3116,9 +3144,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 375,
-        "FAILED": 552,
-        "NO_UPDATE": 13833
+        "CANDIDATES_IDENTIFIED": 380,
+        "FAILED": 558,
+        "NO_UPDATE": 13972
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3308,9 +3336,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 140,
-        "FAILED": 644,
-        "NO_UPDATE": 16436
+        "CANDIDATES_IDENTIFIED": 141,
+        "FAILED": 651,
+        "NO_UPDATE": 16603
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3887,9 +3915,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 243,
-        "FAILED": 552,
-        "NO_UPDATE": 13965
+        "CANDIDATES_IDENTIFIED": 244,
+        "FAILED": 558,
+        "NO_UPDATE": 14108
       }
     },
     "market-rhetoric-oil-impact": {
@@ -5492,9 +5520,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1538,
-        "FAILED": 460,
-        "NO_UPDATE": 10302
+        "CANDIDATES_IDENTIFIED": 1557,
+        "FAILED": 465,
+        "NO_UPDATE": 10403
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5621,15 +5649,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 259,
-        "FAILED": 642,
-        "NO_UPDATE": 16059
+        "CANDIDATES_IDENTIFIED": 261,
+        "FAILED": 649,
+        "NO_UPDATE": 16225
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 151,
+      "pending_candidate_count": 156,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -6989,12 +7017,57 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin holds above $80,000 as Zcash jumps 12% in post-election crypto rebound",
           "source_url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-as-zcash-jumps-12-in-post-election-crypto-rebound"
+        },
+        {
+          "candidate_id": "SRC-ef6394dce6d44217bb27970e",
+          "custody_pointer": "RSRCH-3f1a808fe29bbb206494940a",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "pre/post permitted capability map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin, Ether ETFs draw $128M as crypto rebounds after midterms",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-78acaa4231845d925046d5cc",
+          "custody_pointer": "RSRCH-97f0717c942336e7077350e0",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "revenue mechanism map",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "France budget rejection sidelines stablecoin tax, wallet reporting",
+          "source_url": "https://cointelegraph.com/news/france-rejects-budget-revenue-sidelines-crypto-amendments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-427a83bbe05c73f407da68b2",
+          "custody_pointer": "RSRCH-550e076bc6bc87d4b2283a7c",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "South Korea seeks 4th crypto tax delay, targets 2029 start",
+          "source_url": "https://cointelegraph.com/news/south-korea-crypto-tax-fourth-delay-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-87b0c624aba8333c42fd34a8",
+          "custody_pointer": "RSRCH-550e076bc6bc87d4b2283a7c",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin, Ether ETFs draw $128M as crypto rebounds after midterms",
+          "source_url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-27a8f8ff307990bce50e6e43",
+          "custody_pointer": "RSRCH-550e076bc6bc87d4b2283a7c",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Cr\u00e9dit Mutuel Ark\u00e9a resumes operations after attack, assesses losses",
+          "source_url": "https://cointelegraph.com/news/credit-mutuel-arkea-resumes-operations-133m-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1274,
-        "FAILED": 552,
-        "NO_UPDATE": 12934
+        "CANDIDATES_IDENTIFIED": 1284,
+        "FAILED": 558,
+        "NO_UPDATE": 13068
       }
     },
     "trump-token-promotion-access-supply": {
@@ -7211,15 +7284,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 330,
-        "FAILED": 552,
-        "NO_UPDATE": 13878
+        "CANDIDATES_IDENTIFIED": 332,
+        "FAILED": 558,
+        "NO_UPDATE": 14020
       }
     },
     "wlf-positive-adoption-radar": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 32,
+      "pending_candidate_count": 33,
       "pending_candidates": [
         {
           "candidate_id": "SRC-82e2f631c4812b17a13bcb23",
@@ -7508,12 +7581,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Hong Kong takes tokenized settlement to 24/7, plans stablecoin trials",
           "source_url": "https://cointelegraph.com/news/hong-kong-24-7-tokenized-settlements-stablecoin-trials?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-bcff41306b6fa573a9389d0f",
+          "custody_pointer": "RSRCH-df07672a4c40e0904c23235b",
+          "producer_commit": "4def910e28a8bae71f701be8111514fcf601b1c0",
+          "query": "custody support",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "France budget rejection sidelines stablecoin tax, wallet reporting",
+          "source_url": "https://cointelegraph.com/news/france-rejects-budget-revenue-sidelines-crypto-amendments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 206,
-        "FAILED": 736,
-        "NO_UPDATE": 18738
+        "CANDIDATES_IDENTIFIED": 207,
+        "FAILED": 744,
+        "NO_UPDATE": 18929
       }
     }
   }
