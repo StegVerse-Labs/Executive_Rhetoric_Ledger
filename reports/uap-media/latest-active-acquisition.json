@@ -37,13 +37,13 @@
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native.receipt.json",
-      "sha256": "a6bd6489739f3947cdb6677f9ec306cb33e6fa9da1e0312dd2a6487aedc5c8a4",
+      "sha256": "7ee3a1a3394610c571436fd52709603b89d004144a468835d15a1651a1f41ea2",
       "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
       "status": "COMPLETE"
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native.receipt.json",
-      "sha256": "698c4fbf929f6b9f682b9b7dc86617d5104867371ea10c5fbb5eaa9f2899629c",
+      "sha256": "7ff048d9402282ef7a2833ae17d21b7656a0354892007bfbd0a491306488498b",
       "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
       "status": "COMPLETE"
     }
