@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 102,
-  "pending_candidate_count": 834,
-  "pending_sha256": "7c0c5e4002fbdfa974751ab30ea94706e814b106ec33cb7081bd14ca0b82d965",
+  "intake_cycles": 103,
+  "pending_candidate_count": 838,
+  "pending_sha256": "93407cfc1d982ca8b7e29469cc13f45345a961c6b8bf4c68bc5a6a7aa121e2a6",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -107,10 +107,11 @@
     "4def910e28a8bae71f701be8111514fcf601b1c0",
     "5a02da85cf097196705b94c62adca0c9a3e3199e",
     "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6",
-    "559a46d2fd017a49a3fe1b0135a18afe4c385334"
+    "559a46d2fd017a49a3fe1b0135a18afe4c385334",
+    "7aec401d035c39b79c3274a62d55d8aaf6d84fb4"
   ],
   "publication_authorized": false,
-  "scan_record_count": 186620,
+  "scan_record_count": 188445,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -210,15 +211,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 66,
-        "FAILED": 480,
-        "NO_UPDATE": 12254
+        "CANDIDATES_IDENTIFIED": 67,
+        "FAILED": 485,
+        "NO_UPDATE": 12373
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 94,
+      "pending_candidate_count": 95,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -1065,18 +1066,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto ally French Hill wins reelection but set to lose House chair",
           "source_url": "https://cointelegraph.com/news/crypto-ally-french-hill-wins-reelection-arkansas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-271c606cd5d62cf303332430",
+          "custody_pointer": "RSRCH-345db20b8d209443f6ca2b04",
+          "producer_commit": "7aec401d035c39b79c3274a62d55d8aaf6d84fb4",
+          "query": "adverse-to-interest policy events",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
+          "source_url": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 614,
-        "FAILED": 576,
-        "NO_UPDATE": 14170
+        "CANDIDATES_IDENTIFIED": 618,
+        "FAILED": 582,
+        "NO_UPDATE": 14310
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 137,
+      "pending_candidate_count": 138,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2310,18 +2320,27 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin developer proposes \u2018landmines\u2019 to make quantum thieves lose their own BTC",
           "source_url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc"
+        },
+        {
+          "candidate_id": "SRC-e8a60f93ece467cbdf2ae5bc",
+          "custody_pointer": "RSRCH-9cf55f02bfb185786801e792",
+          "producer_commit": "7aec401d035c39b79c3274a62d55d8aaf6d84fb4",
+          "query": "authoritative remarks and policy timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
+          "source_url": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 680,
-        "FAILED": 480,
-        "NO_UPDATE": 11640
+        "CANDIDATES_IDENTIFIED": 685,
+        "FAILED": 485,
+        "NO_UPDATE": 11755
       }
     },
     "family-token-rotation-fee-capture": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 36,
+      "pending_candidate_count": 37,
       "pending_candidates": [
         {
           "candidate_id": "SRC-930947baafed40e4c38f8426",
@@ -2646,12 +2665,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Trump-linked tokens lead crypto losses after Democrats sweep in the US midterms",
           "source_url": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-c2e3ba210e1b6f4ba9419287",
+          "custody_pointer": "RSRCH-54ad10f1b82ec654d52ab03b",
+          "producer_commit": "7aec401d035c39b79c3274a62d55d8aaf6d84fb4",
+          "query": "token sales",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Trump-backed World Liberty Financial plans token buyback after 66% year-to-date slide",
+          "source_url": "https://www.coindesk.com/business/2026/11/06/trump-backed-world-liberty-financial-plans-token-buyback-after-66-year-to-date-slide"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 623,
-        "FAILED": 576,
-        "NO_UPDATE": 14161
+        "CANDIDATES_IDENTIFIED": 628,
+        "FAILED": 582,
+        "NO_UPDATE": 14300
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -3219,9 +3247,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 393,
-        "FAILED": 576,
-        "NO_UPDATE": 14391
+        "CANDIDATES_IDENTIFIED": 397,
+        "FAILED": 582,
+        "NO_UPDATE": 14531
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3412,8 +3440,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 672,
-        "NO_UPDATE": 17107
+        "FAILED": 679,
+        "NO_UPDATE": 17275
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3999,9 +4027,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 249,
-        "FAILED": 576,
-        "NO_UPDATE": 14535
+        "CANDIDATES_IDENTIFIED": 250,
+        "FAILED": 582,
+        "NO_UPDATE": 14678
       }
     },
     "market-rhetoric-oil-impact": {
@@ -5640,9 +5668,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1610,
-        "FAILED": 480,
-        "NO_UPDATE": 10710
+        "CANDIDATES_IDENTIFIED": 1625,
+        "FAILED": 485,
+        "NO_UPDATE": 10815
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5778,15 +5806,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 270,
-        "FAILED": 670,
-        "NO_UPDATE": 16720
+        "CANDIDATES_IDENTIFIED": 273,
+        "FAILED": 677,
+        "NO_UPDATE": 16885
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 160,
+      "pending_candidate_count": 161,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -7227,12 +7255,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Crypto exchanges tout cold storage ratios after Binance attack",
           "source_url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fbf0122a909ce78e468eb719",
+          "custody_pointer": "RSRCH-f61a117135a13b4a65c41daf",
+          "producer_commit": "7aec401d035c39b79c3274a62d55d8aaf6d84fb4",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "GOPAX halts crypto trading, withdrawals to move all assets to cold storage",
+          "source_url": "https://cointelegraph.com/news/gopax-halts-crypto-trading-withdrawals-cold-storage?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1310,
-        "FAILED": 576,
-        "NO_UPDATE": 13474
+        "CANDIDATES_IDENTIFIED": 1318,
+        "FAILED": 582,
+        "NO_UPDATE": 13610
       }
     },
     "trump-token-promotion-access-supply": {
@@ -7449,9 +7486,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 338,
-        "FAILED": 576,
-        "NO_UPDATE": 14446
+        "CANDIDATES_IDENTIFIED": 340,
+        "FAILED": 582,
+        "NO_UPDATE": 14588
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7758,9 +7795,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 210,
-        "FAILED": 768,
-        "NO_UPDATE": 19502
+        "CANDIDATES_IDENTIFIED": 211,
+        "FAILED": 776,
+        "NO_UPDATE": 19693
       }
     }
   }
