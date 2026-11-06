@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 100,
-  "pending_candidate_count": 827,
-  "pending_sha256": "df4c185c295640407ae0a06ae1e5660f51ca9a7f44556df819b82bab662f358b",
+  "intake_cycles": 101,
+  "pending_candidate_count": 831,
+  "pending_sha256": "45f346dad4c4bdc1af062e7e9fe6d1cf1b6123332460b149717043b890819b43",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -105,10 +105,11 @@
     "2888fe6843784aa5ea521a4beb03825975893911",
     "98d85feb53c7f3474aef2eef2e3f5693a4acfe90",
     "4def910e28a8bae71f701be8111514fcf601b1c0",
-    "5a02da85cf097196705b94c62adca0c9a3e3199e"
+    "5a02da85cf097196705b94c62adca0c9a3e3199e",
+    "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6"
   ],
   "publication_authorized": false,
-  "scan_record_count": 182970,
+  "scan_record_count": 184795,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -208,15 +209,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 64,
-        "FAILED": 470,
-        "NO_UPDATE": 12016
+        "CANDIDATES_IDENTIFIED": 65,
+        "FAILED": 475,
+        "NO_UPDATE": 12135
       }
     },
     "crypto-policy-private-interest-overlap": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 93,
+      "pending_candidate_count": 94,
       "pending_candidates": [
         {
           "candidate_id": "SRC-4f7595d5339878a9505e6634",
@@ -1054,12 +1055,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
           "source_url": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs"
+        },
+        {
+          "candidate_id": "SRC-64c0f7f0082d1efa55b29f7b",
+          "custody_pointer": "RSRCH-44fa3d46b8faf571dcab7461",
+          "producer_commit": "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6",
+          "query": "financial disclosures",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto ally French Hill wins reelection but set to lose House chair",
+          "source_url": "https://cointelegraph.com/news/crypto-ally-french-hill-wins-reelection-arkansas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 605,
-        "FAILED": 564,
-        "NO_UPDATE": 13891
+        "CANDIDATES_IDENTIFIED": 610,
+        "FAILED": 570,
+        "NO_UPDATE": 14030
       }
     },
     "dollar-debasement-crypto-substitution": {
@@ -2293,9 +2303,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 668,
-        "FAILED": 470,
-        "NO_UPDATE": 11412
+        "CANDIDATES_IDENTIFIED": 674,
+        "FAILED": 475,
+        "NO_UPDATE": 11526
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2629,9 +2639,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 613,
-        "FAILED": 564,
-        "NO_UPDATE": 13883
+        "CANDIDATES_IDENTIFIED": 618,
+        "FAILED": 570,
+        "NO_UPDATE": 14022
       }
     },
     "foreign-counterparty-presidential-access": {
@@ -3190,9 +3200,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 386,
-        "FAILED": 564,
-        "NO_UPDATE": 14110
+        "CANDIDATES_IDENTIFIED": 389,
+        "FAILED": 570,
+        "NO_UPDATE": 14251
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3383,14 +3393,14 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 658,
-        "NO_UPDATE": 16771
+        "FAILED": 665,
+        "NO_UPDATE": 16939
       }
     },
     "institutional-bridge-asset-repricing": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 63,
+      "pending_candidate_count": 64,
       "pending_candidates": [
         {
           "candidate_id": "SRC-3e01f5e243a7037d4c80529d",
@@ -3958,12 +3968,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "XRP Ledger fixes a disclosed bug that could have led to the creation of new tokens",
           "source_url": "https://www.coindesk.com/markets/2026/11/05/xrp-ledger-closes-bug-that-let-approved-token-burners-create-new-tokens"
+        },
+        {
+          "candidate_id": "SRC-744b07e16558cbbc9a425485",
+          "custody_pointer": "RSRCH-4b99372a1f3046a6fefa629e",
+          "producer_commit": "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6",
+          "query": "event timestamps",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Nasdaq sees worst day in 18 months as investors bet on AI slowdown after Democrats\u2019 election triumph",
+          "source_url": "https://www.theguardian.com/business/2026/nov/05/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 245,
-        "FAILED": 564,
-        "NO_UPDATE": 14251
+        "CANDIDATES_IDENTIFIED": 247,
+        "FAILED": 570,
+        "NO_UPDATE": 14393
       }
     },
     "market-rhetoric-oil-impact": {
@@ -5602,9 +5621,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1578,
-        "FAILED": 470,
-        "NO_UPDATE": 10502
+        "CANDIDATES_IDENTIFIED": 1595,
+        "FAILED": 475,
+        "NO_UPDATE": 10605
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5740,15 +5759,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 264,
-        "FAILED": 656,
-        "NO_UPDATE": 16390
+        "CANDIDATES_IDENTIFIED": 267,
+        "FAILED": 663,
+        "NO_UPDATE": 16555
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 157,
+      "pending_candidate_count": 159,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -7162,12 +7181,30 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Democrats to Push Broader Crypto Market Structure Bill After Sweeping US Midterms: Report",
           "source_url": "https://decrypt.co/382602/democrats-to-push-broader-crypto-market-structure-bill-after-sweeping-us-midterms-report"
+        },
+        {
+          "candidate_id": "SRC-89a0b61c2af77ba6baa51363",
+          "custody_pointer": "RSRCH-d2feb971394f50b3f1e39465",
+          "producer_commit": "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Binance, Deribit revoke SignalPlus API keys after fake Teams invite attack",
+          "source_url": "https://cointelegraph.com/news/binance-deribit-revoke-signalplus-api-fake-teams-attack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-61e0caa225c0f117bc5f6d15",
+          "custody_pointer": "RSRCH-d2feb971394f50b3f1e39465",
+          "producer_commit": "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Fed, OCC check US banks after Binance hack as experts flag security risks",
+          "source_url": "https://cointelegraph.com/news/fed-occ-check-us-banks-binance-hack-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1293,
-        "FAILED": 564,
-        "NO_UPDATE": 13203
+        "CANDIDATES_IDENTIFIED": 1302,
+        "FAILED": 570,
+        "NO_UPDATE": 13338
       }
     },
     "trump-token-promotion-access-supply": {
@@ -7384,9 +7421,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 334,
-        "FAILED": 564,
-        "NO_UPDATE": 14162
+        "CANDIDATES_IDENTIFIED": 336,
+        "FAILED": 570,
+        "NO_UPDATE": 14304
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7693,9 +7730,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 208,
-        "FAILED": 752,
-        "NO_UPDATE": 19120
+        "CANDIDATES_IDENTIFIED": 209,
+        "FAILED": 760,
+        "NO_UPDATE": 19311
       }
     }
   }
