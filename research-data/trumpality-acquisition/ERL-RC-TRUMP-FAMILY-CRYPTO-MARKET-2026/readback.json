@@ -2,9 +2,9 @@
   "append_only_verified": true,
   "finding_authorized": false,
   "group_id": "ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026",
-  "intake_cycles": 101,
-  "pending_candidate_count": 831,
-  "pending_sha256": "45f346dad4c4bdc1af062e7e9fe6d1cf1b6123332460b149717043b890819b43",
+  "intake_cycles": 102,
+  "pending_candidate_count": 834,
+  "pending_sha256": "7c0c5e4002fbdfa974751ab30ea94706e814b106ec33cb7081bd14ca0b82d965",
   "producer_commits": [
     "d139ff3437bdfdb327a58dccc810d11e4b1a975e",
     "1ed621a847f38532cfbd2f6c927e4355ac914b23",
@@ -106,10 +106,11 @@
     "98d85feb53c7f3474aef2eef2e3f5693a4acfe90",
     "4def910e28a8bae71f701be8111514fcf601b1c0",
     "5a02da85cf097196705b94c62adca0c9a3e3199e",
-    "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6"
+    "51a9a9f1f9678bb06cc4cff5c9151b8b521e90d6",
+    "559a46d2fd017a49a3fe1b0135a18afe4c385334"
   ],
   "publication_authorized": false,
-  "scan_record_count": 184795,
+  "scan_record_count": 186620,
   "schema": "stegverse.erl.trumpality_research_readback.v1",
   "trajectories": {
     "cross-market-rhetoric-sequencing": {
@@ -209,9 +210,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 65,
-        "FAILED": 475,
-        "NO_UPDATE": 12135
+        "CANDIDATES_IDENTIFIED": 66,
+        "FAILED": 480,
+        "NO_UPDATE": 12254
       }
     },
     "crypto-policy-private-interest-overlap": {
@@ -1067,15 +1068,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 610,
-        "FAILED": 570,
-        "NO_UPDATE": 14030
+        "CANDIDATES_IDENTIFIED": 614,
+        "FAILED": 576,
+        "NO_UPDATE": 14170
       }
     },
     "dollar-debasement-crypto-substitution": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 136,
+      "pending_candidate_count": 137,
       "pending_candidates": [
         {
           "candidate_id": "SRC-aef79759d8372aced024f0ed",
@@ -2300,12 +2301,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
           "source_url": "https://www.coindesk.com/business/2026/11/05/soter-raises-usd23-5m-plus-btc-and-eth-as-banks-demand-theft-protection"
+        },
+        {
+          "candidate_id": "SRC-e497a62e6761718685d76c31",
+          "custody_pointer": "RSRCH-59140a117ecb64dbb5c0843c",
+          "producer_commit": "559a46d2fd017a49a3fe1b0135a18afe4c385334",
+          "query": "gold/BTC event windows",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Bitcoin developer proposes \u2018landmines\u2019 to make quantum thieves lose their own BTC",
+          "source_url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 674,
-        "FAILED": 475,
-        "NO_UPDATE": 11526
+        "CANDIDATES_IDENTIFIED": 680,
+        "FAILED": 480,
+        "NO_UPDATE": 11640
       }
     },
     "family-token-rotation-fee-capture": {
@@ -2639,15 +2649,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 618,
-        "FAILED": 570,
-        "NO_UPDATE": 14022
+        "CANDIDATES_IDENTIFIED": 623,
+        "FAILED": 576,
+        "NO_UPDATE": 14161
       }
     },
     "foreign-counterparty-presidential-access": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 61,
+      "pending_candidate_count": 62,
       "pending_candidates": [
         {
           "candidate_id": "SRC-495a8919e08b87f73580afa5",
@@ -3197,12 +3207,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Binance Cuts Off SignalPlus API Keys Over 'Potential Security Issue' at Trading Platform",
           "source_url": "https://decrypt.co/382599/binance-cuts-off-signalplus-api-keys-over-potential-security-issue-at-trading-platform"
+        },
+        {
+          "candidate_id": "SRC-820c6fd97a583625f85b6419",
+          "custody_pointer": "RSRCH-a07682327df9382000db5f87",
+          "producer_commit": "559a46d2fd017a49a3fe1b0135a18afe4c385334",
+          "query": "exchange custody attribution",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchanges tout cold storage ratios after Binance attack",
+          "source_url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 389,
-        "FAILED": 570,
-        "NO_UPDATE": 14251
+        "CANDIDATES_IDENTIFIED": 393,
+        "FAILED": 576,
+        "NO_UPDATE": 14391
       }
     },
     "geopolitical-financial-rail-demand": {
@@ -3393,8 +3412,8 @@
       ],
       "scan_results": {
         "CANDIDATES_IDENTIFIED": 141,
-        "FAILED": 665,
-        "NO_UPDATE": 16939
+        "FAILED": 672,
+        "NO_UPDATE": 17107
       }
     },
     "institutional-bridge-asset-repricing": {
@@ -3980,9 +3999,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 247,
-        "FAILED": 570,
-        "NO_UPDATE": 14393
+        "CANDIDATES_IDENTIFIED": 249,
+        "FAILED": 576,
+        "NO_UPDATE": 14535
       }
     },
     "market-rhetoric-oil-impact": {
@@ -5621,9 +5640,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1595,
-        "FAILED": 475,
-        "NO_UPDATE": 10605
+        "CANDIDATES_IDENTIFIED": 1610,
+        "FAILED": 480,
+        "NO_UPDATE": 10710
       }
     },
     "melania-token-preannouncement-wallets": {
@@ -5759,15 +5778,15 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 267,
-        "FAILED": 663,
-        "NO_UPDATE": 16555
+        "CANDIDATES_IDENTIFIED": 270,
+        "FAILED": 670,
+        "NO_UPDATE": 16720
       }
     },
     "regulatory-boundary-value-accretion": {
       "movement": "no-update",
       "null_scan_only": false,
-      "pending_candidate_count": 159,
+      "pending_candidate_count": 160,
       "pending_candidates": [
         {
           "candidate_id": "SRC-2b7e388392246fd35b09f71b",
@@ -7199,12 +7218,21 @@
           "review_status": "PENDING_REVIEW",
           "source_title": "Fed, OCC check US banks after Binance hack as experts flag security risks",
           "source_url": "https://cointelegraph.com/news/fed-occ-check-us-banks-binance-hack-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "candidate_id": "SRC-fed8192a30b319feda0680fa",
+          "custody_pointer": "RSRCH-642e1cf1c149a260dc8140b5",
+          "producer_commit": "559a46d2fd017a49a3fe1b0135a18afe4c385334",
+          "query": "realized activity after approval",
+          "review_status": "PENDING_REVIEW",
+          "source_title": "Crypto exchanges tout cold storage ratios after Binance attack",
+          "source_url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 1302,
-        "FAILED": 570,
-        "NO_UPDATE": 13338
+        "CANDIDATES_IDENTIFIED": 1310,
+        "FAILED": 576,
+        "NO_UPDATE": 13474
       }
     },
     "trump-token-promotion-access-supply": {
@@ -7421,9 +7449,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 336,
-        "FAILED": 570,
-        "NO_UPDATE": 14304
+        "CANDIDATES_IDENTIFIED": 338,
+        "FAILED": 576,
+        "NO_UPDATE": 14446
       }
     },
     "wlf-positive-adoption-radar": {
@@ -7730,9 +7758,9 @@
         }
       ],
       "scan_results": {
-        "CANDIDATES_IDENTIFIED": 209,
-        "FAILED": 760,
-        "NO_UPDATE": 19311
+        "CANDIDATES_IDENTIFIED": 210,
+        "FAILED": 768,
+        "NO_UPDATE": 19502
       }
     }
   }
