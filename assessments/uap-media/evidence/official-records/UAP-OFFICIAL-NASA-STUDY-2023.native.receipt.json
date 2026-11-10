@@ -6,13 +6,13 @@
     "github_token_used": false,
     "promotion_authority": false
   },
-  "byte_length": 282533,
+  "byte_length": 282538,
   "content_type": "text/html; charset=UTF-8",
   "evidence_class": "official-record",
   "final_url": "https://science.nasa.gov/uap/",
   "native_object": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-NASA-STUDY-2023.native",
-  "retrieved_at": "2026-11-10T00:42:52.121915Z",
-  "sha256": "8ca55cd02098d3994ad9a300ad68264c4efa3b1e338cd4e20743688297cf0255",
+  "retrieved_at": "2026-11-10T06:35:54.560184Z",
+  "sha256": "090adeff1b37b5f5d1613d50e9ea9683122b40d84b981edbbb56119c501ec9c6",
   "source_id": "UAP-OFFICIAL-NASA-STUDY-2023",
   "source_url": "https://science.nasa.gov/uap/"
 }
