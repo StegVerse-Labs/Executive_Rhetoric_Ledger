@@ -2,7 +2,7 @@
   "coverage_state": "BOUNDED_CONFIGURED_URL_ATTEMPTS",
   "execution_state": "SOURCE_ACQUISITION_COMPLETE_REVIEW_REQUIRED",
   "finding_authorized": false,
-  "generated_at": "2026-11-11T05:16:08.143662Z",
+  "generated_at": "2026-11-11T17:15:48.270564Z",
   "group_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
   "items": [
     {
@@ -32,7 +32,7 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921.1018fed261dfe8531a3bf52f2ac30b4a217fc64b9809fe1675b62197bd31f865.native",
       "source_id": "ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921",
       "source_posture": "official-us-visit-schedule",
@@ -68,11 +68,11 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
-      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.0e8c1087280a844a12a5ca29b2ca9e102af7ffe0dd1672c8accd2a457759a1fe.native",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.ae3ad76a370b131fb208e18dc82269ff7bca6ac2048401974ec9cf7f31b5389e.native",
       "source_id": "ERL-USCN-WH-STATE-VISIT-RECAP-20260925",
       "source_posture": "official-us-visit-recap",
-      "source_sha256": "0e8c1087280a844a12a5ca29b2ca9e102af7ffe0dd1672c8accd2a457759a1fe",
+      "source_sha256": "ae3ad76a370b131fb208e18dc82269ff7bca6ac2048401974ec9cf7f31b5389e",
       "source_size_bytes": 301342,
       "text_extraction": "HTML_PLAIN_TEXT",
       "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/"
@@ -104,7 +104,7 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925.43e48349768e72fb83a01a3c4d77cf367e9cb2b2c10d5c3fc043d43a00b34b5b.native",
       "source_id": "ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925",
       "source_posture": "official-prc-diplomatic-readout",
@@ -146,11 +146,11 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
-      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925.a33a30c4ebe965bc65bf9f991b3e8ce12e7812da3400d909ac926217f3577711.native",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925.3f5c4b4a8f0fa29a92834223a8adb87fa6c2f90c91b8d922836f5e46886d64a1.native",
       "source_id": "ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925",
       "source_posture": "official-us-diplomatic-fact-sheet",
-      "source_sha256": "a33a30c4ebe965bc65bf9f991b3e8ce12e7812da3400d909ac926217f3577711",
+      "source_sha256": "3f5c4b4a8f0fa29a92834223a8adb87fa6c2f90c91b8d922836f5e46886d64a1",
       "source_size_bytes": 272511,
       "text_extraction": "HTML_PLAIN_TEXT",
       "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/"
@@ -176,11 +176,11 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
-      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.cafd540326125dc96ba8b797a891bdd03f095fd5528315cb46488a014bafaf4d.native",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.c3789a8245c252fd816e189128c827823f54809973125b899bb7902e1bfea08e.native",
       "source_id": "ERL-USCN-BIS-H200-EXPORT-POLICY-20260113",
       "source_posture": "official-us-export-policy",
-      "source_sha256": "cafd540326125dc96ba8b797a891bdd03f095fd5528315cb46488a014bafaf4d",
+      "source_sha256": "c3789a8245c252fd816e189128c827823f54809973125b899bb7902e1bfea08e",
       "source_size_bytes": 53099,
       "text_extraction": "HTML_PLAIN_TEXT",
       "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
@@ -206,11 +206,11 @@
           "verbatim_source_context": "First Lady Melania Trump Releases Details on the State Dinner with His Excellency Xi Jinping, President of The People’s Republic of China, and Madame Peng Liyuan – The White House Sk"
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
-      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.2e2ba7dcf431b206d2b9ead803183b7f3a10a5d3bb5d092b4f1a299e396eafa1.native",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.2f13f3423c8b6ca574db120f0b24b41016a4007f60676d84543cd514c8d99640.native",
       "source_id": "ERL-USCN-WH-STATE-DINNER-NOTICE-20260924",
       "source_posture": "official-us-event-announcement",
-      "source_sha256": "2e2ba7dcf431b206d2b9ead803183b7f3a10a5d3bb5d092b4f1a299e396eafa1",
+      "source_sha256": "2f13f3423c8b6ca574db120f0b24b41016a4007f60676d84543cd514c8d99640",
       "source_size_bytes": 295221,
       "text_extraction": "HTML_PLAIN_TEXT",
       "url": "https://www.whitehouse.gov/briefings-statements/2026/09/first-lady-melania-trump-releases-details-on-the-state-dinner-with-his-excellency-xi-jinping-president-of-the-peoples-republic-of-china-and-madame-peng-liyuan/"
@@ -242,7 +242,7 @@
           "verbatim_source_context": "长合作清单，也需要压缩问题清单。只要秉持平等、尊重、互惠的精神，就能找到解决问题的出路。希望双方相向而行，坚持互利共赢导向，推动中美经贸关系持续稳定向好发展。 习近平指出，中美都是人工智能大国，双方有竞争，更可以合作，应该各展所长而不是相互设防。双方可以继续开展人工智能对话，就其风险和收益进行交流，共同防范人工智能被滥用恶用。要保持人类对人工智能技术的管控，秉持以人为本、向上向善理念，让人工智能为人类的进步服务。 习近平强调，中方维护国家统一和领土完整的立场是"
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925.74670b6b8d36aa2367dbc532e7231ab34a4496ecf9e24440998b47b1bf4c677d.native",
       "source_id": "ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925",
       "source_posture": "official-prc-original-language",
@@ -284,7 +284,7 @@
           "verbatim_source_context": "，联合破获多起涉新精神活性物质及前体化学品案件，在两国抓获数十名相关犯罪嫌疑人。 七、双方同意建立中美人工智能对话，交流人工智能相关风险和惠益。下次对话将于今年11月举行。双方同意建立人工智能事件的沟通渠道。 八、美方欢迎中方租借给美国亚特兰大动物园的一对大熊猫抵美。 此外，中美两军还同意尽快签署加强危机沟通与预防的谅解备忘录，继续合作搜寻在华美军失踪人员遗骸。 相关附件 相关新闻 "
         }
       ],
-      "retrieved_at": "2026-11-11T05:16:08.143662Z",
+      "retrieved_at": "2026-11-11T17:15:48.270564Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926.bcae0013d23287dbf48895c1ab18d3cf3b625a3a1cd904b980698656d38523de.native",
       "source_id": "ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926",
       "source_posture": "official-prc-bilateral-outcome-list",
