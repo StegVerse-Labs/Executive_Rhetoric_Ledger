@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_8722DD3418ACF2E1",
+  "byte_length": 107032,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-9F43DC377ECFC8618E5B.json",
+  "capture_id": "CAP-9F43DC377ECFC8618E5B",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "9f43dc377ecfc8618e5bb507abeff26de05dc3be55778cadef3ca84241504c5e",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/9f43dc377ecfc8618e5bb507abeff26de05dc3be55778cadef3ca84241504c5e.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-washington-dc-arrests-illegal-alien-gang-member-fairfax-county-va"
+}

@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_CBP_MEDIA_RELEASES_4E24B6E4724E0871",
+  "byte_length": 114906,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-2C2A18AB9978AA016E24.json",
+  "capture_id": "CAP-2C2A18AB9978AA016E24",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "2c2a18ab9978aa016e24e24419287e5bb527bc77c46f38bdc635a9ac82167090",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/2c2a18ab9978aa016e24e24419287e5bb527bc77c46f38bdc635a9ac82167090.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.cbp.gov/newsroom/local-media-release/us-border-patrol-hosts-tracking-class"
+}

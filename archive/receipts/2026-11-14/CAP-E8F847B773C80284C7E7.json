@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_0205E1D654E9BEE3",
+  "byte_length": 105979,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-E8F847B773C80284C7E7.json",
+  "capture_id": "CAP-E8F847B773C80284C7E7",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "e8f847b773c80284c7e7e06ecc5df8daa8b8f3fef177c55c13b52b53065d3997",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/e8f847b773c80284c7e7e06ecc5df8daa8b8f3fef177c55c13b52b53065d3997.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-new-jersey-arrests-jamaican-national-accused-voting-illegally-over-22-year"
+}

@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-2C2A18AB9978AA016E24",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "2c2a18ab9978aa016e24e24419287e5bb527bc77c46f38bdc635a9ac82167090",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.cbp.gov/newsroom/local-media-release/us-border-patrol-hosts-tracking-class"
+}

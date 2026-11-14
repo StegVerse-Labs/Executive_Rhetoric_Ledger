@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_5F49E745BD444A1D",
+  "byte_length": 107993,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-380819336423F97B8670.json",
+  "capture_id": "CAP-380819336423F97B8670",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "380819336423f97b86704abed46cb71de07c6e4a2e8bd112f0b8ac603e515930",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/380819336423f97b86704abed46cb71de07c6e4a2e8bd112f0b8ac603e515930.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-arrests-illegal-alien-who-claimed-work-washington-state"
+}

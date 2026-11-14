@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_ED67B5FF0CCC3D70",
+  "byte_length": 107977,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-1BCE3A37713525756EE0.json",
+  "capture_id": "CAP-1BCE3A37713525756EE0",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "1bce3a37713525756ee090aaf008755dd18e9b4799c61cf1110b6a33f6ee8483",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/1bce3a37713525756ee090aaf008755dd18e9b4799c61cf1110b6a33f6ee8483.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/illegal-alien-accused-assaulting-nypd-officer-released-now-loose"
+}

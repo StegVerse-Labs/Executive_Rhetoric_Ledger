@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-3FD41EF3471FF761C26C",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "3fd41ef3471ff761c26c48c3da55781ad1e07ce8ee739aecbb42ad38da84d925",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.cbp.gov/newsroom/local-media-release/cbp-officers-arrest-us-citizen-wanted-child-molestation-warrant"
+}

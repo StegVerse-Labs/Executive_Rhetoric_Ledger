@@ -1,0 +1,463 @@
+{
+  "clusters": [
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-A8E5DAD981D3563A1DBD",
+      "cluster_key": "b85bfe88f27e5c5e865609ccf6b9889bd98b7485e272db343f423e637ba57f47",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-02F904EBAC845F9CCD1B"
+      ],
+      "member_hashes": [
+        "02f904ebac845f9ccd1b7375e45fdf2ff3a750108d7d2f3b5880404dda34b29c"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-1974D68714E83D8E28B4",
+      "cluster_key": "75dd8617b0d47c60d9abd549da6a231e13e712fe2c806e203812516030dbac65",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-096E327C962007C55F36"
+      ],
+      "member_hashes": [
+        "096e327c962007c55f36b475db8bbf3ce9afe288e3a52d95da9c3302cb5c1627"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-696945D4E380BFAE8370",
+      "cluster_key": "c4261c1b2b9bd42c3a17b1014c4654b3be3a67caf0e8ecab5ee883add10ec444",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-1152B6EFF359820A2394"
+      ],
+      "member_hashes": [
+        "1152b6eff359820a2394212f1b86d49bf4c24840bdf8bd66ed67fcfe56cb9c69"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-A4CAED5300B9401670F7",
+      "cluster_key": "6705c72efd3c05e7c5f9ac99dd6b8b535718ea43ca5725f4bba8cd26e4e90d9a",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-1BCE3A37713525756EE0"
+      ],
+      "member_hashes": [
+        "1bce3a37713525756ee090aaf008755dd18e9b4799c61cf1110b6a33f6ee8483"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-466873D1C827D0780FB0",
+      "cluster_key": "74f92c2f5f7fe8a2a5855ad7597bbe18c0f0d42cf28b18cca352e4fceabc2835",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-2C2A18AB9978AA016E24"
+      ],
+      "member_hashes": [
+        "2c2a18ab9978aa016e24e24419287e5bb527bc77c46f38bdc635a9ac82167090"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-1DC5D2751BC396D1C922",
+      "cluster_key": "8dddc1a75657a3ac3d403a38359698d6647a21d9d096be8190e8acb60df5a95d",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-380819336423F97B8670"
+      ],
+      "member_hashes": [
+        "380819336423f97b86704abed46cb71de07c6e4a2e8bd112f0b8ac603e515930"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-FC686E54C3306961A463",
+      "cluster_key": "4639428485e58d3599c4702ace0ed76b108ca8a469fc8d0af3438a27625a6ee2",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-3FD41EF3471FF761C26C"
+      ],
+      "member_hashes": [
+        "3fd41ef3471ff761c26c48c3da55781ad1e07ce8ee739aecbb42ad38da84d925"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-3446B58DB55B0E120397",
+      "cluster_key": "87a4a0865be92eab69684d1c05ea49759bc6c62b113693f15d8e860e82cc435b",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-54B577822FB06659FDE1"
+      ],
+      "member_hashes": [
+        "54b577822fb06659fde1461b81f6e974f67e3842afa40bb5629582fb4635fc19"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-B9F1BD49D02CF1D48B1A",
+      "cluster_key": "473e765370ebe6842f5da5f8c76ebe359fb2326878e6128a4aaec18911910364",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-57337D135FF25D49B111"
+      ],
+      "member_hashes": [
+        "57337d135ff25d49b1113e56c1c8e6d6aea8c8caa29f320871c21ff8978c7925"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-4964022474B7667C0B26",
+      "cluster_key": "2f8f259ea8724261d446db64309bd75f0f387e80ff90346566620b58d61a0253",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-7218009815FFD83D4498"
+      ],
+      "member_hashes": [
+        "7218009815ffd83d449826bd3e9262a5f73c85bba1c2b13c6de727e4de8e43f1"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-84F05F98A82AA293F89C",
+      "cluster_key": "becbaf34f566804e9bcaf5d2478f0205b2026f253e611a8a90c84311bec8eed7",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-7F9DF7550641D448E954"
+      ],
+      "member_hashes": [
+        "7f9df7550641d448e954f1a448e0de7cd3ecab76b9a887a412512ee0162a45b6"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-1B55A088E79C1D41B19B",
+      "cluster_key": "4a3fb36ffefb4f2dcbefc383f5fb6b5c045e062dfb7ea3df2b8531aa6dce16b1",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-824D6D31FCC053AD91CD",
+        "CAND-A7038C51B9C39A74D108"
+      ],
+      "member_hashes": [
+        "824d6d31fcc053ad91cda43d9d9704f797436cc11dfe1ff4cd483633943919eb",
+        "a7038c51b9c39a74d108bc4ad55faef810bef66576a4819135b8e12c6242094a"
+      ],
+      "minimum_similarity": 0.75,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-BB0D2C1AB87AB835AD6C",
+      "cluster_key": "8db9a8074bfc9e31229ec7edefcad2a1f0123da3c0893dad81a8e9d68b5a939d",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-8F30F6B78A0417B734A8"
+      ],
+      "member_hashes": [
+        "8f30f6b78a0417b734a8ac527c214b0a7420995b1fa6cfc1077c93b44baaa277"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-BA71A68E393BDACAC23F",
+      "cluster_key": "1ab37874ca9085c48a1f3053d16ce2c4635542a7933c4958d4fe1a209698c7e5",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-9F43DC377ECFC8618E5B"
+      ],
+      "member_hashes": [
+        "9f43dc377ecfc8618e5bb507abeff26de05dc3be55778cadef3ca84241504c5e"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-7174BBE76275BD6536D4",
+      "cluster_key": "af44ef3c01342ac3399a39bd2df28b8c3bb260aeb23a0b528ace8aed5c75fab0",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-BE78D25D5385622C5D59"
+      ],
+      "member_hashes": [
+        "be78d25d5385622c5d59ca8c02241b787abc143e22f0ebff942dd1488acb5e6d"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-4843642B6D39CF76EC14",
+      "cluster_key": "01fc396c827f0bd0b476abd760274b2d2ab77d2cecca87e85f7cb3466b07189c",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-C12D2DDEEDFA36196E86"
+      ],
+      "member_hashes": [
+        "c12d2ddeedfa36196e868fcf40e0db4072d8b0c41fac9f0a719e6511fd645683"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-53EA0D10A4D0B76A3AE4",
+      "cluster_key": "f54eacc1b5b5bbc504b78ab2cab4a00a208184ba029e89a16c4e3bd2743fbf74",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-C1C2336F747A9C4822BF"
+      ],
+      "member_hashes": [
+        "c1c2336f747a9c4822bfdad9bb2d748a619035a39ce81ba519649be39de0dda4"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-E452E030B17554529D0C",
+      "cluster_key": "e19f7892ece3a0848933998e6c6a62183ce2d444d5faff4fc403240ba1163777",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-C749142475E876D9B6B8"
+      ],
+      "member_hashes": [
+        "c749142475e876d9b6b837a893cd032001d44078ea1741a21b782e3b20a4791b"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-723A6EE30F47C703521F",
+      "cluster_key": "51b6b4042ca2ab0642925ff3c3c9971e3faba140c32a67fe4a7805a4292df7a2",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-CB7489BBB08114AEF5E4"
+      ],
+      "member_hashes": [
+        "cb7489bbb08114aef5e4265e661b0f84d0bc26034bc70a3b55a2ab51bd8c49fb"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-4C5CAB94C00D00A338D9",
+      "cluster_key": "f4f625386b3a33dcad9337908588d2bff9254bc548a02788596cdf2f4df5b6f6",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-D039A7CF453C78B25590"
+      ],
+      "member_hashes": [
+        "d039a7cf453c78b25590034e8f8896fb6bf04e1fa3692a4e9821daa49829de30"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-CA1024FD411CF7747494",
+      "cluster_key": "8a27ac813f606c323d8c22c7211b946a31fe252bf6bcfe294b0b51bcaccfad3d",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-E5BFA8C2709C33FCF3A4"
+      ],
+      "member_hashes": [
+        "e5bfa8c2709c33fcf3a43ac152d1eaea195ce9e4654910bf769b04017e93e15e"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-C115D10B6F2425AC49E2",
+      "cluster_key": "f242f19779739c367509310aad32e21a19cc44e113788a7afa2b5d7596780da0",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-E8F847B773C80284C7E7"
+      ],
+      "member_hashes": [
+        "e8f847b773c80284c7e7e06ecc5df8daa8b8f3fef177c55c13b52b53065d3997"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-05850E5AF6B4F2DCAAAF",
+      "cluster_key": "4ddf6c1b74bf61c7864f9bc8b85d42da500101e8b1350e0d13e489ecf6b14269",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-EA45DD47A31679829DE0"
+      ],
+      "member_hashes": [
+        "ea45dd47a31679829de0790cfacc5596516e9268882ecff82a6ae01f3480f742"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    },
+    {
+      "automation_authority": {
+        "may_group": true,
+        "may_merge_records": false,
+        "may_promote": false
+      },
+      "cluster_id": "CLUSTER-47A11FAC19E021D17A8B",
+      "cluster_key": "baa3da5e02cf9ea6c3112294fdbe7e8ec3d4cd072660ede2ae72499cd9b1fe10",
+      "cluster_status": "candidate-cluster",
+      "member_candidate_ids": [
+        "CAND-FBAF75A567B610B0CE36"
+      ],
+      "member_hashes": [
+        "fbaf75a567b610b0ce36c452368a57f96323a636555f9580c18eb442dfbe7768"
+      ],
+      "minimum_similarity": 1.0,
+      "review_status": "cluster-review-required",
+      "similarity_method": "normalized-token-jaccard"
+    }
+  ],
+  "threshold": 0.72
+}

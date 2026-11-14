@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_6F2EADBAF61E70E2",
+  "byte_length": 109952,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-824D6D31FCC053AD91CD.json",
+  "capture_id": "CAP-824D6D31FCC053AD91CD",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "824d6d31fcc053ad91cda43d9d9704f797436cc11dfe1ff4cd483633943919eb",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/824d6d31fcc053ad91cda43d9d9704f797436cc11dfe1ff4cd483633943919eb.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/nationwide-crackdown-voter-fraud-ice-arrests-dozens-aliens"
+}

@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-096E327C962007C55F36",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "096e327c962007c55f36b475db8bbf3ce9afe288e3a52d95da9c3302cb5c1627",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/hsi-hattiesburg-seizes-over-6000-kg-narcotics-worth-805m-during-operation-iron"
+}

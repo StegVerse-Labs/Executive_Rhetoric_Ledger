@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_0D729F18AC6AC447",
+  "byte_length": 108637,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-096E327C962007C55F36.json",
+  "capture_id": "CAP-096E327C962007C55F36",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "096e327c962007c55f36b475db8bbf3ce9afe288e3a52d95da9c3302cb5c1627",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/096e327c962007c55f36b475db8bbf3ce9afe288e3a52d95da9c3302cb5c1627.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/hsi-hattiesburg-seizes-over-6000-kg-narcotics-worth-805m-during-operation-iron"
+}

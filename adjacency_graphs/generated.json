@@ -1,0 +1,604 @@
+{
+  "automation_authority": {
+    "may_assert_causation": false,
+    "may_assert_identity": false,
+    "may_link": true,
+    "may_publish": false
+  },
+  "edges": [
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-012724F610862EA17386",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-54B577822FB06659FDE1",
+      "target": "CLUSTER-3446B58DB55B0E120397"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-0280E965D50016045A2E",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-8F30F6B78A0417B734A8",
+      "target": "CLUSTER-BB0D2C1AB87AB835AD6C"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-05404BD1BDFA35DEC26E",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-D039A7CF453C78B25590",
+      "target": "CLUSTER-4C5CAB94C00D00A338D9"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 0.75,
+      "edge_id": "EDGE-11262CF93BDA17454785",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-A7038C51B9C39A74D108",
+      "target": "CLUSTER-1B55A088E79C1D41B19B"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-1BC597C1BBE0832316A9",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-9F43DC377ECFC8618E5B",
+      "target": "CLUSTER-BA71A68E393BDACAC23F"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 0.75,
+      "edge_id": "EDGE-217D8F42D13966CD2793",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-824D6D31FCC053AD91CD",
+      "target": "CLUSTER-1B55A088E79C1D41B19B"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-2BC309665CA77B6C3D1B",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-7218009815FFD83D4498",
+      "target": "CLUSTER-4964022474B7667C0B26"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-2FBBE8585E7577FA018A",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-1152B6EFF359820A2394",
+      "target": "CLUSTER-696945D4E380BFAE8370"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-34AB677B93A603554E45",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-C12D2DDEEDFA36196E86",
+      "target": "CLUSTER-4843642B6D39CF76EC14"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-60497AC2345465D3F5F1",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-2C2A18AB9978AA016E24",
+      "target": "CLUSTER-466873D1C827D0780FB0"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-69D7EACAC55B33079958",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-380819336423F97B8670",
+      "target": "CLUSTER-1DC5D2751BC396D1C922"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-6E797C7578C860843A02",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-C1C2336F747A9C4822BF",
+      "target": "CLUSTER-53EA0D10A4D0B76A3AE4"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-72FC5929065F105F094B",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-7F9DF7550641D448E954",
+      "target": "CLUSTER-84F05F98A82AA293F89C"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-73F89BC0C9823B09F453",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-E5BFA8C2709C33FCF3A4",
+      "target": "CLUSTER-CA1024FD411CF7747494"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-7D269D2B588FE7F025F8",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-57337D135FF25D49B111",
+      "target": "CLUSTER-B9F1BD49D02CF1D48B1A"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-81835C04989F123246D4",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-FBAF75A567B610B0CE36",
+      "target": "CLUSTER-47A11FAC19E021D17A8B"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-81F7E7745060356163AF",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-02F904EBAC845F9CCD1B",
+      "target": "CLUSTER-A8E5DAD981D3563A1DBD"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-9B3A5BFFC3D88D0D86AC",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-C749142475E876D9B6B8",
+      "target": "CLUSTER-E452E030B17554529D0C"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-9EDE6B4BF78E8D1A7E90",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-CB7489BBB08114AEF5E4",
+      "target": "CLUSTER-723A6EE30F47C703521F"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-9FDF2D278DA868ACB553",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-E8F847B773C80284C7E7",
+      "target": "CLUSTER-C115D10B6F2425AC49E2"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-9FFC21F4E818F50E7822",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-BE78D25D5385622C5D59",
+      "target": "CLUSTER-7174BBE76275BD6536D4"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-ABE4B29BECDB65AF18FD",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-3FD41EF3471FF761C26C",
+      "target": "CLUSTER-FC686E54C3306961A463"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-BBDE513865DECBF37231",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-096E327C962007C55F36",
+      "target": "CLUSTER-1974D68714E83D8E28B4"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-BD50B758D85D42FDB788",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-1BCE3A37713525756EE0",
+      "target": "CLUSTER-A4CAED5300B9401670F7"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 0.8,
+      "edge_id": "EDGE-C2081F4D6918851E4E45",
+      "evidence_basis": "normalized payload title or fixture identifier",
+      "relationship_type": "topical-overlap",
+      "review_status": "edge-review-required",
+      "source": "CAND-1152B6EFF359820A2394",
+      "target": "TOPIC-4839A663BD02E7A5EC45"
+    },
+    {
+      "causation_asserted": false,
+      "confidence": 1.0,
+      "edge_id": "EDGE-DBED4DDE24262A74FE53",
+      "evidence_basis": "normalized-token-jaccard",
+      "relationship_type": "member-of-cluster",
+      "review_status": "edge-review-required",
+      "source": "CAND-EA45DD47A31679829DE0",
+      "target": "CLUSTER-05850E5AF6B4F2DCAAAF"
+    }
+  ],
+  "generated_from": [
+    "incident_clusters/generated.json",
+    "discovery_candidates/2026-07-20/CAND-1152B6EFF359820A2394.json",
+    "discovery_candidates/2026-11-14/CAND-02F904EBAC845F9CCD1B.json",
+    "discovery_candidates/2026-11-14/CAND-096E327C962007C55F36.json",
+    "discovery_candidates/2026-11-14/CAND-1152B6EFF359820A2394.json",
+    "discovery_candidates/2026-11-14/CAND-1BCE3A37713525756EE0.json",
+    "discovery_candidates/2026-11-14/CAND-2C2A18AB9978AA016E24.json",
+    "discovery_candidates/2026-11-14/CAND-380819336423F97B8670.json",
+    "discovery_candidates/2026-11-14/CAND-3FD41EF3471FF761C26C.json",
+    "discovery_candidates/2026-11-14/CAND-54B577822FB06659FDE1.json",
+    "discovery_candidates/2026-11-14/CAND-57337D135FF25D49B111.json",
+    "discovery_candidates/2026-11-14/CAND-7218009815FFD83D4498.json",
+    "discovery_candidates/2026-11-14/CAND-7F9DF7550641D448E954.json",
+    "discovery_candidates/2026-11-14/CAND-824D6D31FCC053AD91CD.json",
+    "discovery_candidates/2026-11-14/CAND-8F30F6B78A0417B734A8.json",
+    "discovery_candidates/2026-11-14/CAND-9F43DC377ECFC8618E5B.json",
+    "discovery_candidates/2026-11-14/CAND-A7038C51B9C39A74D108.json",
+    "discovery_candidates/2026-11-14/CAND-BE78D25D5385622C5D59.json",
+    "discovery_candidates/2026-11-14/CAND-C12D2DDEEDFA36196E86.json",
+    "discovery_candidates/2026-11-14/CAND-C1C2336F747A9C4822BF.json",
+    "discovery_candidates/2026-11-14/CAND-C749142475E876D9B6B8.json",
+    "discovery_candidates/2026-11-14/CAND-CB7489BBB08114AEF5E4.json",
+    "discovery_candidates/2026-11-14/CAND-D039A7CF453C78B25590.json",
+    "discovery_candidates/2026-11-14/CAND-E5BFA8C2709C33FCF3A4.json",
+    "discovery_candidates/2026-11-14/CAND-E8F847B773C80284C7E7.json",
+    "discovery_candidates/2026-11-14/CAND-EA45DD47A31679829DE0.json",
+    "discovery_candidates/2026-11-14/CAND-FBAF75A567B610B0CE36.json"
+  ],
+  "graph_id": "GRAPH-C4E66A044121ECF70EF4",
+  "graph_status": "candidate-graph",
+  "nodes": [
+    {
+      "label": "CAND-02F904EBAC845F9CCD1B",
+      "node_id": "CAND-02F904EBAC845F9CCD1B",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-096E327C962007C55F36",
+      "node_id": "CAND-096E327C962007C55F36",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "Reported DHS and FBI accountability-chain sequence",
+      "node_id": "CAND-1152B6EFF359820A2394",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-1BCE3A37713525756EE0",
+      "node_id": "CAND-1BCE3A37713525756EE0",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-2C2A18AB9978AA016E24",
+      "node_id": "CAND-2C2A18AB9978AA016E24",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-380819336423F97B8670",
+      "node_id": "CAND-380819336423F97B8670",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-3FD41EF3471FF761C26C",
+      "node_id": "CAND-3FD41EF3471FF761C26C",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-54B577822FB06659FDE1",
+      "node_id": "CAND-54B577822FB06659FDE1",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-57337D135FF25D49B111",
+      "node_id": "CAND-57337D135FF25D49B111",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-7218009815FFD83D4498",
+      "node_id": "CAND-7218009815FFD83D4498",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-7F9DF7550641D448E954",
+      "node_id": "CAND-7F9DF7550641D448E954",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-824D6D31FCC053AD91CD",
+      "node_id": "CAND-824D6D31FCC053AD91CD",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-8F30F6B78A0417B734A8",
+      "node_id": "CAND-8F30F6B78A0417B734A8",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-9F43DC377ECFC8618E5B",
+      "node_id": "CAND-9F43DC377ECFC8618E5B",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-A7038C51B9C39A74D108",
+      "node_id": "CAND-A7038C51B9C39A74D108",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-BE78D25D5385622C5D59",
+      "node_id": "CAND-BE78D25D5385622C5D59",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-C12D2DDEEDFA36196E86",
+      "node_id": "CAND-C12D2DDEEDFA36196E86",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-C1C2336F747A9C4822BF",
+      "node_id": "CAND-C1C2336F747A9C4822BF",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-C749142475E876D9B6B8",
+      "node_id": "CAND-C749142475E876D9B6B8",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-CB7489BBB08114AEF5E4",
+      "node_id": "CAND-CB7489BBB08114AEF5E4",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-D039A7CF453C78B25590",
+      "node_id": "CAND-D039A7CF453C78B25590",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-E5BFA8C2709C33FCF3A4",
+      "node_id": "CAND-E5BFA8C2709C33FCF3A4",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-E8F847B773C80284C7E7",
+      "node_id": "CAND-E8F847B773C80284C7E7",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-EA45DD47A31679829DE0",
+      "node_id": "CAND-EA45DD47A31679829DE0",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CAND-FBAF75A567B610B0CE36",
+      "node_id": "CAND-FBAF75A567B610B0CE36",
+      "node_type": "candidate",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-05850E5AF6B4F2DCAAAF",
+      "node_id": "CLUSTER-05850E5AF6B4F2DCAAAF",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-1974D68714E83D8E28B4",
+      "node_id": "CLUSTER-1974D68714E83D8E28B4",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-1B55A088E79C1D41B19B",
+      "node_id": "CLUSTER-1B55A088E79C1D41B19B",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-1DC5D2751BC396D1C922",
+      "node_id": "CLUSTER-1DC5D2751BC396D1C922",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-3446B58DB55B0E120397",
+      "node_id": "CLUSTER-3446B58DB55B0E120397",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-466873D1C827D0780FB0",
+      "node_id": "CLUSTER-466873D1C827D0780FB0",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-47A11FAC19E021D17A8B",
+      "node_id": "CLUSTER-47A11FAC19E021D17A8B",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-4843642B6D39CF76EC14",
+      "node_id": "CLUSTER-4843642B6D39CF76EC14",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-4964022474B7667C0B26",
+      "node_id": "CLUSTER-4964022474B7667C0B26",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-4C5CAB94C00D00A338D9",
+      "node_id": "CLUSTER-4C5CAB94C00D00A338D9",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-53EA0D10A4D0B76A3AE4",
+      "node_id": "CLUSTER-53EA0D10A4D0B76A3AE4",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-696945D4E380BFAE8370",
+      "node_id": "CLUSTER-696945D4E380BFAE8370",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-7174BBE76275BD6536D4",
+      "node_id": "CLUSTER-7174BBE76275BD6536D4",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-723A6EE30F47C703521F",
+      "node_id": "CLUSTER-723A6EE30F47C703521F",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-84F05F98A82AA293F89C",
+      "node_id": "CLUSTER-84F05F98A82AA293F89C",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-A4CAED5300B9401670F7",
+      "node_id": "CLUSTER-A4CAED5300B9401670F7",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-A8E5DAD981D3563A1DBD",
+      "node_id": "CLUSTER-A8E5DAD981D3563A1DBD",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-B9F1BD49D02CF1D48B1A",
+      "node_id": "CLUSTER-B9F1BD49D02CF1D48B1A",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-BA71A68E393BDACAC23F",
+      "node_id": "CLUSTER-BA71A68E393BDACAC23F",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-BB0D2C1AB87AB835AD6C",
+      "node_id": "CLUSTER-BB0D2C1AB87AB835AD6C",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-C115D10B6F2425AC49E2",
+      "node_id": "CLUSTER-C115D10B6F2425AC49E2",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-CA1024FD411CF7747494",
+      "node_id": "CLUSTER-CA1024FD411CF7747494",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-E452E030B17554529D0C",
+      "node_id": "CLUSTER-E452E030B17554529D0C",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "CLUSTER-FC686E54C3306961A463",
+      "node_id": "CLUSTER-FC686E54C3306961A463",
+      "node_type": "cluster",
+      "review_status": "candidate-review-required"
+    },
+    {
+      "label": "DHS-FBI-ACCOUNTABILITY-SEQUENCE-2026-07",
+      "node_id": "TOPIC-4839A663BD02E7A5EC45",
+      "node_type": "topic",
+      "review_status": "candidate-review-required"
+    }
+  ],
+  "review_status": "graph-review-required"
+}

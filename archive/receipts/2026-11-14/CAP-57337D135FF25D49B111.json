@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_78BE4CDAA0D645FC",
+  "byte_length": 109846,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-57337D135FF25D49B111.json",
+  "capture_id": "CAP-57337D135FF25D49B111",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "57337d135ff25d49b1113e56c1c8e6d6aea8c8caa29f320871c21ff8978c7925",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/57337d135ff25d49b1113e56c1c8e6d6aea8c8caa29f320871c21ff8978c7925.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-philadelphia-arrests-cuban-national-alleged-unlawful-voting-2024-election"
+}

@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-D039A7CF453C78B25590",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "d039a7cf453c78b25590034e8f8896fb6bf04e1fa3692a4e9821daa49829de30",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/maple-leaf-meet-ballot-thief-ice-hsi-tucson-arrests-canadian-voter-fraud"
+}

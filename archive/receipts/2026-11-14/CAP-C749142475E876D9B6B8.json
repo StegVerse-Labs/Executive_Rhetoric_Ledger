@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_833BD4564F2306EF",
+  "byte_length": 105885,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-C749142475E876D9B6B8.json",
+  "capture_id": "CAP-C749142475E876D9B6B8",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "c749142475e876d9b6b837a893cd032001d44078ea1741a21b782e3b20a4791b",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/c749142475e876d9b6b837a893cd032001d44078ea1741a21b782e3b20a4791b.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-arrests-citizen-philippines-federal-election-fraud"
+}

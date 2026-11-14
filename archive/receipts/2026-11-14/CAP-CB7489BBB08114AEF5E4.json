@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_1059A88AEE072F09",
+  "byte_length": 107779,
+  "candidate_path": "discovery_candidates/2026-11-14/CAND-CB7489BBB08114AEF5E4.json",
+  "capture_id": "CAP-CB7489BBB08114AEF5E4",
+  "capture_status": "captured",
+  "captured_at": "2026-11-14T12:22:05Z",
+  "content_sha256": "cb7489bbb08114aef5e4265e661b0f84d0bc26034bc70a3b55a2ab51bd8c49fb",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-14/cb7489bbb08114aef5e4265e661b0f84d0bc26034bc70a3b55a2ab51bd8c49fb.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-issues-immigration-detainer-against-illegal-alien-who-killed-beloved-college"
+}
