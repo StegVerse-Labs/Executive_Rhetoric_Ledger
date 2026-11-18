@@ -2,7 +2,7 @@
   "coverage_state": "BOUNDED_CONFIGURED_URL_ATTEMPTS",
   "execution_state": "SOURCE_ACQUISITION_COMPLETE_REVIEW_REQUIRED",
   "finding_authorized": false,
-  "generated_at": "2026-11-18T05:17:27.283873Z",
+  "generated_at": "2026-11-18T17:15:02.626001Z",
   "group_id": "ERL-RC-US-CN-AI-SUMMIT-2026",
   "items": [
     {
@@ -32,7 +32,7 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921.32fea2a39f8da79e799240b8cff288875fd4708ad981a3e4a5a563cfb62cd236.native",
       "source_id": "ERL-USCN-WH-STATE-VISIT-SCHEDULE-20260921",
       "source_posture": "official-us-visit-schedule",
@@ -68,11 +68,11 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
-      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.d20261cf221becf0f24c9181d451951c2a92005e7e5e0b4018a6e1a14c0d13a8.native",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-RECAP-20260925.cf53972555e5854a3df9c0a508a5d8643762bc1e949a2b2d406478e4fd01a1fc.native",
       "source_id": "ERL-USCN-WH-STATE-VISIT-RECAP-20260925",
       "source_posture": "official-us-visit-recap",
-      "source_sha256": "d20261cf221becf0f24c9181d451951c2a92005e7e5e0b4018a6e1a14c0d13a8",
+      "source_sha256": "cf53972555e5854a3df9c0a508a5d8643762bc1e949a2b2d406478e4fd01a1fc",
       "source_size_bytes": 301356,
       "text_extraction": "HTML_PLAIN_TEXT",
       "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/"
@@ -104,7 +104,7 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925.43e48349768e72fb83a01a3c4d77cf367e9cb2b2c10d5c3fc043d43a00b34b5b.native",
       "source_id": "ERL-USCN-FMPRC-XI-TRUMP-TALKS-20260925",
       "source_posture": "official-prc-diplomatic-readout",
@@ -146,7 +146,7 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925.9529ed1ab06566769ab21d1ac820f34e5acc9d189a12f604d11fbb55e9bb5f15.native",
       "source_id": "ERL-USCN-WH-STATE-VISIT-FACT-SHEET-20260925",
       "source_posture": "official-us-diplomatic-fact-sheet",
@@ -176,11 +176,11 @@
           "verbatim_source_context": null
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
-      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.b524ee109318b9c31cba9baf53059939dc5fa8136152a00ddfa35abd47ea2c3d.native",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
+      "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-BIS-H200-EXPORT-POLICY-20260113.6a3d902782b780e478f4e5c6fde31fe3d09a7a7b59e1a8c02da2a10c647ca8c1.native",
       "source_id": "ERL-USCN-BIS-H200-EXPORT-POLICY-20260113",
       "source_posture": "official-us-export-policy",
-      "source_sha256": "b524ee109318b9c31cba9baf53059939dc5fa8136152a00ddfa35abd47ea2c3d",
+      "source_sha256": "6a3d902782b780e478f4e5c6fde31fe3d09a7a7b59e1a8c02da2a10c647ca8c1",
       "source_size_bytes": 53099,
       "text_extraction": "HTML_PLAIN_TEXT",
       "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
@@ -206,7 +206,7 @@
           "verbatim_source_context": "First Lady Melania Trump Releases Details on the State Dinner with His Excellency Xi Jinping, President of The People’s Republic of China, and Madame Peng Liyuan – The White House Sk"
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-WH-STATE-DINNER-NOTICE-20260924.f92e1f1d3813d1eab0f700569d207864d7282923b18ab26691c610e2b7bf0c74.native",
       "source_id": "ERL-USCN-WH-STATE-DINNER-NOTICE-20260924",
       "source_posture": "official-us-event-announcement",
@@ -242,7 +242,7 @@
           "verbatim_source_context": "长合作清单，也需要压缩问题清单。只要秉持平等、尊重、互惠的精神，就能找到解决问题的出路。希望双方相向而行，坚持互利共赢导向，推动中美经贸关系持续稳定向好发展。 习近平指出，中美都是人工智能大国，双方有竞争，更可以合作，应该各展所长而不是相互设防。双方可以继续开展人工智能对话，就其风险和收益进行交流，共同防范人工智能被滥用恶用。要保持人类对人工智能技术的管控，秉持以人为本、向上向善理念，让人工智能为人类的进步服务。 习近平强调，中方维护国家统一和领土完整的立场是"
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925.d67f7b600494e96ba6eb53f5811943846147233be33015111be4532e93ae6b43.native",
       "source_id": "ERL-USCN-FMPRC-CHINESE-XI-TRUMP-TALKS-20260925",
       "source_posture": "official-prc-original-language",
@@ -284,7 +284,7 @@
           "verbatim_source_context": "，联合破获多起涉新精神活性物质及前体化学品案件，在两国抓获数十名相关犯罪嫌疑人。 七、双方同意建立中美人工智能对话，交流人工智能相关风险和惠益。下次对话将于今年11月举行。双方同意建立人工智能事件的沟通渠道。 八、美方欢迎中方租借给美国亚特兰大动物园的一对大熊猫抵美。 此外，中美两军还同意尽快签署加强危机沟通与预防的谅解备忘录，继续合作搜寻在华美军失踪人员遗骸。 相关附件 相关新闻 "
         }
       ],
-      "retrieved_at": "2026-11-18T05:17:27.283873Z",
+      "retrieved_at": "2026-11-18T17:15:02.626001Z",
       "source_capture_path": "assessments/us-china-ai-summit/source-captures/ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926.4f6b3f6a61c27baf58dcfef98b2394831b258970ca3e6b5b0b9d808d7b0198e6.native",
       "source_id": "ERL-USCN-FMPRC-EIGHT-POINT-AGREEMENT-20260926",
       "source_posture": "official-prc-bilateral-outcome-list",
