@@ -134,7 +134,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 /*# sourceURL=https://science.nasa.gov/wp-content/plugins/nasa-blocks/build/blocks/topic-cards/style-index.css */
 </style>
 
-<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1795021200' media='all' />
+<link rel='stylesheet' id='uswds-styles-css' href='https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/build/styles.css?ver=1795046400' media='all' />
 <link rel='stylesheet' id='all-css-8' href='https://science.nasa.gov/_static/??/wp-content/plugins/accessibility-checker/build/css/srOnlyFormat.css,/wp-content/plugins/hubble-space-telescope/css/style.css?m=bf4f3ea99dbd' type='text/css' media='all' />
 <link rel='stylesheet' id='nasa-child-style-css' href='https://science.nasa.gov/wp-content/themes/nasa-child/build/style.css?ver=78da5645b79c20a885fa' media='all' />
 <link rel='stylesheet' id='all-css-10' href='https://science.nasa.gov/_static/??-eJyFykEOQDAQRuELqbERNuIsv5qq0Gljqq5PYs/yvXx0JWOjZJZM2XNgJYGCrCote5ywG0Gpn6zog3J5rv4yHNavhc0EET5+eYrpTCZge+0Yhh6ud93s0Db2BqWVRS8=' type='text/css' media='all' />
@@ -170,7 +170,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 <script id="gform_gravityforms_utils-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=69a9db57304a9f86c3d1a0bea5fd2cf9"></script>
 <script id="gf-stepper-focus-js" defer="defer" src="https://science.nasa.gov/wp-content/plugins/nasa-blocks/assets/gf-stepper-focus/gf-stepper-focus.js?ver=2.3.6"></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://science.nasa.gov/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 7.0.8" />
+<meta name="generator" content="WordPress 7.0.9" />
 <link rel='shortlink' href='https://science.nasa.gov/?p=37539' />
 	<link rel="preload" fetchpriority="high" href="https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/fonts/public-sans/PublicSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" fetchpriority="high" href="https://science.nasa.gov/wp-content/client-mu-plugins/uswds-framework/uswds/fonts-split/inter/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -568,7 +568,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>24 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -676,7 +676,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>12 hours ago</span>
+			<span>19 hours ago</span>
 
 		</div>
 	</div>
@@ -736,6 +736,33 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-solar-system"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://science.nasa.gov/researchers/solicitations/roses-2025/amendment-82-new-opportunity-d-11-u-s-contributions-to-ariel-preparatory-science/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/-drupal/2023/07/39688646153-5c0ef7d15a-o.jpg?w=1024" alt="Amendment 82: New Opportunity: D.11 U.S. Contributions to Ariel Preparatory Science" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">2 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">Amendment 82: New Opportunity: D.11 U.S. Contributions to Ariel Preparatory Science</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>6 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
 <a href="https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -789,19 +816,19 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 		</div>
 	</div>
 </a>
-
-<a href="https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+</div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-universe"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://science.nasa.gov/researchers/solicitations/roses-2025/amendment-82-new-opportunity-d-11-u-s-contributions-to-ariel-preparatory-science/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://science.nasa.gov/wp-content/uploads/2023/07/moonrise-at-vasquez-rocks-credit-nasa-preston-dyches-cc-by-nc-2.0.jpg" alt="What’s Up: November 2026 Skywatching Tips from NASA" class="hds-media-background z-100" />		</div>
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/-drupal/2023/07/39688646153-5c0ef7d15a-o.jpg?w=1024" alt="Amendment 82: New Opportunity: D.11 U.S. Contributions to Ariel Preparatory Science" class="hds-media-background z-100" />		</div>
 	</div>
 
 	<div class="grid-col padding-left-105">
 
-		<div class="label margin-bottom-1">4 min read</div>
+		<div class="label margin-bottom-1">2 min read</div>
 
 		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">What’s Up: November 2026 Skywatching Tips from NASA</h3>
+			<h3 class="heading-16 line-height-md">Amendment 82: New Opportunity: D.11 U.S. Contributions to Ariel Preparatory Science</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -811,12 +838,12 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>2 weeks ago</span>
+			<span>6 hours ago</span>
 
 		</div>
 	</div>
 </a>
-</div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-universe"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+
 <a href="https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -838,7 +865,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 hour ago</span>
+			<span>8 hours ago</span>
 
 		</div>
 	</div>
@@ -865,24 +892,24 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>21 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
 </a>
-
-<a href="https://www.nasa.gov/missions/station/nicer-status-updates/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+</div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-science"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://science.nasa.gov/researchers/solicitations/roses-2025/amendment-82-new-opportunity-d-11-u-s-contributions-to-ariel-preparatory-science/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://images-assets.nasa.gov/image/iss057e055500/iss057e055500~large.jpg?w=1920&#038;h=1078&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="NICER Status Updates" class="hds-media-background z-100" />		</div>
+			<img loading="lazy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/-drupal/2023/07/39688646153-5c0ef7d15a-o.jpg?w=1024" alt="Amendment 82: New Opportunity: D.11 U.S. Contributions to Ariel Preparatory Science" class="hds-media-background z-100" />		</div>
 	</div>
 
 	<div class="grid-col padding-left-105">
 
-		<div class="label margin-bottom-1">8 min read</div>
+		<div class="label margin-bottom-1">2 min read</div>
 
 		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NICER Status Updates</h3>
+			<h3 class="heading-16 line-height-md">Amendment 82: New Opportunity: D.11 U.S. Contributions to Ariel Preparatory Science</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -892,12 +919,12 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>23 hours ago</span>
+			<span>6 hours ago</span>
 
 		</div>
 	</div>
 </a>
-</div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-science"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+
 <a href="https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -919,7 +946,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>1 hour ago</span>
+			<span>8 hours ago</span>
 
 		</div>
 	</div>
@@ -946,34 +973,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>20 hours ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://www.nasa.gov/missions/station/nicer-status-updates/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://images-assets.nasa.gov/image/iss057e055500/iss057e055500~large.jpg?w=1920&#038;h=1078&#038;fit=clip&#038;crop=faces%2Cfocalpoint" alt="NICER Status Updates" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">8 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NICER Status Updates</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>23 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -1081,7 +1081,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>12 hours ago</span>
+			<span>19 hours ago</span>
 
 		</div>
 	</div>
@@ -1108,7 +1108,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 				<span>article</span>
 			</span>
 
-			<span>19 hours ago</span>
+			<span>1 day ago</span>
 
 		</div>
 	</div>
@@ -1141,6 +1141,33 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 	</div>
 </a>
 </div><div class="global-nav__tertiary-submenu global-nav__wrapper" style="max-width: 440px" submenu-id="global-nav-learning-resources"><h3 class="heading-12 color-carbon-40 text-uppercase margin-bottom-2">Highlights</h3>
+<a href="https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-the-moon-base/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
+	<div class="grid-col">
+		<div class="width-full bg-carbon-black minh-15">
+			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/11/stmd-exteriorlunarbase-hdlandscapeversion-2026-0521.png?w=150&#038;h=150&#038;crop=1" alt="What Is the Moon Base?" class="hds-media-background z-100" />		</div>
+	</div>
+
+	<div class="grid-col padding-left-105">
+
+		<div class="label margin-bottom-1">7 min read</div>
+
+		<div class="margin-bottom-2">
+			<h3 class="heading-16 line-height-md">What Is the Moon Base?</h3>
+		</div>
+
+		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
+
+			<span class="display-flex flex-align-center margin-right-2">
+				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
+				<span>article</span>
+			</span>
+
+			<span>7 hours ago</span>
+
+		</div>
+	</div>
+</a>
+
 <a href="https://www.nasa.gov/learning-resources/nasa-knows-for-students/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
 	<div class="grid-col">
 		<div class="width-full bg-carbon-black minh-15">
@@ -1180,33 +1207,6 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 
 		<div class="margin-bottom-2">
 			<h3 class="heading-16 line-height-md">NASA Astronauts to Answer Questions from Florida Students</h3>
-		</div>
-
-		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
-
-			<span class="display-flex flex-align-center margin-right-2">
-				<svg version="1.1" class="square-2 margin-right-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><g><path d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"></path><path d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"></path></g></g></svg>
-				<span>article</span>
-			</span>
-
-			<span>2 weeks ago</span>
-
-		</div>
-	</div>
-</a>
-
-<a href="https://www.nasa.gov/learning-resources/nasa-space-grant-students-fuel-agencys-inspiration-tour/" class="hds-content-card hds-content-card-3 grid-row color-spacesuit-white margin-bottom-4" target="_self">
-	<div class="grid-col">
-		<div class="width-full bg-carbon-black minh-15">
-			<img loading="lazy" src="https://www.nasa.gov/wp-content/uploads/2026/11/55572302164-8599ccaff1-k.jpg?w=150&#038;h=150&#038;crop=1" alt="NASA Space Grant Students Fuel Agency&#8217;s Inspiration Tour" class="hds-media-background z-100" />		</div>
-	</div>
-
-	<div class="grid-col padding-left-105">
-
-		<div class="label margin-bottom-1">4 min read</div>
-
-		<div class="margin-bottom-2">
-			<h3 class="heading-16 line-height-md">NASA Space Grant Students Fuel Agency&#8217;s Inspiration Tour</h3>
 		</div>
 
 		<div class="heading-12 display-flex flex-align-center font-weight-bold text-uppercase margin-bottom-1 color-carbon-40">
@@ -1785,7 +1785,7 @@ var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file
 			<div id="" class="hds-single-form-embed bg-spacesuit-white hds-module alignwide wp-block-nasa-blocks-gravity-form-embed"><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-title-intro-block padding-x-3"><div class="padding-top-2 padding-bottom-2 width-full maxw-full hds-module hds-module-full wp-block-nasa-blocks-article-intro"></div></div><div class="grid-container grid-row grid-container-block grid-container-form-block grid-container-form-render-block padding-x-3"><div class="form-entry-content margin-bottom-3"><div class="margin-bottom-3">
                 <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_45' ><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_45' id='gform_45'  action='/uap/' data-formid='45' novalidate>					<div style="display: none !important;" class="akismet-fields-container gf_invisible" data-prefix="ak_">
 						<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label>
-						<input type="hidden" id="ak_js_1" name="ak_js" value="208" />
+						<input type="hidden" id="ak_js_1" name="ak_js" value="189" />
 						<script>
 document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
 </script>
@@ -1811,9 +1811,9 @@ document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTi
             <input type='hidden' class='gform_hidden' name='is_submit_45' value='1' />
             <input type='hidden' class='gform_hidden' name='gform_submit' value='45' />
             
-            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='c6AeA7zttMReyrFCttvQVunGZ91yvZvZ523e8jfTkhQH/km+af1j4X1fNdLyRr8haJvUh53t55vtoaIJmGa7GkYGUULW68zp5DIlMjwmlya9FOI=' />
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='Vq5/2f3bSevkoWCfWPaIgIp01TCi0sZL+wi/w2gAO05ECX/5Usz3GthhMGiqJK70BZWujy4Ev7JJQOsO7K+crnfgosLfAGLPNZu/4AjE4PZsh14=' />
             <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCJiY2Q4ZTE3MTViZTRhM2M2MTExMmRkNDkzYWMxNjMyYVwifSIsImM0NzBiODAyNWQ1ZGYyZWFkY2Q0MzZlMTBlN2M0ZDBhIiwxNzk1MDIzMTI2XQ==' />
+            <input type='hidden' class='gform_hidden' name='state_45' value='WyJ7XCIxXCI6W1wiMzJmNGNjNzIzYzA1ZmEwYTA5YTg5OThkNzFhN2I5MjdcIixcIjA5ZWIxYzM5YWFlMjExMGM5MDEyMzA0Njk4YTdmOWVlXCIsXCIxOGVhM2U1MWQ5OTg0NjkwZDc4N2EyNWI3YmVjMDNiM1wiXSxcImdmb3JtX3N1Ym1pc3Npb25fbWV0aG9kXCI6W1wiMmU4ZjYzZTFiYmRjZTQxODMxYTlhMjM1ODRkYmI2MmFcIixcImE3NTcwNDcwNzZiZTBiMTgxNDQ3Y2UzZDhhMTc4OTU0XCIsXCJjYjQ5Mzk1MGVlZDY1ZjAzYjZiZWQwNzE2Nzc4MmE4NlwiXSxcImdmb3JtX3RoZW1lXCI6XCIwMmFiNDUzMGNmYTljYzUxNThmNDA5NWEwMjNmZjE2N1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImQyMzY2OWVjYmEyMmI4ZmY3YzY0MGEzNjJhYzhmMGRlXCIsXCJmb3JtX2lkXCI6XCIzNGNlMWMxODI4ZDFlOTlmZjM1MzM4ZDY2Mjg2ODgzMVwiLFwidXJsXCI6XCIxZWJlNzczYmM4MWZiOTFhNTg1NDZmZjFkZTg5M2U2N1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI0ZDNiNWExYmZmNGZmMmQ1N2IyNTU2OWM0MzM5NWZmOVwifSIsIjkyODc3MTI2ZGI3ZDJiMDBmNmEzNDZlMGI3ZWI4NTVjIiwxNzk1MDQ3OTM0XQ==' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_45' id='gform_target_page_number_45' value='0' />
             <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_45' id='gform_source_page_number_45' value='1' />
             <input type='hidden' name='gform_field_values' value='' />
@@ -1868,7 +1868,7 @@ var edac_frontend_fixes = [];
 <script id="wp-a11y-js" defer="defer" src="https://science.nasa.gov/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e"></script>
 <script id="gform_gravityforms_theme_vendors-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=0c901cb641ce64b99c20ea1a4d208cc9"></script>
 <script id="gform_gravityforms_theme-js-extra">
-var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"4f06dba39cdbd9885e8db30261d6eb7e"},"ajax":{"ajaxurl":"https://science.nasa.gov/wp-admin/admin-ajax.php","ajax_submission_nonce":"ce92d93830","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"0343aa8ac0"};
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"4f06dba39cdbd9885e8db30261d6eb7e"},"ajax":{"ajaxurl":"https://science.nasa.gov/wp-admin/admin-ajax.php","ajax_submission_nonce":"ce92d93830","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"2ecf013fb2"};
 //# sourceURL=gform_gravityforms_theme-js-extra
 </script>
 <script id="gform_gravityforms_theme-js" defer='defer' defer="defer" src="https://science.nasa.gov/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=e27d9712159624c99129c8c208f022ad"></script>
