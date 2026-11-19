@@ -773,3 +773,18 @@ Latest source advancement: ERL PR `#168` merged at `a4ee58c674373bbc49253760352e
 ## 2026-10-07 model election-framing influence lane — ACTIVE RESEARCH CANDIDATE
 
 Goal Task ID: `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Durable owner: Issue #212. Canonical bounded handoff: `docs/MODEL_ELECTION_FRAMING_INFLUENCE_MIRROR_HANDOFF.md`. The lane measures proposition substitution, interpretation-to-fact conversion, unasserted-hypothesis rebuttal, evidentiary burden shifts, and resulting reader-framing effects in election-related model answers. It requires matched cross-administration and nonpolitical controls and preserves `influence/effect != intent`. Lane creation authorizes no partisan, motive, illegality, or publication finding.
+
+
+## Trumpality segmented receipt consumer compatibility — 2026-11-18
+
+Existing Goal `ERL-RC-TRUMP-FAMILY-CRYPTO-MARKET-2026` (G326 ACTIVE /
+UNCLAIMED; COSV `10100000110012`), ERL #223 and Trumpality #22 retain ownership.
+Bounded continuation:
+`docs/TRUMPALITY_SEGMENTED_RECEIPT_INTAKE_MIRROR_HANDOFF.md`. The companion
+consumer preparation is required before integration of Trumpality PR #23's
+segmented-only producer; legacy and segmented input both reconstruct the same
+logical byte stream with per-part custody in new receipts. Eight unittest
+methods and twelve offline captured-data checks pass. Producer writer
+transaction/format adoption, native incident admission, protected integration
+and live producer/ERL readback remain separate owner obligations. No research
+finding, runtime authority, completion, release or propagation is granted.
