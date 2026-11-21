@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_8208399DDA73BAB4",
+  "byte_length": 106479,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-21DB4B48B02C50601F77.json",
+  "capture_id": "CAP-21DB4B48B02C50601F77",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "21db4b48b02c50601f77e6e8249ed7fe283a39fb172db932f2c5f5fa7fcc0ea2",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/21db4b48b02c50601f77e6e8249ed7fe283a39fb172db932f2c5f5fa7fcc0ea2.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-new-york-city-arrests-internationally-wanted-killer"
+}

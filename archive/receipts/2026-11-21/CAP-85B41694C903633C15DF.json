@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_9018A2E5FDFD587C",
+  "byte_length": 109596,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-85B41694C903633C15DF.json",
+  "capture_id": "CAP-85B41694C903633C15DF",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "85b41694c903633c15df325641da76d4874f095fa83d79c546702499bc46b629",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/85b41694c903633c15df325641da76d4874f095fa83d79c546702499bc46b629.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-partner-law-enforcement-agencies-arrest-5-sex-offenders-california"
+}

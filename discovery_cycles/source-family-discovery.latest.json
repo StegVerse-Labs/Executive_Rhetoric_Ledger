@@ -1,0 +1,78 @@
+{
+  "authority": {
+    "human_review_required": true,
+    "may_capture": true,
+    "may_discover": true,
+    "may_promote": false
+  },
+  "discovered_at": "2026-11-21T12:23:22Z",
+  "enabled_family_count": 4,
+  "execution_status": "PASS",
+  "failed_family_count": 0,
+  "families": [
+    {
+      "candidate_urls": [],
+      "discovered_count": 0,
+      "error": null,
+      "family_id": "FEDERAL_REGISTER_DHS",
+      "fetch_status": "PASS",
+      "index_sha256": "d968b818ae08080cb51342ff93914701d1dc552c0ab5b413fea2f3958127b5b4",
+      "index_url": "https://www.federalregister.gov/agencies/homeland-security-department",
+      "promotion_authority": false
+    },
+    {
+      "candidate_urls": [],
+      "discovered_count": 0,
+      "error": null,
+      "family_id": "DOJ_PRESS_RELEASES",
+      "fetch_status": "PASS",
+      "index_sha256": "51cf55d3f0a3946e2cb686a8c4b0886cecd2474d99aa23d0c2f125de921ab206",
+      "index_url": "https://www.justice.gov/news/press-releases",
+      "promotion_authority": false
+    },
+    {
+      "candidate_urls": [
+        "https://www.ice.gov/news/releases/ice-hsi-houston-arrests-nigerian-national-illegal-voting",
+        "https://www.ice.gov/news/releases/convicted-kidnapper-mexico-behind-bars-following-ice-arrest-utah",
+        "https://www.ice.gov/news/releases/ice-hsi-nashville-investigation-results-arrest-alleged-child-sexual-abuse-animal",
+        "https://www.ice.gov/news/releases/ice-boston-arrests-criminal-alien-felon-dominican-republic",
+        "https://www.ice.gov/news/releases/hsi-investigation-leads-perjury-conviction-man-who-lied-about-his-involvement-rwandan",
+        "https://www.ice.gov/news/releases/no-safe-haven-child-sex-offenders-ice-arrests-convicted-predator-california",
+        "https://www.ice.gov/news/releases/ice-boston-operation-takes-8-dangerous-alien-gang-members-streets",
+        "https://www.ice.gov/news/releases/ice-hsi-partner-law-enforcement-agencies-arrest-5-sex-offenders-california",
+        "https://www.ice.gov/news/releases/ice-issues-immigration-detainer-against-illegal-alien-who-killed-beloved-college",
+        "https://www.ice.gov/news/releases/ice-arrests-illegal-alien-who-intentionally-ran-over-and-dragged-officer-vehicle",
+        "https://www.ice.gov/news/releases/ice-breaks-records-fiscal-year-2026-most-arrests-and-deportations-agencys-history",
+        "https://www.ice.gov/news/releases/ice-new-york-city-arrests-internationally-wanted-killer",
+        "https://www.ice.gov/news/releases/ice-los-angeles-arrests-iranian-king-instagram",
+        "https://www.ice.gov/news/releases/hsi-hattiesburg-seizes-over-6000-kg-narcotics-worth-805m-during-operation-iron",
+        "https://www.ice.gov/news/releases/ice-captures-14-illegal-aliens-during-operation-fresh-catch-northern-michigan",
+        "https://www.ice.gov/news/releases/ice-arrests-illegal-alien-who-claimed-work-washington-state",
+        "https://www.ice.gov/news/releases/ice-los-angeles-leads-operation-targeting-trafficking-illicit-tobacco-products"
+      ],
+      "discovered_count": 17,
+      "error": null,
+      "family_id": "ICE_NEWSROOM",
+      "fetch_status": "PASS",
+      "index_sha256": "dfa850fb3f7fd2cbb3b3bcfb546555f725a3ed03e0402b9fde935e060a6cf456",
+      "index_url": "https://www.ice.gov/newsroom",
+      "promotion_authority": false
+    },
+    {
+      "candidate_urls": [
+        "https://www.cbp.gov/newsroom/stats/cbp-enforcement-statistics"
+      ],
+      "discovered_count": 1,
+      "error": null,
+      "family_id": "CBP_MEDIA_RELEASES",
+      "fetch_status": "PASS",
+      "index_sha256": "fc6edd480661855f7064e8009ebe3345543a743db455f4d1a0b8b4fd2b3283d4",
+      "index_url": "https://www.cbp.gov/newsroom/media-releases/all",
+      "promotion_authority": false
+    }
+  ],
+  "new_adapter_count": 18,
+  "runtime_adapter_count": 22,
+  "schema": "stegverse.executive_rhetoric_ledger.source_family_discovery.v2",
+  "successful_family_count": 4
+}

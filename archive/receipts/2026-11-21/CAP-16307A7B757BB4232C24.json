@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_13946F7099C48C12",
+  "byte_length": 105930,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-16307A7B757BB4232C24.json",
+  "capture_id": "CAP-16307A7B757BB4232C24",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "16307a7b757bb4232c24e7ed2d46a7d2cbd185e674d8532eac7a5596ee79730c",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/16307a7b757bb4232c24e7ed2d46a7d2cbd185e674d8532eac7a5596ee79730c.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-los-angeles-arrests-iranian-king-instagram"
+}

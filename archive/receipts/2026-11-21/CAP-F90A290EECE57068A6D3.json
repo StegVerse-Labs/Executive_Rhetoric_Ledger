@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_FB00FCA0957E14CC",
+  "byte_length": 106403,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-F90A290EECE57068A6D3.json",
+  "capture_id": "CAP-F90A290EECE57068A6D3",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "f90a290eece57068a6d3efd32bd4cfd2cf35a26a6e62da921ab55eab62e7a8e8",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/f90a290eece57068a6d3efd32bd4cfd2cf35a26a6e62da921ab55eab62e7a8e8.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-boston-arrests-criminal-alien-felon-dominican-republic"
+}

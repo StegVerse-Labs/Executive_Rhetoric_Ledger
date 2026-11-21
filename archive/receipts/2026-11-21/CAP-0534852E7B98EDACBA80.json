@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_5E4E3B4610D7110F",
+  "byte_length": 107917,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-0534852E7B98EDACBA80.json",
+  "capture_id": "CAP-0534852E7B98EDACBA80",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "0534852e7b98edacba8075a61a770de0328b05c33d8ed494ece7bfc06897a411",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/0534852e7b98edacba8075a61a770de0328b05c33d8ed494ece7bfc06897a411.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/convicted-kidnapper-mexico-behind-bars-following-ice-arrest-utah"
+}

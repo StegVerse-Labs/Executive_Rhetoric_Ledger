@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_1438B5E3B830718F",
+  "byte_length": 106495,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-F84B353D083CDD220F97.json",
+  "capture_id": "CAP-F84B353D083CDD220F97",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "f84b353d083cdd220f97ad35660c22d3f395f0860e017a07749e0ae163bd80c6",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/f84b353d083cdd220f97ad35660c22d3f395f0860e017a07749e0ae163bd80c6.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-captures-14-illegal-aliens-during-operation-fresh-catch-northern-michigan"
+}

@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_95C2BF33C763E340",
+  "byte_length": 105580,
+  "candidate_path": "discovery_candidates/2026-11-21/CAND-8B875C760BFB74C145A1.json",
+  "capture_id": "CAP-8B875C760BFB74C145A1",
+  "capture_status": "captured",
+  "captured_at": "2026-11-21T12:23:22Z",
+  "content_sha256": "8b875c760bfb74c145a17f9e64716c29c295deca29350ed96c9557ee01319a02",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-21/8b875c760bfb74c145a17f9e64716c29c295deca29350ed96c9557ee01319a02.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-los-angeles-leads-operation-targeting-trafficking-illicit-tobacco-products"
+}

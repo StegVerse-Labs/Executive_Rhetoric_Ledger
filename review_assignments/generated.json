@@ -1,0 +1,514 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "REVIEW-78F52C827E36B2891B9C",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-0438A15EA57443D474EA.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-0438A15EA57443D474EA",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-3D1BE147873311511AC5",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-0534852E7B98EDACBA80.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-0534852E7B98EDACBA80",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-0AB22F886D66DD547DDF",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-1152B6EFF359820A2394.json"
+      ],
+      "queue": "civil-rights-high-risk",
+      "quorum": 2,
+      "required_authority": [
+        "evidence-reviewer",
+        "civil-rights-reviewer",
+        "legal-reviewer"
+      ],
+      "risk_level": "critical",
+      "status": "review-required",
+      "subject_id": "CAND-1152B6EFF359820A2394",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-2469412160512FB4FD1A",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-16307A7B757BB4232C24.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-16307A7B757BB4232C24",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-F58B9E02EA289533D11E",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-21DB4B48B02C50601F77.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-21DB4B48B02C50601F77",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-5F3EFBC93805D69A9C6A",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-2B354ED93F221667A9FE.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-2B354ED93F221667A9FE",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-CD80AB22357E0367983E",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-3C0D413B7D86DA8757EE.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-3C0D413B7D86DA8757EE",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-484ECEB20D5BFD0C64B4",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-500C9167F5AB2AA91168.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-500C9167F5AB2AA91168",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-5BC59ECE14A9EAB43766",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-5B6DCA6C5534345F8BE0.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-5B6DCA6C5534345F8BE0",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-AAFBFF72DA24B035F814",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-76856013F3DA466CA5F4.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-76856013F3DA466CA5F4",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-5343231C0320DC491371",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-7974B180A1ACB7DDC9B9.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-7974B180A1ACB7DDC9B9",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-DC68D723E55F039D9092",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-7F942C6E5DEFEEC22886.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-7F942C6E5DEFEEC22886",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-02401615D9FDC1215D5C",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-85B41694C903633C15DF.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-85B41694C903633C15DF",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-ADA6B51B2A92DBB1B07C",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-8B875C760BFB74C145A1.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-8B875C760BFB74C145A1",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-8721A11B09788162923A",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-C4428308F69BBF6A2279.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-C4428308F69BBF6A2279",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-B5963FED93EFAA468B99",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-C9173BD6EFD19BF051A2.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-C9173BD6EFD19BF051A2",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-28CF7F7ACA993B06662E",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-D1E39BC9F7F222CA3F4F.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-D1E39BC9F7F222CA3F4F",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-44F788F1237C7F9687FE",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-ECA4D1FC8F46AA2409C3.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-ECA4D1FC8F46AA2409C3",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-3AA93A3555F522808D84",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-F4B5BEE0772574222147.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-F4B5BEE0772574222147",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-0060F0A47530A1F1476E",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-F804C7B3A905A2B68A52.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-F804C7B3A905A2B68A52",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-C6AFF2D96F8335CCCB87",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-F84B353D083CDD220F97.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-F84B353D083CDD220F97",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-50AF25A46BCD69612AE2",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/2026-11-21/CAND-F90A290EECE57068A6D3.json"
+      ],
+      "queue": "standard-ledger",
+      "quorum": 1,
+      "required_authority": [
+        "evidence-reviewer"
+      ],
+      "risk_level": "medium",
+      "status": "review-required",
+      "subject_id": "CAND-F90A290EECE57068A6D3",
+      "subject_type": "candidate"
+    },
+    {
+      "assignment_id": "REVIEW-74429FE61AC467F7C597",
+      "automation_authority": {
+        "may_approve": false,
+        "may_promote": false,
+        "may_reject": false,
+        "may_route": true
+      },
+      "decision_receipt_refs": [],
+      "packet_refs": [
+        "discovery_candidates/ruben-ray-martinez/latest.json"
+      ],
+      "queue": "civil-rights-high-risk",
+      "quorum": 2,
+      "required_authority": [
+        "evidence-reviewer",
+        "civil-rights-reviewer",
+        "legal-reviewer"
+      ],
+      "risk_level": "critical",
+      "status": "review-required",
+      "subject_id": "discovery_candidates/ruben-ray-martinez/latest.json",
+      "subject_type": "candidate"
+    }
+  ]
+}
