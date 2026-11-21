@@ -51,6 +51,9 @@ PRODUCER_FILES = {
     "frontier": "research/frontier.json",
 }
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
+RECEIPT_DIR = "research/research_receipts/"
+SEGMENT_RE = re.compile(r"^research/research_receipts/research_receipts-([0-9]{6})\.jsonl$")
+MAX_RECEIPT_BYTES = 100 * 1024 * 1024
 
 
 def now() -> str:
@@ -112,15 +115,75 @@ def fail_closed(root: Path, action: str, predecessor: dict[str, Any], code: str,
     raise SystemExit("FAIL_CLOSED: " + message)
 
 
-def fetch_producer(commit: str, source_dir: Path | None) -> dict[str, bytes]:
-    out = {}
-    for key, rel in PRODUCER_FILES.items():
-        if source_dir is not None:
-            out[key] = (source_dir / rel).read_bytes()
+def fetch_bytes(url: str) -> bytes:
+    request = urllib.request.Request(url, headers={"User-Agent": "StegVerse-ERL-Intake/1.1"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read()
+
+
+def receipt_entries(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Select one unambiguous, contiguous receipt stream from a complete tree."""
+    selected = [e for e in entries if e["path"] == PRODUCER_FILES["receipts"] or e["path"].startswith(RECEIPT_DIR)]
+    paths = [e["path"] for e in selected]
+    if not paths or len(paths) != len(set(paths)):
+        raise ValueError("missing or duplicate receipt paths")
+    legacy = [e for e in selected if e["path"] == PRODUCER_FILES["receipts"]]
+    if legacy:
+        if len(selected) != 1:
+            raise ValueError("mixed legacy and segmented receipt streams")
+        return legacy
+    selected.sort(key=lambda e: e["path"])
+    for number, entry in enumerate(selected):
+        match = SEGMENT_RE.fullmatch(entry["path"])
+        if match is None or int(match.group(1)) != number:
+            raise ValueError("receipt segments must be contiguous from 000000")
+    return selected
+
+
+def fetch_receipts(commit: str, source_dir: Path | None) -> tuple[bytes, list[dict[str, Any]]]:
+    if source_dir is None:
+        # The complete, commit-pinned Git tree is the native ordered file manifest.
+        tree = json.loads(fetch_bytes(f"https://api.github.com/repos/{PRODUCER_REPO}/git/trees/{commit}?recursive=1"))
+        if tree.get("truncated") is not False or not isinstance(tree.get("tree"), list):
+            raise ValueError("producer tree must be complete")
+        entries = receipt_entries(tree["tree"])
+    else:
+        legacy = source_dir / PRODUCER_FILES["receipts"]
+        directory = source_dir / RECEIPT_DIR
+        if directory.is_symlink():
+            raise ValueError("receipt directory must not be a symlink")
+        paths = ([legacy] if legacy.exists() else []) + (list(directory.iterdir()) if directory.exists() else [])
+        if any(p.is_symlink() or not p.is_file() for p in paths):
+            raise ValueError("receipt stream must contain regular files only")
+        entries = receipt_entries([{"path": p.relative_to(source_dir).as_posix(), "size": p.stat().st_size, "type": "blob", "mode": "100644"} for p in paths])
+    parts, manifest = [], []
+    for index, entry in enumerate(entries):
+        size = entry.get("size")
+        if entry.get("type") != "blob" or entry.get("mode") != "100644" or type(size) is not int or not 0 <= size <= MAX_RECEIPT_BYTES:
+            raise ValueError("invalid receipt blob metadata or size")
+        path = entry["path"]
+        if source_dir is None:
+            if not SHA_RE.fullmatch(entry.get("sha", "")):
+                raise ValueError("invalid native receipt blob identity")
+            data = fetch_bytes(f"https://raw.githubusercontent.com/{PRODUCER_REPO}/{commit}/{path}")
         else:
-            url = f"https://raw.githubusercontent.com/{PRODUCER_REPO}/{commit}/{rel}"
-            request = urllib.request.Request(url, headers={"User-Agent": "StegVerse-ERL-Intake/1.0"})
-            out[key] = urllib.request.urlopen(request, timeout=30).read()
+            data = (source_dir / path).read_bytes()
+        blob = hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest()
+        if len(data) != size or (source_dir is None and blob != entry["sha"]):
+            raise ValueError("receipt blob size or identity mismatch")
+        if index < len(entries) - 1 and (not data or not data.endswith(b"\n")):
+            raise ValueError("receipt segment has an incomplete record boundary")
+        manifest.append({"path": path, "bytes": len(data), "git_blob_sha1": blob, "sha256": sha256(data), "rows": sum(bool(line.strip()) for line in data.splitlines())})
+        parts.append(data)
+    return b"".join(parts), manifest
+
+
+def fetch_producer(commit: str, source_dir: Path | None) -> dict[str, Any]:
+    out: dict[str, Any] = {}
+    out["receipts"], out["receipt_segments"] = fetch_receipts(commit, source_dir)
+    for key in ("candidates", "frontier"):
+        rel = PRODUCER_FILES[key]
+        out[key] = (source_dir / rel).read_bytes() if source_dir is not None else fetch_bytes(f"https://raw.githubusercontent.com/{PRODUCER_REPO}/{commit}/{rel}")
     return out
 
 
@@ -179,10 +242,21 @@ def intake(root: Path, commit: str, source_dir: Path | None) -> dict[str, Any]:
     try:
         raw = fetch_producer(commit, source_dir)
     except Exception as exc:  # noqa: BLE001 - any retrieval failure is this transition's failed predicate
-        fail_closed(root, action, predecessor, "PRODUCER_FETCH_FAILED", "producer research files are readable at the pinned commit", f"verify {PRODUCER_REPO}@{commit} contains {', '.join(PRODUCER_FILES.values())} ({type(exc).__name__})", f"producer files unreadable at {commit}: {type(exc).__name__}")
-    candidates = parse_jsonl(raw["candidates"])
-    producer_receipts = parse_jsonl(raw["receipts"])
-    frontier = json.loads(raw["frontier"])
+        fail_closed(root, action, predecessor, "PRODUCER_FETCH_FAILED", "producer research files and one complete receipt stream are readable at the pinned commit", f"verify {PRODUCER_REPO}@{commit} contains candidates/frontier and either the legacy receipt file or contiguous numbered segments in {RECEIPT_DIR}; verify complete tree, blob identities and boundaries ({type(exc).__name__})", f"producer files unreadable at {commit}: {type(exc).__name__}")
+    try:
+        candidates = parse_jsonl(raw["candidates"])
+        producer_receipts = parse_jsonl(raw["receipts"])
+        frontier = json.loads(raw["frontier"])
+        if not all(isinstance(row, dict) for row in candidates + producer_receipts) or not isinstance(frontier, dict):
+            raise ValueError("producer records must be objects")
+        trajectories = frontier.get("trajectories", [])
+        if not isinstance(trajectories, list) or not all(isinstance(row, dict) for row in trajectories):
+            raise ValueError("frontier trajectories must be object records")
+        receipt_ids = [row.get("receipt_id") for row in producer_receipts]
+        if not all(isinstance(rid, str) and rid for rid in receipt_ids) or len(receipt_ids) != len(set(receipt_ids)):
+            raise ValueError("receipt identities must be nonempty and unique")
+    except (ValueError, UnicodeError) as exc:
+        fail_closed(root, action, predecessor, "PRODUCER_DATA_INVALID", "producer JSON and JSONL are complete object records", f"repair the producer records at {commit} ({type(exc).__name__})", "producer record parsing failed")
     active = {t.get("id") or t.get("trajectory_id") for t in frontier.get("trajectories", []) if t.get("state") in {"OPEN", "ACTIVE"}}
     mapped = erl_mapped_trajectories(root)
     by_receipt = {r.get("receipt_id"): r for r in producer_receipts}
@@ -197,6 +271,7 @@ def intake(root: Path, commit: str, source_dir: Path | None) -> dict[str, Any]:
         "producer_repository": PRODUCER_REPO,
         "producer_commit": commit,
         "producer_files_sha256": {key: sha256(raw[key]) for key in PRODUCER_FILES},
+        "producer_receipt_segments": raw["receipt_segments"],
     }
     accepted, quarantined, duplicates = [], [], 0
     for candidate in candidates:
