@@ -1,7 +1,10 @@
 import importlib.util
+import hashlib
+import io
 import json
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -152,6 +155,129 @@ class TrumpalityIntakeTest(unittest.TestCase):
         for record in failed:
             self.assertFalse(record["consequence_committed"])
             self.assertTrue(all(record.get(k) for k in ACTIONABLE), record)
+
+    def segment_producer(self, root, split=1):
+        legacy = root / "research/research_receipts.jsonl"
+        lines = legacy.read_bytes().splitlines(keepends=True)
+        directory = root / "research/research_receipts"
+        directory.mkdir()
+        (directory / "research_receipts-000000.jsonl").write_bytes(b"".join(lines[:split]))
+        (directory / "research_receipts-000001.jsonl").write_bytes(b"".join(lines[split:]))
+        legacy.unlink()
+        return directory
+
+    def test_legacy_to_segments_preserves_intake_hashes_and_retry_idempotency(self):
+        p = self.tmp / "producer"
+        write_producer(p, [candidate("C1")], [receipt("R1", "REQ-1", "CANDIDATES_IDENTIFIED")])
+        first = self.mod.intake(self.erl, COMMIT_1, p)
+        prior = (self.erl / self.mod.PENDING).read_bytes()
+        write_producer(p, [candidate("C1"), candidate("C2", pointer="R2")], [
+            receipt("R1", "REQ-1", "CANDIDATES_IDENTIFIED"), receipt("R2", "REQ-1", "CANDIDATES_IDENTIFIED"),
+            receipt("R0", "REQ-2", "NO_UPDATE")])
+        logical = (p / "research/research_receipts.jsonl").read_bytes()
+        self.segment_producer(p)
+        second = self.mod.intake(self.erl, COMMIT_2, p)
+        retry = self.mod.intake(self.erl, COMMIT_2, p)
+        self.assertEqual((second["accepted"], second["scan_records_added"]), (1, 2))
+        self.assertEqual((retry["accepted"], retry["duplicates"], retry["scan_records_added"]), (0, 2, 0))
+        self.assertEqual(second["producer_files_sha256"]["receipts"], hashlib.sha256(logical).hexdigest())
+        self.assertEqual([e["rows"] for e in second["producer_receipt_segments"]], [1, 2])
+        self.assertTrue((self.erl / self.mod.PENDING).read_bytes().startswith(prior))
+        self.assertEqual(first["producer_receipt_segments"][0]["path"], "research/research_receipts.jsonl")
+        rb = self.mod.readback(self.erl)
+        self.assertEqual((rb["pending_candidate_count"], rb["scan_record_count"]), (2, 3))
+        self.assertTrue(rb["append_only_verified"])
+        self.assertFalse(rb["finding_authorized"])
+
+    def test_bad_segment_streams_fail_before_intake_effects(self):
+        for case in ("gap", "bad_name", "mixed", "missing", "interior_no_lf", "invalid_json", "duplicate_id", "symlink"):
+            with self.subTest(case=case):
+                p = self.tmp / case
+                write_producer(p, [candidate("C1")], [receipt("R1", "REQ-1", "CANDIDATES_IDENTIFIED"), receipt("R0", "REQ-2", "NO_UPDATE")])
+                d = self.segment_producer(p)
+                first = d / "research_receipts-000000.jsonl"
+                last = d / "research_receipts-000001.jsonl"
+                if case == "gap": last.rename(d / "research_receipts-000002.jsonl")
+                elif case == "bad_name": last.rename(d / "research_receipts-tail.jsonl")
+                elif case == "mixed": (p / "research/research_receipts.jsonl").write_bytes(first.read_bytes())
+                elif case == "missing": first.unlink(); last.unlink()
+                elif case == "interior_no_lf": first.write_bytes(first.read_bytes().rstrip(b"\n"))
+                elif case == "invalid_json": last.write_bytes(b"{bad}\n")
+                elif case == "duplicate_id": last.write_bytes(first.read_bytes())
+                elif case == "symlink": last.unlink(); last.symlink_to(first)
+                before = {name: (self.erl / name).read_bytes() if (self.erl / name).exists() else None
+                          for name in (self.mod.PENDING, self.mod.SCANS, self.mod.RECEIPTS, self.mod.QUARANTINE)}
+                with self.assertRaisesRegex(SystemExit, "FAIL_CLOSED"):
+                    self.mod.intake(self.erl, COMMIT_1, p)
+                after = {name: (self.erl / name).read_bytes() if (self.erl / name).exists() else None for name in before}
+                self.assertEqual(before, after)
+                failure = self.dispositions()[-1]
+                self.assertFalse(failure["consequence_committed"])
+                self.assertTrue(all(failure.get(k) for k in ACTIONABLE))
+
+    def remote_fixture(self):
+        parts = {"research/research_receipts/research_receipts-000000.jsonl": b'{"receipt_id":"R1"}\n',
+                 "research/research_receipts/research_receipts-000001.jsonl": b'{"receipt_id":"R2"}\n'}
+        entries = [{"path": path, "size": len(data), "type": "blob", "mode": "100644",
+                    "sha": hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()}
+                   for path, data in parts.items()]
+        return parts, {"tree": list(reversed(entries)), "truncated": False}
+
+    def remote_read(self, parts, tree, calls):
+        def read(request, timeout):
+            calls.append(request.full_url)
+            if request.full_url == f"https://api.github.com/repos/{self.mod.PRODUCER_REPO}/git/trees/{COMMIT_1}?recursive=1":
+                return io.BytesIO(json.dumps(tree).encode())
+            prefix = f"https://raw.githubusercontent.com/{self.mod.PRODUCER_REPO}/{COMMIT_1}/"
+            self.assertTrue(request.full_url.startswith(prefix))
+            return io.BytesIO(parts[request.full_url[len(prefix):]])
+        return read
+
+    def test_remote_tree_pins_order_size_and_blob_hash(self):
+        parts, tree = self.remote_fixture()
+        calls = []
+        with mock.patch.object(self.mod.urllib.request, "urlopen", side_effect=self.remote_read(parts, tree, calls)):
+            data, manifest = self.mod.fetch_receipts(COMMIT_1, None)
+        self.assertEqual(data, b"".join(parts.values()))
+        self.assertEqual([e["path"] for e in manifest], list(parts))
+        self.assertEqual(len(calls), 3)
+        for entry in manifest:
+            self.assertEqual(entry["sha256"], hashlib.sha256(parts[entry["path"]]).hexdigest())
+
+    def test_remote_incomplete_or_corrupted_tree_never_fetches_unpinned_data(self):
+        for case in ("truncated", "duplicate", "gap", "mixed", "wrong_size", "wrong_hash", "oversized", "symlink_mode"):
+            with self.subTest(case=case):
+                parts, tree = self.remote_fixture()
+                e = tree["tree"][0]
+                if case == "truncated": tree["truncated"] = True
+                elif case == "duplicate": tree["tree"].append(dict(e))
+                elif case == "gap": e["path"] = e["path"].replace("000001", "000002")
+                elif case == "mixed": tree["tree"].append({**e, "path": "research/research_receipts.jsonl"})
+                elif case == "wrong_size": e["size"] += 1
+                elif case == "wrong_hash": e["sha"] = "0" * 40
+                elif case == "oversized": e["size"] = self.mod.MAX_RECEIPT_BYTES + 1
+                elif case == "symlink_mode": e["mode"] = "120000"
+                calls = []
+                with mock.patch.object(self.mod.urllib.request, "urlopen", side_effect=self.remote_read(parts, tree, calls)):
+                    with self.assertRaises(ValueError): self.mod.fetch_receipts(COMMIT_1, None)
+
+    def test_remote_legacy_file_remains_supported_and_response_is_closed(self):
+        path = "research/research_receipts.jsonl"
+        data = b'{"receipt_id":"old"}'  # A complete final record need not end with LF.
+        parts = {path: data}
+        tree = {"truncated": False, "tree": [{"path": path, "type": "blob", "mode": "100644", "size": len(data),
+                 "sha": hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()}]}
+        handles = []
+        reader = self.remote_read(parts, tree, [])
+        def read(request, timeout):
+            response = reader(request, timeout)
+            handles.append(response)
+            return response
+        with mock.patch.object(self.mod.urllib.request, "urlopen", side_effect=read):
+            actual, manifest = self.mod.fetch_receipts(COMMIT_1, None)
+        self.assertEqual(actual, data)
+        self.assertEqual(manifest[0]["path"], path)
+        self.assertTrue(all(h.closed for h in handles))
 
 
 if __name__ == "__main__":
