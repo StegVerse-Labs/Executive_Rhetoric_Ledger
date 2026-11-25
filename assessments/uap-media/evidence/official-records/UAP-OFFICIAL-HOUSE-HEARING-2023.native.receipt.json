@@ -6,13 +6,13 @@
     "github_token_used": false,
     "promotion_authority": false
   },
-  "byte_length": 67148,
+  "byte_length": 67127,
   "content_type": "text/html; charset=UTF-8",
   "evidence_class": "official-record",
   "final_url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
   "native_object": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-HOUSE-HEARING-2023.native",
-  "retrieved_at": "2026-11-24T18:31:52.718514Z",
-  "sha256": "a246ef5f9e808f666c5fc437779ff191b76a4d1401e8ac1695d1394ba9a5d724",
+  "retrieved_at": "2026-11-25T00:46:27.403979Z",
+  "sha256": "66d02e52c940494896c6245c4a228cf4f0981ab7de0800e661fc54a9f53721c5",
   "source_id": "UAP-OFFICIAL-HOUSE-HEARING-2023",
   "source_url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
 }
