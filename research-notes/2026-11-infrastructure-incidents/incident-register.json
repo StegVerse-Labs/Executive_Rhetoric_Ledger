@@ -787,6 +787,61 @@
       "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
       "finding_authorized": false,
       "publication_authorized": false
+    },
+    {
+      "id": "NOV26-030",
+      "title": "Two Italian technicians killed in Kuwait; Iranian denial and war-provocation allegation",
+      "record_class": "REPORTED_FATAL_DRONE_EVENT_WITH_COMPETING_OFFICIAL_ACCOUNTS",
+      "event_date": "2026-11-26",
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-26",
+      "evidence_posture": "ITALIAN_PRIMARY_DEATH_CONFIRMATION; ATTRIBUTION_AND_PROVOCATION_CLAIMS_RETAINED_SEPARATELY",
+      "source_bounded_statement": "Italy's foreign ministry confirms two Rheinmetall Italia technicians died at a Kuwaiti site while maintaining Skyguard detection antennas. Italy and Kuwait blamed Iran. Araghchi denied Iranian involvement, offered cooperation and characterized the incident as suspicious and suggestive of a prearranged war provocation. EU pressure rhetoric is a separate reported response.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2ijhUs?ocid=sapphireappshare",
+          "posture": "USER_SUPPLIED_CARRIER; DIRECT_OPEN_UNAVAILABLE",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/attacco-con-droni-in-kuwait-due-cittadini-italiani-deceduti/",
+          "posture": "ITALIAN_FOREIGN_MINISTRY_PRIMARY_RELEASE; WEB_TEXT_READ",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.ansa.it/english/newswire/english_service/2026/11/26/tajani-speaks-with-araghchi-iran-denies-involvement-ready-for-joint_a75c3f05-390b-41b0-8ffb-452ad34c0801.html",
+          "posture": "CONTEMPORANEOUS_REPORT_OF_TAJANI_ACCOUNT; WEB_TEXT_READ",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/two-italians-killed-iranian-drone-attack-kuwait-italy-says-2026-11-26/",
+          "posture": "CONTEMPORANEOUS_REPORTED_EVENT_AND_COMPETING_ACCOUNTS; WEB_TEXT_READ",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/26/iranian-foreign-minister-suggests-fatal-drone-strike-on-two-italians-is-a-set-up/",
+          "posture": "HEADLINE_MATCH_FOUND_VIA_TOLLBIT_SEARCH_EXTRACT; DIRECT_ORIGINAL_OPEN_UNAVAILABLE",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
+          "posture": "LIVEBLOG_REPORT_OF_EU_RESPONSE; SEARCH_TEXT_READ",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire original Araghchi post/Telegram object, precise publication time and complete context; the setup wording in the carrier headline is editorial interpretation.",
+        "Preserve Tajani's account that the drone was Iranian-made alongside Araghchi's reported denial that Iranian forces launched it or that it originated in Iran. Manufacture, operator, launch point and state direction are distinct propositions.",
+        "Acquire Kuwaiti engagement/debris records, air-defense telemetry and independent forensic evidence; retain competing direct-strike/interception-debris descriptions without choosing from headline wording.",
+        "Track joint-investigation proposal versus actual establishment and findings; capture exact EU/Italian/Kuwaiti statements and later policy consequences.",
+        "Reconcile other casualty updates: earlier Reuters says a Pakistani national and Kuwaiti captain were injured, while a later Forbes search extract says killed. Different publication times may reflect updates; do not resolve without authoritative chronology.",
+        "Link to NOV26-013–015 and owner chronology/oil-response propositions without counting proximity as common-cause evidence."
+      ],
+      "actor_attribution": "ITALY_AND_KUWAIT_ATTRIBUTE_TO_IRAN; IRAN_DENIES; INDEPENDENT_LAUNCH_ATTRIBUTION_NOT_ESTABLISHED_BY_INTAKE",
+      "ai_role": "NO_INCIDENT_SPECIFIC_AI_ROLE_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
     }
   ],
   "completion": {
@@ -801,5 +856,12 @@
     "cosv": "40000100100000",
     "generation": 326,
     "role": "Existing ERL/KV storage-contract reference only; not a new incident-specific registration, claim or admission."
-  }
+  },
+  "append_history": [
+    {
+      "date": "2026-11-26",
+      "record_id": "NOV26-030",
+      "reason": "User supplied an additional event in the continuing incident-watch conversation; append preserves the initial 29-record intake."
+    }
+  ]
 }

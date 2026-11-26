@@ -42,3 +42,10 @@ Native source bytes and sovereign KV custody are not proven by repository filing
 ## Completion and continuation
 
 The bounded filing is complete only after the exact GitHub payloads are read back; this can be reported independently of unresolved research and sovereign custody. The intake issue remains open for those concrete follow-ups. No runtime, transport, ledger, release or publication completion is claimed.
+
+
+## November 26 addition — NOV26-030
+
+Two Italian technicians died at a Kuwaiti air-defence maintenance site. The entry retains Italy/Kuwait's attribution to Iran, Iran's denial and offer of joint investigation, Araghchi's reported war-provocation allegation, and the EU pressure response as distinct propositions. Iranian manufacture, launch origin, operator identity and state direction must not be collapsed. Reports about the two other casualties differ and require time-specific reconciliation.
+
+The register now contains **30 records**, preserving the initial 29 unchanged. Native-source custody and independent attribution remain pending. See [ERL #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269).

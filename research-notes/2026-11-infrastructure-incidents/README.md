@@ -54,3 +54,10 @@ This intake includes the accessible conversation's November incidents plus direc
 ## Filing owner
 
 Dedicated bounded intake and continuation: [ERL #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269), under umbrella #63 and existing cyber candidate. The register was filed after the owner's November 25 local-date instruction; the GitHub creation timestamp is November 26 UTC. The bank-controls article's November 23 date is its publication date; implementation dates remain unresolved.
+
+
+## November 26 addition — NOV26-030
+
+Two Italian technicians died at a Kuwaiti air-defence maintenance site. The entry retains Italy/Kuwait's attribution to Iran, Iran's denial and offer of joint investigation, Araghchi's reported war-provocation allegation, and the EU pressure response as distinct propositions. Iranian manufacture, launch origin, operator identity and state direction must not be collapsed. Reports about the two other casualties differ and require time-specific reconciliation.
+
+The register now contains **30 records**, preserving the initial 29 unchanged. Native-source custody and independent attribution remain pending. See [ERL #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269).

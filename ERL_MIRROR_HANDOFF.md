@@ -780,3 +780,10 @@ Goal Task ID: `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Durable owner: Issue #
 Existing cyber candidate `ERL-CYBER-SABOTAGE-LINEAGE-001` / activation group `ERL-RC-CYBER-SABOTAGE-LINEAGE-2026` now links a 29-record source-lead intake at `research-notes/2026-11-infrastructure-incidents/incident-register.json`. Dedicated bounded owner [#269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269) coordinates with umbrella #63. The applicable continuation is `docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md`.
 
 No duplicate candidate group or self-issued canonical identity/COSV is created. Canonical-owner reconciliation, native source custody, exact chronology, independent review and governed KV admission remain separately actionable. This addition changes no other ERL workstream's authority, claim, denominator or evidence posture.
+
+
+## November 26 addition — NOV26-030
+
+Two Italian technicians died at a Kuwaiti air-defence maintenance site. The entry retains Italy/Kuwait's attribution to Iran, Iran's denial and offer of joint investigation, Araghchi's reported war-provocation allegation, and the EU pressure response as distinct propositions. Iranian manufacture, launch origin, operator identity and state direction must not be collapsed. Reports about the two other casualties differ and require time-specific reconciliation.
+
+The register now contains **30 records**, preserving the initial 29 unchanged. Native-source custody and independent attribution remain pending. See [ERL #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269).

@@ -330,3 +330,10 @@ The 2026-10-29 continuation verified Registry generation 326 and the refreshed p
 The existing cyber research lane now retains an owner-authorized [29-record intake inventory](research-notes/2026-11-infrastructure-incidents/README.md) and [machine-readable source-lead register](research-notes/2026-11-infrastructure-incidents/incident-register.json), covering the FAA, banking, Microsoft, NSA and Apple disruptions; FBI, FinCEN, USDA and CIA/ODNI intrusion reports; related maritime/threat context; AI warnings; and institutional responses. The owner's chronology, accountability, AI-framing and conditional oil-price propositions are preserved as research questions.
 
 Bounded continuation is [issue #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269) under existing cyber candidate / umbrella #63. See [scoped mirror handoff](docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md). Repository intake does not establish incident-specific canonical registration, native-source custody, shared cause, AI attribution, sovereign KV admission or publication readiness.
+
+
+## November 26 addition — NOV26-030
+
+Two Italian technicians died at a Kuwaiti air-defence maintenance site. The entry retains Italy/Kuwait's attribution to Iran, Iran's denial and offer of joint investigation, Araghchi's reported war-provocation allegation, and the EU pressure response as distinct propositions. Iranian manufacture, launch origin, operator identity and state direction must not be collapsed. Reports about the two other casualties differ and require time-specific reconciliation.
+
+The register now contains **30 records**, preserving the initial 29 unchanged. Native-source custody and independent attribution remain pending. See [ERL #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269).
