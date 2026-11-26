@@ -389,7 +389,11 @@
       "state": "RESEARCH_ACTIVE_NOT_ASSESSABLE",
       "durable_owner": "issue:63",
       "artifact_paths": [
-        "config/network-cyberphysical-sabotage-source-queue.v1.json"
+        "config/network-cyberphysical-sabotage-source-queue.v1.json",
+        "research-notes/2026-11-infrastructure-incidents/README.md",
+        "research-notes/2026-11-infrastructure-incidents/incident-register.json",
+        "docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md",
+        "coordination/2026-11-infrastructure-intake-owner-reconciliation.json"
       ],
       "next_executable_task": "Acquire and hash the seed sources, create proposition-level incident packets, and normalize external entry, internal execution, commanded state, observed state, physical effects, and attribution ceilings.",
       "terminal_condition": "Historical seeds and continuing current-attack intake are independently reconstructed and reviewed, or the candidate receives an explicit governed supersession, merge, or closure decision.",

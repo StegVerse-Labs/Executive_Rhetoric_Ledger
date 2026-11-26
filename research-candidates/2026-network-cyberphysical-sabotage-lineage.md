@@ -209,3 +209,10 @@ This candidate does not authorize claims that:
 - a proposed governance control would necessarily have prevented a historical operation.
 
 Promotion requires source custody, incident-level contradiction review, proposition-relative attribution, explicit separation of observed effects from inferred objectives, current-event correction monitoring, and independent reconstruction.
+
+
+## November 2026 bounded incident and institutional-response intake
+
+Owner-authorized intake [#269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269) adds **29 separately typed records** under this existing group: infrastructure/service disruptions, reported and acknowledged intrusions, maritime and adversary-threat context, AI warnings, institutional responses and owner hypotheses. See [inventory](../research-notes/2026-11-infrastructure-incidents/README.md), [machine-readable register](../research-notes/2026-11-infrastructure-incidents/incident-register.json) and [scoped handoff](../docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md).
+
+These are source-lead entries with explicit next evidence; they do not establish shared cause, attacker identity, AI involvement or political motive. Incident-specific canonical registration remains for owner reconciliation; existing storage-goal references do not mint a claim or fence. Source bytes, independent review and sovereign KV custody are separate pending evidence states. Historical research and the existing September claim/denial records remain intact.

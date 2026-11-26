@@ -1,0 +1,33 @@
+{
+  "record_type": "NON_AUTHORIZING_CANONICAL_OWNER_RECONCILIATION_REQUEST",
+  "created_at": "2026-11-26T04:43:04Z",
+  "source_issue": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269",
+  "repository": "StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "existing_candidate": "ERL-CYBER-SABOTAGE-LINEAGE-001",
+  "existing_activation_group": "ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+  "requested_action": "Reconcile to an existing canonical owner or establish bounded incident-intake/research identity through the existing governed registration process; no identity or COSV is self-issued.",
+  "canonical_registry_observation": {
+    "generation": 326,
+    "source": "StegVerse-Labs/.github:data/canonical-task-registry.json",
+    "exact_incident_goal_found": false
+  },
+  "existing_storage_goal": "SS-EVIDENCE-COMPARISON-001",
+  "adjacent_goals": [
+    "ERL-RC-OIL-FLOW-2026",
+    "ERL-AI-EMERGENCY-CLARITY-AUTHORITY-BOUNDARY-001"
+  ],
+  "handoff": "docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md",
+  "required_evidence": [
+    "REPOSITORY_INTAKE_READBACK",
+    "SOURCE_CUSTODY",
+    "OCCURRENCE_DISCOVERY_DISCLOSURE_TIMELINES",
+    "INDEPENDENT_REVIEW"
+  ],
+  "worker_claim": {
+    "authority": "WORKERCOORDINATOR",
+    "claim_ref": null,
+    "fence_ref": null,
+    "projection_only": true
+  },
+  "authority_effect": "NONE"
+}

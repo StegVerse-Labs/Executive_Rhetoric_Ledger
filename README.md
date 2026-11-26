@@ -323,3 +323,10 @@ Canonical Goal `EC9-WHEN-AI-SERVICES-FAIL-PUBLICATION-001` (COSV `10100000110000
 The Registry records EC9 as PROPOSED with no WorkerCoordinator claim or fence. The owner published the [paper](https://stegverse.org/papers/when-ai-services-fail/) on November 1 through Site #1633. The November 3 [production readback](https://github.com/StegVerse-Labs/Site/pull/1633#issuecomment-6621094250) verified both downloads and both discovery routes. Q74-01 custody and native SPPA remain outstanding. Later source comments are bounded mirror maintenance.
 
 The 2026-10-29 continuation verified Registry generation 326 and the refreshed public ledger at `4b032d13` (136 receipts; zero exact EC9 matches). This is read-only candidate evidence; the recovered matching TVC main receipt is still absent from that snapshot. Source integration and Site promotion remain with their original owners. See the scoped handoff for the exact results, cumulative-count reconciliation and remaining owner actions.
+
+
+## November 2026 infrastructure incidents and AI-risk framing intake
+
+The existing cyber research lane now retains an owner-authorized [29-record intake inventory](research-notes/2026-11-infrastructure-incidents/README.md) and [machine-readable source-lead register](research-notes/2026-11-infrastructure-incidents/incident-register.json), covering the FAA, banking, Microsoft, NSA and Apple disruptions; FBI, FinCEN, USDA and CIA/ODNI intrusion reports; related maritime/threat context; AI warnings; and institutional responses. The owner's chronology, accountability, AI-framing and conditional oil-price propositions are preserved as research questions.
+
+Bounded continuation is [issue #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269) under existing cyber candidate / umbrella #63. See [scoped mirror handoff](docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md). Repository intake does not establish incident-specific canonical registration, native-source custody, shared cause, AI attribution, sovereign KV admission or publication readiness.

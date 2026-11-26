@@ -1,0 +1,805 @@
+{
+  "record_type": "ERL_BOUNDED_SOURCE_LEAD_INTAKE",
+  "version": 1,
+  "title": "November 2026 infrastructure disruptions, intrusions, AI threat framing and institutional responses",
+  "created_at_utc": "2026-11-26T04:43:04Z",
+  "user_facing_date": "2026-11-25",
+  "canonical_goal_task_id": null,
+  "canonical_registration_state": "OWNER_RECONCILIATION_REQUEST_REQUIRED_NO_ID_OR_COSV_MINTED",
+  "existing_candidate_record_id": "ERL-CYBER-SABOTAGE-LINEAGE-001",
+  "existing_activation_group": "ERL-RC-CYBER-SABOTAGE-LINEAGE-2026",
+  "existing_owner": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/63",
+  "entry_authorization": "User: Please enter them.",
+  "coverage": "Accessible conversation and linked sources; not a complete verbatim transcript or exhaustive worldwide incident census.",
+  "evidence_boundary": "Source leads, limited retrieved-text observations and owner propositions; no native-source byte custody, independent finding, AI/actor/common-cause attribution, sovereign KV write, or publication promotion is claimed.",
+  "source_retrieval_history": "Some sources were retrieved in preceding conversation turns. Current filing refresh re-opened Barr speech, FinCEN order and relevant FBI/CIA/FAA leads. Individual source entries do not imply native-byte capture.",
+  "cross_links": [
+    {
+      "goal_task_id": "ERL-RC-OIL-FLOW-2026",
+      "purpose": "Maritime/oil context only; existing scope and authority preserved."
+    },
+    {
+      "goal_task_id": "ERL-AI-EMERGENCY-CLARITY-AUTHORITY-BOUNDARY-001",
+      "purpose": "Possible authority-boundary adjacency only; do not equate different proposed instruments."
+    }
+  ],
+  "excluded_private_context": [
+    "household and health details",
+    "bank-account disputes",
+    "credentials",
+    "wallets",
+    "unrelated patent and company information"
+  ],
+  "records": [
+    {
+      "id": "NOV26-001",
+      "title": "FAA nationwide departure ground stop",
+      "record_class": "service_disruption",
+      "event_date": "2026-11-13",
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "REPORTED_EVENT_OFFICIAL_EXPLANATION_REQUIRES_EXACT_CUSTODY",
+      "source_bounded_statement": "Nationwide ground stop and communications instability were reported. Preserve scope, airborne/inbound-flight exceptions, restoration, router traffic and SMART statements as separate propositions.",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.independent.co.uk/news/world/americas/us-politics/us-flight-ground-stop-preventable-trump-faa-b3085888.html",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.everycrsreport.com/files/2026-11-18_IN12756_8bdcf583cdbea6378aac6656ae0240f669f3d50a.html",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire FAA original notices, advisory IDs, exact effective/lift times and scope; official router/root-cause report; earliest no-threat statement; distinguish initial and later explanations."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-002",
+      "title": "JPMorgan Chase, Bank of America and Wells Fargo service disruptions",
+      "record_class": "service_disruption",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "REPORTED_EVENT_SOURCE_LEAD",
+      "source_bounded_statement": "User supplied coverage of banking-service outages; preserve affected functions and bank-specific timestamps independently.",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/detroit/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/fbi-investigating-potential-breach-crime-database/3973742/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire operator status histories, transaction-impact statements, initiating system/provider evidence and later cause corrections."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-003",
+      "title": "Microsoft / Outlook service disruption",
+      "record_class": "service_disruption",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "REPORTED_EVENT_CONTEXT_SOURCE",
+      "source_bounded_statement": "Microsoft/Outlook disruption is discussed in reporting alongside other November failures.",
+      "sources": [
+        {
+          "url": "https://abcnews.com/Politics/open-source-ai-tool-automate-cyber-intrusions-fbi/story?id=138224347",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/fbi-investigating-potential-breach-crime-database/3973742/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire Microsoft incident identifier, affected tenants/services, event start/end, change records and post-incident report."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-004",
+      "title": "NSA internal communications-network outage",
+      "record_class": "service_disruption",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "REPORTED_EVENT_ANONYMOUS_SOURCES",
+      "source_bounded_statement": "User supplied a report about a classified national-security communications outage; NBC described maintenance and later restoration based on unnamed sources.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hCxKd",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/fbi-investigating-potential-breach-crime-database/3973742/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Resolve exact network, dates, duration, impact and original attribution; separate maintenance explanation from independent forensic finding."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-005",
+      "title": "Apple / iPhone functionality and service outage",
+      "record_class": "service_disruption",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "USER_SUPPLIED_SOURCE_LEAD",
+      "source_bounded_statement": "User supplied a headline about lost iPhone functionality and an Apple outage.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hDJTA",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Resolve original publisher and publication time; acquire Apple service-status timeline and affected-feature list."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-006",
+      "title": "Claim that a cyberattack affected 178 major websites",
+      "record_class": "reported_cyber_incident",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "USER_SUPPLIED_HEADLINE_UNVERIFIED_SCOPE",
+      "source_bounded_statement": "User supplied the 178-websites headline; attribution to a provider or malware campaign requires source reconstruction.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hBU55",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://abcnews.com/Politics/open-source-ai-tool-automate-cyber-intrusions-fbi/story?id=138224347",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Recover original article and organization list, unique incident identifiers, affected-provider records and independent technical analysis; avoid counting domains as separate independent attacks."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-007",
+      "title": "FBI National Crime Information Center intrusion",
+      "record_class": "reported_intrusion",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-20",
+      "evidence_posture": "MULTIPLE_REPORTERS_DESCRIBE_APPARENT_BREACH",
+      "source_bounded_statement": "CNN reported on November 20 and AP on November 21 that the FBI was investigating apparent NCIC unauthorized access. CNN says officials knew by Thursday; occurrence time is unresolved.",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/fbi-database-ncic-hack-d066cff87a64a564db0a00172c124972",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://wsvn.com/news/us-world/fbi-investigates-ncic-breach/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Capture current FBI disposition, exact discovery/report times, entry path, availability effects, affected records, alteration/exfiltration evidence and any actor/AI attribution."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-008",
+      "title": "FinCEN unauthorized access and service disruption",
+      "record_class": "agency_acknowledged_intrusion",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-24",
+      "evidence_posture": "AGENCY_NOTICE_AND_OFFICIAL_RELIEF_ORDER",
+      "source_bounded_statement": "FinCEN acknowledged unauthorized access to some systems and precautionary shutdowns. Its November 24 order provides reporting relief; coverage begins November 18, which does not establish intrusion start.",
+      "sources": [
+        {
+          "url": "https://www.fincen.gov/bsa-e-filing-system",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.fincen.gov/sites/default/files/100/ORDER-FIN-2026-R002.pdf",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.reuters.com/world/us-fincen-takes-some-systems-offline-after-cyber-incident-official-says-2026-11-25/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Custody native notice/order; affected systems and data, access duration, attacker, restoration and any AI evidence. Preserve Reuters correction: database non-breach assessment attributed to a person familiar with the matter, not the agency statement."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-009",
+      "title": "USDA farmer-payment-system breach report",
+      "record_class": "reported_intrusion",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "NBC_REPORT_BASED_ON_OFFICIAL_SOURCES",
+      "source_bounded_statement": "NBC reported a USDA system used to pay farmers was affected and employees were informed Thursday; scope remains bounded to reporting.",
+      "sources": [
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/fbi-investigating-potential-breach-crime-database/3973742/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire USDA notice, system identity, impact and access/exfiltration evidence; keep speculative access to other systems separate."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-010",
+      "title": "CIA / ODNI unclassified-analysis-system breach",
+      "record_class": "reported_intrusion",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-24",
+      "evidence_posture": "REUTERS_REPORT_WITH_ODNI_RESPONSE",
+      "source_bounded_statement": "Reuters reported the breach on November 24; ODNI addressed continuity of critical and classified capabilities. Disclosure date is not the intrusion date.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/us-cia-odni-suffer-cybersecurity-breach-some-unclassified-information-nyt-2026-11-24/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire original NYT report and agency responses, occurrence/discovery dates, affected agencies and data classes, operational effects and later forensic findings."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-011",
+      "title": "Iran / Iran-linked threats against U.S. utilities",
+      "record_class": "threat_and_capability_context",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "EXISTING_ERL_LANE_WITH_NEW_USER_CONTEXT",
+      "source_bounded_statement": "Preserve threats and established capability separately from incident-specific responsibility. Existing ERL cyber lineage already contains September APT IRAN/AT&T claim-denial and OT-warning context.",
+      "sources": [
+        {
+          "url": "https://www.fbi.gov/investigate/cyber/alerts/2026",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/blob/main/research-candidates/2026-network-cyberphysical-sabotage-lineage.md",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire exact November threats, first-party actor posts and CISA/FBI advisories; map named targets and government/operator/public warning chronology."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-012",
+      "title": "Reported drone attack on Russian warship in NATO waters",
+      "record_class": "user_reported_event",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "USER_REPORTED_NO_EXACT_SOURCE_IN_ACCESSIBLE_TURN",
+      "source_bounded_statement": "User cited a contemporaneous warship/drone incident when discussing the FAA stop; no incident identity or source was established in the accessible record.",
+      "sources": [],
+      "unknowns_and_next_evidence": [
+        "Identify vessel, location, date, original report and official responses; do not substitute a later Russian cargo-ship incident."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-013",
+      "title": "Claim that Iran struck three tankers",
+      "record_class": "reported_maritime_event",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "USER_SUPPLIED_HEADLINE_UNVERIFIED_COUNT",
+      "source_bounded_statement": "User supplied a three-tanker headline. Vessel count, responsibility and relationship to subsequent UKMTO notices require reconciliation.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hVYGc",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Recover original report, unique vessels and attack times; distinguish claims, independently observed damage and attributed responsibility."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-014",
+      "title": "November 21 UKMTO tanker incident reports near Khasab",
+      "record_class": "reported_maritime_event",
+      "event_date": "2026-11-21",
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "REUTERS_REPORT_OF_UKMTO_NOTICES",
+      "source_bounded_statement": "Reuters described two incident notices and uncertainty about whether they concerned the same vessel; Iran's mine account was a separate claim.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.ukmto.org/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire numbered UKMTO originals and update sequence; reconcile vessel identifiers and relationship to NOV26-013 without double counting."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-015",
+      "title": "Bahrain industrial-facility attack report",
+      "record_class": "official_attack_claim",
+      "event_date": "2026-11-21",
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "BAHRAIN_ACCOUNT_REPORTED_BY_REUTERS",
+      "source_bounded_statement": "Bahrain attributed damage/fire at an industrial facility to an Iranian attack; this intake preserves that as Bahrain's attribution.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire interior-ministry source, target details, damage and attribution evidence, and subsequent U.S. response."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-016",
+      "title": "Operation Winter SHIELD and November publicity",
+      "record_class": "defensive_program_and_rhetoric",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "FBI_PRIMARY_LAUNCH_PLUS_CNN_NOVEMBER_ACCOUNT",
+      "source_bounded_statement": "FBI San Antonio's February 25 notice describes a defensive-controls campaign; CNN's November 20 report places Patel's later promotion after officials learned of the NCIC incident.",
+      "sources": [
+        {
+          "url": "https://www.fbi.gov/contact-us/field-offices/sanantonio/news/fbi-san-antonio-goes-public-with-operation-winter-shield",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hS3lC",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://wsvn.com/news/us-world/fbi-investigates-ncic-breach/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Separate original launch, campaign period, participation counts, later publicity, actual new access/obligations and exact remarks."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-017",
+      "title": "Operation Riptide enforcement campaign and warning language",
+      "record_class": "enforcement_program_and_rhetoric",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "USER_SOURCE_LEAD_WITH_FBI_SOURCE_TO_BE_PINNED",
+      "source_bounded_statement": "Preserve campaign outcomes and threat-warning predicates as research subjects, without equating an enforcement label to unlimited legal authority.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hS3lC",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Pin exact FBI release and governing authorities, dates, arrests/seizures/extraditions, enrolled entities and changes in obligations."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-018",
+      "title": "ARTEX AI-assisted cyber-intrusion advisory",
+      "record_class": "threat_advisory",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "ABC_REPORT_QUOTING_FBI",
+      "source_bounded_statement": "November 17 ABC reporting describes an earlier FBI ARTEX advisory and quotes agency use of SI terminology. Preserve advisory release and later publicity dates separately.",
+      "sources": [
+        {
+          "url": "https://abcnews.com/Politics/open-source-ai-tool-automate-cyber-intrusions-fbi/story?id=138224347",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire native advisory and X post, issue date, technical evidence, impacted campaigns and actual links to each listed incident."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-019",
+      "title": "Fed Governor Barr warning on agent-accelerated bank runs",
+      "record_class": "official_risk_warning",
+      "event_date": "2026-11-16",
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-16",
+      "evidence_posture": "FEDERAL_RESERVE_PRIMARY_SPEECH",
+      "source_bounded_statement": "Barr discusses agents moving deposits quickly enough to outpace existing liquidity-management/intervention timelines; he also describes banks' difficulty verifying agent consent and authenticity.",
+      "sources": [
+        {
+          "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.popularmechanics.com/technology/robots/a74480912/ai-finance-nightmare/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Preserve exact speech context; separate observed account-access attempts, hypothetical runs and the November 23 headline; no bank run is established by this warning."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-020",
+      "title": "GAO AI/cybersecurity report and proposed policy options",
+      "record_class": "official_report",
+      "event_date": "2026-11-20",
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "GAO_PRIMARY_PUBLICATION",
+      "source_bounded_statement": "GAO discusses AI-amplified cyber capabilities and a menu of policy options, including controls on consequential autonomous action.",
+      "sources": [
+        {
+          "url": "https://www.gao.gov/products/gao-27-108458",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Custody report and evidence footnotes; distinguish proposals from adopted obligations and case-specific attribution."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-021",
+      "title": "Banks tightening AI-agent access and shutdown controls",
+      "record_class": "reported_operational_response",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-23",
+      "evidence_posture": "REUTERS_REPORT_WITH_ANONYMOUS_BANKING_SOURCES",
+      "source_bounded_statement": "Reuters reports limits on agent credentials, access and operating time, activity records, shutdown controls and backup processes.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/legal/litigation/some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-2026-11-23/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire named-bank policies and before/after dates; distinguish internal-agent controls, third-party access and governmental mandates."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-022",
+      "title": "AI-to-SI terminology / claimed EO 14434 definition deadline",
+      "record_class": "terminology_and_authority_research_question",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "USER_PROPOSITION_OFFICIAL_INSTRUMENT_NOT_AUTHENTICATED",
+      "source_bounded_statement": "User links the sequence to an asserted EO 14434 definition due near November 28 and to framework removal of AI terms. This intake does not authenticate that EO, deadline or congressional action.",
+      "sources": [
+        {
+          "url": "https://abcnews.com/Politics/open-source-ai-tool-automate-cyber-intrusions-fbi/story?id=138224347",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Locate exact signed instrument and Federal Register record; identify delegated actor/deadline; compare timestamped framework versions and legal effects. Do not turn user wording into an established instrument."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-023",
+      "title": "Administration maintenance, patching and no-threat explanations",
+      "record_class": "institutional_explanations",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "ATTRIBUTED_EXPLANATIONS_REQUIRE_ATOMIC_CHRONOLOGY",
+      "source_bounded_statement": "Track the initial and later explanations separately for FAA, banks, Microsoft and NSA, including what evidence was public at each statement.",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/fbi-database-ncic-hack-d066cff87a64a564db0a00172c124972",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/fbi-investigating-potential-breach-crime-database/3973742/",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.independent.co.uk/news/world/americas/us-politics/us-flight-ground-stop-preventable-trump-faa-b3085888.html",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://truthsocial.com/@justthenews/117650002335012347",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire original statements, exact quote/time, speaker, source evidence and later corrections; separate absent evidence, assessed absence and ruled-out causes."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-024",
+      "title": "Rapid benign-attribution and response-readiness proposition",
+      "record_class": "owner_observation_and_hypothesis",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "OWNER_PROPOSITION_NOT_A_CAUSAL_FINDING",
+      "source_bounded_statement": "Owner questions whether reassuring attribution precedes root-cause evidence and whether later use of incidents normalizes a broader defensive/control posture.",
+      "sources": [],
+      "unknowns_and_next_evidence": [
+        "Build statement-to-evidence timelines, counterexamples and cross-administration controls; test actual added powers/access/participation independently of publicity."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-025",
+      "title": "Peace messaging, oil declines and later escalation forecast",
+      "record_class": "conditional_market_hypothesis",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "OWNER_FORECAST_WITH_PRIOR_STUDY_CONTEXT",
+      "source_bounded_statement": "Owner predicted oil declines conditional on peace messaging followed by incidents and possible retaliation/rebound; preserve original condition and horizon rather than converting it to a certainty.",
+      "sources": [
+        {
+          "url": "https://www.msn.com/en-us/news/news/content/ar-AA2hVYGc",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Link existing ERL-RC-OIL-FLOW-2026; custody original forecast times, exact contracts, prices and next tradable fills; exclude personal trading authorization and hindsight trough selection."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-026",
+      "title": "Prediction that the NCIC incident would acquire AI threat framing",
+      "record_class": "owner_prediction_and_media_context",
+      "event_date": "2026-11-21",
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "OWNER_PREDICTION_WITH_ADJACENT_MEDIA_HEADING",
+      "source_bounded_statement": "Owner asked whether the breach would become an AI-assisted hacking threat; a WTAE carrier page displayed adjacent generic AI-hacking language. Adjacency does not establish forensic attribution.",
+      "sources": [
+        {
+          "url": "https://www.wtae.com/article/fbi-ncic-database-breach-investigation/74497434",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://apnews.com/article/fbi-database-ncic-hack-d066cff87a64a564db0a00172c124972",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Capture full page layout and updates; track first explicit incident-specific AI allegation, source/evidence, later policy uses and corrections."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-027",
+      "title": "Oversight reduction, deregulation and institutional accountability",
+      "record_class": "political_accountability_research_question",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "OWNER_PROPOSITION_REQUIRES_MEASURED_POLICY_RECORDS",
+      "source_bounded_statement": "Owner asks whether administration oversight reductions and stated political goals bear on accountability for institutional instability, irrespective of attacker identity.",
+      "sources": [],
+      "unknowns_and_next_evidence": [
+        "Collect specific staffing/budget/control changes, dates, affected safeguards, documented causal paths, counterfactual controls and accountability standards."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-028",
+      "title": "Marriott service-outage mention",
+      "record_class": "adjacent_service_disruption_lead",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "CONTEXT_ONLY_RETRIEVED_REPORT",
+      "source_bounded_statement": "A retrieved FOX overview includes Marriott among temporary service disruptions; it was not separately reconstructed here.",
+      "sources": [
+        {
+          "url": "https://www.livenowfox.com/news/fbis-ncic-criminal-database-hacked-sources-tell-ap",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Identify incident and obtain operator status history before treating as a distinct event."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-029",
+      "title": "FBI jobs-portal breach / ShinyHunters context",
+      "record_class": "historical_context_intrusion",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "AP_CNN_REPORT_OF_SEPTEMBER_INCIDENT",
+      "source_bounded_statement": "Reporting distinguishes an earlier FBI recruitment-platform incident from the NCIC investigation.",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/fbi-database-ncic-hack-d066cff87a64a564db0a00172c124972",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://wsvn.com/news/us-world/fbi-investigates-ncic-breach/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire September agency notice and case records; establish relationships only from evidence, not shared agency."
+      ],
+      "actor_attribution": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    }
+  ],
+  "completion": {
+    "repository_intake": true,
+    "source_bytes_custody": false,
+    "sovereign_kv_admission": false,
+    "independent_review": false
+  },
+  "owner_issue": "https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269",
+  "existing_storage_goal_reference": {
+    "task_id": "SS-EVIDENCE-COMPARISON-001",
+    "cosv": "40000100100000",
+    "generation": 326,
+    "role": "Existing ERL/KV storage-contract reference only; not a new incident-specific registration, claim or admission."
+  }
+}

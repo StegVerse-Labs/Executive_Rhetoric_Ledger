@@ -773,3 +773,10 @@ Latest source advancement: ERL PR `#168` merged at `a4ee58c674373bbc49253760352e
 ## 2026-10-07 model election-framing influence lane — ACTIVE RESEARCH CANDIDATE
 
 Goal Task ID: `ERL-MODEL-ELECTION-FRAMING-INFLUENCE-001`. Durable owner: Issue #212. Canonical bounded handoff: `docs/MODEL_ELECTION_FRAMING_INFLUENCE_MIRROR_HANDOFF.md`. The lane measures proposition substitution, interpretation-to-fact conversion, unasserted-hypothesis rebuttal, evidentiary burden shifts, and resulting reader-framing effects in election-related model answers. It requires matched cross-administration and nonpolitical controls and preserves `influence/effect != intent`. Lane creation authorizes no partisan, motive, illegality, or publication finding.
+
+
+## November 2026 infrastructure incident intake — owner-authorized bounded continuation
+
+Existing cyber candidate `ERL-CYBER-SABOTAGE-LINEAGE-001` / activation group `ERL-RC-CYBER-SABOTAGE-LINEAGE-2026` now links a 29-record source-lead intake at `research-notes/2026-11-infrastructure-incidents/incident-register.json`. Dedicated bounded owner [#269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269) coordinates with umbrella #63. The applicable continuation is `docs/NOVEMBER_2026_INFRASTRUCTURE_INCIDENTS_MIRROR_HANDOFF.md`.
+
+No duplicate candidate group or self-issued canonical identity/COSV is created. Canonical-owner reconciliation, native source custody, exact chronology, independent review and governed KV admission remain separately actionable. This addition changes no other ERL workstream's authority, claim, denominator or evidence posture.
