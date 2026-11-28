@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-9B86A3445E3C3ADED3B1",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "9b86a3445e3c3aded3b1dda8fea5d28853add5d4b545ac37978e5ae322386dd7",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-boston-operation-takes-8-dangerous-alien-gang-members-streets"
+}

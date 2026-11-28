@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-B085EA36665A408201A0",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "b085ea36665a408201a0d4343ab804c1a46e9f9ab89e5eefba87cb20a6b703d6",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-issues-immigration-detainer-against-illegal-alien-who-killed-beloved-college"
+}

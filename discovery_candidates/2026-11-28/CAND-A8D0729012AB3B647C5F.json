@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-A8D0729012AB3B647C5F",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "a8d0729012ab3b647c5f43ad6d8b0a1483370ce9f7c1a4046501e1aa98624ccb",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-new-york-city-arrests-internationally-wanted-killer"
+}

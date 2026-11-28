@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-2337F5EFB400BD253196",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "2337f5efb400bd253196eb328b240db8561564097888ac22d82d16354f25c999",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-los-angeles-arrests-iranian-king-instagram"
+}

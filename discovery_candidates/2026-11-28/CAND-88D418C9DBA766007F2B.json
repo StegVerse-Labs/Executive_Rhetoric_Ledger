@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-88D418C9DBA766007F2B",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "88d418c9dba766007f2baeaa8066ae1d90fde1bac9f469e0da3e75ea1bdaccc3",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks"
+}

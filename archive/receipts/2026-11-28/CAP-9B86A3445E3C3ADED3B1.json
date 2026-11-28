@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_1B6D617DEB9DD11C",
+  "byte_length": 106435,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-9B86A3445E3C3ADED3B1.json",
+  "capture_id": "CAP-9B86A3445E3C3ADED3B1",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "9b86a3445e3c3aded3b1dda8fea5d28853add5d4b545ac37978e5ae322386dd7",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/9b86a3445e3c3aded3b1dda8fea5d28853add5d4b545ac37978e5ae322386dd7.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-boston-operation-takes-8-dangerous-alien-gang-members-streets"
+}

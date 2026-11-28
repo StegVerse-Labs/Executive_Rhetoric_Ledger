@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_54F497CBAD5F36F3",
+  "byte_length": 111420,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-096317EF979042E7ACB2.json",
+  "capture_id": "CAP-096317EF979042E7ACB2",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "096317ef979042e7acb26aba4585c29d81b0521abb5cad4186faa98deb46824b",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/096317ef979042e7acb26aba4585c29d81b0521abb5cad4186faa98deb46824b.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-arrests-illegal-alien-who-intentionally-ran-over-and-dragged-officer-vehicle"
+}

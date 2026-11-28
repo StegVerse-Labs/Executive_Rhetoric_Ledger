@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-B221838B8227A3270EEF",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "b221838b8227a3270eefa85b29a01c0927a7cdc7d76d4d2888744b16b7224c69",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.cbp.gov/newsroom/local-media-release/winter-approaches-us-border-patrol-warns-dangers"
+}

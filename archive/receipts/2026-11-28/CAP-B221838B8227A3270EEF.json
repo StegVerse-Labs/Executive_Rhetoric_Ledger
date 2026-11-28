@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_CBP_MEDIA_RELEASES_DB957C1069EAB20A",
+  "byte_length": 115587,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-B221838B8227A3270EEF.json",
+  "capture_id": "CAP-B221838B8227A3270EEF",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "b221838b8227a3270eefa85b29a01c0927a7cdc7d76d4d2888744b16b7224c69",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/b221838b8227a3270eefa85b29a01c0927a7cdc7d76d4d2888744b16b7224c69.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.cbp.gov/newsroom/local-media-release/winter-approaches-us-border-patrol-warns-dangers"
+}

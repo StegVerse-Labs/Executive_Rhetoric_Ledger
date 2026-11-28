@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_E0AA0FD99F9255B7",
+  "byte_length": 124960,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-F9BC48862A30FF68B81E.json",
+  "capture_id": "CAP-F9BC48862A30FF68B81E",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "f9bc48862a30ff68b81e86951977987587da8315d1a5a172b391345f80269e7f",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/f9bc48862a30ff68b81e86951977987587da8315d1a5a172b391345f80269e7f.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-breaks-records-fiscal-year-2026-most-arrests-and-deportations-agencys-history"
+}

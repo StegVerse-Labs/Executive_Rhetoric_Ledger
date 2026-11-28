@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_238787140FB7E8DE",
+  "byte_length": 108161,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-7FDFA8463209D3E10D07.json",
+  "capture_id": "CAP-7FDFA8463209D3E10D07",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "7fdfa8463209d3e10d07d754745a98e035a26b1bb252e2cb003b35e941676291",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/7fdfa8463209d3e10d07d754745a98e035a26b1bb252e2cb003b35e941676291.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-nashville-investigation-results-arrest-alleged-child-sexual-abuse-animal"
+}

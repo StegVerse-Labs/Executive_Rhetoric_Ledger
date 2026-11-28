@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-2B2413553058361F81E3",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "2b2413553058361f81e3e39d302a679ea305d1214bb9ba262a6f25c2dd888ba0",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/hsi-investigation-leads-perjury-conviction-man-who-lied-about-his-involvement-rwandan"
+}

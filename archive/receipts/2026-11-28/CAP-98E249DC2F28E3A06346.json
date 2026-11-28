@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_CBP_MEDIA_RELEASES_00B439FF3BE7C8B0",
+  "byte_length": 216523,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-98E249DC2F28E3A06346.json",
+  "capture_id": "CAP-98E249DC2F28E3A06346",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "98e249dc2f28e3a06346c1b9acee76fe3451f8ab75d4141fba187be3b81d3430",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/98e249dc2f28e3a06346c1b9acee76fe3451f8ab75d4141fba187be3b81d3430.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.cbp.gov/newsroom/stats/cbp-enforcement-statistics"
+}

@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_DB9D54AAD1B66092",
+  "byte_length": 107200,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-2B2413553058361F81E3.json",
+  "capture_id": "CAP-2B2413553058361F81E3",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "2b2413553058361f81e3e39d302a679ea305d1214bb9ba262a6f25c2dd888ba0",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/2b2413553058361f81e3e39d302a679ea305d1214bb9ba262a6f25c2dd888ba0.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/hsi-investigation-leads-perjury-conviction-man-who-lied-about-his-involvement-rwandan"
+}

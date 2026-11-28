@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_3A683CC13F39DB0B",
+  "byte_length": 105141,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-1222CB229C8703E430D5.json",
+  "capture_id": "CAP-1222CB229C8703E430D5",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "1222cb229c8703e430d57a338d662bf1e55ce60180e9f53f2e908fb678aae6ac",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/1222cb229c8703e430d57a338d662bf1e55ce60180e9f53f2e908fb678aae6ac.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-houston-arrests-nigerian-national-illegal-voting"
+}

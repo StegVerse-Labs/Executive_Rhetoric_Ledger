@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_631040680F8F80A7",
+  "byte_length": 106520,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-A1DDB83FABE68AD6423A.json",
+  "capture_id": "CAP-A1DDB83FABE68AD6423A",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "a1ddb83fabe68ad6423a748150107f1412d09ff5d58cb7956a94b70b6ddcb8e1",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/a1ddb83fabe68ad6423a748150107f1412d09ff5d58cb7956a94b70b6ddcb8e1.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-miami-arrests-venezuelan-criminal-illegal-alien-convicted-narcotics-crimes"
+}

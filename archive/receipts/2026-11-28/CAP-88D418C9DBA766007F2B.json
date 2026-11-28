@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_39FC6735F998AC3D",
+  "byte_length": 116592,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-88D418C9DBA766007F2B.json",
+  "capture_id": "CAP-88D418C9DBA766007F2B",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "88d418c9dba766007f2baeaa8066ae1d90fde1bac9f469e0da3e75ea1bdaccc3",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/88d418c9dba766007f2baeaa8066ae1d90fde1bac9f469e0da3e75ea1bdaccc3.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks"
+}

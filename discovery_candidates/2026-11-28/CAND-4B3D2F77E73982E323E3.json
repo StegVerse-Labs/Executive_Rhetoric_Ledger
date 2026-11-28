@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-4B3D2F77E73982E323E3",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "4b3d2f77e73982e323e3fd3c2ce8ae757772d2054bd07afc45c05d50eeeefbc9",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "advocacy-record",
+  "source_uri": "https://southerncoalition.org/case/reisini-roos-v-u-s-department-of-homeland-security-et-al/"
+}

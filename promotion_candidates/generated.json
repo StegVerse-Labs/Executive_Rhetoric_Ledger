@@ -1,0 +1,412 @@
+{
+  "receipts": [
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-096317EF979042E7ACB2.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-11F0AEF7A74491EA967E",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-7AE6292B6C2DE7671A46",
+      "subject_id": "CAND-096317EF979042E7ACB2"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-0AE91EA1385FA0ABD7F7.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-D14A0E487CC450A3B4F2",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-3618620A24F9CF2C481E",
+      "subject_id": "CAND-0AE91EA1385FA0ABD7F7"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-1152B6EFF359820A2394.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-EA37DE768FCB6873A5DD",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-0AB22F886D66DD547DDF",
+      "subject_id": "CAND-1152B6EFF359820A2394"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-1222CB229C8703E430D5.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-A49665DA423DCE82EFB0",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-2365765104307F30333E",
+      "subject_id": "CAND-1222CB229C8703E430D5"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-2337F5EFB400BD253196.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-6FA5D89CE4A80F4386F5",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-DEC4B4DFEEC090E392A8",
+      "subject_id": "CAND-2337F5EFB400BD253196"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-2998865C73F3EEC7EBBD.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-528566992A87237C1192",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-737E35EDC58EF5D0F0FD",
+      "subject_id": "CAND-2998865C73F3EEC7EBBD"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-2B2413553058361F81E3.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-A081634F1C0714E896E2",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-8770470C9F5C7F44E6DD",
+      "subject_id": "CAND-2B2413553058361F81E3"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-4B3D2F77E73982E323E3.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-F7C736A68820381B51EE",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-45B363B92FCD9A1135DF",
+      "subject_id": "CAND-4B3D2F77E73982E323E3"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-6B7C0BF88BF584F80319.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-F008691CD4442C5A4F65",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-43117A7D13D691CE6DEA",
+      "subject_id": "CAND-6B7C0BF88BF584F80319"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-7D82524E5651452FC112.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-C870F2B8CE4F0D0C0CE4",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-A7CB00B6ACDD3F08B045",
+      "subject_id": "CAND-7D82524E5651452FC112"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-7FDFA8463209D3E10D07.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-1239250630F8742C4004",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-3F27BE298755FFE15E55",
+      "subject_id": "CAND-7FDFA8463209D3E10D07"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-88D418C9DBA766007F2B.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-772AF2E7D0E14B5DE97F",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-530D261B8254EAD47C65",
+      "subject_id": "CAND-88D418C9DBA766007F2B"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-98E249DC2F28E3A06346.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-1943F62EDDBD51E42880",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-88B8B3FB77B72FD4BDB1",
+      "subject_id": "CAND-98E249DC2F28E3A06346"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-9B86A3445E3C3ADED3B1.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-F5C711DEF8D9FEE65B92",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-A2B385A3DB11AEB794B3",
+      "subject_id": "CAND-9B86A3445E3C3ADED3B1"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-A1DDB83FABE68AD6423A.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-411CE2E4CEBFC0C2A8D1",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-C4BE815CBCACDC6603DE",
+      "subject_id": "CAND-A1DDB83FABE68AD6423A"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-A8D0729012AB3B647C5F.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-1C4B7B7D0620928F9675",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-A83803833C4AF44EB768",
+      "subject_id": "CAND-A8D0729012AB3B647C5F"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-AFD15CE98A4E0C636320.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-74F7E68660343666B441",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-0E34A9EA10E47C7925BF",
+      "subject_id": "CAND-AFD15CE98A4E0C636320"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-B085EA36665A408201A0.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-FDDB40F408D3D3FA31B4",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-A1AF4E43846156682C6D",
+      "subject_id": "CAND-B085EA36665A408201A0"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-B221838B8227A3270EEF.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-0EA3F2FBC8CB74D090B5",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-D864ED4A73F48FCBCC42",
+      "subject_id": "CAND-B221838B8227A3270EEF"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-ECBF9E4E98B4DE53D861.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-940AA97F450E3D635276",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-7D4228B2CFADA689D138",
+      "subject_id": "CAND-ECBF9E4E98B4DE53D861"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-F22342FC70ED7F98E738.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-98768FF31200E0637279",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-5898C304B932BB301C7C",
+      "subject_id": "CAND-F22342FC70ED7F98E738"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-F791F86A3C18960E4569.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-575D9A90CF963958E275",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-3D7CCBFC93A75F12F341",
+      "subject_id": "CAND-F791F86A3C18960E4569"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/2026-11-28/CAND-F9BC48862A30FF68B81E.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-494D73FBF7D1F27CE5BD",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-83C200E097B66AA77838",
+      "subject_id": "CAND-F9BC48862A30FF68B81E"
+    },
+    {
+      "automation_authority": {
+        "may_prepare": true,
+        "may_promote": false,
+        "may_record_decision": false
+      },
+      "decision_receipt_refs": [],
+      "decision_state": "awaiting-review",
+      "evidence_refs": [
+        "discovery_candidates/ruben-ray-martinez/latest.json"
+      ],
+      "promotion_state": "not-authorized",
+      "proposed_class": "rhetoric_record",
+      "receipt_id": "PROMO-5F21B78670DD8647B31B",
+      "review_assignment_ref": "review_assignments/generated.json#REVIEW-74429FE61AC467F7C597",
+      "subject_id": "discovery_candidates/ruben-ray-martinez/latest.json"
+    }
+  ]
+}

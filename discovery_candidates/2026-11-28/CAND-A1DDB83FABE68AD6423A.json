@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-A1DDB83FABE68AD6423A",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "a1ddb83fabe68ad6423a748150107f1412d09ff5d58cb7956a94b70b6ddcb8e1",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-miami-arrests-venezuelan-criminal-illegal-alien-convicted-narcotics-crimes"
+}

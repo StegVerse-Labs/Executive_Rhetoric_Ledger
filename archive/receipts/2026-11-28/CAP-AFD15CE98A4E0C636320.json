@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_40A39E98C506CBC0",
+  "byte_length": 106261,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-AFD15CE98A4E0C636320.json",
+  "capture_id": "CAP-AFD15CE98A4E0C636320",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "afd15ce98a4e0c63632058264528f6e72052bcc6d4b8970e1fbce129fde31568",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/afd15ce98a4e0c63632058264528f6e72052bcc6d4b8970e1fbce129fde31568.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/illegal-alien-lottery-winners-luck-runs-out-ice-boston-arrest"
+}

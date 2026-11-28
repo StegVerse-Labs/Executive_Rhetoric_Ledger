@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-6B7C0BF88BF584F80319",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "6b7c0bf88bf584f80319ec1ea86277557b2e50c356a586ac6f759206332c176c",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "local-reporting",
+  "source_uri": "https://www.wbtv.com/2026/07/22/charlotte-women-file-claims-notice-against-us-government-after-arrest-during-operation-charlottes-web/"
+}

@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_A729BE317963DF10",
+  "byte_length": 108647,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-7D82524E5651452FC112.json",
+  "capture_id": "CAP-7D82524E5651452FC112",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "7d82524e5651452fc112e1273e28961338bb1123264843026736fb7f5a47c3d4",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/7d82524e5651452fc112e1273e28961338bb1123264843026736fb7f5a47c3d4.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/no-safe-haven-child-sex-offenders-ice-arrests-convicted-predator-california"
+}

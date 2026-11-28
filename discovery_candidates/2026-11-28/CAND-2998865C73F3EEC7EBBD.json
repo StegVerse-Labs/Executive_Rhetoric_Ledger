@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-2998865C73F3EEC7EBBD",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "2998865c73f3eec7ebbdad18144e67789fc555d2eb3add81f896189af8df03ba",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "advocacy-record",
+  "source_uri": "https://southerncoalition.org/two-women-assaulted-arrested-during-operation-charlottes-web-file-federal-claims-against-immigration-agents/"
+}

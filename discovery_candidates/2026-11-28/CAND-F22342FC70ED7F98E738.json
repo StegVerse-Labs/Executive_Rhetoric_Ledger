@@ -1,0 +1,15 @@
+{
+  "automation_authority": {
+    "captured": true,
+    "promoted": false,
+    "proposed": true
+  },
+  "candidate_id": "CAND-F22342FC70ED7F98E738",
+  "candidate_status": "candidate-review-required",
+  "claimed_use": "discovery-candidate",
+  "content_sha256": "f22342fc70ed7f98e738ceb5a1be77ae55a09aa0fefb7123ebd1aa7f226ea76d",
+  "normalized_payload": null,
+  "review_notes": "Capture proves retained source content and provenance only; it does not establish truth or final ledger classification.",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-partner-law-enforcement-agencies-arrest-5-sex-offenders-california"
+}

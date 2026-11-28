@@ -1,0 +1,14 @@
+{
+  "adapter_id": "DISCOVERED_ICE_NEWSROOM_E723DB7569375396",
+  "byte_length": 108237,
+  "candidate_path": "discovery_candidates/2026-11-28/CAND-0AE91EA1385FA0ABD7F7.json",
+  "capture_id": "CAP-0AE91EA1385FA0ABD7F7",
+  "capture_status": "captured",
+  "captured_at": "2026-11-28T12:23:11Z",
+  "content_sha256": "0ae91ea1385fa0abd7f7b43315d8f76b203b760972d685069214e31444697057",
+  "content_type": "text/html",
+  "raw_archive_path": "archive/captures/2026-11-28/0ae91ea1385fa0abd7f7b43315d8f76b203b760972d685069214e31444697057.html",
+  "review_status": "candidate-review-required",
+  "source_class": "official-government",
+  "source_uri": "https://www.ice.gov/news/releases/ice-hsi-investigation-leads-forfeiture-illicit-foreign-antiquities-florida-resident"
+}
