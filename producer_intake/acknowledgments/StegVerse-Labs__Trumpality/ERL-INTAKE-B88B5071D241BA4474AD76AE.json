@@ -1,0 +1,16 @@
+{
+  "acknowledgment_id": "ERL-ACK-0681A5AD971CFF6EF745",
+  "authority": {
+    "may_acknowledge_receipt": true,
+    "may_classify_final": false,
+    "may_promote": false,
+    "may_publish": false
+  },
+  "export_path": "producer_intake/incoming/StegVerse-Labs__Trumpality/1c40a97fb4c6617c811e94b9fe62e348158385d179e2cc49b743f517fa6bd3d2.json",
+  "export_sha256": "1c40a97fb4c6617c811e94b9fe62e348158385d179e2cc49b743f517fa6bd3d2",
+  "generated_at": "2026-11-28T12:22:27.950359Z",
+  "intake_id": "ERL-INTAKE-B88B5071D241BA4474AD76AE",
+  "producer_repository": "StegVerse-Labs/Trumpality",
+  "review_required": true,
+  "state": "received"
+}
