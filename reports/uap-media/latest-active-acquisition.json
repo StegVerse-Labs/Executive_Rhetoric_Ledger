@@ -14,12 +14,12 @@
   "results": [
     {
       "receipt": "assessments/uap-media/evidence/official-records/UAP-OFFICIAL-NASA-STUDY-2023.native.receipt.json",
-      "sha256": "b2e7e85ebadc90a180bd4f694c3ee34e9fcca9190059a5aeb95b19f23b4f05fd",
+      "sha256": "616134a98305e17aaefda7d74b5a92300cd5c4fa97f8efcb83ab7920910426f2",
       "source_id": "UAP-OFFICIAL-NASA-STUDY-2023",
       "status": "COMPLETE"
     },
     {
-      "error": "public source transport incomplete after 3 attempts: HTTPError: HTTP Error 404: Not Found",
+      "error": "public source transport incomplete after 3 attempts: HTTPError: HTTP Error 403: Forbidden",
       "source_id": "UAP-OFFICIAL-ODNI-FY2024",
       "status": "RETRY"
     },
@@ -37,13 +37,13 @@
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-ENCOUNTERS-2023.native.receipt.json",
-      "sha256": "93ab7286613ffc1a8a4b451be5f5a8663c15fc358714d23c08526dce3945dc78",
+      "sha256": "71f88b6405dcb66717a3743f94602838c87cb2759e22fd2e7db3666b376faa20",
       "source_id": "UAP-MEDIA-NETFLIX-ENCOUNTERS-2023",
       "status": "COMPLETE"
     },
     {
       "receipt": "assessments/uap-media/evidence/media-primary/UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024.native.receipt.json",
-      "sha256": "58ab74791bb8c25585ef9ac8524bd9287f0f524bdce8065f61718c07170a67cc",
+      "sha256": "c64291afb6eeb3d89d606b8c9da56b2772326bf73a3143bd7571fff47eb7cecd",
       "source_id": "UAP-MEDIA-NETFLIX-INVESTIGATION-ALIEN-2024",
       "status": "COMPLETE"
     }
