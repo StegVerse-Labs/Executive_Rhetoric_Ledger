@@ -305,7 +305,21 @@
       "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
       "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
       "finding_authorized": false,
-      "publication_authorized": false
+      "publication_authorized": false,
+      "evidence_updates": [
+        {
+          "reviewed_date": "2026-11-28",
+          "linked_record": "NOV26-031",
+          "reported_update": "CNN on November 25 reports investigators suspect ARTEX and identifies NGA as another affected agency; Forbes links ARTEX citing NYT. These are incident-specific reported AI suspicions/claims, not merely generic warning adjacency.",
+          "source_urls": [
+            "https://kesq.com/news/national-politics/cnn-us-politics/2026/11/25/cia-hit-by-hack-impacting-unclassified-information/",
+            "https://www.forbes.com/sites/the-wiretap/2026/11/25/us-government-under-ai-cyberattack/",
+            "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html"
+          ],
+          "source_dependency": "NYT is the stated source for Forbes; CNN cites its own unnamed sources.",
+          "prior_state_retained": true
+        }
+      ]
     },
     {
       "id": "NOV26-011",
@@ -508,7 +522,17 @@
       "ai_role": "NOT_ESTABLISHED_BY_THIS_INTAKE",
       "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
       "finding_authorized": false,
-      "publication_authorized": false
+      "publication_authorized": false,
+      "evidence_updates": [
+        {
+          "reviewed_date": "2026-11-28",
+          "official_advisory_date": "2026-11-13",
+          "official_identifier": "FLASH-20261113-001",
+          "source_url": "https://www.ic3.gov/CSA/2026/261113.pdf",
+          "posture": "OFFICIAL_PDF_TEXT_LOCATED_NATIVE_BYTES_NOT_CUSTODIED",
+          "reported_update": "The FBI advisory describes malicious ARTEX use across sectors since at least August. Its text uses AI/LLM language and super intelligence (SI) terminology. This establishes agency wording, not a statutory redefinition or a common cause for the listed outages."
+        }
+      ]
     },
     {
       "id": "NOV26-019",
@@ -842,6 +866,120 @@
       "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
       "finding_authorized": false,
       "publication_authorized": false
+    },
+    {
+      "id": "NOV26-031",
+      "title": "Forbes ARTEX attribution report concerning CIA/ODNI/NGA breach",
+      "record_class": "INCIDENT_SPECIFIC_AI_ATTRIBUTION_REPORT",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-25",
+      "evidence_posture": "SOURCE_BOUNDED_RESEARCH_INTAKE",
+      "source_bounded_statement": "Brewster's Forbes newsletter links the intelligence-system intrusion to ARTEX, citing NYT; CNN describes investigators' suspicion. This updates NOV26-010 rather than counting another intrusion.",
+      "sources": [
+        {
+          "url": "https://www.forbes.com/sites/the-wiretap/2026/11/25/us-government-under-ai-cyberattack/",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://kesq.com/news/national-politics/cnn-us-politics/2026/11/25/cia-hit-by-hack-impacting-unclassified-information/",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
+          "source_bytes_custodied": false
+        },
+        {
+          "url": "https://www.ic3.gov/CSA/2026/261113.pdf",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Forbes first published November 25 at 12:59 EST and currently shows November 27 09:27 EST update; archive versions before assigning every current paragraph to initial publication.",
+        "NYT direct opening failed; preserve the dependency and obtain original report through an authorized route. Do not count Forbes restatement as independent forensic confirmation.",
+        "CIA/ODNI/NGA impact is one reported affected-system cluster unless incident IDs establish otherwise. CNN's unnamed-source assessment separates it from NCIC; FinCEN relationship remains unresolved.",
+        "Distinguish a Chinese developer, a Chinese-origin model, an apparent China-origin operation, and Chinese-state control."
+      ],
+      "actor_attribution": "RETAIN_SOURCE_ATTRIBUTION_NO_INDEPENDENT_FINDING",
+      "ai_role": "RETAIN_CASE_SPECIFIC_SOURCE_POSTURE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-032",
+      "title": "US Air Force Cloud One intrusion report",
+      "record_class": "REPORTED_CLOUD_INTRUSION",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-27",
+      "evidence_posture": "SOURCE_BOUNDED_RESEARCH_INTAKE",
+      "source_bounded_statement": "Reuters reports a Cloud One breach discovered during upgrade work, with resulting operational restrictions. Actor, scope and data loss remain unresolved; AI involvement is contextual, not case-specific attribution.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Acquire Air Force/contractor/Cyber Command records, discovery date, vulnerability and control-plane scope. Discovery during an upgrade does not establish that the upgrade caused entry.",
+        "Separate platform application capabilities from evidence that any particular tactical, personnel or logistics data was accessed."
+      ],
+      "actor_attribution": "RETAIN_SOURCE_ATTRIBUTION_NO_INDEPENDENT_FINDING",
+      "ai_role": "RETAIN_CASE_SPECIFIC_SOURCE_POSTURE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-033",
+      "title": "Reported cyberattacks against as many as 50 energy-carrying ships",
+      "record_class": "REPORTED_MARITIME_CYBER_CAMPAIGN_LEAD",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": null,
+      "evidence_posture": "SOURCE_BOUNDED_RESEARCH_INTAKE",
+      "source_bounded_statement": "WSJ reports U.S. officials are examining possible Iranian involvement in cyberattacks affecting energy-carrying ships; the reported scale is a source estimate.",
+      "sources": [
+        {
+          "url": "https://www.wsj.com/politics/national-security/iran-us-cyberattack-suspect-fed78942",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Pin publication and incident dates, vessel identities, technical artifacts and attribution updates; preserve estimate and investigation posture.",
+        "Keep ship-system cyber intrusion separate from the physical tanker strikes in NOV26-013/014 unless evidence connects them."
+      ],
+      "actor_attribution": "RETAIN_SOURCE_ATTRIBUTION_NO_INDEPENDENT_FINDING",
+      "ai_role": "RETAIN_CASE_SPECIFIC_SOURCE_POSTURE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "NOV26-034",
+      "title": "Signal restrictions on mobile operating-system AI agents",
+      "record_class": "FIRST_PARTY_PRIVACY_CONTROL_RESPONSE",
+      "event_date": null,
+      "event_time_utc": null,
+      "first_public_report_date": "2026-11-20",
+      "evidence_posture": "SOURCE_BOUNDED_RESEARCH_INTAKE",
+      "source_bounded_statement": "Signal's November 20 statement describes restricting mobile OS agents from capturing or retaining Signal information and requests platform support.",
+      "sources": [
+        {
+          "url": "https://signal.org/blog/protecting-your-privacy/",
+          "source_bytes_custodied": false
+        }
+      ],
+      "unknowns_and_next_evidence": [
+        "Verify released versions, platforms, actual control behavior and limits; the announced response alone does not prove an intrusion.",
+        "Track platform permissions and AI-agent access boundaries separately from government surveillance authority."
+      ],
+      "actor_attribution": "RETAIN_SOURCE_ATTRIBUTION_NO_INDEPENDENT_FINDING",
+      "ai_role": "RETAIN_CASE_SPECIFIC_SOURCE_POSTURE",
+      "shared_cause": "NOT_ESTABLISHED_BY_THIS_INTAKE",
+      "finding_authorized": false,
+      "publication_authorized": false
     }
   ],
   "completion": {
@@ -862,6 +1000,20 @@
       "date": "2026-11-26",
       "record_id": "NOV26-030",
       "reason": "User supplied an additional event in the continuing incident-watch conversation; append preserves the initial 29-record intake."
+    },
+    {
+      "date": "2026-11-28",
+      "record_ids": [
+        "NOV26-031",
+        "NOV26-032",
+        "NOV26-033",
+        "NOV26-034"
+      ],
+      "updated_records": [
+        "NOV26-010",
+        "NOV26-018"
+      ],
+      "reason": "Owner supplied Forbes article; traced CIA AI-attribution reporting, official ARTEX advisory, and directly relevant adjacent sources."
     }
   ]
 }

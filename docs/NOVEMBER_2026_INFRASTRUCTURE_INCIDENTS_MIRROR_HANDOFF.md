@@ -49,3 +49,10 @@ The bounded filing is complete only after the exact GitHub payloads are read bac
 Two Italian technicians died at a Kuwaiti air-defence maintenance site. The entry retains Italy/Kuwait's attribution to Iran, Iran's denial and offer of joint investigation, Araghchi's reported war-provocation allegation, and the EU pressure response as distinct propositions. Iranian manufacture, launch origin, operator identity and state direction must not be collapsed. Reports about the two other casualties differ and require time-specific reconciliation.
 
 The register now contains **30 records**, preserving the initial 29 unchanged. Native-source custody and independent attribution remain pending. See [ERL #269](https://github.com/StegVerse-Labs/Executive_Rhetoric_Ledger/issues/269).
+
+
+## November 28 source update — NOV26-031–034
+
+The Forbes link adds incident-specific ARTEX reporting for the existing CIA/ODNI intrusion entry, including reported NGA impact. NOV26-010 retains its earlier state plus an evidence update; it is not counted as a new breach. NOV26-018 now links the official November 13 FBI FLASH-20261113-001, whose text uses both AI/LLM and SI terminology. No legal terminology change is inferred from that wording.
+
+Four new source records cover that attribution report, the separately reported Cloud One intrusion, the WSJ maritime-cyber lead, and Signal's first-party agent-access policy. The register now contains **34 records**. Counts include reports, warnings, responses and hypotheses as well as incidents; they are not a count of independent attacks. Forbes/NYT source dependence, CNN suspicion, agency data classifications, publication/update dates and unresolved relationships remain explicit. Existing records are preserved; source custody and independent review remain pending.
